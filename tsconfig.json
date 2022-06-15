@@ -1,9 +1,18 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es5",
+    "target": "esnext",
+    "noImplicitAny": true,
     "sourceMap": true,
-    "outDir": "build"
+    "outDir": "build",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "declaration": false,
+    "importHelpers": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
   "exclude": [
     "node_modules"

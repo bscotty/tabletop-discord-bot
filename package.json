@@ -2,11 +2,17 @@
   "name": "warforged",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./build/main.js",
   "scripts": {
+    "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.17.0"
+  }
 }
