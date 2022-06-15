@@ -1,4 +1,4 @@
 function displayTotalPerPerson(person: string, total: number) {
-    let message: string = "Total for " + person + " is " + total;
+    const message: string = "Total for " + person + " is " + total;
     document.getElementById("totalMessage").textContent = message;
 }
