@@ -44,8 +44,8 @@ export type IDeployableData = {
     instances?: number
     cost?: number
     armor?: number
-    hp?: number | string // orochi drones are "5 + {grit}". awful.
-    evasion?: number
+    hp?: number | string // orochi drones are "5 + {grit}", kobold slag is string
+    evasion?: number | string // kobold slag is string
     edef?: number
     heatcap?: number
     repcap?: number

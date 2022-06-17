@@ -51,5 +51,7 @@ export function format(formatters: Formatters, data: SearchableData) {
         return formatters.talentFormat(data)
     } else if (isSearchableWeapon(data)) {
         return formatters.weaponFormat(data)
+    } else {
+        console.error(`Could not assign data as any known type`)
     }
 }

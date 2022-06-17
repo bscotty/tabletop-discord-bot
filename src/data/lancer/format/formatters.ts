@@ -21,7 +21,15 @@ import {IWeaponProfile} from "../types/weapon";
 import TurndownService from "turndown";
 import {IFrameTraitData} from "../types/frame";
 import {getEmoji} from "./emoji";
-import {activationFormat, licenseFormat, pilotMechActionType, replaceVal, toTitleCase} from "./format-utility";
+import {
+    activationFormat,
+    formatContentPack,
+    licenseFormat,
+    pilotMechActionType,
+    replaceVal,
+    toTitleCase
+} from "./format-utility";
+import {isSearchableSystem, isSearchableWeapon} from "./typechecks";
 
 type PrintableWeaponProfile = IWeaponProfile & { mount: string, type: string }
 
@@ -50,23 +58,15 @@ export class Formatters {
     private integratedFormat(integrated: string[]) {
         let out = ""
 
-        function isWeapon(object: SearchableWeapon | SearchableSystem): object is SearchableWeapon {
-            return object.data_type === "weapon"
-        }
-
-        function isSystem(object: SearchableWeapon | SearchableSystem): object is SearchableSystem {
-            return object.data_type === "system"
-        }
-
         integrated.forEach(integrated_item_id => {
             const integrated_item = this.weapons.find(w => w.id === integrated_item_id) ||
                 this.systems.find(s => s.id === integrated_item_id)
-            if (integrated_item && isWeapon(integrated_item)) {
+            if (integrated_item && isSearchableWeapon(integrated_item)) {
                 out += this.weaponFormat(integrated_item)
-            } else if (integrated_item && isSystem(integrated_item)) {
+            } else if (integrated_item && isSearchableSystem(integrated_item)) {
                 out += this.systemFormat(integrated_item)
             } else {
-                console.log("Couldn't find an integrated item with that id")
+                console.log(`Couldn't find an integrated item with id ${integrated_item_id}`)
             }
         })
         return out;
@@ -127,20 +127,21 @@ export class Formatters {
     }
 
     public basicActionFormat(action: SearchableAction, customActionName?: string) {
-        const actionType = `${pilotMechActionType(action)}${activationFormat(action.activation)}`
+        const actionType = `${pilotMechActionType(action)}${activationFormat(action.activation)}${formatContentPack(action)}`
         const actionName = action.name || customActionName || 'Unnamed Action'
         return `**${actionName}** (${actionType})\n${this.turndownService.turndown(action.detail)}`;
     }
 
     public cbFormat(cb: SearchableCoreBonus) {
-        let out = `**${cb.name}** (${cb.source} Core Bonus)\n${this.turndownService.turndown(cb.effect)}\n`
+        let out = `**${cb.name}** (${cb.source} Core Bonus)${formatContentPack(cb)}` +
+            `${this.turndownService.turndown(cb.effect)}\n`
         if (cb.integrated) out += this.integratedFormat(cb.integrated)
         return out
     }
 
     public coreFormat(core: SearchableICoreSystemData) {
         const coreName = core.name || core.passive_name || core.active_name
-        let out = `**${coreName}** (${core.source} CORE System)\n`
+        let out = `**${coreName}** (${core.source} CORE System)${formatContentPack(core)}\n`
 
         if (core.passive_name) {
             out += `**Passive: ${core.passive_name}**\n`
@@ -177,22 +178,22 @@ export class Formatters {
     public frameFormat(frame: SearchableFrame) {
         const {stats, core_system} = frame
         const coreName = core_system.name || core_system.passive_name || core_system.active_name
-        let out = `**${frame.source} ${frame.name}** - ${frame.mechtype.join('/')} Frame
-SIZE ${stats.size}, ARMOR ${stats.armor}, SAVE ${stats.save}, SENSOR ${stats.sensor_range}
-HP ${stats.hp}, REPAIR CAP ${stats.repcap}        E-DEF ${stats.edef}, TECH ATTACK ${stats.tech_attack > 0 ? '+' : ''}${stats.tech_attack}, SP ${stats.sp}
-EVASION ${stats.evasion}, SPEED ${stats.speed}        HEATCAP ${stats.heatcap}
-**Mounts:** ${frame.mounts.join(', ')}`
+        let out = `**${frame.source} ${frame.name}** - ${frame.mechtype.join('/')} Frame${formatContentPack(frame)}\n` +
+            `SIZE ${stats.size}, ARMOR ${stats.armor}, SAVE ${stats.save}, SENSOR ${stats.sensor_range}\n` +
+            `HP ${stats.hp}, REPAIR CAP ${stats.repcap}        E-DEF ${stats.edef}, TECH ATTACK ${stats.tech_attack > 0 ? '+' : ''}${stats.tech_attack}, SP ${stats.sp}\n` +
+            `EVASION ${stats.evasion}, SPEED ${stats.speed}        HEATCAP ${stats.heatcap}\n` +
+            `**Mounts:** ${frame.mounts.join(', ')}`
         out += `\n${frame.traits.map(trait => this.traitFormatter(trait)).join('\n')}\n`
         out += `CORE System: **${coreName}**`
         return out
     }
 
     public glossaryFormat(glossaryEntry: SearchableGlossaryItem) {
-        return `**${glossaryEntry.name}:** ${this.turndownService.turndown(glossaryEntry.description)}`
+        return `**${glossaryEntry.name}${formatContentPack(glossaryEntry)}:** ${this.turndownService.turndown(glossaryEntry.description)}`
     }
 
     public modFormat(mod: SearchableMod) {
-        let out = `**${mod.name}** (${licenseFormat(mod)} Mod)\n${mod.sp} SP`
+        let out = `**${mod.name}** (${licenseFormat(mod)} Mod)${formatContentPack(mod)}\n${mod.sp} SP`
         if (mod.tags) {
             out += `, ${mod.tags.map(tag => this.populateTag(tag)).join(', ').trim()}\n`;
         } else {
@@ -221,7 +222,7 @@ EVASION ${stats.evasion}, SPEED ${stats.speed}        HEATCAP ${stats.heatcap}
     }
 
     public pilotArmorFormat(parmor: SearchablePilotArmor) {
-        let out = `**${parmor.name}** (Pilot Armor)\n`
+        let out = `**${parmor.name}** (Pilot Armor)${formatContentPack(parmor)}\n`
         if (parmor.bonuses) {
             for (const bonus_indx in parmor.bonuses) {
                 const bonus = parmor.bonuses[bonus_indx]
@@ -237,7 +238,7 @@ EVASION ${stats.evasion}, SPEED ${stats.speed}        HEATCAP ${stats.heatcap}
     }
 
     public pilotGearFormat(pgear: SearchablePilotGear) {
-        let out = `**${pgear.name}** (Pilot Gear)\n`
+        let out = `**${pgear.name}** (Pilot Gear)${formatContentPack(pgear)}\n`
         if (pgear.tags) {
             out += pgear.tags.map(tag => this.populateTag(tag)).join(', ').trim() + "\n"
         }
@@ -250,7 +251,7 @@ EVASION ${stats.evasion}, SPEED ${stats.speed}        HEATCAP ${stats.heatcap}
     }
 
     public pilotWeaponFormat(weapon: SearchablePilotWeapon): string {
-        let out = `**${weapon.name}**`
+        let out = `**${weapon.name}${formatContentPack(weapon)}**`
         let tagsEtc = [`-- ${weapon.type || '--'}`]
         if (weapon.tags) tagsEtc = tagsEtc.concat(weapon.tags.map(tag => this.populateTag(tag)))
         out += `\n${tagsEtc.join(', ')}\n`
@@ -273,16 +274,16 @@ EVASION ${stats.evasion}, SPEED ${stats.speed}        HEATCAP ${stats.heatcap}
     }
 
     public skillFormat(skill: SearchableSkillTrigger) {
-        return `**${skill.name}** (Pilot Skill)\n${this.turndownService.turndown(skill.detail)}`
+        return `**${skill.name}** (Pilot Skill)${formatContentPack(skill)}\n${this.turndownService.turndown(skill.detail)}`
     }
 
     public statusFormat(object: SearchableStatusCondition) {
-        return `**${object.name}** (${object.type})\n  ${this.turndownService.turndown(object.effects)}`
+        return `**${object.name}** (${object.type})${formatContentPack(object)}\n${this.turndownService.turndown(object.effects)}`
     }
 
 
     public systemFormat(system: SearchableSystem) {
-        let out = `**${system.name}** (${licenseFormat(system)} ${system.data_type || system.type || ''})\n`
+        let out = `**${system.name}** (${licenseFormat(system)} ${system.data_type || system.type || ''})${formatContentPack(system)}\n`
         let tagsEtc = []
         if (system.sp) tagsEtc.push(`${system.sp} SP`)
         if (system.tags) tagsEtc = tagsEtc.concat(system.tags.map(tag => this.populateTag(tag)))
@@ -301,11 +302,12 @@ EVASION ${stats.evasion}, SPEED ${stats.speed}        HEATCAP ${stats.heatcap}
     }
 
     public tagFormat(object: SearchableTag) {
-        return `**${replaceVal(object.name, "X")}** (${object.data_type})\n  ${this.turndownService.turndown(replaceVal(object.description, "X"))}`
+        return `**${replaceVal(object.name, "X")}** (${object.data_type})${formatContentPack(object)}\n` +
+            `  ${this.turndownService.turndown(replaceVal(object.description, "X"))}`
     }
 
     public talentFormat(talent: SearchableTalent) {
-        let out = `**${talent.name}** - Talent\n`
+        let out = `**${talent.name}** - Talent${formatContentPack(talent)}\n`
         talent.ranks.forEach((rank, i) => {
             out += `${getEmoji(`rank_${(i + 1)}`)} **${rank.name}**:${this.turndownService.turndown(rank.description)}\n`
             if (rank.actions && rank.actions.length > 0) {
@@ -321,6 +323,8 @@ EVASION ${stats.evasion}, SPEED ${stats.speed}        HEATCAP ${stats.heatcap}
         if (weapon.id && !weapon.id.endsWith('_integrated')) {
             out += ` (${[licenseFormat(weapon), weapon.data_type].join(' ').trim()})`
         }
+        out += `${formatContentPack(weapon)}`
+
         let tagsEtc = [`${weapon.mount || '--'} ${weapon.type || '--'}`]
         if (weapon.sp) tagsEtc.push(`${weapon.sp} SP`)
         if (weapon.tags) tagsEtc = tagsEtc.concat(weapon.tags.map(tag => this.populateTag(tag)))

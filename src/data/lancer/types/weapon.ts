@@ -14,10 +14,10 @@ import {
 export type Weapon = {
     id: string
     name: string
-    source?: string // integrated weapons don't have source // must be the same as the Manufacturer ID to sort correctly
-    license?: string // integrated weapons don't have license // reference to the Frame name of the associated license
-    license_id: string // reference to the Frame id of the associated license
-    license_level?: number // integrated weapons don't have license level // set to zero for this item to be available to a LL0 character
+    source?: string // integrated weapons don't have source
+    license?: string // integrated weapons don't have license
+    license_id?: string // reference to the Frame id of the associated license
+    license_level?: number // integrated weapons don't have license level
     mount: MountType
     type: WeaponType
     cost?: number

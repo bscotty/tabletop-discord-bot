@@ -1,4 +1,4 @@
-import {Background, Environment, InfoManifest, Manufacturer, Reserve, Sitrep, Tables} from "./not-fully-used";
+import {Background, Environment, Manufacturer, Reserve, Sitrep, Tables} from "./not-fully-used";
 import {CoreBonus} from "./core-bonus";
 import {Frame} from "./frame";
 import {Action} from "./action";
@@ -12,6 +12,7 @@ import {Weapon} from "./weapon";
 import {Talent} from "./talent";
 import {Rules} from "./rules";
 import {GlossaryItem} from "./glossary";
+import {InfoManifest} from "./info";
 
 export class Lcp {
     actions: Action[]
@@ -26,12 +27,12 @@ export class Lcp {
     mods: Mod[]
     pilot_gear: PilotArmor[] | PilotGear[] | PilotWeapon[]
     reserves: Reserve[]
-    rules: Rules
+    rules?: Rules
     sitreps: Sitrep[]
     skills: SkillTrigger[]
     statuses: StatusCondition[]
     systems: System[]
-    tables: Tables
+    tables?: Tables
     tags: Tag[]
     talents: Talent[]
     weapons: Weapon[]
@@ -49,12 +50,12 @@ export class Lcp {
         mods: Mod[],
         pilot_gear: PilotArmor[] | PilotGear[] | PilotWeapon[],
         reserves: Reserve[],
-        rules: Rules,
+        rules: Rules | undefined,
         sitreps: Sitrep[],
         skills: SkillTrigger[],
         statuses: StatusCondition[],
         systems: System[],
-        tables: Tables,
+        tables: Tables | undefined,
         tags: Tag[],
         talents: Talent[],
         weapons: Weapon[]) {

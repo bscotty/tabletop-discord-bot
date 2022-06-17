@@ -12,9 +12,9 @@ export type System = {
     id: string
     name: string
     source: string // must be the same as the Manufacturer ID to sort correctly
-    license: string // reference to the Frame name of the associated license
-    license_id: string // reference to the Frame id of the associated license
-    license_level: number // set to zero for this item to be available to a LL0 character
+    license?: string // exotics don't have a license
+    license_id?: string // only core has license ids
+    license_level?: number // exotics don't have a license
     effect?: string // v-html
     type?: SystemType
     sp?: number
