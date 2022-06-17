@@ -9,4 +9,3 @@ export class Config {
         return config.guilds
     }
 }
-
