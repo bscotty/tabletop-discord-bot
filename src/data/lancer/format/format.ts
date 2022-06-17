@@ -1,8 +1,8 @@
-import {SearchableData} from "../lancer-data-reader";
 import {
     isSearchableAction,
     isSearchableCoreBonus,
     isSearchableFrame,
+    isSearchableGlossaryItem,
     isSearchableICoreSystemData,
     isSearchableMod,
     isSearchablePilotArmor,
@@ -16,6 +16,7 @@ import {
     isSearchableWeapon
 } from "./typechecks";
 import {Formatters} from "./formatters";
+import {SearchableData} from "../search/searchable";
 
 export function format(formatters: Formatters, data: SearchableData) {
     console.log(`formatting ${data.name}`)
@@ -28,6 +29,8 @@ export function format(formatters: Formatters, data: SearchableData) {
         return formatters.coreFormat(data)
     } else if (isSearchableFrame(data)) {
         return formatters.frameFormat(data)
+    } else if (isSearchableGlossaryItem(data)) {
+        return formatters.glossaryFormat(data)
     } else if (isSearchableMod(data)) {
         return formatters.modFormat(data)
     } else if (isSearchablePilotArmor(data)) {

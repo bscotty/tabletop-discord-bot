@@ -1,5 +1,5 @@
 import Fuse from "fuse.js";
-import {LancerData, SearchableData} from "./lancer-data-reader";
+import {SearchableData} from "./searchable";
 import FuseResult = Fuse.FuseResult;
 
 export class Searcher {
@@ -27,9 +27,8 @@ export class Searcher {
 
     private fuse: Fuse<SearchableData>
 
-    constructor(searchable: LancerData[]) {
-
-        this.fuse = new Fuse(searchable.map((it) => it.getAll()).flat(), this.options)
+    constructor(searchable: SearchableData[]) {
+        this.fuse = new Fuse(searchable, this.options)
     }
 
     private fuseSearch(term: string): FuseResult<SearchableData>[] {

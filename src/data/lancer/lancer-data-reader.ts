@@ -1,27 +1,35 @@
 import {addAlternativeNames, AlternativelyNamed, SupportsAltName} from "./name-fixes";
 import {Lcp} from "./types/lcp";
-import {StatusCondition} from "./types/status";
-import {Frame, getCorePowersFromFrames} from "./types/frame";
-import {ICoreSystemData, SourcedCoreSystem} from "./types/core-system";
-import {PilotArmor, PilotGear, PilotWeapon, splitPilotItems} from "./types/pilot";
-import {Action} from "./types/action";
-import {CoreBonus} from "./types/core-bonus";
-import {Mod} from "./types/mod";
-import {SkillTrigger} from "./types/skill";
-import {System} from "./types/system";
-import {Talent} from "./types/talent";
-import {Tag} from "./types/tag";
-import {Weapon} from "./types/weapon";
+import {getCorePowersFromFrames} from "./types/frame";
+import {splitPilotItems} from "./types/pilot";
 import {TypedData} from "./types/shared-types";
+import {
+    SearchableAction,
+    SearchableCoreBonus,
+    SearchableData,
+    SearchableFrame,
+    SearchableGlossaryItem,
+    SearchableICoreSystemData,
+    SearchableMod,
+    SearchablePilotArmor,
+    SearchablePilotGear,
+    SearchablePilotWeapon,
+    SearchableSkillTrigger,
+    SearchableStatusCondition,
+    SearchableSystem,
+    SearchableTag,
+    SearchableTalent,
+    SearchableWeapon
+} from "./search/searchable";
 
 export function lancerDataReader(lcp: Lcp): LancerData {
-    console.log("lancerDataReader")
     const pilotItems = splitPilotItems(lcp.pilot_gear)
     return new LancerData(
         filterTypeAndLabel(lcp.actions, "action"),
         filterTypeAndLabel(lcp.coreBonuses, "core-bonus"),
         typeAndLabel(getCorePowersFromFrames(lcp.frames), "core-system"),
         filterTypeAndLabel(lcp.frames, "frame"),
+        typeAndLabel(lcp.glossary, "glossary"),
         filterTypeAndLabel(lcp.mods, "mod"),
         filterTypeAndLabel(pilotItems.armor, "pilot-armor"),
         filterTypeAndLabel(pilotItems.gear, "pilot-gear"),
@@ -65,6 +73,7 @@ export class LancerData {
     coreBonuses: SearchableCoreBonus[]
     coreSystems: SearchableICoreSystemData[]
     frames: SearchableFrame[]
+    glossary: SearchableGlossaryItem[]
     mods: SearchableMod[]
     pilot_armor: SearchablePilotArmor[]
     pilot_weapons: SearchablePilotWeapon[]
@@ -81,6 +90,7 @@ export class LancerData {
         coreBonuses: SearchableCoreBonus[],
         coreSystems: SearchableICoreSystemData[],
         frames: SearchableFrame[],
+        glossary: SearchableGlossaryItem[],
         mods: SearchableMod[],
         pilot_armor: SearchablePilotArmor[],
         pilot_gear: SearchablePilotGear[],
@@ -98,7 +108,7 @@ export class LancerData {
         this.coreSystems = coreSystems
         this.frames = frames
 
-        // TODO: Glossary?
+        this.glossary = glossary
         this.mods = mods
 
         this.pilot_armor = pilot_armor
@@ -119,6 +129,7 @@ export class LancerData {
             ...this.coreBonuses,
             ...this.coreSystems,
             ...this.frames,
+            ...this.glossary,
             ...this.mods,
             ...this.pilot_armor,
             ...this.pilot_weapons,
@@ -132,33 +143,3 @@ export class LancerData {
         ]
     }
 }
-
-export type SearchableAction = Action & TypedData & AlternativelyNamed
-export type SearchableCoreBonus = CoreBonus & TypedData & AlternativelyNamed
-export type SearchableICoreSystemData = ICoreSystemData & SourcedCoreSystem & TypedData & AlternativelyNamed
-export type SearchableFrame = Frame & TypedData & AlternativelyNamed
-export type SearchableMod = Mod & TypedData & AlternativelyNamed
-export type SearchablePilotArmor = PilotArmor & TypedData & AlternativelyNamed
-export type SearchablePilotGear = PilotGear & TypedData & AlternativelyNamed
-export type SearchablePilotWeapon = PilotWeapon & TypedData & AlternativelyNamed
-export type SearchableSkillTrigger = SkillTrigger & TypedData & AlternativelyNamed
-export type SearchableStatusCondition = StatusCondition & TypedData & AlternativelyNamed
-export type SearchableSystem = System & TypedData & AlternativelyNamed
-export type SearchableTag = Tag & TypedData & AlternativelyNamed
-export type SearchableTalent = Talent & TypedData & AlternativelyNamed
-export type SearchableWeapon = Weapon & TypedData & AlternativelyNamed
-export type SearchableData =
-    SearchableAction
-    | SearchableCoreBonus
-    | SearchableICoreSystemData
-    | SearchableFrame
-    | SearchableMod
-    | SearchablePilotArmor
-    | SearchablePilotWeapon
-    | SearchablePilotGear
-    | SearchableSkillTrigger
-    | SearchableStatusCondition
-    | SearchableSystem
-    | SearchableTag
-    | SearchableTalent
-    | SearchableWeapon

@@ -1,5 +1,4 @@
 import {
-    ActivationType,
     IActionData,
     IBonusData,
     ICounterData,
@@ -27,14 +26,14 @@ export type InfoManifest = {
     description: string // v-html
     item_prefix?: string
     version: string
-    image_url?: string // .jpg or .png preferred
+    image_url?: string
     website?: string // url
 }
 
 export type Manufacturer = {
-    id: string // see note below
+    id: string
     name: string
-    logo: string // see note below
+    logo: string
     logo_url?: string
     light: string // hex color code
     dark: string // hex color code
@@ -47,7 +46,7 @@ export type Reserve = {
     type: string //"Mech" | "Tactical" | "Resource" | "Bonus"
     label: string
     description?: string // v-html
-    consumable?: boolean // defaults to false
+    consumable?: boolean
     actions?: IActionData[]
     bonuses?: IBonusData[]
     synergies?: ISynergyData[]
@@ -71,32 +70,18 @@ export interface Sitrep {
 
 export type Tables = {
     pilot_names: string[]
-    pilot_callsigns: string[]
+    callsigns: string[]
     mech_names: string[]
+    team_names: string[]
     quirks: string[]
-}
-
-export type Integrated = string
-
-export type SpecialEquipment = {
-    special_equipment: string[]
-}
-
-export type Reaction = {
-    name: string
-    activation: ActivationType // "Reaction"
-    frequency: string // see below
-    init?: string // v-html
-    trigger: string // v-html
-    detail: string // v-html
 }
 
 export type IAmmoData = {
     name: string
     description: string // v-html
     cost?: number
-    allowed_types?: WeaponType[] // weapon types the ammo CAN be applied to
-    allowed_sizes?: WeaponSize[] // weapon sizes the ammo CAN be applied to
-    restricted_types?: WeaponType[] // weapon types the ammo CAN NOT be applied to
-    restricted_sizes?: WeaponSize[] // weapon sizes the ammo CAN NOT be applied to
+    allowed_types?: WeaponType[]
+    allowed_sizes?: WeaponSize[]
+    restricted_types?: WeaponType[]
+    restricted_sizes?: WeaponSize[]
 }

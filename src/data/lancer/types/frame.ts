@@ -1,23 +1,22 @@
 import {IActionData, IBonusData, ICounterData, IDeployableData, ISynergyData, MountType} from "./shared-types";
 import {ICoreSystemData, SourcedCoreSystem} from "./core-system";
 
-
 export type Frame = {
     id: string
-    license_level: number // set to zero for this item to be available to a LL0 character
-    license_id: string // reference to the Frame id of the associated license, relevant for variants
-    variant?: string // optional; name of the main frame license for which this frame is a variant
-    source: string // must be the same as the Manufacturer ID to sort correctly
+    license_level: number
+    license_id: string
+    variant?: string
+    source: string
     name: string
-    mechtype: string[] // can be customized
-    specialty?: boolean | IPrerequisite // see below
+    mechtype: string[]
+    specialty?: boolean | IPrerequisite
     description: string // v-html
     mounts: MountType[]
     stats: FrameStats
     traits: IFrameTraitData[]
     core_system: ICoreSystemData
     image_url?: string
-    y_pos?: number // used for vertical alignment of the mech in banner views (like in the new mech selector)
+    y_pos?: number
 }
 
 export type IFrameTraitData = {

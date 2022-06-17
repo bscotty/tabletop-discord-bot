@@ -1,9 +1,10 @@
-// TODO: can we actually make these constants so we don't need to define these and can just do the checks inline?
+// TODO: can we actually make these constants? Then we don't need to define these and can just do the checks inline
 import {
     SearchableAction,
     SearchableCoreBonus,
     SearchableData,
     SearchableFrame,
+    SearchableGlossaryItem,
     SearchableICoreSystemData,
     SearchableMod,
     SearchablePilotArmor,
@@ -15,7 +16,7 @@ import {
     SearchableTag,
     SearchableTalent,
     SearchableWeapon
-} from "../lancer-data-reader";
+} from "../search/searchable";
 
 export function isSearchableAction(data: SearchableData): data is SearchableAction {
     return data.data_type == "action"
@@ -31,6 +32,10 @@ export function isSearchableICoreSystemData(data: SearchableData): data is Searc
 
 export function isSearchableFrame(data: SearchableData): data is SearchableFrame {
     return data.data_type == "frame"
+}
+
+export function isSearchableGlossaryItem(data: SearchableData): data is SearchableGlossaryItem {
+    return data.data_type == "glossary"
 }
 
 export function isSearchableMod(data: SearchableData): data is SearchableMod {
