@@ -1,0 +1,170 @@
+[
+  {
+    "id": "ms_adjutant_class_compcon",
+    "name": "ADJUTANT-Class Comp/Con",
+    "source": "EXOTIC",
+    "license": "",
+    "license_level": 0,
+    "effect": "<p>Your mech gains the AI tag and Active Assist. Choose 1 talent rank you qualify for but do not have and load it onto this system's ontologic bridge. You gain access to that talent while piloting your mech. You may choose a different talent rank whenever you take a full repair. If this system is destroyed, any talent rank loaded onto it can't be used until it's repaired (including any systems or mech capabilities granted by that talent). </p><p>This system isn't a full NHP and cannot enter cascade.</p><p>((COMP/CON does not currently support this feature; I recommend putting the talent in your notes.))</p>",
+    "type": "AI",
+    "sp": 3,
+    "description": "<p>A major cornerstone of GMS' advanced technology initiative is the planned development of a next- generation Companion/Concierge system to replace the standard EPIPHANY-Class C/C currently in use by Union pilots. For reasons both practical as well as ethical, widespread dissemination of chassis-compatible C/C systems is currently being pushed by Union CENTCOMM over military NHP design, and the ADJUTANT is the latest model to be approved for limited field trials following First Contact Accords compliance evaluation. Utilizing a new-model ontologic bridge framework, ADJUTANT allows for the use of selected simulant/reflex architectures to be uploaded to an engrammatic matrix for compatible pilot integration along both first- and second-tier neural processes. Long-term effects of repeated engrammatic synthesis are currently unknown, but early feedback is promising with test pilots reporting minimal difficulty expressing previously unheld aptitudes.</p>",
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Active Assist",
+        "activation": "Free",
+        "detail": "<p>1/scene you may take a quick action of your choice. This action cannot be an attack or force any saves.</p>",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_pattern_c_advanced_charges",
+    "name": "Pattern-C Advanced Charges",
+    "source": "EXOTIC",
+    "license": "",
+    "license_level": 0,
+    "effect": "<p>You may expend a charge from this system for one of the following effects:</p>",
+    "type": "System",
+    "sp": 3,
+    "description": "<p>GMS' latest intelligent munition system is a self-contained, multi-mode weapon designed to be easily deployable from a variety of chassis. Boasting advanced decision-making capabilities, each drone-tier charge is capable of independent target selection and interception, maintaining regular pilot-in-the-loop protocols to ensure optimal detonation parameters.</p>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Smart Grenade",
+        "activation": "Quick",
+        "detail": "<p>All hostile characters within the affected area must pass a Systems save or they take 1d6 energy damage and become Locked On. On a success, they become Locked On only.</p>",
+        "cost": 0,
+        "pilot": false,
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": "5"
+          },
+          {
+            "type": "Blast",
+            "val": "1"
+          }
+        ],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [
+      {
+        "name": "Lurker Mine",
+        "type": "Mine",
+        "detail": "<p>This mine does not detonate as normal. Instead, gain the Selective Detonation reaction, which can be taken once for each deployed lurker mine.</p><p><strong>Selective Detonation</strong><br>Reaction, 1/round per mine<br><strong>Trigger</strong>: A character enters the lurker mine's space or an adjacent space or begins their turn there.<br><strong>Effect</strong>: Detonate the mine. Affected characters must pass an Agility save or take 2d6 explosive damage, taking half damage on success.</p>",
+        "size": 1,
+        "activation": "",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "pilot": false,
+        "mech": false,
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "counters": []
+      }
+    ],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_miniaturized_linac_coherent_beam_cannon",
+    "name": "Miniaturized LinAc Coherent Beam Cannon",
+    "source": "EXOTIC",
+    "license": "",
+    "license_level": 0,
+    "effect": "<p>1/mission you can spend 1 Core Power to employ this devastating charged particle cannon, firing it in a line 20 area. All cover, terrain, objects, and deployables smaller than Size 5 in this area are boiled away instantly, and then all characters within the area must pass an Agility save or take 12 energy damage, taking half damage on a success. This damage can't be reduced in any way. Characters with 7 HP or less, only 1 structure remaining, and no Immunity to damage are instead instantly and automatically destroyed, annihilated utterly and leaving no wreck behind. </p><p>You can take no other actions on the same turn you activate this particle cannon except for your standard move or Boost, and the stress of firing it causes you to become Stunned until the start of your next turn.</p>",
+    "type": "System",
+    "sp": 1,
+    "description": "<p>Cressidium's self-imposed isolation from Union has led to a number of divergent technological advances over the centuries, among them the pursuit of more compact lance weapon development as opposed to further exploration and refinement of naval long-cycle weaponry. Weapon engineers looked to miniaturization, incorporating chemical/exotic metal batteries and rapid-charge fire cycling systems suitable for use on smaller and smaller platforms, ultimately including mechanized chassis. This example, reverse-engineered from combat data gathered by Union pilots during an engagement against Vestan Sovereignty special forces, appears to be a descendant of old linear accelerator coherent beam cannon designs, a weapon now considered out of date by contemporary naval standards but which is nonetheless exceedingly lethal when employed at this scale.</p>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Fire LinAc Coherent Beam Cannon",
+        "activation": "Full",
+        "detail": "<p>1/mission, you can spend 1 Core Power to employ this devastating charged particle cannon, firing it in a line 20 area. All cover, terrain, objects, and deployables smaller than Size 5 in this area are boiled away instantly, and then all characters within the area must pass an Agility save or take 12 energy damage, taking half damage on a success. This damage can't be reduced in any way. Characters with 7 HP or less and only 1 structure remaining are instead instantly and automatically destroyed, annihilated utterly and leaving no wreck behind. You can take no other actions or movement on the same turn you activate this particle cannon, including other protocols, and the stress of firing it causes you to become Stunned until the start of your next turn.</p>",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [
+          {
+            "type": "Line",
+            "val": "20"
+          }
+        ],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  }
+]

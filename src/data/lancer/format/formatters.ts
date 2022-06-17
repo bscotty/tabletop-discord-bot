@@ -118,8 +118,7 @@ export class Formatters {
         let out = `**${trait.name}:** `
         if (trait.actions && trait.actions.length > 0) {
             trait.actions.forEach(act => out += this.actionFormat(act) + "\n")
-        }
-        if (!trait.actions) {
+        } else {
             out += this.turndownService.turndown(trait.description)
         }
         if (trait.integrated) out += this.integratedFormat(trait.integrated)

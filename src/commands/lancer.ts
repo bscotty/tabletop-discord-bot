@@ -10,6 +10,7 @@ import {Lcp} from "../data/lancer/types/lcp";
 import {getKtbLcp} from "../data/lancer/lcp/ktb";
 import {getLongRimLcp} from "../data/lancer/lcp/long-rim";
 import {getWallflowerLcp} from "../data/lancer/lcp/wallflower";
+import {getSolsticeRainData} from "../data/lancer/lcp/solstice-rain";
 
 @Discord()
 export class Lancer {
@@ -20,7 +21,7 @@ export class Lancer {
 
     private lcpData(): Lcp[] {
         if (!this._lcpData)
-            this._lcpData = [getCoreLcp(), getKtbLcp(), getLongRimLcp(), getWallflowerLcp()]
+            this._lcpData = [getCoreLcp(), getKtbLcp(), getLongRimLcp(), getWallflowerLcp(), getSolsticeRainData()]
         return this._lcpData
     }
 
