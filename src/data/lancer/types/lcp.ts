@@ -16,20 +16,20 @@ export class Lcp {
     background: Background[]
     coreBonuses: CoreBonus[]
     environments: Environment[]
-    factions: any
+    factions: unknown
     frames: Frame[]
-    glossary: any
-    info: any
+    glossary: unknown
+    info: unknown
     manufacturers: Manufacturer[]
     mods: Mod[]
     pilot_gear: PilotArmor[] | PilotGear[] | PilotWeapon[]
     reserves: Reserve[]
-    rules: any
+    rules: unknown
     sitreps: Sitrep[]
     skills: SkillTrigger[]
     statuses: StatusCondition[]
     systems: System[]
-    tables: any
+    tables: unknown
     tags: Tag[]
     talents: Talent[]
     weapons: Weapon[]
@@ -39,20 +39,20 @@ export class Lcp {
         background: Background[],
         coreBonuses: CoreBonus[],
         environments: Environment[],
-        factions: any,
+        factions: unknown,
         frames: Frame[],
-        glossary: any,
-        info: any,
+        glossary: unknown,
+        info: unknown,
         manufacturers: Manufacturer[],
         mods: Mod[],
         pilot_gear: PilotArmor[] | PilotGear[] | PilotWeapon[],
         reserves: Reserve[],
-        rules: any,
+        rules: unknown,
         sitreps: Sitrep[],
         skills: SkillTrigger[],
         statuses: StatusCondition[],
         systems: System[],
-        tables: any,
+        tables: unknown,
         tags: Tag[],
         talents: Talent[],
         weapons: Weapon[]) {

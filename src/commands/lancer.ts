@@ -30,8 +30,10 @@ export class Lancer {
         // respond to interaction with formatted field
         if (response.length > 2000) {
             this.split(interaction, response)
+                .catch((it) => console.log(`error with split message: ${it}`))
         } else {
             interaction.reply(response)
+                .catch((it) => console.log(`error with message: ${it}`))
         }
     }
 
@@ -49,10 +51,12 @@ export class Lancer {
         })
 
         await interaction.reply({content: splitResponse[0]})
+            .catch((it) => console.log(`there was a problem with the first split: ${it}`))
             .then(() => {
                 splitResponse.forEach(async (split, index) => {
                     if (index > 0)
                         await interaction.channel.send(split)
+                            .catch((it) => console.log(`there was a problem with split ${index}: ${it}`))
                 })
             })
     }
