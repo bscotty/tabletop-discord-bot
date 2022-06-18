@@ -175,7 +175,7 @@ export class Formatters {
     }
 
     public cbFormat(cb: SearchableCoreBonus) {
-        let out = `**${cb.name}** (${cb.source} Core Bonus)${formatContentPack(cb)}` +
+        let out = `**${cb.name}** (${cb.source} Core Bonus)${formatContentPack(cb)}\n` +
             `${this.turndownService.turndown(cb.effect)}\n`
         if (cb.integrated) out += this.integratedFormat(cb.integrated)
         return out
