@@ -1,5 +1,7 @@
 import {
     isSearchableAction,
+    isSearchableBond,
+    isSearchableBondPower,
     isSearchableCoreBonus,
     isSearchableFrame,
     isSearchableGlossaryItem,
@@ -23,6 +25,10 @@ export function format(formatters: Formatters, data: SearchableData) {
 
     if (isSearchableAction(data)) {
         return formatters.basicActionFormat(data)
+    } else if (isSearchableBond(data)) {
+        return formatters.bondFormat(data)
+    } else if (isSearchableBondPower(data)) {
+        return formatters.bondPowerFormat(data)
     } else if (isSearchableCoreBonus(data)) {
         return formatters.cbFormat(data)
     } else if (isSearchableICoreSystemData(data)) {
@@ -51,5 +57,7 @@ export function format(formatters: Formatters, data: SearchableData) {
         return formatters.talentFormat(data)
     } else if (isSearchableWeapon(data)) {
         return formatters.weaponFormat(data)
+    } else {
+        console.error(`Could not assign data as any known type`)
     }
 }

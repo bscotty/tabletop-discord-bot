@@ -1,12 +1,16 @@
 import {Discord, Slash, SlashOption} from "discordx";
 import {CommandInteraction} from "discord.js";
 import {LancerData, lancerDataReader} from "../data/lancer/lancer-data-reader";
-import {getCoreData} from "../data/lancer/core/a-data";
+import {getCoreLcp} from "../data/lancer/lcp/core";
 import {Searcher} from "../data/lancer/search/searcher";
 import {Formatters} from "../data/lancer/format/formatters";
 import {format} from "../data/lancer/format/format";
 import {SearchableData} from "../data/lancer/search/searchable";
 import {Lcp} from "../data/lancer/types/lcp";
+import {getKtbLcp} from "../data/lancer/lcp/ktb";
+import {getLongRimLcp} from "../data/lancer/lcp/long-rim";
+import {getWallflowerLcp} from "../data/lancer/lcp/wallflower";
+import {getSolsticeRainData} from "../data/lancer/lcp/solstice-rain";
 
 @Discord()
 export class Lancer {
@@ -17,7 +21,7 @@ export class Lancer {
 
     private lcpData(): Lcp[] {
         if (!this._lcpData)
-            this._lcpData = [getCoreData()]
+            this._lcpData = [getCoreLcp(), getKtbLcp(), getLongRimLcp(), getWallflowerLcp(), getSolsticeRainData()]
         return this._lcpData
     }
 

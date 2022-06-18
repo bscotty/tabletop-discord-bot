@@ -16,7 +16,7 @@ export type Mod = {
     name: string
     source: string
     license: string
-    license_id: string
+    license_id?: string
     license_level: number
     sp?: number
     description?: string // v-html

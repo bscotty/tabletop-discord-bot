@@ -4,7 +4,7 @@ import {ICoreSystemData, SourcedCoreSystem} from "./core-system";
 export type Frame = {
     id: string
     license_level: number
-    license_id: string
+    license_id?: string
     variant?: string
     source: string
     name: string

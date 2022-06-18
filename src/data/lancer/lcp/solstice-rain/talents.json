@@ -1,0 +1,113 @@
+[
+  {
+    "id": "t_demolitionist",
+    "name": "DEMOLITIONIST",
+    "description": "<p>Explosives and warfare go together like alcohol and bad decisions. The power of a bomb in the palm of your hand is a great equalizer, and a well-placed satchel charge or two has brought even the mightiest of fortifications tumbling down. Forget bullets with names etched on them, the packages that you deliver go out addressed \"To Whom It May Concern,\" and you've got plenty to go around.</p>",
+    "ranks": [
+      {
+        "name": "Frag and Clear",
+        "description": "<p>When you throw or otherwise use a grenade, you may choose one character in the affected area to ignore its effects. At the end of any scene in which you have deployed mines, you may regain 1 charge to each Limited system with the Mine tag for each undetonated mine deployed from that system.</p>",
+        "synergies": [],
+        "actions": [],
+        "bonuses": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "exclusive": false
+      },
+      {
+        "name": "Quarterback",
+        "description": "<p>Your grenades gain +3 range, and you can plant mines up to range 3 (or add +3 to their range if they have one). You do not need line of sight with grenades and mines as long as it's possible to trace a path to the target.</p>",
+        "synergies": [],
+        "actions": [],
+        "bonuses": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "exclusive": false
+      },
+      {
+        "name": "Fire in the Hole",
+        "description": "<p>Your explosive charges have been enhanced with customized payloads. 1/round...</p><ul><li><p>...when you throw a grenade, up to three characters within range 3 of the targeted space take 2 explosive damage and are knocked back 1 space in any direction by explosive shrapnel.</p></li><li><p>...when a character fails a save against one of your mines, they take +1d6 explosive bonus damage. If the mine deals no damage normally when detonated, whether it forces a save or not, one character in the affected area takes 1d6 explosive damage instead.</p></li></ul>",
+        "synergies": [],
+        "actions": [],
+        "bonuses": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "exclusive": false
+      }
+    ]
+  },
+  {
+    "id": "t_sysop",
+    "name": "SYSOP",
+    "terse": "",
+    "description": "<p>Modern systemic warfare is a filthy mess of code-worms, logic bombs, and adaptive viruses, to say nothing of all the physical detritus that litters the battlefield, and you're the one responsible for keeping things clean. System operator or system optimizer, formatting software barriers or tuning servos, your command of diagnostic programs and deep-level hardware overrides gives you all the tools you need to push your squad's limits beyond manufacturer spec with orderly, surgical precision.</p>",
+    "ranks": [
+      {
+        "name": "Inoculation",
+        "description": "<p>When you Bolster an ally, the additional Accuracy lasts until the next skill check or save that they make.</p>",
+        "synergies": [
+          {
+            "locations": [
+              "bolster"
+            ],
+            "detail": "<p>When you Bolster an ally, the additional Accuracy lasts until the next skill check or save that they make.</p>",
+            "weapon_types": [],
+            "weapon_sizes": [],
+            "system_types": []
+          }
+        ],
+        "actions": [],
+        "bonuses": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "exclusive": false
+      },
+      {
+        "name": "Firewall",
+        "description": "<p>When you Bolster an ally, tech attacks against them are made with +1 Difficulty until the end of their next turn.</p>",
+        "synergies": [
+          {
+            "locations": [
+              "bolster"
+            ],
+            "detail": "<p>When you Bolster an ally, tech attacks against them are made with +1 Difficulty until the end of their next turn.</p>",
+            "weapon_types": [],
+            "weapon_sizes": [],
+            "system_types": []
+          }
+        ],
+        "actions": [],
+        "bonuses": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "exclusive": false
+      },
+      {
+        "name": "Aggressive Countermeasures",
+        "description": "<p>1/round, whenever an ally benefiting from your Bolster succeeds on a save against a hostile effect, that hostile character takes 2 heat and becomes Impaired until the end of their next turn.</p>",
+        "synergies": [
+          {
+            "locations": [
+              "bolster"
+            ],
+            "detail": "<p>1/round, whenever an ally Bolstered by you succeeds ona save against a hostile effect, that hostile character takes 2 heat and becomes Impaired until the end of their next turn.</p>",
+            "weapon_types": [],
+            "weapon_sizes": [],
+            "system_types": []
+          }
+        ],
+        "actions": [],
+        "bonuses": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "exclusive": false
+      }
+    ]
+  }
+]

@@ -5,6 +5,8 @@ import {splitPilotItems} from "./types/pilot";
 import {TypedData} from "./types/shared-types";
 import {
     SearchableAction,
+    SearchableBond,
+    SearchableBondPower,
     SearchableCoreBonus,
     SearchableData,
     SearchableFrame,
@@ -21,25 +23,28 @@ import {
     SearchableTalent,
     SearchableWeapon
 } from "./search/searchable";
+import {getPowersFromBonds} from "./types/bonds";
 
 export function lancerDataReader(lcp: Lcp): LancerData {
     const pilotItems = splitPilotItems(lcp.pilot_gear)
     return new LancerData(
-        filterTypeAndLabel(lcp.actions, "action"),
-        filterTypeAndLabel(lcp.coreBonuses, "core-bonus"),
-        typeAndLabel(getCorePowersFromFrames(lcp.frames), "core-system"),
-        filterTypeAndLabel(lcp.frames, "frame"),
-        typeAndLabel(lcp.glossary, "glossary"),
-        filterTypeAndLabel(lcp.mods, "mod"),
-        filterTypeAndLabel(pilotItems.armor, "pilot-armor"),
-        filterTypeAndLabel(pilotItems.gear, "pilot-gear"),
-        filterTypeAndLabel(pilotItems.weapon, "pilot-weapon"),
-        filterTypeAndLabel(lcp.skills, "skill"),
-        typeAndLabel(lcp.statuses, "status"),
-        filterTypeAndLabel(lcp.systems, "system"),
-        filterTypeAndLabel(lcp.tags, "tag"),
-        filterTypeAndLabel(lcp.talents, "talent"),
-        filterTypeAndLabel(lcp.weapons, "weapon")
+        filterTypeAndLabel(lcp.actions, "Action", lcp.info.name),
+        filterTypeAndLabel(lcp.bonds, "Bond", lcp.info.name),
+        typeAndLabel(getPowersFromBonds(lcp.bonds), "Bond Power", lcp.info.name),
+        filterTypeAndLabel(lcp.coreBonuses, "Core Bonus", lcp.info.name),
+        typeAndLabel(getCorePowersFromFrames(lcp.frames), "Core System", lcp.info.name),
+        filterTypeAndLabel(lcp.frames, "Frame", lcp.info.name),
+        typeAndLabel(lcp.glossary, "Glossary", lcp.info.name),
+        filterTypeAndLabel(lcp.mods, "Mod", lcp.info.name),
+        filterTypeAndLabel(pilotItems.armor, "Pilot Armor", lcp.info.name),
+        filterTypeAndLabel(pilotItems.gear, "Pilot Gear", lcp.info.name),
+        filterTypeAndLabel(pilotItems.weapon, "Pilot Weapon", lcp.info.name),
+        filterTypeAndLabel(lcp.skills, "Skill", lcp.info.name),
+        typeAndLabel(lcp.statuses, "Status", lcp.info.name),
+        filterTypeAndLabel(lcp.systems, "System", lcp.info.name),
+        filterTypeAndLabel(lcp.tags, "Tag", lcp.info.name),
+        filterTypeAndLabel(lcp.talents, "Talent", lcp.info.name),
+        filterTypeAndLabel(lcp.weapons, "Weapon", lcp.info.name)
     )
 }
 
@@ -49,10 +54,11 @@ interface HasId {
 
 function filterTypeAndLabel<T extends SupportsAltName & HasId>(
     jsonBlob: T[],
-    type: string
+    type: string,
+    lcpName: string
 ): (T & TypedData & AlternativelyNamed)[] {
     const filteredJson: T[] = filterMissing(jsonBlob)
-    return typeAndLabel<T>(filteredJson, type)
+    return typeAndLabel<T>(filteredJson, type, lcpName)
 }
 
 function filterMissing<T extends HasId>(array: T[]): T[] {
@@ -61,15 +67,18 @@ function filterMissing<T extends HasId>(array: T[]): T[] {
 
 function typeAndLabel<T extends SupportsAltName>(
     jsonBlob: T[],
-    type: string
+    type: string,
+    lcpName: string
 ): (T & TypedData & AlternativelyNamed)[] {
     return jsonBlob
-        .map((entry: T) => ({data_type: type, content_pack: "Lancer Core", ...entry}))
+        .map((entry: T) => ({...entry, data_type: type, content_pack: lcpName}))
         .map((entry: T & TypedData) => addAlternativeNames(entry))
 }
 
 export class LancerData {
     actions: SearchableAction[]
+    bonds: SearchableBond[]
+    bondPowers: SearchableBondPower[]
     coreBonuses: SearchableCoreBonus[]
     coreSystems: SearchableICoreSystemData[]
     frames: SearchableFrame[]
@@ -87,6 +96,8 @@ export class LancerData {
 
     constructor(
         actions: SearchableAction[],
+        bonds: SearchableBond[],
+        bondPowers: SearchableBondPower[],
         coreBonuses: SearchableCoreBonus[],
         coreSystems: SearchableICoreSystemData[],
         frames: SearchableFrame[],
@@ -104,6 +115,8 @@ export class LancerData {
     ) {
         this.actions = actions
         this.coreBonuses = coreBonuses
+        this.bonds = bonds
+        this.bondPowers = bondPowers
 
         this.coreSystems = coreSystems
         this.frames = frames
@@ -126,6 +139,8 @@ export class LancerData {
     getAll(): SearchableData[] {
         return [
             ...this.actions,
+            ...this.bonds,
+            ...this.bondPowers,
             ...this.coreBonuses,
             ...this.coreSystems,
             ...this.frames,

@@ -16,7 +16,7 @@ export function replaceVal(valString: string, replaceWith: string): string {
 export function licenseFormat(object: SearchableFrame | SearchableMod | SearchableSystem | SearchableWeapon) {
     if (object.license_level === 0) {
         return `${object.source}`
-    } else if (object.source.toUpperCase() === 'EXOTIC') {
+    } else if (object.source.toUpperCase() === "EXOTIC") {
         return "Exotic"
     } else if (!isSearchableFrame(object) && object.tags && object.tags.find(tag => tag.id === 'tg_exotic')) {
         return "Exotic"
@@ -29,7 +29,10 @@ export function licenseFormat(object: SearchableFrame | SearchableMod | Searchab
 
 // TODO Use this, especially with homebrew coming
 export function formatContentPack(data: SearchableData) {
-    return `(From *${data.content_pack}*)`
+    if (data.content_pack == "LANCER Core")
+        return ""
+    else
+        return ` (From *${data.content_pack}*)`
 }
 
 export function toTitleCase(str: string): string {
