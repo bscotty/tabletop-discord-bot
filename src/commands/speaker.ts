@@ -9,6 +9,7 @@ export class Speaker {
         interaction: CommandInteraction
     ) {
         interaction.reply(what)
+            .catch((it) => console.log(`error speaking ${it}`))
     }
 
     @Slash("speak_optional")
