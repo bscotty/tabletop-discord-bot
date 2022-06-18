@@ -9,8 +9,6 @@ export class Speaker {
         interaction: CommandInteraction
     ) {
         interaction.reply(what)
-            .then(() => interaction.reply(what + "2"))
-        new Promise(resolve => setTimeout(resolve, 1))
     }
 
     @Slash("speak_optional")
