@@ -19,5 +19,6 @@ export class Speaker {
     ) {
         const reply: string = what == undefined ? "You shouldn't let me do what I want." : what
         interaction.reply(reply)
+            .catch((it) => console.log(`error speaking optional ${it}`))
     }
 }
