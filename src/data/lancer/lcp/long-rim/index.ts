@@ -14,6 +14,7 @@ export function getLongRimLcp(): Lcp {
         [],
         [],
         [],
+        [],
         frames,
         [],
         info,

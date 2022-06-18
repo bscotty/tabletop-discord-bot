@@ -26,6 +26,7 @@ export function getCoreLcp(): Lcp {
     return new Lcp(
         actions,
         background,
+        [],
         coreBonuses,
         environments,
         factions,

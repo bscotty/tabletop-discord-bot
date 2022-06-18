@@ -1,6 +1,8 @@
 // TODO: can we actually make these constants? Then we don't need to define these and can just do the checks inline
 import {
     SearchableAction,
+    SearchableBond,
+    SearchableBondPower,
     SearchableCoreBonus,
     SearchableData,
     SearchableFrame,
@@ -20,6 +22,14 @@ import {
 
 export function isSearchableAction(data: SearchableData): data is SearchableAction {
     return data.data_type == "Action"
+}
+
+export function isSearchableBond(data: SearchableData): data is SearchableBond {
+    return data.data_type == "Bond"
+}
+
+export function isSearchableBondPower(data: SearchableData): data is SearchableBondPower {
+    return data.data_type == "Bond Power"
 }
 
 export function isSearchableCoreBonus(data: SearchableData): data is SearchableCoreBonus {

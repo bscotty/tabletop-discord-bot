@@ -6,11 +6,13 @@ import systems from "./systems.json"
 import tags from "./tags.json"
 import talents from "./talents.json"
 import weapons from "./weapons.json"
+import bonds from "./bonds.json"
 
 export function getKtbLcp(): Lcp {
     return new Lcp(
         [],
         [],
+        bonds,
         [],
         [],
         [],

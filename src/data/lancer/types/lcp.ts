@@ -13,10 +13,12 @@ import {Talent} from "./talent";
 import {Rules} from "./rules";
 import {GlossaryItem} from "./glossary";
 import {InfoManifest} from "./info";
+import {Bond} from "./bonds";
 
 export class Lcp {
     actions: Action[]
     background: Background[]
+    bonds: Bond[]
     coreBonuses: CoreBonus[]
     environments: Environment[]
     factions: unknown[]
@@ -40,6 +42,7 @@ export class Lcp {
     constructor(
         actions: Action[],
         background: Background[],
+        bonds: Bond[],
         coreBonuses: CoreBonus[],
         environments: Environment[],
         factions: unknown[],
@@ -62,6 +65,7 @@ export class Lcp {
 
         this.actions = actions
         this.background = background
+        this.bonds = bonds
         this.coreBonuses = coreBonuses
         this.environments = environments
         this.factions = factions

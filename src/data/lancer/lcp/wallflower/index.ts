@@ -13,6 +13,7 @@ export function getWallflowerLcp(): Lcp {
         [],
         [],
         [],
+        [],
         frames,
         [],
         info,

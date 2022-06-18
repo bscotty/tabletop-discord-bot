@@ -2,6 +2,8 @@ import {IActionData, IDeployableData, ITagData, WeaponType} from "../types/share
 import {LancerData} from "../lancer-data-reader";
 import {
     SearchableAction,
+    SearchableBond,
+    SearchableBondPower,
     SearchableCoreBonus,
     SearchableFrame,
     SearchableGlossaryItem,
@@ -129,6 +131,47 @@ export class Formatters {
         const actionType = `${pilotMechActionType(action)}${activationFormat(action.activation)}${formatContentPack(action)}`
         const actionName = action.name || customActionName || 'Unnamed Action'
         return `**${actionName}** (${actionType})\n${this.turndownService.turndown(action.detail)}`;
+    }
+
+    public bondFormat(bond: SearchableBond): string {
+        const questions = bond.questions.map((it) => {
+            const options = it.options.map((option) => `> ${option}`).join("\n")
+            return `*${it.question}*\n${options}`
+        }).join("\n\n")
+
+        return `**${bond.name}**${formatContentPack(bond)}\n\n` +
+            `**Major Ideals:**\n${bond.major_ideals.join("\n")}\n\n` +
+            `**Minor Ideals:**\n${bond.minor_ideals.join("\n")}\n\n` +
+            `**Questions:**\n${questions}`
+    }
+
+    public bondPowerFormat(bondPower: SearchableBondPower): string {
+        let frequency: string
+        if (bondPower.frequency != undefined) {
+            frequency = ` (${bondPower.frequency})`
+        } else {
+            frequency = ""
+        }
+
+        let rank: string
+        if (bondPower.master == true) {
+            rank = " (Master)"
+        } else if (bondPower.veteran == true) {
+            rank = " (Veteran)"
+        } else {
+            rank = ""
+        }
+
+        let prerequisite: string;
+        if (bondPower.prerequisite) {
+            prerequisite = `*${bondPower.prerequisite}*\n\n`
+        } else {
+            prerequisite = ""
+        }
+
+        return `**${bondPower.name}**${frequency}${formatContentPack(bondPower)}\n` +
+            `${bondPower.power_name} Bond Power${rank}\n` +
+            `${prerequisite}${bondPower.description}`
     }
 
     public cbFormat(cb: SearchableCoreBonus) {

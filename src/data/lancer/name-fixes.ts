@@ -1,6 +1,8 @@
 import staticAltNames from "./static-alt-names.json"
 import {IActionData, IDeployableData} from "./types/shared-types";
 import {IRankData} from "./types/talent";
+import {Bond} from "./types/bonds";
+import {SearchableBond} from "./search/searchable";
 
 class AltName {
     id: string
@@ -12,6 +14,7 @@ export type SupportsAltName = {
     id?: string
     name: string
     data_type?: string
+    content_pack?: string
     source?: string
     actions?: IActionData[]
     deployables?: IDeployableData[]
@@ -32,7 +35,8 @@ export function addAlternativeNames<T extends SupportsAltName>(
     const deployableAlts = addDeployables(alternativelyNamedItem)
     const rankAlts = addRanks(alternativelyNamedItem)
     const interpolatedAlts = addXInsteadOfVal(alternativelyNamedItem)
-    alternativelyNamedItem.alt_names = staticAlts.concat(gmsAlts, invasionAlts, deployableAlts, rankAlts, interpolatedAlts)
+    const bondAlts: string[] = addBondAlt(alternativelyNamedItem);
+    alternativelyNamedItem.alt_names = staticAlts.concat(gmsAlts, invasionAlts, deployableAlts, rankAlts, interpolatedAlts, bondAlts)
     return alternativelyNamedItem
 }
 
@@ -93,5 +97,19 @@ function addXInsteadOfVal(item: HasAlternativeNames): string[] {
         return [item.name.replace("{VAL}", "X")]
     } else {
         return []
+    }
+}
+
+function addBondAlt(item: HasAlternativeNames): string[] {
+    function isBond(potentialBond: HasAlternativeNames): potentialBond is SearchableBond {
+        return item.data_type && item.data_type == "Bond"
+    }
+
+    if (isBond(item)) {
+        const removeThePrefix = item.name.substring(4)
+        console.log(`found bond alt ${removeThePrefix}`)
+        return [removeThePrefix]
+    } else {
+        return [""]
     }
 }

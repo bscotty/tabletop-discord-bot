@@ -12,6 +12,7 @@ export function getSolsticeRainData(): Lcp {
         [],
         [],
         [],
+        [],
         frames,
         [],
         info,
