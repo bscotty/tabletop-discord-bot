@@ -9,8 +9,7 @@ export class Speaker {
         interaction: CommandInteraction
     ) {
         interaction.reply(what)
-            .then(() => interaction.reply(what + "2"))
-        new Promise(resolve => setTimeout(resolve, 1))
+            .catch((it) => console.log(`error speaking ${it}`))
     }
 
     @Slash("speak_optional")
@@ -20,5 +19,6 @@ export class Speaker {
     ) {
         const reply: string = what == undefined ? "You shouldn't let me do what I want." : what
         interaction.reply(reply)
+            .catch((it) => console.log(`error speaking optional ${it}`))
     }
 }
