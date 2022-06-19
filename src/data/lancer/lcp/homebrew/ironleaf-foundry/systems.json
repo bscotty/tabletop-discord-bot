@@ -1,0 +1,747 @@
+[
+  {
+    "id": "ms_claymore_buckler",
+    "name": "Claymore Buckler",
+    "source": "IF",
+    "license": "LILY",
+    "license_level": 1,
+    "effect": "When you cause a character to be pushed, pulled or knocked back, they can pass over and onto obstacles of up to Height 5, counting as flying during the movement. In addition, when you lay a Mine, you can attach it to yourself, measuring all effects of the mine from your own space and being unable to trigger it with your own movements. If this mine forces you to make a save, you can roll the save twice and take the higher result. You can only have one mine attached to you this way at a time.",
+    "type": "System",
+    "sp": 2,
+    "description": "‘This side towards enemy’",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_sonic_spall_charges",
+    "name": "Sonic Spall Charges",
+    "source": "IF",
+    "license": "LILY",
+    "license_level": 1,
+    "type": "System",
+    "sp": 2,
+    "description": "Spalling is a serious concern for less hardened frames, as fragments reverberate internally and cause catastrophic damage.",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Shake Grenade",
+        "activation": "Quick",
+        "detail": "Throw a grenade to a space within Range 5. All characters within the Blast 1 area must pass a Hull save or take 1d6+2 Kinetic Damage. On a success, they take half damage. Each point of Armor applied reduces the damage of this system by 2 instead of 1.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [
+      {
+        "name": "Shatter Mine",
+        "type": "Mine",
+        "detail": "All characters within the affected area must pass an Hull save or take 2d6+3 Kinetic Damage. On a success, they take half damage. Each point of Armor applied reduces the damage of this system by 2 instead of 1.",
+        "size": 1,
+        "instances": 1,
+        "cost": 1,
+        "pilot": false,
+        "mech": false,
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "counters": []
+      }
+    ],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_shockwave_charges",
+    "name": "Shockwave Charges",
+    "source": "IF",
+    "license": "LILY",
+    "license_level": 2,
+    "type": "System",
+    "sp": 2,
+    "description": "Powerful Kinetic Batteries, Shockwave Charges are capable of imbuing this potential energy to enemies, providing space or making use of terrain to cause dangerous environmental harm.",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Concussion Grenade",
+        "activation": "Quick",
+        "detail": "Throw a grenade to a space within range 5. Characters in the Blast 1 area are knocked back 6 spaces. Unwilling characters can pass a Hull save to halve the distance moved.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [
+      {
+        "name": "Ricochet Mine",
+        "type": "Mine",
+        "detail": "When a character moves over or adjacent to this mine, it detonates. The affected character is knocked back up to 6 spaces in a direction of your choice. Unwilling characters can pass a Hull save to halve the distance moved. If this movement ends adjacent to another character, the affected character and all characters adjacent to them are knocked Prone.",
+        "size": 1,
+        "instances": 1,
+        "cost": 1,
+        "pilot": false,
+        "mech": false,
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "counters": []
+      }
+    ],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_bunker_buster",
+    "name": "Bunker Buster",
+    "source": "IF",
+    "license": "LILY",
+    "license_level": 3,
+    "type": "System",
+    "sp": 3,
+    "description": "One of the more controversial weapons being provided with the Lily Licence is the bunker buster, a low yield but focused nuclear super penetrator charge in a disposable launch tube. While significantly below what is used for ship to ship combat, it is more than capable of blasting straight through the sides of most spaceships to provide an entry point for assault troops or bringing down even the most reinforced bunkers right onto the heads of any defenders.",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Supercritical Mass",
+        "activation": "Quick",
+        "detail": "Throw a grenade to a space within Range 10. All characters within the Blast 1 area must pass an Engineering save or take 1d6+2 Energy damage and gain 2 Heat. On a success, they take half damage and heat. Objects in the affected area suffer 20 AP Energy Damage.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Demon Core",
+        "activation": "Quick",
+        "detail": "1/scene, you can throw a grenade to a space within Range 5, then roll 1d6 to determine Demon Core's blast area. All characters within the affected area must pass an Engineering save or take 2d6+4 Energy damage and gain 4 Heat. On a success, they take half damage and heat. The range of this grenade cannot be increased by any means and the blast is rolled after the target space for the grenade is chosen. Objects in the affected area suffer 40 AP Energy Damage. You take 8 Heat (self) after resolving the effects of Demon Core.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_en_garde_articulation",
+    "name": "\"En Garde\" Articulation",
+    "source": "IF",
+    "license": "ROSE",
+    "license_level": 1,
+    "effect": "When you brace against an attack from a target in Range 3, you may gain 2 heat. If you do, the attacker takes half the damage you do, before resistance and armor.",
+    "type": "System",
+    "sp": 1,
+    "description": "Many mechs engage in close combat like a lumbering ogre, swinging widely and expecting armour and momentum to keep them safe. With fine tuning of the articulation of a mech, however, enough range of motion can easily be given to allow for skillful deflection in the hands of a veteran duelist.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_fairy_gate",
+    "name": "Fairy Gate",
+    "source": "IF",
+    "license": "ROSE",
+    "license_level": 2,
+    "type": "System",
+    "sp": 2,
+    "description": "“Oh, quit whining. You were only disentangled from physical reality briefly. Whatever you saw there was probably just hallucinations.” -Dr Ashryn Ironleaf",
+    "tags": [
+      {
+        "id": "tg_round",
+        "val": "1"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Fairy Gate",
+        "activation": "Free",
+        "detail": "Teleport up to 5 spaces to any space adjacent to a character, obstacle or piece of difficult terrain you are currently adjacent to.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_scathach_class_nhp",
+    "name": "SCÁTHACH-Class NHP",
+    "source": "IF",
+    "license": "ROSE",
+    "license_level": 3,
+    "type": "System",
+    "sp": 3,
+    "description": "“Oh? You would wish to learn from me? I must admit, those who accept such honor often find themselves staring at a life shorter than most. However, I can promise you that each moment will shine brighter and more glorious than a dozen lifetimes of a coward.”",
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Fortress of Shadow",
+        "activation": "Quick",
+        "detail": "Nominate a hostile character in your line of sight. You and that character become Intangible until one of you is destroyed, the scene ends or the target passes an Agility save as a full action. Each hostile character can only be affected by this system once per scene.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_broken_time_assault",
+    "name": "Broken-Time Assault",
+    "source": "IF",
+    "license": "ROSE",
+    "license_level": 3,
+    "type": "System",
+    "sp": 2,
+    "description": "Those with only a hair of dueling experience often find themselves overcautious, so afraid of losing that they are unwilling to claim victory or risk injury. A master is not simply skilled with a blade but instead capable of reading the flow of battle to know the right time to redouble an assault and take victory from the grip of an opponent.",
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "",
+        "activation": "Protocol",
+        "detail": "One hostile character in Range 3 of your choice can immediately spend their Overwatch to make a Skirmish or Improvised Attack targeting you, even if they would not be in Range. Then, you can spend your Overwatch to Skirmish with a Melee weapon targeting them as a free action.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_dancing_shadow_module",
+    "name": "Dancing Shadow Module",
+    "source": "IF",
+    "license": "BELLADONNA",
+    "license_level": 1,
+    "effect": "When making a standard move, you can jump horizontally up to your full speed and upwards up to half your speed.&nbsp; In addition, when you Brace, you can attempt a final dodge. If you do, roll 1d6. On a 4+, the triggering attack automatically misses. Otherwise, you are hit as normal and do not gain Resistance from the Brace.",
+    "type": "System",
+    "sp": 2,
+    "description": "Despite suspicions that the basis behind the programmed reflexes of this system being adapted from ninjutsu, jäger kunst or a host of other martial arts, the truth is honestly much simpler and accurate to its name. Dancing shadow uses an amalgam of dozens of different dance styles from the conventional to the fantastical to allow the mech to move with grace that few could hope to match, making soaring leaps or spinning around an opponent like it is performing upon a stage.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_direct_interface_link",
+    "name": "Direct Interface Link",
+    "source": "IF",
+    "license": "BELLADONNA",
+    "license_level": 1,
+    "effect": "You automatically pass checks to disarm Mines and interact with Objects.",
+    "type": "System",
+    "sp": 1,
+    "description": "Articulated tendrils, direct interface links provide essential tools for allowing pilots to engage in actions more precise than gunplay without risking unfortunate consequences.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_morrigan_class_nhp",
+    "name": "MORRIGAN-Class NHP",
+    "source": "IF",
+    "license": "BELLADONNA",
+    "license_level": 3,
+    "type": "System",
+    "sp": 3,
+    "description": "Unusual for an Ironleaf Foundry NHP, Morrigan-class NHPs are taciturn rather than showy, more focused on mission objectives than demonstrating the superiority of Foundry designs. Despite that, they are not at all lacking in the pride that is emblematic of these NHPs, channeling insults into vengeance that is fortunately generally restricted to the legal.",
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Fated End",
+        "activation": "Quick",
+        "detail": "1/scene, expend a charge and choose 1 character in Range 5. Until the end of your next turn your melee attacks against them ignore invisibility, do not provoke reactions and all successful hits become critical hits.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_ragnarok_dive",
+    "name": "Ragnarok Dive",
+    "source": "IF",
+    "license": "MISTLETOE",
+    "license_level": 1,
+    "type": "System",
+    "sp": 2,
+    "description": "“Yes, you need to yell the name every time you use it. We gave it way too cool a name to not make people yell it.” -Dr Ashryn Ironleaf, already planning action figures.",
+    "tags": [],
+    "actions": [
+      {
+        "name": "Ragnarok Dive",
+        "activation": "Quick",
+        "detail": "Your mech engages in matter-energy conversion across a Line 5 area. Characters in the affected area must pass an engineering save or take 1d6 Energy Damage. A successful save halves the damage. Your mech then reforms in any free space adjacent to the line, counting as teleporting.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_invocation_of_sigrun",
+    "name": "Invocation of Sigrun",
+    "source": "IF",
+    "license": "MISTLETOE",
+    "license_level": 2,
+    "effect": "When you reload one or more weapons, you or one character in Range 5 and Line of Sight can move 3 Spaces and clear a Condition that wasn’t caused by one of their own systems, talents, etc.",
+    "type": "System",
+    "sp": 3,
+    "description": "“High under helmson heaven's field;Their byrnies allwith blood were red,And from their spearsthe sparks flew forth.”-Poetic Edda",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_freyja_class_nhp",
+    "name": "FREYJA-Class NHP",
+    "source": "IF",
+    "license": "MISTLETOE",
+    "license_level": 3,
+    "type": "System",
+    "sp": 3,
+    "description": "Brave and outgoing, Freyja-Class NHPs are famous for their willingness to risk everything for victory. Supporting this willingness, however, is control over an attempted replacement for blink-gate technology. While this project never quite saw success, early ability to engage in matter-energy transmutation of a subject were quite promising and the channeling of the bleed off of this process can quickly allow a mechs’s repair systems to briefly supercharge themselves. It is currently unknown where, if anywhere, subjects are returned to material form.",
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Chooser of the Slain",
+        "activation": "Reaction",
+        "detail": "The triggering character is instead removed from play, transmuted into a beam of golden light. This does not count as destroying the character. This golden light is the same size as the triggering character but does not obstruct movement or block line of sight. An allied character entering the space of the golden light can consume it as a reaction, allowing them to spend a Repair to restore half of their HP and cool half of their current Heat.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "A character in Range 10 and Line of Sight would be destroyed."
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_rope_a_dope",
+    "name": "Rope-A-Dope",
+    "source": "IF",
+    "license": "CLOVER",
+    "license_level": 1,
+    "effect": "When you Brace, the triggering character gains Lock On and their next attack before the end of their next turn deals half damage, burn and heat.",
+    "type": "System",
+    "sp": 1,
+    "description": "\"Keep your head down and your guard up. This matters just as much out there as it does here. Bait the other guy into overextending, overspending. Then knock his block off when he's running low and off balance.\" -Tia Maddalen, DOJ/HR Field Advocate.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_iron_will",
+    "name": "Iron Will",
+    "source": "IF",
+    "license": "CLOVER",
+    "license_level": 2,
+    "effect": "After you roll a structure damage roll or overheating check; or would be Stunned by an effect, you can delay suffering the effect until the end of your next turn. Each effect can only be delayed once this way and if the effect would cause you to be destroyed, during this time you are immune to damage and effects, and can’t be moved, targeted, or affected by any other character or effect.",
+    "type": "System",
+    "sp": 3,
+    "description": "“So he tied himself to a mighty stoneBy his guts and belt he hungAnd so he still stood on his feetTill the last breath it left his lungs” -Gavin Dunne, The Tale Of Cú Chulainn",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_setanta_class_nhp",
+    "name": "SETANTA-Class NHP",
+    "source": "IF",
+    "license": "CLOVER",
+    "license_level": 3,
+    "effect": "",
+    "type": "System",
+    "sp": 3,
+    "description": "“Evil must be opposed, no matter what form it takes or what power it possesses. Be it unknowable or as close as kin, you must recognise it. Be it capable of shattering all it sees or crushing the hearts of those you hold dear, you must fight it.<br><br>And I will be there with you.”",
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Riastrad",
+        "activation": "Quick",
+        "detail": "Under Setanta's guidance, you set yourself to face impossible foes. While the Riastrad is active you gain the following benefits:<ul><li>You can attack with Overwatch using Melee weapons when hostile characters enter, leave, or exit spaces within your Threat, no matter whether they started their movement there.</li><li>If your Overwatch with a melee weapon would destroy the target, it does not count towards your limit of uses this round for Overwatch.</li><li>Your size increases for all purposes, including space occupied, as any size chosen between your base size and Size 4. You can change your acting size as protocol, as long as there is space for you to occupy at that size.</li><li>You can’t be pushed, pulled, knocked prone, or knocked back by smaller characters.</li></ul>During this time, you cannot make Ranged or Tech attacks and must end any voluntary movement with as many hostile characters in Threat as possible. If no hostile characters are in Threat, your voluntary movements cannot end your movement further away from the nearest hostile character than you started, though which hostile character is closest can change during the movement.You can end the Riastrad as a protocol. When you do, you become Stunned until the start of your next turn.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_patch_kit",
+    "name": "Patch Kit",
+    "source": "IF",
+    "license": "POPPY",
+    "license_level": 1,
+    "type": "System",
+    "sp": 2,
+    "description": "“What, you think I’m down just because my blood’s mixing with the oil? I’m just getting fucking started!” -Echo Alpha, IF Test Pilot",
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "",
+        "activation": "Quick",
+        "detail": "Spend 1 Repair to restore all HP.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_camouflaged_foxhole",
+    "name": "Camouflaged Foxhole",
+    "source": "IF",
+    "license": "POPPY",
+    "license_level": 2,
+    "type": "System",
+    "sp": 2,
+    "description": "A mixture of intercession quickfab shields and sensor baffles allows for rapid creation of battlefield fortifications even as the bullets fly around them. These protective systems have seen significant sales among civil defense forces and underground railroads as the systems that keep a mech hidden from sight work double duty when concealing refugees and infantry.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "",
+        "activation": "Quick",
+        "detail": "Create a Blast 1 Foxhole in Range 5, which lasts for the rest of the scene or until you take this action again. Allied characters within the foxhole have Soft Cover and can Hide. Cover from this foxhole applies against all attacks, including attacks that would ignore cover such as tech attacks, seeking weapons and melee attacks. Hostile characters treat deployables, size 1/2 non-mech characters and shut down mechs entirely inside the foxhole as Hidden if they are not within Range 3.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_blackout_missile",
+    "name": "Blackout Missile",
+    "source": "IF",
+    "license": "POPPY",
+    "license_level": 3,
+    "type": "System",
+    "sp": 3,
+    "description": "While the Poppy's sheer offense is already very difficult to stop, Ironleaf Foundry developed blackout missiles as the cornerstone of a powerful anti-emplacement toolset. Each blackout missile is a powerful neutron weapon that delivers terrible radiation burns and temporarily disrupts electronics within an area vastly in excess of the missile's small blast radius. Artillery Divisions and Fortifications alike are easy prey to a weapon that can wipe out the crews manning them without doing any major harm to the infrastructure itself.",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "",
+        "activation": "Quick",
+        "detail": "Choose a blast 3 area within range 30. The targeted area is visible to all characters. At the end of the next round, the blackout missile arrives and all characters in the area suffer 6 Heat and are Jammed until the end of their next turn. You can have only one Blackout missile in flight at a time.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  }
+]

@@ -23,11 +23,11 @@ export type Environment = {
 export type Manufacturer = {
     id: string
     name: string
-    logo: string
+    logo?: string // all homebrewed manufacturers don't have a manufacturer logo
     logo_url?: string
     light: string // hex color code
     dark: string // hex color code
-    quote: string // v-html
+    quote?: string // ironleaf foundry's manufacturer doesn't have a quote // v-html
 }
 
 export type Reserve = {

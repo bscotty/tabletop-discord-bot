@@ -1,0 +1,227 @@
+[
+  {
+    "id": "downfall_cb_devicerails",
+    "name": "Additional Device Rails",
+    "source": "DOWNFALL",
+    "description": "There are occasions when one weapon needs to be extensively customized for a specific purpose, often to the point that the original weapon is barely recognizable.",
+    "effect": "You gain +1 SP. Choose one weapon on your mech during a Full Repair. That weapon can have an additional Mod on it (you must pay for each normally, and you may only have one of each Mod on any given weapon). You may not choose weapons that can't be modified.",
+    "bonuses": [
+      {
+        "id": "sp",
+        "val": 1
+      }
+    ]
+  },
+  {
+    "id": "downfall_cb_elfsensors",
+    "name": "ELF Sensor Array",
+    "source": "DOWNFALL",
+    "description": "Extremely Low Frequency detection arrays can detect the sound of plate tectonics three planets away. Do you really think you have a chance of evading THAT?",
+    "effect": "You gain +1 Accuracy on Systems checks and saves. 1/round, you may Scan or Search as a free action.",
+    "synergies": [
+      {
+        "locations": [
+          "systems"
+        ],
+        "detail": "You gain +1 Accuracy on Systems checks and saves."
+      }
+    ]
+  },
+  {
+    "id": "downfall_cb_miniaturization",
+    "name": "Miniaturization",
+    "source": "DOWNFALL",
+    "description": "You never know where your equipment will be needed. You never know which tactic they will need to fit it into. You never know what silhouette or pattern your enemy will be looking for. By combining the newest generations of ultradense tech and small amounts of folded blinkspace, this allows the user to be that much more compact and easy to move.",
+    "effect": "You occupy the space of a mech 1 Size smaller (minimum 1/2) and count as that size whenever it would be advantageous to you (such as when checking for cover). A Size 1/2 mech with this bonus does not reduce their Size, but looks like Heavy Hardsuit pilot armor and functions in the same way while the mech is Shut Down. (You are not Stunned, but lose access to any systems, weapons, or traits from your mech that do not function while Shut Down until you Boot Up. Damage you take is counted against the mech's HP instead of your own. Regardless if you are wearing another hardsuit underneath it, use the statistics of a Heavy Hardsuit.)"
+  },
+  {
+    "id": "downfall_cb_narrowbandtargeting",
+    "name": "Narrowband Targeting",
+    "source": "DOWNFALL",
+    "description": "Focusing the targeting point like a laser has its own ups and downs. There is no backup, there is no dispersal, there is only absolute devotion to bringing down your designated victim.",
+    "effect": "Choose one weapon. Auxiliary weapons that share a mount with it cannot fire independently. 1/turn, when you hit with an attack with the chosen weapon, you can cause all ready Auxiliary weapons that share a mount with it to immediately fire at the same target, hitting that target automatically if the target is within their Range or Threat. Burst, Blast, Cone, or Line weapons fired this way only affect that target."
+  },
+  {
+    "id": "downfall_cb_recon",
+    "name": "Reconnaissance",
+    "source": "DOWNFALL",
+    "description": "If DOWNFALL is known for anything, it is the massive amount of information they gather. Its pilots frequently know their enemy’s capabilities better than the enemy does.",
+    "effect": "At the start of any scene, after deployment but before the first character begins their turn, you gain the benefits of the Scan action (including any abilities you have that trigger from them) against up to three hostile characters in Range 50. Those characters gain Lock On and can't benefit from Invisibility, Cover or Hidden until the end of their first turn.<br><br>In addition, you gain the Broad-Sweep Reconnaissance reaction.",
+    "actions": [
+      {
+        "name": "Broad-Sweep Reconnaissance",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "A character enters the battlefield.",
+        "detail": "You apply the effects of your Reconnaissance core bonus to that character."
+      }
+    ]
+  },
+  {
+    "id": "downfall_cb_unknownactor",
+    "name": "Unknown Actor",
+    "source": "DOWNFALL",
+    "description": "DOWNFALL mech pattern groups are not well known to begin with, and their habit of looking like anything except themselves doesn’t help things. With this upgrade, the frame’s emissions, lines, structure, and general colors are modified to closely resemble Something Else. This throws off enemy systems and pilots alike, ready for their enemies to do things other than what they actually do.",
+    "effect": "When you print your mech or undergo a Full Repair, choose a different frame model the same Size as your mech. You are easily mistaken for being in that frame instead of your own.<br><br>In addition, after deployment but before any turns are taken, you can move up to your Speed and become Hidden, and do not require cover in order to remain Hidden until the end of your first turn. You never lose Hidden for taking the Boost action."
+  },
+  {
+    "id": "liminalspace_moi_cb_environmentalanalysismodule",
+    "name": "Environmental Analysis Module",
+    "source": "MOI",
+    "effect": "You ignore damage from environmental effects. When you have Soft Cover against an attack, you gain +1 Armor. This increases to +2 Armor if you have Hard Cover against the attack or are Hidden.",
+    "description": "Popular among far field teams, these modules provide a constant situational uplink and local material scanning. Safe zones are easily identified against both hostile atmospheric conditions and battlefields alike.",
+    "synergies": [
+      {
+        "locations": [
+          "armor"
+        ],
+        "detail": "You gain +1 Armor when you have soft cover against an attack, or +2 Armor when you have Hard Cover or are Hidden."
+      }
+    ]
+  },
+  {
+    "id": "liminalspace_moi_cb_exogenesiscontract",
+    "name": "Exogenesis Contract",
+    "source": "MOI",
+    "effect": "At the start of any scene, after deployment but before the first character begins their turn, place up to 2 of the following on the battlefield in spaces not occupied by hostile characters. Options can be chosen more than once. None can be placed within 4 spaces of each other:<br><ul><li>A River of Magma: Any character starting their turn in the Line 5 Area or entering it for the first time on their turn takes 1 Burn and 1 Heat.</li><li>A Pool of Water: This Blast 1 Area is difficult terrain to any character without submarine propulsion.</li><li>A Stormcloud: This Blast 1 Area provides soft cover to any characters at least partially within it.</li><li>A Meadow: This Blast 2 Area removes any difficult, dangerous or liquid terrain within the affected area.</li><li>A Statue: This is a Size 1 Object that provides Hard Cover.</li><ul>",
+    "description": "“...the user agrees that they shall use this contract purely for military purposes unless they purchase an additional recreational licence for artistic and personal usage. The user also agrees to a release of responsibility without limitations to Magnum Opus for any bodily injury, ecological harm or collateral damage caused by negligent usage of the Exogenesis Supply Delivery and Terraforming Contract...”<br> - Exogenesis Terms and Conditions"
+  },
+  {
+    "id": "liminalspace_moi_cb_sibylanalysissuite",
+    "name": "Sibyl Analysis Suite",
+    "source": "MOI",
+    "effect": "All attacks against you are affected by Cover, even if they would normally ignore it due to their type or other effect.",
+    "description": "A powerful predictive suite designed to track an entire micrometeor swarm, many pilots find the Sibyl a perfect compliment to asymmetrical warfare, allowing a pilot to perfectly position themselves to avoid even the most inventive of assaults."
+  },
+  {
+    "id": "liminalspace_moi_cb_soulstone",
+    "name": "Soulstone",
+    "source": "MOI",
+    "effect": "You gain the Flamesink and Infernal Pact quick actions.",
+    "actions": [
+      {
+        "name": "Flamesink",
+        "activation": "Quick",
+        "detail": "You or one character in Range 5 clears all burn and is immune to burn until the end of the current turn."
+      },
+      {
+        "name": "Infernal Pact",
+        "activation": "Quick",
+        "detail": "Choose one character within Range 5. Until the start of your next turn, when they attempt to clear Burn, they must succeed on an Engineering save against your Save Target instead of an Engineering check."
+      }
+    ],
+    "description": "Relay links originally paired to the first Agartha Blink Station, Soulstones have become something more since the loss of the station. They absorb fires with seemingly no limit, shunting it off into the event horizon of Agartha's new location. Lancers cleared for usage of Soulstones are recommended to report any strange dreams involving flames or contracts."
+  },
+  {
+    "id": "liminalspace_moi_cb_supplylineoptimization",
+    "name": "Supply Line Optimization",
+    "source": "MOI",
+    "effect": "At the start of each mission, roll 1d20 and compare it to your choice of Resources, Mech Equipment and Gear, or Tactical Advantages Reserves tables. You gain the benefit of that Reserves for the mission.<br>During missions, when you make the Power At A Cost downtime action, the GM picks an additional cost and then you may remove one cost of your choice.",
+    "description": "As a primary producer of Blink Gate equipment, Magnum Opus' connections with trade groups is nearly unparalleled. From small trader families to the Baronies and even the Voladore, there is very little trade that at no point travels through a gate that Magnum Opus built. Those who gain Magnum Opus' trust can receive access to exclusive contracts with these traders, who are more than willing to go out of their way for a favoured customer of the megacorporation that keeps trade flowing."
+  },
+  {
+    "id": "liminalspace_moi_cb_hygromanteia",
+    "name": "Hygromanteia",
+    "source": "MOI",
+    "effect": "Your Drones gain +2 Evasion and +2 E-Defence, and your Deployables gain Armor 3, if they have less than 3 Armor.",
+    "description": "Upgrades to the software of drone systems make them quasi-sentient, more able to predict their master's will and more responsive, like a well trained hunting animal.",
+    "synergies": [
+      {
+        "locations": [
+          "drone"
+        ],
+        "detail": "Your Drones gain +2 Evasion and +2 E-Defence."
+      },
+      {
+        "locations": [
+          "deployable"
+        ],
+        "detail": "Your Deployables gain Armor 3, if they have less than 3 Armor."
+      }
+    ]
+  },
+  {
+    "id": "liminalspace_moi_cb_partialphaseoccultation",
+    "name": "Partial Phase Occultation",
+    "source": "MOI",
+    "effect": "While Hidden, you ignore difficult and dangerous terrain, and you can move freely through obstructions and characters, though you cannot end your turn within them.",
+    "description": "“You’ll be able to pass through walls easily enough but there’s a reason the system won’t engage if the other guy’s in the middle of making love to you with the business end of a broadsword. You don’t wanna have the field destabilize and leave part of you in blinkspace.”<br> - Medea Nu, Union Science Bureau attaché, heavily intoxicated",
+    "synergies": [
+      {
+        "locations": [
+          "active_effects"
+        ],
+        "detail": "While Hidden, you ignore difficult and dangerous terrain, and you can move freely through obstructions and characters, though you cannot end your turn within them."
+      }
+    ]
+  },
+  {
+    "id": "liminalspace_mos_cb_curstclasstargeting",
+    "name": "Curst-Class Fail-Forward Targeting",
+    "source": "MO & S",
+    "description": "“You greatly underestimate how willing I am to go down with you, friend.”<br> - Sgt. Jacob Marley, DoJ/HR Liberators, during hostage negotiations with the Sundered Stars",
+    "effect": "When you mark structure damage or reactor stress, you may Skirmish as a reaction. After you do so, resolve all other effects of marking structure damage or reactor stress, as normal (such as structure damge checks or overheating checks).",
+    "actions": [
+      {
+        "name": "Fail Forward",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "You mark structure damage or reactor stress.",
+        "detail": "Before resolving any effects of marking structure damage or reactor stress, you may immediately Skirmish."
+      }
+    ]
+  },
+  {
+    "id": "liminalspace_mos_cb_maliceoverride",
+    "name": "MALICE Override",
+    "source": "MO & S",
+    "description": "On the battlefield, ‘stopped’ and ‘dead’ are almost synonyms. Dangerous alterations to your computers and propulsion systems let you overclock your mech to escape the former at the risk of the latter.",
+    "effect": "If your mech would become Immobilized, Jammed, or Stunned by something other than one of its own systems, talents, etc., you can choose to have it suffer 3 AP Energy damage and take 2 Heat instead. This damage and heat bypasses Immunity and cannot be reduced in any way."
+  },
+  {
+    "id": "liminalspace_mos_cb_ouroborosresupply",
+    "name": "OUROBOROS Resupply System",
+    "source": "MO & S",
+    "description": "Embedded printers running on a separate, dedicated power supply let you repurpose the broken parts of your own mech for other uses, allowing you to extend your operating time in the field.",
+    "effect": "When you attack with a Loading or Limited weapon and hit no targets or use a Loading or Limited system that has all targets pass saves, you can choose to forego any additional effects of the system (such as Reliable or a lesser effect on a passed save). If you do, the system does not become unloaded or expend charges."
+  },
+  {
+    "id": "liminalspace_mos_cb_reinforcedbackups",
+    "name": "Reinforced Backup Systems",
+    "source": "MO & S",
+    "description": "Your backup systems have backup systems, allowing you to push on when other frames have dropped dead.",
+    "effect": "You gain +1 Accuracy on Hull checks and saves, and gain +2 HP and +1 Repair Capacity.",
+    "synergies": [
+      {
+        "locations": [
+          "hull"
+        ],
+        "detail": "You gain +1 Accuracy on Hull checks and saves."
+      }
+    ],
+    "bonuses": [
+      {
+        "id": "hp",
+        "val": 2
+      },
+      {
+        "id": "repcap",
+        "val": 1
+      }
+    ]
+  },
+  {
+    "id": "liminalspace_mos_cb_slashersuite",
+    "name": "SLASHER Sustainability Suite",
+    "source": "MO & S",
+    "description": "The SLASHER sustainability suite, most commonly made available to customers actively supporting MO & S’s mission, consists of modifications to a frame’s reactor core, heat distribution systems, and the addition of dozens of tiny repair modules over and within its chassis. When its defensive protocols activate, the effects are quite dramatic; when suffering structure in place of reactor stress your mech glows white-hot as heat is shunted through its chassis, opening cracks and fissures through the metal. When suffering stress in place of structure damage, the vented heat is directed to the damaged parts of your mech, slagging it enough to engage the automated repair systems and keep you in the fight.",
+    "effect": "1/scene, when you suffer structure damage from a source other than this core bonus, you can choose to heal up to full HP and then suffer 1 reactor stress instead. Additionally, 1/scene when you suffer reactor stress from a source other than this core bonus, you can choose to cool all heat and then suffer 1 structure damage instead."
+  },
+  {
+    "id": "liminalspace_mos_cb_ultrahardenedchassis",
+    "name": "Ultra-Hardened Chassis",
+    "source": "MO & S",
+    "description": "Improved redundancies, additional internal armor, and high-yield vents help keep your mech upright and swinging even after significant damage. There’s only so much they can do to help, of course, but for many pilots an ultra-hardened chassis design has been the difference between life and death.",
+    "effect": "When you mark your first structure damage or reactor stress, you do not roll a structure damage check or overheating check."
+  }
+]

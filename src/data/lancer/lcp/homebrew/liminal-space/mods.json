@@ -1,0 +1,140 @@
+[
+  {
+    "id": "liminal_downfall_acedia_whitephosphorous",
+    "name": "White Phosphorous Rounds",
+    "sp": 2,
+    "source": "DOWNFALL",
+    "license": "ACEDIA",
+    "license_level": 2,
+    "allowed_types": [
+      "Cannon",
+      "CQB",
+      "Launcher",
+      "Melee",
+      "Nexus",
+      "Rifle"
+    ],
+    "allowed_sizes": [
+      "Auxiliary",
+      "Main",
+      "Heavy",
+      "Superheavy"
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "In addition to its usual damage, 1/round you may activate this Mod as a quick action when you hit a character with the weapon it is applied to, to cause the target to gain heat equal to their current Burn, to a maximum of 4 heat. The target also gains +1 Difficulty on checks and saves to clear Burn until the end of their next turn.",
+    "actions": [
+      {
+        "name": "Activate White Phosphorous Rounds",
+        "activation": "Quick",
+        "frequency": "1/round",
+        "detail": "1/round, you may activate your White Phosphorous Rounds as a quick action when you hit a character with the weapon it is applied to, to cause the target to gain heat equal to their current Burn, to a maximum of 4 heat. The target also gains +1 Difficulty on checks and saves to clear Burn until the end of their next turn."
+      }
+    ],
+    "description": "These storage canisters deploy a vicious chemical cocktail onto the enemy when they strike, capitalizing on enemies already suffering from intense heat. The modifications were originally developed by Harrison Armory, but were not utilized in the end due to a preference for direct action. Downfall Group felt no such reservations when they observed the field test."
+  },
+  {
+    "id": "liminal_downfall_acedia_overwhelminhibitors",
+    "name": "Overwhelm Inhibitors",
+    "sp": 2,
+    "source": "DOWNFALL",
+    "license": "ACEDIA",
+    "license_level": 3,
+    "allowed_types": [
+      "Cannon",
+      "CQB",
+      "Launcher",
+      "Melee",
+      "Nexus",
+      "Rifle"
+    ],
+    "allowed_sizes": [
+      "Main",
+      "Heavy"
+    ],
+    "actions": [
+      {
+        "name": "Empower Weapon",
+        "activation": "Protocol",
+        "frequency": "1/scene",
+        "detail": "You empower the weapon this Mod is installed in for the rest of the scene or until this weapon is used. When you use an empowered weapon, it acts in many of the same ways as a Superheavy weapon. It must be used as a Barrage action (and is the only weapon that can be used as part of that Barrage), increases its Range by +5 if it has the Range attack type, and deals 1d6+1 bonus damage.<br><br>Using this Protocol or attacking with an empowered weapon causes the area within a Burst 1 of your mech to count as soft cover until the start of your next turn."
+      }
+    ],
+    "description": "Reactors flash, the overflow of energies kicking up dust and debris. Specifically installed additional channels bring these excessive forces to bear exactly where they need to be: through a weapon not otherwise capable of presenting as much or a threat as it now does."
+  },
+  {
+    "id": "liminal_downfall_lust_cupidmod",
+    "name": "CUPID Mod",
+    "sp": 1,
+    "source": "DOWNFALL",
+    "license": "LUST",
+    "license_level": 3,
+    "effect": "The weapon this Mod is installed in gains “<b>1/round</b>, <b>On Hit:</b> Push the target one space in any direction.”",
+    "description": "Contrary to what the name may imply, this does not cause attraction. It just looks like it, when the victim is sent stumbling off in a direction it certainly did not choose."
+  },
+  {
+    "id": "liminal_downfall_sloth_concussivecomposites",
+    "name": "Concussive Composites",
+    "sp": 1,
+    "source": "DOWNFALL",
+    "license": "SLOTH",
+    "license_level": 1,
+    "allowed_types": [
+      "Melee"
+    ],
+    "allowed_sizes": [
+      "Main",
+      "Heavy",
+      "Superheavy"
+    ],
+    "effect": "The weapon this Mod is installed in gains “<b>1/round</b>, <b>On Hit:</b> The target must succeed on a Hull save or be unable to move or Boost out of engagement with you until the end of their next turn.” This has no effect on characters who aren't Engaged with you, including if they leave engagement without moving or Boosting.",
+    "description": "Mere density isn’t enough to make a weapon’s striking surface effective. This replaces the standard face of the weapon with layers of materials that absorb and redouble the shock of impact, knocking enemies off-balance and keeping them from running away."
+  },
+  {
+    "id": "liminalspace_mos_celeste_hydrostaticmod",
+    "name": "Hydrostatic Induction Mod",
+    "sp": 2,
+    "source": "MO & S",
+    "license": "CELESTE",
+    "license_level": 1,
+    "allowed_types": [
+      "Cannon",
+      "CQB",
+      "Launcher",
+      "Nexus",
+      "Rifle"
+    ],
+    "allowed_sizes": [
+      "Main",
+      "Heavy",
+      "Superheavy"
+    ],
+    "effect": "The weapon this mod is installed in gains “On Hit: All of your other attacks against the target this turn gain your choice of Knockback equal to half the damage they deal (to a maximum of 5) or the AP tag. You can make this choice on a per-attack basis.”",
+    "description": "This unusual weapon system is installed beneath a weapon’s barrel and fires thick spikes full of compressed salt water. While it was originally intended for fire suppression (a use abandoned due to the high collateral damage it causes), the hydrostatic induction mod sees use today in bringing the horror of hydrostatic shock to mechanized combat."
+  },
+  {
+    "id": "liminalspace_mos_phoenix_conductionrounds",
+    "name": "Conduction Rounds",
+    "sp": 2,
+    "source": "MO & S",
+    "license": "PHOENIX",
+    "license_level": 2,
+    "allowed_types": [
+      "Cannon",
+      "CQB",
+      "Launcher",
+      "Nexus",
+      "Rifle"
+    ],
+    "allowed_sizes": [
+      "Main",
+      "Heavy",
+      "Superheavy"
+    ],
+    "effect": "This mod can only be installed on weapons that deal Kinetic damage.<br><br>The first time you fire the weapon this Mod is installed in each round, you clear 1 Heat, and it deals 1 additional Heat on hit.",
+    "description": "Modifications to a mech’s mounts and ammo casings increase the amount of ambient heat they draw from the chassis, enabling the mech to ‘vent’ heat by cooking its ammunition and then firing it off. "
+  }
+]

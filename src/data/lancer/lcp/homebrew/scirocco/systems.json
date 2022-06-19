@@ -1,0 +1,1418 @@
+[
+  {
+    "id": "sae_ms_event_horizon",
+    "name": "EVENT HORIZON",
+    "source": "SAE",
+    "license": "ENTERPRISE",
+    "license_level": 1,
+    "effect": "",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>“You can break my body but my charges are beyond your reach.” - Nasim Esclabor, DoJ/HR Liberator</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "EVENT HORIZON",
+        "activation": "Quick",
+        "detail": "You emit a <strong>burst 2</strong> area of attractive force until the start of your next turn. Any <strong>blast, burst, line</strong> or <strong>cone</strong> attack that would include an <strong>allied character</strong> in the affected area does not include them during this time, however, if any character is excluded this way the attack will include you as a target even if you are not personally in the area of the attack or a valid target.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_grav_hardened_articulation",
+    "name": "GRAV-HARDENED ARTICULATION",
+    "source": "SAE",
+    "license": "ENTERPRISE",
+    "license_level": 2,
+    "effect": "You may <strong>Overwatch</strong> using <strong>Melee Weapons</strong> when hostile characters enter, leave, or exit spaces within your <strong>Threat</strong>, no matter whether they started their turn there.",
+    "type": "System",
+    "sp": 3,
+    "description": "<em>SAE’s advanced metallurgical processes, developed for forging metal in microgravity, creates remarkably light joints that allow a pilot to gain a fantastic range of motion.</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [
+      {
+        "locations": [
+          "overwatch"
+        ],
+        "detail": "You may Overwatch using Melee Weapons when hostile characters enter, leave, or exit spaces within your Threat, no matter whether they started their turn there.",
+        "weapon_types": [
+          "Melee"
+        ],
+        "weapon_sizes": [],
+        "system_types": []
+      }
+    ],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_n_body_barrier",
+    "name": "N-BODY BARRIER",
+    "source": "SAE",
+    "license": "ENTERPRISE",
+    "license_level": 2,
+    "effect": "When you <strong>Stabilize</strong>, you may spend <strong>1 Repair</strong> to charge this barrier instead of cooling or restoring HP. If you do, you gain <strong>Overshield</strong> equal to half of your maximum HP.",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>“Direct hit with the Pinakas Sir and...it’s not even scratched.” - Mariann Schwarz, Constellar Midnights</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [
+      {
+        "locations": [
+          "stabilize"
+        ],
+        "detail": "When you Stabilize, you may spend 1 Repair to charge this barrier instead of cooling or restoring HP. If you do, you gain Overshield equal to half of your maximum HP.",
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "system_types": []
+      }
+    ],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_inertial_canceller",
+    "name": "INERTIAL CANCELLER",
+    "source": "SAE",
+    "license": "ENTERPRISE",
+    "license_level": 3,
+    "effect": "When you are hit by a melee or ranged weapon, if you do not lose HP, you are <strong>immune</strong> to any additional effects of the attack.",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>Last line of defence systems bleed energy from attacks, stopping blows that would not penetrate before they even make contact with the frame.</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_early_warning_system",
+    "name": "EARLY WARNING SYSTEM",
+    "source": "SAE",
+    "license": "ATLANTIS",
+    "license_level": 1,
+    "effect": "Your <strong>attacks</strong> against <strong>allied characters</strong> treat them as <strong>Invisible</strong>.",
+    "type": "System",
+    "sp": 1,
+    "description": "<em>As design safety has always been a high priority for Scirocco Advanced Engineering. As a result, one of the first developments for the ATLANTIS frame was a system to provide real time updates to friendly mechs about incoming canisters to allow for a markedly reduced rate of friendly fire.</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_cryostasis_module",
+    "name": "CRYOSTASIS MODULE",
+    "source": "SAE",
+    "license": "ATLANTIS",
+    "license_level": 2,
+    "effect": "Gain the <strong>Emergency Cryostasis</strong> reaction.",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>SAE’s cryostasis systems have made them very popular among colony ships, being significantly safer and more reliable than most models. Mech-scale modules have been developed to keep the pilot safe while a powerful shield of ice is formed around the mech.</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "actions": [
+      {
+        "name": "EMERGENCY CRYOSTASIS",
+        "activation": "Reaction",
+        "detail": "You return to <strong>1 HP</strong> and ignore the damage. You gain <strong>overshield</strong> equal to 1/2 of your maximum HP and are <strong>stunned</strong> until the end of your next turn.",
+        "cost": 1,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/encounter",
+        "init": "",
+        "trigger": "You take <strong>structure damage.</strong>"
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_reactor_flux_inducer",
+    "name": "REACTOR FLUX INDUCER",
+    "source": "SAE",
+    "license": "ATLANTIS",
+    "license_level": 2,
+    "effect": "Gain the following options for <strong>Invade</strong>:",
+    "type": "Tech",
+    "sp": 2,
+    "description": "<em>The reactor of every mech is kept under the strictest of security, requiring a massive amount of work to overcome that is usually infeasible on the battlefield without half-melting the mech in the process. A workaround has been developed however by SAE engineers, accessing the reactor systems through weaknesses in the maintenance programs.</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "BROWNOUT",
+        "activation": "Invade",
+        "detail": "For the rest of the scene when rolling any <strong>attack, check</strong> or <strong>save</strong>, any <strong>accuracy</strong> dice that land on a 6 or <strong>difficulty</strong> dice that land on a 1 cause the target to take 1 heat, and are then rerolled. Additional 1 and 6s continue to trigger this eﬀect. The character may end this effect by passing an engineering save as a quick action.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "REDLINE",
+        "activation": "Invade",
+        "detail": "For the rest of the scene when rolling any <strong>attack, check</strong> or <strong>save</strong>, any <strong>accuracy</strong> dice that land on a 1 or <strong>difficulty</strong> dice that land on a 6 cause the target to take <strong>1 heat</strong>, and are then rerolled. Additional 1s and 6s continue to trigger this eﬀect. The character may end this effect by passing an <strong>engineering save</strong> as a quick action.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_null_point_manipulators",
+    "name": "NULL POINT MANIPULATORS",
+    "source": "SAE",
+    "license": "ATLANTIS",
+    "license_level": 3,
+    "effect": "Gain the <strong>Null Point Manipulation</strong> reaction.",
+    "type": "System",
+    "sp": 4,
+    "description": "<em>“Energy cannot be created or destroyed, it may only be transformed and transferred. However, that does not mean we can normally use all of the energy in a system. There is often significant bleed due to materials or distance, as energy escapes our grasp. That is where we work, trying to get to that point where everything is perfectly balanced.” -SAE Energy Conservation Labs, Tour Guide</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "NULL POINT MANIPULATION",
+        "activation": "Reaction",
+        "detail": "If you gained <strong>heat</strong>, one hostile character in <strong>sensors</strong> gains <strong>2 heat</strong>. If you lost <strong>heat</strong>, one friendly character in <strong>sensors</strong> cools <strong>2 heat.</strong>",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "You gain or cool <strong>heat.</strong>"
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_martial_analysis_engine",
+    "name": "MARTIAL ANALYSIS ENGINE",
+    "source": "SAE",
+    "license": "ENDEAVOUR",
+    "license_level": 1,
+    "effect": "You may expend a charge from this system for one of the following <strong>Quick Actions</strong>:",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>Expertise in building systems with few weak points has led SAE to be masters of identifying the weak points of others, rapidly taking advantage of them by crushing exposed sensors or shattering supporting joints.</em>",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "DRUNKEN MONKEY",
+        "activation": "Quick",
+        "detail": "One adjacent character must pass a <strong>systems</strong> save or whenever they make an attack and miss all targets, they automatically hit themselves with the attack. A character can end this effect by passing a <strong>systems</strong> save as a quick action.",
+        "cost": 1,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "BLINDED TO HEAVEN",
+        "activation": "Quick",
+        "detail": "Choose one adjacent target. They must pass a <strong>hull</strong> save or only have line of sight to adjacent spaces. A character can end this effect by passing an <strong>engineering</strong> save as a quick action.",
+        "cost": 1,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_jupiter_stance",
+    "name": "JUPITER STANCE",
+    "source": "SAE",
+    "license": "ENDEAVOUR",
+    "license_level": 2,
+    "effect": "While this system is active, you gain the Jupiter Stance reaction.",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>“The correct way to describe the effect of the graviton ripples is ‘Powerful attractive force against support elements’, not ‘Get those cowards over here so I can punch them’.” -SAE Internal Memo, Ignored.</em>",
+    "tags": [],
+    "actions": [
+      {
+        "name": "JUPITER STANCE",
+        "activation": "Quick",
+        "detail": "You activate (or deactivate) the Jupiter Stance. While activated your mech is <strong>slowed</strong> and cannot fly but is <strong>immune</strong> to forced movement and cannot be knocked prone. The system creates a roiling torrent of unstable gravity in a burst 3 area that extends 10 spaces high. Characters starting their turn in the affected area or entering it for the first time on their turn immediately land (this counts as falling without any damage); and can’t ﬂy until the end of their next turn. Characters attempting to leave the area are halted at the edge unless they pass a <strong>Hull</strong> save.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "JUPITER STANCE REACTION",
+        "activation": "Reaction",
+        "detail": "Gain<strong> 1 heat</strong> to pull them 2 spaces directly towards you.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": "A character misses you with an attack while Jupiter Stance is active."
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_mind_interface_strike_arts",
+    "name": "MIND-INTERFACE STRIKE ARTS",
+    "source": "SAE",
+    "license": "ENDEAVOUR",
+    "license_level": 2,
+    "effect": "Gain the following <strong>Quick Actions</strong>:",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>“Oh no, you’d be mistaken. This isn’t the machine. This is me, the machine can just keep up now.” -Siani 137, SAE Artificer</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "SUN STEALING OBSIDIAN",
+        "activation": "Quick",
+        "detail": "One adjacent character must pass an <strong>agility </strong>save or treat all targets as <strong>invisible</strong> until they end one of their turns not adjacent to you. Each character can only be successfully affected this way once per scene.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "SPELLBREAKER IRON",
+        "activation": "Quick",
+        "detail": "One adjacent character must pass an <strong>engineering</strong> save or be unable to benefit from or make tech, mind and animo actions. They can end this effect by passing a <strong>systems</strong> save as a quick action.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_gravity_roil",
+    "name": "GRAVITY ROIL",
+    "source": "SAE",
+    "license": "ENDEAVOUR",
+    "license_level": 3,
+    "effect": "When you are involuntarily moved or a character is involuntarily moved by you, you may choose the direction the character is moved, even if the target could not normally move that way.Gain the <strong>Extinction Event</strong> Full Action.",
+    "type": "System",
+    "sp": 4,
+    "description": "<em>The Gravity Roil is a blunt but effective gravity manipulator, forcefully reordering the direction an object considered ‘down’ for a single moment. Reckless users can even overload the manipulator, flinging themselves madly into the air to come crashing down on the unfortunate target fist or foot-first.</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "EXTINCTION EVENT",
+        "activation": "Full",
+        "detail": "Expend 1 CP. Remove yourself from the battlefield. At the start of your next turn, return yourself to any free space in <strong>Range 50</strong> of your previous position. All characters within a <strong>burst 2</strong> of your return position must pass a <strong>hull</strong> save or take <strong>4d6 AP Kinetic</strong> Damage and be knocked back 6 spaces away from you. A successful save halves the damage and knockback. All objects and terrain in the affected area take <strong>50 AP Kinetic Damage</strong>.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [
+      {
+        "locations": [
+          "active_effects"
+        ],
+        "detail": "When you are involuntarily moved or a character is involuntarily moved by you, you may choose the direction the character is moved, even if the target could not normally move that way.",
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "system_types": []
+      }
+    ],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_steel_buddhas_disapproval",
+    "name": "STEEL BUDDHA'S DISAPPROVAL",
+    "source": "SAE",
+    "license": "ENDEAVOUR",
+    "license_level": 3,
+    "effect": "",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>“Oh come on, ‘Reach Enlightenment Though Violence’ is not a battle plan!” - Medea Nu, Union Science Bureau attaché.</em>",
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "STEEL BUDDHA'S DISAPPROVAL",
+        "activation": "Full",
+        "detail": "One adjacent target must pass an <strong>agility</strong> save or be knocked back 5 spaces, knocked <strong>prone</strong> and <strong>shredded</strong>. They can end this shredded by passing an <strong>engineering</strong> save as a full action. An object targeted this way instead takes <strong>50 AP Kinetic Damage</strong>. A character can only be shredded this way once per scene.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_target_tracking_module",
+    "name": "TARGET TRACKING MODULE",
+    "source": "SAE",
+    "license": "CHALLENGER",
+    "license_level": 2,
+    "effect": "Gain the <strong>Analysed Assault</strong> reaction.",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>Designed originally to monitor micrometeor swarms, the target tracking module was easily adapted to carefully cataloguing each fired round in a battle. Favoured by DOR/HR pilots, this tracking allows for exceptional after-action reporting and identification of any collateral damage.</em>",
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "ANALYSED ASSAULT",
+        "activation": "Reaction",
+        "detail": "Consume the triggering character's <strong>Lock On.</strong> The triggering character’s attack suffers <strong>+2 difficulty</strong>.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "You or an allied character in Sensors are attacked by a character suffering the <strong>Lock On</strong> condition."
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_gravitational_redshift",
+    "name": "GRAVITATIONAL REDSHIFT",
+    "source": "SAE",
+    "license": "CHALLENGER",
+    "license_level": 2,
+    "effect": "",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>Spinning a custom designed graviton generator up to full power allows for a mech to engage in extensive time dilation in a limited area around itself while the mech itself remains unaffected. The system outside of the protected area refuses to accept energy transfers and even the most supported iterations of the generator soon shut down but the sight of the world frozen in glass is reported by pilots to be utterly beautiful.</em>",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "GRAVITATIONAL REDSHIFT",
+        "activation": "Protocol",
+        "detail": "<strong>Teleport</strong> to a free space within <strong>Range 5.</strong>",
+        "cost": 1,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_zamiel_class_nhp",
+    "name": "ZAMIEL-CLASS NHP",
+    "source": "SAE",
+    "license": "CHALLENGER",
+    "license_level": 3,
+    "effect": "Whenever you would roll a <strong>d20</strong> for an <strong>attack</strong> roll, you may gain <strong>2 heat</strong> in order to treat the result of the <strong>d20</strong> roll as <strong>13</strong> instead of rolling.",
+    "type": "AI",
+    "sp": 3,
+    "description": "<em>Greetings to you, mortal. It is a pleasure to be working alongside someone with an equal interest in the hunt. I shall be your dark confidant and your great ally in this; nothing will escape our sight. The pact I propose is thus: As long as your gun can handle my touch, it shall never miss...and perhaps, some time I shall ask to choose the target.</em>",
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [
+      {
+        "locations": [
+          "active_effects"
+        ],
+        "detail": "Whenever you would roll a d20 for an attack roll, you may gain 2 heat in order to treat the result of the d20 roll as 13 instead of rolling.",
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "system_types": []
+      }
+    ],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_tactical_uplink",
+    "name": "TACTICAL UPLINK",
+    "source": "SAE",
+    "license": "INDEPENDENCE",
+    "license_level": 2,
+    "effect": "<strong>1/round</strong>, you may gain <strong>2 heat</strong> to make a <strong>Bolster Quick Tech Option</strong> as a <strong>free action</strong>.",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>‘Coordination is the key to victory’ is something that every officer learns very quickly in their career. Superior communication module ergonomics can allow for orders and other important data to be communicated as easily as thought.</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_ereshkigal_class_nhp",
+    "name": "ERESHKIGAL-CLASS NHP",
+    "source": "SAE",
+    "license": "INDEPENDENCE",
+    "license_level": 3,
+    "effect": "Gain the <strong>Dust of Irkalla Quick Tech</strong> option.",
+    "type": "AI",
+    "sp": 3,
+    "description": "<em>Adapted from a printer-support NHP, ERESHKIGAL is heavily adapted for the usage of nanotech solutions. Friendly and chatty outside of combat, ERESHKIGAL is deeply concerned for the mental wellbeing of their pilot but will show no hesitation upon turning a cloud of deadly nanomachines upon any who threaten them.</em>",
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "DUST OF IRKALLA",
+        "activation": "Quick Tech",
+        "detail": "Choose an allied character within <strong>Sensors</strong>. Until the start of your next turn, whenever a hostile character makes an attack against the chosen character, the attacker takes <strong>2 Burn</strong> after the attack is resolved.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_seismic_impact",
+    "name": "SEISMIC IMPACT",
+    "source": "SAE",
+    "license": "DISCOVERY",
+    "license_level": 1,
+    "effect": "Gain the Seismic Impact protocol.",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>“By Ra! They killed her! As Ra as my witness, she is broken in half!”</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "SEISMIC IMPACT",
+        "activation": "Protocol",
+        "detail": "One character grappled by you must pass a <strong>hull</strong> save or be knocked <strong>prone </strong>and <strong>impaired </strong>until the end of their next turn.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_ablative_opposition",
+    "name": "ABLATIVE OPPOSITION",
+    "source": "SAE",
+    "license": "DISCOVERY",
+    "license_level": 2,
+    "effect": "",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>“PUT ME DOWN!” - Mariann Schwarz, Constellar Midnights</em>",
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "ABLATIVE OPPOSITION",
+        "activation": "Quick",
+        "detail": "Choose 1 character you have <strong>grappled</strong>. Until the start of your next turn or they are no longer <strong>grappled</strong> by you, you gain <strong>Resistance</strong> to all damage not caused by the chosen character; however, they take half of the damage you would take before calculating <strong>Armor</strong> and <strong>Resistance</strong>.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_potentia_capacitors",
+    "name": "POTENTIA CAPACITORS",
+    "source": "SAE",
+    "license": "DISCOVERY",
+    "license_level": 2,
+    "effect": "",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>Initially designed to help conserve wasted power on struggling colonies, potentia capacitors store kinetic energy that would otherwise be lost, allowing for it to be released later when additional force is required. It was not long before such systems were adjusted to provide their entire stored power in a single moment.</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "POTENTIA CAPACITORS",
+        "activation": "Full",
+        "detail": "Fly up to twice your <strong>speed</strong>; however, you must end the movement on the ground or another solid surface, or else immediately begin falling. During this flight you can carry your full carrying capacity even if the size of the objects would cause you to be <strong>slowed</strong> or <strong>immobilized</strong>; though not if you are otherwise <strong>slowed</strong> or i<strong>mmobilized</strong>.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_einstein_rosen_cutter",
+    "name": "EINSTEIN-ROSEN CUTTER",
+    "source": "SAE",
+    "license": "DISCOVERY",
+    "license_level": 3,
+    "effect": "Gain the <strong>Einstein-Rosen Cutter</strong> and <strong>Icarian Piledriver Full Actions.</strong>",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>Black Holes have long been theorized to allow for the possibility of far travel outside of blink gate networks. While this has yet to be proven with any naturally occurring black holes, new breakthroughs in SAE's black hole engine have allowed for graviton influence upon blinkspace, the effects rippling outwards to displace realspace actors or to even momentarily overlap an unfortunate target with subterranean magma or a nearby stellar body.</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "EINSTEIN-ROSEN CUTTER",
+        "activation": "Full",
+        "detail": "Choose a character within <strong>Range 5</strong>. They must pass an <strong>Engineering</strong> Save or be teleported to a space adjacent to you, taking <strong>4 AP Kinetic</strong> <strong>Damage</strong> and are <strong>Grappled</strong>. On a successful save, they take half damage but are not teleported or grappled.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "ICARIAN PILEDRIVER",
+        "activation": "Full",
+        "detail": "Expend 1 CP. One character grappled by you suffers <strong>2d6 Energy Damage</strong>, <strong>6 Burn</strong> and <strong>6 Heat</strong>; and is removed from the battlefield and <strong>stunned</strong> until the end of their next turn. At the end of their next turn, if they are not destroyed, they are returned to the battlefield in a space of your choice within <strong>Range 50</strong>.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_debris_barrier",
+    "name": "DEBRIS BARRIER",
+    "source": "SAE",
+    "license": "DISCOVERY",
+    "license_level": 3,
+    "effect": "",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>“Pollution is nothing but the resources we are not harvesting. We allow them to be dispersed because we’ve been ignorant of their value.” – R. Buckminster Fuller</em>",
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "DEBRIS BARRIER",
+        "activation": "Quick",
+        "detail": "Choose an <strong>Object</strong> or <strong>Drone</strong> within <strong>Range 8</strong> and line of sight. This object or drone suffers <strong>10 AP Kinetic Damage</strong> and, if the damage destroys the object or drone, you gain <strong>Overshield</strong> equal to <strong>2+Grit</strong>.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_energy_conversion_module",
+    "name": "ENERGY CONVERSION MODULE",
+    "source": "SAE",
+    "license": "COLUMBIA",
+    "license_level": 1,
+    "effect": "Gain the following options for <strong>Invade</strong>:",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>\"Everything about us is energy. The sounds I speak now, the light you use to see me and even the weight of your own bodies; all of that is energy. The conversion of one type of energy to another is just as common. The lights above us convert electrical energy into light, a microphone converts sound energy into electrical signals. Beyond and behind every single technological achievement is thus our endless drive to invent new and fascinating ways to transform the energy of the world around us.\" - SAE Energy Conservation Labs, Tour Guide</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "AMPLIFY",
+        "activation": "Invade",
+        "detail": "The next successful <strong>melee</strong> or <strong>ranged</strong> attack against the target by an allied character before the end of your next turn gains <strong>+1d6 bonus damage</strong>.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "REDUCE",
+        "activation": "Invade",
+        "detail": "The next time before the end of your next turn the target makes a successful <strong>melee</strong> or <strong>ranged</strong> weapon attack, the target of that attack gains <strong>Resistance</strong> to all <strong>Damage, Heat</strong> and <strong>Burn</strong> from that attack.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_terrestrial_orrery",
+    "name": "TERRESTRIAL ORRERY",
+    "source": "SAE",
+    "license": "COLUMBIA",
+    "license_level": 2,
+    "effect": "Gain the following <strong>Full Tech</strong> options:",
+    "type": "Tech",
+    "sp": 2,
+    "description": "<em>\"In science, some see the death of dreams. The endless grind of machinery and math, declaring that magic and myth does not exist. Nothing in my mind could be further from the truth; with each pushing of the borders of what we know, entire new realms of dreams open up for those willing to seek them, borne by wings of discovery and hope.\" - Siani 137, SAE Artificer</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "UNSTABLE ORBIT",
+        "activation": "Full Tech",
+        "detail": "Make a <strong>Tech Attack</strong> against a character within Sensors. On a hit they take <strong>4 heat</strong> and, for the rest of the scene, when a character makes an attack targeting the affected character; the attacker may fly up to 3 spaces in any direction before the attack. This movement ignores engagement, doesn’t provoke reactions and can only be taken by each character 1/round. The affected character can end this effect with a successful <strong>Engineering</strong> save as a full action. This can only affect one character at a time.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": true,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "CO-ORBITAL PLANE",
+        "activation": "Full Tech",
+        "detail": "Choose 1 allied character within Sensors. Until the end of your next turn, the target's movement ignores engagement and does not provoke reactions; and they may move through obstructions but not end their turn within them.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_archangel_subaltern_support",
+    "name": "\"ARCHANGEL\" SUBALTERN SUPPORT",
+    "source": "SAE",
+    "license": "COLUMBIA",
+    "license_level": 3,
+    "effect": "",
+    "type": "Drone",
+    "sp": 3,
+    "description": "<em>Subaltern medical personnel are not uncommon in militaries, where they allow a single doctor to provide oversight to an entire squad and treat many more injuries than they could otherwise manage. SAE’s latest model has extensive medical databases and expert systems to allow for even a pilot with basic training to act as a field medic.</em>",
+    "tags": [
+      {
+        "id": "tg_invisible"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [
+      {
+        "name": "ARCHANGEL SUBALTERN",
+        "type": "Drone",
+        "detail": "This subaltern may be deployed to a free space within sensors and line of sight, where it starts to triage a <strong>Burst 2</strong> area around it with the following effects:<br><ul><li>Allied Characters in the affected area have <strong>+1 Accuracy</strong> on all Checks and Saves.</li><li>Any allied character starting their turn in the affected area or entering it for the first time on their turn may spend 1 repair to restore 1/2 of their maximum HP. Biological characters without repairs can be healed without spending repairs but each biological character can only be healed this way once per scene.</li><li>When a biological character that is not currently <strong>Down and Out</strong> would be destroyed in the affected area; it is instead restored to <strong>1 HP</strong>, gains the<strong> Down and Out</strong> status and is not destroyed.<br></li></ul>The subaltern can be airlifted to a different space or recalled as a quick action.",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "instances": 1,
+        "cost": 1,
+        "hp": 5,
+        "evasion": 10,
+        "edef": 10,
+        "pilot": false,
+        "mech": false,
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "counters": []
+      }
+    ],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_quantum_impact_transfer",
+    "name": "QUANTUM IMPACT TRANSFER",
+    "source": "SAE",
+    "license": "COLUMBIA",
+    "license_level": 3,
+    "effect": "Gain the <strong>Vector Transcendence Protocol.</strong>",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>“Stop Hitting Yourself!” - Scrawled on design notes.</em>",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "QUANTUM IMPACT TRANSFER",
+        "activation": "Quick Tech",
+        "detail": "Make a <strong>Tech Attack</strong> against a hostile character within <strong>Sensors</strong>. On a hit, they suffer 2 heat and you can expend a charge to choose 1 allied character in <strong>Sensors</strong> and form a transfer link between the two characters until the end of your next turn. During this time, the Allied character has <strong>Resistance</strong> to all <strong>damage</strong> and <strong>burn.</strong> However, the hostile character takes half of the <strong>damage</strong> and <strong>burn</strong> the allied character would take before calculating <strong>armor</strong> and <strong>resistance</strong>.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": true,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "VECTOR TRANSCENDENCE",
+        "activation": "Protocol",
+        "detail": "Expend 1 CP. Choose 1 allied character in <strong>Range 50</strong>. Until the end of your next turn, they have <strong>Immunity</strong> to all <strong>Damage, Heat, Conditions</strong> and <strong>Statuses</strong> that wasn’t caused by one of their own systems, talents, etc. During this time, when they would be targeted by an attack, the attack instead automatically hits the attacker.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_null_charges",
+    "name": "NULL CHARGES",
+    "source": "SAE",
+    "license": "PATHFINDER",
+    "license_level": 1,
+    "effect": "Expend a charge for one of the following effects:",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>“Darkness, much like cold, doesn’t truly exist. Cold is the absence of heat and darkness is the absence of light. Despite their non-existence, cold and darkness have had effects that dominate human history.” -SAE Energy Conservation Labs, Tour Guide</em>",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "LIGHTEATER GRENADE",
+        "activation": "Quick",
+        "detail": "Your target must succeed on an engineering save, or they only have line of sight to adjacent spaces until the end of their next turn.",
+        "cost": 1,
+        "pilot": false,
+        "damage": [],
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          }
+        ],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [
+      {
+        "name": "VOID WARD",
+        "type": "Mine",
+        "range": [
+          {
+            "type": "Burst",
+            "val": 1
+          }
+        ],
+        "detail": "Characters in a Burst 1 area must pass an engineering save or be put in stasis until the end of their next turn; they become Stunned, gain Immunity to all damage and effects, and can’t be moved, targeted, or affected by any other character or effect."
+      }
+    ],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_suppression_drone",
+    "name": "SUPPRESSION DRONE",
+    "source": "SAE",
+    "license": "PATHFINDER",
+    "license_level": 2,
+    "effect": "",
+    "type": "Drone",
+    "sp": 2,
+    "description": "<em>Sabotage is not simply a matter of loud explosives and torn apart machinery. Suppression Drones are masters of much more subtle sabotage, draining the slightly fragment of power from systems around them. Momentary lag and delays of updates can be critical, without ever revealing the source of the inhibition.</em>",
+    "tags": [
+      {
+        "id": "tg_invisible"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [
+      {
+        "name": "SUPPRESSION DRONE",
+        "type": "Drone",
+        "detail": "This drone may be deployed to a free space within sensors and line of sight, where it starts to drain energy from a <strong>Burst 3 </strong>area around it. Characters within the affected area are <strong>Impaired</strong> for as long as they are within the affected area. The Suppression Drone becomes <strong>Hidden</strong> when deployed and resists <strong>Search</strong> attempts with your <strong>Grit</strong>.You may recall or redeploy the suppression drone as a quick action. Until recalled or destroyed, it remains deployed until the end of the scene.",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "instances": 1,
+        "cost": 1,
+        "hp": 5,
+        "evasion": 10,
+        "edef": 10,
+        "pilot": false,
+        "mech": false,
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "counters": []
+      }
+    ],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_voicetaker_trojan_module",
+    "name": "\"VOICETAKER\" TROJAN MODULE",
+    "source": "SAE",
+    "license": "PATHFINDER",
+    "license_level": 2,
+    "effect": "Gain the <strong>Shhhh</strong> reaction.",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>“We’ve got a contact command, Over! Over? Command? Can anyone hear me?” - Marianne Schwarz, Constellar Midnights</em>",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "SHHHH",
+        "activation": "Reaction",
+        "detail": "The triggering character must pass an <strong>Engineering</strong> save or become <strong>Jammed</strong> until the start of their next turn. This can affect each character 1/scene. If the triggering character is <strong>Jammed</strong> this way, you are not revealed from <strong>Hidden</strong> by that character until they are no longer <strong>Jammed</strong>.",
+        "cost": 1,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/turn",
+        "init": "",
+        "trigger": "You would be revealed from <strong>Hidden</strong> by the action of another character."
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_svalinn_grav_hardened_riot_shield",
+    "name": "\"SVALINN\" GRAV-HARDENED RIOT SHIELD",
+    "source": "SAE",
+    "license": "INSPIRATION",
+    "license_level": 1,
+    "effect": "",
+    "type": "Shield",
+    "sp": 2,
+    "description": "<em>In front of the sun<br>does Svalinn stand,<br>The shield for the shining god;<br>Mountains and sea<br>would be set in flames<br>If it fell from before the sun.<br>- Grímnismál 38.</em>",
+    "tags": [
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "LOCK SHIELDS",
+        "activation": "Quick",
+        "detail": "As a quick action, you can lock shields until the start of your next turn. While shields are locked you gain <strong>Hard</strong> <strong>Cover</strong> against attacks and <strong>Resistance to damage from Blast, Burst, Line and Cone attacks.</strong>",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_predictive_counteraction",
+    "name": "PREDICTIVE COUNTERACTION",
+    "source": "SAE",
+    "license": "INSPIRATION",
+    "license_level": 2,
+    "effect": "Gain the <strong>Run Interference</strong> reaction.",
+    "type": "System",
+    "sp": 2,
+    "description": "<em>“Vorpal Gun spooling...firing in 1.3 seconds. Recommended counterplay...kick them in the weird metastatic face, they’ll not expect that.” - Siani 137, SAE Artificer</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "actions": [
+      {
+        "name": "RUN INTERFERENCE",
+        "activation": "Reaction",
+        "detail": "The triggering character must pass an <strong>agility</strong> save or the reaction is expended but has no effect.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "A character in <strong>range 5</strong> and line of sight would make a reaction."
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "sae_ms_banner_of_liberation",
+    "name": "BANNER OF LIBERATION",
+    "source": "SAE",
+    "license": "INSPIRATION",
+    "license_level": 3,
+    "effect": "Gain the <strong>Last Stand</strong> free action.",
+    "type": "Tech",
+    "sp": 2,
+    "description": "<em>The usual assumption is that mechs can assault locations but they cannot truly take ground, as equipment designed for human-scale usage is useless in the hands of a mech, requiring infantry to make use of local systems. SAE has attempted to avoid this limitation with the creation of an interface data construct that can easily suborn control of systems around it...or, in an emergency, lock out all who would attempt to reclaim them.</em>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "BANNER OF LIBERATION",
+        "activation": "Quick Tech",
+        "detail": "1/scene, Create a Size 1 banner data construct in <strong>Range 5</strong>, which projects a <strong>Burst 2</strong> area around it. Allied characters at least partially within the area gain soft cover and +1 accuracy on all checks and saves.<br><br>Objectives and Control Zones at least partially within this area are unaffected by hostile characters and the banner itself counts as an allied character for the purpose of objectives and Control Zones. The banner lasts for the rest of the scene, or until destroyed by an adjacent character with a successful systems skill check as a full action.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "LAST STAND",
+        "activation": "Free",
+        "detail": "When you create the data construct, you can expend 1 CP to empower it to ensure victory at any cost as a free action. While the banner stands, if the enemy would win the mission or the result would be a draw at the end of the round, the mission continues instead. Continue to check Victory Conditions at the end of each subsequent round.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  }
+]

@@ -1,0 +1,409 @@
+[
+  {
+    "id": "mfc_iklwa",
+    "name": "IKLWA",
+    "mount": "Main",
+    "type": "Melee",
+    "source": "MFC",
+    "sp": 1,
+    "effect": "On miss this weapon deals 1 burn.",
+    "license_level": 2,
+    "license": "IBUTHO",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d3"
+      },
+      {
+        "type": "Burn",
+        "val": 1
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "description": "An Iklwa is an ancient weapon – a short haft, tipped with a charged, diamond-shaped blade, meant to puncture vulnerable joints and gaps in plating. Its glides like butter through armor planting, cauterizing anything  it touches on contact.  Early designs were derivative of weapons used during humanity's inception, but the modern Ilkwa is a reliable, balanced weapon ideal for dispatching nearby foes."
+  },
+  {
+    "id": "mfc_isihlangu",
+    "name": "ISIHLANGU",
+    "mount": "Main",
+    "type": "Melee",
+    "source": "MFC",
+    "sp": 1,
+    "license_level": 2,
+    "license": "IBUTHO",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "2d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "effect": "<p>When you Brace, this weapon becomes charged and lasts until the end of the mission unless used. Additionally when you brace you may move 2 spaces in any direction ignoring engagement, reactions and the slowed condition to attack with this weapon. </p><p>On hits with this weapon you may expend this weapon’s charge to cause all characters in a burst 2 area centred on your character to immediately fall prone</p>",
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "description": "Much like the Iklwa, the Ishlangu shield stands the testament of time. No Ibutho ventures into battle without both equipped at arms. Used to repel countless aggressors on the battlefield, if the iklwa is an Ibutho’s claws, then the ishlangu is its hide."
+  },
+  {
+    "id": "mfc_Assaggi_umgodi_cannon",
+    "name": "ASSAGGI UMGODI CANNON",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "source": "MFC",
+    "license_level": 2,
+    "license": "AMADLOZI",
+    "effect": "On attack, create a blast 2 area of difficult terrain at the end of this weapon's line that lasts until the start of your next turn.",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "2d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 8
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      }
+    ]
+  },
+  {
+    "id": "mfc_short_blast_terraforming_rod",
+    "name": "SHORT BLAST TERRAFORMING Cannon",
+    "mount": "Auxiliary",
+    "type": "Cannon",
+    "source": "MFC",
+    "description": "When SHAKA would return. When the Impi would be wounded and unable to press on we created the Meta-Vault, and around it, Unkulunkulu. We’d draw power from both, and nurse our roving lions back to health.",
+    "license_level": 1,
+    "license": "AMADLOZI",
+    "effect": "On attack create a blast 1 area of difficult terrain centered on the target that lasts until the end of your next turn, if this difficult terrain overlaps with any preexisting difficult terrain it instead becomes energy dangerous terrain that lasts until the end of the scene",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_arcing"
+      }
+    ]
+  },
+  {
+    "id": "mfc_amadlozi_integrated",
+    "name": "UNKULU'S IWISA",
+    "mount": "Main",
+    "type": "Melee",
+    "effect": "This weapon can attack with two diffrent profiles and it deals 10AP damage to objects and terrain on hit or miss.",
+    "actions": [
+      {
+        "name": "Shift Unkulu's Iwisa",
+        "activation": "Quick",
+        "detail": "You may shift this weapon’s profile as a quick action. When changed, it has the following profile and remains changed until you shift it back with another quick action."
+      }
+    ],
+    "profiles": [
+      {
+        "name": "Kinetic Decimator Melee",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": 1
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ap"
+          }
+        ],
+        "on_hit": "On hit, roll a 1d6 and the target is knocked back upto that many spaces and becomes prone.",
+        "skirmish": true
+      },
+      {
+        "name": "Void Generator Cannon",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": 1
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 15
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ap"
+          }
+        ],
+        "on_hit": "On hit, roll a 1d6 and the target is involuntarily pulled  up to that many spaces directly towards you or as close as possible.",
+        "skirmish": true
+      }
+    ]
+  },
+  {
+    "id": "mfc_adhesive_chaff_missiles",
+    "name": "ADHESIVE CHAFF MISSILES",
+    "mount": "Auxiliary",
+    "type": "Launcher",
+    "source": "MFC",
+    "license_level": 1,
+    "license": "CETSHWAYO",
+    "effect": "On hit, the missiles release a system-disabling static chaff that adds +1 difficultly to any tech attacks your target makes until the end of their next turn.",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1"
+      },
+      {
+        "type": "Heat",
+        "val": "1"
+      },
+      {
+        "type": "Burn",
+        "val": "1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_arcing"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": "2"
+      }
+    ],
+    "description": "<i>Built off the lessons learned from the Ibutho and amaDolozi, the Chaff Missiles often equipped to the Cetshwayo have covered the weak points of the Bull’s Horns formation since their inception. Using a burst-cloud trigger, coupled with an adhesive lace, on impact, the Chaff Missiles disrupt mech system’s root functions rendering them momentarily internet.</i>"
+  },
+  {
+    "id": "mfc_inkemba_Launcher",
+    "name": "INKEMBA Launcher",
+    "mount": "Main",
+    "type": "Launcher",
+    "source": "MFC",
+    "license_level": 2,
+    "sp": 1,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      },
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "effect": "On hit, attacks against the target gain +1 accuracy until the end of your next turn.",
+    "license": "CETSHWAYO",
+    "description": "<i>The Inkemba, designed from replaceable carbo-light steels. The weapon usually extends as a medium long claw from mech arm appendages. The inkemba is an anthropomorphic blade that when impaling a foe it transmits focus/hunt lockons, preventing the target from breaking sight of their attacker.</i>"
+  },
+  {
+    "id": "mfc_umkhonto",
+    "name": "UMKHONTO",
+    "mount": "Main",
+    "type": "Launcher",
+    "source": "MFC",
+    "license_level": 2,
+    "sp": 1,
+    "license": "CETSHWAYO",
+    "effect": "This weapon may only be fired as a protocol and does not benifit from or trigger your talents.",
+    "actions": [
+      {
+        "name": "Premptive Targets Selection",
+        "activation": "Protocol",
+        "detail": "You you fire the Umkhonto"
+      }
+    ],
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": 3
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "description": "<i>The long spear, the breath of air before the word. The Umkhonto is Mfeacne’s alpha strike answer to mech on mech combat. Reliable and precise, the Umkhonto fires a super heated plasma bolt from a back-rack mounted compound assegai rifle. Silent and swift in its application of force. When impi bring the Umkhonto to battle, the drum for which signals the start of combat always becomes the sound of fallen enemy mechs as an impi’s Umkhoonto pierces them through.</i>"
+  },
+  {
+    "id": "mfc_mfecane's_hand:_a_weapon_made_to_conquer",
+    "name": "MFECANE'S HAND: A WEAPON MADE TO CONQUER",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "source": "MFC",
+    "license_level": 1,
+    "license": "GROOTSLANG",
+    "effect": "At the end of this weapon’s line, create a burst 2 area of swirling radiating particles that last until the start of your next turn. Characters that start their turn in the blast radius take 2 burn.",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6"
+      }
+    ],
+    "description": "The Hand, a weapon the Umethetho thought indicative of the Mfecnae’s proverbial hand. This weapon is meant for others to fire and for foe to feel. A miniaturized version of Mfecane’s short cycle spool guns equipped on Assagai Corvettes The Hand is by far Mfecane’s most menacing mech scale weapon.",
+    "range": [
+      {
+        "type": "Line",
+        "val": 10
+      },
+      {
+        "type": "Burst",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_inaccurate"
+      },
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_loading"
+      }
+    ]
+  },
+  {
+    "id": "mfc_iwisa",
+    "name": "Iwisa",
+    "mount": "Main",
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "effect": "On hit, the target must pass a HULL SAVE or suffer temporary system trumma, losing access to a weapon or system until the end of their next turn. A character can only be affected by this effect 1/round.",
+    "description": "Another of SHAKA’s gifts the Iwisa strong and deadly. Its blow has been and will be felt from times to come.<i>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_thrown",
+        "val": 5
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ]
+  },
+  {
+    "id": "mfc_zulu_shotgun",
+    "name": "Zulu Shotgun",
+    "mount": "Main",
+    "type": "CQB",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      },
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "effect": "Before attacking with this weapon you may elect to take x amount of heat to gain +1 bonus <b>burn</b> damage per heat paid for the purposes of this attack.",
+    "description": "The roar of a people, the flames of their legacy, the resonance of their cry. Face Us.<i>",
+    "tags": [
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ]
+  }
+]

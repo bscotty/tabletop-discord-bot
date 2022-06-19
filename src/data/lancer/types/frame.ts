@@ -16,7 +16,7 @@ export type Frame = {
     traits: IFrameTraitData[]
     core_system: ICoreSystemData
     image_url?: string
-    y_pos?: number
+    y_pos?: number | string // ironleaf foundry's frames all have a string
 }
 
 export type IFrameTraitData = {

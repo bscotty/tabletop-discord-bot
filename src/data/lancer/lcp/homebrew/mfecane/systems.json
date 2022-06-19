@@ -1,0 +1,457 @@
+[
+  {
+    "id": "ingoma",
+    "name": "INGOMA",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_invade"
+      }
+    ],
+    "source": "MFC",
+    "license": "IBUTHO",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Dance",
+        "activation": "Invade",
+        "detail": "You take 1d6 energy damage and until the end your target’s next turn, 1/round when they attack and deal any damage or heat to you or an allied character, you may immediately attack them with a non-superheavy melee weapon within threat. (this attack does not consume your reaction, but this invade option may only affect one character at a time)."
+      },
+      {
+        "name": "Sing",
+        "activation": "Invade",
+        "detail": "You and the target gain +1 accuracy to attacking each other until the end of their next turn. Additionally, while the target is under this effect, 1/round when you roll a critical hit against the affected character you deal bonus 1d6 damage."
+      }
+    ],
+    "description": "The war chant of Mfecane is renowned throughout the Orion Arm. Those who hear it cannont help but be held in contempt. <br>Thou, the great and mighty king!<br> Thou who hast an army! The son of Sonzica sent his forces! We destroyed them! The amaSoja came - We destroyed them! The mounted soldiers came - We destroyed them! The amaLenja came - We destroyed them! The Nongqai came - We destroyed them! Thou, the Great Chief! Thou who hast an army! When will they dare to repeat their attack?"
+  },
+  {
+    "id": "reinforced_sub-dermal_plating",
+    "name": "REINFORCED SUB-DERMAL PLATING",
+    "type": "System",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MFC",
+    "license": "IBUTHO",
+    "license_level": 1,
+    "effect": "When you Brace, if the damage you take is equal to or less than 12+Grit then reduce that damage to 1. Additionally you may take 2 heat to ignore one status or condition caused by the triggering attack. You may still use the standard Brace effect instead if you choose.",
+    "description": "Mfecane’s proprietary sub-dermal plating has saved the lives of many pilots who’ve been on the receiving end of overwhelming firepower."
+  },
+  {
+    "id": "project_the_ikanda",
+    "name": "PROJECT THE IKANDA",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "MFC",
+    "license": "IBUTHO",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Quick",
+        "heat_cost": 2,
+        "detail": "<p>Upon activation, you generate a <b>burst 3</b> ikanda composed of permeable augmented real space centred on your mech. While active you can no longer <b>boost</b> or <b>hide</b> but are immune to being knocked <b>prone</b>. While <b>prone</b>, enemy characters completely within the ikanda take <b>1d3+1 bonus damage</b> when dealt damage or burn from a ranged or melee attack originating from within the ikanda. Additionally, when a prone enemy character compeelty within the ikanda uses their standard movement to stand up they must make a <b>systems save</b> and on fail they remain <b>prone</b> and cannot attempt to stand up until the start of their next turn. An enemy character can only be affected by these effects 1/round. <p>You may end this effect as a protocol, otherwise it lasts until the end of the scene.</p>"
+      }
+    ],
+    "description": "<b>[MFECANE ENTRY QULA 34ZU]</b> <br>A low durm wakes the sleeping bones, a note hangs along the air like an apparition. It dances and shakes from the drums’ vibrations. To be in the ikanda is to feel victory and oppression in unison. To know beyond these grounds lay foes yet slain but to find protection in the fact that the foe that lay before you will surely meet their end.</br> <br><b>[UNION ENTRY MFC 1.10a TACTICS]</b> The Mfecane ikdanda is both a place of myth and faceit reality. The Mfecane talk as if it exist within the mind and too the real. I’ll tell you, the Ibutho tears this myth to sunder. I’ve seen the Ikanda, it’s real is so many ways. It exalts its heroes and marks them gods. A realspace manifestation born of the filament. Should you find yourself within one, know that there is no escape.</br>"
+  },
+  {
+    "id": "the_crushing",
+    "name": "THE CRUSHING",
+    "sp": 3,
+    "effect": "Upon activation you expend a charge and take <b>1d6+2AP kinetic damage</b> to choose a melee weapon this protocol applies to. Mark <b>3 free spaces</b> within range 3 or within 3 spaces of each other with a Crushing Mark that lasts until the end of the scene or until you take this protocol again",
+    "description": "Great SHAKA, king of the Zulu, may your enemies crumble at the might of your Zulu armies; your innovative war tactics and Impi warriors will win you the stars. Fear not the loss of yourself in the storm of wars yet to come, for victory over all else is the right of the Zulu. <br> </br> Proprietary technology bestowed upon Mfeacne, The Cushing's neruo-nextwork integration selave reconfigures the standard chassis cockpit with a liquid proof sealant and Kuku nano-liquid funnels to flash flood the pilot with synapse stimulating bots. The process lasts only seconds, as pilot and cockpit are downed and infused with several minitruized SHAKA CLASS NHP facsimile nano-clones. The blending of flesh, metal and NHP is jarring but has produced unique battlefield awareness applications not entirely understood by even Mfecane combat analysts. The end result is  just the Crushing.",
+    "type": "System",
+    "source": "MFC",
+    "license_level": 3,
+    "license": "IBUTHO",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Protocol",
+        "detail": "Upon activation you expend a charge and take <b>1d6+2AP kinetic</b> damage to choose a melee weapon this protocol applies to. Mark 3 free spaces in range 3 and within 3 spaces of each other with a <b>Crushing Mark</b> that lasts until the end of the scene or until you take this protocol again"
+      },
+      {
+        "name": "THE CRUSHING",
+        "activation": "Reaction",
+        "frequency": "Unlimited",
+        "trigger": "An enemy character enters a space marked with a Crushing Mark.",
+        "detail": "You may immediately teleport to a <b>free space</b> adjacent to the Crushing Mark and attack the enemy character with the chosen weapon as a reaction. (This movement interrupts and resolves before the triggering action. <p>An enemy character can only be affected by this 1/round but this reaction may be taken multiple times in a round.)</p>"
+      }
+    ]
+  },
+  {
+    "id": "mfc_pillers_of_mfecane",
+    "source": "MFC",
+    "name": "PILLERS OF MFECANE",
+    "sp": 2,
+    "description": "<i>We erected pillars, the formation of what we call Mfecane. It would hold SHAKA, our Unkulu and Us. This was all for Mfecane, and these pillars would stand above our foes as monoliths of our greatness.</i>",
+    "license": "AMADLOZI",
+    "license_level": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "Choose 1 space of difficult or dangerous terrain within line of sight. You create a size 2 pillar of indestructible hardcover composed of a cascading meta-fold mass on top of it lasting until the end of the scene and you gain the Unkulu’s Grasp reaction. You may only have one Pillar of Mfecane created at a time and creating a new pillar removes the previous pillar from the map."
+      },
+      {
+        "name": "Unkulu's Grasp",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "You or an allied character within range 5 of a Pillar of Mfecane are targeted by an ranged attack",
+        "detail": "Make a contested ranged attack roll adding your Grit to the result: if you win the contested roll, the attack instead hits the Pillar of Mfecane."
+      }
+    ]
+  },
+  {
+    "id": "mfc_terraforming_engines",
+    "source": "MFC",
+    "name": "TERRAFORMING ENGINES",
+    "description": "<i>Unkulukulu would become a beacon to all those that befall Mfecane. A dying planet now restored to magnificence. SHAKA would be stunned at the beauty created and the Impi would find peace.<i/>",
+    "sp": 2,
+    "license": "AMADLOZI",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "<br>As a quick action you may either target up to a blast 1 area of difficult terrain or dangerous terrain within sensors and line of sight or you may create a blast 1 area of difficult terrain in free spaces within sensors and line of sight that lasts until the end of your next turn. Additionally, you may pay 1 heat to apply one of the following effects to the difficult or dangerous terrain.  (these effects cannot overlap or stack for any reason but may interact with other systems that create or modify dangerous or difficult terrain)</br><br><b>Quick Seal Swamp:</b>  When a character starts or moves into the terrain for the first time in a round they must pass a hull save and on failure are immobilized and remain immobilized until the end of their next turn and become immune to this effect during their following turn. </br><br><b>Localized Quake:</b> When a character starts or moves into the terrain for the first time in a round they must pass an agility save and on failure fall prone and cannot stand up while occupying this terrain until it disappears. </br><br><b>Radioactive Rupture:</b>  When a character starts or moves into the terrain for the first time in a round they must pass an engineering save and on failure take 1d3+1  heat or half on success.</br>"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ]
+  },
+  {
+    "id": "mfc_creation_directive:Gravity Isolation",
+    "source": "MFC",
+    "name": "CREATION Directive: GRAVITY ISOLATION",
+    "description": "<i>SHAKA played about the stars, gallivanting with its Impi, hunting Mfecane’s foes and creating new ones. We the Unkulu Umethetho created in its absences. May the roaming lion hunt, but the cautions lioness shall keep all that is, safe.<i/>",
+    "sp": 2,
+    "license": "AMADLOZI",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "Choose a free space of difficult or dangerous terrain within sensors and line of sight. Create up to 6 pieces of Size 1 hardcover, take 1 heat per hardcover created, in free spaces adjacent to each other or the initial space. Each piece of this Cover has 10 HP and 5 Evasion. If dangerous terrain was chosen you may make this terrain dangerous hardcover. Whenever a hostile character starts their turn adjacent to this hardcover they must make an engineering save or take 5 burn damage. (A character can only be affected by this effect 1/round even if adjacent to multiple pieces of dangerous hardcover)",
+        "heat_cost": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Gravity Isolation",
+        "type": "Deployable",
+        "activation": "Free",
+        "hp": "10",
+        "evasion": "5",
+        "detail": "Created by the Creaction Protocol"
+      }
+    ]
+  },
+  {
+    "id": "mfc_beckon_emva_kwempilo",
+    "source": "MFC",
+    "name": "Beckon Emva Kwempilo",
+    "description": "<i>SHAKA has modeled its impi into a weapon, a rudimentary one at that. We Umethetheo, we know the stories well, we wrote them when SHAKA bathed in the crimson pool. Those stories, they tell of Emva Kwempilo, the afterlife. We will send you there.<i/>",
+    "sp": 2,
+    "license": "AMADLOZI",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Full",
+        "detail": "As a full action create a <b>burst 3</b> area of explosive, kinetic or energy dangerous terrain and difficult terrain that last until the end of the scene and that does not move with you. Upon activating this system, you may choose to become immobilized until the start of your next turn to force hostile characters who take any movement in the area to take 1 burn for every space they move. You may choose to remain immobilized to sustain this additional effect, but the effect ends if you cease to be immobilized or are voluntarily or involuntarily moved for any reason."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "mfc_release_the_bulls",
+    "source": "MFC",
+    "name": "RELEASE THE BULLS",
+    "description": "<i>When heat is not a concern, the Release the Bulls theromo-magnetic reactor activates over charging a mechs launcher weapons. Once charged, a superheated electro coating covers all fired munitions creating devastating results. Avoidance is impossible, the visage of such an assault was deemed “the charging bulls” by a Union Admin who’d evaluated Mfecane combat superiority during a War Order liberation mission in the Endle. Speciality developed by the inDluyenge sub-order, Release the Bulls is often only used with quick solutions are essential. Long term overclocking of the theromo-magnetic reactor will certainly rupture a mechs coolant stabilizers.<i/>",
+    "sp": 3,
+    "license": "CETSHWAYO",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Protocol",
+        "detail": "Upon activation, all your Launcher weapons gain the AP and Seeking tag and deal 3 reliable damage until the end of your turn. At the end of your turn you take 3 heat for each weapon attack made this way."
+      }
+    ]
+  },
+  {
+    "id": "mfc_bend_the _knee",
+    "name": "BEND THE KNEE",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_invade"
+      }
+    ],
+    "source": "MFC",
+    "license": "CETSHWAYO",
+    "license_level": 1,
+    "effect": "You invade your target, causing them to bend the knee as your mech’s systems rupture machine pathways, overtaking them in the process granting partial dominion over the target. Gain the following invade options.",
+    "actions": [
+      {
+        "name": "TO YIELD",
+        "activation": "Invade",
+        "detail": "You clear 3 heat, and until the end of your target’s next turn they cannot take any reactions and you cannot take any reactions until this effect ends."
+      },
+      {
+        "name": "TO SUBMIT",
+        "activation": "Invade",
+        "detail": "Until the start of your next turn whenever your target makes an attack roll against you or your allies they must first take 1 heat and you clear 1 heat for each attack roll made."
+      }
+    ],
+    "description": "<i>Designed by the Umethetho, the Bend the Knee tech-invade systems are revolutionary in their own right. Highly coveted by officials from HA, the code has the unique trait of projecting the users dominance within the digital plane leaving almost a psychological pain upon the target mech’s systems. It is an odd affliction and anomaly. Mfecane describes it as inkosi, “to feel the weight of the ruler”.</i>"
+  },
+  {
+    "id": "mfc_self_guiding_combat_shielding",
+    "name": "SELF GUIDING COMBAT SHIELDING",
+    "type": "System",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MFC",
+    "license": "GROOTSLANG",
+    "license_level": 2,
+    "effect": "<p>You may deploy up to your armor rating and within sensors a number of shields with the following stats: Size 1 HP: 10 E-Def: 5 Eva: 5. Once deployed a shield grants hard cover and reduces damage by 1 for any characters it grants cover to. You then lose armor equal to the number of shields deployed.",
+    "description": "<I><P>Protection and salvation form the waves of colonizers who seek ours. - Umethetho Isu officers on Unkulukulu.</P><P>The Self Guiding Adaptive Shielding system enhances standard mech armor with comp/con lite self guiding tech enabling detachable autonomous hovering shields. The system is popular with many Mfecane pilots of the Loins Order who seeks to preserve the foolhardy and brave Chest Order from their own avveriace for battle.</P></I>",
+    "actions": [
+      {
+        "name": "DEPLOY",
+        "activation": "quick",
+        "detail": "Upon activation, take 2 heat and deploy any number of shields to free spaces witin sensors and line of sight.",
+        "tags": [
+          {
+            "id": "tg_heat_self",
+            "val": 2
+          }
+        ]
+      },
+      {
+        "name": "RECALL",
+        "activation": "protocol",
+        "detail": "As a protocol you may recall the deployed shields, gain armor equal to the number of shields returned this way and repair all damage to each non-destroyed shield."
+      },
+      {
+        "name": "REDEPLOY",
+        "activation": "quick",
+        "detail": "you may move each shield 3 spaces in any direction, if this movement would cause the shield to pass through a character they take 1 kinetic damage."
+      },
+      {
+        "name": "REBUILD",
+        "activation": "free",
+        "detail": "you may take two non reducible damage to reconstruct a destroyed, lost or otherwise unretrievable shield."
+      }
+    ]
+  },
+  {
+    "id": "mfc_reactionry_reposition_thrusters",
+    "source": "MFC",
+    "name": "REACTIONARY REPOSTION THRUSTERS",
+    "sp": 1,
+    "description": "<i>Reserve thrusters intended to close the distance when attacked, the Backweve Thrusters line the spine of mech and fold into the chassis. When activated the jolt of forward motion is near equal to the recoil from a near-light ejection. Now perfected, the system comes with a smooth grove conducive seating apparatus to ensure the sudden backwaves burst is not fatal to the pilot.</i>",
+    "license": "GROOTSLANG",
+    "license_level": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Free",
+        "detail": "Gain the Backweave Burst reaction."
+      },
+      {
+        "name": "BACKWEAVE BRUST",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "You take damage from a hostile ranged or melee attack.",
+        "detail": "You and up to your size of adjacent allies  may move up to your speed in a straight line, ignoring reactions and engagement. If you would end up adjacent to a hostile characters of smaller size they must make a <b>hull save</b> and on failure become prone and take 1d6 kinetic damage, on success they only take half damage."
+      }
+    ]
+  },
+  {
+    "id": "mfc_glitch_pulse_wave",
+    "name": "GLITCH PULSE WAVE",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "MFC",
+    "license": "GROOTSLANG",
+    "license_level": 3,
+    "effect": "Upon activation and until the end of your next turn allied characters adjacent to you or any allied character, including yourself, adjacent to your deployables gain soft cover, and  invisibility to one attack made against them within the round. You take 1 heat each time an you or an ally chooses to gain invisibility this way.",
+    "description": "<I><P>Mfecnae dominate the Maluti Line. and we shall choose the landscape we fight in. Know if you engage us in battle you fight in our domain. You will lose and you will not see it coming till the end.</P><P>The Gltich Pulse Wave is a systems designed entilry by the brightest of the Umethetho it projects a hard-light landscape of the pilot’s design effectively altering the area round the mech providing cover to allies and imposing targeting scrambling nanties upon emeny weapons and systems.</P></I>",
+    "actions": [
+      {
+        "activation": "Full",
+        "detail": "allied characters adjacent to you or your deployables gain soft cover, and  invisibility for the first attack made against them in the round. You take 1 heat each time an ally choses to gain invisibility this way."
+      }
+    ]
+  },
+  {
+    "id": "mfc_mfecane's_stamina:_continue_till_they_break",
+    "name": "MFECANE'S STAMINA: CONTINUE TILL THEY BREAK",
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "source": "MFC",
+    "license": "GROOTSLANG",
+    "license_level": 3,
+    "effect": "You or an adjacent ally may as a quick action expend a charge to reload all loading weapons for you and all allied characters adjacent to you. At the end of your turn you take an additional 2 heat for every weapon reloaded this way.",
+    "description": "<I><P>We will never stop. You will soon bend. We will never yield. You will soon fear. We will soon win. You will never test us again.</P><P>The Umethetho thought to ensure the battle is won. While not SHAKA’s and the War Orders strategy the Stamina has quickly become a stable among the War Orders Loins Order. They find it to be the embodiment of their directive. To press one, bolster the ranks and ensure the battle is won.</P></I>"
+  },
+  {
+    "id": "mfc_exo_ignition_nades",
+    "name": "Ignition Nades",
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "actions": [
+      {
+        "name": "Ignition Nade",
+        "activation": "Quick",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "detail": "Once thrown, create a blast one area of chaff that lasts until the end of your next turn and deals 1 heat to characters who start their turn in or partially in the blast area. Before taking their first action characters must make an ENGINEERING SAVE and on failure take burn equal to their current heat or half on success."
+      }
+    ],
+    "description": "Soak the grounds with fire, it will form the floor of our ikanda. We will be light of foot and quick of temper. When the dance is done one of us will incinerate."
+  },
+  {
+    "id": "mfc_exo_sajambok",
+    "name": "SAJAMBOK",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "Choose a target in range 10 and line of sight to make an AGILITY SAVE, on failure electrified tendrils attach to their mech that last until their next attack roll is made. Upon attacking the target takes 3 HEAT and suffers -x to thier attack roll where x is equal to their current heat rating after taking damage.",
+    "description": "<I><P>A weapon to teach them to hold their hands still</P></I>"
+  },
+  {
+    "id": "mfc_exo_baobab_boost_line",
+    "name": "Baobab Boost Line",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "Choose a size 1 free space in line of sight and within range 10, deploy a size 2 Boabab anchor in an adjacent free space and the chosen free space. A size 1 character as a boost can ride the Baobab line to the chosen free space. Baobab anchors have HP 5 and Evasion 5. Once deployed the Baobab cannot be picked up and is destroyed at the end of the scene.",
+    "description": "<I><P>Soar high little impi, it is your day to touch the clouds and reach izukuni</P></I>"
+  }
+]

@@ -1,0 +1,355 @@
+[
+  {
+    "id": "MFC_IBUTHO",
+    "source": "MFC",
+    "name": "IBUTHO",
+    "mechtype": [
+      "Striker"
+    ],
+    "y_pos": 25,
+    "license_level": 2,
+    "description": "<p>The Ibutho is Mfecane’s frontier warrior and symbol of peace. Coming into existence shortly after Mfecane’s establishment as an independent corpo-state, the Ibutho has been the face of Mfecane’s dominance in the Maluti Line (formerly known Atlas line) since Sec-Com’s defeat in 3280u. Nimble and resilient, the Ibutho’s design is revolutionary and likely the reason for the countless defeats Union and other corpo-states have faced at the tip of its Ilkwa. Blending a lightweight frame fueled by paracausal adjacent technology, when the Ibutho activates SHAKA-----| UNKNOWABLE *ERROR* ZU-LU! ZU-LU! ZU-LU!|……</p><p>Each Ibutho pattern mech and Lancer pilot are configured and trained over their lifetime to accept SHAKA as the embodiment of victory. Consequently, the time necessary to ready an Ibutho and Lancer to accept SHAKA can take half a century and as a result Mfecane is very judicious in their deployment of existing Ibuthos and pilots.</p><p>The Ibutho is a close quarters combat mech, built to employ rapid deadly force and trickery to deceive its foes into believing the battle is won. Employing the use of its Isihlangu and Ilkwa the Ibutho has no equal in rapid application of combat prowess. Known by its reputation of crushing any and every foe indiscriminately the Ibutho is also treasured by Lancer pilots looking to prove themselves in the shadow of SHAKA.</p>",
+    "other_art": [
+      {
+        "tag": "mech",
+        "src": "https://media.discordapp.net/attachments/813876747912085514/824098809193431150/image0.png"
+      }
+    ],
+    "mounts": [
+      "Main",
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "stress": 4,
+      "structure": 4,
+      "armor": 1,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 5,
+      "repcap": 5,
+      "sensor_range": 7,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "POSTION THE BULL THRUSTERS",
+        "description": "Before or after the Ibutho <b>Rams</b>, it can <b>fly</b> up to 3 spaces in any direction towards the target. This movement ignores engagement and doesn’t provoke reactions.",
+        "synergies": [
+          {
+            "locations": [
+              "move"
+            ],
+            "detail": "When the Ibutho <b>Rams</b>, it can <b>fly</b> up to 3 spaces in any direction towards the target before the attack."
+          }
+        ]
+      },
+      {
+        "name": "BULL'S HORNS COMBAT SYSTEMS",
+        "description": "1/round When the Ibutho is at half or less than half  HP, its next <b>melee attack</b> deals +2d3 bonus damage and +1 heat , and when at or less than ¼ its HP this damage instead becomes 4d3 and +2 heat. ",
+        "actions": [
+          {
+            "name": "Bull's Horns",
+            "activation": "Free",
+            "frequency": "1/round",
+            "detail": "1/round as a free action, the Ibutho may deal bonus damage depding on it's current HP",
+            "synergies": [
+              {
+                "locations": [
+                  "weapon"
+                ],
+                "weapon_types": [
+                  "Melee"
+                ],
+                "detail": "The Ibutho may deal bonus damage when attacking with a melee weapon."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UNSHACKLE",
+        "description": "1/scene as a free action the Ibutho may temporarily reduce either or both its structure and stress to 1 for the remainder of the scene, gaining immunity to all effects from the loss of each resource other than restoring HP and clearing heat. Unless destroyed, It then regains 1 structure and 1 stress at the end of the scene if both resources were reduced this way.",
+        "synergies": [
+          {
+            "locations": [
+              "structure",
+              "stress"
+            ],
+            "detail": "The Ibutho may temporarly reduce it's structure and stress"
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "NHP-SHAKA",
+      "description": "Mfecane’s integrated NHP SHAKA draws on an unknowable source of fighting spirit, pushing the Ibutho and pilot to their limits at the cost of gaining the power necessary to end a fight for good. SHAKA’S activation typically leaves the pilot inert until all nearby foes or the Ibutho are terminated.",
+      "active_name": "SHAKA-CLASS NHP",
+      "tags": [
+        {
+          "id": "tg_ai"
+        }
+      ],
+      "use": "Mission",
+      "active_effect": "1/round as a <b> protocol</b> You may choose a formation that last until the start of your next turn <br> </br> <b>CHEST FORMATION:</b> <br> The first time you hit a target with a <b>weapon</b> in a round you may attack again with a melee weapon as a <b>free action</b> at any point on your turn.</br> <br> <b>HORNS FORMATION:</b> <br>When you boost you gain half your speed stat in movement. Your boost now ignores engagement, does not provoke reactions and can <b>ram</b> as a <b>free action</b> when you end this movement adjacent to a character. </br> <br> <b>LOINS FORMATION:</b> <br>The Ibutho gains <b>soft cover</b> until it makes an attack aginst a hostil character. 1/round the Ibutho gains <b>resistance</b> one ranged or melee attack.</br> <br> </br>",
+      "activation": "Protocol",
+      "passive_name": "BREAK/CHAINS",
+      "passive_effect": "(The Ibutho does not benefit from other systems with the AI tag.) <b>BREAK/CHAINS:</b><i> At the start of your turn, when you have 1 structure and 1 stress remaining or when you roll a 1 for a cascade check, SHAKA gains control of all the Ibutho’s  standard actions, excluding, protocols, overcharges, reactions and free actions.</i> <br> </br> SHAKA uses all available actions and movement to move toward the closest non-hidden character- allied or hostile-and attacks them with melee attacks, prioritizing melee weapons. These attacks deal +1 bonus damage and the Ibutho gains +1 speed equal to the number of enemy characters you destroyed this way up to a maximum of 6."
+    },
+    "image_url": "https://media.discordapp.net/attachments/813876747912085514/824229345597325342/image0.png"
+  },
+  {
+    "id": "MFC_AMADLOZI",
+    "source": "MFC",
+    "name": "AMADLOZI",
+    "mechtype": [
+      "Controller",
+      "Defender"
+    ],
+    "y_pos": 45,
+    "license_level": 2,
+    "description": "<p>After SHAKA’s arrival they say the Mfecane would spread across the Atlas Line, under the lead of the Unkulu Umetheho. Their mission, find a habitable planet, a host to Mfecane. A place where SHAKA could calm its ire and quench its wrath.</p> <p> The amaDlozi was there</p> <p> The Sagnoma’s records housed within the Halls of Re-Memory tell of machines, built from the wreckage of the Soncia. These machines were the discard playthings of SHAKA. Its true nature was unknown to us then, it earned our praises and it felled our foes. But it ignored so much, squandered technology which could have birthed a new life for Mfecane to instead build instruments of war. That is why we, the Unkulu Umethetho would use our science, use our engineers, and the best among the people who now are known as Mfeacne to build the AmaDolozi.</p> <p> Our Architect</p> <p>We would send our Architect to moons, asteroids and planets in hopes of finding then building a home for Mfecane’s future. SHAKA not once aided our efforts. Too busy eliminating the Heart and Head of the Sonsica. Though its methods were draconic, it did provide sanctuary for our search. Eventually we’d find dead rock. We sent armada of amaDlozi. Years later. We’d have a home. Years after that we’d have a future. Years after that, we’d have Unkulukulu the cradle of Mfecnae</p> <p>The amaDlozi is a pattern frame developed some time after SHAKA’s Ibutho. It’s distinctly emcombred frame matched with sleek and easy edges blends opposing design concepts. The integrated Iwisa is a holdover from the pattern's beginnings as a terraforming tool, but has found many applications on the battlefield.</p> ",
+    "mounts": [
+      "Heavy",
+      "Aux/Aux"
+    ],
+    "stats": {
+      "size": 2,
+      "stress": 4,
+      "structure": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 7,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": -1,
+      "save": 12,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "TREMBLE WITH FEAR...",
+        "description": "Before damage reduction or resistance, whenever the amaDlozi takes any damage, they may reduce that damage by 1 to a minimum of 0 damage.",
+        "synergies": [
+          {
+            "locations": [
+              "hp"
+            ],
+            "detail": "The amaDlozi reduces all damage from any source by 1."
+          }
+        ]
+      },
+      {
+        "name": "...TREMBLE WITH JOY",
+        "description": "The amaDlozi gains immunity to dangerous and difficult terrain and allied characters within RANGE 5 also gain immunity to dangerous terrain and difficult terrain.",
+        "synergies": [
+          {
+            "locations": [
+              "move"
+            ],
+            "detail": "The amaDlozi ignores diffcult terrain."
+          }
+        ]
+      },
+      {
+        "name": "BREAK GROUNDS",
+        "description": "Hostile characters in sensors must now roll an Engineering Save using the amaDolzi’s save target, when rolling to avoid taking damage from dangerous terrain."
+      }
+    ],
+    "core_system": {
+      "name": "META-FOLD IWISA",
+      "description": "<i>Unveiling the Unkulu’s Iwise from beyond the Mfecane’s meta-valut. Only SHAKA and the Unkulu know its true form. Crafted from impossible geometry, its design rivals the Iklwa.</i>",
+      "active_name": "UNKULU'S DECIMATION",
+      "use": "Mission",
+      "active_effect": "On hit, the Unkulu’s Iwisa creates a cone 5 area of difficult terrain centred on the target character in a direction directly behind or directly in front that lasts until the end of the scene. All difficult terrain created by the amaDlozi deals 1AP damage when a character enters or starts their turn in the space.",
+      "activation": "Protocol",
+      "integrated": [
+        "mfc_amadlozi_integrated"
+      ]
+    },
+    "image_url": "https://media.discordapp.net/attachments/813876747912085514/922484838072713246/amadolzi.png?width=895&height=910"
+  },
+  {
+    "id": "MFC_CETSHWAYO",
+    "source": "MFC",
+    "name": "CETSHWAYO",
+    "mechtype": [
+      "Artillery",
+      "Controller"
+    ],
+    "y_pos": 20,
+    "license_level": 2,
+    "description": "<p>Mfecane’s dominance was secured. A home was founded. Their enemies driven off to their holes and Mfecane’s sovereignty recognized by Union and those who’d in secret stake claim to that which lies behind the Nejusthui Blink Gate.</p><p>This newfound sovereignty needed to be protected.</p><p>In secret Mfecane’s Umthetho would consult with the shard of SHAKA that rests behind Izulu, the place for which Union would describe as a meta-vault. As the sole entity permitted to venture through the Izulu, the Unkulu is by necessity an aspect of that which composes SHAKA. Once a human now a living ideal, more real than an NHP and just as infamous. Their existence in both the real and Izulu means they are the living manifestation of what Mfecane calls QALA and UKUZALAWA.</p><p>The truth and the lie.</p><p>During the era of Mfecane’s third Unkulu a figure would be born. Its purpose is only truly known to the Unkulu. It would stand to be recognized just as the Unkulu was, both a truth and a lie. Once known, Mfecane would deem this divine pattern the Cetshwayo, like SHAKA, a name that is lost to time but recognized by all.</p><p>Cetshwayo, a ruler of heart and mind.</p><p>Nigh divine, the pattern would command Mfecane’s greatest weapons. Its ability to access Izulu and project a metaphysical command upon the  battlefield is its legacy. Being a formidable artillery pattern frame, the Cetshwayo is often parraded through Mfecane cities during Umgubho, the 10 year event celebrating the cycling of SHAKA and the dominance of the Mfecane. It launchers sending fireworks in exaltation of Mfecane’s renewed appreciation for SHAKA.</p>",
+    "other_art": [
+      {
+        "tag": "mech",
+        "src": "https://media.discordapp.net/attachments/813876747912085514/849398680187437086/cetshwayo_waifu2x_art_noise0_scale_tta_1.png"
+      }
+    ],
+    "mounts": [
+      "Flex",
+      "Flex"
+    ],
+    "stats": {
+      "size": 0.5,
+      "stress": 4,
+      "structure": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 12,
+      "edef": 7,
+      "heatcap": 10,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 6,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "LAW_OF_POSITION",
+        "description": "1/round The Cetshwayo may move 2 spaces before or after it attacks with a launcher weapon. this movement ignores engagement and does not provokes reactions.",
+        "actions": [
+          {
+            "name": "Law of Position",
+            "activation": "Free",
+            "frequency": "1/round",
+            "detail": "The Cetshwayo may move 2 spaces before it attacks with a launcher weapon."
+          }
+        ],
+        "synergies": [
+          {
+            "locations": [
+              "move"
+            ],
+            "detail": "The Cetshwayo may move 2 spaces before it attacks with a launcher weapon."
+          }
+        ]
+      },
+      {
+        "name": "RULE_OF_DOMINANCE",
+        "description": "When the Cetshwayo Overcharges, its next ranged or melee attack deals bonus damage equal to the heat it takes from overcharging (this effect can carry over to the next round but bonus damage can only apply to damage 1/round)",
+        "actions": [
+          {
+            "name": "Rule of Dominance",
+            "activation": "Other",
+            "frequency": "1/round",
+            "detail": "When the Cetshwayo Overcharges, its next ranged or melee attack deals bonus damage equal to the heat it takes from overcharging (this effect can carry over to the next round but bonus damage can only apply to damage 1/round)",
+            "synergies": [
+              {
+                "locations": [
+                  "overcharge"
+                ],
+                "detail": "When the Cetshwayo Overcharges, its next ranged or melee attack deals bonus damage equal to the heat it takes from overcharging (this effect can carry over to the next round but bonus damage can only apply to damage 1/round)"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "REACH_INTO_THE_METAVAULT",
+      "description": "The Cetshwayo’s reactor flashes and blinks a fold-space rupture adjacent to it. Reaching into Mfecane’s meta- vault and summoning the foundational code that which shackles the NHP SHAKA, the Cetshwayo then uses this code to punish those dare oppose Mfecane.",
+      "active_name": "Reach into the Metavault",
+      "active_effect": "Gain the Unkulu's Liturgy: Immolate reaction for the rest of the scene.",
+      "active_actions": [
+        {
+          "name": "Unkulu's Liturgy: Immolate",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "trigger": "An ally is attacked within sensors and line of sight.",
+          "detail": "Make a quick tech attack against the target attacker and on hit, deal your current heat to them as irreducible energy damage and clear 3 heat."
+        }
+      ],
+      "use": "Encounter",
+      "activation": "Protocol"
+    },
+    "image_url": "https://media.discordapp.net/attachments/813876747912085514/849398680187437086/cetshwayo_waifu2x_art_noise0_scale_tta_1.png"
+  },
+  {
+    "id": "MFC_GROOTSLANG",
+    "source": "MFC",
+    "name": "GROOTSLANG",
+    "mechtype": [
+      "Support"
+    ],
+    "y_pos": 22,
+    "license_level": 2,
+    "description": "<p>The Grootslang, a creation of the Umethetho’s grand design lay sleeping across a hundred hundred worlds and installations within Mfecane space.</p><p>During Mfecane’s formation, when SHAKA was consumed with building the ranks of the Impi War Order to fight against the Heart and the Head, the Umethetho would orchestrate the creation of the Grootslang. A pattern meant to defend the worlds Mfecane would soon come to claim dominion over. The pattern would be an all encompassing hulking mass of power meant to bolster the effectiveness and moral of allied combatants when deployed. When the Umethetho with their AmaDolozi would find and create Unkulukulu is when their grand design for the Grootslang would play out.</p><p>SHAKA would eliminate the forces of the Head of the Sonscia, but the journey to reunite with the rest of Mfecnae on their new home Unkulkulu would take time. In that time, adventurous Umethetho would launch for a place called the Endle. Wild Space, space now per Union’s acknowledgement resides under Mfecane protection. The Umethetho would venture forth with the intent of seeding new worlds with the Grootlang behind buried fortresses of Mfecane metal; this was done anticipating the eventual day they’d be called to either defend or conquer worlds within the Endle.</p><p>And so this is what would happen…</p><p>When SHAKA and its War Order of the Chest, Horns and Loins would return and Mfecne would be whole again, a new threat, another vestige of Old Humanity would rise to fly at Mfecane’s throat just as the Heart and the Head did. This new threat came in the form of colonial contracts granted to prospective colonists seeking development prospects granted to them prior to Union’s acceptance of Mfecane’s supremacy in the Maluti Line</p><p>They sought to sow grounds with theirs and their own, but they would find it pregnant with Mfecane’s defenders. The Umethetho would notify SHAKA of their design and proposed two options. Use the Grootlang for the abolishment of colonizers or ensure the Grootslang maintained order in peace in the new colonies but with the understanding they now exist under the domain of Mfecane.</p><p>The Grootslang did just that. It’s a massive support pattern mech easily distinguishable by its iconic Mfeacne flair. Meant to be the backbone of a defense team or assault squad it is a blessed thing to be fighting  one’s side.</p>",
+    "mounts": [
+      "Heavy",
+      "Flex"
+    ],
+    "stats": {
+      "size": 3,
+      "stress": 4,
+      "structure": 4,
+      "armor": 3,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 15,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "image_url": "https://cdn.discordapp.com/attachments/813876747912085514/925915175461220432/grootslang_mk2.png",
+    "other_art": [
+      {
+        "tag": "mech",
+        "src": "https://cdn.discordapp.com/attachments/813876747912085514/925915175461220432/grootslang_mk2.png"
+      }
+    ],
+    "traits": [
+      {
+        "name": "FIRING_PLATFORM",
+        "description": "Allied  characters gain +1 accuracy to ranged attacks when adjacent to the Grootslang."
+      },
+      {
+        "name": "CONQUEROR'S_STRTEGY:_TARGETING_SYSTEM_LINK",
+        "description": "1/round an adjacent character may fire one of the Grootslang’s mounts as a skirmish benefiting from their talents and attack bonuses. ",
+        "actions": [
+          {
+            "name": "CONQUEROR'S STRTEGY: TARGETING SYSTEM LINK",
+            "activation": "Quick",
+            "frequency": "1/round",
+            "detail": "1/round an adjacent character may fire one of the Grootslang’s  mounts as a skirmish benefiting from their talents and attack bonuses."
+          }
+        ]
+      },
+      {
+        "name": "PROTECTIVE_PLATING",
+        "description": "When the Grootslang stabilizes it grants its armor rating +Grit as overshield to all adjacent allies unless it’s shredded.",
+        "actions": [
+          {
+            "name": "PROTECTIVE PLATING",
+            "activation": "Free",
+            "frequency": "1/round",
+            "detail": "<p>When the Grootslang stabilizes it grants it’s armor rating as overshield to all adjacent allies unless it’s shredded.</p>"
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "DEFEND_AND_CONQUER_THE_ENDLE",
+      "description": "To be the backbone, to stand above all who seek to claim a home already claimed this is the Grootslang’s purpose and it will ensure this purpose is completed. It’s Core Power engages the mechs conquer directives as the on board systems engage in overdrive allowing access to the Umethetho’s grand design, the intent to eliminate all those that oppose.",
+      "active_name": "DEFEND AND CONQURE THE ENDLE",
+      "active_effect": "<P>Once activated, <B>Firing Platform</B> and <B>Conqueror’s Strategy: Targeting System Link</B> gain the following benefits respectively.</P><P>Firing Platform grants +2 accuracy to adjacent characters and Conqueror’s Strategy: Targeting System Link now may be fired by each allied character 1/round.</p><p>Additionally 1/round allies may reload one of the Grootslang’s mounts as a quick action on their turn when adjacent.</p> ",
+      "use": "Encounter",
+      "activation": "Protocol"
+    }
+  }
+]
+    
+

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "chest_formation_intergrated_shield",
+    "name": "CHEST FORMATION INTERGRATED SHIELD",
+    "source": "MFC",
+    "effect": "1/structure and at the start of your turn when you have half or less than half hp, your mech may gain overshield 7 and has resistance to heat from hostile characters for as long as it has overshield.",
+    "description": ""
+  },
+  {
+    "id": "left_horn_formation_enhanced_combat_system",
+    "name": "LEFT HORN FORMATION ENHANCED COMBAT SYSTEM",
+    "source": "MFC",
+    "effect": "Gain the Left Horn's Gore reaction",
+    "description": "<i>The Left Horn formation is only assumed by the bravest of the Impi, they are agile and deadly and when linked with superior combat systems, Left Horns are able to pierce the ranks of enemy formations with deadly force.<i>",
+    "actions": [
+      {
+        "name": "LEFT HORN'S GORE",
+        "activation": "Reaction",
+        "trigger": "An enemy takes action while in line of sight.",
+        "detail": "1/round as part of this reaction you may skirmish a hostile character dealing half damage or burn and ignoring all forms of damage reduction from the triggering character."
+      }
+    ]
+  },
+  {
+    "id": "right_horn_formation_tactical_reactor_cloak",
+    "name": "RIGHT HORN FORMATION TACTICAL REACTOR CLOAK",
+    "source": "MFC",
+    "effect": " Your mech gains invisibility and soft cover while exposed",
+    "description": "<i>The Right Horn formation practices the tested tactics of SHAKA’s HIDE/STRIKE combat doctrines. Left Horns employ paracausal adjacent technology to create localized ruptures in the filament rendering them invisible when approaching enemy flanks.<i>"
+  },
+  {
+    "id": "lions_formation_overlimiter_release",
+    "name": "LIONS FORMATION OVERLIMITER RELEASE",
+    "source": "MFC",
+    "effect": "1/scene you may brace without sacrificing any actions or movement on your following turn. You may choose to use this effect 2/scene but upon the second use and after damage is resolved your mech becomes permanently exposed and slowed until the end of the scene. These effects cannot be cleared by any other means.",
+    "description": "<i>Lions Formation combat patterns, reserve the right to see the battle won. Typically upgraded with Mfecane proprietary predictive combat systems, Impi of the Lions act with the will of SHAKA forming the soul of the charging bull."
+  }
+]

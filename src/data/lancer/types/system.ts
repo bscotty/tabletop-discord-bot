@@ -11,7 +11,7 @@ import {
 export type System = {
     id: string
     name: string
-    source: string // must be the same as the Manufacturer ID to sort correctly
+    source?: string // Frankenstein Personalizations in liminal space does not have a source
     license?: string // exotics don't have a license
     license_id?: string // only core has license ids
     license_level?: number // exotics don't have a license
