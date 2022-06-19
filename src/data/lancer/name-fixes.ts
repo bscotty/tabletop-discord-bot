@@ -107,7 +107,6 @@ function addBondAlt(item: HasAlternativeNames): string[] {
 
     if (isBond(item)) {
         const removeThePrefix = item.name.substring(4)
-        console.log(`found bond alt ${removeThePrefix}`)
         return [removeThePrefix]
     } else {
         return [""]

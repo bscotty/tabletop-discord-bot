@@ -22,7 +22,6 @@ import weapons from "./weapons.json"
 import {Lcp} from "../../types/lcp";
 
 export function getCoreLcp(): Lcp {
-    console.log("getCoreData")
     return new Lcp(
         actions,
         background,
