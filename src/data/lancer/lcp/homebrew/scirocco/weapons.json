@@ -1,0 +1,1209 @@
+[
+  {
+    "id": "sae_mw_kinetic_sabaton",
+    "name": "KINETIC SABATON",
+    "source": "SAE",
+    "license": "ENTERPRISE",
+    "license_level": 1,
+    "description": "<em>A heavy redesign of a mech’s locomotion systems, coupled with graviton generators, can provide a staggering impact as the machine puts its entire rapidly accelerating weight behind the blow.</em>",
+    "mount": "Main",
+    "type": "Melee",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "val": 6
+      },
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "sae_mw_acceleration_spear",
+    "name": "ACCELERATION SPEAR",
+    "source": "SAE",
+    "license": "ENTERPRISE",
+    "license_level": 3,
+    "description": "<em>The iconic weapon of the SAE Enterprise, this large bladed spear has obtained quite a bit of attention for the speed and agility of which it can be used. The sheer scale of it should make it an incredibly unwieldy weapon but the incredible balance and variable weight allows for nearly impossible grace.</em>",
+    "effect": "This weapon may use the Light profile to <strong>Skirmish</strong> and <strong>Overwatch. </strong>You gain the <strong>Ascalon Impact Full Action</strong>.",
+    "on_attack": "",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Superheavy",
+    "type": "Melee",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [],
+    "range": [],
+    "sp": 0,
+    "tags": [],
+    "actions": [
+      {
+        "name": "ASCALON IMPACT",
+        "activation": "Full",
+        "detail": "Expend 1 <strong>CP</strong> to make a <strong>thrown melee attack</strong> with the Acceleration Spear against a character within <strong>range 50</strong> and line of sight. <strong>On hit:</strong> the target takes <strong>3d6+4 AP Kinetic damage</strong> and is impaled with the spear. While impaled they are <strong>shredded, impaired</strong> and <strong>immobilized</strong> until the spear is removed by them or an adjacent character passing a <strong>hull save</strong> as a full action or the owner of the spear retrieving it as normal for a thrown weapon. These conditions cannot be ended other than by removing the spear.If you miss the target, core power is not expended though the spear must still be retrieved.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": [
+      {
+        "name": "HEAVY",
+        "description": "",
+        "effect": "When the Acceleration Spear is thrown, it affects a Line 8 area, placing the weapon in the final space or as close as possible.",
+        "on_attack": "Choose to attack in either Heavy mode or Light mode.",
+        "on_hit": "",
+        "on_crit": "",
+        "cost": 0,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "2d6+6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 2
+          },
+          {
+            "type": "Thrown",
+            "val": 8
+          },
+          {
+            "type": "Line",
+            "val": 8
+          }
+        ],
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": []
+      },
+      {
+        "name": "LIGHT",
+        "description": "",
+        "effect": "",
+        "on_attack": "Choose to attack in either Heavy mode or Light mode.",
+        "on_hit": "",
+        "on_crit": "",
+        "cost": 0,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "2d6+4"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 2
+          }
+        ],
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": []
+      }
+    ]
+  },
+  {
+    "id": "sae_mw_canister_cannon",
+    "name": "CANISTER CANNON",
+    "source": "SAE",
+    "license": "ATLANTIS",
+    "license_level": 1,
+    "description": "<em>Simple but effective, Canister Cannons propel containers of Vandenberg paste towards targets at such a speed that they burst and deliver their payload across a wide area.</em>",
+    "effect": "",
+    "on_attack": "",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Main",
+    "type": "Cannon",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+1"
+      },
+      {
+        "type": "Heat",
+        "val": 2
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Cone",
+        "val": 3
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "sae_mw_revolver_silo",
+    "name": "REVOLVER SILO",
+    "source": "SAE",
+    "license": "ATLANTIS",
+    "license_level": 3,
+    "description": "<em>“But why use revolver chambers? They’re reliable but they’re outdated.”<br>“Because it is really stylish.” - Discussion between SAE and ART R&amp;D Teams.</em>",
+    "effect": "Gain the <strong>Thermodynamic Revolution</strong> protocol.",
+    "on_attack": "",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Superheavy",
+    "type": "Launcher",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": false,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [],
+    "range": [],
+    "sp": 0,
+    "tags": [],
+    "actions": [
+      {
+        "name": "THERMODYNAMIC REVOLUTION",
+        "activation": "Protocol",
+        "detail": "Expend 1 CP. The chambers of the Revolver Silo begin to spin, preparing to unleash all chambers at a moment's notice. The next time this scene you attack with the Revolver Silo, you can target up to 5 <strong>blast 1</strong> areas in <strong>range</strong> that cannot overlap, gaining <strong>2 heat</strong> for each area past the first. You may choose a different mode for each area.<br>If you reach the end of the scene without using the Revolver Silo, you regain 1 <strong>CP.</strong>",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": [
+      {
+        "name": "ENDOTHERMIC",
+        "description": "",
+        "effect": "",
+        "on_attack": "Choose to fire in either Endothermic mode or Exothermic mode.",
+        "on_hit": "The target must pass an <strong>engineering save</strong> or be frozen in ice and <strong>immobilized.</strong> They can end this condition by passing a <strong>hull save</strong> as a quick action to break out of the ice but cannot otherwise end this condition. Each character can only be immobilized this way once per scene.",
+        "on_crit": "",
+        "cost": 1,
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "2d6"
+          },
+          {
+            "type": "Heat",
+            "val": 3
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 20
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "tags": [
+          {
+            "id": "tg_arcing"
+          },
+          {
+            "id": "tg_heat_self",
+            "val": 3
+          }
+        ]
+      },
+      {
+        "name": "EXOTHERMIC",
+        "description": "",
+        "effect": "",
+        "on_attack": "Choose to fire in either Endothermic mode or Exothermic mode.",
+        "on_hit": "The target is covered in volatile accelerant until the end of their next turn. During that time whenever they gain <strong>heat</strong>, including from this attack, they take an equal amount of <strong>burn</strong>.",
+        "on_crit": "",
+        "cost": 0,
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "2d6"
+          },
+          {
+            "type": "Heat",
+            "val": 3
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 20
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "tags": [
+          {
+            "id": "tg_arcing"
+          },
+          {
+            "id": "tg_heat_self",
+            "val": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sae_mw_skyward_uppercut",
+    "name": "SKYWARD UPPERCUT",
+    "source": "SAE",
+    "license": "ENDEAVOUR",
+    "license_level": 1,
+    "description": "<em>To resist nearlight bolts, most modern ships require a quick burst of gravitons to negate the sheer kinetic forces upon internals. Scirocco Advanced Engineering, ever interested in interesting uses of such technology, have developed advanced strike plate modifications for a mech's manipulators to apply that sort of force to an unfortunate and soon to be airborne target.</em>",
+    "effect": "",
+    "on_attack": "",
+    "on_hit": "The target must pass a <strong>Hull</strong> save or be knocked 6 spaces directly up; falling as normal at the end of the turn.",
+    "on_crit": "",
+    "mount": "Main",
+    "type": "Melee",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": 4
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "sae_mw_witchbolt_laser_pistol",
+    "name": "\"WITCHBOLT\" LASER PISTOL",
+    "source": "SAE",
+    "license": "CHALLENGER",
+    "license_level": 1,
+    "description": "<em>The name of this weapon comes from opposition claims that what it does must clearly be sorcery rather than the work of science, this long barrel laser pistol's near-supernatural accuracy comes from its targeting system tracking gravitational waves rather than relying on visual indicators.</em>",
+    "effect": "",
+    "on_attack": "",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Auxiliary",
+    "type": "Rifle",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "sae_mw_spellslinger_marksman_laser",
+    "name": "\"SPELLSLINGER\" MARKSMAN LASER",
+    "source": "SAE",
+    "license": "CHALLENGER",
+    "license_level": 3,
+    "description": "<em>A powerful chemical laser tied to a similar targeting system to the Witchbolt Pistols, the most notable fact of the spellslinger isn’t its incredible stopping power or accuracy but how durable and smooth the weapon’s overengineered loading mechanism is, able to be used by skilled operators to have another chemical round chambered before the last one has finished falling to the ground.</em>",
+    "effect": "Gain the Freeshooter protocol.",
+    "on_attack": "",
+    "on_hit": "",
+    "on_crit": "This weapon is reloaded.",
+    "mount": "Superheavy",
+    "type": "Rifle",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": false,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "3d6+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 20
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "actions": [
+      {
+        "name": "FREESHOOTER",
+        "activation": "Protocol",
+        "detail": "Expend 1 CP. For the rest of the Scene, the Spellslinger's 'On Critical Hit' effect is replaced with:<br><br><strong>On a Critical Hit, or if this attack destroys a target that had full HP:</strong> Reload this weapon and immediately make a secondary attack against a different target within range. You can continue making secondary attacks on critical hits or destroyed full HP targets, as long as there are new, valid targets within range. Characters can’t be hit more than once with the same firing of this weapon.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "sae_mw_comet_heavy_bomber",
+    "name": "\"COMET\" HEAVY BOMBER",
+    "source": "SAE",
+    "license": "INDEPENDENCE",
+    "license_level": 1,
+    "description": "<em>Designed for strategic bombing campaigns, Comets are armed with a payload of heavy munitions tailored to bring even the most reinforced bunkers and factories down upon the heads of the defenders.</em>",
+    "effect": "This weapon deals <strong>30 AP Explosive Damage</strong> to objects, cover, terrain, and the environment.",
+    "on_attack": "",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Heavy",
+    "type": "Nexus",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      },
+      {
+        "type": "Blast",
+        "val": 2
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_arcing"
+      },
+      {
+        "id": "tg_ordnance"
+      },
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "sae_mw_meteor_hypervelocity_fighter",
+    "name": "\"METEOR\" HYPERVELOCITY FIGHTER",
+    "source": "SAE",
+    "license": "INDEPENDENCE",
+    "license_level": 2,
+    "description": "<em>A Subaltern Air Superiority Fighter armed with light laser cannons and capable of reaching levels of acceleration that would kill any living pilot, the Meteor can strike a foe and return to launch before a target even knows they are under assault.</em>",
+    "effect": "Reactions cannot be taken against attacks by this weapon.",
+    "on_attack": "",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Main",
+    "type": "Nexus",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_seeking"
+      },
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "sae_mw_asteroid_strike_craft",
+    "name": "\"ASTEROID\" STRIKE CRAFT",
+    "source": "SAE",
+    "license": "INDEPENDENCE",
+    "license_level": 3,
+    "description": "<em>A need for a powerful close air support craft led to the creation of the Asteroid, a subaltern aerospace attack craft nearly as large as small mechs and armed with a powerful gatling laser. The hum of the Asteroid in action has become almost memetic, with many omninet videos devoted to onomatopoeia of the gatling laser at full spin.<br><br>In the most dire circumstances, the Asteroid can be quickly retrofitted to carry a single bomb of unmatched destructive potential. Every use of such bombs will however result in a full investigation of the circumstances by SAE’s internal affairs department, often with DOJ/HR oversight.</em>",
+    "effect": "Gain the <strong>DEFCON 1 Full Action.</strong>",
+    "on_attack": "You can gain <strong>4 Heat</strong>. If you do, the weapon does not become unloaded.",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Superheavy",
+    "type": "Nexus",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": false,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "3d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      },
+      {
+        "type": "Line",
+        "val": 5
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_ordnance"
+      },
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_seeking"
+      },
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "actions": [
+      {
+        "name": "DEFCON 1",
+        "activation": "Full",
+        "detail": "Expend 1 CP. Choose a space within <strong>Range 50</strong>; All characters know it has been chosen. The Strike Craft is sent on a bombing run to this space armed with an Antimatter Bomb that detonates at the end of next Round, creating a <strong>Blast 4</strong> Explosion. Characters within the affected area must succeed on an <strong>Agility</strong> save or take <strong>1 structure damage</strong>. On a success, they are reduced to <strong>1 HP</strong>. Objects in the affected area are completely annihilated.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "sae_mw_crushing_grip",
+    "name": "CRUSHING GRIP",
+    "source": "SAE",
+    "license": "DISCOVERY",
+    "license_level": 1,
+    "description": "<em>Heavy industrial reinforcement of a mech’s manipulators turns them into terrifying weapons that can easily mangle even the toughest of frames.</em>",
+    "effect": "",
+    "on_attack": "",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Main",
+    "type": "Melee",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_inaccurate"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "sae_mw_pulsar_missile_pod",
+    "name": "\"PULSAR\" MISSILE POD",
+    "source": "SAE",
+    "license": "COLUMBIA",
+    "license_level": 1,
+    "description": "<em>Exchanging high explosives for a solid warhead, Pulsars are designed to slam into the target with enough force to rattle even seasoned pilots and send multi-tonne warmachines stumbling.</em>",
+    "effect": "",
+    "on_attack": "",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Auxiliary",
+    "type": "Launcher",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_knockback",
+        "val": 1
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "sae_mw_shatterpoint_rocket_battery",
+    "name": "\"SHATTERPOINT\" ROCKET BATTERY",
+    "source": "SAE",
+    "license": "COLUMBIA",
+    "license_level": 2,
+    "description": "<em>A class of weapon more than a single type, Shatterpoint Rockets are a variety of anti-armour projectiles designed to destabilize the latest advancements in defensive upgrades. To increase efficiency, they are coupled with an expert system allowing rapid analysis and countering of any new materials encountered.</em>",
+    "effect": "",
+    "on_attack": "",
+    "on_hit": "The target must pass an <strong>engineering</strong> save or be <strong>shredded</strong> until the end of its next turn.",
+    "on_crit": "",
+    "mount": "Main",
+    "type": "Launcher",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "sae_mw_vibrokatar",
+    "name": "VIBROKATAR",
+    "source": "SAE",
+    "license": "PATHFINDER",
+    "license_level": 1,
+    "description": "<em>Slim punching daggers, vibrokatars are designed to take advantage of their ability to be leveraged against soft internal components of an unaware target.</em>",
+    "effect": "Against <strong>Grappled</strong> targets or if you started your turn <strong>Hidden</strong>, this weapon deals maximum possible <strong>damage</strong> and <strong>bonus damage</strong>.",
+    "on_attack": "",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Main",
+    "type": "Melee",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "sae_mw_freeze_ray",
+    "name": "FREEZE RAY",
+    "source": "SAE",
+    "license": "PATHFINDER",
+    "license_level": 3,
+    "description": "<em>\"Cold Gun? Oh, no. This doesn’t create cold, it stops atoms dead. The cold is just a side effect of that, Absolute Zero. Do be careful with that plating, it's gonna be a bit brittle.\" -Siani 137, SAE Artificer</em>",
+    "effect": "",
+    "on_attack": "",
+    "on_hit": "The target clears all burn and heat; and is immobilized and Shredded until the end of their next turn.",
+    "on_crit": "",
+    "mount": "Main",
+    "type": "Rifle",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": 3
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 10
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 10
+      },
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "sae_mw_void_blade",
+    "name": "VOID BLADE",
+    "source": "SAE",
+    "license": "PATHFINDER",
+    "license_level": 3,
+    "description": "<em>Only a blade by the most broad definition, this resembles nothing more than a dark slice of empty space, hungry for the material it lacks.</em>",
+    "effect": "Reactions cannot be taken against attacks from this weapon and its damage cannot be reduced by any means.Gain the One With Nothing Full Action.",
+    "on_attack": "",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Heavy",
+    "type": "Melee",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": 12
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "actions": [
+      {
+        "name": "ONE WITH NOTHING",
+        "activation": "Full",
+        "detail": "Expend 1 CP. <strong>Teleport</strong> up to <strong>5 spaces</strong> then make an attack with the Void Blade against a character within <strong>Threat</strong>. On a hit,<strong> teleport</strong> up to <strong>5 spaces</strong> and make a secondary attack against a different character within <strong>Threat</strong>. You can continue <strong>teleporting</strong> and making secondary attacks on hits, as long as there are new, valid targets within threat after each teleport; however, secondary attacks can’t deal <strong>bonus damage</strong> and characters can’t be hit more than once with this core power.<br><br>One With Nothing does not consume limited charges of the Void blade and if you miss all targets, core power is not consumed.",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "sae_mw_gauss_submachine_gun",
+    "name": "GAUSS SUBMACHINE GUN",
+    "source": "SAE",
+    "license": "INSPIRATION",
+    "license_level": 1,
+    "description": "<em>For personal use, SAE often prefers coil guns to railguns. Both are capable of producing incredible projectile speeds but coilguns are more durable and less subject to wear with every movement and shot. This allows them to be used in automatic weapons, while fully automatic rail weapons are highly temperamental and prone to failure after a few seconds of fire.</em>",
+    "effect": "",
+    "on_attack": "",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Main",
+    "type": "CQB",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [],
+    "range": [],
+    "sp": 0,
+    "tags": [],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": [
+      {
+        "name": "STANDARD MODE",
+        "description": "",
+        "effect": "",
+        "on_attack": "Choose to fire in either Standard Mode or Sweep Mode.",
+        "tags": [
+          {
+            "id": "tg_ap"
+          }
+        ],
+        "on_hit": "",
+        "on_crit": "",
+        "cost": 0,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d3+1"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 8
+          },
+          {
+            "type": "Threat",
+            "val": 3
+          }
+        ],
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": []
+      },
+      {
+        "name": "SWEEP MODE",
+        "description": "",
+        "effect": "",
+        "on_attack": "Choose to fire in either Standard Mode or Sweep Mode.",
+        "tags": [
+          {
+            "id": "tg_ap"
+          },
+          {
+            "id": "tg_loading"
+          }
+        ],
+        "on_hit": "",
+        "on_crit": "",
+        "cost": 0,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d3+1"
+          }
+        ],
+        "range": [
+          {
+            "type": "Cone",
+            "val": 5
+          }
+        ],
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": []
+      }
+    ]
+  },
+  {
+    "id": "sae_mw_hailfire_assault_gyrojet",
+    "name": "\"HAILFIRE\" ASSAULT GYROJET",
+    "source": "SAE",
+    "license": "INSPIRATION",
+    "license_level": 3,
+    "description": "<em>Gyrojets are seen by many as a dead end design-wise, as the need for the rockets to reach full speed after leaving the barrel makes them less effective for infighting then many comparable weapons. Scirocco Advanced Engineering has never been one to resist a challenge and the Hailfire has defied most expectations, using a powerful coilgun to provide initial velocity before the gyrojets themselves take over propulsion. Combined with an impressive rate of fire this gives the Hailfire an unexpectedly effective profile at all ranges.</em>",
+    "effect": "This weapon is a Launcher in addition to being a CQB.",
+    "on_attack": "",
+    "on_hit": "The target is Impaired until the end of this turn.",
+    "on_crit": "",
+    "mount": "Heavy",
+    "type": "CQB",
+    "cost": 0,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "2d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 4
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  }
+]

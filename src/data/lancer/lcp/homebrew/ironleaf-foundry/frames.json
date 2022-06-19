@@ -1,0 +1,556 @@
+[
+  {
+    "id": "mf_lily",
+    "source": "IF",
+    "license_level": 2,
+    "name": "LILY",
+    "mechtype": [
+      "Controller",
+      "Striker"
+    ],
+    "description": "The Lily is the first mech frame developed by Ironleaf Foundry, though it has become very indicative of the style of their designs. Slim and graceful for a mech, it bears more resemblance to a heavy hardsuit with impressive weaponry than a frontline frame. Hidden in that frame is extensive fabrication tools and storage, allowing for a seemingly endless production of ammunition and explosives for dealing with problems. Many pilots find that piloting a Lily is as easy as moving their own body, the excellent articulation and extensive blast plating allowing for rather surprising movements that more than make up for a sluggish base speed.",
+    "mounts": [
+      "Flex",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": -2,
+      "save": 12,
+      "speed": 3,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Blastwave Rider",
+        "use": "",
+        "description": "1/Round when the Lily takes damage from a Blast, Burst, Line or Cone it can fly up to 5 spaces in any direction. This movement does not cause reactions, ignores engagement and can still be made even if the Lily is Slowed. If the Lily or an allied character is the source of the damage, it also reduces damage and heat taken to 1.",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [],
+        "integrated": [],
+        "special_equipment": []
+      },
+      {
+        "name": "Unrestrained",
+        "use": "",
+        "description": "The Lily counts as Size 3 for the purpose of pushing, pulling and knockback. In addition, it ignores Engagement by characters larger than itself.",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [],
+        "integrated": [],
+        "special_equipment": []
+      }
+    ],
+    "core_system": {
+      "name": "Metaforge",
+      "active_name": "A Grim Bloody Fairy Tale",
+      "active_effect": "For the rest of this scene your Grenade and Mine systems do not consume limited charges. In addition, you have immunity to all hostile effects caused by yourself or allied characters, though you can still use them for Blastwave Rider.",
+      "activation": "Protocol",
+      "description": "The Metaforge is the whirring core of Lily, taking up the vast majority of the Lily’s internals. An advanced printer tailored specifically for the creation of engineering tools and explosives, this backpack allows the Lily to make do with significantly less overhead as a common feed can be rapidly converted into the required part for any given system.",
+      "deactivation": "",
+      "use": "Encounter",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "Metaforge",
+      "passive_effect": "The Lily reduces the SP cost of any Grenade or Mine installed on this mech by 1 SP, to a minimum of 1 SP.<em>(This feature is not currently supported by COMP/CON. You'll have to manually add additional systems past your usual SP limit.)</em>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "image_url": "https://cdn.discordapp.com/attachments/426289086450368512/935440161536344064/Ikiryo_Lily_Commission-min.png",
+    "y_pos": "14"
+  },
+  {
+    "id": "mf_rose",
+    "source": "IF",
+    "license_level": 2,
+    "name": "ROSE",
+    "mechtype": [
+      "Defender",
+      "Striker"
+    ],
+    "description": "Ironleaf Foundry’s premier dueling and bodyguard frame, the Rose’s slim size belies the sheer power of its weapon. Eschewing more general purpose designs, the Rose’s systems are built around supporting a high performance energy spear that is capable of taking apart the most powerful of frames. Ironleaf Foundry takes much pride in the many tournament wins of the Rose and have a reputation for refusing to license the design to those who have publicly complimented the work of the Terashima enclaves unless they are willing to recant that statement.",
+    "mounts": [
+      "Main",
+      "Flex",
+      "Main"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 7,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": -1,
+      "save": 11,
+      "speed": 5,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Immortal Skill",
+        "use": "",
+        "description": "The Rose is treated as size 1 for the purpose of Ram and Grapple and ignores engagement by characters larger than itself.",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [
+          {
+            "locations": [
+              "ram",
+              "grapple"
+            ],
+            "detail": "The Rose is treated as size 1 for the purpose of Ram and Grapple and ignores engagement by characters larger than itself.",
+            "weapon_types": [],
+            "weapon_sizes": [],
+            "system_types": []
+          }
+        ],
+        "integrated": [],
+        "special_equipment": []
+      },
+      {
+        "name": "Scalpel",
+        "use": "",
+        "description": "When the Rose causes System Trauma, the Rose's pilot chooses which system or weapon is destroyed. (Do not roll to pick system or weapon.)",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [],
+        "integrated": [],
+        "special_equipment": []
+      },
+      {
+        "name": "Dueling Overrides",
+        "use": "",
+        "description": "The Rose cannot be Hidden.",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [],
+        "integrated": [],
+        "special_equipment": []
+      }
+    ],
+    "core_system": {
+      "name": "\"Thorn\" Energy Spear",
+      "active_name": "Shifting Seasons",
+      "active_effect": "<p>Choose one of the following stances for the rest of the scene or until you choose a new stance as a protocol.</p><p>Flowering Revival Stance: When you use Solstice Knight, the triggering character can immediately spend 1 repair to regain 1/2 Max HP.</p><p>Blistering Rays Stance: When you use Solstice Knight and win the contested roll, the attacker suffers 4 Burn.</p><p>Falling Leaves Stance: Solstice Knight can be used 1/Turn instead of 1/Round.</p><p>Whirling Snowflake Stance: When you use Solstice Knight and win the contested roll, the attacker only has line of sight to adjacent characters until the end of their turn.</p>",
+      "activation": "Protocol",
+      "description": "“That weapon never fails to unnerve me. It’s like no energy weapon I’ve ever seen. I’ve seen it parry lasers, in position before something moving the speed of light. I’ve seen it soak up flames like a sponge. The techs refuse to say what sort of energy is running through that thing and I’m not sure I want to know. I just want it on my side.” -Ceridwen, Albatross Pilot",
+      "deactivation": "",
+      "use": "Encounter",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "",
+      "passive_effect": "",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [
+        "mw_test"
+      ],
+      "tags": []
+    },
+    "image_url": "https://cdn.discordapp.com/attachments/561000253608820737/800856270378369084/Ikiryo-Rose.png",
+    "y_pos": "43"
+  },
+  {
+    "id": "mf_belladonna",
+    "source": "IF",
+    "license_level": 2,
+    "name": "BELLADONNA",
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "description": "The sister frame to the Ironleaf Rose, the Belladonna is designed to act as its sister’s keeper and to engage the situations that the Rose finds difficult. A monomolecular scythe has replaced the Rose’s Thorn, a graceful but deadly weapon that can carve through several foes without the slightest pause. The Belladonna is a beautiful dancing shadow, bringing death to entire swathes of suitors with each leap and spin. Even those who its kiss touches for just a moment are not safe, as the nanite coating of the scythe is itself enough to kill as it worms its way deep into the heart of its victims.",
+    "mounts": [
+      "Heavy",
+      "Flex",
+      "Main"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 7,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": -1,
+      "save": 11,
+      "speed": 5,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Phantasmagoria",
+        "use": "",
+        "description": "The Belladonna ignores Engagement by characters larger than itself. While the Belladonna is Hidden it may move through obstructions but not end its turn within them.",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [],
+        "integrated": [],
+        "special_equipment": []
+      },
+      {
+        "name": "Exposed Nanohive",
+        "use": "",
+        "description": "The Belladonna has +1 difficulty on Engineering checks and saves.",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [
+          {
+            "locations": [
+              "engineering"
+            ],
+            "detail": "The Belladonna has +1 difficulty on Engineering checks and saves.",
+            "weapon_types": [],
+            "weapon_sizes": [],
+            "system_types": []
+          }
+        ],
+        "integrated": [],
+        "special_equipment": []
+      }
+    ],
+    "core_system": {
+      "name": "Monomolecular Scythe",
+      "active_name": "Deadly Nightshade",
+      "active_effect": "For the rest of the combat, your monomolecular scythe deals +1d6 Burn. A target damaged by this weapon must pass an Engineering save (Instead of an engineering check) to end burn for the rest of the scene.",
+      "activation": "Protocol",
+      "description": "",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "Nanotoxin Mist",
+      "passive_effect": "All non-weapon damage dealt by the Belladonna is AP.",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [
+        "mw_monomolecular_scythe"
+      ],
+      "tags": []
+    },
+    "image_url": "https://cdn.discordapp.com/attachments/373964600409980928/980908287245553704/belladonna.png",
+    "y_pos": "50"
+  },
+  {
+    "id": "mf_mistletoe",
+    "source": "IF",
+    "license_level": 2,
+    "name": "MISTLETOE",
+    "mechtype": [
+      "Striker",
+      "Support"
+    ],
+    "description": "The mistletoe was originally designed as a highly mobile scout frame with a sensor profile small enough that it could slip easily through enemy scanning nets and evade patrols. This high agility and rugged frame has made it very popular among spec ops and saboteur units, with the frame being redesigned to incorporate a heavy pistol that draws directly from the reactor of the Mistletoe to help such units. The mistletoe floats gracefully through the air but those that underestimate its bite find themselves much less invincible than they thought they were.",
+    "mounts": [
+      "Main",
+      "Flex",
+      "Aux/Aux",
+      "Aux/Aux"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": -1,
+      "save": 11,
+      "speed": 5,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Valkyrie-Class Flight Module",
+        "use": "",
+        "description": "The Mistletoe is immune to falling damage and does not fall if Immobilized. When the Mistletoe moves or boosts, it can Hover. However, at the end of its turn its height drops to 1 unless it is standing on the ground or another surface that can support it.",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [],
+        "integrated": [],
+        "special_equipment": []
+      },
+      {
+        "name": "Dance in the Gunsmoke",
+        "use": "",
+        "description": "1/Round, when the Mistletoe Boosts, it can reload the Mistilteinn or all weapons in a mount afterwards.",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [],
+        "integrated": [],
+        "special_equipment": []
+      }
+    ],
+    "core_system": {
+      "name": "\"Mistilteinn\" Core Channel",
+      "active_name": "Baldrdeath",
+      "active_effect": "For the rest of the scene the Mistilteinn's attacks bypass immunity, do not provoke reactions and cannot be reduced by any means. In addition, you can reload the Mistilteinn as a protocol.",
+      "activation": "Protocol",
+      "description": "Carefully tailored to the mistletoe’s specific reactor fluctuations, the Mistilienn is an incredibly powerful energy pistol that can punch through the heaviest of armour without the slightest issue.",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "",
+      "passive_effect": "",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "image_url": "https://cdn.discordapp.com/attachments/426289086450368512/947666905483845663/Ikiryo_Mistletoe_Commission_2.png",
+    "y_pos": "23"
+  },
+  {
+    "id": "mf_clover",
+    "source": "IF",
+    "license_level": 2,
+    "name": "CLOVER",
+    "mechtype": [
+      "Striker",
+      "Defender"
+    ],
+    "description": "At first look, the Clover barely seems like an Ironleaf Foundry design save for its compact size. It seems like too much of a crude brawler, ripping apart metal with bare hands and crushing limbs. Instead of the Ironleaf Foundry tendency towards dancing around or gracefully deflecting blows, the Clover powers through assaults and endures fire.The Clover’s heritage soon becomes apparent in combat. Pushed to full power, its systems work with a surgeon’s precision and a butcher’s diligence, systematically dismantling foes in a grisly display. Each strike the Clover lands siphons energy into its bleeding edge kinetic accumulator, drawing ever closer to the moment it can unleash a blow capable of coring a Subline Warship or flattening a skyscraper - as if it were some terrible monster out of myth, rather than a mere mech.",
+    "mounts": [
+      "Flex",
+      "Main",
+      "Aux/Aux"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 8,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Scrapper",
+        "use": "",
+        "description": "The Clover can Brace without sacrificing any reactions, free actions or movement on its following turn, but can only make a single Quick action during that turn.",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [],
+        "integrated": [],
+        "special_equipment": []
+      },
+      {
+        "name": "Air Rave",
+        "use": "",
+        "description": "The Clover is treated as Size 2 for the purpose of engagement and can ignore height when engaging characters and making melee attacks, including overwatch.",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [],
+        "integrated": [],
+        "special_equipment": []
+      },
+      {
+        "name": "Punchdrunk",
+        "use": "",
+        "description": "The Clover has +1 Difficulty to Systems Checks and Saves.",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [
+          {
+            "locations": [
+              "systems"
+            ],
+            "detail": "The Clover has +1 Difficulty to Systems Checks and Saves.",
+            "weapon_types": [],
+            "weapon_sizes": [],
+            "system_types": []
+          }
+        ],
+        "integrated": [],
+        "special_equipment": []
+      }
+    ],
+    "core_system": {
+      "name": "\"Cloich Tabaill\" Kinetic Accumulator",
+      "active_name": "Cloich Tabaill",
+      "active_effect": "<p>You begin charging your kinetic accumulator. Set out a d6, starting at 4. At the start of each of your turns while the accumulator is charging, tick the d6 down by 1, to a minimum of 1, like a countdown. If your mech is Stunned, Jammed, Immobilized or is Shut Down, reset the charge to 4 (this doesn't stop the charging, however - it continues to tick down at the start of your turns). You are granted several melee attacks you may perform against a character in Threat 3 as quick action, based on the current level of your charge. After making one of these attacks, reset to 4.</p><p>4 - Can't be used.</p><p>3 - 1d6+2 Kinetic Damage. A character hit by this attack is Knocked Prone and Shredded until the end of their next turn. Objects targeted take 30 AP energy damage, no attack roll required.</p><p>2 - 2d6+1 Kinetic Damage. A character hit by this attack is Knocked Prone and becomes Stunned and Shredded until the end of their next turn. Objects targeted take 50 AP energy damage, no attack roll required.</p><p>1 - 1 Structure Damage. This attack bypasses immunity and cannot be reduced by any means. A character hit by this attack is Knocked Prone, Shredded and Stunned until the end of their next turn. Objects targeted take 200 AP kinetic damage, no attack roll required.&nbsp;</p><p>If you end a scene without successfully performing one of these attacks, core power is not expended.</p>",
+      "activation": "Protocol",
+      "description": "Under the seemingly rough exterior of the Clover lies a monstrous machine, capable of taking the energy other mechs would waste and releasing it in sudden, devastating bursts.",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "Overcalibur Strike",
+      "passive_effect": "<p>1/round when the Clover consumes Lock On with a melee attack, it deals +1d6 Bonus Damage.</p><p>When the Clover consumes Lock On with a melee attack it chooses one of the following benefits for that attack:</p><p>Blitz Jab: The attack ignores invisible and does not provoke reactions.</p><p>Phantom Footwork: Before or after the attack you can teleport up to 3 spaces.</p><p>Driving Cross: The attack gains Knockback 3.</p><p>Rail Upper: Damage from the attack cannot be reduced by any means.</p>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "image_url": "https://cdn.discordapp.com/attachments/373964600409980928/980980527974731776/clover.png",
+    "y_pos": "26"
+  },
+  {
+    "id": "mf_poppy",
+    "source": "IF",
+    "license_level": 2,
+    "name": "POPPY",
+    "mechtype": [
+      "Artillery",
+      "Controller"
+    ],
+    "description": "The closest thing that Ironleaf Foundry makes to a conventional line mech, the Poppy is a light exoskeleton bristling with more firepower than most mechs many times its size. The cornerstone of this incredible offensive power is the Dandelion Gyrostorm Pods, mounted storage containers that bring a wide variety of single-volley gyrojet arrays tailored for common battlefield situations.Frequently underestimated for its slight size and seemingly thin defenses, the Poppy is designed to demonstrate that the best defense is frequently an absolutely overwhelming offense that leaves anything surviving the initial volley rattled and suppressed.",
+    "mounts": [
+      "Flex",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 12,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Overlapping Crossfire",
+        "use": "",
+        "description": "When the Poppy moves at least one space voluntarily during its turn, it assumes Overlapping Crossfire until the start of its next turn. Reactions cannot be taken against your first Rifle Weapon fired each turn in Overlapping Crossfire.",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [],
+        "integrated": [],
+        "special_equipment": []
+      },
+      {
+        "name": "Bloody Fields",
+        "use": "",
+        "description": "1/Round, on a critical hit with any ranged weapon, the Poppy pushes the target 2 spaces in any direction.",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [],
+        "integrated": [],
+        "special_equipment": []
+      }
+    ],
+    "core_system": {
+      "name": "“Dandelion” Disposable Gyrostorm Pods",
+      "active_name": "Relentless Fusillade",
+      "active_effect": "For the rest of the scene, the Disposable Gyrostorm Pods can be fired 1/round instead of 1/scene.",
+      "activation": "Protocol",
+      "description": "“...how many spare guns do you have?”<br>“Enough!”",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "Metafold Armory",
+      "passive_effect": "The Poppy can Repair weapon systems without spending any Repairs.",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [
+        "mw_disposable_gyrostorm_pods"
+      ],
+      "special_equipment": [],
+      "tags": []
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": "43"
+  }
+]

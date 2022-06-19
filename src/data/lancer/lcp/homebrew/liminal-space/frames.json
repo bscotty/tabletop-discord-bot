@@ -1,0 +1,2293 @@
+[
+  {
+    "id": "liminal_downfall_acedia",
+    "source": "DOWNFALL",
+    "name": "ACEDIA",
+    "license_level": 2,
+    "mechtype": [
+      "Defender",
+      "Artillery"
+    ],
+    "image_url": "https://i.imgur.com/g3DhPuJ.jpg",
+    "y_pos": 35,
+    "description": "Downfall Group on occasion does make things above-board. When IPS-N once needed a base-defense unit, the group’s technicians produced the YORKTOWN frame from a similar (though much leaner) base shell as the SLOTH pattern. When eventually the parent corpro decided against mass deployment due to its unsuitability to shipping work, it came right back to its original creators.",
+    "mounts": [
+      "Aux/Aux",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 2,
+      "armor": 1,
+      "hp": 9,
+      "evasion": 9,
+      "edef": 9,
+      "heatcap": 5,
+      "repcap": 5,
+      "sensor_range": 15,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 3,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Distortions",
+        "description": "As long as the Acedia is adjacent to hard or soft cover of at least Size 1/2, the Acedia and all of its adjacent allies benefit from that cover regardless of their frame's Size or position. This does not allow them to Hide if the cover is too small."
+      },
+      {
+        "name": "Slow Aim",
+        "description": "All Main or heavier ranged weapons installed in the Acedia gain the Ordnance tag and +3 Range.",
+        "bonuses": [
+          {
+            "id": "range",
+            "weapon_sizes": [
+              "Main",
+              "Heavy",
+              "Superheavy"
+            ],
+            "weapon_types": [
+              "Cannon",
+              "CQB",
+              "Launcher",
+              "Nexus",
+              "Rifle"
+            ],
+            "range_types": [
+              "Range"
+            ],
+            "val": 3
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "The Uncaring",
+      "description": "The same ultradense gyros at the heart of a SLOTH function wildly differently in this frame. It literally pulls itself together as it goes, ignoring that which ails it as if not present. When overcharged, the ACEDIA stops caring about even the distance between itself and its foes.",
+      "passive_name": "Inertial Structure",
+      "passive_actions": [
+        {
+          "name": "Inertial Structure",
+          "activation": "Protocol",
+          "detail": "You clear one of Immobilized, Impaired, Jammed, Shredded, or Slowed from your mech, as long as the chosen condition wasn't caused by one of your own systems, talents, etc., then take 1 Heat."
+        }
+      ],
+      "active_name": "Inertial Form",
+      "activation": "Quick",
+      "active_effect": "Choose four free spaces within Range 25 (this does not require line of sight). The chosen spaces, as well as the spaces you occupy, become Inertial Distortions for the rest of the scene (or one hour of narrative time). Inertial Distortions are difficult terrain for all characters besides yourself. As long as you share a space with at least one Inertial Distortion, you may make ranged attacks from the space of any Inertial Distortion instead of your own space.<br><br>In addition, your Inertial Structure protocol does not generate heat while Inertial Form is active."
+    }
+  },
+  {
+    "id": "liminal_downfall_avarice",
+    "source": "DOWNFALL",
+    "name": "AVARICE",
+    "license_level": 2,
+    "mechtype": [
+      "Controller"
+    ],
+    "image_url": "https://i.imgur.com/HTFSlLX.png",
+    "y_pos": 18,
+    "description": "With possession acting as nine tenths of the law, it was inevitable that the Downfall Group would lay the law down on the battlefield. Based on observed performance and recovered wreckage of HA’s ISKANDER frame, the AVARICE pattern group works to possess territory for itself and deny it to the enemy. Although its own internal power core is below par for a frame its size, all of its systems are designed to pull ambient energies from the area and beam them to their master, generating a net overcharge.",
+    "mounts": [
+      "Flex",
+      "Aux/Aux"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 2,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Persistent Possession",
+        "description": "Mines set by the Avarice deal half damage, heat, and Burn (to a minimum of 1), and heal half of what they otherwise would. However, they are not destroyed when they are triggered, persist for the rest of the scene once set, and re-arm themselves at the start of each of the Avarice's turns if they detonated. The Avarice never triggers its own Mines unless it chooses to."
+      },
+      {
+        "name": "Mine, All Mine!",
+        "description": "The Avarice gains +1 Accuracy on all checks and saves while adjacent to at least one Mine it deployed.",
+        "synergies": [
+          {
+            "locations": [
+              "hull",
+              "agility",
+              "systems",
+              "engineering"
+            ],
+            "detail": "The Avarice gains +1 Accuracy on all checks and saves while adjacent to at least one Mine it deployed."
+          }
+        ]
+      },
+      {
+        "name": "Crawling Mines",
+        "description": "As a free action, the Avarice can move any number of Mines it has deployed up to three spaces each, including Mines it has deployed in the same turn it takes this action. In addition, during deployment, you may deploy up to two Mines in unoccupied spaces within Range 3 of the Avarice.",
+        "actions": [
+          {
+            "name": "Crawling Mines",
+            "activation": "Free",
+            "frequency": "1/round",
+            "detail": "Move any number of Mines you have deployed up to three spaces each, including any Mines you have deployed this turn."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "General Rearming Explosive Exploitation Device",
+      "description": "Nicknamed the “firecracker” by its pilots, this system supercharges the Persistent Possession subroutines of the AVARICE pattern group. The result is an intense series of detonations that can clear out an entire battlefield if properly applied.",
+      "active_name": "These Are Mine",
+      "activation": "Full",
+      "active_effect": "All mines you have set immediately detonate and rearm themselves. You are not affected by mines set off this way. You can repeat this effect as a protocol for the rest of the scene, but no more than five more times (use a d6 to track this)."
+    }
+  },
+  {
+    "id": "liminal_downfall_envy",
+    "source": "DOWNFALL",
+    "name": "ENVY",
+    "license_level": 2,
+    "mechtype": [
+      "Controller",
+      "Support"
+    ],
+    "image_url": "https://i.imgur.com/6TVVuNb.png",
+    "y_pos": 23,
+    "description": "One of the primary goals of DOWNFALL Group is espionage, and there is a great deal of information to be gathered on the battlefield. Performance specifications, broadcast frequencies and encryption codes, mission loadouts, even the identities of just exactly who is assigned where. Enter the ENVY frame, bristling with emitters and data storage. Rather than sneaking information out, it pummels enemies with its scanners and savages their firewalls, tearing away their secrets for its own use. ",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 1,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 9,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 15,
+      "tech_attack": 2,
+      "save": 11,
+      "speed": 5,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Overwhelm Receivers",
+        "description": "Whenever the Envy Scans a hostile character, that character must succeed on a Systems save or have +1 Difficulty on all tech attacks and attacks with Smart weapons until the end of their next turn."
+      },
+      {
+        "name": "Correlation Database",
+        "description": "Whenever the Envy Scans a hostile character, its pilot may ask for an additional piece of information about the Scanned target."
+      },
+      {
+        "name": "Overtuned Antennae",
+        "description": "The Envy receives +1 Difficulty on all checks and saves it makes as a result of hostile tech actions."
+      }
+    ],
+    "core_system": {
+      "name": "Knowledge is Power",
+      "description": "Though the ENVY frame itself is fragile, enemies find it remarkably difficult to take down. The various arrays and sensors on board are so powerful that it can detect the slightest bit of rust or grit in its target’s mechanism;, correlated against access to a detailed database of frame and weapon specifications, this lets it predict how the weapon will fire and get out of the worst of it.",
+      "passive_name": "I Know You",
+      "passive_effect": "1/round, when you take the Scan quick tech action against a hostile character, choose one allied character within your Sensors. Both you and the chosen character gain Resistance to all damage from the Scanned character until the end of your next turn.",
+      "active_name": "Better Than You Know Yourself",
+      "activation": "Quick Tech",
+      "active_effect": "You choose one character within your Sensors, and immediately know almost everything about the target:<br><ul><li>You and allied characters within your Sensors can see their current and maximum HP and Heat, how much Structure and Stress they have remaining, all weapons and systems the target has, and their current status.</li><li>The target can't Hide or become Invisible.</li><li>All attacks against your target gain Seeking.</li><li>You have Resistance to all damage and heat caused by the target.</li><ul><br>This effect lasts for the rest of the scene or 10 minutes of narrative time, or until you end it as a Quick Tech action.",
+      "active_actions": [
+        {
+          "name": "I Know All I Need To",
+          "activation": "Quick Tech",
+          "detail": "You end the effects of Better Than You Know Yourself."
+        }
+      ]
+    }
+  },
+  {
+    "id": "liminal_downfall_gluttony",
+    "source": "DOWNFALL",
+    "name": "GLUTTONY",
+    "license_level": 2,
+    "mechtype": [
+      "Striker",
+      "Support"
+    ],
+    "image_url": "https://i.imgur.com/sHBBFE8.png",
+    "y_pos": 37,
+    "description": "The reactors of the GLUTTONY frame could not hope to keep up with the demands that its various engines, flash printers, and assorted systems put on it, not with limited onboard fuel. Instead, the engineers designed it with the ability to intake materials on the battlefield through a maw situated across its torso, the better to fuel its ability to supply forward printing capabilities. As a result, the mechs of this pattern group literally eat their enemies as they go, their cores ravenous for anything they can reach.",
+    "mounts": [
+      "Main",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 2,
+      "armor": 1,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Flash Printers",
+        "description": "1/round, when a mech character within the Gluttony's Sensors and line of sight takes structure damage or is destroyed, or when a wreck within Sensors and line of sight is destroyed, the Gluttony may consume it. If it does, the Gluttony or one adjacent allied character regains 1 charge of a Limited system of their choice. A destroyed character or wreck that is consumed this way is removed from the battlefield; it does not leave a wreck behind or trigger any other effects that would take place on its destruction."
+      },
+      {
+        "name": "Reactor Mass",
+        "description": "You gain the Mass Expenditure reaction.",
+        "actions": [
+          {
+            "name": "Mass Expenditure",
+            "activation": "Reaction",
+            "frequency": "2/round",
+            "trigger": "The Gluttony makes an attack, check, or save.",
+            "detail": "You may expend one use of a Limited weapon or system to gain +1 Accuracy on the roll."
+          }
+        ]
+      },
+      {
+        "name": "Unstable Core",
+        "description": "The Gluttony receives +1 Difficulty on Engineering checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "engineering"
+            ],
+            "detail": "The Gluttony receives +1 Difficulty on Engineering checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Devouring Engines",
+      "description": "The GLUTTONY’s Reactor cannot hope to keep up with its demands under heavy use. It just has too much that needs power. Because of this, the DOWNFALL Group came up with an inventive solution: a direct matter annihilation secondary reactor, powered by intake of materials through a maw on its front.",
+      "passive_name": "Annihilator Reactor",
+      "passive_effect": "You have an Annihilator Die: 1d6 starting at 6. Whenever you Boost, fire a weapon, or use your Mass Expenditure reaction, reduce the value of your Annihilator Die by 1. Whenever you use your Flash Printers trait, increase the value of your Annihilator Die by 2 (to a maximum of 6).<br><br>If the Annihilator Die's value would be reduced below 1, instead reset it to 6, then you expend one charge of any one Limited system (if applicable), take 4 AP Energy damage, and vomit a bolt of energy at a character within Sensors and line of sight. This is a ranged attack that deals 1d6+2 Energy damage. After this attack resolves, reset the Annihilator Die to 6.<br><br>The Annihilator Die's value can never be higher than 6, and resets to 6 at the start of each scene or after ten rounds in which its value did not decrease.",
+      "active_name": "All-Consuming Hunger",
+      "activation": "Full",
+      "active_effect": "The open maw of the Annihilator Reactor projects disintegrating energy in a Cone 7 area. Each character and Deployable at least partially within the area takes 2d6+1 Energy damage and must succeed on a Hull save or be pulled four spaces directly towards you, stopping if they collide with an obstruction. You then regain 1 expended charge of all Limited weapons and systems, up to their maximum, and reset your Annihilator Die to 6."
+    },
+    "counters": [
+      {
+        "id": "liminal_downfall_gluttonydie",
+        "name": "Annihilator Die",
+        "default_value": 6,
+        "max": 6,
+        "min": 1
+      }
+    ]
+  },
+  {
+    "id": "liminal_downfall_lust",
+    "source": "DOWNFALL",
+    "name": "LUST",
+    "license_level": 2,
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "image_url": "https://i.imgur.com/RLQehfM.png",
+    "y_pos": 5,
+    "description": "As the DOWNFALL group was commencing operations, one of its most trusted pilots found himself unexpectedly in possession of a frame he never applied for, the GOBLIN. He immediately brought the plans to his leaders, who merged its mighty technological suite with the specifications of a different blueprint they had recently acquired, the ATLAS. DOWNFALL utilized the close fit, mighty tech suite, and neural networking to create a new frame of their own, one which entirely envelops the user and reacts as fast as thought, acting on the desires of the pilot. Unashamedly, this blurs the line between pilot and suit, causing pilots to react as though it were their skin and not metal.",
+    "mounts": [
+      "Aux/Aux",
+      "Main",
+      "Flex"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 0.5,
+      "armor": 1,
+      "hp": 7,
+      "evasion": 10,
+      "edef": 9,
+      "heatcap": 4,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 6,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Reflexive Action",
+        "description": "When the Lust hits a hostile character with a tech attack, the next weapon attack it makes against the same target before the end of the Lust's turn deals +1d6 bonus damage on a hit. This effect does not stack with itself."
+      },
+      {
+        "name": "Encapsulated",
+        "description": "The Lust can't draw line of sight beyond its Sensors, and all of its weapons gain the Smart tag."
+      },
+      {
+        "name": "Shell",
+        "description": "The Lust gains +1 Accuracy on checks and saves to avoid being Impaired or Stunned."
+      }
+    ],
+    "core_system": {
+      "name": "Action Before Thought",
+      "description": "The LUST frame controls are not typical, even among the small frames. It requires considerable two-way direct transmissions and haptics, along with many other factors. Under full power, the human brain cannot keep up unassisted. Thus, it has to provide the assistance. The frame floods the pilot’s body with drugs meant to speed and synchronize, along with kicking predictive algorithms into overdrive. The result is a frame moving so quickly, with such fast reactions, that it appears to be in two places at once.",
+      "active_name": "Double Team",
+      "activation": "Quick",
+      "active_effect": "You are one mech that acts in two places. Place a copy of your mech in any open space within 3 spaces. This is not a separate frame; you are considered to occupy both spaces. When you Boost or make a standard move, both you and your copy do. They must end each of your turns within Range 5 of each other, or this effect immediately ends; otherwise, this effect lasts for the rest of the scene. Your actions may originate from either you or your copy, you may trace line of sight and Sensor Range from either, and any attack that doesn’t affect both you and your copy treats you as though you were Invisible."
+    }
+  },
+  {
+    "id": "liminal_downfall_pride",
+    "source": "DOWNFALL",
+    "name": "PRIDE",
+    "license_level": 2,
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "image_url": "https://i.imgur.com/pxHeubt.png",
+    "y_pos": 20,
+    "description": "Despite DOWNFALL's obsessive secrecy, it is occasionally impossible to keep people from noticing that something is there. To solve this, they appropriated a design from their parent corporation. When IPS-N needed a mech designed for PR, they developed the MACARTHUR frame utilizing some stolen Harrison Armory trade secrets. Although it was limited in original run, its purpose was to look good doing its fighting and make sure it all got uploaded for public consumption. The combination of being an official frame plus the go-loud tactics made it perfect for when a distraction was needed. Designated the PRIDE by DOWNFALL, it is the one most likely to have official colors and close patterning. Its new mission is to be there when the other Sinners need extractions, explaining why the firepower is there and diverting all eyes away from what the real mission was.",
+    "mounts": [
+      "Flex",
+      "Flex"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 1,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Overwhelm",
+        "description": "If the Pride hits a hostile character with weapons that deal any amount of Energy damage twice or more in the same round, that character becomes Impaired until the start of the Pride's next turn."
+      },
+      {
+        "name": "Lighthouse Beam",
+        "description": "1/round, the Pride may deal +1d6 bonus damage with an attack against an Impaired or Stunned character."
+      },
+      {
+        "name": "Shiny",
+        "description": "The Pride cannot benefit from the Hidden status."
+      }
+    ],
+    "core_system": {
+      "name": "Suppressive Fire",
+      "description": "When the opportunity arrives, there is no holding back. You must go flat-out and take down all comers. This system releases the restraints and limiters that keep most energy weapons from destroying themselves for a short time, accepting the stress this places on the frame in exchange for filling the surroundings with energy fire.",
+      "active_name": "Double Charge",
+      "activation": "Protocol",
+      "active_effect": "When you activate this protocol, choose one hostile character within your Sensors. For the rest of the scene, whenever you attack a different hostile character with an Auxiliary or Main weapon that deals any amount of Energy damage, you also make an attack with the same weapon against the chosen character, using the same rolls for both targets if they are in range. If the weapon used a Blast, Cone, or Line attack type, it only needs to include the target in its area of effect, but it can only hit any given character once even if both areas of effect include them.<br><br>You take 2 Heat at the end of each of your turns for as long as this protocol is in effect.",
+      "active_actions": [
+        {
+          "name": "Retarget",
+          "activation": "Protocol",
+          "detail": "You choose a new target for your Suppressive Fire core power. You can only use this protocol if your previous target was destroyed or is out of your Sensor Range."
+        },
+        {
+          "name": "Hold Fire",
+          "activation": "Protocol",
+          "detail": "You end the effects of your Suppressive Fire core power."
+        }
+      ]
+    }
+  },
+  {
+    "id": "liminal_downfall_sloth",
+    "source": "DOWNFALL",
+    "name": "SLOTH",
+    "license_level": 2,
+    "mechtype": [
+      "Defender"
+    ],
+    "image_url": "https://i.imgur.com/sP800Fy.png",
+    "y_pos": 25,
+    "description": "Slow. And. Steady. In response to many of their other frames being on the fragile side, the SLOTH pattern group was created to provide an anchor to the line. Like a glacier, absolutely implacable and unstoppable once pointed in the right direction. Its core gyroscope, made from material nearly as dense as a neutron star, can cause nearby space itself to warp.<br><br>This pattern group tends to look enormous even for its size, with layers of armor and weapons. The most distinctive feature is its signature weapon, the Grand Hammer, which nearly all SLOTH pilots carry.",
+    "mounts": [
+      "Main",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 2,
+      "armor": 2,
+      "hp": 9,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 6,
+      "sensor_range": 8,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 3,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Slow Motion",
+        "description": "The Sloth is permanently Slowed. This condition can't be cleared by any means."
+      },
+      {
+        "name": "Mighty Step",
+        "description": "The Sloth is immune to Knockback and the Immobilized condition from any source other than itself."
+      },
+      {
+        "name": "Warp Local Space",
+        "description": "The Sloth treats all characters and spaces within a Burst 2 of itself as being adjacent to it for all purposes, including engagement and determining if they are within Threat or Range of the Sloth's weapons and systems (i.e. an adjacent character is a legal target for a Threat 1 weapon or a Burst 1 area)."
+      }
+    ],
+    "core_system": {
+      "name": "Inertia",
+      "description": "The key to the SLOTH frame’s success is nestled into the very heart of the immense mass of metal. Its gyroscopic stabilizers are made from a specialized ultradense material that gives the entire structure an unequalled ability to move through all adversity. When charged directly with core energy, these stabilizers imitate the moments of a black hole’s first gravity pulse, forcefully pulling everything towards the slow frame.",
+      "passive_name": "Event Horizon",
+      "passive_actions": [
+        {
+          "name": "Event Horizon",
+          "activation": "Free",
+          "frequency": "1/round",
+          "detail": "Choose a character within your Sensors. They are pulled four spaces directly towards you, stopping if they collide with an obstruction or another character. A successful Hull save halves the distance pulled."
+        }
+      ],
+      "active_name": "Gravity Spike",
+      "activation": "Quick",
+      "active_effect": "Each character of Size 1/2 or greater within Range 20 of you is pulled 10 spaces towards you in a straight line, stopping if they collide with an obstruction or another character. Hostile characters pulled this way must succeed on a Hull save or fall Prone.<br><br>In addition, the range of your Warp Local Space trait increases to Burst 3 for the rest of the scene (or 10 minutes of narrative time)."
+    }
+  },
+  {
+    "id": "liminal_downfall_wrath",
+    "source": "DOWNFALL",
+    "name": "WRATH",
+    "license_level": 2,
+    "mechtype": [
+      "Striker"
+    ],
+    "image_url": "https://i.imgur.com/C7Bi1rM.png",
+    "y_pos": 14,
+    "description": "DOWNFALL has a frequent need to help others go loud, either to deny assets and resources to its enemies, or to provide weapons of destruction to the rebels it funds. For those times when this otherwise clandestine group resorts to the universal language of force, there exists the WRATH pattern-group. Lean, agile, and with a shockingly robust and motivated internal computer system, the WRATH practically pulls itself into battle and lays waste to all within its reach and then some. Inexperienced pilots behind the controls of a WRATH sometimes harm their allies more than their enemies.",
+    "mounts": [
+      "Main",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 1,
+      "armor": 0,
+      "hp": 9,
+      "evasion": 10,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Multitargeting",
+        "description": "The Wrath's first attack against any given target on its turn deals +2 bonus damage."
+      },
+      {
+        "name": "The Red Horse",
+        "description": "When the Wrath Boosts, it gains +2 Speed but must end its movement Engaged with one or more hostile characters if possible.",
+        "synergies": [
+          {
+            "locations": [
+              "boost"
+            ],
+            "detail": "When the Wrath Boosts, it gains +2 Speed but must end its movement Engaged with one or more hostile characters if possible."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Total War",
+      "description": "The WRATH is designed to be dropped into packs of enemies to simply do them in. It is equipped with a semi-automated cannon designated the Aggression, which fires literally as easily as breathing at anything in the general vicinity and prefers to target enemies already off-balance from the WRATH’s exceedingly direct style.",
+      "active_name": "Detonation",
+      "activation": "Full",
+      "active_effect": "Make an attack with All The Guns. This is the only way this weapon can be fired.",
+      "integrated": [
+        "liminal_downfall_wrath_aggression",
+        "liminal_downfall_wrath_alltheguns"
+      ]
+    }
+  },
+  {
+    "id": "liminalspace_moi_houdini",
+    "license_level": 2,
+    "source": "MOI",
+    "name": "HOUDINI",
+    "mechtype": [
+      "Controller",
+      "Support"
+    ],
+    "description": "The first commercially available mech by Magnum Opus, the Houdini has been no less than a dozen things over its long life. Initially released as a dedicated hologram mech, the Houdini saw limited success. While it could cause confusion and shroud itself from enemies, it had a limited ability to directly engage opposition that powered through its holograms.<br><br>Subsequent iterations of the Houdini have seen a large reversal of opinions as new systems and redesigns took place. A reactor scaled more for a titan than a slim illusionist gave it the power to cloak entire formations of allies and cutting edge information assault systems allowed it to disrupt opponents skilfully. The latest Houdini has moved, however, into a new class of design entirely.<br><br>Released mere months after word of Harrison Armory's Sunzi hit the Omninet, the Houdini's latest model has taken some of the wind from the sails of that mech. The brand new Méliès-Grade Blinkspace Shifter gives the Houdini the ability to blend reality and illusion, making it all the more difficult for foes to call the mech's bluff. When reached for comment about how they made this breakthrough so quickly, the lead developer simply replied: 'We have no secrets, all we have is knowledge we want to keep from you.'",
+    "mounts": [
+      "Main"
+    ],
+    "image_url": "https://i.imgur.com/UXGgk5Q.png",
+    "y_pos": 15,
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 1,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 12,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 2,
+      "save": 10,
+      "speed": 5,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Illusionist",
+        "description": "The Houdini can Hide in the open and does not require cover to remain Hidden. When the Houdini starts its turn Hidden, its first attack of any type gains +1 Accuracy.",
+        "synergies": [
+          {
+            "locations": [
+              "weapon",
+              "tech_attack",
+              "tech",
+              "improvised_attack"
+            ],
+            "weapon_types": [
+              "any"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "When the Houdini starts its turn Hidden, its first attack of any type gains +1 Accuracy."
+          }
+        ]
+      },
+      {
+        "name": "Smoke and Mirrors",
+        "description": "The Houdini has the Smoke and Mirrors reaction.",
+        "actions": [
+          {
+            "name": "Smoke and Mirrors",
+            "activation": "Reaction",
+            "frequency": "1/round",
+            "trigger": "An attack misses the Houdini, or a character fails a Search check that targets it.",
+            "detail": "You teleport up to 3 spaces. Teleporting this way does not clear the Hidden status."
+          }
+        ]
+      },
+      {
+        "name": "Exposed Reactor",
+        "description": "The Houdini has +1 Difficulty on Engineering checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "engineering"
+            ],
+            "detail": "The Houdini has +1 Difficulty on Engineering checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "MÉLIÈS-GRADE BLINKSPACE SHIFTER",
+      "active_name": "Grand Illusion",
+      "activation": "Full",
+      "active_effect": "Choose any number of allied characters within your Sensors. You and the chosen characters each become Invisible, lasting until the end of their next turn for that character, and immediately become Hidden. You may then swap the places of any number of affected characters; everyone you choose to swap teleports simultaneously.",
+      "description": "“Above the world of the waking mind is the realm of dreams. Before mankind had ever left the cradle, they already dreamed of the stars. Those dreams drive us onwards, making us seek more than we already know. Feel pity for those whose designs are without wonder; merely that of stomping boots and grinding gears. They will find nothing but darkness in the world of dreams, for it does not want them there.”<br> - Dr Allzia Saleh, MOI R&D"
+    }
+  },
+  {
+    "id": "liminalspace_moi_solomon",
+    "license_level": 2,
+    "source": "MOI",
+    "name": "SOLOMON",
+    "mechtype": [
+      "Defender",
+      "Controller"
+    ],
+    "description": "Even among Magnum Opus mechs, the Solomon is a rare sight on the battlefield. Most Solomons are seen as the guardians of Magnum Opus' factory vaults, underground facilities on planets located near to Blink Gates. Capable of managing a wide network of drones, the Solomon stands above other comparable network mechs with an uncanny ability to empower its drones with a smokeless flame that disperses lesser infernos and reduces foes to charred cinders.<br>In the most desperate of circumstances, a Solomon can call upon a drone that leaves its competitors at a loss to explain - a powerful titan that somehow seems less than what it could be, even as it rends warmachines apart like a blacksmith twisting molten metal.",
+    "mounts": [
+      "Main",
+      "Flex",
+      "Flex"
+    ],
+    "image_url": "https://i.imgur.com/rQCLJb5.png",
+    "y_pos": 38,
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 6,
+      "sensor_range": 15,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 3,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Smokeless Fire",
+        "description": "The Solomon’s Deployables and Drones can Hover, are immune to Burn, and use the Solomon’s Grit for checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "deployable",
+              "drone"
+            ],
+            "detail": "The Solomon’s Deployables and Drones can Hover, are immune to Burn, and use the Solomon’s Grit for checks and saves."
+          }
+        ]
+      },
+      {
+        "name": "Seventy-Two Demons",
+        "description": "The Solomon can use the Overwatch reaction 1/turn instead of 1/round. However, the Solomon must consume Lock On with each Overwatch attack past the first each round, and each weapon may only Overwatch this way 1/round.",
+        "synergies": [
+          {
+            "locations": [
+              "overwatch"
+            ],
+            "detail": "The Solomon can use the Overwatch reaction 1/turn instead of 1/round. However, the Solomon must consume Lock On with each Overwatch attack past the first each round, and each weapon may only Overwatch this way 1/round."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Goetia Hereticode",
+      "passive_name": "Lesser Key",
+      "passive_effect": "You have the Lesser Key quick action.",
+      "passive_actions": [
+        {
+          "name": "Lesser Key",
+          "activation": "Quick",
+          "detail": "One allied Drone or Deployable within your Sensors becomes host to the Goetia. It immediately gains Overshield equal to 2 + Grit; at the start of each of your turns, it gains this Overshield again. This effect lasts until the end of the scene or until you take this action again to nominate a new host for the Goetia. When you nominate a new host, the previous host loses all Overshield."
+        }
+      ],
+      "active_name": "Greater Key",
+      "activation": "Quick",
+      "active_effect": "You create a Belial Shard-class Drone in a free space within your Sensors and line of sight.",
+      "deployables": [
+        {
+          "name": "Belial Shard Drone",
+          "type": "Drone",
+          "activation": "Quick",
+          "hp": "20 + {grit} + {grit}",
+          "evasion": 6,
+          "edef": "10 + {grit}",
+          "armor": 3,
+          "size": 3,
+          "speed": 4,
+          "detail": "This drone is a separate entity that acts on your turn and can take the following actions under your direction, using your Grit for any attack, check, or save: Standard Move, Boost, Skirmish, Ram, Grapple, Search, Disengage, Improvised Attack, Stabilize. The drone projects a Burst 2 field at all times that hostile characters treat as difficult terrain.<br><br>In addition, the Belial Shard Drone has the Infernal Strength integrated weapon."
+        }
+      ],
+      "description": "To call the Goetia a weapon would be to decidedly undersell it. This horrifying device is a fragmentary extrusion of a powerful paracausal entity that Magnum Opus has listed as the Belial-class: a being that perceives a world of flame and torment that reality has no power to dispute or assuage.<br><br>The first knowledge of Belial came from the Voladore traders that often work with Magnum Opus, both a gift and a warning. Ships had been going missing along one of the blink gate lines and Magnum Opus was part of a UIB/USB investigation into possible sabotage. The sealing of the Entity exacted a high price not only in lives but in the loss of the original Agartha Blink Station, sunk into the event horizon of a black hole as its gate warped and shifted, claws stretching the gate wide.<br><br>While purged from records by the UIB, the Agartha Blink Station still can be called with emergency codes stored within the Solomon, if one is sure they can put down what they call up. The chains of hereticode around the shards of Belial hold. For now, at least.",
+      "integrated": [
+        "liminalspace_moi_solomon_infernalstrength",
+        "liminalspace_moi_solomon_goetia"
+      ]
+    }
+  },
+  {
+    "id": "liminalspace_moi_zouyan",
+    "license_level": 2,
+    "source": "MOI",
+    "name": "ZOU YAN",
+    "description": "Some mechs change battles -- the Zou Yan can change worlds. A towering terraforming frame, the Zou Yan sees heavy civilian use among environmentalists and colonial rangers because of its ability to handle the toughest environments without doing serious harm to them. It is equally comfortable wrangling megafauna as it is redefining the battlefield to help a crucial assault. Where the Zou Yan treads, the world itself moves to aid it.",
+    "mechtype": [
+      "Support",
+      "Controller"
+    ],
+    "mounts": [
+      "Main",
+      "Flex"
+    ],
+    "image_url": "https://i.imgur.com/hNIJEjw.png",
+    "y_pos": 21,
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 6,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 12,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Tailored Payloads",
+        "description": "You may choose to have the Zou Yan's attacks automatically hit or miss allies, and your allies may automatically succeed or fail saves that the Zou Yan forces them to make."
+      },
+      {
+        "name": "Hazmat Plating",
+        "description": "The Zou Yan has Resistance to Burn and is immune to the negative effects of hostile environments (including dangerous terrain)."
+      },
+      {
+        "name": "Environmental Controls",
+        "description": "The Zou Yan and allied characters within its Sensors have +1 accuracy on Engineering checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "engineering"
+            ],
+            "detail": "The Zou Yan and allied characters within its Sensors have +1 accuracy on Engineering checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Philosopher's Stone",
+      "active_name": "Nuclear Transmutation",
+      "activation": "Quick",
+      "active_effect": "Choose a Blast 4 area within Range 50. You can remove any environmental conditions other than those caused by culture and gravity from the area. You may then add any one of the following environmental conditions to the area:<br><ul><li>Freezing Cold: Any character who starts their turn in this area and does not move or Boost on their turn becomes Immobilized at the end of its turn. It can end this condition by succeeding on a Hull save as a quick action to break out of the ice. Each character can only be Immobilized this way 1/scene.</li><li>Torrential Downpour: Characters in the affected area have Resistance to Burn. Any character in the affected area that attempts to stand from Prone must succeed on an Agility save or immediately fall Prone again.</li><li>Gamma Storm: The area grants soft cover to all characters and objects inside. Characters starting their turns in the area or entering it for the first time on their turn take 3 AP Energy damage if they are Biological, Shredded or Exposed.</li><li>Electromagnetic Clouds: All tech attacks and Systems checks made by characters within the area or targeting characters within the area are made at +2 Difficulty. Comms are limited by line of sight within the area.</li><li>Crackling Lightning: Any character that starts their turn in the area and does not end their turn adjacent to a character or object the same size as themselves or larger must succeed on an Engineering save or take 3 AP Energy damage and be knocked Prone.</li><li>Tornado: Any flying character that enters this zone or starts their turn within it must succeed on a Hull save or be forced to land. Additionally, they take 1d6 AP Kinetic damage, becoming Slowed and unable to fly until the end of their next turn.</li><li>Chrysopoeia: At the end of each of your turns, all Objects, Deployables and Drones in the affected area suffer 10 AP Energy damage. Any character that falls Prone in the affected area suffers 2 Burn.</li><ul><br>You may target a new area or change the environmental condition within the targeted area as a quick action. This effect lasts for the rest of the scene, or about 30 minutes of narrative time.",
+      "passive_name": "Reshaper",
+      "passive_actions": [
+        {
+          "name": "Cloudburst",
+          "activation": "Quick Tech",
+          "detail": "Choose a Blast 2 area within your Sensors. Ongoing areas (Such as a smoke grenade or flame wall) in the blast with a limited duration or that can be ended immediately end. Hostile environmental conditions and indefinitely lasting areas (Such as bursts produced by drones) are instead suppressed and have no effect in the chosen area until the end of your next turn. In addition, all characters within the area immediately clear all Burn."
+        },
+        {
+          "name": "Environmental Reformatting",
+          "activation": "Quick Tech",
+          "detail": "You choose one Deployable, Mine, or Object of Size 3 or less within your Sensors - which may be one belonging to another character - and move it up to 4 spaces in any direction."
+        }
+      ],
+      "description": "The Zou Yan mounts a massive terraforming nexus capable of engaging in rapid environmental control and nuclear transmutation. This nexus can produce wonders that would seem impossible to others, as elements shift before their eyes."
+    }
+  },
+  {
+    "id": "liminalspace_moi_amakusa",
+    "license_level": 2,
+    "source": "MOI",
+    "name": "AMAKUSA",
+    "mechtype": [
+      "Defender",
+      "Support"
+    ],
+    "description": "Despite numerous redesigns over the years, the signature shoulder plating of the Amakusa has remained untouched. As emblematic as its holographic banner, allies look for that familiar plating as a symbol of safety even in the most dangerous environments. A powerful bodyguard mech with an unnatural ability to be in exactly the right place at the right time, the Amakusa is a prime choice among those who seek not to stabilize an entire battle line but instead to guarantee the safety of high value individuals.<br><br>Amakusa licences have become particularly popular in UIB/USB teams as even the uncertain geometries of Metavaults have proven themselves just as limited in dissuading the Amakusa from reaching its charge as any conventional assault. Be not afraid, for they are with you.",
+    "mounts": [
+      "Main",
+      "Flex",
+      "Heavy"
+    ],
+    "image_url": "https://i.imgur.com/IRR0ZtP.png",
+    "y_pos": 40,
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 8,
+      "sensor_range": 12,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Martyr Systems",
+        "description": "Whenever the Amakusa Stabilizes, it may expend 1 Repair to allow one allied character within Range 3 to restore half of their HP."
+      },
+      {
+        "name": "Graceful Step",
+        "description": "1/round, when the Amakusa Boosts, it may teleport to any free space adjacent to an allied non-Drone character within Range 7 instead of moving normally."
+      },
+      {
+        "name": "Deliberate",
+        "description": "The Amakusa has +1 Difficulty on Agility checks and saves, but is immune to the Slowed condition as long as it isn't caused by its own systems, talents, etc.",
+        "synergies": [
+          {
+            "locations": [
+              "agility"
+            ],
+            "detail": "The Amakusa has +1 Difficulty on Agility checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Omniscience-Class Tactical Module",
+      "active_name": "Saintly Intercession",
+      "activation": "Reaction",
+      "active_effect": "When a hostile character within Range 50 causes structure damage or stress damage to an allied character, you can use this reaction to cause the triggering character to become Intangible, Shredded and Exposed until the end of your next turn. You become Intangible and until the end of your next turn and teleport to any free space adjacent to the triggering character.",
+      "passive_name": "Yojimbo",
+      "passive_actions": [
+        {
+          "name": "Yojimbo",
+          "activation": "Free",
+          "frequency": "1/round",
+          "detail": "An allied character within Range 3 gains the benefits of hard cover until they move to a space more than Range 5 from you or you take this action again."
+        }
+      ],
+      "description": "“I was there in XOLOTL, you know. One of the poor dumb bastards Union sent to stop a mad god, sure that our little metal toys would be enough.<br><br>We didn't even come close.<br><br>I still see the thing in my nightmares... a pillar of granite splattered with dried blood reaching up into forever, my fellow pilots staked to it with the weight of their sins. I can see the blood on my hands, every life this machine of mine has ever taken. In that moment I know that I deserve what it will do to me. Metal cracks around me as my cockpit is opened to unreality... and then salvation arrives.<br><br>“A blazing spear is interposed between me and the Eidolon; gleaming armour protects me from the price of my own crimes. I've never been a religious man but... maybe in that moment I was.”<br> - <REDACTED>, UIB/USB KLEOS Pilot"
+    }
+  },
+  {
+    "id": "liminalspace_moi_medea",
+    "license_level": 2,
+    "source": "MOI",
+    "name": "MEDEA",
+    "mechtype": [
+      "Controller",
+      "Artillery"
+    ],
+    "mounts": [
+      "Main",
+      "Main",
+      "Flex"
+    ],
+    "image_url": "https://i.imgur.com/WFz1Jh1.png",
+    "y_pos": 15,
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 12,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 15,
+      "tech_attack": 0,
+      "save": 12,
+      "speed": 5,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "All For One",
+        "description": "When one of the Medea's Drones or Deployables is destroyed, hostile characters adjacent to it take 3 Energy damage and allied characters adjacent to it gain Overshield 3."
+      },
+      {
+        "name": "Queen's Guard",
+        "description": "The Medea may use adjacent allied drones and mechs as hard cover, even if they are smaller than it. In addition, you have the Repair & Redeploy quick action.",
+        "actions": [
+          {
+            "name": "Repair & Redeploy",
+            "activation": "Quick",
+            "frequency": "1/scene",
+            "detail": "You repair and redeploy one of your destroyed Drones without spending any Repairs."
+          }
+        ]
+      },
+      {
+        "name": "Fragile",
+        "description": "The Medea has +1 Difficulty on Hull checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "hull"
+            ],
+            "detail": "The Medea has +1 Difficulty on Hull checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "passive_name": "Aries Drones",
+      "passive_effect": "At the start of each scene, you automatically deploy 3 exceptionally cute Aries Drones within Range 5. Your Aries drones share your Evasion, E-Defence and Speed. They can move independently on your turn, but can’t take any other actions. If you can ﬂy or teleport, they can too. Aries Drones engage hostile characters as if they were Size 2, regardless of their actual Size.",
+      "passive_actions": [
+        {
+          "name": "Redeploy Aries Drone",
+          "activation": "Quick",
+          "detail": "You redeploy an Aries Drone to a free space within your Sensors."
+        }
+      ],
+      "name": "Recursive Printer",
+      "active_name": "Sow the Dragon's Teeth",
+      "activation": "Full",
+      "active_effect": "You deploy your Drone Factory in any free space within your Sensors. After doing so, if you have less than three active Aries Drones, immediately deploy a number of Aries Drones within Range 8 of the Drone Factory until you have three Aries Drones active.",
+      "deployables": [
+        {
+          "name": "Aries Drone",
+          "type": "Drone",
+          "detail": "This Drone engages hostile characters as if it were Size 2, despite its actual Size.",
+          "size": 0.5,
+          "hp": "5 + {grit}"
+        },
+        {
+          "name": "Drone Factory",
+          "type": "Deployable",
+          "detail": "While the factory is operational, at the end of each of your turns, you automatically repair and redeploy all of your destroyed Drones within Range 8 of the factory without spending any Repairs.",
+          "size": 4,
+          "hp": 40,
+          "evasion": 5
+        }
+      ],
+      "description": "Magnum Opus’ basis in blinkgate building has resulted in a lot of work in the area of miniaturization, since each blink gate needs to be assembled by ships that have traveled for years to reach the site, leaving little free space for excess materials. The solution to that is a highly optimized printer that is capable of adapting its designs on the fly to work with locally available materials. Each Medea carries the core of such a printer, which is capable of repurposing any materials in the local area rapidly into additional production facilities as a first project and then, a full military force."
+    },
+    "description": "The Magnum Opus Medea is whirring industry in a single frame. An adaptation of designs for zero-G construction to military use, it puts industrial printers to the test to create its army of rapidly deployable and highly expendable drones. The drones under the Medea’s control are all supercharged with unstable energy, making them quick and responsive but also prone to detonation when fuel cells are ruptured. The wheels of industry are ever turning, moving forward in endless production."
+  },
+  {
+    "id": "liminalspace_moi_nimue",
+    "license_level": 2,
+    "source": "MOI",
+    "name": "NIMUE",
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "mounts": [
+      "Flex",
+      "Main/Aux",
+      "Main/Aux"
+    ],
+    "image_url": "https://i.imgur.com/2TZlGBB.png",
+    "y_pos": 47,
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 5,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Shattered Mirror Surface",
+        "description": "When a hostile character's action would cause the Nimue to lose Hidden, that character first takes 1 AP Kinetic damage and gains Lock On."
+      },
+      {
+        "name": "Merlin's Bane",
+        "description": "The Nimue's pilot is aware of any local changes to the timestream and cannot have their memory altered by timeline- or reality-warping effects."
+      },
+      {
+        "name": "Slippery",
+        "description": "Characters gain no benefits from attacking the Nimue while it is Prone. It ignores engagement from characters larger than itself, can share spaces with larger characters (even hostile ones) and can move through their spaces unimpeded. While sharing space with any character, it gains soft cover, even from that character."
+      }
+    ],
+    "core_system": {
+      "name": "Lady of the Lake",
+      "active_name": "Arondight Blitz",
+      "activation": "Reaction",
+      "use": "Mission",
+      "active_effect": "When any character starts or ends their turn, you can make an Arondight Blitz as a reaction. Your mech engages in matter-energy conversion across your choice of a Burst 2 or Line 8 area. Each character in the area takes 2d6+2 AP Energy damage (Agility save for half). You clear all Burn and any conditions that weren't caused by your own systems, talents, etc. Then you reform in any free space adjaent to or within the affected area, counting as teleporting.<br><br>Your Arondight Blitz can affect Intangible characters, and doesn't provoke reactions.",
+      "passive_name": "Ripples on the Lake",
+      "passive_effect": "During your turn, you can attack a character within Range 15 as if they were in your Sensors, Range, Threat and Line of Sight, but you must consume Lock On during the attack.<br><br>In addition, when you consume Lock On for an attack with a weapon, all weapons in the same mount gain the benefits of the consumed Lock On.",
+      "description": "Distance is an illusion. Absolute space does not truly exist. Nimue understands this, that to be a breath away or to be beyond sight are the lies of causality. The Lady of the Lake stands at the nexus of what the unenlightened called locations, watching over Union, Avalon and the gates of the prison where Merlin screams and pounds forever."
+    },
+    "description": "The Nimue moves with a grace that almost no other mech can manage, seeming more like a dancer in motion than a military machine. Magnum Opus’ premier covert operations mech, the tiny Nimue is designed for aquatic and stealth operations. Paracausal systems allow for the frame to move in the space between heartbeats and to bend distance like light refracting through water. Many sentries have fallen to a Nimue blade without ever realizing the enemy was even there."
+  },
+  {
+    "id": "liminalspace_moi_ptolemy",
+    "license_level": 2,
+    "source": "MOI",
+    "name": "PTOLEMY",
+    "mechtype": [
+      "Artillery"
+    ],
+    "mounts": [
+      "Flex",
+      "Main",
+      "Heavy"
+    ],
+    "image_url": "https://i.imgur.com/0O2aYdK.png",
+    "y_pos": 67,
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 12,
+      "heatcap": 8,
+      "repcap": 3,
+      "sensor_range": 20,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Cutting Edge",
+        "description": "The Ptolemy has +1 Accuracy on Systems checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "systems"
+            ],
+            "detail": "The Ptolemy has +1 Accuracy on Systems checks and saves."
+          }
+        ]
+      },
+      {
+        "name": "Scalpel",
+        "description": "When the Ptolemy causes Systems Trauma to another character, the Ptolemy's pilot chooses which system or weapon is destroyed. No roll is made to determine what is destroyed."
+      },
+      {
+        "name": "Low Mobility",
+        "description": "When the Ptolemy makes its standard move or Boosts, it can only move in straight lines."
+      }
+    ],
+    "core_system": {
+      "name": "Three Primes Blink Mirror Array",
+      "active_name": "Dissection Beam",
+      "activation": "Full",
+      "active_effect": "Choose one target within Range 50. They take 1 Structure damage, bypassing Immunity, and are Stunned and Shredded until the end of their next turn. All characters within a Burst 2 of the target must succeed on a Hull save or be pushed 2 spaces away from the target and knocked Prone. If this destroys the target, they do not leave a wreck.",
+      "passive_name": "Blink Mirror Rebound",
+      "passive_actions": [
+        {
+          "name": "Blink Mirror Rebound",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "trigger": "You make an attack with a ranged weapon that deals any amount of Energy damage, and miss all of that attack's targets.",
+          "detail": "You create a Size 1 Blink Mirror in the space of any target of the triggering attack, which lasts until the end of your next turn. This Blink Mirror does not obstruct movement or block line of sight, and has Immunity to all damage and effects. As a protocol on your next turn, you may make a copy of the triggering attack (including Superheavy attacks) against any target, without paying costs (such as unloading the weapon, taking Heat, or consuming Limited charges), except the copied attack traces Line of Sight and Range from the location of the Blink Mirror."
+        }
+      ],
+      "description": "In order to help provide full theatre offence, the Ptolemy has access to a unique nexus array of Blink Mirror Micro-Drones. Blink Mirrors are a bleeding edge invention of Magnum Opus, a variation blinkspace rip that has aligned the entrance with the exit, causing any object that impacts it to 'bounce'. This is functionally useless for physical projectiles, as they will suicide upon impacting themselves but beam-based weapons are able to pass through and be reflected from one mirror to another or to the final target.<br><br>Pushing the blink mirror drones to the limit allows the Three Primes to rupture their own portals, unleashing a lashing tendril of blinkspace to slice through the world around it. While only momentary, this impossibly sharp tendril can break the bonds between atoms and dissolve objects and earth alike into little more than dust."
+    },
+    "description": "The Ptolemy is a carefully designed solution to an ongoing weakness in the Magnum Opus catalogue. Their frames make excellent bodyguards and are capable of powerful redirection that allows unique control of a battlefield but few of them can claim an overwhelming ability to actually force the enemy back or destroy them. The Ptolemy is able to more than solve this problem, providing precision artillery fire that is nearly impossible to evade to take advantage of the time that other Magnum Opus frames can buy it. Opponents facing a Ptolemy often find it a terrifying prospect, the mech taking apart target after target like a master surgeon’s blade."
+  },
+  {
+    "id": "liminalspace_moi_morgana",
+    "license_level": 2,
+    "source": "MOI",
+    "name": "MORGANA",
+    "mechtype": [
+      "Artillery",
+      "Controller"
+    ],
+    "mounts": [
+      "Flex"
+    ],
+    "image_url": "https://i.imgur.com/Tzjhmpp.png",
+    "y_pos": 24,
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 8,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 2,
+      "save": 11,
+      "speed": 3,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Novahot",
+        "description": "When the Morgana is Exposed, its successful tech actions deal AP Energy damage to the target equal to the heat the action inflicts. In addition, 1/round, when the Morgana succeeds on a tech action while Exposed, it can choose to deal +3 Heat to the target."
+      },
+      {
+        "name": "LOGOSDEATH",
+        "description": "The Morgana’s Tech Actions ignore the Biological immunity to Tech Actions."
+      },
+      {
+        "name": "From Hell's Heart",
+        "description": "When the Morgana would be destroyed, it may use a reaction to first make a Full Tech action.",
+        "actions": [
+          {
+            "name": "From Hell's Heart",
+            "activation": "Reaction",
+            "frequency": "1/round",
+            "trigger": "The Morgana is destroyed.",
+            "detail": "Before it is destroyed, the Morgana can take a Full Tech action."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Malory-Class Virus Vault",
+      "active_name": "Le Morte d'Arthur",
+      "activation": "Full Tech",
+      "active_effect": "Perform a single Quick Tech or Full Tech action against each target of your choice within your Sensors. These tech actions may affect normally immune characters. You can pick a different option for each target. After these actions resolve, you become Stunned until the start of your next turn.",
+      "passive_name": "Unleash Vitriol",
+      "passive_effect": "As a protocol, you may cause your mech to become Exposed until the end of your next turn.",
+      "passive_actions": [
+        {
+          "name": "Unleash Vitriol",
+          "activation": "Protocol",
+          "detail": "You cause your mech to become Exposed until the end of your next turn."
+        }
+      ],
+      "description": "The most terrifying of the many systems stored on the Morgana is the Malory-class Virus Vault, a bleeding edge virus suppression system designed to store the LOGOSDEATH-Class liturgicode Magnum Opus has been cultivating. This memetic virus assaults organic and computer systems equally well, burning out neural structures and overriding conscious control of systems. Even those who do survive it are haunted by the sheer violation of having their own hands acting while their mind screams into the void."
+    },
+    "description": "The Aun destruction of Blink Gates has resulted in a furious response by Magnum Opus. Blink Gates are essential to the function of the Union and to Magnum Opus staying solvent as a company. The Morgana is the rapid result of this fury; a sleek, dark-armoured mech that uses Magnum Opus’ factory-vaults to store a staggering amount of electronic intrusion technology and reverse engineered LOGOSDEATH-class liturgicode to assault Aun frames and pilots alike. The creation of this design has not gone unnoticed by the Voladore that Magnum Opus trades with, the enigmatic people expressing concern at this being a door that Magnum Opus may not be able to close again."
+  },
+  {
+    "id": "liminalspace_mos_carmilla",
+    "source": "MO & S",
+    "name": "CARMILLA",
+    "license_level": 2,
+    "mechtype": [
+      "Controller"
+    ],
+    "image_url": "https://wildwestscifi.net/GenWork/Lancer/MOS/Carmilla.png",
+    "y_pos": 14,
+    "description": "A good hacker and the platform to support them are invaluable assets, and no one paging through the MO & S catalog has the funds or resources to support them. Knowing this, Oz spearheaded the development of the CARMILLA to service such under-funded worthies; as hacking frames go, the CARMILLA is unusual in essentially being six tin cans on strings powered by hamster wheels, but its focus on physical access to enemy systems and rapid brute-force battlefield control makes it excel in countering other hacking-oriented frames, who might otherwise prove difficult to remove. CARMILLA’s data rounds lack similar utility against emplaced systems, but beggars can’t be choosers, now can they?",
+    "mounts": [
+      "Main",
+      "Main"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 1,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 9,
+      "edef": 7,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 8,
+      "tech_attack": -2,
+      "save": 11,
+      "speed": 5,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "CASTLE Computer Systems",
+        "description": "The Carmilla has Resistance to heat from tech actions made by other characters, and makes saves against tech actions with +1 Accuracy."
+      },
+      {
+        "name": "Hypnosis Algorithms",
+        "description": "1/round as a reaction, the Carmilla can re-roll a save it has failed against a tech action, or force another character to re-roll a save they have succeeded on against one of the Carmilla’s tech actions.",
+        "actions": [
+          {
+            "name": "Hypnosis Algorithms",
+            "activation": "Reaction",
+            "frequency": "1/round",
+            "trigger": "The Carmilla fails a save against a tech action; or another character succeeds on a save against one of the Carmilla's tech actions.",
+            "detail": "The Carmilla may re-roll the save (if it failed its save); or the other character re-rolls the save (if they succeeded against the Carmilla)."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Data Rounds",
+      "description": "Each CARMILLA stockpiles a selection of data-rounds; hardened spikes bristling with miniaturized data storage and chock-full of automated scripts designed to gain physical access to enemy systems and then overwhelm them. Quick-load systems in the frame’s wrists slot these spikes into the barrels of its ranged weapons or clamp them to blades, hammers, and fists, enabling the delivery of their payload.",
+      "active_name": "The Power of Suggestion",
+      "activation": "Quick",
+      "active_effect": "For the rest of the scene, you can choose two options from among those available to you whenever you successfully Invade a character. In addition, hostile characters make saves against your tech actions at +2 Difficulty.",
+      "passive_name": "INVITATION Rounds",
+      "passive_effect": "1/round, when the Carmilla succeeds on an attack with a melee or ranged weapon, it can cause the target to suffer the effects of a successful Invade, instead of the normal effects of the attack (including the weapon's damage). If more than one target is hit, choose only one to be affected by this ability; the others suffer the weapon’s usual effects. Use of this ability counts as a successful Invade attempt."
+    }
+  },
+  {
+    "id": "liminalspace_mos_celeste",
+    "source": "MO & S",
+    "name": "CELESTE",
+    "license_level": 2,
+    "mechtype": [
+      "Striker"
+    ],
+    "image_url": "https://wildwestscifi.net/GenWork/Lancer/MOS/Celeste.png",
+    "y_pos": 11,
+    "description": "The product pages for the Marley, Oz, and Silver CELESTE feature the words ‘Brought to you in partnership with IPS-Northstar: Your Friend In An Unfriendly Sea!”; MO & S bought the initial designs for this frame from the larger corpro on the cheap. Originally a prototype of the CALIBAN (abandoned in favor of the current paradigm’s more efficient model), MO & S’s engineers repurposed the CELESTE into an agile frontier scouting platform, at home in jungles, mountains, and caves alike, and ready for whatever surprises come bursting out in uncharted territory. A combination of its surprising durability for a small-scale mech and the shotgun-heavy standard loadout offered for it has caused fans of the CELESTE on the Omninet to nickname it the ‘Zombie Princess’.",
+    "mounts": [
+      "Main/Aux",
+      "Main/Aux"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 0.5,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 6,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Queen Anne's Revenge",
+        "description": "The Celeste's movement ignores engagement. The Celeste can Overwatch against any enemy whose movement would leave the threat of one of its weapons, even if that movement would normally not provoke reactions."
+      },
+      {
+        "name": "SEAWORTHY Repair Systems",
+        "description": "Once between full repairs, the Celeste can clear 1 marked structure as a full action. When it does, it refills its HP to full.",
+        "actions": [
+          {
+            "name": "SEAWORTHY",
+            "activation": "Full",
+            "use": "Mission",
+            "detail": "You clear one marked point of structure damage and return to full HP."
+          }
+        ]
+      },
+      {
+        "name": "Fragile",
+        "description": "The Celeste has +1 Difficulty on Hull checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "hull"
+            ],
+            "detail": "The Celeste has +1 Difficulty on Hull checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "FRANKLIN Overdrive",
+      "description": "Originally the centerpiece of the CELESTE, the FRANKLIN Overdrive vastly overclocks the CELESTE’s propulsion and targeting systems in order to sweep away enemy formations and place the CELESTE back in overwatch position. Survivors of the so-called Northwest Passage maneuver swear that the CELESTE moved in such a way as to cause shrapnel from its victims to hit their allies.",
+      "active_name": "Northwest Passage",
+      "activation": "Full",
+      "active_effect": "Move up to twice your Speed. Then, Skirmish against each hostile character you pass within your Threat range of during this movement and record the number of targets hit, but do not roll damage until you have rolled all of your attacks. Each attack that hits deals bonus damage equal to the number of hostile characters hit during this movement. If a character is in the area of more than one area of effect attack, choose only one to affect them before you roll damage; the others have no effect on that character."
+    }
+  },
+  {
+    "id": "liminalspace_mos_donner",
+    "source": "MO & S",
+    "name": "DONNER",
+    "license_level": 2,
+    "mechtype": [
+      "Support"
+    ],
+    "image_url": "https://wildwestscifi.net/GenWork/Lancer/MOS/Donner.png",
+    "y_pos": 30,
+    "description": "No one likes DONNER pilots - <i>DONNER</i> pilots don’t even like DONNER pilots. Their machines are rangy, clawed things completely at odds with their role of combat support and resupply, and video footage of their grisly idea of ‘resupply’ has occasionally caught images of those terrible claws shearing through struggling pilots too slow to reach the eject button. But for those whose assignments take them into enemy territory for the long haul, a DONNER and its attendant IGOR drones can be the difference between life and death. Don’t expect to see headquarters for a good long time? Bring a DONNER and all the whiskey you can haul.",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 1,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 9,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 6,
+      "sensor_range": 8,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Grisly Feast",
+        "description": "The Donner may strip wrecks for parts with its Grisly Feast action.",
+        "actions": [
+          {
+            "name": "Grisly Feast",
+            "activation": "Quick",
+            "detail": "The Donner strips an adjacent Wreck for parts, restoring HP to itself or an allied character within Range 4 equal to 1/4 of the wrecked mech's maximum HP (usually the wreck's Size multiplied by 10). The stripped Wreck collapses into a pile of useless scrap and is removed from the battlefield."
+          }
+        ]
+      },
+      {
+        "name": "Harvest the Unplowed Fields",
+        "description": "When you make the Power At A Cost downtime action while you have access to an operational Donner, you may replace any one choice made by the GM with “We're gonna need a lot of corpses.” Once you have done so, you may not do so again until you complete a Full Repair."
+      },
+      {
+        "name": "IGOR Cloud",
+        "description": "The Donner and allied characters adjacent to it have Resistance to damage from Blast, Burst, Line, and Cone effects."
+      }
+    ],
+    "core_system": {
+      "name": "Carrion/Chirurgeon Articulated Claws",
+      "description": "These long, jointed claws are the key to both the DONNER’s incredible durability and its gruesome reputation. Sensors built into the blades detect usable material and signal the DONNER’s attendant IGOR drones to harvest from what they’ve sliced into and repurpose it for repair and resupply. All DONNER chassis come pre-installed with the DRAUG Overdrive, which greatly increases the power of their claws and their slaved IGOR units for a devastating frenzy.",
+      "active_name": "DRAUG Overdrive",
+      "activation": "Quick",
+      "active_effect": "You engage in butchery within a Burst 4 area. Hostile characters in the affected area become Shredded until the end of your next turn. If one or more characters becomes Shredded this way, you and each of your allies in the affected area immediately clear all conditions that were not caused by their own systems, talents etc, then regain 1 Repair and restore 1 use of a Limited weapon or system (owning character's choice).",
+      "integrated": [
+        "liminalspace_mos_donner_integrated"
+      ]
+    }
+  },
+  {
+    "id": "liminalspace_mos_frankenstein",
+    "source": "MO & S",
+    "name": "FRANKENSTEIN",
+    "license_level": 2,
+    "mechtype": [
+      "Striker",
+      "Defender"
+    ],
+    "image_url": "https://wildwestscifi.net/GenWork/Lancer/MOS/Frankenstein.png",
+    "y_pos": 16,
+    "description": "The Marley, Oz, and Silver Frankenstein was their first mech and remains one of their most popular. Though they would prefer it to be known for its durability, rapid engagement, and single-target control, the Frankenstein is much more famous as the ugliest piece of mech technology that isn’t a memetic weapon. Its sheer hideousness has inspired an ‘Ugly Frankenstein’ competition on the Omninet some eight years running, and may also have something to do with the fact that Frankenstein pilots tend to treat their mechs like beloved pets.",
+    "mounts": [
+      "Main",
+      "Main",
+      "Main/Aux"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 2,
+      "armor": 1,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 7,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": -1,
+      "save": 11,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Revenant Armor Configuration",
+        "description": "Increase the Frankenstein’s Armor by the amount of structure damage it has marked, up to the maximum (+4).",
+        "synergies": [
+          {
+            "locations": [
+              "armor"
+            ],
+            "detail": "Increase the Frankenstein’s Armor by the amount of structure damage it has marked, up to the maximum (+4)."
+          }
+        ]
+      },
+      {
+        "name": "Thy Adam",
+        "description": "The Frankenstein gains the Personalizations system. This costs no SP, does not count towards Personalizations being Unique, and is included in the Frankenstein's stats.",
+        "integrated": [
+          "mos_frankenstein_personalizations"
+        ]
+      },
+      {
+        "name": "Vendetta",
+        "description": "1/round, when an ally within the Frankenstein's Sensors takes damage from a source other than themselves or an allied character, the Frankenstein’s next attack gains +1 Accuracy and deals +1d6 bonus damage. This does not stack with itself."
+      }
+    ],
+    "core_system": {
+      "name": "ANTEROS Override",
+      "description": "The original system around which the rest of the FRANKENSTEIN line of chassis was eventually built, and the answer to “where the hell did all of my computer systems for this mech go?”, the ANTEROS override is a powerful burst of code and signals that overwhelms a victim’s IFF systems and sensors, leaving them unable to identify allies or enemies other than the FRANKENSTEIN. Given the relative rarity of MO & S mechs, footage of this system in action is rare but highly prized among mech enthusiasts and entertainers.",
+      "active_name": "Monomachy",
+      "activation": "Full",
+      "active_effect": "Make an attack with a single melee weapon. On a miss, you do not expend CP. On Hit: the attack deals +2d6 bonus Energy damage and your target loses line of sight to all characters other than you until the end of the scene. This effect ends when your target or your mech is destroyed."
+    }
+  },
+  {
+    "id": "liminalspace_mos_holiday",
+    "source": "MO & S",
+    "name": "HOLIDAY",
+    "license_level": 2,
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "image_url": "https://wildwestscifi.net/GenWork/Lancer/MOS/Holiday.png",
+    "y_pos": 25,
+    "description": "The Marley, Oz, and Silver HOLIDAY is billed as an all-target, all-situation frame - ready to rumble at a moment’s notice against any kind of enemy. There’s truth to the claim; the HOLIDAY throws solid projectiles at almost all ranges, and excels against shorter-ranged targets that have to advance through its withering hail of fire only to discover, once they do close the gap, the vicious speed of its Disrupt/Interdict Emergency System. The HOLIDAY was originally written off by the wider galactic market as a knockoff of the IPS-N RALEIGH, but potential customers (and fans) are re-examining the model after its stellar performance in the Sierra Madre Mechanized Gladiatorial Tournament, going all the way to the quarter-finals. Kiss-Kiss, the pilot whose performance turned around the HOLIDAY’s sales, swears they’re taking the gold on the next go-round.",
+    "mounts": [
+      "Main/Aux",
+      "Main/Aux"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 1,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 6,
+      "sensor_range": 10,
+      "tech_attack": -1,
+      "save": 11,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "DEADEYE Compensators",
+        "description": "Main CQB weapons with Range 1 or better that the Holiday mounts gain +2 Range. Auxiliary CQB weapons with Range 1 or better that it mounts have the Range of the Main weapons they are mounted with, unless their Range is already better.",
+        "bonuses": [
+          {
+            "id": "range",
+            "range_types": [
+              "Range"
+            ],
+            "weapon_sizes": [
+              "Main"
+            ],
+            "weapon_types": [
+              "CQB"
+            ],
+            "val": 2
+          }
+        ]
+      },
+      {
+        "name": "Trash/Ballast Automated Ejection",
+        "description": "Weapon attacks made against the Holiday have +1 Difficulty as long as the Holiday has 1 or more structure damage marked."
+      }
+    ],
+    "core_system": {
+      "name": "DI/E-S Overwatch Targeting",
+      "description": "The HOLIDAY’s DI/E-S system was originally meant as an advanced overwatch platform, but the power requirements to keep its computers running at those levels proved too high for MO & S’s budget at the time. With a bit of extra juice, though, pilots can activate the full suite for comprehensive battlefield protection.",
+      "active_name": "Overclock DI/E-S",
+      "activation": "Quick",
+      "active_effect": "For the rest of the scene, you replace your DI/E-S Targeting reaction with DI/E-S Overclocked.",
+      "active_actions": [
+        {
+          "name": "DI/E-S Overclocked",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "trigger": "An action by a hostile character within Range of one or more of your weapons would cause you or an allied character to mark structure damage or reactor stress.",
+          "detail": "Make a Skirmish targeting the triggering character. On a hit, the attack automatically misses and is negated; it has no effects."
+        }
+      ],
+      "passive_name": "DI/E-S Targeting",
+      "passive_actions": [
+        {
+          "name": "DI/E-S Targeting",
+          "activation": "Reaction",
+          "trigger": "An action by a hostile character within Range of one or more of your weapons would cause you to mark structure damage or reactor stress.",
+          "detail": "Make a Skirmish targeting the triggering character. On a hit, the Holiday is immune to damage and effects of the triggering attack, including structure damage or reactor stress. This reaction cannot be taken again until the Holiday marks structure damage, stress damage, or you are able to rest or perform a Full Repair."
+        }
+      ]
+    }
+  },
+  {
+    "id": "liminalspace_mos_phoenix",
+    "source": "MO & S",
+    "name": "PHOENIX",
+    "license_level": 2,
+    "mechtype": [
+      "Artillery"
+    ],
+    "image_url": "https://wildwestscifi.net/GenWork/Lancer/MOS/Phoenix.png",
+    "y_pos": 28,
+    "description": "The PHOENIX is Marley, Oz, and Silver’s second-most common frame, trailing just behind the FRANKENSTEIN in overall sales, and it’s not hard to see why. Compared to its peers in an artillery support role, the PHOENIX isn’t just extremely cheap, but also incredibly easy to maintain. The trouble tends to be finding a pilot willing to pilot MO & S’s “Angriest Girl”; though refinements to the design are ongoing, there’s still an unfortunate habit for PHOENIX frames to self-immolate in what the Omninet ghoulishly refers to as “temper tantrums”.",
+    "mounts": [
+      "Flex",
+      "Main",
+      "Main"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 1,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 5,
+      "sensor_range": 8,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 5,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "ASHES Self-Repair Engine",
+        "description": "At the start of its turn, if the Phoenix is in the Danger Zone, it regains 1/4 of its maximum HP."
+      },
+      {
+        "name": "Reactor-Fed Shells",
+        "description": "1/round when the Phoenix makes an attack with a ranged weapon that deals at least partially Kinetic damage, it can clear 1 Heat and deal +1d6 bonus Kinetic damage on that attack. If it does, it also gains Resistance to Heat from characters other than itself until the end of its next turn."
+      },
+      {
+        "name": "Unstable Reactor",
+        "description": "The Phoenix has +1 Difficulty on Engineering checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "engineering"
+            ],
+            "detail": "The Phoenix has +1 Difficulty on Engineering checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Pyre Override",
+      "description": "Piloting a PHOENIX is already tantamount to suicide, or so the gossip goes, so why not push the envelope further? The Pyre Override kicks the PHOENIX’s reactor into overdrive while creating fresh vents in its chassis by cracking through its armor. The resulting surge of heat and power rarely leaves enemies standing, and on the rare occasions it does, whoever survives must then face the PHOENIX in the full flower of its might.",
+      "active_name": "Call the Seventh Plague",
+      "activation": "Full",
+      "active_effect": "Choose any number of characters in Range 50. Those characters must pass an Engineering save or take 4 Heat and be unable to clear heat by any means other than overheating until the end of their next turn. A successful save halves the heat and avoids the additional effect.<br><br>For the rest of the scene, you count as being in the Danger Zone regardless of your current heat, and hostile characters that are in the Danger Zone or Exposed cannot reduce damage or heat from your mech by any means."
+    }
+  },
+  {
+    "id": "liminalspace_mos_rasputin",
+    "source": "MO & S",
+    "name": "RASPUTIN",
+    "license_level": 2,
+    "mechtype": [
+      "Defender",
+      "Support"
+    ],
+    "image_url": "https://wildwestscifi.net/GenWork/Lancer/MOS/Rasputin.png",
+    "y_pos": 19,
+    "description": "The distinctive, egg-like profile of the Marley, Oz, and Silver RASPUTIN heralds the arrival of their rarest and most expensive chassis. The “actual” frame is little more than a hard suit with a highly-reinforced torso, bristling with sensor arrays, which is then wrapped in layers of shell-like armor that lock into its base systems and amplify them. The resulting juggernaut waddles into battle, supporting and defending its allies with massive cannon and advanced tech systems. RASPUTIN pilots have a reputation for being both cocky and caring; indeed, an informal tradition for tally marks indicating the number of times their mech has been ‘hatched’ is only gaining strength.",
+    "mounts": [
+      "Aux/Aux",
+      "Heavy"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 3,
+      "armor": 1,
+      "hp": 10,
+      "evasion": 6,
+      "edef": 9,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 2,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Layered Shells",
+        "description": "The Rasputin's ranged weapons increase their Range by an amount equal to the Rasputin's Size."
+      },
+      {
+        "name": "Nesting Doll",
+        "description": "The Rasputin doesn't make structure damage checks when it takes structure damage. Decrease the Rasputin's Size by the amount of structure damage it has marked (to a minimum of Size 1/2), and increase its Speed by the same amount."
+      },
+      {
+        "name": "No Manipulators",
+        "description": "The Rasputin can't mount Melee weapons, initiate a Grapple, pick up items, or manipulate items."
+      }
+    ],
+    "core_system": {
+      "name": "DEEP BLUE",
+      "description": "Though immensely durable, the Rasputin design suffers from low speed, which can make its allies vulnerable as they cluster near it to enjoy the benefits of its protection. The in-built DEEP BLUE system, though draining on power reserves, helps solve this problem in the field. Through a combination of overclocking, assisted power balancing, and system bridging the Rasputin ensures its allies can have the best of both worlds.",
+      "active_name": "Grandmaster's Stratagem",
+      "activation": "Quick",
+      "active_effect": "For the rest of the scene, you and all allied characters within Range 50 can move 2 spaces as a free action at their choice of the beginning or end of their turn. This movement ignores engagement and doesn’t provoke reactions."
+    }
+  },
+  {
+    "id": "liminalspace_mos_zahhak",
+    "source": "MO & S",
+    "name": "ZAHHAK",
+    "license_level": 2,
+    "mechtype": [
+      "Controller",
+      "Defender"
+    ],
+    "image_url": "https://wildwestscifi.net/GenWork/Lancer/MOS/Zahhak.png",
+    "y_pos": 28,
+    "description": "Officially, the Marley, Oz, and Silver ZAHHAK is a combat-rated variant of their RUSTAM Exploration and Rescue Frame; it shares its cousin’s snake-like chassis, burrowing ability, and surprising speed. Footage of the ZAHHAK bursting from solid rock to clamp down on an enemy chassis is immensely popular all out of proportion with how many of them actually get fielded. Conspiracy theorists note, however, that the patents for the ZAHHAK and the RUSTAM were filed in the other order, with the ZAHHAK coming first. More interestingly, a legal injunction was filed against MO & S by Union, preventing the sale or distribution of the ZAHHAK for several years, for reasons unknown.",
+    "mounts": [
+      "Main",
+      "Main/Aux"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 2,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": -2,
+      "save": 11,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Burrow",
+        "description": "The Zahhak can burrow into the ground, or emerge from its burrowed state, as a quick action.",
+        "actions": [
+          {
+            "name": "Burrow",
+            "activation": "Quick",
+            "detail": "You burrow into the ground, as long as the ground beneath you is malleable enough (most forms of earth, ice, and stone can be burrowed into). While burrowed, you are Invisible, ignore all obstructions, and can freely pass through all characters aboveground. Your mech can take no other actions other than to Hide, move, Boost, or Emerge."
+          },
+          {
+            "name": "Emerge",
+            "activation": "Quick",
+            "detail": "You spring up from the ground, ending your burrowed state. You must have enough free space above you to do so. After you emerge from the ground, you lose the benefits of being in a burrowed state, and each character adjacent to you must succeed on a Hull save or be knocked Prone."
+          }
+        ]
+      },
+      {
+        "name": "Crush/Conduction Binding Systems",
+        "description": "At the start of each of its turns, if the Zahhak is in a grapple, it deals 1 Heat and 2 AP Kinetic damage to all other characters in the grapple. If another character ends the grapple (by any means), the Zahhak deals 2 AP Kinetic damage to that character."
+      },
+      {
+        "name": "Serpentine Chassis",
+        "description": "The Zahhak cannot be knocked Prone. When grappling only one other character, the Zahhak is always treated as the larger character. The Zahhak cannot make any voluntary movement while grappling."
+      }
+    ],
+    "core_system": {
+      "name": "WURM Burrowing System",
+      "description": "The WURM burrowing system is the heart of the ZAHHAK’s mobility suite; it not only permits rapid breakdown of all manner of solid substances, but it strips those substances for raw materials needed to repair the ZAHHAK on the fly. Questions about how MO & S managed to afford designing such a system are gently deflected; continued questions are answered by Union agents at one’s door who would prefer that you stop asking.",
+      "active_name": "The Emperor's Tomb",
+      "activation": "Quick",
+      "active_effect": "For the rest of the scene, while you are grappling exactly one other character, you can use your Burrow quick action. When you do, you bury the grappled character, the grapple ends, and you enter a burrowed state. Buried characters are burrowed as per your Burrow trait, except that they are also Immobilized and take 1d6 Kinetic damage at the start of each of their turns. A buried character can end this effect by succeeding on a Hull save as a quick action, at which point they emerge from the ground, ending the effect on themselves.",
+      "passive_name": "WURM Self-Repair",
+      "passive_effect": "At the end of each of your turns, if you are burrowed or grappling a hostile character, you heal 1/4 of your maximum HP and clear 1 Heat. In addition, you regain full HP during a rest without spending any Repairs."
+    }
+  },
+  {
+    "id": "liminalspace_downfallalt_charity",
+    "variant": "LUST",
+    "license_level": 2,
+    "source": "DOWNFALL",
+    "name": "CHARITY",
+    "mechtype": [
+      "Support",
+      "Controller"
+    ],
+    "image_url": "https://i.imgur.com/D3MWhVH.png",
+    "y_pos": 25,
+    "description": "Though rare to deploy even for this secretive group, the DFG CHARITY is utilized by the DOWNFALL Group for sensitive escort, delivery, and messaging services. Built as a tougher, more defensive variant of their GOBLIN-derived LUST frame, the CHARITY trades the sheer speed and sensory bridging of its parent frame for a greater emphasis on small-unit tactics and its signature ESCORT rig that lets the relatively small frame carry anything from sensitive data to VIPs in complete safety. Reports of the CHARITY in action are usually so confused as to what it is and what it’s doing that it is mistakenly identified as a cargo hauler.",
+    "mounts": [
+      "Main/Aux",
+      "Main/Aux"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 0.5,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 9,
+      "edef": 7,
+      "heatcap": 4,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 6,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Draupnir Protocols",
+        "description": "1/round when the Charity targets an allied character with a tech action, it can Bolster or Invade as a free action. This Bolster or Invade must target a different allied character.",
+        "actions": [
+          {
+            "name": "Activate Draupnir",
+            "activation": "Free",
+            "frequency": "1/round",
+            "detail": "Immediately after the Charity targets an allied character with a tech action, it can Bolster or Invade as a free action. This Bolster or Invade must target a different allied character."
+          }
+        ]
+      },
+      {
+        "name": "ESCORT Rig",
+        "description": "The Charity gains the benefits of the Expanded Compartment system at no cost of system points. This system cannot be destroyed while mounted on the Charity. If the Charity is destroyed, the Expanded Compartment and its contents are ejected 10 spaces in the direction of its pilot’s choice.",
+        "integrated": [
+          "liminalspace_charity_compartment"
+        ]
+      },
+      {
+        "name": "Miser's Burden",
+        "description": "2/round when the Charity pushes a hostile character, that character becomes Slowed until the end of its next turn."
+      }
+    ],
+    "core_system": {
+      "name": "KLAUS-Class Targeting",
+      "description": "A divergent design from DOWNFALL’s access to the GOBLIN P-G, KLAUS systems utilize a combination of liturgicode, brute-force scanning, tainted handshakes, and comms pings to execute denial-of-service attacks on enemy frames and vehicles. Like a fall from a high place, it is rarely the KLAUS that kills you; rather, it is the sudden stop at the end.",
+      "active_name": "Render Unto Caesar",
+      "activation": "Quick",
+      "active_effect": "Each hostile character in Sensors becomes Impaired and Slowed until the end of your next turn, then gains Lock On. Until the end of the scene, 1/round whenever a hostile character in Sensors gains Impaired, Slowed, or Lock On, choose another hostile character in Sensors; that character gains the same condition until the end of its next turn."
+    }
+  },
+  {
+    "id": "liminalspace_downfallalt_justice",
+    "variant": "WRATH",
+    "license_level": 2,
+    "source": "DOWNFALL",
+    "name": "JUSTICE",
+    "mechtype": [
+      "Defender",
+      "Striker"
+    ],
+    "image_url": "https://i.imgur.com/J9se9CM.jpg",
+    "y_pos": 25,
+    "description": "DOWNFALL Group’s experimentation with acquired HORUS components has resulted in several major developments in covert operators. Reverse engineered BALOR components allowed for the creation of a nanocore small enough to be stored in a briefcase or backpack but powerful enough to form the nucleus of a short lasting psuedoframe. Designed for evacuation of assets and dubbed the JUSTICE, pilots assigned to this frame often spend a lot of time riding on the shoulders of the giants they are the sworn protectors of. DOWNFALL Group considers it worth it for an agent that can bring a mech-class threat on a personal scale.",
+    "mounts": [
+      "Flex",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 2,
+      "armor": 2,
+      "hp": 10,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 5,
+      "sensor_range": 8,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Ninth Plague",
+        "description": "When the Justice includes a character that is its ally or outside of its Sensors in the area of an attack, that character is not attacked and instead gains the benefits of soft cover until the end of their next turn."
+      },
+      {
+        "name": "Focused Targeting",
+        "description": "Ranged weapons mounted on the Justice gain Threat 3 if they don't already have Threat greater than 3.",
+        "bonuses": [
+          {
+            "id": "downfall_justice_focusedtargeting",
+            "weapon_types": [
+              "Cannon",
+              "CQB",
+              "Launcher",
+              "Nexus",
+              "Rifle"
+            ],
+            "range_types": [
+              "Threat"
+            ],
+            "val": 3,
+            "overwrite": true
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "“TSEDEK” NANOCORE",
+      "description": "“The next of you idiots who shouts ‘Henshin’ is getting thrown out an airlock.”",
+      "active_name": "Pillar of Cloud and Fire",
+      "activation": "Full",
+      "active_effect": "Remove yourself from the battlefield. Hostile characters within Range 50 of your previous location only have line of sight to adjacent spaces until the end of their next turn. At the start of your next turn, return yourself to play in a free space adjacent to an allied character.",
+      "passive_name": "Unseen Protector",
+      "passive_effect": "When the pilot dismounts the Justice, any passengers are dismounted from it as well, and the Justice is removed from the battlefield. The Justice’s pilot can mount the Justice from anywhere, as long as there is space for it.<br><br>The Justice can choose not to be placed onto the battlefield at the start of a scene. If it does, at the start of its first turn, place it onto the battlefield in any free space adjacent to an allied mech character. This counts as the Justice's standard move for that turn."
+    }
+  },
+  {
+    "id": "liminalspace_downfallalt_temperance",
+    "variant": "AVARICE",
+    "license_level": 2,
+    "source": "DOWNFALL",
+    "name": "TEMPERANCE",
+    "mechtype": [
+      "Striker"
+    ],
+    "image_url": "https://i.imgur.com/F7jkSyD.png",
+    "y_pos": 25,
+    "description": "Gaining access is the first part of the problem. You have something to do once you get there, and this does not always involve sneaking out without a trace. For the times when a certain brand of saboteur is necessary, DOWNFALL Group developed a specialized system.<br><br>The TEMPERANCE is small enough to fit where it is needed, agile, and leaves no incriminating sign behind. It does this latter mostly by ensuring that all detonations are targeted precisely and by holding on to its own casings, employing a terrifying way to deliver end power to the enemy when they might be looking for more conventional weapons. Saves space, too.",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 0.5,
+      "armor": 2,
+      "hp": 6,
+      "evasion": 9,
+      "edef": 9,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": -2,
+      "save": 12,
+      "speed": 5,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Meditation",
+        "description": "If the Temperance does not attack or force a save on its turn, it gains +1 Armor (maximum 4) and +1 Speed until the end of its next turn. During this time, it automatically passes all saves forced by itself and allied characters, and attacks from allied characters automatically miss the Temperance."
+      },
+      {
+        "name": "Glass Jaw",
+        "description": "The Temperance has +1 Difficulty on Hull checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "hull"
+            ],
+            "detail": "The Temperance has +1 Difficulty on Hull checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Preparation",
+      "description": "The right hand of the Temperance is dyed red. Its pilots gain access to places their enemies do not want them, and unleash that which they have been patiently holding only once properly positioned.<br><br>More plainly, to allow one into arm’s reach is nearly synonymous with finding your frame turned to smoking glass.",
+      "passive_name": "At Arm's Length",
+      "passive_effect": "Whenever you use a system with the Mine tag, it changes in the following ways:<ul><li>Any Burst becomes a Blast of the same amount.</li><li>You do not emplace a mine onto the field. The explosion happens immediately, it does not need to arm nor be set off by a character.</li><li>You may place the area in any way you want, as long as you are adjacent to or within at least one affected space.</li><li>If the mine would affect only a single target instead of a space or an area, that target must be adjacent to you.</li></ul>You may choose any affected character to be the one who counts as triggering the Mine.",
+      "active_name": "Blackwing Launch System",
+      "activation": "Full",
+      "active_effect": "One adjacent character is pushed up to 5 spaces in any direction. The target can be moved in directions they cannot normally move and count as flying during this movement. At the end of this movement, the target explodes across a burst 2 area. All characters in the affected area, including the initial target, must pass an Agility Save or take 2d6+8 Explosive damage. A successful save halves the damage and the initial target has +1 Difficulty on this save. If the target is not on solid ground after this effect resolves, they then immediately begin to fall.<br><br>In addition, for the rest of the scene, your Meditation trait remains active whether or not you attack or force saves."
+    }
+  },
+  {
+    "id": "liminalspace_moialt_flamel",
+    "variant": "SOLOMON",
+    "license_level": 2,
+    "source": "MOI",
+    "name": "FLAMEL",
+    "mechtype": [
+      "Controller",
+      "Support"
+    ],
+    "image_url": "https://i.imgur.com/QCAMTF9.png",
+    "y_pos": 25,
+    "description": "Magnum Opus Interstellar’s various technicians, engineers, and blinkspace physicists never asked for a fight. They don’t want one, either, and the majority have no desire to be close enough to the fighting to be able to see it. The FLAMEL began life as a way to get the more cowardly technicians into the field. Its sensors tuned to sift through the Omninet and relay information to other allies nearby, the frame mounting was just a matter of convenience to get the retransmit point where it needed to be.<br><br>That all changed when those points started being attacked. Suddenly, it became crucial for these otherwise-noncombatant personnel to have some way of defending themselves. The powerful blinkspace sensor suite was retrofitted onto the SOLOMON frame’s existing manipulation of that particular barrier to form a much more secure platform for the much more nervous technicians manning them.",
+    "mounts": [
+      "Main",
+      "Main",
+      "Main"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 1,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 9,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 6,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 12,
+      "speed": 5,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Eyes on the Horizon",
+        "description": "The Flamel gains the Personalizations chassis modification. This modification does not cost SP and is included in the statistics of the Flamel. In addition, the pilot of the Flamel possesses an Omnihook.",
+        "integrated": [
+          "liminalspace_flamel_personalizations"
+        ]
+      },
+      {
+        "name": "Chrysopoeia",
+        "description": "1/round when one of the Flamel’s drones or Nexus weapons deals damage to an enemy, that enemy must succeed on a Hull save or become Shredded until the beginning of the Flamel’s next turn. If they are already Shredded, they instead suffer Burn and Heat equal to their Armor."
+      }
+    ],
+    "core_system": {
+      "name": "Sigil Drone",
+      "description": "Flamel pilots are not known for having their eyes on their surroundings. A special lens orbiting the frame in nearby blinkspace allows its blink-tuned sensor suite to see back into reality as though the intervening distance did not exist. Questions as to how it does the rest of what it does generally go unanswered, though Voladores seeing it in action have a distinct tendency to shake their heads and laugh.",
+      "passive_name": "Sigil Drone",
+      "passive_effect": "You may begin any scene with the Flamel's Sigil Drone deployed in a free space within your Sensors.",
+      "deployables": [
+        {
+          "name": "Sigil Drone",
+          "type": "Drone",
+          "size": 0.5,
+          "hp": "10 + {grit}",
+          "detail": "The Flamel possesses a special drone, which may begin any scene deployed within Sensors. It is Size 1/2 and has Evasion, E-Defense, Speed equal to those of the Flamel, and has HP equal to 10 + your Grit. The Sigil Drone ignores obstruction and terrain while moving, though it must end its movement in an open space. Whenever the Flamel Boosts or makes a regular move, the Sigil Drone may move up to its speed. It constantly emits a Burst 2 area around it that produces the following effects:<ul><li>Hostile characters treat the area as difficult terrain.</li><li>Allied characters in the area gain +1 Accuracy on all checks and saves.</li><li>As a quick action, you may deal 4 Energy damage to a hostile character within the area.</li><li>The Flamel has Line of Sight and Sensors to any character at least partially within the affected area, including itself, and may count the Sigil Drone as the origin of any ranged attack or tech action it makes as long as the target is at least partially within the affected area.</li></ul>The Sigil Drone can be deployed or recalled as a Quick Action. If destroyed, it is repaired for free between scenes.",
+          "actions": [
+            {
+              "name": "Sigil Shock",
+              "activation": "Quick",
+              "detail": "You deal 4 Energy damage to a hostile character within the area projected by your Sigil Drone."
+            }
+          ],
+          "recall": "Quick",
+          "redeploy": "Quick"
+        }
+      ],
+      "active_name": "The Philosopher's Stone",
+      "activation": "Quick",
+      "active_effect": "Immediately deploy a Sigil Drone within your Sensors. If you already have one active, you now have two. For the rest of the scene, whenever you recall deploy, or redeploy one of your Sigil Drones, you may do so for both."
+    }
+  },
+  {
+    "id": "liminalspace_moialt_mk1houdini",
+    "variant": "HOUDINI",
+    "license_level": 2,
+    "source": "MOI",
+    "name": "MK1 HOUDINI",
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "image_url": "https://i.imgur.com/Jco95YW.png",
+    "y_pos": 25,
+    "description": "The initial version of the HOUDINI was a dedicated hologram mech in a way that subsequent versions have expanded from due to the frame’s lack of initial success. Despite that, some abandoned aspects of the MK1 HOUDINI has kept it quite popular among pilots who care more about subterfuge than digital warfare. Wielding a powerful close combat weapon and conjuring unmatched fidelity holograms still gives the older versions of the Houdini a place among discerning customers of MOI.",
+    "mounts": [
+      "Main",
+      "Flex",
+      "Main"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 1,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 4,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 5,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Facedancer",
+        "description": "The Mk1 Houdini can Hide in the open and does not require cover to remain Hidden. When the Mk1 Houdini starts its turn Hidden, its first attack on that turn cannot have its damage reduced in any way."
+      },
+      {
+        "name": "Holodisruption",
+        "description": "Hostile characters have +1 Difficulty on checks to Search for hidden characters or mines within Range 3 of the Mk1 Houdini."
+      },
+      {
+        "name": "Exposed Reactor",
+        "description": "The Mk1 Houdini has +1 Difficulty on Engineering checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "engineering"
+            ],
+            "detail": "The Mk1 Houdini has +1 Difficulty on Engineering checks and saves."
+          }
+        ]
+      },
+      {
+        "name": "Modifiable Integrated Weapon",
+        "description": "The Mk1 Houdini's first Main slot is exclusively for its Potentia Cane integrated weapon. As with all integrated weapons, the Potentia Cane can't be destroyed."
+      }
+    ],
+    "core_system": {
+      "name": "POTENTIA CANE",
+      "description": "A precursor weapon system later replaced by the Magician's Cane, the Potentia Cane converted kinetic energy effectively into electricity to deliver devastating blows. However, without a direct contact it quickly found itself drained and unprepared for enemy contact.",
+      "special_equipment": [
+        "liminalspace_mk1houdini_potentiacane"
+      ],
+      "active_name": "Kansas City Shuffle",
+      "activation": "Reaction",
+      "active_effect": "When you would be affected by a hostile action, you can use this reaction to gain the following benefits:<ul><li>You gain Immunity to all effects of the triggering action.</li><li>You restore all HP, reload the Potentia Cane, and clear all statuses and conditions not caused by your own systems, talents, etc.</li><li>You teleport a number of spaces equal to your Speed and then become Hidden.</li><ul>"
+    }
+  },
+  {
+    "id": "liminalspace_moialt_ozymandias",
+    "variant": "MORGANA",
+    "license_level": 2,
+    "source": "MOI",
+    "name": "OZYMANDIAS",
+    "mechtype": [
+      "Defender",
+      "Controller"
+    ],
+    "image_url": "https://i.imgur.com/fyYI7bt.png",
+    "y_pos": 25,
+    "description": "“To all rules there are exceptions which prove them, a phrase which was originally ‘puts them to the proof’, meaning to test them. Here at MOI’s Arms Division, we pride ourselves on our comprehensive, all-theater customer support program; our technology is available to our pilots regardless of their location, circumstance, military allegiance, or the hopelessness of their conflict.<br><br>Consider the proof to which this was put: Breanna Hope, MSMC, long-time customer and notable PR asset for sales of the MORGANA, went missing in action with her squad during the campaign on Kestrel Beta while fighting an action against local authoritarian forces. Blink anomalies still being studied by R&D cut her off from the Omninet and therefore from any ability to signal for backup. Stranded behind enemy lines with one of our most high-maintenance and support-reliant frames, Breanna was nonetheless able to make our technology work for her, cannibalizing parts from Peter North’s PTOLEMY when it was no longer operational. The resulting hybrid was key in getting Breanna and her fellows out with only one death - a miracle, in the circumstances.<br><br>It should not have taken us nearly a year to decipher the messages she was sending through her requisitions and firing patterns, especially considering that we were actively looking. Thankfully, Breanna saw to the destruction of her malfunctioning Malory vault, and it’s likely her quick thinking saved more enemy lives than she took in the entire campaign. Compensating her for her innovations on our design is, quite frankly, the least we can do, and an insulting minimum at that.”",
+    "mounts": [
+      "Flex",
+      "Main/Aux"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 1,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 7,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Blink Barrels",
+        "description": "When the Ozymandias makes a ranged or tech attack on its turn, it can target any character within Range 3 of an allied character that is at least partially in the Ozymandias's Sensors, measuring Line of Sight and Range from that allied character."
+      },
+      {
+        "name": "Kingly Rebuke",
+        "description": "1/round, when the Ozymandias makes an attack as a reaction against a hostile character, it can also make a Quick Tech action targeting that character as part of the attack."
+      },
+      {
+        "name": "Strained Reactors",
+        "description": "The Ozymandias gains 1 additional Heat whenever a hostile character causes it to gain Heat.",
+        "synergies": [
+          {
+            "locations": [
+              "heat"
+            ],
+            "detail": "The Ozymandias gains 1 additional Heat whenever a hostile character causes it to gain Heat."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "NILE-Class Dispersal",
+      "description": "Pilot’s Log Addendum: Those water tanks the NIMUEs and ZOUs use need better cybersecurity, but I’ll send in the report after I get out of here. For now I can drink and I can dump heat, and that will have to be enough. Note to self: do not drink the NIMUE water. The NIMUE water is the bad water. If I get out of here alive I’m getting that tattooed on my arm.",
+      "active_name": "The River of TIme Floods",
+      "activation": "Quick",
+      "active_effect": "Choose any number of hostile characters in Range 50; those characters gain Lock On. For the rest of the scene, your Blink Barrels trait functions on every attack you make (rather than attacks made on your turn), and you draw your Threat from any allied character that is at least partially in Sensors in addition to yourself (meaning that you can make Overwatch reactions and melee attacks as if you were in those allies' positions)."
+    }
+  },
+  {
+    "id": "liminalspace_moandsalt_jack",
+    "variant": "FRANKENSTEIN",
+    "license_level": 2,
+    "source": "MO & S",
+    "name": "JACK",
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "image_url": "https://i.imgur.com/gsxr1vR.jpg",
+    "y_pos": 25,
+    "description": "Only considered a MO&S mech by the most tenuous of connections, the JACK’s heritage is truthfully rooted in a desire for fame regardless of cost. Marley, Oz and Silver does not officially sell JACKs, though the eternally modifiable FRANKENSTEIN frame makes it easy for those with the manna to recreate the infamous machine.<br><br>Every year, the Iron Crown Tournaments Insect Class is one of the most well received and friendly of its many divisions, where small manufacturers bring home-grown designs from across the galaxy to compete with each other to gain fame in a contest that gives these smaller groups the ability to stand on even footing with the bigger corporations. A strong sense of camaraderie between various manufacturers is a major draw for watchers who would rather see teams who respect each other than those who are out for blood.<br><br>The JACK was the victor of the last of the Insect-Class Competitions, the custom creation of a minor barony heir who was desperate for the glory of a tournament win, bringing a frame that was technically based off a FRANKENSTEIN, with more manna spent on custom parts than the next three competitors combined and abusing the competition rules that gave extra tonnage to designers who used no Major Corporation parts.<br><br>The JACK absolutely devastated the competition, crushing personal projects and the dreams of university engineering teams alike. By the end of the contest it was the last one standing but the sheer disgust it had earned torpedoed the Insect Class in future years as viewers turned away from it, sponsors pulled out and many of the more beloved competitors chose not to compete.<br><br>A small price for fame, yes?",
+    "mounts": [
+      "Flex",
+      "Main/Aux"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 2,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 5,
+      "tech_attack": -1,
+      "save": 11,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Brutalize",
+        "description": "1/round, when the Jack consumes Lock On with a melee attack, it deals +1d6 Bonus Damage on a hit. If the Jack destroys or causes structure damage to the target with this attack, another hostile character in Line of Sight is Slowed and Impaired until the end of their next turn, even if the Jack is intangible."
+      },
+      {
+        "name": "Rival",
+        "description": "Adjacent hostile characters can use the Jack for hard cover."
+      }
+    ],
+    "core_system": {
+      "name": "“WHITECHAPEL” TARGET LOCK",
+      "description": "Designed to isolate and pick off the weakest links of an enemy group one at a time, the Whitechapel Target lock floods the target’s systems with digital white noise that disrupts navigation and targeting systems.",
+      "passive_name": "Terrorize",
+      "passive_actions": [
+        {
+          "name": "Terrorize",
+          "activation": "Quick",
+          "detail": "Choose one character within line of sight, who becomes your Victim: they are Slowed and Impaired until the end of their next turn. When you make an attack against your Victim, you gain the benefits of having consumed Lock On.<br><br>After you choose a Victim, you cannot choose a new one until your current Victim is destroyed or the scene ends."
+        }
+      ],
+      "active_name": "Murder on a Misty Night",
+      "activation": "Protocol",
+      "active_effect": "For the rest of the scene, you gain the Lost in the Mist protocol.",
+      "active_actions": [
+        {
+          "name": "Lost in the Mist",
+          "activation": "Protocol",
+          "detail": "You can only take this action while you have a Victim of your Terrorize quick action.<br><br>When you activate this protocol, you and your Victim both become Intangible until the start of your next turn or until your mech is destroyed."
+        }
+      ]
+    }
+  },
+  {
+    "id": "liminalspace_moandsalt_kelly",
+    "variant": "HOLIDAY",
+    "license_level": 2,
+    "source": "MO & S",
+    "name": "KELLY",
+    "mechtype": [
+      "Defender",
+      "Controller"
+    ],
+    "image_url": "https://i.imgur.com/K4tKGmA.jpg",
+    "y_pos": 25,
+    "description": "‘It needs to be cheap to make, tough and nobody needs to know I funded it’.<br><br>The origins of the KELLY are not quite the great symbol of resistance that the Ungrateful of Dawnline Shore would like to call it, an example of the humble innovation of the oppressed standing tall. Marley, Oz and Silver’s development was funded by the House of Sand as a project to obtain a design that could be shared with Dawnline Shore rebels against Harrison Armory without it ever being traced back to them. Marley, Oz and Silver, ever in need of funding, judged that they could kill two birds with one stone this way. Despite the questionable history, the KELLY has spread like wildfire among Ungrateful groups, who are unused to having frames that can actually take a beating and keep moving.",
+    "mounts": [
+      "Aux/Aux",
+      "Main",
+      "Flex"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 2,
+      "armor": 3,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 6,
+      "sensor_range": 10,
+      "tech_attack": -1,
+      "save": 11,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Bushranger",
+        "description": "The Kelly can make reactions while grappling, and can't be moved involuntarily or knocked Prone by characters it is grappling."
+      },
+      {
+        "name": "Black Iron Titan",
+        "description": "Hostile characters that are Engaged with the Kelly only have line of sight to adjacent spaces."
+      },
+      {
+        "name": "It Has Come To This",
+        "description": "When the Kelly would Skirmish as part of Overwatch, it can instead Grapple. For this purpose Grapple is treated as Threat 3 and if successful, the target is pulled adjacent to the Kelly by the most direct path. If there are no suitable spaces, the grapple breaks and the target does not move."
+      }
+    ],
+    "core_system": {
+      "name": "Symbol of Resistance",
+      "description": "The image of a Kelly in motion, trading shots with the most powerful of foes can inspire the weary to continue fighting for a few more breaths and shake the confidence of those opposing it.",
+      "passive_name": "Looming Presence",
+      "passive_effect": "1/turn, when a hostile character makes an attack against an allied character adjacent to the Kelly, you can push the hostile character 3 spaces in any direction after the attack is resolved.",
+      "active_name": "Such is Life",
+      "activation": "Full",
+      "active_effect": "One hostile character grappled by the Kelly suffers 2d6+6 AP Kinetic Damage. All hostile characters in line of sight of the target are pushed 3 spaces in any direction and sent reeling; until the end of their next turn, they are Slowed, Impaired, and unable to take reactions."
+    }
+  },
+  {
+    "id": "liminalspace_moandsalt_tepes",
+    "variant": "CARMILLA",
+    "license_level": 2,
+    "source": "MO & S",
+    "name": "TEPES",
+    "mechtype": [
+      "Controller",
+      "Support"
+    ],
+    "image_url": "https://i.imgur.com/fY2eOCz.jpg",
+    "y_pos": 25,
+    "description": "OZ Prime: We need solutions. Development can't find a way to deal with this and we’re running on fumes for budget after your last outing.<br>PERSEPHONE Prime: We might not have it, but try reaching out. Not everyone wants manna for their time.<br>OZ: The people who might have these solutions do.<br>PERSEPHONE: Maybe OSIRIS? You've seen the videos.<br>OZ: Were we on any less than the three-hundredth attempt, I would not have entertained the option.<br>PERSERPHONE: Which are you on, again?<br>OZ: Five hundred and eleven.",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "structure": 4,
+      "stress": 4,
+      "size": 1,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 9,
+      "edef": 9,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": 2,
+      "save": 10,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Dominate",
+        "description": "When the Tepes Overcharges, it gains +1 Accuracy to its next tech attack in the same turn, and that attack inflicts 1 additional Heat.",
+        "synergies": [
+          {
+            "locations": [
+              "overcharge",
+              "tech_attack"
+            ],
+            "detail": "When the Tepes Overcharges, it gains +1 Accuracy to its next tech attack in the same turn, and that attack inflicts 1 additional Heat."
+          }
+        ]
+      },
+      {
+        "name": "Backwash Systems",
+        "description": "Whenever the Tepes targets an allied character with a tech action, it may clear one of the following conditions from the target that wasn't caused by their own systems, talents, etc.: Impaired, Slowed, Immobilized, Jammed, Shredded, or Stunned. If the Tepes does this, it gains that condition until the end of its next turn or the condition's original duration, whichever would be longer. This does not count as being caused by your own talents."
+      }
+    ],
+    "core_system": {
+      "name": "Lifeblood",
+      "description": "“How did you manage this one, OZ? Last I checked your team was ready to throw in the towel.”<br>“Took some inspiration from our time in the service, Jacob.”<br>“Which fight, again?”",
+      "passive_name": "Mindbite",
+      "passive_effect": "You have the Mindbite Invade option.",
+      "passive_actions": [
+        {
+          "name": "Mindbite",
+          "activation": "Invade",
+          "detail": "You clear up to two conditions that weren't caused by your own systems, talents, etc. Your target then gains those conditions until the end of their next turn. In addition, you may clear 1 Heat."
+        }
+      ],
+      "active_name": "Diabolus Ex Machina",
+      "activation": "Protocol",
+      "active_effect": "You can activate this protocol even if you are Stunned.<br><br>For the rest of the scene, you may conduct Invasion attacks with the Mindbite option even if you are Jammed or Stunned, and your Mindbite Invade inflicts one additional Heat on its target."
+    }
+  }
+]

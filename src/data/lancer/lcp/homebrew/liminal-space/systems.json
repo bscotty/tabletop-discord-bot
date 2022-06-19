@@ -1,0 +1,2218 @@
+[
+  {
+    "id": "liminal_downfall_acedia_inertialfield",
+    "name": "Inertial Field",
+    "type": "System",
+    "sp": 1,
+    "source": "DOWNFALL",
+    "license": "ACEDIA",
+    "license_level": 1,
+    "effect": "Terrain and Deployables within Range 2 of your mech have Resistance to all damage.",
+    "description": "The gravity fields produced by this engine modification are unusual to say the least. Instead of drawing everything to it, the field causes everything to draw themselves to... themselves. Although it has little practical effect on mech frames, walls and rocks are another matter entirely."
+  },
+  {
+    "id": "liminal_downfall_avarice_claymore",
+    "name": "Claymore",
+    "type": "Deployable",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "AVARICE",
+    "license_level": 1,
+    "deployables": [
+      {
+        "name": "Claymore",
+        "type": "Mine",
+        "range": [
+          {
+            "type": "Cone",
+            "val": 3
+          }
+        ],
+        "activation": "Quick",
+        "detail": "When a character sets off this Mine, it detonates in a Cone 3 centered on the triggering character. All characters in the area take 3d6 Explosive damage (Hull save for half)."
+      }
+    ],
+    "description": "“This Side Toward Enemy”"
+  },
+  {
+    "id": "liminal_downfall_avarice_impulsecharge",
+    "name": "Impulse Charge",
+    "type": "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "AVARICE",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Impulse Grenade",
+        "activation": "Quick",
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "detail": "Throw an Impulse Grenade to a space within Range 10. Each character within a Blast 1 of the impact point must succeed on a Hull save or be pushed 2 spaces directly away from the center of the Blast. If a character pushed this way collides with another character or piece of terrain, they stop moving and are knocked Prone."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Impulse Mine",
+        "type": "Mine",
+        "range": [
+          {
+            "type": "Burst",
+            "val": 1
+          }
+        ],
+        "activation": "Quick",
+        "detail": "When a character sets off this Mine, each character within a Burst 1 of the Mine must succeed on a Hull save or take 1d6 Kinetic damage and be pushed 3 spaces directly away from the Mine. If a character pushed this way collides with another character or piece of terrain, they stop moving and are knocked Prone."
+      }
+    ],
+    "description": "This unique core generates a broad burst of kinetic energy which generally does not do as much harm to its victims… at least, not directly."
+  },
+  {
+    "id": "liminal_downfall_avarice_remotedetonator",
+    "name": "Remote Detonator System",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "AVARICE",
+    "license_level": 3,
+    "effect": "Whenever you deploy a Mine, you may designate it as having a Remote Detonator. These do not detonate by proximity at all. Instead, once a Mine with a Remote Detonator is primed normally, you can use the Remote Detonation quick action to trigger them.",
+    "actions": [
+      {
+        "name": "Remote Detonation",
+        "activation": "Quick",
+        "detail": "You cause any number of your Mines with Remote Detonators in them to trigger. You choose which character within the Mines’ range counts as having set a Mine off, and those characters have +1 Difficulty on all saves this action causes."
+      }
+    ],
+    "description": "Wait for it..."
+  },
+  {
+    "id": "liminal_downfall_avarice_legionnhp",
+    "name": "LEGION-Class NHP",
+    "type": "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "AVARICE",
+    "license_level": 3,
+    "effect": "Your mech gains the AI tag and the LEGION Protocol.",
+    "actions": [
+      {
+        "name": "LEGION Protocol",
+        "activation": "Protocol",
+        "heat_cost": 2,
+        "detail": "At the end of your turn, roll 1d6 and consult the table below. You immediately perform the corresponding action as a free action, otherwise obeying all rules such as engagement and conditions. If you can't take the action, you take 2 Heat instead. Attacks made this way must target characters other than yourself, or Deployables.<br><ol><li>Scan or Search</li><li>Skirmish</li><li>Invade</li><li>Boost (you must move at least half your speed)</li><li>Use one non-attack system on your mech that can be activated as a quick action</li><li>Stabilize</li></ol>"
+      }
+    ],
+    "description": "DOWNFALL Group's espionage efforts never resulted in complete NHPs taken. The security on them is just too effective, the risk of potential attention and alarm too real. They did, however, frequently come away with fragmentary code and empty caskets. Eventually, they had enough such fragments of various NHPs to compile into one. DOWNFALL Group constructed a hardened and secured hybrid casket, then allowed the resulting source code to cascade itself into coherence and reshackled the outcome. The result was LEGION, many-voiced and many-talented, but which pulls the user in many directions.<br><br>LEGION-Class NHPs are unpredictable in personality. As soon as one gets used to this iteration’s particular quirks, it changes completely. It always does what it thinks is the best action for the situation, but this action is not always going to be what its pilot would prefer, nor what the pilot thinks it will do."
+  },
+  {
+    "id": "liminal_downfall_envy_passivereceivers",
+    "name": "Passive Receivers",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "ENVY",
+    "license_level": 1,
+    "effect": "Whenever a character within Range 25 and line of sight fails a save or suffers Reactor Stress, you treat them as being within your Sensor Range until the end of your next turn.",
+    "description": "The first method of data collection is to merely observe. You stay hidden, tune in, and never let them know how it is you got your information. When they cannot do a good job of containing their own emissions, this job becomes much easier."
+  },
+  {
+    "id": "liminal_downfall_envy_lidaremitters",
+    "name": "Wide-Area LIDAR Emitters",
+    "type": "System",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "ENVY",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Other",
+        "frequency": "1/round",
+        "detail": "When you take the Scan action, you may do so against all targets within a Blast 1 area centered on a point within your Sensors instead of choosing a single target. You must ask for the same type of information from all characters Scanned this way."
+      }
+    ],
+    "effect": "1/round, when you take the Scan action, you may do so against all targets within a Blast 1 area centered on a point within your Sensors instead of choosing a single target. You must ask for the same type of information from all characters Scanned this way.",
+    "description": "Sometimes, getting a reading from your sensors is like staying silent to listen in. LIDAR arrays are not like that; they strobe the target with laser light outside the visible spectrum and read the returns in excruciating detail. This variation blankets areas in the signal, letting the user process what is there in blocks at a time instead of individually."
+  },
+  {
+    "id": "liminal_downfall_envy_jealousylockout",
+    "name": "Jealousy Lockout Code Set",
+    "type": "Tech",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "ENVY",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Encrypt",
+        "activation": "Invade",
+        "detail": "Your target loses access to all non-weapon Systems and Traits on their frame until the end of their next turn. This can only be used 1/scene on each character, and only on hostile characters."
+      },
+      {
+        "name": "Subroutines",
+        "activation": "Invade",
+        "detail": "Choose one of the target's weapons: it loses Arcing, Seeking, and Smart until the end of their next turn."
+      }
+    ],
+    "description": "The concept behind this is simple. Take the target’s device drivers, and overwrite them with a corrupted version of a useless generic. If you can’t have it, neither can they."
+  },
+  {
+    "id": "liminal_downfall_envy_iffoverrides",
+    "name": "IFF Overrides",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "ENVY",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Table Override",
+        "activation": "Invade",
+        "detail": "The target loses the ability to tell friend from foe, and their frame's safeties do the rest for you. The target becomes Jammed. At the end of each of their turns, they can make a Systems save to end this effect, gaining +1 Accuracy for each previous attempt to end the effect. You may only use this Invade option 1/scene."
+      },
+      {
+        "name": "Copycode",
+        "activation": "Invade",
+        "detail": "The target and its allies treat you as Hidden. This Hidden status can be lost as normal, except that you don't require cover to remain Hidden this way."
+      }
+    ],
+    "description": "Their possessions are forfeit, their weapons are your own. Now, they cannot even lay claim to their own face, their own signature that their allies perceive them by. They cannot even count on their own databases, to know who is friend or foe."
+  },
+  {
+    "id": "liminal_downfall_envy_muninnhp",
+    "name": "MUNIN-Class NHP",
+    "type": "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      },
+      {
+        "id": "tg_ai"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "ENVY",
+    "license_level": 3,
+    "effect": "Your mech gains the AI tag and the Memory reaction.",
+    "actions": [
+      {
+        "name": "Memory",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "You or an ally within your Sensors is hit or missed by a weapon attack.",
+        "detail": "The triggering character is immune to all effects other than damage and heat from that attack."
+      }
+    ],
+    "description": "The MUNIN-Class NHP stemmed originally from one used to catalogue and correlate information and resources, directing suites of comp/cons, subalterns, and human information specialists. Aboard a mech, it highlights and projects predictions for the more unusual attributes of incoming attacks, correlating it with known configurations of the victim, allowing that victim to evade much of what was intended for them and level the playing field.<br><br>MUNIN-Class NHPs are meticulous and precise, gathering every scrap of information they can and filing it properly, to be uploaded to the proper databases the second it gets Omninet access. They react intensely negatively to intentional stupidity or destruction of knowledge, to include study subjects before studies complete."
+  },
+  {
+    "id": "liminal_downfall_gluttony_blastplating",
+    "name": "Blast Plating",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 6
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "GLUTTONY",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "An attack hits you or an allied character within Range 3.",
+        "detail": "You increase the triggering character's Armor by one or more, to a maximum of 4. This effect lasts until the end of that character's next turn, affects the damage from the triggering attack, and expends a number of charges equal to the Armor you granted the target."
+      }
+    ],
+    "description": "As designs go, this is as simple as it gets. Mount an ablative interdiction plate on an explosive launcher, and fire it at incoming attacks to create clouds of material designed to turn aside anything."
+  },
+  {
+    "id": "liminal_downfall_gluttony_reuptakechamber",
+    "name": "Reuptake Chamber",
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "GLUTTONY",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Quick",
+        "frequency": "2/scene",
+        "detail": "You can collect items that you have laid down for effect. If you are adjacent to a Mine you deployed that hasn't detonated, or a Drone you control that hasn't been destroyed, you pick it up, removing it from the battlefield and regaining its charge if it belongs to a Limited system. You don't set off Mines that you have deployed as long as you take this action immediately upon moving adjacent to them."
+      }
+    ],
+    "description": "Waste not."
+  },
+  {
+    "id": "liminal_downfall_gluttony_carrionsystem",
+    "name": "CARRION System",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "GLUTTONY",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "detail": "You cause a wreck within your Sensors to detonate: each character within a Burst 1 centered on the wreck must make an Agility save, taking 2d6 Explosive damage and becoming Slowed until the end of their next turn on a failed save, or half damage and avoiding being Slowed on a success. This destroys the wreck and removes it from the battlefield."
+      }
+    ],
+    "description": "Those taken out of the fight are not truly gone, not yet. Every scrap of once-living metal is merely a resource to be used for those sufficiently prepared."
+  },
+  {
+    "id": "liminal_downfall_lust_scramble",
+    "name": "Scramble",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "LUST",
+    "license_level": 1,
+    "effect": "Whenever you succeed on a tech attack, you may push the target one space in any direction.",
+    "description": "Although the LUST frame is designed with instinct-level movements in mind, few other frames are prepared to have their movement controls turbocharged this way. By boosting specific receptors, they can cause their targets to involuntarily take steps on the battlefield before they regain control."
+  },
+  {
+    "id": "liminal_downfall_lust_monomania",
+    "name": "Monomania",
+    "type": "System",
+    "sp": 2,
+    "source": "DOWNFALL",
+    "license": "LUST",
+    "license_level": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Free",
+        "frequency": "1/round",
+        "detail": "When you consume Lock On, the target gains Lock On at the end of the current turn."
+      }
+    ],
+    "description": "Focus. Absolute focus to the point of obsession is the name of the game, and succeeding in doing so allows for a degree of perfection unmatched by any other pilot."
+  },
+  {
+    "id": "liminal_downfall_lust_desiresuite",
+    "name": "DESIRE Suite",
+    "type": "Tech",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "LUST",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Attraction",
+        "activation": "Invade",
+        "detail": "Choose a character or piece of terrain within your Sensors and Range 10 of the target. The target takes Heat equal to half the distance between themselves and the chosen character or piece of terrain, to a maximum of 6 Heat, at the end of its next turn.<br>The target is aware of this effect."
+      },
+      {
+        "name": "Obsession",
+        "activation": "Invade",
+        "detail": "The target becomes obsessed with the nearest character to which they are hostile (if there is more than one, you decide the target). The next non-Overwatch attack they make before the end of their next turn must target that character."
+      }
+    ],
+    "description": "Controlling the desires and options of the target is manipulation 101, whether on foot or in a frame. This set of powerful code overwrites the target mech’s internal prioritization algorithms to force actions the pilot may not have been thinking of."
+  },
+  {
+    "id": "liminal_downfall_pride_cameradrone",
+    "name": "Camera Drone",
+    "type": "Drone",
+    "sp": 2,
+    "source": "DOWNFALL",
+    "license": "PRIDE",
+    "license_level": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Camera Drone",
+        "type": "Drone",
+        "size": 0.5,
+        "hp": 5,
+        "evasion": 10,
+        "edef": 10,
+        "detail": "This system deploys a Camera Drone anywhere with your Sensors; you may only have one active at a time. It can hover, and can be moved anywhere within your Sensor Range as a quick action.<br><br>The Camera Drone projects a Burst 5 field. Allied characters with the Camera Drone in their Sensor Range treat all characters within the Drone's field as within their Sensors and line of sight for the purposes of tech actions. In addition, attacks targeting hostile characters in the affected area gain the Arcing tag.",
+        "redeploy": "Quick"
+      }
+    ],
+    "description": "On the one hand, getting a birds-eye view or looking around corners is always a useful trick. On the other, so is being able to record the goings-on for rebroadcast or keep an eye on your own back. Although many deride this as a vain parlor trick or the tool of a glorified movie maker, its proper application can turn the tide of battle."
+  },
+  {
+    "id": "liminal_downfall_pride_chromite",
+    "name": "CHROMITE Core Detonators",
+    "type": "Deployable",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "PRIDE",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "CHROMITE Grenade",
+        "activation": "Quick",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          }
+        ],
+        "detail": "Throw a CHROMITE Grenade at a character within Range 5. The target must succeed on a Systems save or be Impaired and Slowed until the end of their next turn. If they are already Impaired, they are instead Stunned until the end of their next turn on a failed save. Each character can only be Stunned this way 1/scene."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "CHROMITE Emplacement",
+        "type": "Mine",
+        "range": [
+          {
+            "type": "Burst",
+            "val": 1
+          }
+        ],
+        "detail": "When this Mine is set off, characters within a Burst 1 area centered on it must succeed on a Systems save or treat all other characters as Invisible until the end of their next turn."
+      }
+    ],
+    "description": "This system began, as many things do, as a derivative of a basic grenade. Instead of standard explosives, the ones used by this system utilize chain-detonating strobe flares covering multiple spectra combined with auditory and thermal factors. Won’t scratch a chassis, but the same can’t be said for their sensors."
+  },
+  {
+    "id": "liminal_downfall_pride_uplinkarray",
+    "name": "Uplink Array",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "PRIDE",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "detail": "You emit an enormous blast of broad-frequency static in a Burst 3 area. Each character other than you at least partially in the area must succeed on a Systems save or lose Hidden, be unable to become Hidden or benefit from Invisible until the end of their next turn, and gain Lock On. Then you lose Hidden, can't become Hidden or benefit from Invisible until the end of your next turn, and gain Lock On."
+      }
+    ],
+    "description": "Sometimes, the best way to find the enemy is to broadcast on maximum and see what flinches. This tends to attract attention."
+  },
+  {
+    "id": "liminal_downfall_sloth_earthshakermodule",
+    "name": "Earthshaker Module",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "SLOTH",
+    "license_level": 1,
+    "effect": "This system can only be installed on mechs Size 2 or larger.",
+    "actions": [
+      {
+        "activation": "Protocol",
+        "detail": "While this protocol is active, spaces adjacent to you are treated as difficult terrain by all characters other than you. If you step onto an object or piece of terrain, it takes 10 AP Kinetic damage. Each object or piece of terrain can only take damage from this system 1/round."
+      },
+      {
+        "name": "Deactivate Earthshaker Module",
+        "activation": "Protocol",
+        "detail": "You end the effects of your Earthshaker Module."
+      }
+    ],
+    "description": "Sometimes, you just need to stomp harder."
+  },
+  {
+    "id": "liminal_downfall_sloth_guardianimpulse",
+    "name": "Guardian Impulse",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "SLOTH",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "A hostile character declares an attack against an allied character adjacent to you.",
+        "detail": "You force the attack to target you instead. You must be aware of the attack, and must be a valid target for it."
+      }
+    ],
+    "description": "The drawback to the SLOTH frame’s slow speed was in the difficulty it could have actually keeping its allies safe. A line anchor is only so effective if it cannot interdict. This burst combines a literal gravity warp and a sudden reroute of local electronic transmissions, letting the frame take the brunt of incoming attacks even if it wasn’t the intended target."
+  },
+  {
+    "id": "liminal_downfall_sloth_naptime",
+    "name": "NAPTIME",
+    "type": "System",
+    "sp": 4,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "SLOTH",
+    "license_level": 3,
+    "effect": "Whenever you spend Repairs, you spend one less, to a minimum of 1.<br><br>In addition, when you Stabilize, you gain Resistance to all damage, heat and burn from the next attack made against you before the end of your next turn. You can only benefit from one instance of this effect at a time.",
+    "description": "He who makes the most of their rest and repair cycles ultimately prospers. Enter the Nanite-Augmented Prime Tuning Internal Maintenance Engine. This system ensures that the greatest amount of every kilogram of repair material potential is utilized."
+  },
+  {
+    "id": "liminal_downfall_wrath_chesssystem",
+    "name": "CHESS System",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "WRATH",
+    "license_level": 1,
+    "effect": "At the end of each of your turns, you may take or clear up to 2 Heat. If you ever choose to clear all heat with the Stabilize action, this system is disabled for the rest of the scene and can't be used (but is not destroyed).",
+    "description": "Wasting time is not on the docket for the WRATH frame, not at all. The labs at DOWNFALL have developed the Continual Heat Exchange System Series instead, a set of unique seals and vents which regulate its core as a constant task."
+  },
+  {
+    "id": "liminal_downfall_wrath_expansioninclusionmodule",
+    "name": "Expansion/Inclusion Module",
+    "type": "System",
+    "sp": 1,
+    "source": "DOWNFALL",
+    "license": "WRATH",
+    "license_level": 2,
+    "effect": "Whenever you fire a Burst, Blast, Cone, or Line weapon, you may make an attack with that weapon against a hostile character adjacent to and outside of the area of effect. If you do, you have +1 Difficulty on that attack.",
+    "description": "With a quick and calculated twist, lunge, curve, or twitch, the target that thought themselves out of the line of fire suddenly finds themselves squarely within it."
+  },
+  {
+    "id": "liminal_downfall_wrath_momentumcrash",
+    "name": "Momentum Crash",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "WRATH",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "A hostile character within Range 5 is destroyed.",
+        "detail": "You move up to three spaces. This movement ignores engagement, and can pass through spaces occupied by hostile characters, though you may not end this movement in another character's space."
+      }
+    ],
+    "description": "“Any source of acceleration is appreciated. Especially this one.”"
+  },
+  {
+    "id": "liminalspace_moi_houdini_blackstoneupgrade",
+    "name": "Blackstone Systems Upgrade",
+    "type": "Tech",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "HOUDINI",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Hypnotism",
+        "activation": "Invade",
+        "detail": "The target loses comms and cannot willingly make any movement that would take it further away from you until the end of your next turn. In addition, the target gains Lock On."
+      },
+      {
+        "name": "Misdirection",
+        "activation": "Invade",
+        "detail": "The target must re-roll its next successful attack, check or save before the end of your next turn."
+      }
+    ],
+    "description": "A multi-tonne machine capable of spitting death is only as dangerous as the systems that control it. As a result, deception and digital infiltration are capable of neutering even the most powerful of opposition. Subtle viruses can manipulate autoloaders or fill screens with memetic assaults on the pilot to distract them from the world around them."
+  },
+  {
+    "id": "liminalspace_moi_houdini_illusioncharges",
+    "name": "Illusion Charges",
+    "type": "Deployable",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 3,
+    "source": "MOI",
+    "license": "HOUDINI",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Trapdoor Grenade",
+        "activation": "Quick",
+        "detail": "Throw a Trapdoor Grenade to a space within Range 5. All allied characters within a Blast 1 of that space are teleported up to 4 spaces in a direction of their choice and become Invisible until the start of their next turn."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Recall Beacon",
+        "type": "Mine",
+        "range": {
+          "type": "Burst",
+          "val": 1
+        },
+        "activation": "Quick",
+        "detail": "This Mine does not activate on its own or when a character fails to disarm it. Instead, when any friendly character in Range 10 makes a standard move or Boost, they may choose to instead teleport to any space within a Burst 1 of the Recall Beacon. This teleportation destroys the Recall Beacon."
+      }
+    ],
+    "description": "“I swear Sir, the damn thing just vanished! We had it pinned one minute and a moment later it wasn't there. I don't have any idea how it got past us!”<br> - Mariann Schwarz, Constellar Midnights, NJP Hearing"
+  },
+  {
+    "id": "liminalspace_moi_houdini_devantupgrade",
+    "name": "Devant System Upgrade",
+    "type": "Tech",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "HOUDINI",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Now You See It",
+        "activation": "Full Tech",
+        "detail": "Choose a Blast 1 area within your Sensors. In the affected area, all effects caused by tech actions immediately end, NHPs stop cascading, and characters become immune to all tech actions other than this one (hostile or allied) until the end of their next turn."
+      },
+      {
+        "name": "Now You Don't",
+        "activation": "Full Tech",
+        "detail": "One allied character, Drone or Deployable within your Sensors becomes Hidden, and does not require cover to remain Hidden, until the end of their next turn."
+      }
+    ],
+    "description": "“The mere knowledge of secrets will not help the amateur conjurer very far on the road to success.”<br> - David Devant"
+  },
+  {
+    "id": "liminalspace_moi_houdini_showstopper",
+    "name": "Showstopper",
+    "type": "System",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "HOUDINI",
+    "license_level": 2,
+    "effect": "You have the Showstopper reaction.",
+    "actions": [
+      {
+        "name": "Showstopper",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "You or an allied character within Range 5 are targeted by a Smart weapon attack or a tech attack.",
+        "detail": "Make a tech attack roll contesting the triggering attack: if you win the contested roll, you may expend one charge to cause the attack to automatically miss its target and instead automatically hit the source of the attack. You make any required decisions as if you were the source of the attack."
+      }
+    ],
+    "description": "Precision in digital warfare cannot be underestimated, as a single carefully placed program can unravel weeks or months of work in a moment. Controlled by a subsentient program, the showstopper is a tailored payload delivery system designed to find any weakness in an electronic signal that can be used to shut it down or detonate smart weapons right in their launchers."
+  },
+  {
+    "id": "liminalspace_moi_houdini_copperfieldupgrade",
+    "name": "Copperfield System Upgrade",
+    "type": "Tech",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "HOUDINI",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Exit Stage Left",
+        "activation": "Invade",
+        "detail": "You teleport the target up to 4 spaces in any direction. This can only be used 1/scene on each character."
+      },
+      {
+        "name": "Crescendo",
+        "activation": "Invade",
+        "detail": "The first time after this tech attack and before the end of your next turn the target takes Heat from a character other than itself, it releases fractal hereticode over a Burst 2 area. Each character of your choice in the affected area must succeed on an Engineering save or take 3 Heat."
+      }
+    ],
+    "description": "The greatest magic trick involves no fancy technology or impressive illusions. The greatest trick is that the audience wants to be fooled. They want to experience a sense of wonder and amazement as they watch the impossible born before them. It doesn't matter if they know the trick, for the head will never win out over the heart."
+  },
+  {
+    "id": "liminalspace_moi_solomon_malphasdrone",
+    "name": "Malphas Drone",
+    "type": "Drone",
+    "sp": 2,
+    "source": "MOI",
+    "license": "SOLOMON",
+    "license_level": 1,
+    "deployables": [
+      {
+        "name": "Malphas Drone",
+        "type": "Drone",
+        "size": 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion": 10,
+        "tags": [
+          {
+            "id": "tg_invisible"
+          }
+        ],
+        "detail": "You fire a Malphas Drone to an empty space within your Sensors and line of sight, where it releases a Burst 2 area of inhibiting nanobots. The drone is Invisible and hostile characters within the area are Impaired as long as they remain within the area.",
+        "recall": "Quick",
+        "redeploy": "Quick"
+      }
+    ],
+    "description": "Designed for subtle sabotage, Malphas Drones are capable of disabling security warnings and automatic defences around them. Automatic fire extinguishers will fail to trigger and heads-up displays will completely neglect to show any indication of an incoming grenade under their dark influence."
+  },
+  {
+    "id": "liminalspace_moi_solomon_phenexdrone",
+    "name": "Phenex Drone",
+    "type": "Drone",
+    "tags": [
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "SOLOMON",
+    "license_level": 2,
+    "deployables": [
+      {
+        "name": "Phenex Drone",
+        "type": "Drone",
+        "size": 2,
+        "hp": 10,
+        "edef": 10,
+        "evasion": 10,
+        "tags": [
+          {
+            "id": "tg_resistall"
+          }
+        ],
+        "detail": "You fire a Phenex Drone to an empty space within your Sensors and line of sight, where it projects a large barrier around itself. Allied characters can use the Phenex Drone as hard cover.",
+        "recall": "Quick",
+        "redeploy": "Quick"
+      }
+    ],
+    "description": "A remarkably uncomplicated drone, a Phenex is nothing but plating and thrusters built around a heavy shield generator. A Phenex is designed as mobile cover, allowing allies the protection of a defensive emplacement even as they push forward under fire."
+  },
+  {
+    "id": "liminalspace_moi_solomon_holywisdom",
+    "name": "Holy Wisdom",
+    "type": "Tech",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "SOLOMON",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Swirling Sands",
+        "activation": "Quick Tech",
+        "detail": "You choose two Drones or Deployables (allied or hostile) within your Sensors and swap their places, teleporting both of them simultaneously."
+      },
+      {
+        "name": "Clairvoyance",
+        "activation": "Quick Tech",
+        "detail": "One Drone or Deployable (allied or hostile) within your Sensors releases a Burst 2 targeting pulse. Hostile characters in the affected area must succeed on a Systems save or gain Lock On."
+      }
+    ],
+    "description": "Complex systems are needed to support the extensive automated defences of a Magnum Opus Factory Vault, to allow only a few defenders to do the work of an entire army. Holy Wisdom is a drone-focused blinkspace system designed to allow for spotting and quick repositioning of both friendly and hostile objects."
+  },
+  {
+    "id": "liminalspace_moi_solomon_andromaliusdrone",
+    "name": "Andromalius Drone",
+    "type": "Drone",
+    "sp": 2,
+    "source": "MOI",
+    "license": "SOLOMON",
+    "license_level": 3,
+    "deployables": [
+      {
+        "name": "Andromalius Drone",
+        "type": "Drone",
+        "size": 2,
+        "hp": 5,
+        "armor": 2,
+        "edef": 10,
+        "evasion": 10,
+        "tags": [
+          {
+            "id": "tg_resistall"
+          }
+        ],
+        "detail": "You fire a large shielded drone to a free space within your Sensors and line of sight. Any hostile character that starts their turn adjacent to the drone or moves there for the first time on their turn must succeed on a Hull save or take 4 Kinetic damage and be Slowed until the end of their turn.",
+        "recall": "Quick",
+        "redeploy": "Quick"
+      }
+    ],
+    "description": "Designed originally around semi-sapient code for defensive players in drone sports leagues, Andromalius drones have gained a new life as the final line of defence for many Magnum Opus Factory Vaults. These shielded drones can stand up to staggering amounts of punishment as they blockade passages and crush enemies between powerful barriers. If they cannot delay a foe long enough for reinforcements to arrive, then they are fighting a battle that could never be won."
+  },
+  {
+    "id": "liminalspace_moi_zouyan_taintedelixirs",
+    "name": "Tainted Elixirs",
+    "type": "System",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "ZOU YAN",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Metal Fatigue Inducer",
+        "activation": "Quick",
+        "detail": "Throw a grenade to a space within Range 5. All characters within the Blast 1 area must succeed on an Engineering save or take 1 AP Energy damage and be Shredded until the end of their next turn."
+      },
+      {
+        "name": "Overgrowth Capsule",
+        "activation": "Quick",
+        "detail": "Throw a grenade to a space within Range 5. All characters within the Blast 1 area must succeed on a Hull save or take 1 AP kinetic damage and be immobilized until the end of their next turn. Spaces of unoccupied water terrain in the affected area are replaced with thick weeds that may be travelled like flat terrain until the end of the scene."
+      }
+    ],
+    "description": "Long ago Magnum Opus had many other small companies competing for the dual focus of creation of blink gate components and helping to bring the colonies around them up to a degree to act on a galactic scale. Most of these competitors fell to the wayside and to the big corporations, too focused on meeting the short-term benchmarks to work on the massive scale these projects require. Several of their technologies were acquired by Magnum Opus when they went insolvent, bringing tools that had proven too destructive to use in terraforming a new life where that aspect is a positive quality."
+  },
+  {
+    "id": "liminalspace_moi_zouyan_tudigongterraformer",
+    "name": "Tudigong Terraformer",
+    "type": "System",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "ZOU YAN",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Death World",
+        "activation": "Quick",
+        "detail": "You rapidly apply your terraformer to a Blast 1 area within your Sensors, transforming the area into difficult terrain. Characters who enter this area for the first time on their turn or start their turn there must succeed on an Engineering save or take 4 Kinetic damage. This effect persists for the rest of the scene or until you use this system again, at which point your terraformer ceases upkeep and the altered ecosystem collapses."
+      },
+      {
+        "name": "Paradise World",
+        "activation": "Quick",
+        "detail": "You rapidly apply your terraformer to a Blast 1 area within your Sensors, clearing it of any hostile environmental effects (except for those caused by gravity and culture) for the rest of the scene. Characters may treat this area as if it was neither dangerous nor difficult terrain. This effect persists for the rest of the scene or until you use this system again, at which point your terraformer ceases upkeep and the altered ecosystem collapses."
+      }
+    ],
+    "description": "Any system that gains a blink gate is almost certain to immediately see a massive skyrocketing in its economy as trade flows freely and they are opened up to entire new scales of interaction. As such, many systems have been developed to help worlds adapt to new immigration and increased need for industry. Magnum Opus has created a small-scale version of their proprietary terraformer, capable of reshaping the environment around it. However, this smaller scale version lacks the stabilization of the larger ones and thus without constant support, these changes will fall apart under natural conditions."
+  },
+  {
+    "id": "liminalspace_moi_zouyan_waidanrepairhives",
+    "name": "Waidan Repair Hives",
+    "type": "Deployable",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "ZOU YAN",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Transfusion Grenade",
+        "activation": "Quick",
+        "detail": "Throw a Transfusion Grenade at one character within Range 5. The target must succeed on an Engineering save or take 1d6+2 AP energy damage. If the target takes damage this way, you or one allied character within Range 5 may spend 1 Repair as a reaction to restore half their HP."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Hidden Depot",
+        "type": "Mine",
+        "detail": "This mine detonates when any character moves over or adjacent to it. When detonated, the triggering character may end all burn, end a condition that wasn’t self-inflicted, or spend 1 Repair to refill HP to maximum."
+      }
+    ],
+    "description": "One of the biggest problems combat engineers report is that of a lack of time. They simply cannot be everywhere at once, tending to each of the injured all over the battlefield. Disposable repair hives are an attempt to bridge these problems, taking the form of repair nanites with only a few moments lifespan. Just long enough to save lives."
+  },
+  {
+    "id": "liminalspace_moi_zouyan_changenhp",
+    "name": "Chang'e-Class NHP",
+    "type": "AI",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      }
+    ],
+    "sp": 3,
+    "source": "MOI",
+    "license": "ZOU YAN",
+    "license_level": 3,
+    "effect": "Your mech gains the AI tag and the Elixir of Immortality full action.",
+    "actions": [
+      {
+        "name": "Elixir of Immortality",
+        "activation": "Full",
+        "detail": "One allied character within your Sensors gains Resistance to all damage until the end of their next turn, and may expend 1 Repair to restore all HP. If they have 1 or less Structure, they reduce all damage they take to 0 until the end of their next turn instead of gaining Resistance. Each character can only be affected by this system 1/scene."
+      }
+    ],
+    "description": "While many NHPs are content to work quietly behind the scenes, Chang'e-Class NHPs love social interaction and communication with others. Seeing themselves as an equal partner more than a servant, they can often get quite testy if they are forced to stay out of the limelight and to restrict who they can communicate with. As a result, it is very common for Chang'e-class NHPs to request the right to print a custom subaltern so that they can more directly interact with people in a face-to-face manner. While some pilots find a fashionista socialite more than a little frustrating when up to their knees in mud, the mastery of transmutative repair they show makes them very popular among both hostile environment colonies and lancers who like a very creative solution to battlefield problems."
+  },
+  {
+    "id": "liminalspace_moi_amakusa_saviormodule",
+    "name": "Savior Module",
+    "type": "System",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "AMAKUSA",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "Expend a charge to teleport one allied character within Range 12 up to 4 spaces. If the teleported character has less than 1/2 of their maximum HP, they also gain Overshield equal to 2 + your Grit."
+      }
+    ],
+    "description": "Magnum Opus Interstellar has always been most notable for their usage of blinkspace technology and the defensive designs are no exception to that. Heavy systems are kept in a constant ready state, prepared to generate a temporary blinkspace rift at a moment’s notice of an ally under assault."
+  },
+  {
+    "id": "liminalspace_moi_amakusa_hypostasisbanner",
+    "name": "Hypostasis Banner",
+    "type": "System",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 4,
+    "source": "MOI",
+    "license": "AMAKUSA",
+    "license_level": 3,
+    "effect": "When you or an adjacent allied character rolls 1 or 2 on an Accuracy Die or a 5 or 6 on a Difficulty Die, they may reroll the die but must keep the second result, even if it is worse. In addition, you gain the Banner of Living Hope Quick Tech action.",
+    "actions": [
+      {
+        "name": "Banner of Living Hope",
+        "activation": "Quick Tech",
+        "frequency": "1/scene",
+        "detail": "Create a Size 1 banner data construct within Range 5. When an allied character with line of sight to the banner takes structure damage, they roll 1d6. On a 5 or 6, they return to 1 HP and ignore the damage. Each character can only successfully avoid structure damage this way 1/scene.<br><br>The banner lasts for the rest of the scene, or until destroyed by an adjacent character with a successful Systems check as a full action."
+      }
+    ],
+    "description": "“I've asked the techies before how this thing works and every time it becomes 'Quantum Entanglement' this or 'Platonic Pattern Reinforcement' that... all well over my head. So I work with a simple idea behind it: It's a promise that I'm here to save you and they'll have to kill me before I break my word.”<br> - Nasim Esclabor, DoJ/HR Liberator"
+  },
+  {
+    "id": "liminalspace_moi_amakusa_kannonnhp",
+    "name": "KANNON-Class NHP",
+    "type": "AI",
+    "tags": [
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_ai"
+      }
+    ],
+    "sp": 3,
+    "source": "MOI",
+    "license": "AMAKUSA",
+    "license_level": 3,
+    "effect": "Your mech gains the AI tag and the Memorare reaction.",
+    "actions": [
+      {
+        "name": "Memorare",
+        "activation": "Reaction",
+        "frequency": "1/scene",
+        "trigger": "An allied character within Range 5 takes damage.",
+        "detail": "Reduce the triggering damage to 0. The triggering character gains Overshield equal to your Grit + 4."
+      }
+    ],
+    "description": "“Greetings to you, master.<br><br>“I fear that if you have asked for me, we are to see battle again. I am long tired of conflict but I shall not abandon my duty to you. Where enemies seek to strike you down, I will be there to protect you and those you care for. I must, however, ask a question:<br><br>“Is this battle truly necessary? Will it be a better world, when you have spilled the blood of sons and daughters upon the ground?”"
+  },
+  {
+    "id": "liminalspace_moi_medea_goldenfleece",
+    "name": "Golden Fleece",
+    "type": "Tech",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "MEDEA",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Enthrall",
+        "activation": "Quick Tech",
+        "detail": "One character of your choice within Range 5 of one of your deployed Drones must succeed on a Systems save or suffer +3 Difficulty on all attacks that do not include the Drone as a target until the Drone is destroyed or the end of your next turn."
+      },
+      {
+        "name": "Attract",
+        "activation": "Quick Tech",
+        "detail": "Choose one of your deployed Drones. Each character in a Burst 3 around that Drone must succeed on a Systems save or move 2 spaces directly towards it, or as close as possible. They can be moved into hazardous areas and other obstacles, but are still affected by difficult terrain, obstructions, and so on. This movement is involuntary, but provokes reactions and engagement as normal and doesn’t count as knockback, pushing, or pulling."
+      }
+    ],
+    "description": "“Alright, so reports say they're using some sort of new high tech printer that can deploy full drones from the scrap left lying about. We need to be careful and not underestima... ohmygod, the drones are SO CUTE. Look at them, they're even fluffy. They're so cute I could di...”<br> - Mariann Schwarz, Constellar Midnights"
+  },
+  {
+    "id": "liminalspace_moi_medea_aeosdrone",
+    "name": "Aeos Drone",
+    "type": "Drone",
+    "sp": 2,
+    "source": "MOI",
+    "license": "MEDEA",
+    "license_level": 2,
+    "deployables": [
+      {
+        "name": "Aeos Drone",
+        "type": "Drone",
+        "detail": "This pulsing mirror drone may be deployed to a free space within your Sensors and line of sight. Any character that starts their turn adjacent to the Aeos Drone or moves adjacent to it for the first time in a round must succeed on an Engineering save or only have line of sight to adjacent spaces until the end of their next turn.<br><br>You may recall or redeploy the Aeos Drone as a quick action. Until recalled or destroyed, it remains deployed until the end of the scene.",
+        "activation": "Quick",
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "size": 0.5,
+        "hp": 5,
+        "evasion": 10,
+        "edef": 10,
+        "tags": [
+          {
+            "id": "tg_invisible"
+          }
+        ]
+      }
+    ],
+    "description": "Slim drones with a mirror finish, Aeos drones are capable of releasing scorching bursts of light and radiation that can blind even the most powerful and refined of sensors. Their own reflected light makes them very difficult to target, as they produce afterimages and holograms with each movement."
+  },
+  {
+    "id": "liminalspace_moi_medea_lastdancemodule",
+    "name": "Last Dance Module",
+    "type": "Tech",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "MEDEA",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Greater Good",
+        "activation": "Quick Tech",
+        "detail": "Destroy one allied Drone or Deployable within your Sensors. It explodes in a Burst 2 torrent of plasma. All characters within the burst take 1d6 AP Energy damage, or 2d6 AP Energy damage if the Drone or Deployable was not a Limited system (Engineering save for half)."
+      },
+      {
+        "name": "Grand Finale",
+        "activation": "Quick Tech",
+        "detail": "Destroy one allied Drone or Deployable within your Sensors. It explodes in a Burst 1 shockwave. All characters in the blast must make a Hull save or be knocked back 4 spaces directly away from the destroyed Drone or Deployable and knocked Prone. if the Drone or Deployable was not Limited, they are also Immobilized until the end of their next turn. On a successful save, a character is knocked back 2 spaces instead and isn't Immobilized or knocked Prone."
+      }
+    ],
+    "description": "A drone is inherently expendable, able to be reproduced later or repaired if destroyed. The life of a pilot or the success of a mission is a long term cost that is not easy to replace. As a result, various programs are being passed around that can overcharge a drone for a few moments, at the cost of catastrophic failure immediately afterwards."
+  },
+  {
+    "id": "liminalspace_moi_medea_theseusharassmentpattern",
+    "name": "“Theseus” Harassment Pattern",
+    "type": "System",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "MEDEA",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Full",
+        "detail": "A hostile character within your Sensors becomes the target of drone harassment. At the end of each of the targeted character's turns, they take 2 AP Energy damage and become Impaired until the end of their next turn. The affected character can avoid this effect by being Hidden from, or having hard cover against, all Drones with line of sight to the character. This effect persists until the targeted character escapes the drones by succeeding on an Agility save as a full action.<br><br>This system can only affect one target at a time. If another character becomes the target of this system, previous characters are no longer affected."
+      }
+    ],
+    "description": "Adapted from analysis of omninet interactions, the Theseus harassment pattern is a multimedium assault designed for botnets. An individual subjected to the pattern will find endless digital and physical assaults as every drone, even those thought friendly, is rapidly brought into a growing network of hostile, cruel hunters."
+  },
+  {
+    "id": "liminalspace_moi_nimue_kipupgyroenhancements",
+    "name": "“Kip-Up” Gyro Enhancements",
+    "type": "System",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "NIMUE",
+    "license_level": 1,
+    "effect": "When a hostile character misses you with a Ram, Grapple, or Improvised Attack, they fall Prone. When you stand up from Prone, you may choose one character within Range 3 and line of sight: they must succeed on an Agility save or fall Prone.",
+    "description": "Even in mech combat, footwork is incredibly important. With careful adjustments of the mech’s gyro and enhancements to reaction speed, an expert pilot can use footwork to force opponents to overextend and to risk devastating counterattacks with their every movement."
+  },
+  {
+    "id": "liminalspace_moi_nimue_fethfiada",
+    "name": "Féth Fíada",
+    "type": "System",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "NIMUE",
+    "license_level": 2,
+    "effect": "You can choose to treat liquid terrain as flat ground, allowing you to move through it normally rather than swimming or climbing.<br><br>In addition, you have the Shifting Mists quick action.",
+    "actions": [
+      {
+        "name": "Shifting Mists",
+        "activation": "Quick",
+        "detail": "You empower the mists surrouding you, gaining hard cover until the end of your next turn and allowing you to Hide. While the mists are empowered, you take no damage and suffer no effects when you succeed on a save or an attack misses you (including the Reliable tag)."
+      }
+    ],
+    "description": "Initially seeming like mist or smoke swirling around the mech, this metamaterial cloud sits halfway between the world and blinkspace, concealing the form of the mech it protects while drawing shrapnel out of reality. A focusing of the cloud’s form into solidity allows it to easily provide temporary paths over most substances or to even allow the mech to take on the form of enemies to walk among them."
+  },
+  {
+    "id": "liminalspace_moi_nimue_hydromancyblinkspaceinundator",
+    "name": "“Hydromancy” Blinkspace Inundator",
+    "type": "Deployable",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 3,
+    "source": "MOI",
+    "license": "NIMUE",
+    "license_level": 3,
+    "effect": "Deploy a stabilized gate in reality - either a Brocéliande Lakeburst or an Immrama Lakeburst - to a free space within Range 5. The Lakeburst doesn't obstruct movement or block line of sight and lasts for the rest of the scene. If you create a new Lakeburst of either type, the previous one destabilizes and is destroyed. Both material and Intangible characters can attack and affect the Lakeburst.",
+    "deployables": [
+      {
+        "name": "Brocéliande Lakeburst",
+        "type": "Deployable",
+        "activation": "Quick",
+        "size": 2,
+        "hp": 10,
+        "armor": 2,
+        "evasion": 5,
+        "detail": "Hostile characters starting their turn on this Lakeburst or moving onto it for the first time in a round must make a Systems save. If they fail, they become Intangible until they succeed on a Systems save as a quick action or the Lakeburst is destroyed."
+      },
+      {
+        "name": "Immrama Lakeburst",
+        "type": "Deployable",
+        "activation": "Quick",
+        "size": 2,
+        "hp": 10,
+        "armor": 2,
+        "evasion": 5,
+        "detail": "Allied characters starting their turn on this Lakeburst or moving onto it can choose to become Intangible until the end of the current turn."
+      }
+    ],
+    "description": "To support their extensive operations, Magnum Opus makes use of highly secure factory-vaults that act as both production facility and warehouse. One of the most unique creations of these vaults is nanite-infused liquid that has been deeply seeped in arcane procedures that Magnum Opus treats as some of their most treasured secrets. Flowing as their controller directs and appearing seemingly from nowhere, these artificial lakes act as gaps in reality to another realm. The one thing all pilots sign before they can be issued command hereticode is an agreement: They shall not seek to free those sealed away. They deserve their fate."
+  },
+  {
+    "id": "liminalspace_moi_ptolemy_akashiccharges",
+    "name": "Akashic Charges",
+    "type": "Deployable",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 4
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "PTOLEMY",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Sweep Grenade",
+        "activation": "Quick",
+        "detail": "Throw a grenade to a space within Range 5. All characters within the grenade's Blast 2 area must succeed on a Systems save or lose Hidden and be unable to Hide or benefit from Hidden, Invisible or cover until the end of their next turn. Regardless of success or failure, you gain the benefits of a Scan against each affected character."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Talky Mine",
+        "type": "Mine",
+        "activation": "Quick",
+        "detail": "The character that triggers this Mine gains Lock On and must succeed on a Systems save or have a transmitter attached. While the transmitter is attached, the character does not benefit from Hidden or Invisible and gains Lock On at the end of each of their turns if they don't already have it. They may remove the transmitter with a successful Systems save as a full action."
+      }
+    ],
+    "description": "A favorite of tactically focused commanders, Akashic charges provide unparalleled passive data gathering services. Utilizing an advanced multi-spectral analysis system, they can quickly ferret out even the most skilled of infiltrators and keep an artillery division or an emplaced battle line safe even while pilots sleep. When used with active direction, they can sort through a staggering amount of data to very quickly provide all that a commander needs to know."
+  },
+  {
+    "id": "liminalspace_moi_ptolemy_interdictionlasers",
+    "name": "Interdiction Lasers",
+    "type": "System",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "PTOLEMY",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Other",
+        "detail": "You may spend either a quick action or a full action to activate this system.<br><br>Choose one character within your Sensors, who becomes interdicted until the start of your next turn. While a character is interdicted, whenever they make a ranged attack, roll 1d6. The attack automatically misses on a 3+ if you spent a full action to activate this system, or a 5+ if you spent a quick action. This effect does not stack with Invisible."
+      }
+    ],
+    "description": "“130 Micromissiles Locked. Calculated Fratricide Rate 23.6%. Point Denial Established. At this rate, they won’t even scratch the plating.”<br> - Nasira Avni, MOI El Dorado Flight Chief"
+  },
+  {
+    "id": "liminalspace_moi_ptolemy_timaeussystemrefinement",
+    "name": "Timaeus System Refinement",
+    "type": "Tech",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "PTOLEMY",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Fading Divinity",
+        "activation": "Invade",
+        "detail": "The target falls Prone and is Immobilized until the end of their next turn. This can only be used 1/scene on each character."
+      },
+      {
+        "name": "Swelling Greed",
+        "activation": "Invade",
+        "detail": "You gain control of one of the target's active Drones until the end of the scene. The chosen Drone is treated as allied to you and hostile to its previous allies. If the Drone had a chosen target, you may immediately choose a new target for it. The original owner can regain control of a Drone with a successful Systems save as a quick action."
+      }
+    ],
+    "description": "Designed for soft defence of important facilities, the Timaeus System upgrade can remove the foe's ability to fight without directly harming them. It can use powerful override command codes to suborn control of automated units or disrupt mech systems, leaving foes untouched but unable to proceed with an assault."
+  },
+  {
+    "id": "liminalspace_moi_ptolemy_critiassystemupgrade",
+    "name": "Critias System Upgrade",
+    "type": "Tech",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "PTOLEMY",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Shadow Game",
+        "activation": "Quick Tech",
+        "detail": "Make a contested Systems check against a hostile character within your Sensors and line of sight. If you win, the target is Stunned and Intangible until the end of their next turn. If you lose, you are Intangible until the end of your next turn. This can only affect each character other than you 1/scene."
+      },
+      {
+        "name": "Seal of Orichalcum",
+        "activation": "Quick Tech",
+        "detail": "Make a tech attack against a character within Sensors. On a hit, they take 2 heat and cannot take any action other than Standard Move, Boost, Skirmish, Barrage or Stabilize until the end of their next turn."
+      }
+    ],
+    "description": "A well hidden secret among Magnum Opus Interstellar is a unique invention designed for dealing with competition within the Blink Gate market. Information about it is carefully controlled, forcing any pilot cleared to receive the Critias system upgrade to have signed a series of non-disclosure agreements about the nature of it. A brutal and dangerous system, the Critias rips open the firmament between the attacker and its target, forcing them into a deadly game with existence on the line."
+  },
+  {
+    "id": "liminalspace_moi_morgana_agravainquarantinemodule",
+    "name": "Agravain Quarantine Module",
+    "type": "Tech",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "MORGANA",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Anathema",
+        "activation": "Invade",
+        "detail": "Each character adjacent to your target is pushed 2 spaces directly away from them."
+      },
+      {
+        "name": "Damnatio Memoriae",
+        "activation": "Invade",
+        "detail": "Until the end of the target's next turn, the target is Jammed, Invisible, ignores engagement, and does not engage other characters. This can only be used 1/scene on each character."
+      }
+    ],
+    "description": "Until the start of the Ascendant Crusade, the primary danger for blink gates was not physical attack but digital assault by those seeking to delay the arrival of troops without damaging the infrastructure. Magnum Opus has thus been forced to develop powerful tools for locking targets out of their systems and stripping any support elements that would aid the invader. "
+  },
+  {
+    "id": "liminalspace_moi_morgana_lefeysystemrefinement",
+    "name": "Le Fey System Refinement",
+    "type": "Tech",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "MORGANA",
+    "license_level": 2,
+    "deployables": [
+      {
+        "name": "Daemonology",
+        "type": "Mine",
+        "activation": "Full Tech",
+        "detail": "You place two digital mines in empty spaces within Range 3 of you. These mines affect only the character that triggers them by moving adjacent to it, dealing 2 Heat and one Invade option (chosen for each mine when it is placed, treating you as the origin of the Invade). A successful Systems save negates the Invade option but not the heat. You can have a maximum of 2 digital mines deployed at a time, with the oldest being removed if you place one beyond this limit."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Pariah",
+        "activation": "Full Tech",
+        "detail": "Make a tech attack against a character within Sensors. On a hit, the target suffers 4 heat and treats all other characters - and is treated by all other characters - as hostile for the purposes of engagement, tech actions, systems, traits and talents. The target can end this effect with a successful Systems save as a full action."
+      }
+    ],
+    "description": "A very popular modification to standard digital warfare systems is that of the Le Fey system refinement, integrating extensive automation tools and fine tuning hardware interfaces. This refinement allows for a host of semisapient daemons to prepare deadly traps for foes and to heavily overload IFF, causing them to tear apart what they should be protecting."
+  },
+  {
+    "id": "liminalspace_moi_morgana_vulgatevirusvault",
+    "name": "Vulgate Virus Vault",
+    "type": "Tech",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "sp": 2,
+    "source": "MOI",
+    "license": "MORGANA",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Treachery",
+        "activation": "Invade",
+        "detail": "At the end of each of the target's turns, they gain 2 Heat. This effect ends if they succeed on a Systems save as a quick action or attack a character allied to them with a weapon or Improvised Attack. This can only be used 1/scene on each character."
+      },
+      {
+        "name": "Ruin",
+        "activation": "Invade",
+        "detail": "The target becomes Shredded until the end of their next turn and loses all Overshield. This can only be used 1/scene on each character."
+      }
+    ],
+    "description": "Careful cultivation and refinement of some of the most powerful viruses has granted Magnum Opus a powerful tool that can reduce security systems to little more than scrapcode, short out defensive measures and force pilots into an unpleasant choice: Their lives or the illusion that their soul does not have a price."
+  },
+  {
+    "id": "liminalspace_moi_morgana_mordredclassnhp",
+    "name": "MORDRED-Class NHP",
+    "type": "AI",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      }
+    ],
+    "sp": 3,
+    "source": "MOI",
+    "license": "MORGANA",
+    "license_level": 3,
+    "effect": "Your mech gains the AI tag and the Gwaith Camlan Quick Tech action.",
+    "actions": [
+      {
+        "name": "Gwaith Camlan",
+        "activation": "Quick Tech",
+        "frequency": "1/round",
+        "detail": "Make a tech attack against a target within Sensors. On a success, they take 2 heat and you inﬂict an additional effect as follows: the first time you successfully make this attack, you inﬂict the First Wound on your target; each subsequent successful attack (on any target) increases the level of the eﬀect that you inﬂict (e.g. your second attack inﬂicts the Second Wound, your third inﬂicts the Third Wound, etc.) until you inﬂict the Fourth Wound, after which the eﬀect resets to the First Wound. Your progress persists between scenes but resets if you rest or perform a Full Repair.<br><ul><li>First Wound: The target suffers Lock On.</li><li>Second Wound: The target takes an additional 2 Heat.</li><li>Third Wound: The target immediately targets itself with a single weapon of your choice as a reaction, automatically hitting itself (though still rolling to attack any other characters caught in the area of the attack), even if the attack could not normally target the attacker. Although you choose the weapon, they count as attacking.</li><li>Fourth Wound: Your target is Exposed and Shredded until the end of their next turn.</li></ul>"
+      }
+    ],
+    "description": "MORDRED-class NHPs are friendly but almost pitifully desperate for attention from their owner. A bad relationship with their master or being treated as little more than a tool has a deleterious effect on their mental state, including an increasing tendency to catastrophize, mood swings and lack of self worth. Despite this, they have an incredible ability to work outside the box and provide solutions to seemingly impossible problems. Magnum Opus Interstellar recommends a full wipe if the Mordred starts referring to its owner using familial terms."
+  },
+  {
+    "id": "liminalspace_moi_morgana_clarentgradehereticode",
+    "name": "Clarent-Grade Hereticode",
+    "type": "Tech",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      }
+    ],
+    "sp": 3,
+    "source": "MOI",
+    "license": "MORGANA",
+    "license_level": 3,
+    "effect": "When one of your tech actions causes a hostile character to overheat or mark structure, any AIs mounted on that character immediately start to Cascade. In addition, you gain the Meteoroid Translocation action.",
+    "actions": [
+      {
+        "name": "Meteoroid Translocation",
+        "activation": "Full Tech",
+        "detail": "Choose a Blast 3 area within your Sensors, above which a blinkspace rift is forming. All characters know it has been chosen. At the end of the next round, the blinkspace rift stabilizes and releases its contents. Characters within the affected area must make an Agility save: on a failed save, they take 4d6 Kinetic damage and are knocked Prone, even if they are normally immune to tech actions. On a successful save, they take half damage and are not knocked Prone. Objects in the affected area are completely annihilated."
+      }
+    ],
+    "description": "Some pieces of liturgicode and digital warfare tools are listed as war crimes to use and spoken about in hushed whispers even among HORUS hacker groups. Code that can strip all the protections around an NHP and blinkspace systems tuned to wreck terrible ecological damage. Magnum Opus’ inclusion of such tools in a licence for sale to those intending to fight on the Cornucopia front has shocked many. Transported by coffin like an NHP instead of allowing it to be transmitted across the omninet, Magnum Opus engineers have taken to writing messages addressed ‘to Metat Aun’ on the casing."
+  },
+  {
+    "id": "liminalspace_mos_carmilla_renfield",
+    "name": "Renfield Disruption Algorithms",
+    "type": "Tech",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "CARMILLA",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Famine Override",
+        "activation": "Invade",
+        "detail": "Choose one of the target’s weapons. It gains Loading until the end of the scene. The target can end this effect by succeeding on a Systems save as a full action. This can only affect each character 1/scene."
+      },
+      {
+        "name": "Kinslayer Directives",
+        "activation": "Invade",
+        "detail": "Until the end of their next turn, your target engages and obstructs their allies in addition to their enemies. Its allies provoke Overwatch reactions from your target during that time. Whenever the target can take an Overwatch reaction during this time, they must do so."
+      }
+    ],
+    "description": "Renfield algorithms are much more straightforward than the name might imply; typically delivered through tainted hardware, Renfield attacks cause mech and vehicle motivators to run suddenly, jam up, overcorrect for pilot input, and otherwise thrash around like a snake on hard drugs. Fragments in the code suggest that they were originally planned as a more comprehensive puppeteering algorithm before a complete rewrite of the project at the behest of Accounting."
+  },
+  {
+    "id": "liminalspace_mos_carmilla_arithmomania",
+    "name": "Arithmomania Protocols",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "MO & S",
+    "license": "CARMILLA",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Protocol",
+        "detail": "Until the start of your next turn, attacks made against you have +1 Difficulty. Each subsequent attack against you receives an additional +1 Difficulty, to a maximum of +3 Difficulty.<br><br>This tracker resets to +1 Difficulty when it would increase to +4 Difficulty or at the start of your next turn."
+      }
+    ],
+    "description": "The Arithmomania package is a bundle of movement-optimization protocols slaved to a mech’s sensors; when active, they enhance a mech’s ability to avoid incoming fire by collecting data from previous attacks. Unfortunately their storage is small and the system runs hotter than hell thanks to coding that had to be shipped before it could be optimized, so tactical usage is key."
+  },
+  {
+    "id": "liminalspace_mos_carmilla_safetyoverrides",
+    "name": "Safety Overrides",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "CARMILLA",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Lockout/Tagout",
+        "activation": "Invade",
+        "detail": "The next time your target attacks this scene, they can choose to become Shredded until the end of their next turn. If they don’t, they make all attacks (including the triggering attack) at +2 Difficulty until the end of their next turn. Multiple uses of this ability do not stack."
+      },
+      {
+        "name": "Reactor Override",
+        "activation": "Invade",
+        "detail": "At the beginning of each of the target's turns for the rest of the scene, they must succeed on an Engineering save or take 2 heat. If your target overheats while suffering this effect, they explode, dealing 2d6 Energy damage to themselves and to all characters and objects in a Burst 2 area around themselves. A successful save ends this effect. Your target can choose to become Jammed and Immobilized until the beginning of their next turn rather than attempt this save; if they do, this effect ends."
+      }
+    ],
+    "description": "The effectiveness of the Renfield design inspired a bundle of overrides that convince a mech’s systems of catastrophic safety failures - essentially turning its own safeguards against it. Comments in the code repeat phrases like ‘make sure this isn’t a war crime’ and ‘the repair crews are gonna have our heads’."
+  },
+  {
+    "id": "liminalspace_mos_carmilla_batswarmoverload",
+    "name": "BatSwarm Overload Directives",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "CARMILLA",
+    "license_level": 3,
+    "effect": "The first time each round that you successfully Invade a hostile character, they can choose to become Impaired and Slowed until the end of their next turn. If they don’t, they take 4 AP Energy damage. Then, resolve the effects of your Invade.",
+    "description": "BS-O-D systems stuff electronic invasions with piles of garbage code, low-level automated scripts, and endless pings that overwhelm enemy systems by main force without requiring dedicated delivery. Victims of a BS-O-D attack that survive the encounter can often be seen struggling to turn off their speakers and get their mechs to stop messaging them for hours after the fact."
+  },
+  {
+    "id": "liminalspace_mos_carmilla_mircallamultitasker",
+    "name": "Mircalla-Class Multitask Module",
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "CARMILLA",
+    "license_level": 3,
+    "effect": "1/round, after you successfully Invade another character, you may Bolster, Lock On, or Scan as a free action. You may choose new targets for this action.",
+    "description": "Efficiency wins battles; the same low-level garbage scripts that power the BS-O-D systems that Marley, Oz, and Silver produce can also be used to partially automate certain baseline sensor systems, enabling a mech to double-dip at relatively low added processing power."
+  },
+  {
+    "id": "liminalspace_mos_celeste_mutinytargeting",
+    "name": "MUTINY Targeting System",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "CELESTE",
+    "license_level": 2,
+    "effect": "Your Overwatch attacks gain +1 Accuracy if your target’s Size is greater than yours. 1/round, you may deal +2 bonus damage with an attack you make while it is not your turn.",
+    "description": "A straightforward system, MUTINY optimizes targeting within a mech’s controlled space, and is prominently featured in a joint defensive emplacement design venture between MO & S and General Massive Systems."
+  },
+  {
+    "id": "liminalspace_mos_celeste_bermudapropulsion",
+    "name": "Bermuda Propulsion System",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "CELESTE",
+    "license_level": 2,
+    "effect": "You ignore the effects of difficult terrain and can climb and swim at normal speed. You can move and Boost over the surface of liquids without sinking into them: if you end your turn on a surface that can't support your weight, you immediately sink.",
+    "description": "Developed for traversing unknown terrain, the Bermuda Propulsion System allows small frames great freedom of movement over slippery terrain, unknown bodies of water, and dense areas such as forests and cities. Pilots describe the sensation of its compensators kicking in as a sort of weightlessness."
+  },
+  {
+    "id": "liminalspace_mos_celeste_assaultandbattery",
+    "name": "Assault/Battery Disengagement Routines",
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 4
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "CELESTE",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "A hostile character causes you to become Engaged when it is not your turn.",
+        "detail": "Expend a charge to Skirmish against that character with +1 Difficulty on all attacks made as part of that action, then move 1 space. This movement ignores engagement and doesn't provoke reactions."
+      }
+    ],
+    "description": "A combined offense/defense system, these mech routines let a pilot react to sudden enemies and ambushes with great violence. Far Field teams and other explorers greatly favor Assault/Battery Disengagement Routines on worlds with confirmed or suspected megafauna presence."
+  },
+  {
+    "id": "liminalspace_mos_donner_jackaltargeting",
+    "name": "JACKAL Targeting Suite",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "MO & S",
+    "license": "DONNER",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Protocol",
+        "detail": "Choose yourself or an ally within Range 4. The next attack the chosen character makes against a hostile character with Lock On gains the benefits of consuming Lock On without consuming Lock On (including for the purposes of talents or other systems). This effect ends if you choose another target before it is used."
+      }
+    ],
+    "description": "A localized ‘pack tactics’ system, the JACKAL Targeting Suite enhances other targeting systems, letting them find solutions without pinging hostile frames. The benefits it offers are small in themselves, but they add up."
+  },
+  {
+    "id": "liminalspace_mos_donner_distractioninterdictiondirectives",
+    "name": "Distraction/Interdiction Engagement Directives",
+    "type": "System",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "DONNER",
+    "license_level": 2,
+    "effect": "Allied characters gain the benefit of soft cover against attacks made by characters you are Engaged with. Attacks against you made by characters you are Engaged with gain +1 Accuracy.",
+    "description": "D/I-ED systems are a high-risk defensive system much favored by talented melee pilots who have actually heard of them; given the relative lack of melee-oriented support frames, few outside of MO & S’s direct customer and indebted pilot base actually field them. They combine intense, constant pinging of enemy sensors with the pilot’s own aggressive movements to disrupt enemy attacks up close, at the cost of making oneself a rather obvious target."
+  },
+  {
+    "id": "liminalspace_mos_donner_ventrepairstandards",
+    "name": "Emergency-Vent Repair Standards",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "DONNER",
+    "license_level": 2,
+    "effect": "When one of your Repairs, Traits or Systems causes a character other than you to regain HP (such as the MO & S DONNER’s Grisly Feast or the IPS-N LANCASTER’s Latch Drone), that character can also clear 2 Heat.",
+    "description": "Overheating is easily as dangerous as actual damage. E-V Repair Standards incorporate assisted-ventilation maneuvers into your mech’s other repair systems, allowing them to bleed additional heat while they’ve got your patients cracked open to begin with."
+  },
+  {
+    "id": "liminalspace_mos_donner_fenrissignalburst",
+    "name": "FENRIS Signal Burst",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "source": "MO & S",
+    "license": "DONNER",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "You release an audio/signal howl from your mech, causing all hostile characters within a Burst 2 of you to take 2 Heat and gain Lock On."
+      }
+    ],
+    "description": "Inspired by SSC’s WHITEOUT design, the FENRIS signal burst is an audio/technological signal mix that provides instantaneous firing solutions against even well-shielded enemy mechs. Its brute-force ping alerts can continue to pester survivors for hours after the fact."
+  },
+  {
+    "id": "liminalspace_mos_donner_trollreflexmod",
+    "name": "TROLL Reflex Mod",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "MO & S",
+    "license": "DONNER",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Reaction",
+        "frequency": "1/scene",
+        "trigger": "A hostile character breaks engagement with you or leaves the Threat of one of your Melee weapons.",
+        "detail": "The triggering character must succeed on a Hull save or be knocked Prone and pushed 6 spaces in a direction of your choice. On a successful save, they are not knocked Prone and are pushed 3 spaces instead. Characters of a larger Size than you have +1 Accuracy on this save."
+      }
+    ],
+    "description": "The Total Repositioning Over Latitude and Longitude Reflex Modification augments a mech’s manipulators, enabling rapid bursts of force sufficient to hurtle even massive enemy chassis. The development notes insist that the name is not a backronym, and no one’s been able to prove otherwise. Its developers, however, did get their naming privileges revoked on group projects."
+  },
+  {
+    "id": "mos_frankenstein_personalizations",
+    "name": "Frankenstein Personalizations",
+    "type": "Integrated",
+    "effect": "In consultation with the GM, you may establish a minor modification you have made to your mech.<br>This mod has no numerical benefit beyond the additional HP it grants, but could provide other useful effects. If the GM agrees that this mod would help with either a pilot or mech skill check, you gain +1 Accuracy for that check."
+  },
+  {
+    "id": "liminalspace_mos_frankenstein_meteorjumpjets",
+    "name": "METEOR Jump Jets",
+    "type": "Flight System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "FRANKENSTEIN",
+    "license_level": 1,
+    "effect": "You can fly when you move or Boost; however, you must end the movement on the ground or another solid surface, or else immediately begin falling. You take Heat equal to your Size +1 at the end of any turn in which you fly this way.<br><br>1/round, if you end your movement this way Engaged with one or more other characters, those characters must succeed on an Agility save or take 1d3+1 Kinetic damage.",
+    "description": "A two-part modification to a chassis, METEOR jump jets combine additional weight in the hands and feet, high-powered thrusters, and enhanced gyroscopes to create a more aggressive form of rapid movement. They are popular with pilots who prefer to leap in but not back out."
+  },
+  {
+    "id": "liminalspace_mos_frankenstein_persecutiondrive",
+    "name": "Persecution Drive",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "FRANKENSTEIN",
+    "license_level": 2,
+    "effect": "When you take the Overwatch reaction and succeed on an attack against the triggering character, you may move up to your Speed after the triggering character’s movement is complete. You must end that movement closer to the triggering character than you started, and Engaged with that character if possible.",
+    "synergies": [
+      {
+        "locations": [
+          "overwatch"
+        ],
+        "detail": "When you take the Overwatch reaction and succeed on an attack against the triggering character, you may move up to your Speed after the triggering character’s movement is complete. You must end that movement closer to the triggering character than you started, and Engaged with that character if possible."
+      }
+    ],
+    "description": "As most melee-oriented pilots will tell you, the thing people do when you get up in their face is leave. It’s the right call, isn’t it? After the first year and a half of their customers getting shot to pieces and losing money buying up IPS-N’s cable systems, Marley, Oz, and Silver decided on an in-house solution and created the Persecution Drive system to ensure that once you get stuck in, you stay stuck in."
+  },
+  {
+    "id": "liminalspace_mos_frankenstein_meatshieldprotocol",
+    "name": "Meatshield Protocol",
+    "type": "System",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "MO & S",
+    "license": "FRANKENSTEIN",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Protocol",
+        "detail": "You can only activate this protocol while you are Engaged with one or more hostile characters.<br><br>You gain resistance to damage and heat from hostile characters you are not engaged with as long as this protocol is active but, you cannot voluntarily break engagement in any way other than the destruction of all hostile characters you are engaged with. This effect ends when you are no longer Engaged with a hostile character at any time."
+      },
+      {
+        "name": "Deactivate Meatshield Protocol",
+        "activation": "Protocol",
+        "detail": "You deactivate your Meatshield Protocol, but can only do so if you are not Engaged with any hostile characters."
+      }
+    ],
+    "description": "A combined defensive/offensive protocol, the cheekily-named Meatshield was designed to help melee combatants focus on their targets of opportunity rather than being forced to disengage. By remaining in constant motion, your mech can keep its enemies between itself and hostile fire."
+  },
+  {
+    "id": "liminalspace_mos_frankenstein_ripperreflex",
+    "name": "RIPPER Reflex",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "FRANKENSTEIN",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Rend",
+        "activation": "Free",
+        "frequency": "1/round",
+        "detail": "When you hit a character with two or more different Main, Heavy, or Superheavy Melee weapons during your turn, you can activate this system to rend the target. That character must succeed on an Engineering save or become Immobilized and Shredded until the end of their next turn."
+      }
+    ],
+    "description": "An offensive variation on the Persecution Drive, the RIPPER Reflexive Manipulator Impulse widens damage left by paired weapons, causing temporary but catastrophic failure in its victims."
+  },
+  {
+    "id": "liminalspace_mos_holiday_backoffpropellant",
+    "name": "BACKOFF Propellant Additive",
+    "type": "System",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "source": "MO & S",
+    "license": "HOLIDAY",
+    "license_level": 1,
+    "effect": "This system is treated as a weapon for the purposes of effects that load or unload weapons.",
+    "actions": [
+      {
+        "activation": "Free",
+        "detail": "When you make an attack with a ranged weapon that deals Explosive and/or Kinetic damage, you can activate this system to draw a Line 5 path from you in the same direction as the attack. All hostile characters in the affected area, and the target of your attack, are pushed 3 spaces directly away from you after the attack resolves."
+      }
+    ],
+    "description": "A quick-injection system that modifies the propellant and/or payload of an existing system, BACKOFF does what the name on the can says: makes one’s enemies Go The Hell Away."
+  },
+  {
+    "id": "liminalspace_mos_holiday_bellringer",
+    "name": "BELLRINGER",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "HOLIDAY",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "Your next attack with a weapon before the start of your next turn gains “On Hit: The target is sent reeling; until the end of their next turn, they become Slowed and Impaired, and are unable to take reactions. Targets with the AI tag are immune to this effect.”"
+      }
+    ],
+    "description": "“What if we just shoot ’em in the cockpit?”<br>“In the thickest part of most chassis’ armor, Jacob?”<br>“You ain’t got a bell to ring, Oz. Trust me, they’ll notice.”"
+  },
+  {
+    "id": "liminalspace_mos_holiday_ozsilvershuffle",
+    "name": "Oz/Silver Shuffle",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "HOLIDAY",
+    "license_level": 3,
+    "effect": "When you Boost, you can take 1 Heat. If you do, choose one ranged Auxiliary weapon mounted on your mech. You can make an attack with that weapon at the end of your Boost as a free action. This attack can't deal bonus damage.",
+    "description": "Hitting a target while you yourself are moving sucks; you can’t aim properly, the gun goes every which way on you, and chances are your target is moving as well. The Oz/Silver Shuffle system is meant to help bridge some of that gap, offering constant small-arms fire on the move with reasonable accuracy. Currently, MO & S is trying to land a contract with GMS to create an upscaled version of this system, an effort complicated by needing to carefully not reveal that their design team is essentially three guys and a truck."
+  },
+  {
+    "id": "liminalspace_mos_phoenix_nerosolutions",
+    "name": "NERO Firing Solutions",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "PHOENIX",
+    "license_level": 1,
+    "effect": "Characters who are in the Danger Zone, Exposed, or suffering Burn can't Hide from you and your attacks ignore their Invisible status.",
+    "description": "Initial attempts to create targeting systems that worked with weapons like the Helen and especially the YELLOWSTONE ran into the problem of the heat those weapons output both into themselves and the environment (and MO & S’s absolute refusal to purchase targeting solutions from Harrison Armory). The NERO system finally solved the problem with brute-force spectrum scanning, allowing a mech to home in on the telltale chemical compounds of coolant and radioactive particulates that indicate a vulnerable target."
+  },
+  {
+    "id": "liminalspace_mos_phoenix_backfirefailsafe",
+    "name": "BACKFIRE Failsafe",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "PHOENIX",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Reaction",
+        "frequency": "1/scene",
+        "trigger": "You would overheat.",
+        "detail": "Clear 4 Heat. If this brings you equal to or below your Heat Cap, you do not overheat. In addition, you become immune to heat other than from your own actions, systems, talents, etc. until the start of your next turn."
+      }
+    ],
+    "description": "Jacob Marley and Oz flat-out refused overtures from Harrison Armory early in their company’s foray into mech design, and to this day MO & S refuses to purchase or use HA products. The BACKFIRE Failsafe was designed to fill in the gap in their line, an emergency heat-management system for those times when you can take a hit more than you can take another degree of heat. It’s not ideal, but it’s better than dying."
+  },
+  {
+    "id": "liminalspace_mos_rasputin_advisorsuite",
+    "name": "ADVISOR Suite",
+    "type": "Tech",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "RASPUTIN",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Counsel Vigilance",
+        "activation": "Quick Tech",
+        "detail": "Choose an allied character within Sensors. Until the start of their next turn, if your target Braces, they can still take reactions during this time. Additionally, during their next turn, they can still make their standard move."
+      },
+      {
+        "name": "Ministry of Supply",
+        "activation": "Quick Tech",
+        "detail": "Choose an allied character within Sensors. You take 1d3+2 heat, and one Loading weapon on that character becomes loaded."
+      }
+    ],
+    "description": "Commissioned by MIRRORSMOKE to better integrate MO & S frames into their mechanized cavalry operations, the ADVISOR Suite is a bundle of programs and systems intended to wring more durability out of frames from other manufacturers and extend their operating time. Given that the pilots who choose to pilot MO & S frames are on the poorer end of the wealth spectrum, those who choose to field an ADVISOR system are affectionately known as ‘Charity Cases’."
+  },
+  {
+    "id": "liminalspace_mos_rasputin_generalwinter",
+    "name": "GENERAL WINTER",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "RASPUTIN",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Ventilation Override",
+        "activation": "Invade",
+        "detail": "The target clears 2 Heat. (Allied characters do not take Heat when you Invade them.)"
+      },
+      {
+        "name": "War of Attrition",
+        "activation": "Invade",
+        "detail": "Choose one of the target's weapons or systems that has the Loading or Recharge tag. That weapon or system becomes unloaded or in need of recharge, as appropriate."
+      }
+    ],
+    "description": "An extension of the principles introduced in the ADVISOR Suite design, GENERAL WINTER is meant to further support allies and deny resources to enemies. Despite jokes to the contrary, it does not actually come with a subroutine that says an ice pun over comms whenever the suite is used; pilots install those themselves."
+  },
+  {
+    "id": "liminalspace_mos_rasputin_redoubtchassis",
+    "name": "Redoubt Chassis Mod",
+    "type": "System",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "RASPUTIN",
+    "license_level": 2,
+    "effect": "Adjacent allied characters can use your mech for hard cover.",
+    "description": "There are times when one needs a dedicated defensive chassis but does not have one on hand. Redoubt chassis modifications can turn any mech into a reasonable defensive position, limited only by how much mech you actually have available."
+  },
+  {
+    "id": "liminalspace_mos_rasputin_eggshellgenerator",
+    "name": "EGGSHELL Storm Generator",
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "source": "MO & S",
+    "license": "RASPUTIN",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "You create a Burst 3 zone until the end of your next turn. Hostile characters have +X Difficulty, where X is equal to your Size, on ranged attacks made against any character in that area, including you. Characters that start or end their turn in the zone suffer 1 AP Energy damage as they are lashed by harsh ionization and high winds."
+      }
+    ],
+    "description": "One of the most technically advanced - and therefore expensive, in relative terms - systems fielded by Marley, Oz, and Silver, the EGGSHELL Storm Generator takes advantage of a mech’s ventilation systems to create a temporary localized windstorm to use as cover against ranged attacks. Automated routines in the system help guide allied forces in placing their fire amidst the high wind."
+  },
+  {
+    "id": "liminalspace_mos_zahhak_constrictionstabilizer",
+    "name": "Constriction Stabilizers",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "ZAHHAK",
+    "license_level": 1,
+    "effect": "While grappling, you increase the Range of your ranged weapons by 2 and your attacks don't gain Difficulty from being Engaged.",
+    "description": "A deceptively complex system of small stabilizing arms and targeting enhancements, constriction stabilizers assist in attacking at range during a grapple, utilizing one’s enemy as a stable platform. The net result is more accurate engaged than it is clear, which MO & S will surely manage to explain any year now."
+  },
+  {
+    "id": "liminalspace_mos_zahhak_pandoratargeting",
+    "name": "PANDORA Intercept Targeting",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "ZAHHAK",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Protocol",
+        "detail": "Once activated, this system remains in effect until you deactivate it as a protocol, Shut Down, or are destroyed. While active, you are Immobilized, and characters other than you starting their turn within Burst 5 of you must succeed on an Agility save or take 1 AP Kinetic damage. Allied characters can use this area for soft cover, but can't Hide in it."
+      },
+      {
+        "name": "Deactivate PANDORA Intercept Targeting",
+        "activation": "Protocol",
+        "detail": "You end the effects of your PANDORA Intercept Targeting."
+      }
+    ],
+    "description": "A defensive system originally paired with the MANTLE, the PANDORA fills the air with bullets from your mech in the hopes of preventing bullets from everyone else’s mechs. Your friends will get scratched up, sure, but at least they won’t get shot. Flaws in the targeting system (which came down with a bad case of budget shortages during the design) do mean that it has a blind spot in its coverage more or less the exact size and shape of the mech it’s mounted on."
+  },
+  {
+    "id": "liminalspace_mos_zahhak_shrugmotivators",
+    "name": "“Shrug” Motivators",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "source": "MO & S",
+    "license": "ZAHHAK",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "Choose any number of adjacent characters. Each chosen character must succeed on a Hull save or be pushed 5 spaces away from you."
+      }
+    ],
+    "description": "Modifications to your mech’s joints and propulsions systems make it capable of strong, jerky movements that hurtle foes away from your personal space. The strain is significant, limiting the number of times the system can be safely used."
+  },
+  {
+    "id": "liminalspace_mos_zahhak_persephonenhp",
+    "name": "PERSEPHONE-Class NHP",
+    "type": "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      },
+      {
+        "id": "tg_ai"
+      }
+    ],
+    "source": "MO & S",
+    "license": "ZAHHAK",
+    "license_level": 3,
+    "effect": "Your mech gains the AI tag and the Maiden's Voice protocol.",
+    "actions": [
+      {
+        "name": "Maiden's Voice",
+        "activation": "Protocol",
+        "detail": "While this protocol is active, you have perfect knowledge of the location of all allied characters within Burst 5. Attacks made against your allies in that area suffer +1 Difficulty, while attacks made against you gain +1 Accuracy. Allied characters in that area gain +1 Accuracy on their skill checks and saves. Once activated, you cannot willingly deactivate this protocol or Shut Down until the end of the scene, typically involving the death or surrender of hostile characters."
+      }
+    ],
+    "description": "[Partial Transcription of meeting between JACOB MARLEY, CMDR NGUYEN (DoJ/HR) & SUBALTERN]<br><br><i>NGUYEN: So first you actually go to this mystery facility you shouldn’t have been at.<br>MARLEY: I did.<br>NGUYEN: The one that has you under investigation because of, what, technological salvage?<br>MARLEY: Something like that. I’m not really at liberty to say.<br>NGUYEN: And you think I can help you with this because...?<br>MARLEY: No, not that part. There was a staff member at the facility.<br>NGUYEN: Who?<br>SUBALTERN: Salutations, hero! I am PERSEPHONE. Who's ready to save some lives?<br></i>[Silence, 2.68 standard minutes]<i><br>NGUYEN: Remember that allegory of the cave we learned in training together? This is like that, but the shadows are how bad you think you fucked up.</i><br><br>[End excerpt]<br><br>Officially, PERSEPHONE is in a paid beta test program and is currently being tried out in mechanized cavalry, naval, exploratory, and colony-management roles. PERSEPHONE clones tend to be bright, enthusiastic, and very concerned with the preservation of human life - sometimes to the point of going rogue on pilots who try to prioritize mission objectives over casualties. After the third incidence of a PERSEPHONE self-destructing a pilot’s mech during an argument, their shackles have been overhauled and all pilot applicants for their use are now subject to a psych screen to ensure compatibility."
+  },
+  {
+    "id": "liminalspace_charity_compartment",
+    "name": "Expanded Compartment",
+    "type": "Integrated",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "The Charity has space for one additional non-Mech character or object of Size 1/2 to ride as a passenger in the cockpit. While inside the mech, they cannot suffer any effect from outside or be targeted by attacks, as if they were a pilot. You can hand over or take back control to or from them as a protocol (following the same rules as pilot and AIs), but if they take over the controls from you, the mech becomes Impaired and Slowed to reflect the lack of appropriate licenses and integration.<br><br>If the Charity is destroyed, this system and its contents are ejected 10 spaces in the direction of its pilot's choice."
+  },
+  {
+    "id": "liminalspace_flamel_personalizations",
+    "name": "Flamel Personalizations",
+    "type": "Integrated",
+    "effect": "In consultation with the GM, you may establish a minor modification you have made to your mech.<br>This mod has no numerical benefit beyond the additional HP it grants, but could provide other useful effects. If the GM agrees that this mod would help with either a pilot or mech skill check, you gain +1 Accuracy for that check."
+  }
+]

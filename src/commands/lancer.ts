@@ -11,6 +11,12 @@ import {getKtbLcp} from "../data/lancer/lcp/ktb";
 import {getLongRimLcp} from "../data/lancer/lcp/long-rim";
 import {getWallflowerLcp} from "../data/lancer/lcp/wallflower";
 import {getSolsticeRainData} from "../data/lancer/lcp/solstice-rain";
+import {getIronleafFoundryLcp} from "../data/lancer/lcp/homebrew/ironleaf-foundry";
+import {getLiminalSpaceLcp} from "../data/lancer/lcp/homebrew/liminal-space";
+import {getMfecaneLcp} from "../data/lancer/lcp/homebrew/mfecane";
+import {getSciroccoLcp} from "../data/lancer/lcp/homebrew/scirocco";
+import {getSuldanLcp} from "../data/lancer/lcp/homebrew/suldan";
+import {getStolenCrownLcp} from "../data/lancer/lcp/homebrew/stolen-crown";
 
 @Discord()
 export class Lancer {
@@ -21,8 +27,26 @@ export class Lancer {
 
     private lcpData(): Lcp[] {
         if (!this._lcpData)
-            this._lcpData = [getCoreLcp(), getKtbLcp(), getLongRimLcp(), getWallflowerLcp(), getSolsticeRainData()]
+            this._lcpData = [
+                getCoreLcp(),
+                getKtbLcp(),
+                getLongRimLcp(),
+                getWallflowerLcp(),
+                getSolsticeRainData(),
+                ...this.homebrew()
+            ]
         return this._lcpData
+    }
+
+    private homebrew(): Lcp[] {
+        return [
+            getIronleafFoundryLcp(),
+            getLiminalSpaceLcp(),
+            getMfecaneLcp(),
+            getSciroccoLcp(),
+            getStolenCrownLcp(),
+            getSuldanLcp()
+        ]
     }
 
     private sanitizedData(): LancerData[] {

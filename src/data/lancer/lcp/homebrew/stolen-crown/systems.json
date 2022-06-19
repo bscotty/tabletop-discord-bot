@@ -1,0 +1,21 @@
+[
+    {
+        "id": "exotic_superior_scanning_drones",
+        "name": "SUPERIOR SCANNING DRONES",
+        "sp": 2,
+        "type": "System",
+        "tags": [{"id": "tg_exotic"}, {"id": "tg_prototype"}, {"id": "tg_unique"}],
+        "effect": "When you <b>Scan</b> you do not need Line of Sight as long as your target is within <b>Sensors</b>. Gain <b>+1 Accuracy</b> on <b>Tech Attacks</b> against <b>Scanned</b> targets.",
+        "description": "<i>These prototype scanner drones are being developed by the WRS as a way to provide increased information to rescue teams searching for targets buried by avalanches. They are outfitted with Radar and LiDAR technology to add to a mech’s preexisting data-capture capabilities.</i>",
+        "source": "EXOTIC"
+    },
+    {
+        "id": "exotic_backpack_heat_gun",
+        "name": "BACKPACK HEAT GUN",
+        "sp": 1,
+        "type": "System",
+        "tags": [{"id": "tg_exotic"}, {"id": "tg_unique"}],
+        "effect": "Basic technology developed by the WRS to be outfitted to all rescue-specced mechs, the Heat Gun allows heat to be slowly channeled from a mech’s reactor and directed to melt thick snow and ice.",
+        "source": "EXOTIC"
+    }
+]

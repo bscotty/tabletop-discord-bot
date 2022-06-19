@@ -1,0 +1,117 @@
+[
+{
+    "id": "fgtst_blade_dancer",
+    "name": "BLADE DANCER",
+    "terse": "Enhance your melee combat skill against reaction attacks",
+    "description": "Battle is an art. It always had been, but many forgot this truth as warfare evolved, bringing with it guns, artillery, orbital bombardment, so many impersonal and inelegant ways to kill, a trillion canvases squandered in the mud. But a mech is more than just another weapon, it's an instrument of a pilot's will and an assertion of their skill made manifest. In the arena or on the battlefield you proudly display that skill for all to witness accompanied by the war drum beat of steel against steel, each victory claimed with style and grace, every killing blow an expressive statement.",
+    "ranks": [
+        {
+            "name": "Battle Tempo",
+            "description": "Reaction attacks against you are made at +1 Difficulty."
+        },
+        {
+            "name": "Step Inside",
+            "description": "1/round, whenever you trigger a reaction attack you may gain +1 Accuracy to the next auxilary or main melee attack roll you make during that turn."
+        },
+        {
+            "name": "Dervish Cadence",
+            "description": "1/round, when you perform a critical hit with an auxiliary or main melee weapon, you may move up to 2 spaces as a free action. This movement ignores engagement and reactions, but you can choose to not ignore reactions instead. Each time a reaction attack you trigger as part of this movement misses, you may make an attack with an auxiliary or main melee weapon against a target in range as a free action. Each time a character chooses not to perform a reaction attack against you during this movement, you may continue to move 2 additional spaces."
+        }
+]
+},
+{  
+    "id": "fgtst_bruiser",
+    "name": "BRUISER",
+    "terse": "Hit harder with melee attacks by opening yourself up to reprisal",
+    "description": "Look, it's simple. You have a mech, your mech has a hammer, and the whole world looks like it's made of nails. Now all you need to do is hit someone as hard as you can. If they're still moving afterwards? You hit'em again. And maybe a third time for good measure. All the fancy footwork in the world won't help you when both your legs are broken.",
+    "ranks": [
+        {
+            "name": "Reckless Swing",
+            "description": "1/round you may choose to gain +1 Accuracy on an attack with a melee weapon on your turn. Until the start of your next turn, the next attack made against you gains +1 Accuracy."
+        },
+        {
+            "name": "Payback",
+            "description": "When you take structure damage, your next melee attack does +1d6 bonus damage on hit."
+        },
+        {
+            "name": "Take Your Best Shot",
+            "description": "1/scene as a free action, you may choose a single enemy to immediately make an attack against you. Afterwards, whether this attack hits or misses, you may make an attack against them with a non-superheavy melee weapon. You may then allow that enemy to make another attack against you if they wish, repeating this process until one of you has been destroyed or until they decline to attack you any further."
+        }]
+},
+{
+    "id": "fgtst_giant_killer",
+    "name": "GIANT KILLER",
+    "terse": "Improve your ability to Jockey enemy mechs",
+    "description": "David meets Goliath, David kills Goliath, it's a tale as old as time. Things are a bit more dangerous these days than swords and slings, though. A pilot would have to be crazy or desperate to go up against a mech in little more than a hardsuit but you make it look easy, riding those steel titans like a natural and taking them apart with surgical precision. The bigger they are...well, you know the rest.",
+    "ranks": [
+        {
+            "name": "Goad",
+            "description": "While jockeying, you count as having soft cover. Whenever you use the Distract action while jockeying, you may also push the target 2 spaces in a direction of your choice."
+        },
+        {
+            "name": "Twist the Knife",
+            "description": "Gain the following jockeying option:<br><ul><li>Disrupt: The mech cannot use reactions until the end of its next turn. Additionally, you may choose one of the mech's systems and disable it until the end of its next turn as well. All ongoing effects provided by that system immediately end until it is no longer disabled.</li>"
+        },
+        {
+            "name": "Finishing Blow",
+            "description": "Whenever you use the Damage action while jockeying, if the damage you inflict would be enough to reduce the mech to 3 HP or less you immediately reduce it to 0 HP instead. 1/round, when you destroy a mech while jockeying, you may fly up to 3 spaces in a direction of your choice. If you end this movement adjacent to a mech, you can automatically jockey it."
+        }]
+},
+{
+    "id": "fgtst_gladiator",
+    "name": "GLADIATOR",
+    "terse": "String together powerful signature fighting techniques",
+    "description": "The roar of the crowd. The clash of titans. Humanity's taste for bloodsport never left us, it simply evolved. Now the celebrated fighters pilot mechanized war-machines and the beasts they face are alien, but the rule of the arena remains unchanged; kill or be killed. Hammer and fist, rifle and chainsword, the tools don't matter as much as the drive behind them, to rise above all comers and become the greatest that there ever was.",
+    "ranks": [
+        {
+            "name": "Signature Technique",
+            "description": "1/scene, when you take the Skirmish action on your turn you can perform a special Signature Attack with a melee weapon instead. Choose one option from each of the three categories, Setup, Execution, and Flourish, to assemble the technique you wish to use. You may choose different options each time you use this ability to represent different signature moves you've learned over the years.<br><br><i>Setup:</i><br> -Make an attack with + 2 Threat...<br> -Make an attack, treating your weapon's range as Burst 1 taking 1 heat per target...<br><br> <i>Execution:</i><br> -...dealing an additional +1d6 bonus damage against prone or Immobilized targets...<br> -...gaining the AP and Overkill tags against a single target of your choice...<br><br> <i>Flourish:</i><br>-...and on hit each target must pass a Hull save or become Impaired until the end of their next turn.<br>-...and on hit each target must pass an agility save or become Slowed until the end of their next turn."
+        },
+        {
+            "name": "Comeback Kid",
+            "description": "You may spend your Signature Attack as a reaction to taking Structure damage from a hostile character's attack. This reaction resolves before rolling on the Structure Damage Table. Add the following options to choose from:<br><br><i>Setup:</i><br>-Move up to your speed towards a hostile character, ignoring engagement and reactions, and make an attack against them...<br><br><i>Execution:</i><br>-...knocking all targets back 2 spaces...<br><br><i>Flourish:</i><br> -...and all attacks against you are made at +1 Difficulty until the end of your next turn."
+        },
+        {
+            "name": "A Card To Play",
+            "description": "You may use your Signature Attack a second time during the same scene by taking 1d6+1 heat. Options chosen for the first such attack during a scene cannot be chosen for the second attack. Add the following options to choose from:<br><br><i>Setup:</i><br>-Make an attack, treating your weapon's range as Thrown (5)...<br><br> <i>Execution:</i><br>-...treating one roll of 18+ as though it was 20...<br><br> <i>Flourish:</i><br>-...and a single target of your choice must pass an Engineering save on critical hit or become Jammed until the end of their next turn."
+        }]
+},
+{
+    "id": "fgtst_guerrilla",
+    "name": "GUERRILLA",
+    "terse": "Use hit-and-run tactics to strike from Hiding and enhance your defense",
+    "description": "War isn't fair, so why shouldn't you fight the same way? Leave notions of honorable combat to the would-be knights and champions. You're here to get work done. In the shadows, in the split-second flash of lightning before the thunder comes, hit and run, strike and fade. They may hate you, but they'll learn to fear you all the same.",
+    "ranks": [
+        {
+            "name": "Fighting Ghosts",
+            "description": "You may take the Boost action without losing Hidden, and whenever you Disengage attacks against you are made at +1 Difficulty until the end of your next turn."
+        },
+        {
+            "name": "Go to Ground",
+            "description": "If you end your turn in cover which you did not begin your turn in, all ranged attacks against you receive +1 Difficulty until the end of your next turn."
+        },
+        {
+            "name": "Run and Gun",
+            "description": "At the beginning of each scene, before anyone acts you may move up to your speed. If you end this movement in cover you automatically become Hidden, and until the end of your next turn the first attack roll you make while Hidden gains +1 Accuracy."
+        }]
+},
+{
+    "id": "fgtst_scrounger",
+    "name": "SCROUNGER",
+    "terse": "Scavenge the battlefield for weapons and supplies",
+    "description": "Some call you a vulture, like that's supposed to be a bad thing. You ever see a vulture go hungry? The fact is, you know what wins wars isn't guns or blades, it isn't skill at arms or courage or honor. It's food, fuel, bullets and bandages. When the chips are down, you're the one that can be counted on to have a spare magazine and a bottle of the good stuff waiting back at the base. You've got what it takes to win...just as long as nobody asks where you got it from.",
+    "ranks": [
+        {
+            "name": "Beg, Borrow and Steal",
+            "description": "1/mission when establishing Reserves, randomly select one of the random Reserves tables (Narrative, Mech Equipment and Gear, and Tactical) by rolling 1d3. You may then roll on the selected table, gaining that result for the duration of the mission. You also gain +1 Accuracy to all Scrounge and Barter checks."
+        },
+        {
+            "name": "Finders Keepers",
+            "description": "1/rest, you may salvage a weapon of your choice from a hostile mech that was destroyed in the previous scene. If you do so, you may only spend 1 Repair during this rest. Once a weapon has been salvaged, during your turn you may attack with it as a free action using your Grit in place of its usual attack bonuses, taking 1 heat for an Auxiliary weapon, 1d3 heat for a Main weapon, and 1d6 heat for a Heavy or Superheavy weapon. The weapon is then destroyed and cannot be repaired. Your mech may only have one salvaged weapon at a time, and all salvaged weapons are lost during full repairs."
+        },
+        {
+            "name": "Spoils of War",
+            "description": "When you salvage a weapon you may also scour the battlefield wreckage for additional supplies. Roll 1d6 and consult the table to determine what you're able to do with the salvage you find: <br> <br> 1). You find sufficient patch kits and emergency supplies to restore 4 + your Grit in HP divided between any number of allied mechs or pilots, yourself included. <br> 2). You find spare munitions sufficient to replenish 1 use of a limited weapon or system belonging to yourself or an ally. <br> 3). You find an intact IFF/tacnet transponder. Up to two enemies of your choice in the next scene begin combat Locked On. <br> 4). You find enough spare parts to repair one destroyed weapon or system belonging to you or an ally for free. <br> 5). You find a magazine of exotic ammunition, a high-energy power cell, or a cannister of volatile fuel. You or an ally of your choice gains a single-use charge that can be spent as a free action to add +1d6 bonus damage on hit to any attack, but the attacker takes 1d6 heat. A mech can only hold one such charge at a time. <br> 6). You find something without immediate tactical application which is nonetheless likely valuable to someone, such as an encrypted message detailing the enemy force's strategic plans, a black box containing security clearance codes, maps detailing troop movements and defensive emplacement positions, top secret documents, etc."
+        }]
+}
+]

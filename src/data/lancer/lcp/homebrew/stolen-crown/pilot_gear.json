@@ -1,0 +1,34 @@
+[
+    {
+        "id": "scu_frost_fur_coat",
+        "name": "FROST-FUR COAT",
+        "type": "Gear",
+        "description": "This reinforced winter coat is made out of the fur of a Glacier Beast, and can be worn over most other clothing and armor. When wearing this coat in snowy conditions, characters have <b>+1 Accuracy</b> when they <b>Act Unseen or Unheard</b>, and can become <b>Invisible</b> whilst stationary."
+    },
+    {
+        "id": "scu_carrion_caller",
+        "name": "CARRION CALLER",
+        "type": "Gear",
+        "description": "These tiny pieces of equipment were designed by guerilla fighters during the invasion of Sparr, and make noise at a frequency inaudible to humans but audible to many of Sparr’s large beasts of prey. Scouts would be deployed to break into enemy camps and hide the devices, which would attract beasts to the area, forming a useful distraction for an attack elsewhere, dragging off unsuspecting soldiers as dinner, or damaging supplies. After the invasion, they were repurposed as risky hunting aids.<br><br>Carrion callers are now banned by the Union, partially due to the incredibly dangerous nature of the beasts they can attract, but also partially as a result of campaigns by Sparri pressure groups who felt that such a device demeaned the idea of an honorable hunt between two predators.<br><br>You can use a Full Action to deploy a Carrion Caller. When you do so, a random beast of prey arrives at the location in 1d6x10 minutes, so long as you are in a suitable geographic area. If in Sparr, roll a d4 to decide what arrives:<ol><li>Two of Sparr’s White Vultures</li><li>A Glacier Beast</li><li>A pack of 1d6 Carrion Moths</li><li>A Carnivorous Mammoth</li></ol>",
+        "actions": [
+            {
+                "name": "Deploy Carrion Caller",
+                "activation": "Full",
+                "detail": "Deploy a Carrion Caller. When you do so, a random beast of prey arrives at the location in 1d6x10 minutes, so long as you are in a suitable geographic area. If in Sparr, roll a d4 to decide what arrives:<ol><li>Two of Sparr’s White Vultures</li><li>A Glacier Beast</li><li>A pack of 1d6 Carrion Moths</li><li>A Carnivorous Mammoth</li></ol>"
+            }
+        ]
+    },
+    {
+        "id": "scu_rising_sun_nanites",
+        "name": "RISING SUN NANITES",
+        "type": "Gear",
+        "description": "This cocktail of nanites, secretly produced on the moon of Eyalet-a in the Trade Baronies have taken their name from their scarab-esque form on a microscopic level. The nanites are injected into the body when required and expire after about an hour, temporarily enhancing the body’s precision and mental sharpness. The Broker brings this experimental technology to Sparr in the hopes of trading it for information with curious Lancers. ",
+        "actions": [
+            {
+                "name": "Inject Rising Sun Nanites",
+                "activation": "Quick",
+                "detail": "You can inject the Rising Sun Nanites into your body, gaining <b>+1 Accuracy</b> on all checks, saves and attacks - both pilot and frame - for one encounter. However after the nanites expire, you are impeded, gaining <b>+1 Difficulty</b> on all checks, saves and attacks - both pilot and frame - until your next rest while your system recovers."
+            }
+        ]
+    }
+]

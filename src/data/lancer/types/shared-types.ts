@@ -46,7 +46,7 @@ export type IDeployableData = {
     armor?: number
     hp?: number | string // orochi drones are "5 + {grit}", kobold slag is string
     evasion?: number | string // kobold slag is string
-    edef?: number
+    edef?: number | string // moi solomon's drone is string
     heatcap?: number
     repcap?: number
     sensor_range?: number

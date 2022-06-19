@@ -1,0 +1,1932 @@
+[
+  {
+    "id": "liminal_downfall_acedia_bracketbomb",
+    "name": "Bracketing Bomblets",
+    "mount": "Auxiliary",
+    "type": "Launcher",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "ACEDIA",
+    "license_level": 1,
+    "on_hit": "If you hit a single character twice in the same turn with one or more Bracketing Bomblets, you may apply Lock On to that character as a free action on the same turn.",
+    "description": "This spray of tiny explosives could be easily mistaken for a party favor, if the party was being thrown by giants. In addition to the detonations they spray the area with high-return metallic fragments, highlighting and outlining enemies for a precious few moments to guide follow-on shots."
+  },
+  {
+    "id": "liminal_downfall_acedia_sunrise",
+    "name": "Sunrise",
+    "mount": "Main",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      },
+      {
+        "type": "Burn",
+        "val": 1
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_arcing"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "ACEDIA",
+    "license_level": 2,
+    "description": "Heated debate rages internally as two people named this weapon the same thing simultaneously. One wanted to pay tribute to how its arcing shots could come out of the sun. The other was talking about the fireballs that result when it hits its target."
+  },
+  {
+    "id": "liminal_downfall_acedia_unstoppableforce",
+    "name": "Unstoppable FORCE",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "profiles": [
+      {
+        "name": "Thermobaric Bombard",
+        "range": [
+          {
+            "type": "Range",
+            "val": 15
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "2d6"
+          },
+          {
+            "type": "Burn",
+            "val": 4
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ordnance"
+          }
+        ],
+        "on_crit": "The target is knocked Prone."
+      },
+      {
+        "name": "Fuel-Air Explosive Canister",
+        "range": [
+          {
+            "type": "Range",
+            "val": 1
+          },
+          {
+            "type": "Cone",
+            "val": 5
+          }
+        ],
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d6"
+          },
+          {
+            "type": "Burn",
+            "val": 3
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_knockback",
+            "val": 5
+          }
+        ]
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "ACEDIA",
+    "license_level": 3,
+    "effect": "When you fire this weapon, you may do so with either the Thermobaric Bombard profile or the Fuel-Air Explosive Canister profile.",
+    "description": "The Forward Ordnance, Recoilless Concussive Explosive cannon is an unwieldy piece of gear. By all rights and most physics, the amount of power its rounds put out should cause the mount to rip itself off of its frame. That it doesn’t owes more to a complex series of pistons and offsets than anything else, and while it does so it also keeps enemies well away from its carrier."
+  },
+  {
+    "id": "liminal_downfall_avarice_territorypulse",
+    "name": "Territorial Pulse",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Cone",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "val": 1
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "AVARICE",
+    "license_level": 1,
+    "on_attack": "Any Mines in the area are immediately set off.",
+    "description": "This blast wave of concussive force serves dual purpose to the mech. It drives nearby foes away, while also setting off hazards in the area."
+  },
+  {
+    "id": "liminal_downfall_avarice_micromissilelauncher",
+    "name": "Micromissile Launcher",
+    "mount": "Auxiliary",
+    "type": "Launcher",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_inaccurate"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "AVARICE",
+    "license_level": 2,
+    "effect": "Attacks from this weapon are not affected by Accuracy or Difficulty, other than its own Inaccurate tag.",
+    "description": "These difficult-to-control clusters of rocket-propelled bomblets fly in crazy patterns, blanketing the area in unpredictable strikes."
+  },
+  {
+    "id": "liminal_downfall_envy_lashbackwhip",
+    "name": "Lashback Whip",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "val": 2
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "ENVY",
+    "license_level": 2,
+    "effect": "This weapon can attack with Overwatch when hostile characters enter, leave, or exit spaces within its Threat, no matter whether they started their movement there.",
+    "description": "My mission here is simple. Take what is yours, give up none of what is mine. Submit!"
+  },
+  {
+    "id": "liminal_downfall_gluttony_tenderizer",
+    "name": "Tenderizer",
+    "mount": "Heavy",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "GLUTTONY",
+    "license_level": 1,
+    "on_crit": "The target becomes Shredded until the end of your next turn.",
+    "description": "There theoretically was once a more elegant name for this. It is long forgotten, since the hammer-with-facing-spikes shape looks nearly identical (though MUCH larger) to some familiar kitchen equipment."
+  },
+  {
+    "id": "liminal_downfall_gluttony_heartburn",
+    "name": "Heartburn Cannon",
+    "mount": "Main",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1-6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "GLUTTONY",
+    "license_level": 2,
+    "on_attack": "Clear 2 Heat.",
+    "effect": "This weapon deals damage equal to half of your current Heat, up to a maximum of 6.",
+    "description": "You can vent heat into your surroundings suddenly. You can let it bleed off slowly, or into specialized channels on repair equipment. Alternatively, you can always project it straight at your enemies."
+  },
+  {
+    "id": "liminal_downfall_gluttony_annihilatorcannon",
+    "name": "Annihilator Cannon",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "4d6+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 4
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "GLUTTONY",
+    "license_level": 3,
+    "on_attack": "Expend a total of two charges from Limited weapons or systems you have installed. If you can't, destroy this weapon.",
+    "description": "Warning: Muzzle, piping, vents, and external shielding may become hot during and after matter-antimatter reactions."
+  },
+  {
+    "id": "liminal_downfall_lust_tracepistol",
+    "name": "Trace Pistol",
+    "mount": "Auxiliary",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "LUST",
+    "license_level": 1,
+    "on_hit": "You deal 1 Kinetic damage to another hostile character within Range 2 of the target.",
+    "description": "This weapon appears much like any other holdout pistol, but the key is in the combination of integrated circuitry and the ammunition. When it is fired at a target, onboard processors finely calibrate the spin and angle of the glowing rounds, ensuring that the ricochet goes precisely where it will do the most damage."
+  },
+  {
+    "id": "liminal_downfall_lust_arcrifle",
+    "name": "Arc Rifle",
+    "mount": "Main",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "LUST",
+    "license_level": 2,
+    "on_hit": "All characters within a Burst 1 of the target take 1 Energy damage.",
+    "description": "This one is simply electrifying... and it makes the sparks fly, too!"
+  },
+  {
+    "id": "liminal_downfall_pride_impulselauncher",
+    "name": "Impulse Launcher",
+    "mount": "Main",
+    "type": "Launcher",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "PRIDE",
+    "license_level": 1,
+    "description": "The first and most basic rule of combat is to make the largest impression possible. DOWNFALL’s Impulse-pattern laser bolt flies to its intended point and blasts the area with a dense pattern of energy fire, drawing eyes and softening up entire groups of foes."
+  },
+  {
+    "id": "liminal_downfall_pride_microwaveprojector",
+    "name": "Microwave Projector",
+    "mount": "Auxiliary",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": 1
+      },
+      {
+        "type": "Heat",
+        "val": 1
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "PRIDE",
+    "license_level": 2,
+    "effect": "This weapon gains the AP tag against Biological characters.",
+    "description": "Ultimately, the flashiest thing you can do is make the enemy’s own frame turn into your fireworks. These rays are themselves invisible, but the cascades of enemy mechs sparking themselves out are anything but."
+  },
+  {
+    "id": "liminal_downfall_pride_brightburnblasters",
+    "name": "Brightburn Blasters",
+    "mount": "Auxiliary",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "PRIDE",
+    "license_level": 3,
+    "on_hit": "The target treats all other characters as being in soft cover until the end of their next turn.",
+    "description": "The ultimate in effective distraction and obstruction, these charged pistols leave ionized trails in the air which shed an intense light of their own for a few seconds. Viewers at home get to ooh and ah over the special effects. Enemies in their cockpits get to struggle to make out anything through the constant strobes and afterimages."
+  },
+  {
+    "id": "liminal_downfall_sloth_nanitefocus",
+    "name": "Nanite Focus",
+    "mount": "Main",
+    "type": "Nexus",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "SLOTH",
+    "license_level": 2,
+    "effect": "This weapon gains +1 Accuracy and deals +2 Kinetic damage for each previous consecutive turn it has made an attack against the same target, to a maximum of +4 Accuracy and +8 damage. These bonuses reset to 0 if you attack a new target, force any other hostile character to make a save, or if you do not attack with this weapon on your turn.",
+    "description": "Focus is the name of the game. Repetition. You have all the time in the world, after all; the longer this weapon fires upon the same target, the better it gets."
+  },
+  {
+    "id": "liminal_downfall_sloth_grandhammer",
+    "name": "Grand Hammer",
+    "mount": "Superheavy",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "4d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "SLOTH",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Sweep",
+        "activation": "Full",
+        "detail": "Each hostile character within the Grand Hammer's Threat takes 2d6 Kinetic damage and is knocked two spaces directly away from you. If they succeed on a Hull save, they instead take half damage and are knocked 1 space away."
+      }
+    ],
+    "description": "The signature weapon of the SLOTH frame is hideously simple in design - literally just an enormous slab of exceedingly dense material, made with the frame’s immense strength in mind. The two together form a force that rightly terrifies enemy actors; to be caught close to a hostile SLOTH is to suddenly cease existing. In other hands, it is still an enormous pile of painful physics lessons."
+  },
+  {
+    "id": "liminal_downfall_wrath_aggression",
+    "name": "Aggression",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "effect": "This weapon gains the AP tag against characters you have previously attacked this round."
+  },
+  {
+    "id": "liminal_downfall_wrath_alltheguns",
+    "name": "All The Guns",
+    "mount": "Main",
+    "type": "???",
+    "damage": [
+      {
+        "type": "Variable",
+        "val": "Xd6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Burst",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 6
+      }
+    ],
+    "effect": "This attack deals 1d6 damage for each weapon mounted on your mech, including this one, to a maximum of 6d6. Weapons that are destroyed, unloaded, or have no Limited charges remaining do not count to this number.<br><br>After attacking with this weapon, all of your Loading weapons become unloaded, and all of your Limited weapons expend one charge.<br><br>This weapon may benefit from your talents as if it were all weapon sizes (Auxiliary, Main, etc.) and all weapon types (Melee, Rifle, etc.).",
+    "on_hit": "Choose this weapon's damage type. This can change between targets."
+  },
+  {
+    "id": "liminal_downfall_wrath_whirlwindblade",
+    "name": "Whirlwind Blade",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "WRATH",
+    "license_level": 1,
+    "effect": "Whenever you make an Overwatch attack with this weapon, it is a Burst 2 attack.",
+    "description": "One basic armament of the WRATH is a one-handed sword, long and hollow, with the center containing a relatively small amount of dense fluid. When swung properly, this fluid moves to the tip, giving the swings far more force and spin than its appearance would suggest."
+  },
+  {
+    "id": "liminal_downfall_wrath_firebrand",
+    "name": "Firebrand",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 4
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "WRATH",
+    "license_level": 2,
+    "description": "This powerful laser projector array delivers a bladelike blast of coherent light, but loses focus fast. After the fourth time the flame suppressor system kicked on in the lab, the development technicians knew exactly what they would be calling it."
+  },
+  {
+    "id": "liminal_downfall_wrath_shockwavecannon",
+    "name": "Shockwave Cannon",
+    "mount": "Heavy",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "2d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Cone",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "source": "DOWNFALL",
+    "license": "WRATH",
+    "license_level": 3,
+    "on_crit": "The target becomes Shredded until the end of their next turn.",
+    "description": "Nothing accomplishes the purpose of destroying everything in your path quite so well as an enormous concussive wave, overwhelming enemies and clearing the area."
+  },
+  {
+    "id": "liminalspace_moi_houdini_magicianscane",
+    "name": "Magician's Cane",
+    "mount": "Main",
+    "type": "Launcher",
+    "damage": [
+      {
+        "type": "Heat",
+        "val": 3
+      },
+      {
+        "type": "Burn",
+        "val": 3
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      },
+      {
+        "type": "Blast",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_knockback",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MOI",
+    "license": "HOUDINI",
+    "license_level": 3,
+    "description": "The downfall of many who think that Magnum Opus designs are flash without substance, this unobtrusive rod is in fact a very potent launch weapon for small near-critical implosion charges. The scorching shockwaves from these charges provide all the expected flash, while the crushing impact sends warmachines tumbling."
+  },
+  {
+    "id": "liminalspace_moi_solomon_goetia",
+    "name": "Goetia",
+    "mount": "Heavy",
+    "type": "Nexus",
+    "tags": [
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "damage": [
+      {
+        "type": "Burn",
+        "val": 5
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "effect": "This weapon does not trace line of sight from the Solomon and cannot originate from it. Instead, it traces line of sight and originates attacks (including Overwatch) from its host as chosen with the Lesser Key quick action.",
+    "description": ""
+  },
+  {
+    "id": "liminalspace_moi_solomon_infernalstrength",
+    "name": "Infernal Strength",
+    "mount": "Heavy",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      },
+      {
+        "type": "Burn",
+        "val": 4
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "effect": "This weapon does not trace line of sight from the Solomon and cannot originate from it. Instead, it belongs to the Belial Shard Drone.",
+    "description": ""
+  },
+  {
+    "id": "liminalspace_moi_solomon_flaurosturret",
+    "name": "Flauros Turret",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": 2
+      },
+      {
+        "type": "Burn",
+        "val": 2
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_drone"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "MOI",
+    "license": "SOLOMON",
+    "license_level": 1,
+    "effect": "This weapon may be used to attack as normal, or deployed as a Flauros Turret Drone. Once deployed, you may still use it for Skirmish, Overwatch and Barrage attacks as though it is still a weapon, but with line of sight and range originating from its location.",
+    "deployables": [
+      {
+        "name": "Flauros Turret Drone",
+        "type": "Drone",
+        "size": 0.5,
+        "hp": 5,
+        "armor": 2,
+        "edef": 10,
+        "evasion": 10,
+        "activation": "Free",
+        "detail": "After you deploy this as a drone, it remains deployed until the end of the scene until recalled or destroyed. If destroyed, it follows the rules for destroyed Drones and can’t be used until repaired. A Flauros Turret that is integrated or otherwise unable to be destroyed cannot be used for the rest of the scene but will be available again for free when you finish a rest.",
+        "recall": "Quick",
+        "redeploy": "Quick"
+      }
+    ],
+    "description": "Flauros are mobile gun turrets designed for crowd control. Armed with a small thin-stream flamethrower they are more than capable of driving off any but the largest xenofauna that may threaten them. Their automatic targeting systems allow them to easily guard a facility in place of some organic guards or subalterns."
+  },
+  {
+    "id": "liminalspace_moi_solomon_bindingring",
+    "name": "Binding Ring",
+    "mount": "Main",
+    "type": "Nexus",
+    "damage": [
+      {
+        "type": "Burn",
+        "val": 5
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_seeking"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_reliable",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MOI",
+    "license": "SOLOMON",
+    "license_level": 3,
+    "on_attack": "If the target has HP equal to 7 or less, only 1 structure remaining, and isn’t immune to damage, it is immediately destroyed and removed from the battlefield.",
+    "description": "Few that use Binding Rings know the origins of this strange weapon that creates terrifying gaps in space, hungry to suck in unfortunate victims. Each Binding Ring contains a single use access code of the original Agartha Blink Station, long lost within a black hole. All understanding of blink gates indicates the codes should no longer work - not even blinkspace can escape the devouring clutches of an event horizon.<br><br>Yet, this logical conclusion is ignored. Whether through Belial's will, unknown paracasual phenomena or something worse yet to be discovered, the prison throws its doors wide open when called upon. And it is more than eager to welcome its latest prisoner."
+  },
+  {
+    "id": "liminalspace_moi_zouyan_stickycharges",
+    "name": "Sticky Charges",
+    "mount": "Main",
+    "type": "Melee",
+    "profiles": [
+      {
+        "name": "Melee",
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d3+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ap"
+          }
+        ]
+      },
+      {
+        "name": "Thrown",
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d3+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ap"
+          },
+          {
+            "id": "tg_loading"
+          },
+          {
+            "id": "tg_thrown",
+            "val": 5
+          }
+        ]
+      }
+    ],
+    "source": "MOI",
+    "license": "ZOU YAN",
+    "license_level": 1,
+    "effect": "Making a non-thrown melee attack with this weapon doesn't unload it. When thrown, this weapon gains the Blast 1 tag, but must be reloaded before either profile can be used again (instead of being retrieved like most thrown weapons).<br><br>Against objects such as cover, terrain, and the environment, this weapon deals 10 AP Explosive damage on hit.",
+    "description": "Magnum Opus has developed an adaptation of demolition equipment into a rather unconventional close combat weapon. Dispensers located along the mech’s hands can leave a small slather of shaped putty explosives, ready to punch a hole through any target coated in it. In addition, the dispensers can be over-pressurised to produce a larger, omnidirectional charge that can be thrown a short distance. This secondary usage however leaves the fabricators filling the dispensers stressed and needing a new stock of feed before they can be used again."
+  },
+  {
+    "id": "liminalspace_moi_zouyan_leigongrifle",
+    "name": "Leigong Rifle",
+    "mount": "Main",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      },
+      {
+        "id": "tg_knockback",
+        "val": 3
+      }
+    ],
+    "source": "MOI",
+    "license": "ZOU YAN",
+    "license_level": 3,
+    "effect": "This weapon deals no damage to allied characters. If a hostile target moved by this weapon collides with an obstruction or another mech, they stop moving and are knocked Prone. Biological characters that would be destroyed by this weapon are left Down and Out instead.",
+    "description": "Loaded with less-lethal rounds, Leigong Rifles unleash a thunderous typhoon when fired that scatters those hit like pins. They are popular among megafauna researchers and riot suppression groups to disrupt dangerous elements without serious harm."
+  },
+  {
+    "id": "liminalspace_moi_amakusa_servogauntlet",
+    "name": "Servo Gauntlet",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "source": "MOI",
+    "license": "AMAKUSA",
+    "license_level": 1,
+    "on_hit": "The target is pulled to any free space within this weapon's Threat and knocked Prone. This movement is not obstructed by characters.",
+    "description": "“GET THE HELL OFF THEM!”<br><br> - Nasim Esclabor, DoJ/HR Liberator, during XOLOTL assault"
+  },
+  {
+    "id": "liminalspace_moi_amakusa_plasmawakizashi",
+    "name": "Plasma Wakizashi",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "source": "MOI",
+    "license": "AMAKUSA",
+    "license_level": 1,
+    "on_hit": "This weapon deals +1d6 bonus damage if the attack was made as part of a reaction (such as Overwatch).",
+    "synergies": [
+      {
+        "locations": [
+          "overwatch"
+        ],
+        "detail": "The Plasma Wakizashi deals +1d6 bonus damage if the attack was made as part of a reaction (such as Overwatch)."
+      }
+    ],
+    "description": "Dangerous and compact, Magnum Opus’ Plasma Wakizashi is the perfect backup weapon for a heavy weapons mech. While its micrometer-thin blade of plasma slices through plating like thin air, the internal coolant supply can only keep it stable for a brief duration. As a result, pilots using it prefer to wait for a perfect moment to strike rather than waste coolant."
+  },
+  {
+    "id": "liminalspace_moi_amakusa_flarenaginata",
+    "name": "Flare Naginata",
+    "mount": "Heavy",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "source": "MOI",
+    "license": "AMAKUSA",
+    "license_level": 2,
+    "effect": "You may attack with this weapon while it is unloaded. If you do, it is destroyed after the attack resolves.",
+    "description": "Seemingly a haft without a head, the Flare Naginata is capable of generating a terrifying blade of crackling plasma very briefly. However, much like its sidearm counterpart, each usage of this weapon only lasts for a few moments before the coolant canister is depleted and a new one must be provided to avoid catastrophic failure."
+  },
+  {
+    "id": "liminalspace_moi_medea_spartoiblade",
+    "name": "Spartoi Blade",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "source": "MOI",
+    "license": "MEDEA",
+    "license_level": 1,
+    "effect": "This weapon is treated as both a Melee weapon and a Nexus weapon, but can only be used to make melee attacks.<br><br>This weapon may be used to attack as normal, or deployed as a Drone. Once deployed, you may still use it for Skirmish, Overwatch and Barrage attacks as though it is still a weapon, but with line of sight and range originating from its location.",
+    "deployables": [
+      {
+        "name": "Spartoi Blade",
+        "type": "Drone",
+        "size": 0.5,
+        "hp": 5,
+        "armor": 3,
+        "edef": 10,
+        "evasion": 10,
+        "activation": "Free",
+        "detail": "After you deploy this as a Drone, it remains deployed until the end of the scene until recalled or destroyed. If destroyed, it follows the rules for destroyed Drones and can’t be used until repaired. A Spartoi Blade that is integrated or otherwise unable to be destroyed cannot be used for the rest of the scene but will be available again for free when you next complete a rest.",
+        "recall": "Quick",
+        "redeploy": "Quick"
+      }
+    ],
+    "description": "Spartoi blades are neural-linked streams of nanites, controlled like rolling waves to flow over foes and eat away at them like a school of hungry fish. A skilled controller can form them into temporary blades or simply have them wash targets away without a sign they were ever there."
+  },
+  {
+    "id": "liminalspace_moi_medea_jasonslove",
+    "name": "Jason's Love",
+    "mount": "Main",
+    "type": "Launcher",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_seeking"
+      }
+    ],
+    "source": "MOI",
+    "license": "MEDEA",
+    "license_level": 3,
+    "effect": "This weapon gains the Seeking tag if the Blast includes an allied character or an allied Drone.",
+    "description": "Jason’s Love brings an old solution to a very modern problem, dealing with electronic warfare obscuring artillery support. Electronic warfare is a major concern with most smart weapons, where enemy signals can be jammed or advanced programs can even wipe all traces of a foe from scanners. By using locational data from allied drones this weapon knows the perfect place for a shot irrespective of the enemy attempts to hide."
+  },
+  {
+    "id": "liminalspace_moi_nimue_precognitivescimitar",
+    "name": "Precognitive Scimitar",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_thrown",
+        "val": 5
+      }
+    ],
+    "source": "MOI",
+    "license": "NIMUE",
+    "license_level": 1,
+    "effect": "This weapon’s attacks do not provoke reactions and may target Hidden characters.",
+    "description": "“As mentioned in my report, I believe that MOI’s remit to engage in Paracausal research is moving into strange areas. Some of their latest creations seem to warp linear time, silencing any response before they're even aware of the call for support.”<br> - Medea Nu, Union Science Bureau attaché"
+  },
+  {
+    "id": "liminalspace_moi_nimue_paragonblade",
+    "name": "Paragon Blade",
+    "mount": "Auxiliary",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 1
+      },
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_thrown",
+        "val": 8
+      }
+    ],
+    "source": "MOI",
+    "license": "NIMUE",
+    "license_level": 2,
+    "description": "One of the most impressive inventions in firing sharp metal at other people since the invention of gunpowder, paragon blades are semisapient weapons capable of adjusting their movement in the wielder’s hand or in mid-flight. The number of duelists skilled enough to evade a paragon blade with raw agility can be counted on a single hand."
+  },
+  {
+    "id": "liminalspace_moi_nimue_claiomhsolais",
+    "name": "Claíomh Solais",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": 1
+      },
+      {
+        "type": "Burn",
+        "val": 5
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "MOI",
+    "license": "NIMUE",
+    "license_level": 3,
+    "sp": 2,
+    "effect": "Attacking with this weapon doesn't expend a charge. Your mech gains the AI tag and the Sword of Rainbow Light full action.",
+    "actions": [
+      {
+        "name": "Sword of Rainbow Light",
+        "activation": "Full",
+        "frequency": "1/scene",
+        "detail": "Expend a charge to unleash a many-hued beam over a Line 8 area. Characters in the affected area must make an Agility save: on a failed save, they take 8 Burn and are Shredded until they clear their Burn. On a successful save, they only take 4 Burn and are Shredded until the end of their next turn. Objects in the affected area suffer 40 AP Energy Damage."
+      }
+    ],
+    "description": "The gauntlet that holds a Claíomh Solais cannot be fabricated, instead needing to be transported to the mech that would use it. This is because the core of this weapon system is a Núada-Class NHP, controlling the complex systems behind this unusual sword. Rainbow light glints off the true form of the blade when it moves, a thin slice of blinkspace itself as it cuts through reality around it. With invocations of liturgicode Núada can be awakened to full consciousness for a moment and this blade will cleave a chasm through the fabric of existence.<br><br>Núada sleeps uneasily. One of the original NHPs designed to travel through blinkspace; it lost its mind to the impossibilities of that realm. The maimed god is still in shock, responding like a sleepwalker to orders and questions. Despite that, its insights are hard to overstate as the NHP forms impossible links and gives half-formed prophecy to its Lancer. Occasionally it turns and tosses, nightmares crossing its mind. Pilots are recommended to cycle Núada-class NHPs before long as the nightmares become increasingly common. Do not let it remember."
+  },
+  {
+    "id": "liminalspace_moi_ptolemy_precisionplasmachannel",
+    "name": "Precision Plasma Channel",
+    "mount": "Heavy",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6"
+      },
+      {
+        "type": "Burn",
+        "val": 1
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      }
+    ],
+    "sp": 1,
+    "source": "MOI",
+    "license": "PTOLEMY",
+    "license_level": 2,
+    "on_attack": "This weapon rolls to hit, even if an effect would cause it to miss without an attack or cause the target to be unable to be targeted. On a critical hit, this attack ignores such effects and its damage can't be reduced by any means.",
+    "description": "A powerful electrolaser, the Precision Plasma Channel is an adaption of early directed energy weapon technology. The crackling force directed down the plasma channel can reduce metal to slag, fry circuitry and start deadly electrical fires within the frame of the target with even the slightest touch."
+  },
+  {
+    "id": "liminalspace_moi_ptolemy_orbitalstrike",
+    "name": "Orbital Strike",
+    "mount": "Superheavy",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6"
+      },
+      {
+        "type": "Burn",
+        "val": 3
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      },
+      {
+        "type": "Line",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      },
+      {
+        "id": "tg_seeking"
+      }
+    ],
+    "source": "MOI",
+    "license": "PTOLEMY",
+    "license_level": 3,
+    "on_hit": "This weapon deals 40 AP Energy damage against Deployables, Drones and objects such as cover, terrain, and the environment.",
+    "description": "Despite the impressive name and the sight of a nuclear-pumped laser lancing down from a crack in the very sky above, this weapon is actually produced through the usage of Magnum Opus' Blink Mirrors allowing a powerful shot to be fired from equipment stored in a Magnum Opus factory vault and directed like the wrath of an angry god."
+  },
+  {
+    "id": "liminalspace_moi_morgana_blazersmg",
+    "name": "Blazer SMG",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 2
+      }
+    ],
+    "source": "MOI",
+    "license": "MORGANA",
+    "license_level": 1,
+    "effect": "When you attack with this weapon on your turn, it can attack one, two or three targets in range, but you take 1 heat for each target past the first.",
+    "description": "Magnum Opus makes very few conventional weapons, but the Blazer energy SMG is a clear example that they do not lack for skill in that area. A sleek and light weapon, the incredible refire rate allows for a powerful emergency weapon that runs quite hot."
+  },
+  {
+    "id": "liminalspace_mos_carmilla_matchgradegaussrifle",
+    "name": "Match-Grade Gauss Rifle",
+    "mount": "Main",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "source": "MO & S",
+    "license": "CARMILLA",
+    "license_level": 1,
+    "on_hit": "This weapon deals bonus Kinetic damage equal to your target's Armor (up to a maximum of +6).",
+    "description": "When it comes to working with what’s on hand, Marley, Oz, and Silver are hard to beat; the Match-Grade Gauss Rifle is an upscaled version of a sport shooting design, large enough for mechanized cavalry and with a whole lot of modifications to help the bullets penetrate. The end result is a weapon that hits harder against armor than it does against soft targets - a weapon that is proving increasingly popular amongst the Ungrateful in the Dawnline Shore."
+  },
+  {
+    "id": "liminalspace_mos_celeste_scattergun",
+    "name": "Terror-Class Scattergun",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": 2
+      },
+      {
+        "type": "Explosive",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 1
+      }
+    ],
+    "source": "MO & S",
+    "license": "CELESTE",
+    "license_level": 1,
+    "effect": "This weapon gains Reliable 3 against targets with 1 or more structure damage marked.",
+    "description": "Terror-Class Scatterguns are a two-stage weapon, which fire bursts of small spikes which embed in their targets, then explode. While the primary payload is explosive in nature, the delivery system makes it excellent for capitalizing on already vulnerable victims."
+  },
+  {
+    "id": "liminalspace_mos_celeste_erebushandcannon",
+    "name": "EREBUS Hand Cannon",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "2d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_inaccurate"
+      },
+      {
+        "id": "tg_reliable",
+        "val": 2
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "source": "MO & S",
+    "license": "CELESTE",
+    "license_level": 3,
+    "on_hit": "The target becomes Shredded until the end of their next turn.",
+    "description": "This weapon is only called a pistol because there’s not a better word for it; oversized, fed directly from a mech’s reactor core by thick cabling, and constantly smoking, the EREBUS is an accident looking for someone to happen to. The high-velocity slag it fires compromises armor and cripples a mech’s structure."
+  },
+  {
+    "id": "liminalspace_mos_donner_integrated",
+    "name": "Carrion/Chirurgeon Articulated Claws",
+    "mount": "Heavy",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "effect": "Attacking with this weapon doesn't unload it, and this weapon can attack while it is unloaded.",
+    "actions": [
+      {
+        "name": "Cannibal Lunge",
+        "activation": "Free",
+        "detail": "Move up to 3 spaces. This movement ignores engagement, does not provoke reactions, and must end with you adjacent to one or more hostile characters. If you choose to move this way, your next action this turn must be a Skirmish or Barrage. Using this action unloads the Carrion/Chirurgeon Articulated Claws, and effects that load or unload weapons can be used to load or unload this action."
+      }
+    ],
+    "description": ""
+  },
+  {
+    "id": "liminalspace_mos_donner_helsingcombatpiton",
+    "name": "Helsing-Class Combat Piton",
+    "mount": "Auxiliary",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": 1
+      },
+      {
+        "type": "Energy",
+        "val": 1
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "source": "MO & S",
+    "license": "DONNER",
+    "license_level": 1,
+    "effect": "Attacking with this weapon doesn't unload it.",
+    "on_hit": "If you have already dealt damage to the target this turn, you may unload this weapon to cause them to become Shredded. The target remains Shredded until they clear it as a quick action.",
+    "description": "This thick spike is somewhat awkward to use in the course of normal melee combat, but shines as a support weapon. When jammed into a fresh wound, the Helsing-Class Combat Piton emits a constant pulse of energy and extends powerful arms that force a mech’s armor open around the damaged area."
+  },
+  {
+    "id": "liminalspace_mos_frankenstein_threadedaxe",
+    "name": "Threaded Climbing Axe",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_thrown",
+        "val": 3
+      },
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "source": "MO & S",
+    "license": "FRANKENSTEIN",
+    "license_level": 1,
+    "effect": "While this weapon is installed on your mech and not tethered to another character, you can climb at normal speed.<br><br>When you throw this weapon and succeed on the attack, you can tether it to your target; if your target is a friendly character, it deals no damage to them. While tethered, you and your target cannot move more than this weapon’s Thrown range (typically 3) away from each other. One of you may tow the other, provided the towing character is of equal or greater Size to the towed one, but is Slowed while doing so. You cannot attack with the Threaded Climbing Axe while it is attached to a target, nor can you retrieve it. You can end the tether as a protocol, which deals 1d3 Explosive damage to your target as the axe rips free and returns use of the axe to you at the end of your turn. Your target can end this effect as a protocol. Hostile characters must pass a Hull save as part of that protocol and take 1d3 Explosive damage on a success.",
+    "actions": [
+      {
+        "name": "Rip Free",
+        "activation": "Protocol",
+        "detail": "You rip your Threaded Climbing Axe free of your tethered target, which deals 1d3 Explosive damage to them and ends the tethering effect. The axe returns to you at the end of your turn."
+      }
+    ],
+    "sp": 1,
+    "description": "This sturdy, pick-like weapon is used to traverse difficult terrain, especially vertical surfaces such as mountains and glaciers. It contains an internal launcher system that separates the head from the haft while keeping the two connected with thick cable, enabling easier climbing and daring combat maneuvers."
+  },
+  {
+    "id": "liminalspace_mos_frankenstein_exacerbatorgauntlet",
+    "name": "Exacerbator Gauntlet",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": 2
+      },
+      {
+        "type": "Energy",
+        "val": 2
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 2
+      }
+    ],
+    "source": "MO & S",
+    "license": "FRANKENSTEIN",
+    "license_level": 2,
+    "on_hit": "This weapon deals +1d6 Energy damage if either you or your target have 1 or more structure damage marked.",
+    "description": "Exacerbator technology would be a war crime on a smaller scale (and Union’s DoJ is certainly considering getting ahead of that particular horse); it can draw on exposed systems both in the frame upon which it is mounted and in its victims to amplify its electrical payload. Its entry in sales catalogues is generally captioned ‘cruel, but effective’."
+  },
+  {
+    "id": "liminalspace_mos_holiday_wristgun",
+    "name": "Wristgun",
+    "mount": "Auxiliary",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "source": "MO & S",
+    "license": "HOLIDAY",
+    "license_level": 1,
+    "effect": "This weapon deals 3 Kinetic damage to targets that have been damaged this turn, instead of its standard damage.",
+    "description": "A secondary weapon mounted on a mech’s wrists or the ends of its manipulators, the wristgun throws slugs at whatever’s downrange at a respectable clip. It’s not as popular as hand cannon designs, but at nearly a quarter their price that’s gonna change any day now."
+  },
+  {
+    "id": "liminalspace_mos_holiday_huckleberry",
+    "name": "Huckleberry Revolver-Carbine",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 6
+      },
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 1
+      }
+    ],
+    "source": "MO & S",
+    "license": "HOLIDAY",
+    "license_level": 2,
+    "effect": "You can make attacks with this weapon while Jammed.",
+    "description": "Huckleberries are a simple, reliable pattern much-used by those worried about jamming, adverse conditions, or who have simply had one magazine too many break on them in the middle of trying to not die. Its users (and detractors, for that matter) sometimes call it a Knuckle Gun, after the way the backblast from its propellant scorches a mech’s fingers. Currently, MO & S only offers a short-barrel pattern of the weapon, but longer-range variants are coming, well. Sometime."
+  },
+  {
+    "id": "liminalspace_mos_holiday_silvernoose",
+    "name": "“Silvernoose” Lasso",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "source": "MO & S",
+    "license": "HOLIDAY",
+    "license_level": 3,
+    "effect": "This weapon has Threat 4 during your turn.",
+    "on_crit": "The target is knocked Prone. If they were already Prone, they instead become Immobilized until the end of their next turn.",
+    "description": "“Yee, and I cannot express to you with enough gravity the deadly seriousness of my intent, haw.”"
+  },
+  {
+    "id": "liminalspace_mos_phoenix_helenclassrailcannon",
+    "name": "Helen-Class Rail Cannon",
+    "mount": "Main",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+1"
+      },
+      {
+        "type": "Heat",
+        "val": 2
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 12
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_arcing"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "MO & S",
+    "license": "PHOENIX",
+    "license_level": 1,
+    "on_hit": "Choose a space adjacent to your target. Characters in that space must succeed on an Agility save or take 2 Kinetic damage and 2 Heat.",
+    "description": "Named for an ancient volcano on Cradle, the Helen-Class Rail Cannon fires superheated slugs at high speeds. They break up just before impact, ensuring maximum delivery over a tight area for anti-mech and anti-infantry shelling."
+  },
+  {
+    "id": "liminalspace_mos_phoenix_yellowstonecannon",
+    "name": "YELLOWSTONE Reactor Cannon",
+    "mount": "Main",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": 3
+      },
+      {
+        "type": "Heat",
+        "val": 2
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 12
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "MO & S",
+    "license": "PHOENIX",
+    "license_level": 2,
+    "on_hit": "Until the end of the target's next turn, they take 1 Heat and 1 Burn whenever they move or take an action, including reactions.",
+    "description": "Generally spinal-mounted and welded directly to the mech’s chassis to reduce the distance between it and the reactor core, the YELLOWSTONE reactor cannon is an absolute shining star of weaponized bad decisions. It fires a thick slag made of raw metal, active reactor fuel, and a thickening agent that keeps it clinging and burning long after it leaves the launcher."
+  },
+  {
+    "id": "liminalspace_mos_phoenix_vulcangausscannon",
+    "name": "VULCAN Gauss Cannon",
+    "mount": "Main",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      },
+      {
+        "id": "tg_knockback",
+        "val": 3
+      },
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "source": "MO & S",
+    "license": "PHOENIX",
+    "license_level": 3,
+    "on_hit": "Your target is impaled by a superheated spike. At the beginning of each of their turns, your target takes 2 Heat. They can end this effect by passing a Hull save as a quick action to remove the spike. Multiple spikes do not have any additional effect.",
+    "description": "Itself a fairly typical and low-power “railgun” style cannon, Marley, Oz, and Silver’s VULCAN model is known not for its punch or efficiency but for its ammo; the gun launches thick spikes of metal-sheathed crystal that is superheated as it leaves the barrel. Pilots caught in the crossfire describe it as like getting run over by a burning car, and that’s <i>before</i> they realize the spike stuck in them is still cooking their rig."
+  },
+  {
+    "id": "liminalspace_mos_rasputin_oversizedlaser",
+    "name": "Oversized Targeting Laser",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      },
+      {
+        "type": "Burn",
+        "val": 3
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 12
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "MO & S",
+    "license": "RASPUTIN",
+    "license_level": 1,
+    "on_hit": "The target gains Lock On.",
+    "description": "This upscaled laser pointer is the result of a series of drunken dares between several engineers and a programmer, who later hastily justified the exercise by weaponizing it. It has since become Marley, Oz, and Silver’s flagship heavy weapon, a situation greatly aided by being their <i>only</i> heavy weapon."
+  },
+  {
+    "id": "liminalspace_mos_rasputin_grandmotherautogun",
+    "name": "Grandmother Autogun",
+    "mount": "Auxiliary",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MO & S",
+    "license": "RASPUTIN",
+    "license_level": 3,
+    "on_hit": "The target becomes Impaired until the end of their next turn.",
+    "description": "Theoretically named for the terrifying Baba Yaga, the Grandmother-pattern autogun acquired its current appellation from an Omninet video comparing getting shot by it to getting caned by one’s elderly grandmother: disorienting, shaming, and oddly painful. It’s become an increasingly popular buy for support pilots, as well as for mechanized gladiators who want to insult and disrupt their opponents."
+  },
+  {
+    "id": "liminalspace_mos_zahhak_mantlerifle",
+    "name": "MANTLE Rifle System",
+    "mount": "Main",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "source": "MO & S",
+    "license": "ZAHHAK",
+    "license_level": 1,
+    "effect": "While you are grappling, this weapon gains Threat 3. You can make Overwatch reactions with this weapon while grappling.",
+    "description": "The MANTLE is an overwatch & area denial system, which modifies a mech’s chassis with many smaller weapons that deal damage through weight of fire. MANTLE users are sometimes derided as being poor marksmen who rely on the system in order to not have to aim, to which Travis Keller, noted MANTLE enthusiast, once replied, “No shit.”"
+  },
+  {
+    "id": "liminalspace_mos_zahhak_vipertaser",
+    "name": "Viper-Class Mech Taser",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "source": "MO & S",
+    "license": "ZAHHAK",
+    "license_level": 3,
+    "effect": "Attacking with this weapon doesn't expend a charge. However, this weapon can't be fired if it has 0 charges remaining.",
+    "on_hit": "You may expend a charge to cause the target to become Immobilized until the end of their next turn.",
+    "description": "Typically mounted on or near the cockpit, the Viper-class taser delivers incredible jolts of energy directly into its targets. It can be dialed up when fired to impair its victims, though repeated use of this function does burn the weapon out."
+  },
+  {
+    "id": "liminalspace_mk1houdini_potentiacane",
+    "name": "Potentia Cane",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_indestructible"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "MOI",
+    "license": "HOUDINI",
+    "license_level": 2,
+    "on_attack": "If this attack destroys the target or causes structure damage, you can have this weapon not become unloaded.",
+    "effect": "This weapon can only be installed in the MK1 Houdini's first Main slot, and is not available for the standard HOUDINI frame.<br> Despite being an integrated weapon, it benefits from core bonuses and can be modified."
+  }
+]
