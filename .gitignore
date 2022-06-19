@@ -1,3 +1,4 @@
 build/*
 node_modules
 config.json
+src/data/speaker/word_bank.json
