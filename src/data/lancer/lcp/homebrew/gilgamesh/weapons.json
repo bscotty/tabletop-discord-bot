@@ -1,0 +1,241 @@
+[
+  {
+    "id": "mw_legionnaire_heavy_rifle",
+    "name": "Legionnaire Heavy Rifle",
+    "source": "HA",
+    "license": "GILGAMESH",
+    "license_level": 1,
+    "description": "Harrison Armory's primary model Legionnaire heavy battle rifle is a mainstay of both regular and auxiliary Armory forces regardless of theater or world of origin, standardizing logistics and streamlining integration of foreign and local assets. Chambered in a high-caliber round with a variety of magazine options, the weapon is both inexpensive to print and easy to operate despite its size, and the integrated grenade launcher gives each operator enhanced breach and counter-defilade capabilities as needed, regardless of specialty.",
+    "effect": "",
+    "on_attack": "",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Heavy",
+    "type": "Rifle",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [],
+    "range": [],
+    "sp": 0,
+    "tags": [],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": [
+      {
+        "name": "Battle Rifle",
+        "description": "",
+        "effect": "",
+        "on_attack": "",
+        "on_hit": "",
+        "on_crit": "",
+        "type": "Rifle",
+        "cost": 1,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+3"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 15
+          }
+        ],
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "tags": []
+      },
+      {
+        "name": "Grenade Launcher",
+        "description": "",
+        "effect": "The Grenade Launcher profile counts as a Main Launcher, rather than a Heavy Rifle.",
+        "on_attack": "",
+        "on_hit": "",
+        "on_crit": "",
+        "type": "Launcher",
+        "cost": 1,
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 15
+          },
+          {
+            "type": "Blast",
+            "val": "1"
+          }
+        ],
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "tags": [
+          {
+            "id": "tg_arcing"
+          },
+          {
+            "id": "tg_limited",
+            "val": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mw_thermal_blade",
+    "name": "Thermal Blade",
+    "source": "HA",
+    "license": "GILGAMESH",
+    "license_level": 2,
+    "description": "Available in a variety of designs extensively curated for maximum wide-reaching cultural appeal, the Armory's line of thermal blades are considered a status symbol among some Legionnaires, as well as a valuable close-quarters assault tool. Unpowered the blade is merely a conventional, if solidly designed, chassis-grade tactical melee weapon, but when the blade's internal power bank is discharged its surface is briefly enveloped in high-energy plasma. In addition to its own internal power supply, thermal blades can even accept limited coldcore draw through hard-cable or induction feeds.",
+    "effect": "You may attack with this weapon without expending charges, and whenever you would be forced to destroy a weapon due to critical damage or other effects, you may choose this<br>weapon to destroy even if it has no charges remaining.",
+    "on_attack": "",
+    "on_hit": "If you are in the Danger Zone you may expend a charge to to deal +1d6 energy bonus damage, or if you are not in the Danger Zone you may take 3 heat to expend a charge anyway.",
+    "on_crit": "",
+    "mount": "Main",
+    "type": "Melee",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      },
+      {
+        "type": "Heat",
+        "val": "2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": "1"
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": "2"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": "1"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "mw_legion_nexus",
+    "name": "Legion Nexus",
+    "source": "HA",
+    "license": "GILGAMESH",
+    "license_level": 3,
+    "description": "The PRAETORIAN-class combat subaltern is one of the Armory's latest and most advanced models, designed for shock assault, seize-and-hold, and combined arms doctrines. Capable of effectively wielding both man-portable and heavier-than anti-mech/anti-materiel weapons and utilizing a tiered hierarchy/command structure allowing them to operate at levels ranging from individual fire teams to brigade strength under local Comp/Con or NHP command, a squadron of PRAETORIAN subalterns can also be seconded to pilots under local nexus node control, and one or more squadrons are often assigned to Legionnaire units during combat operations to provide integrated support. Personality matrices are customizable by users, and HA offers a variety of preset options to choose from at licensing.",
+    "effect": "You may attack with this weapon without expending charges, and whenever you would be forced to destroy a weapon due to critical damage or other effects, you may choose this weapon to destroy even if it has no charges remaining. Each time you print this weapon or during a full repair, choose whether it deals kinetic, explosive, or energy damage.",
+    "on_attack": "",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Superheavy",
+    "type": "Nexus",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Variable",
+        "val": "3d6+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [
+      {
+        "name": "Deploy Legion Drone",
+        "type": "Drone",
+        "detail": "As a quick action, you may spend a charge to task a portion of the legion nexus to operate independently from the main unit. This counts as a drone (Size 1/2, 10 HP, 10 Evasion/E-defense, 1 Armor) deployed in a free space adjacent to you. During your turn, all deployed legion drones may move 3 spaces in any direction and then perform one of the following as a free action:<br><br><ul><li>Make an attack against a target within range 10 as a free action using your Grit, dealing 1d6+1 damage of the same type as the legion nexus on hit.</li><li>Lay down suppressing fire against a hostile character within range 10. That character becomes Impaired and all your attacks with the legion nexus against them are made with +1 Accuracy until the end of your next turn. This effect does not stack.</li></ul><ul><li>Move an additional 2 spaces. If the drone ends this movement adjacent to a hostile character, that character takes 4 kinetic damage and must pass a Hull save or be knocked Prone.</li></ul><br>Legion drones cannot be recalled and expire at the end of the scene.",
+        "size": 0.5,
+        "activation": "Quick",
+        "instances": 1,
+        "cost": 1,
+        "armor": 1,
+        "hp": 10,
+        "evasion": 10,
+        "edef": 10,
+        "pilot": false,
+        "mech": false,
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "counters": []
+      }
+    ],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  }
+]

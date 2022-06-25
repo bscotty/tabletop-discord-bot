@@ -17,6 +17,7 @@ import {getMfecaneLcp} from "../data/lancer/lcp/homebrew/mfecane";
 import {getSciroccoLcp} from "../data/lancer/lcp/homebrew/scirocco";
 import {getSuldanLcp} from "../data/lancer/lcp/homebrew/suldan";
 import {getStolenCrownLcp} from "../data/lancer/lcp/homebrew/stolen-crown";
+import {getGilgameshLcp} from "../data/lancer/lcp/homebrew/gilgamesh";
 
 @Discord()
 export class Lancer {
@@ -40,6 +41,7 @@ export class Lancer {
 
     private homebrew(): Lcp[] {
         return [
+            getGilgameshLcp(),
             getIronleafFoundryLcp(),
             getLiminalSpaceLcp(),
             getMfecaneLcp(),
