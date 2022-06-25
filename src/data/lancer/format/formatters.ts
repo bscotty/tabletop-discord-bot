@@ -109,7 +109,7 @@ export class Formatters {
 
         out += `${this.turndownService.turndown(dep.detail)}\n`
 
-        if (dep.actions) {
+        if (dep.actions && dep.actions.length > 0) {
             out += `This deployable grants the following actions:\n`
             dep.actions.forEach(act => out += `${this.actionFormat(act)}\n`)
         }
@@ -285,7 +285,7 @@ export class Formatters {
             out += pgear.tags.map(tag => this.populateTag(tag)).join(', ').trim() + "\n"
         }
         out += this.turndownService.turndown(pgear.description) + "\n"
-        if (pgear.actions) {
+        if (pgear.actions && pgear.actions.length > 0) {
             out += 'This pilot gear grants the following actions:\n'
             out += pgear.actions.map(action => `${action.name} (${action.activation})`).join(', ').trim()
         }
@@ -302,7 +302,7 @@ export class Formatters {
         if (weapon.damage && weapon.damage.length) out += '[' + weapon.damage.map(dmg => dmg.override ? dmg.val : `${dmg.val}${getEmoji(dmg.type.toLowerCase())}`).join(' + ') + ']'
         out += '\n'
 
-        if (weapon.actions) {
+        if (weapon.actions && weapon.actions.length > 0) {
             out += 'This weapon grants the following actions:\n'
             weapon.actions.forEach(act => out += this.actionFormat(act))
         }
@@ -381,17 +381,17 @@ export class Formatters {
         if (weapon.on_hit) out += `On Hit: ${this.turndownService.turndown(weapon.on_hit)}\n`
         if (weapon.on_crit) out += `On Crit: ${this.turndownService.turndown(weapon.on_crit)}\n`
 
-        if (weapon.actions) {
+        if (weapon.actions && weapon.actions.length > 0) {
             out += 'This weapon grants the following actions:\n'
             weapon.actions.forEach(act => out += this.actionFormat(act))
         }
 
-        if (weapon.deployables) {
+        if (weapon.deployables && weapon.deployables.length > 0) {
             out += 'This weapon grants the following deployables:\n'
             weapon.deployables.forEach(dep => out += this.deployableFormatter(dep))
         }
 
-        if (weapon.profiles) {
+        if (weapon.profiles && weapon.profiles.length > 0) {
             weapon.profiles.forEach(profile =>
                 out += `Profile: ${this.weaponProfileFormat(this.weaponProfile(weapon, profile))} \n`)
         }
@@ -417,12 +417,12 @@ export class Formatters {
         if (weapon.on_hit) out += `On Hit: ${this.turndownService.turndown(weapon.on_hit)}\n`
         if (weapon.on_crit) out += `On Crit: ${this.turndownService.turndown(weapon.on_crit)}\n`
 
-        if (weapon.actions) {
+        if (weapon.actions && weapon.actions.length > 0) {
             out += 'This weapon grants the following actions:\n'
             weapon.actions.forEach(act => out += this.actionFormat(act))
         }
 
-        if (weapon.deployables) {
+        if (weapon.deployables && weapon.deployables.length > 0) {
             out += 'This weapon grants the following deployables:\n'
             weapon.deployables.forEach(dep => out += this.deployableFormatter(dep))
         }
