@@ -33,7 +33,7 @@ import {
 } from "./format-utility";
 import {isSearchableSystem, isSearchableWeapon} from "./typechecks";
 
-type PrintableWeaponProfile = IWeaponProfile & { mount: string, type: string }
+type PrintableWeaponProfile = IWeaponProfile & { mount: string, type: string, data_type: string }
 
 // noinspection JSUnusedGlobalSymbols
 export class Formatters {
@@ -77,8 +77,9 @@ export class Formatters {
     private actionFormat(action: IActionData, customActionName?: string) {
         let activationType = `${pilotMechActionType(action)}${activationFormat(action.activation)}`
 
-        if (action.frequency)
+        if (action.frequency) {
             activationType += `, *${action.frequency}*`
+        }
 
         const actionName = action.name || customActionName || 'Unnamed Action'
         let out = `**${actionName}** (${activationType})\n`
@@ -123,7 +124,9 @@ export class Formatters {
         } else {
             out += this.turndownService.turndown(trait.description)
         }
-        if (trait.integrated) out += this.integratedFormat(trait.integrated)
+        if (trait.integrated) {
+            out += this.integratedFormat(trait.integrated)
+        }
         return out.trim();
     }
 
@@ -236,7 +239,7 @@ export class Formatters {
 
     public modFormat(mod: SearchableMod) {
         let out = `**${mod.name}** (${licenseFormat(mod)} Mod)${formatContentPack(mod)}\n${mod.sp} SP`
-        if (mod.tags) {
+        if (mod.tags && mod.tags.length > 0) {
             out += `, ${mod.tags.map(tag => this.populateTag(tag)).join(', ').trim()}\n`;
         } else {
             out += '\n'
@@ -265,13 +268,12 @@ export class Formatters {
 
     public pilotArmorFormat(parmor: SearchablePilotArmor) {
         let out = `**${parmor.name}** (Pilot Armor)${formatContentPack(parmor)}\n`
-        if (parmor.bonuses) {
-            for (const bonus_indx in parmor.bonuses) {
-                const bonus = parmor.bonuses[bonus_indx]
+        if (parmor.bonuses && parmor.bonuses.length > 0) {
+            parmor.bonuses.forEach((bonus) => {
                 let bonus_name = bonus.id.replace("_", " ")
                 bonus_name = toTitleCase(bonus_name)
                 out += `**${bonus_name}:** ${bonus.val}, `
-            }
+            })
             out = out.replace(/,\s*$/, "")
             out += '\n'
         }
@@ -295,11 +297,17 @@ export class Formatters {
     public pilotWeaponFormat(weapon: SearchablePilotWeapon): string {
         let out = `**${weapon.name}${formatContentPack(weapon)}**`
         let tagsEtc = [`-- ${weapon.type || '--'}`]
-        if (weapon.tags) tagsEtc = tagsEtc.concat(weapon.tags.map(tag => this.populateTag(tag)))
+        if (weapon.tags) {
+            tagsEtc = tagsEtc.concat(weapon.tags.map(tag => this.populateTag(tag)))
+        }
         out += `\n${tagsEtc.join(', ')}\n`
 
-        if (weapon.range && weapon.range.length) out += '[' + weapon.range.map(r => r.override ? r.val : `${getEmoji(r.type.toLowerCase())} ${r.val}`).join(', ') + '] '
-        if (weapon.damage && weapon.damage.length) out += '[' + weapon.damage.map(dmg => dmg.override ? dmg.val : `${dmg.val}${getEmoji(dmg.type.toLowerCase())}`).join(' + ') + ']'
+        if (weapon.range && weapon.range.length) {
+            out += '[' + weapon.range.map(r => r.override ? r.val : `${getEmoji(r.type.toLowerCase())} ${r.val}`).join(', ') + '] '
+        }
+        if (weapon.damage && weapon.damage.length) {
+            out += '[' + weapon.damage.map(dmg => dmg.override ? dmg.val : `${dmg.val}${getEmoji(dmg.type.toLowerCase())}`).join(' + ') + ']'
+        }
         out += '\n'
 
         if (weapon.actions && weapon.actions.length > 0) {
@@ -307,7 +315,7 @@ export class Formatters {
             weapon.actions.forEach(act => out += this.actionFormat(act))
         }
 
-        if (weapon.deployables) {
+        if (weapon.deployables && weapon.deployables.length > 0) {
             out += 'This weapon grants the following deployables:\n'
             weapon.deployables.forEach(dep => out += this.deployableFormatter(dep))
         }
@@ -323,22 +331,29 @@ export class Formatters {
         return `**${object.name}** (${object.type})${formatContentPack(object)}\n${this.turndownService.turndown(object.effects)}`
     }
 
-
     public systemFormat(system: SearchableSystem) {
         let out = `**${system.name}** (${licenseFormat(system)} ${system.data_type || system.type || ''})${formatContentPack(system)}\n`
         let tagsEtc = []
-        if (system.sp) tagsEtc.push(`${system.sp} SP`)
-        if (system.tags) tagsEtc = tagsEtc.concat(system.tags.map(tag => this.populateTag(tag)))
-        out += `${tagsEtc.join(', ')}\n`
-        if (system.effect) out += `${this.turndownService.turndown(system.effect)}\n`
-        if (system.actions) {
+
+        if (system.sp) {
+            tagsEtc.push(`${system.sp} SP`)
+        }
+        if (system.tags && system.tags.length > 0) {
+            tagsEtc = tagsEtc.concat(system.tags.map(tag => this.populateTag(tag)))
+            out += `${tagsEtc.join(', ')}\n`
+        }
+        if (system.effect) {
+            out += `${this.turndownService.turndown(system.effect)}\n`
+        }
+        if (system.actions && system.actions.length > 0) {
             out += `Gain the following actions:\n`
             system.actions.forEach(action => {
                 out += (action.name ? this.actionFormat(action) : this.actionFormat(action, "Use " + system.name)) + "\n"
             })
         }
-        if (system.deployables) {
-            out += `Gain the following deployables:\n${system.deployables.map(dep => this.deployableFormatter(dep)).join('\n')}\n`
+        if (system.deployables && system.deployables.length > 0) {
+            out += `Gain the following deployables:\n`
+            out += `${system.deployables.map(dep => this.deployableFormatter(dep)).join('\n')}\n`
         }
         return out
     }
@@ -360,26 +375,44 @@ export class Formatters {
         return out;
     }
 
-    public weaponFormat(weapon: SearchableWeapon): string {
+    public weaponFormat(weapon: SearchableWeapon | PrintableWeaponProfile): string {
         let out = `**${weapon.name}**`
-        if (weapon.id && !weapon.id.endsWith('_integrated')) {
-            out += ` (${[licenseFormat(weapon), weapon.data_type].join(' ').trim()})`
+        if (this.isNotWeaponProfile(weapon)) {
+            if (weapon.id && !weapon.id.endsWith('_integrated')) {
+                out += ` (${[licenseFormat(weapon), weapon.data_type].join(' ').trim()})`
+            }
+            out += `${formatContentPack(weapon)}`
         }
-        out += `${formatContentPack(weapon)}`
 
         let tagsEtc = [`${weapon.mount || '--'} ${weapon.type || '--'}`]
-        if (weapon.sp) tagsEtc.push(`${weapon.sp} SP`)
-        if (weapon.tags) tagsEtc = tagsEtc.concat(weapon.tags.map(tag => this.populateTag(tag)))
+        if (this.isNotWeaponProfile(weapon) && weapon.sp) {
+            tagsEtc.push(`${weapon.sp} SP`)
+        }
+        if (weapon.tags) {
+            tagsEtc = tagsEtc.concat(weapon.tags.map(tag => this.populateTag(tag)))
+        }
         out += `\n${tagsEtc.join(', ')}\n`
 
-        if (weapon.range && weapon.range.length) out += '[' + weapon.range.map(r => r.override ? r.val : `${getEmoji(r.type.toLowerCase())} ${r.val}`).join(', ') + '] '
-        if (weapon.damage && weapon.damage.length) out += '[' + weapon.damage.map(dmg => dmg.override ? dmg.val : `${dmg.val}${getEmoji(dmg.type.toLowerCase())}`).join(' + ') + ']'
+        if (weapon.range && weapon.range.length) {
+            out += '[' + weapon.range.map(r => r.override ? r.val : `${getEmoji(r.type.toLowerCase())} ${r.val}`).join(', ') + '] '
+        }
+        if (weapon.damage && weapon.damage.length) {
+            out += '[' + weapon.damage.map(dmg => dmg.override ? dmg.val : `${dmg.val}${getEmoji(dmg.type.toLowerCase())}`).join(' + ') + ']'
+        }
         out += '\n'
 
-        if (weapon.effect) out += this.turndownService.turndown(weapon.effect) + "\n"
-        if (weapon.on_attack) out += `On Attack: ${this.turndownService.turndown(weapon.on_attack)}\n`
-        if (weapon.on_hit) out += `On Hit: ${this.turndownService.turndown(weapon.on_hit)}\n`
-        if (weapon.on_crit) out += `On Crit: ${this.turndownService.turndown(weapon.on_crit)}\n`
+        if (weapon.effect) {
+            out += this.turndownService.turndown(weapon.effect) + "\n"
+        }
+        if (weapon.on_attack) {
+            out += `On Attack: ${this.turndownService.turndown(weapon.on_attack)}\n`
+        }
+        if (weapon.on_hit) {
+            out += `On Hit: ${this.turndownService.turndown(weapon.on_hit)}\n`
+        }
+        if (weapon.on_crit) {
+            out += `On Crit: ${this.turndownService.turndown(weapon.on_crit)}\n`
+        }
 
         if (weapon.actions && weapon.actions.length > 0) {
             out += 'This weapon grants the following actions:\n'
@@ -391,41 +424,20 @@ export class Formatters {
             weapon.deployables.forEach(dep => out += this.deployableFormatter(dep))
         }
 
-        if (weapon.profiles && weapon.profiles.length > 0) {
-            weapon.profiles.forEach(profile =>
-                out += `Profile: ${this.weaponProfileFormat(this.weaponProfile(weapon, profile))} \n`)
+        if (this.isNotWeaponProfile(weapon)) {
+            if (weapon.profiles && weapon.profiles.length > 0) {
+                weapon.profiles.forEach(profile =>
+                    out += `Profile: ${this.weaponFormat(this.weaponProfile(weapon, profile))} \n`)
+            }
         }
         return out
     }
 
     private weaponProfile(weapon: SearchableWeapon, profile: IWeaponProfile): PrintableWeaponProfile {
-        return ({mount: weapon.mount, type: weapon.type, ...profile})
+        return ({data_type: "Weapon Profile", mount: weapon.mount, type: weapon.type, ...profile})
     }
 
-    private weaponProfileFormat(weapon: PrintableWeaponProfile): string {
-        let out = `**${weapon.name}**`
-        let tagsEtc = [`${weapon.mount} ${weapon.type}`]
-        if (weapon.tags) tagsEtc = tagsEtc.concat(weapon.tags.map(tag => this.populateTag(tag)))
-        out += `\n${tagsEtc.join(', ')}\n`
-
-        if (weapon.range && weapon.range.length) out += '[' + weapon.range.map(r => r.override ? r.val : `${getEmoji(r.type.toLowerCase())} ${r.val}`).join(', ') + '] '
-        if (weapon.damage && weapon.damage.length) out += '[' + weapon.damage.map(dmg => dmg.override ? dmg.val : `${dmg.val}${getEmoji(dmg.type.toLowerCase())}`).join(' + ') + ']'
-        out += '\n'
-
-        if (weapon.effect) out += this.turndownService.turndown(weapon.effect) + "\n"
-        if (weapon.on_attack) out += `On Attack: ${this.turndownService.turndown(weapon.on_attack)}\n`
-        if (weapon.on_hit) out += `On Hit: ${this.turndownService.turndown(weapon.on_hit)}\n`
-        if (weapon.on_crit) out += `On Crit: ${this.turndownService.turndown(weapon.on_crit)}\n`
-
-        if (weapon.actions && weapon.actions.length > 0) {
-            out += 'This weapon grants the following actions:\n'
-            weapon.actions.forEach(act => out += this.actionFormat(act))
-        }
-
-        if (weapon.deployables && weapon.deployables.length > 0) {
-            out += 'This weapon grants the following deployables:\n'
-            weapon.deployables.forEach(dep => out += this.deployableFormatter(dep))
-        }
-        return out
+    private isNotWeaponProfile(weapon: SearchableWeapon | PrintableWeaponProfile): weapon is SearchableWeapon {
+        return (weapon.data_type == "Weapon")
     }
 }
