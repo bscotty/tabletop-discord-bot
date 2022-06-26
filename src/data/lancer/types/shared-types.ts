@@ -102,7 +102,6 @@ export type DamageType = string // "kinectic" | "explosive" | "energy" | "burn" 
 
 export type RangeType = string // "Threat" | "Range"
 
-export type TypedData = {
-    data_type: string
+export type LabeledContent = {
     content_pack: string
 }

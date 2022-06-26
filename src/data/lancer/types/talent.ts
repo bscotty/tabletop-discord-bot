@@ -9,6 +9,8 @@ export type Talent = {
     terse?: string // terse text used in short descriptions. The fewer characters the better
 }
 
+export type TypedTalent = Talent & { kind: "Talent" }
+
 export type IRankData = {
     name: string
     description: string // v-html

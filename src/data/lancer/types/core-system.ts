@@ -31,6 +31,8 @@ export type ICoreSystemData = {
     tags?: ITagData[]
 }
 
-export type SourcedCoreSystem = {
+export type SourcedCoreSystem = ICoreSystemData & {
     source: string
 }
+
+export type TypedCoreSystem = SourcedCoreSystem & { kind: "Core System" }

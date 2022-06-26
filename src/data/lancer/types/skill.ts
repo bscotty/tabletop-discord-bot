@@ -5,3 +5,5 @@ export type SkillTrigger = {
     detail: string // v-html
     family: string // "str" | "con" | "dex" | "int" | "cha"
 }
+
+export type TypedSkillTrigger = SkillTrigger & { kind: "Skill" }

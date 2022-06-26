@@ -22,6 +22,8 @@ export type PilotWeapon = {
     deployables?: IDeployableData[] // these are only available to UNMOUNTED pilots
 }
 
+export type TypedPilotWeapon = PilotWeapon & { kind: "Pilot Weapon" }
+
 export type PilotArmor = {
     id: string
     name: string // v-html
@@ -34,6 +36,8 @@ export type PilotArmor = {
     deployables?: IDeployableData[] // these are only available to UNMOUNTED pilots
 }
 
+export type TypedPilotArmor = PilotArmor & { kind: "Pilot Armor" }
+
 export type PilotGear = {
     id: string
     name: string // v-html
@@ -45,6 +49,8 @@ export type PilotGear = {
     synergies?: ISynergyData[]
     deployables?: IDeployableData[] // these are only available to UNMOUNTED pilots
 }
+
+export type TypedPilotGear = PilotGear & { kind: "Pilot Gear" }
 
 export function splitPilotItems(
     pilot_items_data: (PilotArmor | PilotGear | PilotWeapon)[]

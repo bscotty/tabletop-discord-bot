@@ -19,6 +19,8 @@ export type Frame = {
     y_pos?: number | string // ironleaf foundry's frames all have a string
 }
 
+export type TypedFrame = Frame & { kind: "Frame" }
+
 export type IFrameTraitData = {
     name: string
     description: string // v-html
@@ -55,7 +57,7 @@ export type IPrerequisite = {
     cumulative?: boolean
 }
 
-export function getCorePowersFromFrames(frames: Frame[]): (ICoreSystemData & SourcedCoreSystem)[] {
+export function getCorePowersFromFrames(frames: Frame[]): SourcedCoreSystem[] {
     return frames.map((frame: Frame) => ({
         source: `${frame.source} ${frame.name}`, ...frame.core_system
     }))

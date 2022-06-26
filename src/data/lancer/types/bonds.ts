@@ -7,6 +7,8 @@ export type Bond = {
     powers: BondPower[]
 }
 
+export type TypedBond = Bond & { kind: "Bond" }
+
 export type BondQuestion = {
     question: string
     options: string[]
@@ -21,12 +23,12 @@ export type BondPower = {
     master?: boolean
 }
 
-export type LabeledPower = BondPower & { power_name: string }
+export type LabeledBondPower = BondPower & { power_name: string }
 
-export function getPowersFromBonds(bonds: Bond[]): LabeledPower[] {
-    return bonds.map((bond: Bond) => {
-        return bond.powers.map(power => {
-            return ({...power, power_name: bond.name})
-        })
-    }).flat()
+export type TypedBondPower = LabeledBondPower & { kind: "Bond Power" }
+
+export function sourceBondPowers(bond: Bond): LabeledBondPower[] {
+    return bond.powers.map(power => {
+        return ({...power, power_name: bond.name})
+    })
 }

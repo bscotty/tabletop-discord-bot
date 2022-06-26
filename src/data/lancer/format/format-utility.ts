@@ -6,7 +6,6 @@ import {
     SearchableSystem,
     SearchableWeapon
 } from "../search/searchable";
-import {isSearchableFrame} from "./typechecks";
 import {ActivationType, IActionData} from "../types/shared-types";
 
 export function replaceVal(valString: string, replaceWith: string): string {
@@ -18,16 +17,15 @@ export function licenseFormat(object: SearchableFrame | SearchableMod | Searchab
         return `${object.source}`
     } else if (object.source.toUpperCase() === "EXOTIC") {
         return "Exotic"
-    } else if (!isSearchableFrame(object) && object.tags && object.tags.find(tag => tag.id === 'tg_exotic')) {
-        return "Exotic"
-    } else if (isSearchableFrame(object)) {
+    } else if (object.kind == "Frame") {
         return `${object.source} ${object.license_level}`
+    } else if (object.tags && object.tags.find(tag => tag.id === 'tg_exotic')) {
+        return "Exotic"
     } else {
         return `${object.source} ${object?.license} ${object.license_level}`
     }
 }
 
-// TODO Use this, especially with homebrew coming
 export function formatContentPack(data: SearchableData) {
     if (data.content_pack == "LANCER Core")
         return ""

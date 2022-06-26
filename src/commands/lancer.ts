@@ -1,6 +1,7 @@
 import {Discord, Slash, SlashOption} from "discordx";
 import {CommandInteraction} from "discord.js";
-import {LancerData, lancerDataReader} from "../data/lancer/lancer-data-reader";
+import {LancerData} from "../data/lancer/types/lancer-data";
+import {lancerDataReader} from "../data/lancer/lancer-data-reader";
 import {getCoreLcp} from "../data/lancer/lcp/core";
 import Searcher from "../data/searcher";
 import {Formatters} from "../data/lancer/format/formatters";

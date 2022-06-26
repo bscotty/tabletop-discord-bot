@@ -5,3 +5,5 @@ export type Tag = {
     hidden?: boolean
     filter_ignore?: boolean
 }
+
+export type TypedTag = Tag & { kind: "Tag" }

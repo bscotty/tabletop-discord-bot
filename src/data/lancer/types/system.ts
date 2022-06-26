@@ -28,3 +28,5 @@ export type System = {
     integrated?: string[]
     special_equipment?: string[]
 }
+
+export type TypedSystem = System & { kind: "System" }

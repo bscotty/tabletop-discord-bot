@@ -47,6 +47,8 @@ export type Weapon = {
     profiles?: IWeaponProfile[] //see note below
 }
 
+export type TypedWeapon = Weapon & { kind: "Weapon" }
+
 export type IWeaponProfile = {
     name: string
     effect?: string

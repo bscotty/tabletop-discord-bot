@@ -14,3 +14,5 @@ export type Action = {
     ignore_used?: boolean
     heat_cost?: boolean
 }
+
+export type TypedAction = Action & { kind: "Action" }

@@ -6,3 +6,5 @@ export type StatusCondition = {
     terse?: string // prefer fewest characters
     exclusive?: string // "Mech" | "Pilot"
 }
+
+export type TypedStatus = StatusCondition & { kind: "Status" }

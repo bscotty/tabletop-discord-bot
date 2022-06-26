@@ -37,3 +37,5 @@ export type Mod = {
     integrated?: string[]
     special_equipment?: string[]
 }
+
+export type TypedMod = Mod & { kind: "Mod" }

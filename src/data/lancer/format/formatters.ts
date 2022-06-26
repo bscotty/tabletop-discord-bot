@@ -1,5 +1,5 @@
 import {IActionData, IDeployableData, ITagData, WeaponType} from "../types/shared-types";
-import {LancerData} from "../lancer-data-reader";
+import {LancerData} from "../types/lancer-data";
 import {
     SearchableAction,
     SearchableBond,
@@ -31,9 +31,6 @@ import {
     replaceVal,
     toTitleCase
 } from "./format-utility";
-import {isSearchableSystem, isSearchableWeapon} from "./typechecks";
-
-type PrintableWeaponProfile = IWeaponProfile & { mount: string, type: string, data_type: string }
 
 // noinspection JSUnusedGlobalSymbols
 export class Formatters {
@@ -63,9 +60,9 @@ export class Formatters {
         integrated.forEach(integrated_item_id => {
             const integrated_item = this.weapons.find(w => w.id === integrated_item_id) ||
                 this.systems.find(s => s.id === integrated_item_id)
-            if (integrated_item && isSearchableWeapon(integrated_item)) {
+            if (integrated_item && integrated_item.kind == "Weapon") {
                 out += this.weaponFormat(integrated_item)
-            } else if (integrated_item && isSearchableSystem(integrated_item)) {
+            } else if (integrated_item && integrated_item.kind == "System") {
                 out += this.systemFormat(integrated_item)
             } else {
                 console.log(`Couldn't find an integrated item with id ${integrated_item_id}`)
@@ -76,64 +73,61 @@ export class Formatters {
 
     private actionFormat(action: IActionData, customActionName?: string) {
         let activationType = `${pilotMechActionType(action)}${activationFormat(action.activation)}`
-
         if (action.frequency) {
             activationType += `, *${action.frequency}*`
         }
-
         const actionName = action.name || customActionName || 'Unnamed Action'
-        let out = `**${actionName}** (${activationType})\n`
-
-        if (action.trigger)
-            out += `*Trigger:* ${this.turndownService.turndown(action.trigger)}\n`
-        out += `${action.trigger ? "*Effect:* " : ""}${this.turndownService.turndown(action.detail)}\n`
-        return out;
+        const activationTrigger = action.trigger ? `*Trigger:* ${this.turndownService.turndown(action.trigger)}\n*Effect:* ` : ""
+        const activationDetail = this.turndownService.turndown(action.detail)
+        return `**${actionName}** (${activationType})\n${activationTrigger}${activationTrigger}${activationDetail}\n`;
     }
 
     private deployableFormatter(dep: IDeployableData) {
-        let out = `**${dep.name}** (${dep.type})\n`
-
-        out += `Deployment: ${activationFormat(dep.activation || "Quick Action")}`
-        out += `${dep.recall ? ", Recall: " + activationFormat(dep.recall) : ''}${dep.redeploy ? ", Redeploy: " + activationFormat(dep.redeploy) : ''}`
-        out += "\n"
-
-        if (dep.type.includes('Drone')) { //includes type: "OROCHI Drone"
-            //Default stats for drones.
-            out += `Size: ${dep.size || 1 / 2} HP: ${dep.hp || 5} Evasion: ${dep.evasion || 10}`
+        let deployable: string;
+        if (dep.type.includes("Drone")) {
+            deployable = `Size: ${dep.size || 1 / 2} HP: ${dep.hp || 5} Evasion: ${dep.evasion || 10}`
         } else {
-            //Portable bunker still has HP stats
-            //Default stats for other deployables, which would just be blank.
-            out += `${dep.size ? 'Size: ' + dep.size : ''} ${dep.hp ? 'HP: ' + dep.hp : ''} ${dep.evasion ? 'Evasion: ' + dep.evasion : ''}`
+            deployable = `${dep.size ? 'Size: ' + dep.size : ''} ${dep.hp ? 'HP: ' + dep.hp : ''} ${dep.evasion ? 'Evasion: ' + dep.evasion : ''}`
         }
-        out += ` ${dep.edef ? "E-Defense: " + dep.edef : ''} ${dep.armor ? "Armor: " + dep.armor : ''} ${dep.heatcap ? "Heat Cap: " + dep.heatcap : ''}`
-        out += ` ${dep.speed ? "Speed: " + dep.speed : ''} ${dep.save ? "Save Target: " + dep.save : ''}\n`
 
-        out += `${this.turndownService.turndown(dep.detail)}\n`
-
+        let actions: string;
         if (dep.actions && dep.actions.length > 0) {
-            out += `This deployable grants the following actions:\n`
-            dep.actions.forEach(act => out += `${this.actionFormat(act)}\n`)
+            actions = `This deployable grants the following actions:\n` +
+                dep.actions.map(act => this.actionFormat(act)).join("\n")
+        } else {
+            actions = ""
         }
-        return out;
+
+        return `**${dep.name}** (${dep.type})\n` +
+            `Deployment: ${activationFormat(dep.activation || "Quick Action")}` +
+            `${dep.recall ? ", Recall: " + activationFormat(dep.recall) : ''}` +
+            `${dep.redeploy ? ", Redeploy: " + activationFormat(dep.redeploy) : ''}\n` +
+            `${deployable}` +
+            ` ${dep.edef ? "E-Defense: " + dep.edef : ""} ${dep.armor ? "Armor: " + dep.armor : ""} ` +
+            `${dep.heatcap ? "Heat Cap: " + dep.heatcap : ""}` +
+            ` ${dep.speed ? "Speed: " + dep.speed : ""} ${dep.save ? "Save Target: " + dep.save : ""}\n` +
+            `${this.turndownService.turndown(dep.detail)}\n` +
+            `${actions}`
     }
 
     private traitFormatter(trait: IFrameTraitData) {
-        let out = `**${trait.name}:** `
+        let traitActions: string
         if (trait.actions && trait.actions.length > 0) {
-            trait.actions.forEach(act => out += this.actionFormat(act) + "\n")
+            traitActions = trait.actions.map(act => this.actionFormat(act)).join("\n")
         } else {
-            out += this.turndownService.turndown(trait.description)
+            traitActions = ""
         }
-        if (trait.integrated) {
-            out += this.integratedFormat(trait.integrated)
-        }
-        return out.trim();
+
+        let traitIntegration: string = trait.integrated ? `${this.integratedFormat(trait.integrated)}` : ""
+
+        return `**${trait.name}:**${traitActions}\n` +
+            `${this.turndownService.turndown(trait.description)}` +
+            traitIntegration
     }
 
-    public basicActionFormat(action: SearchableAction, customActionName?: string) {
+    public basicActionFormat(action: SearchableAction) {
         const actionType = `${pilotMechActionType(action)}${activationFormat(action.activation)}${formatContentPack(action)}`
-        const actionName = action.name || customActionName || 'Unnamed Action'
-        return `**${actionName}** (${actionType})\n${this.turndownService.turndown(action.detail)}`;
+        return `**${action.name}** (${actionType})\n${this.turndownService.turndown(action.detail)}`
     }
 
     public bondFormat(bond: SearchableBond): string {
@@ -185,39 +179,19 @@ export class Formatters {
     }
 
     public coreFormat(core: SearchableICoreSystemData) {
-        const coreName = core.name || core.passive_name || core.active_name
-        let out = `**${coreName}** (${core.source} CORE System)${formatContentPack(core)}\n`
+        const corePassiveName = core.passive_name ? `**Passive: ${core.passive_name}**\n` : ""
+        const corePassiveEffect = core.passive_effect ? `${this.turndownService.turndown(core.passive_effect)}\n` : ""
+        const corePassiveActions = core.passive_actions ? core.passive_actions.map((it) => this.actionFormat(it)).join("\n") + "\n" : ""
+        const coreIntegrated = core.integrated ? this.integratedFormat(core.integrated) : ""
+        const coreDeployables = core.deployables ? core.deployables.map(dep => this.deployableFormatter(dep)).join("\n") : ""
+        const coreTags = core.tags ? core.tags.map((it) => this.populateTag(it)).join("\n") : ""
+        const coreActiveName = core.active_name ? `**Active: ${core.active_name}** (Activation: ${activationFormat(core.activation)})\n${this.turndownService.turndown(core.active_effect)}` : ""
+        const coreActiveActions = core.active_actions ? core.active_actions.map((it) => this.actionFormat(it)).join("\n") : ""
 
-        if (core.passive_name) {
-            out += `**Passive: ${core.passive_name}**\n`
-        }
-        if (core.passive_effect) {
-            out += `${this.turndownService.turndown(core.passive_effect)}\n`
-        }
-        if (core.passive_actions) {
-            core.passive_actions.forEach(pa => out += `${this.actionFormat(pa)}\n`)
-        }
-
-        if (core.integrated) {
-            out += this.integratedFormat(core.integrated)
-        }
-        if (core.deployables) {
-            core.deployables.forEach(dep => out += this.deployableFormatter(dep))
-        }
-        if (core.tags) {
-            core.tags.forEach(t => out += this.populateTag(t))
-        }
-
-        if (core.active_name) {
-            out += `**Active: ${core.active_name}** `
-            out += `(Activation: ${activationFormat(core.activation)})\n`
-            out += `${this.turndownService.turndown(core.active_effect)}`
-        }
-        if (core.active_actions) {
-            core.active_actions.forEach(aa => out += `\n${this.actionFormat(aa)}`)
-        }
-
-        return out
+        return `**${core.name}** (${core.source} CORE System)${formatContentPack(core)}\n` +
+            corePassiveName + corePassiveEffect + corePassiveActions +
+            coreIntegrated + coreDeployables + coreTags +
+            coreActiveName + coreActiveActions
     }
 
     public frameFormat(frame: SearchableFrame) {
@@ -332,7 +306,7 @@ export class Formatters {
     }
 
     public systemFormat(system: SearchableSystem) {
-        let out = `**${system.name}** (${licenseFormat(system)} ${system.data_type || system.type || ''})${formatContentPack(system)}\n`
+        let out = `**${system.name}** (${licenseFormat(system)} ${system.kind})${formatContentPack(system)}\n`
         let tagsEtc = []
 
         if (system.sp) {
@@ -359,7 +333,7 @@ export class Formatters {
     }
 
     public tagFormat(object: SearchableTag) {
-        return `**${replaceVal(object.name, "X")}** (${object.data_type})${formatContentPack(object)}\n` +
+        return `**${replaceVal(object.name, "X")}** (${object.kind})${formatContentPack(object)}\n` +
             `  ${this.turndownService.turndown(replaceVal(object.description, "X"))}`
     }
 
@@ -377,15 +351,15 @@ export class Formatters {
 
     public weaponFormat(weapon: SearchableWeapon | PrintableWeaponProfile): string {
         let out = `**${weapon.name}**`
-        if (this.isNotWeaponProfile(weapon)) {
+        if (weapon.kind == "Weapon") {
             if (weapon.id && !weapon.id.endsWith('_integrated')) {
-                out += ` (${[licenseFormat(weapon), weapon.data_type].join(' ').trim()})`
+                out += ` (${[licenseFormat(weapon), weapon.kind].join(' ').trim()})`
             }
             out += `${formatContentPack(weapon)}`
         }
 
         let tagsEtc = [`${weapon.mount || '--'} ${weapon.type || '--'}`]
-        if (this.isNotWeaponProfile(weapon) && weapon.sp) {
+        if (weapon.kind == "Weapon" && weapon.sp) {
             tagsEtc.push(`${weapon.sp} SP`)
         }
         if (weapon.tags) {
@@ -424,20 +398,18 @@ export class Formatters {
             weapon.deployables.forEach(dep => out += this.deployableFormatter(dep))
         }
 
-        if (this.isNotWeaponProfile(weapon)) {
+        if (weapon.kind == "Weapon") {
             if (weapon.profiles && weapon.profiles.length > 0) {
                 weapon.profiles.forEach(profile =>
-                    out += `Profile: ${this.weaponFormat(this.weaponProfile(weapon, profile))} \n`)
+                    out += `Profile: ${this.weaponFormat(this.weaponProfile(weapon, profile))}\n`)
             }
         }
         return out
     }
 
     private weaponProfile(weapon: SearchableWeapon, profile: IWeaponProfile): PrintableWeaponProfile {
-        return ({data_type: "Weapon Profile", mount: weapon.mount, type: weapon.type, ...profile})
-    }
-
-    private isNotWeaponProfile(weapon: SearchableWeapon | PrintableWeaponProfile): weapon is SearchableWeapon {
-        return (weapon.data_type == "Weapon")
+        return ({kind: "Weapon Profile", mount: weapon.mount, type: weapon.type, ...profile})
     }
 }
+
+type PrintableWeaponProfile = IWeaponProfile & { mount: string, type: string, kind: "Weapon Profile" }

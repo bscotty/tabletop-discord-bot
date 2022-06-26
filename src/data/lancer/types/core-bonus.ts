@@ -15,3 +15,5 @@ export type CoreBonus = {
     integrated?: string[]
     special_equipment?: string[]
 }
+
+export type TypedCoreBonus = CoreBonus & { kind: "Core Bonus" }
