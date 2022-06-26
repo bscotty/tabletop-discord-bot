@@ -16,74 +16,28 @@ import {InfoManifest} from "./info";
 import {Bond} from "./bonds";
 
 export class Lcp {
-    actions: Action[]
-    background: Background[]
-    bonds: Bond[]
-    coreBonuses: CoreBonus[]
-    environments: Environment[]
-    factions: unknown[]
-    frames: Frame[]
-    glossary: GlossaryItem[]
-    info: InfoManifest
-    manufacturers: Manufacturer[]
-    mods: Mod[]
-    pilot_gear: PilotArmor[] | PilotGear[] | PilotWeapon[]
-    reserves: Reserve[]
-    rules?: Rules
-    sitreps: Sitrep[]
-    skills: SkillTrigger[]
-    statuses: StatusCondition[]
-    systems: System[]
-    tables?: Tables
-    tags: Tag[]
-    talents: Talent[]
-    weapons: Weapon[]
-
     constructor(
-        actions: Action[],
-        background: Background[],
-        bonds: Bond[],
-        coreBonuses: CoreBonus[],
-        environments: Environment[],
-        factions: unknown[],
-        frames: Frame[],
-        glossary: GlossaryItem[],
-        info: InfoManifest,
-        manufacturers: Manufacturer[],
-        mods: Mod[],
-        pilot_gear: PilotArmor[] | PilotGear[] | PilotWeapon[],
-        reserves: Reserve[],
-        rules: Rules | undefined,
-        sitreps: Sitrep[],
-        skills: SkillTrigger[],
-        statuses: StatusCondition[],
-        systems: System[],
-        tables: Tables | undefined,
-        tags: Tag[],
-        talents: Talent[],
-        weapons: Weapon[]) {
-
-        this.actions = actions
-        this.background = background
-        this.bonds = bonds
-        this.coreBonuses = coreBonuses
-        this.environments = environments
-        this.factions = factions
-        this.frames = frames
-        this.glossary = glossary
-        this.info = info
-        this.manufacturers = manufacturers
-        this.mods = mods
-        this.pilot_gear = pilot_gear
-        this.reserves = reserves
-        this.rules = rules
-        this.sitreps = sitreps
-        this.skills = skills
-        this.statuses = statuses
-        this.systems = systems
-        this.tables = tables
-        this.tags = tags
-        this.talents = talents
-        this.weapons = weapons
+        public readonly actions: Action[],
+        public readonly background: Background[],
+        public readonly bonds: Bond[],
+        public readonly coreBonuses: CoreBonus[],
+        public readonly environments: Environment[],
+        public readonly factions: unknown[],
+        public readonly frames: Frame[],
+        public readonly glossary: GlossaryItem[],
+        public readonly info: InfoManifest,
+        public readonly manufacturers: Manufacturer[],
+        public readonly mods: Mod[],
+        public readonly pilot_gear: PilotArmor[] | PilotGear[] | PilotWeapon[],
+        public readonly reserves: Reserve[],
+        public readonly rules: Rules | undefined,
+        public readonly sitreps: Sitrep[],
+        public readonly skills: SkillTrigger[],
+        public readonly statuses: StatusCondition[],
+        public readonly systems: System[],
+        public readonly tables: Tables | undefined,
+        public readonly tags: Tag[],
+        public readonly talents: Talent[],
+        public readonly weapons: Weapon[]) {
     }
 }

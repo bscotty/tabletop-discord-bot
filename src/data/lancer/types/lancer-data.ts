@@ -2,7 +2,8 @@ import {
     SearchableAction,
     SearchableBond,
     SearchableBondPower,
-    SearchableCoreBonus, SearchableData,
+    SearchableCoreBonus,
+    SearchableData,
     SearchableFrame,
     SearchableGlossaryItem,
     SearchableICoreSystemData,
@@ -19,64 +20,24 @@ import {
 } from "../search/searchable";
 
 export class LancerData {
-    actions: SearchableAction[]
-    bonds: SearchableBond[]
-    bondPowers: SearchableBondPower[]
-    coreBonuses: SearchableCoreBonus[]
-    coreSystems: SearchableICoreSystemData[]
-    frames: SearchableFrame[]
-    glossary: SearchableGlossaryItem[]
-    mods: SearchableMod[]
-    pilot_armor: SearchablePilotArmor[]
-    pilot_weapons: SearchablePilotWeapon[]
-    pilot_gear: SearchablePilotGear[]
-    skills: SearchableSkillTrigger[]
-    statuses: SearchableStatusCondition[]
-    systems: SearchableSystem[]
-    tags: SearchableTag[]
-    talents: SearchableTalent[]
-    weapons: SearchableWeapon[]
-
     constructor(
-        actions: SearchableAction[],
-        bonds: SearchableBond[],
-        bondPowers: SearchableBondPower[],
-        coreBonuses: SearchableCoreBonus[],
-        coreSystems: SearchableICoreSystemData[],
-        frames: SearchableFrame[],
-        glossary: SearchableGlossaryItem[],
-        mods: SearchableMod[],
-        pilot_armor: SearchablePilotArmor[],
-        pilot_gear: SearchablePilotGear[],
-        pilot_weapons: SearchablePilotWeapon[],
-        skills: SearchableSkillTrigger[],
-        statuses: SearchableStatusCondition[],
-        systems: SearchableSystem[],
-        tags: SearchableTag[],
-        talents: SearchableTalent[],
-        weapons: SearchableWeapon[]
-    ) {
-        this.actions = actions
-        this.coreBonuses = coreBonuses
-        this.bonds = bonds
-        this.bondPowers = bondPowers
-
-        this.coreSystems = coreSystems
-        this.frames = frames
-
-        this.glossary = glossary
-        this.mods = mods
-
-        this.pilot_armor = pilot_armor
-        this.pilot_gear = pilot_gear
-        this.pilot_weapons = pilot_weapons
-
-        this.skills = skills
-        this.statuses = statuses
-        this.systems = systems
-        this.tags = tags
-        this.talents = talents
-        this.weapons = weapons
+        public readonly actions: SearchableAction[],
+        public readonly bonds: SearchableBond[],
+        public readonly bondPowers: SearchableBondPower[],
+        public readonly coreBonuses: SearchableCoreBonus[],
+        public readonly coreSystems: SearchableICoreSystemData[],
+        public readonly frames: SearchableFrame[],
+        public readonly glossary: SearchableGlossaryItem[],
+        public readonly mods: SearchableMod[],
+        public readonly pilot_armor: SearchablePilotArmor[],
+        public readonly pilot_gear: SearchablePilotGear[],
+        public readonly pilot_weapons: SearchablePilotWeapon[],
+        public readonly skills: SearchableSkillTrigger[],
+        public readonly statuses: SearchableStatusCondition[],
+        public readonly systems: SearchableSystem[],
+        public readonly tags: SearchableTag[],
+        public readonly talents: SearchableTalent[],
+        public readonly weapons: SearchableWeapon[]) {
     }
 
     getAll(): SearchableData[] {
