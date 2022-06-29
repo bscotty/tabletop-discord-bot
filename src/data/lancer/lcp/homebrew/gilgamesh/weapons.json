@@ -7,7 +7,7 @@
     "license_level": 1,
     "description": "Harrison Armory's primary model Legionnaire heavy battle rifle is a mainstay of both regular and auxiliary Armory forces regardless of theater or world of origin, standardizing logistics and streamlining integration of foreign and local assets. Chambered in a high-caliber round with a variety of magazine options, the weapon is both inexpensive to print and easy to operate despite its size, and the integrated grenade launcher gives each operator enhanced breach and counter-defilade capabilities as needed, regardless of specialty.",
     "effect": "",
-    "on_attack": "",
+    "on_attack": "Choose to fire in battle rifle mode or grenade launcher mode. Only grenade launcher mode expends Limited charges, and you may use battle rifle mode even if you have no limited charges remaining.",
     "on_hit": "",
     "on_crit": "",
     "mount": "Heavy",
@@ -23,7 +23,12 @@
     "damage": [],
     "range": [],
     "sp": 0,
-    "tags": [],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
     "actions": [],
     "bonuses": [],
     "synergies": [],
@@ -36,7 +41,7 @@
         "name": "Battle Rifle",
         "description": "",
         "effect": "",
-        "on_attack": "",
+        "on_attack": "Choose to fire in battle rifle mode or grenade launcher mode. Only grenade launcher mode expends Limited charges, and you may use battle rifle mode even if you have no limited charges remaining.",
         "on_hit": "",
         "on_crit": "",
         "type": "Rifle",
@@ -66,7 +71,7 @@
         "name": "Grenade Launcher",
         "description": "",
         "effect": "The Grenade Launcher profile counts as a Main Launcher, rather than a Heavy Rifle.",
-        "on_attack": "",
+        "on_attack": "Choose to fire in battle rifle mode or grenade launcher mode. Only grenade launcher mode expends Limited charges, and you may use battle rifle mode even if you have no limited charges remaining.",
         "on_hit": "",
         "on_crit": "",
         "type": "Launcher",
@@ -97,10 +102,6 @@
         "tags": [
           {
             "id": "tg_arcing"
-          },
-          {
-            "id": "tg_limited",
-            "val": 2
           }
         ]
       }
@@ -113,9 +114,9 @@
     "license": "GILGAMESH",
     "license_level": 2,
     "description": "Available in a variety of designs extensively curated for maximum wide-reaching cultural appeal, the Armory's line of thermal blades are considered a status symbol among some Legionnaires, as well as a valuable close-quarters assault tool. Unpowered the blade is merely a conventional, if solidly designed, chassis-grade tactical melee weapon, but when the blade's internal power bank is discharged its surface is briefly enveloped in high-energy plasma. In addition to its own internal power supply, thermal blades can even accept limited coldcore draw through hard-cable or induction feeds.",
-    "effect": "You may attack with this weapon without expending charges, and whenever you would be forced to destroy a weapon due to critical damage or other effects, you may choose this<br>weapon to destroy even if it has no charges remaining.",
+    "effect": "You may attack with this weapon without expending charges, and whenever you would be forced to destroy a weapon due to critical damage or other effects, you may choose this weapon to destroy even if it has no charges remaining.",
     "on_attack": "",
-    "on_hit": "If you are in the Danger Zone you may expend a charge to to deal +1d6 energy bonus damage, or if you are not in the Danger Zone you may take 3 heat to expend a charge anyway.",
+    "on_hit": "If you are in the Danger Zone you may expend a charge to to deal +3 Heat, or if you are not in the Danger Zone you may take 3 heat to expend a charge anyway.",
     "on_crit": "",
     "mount": "Main",
     "type": "Melee",
@@ -134,27 +135,30 @@
       },
       {
         "type": "Heat",
-        "val": "2"
+        "val": 1
       }
     ],
     "range": [
       {
         "type": "Threat",
-        "val": "1"
+        "val": 1
       }
     ],
     "sp": 0,
     "tags": [
       {
         "id": "tg_limited",
-        "val": "2"
+        "val": 2
       },
       {
         "id": "tg_heat_self",
-        "val": "1"
+        "val": 1
       },
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_ap"
       }
     ],
     "actions": [],
