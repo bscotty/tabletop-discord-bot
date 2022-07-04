@@ -157,14 +157,13 @@ export default class LancerFormatter {
     private frameFormat(frame: SearchableFrame) {
         const {stats, core_system} = frame
         const coreName = core_system.name || core_system.passive_name || core_system.active_name
-        let out = `**${frame.source} ${frame.name}** - ${frame.mechtype.join('/')} Frame${formatContentPack(frame)}\n` +
+        return `**${frame.source} ${frame.name}** - ${frame.mechtype.join('/')} Frame${formatContentPack(frame)}\n` +
             `SIZE ${stats.size}, ARMOR ${stats.armor}, SAVE ${stats.save}, SENSOR ${stats.sensor_range}\n` +
             `HP ${stats.hp}, REPAIR CAP ${stats.repcap}        E-DEF ${stats.edef}, TECH ATTACK ${stats.tech_attack > 0 ? '+' : ''}${stats.tech_attack}, SP ${stats.sp}\n` +
             `EVASION ${stats.evasion}, SPEED ${stats.speed}        HEATCAP ${stats.heatcap}\n` +
-            `**Mounts:** ${frame.mounts.join(', ')}`
-        out += `\n${frame.traits.map(trait => this.traitFormatter(trait)).join('\n')}\n`
-        out += `CORE System: **${coreName}**`
-        return out
+            `**Mounts:** ${frame.mounts.join(', ')}\n` +
+            `${frame.traits.map(trait => this.traitFormatter(trait)).join('\n')}\n` +
+            `CORE System: **${coreName}**`
     }
 
     private glossaryFormat(glossaryEntry: SearchableGlossaryItem) {
@@ -172,60 +171,83 @@ export default class LancerFormatter {
     }
 
     private modFormat(mod: SearchableMod) {
-        let out = `**${mod.name}** (${licenseFormat(mod)} Mod)${formatContentPack(mod)}\n${mod.sp} SP`
+        let tagsFormat: string
         if (mod.tags && mod.tags.length > 0) {
-            out += `, ${mod.tags.map(tag => this.populateTag(tag)).join(', ').trim()}\n`;
+            tagsFormat = `, ${mod.tags.map(tag => this.populateTag(tag)).join(', ').trim()}\n`;
         } else {
-            out += '\n'
+            tagsFormat = '\n'
         }
-        let combined_types: WeaponType[] = []
-        let combined_sizes: WeaponType[] = []
+
+        let combinedTypes: WeaponType[] = []
         if (mod.allowed_types) {
-            combined_types = mod.allowed_types
+            combinedTypes = mod.allowed_types
             if (mod.restricted_types) {
-                combined_types = combined_types.filter(t => !mod.restricted_types.includes(t))
+                combinedTypes = combinedTypes.filter(t => !mod.restricted_types.includes(t))
             }
         }
+        let combinedTypesFormat: string
+        if (combinedTypes.length > 0) {
+            combinedTypesFormat = `Can be applied to these weapon types: ${combinedTypes.join(', ').trim()}\n`
+        } else {
+            combinedTypesFormat = ""
+        }
+
+        let combinedSizes: WeaponType[] = []
         if (mod.allowed_sizes) {
-            combined_sizes = mod.allowed_sizes
+            combinedSizes = mod.allowed_sizes
             if (mod.restricted_sizes) {
-                combined_sizes = combined_sizes.filter(s => !mod.restricted_sizes.includes(s))
+                combinedSizes = combinedSizes.filter(s => !mod.restricted_sizes.includes(s))
             }
         }
-        out += `${combined_types.length > 0 ? 'Can be applied to these weapon types: ' + combined_types.join(', ').trim() + "\n" : ''}`
-        out += `${combined_sizes.length > 0 ? 'Can be applied to these weapon sizes: ' + combined_sizes.join(', ').trim() + "\n" : ''}`
+        let combinedSizesFormat: string
+        if (combinedSizes.length > 0) {
+            combinedSizesFormat = `Can be applied to these weapon sizes: ${combinedSizes.join(', ').trim()}\n`
+        } else {
+            combinedSizesFormat = ""
+        }
 
-        out += `${this.turndownService.turndown(mod.effect)}`
+        const effect = `${this.turndownService.turndown(mod.effect)}`
 
-        return out
+        return `**${mod.name}** (${licenseFormat(mod)} Mod)${formatContentPack(mod)}\n${mod.sp} SP` +
+            tagsFormat + combinedTypesFormat + combinedSizesFormat + effect
     }
 
-    private pilotArmorFormat(parmor: SearchablePilotArmor) {
-        let out = `**${parmor.name}** (Pilot Armor)${formatContentPack(parmor)}\n`
-        if (parmor.bonuses && parmor.bonuses.length > 0) {
-            parmor.bonuses.forEach((bonus) => {
+    private pilotArmorFormat(pilotArmor: SearchablePilotArmor) {
+        let bonusesFormat: string
+        if (pilotArmor.bonuses && pilotArmor.bonuses.length > 0) {
+            bonusesFormat = pilotArmor.bonuses.map((bonus) => {
                 let bonus_name = bonus.id.replace("_", " ")
                 bonus_name = toTitleCase(bonus_name)
-                out += `**${bonus_name}:** ${bonus.val}, `
-            })
-            out = out.replace(/,\s*$/, "")
-            out += '\n'
+                return `**${bonus_name}:** ${bonus.val}, `
+            }).join("").replace(/,\s*$/, "") + "\n"
+        } else {
+            bonusesFormat = ""
         }
-        out += `${this.turndownService.turndown(parmor.description)}`
-        return out;
+
+        return `**${pilotArmor.name}** (Pilot Armor)${formatContentPack(pilotArmor)}\n` +
+            bonusesFormat +
+            `${this.turndownService.turndown(pilotArmor.description)}`
     }
 
-    private pilotGearFormat(pgear: SearchablePilotGear) {
-        let out = `**${pgear.name}** (Pilot Gear)${formatContentPack(pgear)}\n`
-        if (pgear.tags) {
-            out += pgear.tags.map(tag => this.populateTag(tag)).join(', ').trim() + "\n"
+    private pilotGearFormat(pilotGear: SearchablePilotGear) {
+        let tagsFormat: string
+        if (pilotGear.tags) {
+            tagsFormat = pilotGear.tags.map(tag => this.populateTag(tag)).join(', ').trim() + "\n"
+        } else {
+            tagsFormat = ""
         }
-        out += this.turndownService.turndown(pgear.description) + "\n"
-        if (pgear.actions && pgear.actions.length > 0) {
-            out += 'This pilot gear grants the following actions:\n'
-            out += pgear.actions.map(action => `${action.name} (${action.activation})`).join(', ').trim()
+
+        let actionsFormat: string
+        if (pilotGear.actions && pilotGear.actions.length > 0) {
+            actionsFormat = "This pilot gear grants the following actions:\n" +
+                pilotGear.actions.map(action => `${action.name} (${action.activation})`).join(', ').trim()
+        } else {
+            actionsFormat = ""
         }
-        return out;
+
+        return `**${pilotGear.name}** (Pilot Gear)${formatContentPack(pilotGear)}\n` +
+            tagsFormat + this.turndownService.turndown(pilotGear.description) + "\n" +
+            actionsFormat
     }
 
     private pilotWeaponFormat(weapon: SearchablePilotWeapon): string {
