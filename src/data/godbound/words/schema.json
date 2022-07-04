@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Gift Name",
+    "type": "divineGift",
+    "data": {
+      "word": "Word Name",
+      "description": "Gift Description",
+      "greater": false
+    }
+  },
+  {
+    "name": "Word Name",
+    "type": "boundWord",
+    "data": {
+      "description": "Word Description",
+      "pdfCode": "PDF Code",
+      "pdfPage": 0
+    }
+  },
+  {
+    "name": "Invocation Name",
+    "type": "divineInvocation",
+    "data": {
+      "word": "Word Name",
+      "description": "Invocation Description"
+    }
+  }
+]
