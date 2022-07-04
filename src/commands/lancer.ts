@@ -1,31 +1,30 @@
 import {Discord, Slash, SlashOption} from "discordx";
 import {CommandInteraction} from "discord.js";
-import {LancerData} from "../data/lancer/types/lancer-data";
-import {lancerDataReader} from "../data/lancer/lancer-data-reader";
-import {getCoreLcp} from "../data/lancer/lcp/core";
+import LancerData from "../data/lancer/types/lancer-data";
+import lancerDataReader from "../data/lancer/lancer-data-reader";
 import Searcher from "../data/searcher";
-import {Formatters} from "../data/lancer/format/formatters";
-import {format} from "../data/lancer/format/format";
-import {SearchableData} from "../data/lancer/search/searchable";
-import {Lcp} from "../data/lancer/types/lcp";
-import {getKtbLcp} from "../data/lancer/lcp/ktb";
-import {getLongRimLcp} from "../data/lancer/lcp/long-rim";
-import {getWallflowerLcp} from "../data/lancer/lcp/wallflower";
-import {getSolsticeRainData} from "../data/lancer/lcp/solstice-rain";
-import {getIronleafFoundryLcp} from "../data/lancer/lcp/homebrew/ironleaf-foundry";
-import {getLiminalSpaceLcp} from "../data/lancer/lcp/homebrew/liminal-space";
-import {getMfecaneLcp} from "../data/lancer/lcp/homebrew/mfecane";
-import {getSciroccoLcp} from "../data/lancer/lcp/homebrew/scirocco";
-import {getSuldanLcp} from "../data/lancer/lcp/homebrew/suldan";
-import {getStolenCrownLcp} from "../data/lancer/lcp/homebrew/stolen-crown";
-import {getGilgameshLcp} from "../data/lancer/lcp/homebrew/gilgamesh";
+import LancerFormatter from "../data/lancer/format/lancerFormatter";
+import {SearchableData} from "../data/lancer/types/searchable";
+import Lcp from "../data/lancer/types/lcp";
+import getCoreLcp from "../data/lancer/lcp/core";
+import getKtbLcp from "../data/lancer/lcp/ktb";
+import getLongRimLcp from "../data/lancer/lcp/long-rim";
+import getWallflowerLcp from "../data/lancer/lcp/wallflower";
+import getSolsticeRainData from "../data/lancer/lcp/solstice-rain";
+import getIronleafFoundryLcp from "../data/lancer/lcp/homebrew/ironleaf-foundry";
+import getLiminalSpaceLcp from "../data/lancer/lcp/homebrew/liminal-space";
+import getMfecaneLcp from "../data/lancer/lcp/homebrew/mfecane";
+import getSciroccoLcp from "../data/lancer/lcp/homebrew/scirocco";
+import getSuldanLcp from "../data/lancer/lcp/homebrew/suldan";
+import getStolenCrownLcp from "../data/lancer/lcp/homebrew/stolen-crown";
+import getGilgameshLcp from "../data/lancer/lcp/homebrew/gilgamesh";
 
 @Discord()
 export class Lancer {
     private _lcpData: Lcp[]
     private _parsedData: LancerData[]
     private _searcher: Searcher<SearchableData>
-    private _formatter: Formatters
+    private _formatter: LancerFormatter
 
     private lcpData(): Lcp[] {
         if (!this._lcpData)
@@ -72,9 +71,9 @@ export class Lancer {
         return this._searcher
     }
 
-    private formatter(): Formatters {
+    private formatter(): LancerFormatter {
         if (!this._formatter)
-            this._formatter = new Formatters(this.sanitizedData())
+            this._formatter = new LancerFormatter(this.sanitizedData())
         return this._formatter
     }
 
@@ -86,9 +85,10 @@ export class Lancer {
         const result: (SearchableData | undefined) = this.searcher().search(term)
         if (result == undefined) {
             return interaction.reply(`I can't find anything for the term "${term}", sorry!`)
+                .catch((it) => console.error(it))
         }
 
-        const response = format(this.formatter(), result)
+        const response = this.formatter().format(result)
         if (response.length > 2000) {
             this.split(interaction, response)
                 .catch((it) => console.log(`error with split message: ${it}`))

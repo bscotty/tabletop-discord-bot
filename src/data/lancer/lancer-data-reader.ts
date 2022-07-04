@@ -1,5 +1,5 @@
 import {addAlternativeNames, AlternativelyNamed, SupportsAltName} from "./name-fixes";
-import {Lcp} from "./types/lcp";
+import Lcp from "./types/lcp";
 import {getCorePowersFromFrames, TypedFrame} from "./types/frame";
 import {splitPilotItems, TypedPilotArmor, TypedPilotGear, TypedPilotWeapon} from "./types/pilot";
 import {LabeledContent} from "./types/shared-types";
@@ -15,9 +15,9 @@ import {TypedTag} from "./types/tag";
 import {TypedTalent} from "./types/talent";
 import {TypedWeapon} from "./types/weapon";
 import {TypedCoreSystem} from "./types/core-system";
-import {LancerData} from "./types/lancer-data";
+import LancerData from "./types/lancer-data";
 
-export function lancerDataReader(lcp: Lcp): LancerData {
+export default function lancerDataReader(lcp: Lcp): LancerData {
     const typedActions: TypedAction[] = lcp.actions.map((it) => ({...it, kind: "Action"}))
 
     const typedBonds: TypedBond[] = lcp.bonds.map((it) => ({...it, kind: "Bond"}))
@@ -45,39 +45,27 @@ export function lancerDataReader(lcp: Lcp): LancerData {
     const typedWeapons: TypedWeapon[] = lcp.weapons.map((it) => ({...it, kind: "Weapon"}))
 
     return new LancerData(
-        filterTypeAndLabel(typedActions, lcp.info.name),
-        filterTypeAndLabel(typedBonds, lcp.info.name),
-        typeAndLabel(typedBondPowers, lcp.info.name),
-        filterTypeAndLabel(typedCoreBonuses, lcp.info.name),
-        typeAndLabel(typedCorePowers, lcp.info.name),
-        filterTypeAndLabel(typedFrames, lcp.info.name),
-        typeAndLabel(typedGlossary, lcp.info.name),
-        filterTypeAndLabel(typedMods, lcp.info.name),
-        filterTypeAndLabel(typedPilotArmor, lcp.info.name),
-        filterTypeAndLabel(typedPilotGear, lcp.info.name),
-        filterTypeAndLabel(typedPilotWeapons, lcp.info.name),
-        filterTypeAndLabel(typedSkills, lcp.info.name),
-        typeAndLabel(typedStatuses, lcp.info.name),
-        filterTypeAndLabel(typedSystems, lcp.info.name),
-        filterTypeAndLabel(typedTags, lcp.info.name),
-        filterTypeAndLabel(typedTalents, lcp.info.name),
-        filterTypeAndLabel(typedWeapons, lcp.info.name),
+        addLabelsAndAltNames(typedActions, lcp.info.name),
+        addLabelsAndAltNames(typedBonds, lcp.info.name),
+        addLabelsAndAltNames(typedBondPowers, lcp.info.name),
+        addLabelsAndAltNames(typedCoreBonuses, lcp.info.name),
+        addLabelsAndAltNames(typedCorePowers, lcp.info.name),
+        addLabelsAndAltNames(typedFrames, lcp.info.name),
+        addLabelsAndAltNames(typedGlossary, lcp.info.name),
+        addLabelsAndAltNames(typedMods, lcp.info.name),
+        addLabelsAndAltNames(typedPilotArmor, lcp.info.name),
+        addLabelsAndAltNames(typedPilotGear, lcp.info.name),
+        addLabelsAndAltNames(typedPilotWeapons, lcp.info.name),
+        addLabelsAndAltNames(typedSkills, lcp.info.name),
+        addLabelsAndAltNames(typedStatuses, lcp.info.name),
+        addLabelsAndAltNames(typedSystems, lcp.info.name),
+        addLabelsAndAltNames(typedTags, lcp.info.name),
+        addLabelsAndAltNames(typedTalents, lcp.info.name),
+        addLabelsAndAltNames(typedWeapons, lcp.info.name),
     )
 }
 
-function filterTypeAndLabel<T extends SupportsAltName & { id: string }>(
-    jsonBlob: T[],
-    lcpName: string
-): (T & LabeledContent & AlternativelyNamed)[] {
-    const filteredJson: T[] = filterMissing(jsonBlob)
-    return typeAndLabel<T>(filteredJson, lcpName)
-}
-
-function filterMissing<T extends { id: string }>(array: T[]): T[] {
-    return array.filter((entry) => !entry.id.startsWith("missing_"))
-}
-
-function typeAndLabel<T extends SupportsAltName>(
+function addLabelsAndAltNames<T extends SupportsAltName>(
     jsonBlob: T[],
     lcpName: string
 ): (T & LabeledContent & AlternativelyNamed)[] {

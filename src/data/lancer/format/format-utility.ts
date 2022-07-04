@@ -5,7 +5,7 @@ import {
     SearchableMod,
     SearchableSystem,
     SearchableWeapon
-} from "../search/searchable";
+} from "../types/searchable";
 import {ActivationType, IActionData} from "../types/shared-types";
 
 export function replaceVal(valString: string, replaceWith: string): string {

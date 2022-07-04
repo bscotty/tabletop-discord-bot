@@ -3,7 +3,7 @@ import {CoreBonus} from "./core-bonus";
 import {Frame} from "./frame";
 import {Action} from "./action";
 import {Mod} from "./mod";
-import {PilotArmor, PilotGear, PilotWeapon} from "./pilot";
+import {PilotItem} from "./pilot";
 import {SkillTrigger} from "./skill";
 import {StatusCondition} from "./status";
 import {System} from "./system";
@@ -15,7 +15,7 @@ import {GlossaryItem} from "./glossary";
 import {InfoManifest} from "./info";
 import {Bond} from "./bonds";
 
-export class Lcp {
+export default class Lcp {
     constructor(
         public readonly actions: Action[],
         public readonly background: Background[],
@@ -28,7 +28,7 @@ export class Lcp {
         public readonly info: InfoManifest,
         public readonly manufacturers: Manufacturer[],
         public readonly mods: Mod[],
-        public readonly pilot_gear: PilotArmor[] | PilotGear[] | PilotWeapon[],
+        public readonly pilot_gear: PilotItem[],
         public readonly reserves: Reserve[],
         public readonly rules: Rules | undefined,
         public readonly sitreps: Sitrep[],

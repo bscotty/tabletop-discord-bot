@@ -1,4 +1,3 @@
-// TODO: Probably a lot of issues here because of how fucked up they do these
 export type IActionData = {
     name?: string
     activation?: ActivationType // metalmark flash grenade doesn't have an activation
@@ -85,7 +84,6 @@ export type WeaponType = string // "Rifle" | "Cannon" | "Launcher" | "CQB" | "Ne
 
 export type WeaponSize = string // "Aux"| "Main"| "Heavy"| "Superheavy"
 
-// TODO: these were not listed, and will probably break
 export type IDamageData = {
     type?: string
     val: string | number

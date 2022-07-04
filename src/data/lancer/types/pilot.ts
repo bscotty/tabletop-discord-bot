@@ -52,8 +52,10 @@ export type PilotGear = {
 
 export type TypedPilotGear = PilotGear & { kind: "Pilot Gear" }
 
+export type PilotItem = PilotArmor | PilotGear | PilotWeapon
+
 export function splitPilotItems(
-    pilot_items_data: (PilotArmor | PilotGear | PilotWeapon)[]
+    pilot_items_data: PilotItem[]
 ): { armor: PilotArmor[], gear: PilotGear[], weapon: PilotWeapon[] } {
     const pilot_armor_data: PilotArmor[] = pilot_items_data
         .filter(isPilotArmor)
@@ -68,19 +70,19 @@ export function splitPilotItems(
 }
 
 function isPilotArmor(
-    item: PilotArmor | PilotGear | PilotWeapon
+    item: PilotItem
 ): item is PilotArmor {
     return item.type.toLowerCase() == "armor"
 }
 
 function isPilotGear(
-    item: PilotArmor | PilotGear | PilotWeapon
+    item: PilotItem
 ): item is PilotGear {
     return item.type.toLowerCase() == "gear"
 }
 
 function isPilotWeapon(
-    item: PilotArmor | PilotGear | PilotWeapon
+    item: PilotItem
 ): item is PilotWeapon {
     return item.type.toLowerCase() == "weapon"
 }

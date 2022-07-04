@@ -19,31 +19,35 @@ import tables from "./tables.json"
 import tags from "./tags.json"
 import talents from "./talents.json"
 import weapons from "./weapons.json"
-import {Lcp} from "../../types/lcp";
+import Lcp from "../../types/lcp";
 
-export function getCoreLcp(): Lcp {
+export default function getCoreLcp(): Lcp {
     return new Lcp(
         actions,
         background,
         [],
-        coreBonuses,
+        filterMissing(coreBonuses),
         environments,
         factions,
-        frames,
+        filterMissing(frames),
         glossary,
         info,
         manufacturers,
-        mods,
-        pilot_gear,
+        filterMissing(mods),
+        filterMissing(pilot_gear),
         reserves,
         rules,
         sitreps,
         skills,
         statuses,
-        systems,
+        filterMissing(systems),
         tables,
         tags,
         talents,
-        weapons
+        filterMissing(weapons)
     )
+}
+
+function filterMissing<T extends { id: string }>(array: T[]): T[] {
+    return array.filter((entry) => !entry.id.startsWith("missing_"))
 }

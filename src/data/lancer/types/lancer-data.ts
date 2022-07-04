@@ -17,9 +17,9 @@ import {
     SearchableTag,
     SearchableTalent,
     SearchableWeapon
-} from "../search/searchable";
+} from "./searchable";
 
-export class LancerData {
+export default class LancerData {
     constructor(
         public readonly actions: SearchableAction[],
         public readonly bonds: SearchableBond[],

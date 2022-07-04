@@ -1,19 +1,19 @@
-import {TypedAction} from "../types/action";
-import {LabeledContent} from "../types/shared-types";
+import {TypedAction} from "./action";
+import {LabeledContent} from "./shared-types";
 import {AlternativelyNamed} from "../name-fixes";
-import {TypedCoreBonus} from "../types/core-bonus";
-import {TypedCoreSystem} from "../types/core-system";
-import {TypedFrame} from "../types/frame";
-import {TypedGlossaryItem} from "../types/glossary";
-import {TypedMod} from "../types/mod";
-import {TypedPilotArmor, TypedPilotGear, TypedPilotWeapon} from "../types/pilot";
-import {TypedSkillTrigger} from "../types/skill";
-import {TypedStatus} from "../types/status";
-import {TypedSystem} from "../types/system";
-import {TypedTag} from "../types/tag";
-import {TypedTalent} from "../types/talent";
-import {TypedWeapon} from "../types/weapon";
-import {TypedBond, TypedBondPower} from "../types/bonds";
+import {TypedCoreBonus} from "./core-bonus";
+import {TypedCoreSystem} from "./core-system";
+import {TypedFrame} from "./frame";
+import {TypedGlossaryItem} from "./glossary";
+import {TypedMod} from "./mod";
+import {TypedPilotArmor, TypedPilotGear, TypedPilotWeapon} from "./pilot";
+import {TypedSkillTrigger} from "./skill";
+import {TypedStatus} from "./status";
+import {TypedSystem} from "./system";
+import {TypedTag} from "./tag";
+import {TypedTalent} from "./talent";
+import {TypedWeapon} from "./weapon";
+import {TypedBond, TypedBondPower} from "./bonds";
 
 export type SearchableAction = TypedAction & LabeledContent & AlternativelyNamed
 export type SearchableBond = TypedBond & LabeledContent & AlternativelyNamed

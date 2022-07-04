@@ -1,10 +1,11 @@
 import {IActionData, IDeployableData, ITagData, WeaponType} from "../types/shared-types";
-import {LancerData} from "../types/lancer-data";
+import LancerData from "../types/lancer-data";
 import {
     SearchableAction,
     SearchableBond,
     SearchableBondPower,
     SearchableCoreBonus,
+    SearchableData,
     SearchableFrame,
     SearchableGlossaryItem,
     SearchableICoreSystemData,
@@ -18,7 +19,7 @@ import {
     SearchableTag,
     SearchableTalent,
     SearchableWeapon
-} from "../search/searchable"
+} from "../types/searchable"
 import {IWeaponProfile} from "../types/weapon";
 import TurndownService from "turndown";
 import {IFrameTraitData} from "../types/frame";
@@ -32,8 +33,7 @@ import {
     toTitleCase
 } from "./format-utility";
 
-// noinspection JSUnusedGlobalSymbols
-export class Formatters {
+export default class LancerFormatter {
     private turndownService = new TurndownService()
     private weapons: SearchableWeapon[]
     private systems: SearchableSystem[]
@@ -45,92 +45,52 @@ export class Formatters {
         this.tags = data.map((it) => it.tags).flat()
     }
 
-    private populateTag(tag: ITagData): string {
-        const tagData = this.tags.find(t => t.id === tag.id)
-
-        if (tag.val !== undefined)
-            return replaceVal(tagData.name, `${tag.val}`) //For things like HEAT {VAL} Self
-        else
-            return tagData.name
-    }
-
-    private integratedFormat(integrated: string[]) {
-        let out = ""
-
-        integrated.forEach(integrated_item_id => {
-            const integrated_item = this.weapons.find(w => w.id === integrated_item_id) ||
-                this.systems.find(s => s.id === integrated_item_id)
-            if (integrated_item && integrated_item.kind == "Weapon") {
-                out += this.weaponFormat(integrated_item)
-            } else if (integrated_item && integrated_item.kind == "System") {
-                out += this.systemFormat(integrated_item)
-            } else {
-                console.log(`Couldn't find an integrated item with id ${integrated_item_id}`)
-            }
-        })
-        return out;
-    }
-
-    private actionFormat(action: IActionData, customActionName?: string) {
-        let activationType = `${pilotMechActionType(action)}${activationFormat(action.activation)}`
-        if (action.frequency) {
-            activationType += `, *${action.frequency}*`
+    public format(data: SearchableData): string {
+        console.log(`formatting ${data.name}`)
+        switch (data.kind) {
+            case "Action":
+                return this.basicActionFormat(data)
+            case "Bond":
+                return this.bondFormat(data)
+            case "Bond Power":
+                return this.bondPowerFormat(data)
+            case "Core Bonus":
+                return this.cbFormat(data)
+            case "Core System":
+                return this.coreFormat(data)
+            case "Frame":
+                return this.frameFormat(data)
+            case "Glossary":
+                return this.glossaryFormat(data)
+            case "Mod":
+                return this.modFormat(data)
+            case "Pilot Armor":
+                return this.pilotArmorFormat(data)
+            case "Pilot Gear":
+                return this.pilotGearFormat(data)
+            case "Pilot Weapon":
+                return this.pilotWeaponFormat(data)
+            case "Skill":
+                return this.skillFormat(data)
+            case "Status":
+                return this.statusFormat(data)
+            case "System":
+                return this.systemFormat(data)
+            case "Tag":
+                return this.tagFormat(data)
+            case "Talent":
+                return this.talentFormat(data)
+            case "Weapon":
+                return this.weaponFormat(data)
         }
-        const actionName = action.name || customActionName || 'Unnamed Action'
-        const activationTrigger = action.trigger ? `*Trigger:* ${this.turndownService.turndown(action.trigger)}\n*Effect:* ` : ""
-        const activationDetail = this.turndownService.turndown(action.detail)
-        return `**${actionName}** (${activationType})\n${activationTrigger}${activationTrigger}${activationDetail}\n`;
     }
 
-    private deployableFormatter(dep: IDeployableData) {
-        let deployable: string;
-        if (dep.type.includes("Drone")) {
-            deployable = `Size: ${dep.size || 1 / 2} HP: ${dep.hp || 5} Evasion: ${dep.evasion || 10}`
-        } else {
-            deployable = `${dep.size ? 'Size: ' + dep.size : ''} ${dep.hp ? 'HP: ' + dep.hp : ''} ${dep.evasion ? 'Evasion: ' + dep.evasion : ''}`
-        }
-
-        let actions: string;
-        if (dep.actions && dep.actions.length > 0) {
-            actions = `This deployable grants the following actions:\n` +
-                dep.actions.map(act => this.actionFormat(act)).join("\n")
-        } else {
-            actions = ""
-        }
-
-        return `**${dep.name}** (${dep.type})\n` +
-            `Deployment: ${activationFormat(dep.activation || "Quick Action")}` +
-            `${dep.recall ? ", Recall: " + activationFormat(dep.recall) : ''}` +
-            `${dep.redeploy ? ", Redeploy: " + activationFormat(dep.redeploy) : ''}\n` +
-            `${deployable}` +
-            ` ${dep.edef ? "E-Defense: " + dep.edef : ""} ${dep.armor ? "Armor: " + dep.armor : ""} ` +
-            `${dep.heatcap ? "Heat Cap: " + dep.heatcap : ""}` +
-            ` ${dep.speed ? "Speed: " + dep.speed : ""} ${dep.save ? "Save Target: " + dep.save : ""}\n` +
-            `${this.turndownService.turndown(dep.detail)}\n` +
-            `${actions}`
-    }
-
-    private traitFormatter(trait: IFrameTraitData) {
-        let traitActions: string
-        if (trait.actions && trait.actions.length > 0) {
-            traitActions = trait.actions.map(act => this.actionFormat(act)).join("\n")
-        } else {
-            traitActions = ""
-        }
-
-        let traitIntegration: string = trait.integrated ? `${this.integratedFormat(trait.integrated)}` : ""
-
-        return `**${trait.name}:**${traitActions}\n` +
-            `${this.turndownService.turndown(trait.description)}` +
-            traitIntegration
-    }
-
-    public basicActionFormat(action: SearchableAction) {
+    private basicActionFormat(action: SearchableAction) {
         const actionType = `${pilotMechActionType(action)}${activationFormat(action.activation)}${formatContentPack(action)}`
         return `**${action.name}** (${actionType})\n${this.turndownService.turndown(action.detail)}`
     }
 
-    public bondFormat(bond: SearchableBond): string {
+    private bondFormat(bond: SearchableBond): string {
         const questions = bond.questions.map((it) => {
             const options = it.options.map((option) => `> ${option}`).join("\n")
             return `*${it.question}*\n${options}`
@@ -142,7 +102,7 @@ export class Formatters {
             `**Questions:**\n${questions}`
     }
 
-    public bondPowerFormat(bondPower: SearchableBondPower): string {
+    private bondPowerFormat(bondPower: SearchableBondPower): string {
         let frequency: string
         if (bondPower.frequency != undefined) {
             frequency = ` (${bondPower.frequency})`
@@ -171,14 +131,14 @@ export class Formatters {
             `${prerequisite}${bondPower.description}`
     }
 
-    public cbFormat(cb: SearchableCoreBonus) {
+    private cbFormat(cb: SearchableCoreBonus) {
         let out = `**${cb.name}** (${cb.source} Core Bonus)${formatContentPack(cb)}\n` +
             `${this.turndownService.turndown(cb.effect)}\n`
         if (cb.integrated) out += this.integratedFormat(cb.integrated)
         return out
     }
 
-    public coreFormat(core: SearchableICoreSystemData) {
+    private coreFormat(core: SearchableICoreSystemData) {
         const corePassiveName = core.passive_name ? `**Passive: ${core.passive_name}**\n` : ""
         const corePassiveEffect = core.passive_effect ? `${this.turndownService.turndown(core.passive_effect)}\n` : ""
         const corePassiveActions = core.passive_actions ? core.passive_actions.map((it) => this.actionFormat(it)).join("\n") + "\n" : ""
@@ -194,7 +154,7 @@ export class Formatters {
             coreActiveName + coreActiveActions
     }
 
-    public frameFormat(frame: SearchableFrame) {
+    private frameFormat(frame: SearchableFrame) {
         const {stats, core_system} = frame
         const coreName = core_system.name || core_system.passive_name || core_system.active_name
         let out = `**${frame.source} ${frame.name}** - ${frame.mechtype.join('/')} Frame${formatContentPack(frame)}\n` +
@@ -207,11 +167,11 @@ export class Formatters {
         return out
     }
 
-    public glossaryFormat(glossaryEntry: SearchableGlossaryItem) {
+    private glossaryFormat(glossaryEntry: SearchableGlossaryItem) {
         return `**${glossaryEntry.name}${formatContentPack(glossaryEntry)}:** ${this.turndownService.turndown(glossaryEntry.description)}`
     }
 
-    public modFormat(mod: SearchableMod) {
+    private modFormat(mod: SearchableMod) {
         let out = `**${mod.name}** (${licenseFormat(mod)} Mod)${formatContentPack(mod)}\n${mod.sp} SP`
         if (mod.tags && mod.tags.length > 0) {
             out += `, ${mod.tags.map(tag => this.populateTag(tag)).join(', ').trim()}\n`;
@@ -240,7 +200,7 @@ export class Formatters {
         return out
     }
 
-    public pilotArmorFormat(parmor: SearchablePilotArmor) {
+    private pilotArmorFormat(parmor: SearchablePilotArmor) {
         let out = `**${parmor.name}** (Pilot Armor)${formatContentPack(parmor)}\n`
         if (parmor.bonuses && parmor.bonuses.length > 0) {
             parmor.bonuses.forEach((bonus) => {
@@ -255,7 +215,7 @@ export class Formatters {
         return out;
     }
 
-    public pilotGearFormat(pgear: SearchablePilotGear) {
+    private pilotGearFormat(pgear: SearchablePilotGear) {
         let out = `**${pgear.name}** (Pilot Gear)${formatContentPack(pgear)}\n`
         if (pgear.tags) {
             out += pgear.tags.map(tag => this.populateTag(tag)).join(', ').trim() + "\n"
@@ -268,7 +228,7 @@ export class Formatters {
         return out;
     }
 
-    public pilotWeaponFormat(weapon: SearchablePilotWeapon): string {
+    private pilotWeaponFormat(weapon: SearchablePilotWeapon): string {
         let out = `**${weapon.name}${formatContentPack(weapon)}**`
         let tagsEtc = [`-- ${weapon.type || '--'}`]
         if (weapon.tags) {
@@ -297,15 +257,15 @@ export class Formatters {
         return out
     }
 
-    public skillFormat(skill: SearchableSkillTrigger) {
+    private skillFormat(skill: SearchableSkillTrigger) {
         return `**${skill.name}** (Pilot Skill)${formatContentPack(skill)}\n${this.turndownService.turndown(skill.detail)}`
     }
 
-    public statusFormat(object: SearchableStatusCondition) {
+    private statusFormat(object: SearchableStatusCondition) {
         return `**${object.name}** (${object.type})${formatContentPack(object)}\n${this.turndownService.turndown(object.effects)}`
     }
 
-    public systemFormat(system: SearchableSystem) {
+    private systemFormat(system: SearchableSystem) {
         let out = `**${system.name}** (${licenseFormat(system)} ${system.kind})${formatContentPack(system)}\n`
         let tagsEtc = []
 
@@ -332,12 +292,12 @@ export class Formatters {
         return out
     }
 
-    public tagFormat(object: SearchableTag) {
+    private tagFormat(object: SearchableTag) {
         return `**${replaceVal(object.name, "X")}** (${object.kind})${formatContentPack(object)}\n` +
             `  ${this.turndownService.turndown(replaceVal(object.description, "X"))}`
     }
 
-    public talentFormat(talent: SearchableTalent) {
+    private talentFormat(talent: SearchableTalent) {
         let out = `**${talent.name}** - Talent${formatContentPack(talent)}\n`
         talent.ranks.forEach((rank, i) => {
             out += `${getEmoji(`rank_${(i + 1)}`)} **${rank.name}**:${this.turndownService.turndown(rank.description)}\n`
@@ -349,7 +309,7 @@ export class Formatters {
         return out;
     }
 
-    public weaponFormat(weapon: SearchableWeapon | PrintableWeaponProfile): string {
+    private weaponFormat(weapon: SearchableWeapon | PrintableWeaponProfile): string {
         let out = `**${weapon.name}**`
         if (weapon.kind == "Weapon") {
             if (weapon.id && !weapon.id.endsWith('_integrated')) {
@@ -408,7 +368,87 @@ export class Formatters {
     }
 
     private weaponProfile(weapon: SearchableWeapon, profile: IWeaponProfile): PrintableWeaponProfile {
-        return ({kind: "Weapon Profile", mount: weapon.mount, type: weapon.type, ...profile})
+        return ({...profile, kind: "Weapon Profile", mount: weapon.mount, type: weapon.type})
+    }
+
+    private populateTag(tag: ITagData): string {
+        const tagData = this.tags.find(t => t.id === tag.id)
+
+        if (tag.val !== undefined)
+            return replaceVal(tagData.name, `${tag.val}`) //For things like HEAT {VAL} Self
+        else
+            return tagData.name
+    }
+
+    private integratedFormat(integrated: string[]) {
+        let out = ""
+
+        integrated.forEach(integrated_item_id => {
+            const integrated_item = this.weapons.find(w => w.id === integrated_item_id) ||
+                this.systems.find(s => s.id === integrated_item_id)
+            if (integrated_item && integrated_item.kind == "Weapon") {
+                out += this.weaponFormat(integrated_item)
+            } else if (integrated_item && integrated_item.kind == "System") {
+                out += this.systemFormat(integrated_item)
+            } else {
+                console.log(`Couldn't find an integrated item with id ${integrated_item_id}`)
+            }
+        })
+        return out;
+    }
+
+    private actionFormat(action: IActionData, customActionName?: string) {
+        let activationType = `${pilotMechActionType(action)}${activationFormat(action.activation)}`
+        if (action.frequency) {
+            activationType += `, *${action.frequency}*`
+        }
+        const actionName = action.name || customActionName || 'Unnamed Action'
+        const activationTrigger = action.trigger ? `*Trigger:* ${this.turndownService.turndown(action.trigger)}\n*Effect:* ` : ""
+        const activationDetail = this.turndownService.turndown(action.detail)
+        return `**${actionName}** (${activationType})\n${activationTrigger}${activationTrigger}${activationDetail}\n`
+    }
+
+    private deployableFormatter(dep: IDeployableData) {
+        let deployable: string;
+        if (dep.type.includes("Drone")) {
+            deployable = `Size: ${dep.size || 1 / 2} HP: ${dep.hp || 5} Evasion: ${dep.evasion || 10}`
+        } else {
+            deployable = `${dep.size ? 'Size: ' + dep.size : ''} ${dep.hp ? 'HP: ' + dep.hp : ''} ${dep.evasion ? 'Evasion: ' + dep.evasion : ''}`
+        }
+
+        let actions: string;
+        if (dep.actions && dep.actions.length > 0) {
+            actions = `This deployable grants the following actions:\n` +
+                dep.actions.map(act => this.actionFormat(act)).join("\n")
+        } else {
+            actions = ""
+        }
+
+        return `**${dep.name}** (${dep.type})\n` +
+            `Deployment: ${activationFormat(dep.activation || "Quick Action")}` +
+            `${dep.recall ? ", Recall: " + activationFormat(dep.recall) : ''}` +
+            `${dep.redeploy ? ", Redeploy: " + activationFormat(dep.redeploy) : ''}\n` +
+            `${deployable}` +
+            ` ${dep.edef ? "E-Defense: " + dep.edef : ""} ${dep.armor ? "Armor: " + dep.armor : ""} ` +
+            `${dep.heatcap ? "Heat Cap: " + dep.heatcap : ""}` +
+            ` ${dep.speed ? "Speed: " + dep.speed : ""} ${dep.save ? "Save Target: " + dep.save : ""}\n` +
+            `${this.turndownService.turndown(dep.detail)}\n` +
+            `${actions}`
+    }
+
+    private traitFormatter(trait: IFrameTraitData) {
+        let traitActions: string
+        if (trait.actions && trait.actions.length > 0) {
+            traitActions = trait.actions.map(act => this.actionFormat(act)).join("\n")
+        } else {
+            traitActions = ""
+        }
+
+        let traitIntegration: string = trait.integrated ? `${this.integratedFormat(trait.integrated)}` : ""
+
+        return `**${trait.name}:**${traitActions}\n` +
+            `${this.turndownService.turndown(trait.description)}` +
+            traitIntegration
     }
 }
 
