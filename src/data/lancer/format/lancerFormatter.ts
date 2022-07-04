@@ -444,7 +444,7 @@ export default class LancerFormatter {
             traitActions = ""
         }
 
-        let traitIntegration: string = trait.integrated ? `${this.integratedFormat(trait.integrated)}` : ""
+        const traitIntegration: string = trait.integrated ? `${this.integratedFormat(trait.integrated)}` : ""
 
         return `**${trait.name}:**${traitActions}\n` +
             `${this.turndownService.turndown(trait.description)}` +
