@@ -1,19 +1,41 @@
 import {Discord, Slash, SlashOption} from "discordx";
 import {CommandInteraction} from "discord.js";
+import Searcher from "../data/searcher";
+import {getDictionary} from "../data/godbound/words";
+import {formatGodbound} from "../data/godbound/formatter";
+import {DivineItem} from "../data/godbound/divine-item";
 
 @Discord()
 export class Godbound {
+    private _searcher: Searcher<DivineItem>
+
+    private searcher(): Searcher<DivineItem> {
+        if (this._searcher == undefined) {
+            const dictionary = getDictionary()
+            const items = [...dictionary.words, ...dictionary.gifts, ...dictionary.invocations]
+            this._searcher = new Searcher(items, ["name"])
+        }
+        return this._searcher
+    }
+
     @Slash("godbound", {description: "Search for a Godbound search term"})
     public command(
         @SlashOption("term", {description: "what to search for"})
             term: string,
         interaction: CommandInteraction
     ) {
-        // compile all godbound json files
-        // parse the fields that we would match to the term
-        // have fuse.js search the fields for a match
-        // format the returned field for display
-        // respond to interaction with formatted field
-        interaction.reply("I can't do that yet.")
+        try {
+            console.log(`GODBOUND - received term: ${term}`)
+            const result = this.searcher().search(term)
+            if (result == undefined) {
+                interaction.reply(`Sorry, I can't find anything for **${term}**`)
+                    .catch((it) => console.error(it))
+            } else {
+                interaction.reply(formatGodbound(result))
+                    .catch((it) => console.error(it))
+            }
+        } catch (e) {
+            console.error(e)
+        }
     }
 }

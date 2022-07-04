@@ -1,7 +1,6 @@
 import staticAltNames from "./static-alt-names.json"
 import {IActionData, IDeployableData} from "./types/shared-types";
 import {IRankData} from "./types/talent";
-import {Bond} from "./types/bonds";
 import {SearchableBond} from "./search/searchable";
 
 class AltName {
