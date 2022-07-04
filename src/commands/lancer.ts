@@ -2,7 +2,7 @@ import {Discord, Slash, SlashOption} from "discordx";
 import {CommandInteraction} from "discord.js";
 import {LancerData, lancerDataReader} from "../data/lancer/lancer-data-reader";
 import {getCoreLcp} from "../data/lancer/lcp/core";
-import {Searcher} from "../data/lancer/search/searcher";
+import Searcher from "../data/searcher";
 import {Formatters} from "../data/lancer/format/formatters";
 import {format} from "../data/lancer/format/format";
 import {SearchableData} from "../data/lancer/search/searchable";
@@ -23,7 +23,7 @@ import {getGilgameshLcp} from "../data/lancer/lcp/homebrew/gilgamesh";
 export class Lancer {
     private _lcpData: Lcp[]
     private _parsedData: LancerData[]
-    private _searcher: Searcher
+    private _searcher: Searcher<SearchableData>
     private _formatter: Formatters
 
     private lcpData(): Lcp[] {
@@ -57,9 +57,17 @@ export class Lancer {
         return this._parsedData
     }
 
-    private searcher(): Searcher {
-        if (!this._searcher)
-            this._searcher = new Searcher(this.sanitizedData().map((it) => it.getAll()).flat())
+    private searcher(): Searcher<SearchableData> {
+        if (!this._searcher) {
+            const flattenedData = this.sanitizedData().map((it) => it.getAll()).flat()
+            const terms = [
+                "name",
+                "alt_names",
+                "active_name",
+                "passive_name"
+            ]
+            this._searcher = new Searcher(flattenedData, terms)
+        }
         return this._searcher
     }
 

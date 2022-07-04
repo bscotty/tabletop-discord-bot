@@ -1,20 +1,8 @@
 import {DivineGift} from "./divine-gift";
 import {DivineInvocation} from "./divine-invocation";
-import {DivineItem, GiftedDivineWord} from "./divine-dictionary";
+import {DivineItem, GiftedDivineWord, isGift, isInvocation, isWord} from "./divine-item";
 
 export function formatGodbound(item: DivineItem): string {
-    function isGift(divineItem: DivineItem): divineItem is DivineGift {
-        return divineItem.type == "divineGift"
-    }
-
-    function isWord(divineItem: DivineItem): divineItem is GiftedDivineWord {
-        return divineItem.type == "boundWord"
-    }
-
-    function isInvocation(divineItem: DivineItem): divineItem is DivineInvocation {
-        return divineItem.type == "divineInvocation"
-    }
-
     if (isGift(item)) {
         return formatGift(item)
     } else if (isWord(item)) {

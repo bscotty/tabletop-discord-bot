@@ -1,16 +1,19 @@
 import {Discord, Slash, SlashOption} from "discordx";
 import {CommandInteraction} from "discord.js";
-import {Searcher} from "../data/godbound/searcher";
+import Searcher from "../data/searcher";
 import {getDictionary} from "../data/godbound/words";
 import {formatGodbound} from "../data/godbound/formatter";
+import {DivineItem} from "../data/godbound/divine-item";
 
 @Discord()
 export class Godbound {
-    private _searcher: Searcher
+    private _searcher: Searcher<DivineItem>
 
-    private searcher(): Searcher {
+    private searcher(): Searcher<DivineItem> {
         if (this._searcher == undefined) {
-            this._searcher = new Searcher(getDictionary())
+            const dictionary = getDictionary()
+            const items = [...dictionary.words, ...dictionary.gifts, ...dictionary.invocations]
+            this._searcher = new Searcher(items, ["name"])
         }
         return this._searcher
     }
