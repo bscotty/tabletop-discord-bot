@@ -10,6 +10,7 @@ const emoji = {
     energy: "<:cc_damage_energy:683696632889737241>",
     burn: "<:cc_damage_burn:683696632642011187>",
     heat: "<:cc_damage_heat:683696632868503652>",
+    variable: "<:cc_damage_variable:683696632864571425>",
     rank_1: "<:cc_rank_1:683696633933987919>",
     rank_2: "<:cc_rank_2:683696633929793605>",
     rank_3: "<:cc_rank_3:683696634223132740>"
@@ -44,6 +45,8 @@ export function getEmoji(key: string): string {
         case "rank_2":
             return emoji[key]
         case "rank_3":
+            return emoji[key]
+        case "variable":
             return emoji[key]
         default:
             return `[can't find emoji ${key}`
