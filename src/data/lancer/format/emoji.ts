@@ -1,19 +1,19 @@
 const emoji = {
-    threat: "<:cc_threat:683696636156707002>",
-    range: "<:cc_range:683696633950634044>",
-    blast: "<:cc_aoe_blast:683697064814706689>",
-    burst: "<:cc_aoe_burst:683697065209233450>",
-    line: "<:cc_aoe_line:683696633065636033>",
-    cone: "<:cc_aoe_cone:683696632969035864>",
-    kinetic: "<:cc_damage_kinetic:683696633216499749>",
-    explosive: "<:cc_damage_explosive:683696633329877011>",
-    energy: "<:cc_damage_energy:683696632889737241>",
-    burn: "<:cc_damage_burn:683696632642011187>",
-    heat: "<:cc_damage_heat:683696632868503652>",
-    variable: "<:cc_damage_variable:683696632864571425>",
-    rank_1: "<:cc_rank_1:683696633933987919>",
-    rank_2: "<:cc_rank_2:683696633929793605>",
-    rank_3: "<:cc_rank_3:683696634223132740>"
+    threat: "<:cc_threat:1005575815062372382>",
+    range: "<:cc_range:1005575811044229170>",
+    blast: "<:cc_aoe_blast:1005575801292476557>",
+    burst: "<:cc_aoe_burst:1005575802399764531>",
+    line: "<:cc_aoe_line:1005575804945698917>",
+    cone: "<:cc_aoe_cone:1005575804001996851>",
+    kinetic: "<:cc_damage_kinetic:1005575809387466892>",
+    explosive: "<:cc_damage_explosive:1005575807755878470>",
+    energy: "<:cc_damage_energy:1005575806636015617>",
+    burn: "<:cc_damage_burn:1005576299110211584>",
+    heat: "<:cc_damage_heat:1005575808485691392>",
+    variable: "<:cc_damage_variable:1005575810180198400>",
+    rank_1: "<:cc_rank_1:1005575811958571049>",
+    rank_2: "<:cc_rank_2:1005575813002960936>",
+    rank_3: "<:cc_rank_3:1005575813804068945>"
 }
 
 export function getEmoji(key: string): string {
