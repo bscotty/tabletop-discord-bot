@@ -223,14 +223,13 @@ export class Formatters {
     public frameFormat(frame: SearchableFrame) {
         const {stats, core_system} = frame
         const coreName = core_system.name || core_system.passive_name || core_system.active_name
-        let out = `**${frame.source} ${frame.name}** - ${frame.mechtype.join('/')} Frame${formatContentPack(frame)}\n` +
+        return `**${frame.source} ${frame.name}** - ${frame.mechtype.join('/')} Frame${formatContentPack(frame)}\n` +
             `SIZE ${stats.size}, ARMOR ${stats.armor}, SAVE ${stats.save}, SENSOR ${stats.sensor_range}\n` +
             `HP ${stats.hp}, REPAIR CAP ${stats.repcap}        E-DEF ${stats.edef}, TECH ATTACK ${stats.tech_attack > 0 ? '+' : ''}${stats.tech_attack}, SP ${stats.sp}\n` +
             `EVASION ${stats.evasion}, SPEED ${stats.speed}        HEATCAP ${stats.heatcap}\n` +
             `**Mounts:** ${frame.mounts.join(', ')}` +
             `\n${frame.traits.map(trait => this.traitFormatter(trait, frame)).join('\n')}\n` +
             `CORE System: **${coreName}**`
-        return out
     }
 
     public glossaryFormat(glossaryEntry: SearchableGlossaryItem) {
