@@ -23,7 +23,15 @@ export function licenseFormat(object: SearchableFrame | SearchableMod | Searchab
     } else if (isSearchableFrame(object)) {
         return `${object.source} ${object.license_level}`
     } else {
-        return `${object.source} ${object?.license} ${object.license_level}`
+        let license = ""
+        if (object?.license) {
+            license = " " + object?.license
+        }
+        let license_level = ""
+        if (object?.license_level) {
+            license_level = " " + object?.license_level
+        }
+        return `${object.source}${license}${license_level}`
     }
 }
 
