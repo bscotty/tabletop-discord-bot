@@ -57,12 +57,15 @@ export class Formatters {
             return tagData.name
     }
 
-    private integratedFormat(integrated: string[]) {
+    private integratedFormat(integrated: string[], source: string) {
         let out = ""
 
         integrated.forEach(integrated_item_id => {
             const integrated_item = this.weapons.find(w => w.id === integrated_item_id) ||
                 this.systems.find(s => s.id === integrated_item_id)
+            if (!integrated_item.source) {
+                integrated_item.source = source
+            }
             if (integrated_item && isSearchableWeapon(integrated_item)) {
                 out += this.weaponFormat(integrated_item)
             } else if (integrated_item && isSearchableSystem(integrated_item)) {
@@ -116,14 +119,14 @@ export class Formatters {
         return out;
     }
 
-    private traitFormatter(trait: IFrameTraitData) {
+    private traitFormatter(trait: IFrameTraitData, frame: SearchableFrame) {
         let out = `**${trait.name}:** `
         if (trait.actions && trait.actions.length > 0) {
             trait.actions.forEach(act => out += this.actionFormat(act) + "\n")
         } else {
-            out += this.turndownService.turndown(trait.description)
+            out += this.turndownService.turndown(trait.description) + "\n"
         }
-        if (trait.integrated) out += this.integratedFormat(trait.integrated)
+        if (trait.integrated) out += this.integratedFormat(trait.integrated, frame.source)
         return out.trim();
     }
 
@@ -177,7 +180,7 @@ export class Formatters {
     public cbFormat(cb: SearchableCoreBonus) {
         let out = `**${cb.name}** (${cb.source} Core Bonus)${formatContentPack(cb)}\n` +
             `${this.turndownService.turndown(cb.effect)}\n`
-        if (cb.integrated) out += this.integratedFormat(cb.integrated)
+        if (cb.integrated) out += this.integratedFormat(cb.integrated, cb.source)
         return out
     }
 
@@ -196,7 +199,7 @@ export class Formatters {
         }
 
         if (core.integrated) {
-            out += this.integratedFormat(core.integrated)
+            out += this.integratedFormat(core.integrated, core.source)
         }
         if (core.deployables) {
             core.deployables.forEach(dep => out += this.deployableFormatter(dep))
@@ -224,9 +227,9 @@ export class Formatters {
             `SIZE ${stats.size}, ARMOR ${stats.armor}, SAVE ${stats.save}, SENSOR ${stats.sensor_range}\n` +
             `HP ${stats.hp}, REPAIR CAP ${stats.repcap}        E-DEF ${stats.edef}, TECH ATTACK ${stats.tech_attack > 0 ? '+' : ''}${stats.tech_attack}, SP ${stats.sp}\n` +
             `EVASION ${stats.evasion}, SPEED ${stats.speed}        HEATCAP ${stats.heatcap}\n` +
-            `**Mounts:** ${frame.mounts.join(', ')}`
-        out += `\n${frame.traits.map(trait => this.traitFormatter(trait)).join('\n')}\n`
-        out += `CORE System: **${coreName}**`
+            `**Mounts:** ${frame.mounts.join(', ')}` +
+            `\n${frame.traits.map(trait => this.traitFormatter(trait, frame)).join('\n')}\n` +
+            `CORE System: **${coreName}**`
         return out
     }
 
