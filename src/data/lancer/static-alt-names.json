@@ -167,5 +167,21 @@
   {
     "id": "ms_ayah_of_the_syzygy",
     "names": ["ayah of the syzygy"]
+  },
+  {
+    "id": "mw_exo_sting_heavy_anti_armor_rifle",
+    "names": ["sting"]
+  },
+  {
+    "id": "ms_h0r_os_system_upgrade_i",
+    "names": ["horos1"]
+  },
+  {
+    "id": "ms_h0r_os_system_upgrade_ii",
+    "names": ["horos2"]
+  },
+  {
+    "id": "ms_h0r_os_system_upgrade_iii",
+    "names": ["horos3"]
   }
 ]
