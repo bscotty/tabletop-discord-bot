@@ -57,8 +57,8 @@
     "license": "LILY",
     "license_level": 3,
     "description": "“If Aun had wanted you to live, he would not have created me!” -Echo Alpha, IF Test Pilot",
-    "effect": "This weapon can Overwatch Teleporting characters.",
-    "on_hit": "If the target has flown or teleported since the start of their last turn, this weapon deals +1d6 Bonus Damage.",
+    "effect": "This weapon can Overwatch characters teleporting or involuntarily moving, even though that would not normally provoke reactions, as long as the source of the movement is the target or a character allied to it.",
+    "on_hit": "If the target has flown or teleported before this attack since the start of their last turn, this hit becomes a critical hit.",
     "on_crit": "",
     "mount": "Heavy",
     "type": "CQB",
@@ -83,11 +83,15 @@
       },
       {
         "type": "Threat",
-        "val": "3"
+        "val": 3
       }
     ],
     "sp": 1,
-    "tags": [],
+    "tags": [
+      {
+        "id": "tg_smart"
+      }
+    ],
     "actions": [],
     "bonuses": [],
     "synergies": [],
@@ -1096,7 +1100,7 @@
       {
         "name": "Brrrt",
         "activation": "Reaction",
-        "detail": "You or an allied character within range 5 are targeted by a ranged attack.",
+        "detail": "<p>Make a contested ranged attack roll: if you win the contested roll, you can spend a charge from the Goalkeeper Vulcan to have the attack automatically miss. This attack roll gains <strong>+1 accuracy</strong> against attacks with the <strong>Arcing</strong> or <strong>Seeking</strong> tags.</p>",
         "cost": 0,
         "pilot": false,
         "damage": [],
@@ -1105,7 +1109,370 @@
         "tech_attack": false,
         "frequency": "1/round",
         "init": "",
-        "trigger": "Make a contested ranged attack roll: if you win the contested roll, you can spend a charge from the Goalkeeper Vulcan to have the attack automatically miss. This attack roll gains +1 accuracy against attacks with the Arcing or Seeking tags."
+        "trigger": "<p>You or an allied character within range 5 are targeted by a ranged attack.</p>"
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "mw_pulse_spear",
+    "name": "Pulse Spear",
+    "source": "IF",
+    "license": "SILVERSWORD",
+    "license_level": 1,
+    "description": "<p>Popular among security crews, Pulse Spears provide an excellent mix of flexibility and power to defenders allowing teams using them to dominate narrow chokepoints without being so unwieldy as to be difficult to use when the press of melee begins.</p>",
+    "effect": "",
+    "on_attack": "",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Main",
+    "type": "CQB",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "mw_luin_celtchair",
+    "name": "Lúin Celtchair",
+    "source": "IF",
+    "license": "SILVERSWORD",
+    "license_level": 3,
+    "description": "<p>A unique weapon even among Ironleaf Foundry's endless variety of artisanal weapons, each single-shot capacitor for this anti-tank energy lance is hand-crafted by the elite of the company's gunsmiths. This gives them unprecedented versatility, from scorching an entire area around the firer to ash or pushing the weapon to its limit to annihilate even the most armoured of targets. Unwilling to sell such prized creations for mere money, each holder has a unique contract drawn up for these powerful weapons. The one common point in every one of these contracts: The purchaser must publicly say, if asked, that Ironleaf Foundry makes better weapons than the Terrashima Enclaves.</p>",
+    "effect": "<p>As a protocol, you can change to one of the following Modes. The Mode continues until you change to a new Mode with this weapon. You start any given fight with one of the following Modes of your choice.</p>",
+    "on_attack": "",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Heavy",
+    "type": "Rifle",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [],
+    "range": [],
+    "sp": 2,
+    "tags": [],
+    "actions": [
+      {
+        "name": "Change Mode",
+        "activation": "Protocol",
+        "detail": "<p>Change this weapon's mode.</p>",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": [
+      {
+        "name": "Solar Flare",
+        "description": "",
+        "effect": "",
+        "on_attack": "",
+        "on_hit": "",
+        "on_crit": "",
+        "type": "",
+        "cost": 1,
+        "damage": [
+          {
+            "type": "Energy",
+            "val": 1
+          },
+          {
+            "type": "Burn",
+            "val": 5
+          }
+        ],
+        "range": [
+          {
+            "type": "Line",
+            "val": 8
+          }
+        ],
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "tags": []
+      },
+      {
+        "name": "Inferno Ring",
+        "description": "",
+        "effect": "<p>This weapon ignores the penalty for engagement.</p>",
+        "on_attack": "",
+        "on_hit": "",
+        "on_crit": "",
+        "type": "",
+        "cost": 1,
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "4"
+          }
+        ],
+        "range": [
+          {
+            "type": "Burst",
+            "val": 2
+          }
+        ],
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "tags": [
+          {
+            "id": "tg_knockback",
+            "val": 3
+          }
+        ]
+      },
+      {
+        "name": "Exorcism of Flame",
+        "description": "",
+        "effect": "",
+        "on_attack": "",
+        "on_hit": "<p>The target cannot make tech actions and smart weapon attacks beyond Range 3 until the end of their next turn.</p>",
+        "on_crit": "",
+        "type": "",
+        "cost": 1,
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 8
+          }
+        ],
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "tags": []
+      },
+      {
+        "name": "Fission Impeller",
+        "description": "",
+        "effect": "<p>This mode makes attacks as if it was superheavy.</p>",
+        "on_attack": "",
+        "on_hit": "<p>The target is Shredded until the end of their next turn. Objects instead suffer 50 AP energy damage.</p>",
+        "on_crit": "",
+        "type": "",
+        "cost": 1,
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "2d6+6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 8
+          }
+        ],
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "deployables": [],
+        "counters": [],
+        "integrated": [],
+        "special_equipment": [],
+        "tags": [
+          {
+            "id": "tg_ap"
+          },
+          {
+            "id": "tg_heat_self",
+            "val": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mw_transaxle_butterfly",
+    "name": "Transaxle Butterfly",
+    "source": "IF",
+    "license": "ROWAN",
+    "license_level": 1,
+    "description": "<p>Rapidly bouncing between foes and shattering concentration, transaxle butterflies made waves in their initial release, the spinning energy discs carving through mockery to prove that Ironleaf Foundry’s designs are never to be underestimated.</p>",
+    "effect": "<p>This weapon does not attack you or allied characters caught in the area.</p>",
+    "on_attack": "",
+    "on_hit": "<p>The target is unable to take Reactions, Protocols or Free Actions until the end of their next turn.</p>",
+    "on_crit": "",
+    "mount": "Main",
+    "type": "Nexus",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_knockback",
+        "val": 2
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": [],
+    "profiles": []
+  },
+  {
+    "id": "mw_starburst_spinner",
+    "name": "Starburst Spinner",
+    "source": "IF",
+    "license": "ROWAN",
+    "license_level": 2,
+    "description": "<p>The result of Ironleaf Foundry's work on exotic cultivated materials, the starburst spinner is a synthetic crystal with psychoresponsive properties easily directed to impact opponents at close range. With the aid of guiding wires to maintain connection, a starburst spinner can assault foes from many directions, driving them back with forceful impacts and crackling energy left in its wake.</p>",
+    "effect": "",
+    "on_attack": "<p>The nexus attacks a single target in the area and leaves a Starburst in any space in the area. While you have any Starbursts on the battlefield, you gain the Starburst Bind Quick Action.</p>",
+    "on_hit": "",
+    "on_crit": "",
+    "mount": "Heavy",
+    "type": "Nexus",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 8
+      }
+    ],
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_seeking"
+      },
+      {
+        "id": "tg_knockback",
+        "val": 3
+      }
+    ],
+    "actions": [
+      {
+        "name": "Starburst Bind",
+        "activation": "Quick",
+        "detail": "<p>Create a line between yourself and each of your Starbursts. All hostile characters in one or more affected areas suffer 3 Energy Damage, are knocked back 2 spaces towards you and must pass an agility save or fall prone. Then remove each Starburst.</p>",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
       }
     ],
     "bonuses": [],

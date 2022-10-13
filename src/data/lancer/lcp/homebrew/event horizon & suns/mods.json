@@ -1,0 +1,46 @@
+[
+  {
+    "id": "wm_fateful",
+    "name": "Fateful",
+    "source": "EH&S",
+    "license": "DELPHI",
+    "license_level": 2,
+    "effect": "<p>The weapon this mod is applied to gains Reliable 2. If it already had Reliable 2 or higher, add 1 to its Reliable damage.</p>",
+    "sp": 2,
+    "description": "",
+    "allowed_types": [
+      "Melee",
+      "Rifle",
+      "Nexus"
+    ],
+    "allowed_sizes": [
+      "Main",
+      "Heavy"
+    ],
+    "restricted_types": [
+      "Cannon",
+      "Launcher",
+      "CQB"
+    ],
+    "restricted_sizes": [
+      "Auxiliary",
+      "Superheavy"
+    ],
+    "added_damage": [],
+    "added_range": [],
+    "added_tags": [
+      {
+        "id": "tg_reliable",
+        "val": 2
+      }
+    ],
+    "tags": [],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  }
+]

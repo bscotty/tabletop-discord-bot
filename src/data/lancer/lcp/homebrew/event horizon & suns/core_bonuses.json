@@ -1,0 +1,246 @@
+[
+  {
+    "id": "cb_superheated_armor",
+    "name": "SUPERHEATED ARMOR",
+    "source": "EH&S",
+    "effect": "<p>If you have Armor, you gain Resistance to all Heat from external sources so long as you are not Shredded.</p>",
+    "description": "<p></p>",
+    "mounted_effect": "",
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "cb_recovering_momentum",
+    "name": "RECOVERING MOMENTUM",
+    "source": "EH&S",
+    "effect": "<p>You gain +1 Repair Capacity. 1/scene, when you take the Stabilize action and choose to restore all HP, you may Grapple or Ram as a free action.</p>",
+    "description": "<p></p>",
+    "mounted_effect": "",
+    "actions": [],
+    "bonuses": [
+      {
+        "id": "repcap",
+        "val": "1",
+        "damage_types": [],
+        "range_types": [],
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "overwrite": false,
+        "replace": false
+      }
+    ],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "cb_plasma_grasp",
+    "name": "PLASMA GRASP",
+    "source": "EH&S",
+    "effect": "<p>You gain +2 Heat Capacity. When you Grapple a character or are successfully Grappled by another character, you may deal 1d3 AP energy damage to them.</p>",
+    "description": "<p></p>",
+    "mounted_effect": "",
+    "actions": [],
+    "bonuses": [
+      {
+        "id": "heatcap",
+        "val": 2,
+        "damage_types": [],
+        "range_types": [],
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "overwrite": false,
+        "replace": false
+      }
+    ],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "cb_weapon_firewall",
+    "name": "WEAPON FIREWALL",
+    "source": "EH&S",
+    "effect": "<p>Choose one mount. Weapons attached to this mount may be used even when you are Jammed.</p>",
+    "description": "<p></p>",
+    "mounted_effect": "Weapons attached to this mount may be used even when you are Jammed.",
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "cb_heavy_plating",
+    "name": "HEAVY PLATING",
+    "source": "EH&S",
+    "effect": "<p>When you are affected by involuntary movement, you may reduce the movement by up to a number of spaces equal to your Size, to a minimum reduction of 1 space.</p>",
+    "description": "<p></p>",
+    "mounted_effect": "",
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "cb_impact_shield",
+    "name": "IMPACT SHIELD",
+    "source": "EH&S",
+    "effect": "<p>You gain +3 HP. If a save effect would deal Structure damage to you, you are instead set to 1 HP and do not take Structure damage from the effect. This effect does not trigger if you are already at 1 HP.</p>",
+    "description": "<p></p>",
+    "mounted_effect": "",
+    "actions": [],
+    "bonuses": [
+      {
+        "id": "hp",
+        "val": 3,
+        "damage_types": [],
+        "range_types": [],
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "overwrite": false,
+        "replace": false
+      }
+    ],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "cb_heat_vapor_shield",
+    "name": "HEAT VAPOR SHIELD",
+    "source": "EH&S",
+    "effect": "<p>When you become Exposed, you gain Overshield equal to half your maximum HP.</p>",
+    "description": "<p></p>",
+    "mounted_effect": "",
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "cb_tech_flanking",
+    "name": "TECH FLANKING",
+    "source": "EH&S",
+    "effect": "<p>You gain +2 SP. When you successfully hit with a tech attack on your turn, you may Bolster an allied character that is Engaged with the target as a free action.</p>",
+    "description": "<p></p>",
+    "mounted_effect": "",
+    "actions": [],
+    "bonuses": [
+      {
+        "id": "sp",
+        "val": "2",
+        "damage_types": [],
+        "range_types": [],
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "overwrite": false,
+        "replace": false
+      }
+    ],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "cb_defensive_code",
+    "name": "DEFENSIVE CODE",
+    "source": "EH&S",
+    "effect": "<p>You gain +1 Accuracy on Systems saves and checks. You gain the Counterhack reaction, usable once per round.</p>",
+    "description": "<p></p>",
+    "mounted_effect": "",
+    "actions": [
+      {
+        "name": "Counterhack",
+        "activation": "Reaction",
+        "detail": "<p>You may take 2 Heat and make a contested tech attack roll against the triggering character. If you win, the triggering tech attack misses.</p>",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": "<p>You are hit by a tech attack originating from a hostile character within Sensors.</p>"
+      }
+    ],
+    "bonuses": [],
+    "synergies": [
+      {
+        "locations": [
+          "systems"
+        ],
+        "detail": "<p>You gain +1 Accuracy on Systems saves and checks.</p>",
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "system_types": []
+      }
+    ],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "cb_evasive_maneuvers",
+    "name": "EVASIVE MANEUVERS",
+    "source": "EH&S",
+    "effect": "<p>You gain +1 Accuracy on Agility saves and checks. You gain the TEMPNAME reaction, usable once per round.</p>",
+    "description": "<p></p>",
+    "mounted_effect": "",
+    "actions": [
+      {
+        "name": "TEMPNAME",
+        "activation": "Reaction",
+        "detail": "<p>You may move up to half your Speed, taking 2 Heat for each space you move, towards the triggering character. This movement ignores Engagement and reactions.</p>",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "<p>A weapon attack that includes you as a target within line of sight misses you.</p>"
+      }
+    ],
+    "bonuses": [],
+    "synergies": [
+      {
+        "locations": [
+          "agility"
+        ],
+        "detail": "<p>You gain +1 Accuracy on Agility saves and checks.</p>",
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "system_types": []
+      }
+    ],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  }
+]

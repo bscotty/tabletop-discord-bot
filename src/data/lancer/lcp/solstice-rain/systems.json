@@ -127,7 +127,7 @@
     "source": "EXOTIC",
     "license": "",
     "license_level": 0,
-    "effect": "<p>1/mission you can spend 1 Core Power to employ this devastating charged particle cannon, firing it in a line 20 area. All cover, terrain, objects, and deployables smaller than Size 5 in this area are boiled away instantly, and then all characters within the area must pass an Agility save or take 12 energy damage, taking half damage on a success. This damage can't be reduced in any way. Characters with 7 HP or less, only 1 structure remaining, and no Immunity to damage are instead instantly and automatically destroyed, annihilated utterly and leaving no wreck behind. </p><p>You can take no other actions on the same turn you activate this particle cannon except for your standard move or Boost, and the stress of firing it causes you to become Stunned until the start of your next turn.</p>",
+    "effect": "Your mech gains another Core System in addition to its own, that can be used 1/mission.",
     "type": "System",
     "sp": 1,
     "description": "<p>Cressidium's self-imposed isolation from Union has led to a number of divergent technological advances over the centuries, among them the pursuit of more compact lance weapon development as opposed to further exploration and refinement of naval long-cycle weaponry. Weapon engineers looked to miniaturization, incorporating chemical/exotic metal batteries and rapid-charge fire cycling systems suitable for use on smaller and smaller platforms, ultimately including mechanized chassis. This example, reverse-engineered from combat data gathered by Union pilots during an engagement against Vestan Sovereignty special forces, appears to be a descendant of old linear accelerator coherent beam cannon designs, a weapon now considered out of date by contemporary naval standards but which is nonetheless exceedingly lethal when employed at this scale.</p>",
@@ -141,16 +141,16 @@
     ],
     "actions": [
       {
-        "name": "Fire LinAc Coherent Beam Cannon",
+        "name": "LinAc CBC",
         "activation": "Full",
-        "detail": "<p>1/mission, you can spend 1 Core Power to employ this devastating charged particle cannon, firing it in a line 20 area. All cover, terrain, objects, and deployables smaller than Size 5 in this area are boiled away instantly, and then all characters within the area must pass an Agility save or take 12 energy damage, taking half damage on a success. This damage can't be reduced in any way. Characters with 7 HP or less and only 1 structure remaining are instead instantly and automatically destroyed, annihilated utterly and leaving no wreck behind. You can take no other actions or movement on the same turn you activate this particle cannon, including other protocols, and the stress of firing it causes you to become Stunned until the start of your next turn.</p>",
+        "detail": "Activate this devastating charged particle cannon, firing it in a line 30 area. All cover, terrain, objects, and deployables smaller than Size 5 in this area are boiled away instantly, and then all characters within the area must pass an Agility save or take 14 energy damage, taking half damage on a success. This damage can't be reduced in any way. Characters with 7 HP or less, only 1 structure remaining, and no Immunity to damage are instead instantly and automatically destroyed, annihilated utterly and leaving no wreck behind. You can take no other actions on the same turn you activate this particle cannon except for your standard move or Boost, and the stress of firing it causes you to become Stunned until the start of your next turn.",
         "cost": 0,
         "pilot": false,
         "damage": [],
         "range": [
           {
             "type": "Line",
-            "val": "20"
+            "val": 30
           }
         ],
         "synergy_locations": [],

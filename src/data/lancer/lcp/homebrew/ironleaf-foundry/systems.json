@@ -179,7 +179,7 @@
       {
         "name": "Demon Core",
         "activation": "Quick",
-        "detail": "1/scene, you can throw a grenade to a space within Range 5, then roll 1d6 to determine Demon Core's blast area. All characters within the affected area must pass an Engineering save or take 2d6+4 Energy damage and gain 4 Heat. On a success, they take half damage and heat. The range of this grenade cannot be increased by any means and the blast is rolled after the target space for the grenade is chosen. Objects in the affected area suffer 40 AP Energy Damage. You take 8 Heat (self) after resolving the effects of Demon Core.",
+        "detail": "1/scene, you can throw a grenade to a space within Range 10. All characters within the Blast 2 area must pass an Engineering save or take 3d6 Energy + 4 Heat. On a success, they take half damage and heat. When rolling for damage with this grenade, any damage dice that land on a 1 cause the grenade to deal an additional 1 heat, and are then rerolled. Objects in the affected area suffer 40 AP Energy Damage. You take 10 Heat (self) after resolving the effects of Demon Core.<br><br>The affected area is irradiated until the end of the scene. Characters cannot clear heat in the irradiated area save by overheating and biological characters starting their turn in the irradiated area or entering it for the first time on their turn suffer 2 AP energy damage.",
         "cost": 0,
         "pilot": false,
         "damage": [],
@@ -737,6 +737,338 @@
         "trigger": ""
       }
     ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_fianna_system_initiation",
+    "name": "Fianna System Initiation",
+    "source": "IF",
+    "license": "SILVERSWORD",
+    "license_level": 1,
+    "effect": "",
+    "type": "System",
+    "sp": 2,
+    "description": "<p>“Victorious Cumall had a son,</p><p>Finn, bloody, of weapons hard:</p><p>Finn and Goll, great their fame,</p><p>Mightily they waged war.”</p><p>-The Boyhood Deeds of Finn mac Cumhaill, Laud 610</p>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Mark Prey",
+        "activation": "Invade",
+        "detail": "<p>Once before the end of your next turn, when the target moves, you can move up to the same distance as a reaction. This movement must end closer to the target than it started.</p>",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Huntsmaster's Call",
+        "activation": "Invade",
+        "detail": "<p>Any number of allied characters in Line of Sight of the target are pushed up to 3 spaces towards it.</p>",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_samhain_system_illumination",
+    "name": "Samhain System Illumination",
+    "source": "IF",
+    "license": "SILVERSWORD",
+    "license_level": 2,
+    "effect": "",
+    "type": "System",
+    "sp": 2,
+    "description": "<p>“Now comes the bird of dusty hue,</p><p>The loud cuckoo, the summer-lover;</p><p>Branchy trees are thick with leaves;</p><p>The bitter, evil time is over.”</p><p>-Fionn Mac Cumhaill</p>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Daydream",
+        "activation": "Invade",
+        "detail": "<p>Until the end of the target's next turn they cannot take reactions or free actions.</p>",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Call to Slumber",
+        "activation": "Invade",
+        "detail": "<p>At the end of the target's next turn they fall prone and become stunned until the start of their next turn. Each target can only be affected this way once per scene.</p>",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_kachunk",
+    "name": "Ka-Chunk!",
+    "source": "IF",
+    "license": "SILVERSWORD",
+    "license_level": 2,
+    "effect": "<p>Your next Weapon you fire before the start of your next turn gains +1d6 bonus damage and Knockback 3.</p>",
+    "type": "System",
+    "sp": 1,
+    "description": "<p>Ironleaf Foundry representatives have been frequently asked why a company as advanced as theirs often uses manual chambering for their weapons. The answer is almost always the same: When a company likes to tinker as relentlessly with precise payloads as Ironleaf Foundry, fine control over loading the next round can be essential. That and it sounds really cool.</p>",
+    "tags": [
+      {
+        "id": "tg_quick_action"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_winding_woods",
+    "name": "Winding Woods",
+    "source": "IF",
+    "license": "SILVERSWORD",
+    "license_level": 3,
+    "effect": "<p>This system creates an illusion line up to 5 spaces long, up to 5 spaces high – with at least 1 space adjacent to you. It lasts for the rest of the scene and if a new one is placed, the old one deactivates. The illusion does not normally obstruct movement, however any character attempting to pass through the illusion must pass a systems save or gain 2 heat and be immobilized until the end of the current turn. This effect even applies to characters attempting to teleport, if the winding woods are between the start and end locations of the teleport.</p><p>This illusion provides soft cover but tech attacks and smart weapons that pass through the wall (Even if they do not require line of sight) have a 50% chance to be lost and have no effect. This does not stack with invisible.</p>",
+    "type": "System",
+    "sp": 2,
+    "description": "<p>“Foes lost within these illusions find the concept of distance and time warped, a few seconds stretched into weeks and months. Harmless to the physical...perhaps a little harrowing the sanity.” - Dr Ashryn Ironleaf</p>",
+    "tags": [
+      {
+        "id": "tg_quick_tech"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_arrowstorm_variable_charges",
+    "name": "\"Arrowstorm\" Variable Charges",
+    "source": "IF",
+    "license": "ROWAN",
+    "license_level": 1,
+    "effect": "",
+    "type": "System",
+    "sp": 2,
+    "description": "<p>Arrowstorms are advanced long-rod penetrator explosives designed to decapitate enemy forces with precision sprays of flechettes, the highly flexible and focused charges allowing for safe usage in close range environments without concern about friendly fire.</p>",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Hyperpenetration Flechette",
+        "activation": "Quick",
+        "detail": "<p>Throw a grenade at a single target within Range 10. Your target suffers 1d3+3 AP Kinetic Damage. A successful engineering save halves the damage.</p>",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [
+      {
+        "name": "Seeker Claymore",
+        "type": "Mine",
+        "detail": "<p>This mine is triggered when a hostile character enters a space within Range 3 without Disengaging, regardless of height. The triggering character suffers 1d6+3 AP Kinetic Damage. A successful engineering save halves the damage.</p>",
+        "size": 1,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "pilot": false,
+        "mech": false,
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "counters": []
+      }
+    ],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_caillechs_step_quake_generator",
+    "name": "\"Caillech's Step\" Quake Generator",
+    "source": "IF",
+    "license": "ROWAN",
+    "license_level": 2,
+    "effect": "",
+    "type": "System",
+    "sp": 2,
+    "description": "<p>While not technically an earthquake generator, the difference for those affected is purely academic. Powerful directed kinetic energy waves from these potent deployables shake the ground under foes, sending them tumbling while buffering allies from the worst of the force.</p>",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [
+      {
+        "name": "Earthquake Generator",
+        "type": "Deployable",
+        "detail": "<p>Expend a charge to deploy a Size 2 Earthquake generator in a free, adjacent space, where it creates a burst 2 quake. Hostile characters treat the affected area as difficult terrain and any hostile character starting their turn in the affected area or entering it for the first time in a round must pass a hull save or fall prone. Any hostile character standing from prone in the affected area must pass a hull save or immediately fall prone again.</p><p>This effect lasts for the rest of the scene or the generator is destroyed.</p>",
+        "size": 2,
+        "activation": "",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "hp": 20,
+        "evasion": 5,
+        "pilot": false,
+        "mech": false,
+        "actions": [],
+        "bonuses": [],
+        "synergies": [],
+        "counters": []
+      }
+    ],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_buffer_counterdeployment_module",
+    "name": "“Buffer” Counterdeployment Module",
+    "source": "IF",
+    "license": "ROWAN",
+    "license_level": 3,
+    "effect": "",
+    "type": "System",
+    "sp": 2,
+    "description": "<p>“You can’t Dodge Cancel in Real Life, you dumbass!”</p><p>“Just Try To Stop Me!”</p><p>-Sane People to Echo Alpha, IF Test Pilot</p>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Insult to Injury",
+        "activation": "Reaction",
+        "detail": "<p>One Mine, Drone or Deployable mounted on your mech is planted or deployed in a free space in Range 5 and Line of Sight. Mines planted this way are armed at the end of this turn.</p>",
+        "cost": 0,
+        "pilot": false,
+        "damage": [],
+        "range": [],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": "<p>A hostile character misses you with an attack or you pass a save forced by a hostile character.</p>"
+      }
+    ],
+    "bonuses": [],
+    "synergies": [],
+    "deployables": [],
+    "counters": [],
+    "integrated": [],
+    "special_equipment": []
+  },
+  {
+    "id": "ms_psychofracture_analysis",
+    "name": "Psychofracture Analysis",
+    "source": "IF",
+    "license": "ROWAN",
+    "license_level": 3,
+    "effect": "<p>A hostile character in range 5 and line of sight must pass an agility save or be Humiliated. While humiliated, whenever they make a check or save if the target fails to match or beat your save target in addition to the original target they fail, even on opposed checks. They can end this effect by passing an agility save as a quick action.</p><p>Whenever a character Humiliated by you in Line of Sight fails an attack, check or save, you gain 2 Overshield.</p>",
+    "type": "System",
+    "sp": 3,
+    "description": "<p>\"Every battle is won and lost in the mind before a single shot is fired. That's why I like to crush it first. It's much more effective to take down a foe who's foaming at the mouth in rage or paralyzed with shame than one making logical, careful decisions.\" -Aphrodite Alpha</p>",
+    "tags": [
+      {
+        "id": "tg_quick_action"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [],
     "bonuses": [],
     "synergies": [],
     "deployables": [],
