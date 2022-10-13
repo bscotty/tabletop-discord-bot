@@ -174,7 +174,7 @@ export class Formatters {
 
         return `**${bondPower.name}**${frequency}${formatContentPack(bondPower)}\n` +
             `${bondPower.power_name} Bond Power${rank}\n` +
-            `${prerequisite}${bondPower.description}`
+            `${prerequisite}${this.turndownService.turndown(bondPower.description)}`
     }
 
     public cbFormat(cb: SearchableCoreBonus) {

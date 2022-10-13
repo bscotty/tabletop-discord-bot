@@ -1,0 +1,297 @@
+[
+  {
+    "id": "fgtsf_nelson_alt_flight_type",
+    "variant": "NELSON",
+    "source": "IPS-N",
+    "name": "NELSON FLIGHT TYPE",
+    "mechtype": [
+      "Striker"
+    ],
+    "y_pos": 25,
+    "license_level": 2,
+    "description": "<p>This variant can be taken at rank II of the NELSON license instead of the base FRAME.</p><p>One of the most commonly requisitioned enhancements to IPS-N's Nelson chassis, from novice pilots and veterans alike, is atmospheric flight capability. The difficulties inherent in chassis-tier flight are considerable given the unsuitability of most designs for airborne operations, but the Nelson's comparatively lightweight frame, robust kinetic reinforcement, and Perpetual Momentum Drive all make it uniquely suited to handling the challenges of flight.</p><p>Because of this, IPS-N has obtained a wealth of feedback regarding such modifications in action, and has recently begun limited rollout of a dedicated high-performance Nelson Flight Type variant, with plans to expand distribution in the future if successfully adopted. Thus far initial results are promising, with the chassis' PMD integrated into the frame's flight systems, providing the Nelson FT with greater straight line speed and evasive maneuverability than the base model is ordinarily capable of. Footage of Albatross pilots utilizing the design in daring, high-speed aerial melee combat has generated a massive surge of interest, and the demand for license contracts may result in a generalized release sooner than anticipated.</p>",
+    "mounts": [
+      "Flex",
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "stress": 4,
+      "structure": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 12,
+      "edef": 7,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 6,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Integrated Flight Systems",
+        "description": "The Nelson can fly when it moves or Boosts."
+      },
+      {
+        "name": "Jet Lancer",
+        "description": "1/round, after you move 6 or more spaces in a straight line, the Nelson's next melee attack deals +1d6 bonus damage on hit and gains Knockback 2."
+      },
+      {
+        "name": "Reactive Verniers",
+        "description": "While flying, any time the Nelson is hit by an attack, it may move 2 spaces in any direction. This movement ignores engagement and doesn't provoke reactions."
+      }
+    ],
+    "core_system": {
+      "name": "Linear Microburst Drive",
+      "active_name": "Drive Burst",
+      "active_effect": "Spinning up your drives, fly your full speed in a straight line, dealing 1d6 kinetic damage to all hostile characters below or adjacent to the path taken. This movement ignores engagement, doesn't provoke reactions, and can pass through other characters. You may choose a character you pass through or adjacent to during this and pull them to the end of your movement. If they collide with a wall, mech, or other obstruction that would cause them to stop moving, they must pass a Hull save or be knocked Prone. This action is <b>Efficient,</b> and refunds 1 Core Power at the end of any scene in which it’s used.",
+      "description": "While the base model Nelson employs IPS-N's Perpetual Momentum Drive to facilitate high-speed lateral movement on demand, the Nelson Flight Type utilizes the PMD's fractional nearlight spooling capabilities much like a naval \"microburst\" drive, storing and then shunting energy directly into drive systems to briefly achieve moments of sudden and dramatic linear acceleration. Like the base Nelson chassis, the Flight Type configuration's Linear Microburst Drive requires significant reinforcement and compensation in order to avoid catastrophic frame failure or pilot injury during such maneuvers, and extensive training in terrestrial atmospheric flight operations is recommended to avoid fatal collisions when engaging the drive.",
+      "activation": "Full Action"
+    },
+    "data_type": "frame",
+    "aptitude": {},
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png"
+  },
+  {
+    "id": "fgtsf_deaths_head_alt_reaper_dart",
+    "variant": "DEATH’S HEAD",
+    "source": "SSC",
+    "name": "REAPER DART",
+    "mechtype": [
+      "Artillery"
+    ],
+    "y_pos": 25,
+    "license_level": 2,
+    "description": "<p>This variant can be taken at rank II of the DEATH'S HEAD license instead of the base FRAME.</p><p>Following developmental feedback and combat data analysis of the Death's Head sniper/fire support platform, SSC engineers began laying the groundwork for future line offerings based on the initial design. Though fast and maneuverable, it was noted that the Death's Head's performance and TTK metrics notably declined when tasked with missions in denser urban areas with obstructed sightlines necessitating frequent repositioning. While arguably a deployment issue rather than any flaw inherent to the design itself, demand remained consistent for a precision fire-support chassis capable of operating alongside other units while on the move.</p><p>The Reaper Dart, known during prototype trials as the Death's Head High-Mobility/Designated Marksman Variant, is an iteration of its parent chassis designed to address these demands. Less technologically and neurologically demanding than its predecessor, the Death's Head's suite of neural sync targeting systems has been exchanged for a frame-wide array of computer-controlled stabilization enhancements, allowing it to fire on the move without sacrificing accuracy. This enables pilots to engage in rapid maneuvers across a variety of environments with no noticeable loss in combat uptime.</p>",
+    "mounts": [
+      "Main/Aux",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "stress": 4,
+      "structure": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 20,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Stabilized Platform",
+        "description": "The Reaper Dart ignores the Ordnance tag with rifles. Rifles without Ordnance instead gain Reliable based on weapon size (Auxiliary: 1, Main: 2, Heavy or larger: 3), or if they already have Reliable they add +1 to their value."
+      },
+      {
+        "name": "Sharpshooter",
+        "description": "1/round, the Reaper Dart may reroll a ranged attack. The target cannot be in hard cover, and you must keep the second result."
+      }
+    ],
+    "core_system": {
+      "name": "Ballistic Superiority",
+      "active_name": "Perfect Shot",
+      "active_effect": "Your next attack with a rifle against a character with the Lock On condition gains Reliable 3 (if it already has Reliable, increase its value to 3 if lower) and its damage can't be reduced in any way, but you must consume the Lock On during the attack. On hit, choose one of the following effects:<ul><li>Your target is Shredded until the end of their next turn.</li><li>Your target is knocked back 3 spaces in a direction of your choice and Slowed until the end of their next turn.</li><li>Your target only has line of sight to adjacent spaces until the end of their next turn.</li></ul>On a miss, your target is Impaired until the end of their next turn. This action is <b>Efficient,</b> and refunds 1 Core Power at the end of any scene in which it’s used.",
+      "description": "While the Death's Head's precognitive targeting system boasts undeniably impressive performance, irregularities in neural bridge compatibility combined with demanding calibration and maintenance requirements have led SSC engineers to explore less taxing alternatives for long-range precision fire augmentations compatible with a broader selection of pilots. A combination of cutting-edge comp/con assisted targeting and custom high-power, high-velocity ammunition is capable of delivering enhanced single-shot kill performance as needed.",
+      "activation": "Protocol"
+    },
+    "data_type": "frame",
+    "aptitude": {},
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png"
+  },
+  {
+    "id": "fgtsf_hydra_alt_chimera",
+    "variant": "HYDRA",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "CHIMERA",
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "description": "<p>This variant can be taken at rank II of the HYDRA license instead of the base FRAME.</p><p>The very concept of developmental offshoots becomes difficult to categorize in regard to HORUS chassis classification, pattern-group design naturally lending itself to a high degree of non-standard engineering, but there are nonetheless instances of particularly noteworthy variants which become widely enough disseminated and adopted to be considered a new p-g classification unto themselves.</p><p>The Chimera is one such instance, easily identified as a variant of the Hydra based on its disarticulation-capable frame, though unlike its progenitor the Chimera's base components trend towards larger, more heavily equipped units. Serving in more of a direct assault and aggressive area-denial role compared to the Hydra's broad-spectrum battlefield coverage, Chimeras have been most regularly identified in service with militant HORUS cells, but have also begun to infrequently appear across other battlefields as well, typically operating as a part of irregular strike forces, partisan groups, and techgnostic/transhumanist cults.</p>",
+    "mounts": [
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "edef": 10,
+      "evasion": 7,
+      "heatcap": 5,
+      "repcap": 4,
+      "save": 11,
+      "sensor_range": 8,
+      "sp": 8,
+      "speed": 5,
+      "tech_attack": 1
+    },
+    "traits": [
+      {
+        "name": "Aggressive Heuristics",
+        "description": "The Chimera gains +1 Accuracy on all attacks with nexus weapons against targets within range 2 of one or more of its drones."
+      },
+      {
+        "name": "Pack Guidance",
+        "description": "Whenever the Chimera Locks On to or makes a tech attack against a hostile character, you may move up to two drones you control 2 spaces in any direction."
+      }
+    ],
+    "core_system": {
+      "name": "TALON Tripartition",
+      "description": "<p>A derivation of standard OROCHI NHP architecture, either deliberately engineered or the result of divergent evolutionary development, TALON is the codename for the presumed frame-integrated NHP within the Chimera variant chassis codebase. Behaviorally, TALON operates along similar lines to OROCHI, though with a much more aggressive, predatory bearing, analogous to pack hunter behavior. TALON sub-units are built around mech-tier weaponry and operate either independently from the primary unit or as autonomous hardpoints when docked with the main chassis.</p><p>Though field intelligence on the p-g is limited, what observations exist along with intercepted and recovered communication logs suggest that long-term Chimera pilots may begin to exhibit similar aggressive characteristics themselves, possibly influenced by extended duration ontologic bridging and neurosyncronization.</p>",
+      "active_name": "Preystalker",
+      "active_effect": "Choose one of your deployed TALON drones within Sensors and swap places with it, both you and the drone teleporting to the other's position, and then you may attack with a deployed TALON drone of your choice. This action is <b>Efficient,</b> and refunds 1 Core Power at the end of any scene in which it’s used.",
+      "activation": "Quick Action",
+      "integrated": [
+        "fgtsmw_chimera_integrated"
+      ],
+      "passive_name": "TALON Drones",
+      "passive_effect": "<p>Your mech is accompanied by a pair of armed companion drones. Your TALON drones share your Evasion, E-Defense, and Speed. They can move independently on your turn, but can’t take any other actions. If you can fly or teleport, they can too. If your TALON drones are within Sensors, you may recall one or both of them as a quick action, integrating them into your mech’s body where they cannot be targeted. You may redeploy one or both of them to a space within Sensors as a quick action. When you rest or perform a Full Repair, your drones regain all HP and are automatically repaired if they were destroyed.</p><p>At the start of each scene, you may choose to have one or both TALON drones deployed or integrated into your mech.</p>",
+      "deployables": [
+        {
+          "name": "TALON Drone",
+          "type": "Drone",
+          "size": 0.5,
+          "hp": "10 + {grit}",
+          "detail": "Each TALON drone is capable of being used to Skirmish and Barrage as though they were weapons with the following profile. Measure range, engagement, threat, and line of sight from the corresponding TALON drone whenever it is used to make attacks and for Overwatch. These weapons count as integrated mounts. While integrated into your mech's body after being recalled, you may use these weapons as though they were equipped to your mech.",
+          "recall": "Quick",
+          "redeploy": "Quick"
+        }
+      ]
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "data_type": "frame",
+    "aptitude": {},
+    "y_pos": 25
+  },
+  {
+    "id": "fgtsf_saladin_alt_fearkiller",
+    "variant": "SALADIN",
+    "source": "HA",
+    "name": "SALADIN \"FEARKILLER\"",
+    "mechtype": [
+      "Defender"
+    ],
+    "y_pos": 25,
+    "license_level": 2,
+    "description": "<p>This variant can be taken at rank II of the SALADIN license instead of the base FRAME.</p><p>The original model Saladin chassis christened \"Fearkiller\" by John Creighton Harrison I holds a mythic place in the annals of the Armory's history, with to-scale reconstructions found in museums across numerous worlds within the Purview and the remnants of the original chassis prominently displayed in the Institute of Galactic History on Ras Shamra. While the Sherman is the Armory's most prolific frame, the Saladin is perhaps its most iconic.</p><p>The newest Saladin variant, named after that iconic chassis, is the latest product of the Think Tank's continued research into applied tachyon field systems. Trading substructural reinforcement for expanded power generation, variable frame configuration, and additional hardpoints, the Saladin \"Fearkiller\" is designed for \"aggressive defense\" actions, safeguarding assault units undertaking critical spearpoint missions or escorting VIPs across hot zones where hostile contact is assured. Utilized extensively in pacification actions on New Madrassa, the \"Fearkiller\" has only recently been cleared for licensing outside of Armory space, and its presence elsewhere remains an uncommon sight for now.</p>",
+    "mounts": [
+      "Main",
+      "Flex"
+    ],
+    "stats": {
+      "size": 2,
+      "stress": 4,
+      "structure": 4,
+      "armor": 1,
+      "hp": 12,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 3,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Indomitable Presence",
+        "description": "When you first print the Saladin and whenever you perform a Full Repair, you may set its Size to either 2 or 3."
+      },
+      {
+        "name": "Reactive Defense Matrix",
+        "description": "The Saladin can take reactions as normal when Stunned or after Bracing."
+      },
+      {
+        "name": "Guardian",
+        "description": "Adjacent allied characters can use the Saladin for hard cover."
+      }
+    ],
+    "core_system": {
+      "name": "Intercessor Array",
+      "description": "<p>The integrated projector array mounted to the \"Fearkiller\" is the latest in Harrison Armory's ongoing developments in the field of applied tachyon technologies. Unlike a standard Tachyon Loop which can only be maintained for brief durations at exceptional power draw, this new generation model is designed to project and maintain a stable, ongoing bidirectional barrier via direct point-to-point transmission. Once a link is established, the loop is capable of sustaining itself, automatically modulating transmission output to account for fluctuations in field integrity. Presently, only a single stable link can be maintained at a time, and the system requires ongoing proximity to the transmission source in order to maintain effective coherence, but Armory engineers are confident that these shortcomings can be addressed in time.</p><p>While a conventional Tachyon Loop disperses intercepted kinetic/energetic force across the barrier, the Intercessor Array is capable of recirculating accumulated energy through the loop itself, giving skilled operators the ability to atemporally \"slingshot\" themselves and their charges along the transmission channel or to shunt excess power directly into weapons systems.</p>",
+      "active_name": "Tachyon Barrier",
+      "active_effect": "When a linked ally within Sensors is hit by an attack and damage has been rolled, they gain resistance against all damage, heat, and burn from the triggering attack and you may also pull them adjacent to you by the most direct route possible. Then choose either that ally or yourself to become empowered by absorbed energy. The chosen character's next ranged or melee attack cannot have its damage reduced in any way. This action is <b>Efficient,</b> and refunds 1 Core Power at the end of any scene in which it’s used.",
+      "activation": "Reaction",
+      "passive_name": "Intercessor Array",
+      "passive_effect": "<p>As a quick action, choose an ally within Sensors to become linked to your protective systems. 1/round, you can give +1 Difficulty to any attack against yourself or a linked ally within Sensors as a reaction before the roll is made. Additionally, you may take a second reaction each turn, but that reaction may only be used if the trigger is a hostile action or effect made against a linked ally within Sensors. Only a single character can be linked this way at a time, and linking a new character causes the effect to end on the first one. Otherwise, it lasts until the end of the scene.</p><p>Each time you Activate a system with the Shield tag or take a reaction triggered by a hostile action or effect made against a linked ally, you may have the link pull you 2 spaces towards that ally by the most direct route possible as part of that action. If you are already adjacent to that ally, you may be pulled 2 spaces into another free space adjacent to them instead.</p>"
+    },
+    "data_type": "frame",
+    "aptitude": {},
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png"
+  },
+  {
+    "id": "fgtsf_kalista_alt_gajasura",
+    "variant": "KALISTA",
+    "license_level": 2,
+    "source": "C&H",
+    "name": "GAJASURA",
+    "mechtype": [
+      "Striker",
+      "Defender"
+    ],
+    "description": "<p>This variant can be taken at rank II of the KALISTA license instead of the base FRAME.</p><p>Known as the \"Red-Eyed Demon,\" Pranesh Vasa was one of the most renowned and celebrated arena fighters of the Suldani pre-Emirate era. The only son of a municipal administrator, Vasa had an unassuming upbringing but felt unfulfilled with the life laid out before him. This discontentment continued to grow for years until, in a snap decision, he abandoned his job, sold off his possessions, and signed on as a gladiator, whereupon he discovered that despite lacking any previous experience he nonetheless possessed a natural gift for fighting. In later interviews, he would go on to describe this turn of events as \"finally finding himself on the arena floor.\"</p><p>Vasa's personal chassis, Gajasura, was emblematic of his fighting style, as relentless and brutal as he was humble and plainspoken outside of the arena. Built to weather blows with overlapping armor plates and rigged to shunt additional power to systems during catastrophic near-failure conditions, Gajasura could outlast and outtrade virtually any opponent, and during his career Vasa enhanced it further with a variety of frame-integrated weapons to suit his personal close-combat fighting style.</p><p>In the aftermath of Vasa's death during what would be his final bout, both his body and his chassis went missing and were never recovered, a mystery that has only served to heighten his legend since then. While his body's whereabouts continue to remain unknown, the recent rediscovery of Gajasura in largely intact condition is an incredible moment in the preservation of Suldani cultural history.</p>",
+    "mounts": [
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 12,
+      "edef": 6,
+      "evasion": 6,
+      "heatcap": 5,
+      "repcap": 8,
+      "save": 10,
+      "sensor_range": 3,
+      "sp": 5,
+      "speed": 3,
+      "tech_attack": -2
+    },
+    "traits": [
+      {
+        "name": "Reinforced Frame",
+        "description": "The Gajasura is immune to the Shredded condition."
+      },
+      {
+        "name": "Ablative Plating",
+        "description": "1/round, the Gajasura can spend 1 Repair after taking damage from a character to gain resistance to that damage, and if this damage causes you to make a structure damage check, you automatically treat the result of that check as Glancing Blow."
+      },
+      {
+        "name": "Nearfail Capacitors",
+        "description": "1/round, the Gajasura may deal +1d6 bonus damage on hit with a melee attack if it has 2 structure or less."
+      }
+    ],
+    "core_system": {
+      "name": "Demon's Fang",
+      "description": "<p>For much of his career, Vasa almost solely employed frame-integrated weapons in combat, preferring them to manipulator-held or hardpoint-mounted armaments. The most notable, and most iconic, example of this was eventually gifted to him by Saburo Adeyemi, a retired artisan from the Terashima enclave whose travels had brought him to Suldan and who was a great admirer of Vasa's performance in the arena. Dubbed the \"Demon's Fang,\" this forearm-mounted double blade became synonymous with Vasa, oft-imitated but never duplicated.</p><p>While numerous parts of this frame have been replaced over the years, or fallen into disrepair after an extended period of disuse, the Demon's Fang remains unaltered and in combat-ready condition even now. Its integration into the frame is a remarkable work of craftsmanship, as capable of swiftly severing limbs and carving apart hulls as the day it was forged.</p>",
+      "active_name": "Killing Floor",
+      "active_effect": "Make an attack with the Demon's Fang as a free action. This action is <b>Efficient,</b> and refunds 1 Core Power at the end of any scene in which it’s used.",
+      "activation": "Free Action",
+      "integrated": [
+        "fgtsmw_gajasura_integrated"
+      ]
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "data_type": "frame",
+    "aptitude": {},
+    "y_pos": 25
+  }
+]

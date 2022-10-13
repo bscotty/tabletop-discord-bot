@@ -18,6 +18,10 @@ import {getSciroccoLcp} from "../data/lancer/lcp/homebrew/scirocco";
 import {getSuldanLcp} from "../data/lancer/lcp/homebrew/suldan";
 import {getStolenCrownLcp} from "../data/lancer/lcp/homebrew/stolen-crown";
 import {getGilgameshLcp} from "../data/lancer/lcp/homebrew/gilgamesh";
+import {getDustgraveLcp} from "../data/lancer/lcp/dustgrave";
+import {getSuldanAltFramesLCP} from "../data/lancer/lcp/homebrew/suldan alt frames";
+import {getSsmrPart1Lcp} from "../data/lancer/lcp/homebrew/ssmr part 1";
+import {getEHandSLCP} from "../data/lancer/lcp/homebrew/event horizon & suns";
 
 @Discord()
 export class Lancer {
@@ -34,6 +38,7 @@ export class Lancer {
                 getLongRimLcp(),
                 getWallflowerLcp(),
                 getSolsticeRainData(),
+                getDustgraveLcp(),
                 ...this.homebrew()
             ]
         return this._lcpData
@@ -41,13 +46,16 @@ export class Lancer {
 
     private homebrew(): Lcp[] {
         return [
+            getEHandSLCP(),
             getGilgameshLcp(),
             getIronleafFoundryLcp(),
             getLiminalSpaceLcp(),
             getMfecaneLcp(),
             getSciroccoLcp(),
+            getSsmrPart1Lcp(),
             getStolenCrownLcp(),
-            getSuldanLcp()
+            getSuldanLcp(),
+            getSuldanAltFramesLCP()
         ]
     }
 

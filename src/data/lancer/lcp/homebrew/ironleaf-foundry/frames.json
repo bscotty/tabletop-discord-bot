@@ -552,5 +552,181 @@
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "y_pos": "43"
+  },
+  {
+    "id": "mf_silversword",
+    "source": "IF",
+    "license_level": 2,
+    "name": "SILVERSWORD",
+    "mechtype": [
+      "Controller",
+      "Striker"
+    ],
+    "description": "<p>Not content to only contend in physical duels, the Ironleaf Silversword is a step into digital battlegrounds with an intent to go head to head and win. In contrast with many of the small, sleek frames of Ironleaf Foundry, the Silversword is a titan that looks like an ancient armored statue come to life.&nbsp;</p><p>Piloting a silversword has significant effects on a pilot’s subjectivity. While all pilots to some degree see their frame as part of themselves, Silversword pilots instead often see themselves as having always been part of it and simply reunited even the first time they pilot it. This comes from the frame’s blending of the pilot’s consciousness into a temporary legion of instances of the pilot’s past, present and future.</p>",
+    "mounts": [
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 7,
+      "repcap": 4,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Cold Iron",
+        "use": "",
+        "description": "<p>When the Silversword would be targeted by a hostile tech action, roll 1d6. On a 4+ the tech action misses and has no effect. This does not stack with invisible.</p>",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [],
+        "integrated": [],
+        "special_equipment": []
+      },
+      {
+        "name": "Scaled Wisdom",
+        "use": "",
+        "description": "<p>The Silversword cannot have its line of sight reduced by environmental effects or hostile characters and is always aware of the HP, Evasion, E-Defense, and current Heat of characters within its sensors.</p>",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [],
+        "integrated": [],
+        "special_equipment": []
+      }
+    ],
+    "core_system": {
+      "name": "Trinary Legion",
+      "active_name": "Water Slips Away",
+      "active_effect": "",
+      "activation": "Reaction",
+      "description": "<p>The three-part legion of past, present and future allows the Silversword a unique view of the flow of time about it…and how to interrupt it.</p>",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [
+        {
+          "name": "Water Slips Away",
+          "activation": "Reaction",
+          "detail": "<p>End The Round. Any number of characters of your choice in Range 50 clear burn and all effects that would end at the end of their next turn not caused by their own traits, systems etc. You can nominate the first character to take a turn next round.</p><p>You can take this reaction even if you could not otherwise take reactions.</p>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "1/encounter",
+          "init": "",
+          "trigger": "<p>A character in Range 50's turn would start.</p>"
+        }
+      ],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "King Under the Mountain",
+      "passive_effect": "<p>When its turn starts, the Silversword can end one condition or effect of a tech action not caused by its own traits, systems etc.</p>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "image_url": "https://cdn.discordapp.com/attachments/729896234877452371/981654634491969626/ikiryo_ironleaf_Silversword_comm.jpg",
+    "y_pos": "12"
+  },
+  {
+    "id": "mf_rowan",
+    "source": "IF",
+    "license_level": 2,
+    "name": "ROWAN",
+    "mechtype": [
+      "Controller"
+    ],
+    "description": "<p>A force of chaos among Ironleaf Foundry dueling teams, the Rowan overwhelms foes with the sheer number of avenues it can launch assaults from at the same time. A master of wire guided and nexus weapons, fighting a Rowan is often compared to attempting to dance with a swarm of angry plasma cutters as foes are chipped apart by the chaos flowing about them.</p><p>Even outside of dueling environments the Rowan is starting to make a name for itself among special operations and far field teams, as its slight size even among Ironleaf Foundry frames and exceptional control of the world around it allow it to stack all the odds in its team favor against enemy forces and the environment alike.</p>",
+    "mounts": [
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 12,
+      "speed": 5,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Rebound",
+        "use": "",
+        "description": "<p>When the Rowan knocks another character back, they can move that character in any direction. If a hostile knocked back by the Rowan collides with an obstruction or another mech, they stop moving and are knocked prone.</p>",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [],
+        "integrated": [],
+        "special_equipment": []
+      },
+      {
+        "name": "Mixup",
+        "use": "",
+        "description": "<p>The Rowan ignores engagement by characters larger than itself. Attacks by Prone characters against the Rowan have +1 Difficulty. When a hostile character stands from prone in Range 5, that character suffers 3 kinetic damage.</p>",
+        "actions": [],
+        "bonuses": [],
+        "counters": [],
+        "deployables": [],
+        "synergies": [],
+        "integrated": [],
+        "special_equipment": []
+      }
+    ],
+    "core_system": {
+      "name": "Silver Strings",
+      "active_name": "Silver Strings - Unlimited Release",
+      "active_effect": "<p>Knock back any number of characters in Range 50 up to 3 spaces in any direction. Hostile characters moved this way are knocked reeling, becoming Slowed, Impaired, and unable to take reactions until the end of their next turn.</p>",
+      "activation": "Quick",
+      "description": "",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "Puppet on my Strings",
+      "passive_effect": "<p>The Rowan always counts as the larger character when ramming and can Ram targets within Range 5, targeting E-Defence when Ramming this way. When the Rowan rams a flying character, they immediately land (this counts as falling without any damage), and additionally become slowed and can’t fly until the end of their next turn.</p>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "image_url": "https://cdn.discordapp.com/attachments/426289086450368512/1013330254187737169/Rowan.jpg",
+    "y_pos": "13"
   }
 ]

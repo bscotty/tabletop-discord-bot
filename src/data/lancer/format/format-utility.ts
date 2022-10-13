@@ -35,7 +35,6 @@ export function licenseFormat(object: SearchableFrame | SearchableMod | Searchab
     }
 }
 
-// TODO Use this, especially with homebrew coming
 export function formatContentPack(data: SearchableData) {
     if (data.content_pack == "LANCER Core")
         return ""

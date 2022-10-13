@@ -1,0 +1,35 @@
+[
+  {
+    "id": "mw_empakaai_alt_blackbeard_integrated",
+    "name": "COLOSSUS TERMO-UNGUIS",
+    "mount": "Superheavy",
+    "type": "Melee",
+    "effect": "The attack’s target and any characters adjacent to it of the Empakaai's choice must make a hull save or be pulled adjacent and automatically grappled.",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "2d6"
+      },
+      {
+        "type": "Heat",
+        "val": "4"
+      },
+      {
+        "type": "Burn",
+        "val": 3
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 4
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ]
+  }
+]

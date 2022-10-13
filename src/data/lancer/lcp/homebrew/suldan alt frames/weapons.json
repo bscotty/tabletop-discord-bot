@@ -1,0 +1,58 @@
+[
+  {
+    "id": "fgtsmw_chimera_integrated",
+    "name": "TALON Drone",
+    "mount": "Main",
+    "type": "Nexus",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 3
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 2
+      },
+      {
+        "id": "tg_smart"
+      }
+    ]
+  },
+  {
+    "id": "fgtsmw_gajasura_integrated",
+    "name": "Demon's Fang",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 4
+      }
+    ],
+    "effect": "This weapon can be used while Jammed. 1/round, if you destroy a character with this weapon you can move up to 2 spaces and make another attack with this weapon as a free action. This movement ignores engagement and doesn't provoke reactions."
+  }
+]

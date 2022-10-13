@@ -1,0 +1,128 @@
+[
+  {
+    "id": "mf_störtebeker",
+    "variant": "RALEIGH",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "STÖRTEBEKER",
+    "mechtype": [
+      "Striker"
+    ],
+    "y_pos": 12.5,
+    "description": "Following Raleigh's commercial failure, several third parties found themselves with the opportunity of buying out development rights for the License, as IPS-N sought to recoup their initial costs. One of the companies finding themselves with rights, Anton Industries, had fallen on hard times itself after the vanishing of their CEO under mysterious circumstances and subsequent plummeting of their stocks. Chasing a lucky break and seizing the opportunity, Anton Industries began work on what, in the end, would be the last frame ever to be developed under their name. Basing the ensuing Raleigh modifications on one of their own mechs, the Hades Mk3, they quickly developed the Raleigh chassis into a capable combined arms platform that emphasized speed and rapid deployment. Instead of the Raleigh’s integrated Mjolnir, a weapon far too heavy to allow the new doctrinal approach, it sports an internal reservoir of TRUESILVER nanites, a proprietary WHITEWASH variant capable of enhancing a weapon’s destructive power on a strike-to-strike basis. Naming the resulting mech “Störtebeker”, after an old cradle legend and in a fit of gallows humor about the company’s less than ideal position. The frame, just like its namesake, would ultimately spell doom for the company, despite its relative success. Quickly becoming a popular choice for mercenaries undertaking black-ops and bounty hunters alike, the Störtebeker rapidly became the frame of choice for those that required speed and maneuverability out of an IPS-N base but preferred a solid ranged component over the Nelson’s dedicated close combat focus. IPS-N itself, interested in the Störtebeker, decided to ultimately buy out the smaller company and, not interested in Anton Industries’ other projects or subsidiaries, cannibalized the company in its entirety. Thus, the Störtebeker, now licensed fully as a Raleigh variant-frame under the IPS-N label, stands as a testament to a company’s destruction and how sometimes, one can do well and fail because of it.",
+    "mounts": [
+      "Flex",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 9,
+      "edef": 7,
+      "heatcap": 5,
+      "repcap": 5,
+      "sensor_range": 8,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Truesilver",
+        "description": "1/Scene after hitting with a weapon the Störtebeker may apply an effect depending on its type. <br>Non-Loading weapon: The hit is treated as a Critical Hit. Any resulting damage is not rolled twice. <br>Loading weapon: Any resulting damage can’t be reduced."
+      },
+      {
+        "name": "Dynamic Reload",
+        "description": "The Störtebeker’s non-Auxiliary weapons gain the following effects: <br>Melee weapons gain: “On Crit: Reload all Ranged weapons not used to attack this turn.” <br>Ranged weapons gain: “On Crit: Reload all Melee weapons not used to attack this turn.”"
+      },
+      {
+        "name": "Quick Step",
+        "description": "1/Round after making a Ranged or Melee Attack against a character the Störtebeker may immediately fly up to 3 Spaces directly away or towards, but not past, its target. This movement ignores Engagement and Reactions. It must end this movement on solid ground or immediately begin falling."
+      }
+    ],
+    "core_system": {
+      "name": "Truesilver Weaponry",
+      "description": "Project TRUESILVER is the attempt to improve the destructive capabilities of Whitewash nano-machines. The hyper specialized nanites manifest themselves as a mirror sheen silver coating that has the capability of spreading over ammunition and melee weapons alike. Giving these Armaments a striking appearance and giving the system its unique name. Thus enhanced, a weapon becomes able to deliver a destructive nanite payload that compounds any damage done by the initial strike, exponentially, eating away at a target from the inside. TRUESILVER nanites are internally printed and held in a specialized shielded reservoir before being fed to a mech's weapons systems. Slow to be replenished by the frame’s internal printers, pilots must manage their use with care.",
+      "active_name": "Truesilver Arsenal",
+      "active_effect": "You may use your Truesilver Trait three more times this Scene.",
+      "activation": "Protocol",
+      "passive_name": "Ammo Printers",
+      "passive_effect": "1/Round you may perform one of the following Quick Actions during your own turn:",
+      "passive_actions": [
+        {
+          "name": "Steady Reload",
+          "activation": "Quick",
+          "detail": "At the end of a turn in which this action was used, reload all weapons not used to attack this turn."
+        },
+        {
+          "name": "Press the Advantage",
+          "activation": "Quick",
+          "detail": "You may only take this action if you reloaded a non-Superheavy weapon this turn. You may immediately attack with it as well as all other Loading weapons on its Mount."
+        }
+      ],
+      "use": "Encounter"
+    },
+    "image_url": "https://i.imgur.com/ZZlmGNF.png"
+  },
+  {
+    "id": "mf_micro_monarch",
+    "variant": "MONARCH",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "VICEROY",
+    "mechtype": [
+      "Striker"
+    ],
+    "y_pos": 12.5,
+    "description": "As an off-shoot of SSC’s Bella Ciao line the Viceroy is the result of rigorous field testing in developing a more accessible version of its larger sibling, the ever-ubiquitous Monarch. Originally developed under the moniker “MicroMonarch” the scaled down frame is nevertheless a force to be reckoned with and sports the high-quality engineering expected from SSC mechs. Where the Monarch focuses on devastating long-range firepower, the Viceroy is more akin to a close-range brawler, using its sophisticated near-threat targeting arrays to wield the launchers of its parent license with deadly precision. Equipped with a scaled-down version of the Monarch’s own High Penetration Missile System, the Viceroy is more than capable of saturating an area around itself with relatively small but high-yield warheads, aimed with pinpoint accuracy. This, coupled with an integrated, one-use burst jump pack, turns the Viceroy into a veritable shock trooper that has devastating first-strike capabilities, shrugging off any potential self-inflicted harm of any “shock and awe” maneuver thanks to its advanced blast-resistant armor-plating. Since its recent official release, the Viceroy has become a, by SSC standards, affordable frame and is currently being widely rolled out to various SSC associates and subsidiaries. Slated to be approved for mass production, the Viceroy is envisioned to become a front line “soldier” mech to, ultimately, rival the likes of HA’s Sherman.",
+    "mounts": [
+      "Aux/Aux",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 5,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Near-Threat Targeting Processors",
+        "description": "The Viceroy's Launcher weapons gain Threat 3. The Viceroy treats its Launcher Weapons as if they were CQB weapons as well as Launchers."
+      },
+      {
+        "name": "\"Vigilante\" Omni Directional Launchers",
+        "description": "1/Round, on a critical hit against a character, the Viceroy may deal 2 Explosive damage to all characters of its choice within Range 3 of itself, and knock them back 1 space."
+      },
+      {
+        "name": "Pressure Plating",
+        "description": "The Viceroy has resistance to Explosive Damage."
+      }
+    ],
+    "core_system": {
+      "name": "SSC - 41 - TENGU Assisted Missile Tubes",
+      "description": "By red-lining its integrated \"VIGILANTE\" launchers, the Viceroy can deliver a devastating saturation bombardment of its close surroundings. Weathering the onslaught thanks to its blast-resistant exterior, the Viceroy can utilize this salvo, when coupled with the miniaturized TENGU one-burst jump system, for a variety of advanced battlefield tactics. Allowing it to either deliver a near unstoppable alpha strike or to make a potent exit. The “Heaven’s Downpour” is a technique that strikes fear in any that face a Viceroy in combat.",
+      "active_name": "Heaven's Downpour",
+      "active_effect": "Center a Burst 3 missile swarm on yourself, hostile characters in the area must perform a Hull save or take 1d6+3 Explosive damage and be knocked Prone. On a successful save they take half damage and remain standing. You may consume an affected character's Lock On, if you do, they automatically fail the save. <br>Before or after performing this action you may fly up to your speed, ignoring Reactions and Engagement. You must end this movement on solid ground or begin falling.",
+      "use": "Encounter",
+      "activation": "Quick"
+    },
+    "image_url": "https://i.imgur.com/KL2a8ZF.png"
+  }
+]
