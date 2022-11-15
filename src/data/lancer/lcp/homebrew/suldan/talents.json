@@ -1,27 +1,27 @@
 [
 {
     "id": "fgtst_blade_dancer",
-    "name": "BLADE DANCER",
+    "name": "Blade Dancer",
     "terse": "Enhance your melee combat skill against reaction attacks",
     "description": "Battle is an art. It always had been, but many forgot this truth as warfare evolved, bringing with it guns, artillery, orbital bombardment, so many impersonal and inelegant ways to kill, a trillion canvases squandered in the mud. But a mech is more than just another weapon, it's an instrument of a pilot's will and an assertion of their skill made manifest. In the arena or on the battlefield you proudly display that skill for all to witness accompanied by the war drum beat of steel against steel, each victory claimed with style and grace, every killing blow an expressive statement.",
     "ranks": [
         {
             "name": "Battle Tempo",
-            "description": "Reaction attacks against you are made at +1 Difficulty."
+            "description": "Reaction attacks against you are made at +1 Difficulty, and you gain +1 Accuracy on all checks and saves made against hostile reactions."
         },
         {
             "name": "Step Inside",
-            "description": "1/round, whenever you trigger a reaction attack you may gain +1 Accuracy to the next auxilary or main melee attack roll you make during that turn."
+            "description": "Whenever you trigger a hostile reaction, you may gain +1 Accuracy to the next auxiliary or main melee attack roll you make on that turn. This effect does not stack."
         },
         {
             "name": "Dervish Cadence",
-            "description": "1/round, when you perform a critical hit with an auxiliary or main melee weapon, you may move up to 2 spaces as a free action. This movement ignores engagement and reactions, but you can choose to not ignore reactions instead. Each time a reaction attack you trigger as part of this movement misses, you may make an attack with an auxiliary or main melee weapon against a target in range as a free action. Each time a character chooses not to perform a reaction attack against you during this movement, you may continue to move 2 additional spaces."
+            "description": "1/round, when you perform a critical hit with an auxiliary or main melee weapon, you may move up to 2 spaces as a free action. This movement ignores engagement and reactions, but you can choose to not ignore reactions instead. If you do so, whenever you would trigger a reaction attack (such as Overwatch), that character is forced to make that attack against you if able. Each time a reaction attack you trigger as part of this movement misses, you may make an attack with an auxiliary or main melee weapon against a target in range as a free action, and you may continue to move 2 additional spaces."
         }
 ]
 },
 {  
     "id": "fgtst_bruiser",
-    "name": "BRUISER",
+    "name": "Bruiser",
     "terse": "Hit harder with melee attacks by opening yourself up to reprisal",
     "description": "Look, it's simple. You have a mech, your mech has a hammer, and the whole world looks like it's made of nails. Now all you need to do is hit someone as hard as you can. If they're still moving afterwards? You hit'em again. And maybe a third time for good measure. All the fancy footwork in the world won't help you when both your legs are broken.",
     "ranks": [
@@ -31,16 +31,16 @@
         },
         {
             "name": "Payback",
-            "description": "When you take structure damage, your next melee attack does +1d6 bonus damage on hit."
+            "description": "When you take structure damage, your next melee attack deals +1d6 bonus damage on hit."
         },
         {
             "name": "Take Your Best Shot",
-            "description": "1/scene as a free action, you may choose a single enemy to immediately make an attack against you. Afterwards, whether this attack hits or misses, you may make an attack against them with a non-superheavy melee weapon. You may then allow that enemy to make another attack against you if they wish, repeating this process until one of you has been destroyed or until they decline to attack you any further."
+            "description": "1/scene as a free action, you may choose a hostile character within line of sight to immediately make an attack against you. That character must be able to attack you, or they cannot be chosen. Afterwards, whether this attack hits or misses, you may make an attack against them with a non-superheavy melee weapon. You may then allow that character to make another attack against you if they wish, repeating this process until one of you has been destroyed or until they decline to attack you any further."
         }]
 },
 {
     "id": "fgtst_giant_killer",
-    "name": "GIANT KILLER",
+    "name": "Giant Killer",
     "terse": "Improve your ability to Jockey enemy mechs",
     "description": "David meets Goliath, David kills Goliath, it's a tale as old as time. Things are a bit more dangerous these days than swords and slings, though. A pilot would have to be crazy or desperate to go up against a mech in little more than a hardsuit but you make it look easy, riding those steel titans like a natural and taking them apart with surgical precision. The bigger they are...well, you know the rest.",
     "ranks": [
@@ -59,7 +59,7 @@
 },
 {
     "id": "fgtst_gladiator",
-    "name": "GLADIATOR",
+    "name": "Gladiator",
     "terse": "String together powerful signature fighting techniques",
     "description": "The roar of the crowd. The clash of titans. Humanity's taste for bloodsport never left us, it simply evolved. Now the celebrated fighters pilot mechanized war-machines and the beasts they face are alien, but the rule of the arena remains unchanged; kill or be killed. Hammer and fist, rifle and chainsword, the tools don't matter as much as the drive behind them, to rise above all comers and become the greatest that there ever was.",
     "ranks": [
@@ -69,7 +69,15 @@
         },
         {
             "name": "Comeback Kid",
-            "description": "You may spend your Signature Attack as a reaction to taking Structure damage from a hostile character's attack. This reaction resolves before rolling on the Structure Damage Table. Add the following options to choose from:<br><br><i>Setup:</i><br>-Move up to your speed towards a hostile character, ignoring engagement and reactions, and make an attack against them...<br><br><i>Execution:</i><br>-...knocking all targets back 2 spaces...<br><br><i>Flourish:</i><br> -...and all attacks against you are made at +1 Difficulty until the end of your next turn."
+            "description": "Add the following options to choose from:<br><br><i>Setup:</i><br>-Move up to your speed towards a hostile character, ignoring engagement and reactions, and make an attack against them...<br><br><i>Execution:</i><br>-...knocking all targets back 2 spaces...<br><br><i>Flourish:</i><br> -...and all attacks against you are made at +1 Difficulty until the end of your next turn.<br><br>You also gain the <b>Down But Not Out</b> reaction:",
+            "actions": [
+                {
+                  "name": "Down But Not Out",
+                  "activation": "Reaction",
+                  "trigger": "You take Structure damage from a hostile character's attack, and you have not expended your Signature Attack.",
+                  "detail": "You may immediately use your Signature Attack. This reaction resolves before rolling on the Structure Damage Table."
+                }
+            ]
         },
         {
             "name": "A Card To Play",
@@ -78,7 +86,7 @@
 },
 {
     "id": "fgtst_guerrilla",
-    "name": "GUERRILLA",
+    "name": "Guerrilla",
     "terse": "Use hit-and-run tactics to strike from Hiding and enhance your defense",
     "description": "War isn't fair, so why shouldn't you fight the same way? Leave notions of honorable combat to the would-be knights and champions. You're here to get work done. In the shadows, in the split-second flash of lightning before the thunder comes, hit and run, strike and fade. They may hate you, but they'll learn to fear you all the same.",
     "ranks": [
@@ -97,7 +105,7 @@
 },
 {
     "id": "fgtst_scrounger",
-    "name": "SCROUNGER",
+    "name": "Scrounger",
     "terse": "Scavenge the battlefield for weapons and supplies",
     "description": "Some call you a vulture, like that's supposed to be a bad thing. You ever see a vulture go hungry? The fact is, you know what wins wars isn't guns or blades, it isn't skill at arms or courage or honor. It's food, fuel, bullets and bandages. When the chips are down, you're the one that can be counted on to have a spare magazine and a bottle of the good stuff waiting back at the base. You've got what it takes to win...just as long as nobody asks where you got it from.",
     "ranks": [
@@ -111,7 +119,7 @@
         },
         {
             "name": "Spoils of War",
-            "description": "When you salvage a weapon you may also scour the battlefield wreckage for additional supplies. Roll 1d6 and consult the table to determine what you're able to do with the salvage you find: <br> <br> 1). You find sufficient patch kits and emergency supplies to restore 4 + your Grit in HP divided between any number of allied mechs or pilots, yourself included. <br> 2). You find spare munitions sufficient to replenish 1 use of a limited weapon or system belonging to yourself or an ally. <br> 3). You find an intact IFF/tacnet transponder. Up to two enemies of your choice in the next scene begin combat Locked On. <br> 4). You find enough spare parts to repair one destroyed weapon or system belonging to you or an ally for free. <br> 5). You find a magazine of exotic ammunition, a high-energy power cell, or a cannister of volatile fuel. You or an ally of your choice gains a single-use charge that can be spent as a free action to add +1d6 bonus damage on hit to any attack, but the attacker takes 1d6 heat. A mech can only hold one such charge at a time. <br> 6). You find something without immediate tactical application which is nonetheless likely valuable to someone, such as an encrypted message detailing the enemy force's strategic plans, a black box containing security clearance codes, maps detailing troop movements and defensive emplacement positions, top secret documents, etc."
+            "description": "When you salvage a weapon you may also scour the battlefield wreckage for additional supplies. Roll 1d6 and consult the table to determine what you're able to do with the salvage you find:<br><br>1). You find sufficient patch kits and emergency supplies to restore 4 + your Grit in HP divided between any number of allied mechs or pilots, yourself included.<br>2). You find spare munitions sufficient to replenish 1 use of a limited weapon or system belonging to yourself or an allied character.<br>3). You find an intact IFF/tacnet transponder. Up to two hostile characters of your choice in the next scene begin combat Locked On.<br>4). You find enough spare parts to repair one destroyed weapon or system belonging to you or an allied character for free.<br>5). You find a magazine of exotic ammunition, a high-energy power cell, or a cannister of volatile fuel. You or an allied character of your choice gains a single-use charge that can be spent as a free action to add +1d6 bonus damage on hit to any attack, but the attacker takes 1d6 heat. A mech can only hold one such charge at a time.<br>6). You find something without immediate tactical application which is nonetheless likely valuable to someone, such as an encrypted message detailing the enemy force's strategic plans, a black box containing security clearance codes, maps detailing troop movements and defensive emplacement positions, top secret documents, etc."
         }]
 }
 ]

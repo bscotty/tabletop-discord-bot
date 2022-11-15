@@ -19,7 +19,7 @@
     "source": "C&H",
     "license": "CHARIOTEER",
     "license_level": 1,
-    "on_hit": "This weapon embeds a beacon into the target. At the end of your turn the beacon activates, creating a burst 2 zone. Ranged attacks against enemies within this zone (including the embedded target) gain Arcing, and any enemy that begins its turn in this zone becomes Locked On. A struck target can successfully pass a Hull save as a quick action to remove the beacon and end this effect.<br>You may also target a free open space within range, hitting automatically. Treat beacons fired this way as size 1/2 objects with 10 HP and 10 Evasion/E-Defense",
+    "on_hit": "This weapon embeds a beacon into the target. At the end of your turn the beacon activates, creating a burst 2 zone. Ranged attacks against enemies within this zone (including the embedded target) gain Arcing, and any enemy that begins its turn in this zone becomes Locked On. A struck target can successfully pass a Hull save as a quick action to remove the beacon and end this effect.<br>You may also target a free open space within range, hitting automatically. Treat beacons fired this way as Size 1/2 objects with 10 HP and 10 Evasion/E-Defense",
     "description": "Initially adapted from telemetric surveying beacons and refined for military use as part of the Charioteer initiative, C&H's remote targeting relay system is a hardpoint mounted, squad-integrated multiplatform targeting solution for facilitating accurate fire in artillery bombardment, surgical HVT elimination, and precision fire support operations. Upon deployment each beacon automatically anchors itself in place via explosively driven piton, and once activated they begin providing real-time telemetry to all allied units equipped with the proper coordinating targeting firmware and system-compatible munitions, permissions for which are included as part of the license package at no extra cost."
   },
   {
@@ -86,11 +86,11 @@
     "source": "C&H",
     "license": "KALISTA",
     "license_level": 3,
-    "on_hit": "This weapon gains additional damage based on how many 6's you roll on its base damage dice:<br><ul><li>1: Deal an additional 4 damage.</li><li>2. Deal an additional 7 damage.</li><li>3 or if the weapon's damage is maximized: Deal an additional 10 damage, and the target is Shredded until the end of their next turn.</li></ul><br><br>As a full action you can swing this ungainly weapon in sweeping blow.",
+    "on_hit": "This weapon gains additional damage based on how many 6's you roll on its base damage dice:<br><ul><li>1: Deal an additional 4 damage.</li><li>2. Deal an additional 7 damage, and the target becomes Shredded until the end of the current turn.</li><li>3 or if the weapon's damage is otherwise maximized: Deal an additional 10 damage, and the target becomes Shredded until the end of their next turn.</li></ul><br><br>As a full action you can swing this ungainly weapon in sweeping blow.",
     "actions": [{
       "name": "Sweeping Blow",
       "activation": "Full",
-      "detail": "Characters within Burst 2 must pass a Hull save or take 1d6+3 kinetic damage, be knocked back 2 spaces, and knocked prone. On a successful save they take half damage and are not knocked back or prone."
+      "detail": "Characters within Burst 2 must pass a Hull save or take 1d6+3 kinetic damage, be knocked back 2 spaces, and knocked prone. On a success, they take half damage and are not knocked back or prone."
     }],
     "description": "In the arena, spectacle is everything. Bigger, flashier, and more brutal weapons are highly sought after, with competitors and weapon designers constantly attempting to one-up each other in the field of sensational violence, and few weapons are bigger or more brutal than what C&H dubs the motorized tetsubo. Effectively a chainsword scaled up to enormous size, even without power this massive, ungainly weapon's reinforced housing is sturdy enough to be used as a vicious bludgeon, and with its motor revving it can shred through other mechs outright in a single blow."
   },
@@ -150,11 +150,11 @@
     "source": "C&H",
     "license": "KALLARANI",
     "license_level": 1,
-    "effect": "This weapon deals 10 AP kinetic damage to objects, cover, terrain, and the environment. You gain the Patch Job quick tech action.",
+    "effect": "This weapon deals 10 AP kinetic damage to objects, cover, terrain, and the environment. You gain the Patch Job quick tech option.",
     "actions":[{
       "name": "Patch Job",
       "activation": "Quick Tech",
-      "detail": "Choose an ally within sensors. They may take 1d6 heat and spend 1 Repair to immediately restore their HP to full. This can only be used 1/scene on each character." 
+      "detail": "Choose an allied character within sensors. They may take 1d6 heat and spend 1 Repair to immediately restore their HP to full. This can only be used 1/scene on each character." 
     }],
     "description": "The VF-20 “Termite” is a VTOL/all-atmosphere capable drone platform originally designed for use by shipbreakers and salvage crews to assist with dismantling decommissioned ships and spaceborne infrastructure assets, but pirates and mercenary crews frequently employ modified versions of these civilian drones as ad hoc combat units. This standardized license model is less makeshift in design but nonetheless incorporates a variety of hardpoint-mounted demolition tools rated for combat use as well as engineering. Skilled operators can even utilize these drones to administer minor field repairs in a pinch."
   },
@@ -281,7 +281,7 @@
     "source": "C&H",
     "license": "MATADOR",
     "license_level": 3,
-    "effect": "Whenever a hostile character makes a tech action against you or forces you to make a Systems save, until the end of your next turn all attacks with this weapon lose Inaccurate and gain Reliable 3 and Seeking against that character.<br>You may set this weapon into an enhanced tracking mode as a quick action. While in this mode, the effect of this weapon also applies whenever hostile characters make tech actions or force Systems saves against any allies within range 3, but you become Slowed. You may end this effect as a protocol.",
+    "effect": "Whenever a hostile character makes a tech action against you or forces you to make a Systems save, until the end of your next turn all attacks with this weapon lose Inaccurate and gain Reliable 3 and Seeking against that character.<br>You may set this weapon into an enhanced tracking mode as a quick action. While in this mode, the effect of this weapon also applies whenever hostile characters make tech actions or force Systems saves against any allied characters within range 3, but you become Slowed. You may end this effect as a protocol.",
     "description": "Though they can be dumbfired in a pinch, the Banderilla missile platform's onboard expert system achieves full potential when provided with hostile active sensor sweeps to home in on, riding an enemy's own electronic emmissions back to the source to deliver precision indirect-attack and counterbattery fire regardless of intervening terrain. Each missile incorporates advanced inertial and topographical navigation systems as well as a multistage motor with burn-loiter capabilities to overcome reactive sensor shutdowns, homing in on an active threat's current or extrapolated position to deliver its payload on target."
   },
   {
@@ -326,8 +326,8 @@
     "source": "C&H",
     "license": "RETIARIUS",
     "license_level": 2,
-    "on_crit": "The target must pass a Systems save or become Jammed until the end of their next turn. On a success, they become impaired until the end of their next turn.",
-    "description": "A length of reinforced, high-strength superconductive alloy cable hooked up to an electromagnetic field generator, powered down the shock lash is little more than an ungainly bludgeon but when drawing power directly from a mech's reactor the weapon comes to life, wrapped in a crackling ionized plasma sheath capable of discharging up to 0.65 GJ upon impact. The combination of kinetic impact, thermal stress, and electrical feedback is perfectly suited to inflict severe damage to a target's internal components, triggering cascading system failures and critical overloads."
+    "on_crit": "The target must pass a Systems save or become Jammed until the end of their next turn. On a success, they become Impaired until the end of their next turn.",
+    "description": "A length of reinforced, high-strength superconductive alloy cable hooked up to an electromagnetic field generator, powered down the shock lash is little more than an ungainly bludgeon, but when drawing power directly from a coldcore reactor the weapon springs to life in a crackling ionized plasma sheath capable of discharging up to 0.65 GJ upon impact. The combination of kinetic impact, thermal stress, and electrical feedback is perfectly suited to inflict severe damage to a target's internal components, triggering cascading system failures and critical overloads."
   },
   {
     "id": "fgtsmw_blast_chain",
@@ -348,7 +348,7 @@
     "source": "C&H",
     "license": "RETIARIUS",
     "license_level": 3,
-    "on_hit": "You may automatically grapple your target. You may maintain this grapple regardless of adjacency as long as the target remains within this weapon's Threat range. You cannot make attacks with this weapon while maintaining this grapple. If you control the grapple, you can pull the target adjacent to you as a free action.<br>You may end this grapple as normal, or use a quick action to detonate the mines on the chain. Doing so immediately ends the grapple, deals 2d6 explosive damage to the target, and they become Shredded until the end of their next turn. Until you detonate these mines, this weapon does not need to be reloaded.",
+    "on_hit": "You may automatically grapple your target. You may maintain this grapple regardless of adjacency as long as the target remains within this weapon's Threat. You cannot make attacks with this weapon while maintaining this grapple. If you control the grapple, you can pull the target adjacent to you as a free action.<br>You may end this grapple as normal, or use a quick action to detonate the mines on the chain. Doing so immediately ends the grapple, deals 2d6 explosive damage to the target, and they become Shredded until the end of their next turn. Until you detonate these mines, this weapon does not need to be reloaded.",
     "description": "Perhaps the most visually distinctive weapon in the Retiarius line, the blast chain is self-described, a chain comprised of high-powered electromagnetic limpet mines joined together with flexible links of titanium/polycarbon weave. The result is an unusual weapon that can be used to entangle and restrain enemies from a distance before reeling them in, allowing the user to pummel their opponent with other weapons along with the option of finishing them off in spectacular fashion by detonating the mines attached to them."
   },
   {
@@ -474,7 +474,7 @@
       "activation": "Quick",
       "detail": "1/round, this weapon can be drawn back with a quick action to increase its range to 15 and its damage to 2d6+3 kinetic damage on its next attack. This effect is lost if you move for any reason."
     }],
-    "effect": "If you attack with this weapon while Hidden you do not automatically break Hiding. On hit, the target must pass a Systems save or you remain Hidden, even if the attack triggers other effects that would normally break Hiding such as additional saves. On a miss you automatically remain Hidden.<br><br>When you print this mech or during a full repair, choose 6 of these specialized arrows to equip to your mech. You may choose individual options more than once, up to a maximum of 2 uses of any given option. Whenever you attack with this weapon, you may expend one of these arrows to gain its effect. These arrows do not count as a limited system and cannot be replenished or enhanced by systems and abilities that affect limited systems.<br><br><i>Mute Charge</i><br>You do not break Hiding with this option on hit or miss. The bow deals energy damage, and on hit the target becomes Jammed until the end of its next turn. Characters can only be affected by this option 1/scene.<br><br><i>Thermite Warhead</i><br> On hit, create a burst 1 area around the target. The target and all characters within the area take 3 burn.<br><br><i>Hyperdense Penetrator</i><br>On hit, the bow deals +1d6 bonus damage and the target is Shredded until the end of its next turn.<br><br><i>Fragmentation Bolt</i><br>The bow's damage becomes explosive and its range becomes a Blast 1 within range 10, but deals half damage to targets without the Biological tag.<br><br><i>Grapnel Line</i><br>This option deals no damage. You may either choose a target within range 10 and force them to pass a Hull save or be knocked prone, or you may target a free space or surface within range 10 and immediately fly to that space or the nearest adjacent free space. You must end this movement on the ground or another solid surface or else immediately begin falling.<br><br><i>Viral Payload</i><br>On hit, the target takes 2 heat and is Slowed, Impaired, and all tech attacks against them gain +1 Accuracy until the end of their next turn."
+    "effect": "If you attack with this weapon while Hidden you do not automatically break Hiding. On hit, the target must pass a Systems save or you remain Hidden, even if the attack triggers other effects that would normally break Hiding such as additional saves. On a miss you automatically remain Hidden.<br><br>When you print this mech or during a full repair, choose 6 of these specialized arrows to equip to your mech. You may choose individual options more than once, up to a maximum of 2 uses of any given option. Whenever you attack with this weapon, you may expend one of these arrows to gain its effect. These arrows do not count as a limited system and cannot be replenished or enhanced by systems and abilities that affect limited systems.<br><br><i>Mute Charge</i><br>You do not break Hiding with this option on hit or miss. The bow deals energy damage, and on hit the target becomes Jammed until the end of its next turn. Characters can only be affected by this option 1/scene.<br><br><i>Thermite Warhead</i><br> On hit, create a burst 1 area around the target. The target and all characters within the area take 3 burn.<br><br><i>Hyperdense Penetrator</i><br>On hit, the bow deals +1d6 bonus damage and the target is Shredded until the end of its next turn.<br><br><i>Fragmentation Bolt</i><br>The bow's damage becomes explosive and its range becomes a Blast 2 within range 10, but deals half damage to targets without the Biological tag.<br><br><i>Grapnel Line</i><br>This option deals no damage. You may either choose a target within range 10 and force them to pass a Hull save or be knocked prone, or you may target a free space or surface within range 10 and immediately fly to that space or the nearest adjacent free space. You must end this movement on the ground or another solid surface or else immediately begin falling.<br><br><i>Viral Payload</i><br>On hit, the target takes 2 heat and is Slowed, Impaired, and all tech attacks against them gain +1 Accuracy until the end of their next turn."
   },
   {
     "id": "fgtsmw_slipgun",
@@ -491,7 +491,7 @@
     "source": "HORUS",
     "license": "EFREET",
     "license_level": 1,
-    "on_attack": "Characters within the affected area must pass a Systems save or take 1d6 energy damage and be teleported 2 spaces in a direction of your choice. Allies that fail this save take half damage. This weapon cannot be modified or benefit from core bonuses.",
+    "on_attack": "Characters within the affected area must pass a Systems save or take 1d6 energy damage and be teleported 2 spaces in a direction of your choice. Allied characters that fail this save take half damage. This weapon cannot be modified or benefit from core bonuses.",
     "description": "++Cut a hole in the membrane, peeling back the barrier that separates objects in space from one another. Firmly grasp the threads that anchor bodies and perspectives to a single point in time, a series of discrete moments forming a continuum both linear and cyclical. Ready your weapon, take aim, and [fire]"
   },
   {
@@ -583,7 +583,7 @@
     "source": "SSC",
     "license": "COMET",
     "license_level": 3,
-    "effect": "At the end of your turn, as a free action you may deal 1 kinetic damage to all targets within range 5 that are Locked On.",
+    "effect": "At the end of your turn, as a free action you may deal 1 AP kinetic damage to all targets within range 5 and line of sight that are Locked On.",
     "description": "The Harrier nexus is an aggressive, dedicated gunnery/suppression unit designed for close-in fire support. Typically equipped with heavy caliber chassis-tier automatic weaponry for sustained rate-of-fire against short-range threats, the drone's advanced SSC All-Theater/HOVER flight system allows it to quickly track multiple targets independently without compromizing accuracy or stability, and sophisticated heuristics grant it unparalleled battlefield autonomy even without direct operator supervision."
   },
   {
@@ -770,7 +770,7 @@
     "license": "MICROMONARCH",
     "license_level": 1,
     "effect": "You may attack one or two targets within range and line of sight with this weapon. If you attack two targets this weapon deals 2 explosive damage instead.",
-    "description": "Intended as a theater/role alternative for the Sharanga system and the foundation of the Micromonarch initiative, the Govardhana is SSC's premier hardpoint mounted micromissile system, delivering advanced precision-guided munitions in fire-selectable volleys. Each launcher is stack-loaded to maximize ammunition capacity for increased operational duration and a variety of hardpoint configurations are available to fit all major corporations' standard frames with minimal adjustment required."
+    "description": "Intended as a theater/role alternative for the Sharanga system and the foundation of the Micromonarch initiative, the Govardhana is SSC's premier chassis-mounted micromissile system, delivering advanced precision-guided munitions in fire-selectable volleys. Each launcher is stack-loaded to maximize ammunition capacity for increased operational duration and a variety of hardpoint configurations are available to fit all major manufacturers' standard frames with minimal adjustment required."
   },
   {
     "id": "fgtsmw_teen_baan_missiles",
@@ -794,7 +794,7 @@
           {"id": "tg_ordnance"},
           {"id": "tg_smart"}
         ],
-        "effect": "This weapon does not hit yourself or allies."
+        "effect": "This weapon does not hit yourself or allied characters."
       },        
       {
         "name": "Single Target",
@@ -818,7 +818,7 @@
     "source": "SSC",
     "license": "MICROMONARCH",
     "license_level": 1,
-    "description": "Furthering development of the Micromonarch license as a close- to mid-range system, the Teen Baan cluster missile represents a significant advancement in reduced-collateral smart weapon design. Each missile is a self-contained launch vehicle for multiple independent guided submunitions receiving coordinating telemetry from an integrated Comp/Con unit, and the use of SSC's proprietary BRILLIANCE tacnet/IFF integration protocols allows for unparalleled danger-close fire missions without the risk of incidental blue-on-blue outcomes."
+    "description": "Furthering development of the Micromonarch license as a close- to mid-range system, the Teen Baan cluster missile represents a significant advancement in reduced-collateral smart weapon design. Each missile is a self-contained launch vehicle for multiple independent guided submunitions receiving coordinating telemetry from an integrated comp/con unit, and the use of SSC's proprietary BRILLIANCE tacnet/IFF integration protocols allows for unparalleled danger-close fire missions without the risk of incidental blue-on-blue outcomes."
   },
   {
     "id": "fgtsmw_seeker_catapult",
@@ -860,7 +860,7 @@
     "source": "HA",
     "license": "SPITFIRE",
     "license_level": 1,
-    "on_attack": "You may overclock this weapon to deal +3 bonus damage on hit, but it cannot be fired again until you take the Stabilize action.",
+    "on_attack": "You may overclock this weapon to gain Overkill and deal +3 bonus damage on hit, but it must then be reloaded before it can be used again (as though it was Loading).",
     "effect": "This weapon gives +1 Accuracy to pilot or mech skill checks involving laser communication, precision cutting or welding, data transfer, laser microphone interferometry, or other miscellaneous tasks which could be supplemented with a low power laser system.", 
     "description": "The HA POLARIS-pattern directed energy system has less petawatt output than the SOL line rifle, but what it lacks in power it makes up for in versatility. Designed in response to requests for a simple, durable, flexible laser weapon suitable for auxiliary levies and planetary militia, the POLARIS has two primary firing modes, standard beam and highdraw assault pulse, and can function as a multipurpose laser tool courtesy of an integrated firmware suite. Additionally the weapon's frame features embedded universal charging ports suitable for infantry and dismounted pilots on bivouac."
   },
@@ -998,7 +998,7 @@
     "source": "C&H",
     "license": "SHEPHERD",
     "license_level": 1,
-    "effect": "This system occupies a non-integrated mount of your choice in place of weapons. Choose up to two systems with the Grenade, Mine, or Deployable tags and load them onto this system, reducing their combined SP costs by 4 to a minimum of 0. If this system is destroyed then all systems loaded onto it are destroyed as well, and they cannot be repaired until the tactical webbing is repaired.<br><br> NOTE: This feature is unsupported by Comp/Con, instead you can write the systems in the notes section of this weapon, creating custom counters for their limited uses, and accounting for SP accordingly.",
+    "effect": "This system occupies a non-integrated mount of your choice in place of weapons. Choose up to two systems with the Grenade, Mine, or Deployable tags and load them onto this system, reducing their combined SP costs by 4 to a minimum of 0. If this system is destroyed then all systems loaded onto it are destroyed as well, and they cannot be repaired until the tactical webbing is repaired.<br><br><b>NOTE:</b> This feature is unsupported by Comp/Con. Instead, you can write the systems in the notes section of this weapon, creating custom counters for their Limited uses and accounting for SP accordingly.",
     "description": "C&H's latest \"Tenzing\" line of mech-scale tactical sub-hardpoint fasteners allows users a number of flexible configurations to best fit their frame, providing hands-free load bearing solutions capable of supporting a wide variety of battlefield deployable systems from all major manufacturers. Observers have remarked upon the similarities to this system and a now-discontinued license previously offered by Smith-Shimano Corpro, to which C&H representatives have thus far issued no comment."
   },
   {
@@ -1020,8 +1020,8 @@
     "source": "C&H",
     "license": "TALWAR",
     "license_level": 1,
-    "on_attack": "You may treat this weapon's range as Cone 5, but it cannot be fired again until you take the Stabilize action.", 
-    "description": "The Mitsubaru Tactical Machine Pistol is a weapon infamous for its numerous design flaws, poor engineering, and a cyclic rate sufficiently overtuned to cause the weapon to jam and even explode unless printed with a burst regulator. The design license was quickly abandoned, then just as quickly pirated where it became a common sight in the hands of outlaws and criminals. The Sirocco, however, is an updated and overhauled officially licensed refinement of the original design, specially reinforced to allow for unrestricted rate-of-fire even while using C&H's custom hyper-velocity ammunition. The weapon's cyclic rate remains quite high and pilots are advised to adjust logistics/supply requisitions accordingly with prolonged use."
+    "on_attack": "You may treat this weapon's range as Cone 5, but it must then be reloaded before it can be used again (as though it was Loading).", 
+    "description": "The Mitsubachi Tactical Machine Pistol is a weapon infamous for its numerous design flaws, poor engineering, and a cyclic rate sufficiently overtuned to cause the weapon to jam and even explode unless printed with a burst regulator. The design license was quickly abandoned, then just as quickly pirated where it became a common sight in the hands of outlaws and criminals. The Sirocco, however, is an updated and overhauled officially licensed refinement of the original design, specially reinforced to allow for unrestricted rate-of-fire even while using C&H's custom hyper-velocity ammunition. The weapon's cyclic rate remains quite high and pilots are advised to adjust logistics/supply requisitions accordingly with prolonged use."
   },
   {
     "id": "fgtsmw_slug_gun",
@@ -1068,13 +1068,14 @@
     "source": "C&H",
     "license": "MANTLE",
     "license_level": 1,
-    "on_hit": "You may expend a charge to increase this weapon's damage to 1d6 kinetic damage + 1d6 energy damage.",
+    "on_hit": "You may expend a charge to deal +1d6 bonus energy damage.",
+    "effect": "You may attack with this weapon without expending charges, and whenever you would be forced to destroy a weapon due to critical damage or other effects, you may choose this weapon to destroy even if it has no charges remaining.",
     "actions":[{
-      "name": "Electroplasma Shield",
+      "name": "Energetic Parry",
       "activation": "Reaction",
       "frequency": "1/round",
       "trigger": "You are hit by a ranged or a melee attack.",
-      "detail": "You may take 3 heat and expend a charge to gain resistance against the triggering attack."
+      "detail": "Take 3 heat and expend a charge to gain resistance against the triggering attack."
     }],
     "description": "A contemporary adaptation of the now-outdated explosive/reactive armor concept, electromagnetic/reactive armor is comprised of electrically charged plates separated by an air gap to form a high-powered capacitor. When the outermost layer is penetrated the circuit is closed, creating an energetic plasma jet which diffuses incoming kinetic energy and attenuates hostile wave-based weapons fire. This particular system adapts the technology to an armature-mounted shield, adding the ability to manually trigger capacitor cells to function as a powerful close-combat plasma torch, but doing so rapidly degrades the shield's defensive capabilities."
   },
@@ -1097,7 +1098,7 @@
     "source": "C&H",
     "license": "MANTLE",
     "license_level": 1,
-    "effect": "Your mech is considered to be one size larger for purposes of engagement and all forced movement against you is reduced by 1 space, to a minimum of 0.",
+    "effect": "Your mech is considered to be one Size larger for purposes of engagement, and you may reduce any involuntary movement against you by 1 space to a minimum of 0.",
     "description": "Utilizing reinforced manipulator-free mounting for increased resilience under combat stresses, C&H's Khetaka model heavy combat shield is comprised of multiple articulated plates for optimum full-frame coverage and increased threat interception profile across multiple chassis configurations. The shield's composite armor construction and adjustible angling ensures maximum deflection as well as serving as an effective close-combat armament in its own right, while internal stabilizers help offset its significant mass and provide additional compensation against sub-payload kinetic impacts."
   },
   
@@ -1123,7 +1124,7 @@
 	{"id": "tg_loading"},
 	{"id": "tg_ap"}
 	        ],
-	"effect": "When fired at objects, cover, terrain, and the environment, this weapon automatically deals 20 AP explosive damage to up to three adjacent size 1 sections."
+	"effect": "When fired at objects, cover, terrain, and the environment, this weapon automatically deals 20 AP explosive damage to up to three adjacent Size 1 sections."
   },
   {
     "id": "fgtsmw_ballistic_shield",
@@ -1150,5 +1151,39 @@
       "detail": "As a protocol you may extend or retract the shield's ballistic panels. While the panels are extended you become Slowed, but you gain resistance to all attacks made as a reaction, and when you perform a critical hit with this weapon the target is knocked Prone."
     }],
     "description": "A common armament among boarding teams, IPS-N's Rampart chassis-grade combat shield can be affixed to a brachial mount hardpoint or manipulator-held, and features a retractable panel design to minimize user profile in close quarters where maneuverability can be vital. When needed, the reinforced laminate panels extend and lock securely into place to provide a secondary layer of ablative protection against ballistic/kinetic impacts and directed energy weaponry. Survival rates of assault leaders utilizing Rampart shields in action see an increase of 22% on average."
+  },
+  {
+    "id": "fgtsmw_chimera_integrated" ,
+    "name": "TALON Drone",
+    "mount": "Main",
+    "type": "Nexus",
+    "damage": [{
+      "type": "Energy",
+      "val": "1d6"
+    }],
+    "range": [
+      {"type": "Range","val": 3},
+      {"type": "Threat","val": 3}
+    ],
+    "tags": [
+      {"id": "tg_reliable","val": 2}, {"id": "tg_smart"}
+    ]
+  },
+  {
+    "id": "fgtsmw_gajasura_integrated" ,
+    "name": "Demon's Fang",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [{
+      "type": "Kinetic",
+      "val": "1d6+3"
+    }],
+    "range": [
+      {"type": "Threat","val": 1}
+    ],
+    "tags": [
+      {"id": "tg_reliable","val": 4}
+    ],
+    "effect": "This weapon can be used while Jammed. 1/round, if you destroy a character with this weapon you can move up to 2 spaces and make another attack with this weapon as a free action. This movement ignores engagement and doesn't provoke reactions."
   }
 ]
