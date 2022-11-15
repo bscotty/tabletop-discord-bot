@@ -19,7 +19,6 @@ import {getSuldanLcp} from "../data/lancer/lcp/homebrew/suldan";
 import {getStolenCrownLcp} from "../data/lancer/lcp/homebrew/stolen-crown";
 import {getGilgameshLcp} from "../data/lancer/lcp/homebrew/gilgamesh";
 import {getDustgraveLcp} from "../data/lancer/lcp/dustgrave";
-import {getSuldanAltFramesLCP} from "../data/lancer/lcp/homebrew/suldan alt frames";
 import {getSsmrPart1Lcp} from "../data/lancer/lcp/homebrew/ssmr part 1";
 import {getEHandSLCP} from "../data/lancer/lcp/homebrew/event horizon & suns";
 
@@ -54,8 +53,7 @@ export class Lancer {
             getSciroccoLcp(),
             getSsmrPart1Lcp(),
             getStolenCrownLcp(),
-            getSuldanLcp(),
-            getSuldanAltFramesLCP()
+            getSuldanLcp()
         ]
     }
 

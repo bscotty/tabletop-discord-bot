@@ -41,13 +41,13 @@
     "damage": [
         {"type": "Kinetic", "val": 2}
     ],
-    "effect": "This weapon also takes up 1 gear slot. If you attack with this weapon without moving or attempting any other actions on your turn you may increase its damage to 4 kinetic for that attack. On hit, size 1 or smaller targets must pass a Hull check or be knocked prone."
+    "effect": "This weapon also takes up 1 gear slot. If you attack with this weapon without moving or attempting any other actions on your turn you may increase its damage to 4 kinetic for that attack. On hit, Size 1 or smaller targets must pass a Hull check or be knocked prone."
 },
 {
     "id": "fgtspg_sear",
     "name": "SEAR",
     "type": "Weapon",
-    "description": "The signature armament of the Emir's elite Jannissaries, the Suldani Emirate Advanced Rifle is a sophisticated multi-mode select-fire weapon featuring integrated Comp/Con ballistic targeting assistance along with a attached secondary launcher designed to fire proprietary plasma warhead \"Executioner\" micromissiles. Jannissary SEARs were biometrically encoded to their individual users, triggering an explosive failsafe upon detecting an unauthorized user or indications of tampering, but after the Emir was deposed C&H managed to obtain several \"blank\" rifles and successfully reverse-engineer the design for mass-licencing.",
+    "description": "The signature armament of the Emir's elite Jannissaries, the Suldani Emirate Advanced Rifle is a sophisticated multi-mode select-fire weapon featuring integrated comp/con ballistic targeting assistance along with a attached secondary launcher designed to fire proprietary plasma warhead \"Executioner\" micromissiles. Jannissary SEARs were biometrically encoded to their individual users, triggering an explosive failsafe upon detecting an unauthorized user or indications of tampering, but after the Emir was deposed C&H managed to obtain several \"blank\" rifles and successfully reverse-engineer the design for mass-licencing.",
     "tags": [
         {"id": "tg_limited", "val": 2}
     ],
@@ -100,7 +100,7 @@
     "id": "fgtspg_tarantula_climb_assist_hardsuit",
     "name": "Tarantula Climb-Assist Hardsuit",
     "type": "Armor",
-    "description": "This specialized mobility hardsuit allows you to move freely along vertical and overhanging surfaces as if they were normal terrain, but you cannot boost while doing so. You can freely use weapons while climbing and cannot be knocked prone while on a vertical or overhanging surface. You also gain +1 Accuracy to all contested rolls made to jockey a mech or avoid being thrown off of a mech you are jockeying.<br><br>The ultimate in safe and reliable personal powered climbing equipment, the Tarantula's array of articulated all-surface pitons and integrated Comp/Con expert system allows for effortless mobility across even the most challenging surfaces, while also providing peerless hands-free stability which virtually eliminates the need for a human climbing partner.",
+    "description": "This specialized mobility hardsuit allows you to move freely along vertical and overhanging surfaces as if they were normal terrain, but you cannot boost while doing so. You can freely use weapons while climbing and cannot be knocked prone while on a vertical or overhanging surface. You also gain +1 Accuracy to all contested rolls made to jockey a mech or avoid being thrown off of a mech you are jockeying.<br><br>The ultimate in safe and reliable personal powered climbing equipment, the Tarantula's array of articulated all-surface pitons and integrated comp/con expert system allows for effortless mobility across even the most challenging surfaces, while also providing peerless hands-free stability which virtually eliminates the need for a human climbing partner.",
     "bonuses":[
         {"id": "pilot_evasion", "val": 10, "replace": true},
         {"id": "pilot_edef", "val": 10, "replace": true},
