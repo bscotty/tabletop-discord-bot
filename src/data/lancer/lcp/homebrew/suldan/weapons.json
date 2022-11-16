@@ -348,7 +348,7 @@
     "source": "C&H",
     "license": "RETIARIUS",
     "license_level": 3,
-    "on_hit": "You may automatically grapple your target. You may maintain this grapple regardless of adjacency as long as the target remains within this weapon's Threat. You cannot make attacks with this weapon while maintaining this grapple. If you control the grapple, you can pull the target adjacent to you as a free action.<br>You may end this grapple as normal, or use a quick action to detonate the mines on the chain. Doing so immediately ends the grapple, deals 2d6 explosive damage to the target, and they become Shredded until the end of their next turn. Until you detonate these mines, this weapon does not need to be reloaded.",
+    "on_hit": "You may automatically grapple your target. You may maintain this grapple regardless of adjacency as long as the target remains within this weapon's Threat. You cannot make attacks with this weapon while maintaining this grapple. If you control the grapple, you can pull the target adjacent to you as a free action.<br>You may end this grapple as normal, or use a quick action to detonate the mines on the chain. Doing so immediately ends the grapple, deals 2d6 explosive damage to the target, and they become Shredded until the end of their next turn. This weapon does not need to be reloaded until you detonate these mines.",
     "description": "Perhaps the most visually distinctive weapon in the Retiarius line, the blast chain is self-described, a chain comprised of high-powered electromagnetic limpet mines joined together with flexible links of titanium/polycarbon weave. The result is an unusual weapon that can be used to entangle and restrain enemies from a distance before reeling them in, allowing the user to pummel their opponent with other weapons along with the option of finishing them off in spectacular fashion by detonating the mines attached to them."
   },
   {
@@ -857,10 +857,13 @@
       "type": "Range",
       "val": 8}
     ],
+    "tags": [
+      {"id": "tg_loading"}
+    ],
     "source": "HA",
     "license": "SPITFIRE",
     "license_level": 1,
-    "on_attack": "You may overclock this weapon to gain Overkill and deal +3 bonus damage on hit, but it must then be reloaded before it can be used again (as though it was Loading).",
+    "on_attack": "You may overclock this weapon to gain Overkill and deal +3 bonus damage on hit. This weapon does not need to be reloaded until you attack this way.",
     "effect": "This weapon gives +1 Accuracy to pilot or mech skill checks involving laser communication, precision cutting or welding, data transfer, laser microphone interferometry, or other miscellaneous tasks which could be supplemented with a low power laser system.", 
     "description": "The HA POLARIS-pattern directed energy system has less petawatt output than the SOL line rifle, but what it lacks in power it makes up for in versatility. Designed in response to requests for a simple, durable, flexible laser weapon suitable for auxiliary levies and planetary militia, the POLARIS has two primary firing modes, standard beam and highdraw assault pulse, and can function as a multipurpose laser tool courtesy of an integrated firmware suite. Additionally the weapon's frame features embedded universal charging ports suitable for infantry and dismounted pilots on bivouac."
   },
@@ -1014,13 +1017,14 @@
       {"type": "Range", "val": 3},
       {"type": "Threat", "val": 3}
     ],
-    "tags": [{
-      "id": "tg_inaccurate"
-    }],
+    "tags": [
+      {"id": "tg_inaccurate"},
+      {"id": "tg_loading"}
+    ],
     "source": "C&H",
     "license": "TALWAR",
     "license_level": 1,
-    "on_attack": "You may treat this weapon's range as Cone 5, but it must then be reloaded before it can be used again (as though it was Loading).", 
+    "on_attack": "On attack, you may expend this weapon's ammunition in a single burst to treat its range as Cone 5. This weapon does not need to be reloaded until you attack this way.", 
     "description": "The Mitsubachi Tactical Machine Pistol is a weapon infamous for its numerous design flaws, poor engineering, and a cyclic rate sufficiently overtuned to cause the weapon to jam and even explode unless printed with a burst regulator. The design license was quickly abandoned, then just as quickly pirated where it became a common sight in the hands of outlaws and criminals. The Sirocco, however, is an updated and overhauled officially licensed refinement of the original design, specially reinforced to allow for unrestricted rate-of-fire even while using C&H's custom hyper-velocity ammunition. The weapon's cyclic rate remains quite high and pilots are advised to adjust logistics/supply requisitions accordingly with prolonged use."
   },
   {

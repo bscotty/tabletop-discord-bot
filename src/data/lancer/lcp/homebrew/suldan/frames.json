@@ -37,7 +37,7 @@
       "description": "Becoming engaged does not cause the Charioteer to stop moving, and you do not treat enemy units as obstructions."
     },
     {
-      "name": "Forward Observation Suite:",
+      "name": "Forward Observation Suite",
       "description": "1/round, the Charioteer may Scan and Lock On to a character within range 3 as a free action."
     },
     {
@@ -49,6 +49,8 @@
       "active_name": "Redline",
       "active_effect": "Gain the Mach Acceleration reaction for the rest of the scene.",
       "activation": "Protocol",
+      "passive_name": "HYPERION Reactor",
+      "passive_effect": "Whenever you move 12 or more spaces during a single turn, all attacks against you are made at +1 Difficulty until the start of your next turn. This effect does not stack.",
       "description": "Military-grade coldcore fusion reactors are precisely tuned and balanced for optimal output during the rigors of combat, but racing frames have different performance requirements. C&H's proprietary EF-320 HYPERION reactor was designed by Mattias Herschel, five-time winner of the Kaleka Cup, to provide enhanced power flow capable of maintaining extreme speeds for prolonged periods. Superior motive output is kept manageable thanks to high-performance stabilization gyros and a sophisticated ride-by-wire control system, and as a result the Charioteer is capable of acceleration so sudden that conventional fire-control systems have difficulty anticipating its movements.<br>The HYPERION can even be pushed further for brief periods. Disengaging a reactor's fusion regulators is highly inadvisable for anyone who is not a certified nuclear reactor technician, and C&H Ltd. waives all responsibility for pilots who opt to do so anyway. Nonetheless the fact that the Charioteer can withstand such power output at all is a testament to its design.",
       "active_actions": [
         {
