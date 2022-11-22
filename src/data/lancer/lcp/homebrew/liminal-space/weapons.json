@@ -491,7 +491,7 @@
     "description": "The signature weapon of the SLOTH frame is hideously simple in design - literally just an enormous slab of exceedingly dense material, made with the frame’s immense strength in mind. The two together form a force that rightly terrifies enemy actors; to be caught close to a hostile SLOTH is to suddenly cease existing. In other hands, it is still an enormous pile of painful physics lessons."
   },
   {
-    "id": "liminal_downfall_wrath_aggression",
+    "id": "liminal_downfall_wrath_aggression_integrated",
     "name": "Aggression",
     "mount": "Main",
     "type": "CQB",
@@ -514,7 +514,7 @@
     "effect": "This weapon gains the AP tag against characters you have previously attacked this round."
   },
   {
-    "id": "liminal_downfall_wrath_alltheguns",
+    "id": "liminal_downfall_wrath_alltheguns_integrated",
     "name": "All The Guns",
     "mount": "Main",
     "type": "???",
@@ -665,7 +665,7 @@
     "description": "The downfall of many who think that Magnum Opus designs are flash without substance, this unobtrusive rod is in fact a very potent launch weapon for small near-critical implosion charges. The scorching shockwaves from these charges provide all the expected flash, while the crushing impact sends warmachines tumbling."
   },
   {
-    "id": "liminalspace_moi_solomon_goetia",
+    "id": "liminalspace_moi_solomon_goetia_integrated",
     "name": "Goetia",
     "mount": "Heavy",
     "type": "Nexus",
@@ -694,7 +694,7 @@
     "description": ""
   },
   {
-    "id": "liminalspace_moi_solomon_infernalstrength",
+    "id": "liminalspace_moi_solomon_infernalstrength_integrated",
     "name": "Infernal Strength",
     "mount": "Heavy",
     "type": "Melee",

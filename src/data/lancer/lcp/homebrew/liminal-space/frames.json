@@ -537,8 +537,8 @@
       "activation": "Full",
       "active_effect": "Make an attack with All The Guns. This is the only way this weapon can be fired.",
       "integrated": [
-        "liminal_downfall_wrath_aggression",
-        "liminal_downfall_wrath_alltheguns"
+        "liminal_downfall_wrath_aggression_integrated",
+        "liminal_downfall_wrath_alltheguns_integrated"
       ]
     }
   },
@@ -719,8 +719,8 @@
       ],
       "description": "To call the Goetia a weapon would be to decidedly undersell it. This horrifying device is a fragmentary extrusion of a powerful paracausal entity that Magnum Opus has listed as the Belial-class: a being that perceives a world of flame and torment that reality has no power to dispute or assuage.<br><br>The first knowledge of Belial came from the Voladore traders that often work with Magnum Opus, both a gift and a warning. Ships had been going missing along one of the blink gate lines and Magnum Opus was part of a UIB/USB investigation into possible sabotage. The sealing of the Entity exacted a high price not only in lives but in the loss of the original Agartha Blink Station, sunk into the event horizon of a black hole as its gate warped and shifted, claws stretching the gate wide.<br><br>While purged from records by the UIB, the Agartha Blink Station still can be called with emergency codes stored within the Solomon, if one is sure they can put down what they call up. The chains of hereticode around the shards of Belial hold. For now, at least.",
       "integrated": [
-        "liminalspace_moi_solomon_infernalstrength",
-        "liminalspace_moi_solomon_goetia"
+        "liminalspace_moi_solomon_infernalstrength_integrated",
+        "liminalspace_moi_solomon_goetia_integrated"
       ]
     }
   },
