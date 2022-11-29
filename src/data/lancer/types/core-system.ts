@@ -11,7 +11,7 @@ import {
 export type ICoreSystemData = {
     name: string
     active_name: string
-    active_effect: string // v-html
+    active_effect?: string // v-html
     activation: ActivationType
     description?: string // v-html
     deactivation?: ActivationType

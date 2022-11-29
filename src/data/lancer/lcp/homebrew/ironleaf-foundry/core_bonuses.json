@@ -3,22 +3,8 @@
     "id": "cb_perfection_of_form",
     "name": "Perfection of Form",
     "source": "IF",
-    "effect": "You gain +1 speed and a +1 bonus on all checks and saves.",
-    "description": "“Gods I look good. Come on, it would be a crime for you to scratch this plating.” - Aphrodite Alpha",
-    "mounted_effect": "",
-    "actions": [],
-    "bonuses": [
-      {
-        "id": "speed",
-        "val": 1,
-        "damage_types": [],
-        "range_types": [],
-        "weapon_types": [],
-        "weapon_sizes": [],
-        "overwrite": false,
-        "replace": false
-      }
-    ],
+    "effect": "You and all adjacent allies gain an additional +1 to all checks and saves. 1/mission, you automatically succeed at any one check or save.",
+    "description": "“Gods I look good. Come on, it would be a crime for you to scratch this plating.” - Aoife, IF Test Pilot",
     "synergies": [
       {
         "locations": [
@@ -27,68 +13,37 @@
           "systems",
           "engineering"
         ],
-        "detail": "+1 to all checks and saves."
+        "detail": "You and all adjacent allies gain an additional +1 to all checks and saves. 1/mission, you automatically succeed at any one check or save."
       }
-    ],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
-    "id": "cb_blackout_plating",
-    "name": "Blackout Plating",
+    "id": "cb_fragarachs_warding",
+    "name": "Fragarach's Warding",
     "source": "IF",
-    "effect": "You have Immunity to Lock On and Search actions targeting you have +1 Difficulty.",
-    "description": "Developed for industrial espionage hardsuits, blackout plating slips through sensor nets easily. Sweeps pass through it like it was empty space and even the Mk1 Eyeball finds it hard to spot.",
-    "mounted_effect": "",
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    "effect": "1/Scene, when you are attacked, the attacker first suffers 10 AP kinetic damage and is knocked prone. This does not count as a reaction and resolves before the triggering action.",
+    "description": "One of the odder benefits Ironleaf Foundry offers prized supporters are decorative filigree icons that have a disproportionate effect. Opposition attempting to harm the bearers of these icons fall without warning, shattering along stress lines or suffering catastrophic failures of autoloaders. <br>Union Science Bureau has examined these icons and found them to be nothing but metal, without even a source of power. Two competing and equally concerning theories are that these icons are of a mystical nature...or that they are just symbols of being watched over by something much more dangerous."
   },
   {
     "id": "cb_orbital_drop_training",
     "name": "Orbital Drop Training",
     "source": "IF",
-    "effect": "At the beginning of a scene, after all characters have been set up but before any turn has started you can move your speed.&nbsp; This movement ignores engagement and does not provoke reactions.Once per mission, instead of being set up at the start of a scene you can instead hold yourself in reserves (in the belly of a transport ship, in orbit, buried alive or otherwise off the map). At the start of your first turn, you can place yourself anywhere on the map more than 8 spaces away from a hostile character. Deploying this way consumes your standard move for that turn.",
-    "description": "Alongside their dueling expertise, Ironleaf Foundry is famous for its publicizing of some of the most dangerous and exciting sports in known space. Those who have obtained expertise in the Ironleaf Foundry Triathlon are masters of moving in the most hostile of environments.",
-    "mounted_effect": "",
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    "effect": "At the beginning of a scene, after all characters have been set up but before any turn has started you can move your speed. This movement ignores engagement and does not provoke reactions. Once per mission, instead of being set up at the start of a scene you can instead hold yourself in reserves (in the belly of a transport ship, in orbit, buried alive or otherwise off the map). At the start of your first turn, you can place yourself anywhere on the map more than 8 spaces away from a hostile character. Deploying this way consumes your standard move for that turn.",
+    "description": "Alongside their dueling expertise, Ironleaf Foundry is famous for its publicizing of some of the most dangerous and exciting sports in known space. Those who have obtained expertise in the Ironleaf Foundry Triathlon are masters of moving in the most hostile of environments."
   },
   {
     "id": "cb_iron_crown",
     "name": "Iron Crown",
     "source": "IF",
-    "effect": "1/round, when you or a friendly character in Line of Sight loses structure, you gain an additional quick action on your next turn. You can take this quick action even if you are stunned.At the start of any round in which there are no active allied mech characters on the battlefield, you gain an additional turn that round or two additional turns if there are three or more hostile mech characters in the scene.",
-    "description": "The Ironleaf Foundry holds, once a year, a massive dueling competition between designs as a publicity stunt to show off their creations. It is very well attended by pilots representing all manufacturers and has become rather the publicized and bet upon event among the cosmopolitan members of the galaxy. The winner of this competition is given the rare rights to print the Iron Crown for their mech, a symbol of an untouched champion.",
-    "mounted_effect": "",
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    "effect": "1/round, when you or a friendly character in Line of Sight loses structure, you gain an additional quick action on your next turn. You can take this quick action even if you are stunned. At the start of any round in which there are no active allied mech characters on the battlefield, you gain an additional turn that round or two additional turns if there are three or more hostile mech characters in the scene.",
+    "description": "The Ironleaf Foundry holds, once a year, a massive dueling competition between designs as a publicity stunt to show off their creations. It is very well attended by pilots representing all manufacturers and has become rather the publicized and bet upon event among the cosmopolitan members of the galaxy. The winner of this competition is given the rare rights to print the Iron Crown for their mech, a symbol of an untouched champion."
   },
   {
     "id": "cb_perfection_of_skill",
     "name": "Perfection of Skill",
     "source": "IF",
-    "effect": "You gain +1 Accuracy on Non-Weapon Melee and Ranged Attacks.When you would be destroyed due to damage or reactor meltdown, you can declare that this will be your final battle, unleashing a desperate charge vaporizing your mech and instantly killing you and any other passengers instead of the usual effects of meltdown or destruction. Choose one target in Range 50. They take 1 Structure Damage, bypassing immunity and are Stunned and Shredded until the end of their next turn. This only takes place if you are physically present in your mech and cannot be avoided or reversed by any means.",
-    "description": "“Really, who’s going to stop me? You?” - Echo Alpha, IF Test Pilot",
-    "mounted_effect": "",
-    "actions": [],
-    "bonuses": [],
+    "effect": "You gain +1 Accuracy on Non-Weapon Melee and Ranged Attacks. When you would be destroyed due to damage or reactor meltdown, you can declare that this will be your final battle, unleashing a desperate charge vaporizing your mech and instantly killing you and any other passengers instead of the usual effects of meltdown or destruction. Choose one target in Range 50. They take 1 Structure Damage, bypassing immunity and are Stunned and Shredded until the end of their next turn. This only takes place if you are physically present in your mech and cannot be avoided or reversed by any means.",
+    "description": "“Really, who’s going to stop me? You?” - Ceridwen, Albatross Lancer",
     "synergies": [
       {
         "locations": [
@@ -96,15 +51,15 @@
           "grapple",
           "improvised_attack"
         ],
-        "detail": "+1 Accuracy on Non-Weapon Melee and Ranged Attacks",
-        "weapon_types": [],
-        "weapon_sizes": [],
-        "system_types": []
+        "detail": "+1 Accuracy on Non-Weapon Melee and Ranged Attacks"
       }
-    ],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
+  },
+  {
+    "id": "cb_perfection_of_spirit",
+    "name": "Perfection of Spirit",
+    "source": "IF",
+    "effect": "You can freely move through and share the spaces larger allied characters occupy. While occupying the same spaces as an allied character, they gains soft cover and when they move, you can also move with them, mirroring their movement. This effect doesn’t take a reaction, and doesn’t provoke reactions or obey engagement.",
+    "description": "To wield a giant's might to impose your will is not courageous. Courage is doing what you can with what you have to shield those about you from the ills of the world."
   }
 ]

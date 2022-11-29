@@ -34,26 +34,12 @@
       {
         "name": "Blastwave Rider",
         "use": "",
-        "description": "1/Round when the Lily takes damage from a Blast, Burst, Line or Cone it can fly up to 5 spaces in any direction. This movement does not cause reactions, ignores engagement and can still be made even if the Lily is Slowed. If the Lily or an allied character is the source of the damage, it also reduces damage and heat taken to 1.",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "1/Round when the Lily takes damage from a Blast, Burst, Line or Cone it can fly up to 5 spaces in any direction. This movement does not cause reactions, ignores engagement and can still be made even if the Lily is Slowed. If the Lily or an allied character is the source of the damage, it also reduces damage and heat taken to 1."
       },
       {
         "name": "Unrestrained",
         "use": "",
-        "description": "The Lily counts as Size 3 for the purpose of pushing, pulling and knockback. In addition, it ignores Engagement by characters larger than itself.",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "The Lily can choose to be immune to hostile effects (but not costs to use a system or weapon) from non-hostile characters and ignores Engagement by characters larger than itself."
       }
     ],
     "core_system": {
@@ -64,19 +50,8 @@
       "description": "The Metaforge is the whirring core of Lily, taking up the vast majority of the Lily’s internals. An advanced printer tailored specifically for the creation of engineering tools and explosives, this backpack allows the Lily to make do with significantly less overhead as a common feed can be rapidly converted into the required part for any given system.",
       "deactivation": "",
       "use": "Encounter",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
       "passive_name": "Metaforge",
-      "passive_effect": "The Lily reduces the SP cost of any Grenade or Mine installed on this mech by 1 SP, to a minimum of 1 SP.<em>(This feature is not currently supported by COMP/CON. You'll have to manually add additional systems past your usual SP limit.)</em>",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      "passive_effect": "The Lily reduces the SP cost of any Grenade or Mine installed on this mech by 1 SP, to a minimum of 1 SP.<br><em>(This feature is not currently supported by COMP/CON. You'll have to manually add additional systems past your usual SP limit.)</em>"
     },
     "image_url": "https://cdn.discordapp.com/attachments/426289086450368512/935440161536344064/Ikiryo_Lily_Commission-min.png",
     "y_pos": "14"
@@ -92,7 +67,6 @@
     ],
     "description": "Ironleaf Foundry’s premier dueling and bodyguard frame, the Rose’s slim size belies the sheer power of its weapon. Eschewing more general purpose designs, the Rose’s systems are built around supporting a high performance energy spear that is capable of taking apart the most powerful of frames. Ironleaf Foundry takes much pride in the many tournament wins of the Rose and have a reputation for refusing to license the design to those who have publicly complimented the work of the Terashima enclaves unless they are willing to recant that statement.",
     "mounts": [
-      "Main",
       "Flex",
       "Main"
     ],
@@ -103,7 +77,7 @@
       "armor": 1,
       "hp": 6,
       "evasion": 10,
-      "edef": 8,
+      "edef": 6,
       "heatcap": 7,
       "repcap": 4,
       "sensor_range": 5,
@@ -115,91 +89,52 @@
     "traits": [
       {
         "name": "Immortal Skill",
-        "use": "",
         "description": "The Rose is treated as size 1 for the purpose of Ram and Grapple and ignores engagement by characters larger than itself.",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
         "synergies": [
           {
             "locations": [
               "ram",
               "grapple"
             ],
-            "detail": "The Rose is treated as size 1 for the purpose of Ram and Grapple and ignores engagement by characters larger than itself.",
-            "weapon_types": [],
-            "weapon_sizes": [],
-            "system_types": []
+            "detail": "The Rose is treated as size 2 for the purpose of Ram and Grapple and ignores engagement by characters larger than itself."
           }
-        ],
-        "integrated": [],
-        "special_equipment": []
+        ]
       },
       {
         "name": "Scalpel",
-        "use": "",
-        "description": "When the Rose causes System Trauma, the Rose's pilot chooses which system or weapon is destroyed. (Do not roll to pick system or weapon.)",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "When the Rose causes System Trauma, the Rose's pilot chooses which system or weapon is destroyed. (Do not roll to pick system or weapon.)"
       },
       {
         "name": "Dueling Overrides",
-        "use": "",
-        "description": "The Rose cannot be Hidden.",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "The Rose cannot be Hidden."
       }
     ],
     "core_system": {
       "name": "\"Thorn\" Energy Spear",
       "active_name": "Shifting Seasons",
-      "active_effect": "<p>Choose one of the following stances for the rest of the scene or until you choose a new stance as a protocol.</p><p>Flowering Revival Stance: When you use Solstice Knight, the triggering character can immediately spend 1 repair to regain 1/2 Max HP.</p><p>Blistering Rays Stance: When you use Solstice Knight and win the contested roll, the attacker suffers 4 Burn.</p><p>Falling Leaves Stance: Solstice Knight can be used 1/Turn instead of 1/Round.</p><p>Whirling Snowflake Stance: When you use Solstice Knight and win the contested roll, the attacker only has line of sight to adjacent characters until the end of their turn.</p>",
+      "active_effect": "Choose one of the following stances for the rest of the scene or until you choose a new stance as a protocol. <br>Flowering Revival Stance: When you use Solstice Knight, the triggering character can immediately spend 1 repair to regain 1/2 Max HP. <br>Blistering Rays Stance: When you use Solstice Knight and win the contested roll, the attacker suffers 4 Burn. <br>Falling Leaves Stance: Solstice Knight can be used 1/Turn instead of 1/Round. <br>Whirling Snowflake Stance: When you use Solstice Knight and win the contested roll, the attacker only has line of sight to adjacent characters until the end of their turn.",
       "activation": "Protocol",
       "description": "“That weapon never fails to unnerve me. It’s like no energy weapon I’ve ever seen. I’ve seen it parry lasers, in position before something moving the speed of light. I’ve seen it soak up flames like a sponge. The techs refuse to say what sort of energy is running through that thing and I’m not sure I want to know. I just want it on my side.” -Ceridwen, Albatross Pilot",
-      "deactivation": "",
-      "use": "Encounter",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
-      "passive_name": "",
-      "passive_effect": "",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [
-        "mw_test"
-      ],
-      "tags": []
+      "integrated": [
+        "mw_thorn"
+      ]
     },
     "image_url": "https://cdn.discordapp.com/attachments/561000253608820737/800856270378369084/Ikiryo-Rose.png",
     "y_pos": "43"
   },
   {
-    "id": "mf_belladonna",
+    "id": "mf_rose_alt_belladonna",
     "source": "IF",
-    "license_level": 2,
     "name": "BELLADONNA",
+    "variant": "ROSE",
+    "license_id": "mf_rose",
+    "license_level": 2,
     "mechtype": [
       "Striker",
       "Controller"
     ],
     "description": "The sister frame to the Ironleaf Rose, the Belladonna is designed to act as its sister’s keeper and to engage the situations that the Rose finds difficult. A monomolecular scythe has replaced the Rose’s Thorn, a graceful but deadly weapon that can carve through several foes without the slightest pause. The Belladonna is a beautiful dancing shadow, bringing death to entire swathes of suitors with each leap and spin. Even those who its kiss touches for just a moment are not safe, as the nanite coating of the scythe is itself enough to kill as it worms its way deep into the heart of its victims.",
     "mounts": [
-      "Heavy",
       "Flex",
       "Main"
     ],
@@ -210,7 +145,7 @@
       "armor": 1,
       "hp": 6,
       "evasion": 10,
-      "edef": 8,
+      "edef": 6,
       "heatcap": 7,
       "repcap": 4,
       "sensor_range": 5,
@@ -221,63 +156,23 @@
     },
     "traits": [
       {
-        "name": "Phantasmagoria",
-        "use": "",
-        "description": "The Belladonna ignores Engagement by characters larger than itself. While the Belladonna is Hidden it may move through obstructions but not end its turn within them.",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "name": "Nanotoxin Mist",
+        "description": "1/Round, on a critical hit against a character or when a character fails a save forced by the Belladonna, the Belladonna can deal 3 Energy Damage to a different character within Range 5 of that character."
       },
       {
-        "name": "Exposed Nanohive",
-        "use": "",
-        "description": "The Belladonna has +1 difficulty on Engineering checks and saves.",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [
-          {
-            "locations": [
-              "engineering"
-            ],
-            "detail": "The Belladonna has +1 difficulty on Engineering checks and saves.",
-            "weapon_types": [],
-            "weapon_sizes": [],
-            "system_types": []
-          }
-        ],
-        "integrated": [],
-        "special_equipment": []
+        "name": "Virulent Toxins",
+        "description": "All damage the Belladonna deals with the Monomolecular Scythe and non-weapon sources ignores armour and resistance."
       }
     ],
     "core_system": {
       "name": "Monomolecular Scythe",
       "active_name": "Deadly Nightshade",
-      "active_effect": "For the rest of the combat, your monomolecular scythe deals +1d6 Burn. A target damaged by this weapon must pass an Engineering save (Instead of an engineering check) to end burn for the rest of the scene.",
-      "activation": "Protocol",
-      "description": "",
-      "deactivation": "",
-      "use": "Scene",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
-      "passive_name": "Nanotoxin Mist",
-      "passive_effect": "All non-weapon damage dealt by the Belladonna is AP.",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [
+      "active_effect": "When you make an attack or force a character to make a save, you can spend core power to empower it. If you do, you gain the following effects:<br><br><ul><li>This attack or forced save does not provoke reactions.</li><li>If you are empowering an attack, it automatically hits and is a critical effect, regardless of any effect that would cause it to miss or fail.</li><li>If you are empowering a forced save, the character automatically fails the save, regardless of any effect that would cause it to pass the save.</li></ul><br>Using this core power does not count as a reaction. This action is Efficient, and refunds 1 Core Power at the end of any scene in which it’s used.",
+      "activation": "Other",
+      "description": "“Gods above...I swear, one moment they were standing there, the next moment they were all over the walls. It wasn’t me!” -Theseus Alpha, Court Martial Hearing.",
+      "integrated": [
         "mw_monomolecular_scythe"
-      ],
-      "tags": []
+      ]
     },
     "image_url": "https://cdn.discordapp.com/attachments/373964600409980928/980908287245553704/belladonna.png",
     "y_pos": "50"
@@ -293,7 +188,6 @@
     ],
     "description": "The mistletoe was originally designed as a highly mobile scout frame with a sensor profile small enough that it could slip easily through enemy scanning nets and evade patrols. This high agility and rugged frame has made it very popular among spec ops and saboteur units, with the frame being redesigned to incorporate a heavy pistol that draws directly from the reactor of the Mistletoe to help such units. The mistletoe floats gracefully through the air but those that underestimate its bite find themselves much less invincible than they thought they were.",
     "mounts": [
-      "Main",
       "Flex",
       "Aux/Aux",
       "Aux/Aux"
@@ -317,27 +211,11 @@
     "traits": [
       {
         "name": "Valkyrie-Class Flight Module",
-        "use": "",
-        "description": "The Mistletoe is immune to falling damage and does not fall if Immobilized. When the Mistletoe moves or boosts, it can Hover. However, at the end of its turn its height drops to 1 unless it is standing on the ground or another surface that can support it.",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "The Mistletoe is immune to falling damage and does not fall if Immobilized. When the Mistletoe moves or boosts, it can Hover. However, at the end of its turn its height drops to 1 unless it is standing on the ground or another surface that can support it."
       },
       {
         "name": "Dance in the Gunsmoke",
-        "use": "",
-        "description": "1/Round, when the Mistletoe Boosts, it can reload the Mistilteinn or all weapons in a mount afterwards.",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "1/Round, when the Mistletoe Boosts, it can reload the Mistilteinn or all weapons in a mount afterwards."
       }
     ],
     "core_system": {
@@ -345,22 +223,11 @@
       "active_name": "Baldrdeath",
       "active_effect": "For the rest of the scene the Mistilteinn's attacks bypass immunity, do not provoke reactions and cannot be reduced by any means. In addition, you can reload the Mistilteinn as a protocol.",
       "activation": "Protocol",
-      "description": "Carefully tailored to the mistletoe’s specific reactor fluctuations, the Mistilienn is an incredibly powerful energy pistol that can punch through the heaviest of armour without the slightest issue.",
-      "deactivation": "",
+      "description": "All swore in love that they would bear the shining god no ill will and do him no harm. All save mistletoe, thought in arrogance to be too small and too insignificant to do harm to a god. Though another threw the weapon, it was this arrogance that shattered the divine and made Mistletoe the Murderer of Miracles.",
       "use": "Scene",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
-      "passive_name": "",
-      "passive_effect": "",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      "integrated": [
+        "mw_mistilteinn_core_channel"
+      ]
     },
     "image_url": "https://cdn.discordapp.com/attachments/426289086450368512/947666905483845663/Ikiryo_Mistletoe_Commission_2.png",
     "y_pos": "23"
@@ -384,7 +251,7 @@
       "size": 0.5,
       "structure": 4,
       "stress": 4,
-      "armor": 1,
+      "armor": 2,
       "hp": 8,
       "evasion": 8,
       "edef": 6,
@@ -399,75 +266,100 @@
     "traits": [
       {
         "name": "Scrapper",
-        "use": "",
-        "description": "The Clover can Brace without sacrificing any reactions, free actions or movement on its following turn, but can only make a single Quick action during that turn.",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "When the Clover Braces, the attacker is pulled their speed towards the Clover and the Clover can still make reactions until the start of its next turn."
       },
       {
         "name": "Air Rave",
-        "use": "",
-        "description": "The Clover is treated as Size 2 for the purpose of engagement and can ignore height when engaging characters and making melee attacks, including overwatch.",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "The Clover is treated as Size 2 for the purpose of engagement and can ignore height when engaging characters and making melee attacks, including Overwatch."
       },
       {
         "name": "Punchdrunk",
-        "use": "",
         "description": "The Clover has +1 Difficulty to Systems Checks and Saves.",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
         "synergies": [
           {
             "locations": [
               "systems"
             ],
-            "detail": "The Clover has +1 Difficulty to Systems Checks and Saves.",
-            "weapon_types": [],
-            "weapon_sizes": [],
-            "system_types": []
+            "detail": "The Clover has +1 Difficulty to Systems Checks and Saves."
           }
-        ],
-        "integrated": [],
-        "special_equipment": []
+        ]
       }
     ],
     "core_system": {
       "name": "\"Cloich Tabaill\" Kinetic Accumulator",
       "active_name": "Cloich Tabaill",
-      "active_effect": "<p>You begin charging your kinetic accumulator. Set out a d6, starting at 4. At the start of each of your turns while the accumulator is charging, tick the d6 down by 1, to a minimum of 1, like a countdown. If your mech is Stunned, Jammed, Immobilized or is Shut Down, reset the charge to 4 (this doesn't stop the charging, however - it continues to tick down at the start of your turns). You are granted several melee attacks you may perform against a character in Threat 3 as quick action, based on the current level of your charge. After making one of these attacks, reset to 4.</p><p>4 - Can't be used.</p><p>3 - 1d6+2 Kinetic Damage. A character hit by this attack is Knocked Prone and Shredded until the end of their next turn. Objects targeted take 30 AP energy damage, no attack roll required.</p><p>2 - 2d6+1 Kinetic Damage. A character hit by this attack is Knocked Prone and becomes Stunned and Shredded until the end of their next turn. Objects targeted take 50 AP energy damage, no attack roll required.</p><p>1 - 1 Structure Damage. This attack bypasses immunity and cannot be reduced by any means. A character hit by this attack is Knocked Prone, Shredded and Stunned until the end of their next turn. Objects targeted take 200 AP kinetic damage, no attack roll required.&nbsp;</p><p>If you end a scene without successfully performing one of these attacks, core power is not expended.</p>",
+      "active_effect": "You begin charging your kinetic accumulator. Set out a d6, starting at 4. At the start of each of your turns while the accumulator is charging, tick the d6 down by 1, to a minimum of 1, like a countdown. If your mech is Stunned, Jammed, Immobilized or is Shut Down, reset the charge to 4 (this doesn't stop the charging, however - it continues to tick down at the start of your turns). You are granted several melee attacks you may perform against a character in Threat 3 as quick action, based on the current level of your charge. After making one of these attacks, reset to 4.<br><br>4 - Can't be used. <br>3 - 1d6+2 Kinetic Damage. A character hit by this attack is Knocked Prone and Shredded until the end of their next turn. Objects targeted take 30 AP energy damage, no attack roll required. <br>2 - 2d6+1 Kinetic Damage. A character hit by this attack is Knocked Prone and becomes Stunned and Shredded until the end of their next turn. Objects targeted take 50 AP energy damage, no attack roll required. <br>1 - 1 Structure Damage. This attack bypasses immunity and cannot be reduced by any means. A character hit by this attack is Knocked Prone, Shredded and Stunned until the end of their next turn. Objects targeted take 200 AP kinetic damage, no attack roll required. <br><br>If you end a scene without successfully performing one of these attacks, core power is not expended.",
       "activation": "Protocol",
       "description": "Under the seemingly rough exterior of the Clover lies a monstrous machine, capable of taking the energy other mechs would waste and releasing it in sudden, devastating bursts.",
-      "deactivation": "",
       "use": "Scene",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
       "passive_name": "Overcalibur Strike",
-      "passive_effect": "<p>1/round when the Clover consumes Lock On with a melee attack, it deals +1d6 Bonus Damage.</p><p>When the Clover consumes Lock On with a melee attack it chooses one of the following benefits for that attack:</p><p>Blitz Jab: The attack ignores invisible and does not provoke reactions.</p><p>Phantom Footwork: Before or after the attack you can teleport up to 3 spaces.</p><p>Driving Cross: The attack gains Knockback 3.</p><p>Rail Upper: Damage from the attack cannot be reduced by any means.</p>",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      "passive_effect": "1/round when the Clover consumes Lock On with a melee attack, it deals +1d6 Bonus Damage. When the Clover consumes Lock On with a melee attack it chooses one of the following benefits for that attack:<br><br><b>Blitz Jab:</b> The attack ignores invisible and does not provoke reactions. <br><b>Phantom Footwork:</b> Before or after the attack you can teleport up to 3 spaces. <br><b>Driving Cross:</b> The attack gains Knockback 3. <br><b>Rail Upper:</b> Damage from the attack cannot be reduced by any means."
     },
     "image_url": "https://cdn.discordapp.com/attachments/373964600409980928/980980527974731776/clover.png",
     "y_pos": "26"
+  },
+  {
+    "id": "mf_silversword",
+    "source": "IF",
+    "license_level": 2,
+    "name": "SILVERSWORD",
+    "mechtype": [
+      "Controller",
+      "Striker"
+    ],
+    "description": "Not content to only contend in physical duels, the Ironleaf Silversword is a step into digital battlegrounds with an intent to go head to head and win. In contrast with many of the small, sleek frames of Ironleaf Foundry, the Silversword is a titan that looks like an ancient armored statue come to life. <br>Piloting a silversword has significant effects on a pilot’s subjectivity. While all pilots to some degree see their frame as part of themselves, Silversword pilots instead often see themselves as having always been part of it and simply reunited even the first time they pilot it. This comes from the frame’s blending of the pilot’s consciousness into a temporary legion of instances of the pilot’s past, present and future.",
+    "mounts": [
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 7,
+      "repcap": 4,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Cold Iron",
+        "description": "When the Silversword would be targeted by a hostile tech action, roll 1d6. On a 4+ the tech action misses and has no effect. This does not stack with invisible."
+      },
+      {
+        "name": "Scaled Wisdom",
+        "description": "The Silversword cannot have its line of sight reduced by environmental effects or hostile characters and is always aware of the HP, Evasion, E-Defense, and current Heat of characters within its sensors."
+      }
+    ],
+    "core_system": {
+      "name": "Trinary Legion",
+      "active_name": "Water Slips Away",
+      "activation": "Reaction",
+      "description": "The three-part legion of past, present and future allows the Silversword a unique view of the flow of time about it…and how to interrupt it.",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [
+        {
+          "name": "Water Slips Away",
+          "activation": "Reaction",
+          "detail": "End The Round. Any number of characters of your choice in Range 50 clear burn and all effects that would end at the end of their next turn not caused by their own traits, systems etc. You can nominate the first character to take a turn next round. You can take this reaction even if you could not otherwise take reactions.",
+          "cost": 0,
+          "frequency": "1/encounter",
+          "trigger": "A character in Range 50's turn would start."
+        }
+      ],
+      "passive_name": "King Under the Mountain",
+      "passive_effect": "When its turn starts, the Silversword can end one condition or effect of a tech action not caused by its own traits, systems etc."
+    },
+    "image_url": "https://cdn.discordapp.com/attachments/373964600409980928/1047162351444557844/silversword_transparent.png",
+    "y_pos": "12"
   },
   {
     "id": "mf_poppy",
@@ -503,27 +395,11 @@
     "traits": [
       {
         "name": "Overlapping Crossfire",
-        "use": "",
-        "description": "When the Poppy moves at least one space voluntarily during its turn, it assumes Overlapping Crossfire until the start of its next turn. Reactions cannot be taken against your first Rifle Weapon fired each turn in Overlapping Crossfire.",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "When the Poppy moves at least one space voluntarily during its turn, it assumes Overlapping Crossfire until the start of its next turn. Reactions cannot be taken against your first Rifle Weapon fired each turn in Overlapping Crossfire."
       },
       {
         "name": "Bloody Fields",
-        "use": "",
-        "description": "1/Round, on a critical hit with any ranged weapon, the Poppy pushes the target 2 spaces in any direction.",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "1/Round, on a critical hit with any ranged weapon, the Poppy pushes the target 2 spaces in any direction."
       }
     ],
     "core_system": {
@@ -531,123 +407,15 @@
       "active_name": "Relentless Fusillade",
       "active_effect": "For the rest of the scene, the Disposable Gyrostorm Pods can be fired 1/round instead of 1/scene.",
       "activation": "Protocol",
-      "description": "“...how many spare guns do you have?”<br>“Enough!”",
-      "deactivation": "",
-      "use": "",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
+      "description": "“You can pray to any god you want for mercy but I wouldn't waste your breath, they're all out of miracles today.” - Tia Maddalen, DOJ/HR Field Advocate.",
       "passive_name": "Metafold Armory",
       "passive_effect": "The Poppy can Repair weapon systems without spending any Repairs.",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
       "integrated": [
         "mw_disposable_gyrostorm_pods"
-      ],
-      "special_equipment": [],
-      "tags": []
+      ]
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
-    "y_pos": "43"
-  },
-  {
-    "id": "mf_silversword",
-    "source": "IF",
-    "license_level": 2,
-    "name": "SILVERSWORD",
-    "mechtype": [
-      "Controller",
-      "Striker"
-    ],
-    "description": "<p>Not content to only contend in physical duels, the Ironleaf Silversword is a step into digital battlegrounds with an intent to go head to head and win. In contrast with many of the small, sleek frames of Ironleaf Foundry, the Silversword is a titan that looks like an ancient armored statue come to life.&nbsp;</p><p>Piloting a silversword has significant effects on a pilot’s subjectivity. While all pilots to some degree see their frame as part of themselves, Silversword pilots instead often see themselves as having always been part of it and simply reunited even the first time they pilot it. This comes from the frame’s blending of the pilot’s consciousness into a temporary legion of instances of the pilot’s past, present and future.</p>",
-    "mounts": [
-      "Flex",
-      "Heavy"
-    ],
-    "stats": {
-      "size": 2,
-      "structure": 4,
-      "stress": 4,
-      "armor": 2,
-      "hp": 8,
-      "evasion": 6,
-      "edef": 10,
-      "heatcap": 7,
-      "repcap": 4,
-      "sensor_range": 15,
-      "tech_attack": 1,
-      "save": 10,
-      "speed": 3,
-      "sp": 6
-    },
-    "traits": [
-      {
-        "name": "Cold Iron",
-        "use": "",
-        "description": "<p>When the Silversword would be targeted by a hostile tech action, roll 1d6. On a 4+ the tech action misses and has no effect. This does not stack with invisible.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
-      },
-      {
-        "name": "Scaled Wisdom",
-        "use": "",
-        "description": "<p>The Silversword cannot have its line of sight reduced by environmental effects or hostile characters and is always aware of the HP, Evasion, E-Defense, and current Heat of characters within its sensors.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
-      }
-    ],
-    "core_system": {
-      "name": "Trinary Legion",
-      "active_name": "Water Slips Away",
-      "active_effect": "",
-      "activation": "Reaction",
-      "description": "<p>The three-part legion of past, present and future allows the Silversword a unique view of the flow of time about it…and how to interrupt it.</p>",
-      "deactivation": "",
-      "use": "Scene",
-      "active_actions": [
-        {
-          "name": "Water Slips Away",
-          "activation": "Reaction",
-          "detail": "<p>End The Round. Any number of characters of your choice in Range 50 clear burn and all effects that would end at the end of their next turn not caused by their own traits, systems etc. You can nominate the first character to take a turn next round.</p><p>You can take this reaction even if you could not otherwise take reactions.</p>",
-          "cost": 0,
-          "pilot": false,
-          "damage": [],
-          "range": [],
-          "synergy_locations": [],
-          "tech_attack": false,
-          "frequency": "1/encounter",
-          "init": "",
-          "trigger": "<p>A character in Range 50's turn would start.</p>"
-        }
-      ],
-      "active_bonuses": [],
-      "active_synergies": [],
-      "passive_name": "King Under the Mountain",
-      "passive_effect": "<p>When its turn starts, the Silversword can end one condition or effect of a tech action not caused by its own traits, systems etc.</p>",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
-    },
-    "image_url": "https://cdn.discordapp.com/attachments/729896234877452371/981654634491969626/ikiryo_ironleaf_Silversword_comm.jpg",
-    "y_pos": "12"
+    "y_pos": "25"
   },
   {
     "id": "mf_rowan",
@@ -657,7 +425,7 @@
     "mechtype": [
       "Controller"
     ],
-    "description": "<p>A force of chaos among Ironleaf Foundry dueling teams, the Rowan overwhelms foes with the sheer number of avenues it can launch assaults from at the same time. A master of wire guided and nexus weapons, fighting a Rowan is often compared to attempting to dance with a swarm of angry plasma cutters as foes are chipped apart by the chaos flowing about them.</p><p>Even outside of dueling environments the Rowan is starting to make a name for itself among special operations and far field teams, as its slight size even among Ironleaf Foundry frames and exceptional control of the world around it allow it to stack all the odds in its team favor against enemy forces and the environment alike.</p>",
+    "description": "A force of chaos among Ironleaf Foundry dueling teams, the Rowan overwhelms foes with the sheer number of avenues it can launch assaults from at the same time. A master of wire guided and nexus weapons, fighting a Rowan is often compared to attempting to dance with a swarm of angry plasma cutters as foes are chipped apart by the chaos flowing about them. <br>Even outside of dueling environments the Rowan is starting to make a name for itself among special operations and far field teams, as its slight size even among Ironleaf Foundry frames and exceptional control of the world around it allow it to stack all the odds in its team favor against enemy forces and the environment alike.",
     "mounts": [
       "Flex",
       "Heavy"
@@ -681,52 +449,78 @@
     "traits": [
       {
         "name": "Rebound",
-        "use": "",
-        "description": "<p>When the Rowan knocks another character back, they can move that character in any direction. If a hostile knocked back by the Rowan collides with an obstruction or another mech, they stop moving and are knocked prone.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "When the Rowan knocks another character back, they can move that character in any direction. If a hostile knocked back by the Rowan collides with an obstruction or another mech, they stop moving and are knocked prone."
       },
       {
         "name": "Mixup",
-        "use": "",
-        "description": "<p>The Rowan ignores engagement by characters larger than itself. Attacks by Prone characters against the Rowan have +1 Difficulty. When a hostile character stands from prone in Range 5, that character suffers 3 kinetic damage.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "The Rowan ignores engagement by characters larger than itself. Attacks by Prone characters against the Rowan have +1 Difficulty. When a hostile character stands from prone in Range 5, that character suffers 3 kinetic damage."
       }
     ],
     "core_system": {
       "name": "Silver Strings",
       "active_name": "Silver Strings - Unlimited Release",
-      "active_effect": "<p>Knock back any number of characters in Range 50 up to 3 spaces in any direction. Hostile characters moved this way are knocked reeling, becoming Slowed, Impaired, and unable to take reactions until the end of their next turn.</p>",
+      "active_effect": "Knock back any number of characters in Range 50 up to 3 spaces in any direction. Hostile characters moved this way are knocked reeling, becoming Slowed, Impaired, and unable to take reactions until the end of their next turn.",
       "activation": "Quick",
-      "description": "",
-      "deactivation": "",
       "use": "Scene",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
       "passive_name": "Puppet on my Strings",
-      "passive_effect": "<p>The Rowan always counts as the larger character when ramming and can Ram targets within Range 5, targeting E-Defence when Ramming this way. When the Rowan rams a flying character, they immediately land (this counts as falling without any damage), and additionally become slowed and can’t fly until the end of their next turn.</p>",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      "passive_effect": "The Rowan always counts as the larger character when ramming and can Ram targets within Range 5, targeting E-Defence when Ramming this way. When the Rowan rams a flying character, they immediately land (this counts as falling without any damage), and additionally become slowed and can’t fly until the end of their next turn."
     },
-    "image_url": "https://cdn.discordapp.com/attachments/426289086450368512/1013330254187737169/Rowan.jpg",
+    "image_url": "https://cdn.discordapp.com/attachments/373964600409980928/1047163165823209513/Rowan.png",
     "y_pos": "13"
+  },
+  {
+    "id": "mf_kudzu",
+    "source": "IF",
+    "license_level": 2,
+    "name": "KUDZU",
+    "mechtype": [
+      "Support",
+      "Defender"
+    ],
+    "description": "While the glory of the Iron Crown Dueling Competition is one of the first things people associate with Ironleaf Foundry, they often see quite a bit of usage in Search and Rescue and Far Field teams, where their small size and extensive emergency equipment allows them access to places where aerospace or heavier mechs would find it difficult to reach. Though Kudzu was designed originally for such teams, it has seen significant usage in infantry support and rapid response military teams who appreciate the ability to reach even surrounded troops with quickfab nanite transports made of the very repair supplies they are delivering.",
+    "mounts": [
+      "Flex",
+      "Main"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 7,
+      "repcap": 6,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Preventative Care",
+        "description": "When the Kudzu enters the battlefield, any number of non-drone characters in Range 50 gain 2+Grit Overshield."
+      },
+      {
+        "name": "Ochain's Warning",
+        "description": "If the Kudzu is not at 1 HP, damage cannot reduce it below 1 HP. Effects that would deal structure damage directly instead reduce the Kudzu to 1 HP."
+      },
+      {
+        "name": "Sedation",
+        "description": "Allied characters have resistance to damage dealt by characters within Range 3 of the Kudzu. Hostile characters in the affected area are always treated as the smaller character for engagement and obstruction if they are suffering Burn or a Condition."
+      }
+    ],
+    "core_system": {
+      "name": "Well of Healing",
+      "active_name": "Foggy Dew",
+      "active_effect": "You teleport to any free space within Range 50, releasing a Burst 3 area at both the start and final locations. You and allied characters in the affected areas are restored to full HP and allied characters in the starting area can teleport to any free space at least partially within the final area.",
+      "activation": "Full",
+      "description": "A core rule of medicine is simple: Dosage is everything. The same tools that save a life can take one just as easily. The nanites the Kudzu uses are no different, with a skilled user able to rapidly reconfigure them to stall offense, repair damage or to inflame injury.",
+      "use": "Scene"
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": "25"
   }
 ]

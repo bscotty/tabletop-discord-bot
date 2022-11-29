@@ -5,11 +5,9 @@
     "source": "IF",
     "license": "LILY",
     "license_level": 2,
-    "description": "“Oh, you flyboys think you’re too good to get down in the mud with the rest of us? Well, I’ve got a surprise for you!” -Echo Alpha, IF Test Pilot",
+    "description": "“Oh, you flyboys think you’re too good to get down in the mud with the rest of us? Well, I’ve got a surprise for you!” -Aoife, IF Test Pilot",
     "effect": "If you are flying and have moved at least 3 spaces this turn, attacks with this weapon do not provoke reactions.",
-    "on_attack": "",
     "on_hit": "The target becomes Slowed and cannot fly or teleport until the end of their next turn. If the target is flying, they also immediately fall.",
-    "on_crit": "",
     "mount": "Main",
     "type": "Melee",
     "cost": 1,
@@ -40,15 +38,7 @@
       {
         "id": "tg_smart"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_gloriosa_scattergun",
@@ -56,10 +46,9 @@
     "source": "IF",
     "license": "LILY",
     "license_level": 3,
-    "description": "“If Aun had wanted you to live, he would not have created me!” -Echo Alpha, IF Test Pilot",
+    "description": "“If Aun had wanted you to live, he would not have created me!” -Ceridwen, IF Test Pilot",
     "effect": "This weapon can Overwatch characters teleporting or involuntarily moving, even though that would not normally provoke reactions, as long as the source of the movement is the target or a character allied to it.",
     "on_hit": "If the target has flown or teleported before this attack since the start of their last turn, this hit becomes a critical hit.",
-    "on_crit": "",
     "mount": "Heavy",
     "type": "CQB",
     "cost": 1,
@@ -91,84 +80,7 @@
       {
         "id": "tg_smart"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
-  },
-  {
-    "id": "mw_thorn",
-    "name": "Thorn",
-    "source": "IF",
-    "license": "ROSE",
-    "license_level": 2,
-    "description": "",
-    "effect": "This weapon can only be installed in the Rose's first Main mount, which cannot mount any other weapon. The Thorn cannot be installed on any other mount or frame. It can be modified despite being an integrated weapon. You gain the Solstice Knight reaction, usable once per round.",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
-    "mount": "Main",
-    "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
-    "damage": [
-      {
-        "type": "Energy",
-        "val": "1d6+3"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 2
-      }
-    ],
-    "sp": 0,
-    "tags": [
-      {
-        "id": "tg_ap"
-      },
-      {
-        "id": "tg_unique"
-      },
-      {
-        "id": "tg_indestructible"
-      }
-    ],
-    "actions": [
-      {
-        "name": "Solstice Knight",
-        "activation": "Reaction",
-        "detail": "Make a melee attack contesting the triggering attack: If you win the contested roll, the attack automatically misses and the attacker suffers 3 Energy damage.",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "1/round",
-        "init": "",
-        "trigger": "The Rose or an adjacent character is targeted by an attack."
-      }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_swordbreaker",
@@ -177,10 +89,7 @@
     "license": "ROSE",
     "license_level": 1,
     "description": "A modern take on an ageless design, Ironleaf Foundry’s swordbreakers are thick and strong blades with ridges designed to easily catch the weapon or limb of an opponent, twisting it out of position and interfering with the most carefully thought out plans.",
-    "effect": "",
-    "on_attack": "",
     "on_hit": "The target is Slowed and Impaired until the end of their next turn.",
-    "on_crit": "",
     "mount": "Main",
     "type": "Melee",
     "cost": 1,
@@ -203,16 +112,7 @@
         "val": 1
       }
     ],
-    "sp": 0,
-    "tags": [],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    "sp": 0
   },
   {
     "id": "mw_cwn_annwn",
@@ -222,9 +122,7 @@
     "license_level": 2,
     "description": "Semi-Sapient Attack Weapons are nothing new on the battlefield but few can match up to the sheer precision of the Cŵn Annwn. More than a few spec ops groups have rapidly discovered they are capable of chasing down even the most well hidden foes like bloodhounds on a trail.",
     "effect": "This weapon ignores invisibility and can target hidden characters.",
-    "on_attack": "",
     "on_hit": "The target cannot benefit from Hidden or Invisible against your attacks until the end of your next turn.",
-    "on_crit": "",
     "mount": "Main",
     "type": "Nexus",
     "cost": 1,
@@ -258,136 +156,16 @@
       {
         "id": "tg_loading"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
-  },
-  {
-    "id": "mw_monomolecular_scythe",
-    "name": "Monomolecular Scythe",
-    "source": "IF",
-    "license": "BELLADONNA",
-    "license_level": 2,
-    "description": "",
-    "effect": "This weapon can only be installed in the Belladonna's first Heavy mount, which cannot mount any other weapon. The Monomolecular Scythe cannot be installed on any other mount or frame. It can be modified despite being an integrated weapon.",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "Deal +1d6 bonus damage.",
-    "mount": "Heavy",
-    "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
-    "damage": [
-      {
-        "type": "Kinetic",
-        "val": "3"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 3
-      }
-    ],
-    "sp": 0,
-    "tags": [
-      {
-        "id": "tg_accurate"
-      },
-      {
-        "id": "tg_ap"
-      },
-      {
-        "id": "tg_unique"
-      },
-      {
-        "id": "tg_indestructible"
-      }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
-  },
-  {
-    "id": "mw_needle_barrage",
-    "name": "Needle Barrage",
-    "source": "IF",
-    "license": "BELLADONNA",
-    "license_level": 2,
-    "description": "Designed around a cluster of sharp submunitions, each containing a nanoplague payload, this weapon setup can allow for the spraying of a wide area with a torrent of metal that only requires a single touch to kill the target. While less effective than most focused weapons against frames with pilots experienced in counter-nanite defences, against greener pilots the nanoplague is nearly unstoppable.",
-    "effect": "This weapon does not need to be retrieved when thrown, instead being immediately available to be used again.",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
-    "mount": "Main",
-    "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
-    "damage": [
-      {
-        "type": "Kinetic",
-        "val": "1"
-      },
-      {
-        "type": "Burn",
-        "val": "2"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "sp": 0,
-    "tags": [
-      {
-        "id": "tg_thrown",
-        "val": "8"
-      }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_polyfilament_kusarigama",
     "name": "Polyfilament Kusarigama",
     "source": "IF",
-    "license": "BELLADONNA",
-    "license_level": 3,
+    "license": "ROSE",
+    "license_level": 1,
     "description": "While very deadly, Kusarigama are a very specialized weapon that require extensive training to be used effectively. The long chain can allow it to lash out at ranges beyond most other melee weapons and the razor sharp edge can cut through plating with even minimal force. Ironleaf Foundry takes no responsibility for untrained warriors inflicting harm or embarrassment on themselves with such a weapon and highly recommends their extensive martial arts training programs.",
     "effect": "During your turn, this weapon gains +3 Threat.",
-    "on_attack": "",
-    "on_hit": "",
     "on_crit": "The target falls prone.",
     "mount": "Main",
     "type": "Melee",
@@ -412,76 +190,12 @@
       }
     ],
     "sp": 0,
-    "tags": [],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
-  },
-  {
-    "id": "mw_mistilteinn_core_channel",
-    "name": "“Mistilteinn” Core Channel",
-    "source": "IF",
-    "license": "MISTLETOE",
-    "license_level": 2,
-    "description": "",
-    "effect": "This weapon can only be installed in the Mistletoe's first Main mount, which cannot mount any other weapon. The \"Mistilteinn\" Core Channel cannot be installed on any other mount or frame. It can be modified despite being an integrated weapon.",
-    "on_attack": "",
-    "on_hit": "If this attack causes Structure Damage, the target must roll twice and take the lower result.",
-    "on_crit": "",
-    "mount": "Auxiliary",
-    "type": "CQB",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
-    "damage": [
-      {
-        "type": "Energy",
-        "val": "1d6+4"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 8
-      },
-      {
-        "type": "Threat",
-        "val": 3
-      }
-    ],
-    "sp": 0,
     "tags": [
       {
-        "id": "tg_ap"
-      },
-      {
-        "id": "tg_loading"
-      },
-      {
-        "id": "tg_unique"
-      },
-      {
-        "id": "tg_indestructible"
+        "id": "tg_arcing",
+        "val": null
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_gyrojet_pistol",
@@ -490,10 +204,6 @@
     "license": "MISTLETOE",
     "license_level": 1,
     "description": "Precision-tooled weapons, Gyrojet Pistols have a reach that few other pistols can manage meshed with the kick of a much larger weapon.",
-    "effect": "",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
     "mount": "Auxiliary",
     "type": "Launcher",
     "cost": 1,
@@ -526,15 +236,7 @@
         "id": "tg_knockback",
         "val": 1
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_helstorm_assault_pistol",
@@ -544,9 +246,6 @@
     "license_level": 2,
     "description": "Machine pistols with an incredible rate of fire, the only thing faster than how quickly they can bring down targets is how rapidly the pistols can expend an entire high capacity magazine.",
     "effect": "This weapon can make two attacks when fired, against the same target or against different targets. The second attack does not benefit from bonus damage.",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
     "mount": "Auxiliary",
     "type": "CQB",
     "cost": 1,
@@ -578,15 +277,7 @@
       {
         "id": "tg_loading"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_dueliing_pistol",
@@ -596,9 +287,6 @@
     "license_level": 3,
     "description": "When dealing with foes the size of buildings, only a certain level of precision is required. Most pilots aim for center mass to increase the chance of hits and to minimize the effects of any inaccuracy. The Ironleaf Foundry Dueling Pistol is an exception to this rule, designed to allow for millimeter precision even at maximum range. A skilled shot from a dueling pistol can pass right through the lens of a mech’s cameras or bounce inside an air intake without much issue.",
     "effect": "All successful attacks with this weapon become Critical Hits.",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
     "mount": "Auxiliary",
     "type": "Rifle",
     "cost": 1,
@@ -629,15 +317,7 @@
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_silver_hand",
@@ -646,10 +326,6 @@
     "license": "CLOVER",
     "license_level": 1,
     "description": "The fundamentals each boxer learns; The Jab and the Cross are two of the most eternally useful tools in any combatants repertoire. A fighter might know a million tricks but sheer practiced technique can’t be matched with cheap tricks, only with equal skill.",
-    "effect": "",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
     "mount": "Auxiliary",
     "type": "Melee",
     "cost": 1,
@@ -681,15 +357,7 @@
         "id": "tg_reliable",
         "val": 1
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_kinetic_driver",
@@ -697,11 +365,8 @@
     "source": "IF",
     "license": "CLOVER",
     "license_level": 2,
-    "description": "",
+    "description": "“It’s not about who strikes first, it’s about who strikes last. You can’t win anything, anywhere in life without some risk. So take my advice: Clench your fucking teeth and get ready to make him regret swinging.” -Tia Maddalen, DOJ/HR Field Advocate.",
     "effect": "When you Brace, if the Kinetic Driver is loaded, you can attack with it as part of the Brace.",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
     "mount": "Main",
     "type": "Melee",
     "cost": 1,
@@ -736,15 +401,7 @@
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_denting_iron",
@@ -753,10 +410,7 @@
     "license": "CLOVER",
     "license_level": 3,
     "description": "Nothing can take abuse forever. The most advanced living metals, the hardest alloys and the most well trained muscles; each has a limit. If you push them far enough, they'll snap and never be quite as strong again. Some articulation enhancements are designed to do exactly that, to lay precision blow after precision blow into systems pushed to the breaking point.",
-    "effect": "",
-    "on_attack": "",
     "on_hit": "If this target was hit with Denting Iron in the previous round it deals maximum damage, though bonus damage is still rolled as normal.",
-    "on_crit": "",
     "mount": "Main",
     "type": "Melee",
     "cost": 1,
@@ -784,27 +438,13 @@
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_disposable_gyrostorm_pods",
     "name": "Disposable Gyrostorm Pods",
-    "source": "",
-    "license": "",
     "license_level": 1,
-    "description": "",
     "effect": "You may only fire the Disposable Gyrostorm Pods once per scene.",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
     "mount": "Main",
     "type": "Rifle",
     "cost": 1,
@@ -815,25 +455,10 @@
     "no_core_bonus": false,
     "no_bonus": false,
     "no_synergy": false,
-    "damage": [],
-    "range": [],
     "sp": 0,
-    "tags": [],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
     "profiles": [
       {
         "name": "Anti-Armour Turbopenetrator",
-        "description": "",
-        "effect": "",
-        "on_attack": "",
-        "on_hit": "",
-        "on_crit": "",
         "type": "Rifle",
         "cost": 1,
         "damage": [
@@ -848,13 +473,6 @@
             "val": 10
           }
         ],
-        "actions": [],
-        "bonuses": [],
-        "synergies": [],
-        "deployables": [],
-        "counters": [],
-        "integrated": [],
-        "special_equipment": [],
         "tags": [
           {
             "id": "tg_smart"
@@ -870,11 +488,7 @@
       },
       {
         "name": "Wingshredder Flechette",
-        "description": "",
-        "effect": "",
         "on_attack": "The target is slowed and cannot fly until they pass a hull save as a full action.",
-        "on_hit": "",
-        "on_crit": "",
         "type": "Rifle",
         "cost": 1,
         "damage": [
@@ -889,13 +503,6 @@
             "val": 10
           }
         ],
-        "actions": [],
-        "bonuses": [],
-        "synergies": [],
-        "deployables": [],
-        "counters": [],
-        "integrated": [],
-        "special_equipment": [],
         "tags": [
           {
             "id": "tg_smart"
@@ -904,11 +511,6 @@
       },
       {
         "name": "Thermobaric Incinerator",
-        "description": "",
-        "effect": "",
-        "on_attack": "",
-        "on_hit": "",
-        "on_crit": "",
         "type": "Rifle",
         "cost": 1,
         "damage": [
@@ -927,13 +529,6 @@
             "val": "2"
           }
         ],
-        "actions": [],
-        "bonuses": [],
-        "synergies": [],
-        "deployables": [],
-        "counters": [],
-        "integrated": [],
-        "special_equipment": [],
         "tags": [
           {
             "id": "tg_seeking"
@@ -956,10 +551,6 @@
     "license": "POPPY",
     "license_level": 1,
     "description": "Firing high velocity needles with secondary charges to allow on-the fly targeting, Zhuge 𝜈-Model Needlerifles give a pilot much of the precision of a hunter-killer drone meshed with a staggering rate of fire.",
-    "effect": "",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
     "mount": "Main",
     "type": "Rifle",
     "cost": 1,
@@ -987,15 +578,7 @@
       {
         "id": "tg_arcing"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_rook_medium_machine_gun",
@@ -1005,9 +588,6 @@
     "license_level": 2,
     "description": "Designed to act as a frontline unit support weapon, Rooks are just as comfortable propped up on an emplacement as they are advancing at full fire. More advanced than the gun itself is the gyrostabilization mountings it uses to achieve unmatched field of fire and consistency of results.",
     "effect": "This weapon can attack two targets at a time. If it does so, it deals 4 Kinetic Damage with Reliable 2.",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
     "mount": "Heavy",
     "type": "Rifle",
     "cost": 1,
@@ -1036,15 +616,7 @@
         "id": "tg_reliable",
         "val": 4
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_goalkeeper_vulcan",
@@ -1054,9 +626,6 @@
     "license_level": 3,
     "description": "“The history of defense starts with passive defense, armour and plating, but rapidly moves into active defense. Mostly because if my choices are ‘get shot’ or ‘be so shooty that even other bullets are afraid of getting merc’d’, I know which side is a lot more interesting.” -Tia Maddalen, DOJ/HR Field Advocate.",
     "effect": "You gain the Brrrt reaction, usable once per round.",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
     "mount": "Main",
     "type": "Rifle",
     "cost": 1,
@@ -1100,25 +669,13 @@
       {
         "name": "Brrrt",
         "activation": "Reaction",
-        "detail": "<p>Make a contested ranged attack roll: if you win the contested roll, you can spend a charge from the Goalkeeper Vulcan to have the attack automatically miss. This attack roll gains <strong>+1 accuracy</strong> against attacks with the <strong>Arcing</strong> or <strong>Seeking</strong> tags.</p>",
+        "detail": "Make a contested ranged attack roll: if you win the contested roll, you can spend a charge from the Goalkeeper Vulcan to have the attack automatically miss. This attack roll gains +1 accuracy against attacks with the Arcing or Seeking tags.",
         "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
         "frequency": "1/round",
         "init": "",
-        "trigger": "<p>You or an allied character within range 5 are targeted by a ranged attack.</p>"
+        "trigger": "You or an allied character within range 5 are targeted by a ranged attack."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_pulse_spear",
@@ -1126,11 +683,7 @@
     "source": "IF",
     "license": "SILVERSWORD",
     "license_level": 1,
-    "description": "<p>Popular among security crews, Pulse Spears provide an excellent mix of flexibility and power to defenders allowing teams using them to dominate narrow chokepoints without being so unwieldy as to be difficult to use when the press of melee begins.</p>",
-    "effect": "",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
+    "description": "Popular among security crews, Pulse Spears provide an excellent mix of flexibility and power to defenders allowing teams using them to dominate narrow chokepoints without being so unwieldy as to be difficult to use when the press of melee begins.",
     "mount": "Main",
     "type": "CQB",
     "cost": 1,
@@ -1163,15 +716,7 @@
         "id": "tg_heat_self",
         "val": 2
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_luin_celtchair",
@@ -1179,11 +724,8 @@
     "source": "IF",
     "license": "SILVERSWORD",
     "license_level": 3,
-    "description": "<p>A unique weapon even among Ironleaf Foundry's endless variety of artisanal weapons, each single-shot capacitor for this anti-tank energy lance is hand-crafted by the elite of the company's gunsmiths. This gives them unprecedented versatility, from scorching an entire area around the firer to ash or pushing the weapon to its limit to annihilate even the most armoured of targets. Unwilling to sell such prized creations for mere money, each holder has a unique contract drawn up for these powerful weapons. The one common point in every one of these contracts: The purchaser must publicly say, if asked, that Ironleaf Foundry makes better weapons than the Terrashima Enclaves.</p>",
-    "effect": "<p>As a protocol, you can change to one of the following Modes. The Mode continues until you change to a new Mode with this weapon. You start any given fight with one of the following Modes of your choice.</p>",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
+    "description": "A unique weapon even among Ironleaf Foundry's endless variety of artisanal weapons, each single-shot capacitor for this anti-tank energy lance is hand-crafted by the elite of the company's gunsmiths. This gives them unprecedented versatility, from scorching an entire area around the firer to ash or pushing the weapon to its limit to annihilate even the most armoured of targets. Unwilling to sell such prized creations for mere money, each holder has a unique contract drawn up for these powerful weapons. The one common point in every one of these contracts: The purchaser must publicly say, if asked, that Ironleaf Foundry makes better weapons than the Terrashima Enclaves.",
+    "effect": "As a protocol, you can change to one of the following Modes. The Mode continues until you change to a new Mode with this weapon. You start any given fight with one of the following Modes of your choice.",
     "mount": "Heavy",
     "type": "Rifle",
     "cost": 1,
@@ -1197,38 +739,16 @@
     "damage": [],
     "range": [],
     "sp": 2,
-    "tags": [],
     "actions": [
       {
         "name": "Change Mode",
         "activation": "Protocol",
-        "detail": "<p>Change this weapon's mode.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Change this weapon's mode."
       }
     ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
     "profiles": [
       {
         "name": "Solar Flare",
-        "description": "",
-        "effect": "",
-        "on_attack": "",
-        "on_hit": "",
-        "on_crit": "",
-        "type": "",
         "cost": 1,
         "damage": [
           {
@@ -1245,24 +765,11 @@
             "type": "Line",
             "val": 8
           }
-        ],
-        "actions": [],
-        "bonuses": [],
-        "synergies": [],
-        "deployables": [],
-        "counters": [],
-        "integrated": [],
-        "special_equipment": [],
-        "tags": []
+        ]
       },
       {
         "name": "Inferno Ring",
-        "description": "",
-        "effect": "<p>This weapon ignores the penalty for engagement.</p>",
-        "on_attack": "",
-        "on_hit": "",
-        "on_crit": "",
-        "type": "",
+        "effect": "This weapon ignores the penalty for engagement.",
         "cost": 1,
         "damage": [
           {
@@ -1276,13 +783,6 @@
             "val": 2
           }
         ],
-        "actions": [],
-        "bonuses": [],
-        "synergies": [],
-        "deployables": [],
-        "counters": [],
-        "integrated": [],
-        "special_equipment": [],
         "tags": [
           {
             "id": "tg_knockback",
@@ -1292,12 +792,7 @@
       },
       {
         "name": "Exorcism of Flame",
-        "description": "",
-        "effect": "",
-        "on_attack": "",
-        "on_hit": "<p>The target cannot make tech actions and smart weapon attacks beyond Range 3 until the end of their next turn.</p>",
-        "on_crit": "",
-        "type": "",
+        "on_hit": "The target cannot make tech actions and smart weapon attacks beyond Range 3 until the end of their next turn.",
         "cost": 1,
         "damage": [
           {
@@ -1310,29 +805,16 @@
             "type": "Range",
             "val": 8
           }
-        ],
-        "actions": [],
-        "bonuses": [],
-        "synergies": [],
-        "deployables": [],
-        "counters": [],
-        "integrated": [],
-        "special_equipment": [],
-        "tags": []
+        ]
       },
       {
         "name": "Fission Impeller",
-        "description": "",
-        "effect": "<p>This mode makes attacks as if it was superheavy.</p>",
-        "on_attack": "",
-        "on_hit": "<p>The target is Shredded until the end of their next turn. Objects instead suffer 50 AP energy damage.</p>",
-        "on_crit": "",
-        "type": "",
+        "on_hit": "Objects instead suffer 50 AP energy damage.",
         "cost": 1,
         "damage": [
           {
             "type": "Energy",
-            "val": "2d6+6"
+            "val": "2d6+4"
           }
         ],
         "range": [
@@ -1341,20 +823,13 @@
             "val": 8
           }
         ],
-        "actions": [],
-        "bonuses": [],
-        "synergies": [],
-        "deployables": [],
-        "counters": [],
-        "integrated": [],
-        "special_equipment": [],
         "tags": [
           {
             "id": "tg_ap"
           },
           {
             "id": "tg_heat_self",
-            "val": 3
+            "val": 4
           }
         ]
       }
@@ -1366,11 +841,9 @@
     "source": "IF",
     "license": "ROWAN",
     "license_level": 1,
-    "description": "<p>Rapidly bouncing between foes and shattering concentration, transaxle butterflies made waves in their initial release, the spinning energy discs carving through mockery to prove that Ironleaf Foundry’s designs are never to be underestimated.</p>",
-    "effect": "<p>This weapon does not attack you or allied characters caught in the area.</p>",
-    "on_attack": "",
-    "on_hit": "<p>The target is unable to take Reactions, Protocols or Free Actions until the end of their next turn.</p>",
-    "on_crit": "",
+    "description": "Rapidly bouncing between foes and shattering concentration, transaxle butterflies made waves in their initial release, the spinning energy discs carving through mockery to prove that Ironleaf Foundry’s designs are never to be underestimated.",
+    "effect": "This weapon does not attack you or allied characters caught in the area.",
+    "on_hit": "The target is unable to take Reactions, Protocols or Free Actions until the end of their next turn.",
     "mount": "Main",
     "type": "Nexus",
     "cost": 1,
@@ -1406,15 +879,7 @@
         "id": "tg_knockback",
         "val": 2
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_starburst_spinner",
@@ -1422,11 +887,8 @@
     "source": "IF",
     "license": "ROWAN",
     "license_level": 2,
-    "description": "<p>The result of Ironleaf Foundry's work on exotic cultivated materials, the starburst spinner is a synthetic crystal with psychoresponsive properties easily directed to impact opponents at close range. With the aid of guiding wires to maintain connection, a starburst spinner can assault foes from many directions, driving them back with forceful impacts and crackling energy left in its wake.</p>",
-    "effect": "",
-    "on_attack": "<p>The nexus attacks a single target in the area and leaves a Starburst in any space in the area. While you have any Starbursts on the battlefield, you gain the Starburst Bind Quick Action.</p>",
-    "on_hit": "",
-    "on_crit": "",
+    "description": "The result of Ironleaf Foundry's work on exotic cultivated materials, the starburst spinner is a synthetic crystal with psychoresponsive properties easily directed to impact opponents at close range. With the aid of guiding wires to maintain connection, a starburst spinner can assault foes from many directions, driving them back with forceful impacts and crackling energy left in its wake.",
+    "on_attack": "The nexus attacks a single target in the area and leaves a Starburst in any space in the area. While you have any Starbursts on the battlefield, you gain the Starburst Bind Quick Action.",
     "mount": "Heavy",
     "type": "Nexus",
     "cost": 1,
@@ -1463,24 +925,220 @@
       {
         "name": "Starburst Bind",
         "activation": "Quick",
-        "detail": "<p>Create a line between yourself and each of your Starbursts. All hostile characters in one or more affected areas suffer 3 Energy Damage, are knocked back 2 spaces towards you and must pass an agility save or fall prone. Then remove each Starburst.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Create a line between yourself and each of your Starbursts. All hostile characters in one or more affected areas suffer 3 Energy Damage, are knocked back 2 spaces towards you and must pass an agility save or fall prone. Then remove each Starburst."
+      }
+    ]
+  },
+  {
+    "id": "mw_sauterelle",
+    "name": "Sauterelle",
+    "source": "IF",
+    "license": "KUDZU",
+    "license_level": 1,
+    "description": "Loaded with tandem charge fuel-air/kinetic pulse grenades, Sauterelles are capable of concussing foes caught in their blast, setting equipment ablaze even as defenders struggle to regain their bearings.",
+    "mount": "Main",
+    "type": "Rifle",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Burn",
+        "val": "1"
       }
     ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_arcing"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      },
+      {
+        "id": "tg_knockback",
+        "val": 3
+      }
+    ]
+  },
+  {
+    "id": "mw_electrobaton",
+    "name": "Electrobaton",
+    "source": "IF",
+    "license": "KUDZU",
+    "license_level": 2,
+    "description": "“The shock will continue to arc through them for quite some time, seizing servos, shorting out systems and generally leaving the pilot not sure what hit them.<br><br>I recommend using the chance to stomp their face into the dirt.” -Tia Maddalen, DOJ/HR Field Advocate.",
+    "on_hit": "The target must pass an engineering save or fall prone and be immobilized until the start of their next turn.",
+    "mount": "Main",
+    "type": "Melee",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1"
+      },
+      {
+        "type": "Burn",
+        "val": "2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ]
+  },
+  {
+    "id": "mw_thorn",
+    "name": "Thorn",
+    "license_level": 1,
+    "effect": "This weapon may attack with Overwatch when hostile characters enter, leave, or exit spaces within its Threat, no matter whether they started their movement there. You gain the Solstice Knight reaction.",
+    "mount": "Main",
+    "type": "Melee",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_reliable",
+        "val": 4
+      }
+    ],
+    "actions": [
+      {
+        "name": "Solstice Knight",
+        "activation": "Reaction",
+        "detail": "Make a Melee attack contesting the triggering attack: If you win the contested roll, the attack automatically misses and the attacker suffers 3 Energy Damage. This reaction can be taken while grappling and this attack gains +1 accuracy if the triggering attack was Melee.",
+        "frequency": "1/round",
+        "trigger": "The Rose or an adjacent character is targeted by an attack."
+      }
+    ]
+  },
+  {
+    "id": "mw_monomolecular_scythe",
+    "name": "Monomolecular Scythe",
+    "license_level": 1,
+    "on_crit": "This weapon deals 1 Kinetic Damage for each hostile character in Threat to all hostile characters in Threat, to a maximum of 3.",
+    "mount": "Heavy",
+    "type": "Melee",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_accurate"
+      }
+    ]
+  },
+  {
+    "id": "mw_mistilteinn_core_channel",
+    "name": "“Mistilteinn” Core Channel",
+    "license_level": 1,
+    "on_hit": "This attack deals bonus damage equal to the target's maximum structure or layers. If the target suffers Structure Damage this turn, the target must roll twice and take the lower result, ignoring all similar effects.",
+    "mount": "Auxiliary",
+    "type": "CQB",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_loading"
+      }
+    ]
   }
 ]
