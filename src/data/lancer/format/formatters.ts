@@ -450,12 +450,10 @@ export class Formatters {
 
     private getFrameForIntegratedId(id: string): SearchableFrame | undefined {
         return this.frames.find((it) => {
-            console.log(`checking frame ${it.id} for integrated ${id}`)
             const traitIntegrations = it.traits.map((trait) => trait.integrated)
             const coreIntegrations = it.core_system.integrated
             return [...traitIntegrations, coreIntegrations].filter((it) => it).find((integrateds) => {
                 return integrateds.find((integratedId) => {
-                    console.log(`found frame has ${integratedId}`)
                     return integratedId === id
                 })
             })
