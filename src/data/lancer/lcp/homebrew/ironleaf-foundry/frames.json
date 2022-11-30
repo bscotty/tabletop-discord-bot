@@ -87,7 +87,7 @@
     "traits": [
       {
         "name": "Immortal Skill",
-        "description": "The Rose is treated as size 1 for the purpose of Ram and Grapple and ignores engagement by characters larger than itself.",
+        "description": "The Rose is treated as size 2 for the purpose of Ram and Grapple and ignores engagement by characters larger than itself.",
         "synergies": [
           {
             "locations": [
@@ -263,7 +263,7 @@
     },
     "traits": [
       {
-        "name": "Scrapper",
+        "name": "Bring It!",
         "description": "When the Clover Braces, the attacker is pulled their speed towards the Clover and the Clover can still make reactions until the start of its next turn."
       },
       {
@@ -506,7 +506,10 @@
       "active_effect": "You teleport to any free space within Range 50, releasing a Burst 3 area at both the start and final locations. You and allied characters in the affected areas are restored to full HP and allied characters in the starting area can teleport to any free space at least partially within the final area.",
       "activation": "Full",
       "description": "A core rule of medicine is simple: Dosage is everything. The same tools that save a life can take one just as easily. The nanites the Kudzu uses are no different, with a skilled user able to rapidly reconfigure them to stall offense, repair damage or to inflame injury.",
-      "use": "Scene"
+      "use": "Scene",
+      "integrated": [
+        "mw_nanotoxin_injector"
+      ]
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "y_pos": "25"
