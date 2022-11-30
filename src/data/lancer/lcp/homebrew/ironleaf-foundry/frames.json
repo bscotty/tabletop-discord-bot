@@ -33,12 +33,10 @@
     "traits": [
       {
         "name": "Blastwave Rider",
-        "use": "",
         "description": "1/Round when the Lily takes damage from a Blast, Burst, Line or Cone it can fly up to 5 spaces in any direction. This movement does not cause reactions, ignores engagement and can still be made even if the Lily is Slowed. If the Lily or an allied character is the source of the damage, it also reduces damage and heat taken to 1."
       },
       {
         "name": "Unrestrained",
-        "use": "",
         "description": "The Lily can choose to be immune to hostile effects (but not costs to use a system or weapon) from non-hostile characters and ignores Engagement by characters larger than itself."
       }
     ],
@@ -343,18 +341,8 @@
       "active_name": "Water Slips Away",
       "activation": "Reaction",
       "description": "The three-part legion of past, present and future allows the Silversword a unique view of the flow of time about it…and how to interrupt it.",
-      "deactivation": "",
       "use": "Scene",
-      "active_actions": [
-        {
-          "name": "Water Slips Away",
-          "activation": "Reaction",
-          "detail": "End The Round. Any number of characters of your choice in Range 50 clear burn and all effects that would end at the end of their next turn not caused by their own traits, systems etc. You can nominate the first character to take a turn next round. You can take this reaction even if you could not otherwise take reactions.",
-          "cost": 0,
-          "frequency": "1/encounter",
-          "trigger": "A character in Range 50's turn would start."
-        }
-      ],
+      "active_effect": "At the start of any character within Range 50's turn, you may end the round. Any number of characters of your choice in Range 50 clear burn and all effects that would end at the end of their next turn not caused by their own traits, systems etc. You can nominate the first character to take a turn next round. You can take this reaction even if you could not otherwise take reactions.",
       "passive_name": "King Under the Mountain",
       "passive_effect": "When its turn starts, the Silversword can end one condition or effect of a tech action not caused by its own traits, systems etc."
     },

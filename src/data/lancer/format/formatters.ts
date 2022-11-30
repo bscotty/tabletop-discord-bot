@@ -211,9 +211,7 @@ export class Formatters {
         if (core.active_name) {
             out += `**Active: ${core.active_name}** `
             out += `(Activation: ${activationFormat(core.activation)})\n`
-            if (core.active_effect) {
-                out += `${this.turndownService.turndown(core.active_effect)}`
-            }
+            out += `${this.turndownService.turndown(core.active_effect)}`
         }
         if (core.active_actions) {
             core.active_actions.forEach(aa => out += `\n${this.actionFormat(aa)}`)
