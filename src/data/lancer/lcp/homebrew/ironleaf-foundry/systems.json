@@ -13,14 +13,7 @@
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_sonic_spall_charges",
@@ -48,38 +41,16 @@
         "name": "Shake Grenade",
         "activation": "Quick",
         "detail": "Throw a grenade to a space within Range 5. All characters within the Blast 1 area must pass a Hull save or take 1d6+2 Kinetic Damage. On a success, they take half damage. Each point of Armor applied reduces the damage of this system by 2 instead of 1.",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "frequency": "Unlimited"
       }
     ],
-    "bonuses": [],
-    "synergies": [],
     "deployables": [
       {
         "name": "Shatter Mine",
         "type": "Mine",
-        "detail": "All characters within the affected area must pass an Hull save or take 2d6+3 Kinetic Damage. On a success, they take half damage. Each point of Armor applied reduces the damage of this system by 2 instead of 1.",
-        "size": 1,
-        "instances": 1,
-        "cost": 1,
-        "pilot": false,
-        "mech": false,
-        "actions": [],
-        "bonuses": [],
-        "synergies": [],
-        "counters": []
+        "detail": "All characters within the affected area must pass an Hull save or take 2d6+3 Kinetic Damage. On a success, they take half damage. Each point of Armor applied reduces the damage of this system by 2 instead of 1."
       }
-    ],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_shockwave_charges",
@@ -107,38 +78,16 @@
         "name": "Concussion Grenade",
         "activation": "Quick",
         "detail": "Throw a grenade to a space within range 5. Characters in the Blast 1 area are knocked back 6 spaces. Unwilling characters can pass a Hull save to halve the distance moved.",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "frequency": "Unlimited"
       }
     ],
-    "bonuses": [],
-    "synergies": [],
     "deployables": [
       {
         "name": "Ricochet Mine",
         "type": "Mine",
-        "detail": "When a character moves over or adjacent to this mine, it detonates. The affected character is knocked back up to 6 spaces in a direction of your choice. Unwilling characters can pass a Hull save to halve the distance moved. If this movement ends adjacent to another character, the affected character and all characters adjacent to them are knocked Prone.",
-        "size": 1,
-        "instances": 1,
-        "cost": 1,
-        "pilot": false,
-        "mech": false,
-        "actions": [],
-        "bonuses": [],
-        "synergies": [],
-        "counters": []
+        "detail": "When a character moves over or adjacent to this mine, it detonates. The affected character is knocked back up to 6 spaces in a direction of your choice. Unwilling characters can pass a Hull save to halve the distance moved. If this movement ends adjacent to another character, the affected character and all characters adjacent to them are knocked Prone."
       }
-    ],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_bunker_buster",
@@ -166,198 +115,23 @@
         "name": "Supercritical Mass",
         "activation": "Quick",
         "detail": "Throw a grenade to a space within Range 10. All characters within the Blast 1 area must pass an Engineering save or take 1d6+2 Energy damage and gain 2 Heat. On a success, they take half damage and heat. Objects in the affected area suffer 20 AP Energy Damage.",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "frequency": "Unlimited"
       },
       {
         "name": "Demon Core",
         "activation": "Quick",
         "detail": "1/scene, you can throw a grenade to a space within Range 10. All characters within the Blast 2 area must pass an Engineering save or take 3d6 Energy + 4 Heat. On a success, they take half damage and heat. When rolling for damage with this grenade, any damage dice that land on a 1 cause the grenade to deal an additional 1 heat, and are then rerolled. Objects in the affected area suffer 40 AP Energy Damage. You take 10 Heat (self) after resolving the effects of Demon Core.<br><br>The affected area is irradiated until the end of the scene. Characters cannot clear heat in the irradiated area save by overheating and biological characters starting their turn in the irradiated area or entering it for the first time on their turn suffer 2 AP energy damage.",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
-  },
-  {
-    "id": "ms_en_garde_articulation",
-    "name": "\"En Garde\" Articulation",
-    "source": "IF",
-    "license": "ROSE",
-    "license_level": 1,
-    "effect": "When you brace against an attack from a target in Range 3, you may gain 2 heat. If you do, the attacker takes half the damage you do, before resistance and armor.",
-    "type": "System",
-    "sp": 1,
-    "description": "Many mechs engage in close combat like a lumbering ogre, swinging widely and expecting armour and momentum to keep them safe. With fine tuning of the articulation of a mech, however, enough range of motion can easily be given to allow for skillful deflection in the hands of a veteran duelist.",
-    "tags": [
-      {
-        "id": "tg_unique"
-      },
-      {
-        "id": "tg_heat_self",
-        "val": 2
-      }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
-  },
-  {
-    "id": "ms_fairy_gate",
-    "name": "Fairy Gate",
-    "source": "IF",
-    "license": "ROSE",
-    "license_level": 2,
-    "type": "System",
-    "sp": 2,
-    "description": "“Oh, quit whining. You were only disentangled from physical reality briefly. Whatever you saw there was probably just hallucinations.” -Dr Ashryn Ironleaf",
-    "tags": [
-      {
-        "id": "tg_round",
-        "val": "1"
-      },
-      {
-        "id": "tg_heat_self",
-        "val": 1
-      },
-      {
-        "id": "tg_unique"
-      }
-    ],
-    "actions": [
-      {
-        "name": "Fairy Gate",
-        "activation": "Free",
-        "detail": "Teleport up to 5 spaces to any space adjacent to a character, obstacle or piece of difficult terrain you are currently adjacent to.",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
-      }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
-  },
-  {
-    "id": "ms_scathach_class_nhp",
-    "name": "SCÁTHACH-Class NHP",
-    "source": "IF",
-    "license": "ROSE",
-    "license_level": 3,
-    "type": "System",
-    "sp": 3,
-    "description": "“Oh? You would wish to learn from me? I must admit, those who accept such honor often find themselves staring at a life shorter than most. However, I can promise you that each moment will shine brighter and more glorious than a dozen lifetimes of a coward.”",
-    "tags": [
-      {
-        "id": "tg_ai"
-      },
-      {
-        "id": "tg_unique"
-      }
-    ],
-    "actions": [
-      {
-        "name": "Fortress of Shadow",
-        "activation": "Quick",
-        "detail": "Nominate a hostile character in your line of sight. You and that character become Intangible until one of you is destroyed, the scene ends or the target passes an Agility save as a full action. Each hostile character can only be affected by this system once per scene.",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
-      }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
-  },
-  {
-    "id": "ms_broken_time_assault",
-    "name": "Broken-Time Assault",
-    "source": "IF",
-    "license": "ROSE",
-    "license_level": 3,
-    "type": "System",
-    "sp": 2,
-    "description": "Those with only a hair of dueling experience often find themselves overcautious, so afraid of losing that they are unwilling to claim victory or risk injury. A master is not simply skilled with a blade but instead capable of reading the flow of battle to know the right time to redouble an assault and take victory from the grip of an opponent.",
-    "tags": [
-      {
-        "id": "tg_heat_self",
-        "val": 1
-      },
-      {
-        "id": "tg_unique"
-      }
-    ],
-    "actions": [
-      {
-        "name": "",
-        "activation": "Protocol",
-        "detail": "One hostile character in Range 3 of your choice can immediately spend their Overwatch to make a Skirmish or Improvised Attack targeting you, even if they would not be in Range. Then, you can spend your Overwatch to Skirmish with a Melee weapon targeting them as a free action.",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
-      }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_dancing_shadow_module",
     "name": "Dancing Shadow Module",
     "source": "IF",
-    "license": "BELLADONNA",
-    "license_level": 1,
-    "effect": "When making a standard move, you can jump horizontally up to your full speed and upwards up to half your speed.&nbsp; In addition, when you Brace, you can attempt a final dodge. If you do, roll 1d6. On a 4+, the triggering attack automatically misses. Otherwise, you are hit as normal and do not gain Resistance from the Brace.",
+    "license": "ROSE",
+    "license_level": 2,
+    "effect": "You can fly when you move or boost; however, you must end the turn on the ground or another solid surface, or else immediately begin falling and you take Size+1 heat at the end of any of your turns in which you flew this way.In addition, when you Brace, you can attempt a final dodge. If you do, roll 1d6. On a 4+, the triggering attack automatically misses. Otherwise, you are hit as normal and do not gain Resistance from the Brace.",
     "type": "System",
     "sp": 2,
     "description": "Despite suspicions that the basis behind the programmed reflexes of this system being adapted from ninjutsu, jäger kunst or a host of other martial arts, the truth is honestly much simpler and accurate to its name. Dancing shadow uses an amalgam of dozens of different dance styles from the conventional to the fantastical to allow the mech to move with grace that few could hope to match, making soaring leaps or spinning around an opponent like it is performing upon a stage.",
@@ -365,81 +139,7 @@
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
-  },
-  {
-    "id": "ms_direct_interface_link",
-    "name": "Direct Interface Link",
-    "source": "IF",
-    "license": "BELLADONNA",
-    "license_level": 1,
-    "effect": "You automatically pass checks to disarm Mines and interact with Objects.",
-    "type": "System",
-    "sp": 1,
-    "description": "Articulated tendrils, direct interface links provide essential tools for allowing pilots to engage in actions more precise than gunplay without risking unfortunate consequences.",
-    "tags": [
-      {
-        "id": "tg_unique"
-      }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
-  },
-  {
-    "id": "ms_morrigan_class_nhp",
-    "name": "MORRIGAN-Class NHP",
-    "source": "IF",
-    "license": "BELLADONNA",
-    "license_level": 3,
-    "type": "System",
-    "sp": 3,
-    "description": "Unusual for an Ironleaf Foundry NHP, Morrigan-class NHPs are taciturn rather than showy, more focused on mission objectives than demonstrating the superiority of Foundry designs. Despite that, they are not at all lacking in the pride that is emblematic of these NHPs, channeling insults into vengeance that is fortunately generally restricted to the legal.",
-    "tags": [
-      {
-        "id": "tg_ai"
-      },
-      {
-        "id": "tg_unique"
-      },
-      {
-        "id": "tg_limited",
-        "val": 2
-      }
-    ],
-    "actions": [
-      {
-        "name": "Fated End",
-        "activation": "Quick",
-        "detail": "1/scene, expend a charge and choose 1 character in Range 5. Until the end of your next turn your melee attacks against them ignore invisibility, do not provoke reactions and all successful hits become critical hits.",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
-      }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_ragnarok_dive",
@@ -450,29 +150,22 @@
     "type": "System",
     "sp": 2,
     "description": "“Yes, you need to yell the name every time you use it. We gave it way too cool a name to not make people yell it.” -Dr Ashryn Ironleaf, already planning action figures.",
-    "tags": [],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
     "actions": [
       {
         "name": "Ragnarok Dive",
         "activation": "Quick",
-        "detail": "Your mech engages in matter-energy conversion across a Line 5 area. Characters in the affected area must pass an engineering save or take 1d6 Energy Damage. A successful save halves the damage. Your mech then reforms in any free space adjacent to the line, counting as teleporting.",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Your mech engages in matter-energy conversion across a Line 5 area. Characters in the affected area must pass an engineering save or take 1d6 Energy Damage. A successful save halves the damage. Your mech then reforms in any free space adjacent to the line, counting as teleporting."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_invocation_of_sigrun",
@@ -488,14 +181,7 @@
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_freyja_class_nhp",
@@ -523,23 +209,10 @@
         "name": "Chooser of the Slain",
         "activation": "Reaction",
         "detail": "The triggering character is instead removed from play, transmuted into a beam of golden light. This does not count as destroying the character. This golden light is the same size as the triggering character but does not obstruct movement or block line of sight. An allied character entering the space of the golden light can consume it as a reaction, allowing them to spend a Repair to restore half of their HP and cool half of their current Heat.",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
         "frequency": "1/round",
-        "init": "",
         "trigger": "A character in Range 10 and Line of Sight would be destroyed."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_rope_a_dope",
@@ -547,7 +220,7 @@
     "source": "IF",
     "license": "CLOVER",
     "license_level": 1,
-    "effect": "When you Brace, the triggering character gains Lock On and their next attack before the end of their next turn deals half damage, burn and heat.",
+    "effect": "When you Brace, the triggering character gains Lock On and their next attack before the end of their next turn that would deal damage, burn or heat deals half damage, burn and heat.",
     "type": "System",
     "sp": 1,
     "description": "\"Keep your head down and your guard up. This matters just as much out there as it does here. Bait the other guy into overextending, overspending. Then knock his block off when he's running low and off balance.\" -Tia Maddalen, DOJ/HR Field Advocate.",
@@ -555,14 +228,7 @@
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_iron_will",
@@ -578,14 +244,7 @@
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_setanta_class_nhp",
@@ -593,40 +252,28 @@
     "source": "IF",
     "license": "CLOVER",
     "license_level": 3,
-    "effect": "",
     "type": "System",
     "sp": 3,
-    "description": "“Evil must be opposed, no matter what form it takes or what power it possesses. Be it unknowable or as close as kin, you must recognise it. Be it capable of shattering all it sees or crushing the hearts of those you hold dear, you must fight it.<br><br>And I will be there with you.”",
+    "description": "\"Anger does not make one a monster. Against the injustices and cruelties of the world, it would require a heart of ice to not swell with fury. The crack of a slavemaster's whip, the ring of gunfire as lives are spent like coins for businessmen who would never risk their own. It is right to be angry about such things and to to grasp for a better world with bloody hands. If you require a monster, I shall be it; unleashing all my might against the very gods themselves and casting them down in the name of both the suffering present and a future I will never see.\"",
     "tags": [
       {
         "id": "tg_ai"
       },
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
       }
     ],
     "actions": [
       {
         "name": "Riastrad",
         "activation": "Quick",
-        "detail": "Under Setanta's guidance, you set yourself to face impossible foes. While the Riastrad is active you gain the following benefits:<ul><li>You can attack with Overwatch using Melee weapons when hostile characters enter, leave, or exit spaces within your Threat, no matter whether they started their movement there.</li><li>If your Overwatch with a melee weapon would destroy the target, it does not count towards your limit of uses this round for Overwatch.</li><li>Your size increases for all purposes, including space occupied, as any size chosen between your base size and Size 4. You can change your acting size as protocol, as long as there is space for you to occupy at that size.</li><li>You can’t be pushed, pulled, knocked prone, or knocked back by smaller characters.</li></ul>During this time, you cannot make Ranged or Tech attacks and must end any voluntary movement with as many hostile characters in Threat as possible. If no hostile characters are in Threat, your voluntary movements cannot end your movement further away from the nearest hostile character than you started, though which hostile character is closest can change during the movement.You can end the Riastrad as a protocol. When you do, you become Stunned until the start of your next turn.",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "1/scene, expend a charge to adopt the relentless fury of a monster, choosing a hostile character in Range 8 and Line of Sight as Prey. While you have Prey chosen, you gain the following benefits:<br><br><ul><li>Immediately, and again at the start of each of your turns, your Prey gains Lock On.</li><li>If your Prey starts a movement in Range 3 of you, you are driven to pursue them, being pulled to any space in Range 3 of their final location so fast as to count as teleporting, even if your Prey teleports themselves.</li><li>If your Prey becomes Intangible, you become intangible for as long as they remain so.</li><li>When your prey is destroyed or suffers Structure Damage, one hostile character in Line of Sight of your prey suffers 2 Heat and becomes Slowed and Impaired until the end of their next turn.</li></ul><br>However, while you have prey, you treat all other hostile characters as Invisible and cannot make any voluntary movement that would cause you to move beyond range 3 of your Prey. This effect immediately ends if you or your Prey is destroyed."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_patch_kit",
@@ -636,7 +283,7 @@
     "license_level": 1,
     "type": "System",
     "sp": 2,
-    "description": "“What, you think I’m down just because my blood’s mixing with the oil? I’m just getting fucking started!” -Echo Alpha, IF Test Pilot",
+    "description": "“What, you think I’m down just because my blood’s mixing with the oil? I’m just getting fucking started!” -Aoife, IF Test Pilot",
     "tags": [
       {
         "id": "tg_heat_self",
@@ -645,26 +292,10 @@
     ],
     "actions": [
       {
-        "name": "",
         "activation": "Quick",
-        "detail": "Spend 1 Repair to restore all HP.",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Spend 1 Repair to restore all HP."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_camouflaged_foxhole",
@@ -682,26 +313,11 @@
     ],
     "actions": [
       {
-        "name": "",
+        "name": "Create Foxhole",
         "activation": "Quick",
-        "detail": "Create a Blast 1 Foxhole in Range 5, which lasts for the rest of the scene or until you take this action again. Allied characters within the foxhole have Soft Cover and can Hide. Cover from this foxhole applies against all attacks, including attacks that would ignore cover such as tech attacks, seeking weapons and melee attacks. Hostile characters treat deployables, size 1/2 non-mech characters and shut down mechs entirely inside the foxhole as Hidden if they are not within Range 3.",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Create a Blast 1 Foxhole in Range 5, which lasts for the rest of the scene or until you take this action again. Allied characters within the foxhole have Soft Cover and can Hide. Cover from this foxhole applies against all attacks, including attacks that would ignore cover such as tech attacks, seeking weapons and melee attacks. Hostile characters treat deployables, size 1/2 non-mech characters and shut down mechs entirely inside the foxhole as Hidden if they are not within Range 3."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_blackout_missile",
@@ -723,26 +339,11 @@
     ],
     "actions": [
       {
-        "name": "",
+        "name": "Fire Blackout Missile",
         "activation": "Quick",
-        "detail": "Choose a blast 3 area within range 30. The targeted area is visible to all characters. At the end of the next round, the blackout missile arrives and all characters in the area suffer 6 Heat and are Jammed until the end of their next turn. You can have only one Blackout missile in flight at a time.",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Choose a blast 3 area within range 30. The targeted area is visible to all characters. At the end of the next round, the blackout missile arrives and all characters in the area suffer 6 Heat and are Jammed until the end of their next turn. You can have only one Blackout missile in flight at a time."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_fianna_system_initiation",
@@ -750,10 +351,9 @@
     "source": "IF",
     "license": "SILVERSWORD",
     "license_level": 1,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "<p>“Victorious Cumall had a son,</p><p>Finn, bloody, of weapons hard:</p><p>Finn and Goll, great their fame,</p><p>Mightily they waged war.”</p><p>-The Boyhood Deeds of Finn mac Cumhaill, Laud 610</p>",
+    "description": "“Victorious Cumall had a son,<br>Finn, bloody, of weapons hard:<br>Finn and Goll, great their fame,<br>Mightily they waged war.”<br>-The Boyhood Deeds of Finn mac Cumhaill, Laud 610",
     "tags": [
       {
         "id": "tg_unique"
@@ -763,38 +363,14 @@
       {
         "name": "Mark Prey",
         "activation": "Invade",
-        "detail": "<p>Once before the end of your next turn, when the target moves, you can move up to the same distance as a reaction. This movement must end closer to the target than it started.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Once before the end of your next turn, when the target moves, you can move up to the same distance as a reaction. This movement must end closer to the target than it started."
       },
       {
         "name": "Huntsmaster's Call",
         "activation": "Invade",
-        "detail": "<p>Any number of allied characters in Line of Sight of the target are pushed up to 3 spaces towards it.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Any number of allied characters in Line of Sight of the target are pushed up to 3 spaces towards it."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_samhain_system_illumination",
@@ -802,10 +378,9 @@
     "source": "IF",
     "license": "SILVERSWORD",
     "license_level": 2,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "<p>“Now comes the bird of dusty hue,</p><p>The loud cuckoo, the summer-lover;</p><p>Branchy trees are thick with leaves;</p><p>The bitter, evil time is over.”</p><p>-Fionn Mac Cumhaill</p>",
+    "description": "“Now comes the bird of dusty hue,The loud cuckoo, the summer-lover;Branchy trees are thick with leaves;The bitter, evil time is over.”-Fionn Mac Cumhaill",
     "tags": [
       {
         "id": "tg_unique"
@@ -815,38 +390,14 @@
       {
         "name": "Daydream",
         "activation": "Invade",
-        "detail": "<p>Until the end of the target's next turn they cannot take reactions or free actions.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Until the end of the target's next turn they cannot take reactions or free actions."
       },
       {
         "name": "Call to Slumber",
         "activation": "Invade",
-        "detail": "<p>At the end of the target's next turn they fall prone and become stunned until the start of their next turn. Each target can only be affected this way once per scene.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "At the end of the target's next turn they fall prone and become stunned until the start of their next turn. Each target can only be affected this way once per scene."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_kachunk",
@@ -854,25 +405,21 @@
     "source": "IF",
     "license": "SILVERSWORD",
     "license_level": 2,
-    "effect": "<p>Your next Weapon you fire before the start of your next turn gains +1d6 bonus damage and Knockback 3.</p>",
     "type": "System",
     "sp": 1,
-    "description": "<p>Ironleaf Foundry representatives have been frequently asked why a company as advanced as theirs often uses manual chambering for their weapons. The answer is almost always the same: When a company likes to tinker as relentlessly with precise payloads as Ironleaf Foundry, fine control over loading the next round can be essential. That and it sounds really cool.</p>",
+    "description": "Ironleaf Foundry representatives have been frequently asked why a company as advanced as theirs often uses manual chambering for their weapons. The answer is almost always the same: When a company likes to tinker as relentlessly with precise payloads as Ironleaf Foundry, fine control over loading the next round can be essential. That and it sounds really cool.",
     "tags": [
-      {
-        "id": "tg_quick_action"
-      },
       {
         "id": "tg_unique"
       }
     ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    "actions": [
+      {
+        "name": "Ka-Chunk!",
+        "activation": "Quick",
+        "detail": "Your next Weapon you fire before the start of your next turn gains +1d6 bonus damage and Knockback 3."
+      }
+    ]
   },
   {
     "id": "ms_winding_woods",
@@ -880,10 +427,10 @@
     "source": "IF",
     "license": "SILVERSWORD",
     "license_level": 3,
-    "effect": "<p>This system creates an illusion line up to 5 spaces long, up to 5 spaces high – with at least 1 space adjacent to you. It lasts for the rest of the scene and if a new one is placed, the old one deactivates. The illusion does not normally obstruct movement, however any character attempting to pass through the illusion must pass a systems save or gain 2 heat and be immobilized until the end of the current turn. This effect even applies to characters attempting to teleport, if the winding woods are between the start and end locations of the teleport.</p><p>This illusion provides soft cover but tech attacks and smart weapons that pass through the wall (Even if they do not require line of sight) have a 50% chance to be lost and have no effect. This does not stack with invisible.</p>",
+    "effect": "This system creates an illusion line up to 5 spaces long, up to 5 spaces high – with at least 1 space adjacent to you. It lasts for the rest of the scene and if a new one is placed, the old one deactivates. The illusion does not normally obstruct movement, however any character attempting to pass through the illusion must pass a systems save or gain 2 heat and be immobilized until the end of the current turn. This effect even applies to characters attempting to teleport, if the winding woods are between the start and end locations of the teleport.This illusion provides soft cover but tech attacks and smart weapons that pass through the wall (Even if they do not require line of sight) have a 50% chance to be lost and have no effect. This does not stack with invisible.",
     "type": "System",
     "sp": 2,
-    "description": "<p>“Foes lost within these illusions find the concept of distance and time warped, a few seconds stretched into weeks and months. Harmless to the physical...perhaps a little harrowing the sanity.” - Dr Ashryn Ironleaf</p>",
+    "description": "“Foes lost within these illusions find the concept of distance and time warped, a few seconds stretched into weeks and months. Harmless to the physical...perhaps a little harrowing the sanity.” - Dr Ashryn Ironleaf",
     "tags": [
       {
         "id": "tg_quick_tech"
@@ -891,14 +438,7 @@
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_arrowstorm_variable_charges",
@@ -906,10 +446,9 @@
     "source": "IF",
     "license": "ROWAN",
     "license_level": 1,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "<p>Arrowstorms are advanced long-rod penetrator explosives designed to decapitate enemy forces with precision sprays of flechettes, the highly flexible and focused charges allowing for safe usage in close range environments without concern about friendly fire.</p>",
+    "description": "Arrowstorms are advanced long-rod penetrator explosives designed to decapitate enemy forces with precision sprays of flechettes, the highly flexible and focused charges allowing for safe usage in close range environments without concern about friendly fire.",
     "tags": [
       {
         "id": "tg_limited",
@@ -926,16 +465,7 @@
       {
         "name": "Hyperpenetration Flechette",
         "activation": "Quick",
-        "detail": "<p>Throw a grenade at a single target within Range 10. Your target suffers 1d3+3 AP Kinetic Damage. A successful engineering save halves the damage.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Throw a grenade at a single target within Range 10. Your target suffers 1d3+3 AP Kinetic Damage. A successful engineering save halves the damage."
       }
     ],
     "bonuses": [],
@@ -944,25 +474,9 @@
       {
         "name": "Seeker Claymore",
         "type": "Mine",
-        "detail": "<p>This mine is triggered when a hostile character enters a space within Range 3 without Disengaging, regardless of height. The triggering character suffers 1d6+3 AP Kinetic Damage. A successful engineering save halves the damage.</p>",
-        "size": 1,
-        "activation": "Quick",
-        "deactivation": "",
-        "recall": "",
-        "redeploy": "",
-        "instances": 1,
-        "cost": 1,
-        "pilot": false,
-        "mech": false,
-        "actions": [],
-        "bonuses": [],
-        "synergies": [],
-        "counters": []
+        "detail": "This mine is triggered when a hostile character enters a space within Range 3 without Disengaging, regardless of height. The triggering character suffers 1d6+3 AP Kinetic Damage. A successful engineering save halves the damage."
       }
-    ],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_caillechs_step_quake_generator",
@@ -970,10 +484,9 @@
     "source": "IF",
     "license": "ROWAN",
     "license_level": 2,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "<p>While not technically an earthquake generator, the difference for those affected is purely academic. Powerful directed kinetic energy waves from these potent deployables shake the ground under foes, sending them tumbling while buffering allies from the worst of the force.</p>",
+    "description": "While not technically an earthquake generator, the difference for those affected is purely academic. Powerful directed kinetic energy waves from these potent deployables shake the ground under foes, sending them tumbling while buffering allies from the worst of the force.",
     "tags": [
       {
         "id": "tg_limited",
@@ -983,34 +496,18 @@
         "id": "tg_unique"
       }
     ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
     "deployables": [
       {
         "name": "Earthquake Generator",
         "type": "Deployable",
-        "detail": "<p>Expend a charge to deploy a Size 2 Earthquake generator in a free, adjacent space, where it creates a burst 2 quake. Hostile characters treat the affected area as difficult terrain and any hostile character starting their turn in the affected area or entering it for the first time in a round must pass a hull save or fall prone. Any hostile character standing from prone in the affected area must pass a hull save or immediately fall prone again.</p><p>This effect lasts for the rest of the scene or the generator is destroyed.</p>",
+        "detail": "Expend a charge to deploy a Size 2 Earthquake generator in a free, adjacent space, where it creates a burst 2 quake. Hostile characters treat the affected area as difficult terrain and any hostile character starting their turn in the affected area or entering it for the first time in a round must pass a hull save or fall prone. Any hostile character standing from prone in the affected area must pass a hull save or immediately fall prone again.This effect lasts for the rest of the scene or the generator is destroyed.",
         "size": 2,
-        "activation": "",
-        "deactivation": "",
-        "recall": "",
-        "redeploy": "",
         "instances": 1,
         "cost": 1,
         "hp": 20,
-        "evasion": 5,
-        "pilot": false,
-        "mech": false,
-        "actions": [],
-        "bonuses": [],
-        "synergies": [],
-        "counters": []
+        "evasion": 5
       }
-    ],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_buffer_counterdeployment_module",
@@ -1018,10 +515,9 @@
     "source": "IF",
     "license": "ROWAN",
     "license_level": 3,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "<p>“You can’t Dodge Cancel in Real Life, you dumbass!”</p><p>“Just Try To Stop Me!”</p><p>-Sane People to Echo Alpha, IF Test Pilot</p>",
+    "description": "“You can’t Dodge Cancel in Real Life, you dumbass!”<br>“Just Try To Stop Me!”<br>-Sane People to Aoife, IF Test Pilot",
     "tags": [
       {
         "id": "tg_unique"
@@ -1031,24 +527,11 @@
       {
         "name": "Insult to Injury",
         "activation": "Reaction",
-        "detail": "<p>One Mine, Drone or Deployable mounted on your mech is planted or deployed in a free space in Range 5 and Line of Sight. Mines planted this way are armed at the end of this turn.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": "<p>A hostile character misses you with an attack or you pass a save forced by a hostile character.</p>"
+        "detail": "One Mine, Drone or Deployable mounted on your mech is planted or deployed in a free space in Range 5 and Line of Sight. Mines planted this way are armed at the end of this turn.",
+        "frequency": "1/round",
+        "trigger": "A hostile character misses you with an attack or you pass a save forced by a hostile character."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_psychofracture_analysis",
@@ -1056,10 +539,10 @@
     "source": "IF",
     "license": "ROWAN",
     "license_level": 3,
-    "effect": "<p>A hostile character in range 5 and line of sight must pass an agility save or be Humiliated. While humiliated, whenever they make a check or save if the target fails to match or beat your save target in addition to the original target they fail, even on opposed checks. They can end this effect by passing an agility save as a quick action.</p><p>Whenever a character Humiliated by you in Line of Sight fails an attack, check or save, you gain 2 Overshield.</p>",
+    "effect": "A hostile character in range 5 and line of sight must pass an agility save or be Humiliated. While humiliated, whenever they make a check or save if the target fails to match or beat your save target in addition to the original target they fail, even on opposed checks. They can end this effect by passing an agility save as a quick action.Whenever a character Humiliated by you in Line of Sight fails an attack, check or save, you gain 2 Overshield.",
     "type": "System",
     "sp": 3,
-    "description": "<p>\"Every battle is won and lost in the mind before a single shot is fired. That's why I like to crush it first. It's much more effective to take down a foe who's foaming at the mouth in rage or paralyzed with shame than one making logical, careful decisions.\" -Aphrodite Alpha</p>",
+    "description": "\"Every battle is won and lost in the mind before a single shot is fired. That's why I like to crush it first. It's much more effective to take down a foe who's foaming at the mouth in rage or paralyzed with shame than one making logical, careful decisions.\" -Aphrodite Alpha",
     "tags": [
       {
         "id": "tg_quick_action"
@@ -1067,13 +550,156 @@
       {
         "id": "tg_unique"
       }
+    ]
+  },
+  {
+    "id": "ms_medb_class_nhp",
+    "name": "MEDB-Class NHP",
+    "source": "IF",
+    "license": "ROSE",
+    "license_level": 3,
+    "type": "System",
+    "sp": 3,
+    "description": "\"Those who would seek to stand with me, know that I will never allow others to suffer as I have suffered. I do not ask for a saint but instead three things: To be without fear, meanness, or jealousy. If you can promise me these small gifts, then I will cut down those who seek to shatter your joy.\"",
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      }
     ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    "actions": [
+      {
+        "name": "Conchobar's Due",
+        "activation": "Quick",
+        "detail": "You pronounce Vengeance on a hostile character in Range 10 and Line of Sight. While affected by your Vengeance, the target's final attack rolls can never be affected by accuracy and each time they make an attack that does not include you as a target, you deal 4 Energy Damage to them. You can only have Vengeance on a single character at a time and your Vengeance ends immediately if you choose a new target, are destroyed, become Hidden or end your turn without Line of Sight to the target."
+      }
+    ]
+  },
+  {
+    "id": "ms_dullahan_lunge",
+    "name": "Dullahan Lunge",
+    "source": "IF",
+    "license": "ROSE",
+    "license_level": 3,
+    "type": "System",
+    "sp": 2,
+    "description": "“Saints...when that machine dove towards me, I wasn’t worried. The ICEbreakers were already smashing through its digital defenses. Even when the spear hit, I was sure my armour would take it but...it was like someone took a shard of ice to my very soul. WATCHDOG screamed. I don’t know what those Ironleaf frames can do but I don’t want to face them again.” -Hugo Jaeger, After Action Trauma Analysis.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Dullahan Lunge",
+        "activation": "Quick",
+        "detail": "One hostile character in Range 3 and Line of Sight must pass a hull save or suffer 3 kinetic damage and be unable to make tech actions until the end of their next turn."
+      }
+    ]
+  },
+  {
+    "id": "ms_triage_module",
+    "name": "Triage Module",
+    "source": "IF",
+    "license": "KUDZU",
+    "license_level": 1,
+    "effect": "When a biological character in range 10 would be destroyed and isn't already Down And Out, you can instead have them gain the Down And Out status. In addition, gain the MEDIC! reaction, which expends charges from this system.",
+    "type": "System",
+    "sp": 2,
+    "description": "In an emergency, every second is a life. Sometimes there simply isn't enough time, blood or bandages to save everything and those most likely to survive must be prioritized. Advanced analysis modules keep the safety and repair functions of those around them under constant observation, allowing a skilled emergency technician to direct firefighting efforts, repairing a damaged actuator or staunching shrapnel wounds.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "actions": [
+      {
+        "name": "MEDIC!",
+        "activation": "Reaction",
+        "detail": "The check or save is made with +2 Accuracy.",
+        "frequency": "1/round",
+        "trigger": "An character in Range 10 and Line of Sight would make a check or save."
+      }
+    ]
+  },
+  {
+    "id": "ms_immunization",
+    "name": "Immunization",
+    "source": "IF",
+    "license": "KUDZU",
+    "license_level": 2,
+    "type": "System",
+    "sp": 2,
+    "description": "A golden dream of defensive technology is perfect analytical countermeasures, the ability to observe an attack and instantly know how to invalidate it in the future. Sadly this dream must give ground to the physical limitations of reality, where even if one knows how one is being assaulted, there is no certainty that the equipment will be available to stop it.&nbsp;While far from that holy grail, Ironleaf Foundry’s data logs of battlefield tools and the ways to blunt their effects have become incredibly popular with their focus on common supplies and battlefield scrap over rare and specialized tools.",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Immunize",
+        "activation": "Quick",
+        "detail": "You immunize an allied character in Range 10 and Line of Sight, causing one of the following effects:<ul><li>The target clears one Condition that wasn’t caused by one of their own systems, talents, etc. Until the end of that character's next turn, they are Immune to that Condition unless it is caused by a Status (Such as Prone) or one of their own systems, talents, etc.</li><li>The target becomes Immune to a chosen condition until the end of their next turn unless it is caused by a Status (Such as Prone) or one of their own systems, talents, etc.</li></ul>"
+      }
+    ]
+  },
+  {
+    "id": "ms_fatuity_beam",
+    "name": "Fatuity Beam",
+    "source": "IF",
+    "license": "KUDZU",
+    "license_level": 3,
+    "type": "System",
+    "sp": 2,
+    "description": "\"Thought patterns are electrical impulses like any other. By applying counter-wavelengths, we can negate a sizable percentage of those electrical impulses and cause significant reductions in operational capacity.\" - Dr Lily Realtin, lying to Ironleaf Foundry about how she didn't spend their money making a 'Stupid Ray'.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Fatuity Beam",
+        "activation": "Quick",
+        "detail": "One character in Range 8 and Line of Sight must pass an engineering save or be confused until the end of their next turn. During this time, whenever the target takes an action, reaction or standard movement they must roll 1d6. On a 4+ the action fails and has no effect, even if the action would not require a roll or normally be able to fail. Non-biological targets can only be successfully affected this way once per scene."
+      }
+    ]
+  },
+  {
+    "id": "ms_doctors_orders",
+    "name": "Doctor's Orders",
+    "source": "IF",
+    "license": "KUDZU",
+    "license_level": 3,
+    "type": "System",
+    "sp": 3,
+    "description": "A frequent problem among emergency services is uncooperative patients. Panic, Intoxication and even Unconsciousness at the controls are not uncommon among those they need to save, putting their saviors in significant additional danger. ‘Doctor’s Orders’ are slang for a series of Command-level overrides developed by support services to help allow emergency medical technicians to retrieve their patients from danger without themselves becoming another victim.",
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Doctor's Orders",
+        "activation": "Protocol",
+        "detail": "Push one character in Range 12 and Line of Sight up to 2 spaces or up to 4 spaces if the target is suffering from Burn or a Condition. Hostile characters may pass a Systems save to avoid this effect."
+      }
+    ]
   }
 ]

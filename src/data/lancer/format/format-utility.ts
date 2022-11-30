@@ -16,7 +16,7 @@ export function replaceVal(valString: string, replaceWith: string): string {
 export function licenseFormat(object: SearchableFrame | SearchableMod | SearchableSystem | SearchableWeapon) {
     if (object.license_level === 0) {
         return `${object.source}`
-    } else if (object.source.toUpperCase() === "EXOTIC") {
+    } else if (object.source && object.source.toUpperCase() === "EXOTIC") {
         return "Exotic"
     } else if (!isSearchableFrame(object) && object.tags && object.tags.find(tag => tag.id === 'tg_exotic')) {
         return "Exotic"

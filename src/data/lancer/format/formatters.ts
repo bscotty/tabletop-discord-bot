@@ -41,11 +41,13 @@ export class Formatters {
     private weapons: SearchableWeapon[]
     private systems: SearchableSystem[]
     private tags: SearchableTag[]
+    private frames: SearchableFrame[]
 
     constructor(data: LancerData[]) {
         this.weapons = data.map((it) => it.weapons).flat()
         this.systems = data.map((it) => it.systems).flat()
         this.tags = data.map((it) => it.tags).flat()
+        this.frames = data.map((it) => it.frames).flat()
     }
 
     private populateTag(tag: ITagData): string {
@@ -327,7 +329,17 @@ export class Formatters {
 
 
     public systemFormat(system: SearchableSystem) {
-        let out = `**${system.name}** (${licenseFormat(system)} ${system.data_type || system.type || ''})${formatContentPack(system)}\n`
+        let out = `**${system.name}**`
+        if (system.id) {
+            const frame = this.getFrameForIntegratedId(system.id)
+
+            if (frame) {
+                out += ` (${frame.source} ${frame.name} Integrated`
+            } else {
+                out += ` (${licenseFormat(system)}`
+            }
+        }
+        out += ` ${system.data_type || system.type || ''})${formatContentPack(system)}\n`
         let tagsEtc = []
         if (system.sp) tagsEtc.push(`${system.sp} SP`)
         if (system.tags) tagsEtc = tagsEtc.concat(system.tags.map(tag => this.populateTag(tag)))
@@ -364,8 +376,13 @@ export class Formatters {
 
     public weaponFormat(weapon: SearchableWeapon): string {
         let out = `**${weapon.name}**`
-        if (weapon.id && !weapon.id.endsWith('_integrated')) {
-            out += ` (${[licenseFormat(weapon), weapon.data_type].join(' ').trim()})`
+        if (weapon.id) {
+            const frame = this.getFrameForIntegratedId(weapon.id)
+            if (frame) {
+                out += ` (${frame.source} ${frame.name} Integrated ${weapon.data_type})`
+            } else {
+                out += ` (${[licenseFormat(weapon), weapon.data_type].join(' ').trim()})`
+            }
         }
         out += `${formatContentPack(weapon)}`
 
@@ -429,5 +446,19 @@ export class Formatters {
             weapon.deployables.forEach(dep => out += this.deployableFormatter(dep))
         }
         return out
+    }
+
+    private getFrameForIntegratedId(id: string): SearchableFrame | undefined {
+        return this.frames.find((it) => {
+            console.log(`checking frame ${it.id} for integrated ${id}`)
+            const traitIntegrations = it.traits.map((trait) => trait.integrated)
+            const coreIntegrations = it.core_system.integrated
+            return [...traitIntegrations, coreIntegrations].filter((it) => it).find((integrateds) => {
+                return integrateds.find((integratedId) => {
+                    console.log(`found frame has ${integratedId}`)
+                    return integratedId === id
+                })
+            })
+        })
     }
 }
