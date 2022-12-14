@@ -10,7 +10,7 @@ export type Frame = {
     name: string
     mechtype: string[]
     specialty?: boolean | IPrerequisite
-    description: string // v-html
+    description?: string // v-html
     mounts: MountType[]
     stats: FrameStats
     traits: IFrameTraitData[]

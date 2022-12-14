@@ -2,25 +2,10 @@
   {
     "id": "mw_crater_maker",
     "name": "Crater Maker",
-    "source": "",
-    "license": "",
     "license_level": 1,
-    "description": "",
-    "effect": "",
-    "on_attack": "",
-    "on_hit": "<p>This weapon deals burn damage equal to the Pompeii’s current burn and clears the Pompeii’s burn as though they succeeded on an Engineering check.</p>",
-    "on_crit": "",
+    "on_hit": "This weapon deals burn damage equal to the Pompeii’s current burn and clears the Pompeii’s burn as though they succeeded on an Engineering check.",
     "mount": "Main",
     "type": "CQB",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
-    "damage": [],
     "range": [
       {
         "type": "Range",
@@ -31,21 +16,12 @@
         "val": 3
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_heat_self",
         "val": 2
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_coalpike",
@@ -53,21 +29,9 @@
     "source": "EH&S",
     "license": "POMPEII",
     "license_level": 2,
-    "description": "",
-    "effect": "",
-    "on_attack": "",
-    "on_hit": "<p>The user becomes Immobilized until the end of their next turn, which cannot be cleared in any other way.</p>",
-    "on_crit": "",
+    "on_hit": "The user becomes Immobilized until the end of their next turn, which cannot be cleared in any other way.",
     "mount": "Main",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Energy",
@@ -84,20 +48,11 @@
         "val": 3
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_ap"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_cinderfall_shotgun",
@@ -105,21 +60,9 @@
     "source": "EH&S",
     "license": "POMPEII",
     "license_level": 3,
-    "description": "",
-    "effect": "",
-    "on_attack": "<p>As part of making an attack with this weapon, you may move 1 space either before the attack is rolled or after damage is dealt, ignoring engagement and reactions.</p>",
-    "on_hit": "",
-    "on_crit": "",
+    "on_attack": "As part of making an attack with this weapon, you may move 1 space either before the attack is rolled or after damage is dealt, ignoring engagement and reactions.",
     "mount": "Main",
     "type": "CQB",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Energy",
@@ -136,42 +79,18 @@
         "val": 3
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_knightly_arms",
     "name": "Knightly Arms",
-    "source": "",
-    "license": "",
     "license_level": 1,
-    "description": "",
-    "effect": "",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
     "mount": "Main",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -184,20 +103,11 @@
         "val": 3
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_accurate"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_jousting_lance",
@@ -205,21 +115,9 @@
     "source": "EH&S",
     "license": "CAMELOT",
     "license_level": 2,
-    "description": "",
-    "effect": "",
-    "on_attack": "",
-    "on_hit": "<p>The user and the target make a contested Hull check. The loser is knocked Prone.</p>",
-    "on_crit": "",
+    "on_hit": "The user and the target make a contested Hull check. The loser is knocked Prone.",
     "mount": "Heavy",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -232,20 +130,11 @@
         "val": 3
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_loading"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_parrying_shield",
@@ -253,21 +142,8 @@
     "source": "EH&S",
     "license": "CAMELOT",
     "license_level": 3,
-    "description": "",
-    "effect": "",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
     "mount": "Main",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Energy",
@@ -277,10 +153,9 @@
     "range": [
       {
         "type": "Threat",
-        "val": "3"
+        "val": 3
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_unique"
@@ -290,25 +165,11 @@
       {
         "name": "Parry",
         "activation": "Reaction",
-        "detail": "<p>You may make a contested attack roll against the triggering attacker using this weapon. If you roll higher, their attack misses, and you disable the weapon they used. They may reactivate it with a successful Engineering check as a quick action or for free when they Stabilize.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": "<p>An enemy within burst 3 of you attacks you or an adjacent ally with a weapon.</p>"
+        "detail": "You may make a contested attack roll against the triggering attacker using this weapon. If you roll higher, their attack misses, and you disable the weapon they used. They may reactivate it with a successful Engineering check as a quick action or for free when they Stabilize.",
+        "frequency": "1/round",
+        "trigger": "An enemy within burst 3 of you attacks you or an adjacent ally with a weapon."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_socratic_bludgeon",
@@ -316,21 +177,9 @@
     "source": "EH&S",
     "license": "OSTRAKON",
     "license_level": 1,
-    "description": "",
-    "effect": "",
-    "on_attack": "",
-    "on_hit": "<p>You may Disengage as a free action.</p>",
-    "on_crit": "",
+    "on_hit": "You may Disengage as a free action.",
     "mount": "Main",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -343,20 +192,11 @@
         "val": 1
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_sludge_barrage",
@@ -364,21 +204,9 @@
     "source": "EH&S",
     "license": "JERICHO",
     "license_level": 2,
-    "description": "",
-    "effect": "",
-    "on_attack": "<p>The affected spaces become difficult terrain until the start of your next turn.</p>",
-    "on_hit": "",
-    "on_crit": "",
+    "on_attack": "The affected spaces become difficult terrain until the start of your next turn.",
     "mount": "Heavy",
     "type": "Launcher",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Explosive",
@@ -395,20 +223,11 @@
         "val": 1
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_arcing"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_loading_assist_cannon_mk_ix",
@@ -416,21 +235,9 @@
     "source": "EH&S",
     "license": "JERICHO",
     "license_level": 3,
-    "description": "",
-    "effect": "<p>If this weapon is loaded, you may load an adjacent ally's weapon as a quick action. This weapon then becomes unloaded.</p>",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
+    "effect": "If this weapon is loaded, you may load an adjacent ally's weapon as a quick action. This weapon then becomes unloaded.",
     "mount": "Main",
     "type": "Cannon",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Explosive",
@@ -447,7 +254,6 @@
         "val": 1
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_arcing"
@@ -458,15 +264,7 @@
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_drone_launcher",
@@ -474,21 +272,9 @@
     "source": "EH&S",
     "license": "TROY",
     "license_level": 1,
-    "description": "",
-    "effect": "",
-    "on_attack": "<p>You deploy a drone as a free action in a free space adjacent to the target. If there are no valid spaces, or you have no drones that can be deployed, the target takes an additional 3 Explosive damage.</p>",
-    "on_hit": "",
-    "on_crit": "",
+    "on_attack": "You deploy a drone as a free action in a free space adjacent to the target. If there are no valid spaces, or you have no drones that can be deployed, the target takes an additional 3 Explosive damage.",
     "mount": "Main",
     "type": "Launcher",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -501,16 +287,7 @@
         "val": 10
       }
     ],
-    "sp": 1,
-    "tags": [],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    "sp": 1
   },
   {
     "id": "mw_palladium_drone_caller",
@@ -518,21 +295,9 @@
     "source": "EH&S",
     "license": "TROY",
     "license_level": 3,
-    "description": "",
-    "effect": "<p>This weapon has +1 Accuracy for every drone you control within Sensors to a maximum of +3 Accuracy.</p>",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
+    "effect": "This weapon has +1 Accuracy for every drone you control within Sensors to a maximum of +3 Accuracy.",
     "mount": "Heavy",
     "type": "Cannon",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Explosive",
@@ -549,7 +314,6 @@
         "val": 1
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_inaccurate"
@@ -560,15 +324,7 @@
       {
         "id": "tg_loading"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_blade_burster",
@@ -576,21 +332,9 @@
     "source": "EH&S",
     "license": "DAMASCUS",
     "license_level": 1,
-    "description": "",
-    "effect": "<p>This weapon cannot be thrown or have its threat increased.</p>",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
+    "effect": "This weapon cannot be thrown or have its threat increased.",
     "mount": "Auxiliary",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Energy",
@@ -603,21 +347,12 @@
         "val": 1
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_reliable",
-        "val": "1"
+        "val": 1
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_twin_rivers",
@@ -625,21 +360,9 @@
     "source": "EH&S",
     "license": "DAMASCUS",
     "license_level": 2,
-    "description": "",
-    "effect": "",
-    "on_attack": "",
-    "on_hit": "<p>You may make a secondary attack against another target within range. This effect triggers only once per round, and this attack cannot deal bonus damage.</p>",
-    "on_crit": "",
+    "on_hit": "You may make a secondary attack against another target within range. This effect triggers only once per round, and this attack cannot deal bonus damage.",
     "mount": "Heavy",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Energy",
@@ -652,20 +375,11 @@
         "val": 3
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_overkill"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_the_nbuchadnezzar",
@@ -673,21 +387,9 @@
     "source": "EH&S",
     "license": "BABYLON",
     "license_level": 2,
-    "description": "",
-    "effect": "<p>1/round, when you would attack with this weapon, an adjacent ally may attack with this weapon instead as a reaction. The ally uses their own systems, talents, and any relevant Accuracy or Difficulty, and counts as the origin of the attack for the purposes of determining cover. When attacking this way, the weapon cannot critical hit. You do not count as attacking if an ally uses this reaction.</p>",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
+    "effect": "1/round, when you would attack with this weapon, an adjacent ally may attack with this weapon instead as a reaction. The ally uses their own systems, talents, and any relevant Accuracy or Difficulty, and counts as the origin of the attack for the purposes of determining cover. When attacking this way, the weapon cannot critical hit. You do not count as attacking if an ally uses this reaction.",
     "mount": "Heavy",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -700,16 +402,7 @@
         "val": 2
       }
     ],
-    "sp": 2,
-    "tags": [],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    "sp": 2
   },
   {
     "id": "mw_delian_pilgrims",
@@ -717,21 +410,8 @@
     "source": "EH&S",
     "license": "DELPHI",
     "license_level": 1,
-    "description": "",
-    "effect": "",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
     "mount": "Main",
     "type": "Nexus",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Energy",
@@ -744,20 +424,11 @@
         "val": 10
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_smart"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_rosahringur_minni",
@@ -765,21 +436,8 @@
     "source": "EH&S",
     "license": "HÓLMAVÍK",
     "license_level": 1,
-    "description": "",
-    "effect": "",
-    "on_attack": "",
-    "on_hit": "",
-    "on_crit": "",
     "mount": "Main",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Energy",
@@ -802,24 +460,197 @@
       {
         "name": "Rosahringur Minni Reaction",
         "activation": "Reaction",
-        "detail": "<p>You may instead take 2 Heat and make a quick tech action against them in place of attacking with this weapon. This counts as taking the Overwatch reaction.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
+        "detail": "You may instead take 2 Heat and make a quick tech action against them in place of attacking with this weapon. This counts as taking the Overwatch reaction.",
         "frequency": "1/round",
-        "init": "",
-        "trigger": "<p>You would Overwatch a character with this weapon.</p>"
+        "trigger": "You would Overwatch a character with this weapon."
+      }
+    ]
+  },
+  {
+    "id": "mw_blood_red_blade",
+    "name": "Blood-Red Blade",
+    "source": "HA",
+    "license": "MASAMUNE",
+    "license_level": 1,
+    "effect": "You may attack with this weapon while it is unloaded. If you do, it deals 1d6+2 Kinetic damage instead.",
+    "mount": "Heavy",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "3d6"
       }
     ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_loading"
+      }
+    ]
+  },
+  {
+    "id": "mw_red_sun_interlocking_shields",
+    "name": "\"Red Sun\" Interlocking Shields",
+    "source": "HA",
+    "license": "MASAMUNE",
+    "license_level": 1,
+    "effect": "This weapon only expends its Limited charges on a hit. Whenever you would be forced to destroy a weapon due to critical damage or other effects, you may choose this weapon to destroy even if it has no charges remaining. You gain the Invincible Defense reaction.",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d3+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 4
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Invincible Defense",
+        "activation": "Reaction",
+        "detail": "You take 1 Heat and make an attack with the \"Red Sun\" Interlocking Shields against the triggering character.",
+        "frequency": "1/round",
+        "trigger": "You or an adjacent allied character is attacked by an adjacent character."
+      }
+    ]
+  },
+  {
+    "id": "mw_electromagnetic_sai",
+    "name": "Electromagnetic Sai",
+    "source": "HA",
+    "license": "MASAMUNE",
+    "license_level": 3,
+    "effect": "Attacking with this weapon does not spend a Limited charge, and whenever you would be forced to destroy a weapon due to critical damage or other effects, you may choose this weapon to destroy even if it has no charges remaining.",
+    "on_hit": "You may spend a Limited charge to pull yourself up to 5 spaces into a space adjacent to the target.",
+    "mount": "Auxiliary",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_thrown",
+        "val": 5
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "mw_sharkha_missiles",
+    "name": "Sharkha Missiles",
+    "source": "SSC",
+    "license": "PIXIE",
+    "license_level": 1,
+    "mount": "Main",
+    "type": "Launcher",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_arcing"
+      }
+    ]
+  },
+  {
+    "id": "mw_avalon_cannon_battery",
+    "name": "Avalon Cannon Battery",
+    "source": "SSC",
+    "license": "PIXIE",
+    "license_level": 2,
+    "mount": "Heavy",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      }
+    ]
+  },
+  {
+    "id": "mw_megalith_laser",
+    "name": "Megalith Laser",
+    "source": "SSC",
+    "license": "PIXIE",
+    "license_level": 3,
+    "on_hit": "If you consumed Lock On with this attack, your target becomes Shredded until the end of their next turn.",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "3d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      },
+      {
+        "id": "tg_overkill"
+      }
+    ]
   }
 ]

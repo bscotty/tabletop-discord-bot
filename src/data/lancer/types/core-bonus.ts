@@ -5,7 +5,7 @@ export type CoreBonus = {
     name: string
     source: string // must be the same as the Manufacturer ID to sort correctly
     effect: string // v-html
-    description: string // v-html
+    description?: string // v-html
     mounted_effect?: string
     actions?: IActionData[]
     bonuses?: IBonusData[]
