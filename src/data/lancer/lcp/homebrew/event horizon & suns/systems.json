@@ -5,10 +5,8 @@
     "source": "EH&S",
     "license": "POMPEII",
     "license_level": 1,
-    "effect": "",
     "type": "System",
     "sp": 1,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -18,24 +16,10 @@
       {
         "name": "Martyr of Magma",
         "activation": "Quick",
-        "detail": "<p>Choose one character within Sensors. If they are suffering from burn, they may immediately make an Engineering check to clear it. If they are an allied character, they make this check with +1 Accuracy. Whether they succeed or fail, you gain the same amount of burn.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Choose one character within Sensors. If they are suffering from burn, they may immediately make an Engineering check to clear it. If they are an allied character, they make this check with +1 Accuracy. Whether they succeed or fail, you gain the same amount of burn.",
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_illuminated_target",
@@ -43,10 +27,8 @@
     "source": "EH&S",
     "license": "POMPEII",
     "license_level": 1,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -56,38 +38,18 @@
       {
         "name": "Illuminated Target",
         "activation": "Quick",
-        "detail": "<p>Choose one enemy within Sensors. Until the end of your next turn, their attacks against you have +1 Accuracy, and you gain the Incendiary Intervention reaction.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Choose one enemy within Sensors. Until the end of your next turn, their attacks against you have +1 Accuracy, and you gain the Incendiary Intervention reaction.",
+        "frequency": "Unlimited"
       },
       {
         "name": "Incendiary Intervention",
         "activation": "Reaction",
-        "detail": "<p>You may Skirmish the triggering character.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
+        "detail": "You may Skirmish the triggering character.",
         "frequency": "1/round",
-        "init": "<p>You used Illuminated Target on your previous turn.</p>",
-        "trigger": "<p>The target of your Illuminated Target attacks a character other than you.</p>"
+        "init": "You used Illuminated Target on your previous turn.",
+        "trigger": "The target of your Illuminated Target attacks a character other than you."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_infrared_magnetism",
@@ -95,10 +57,8 @@
     "source": "EH&S",
     "license": "POMPEII",
     "license_level": 2,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_heat_self",
@@ -112,24 +72,10 @@
       {
         "name": "Infrared Magnetism",
         "activation": "Quick",
-        "detail": "<p>Until the end of your next turn, allied characters within Burst 2 have Resistance to damage and heat from attacks originating outside of the burst, and all attacks made against you have +1 Accuracy.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Until the end of your next turn, allied characters within Burst 2 have Resistance to damage and heat from attacks originating outside of the burst, and all attacks made against you have +1 Accuracy.",
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_from_the_ashes",
@@ -137,22 +83,14 @@
     "source": "EH&S",
     "license": "POMPEII",
     "license_level": 3,
-    "effect": "<p>When you Brace, if you would have taken Structure damage from the attack that triggered your Brace, the triggering attacker takes burn damage equal to half the damage they dealt before Brace’s Resistance and is Impaired until the end of their next turn.</p>",
+    "effect": "When you Brace, if you would have taken Structure damage from the attack that triggered your Brace, the triggering attacker takes burn damage equal to half the damage they dealt before Brace’s Resistance and is Impaired until the end of their next turn.",
     "type": "System",
     "sp": 3,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_undo_the_wicked",
@@ -160,22 +98,14 @@
     "source": "EH&S",
     "license": "CAMELOT",
     "license_level": 1,
-    "effect": "<p>Once per round when you attack a character on your turn, you may give them a Wrath Mark as a free action, which lasts until the end of their next turn. If they attack a character other than you while in Sensors and while they have this mark, they take 2 AP energy damage.</p>",
+    "effect": "Once per round when you attack a character on your turn, you may give them a Wrath Mark as a free action, which lasts until the end of their next turn. If they attack a character other than you while in Sensors and while they have this mark, they take 2 AP energy damage.",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_defend_the_helpless",
@@ -183,10 +113,8 @@
     "source": "EH&S",
     "license": "CAMELOT",
     "license_level": 1,
-    "effect": "",
     "type": "System",
     "sp": 1,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -196,24 +124,11 @@
       {
         "name": "Defend the Helpless",
         "activation": "Reaction",
-        "detail": "<p>You gain the Lock On condition at the end of the current turn. This is a special reaction that does not count against your reactions per turn.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
+        "detail": "You gain the Lock On condition at the end of the current turn. This is a special reaction that does not count against your reactions per turn.",
         "frequency": "Unlimited",
-        "init": "",
-        "trigger": "<p>An allied character within Sensors falls to less HP than your current HP.</p>"
+        "trigger": "An allied character within Sensors falls to less HP than your current HP."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_sacred_steed",
@@ -221,10 +136,8 @@
     "source": "EH&S",
     "license": "CAMELOT",
     "license_level": 2,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -234,24 +147,10 @@
       {
         "name": "Sacred Steed",
         "activation": "Quick Tech",
-        "detail": "<p>A character within Sensors moves to up their speed as a reaction, ignoring engagement and reactions. An unwilling character can ignore this effect with a successful Systems save.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "A character within Sensors moves to up their speed as a reaction, ignoring engagement and reactions. An unwilling character can ignore this effect with a successful Systems save.",
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_chivalry",
@@ -259,22 +158,14 @@
     "source": "EH&S",
     "license": "CAMELOT",
     "license_level": 3,
-    "effect": "<p>When you Stabilize and choose to restore HP, you can choose to restore an adjacent ally’s HP instead of your own. If you do, you can choose one of the following additional effects: Reload that allied character’s Loading weapons, clear any burn currently affecting the allied character’s mech, or clear one condition from that allied character that was not caused by their own systems, talents, etc.</p>",
+    "effect": "When you Stabilize and choose to restore HP, you can choose to restore an adjacent ally’s HP instead of your own. If you do, you can choose one of the following additional effects: Reload that allied character’s Loading weapons, clear any burn currently affecting the allied character’s mech, or clear one condition from that allied character that was not caused by their own systems, talents, etc.",
     "type": "System",
     "sp": 3,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_ekklesias_judgment",
@@ -282,10 +173,8 @@
     "source": "EH&S",
     "license": "OSTRAKON",
     "license_level": 1,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -295,24 +184,10 @@
       {
         "name": "Ekklesia's Judgment",
         "activation": "Quick Tech",
-        "detail": "<p>Make a tech attack against a target within Sensors. Until the start of your next turn, any damage or Heat that the target inflicts on another character is dealt to the attacker as though they had Resistance. If they deal damage or Heat to multiple characters with a single action, only the highest instance of damage or Heat applies.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Make a tech attack against a target within Sensors. Until the start of your next turn, any damage or Heat that the target inflicts on another character is dealt to the attacker as though they had Resistance. If they deal damage or Heat to multiple characters with a single action, only the highest instance of damage or Heat applies.",
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_ekklesias_antipathy",
@@ -320,10 +195,8 @@
     "source": "EH&S",
     "license": "OSTRAKON",
     "license_level": 2,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -333,24 +206,10 @@
       {
         "name": "Ekklesia's Antipathy",
         "activation": "Quick Tech",
-        "detail": "<p>Make a tech attack against a target within Sensors. Until the end of your next turn, any statuses or conditions that affect you also affect your target, and vice versa, so long as they do not originate from you or your target, and both you and your target have +1 Accuracy to attacks made that only target one another.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Make a tech attack against a target within Sensors. Until the end of your next turn, any statuses or conditions that affect you also affect your target, and vice versa, so long as they do not originate from you or your target, and both you and your target have +1 Accuracy to attacks made that only target one another.",
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_isolated_cold",
@@ -358,22 +217,14 @@
     "source": "EH&S",
     "license": "OSTRAKON",
     "license_level": 2,
-    "effect": "<p>When you have no allies within Range 3 of you, you have Resistance to Heat inflicted by other characters.</p>",
+    "effect": "When you have no allies within Range 3 of you, you have Resistance to Heat inflicted by other characters.",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_the_problem_of_universals",
@@ -381,33 +232,17 @@
     "source": "EH&S",
     "license": "OSTRAKON",
     "license_level": 3,
-    "effect": "",
     "type": "System",
     "sp": 3,
-    "description": "",
     "tags": [],
     "actions": [
       {
         "name": "The Problem of Universals",
         "activation": "Full Tech",
-        "detail": "<p>Choose one trait: Size lesser or greater than the user, Evasion higher or lower than the user, E-defense higher or lower than the user, or Speed higher or lower than the user. The next tech attack you make that is a quick action targets all characters, allied or hostile, within Sensors that share the trait you selected.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Choose one trait: Size lesser or greater than the user, Evasion higher or lower than the user, E-defense higher or lower than the user, or Speed higher or lower than the user. The next tech attack you make that is a quick action targets all characters, allied or hostile, within Sensors that share the trait you selected.",
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_nine_archons_class_nhp",
@@ -415,10 +250,8 @@
     "source": "EH&S",
     "license": "OSTRAKON",
     "license_level": 3,
-    "effect": "",
     "type": "System",
     "sp": 3,
-    "description": "",
     "tags": [
       {
         "id": "tg_ai"
@@ -431,24 +264,10 @@
       {
         "name": "Activate NINE ARCHONS-Class NHP",
         "activation": "Protocol",
-        "detail": "<p>You become Immobilized until the start of your next turn as you and your NHP consult and collaborate on the best course of action. Until the start of your next turn, when you miss with a quick tech action that targets or affects only one character, you may make a different quick tech action against that same target as a free action. A given character may be the subject of this free action substitution only once.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "You become Immobilized until the start of your next turn as you and your NHP consult and collaborate on the best course of action. Until the start of your next turn, when you miss with a quick tech action that targets or affects only one character, you may make a different quick tech action against that same target as a free action. A given character may be the subject of this free action substitution only once.",
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_hold_the_line",
@@ -456,10 +275,8 @@
     "source": "EH&S",
     "license": "JERICHO",
     "license_level": 1,
-    "effect": "",
     "type": "System",
     "sp": 1,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -472,24 +289,11 @@
       {
         "name": "Hold the Line",
         "activation": "Reaction",
-        "detail": "<p>The movement is prevented and you gain Immunity to push, pull, or knockback effects until the start of your next turn. You become Immobilized until the end of your next turn.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
+        "detail": "The movement is prevented and you gain Immunity to push, pull, or knockback effects until the start of your next turn. You become Immobilized until the end of your next turn.",
         "frequency": "1/round",
-        "init": "",
-        "trigger": "<p>You are pushed, pulled, or knocked back.</p>"
+        "trigger": "You are pushed, pulled, or knocked back."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_wall_sequence",
@@ -497,10 +301,8 @@
     "source": "EH&S",
     "license": "JERICHO",
     "license_level": 1,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -510,24 +312,11 @@
       {
         "name": "Activate Wall Sequence",
         "activation": "Reaction",
-        "detail": "<p>You create Size 1 hard cover in a free space within Sensors before the triggering attack resolves. Unless it is destroyed, it lasts until this reaction is used again.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
+        "detail": "You create Size 1 hard cover in a free space within Sensors before the triggering attack resolves. Unless it is destroyed, it lasts until this reaction is used again.",
         "frequency": "Unlimited",
-        "init": "",
-        "trigger": "<p>A hostile character attacks you or an allied character within Sensors.</p>"
+        "trigger": "A hostile character attacks you or an allied character within Sensors."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_raid_the_city",
@@ -535,22 +324,14 @@
     "source": "EH&S",
     "license": "JERICHO",
     "license_level": 2,
-    "effect": "<p>When you Ram a character, on hit, you disable one weapon of your choosing. They may make an Engineering check as a quick action or Stabilize to reactivate it.</p>",
+    "effect": "When you Ram a character, on hit, you disable one weapon of your choosing. They may make an Engineering check as a quick action or Stabilize to reactivate it.",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_forced_march",
@@ -558,10 +339,8 @@
     "source": "EH&S",
     "license": "JERICHO",
     "license_level": 3,
-    "effect": "",
     "type": "System",
     "sp": 3,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -571,24 +350,10 @@
       {
         "name": "Forced March",
         "activation": "Quick Tech",
-        "detail": "<p>Choose a character within Sensors. On their next turn, they must Boost as their first action taken if they are able to do so. An unwilling character may ignore this effect with a successful Hull save.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Choose a character within Sensors. On their next turn, they must Boost as their first action taken if they are able to do so. An unwilling character may ignore this effect with a successful Hull save.",
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_equus_interceptor_drone",
@@ -596,40 +361,21 @@
     "source": "EH&S",
     "license": "TROY",
     "license_level": 1,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
-    "tags": [],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
     "deployables": [
       {
         "name": "Equus Interceptor Drone",
         "type": "Drone",
-        "detail": "<p>When a hostile character takes a move action or Boosts within Burst 2 of an Equus Interceptor Drone, the drone may move to a space adjacent to the hostile character, ignoring engagement and reactions. The hostile character takes 1 Kinetic damage and must pass a Hull save or become Prone.</p>",
+        "detail": "When a hostile character takes a move action or Boosts within Burst 2 of an Equus Interceptor Drone, the drone may move to a space adjacent to the hostile character, ignoring engagement and reactions. The hostile character takes 1 Kinetic damage and must pass a Hull save or become Prone.",
         "size": 0.5,
-        "activation": "",
-        "deactivation": "",
-        "recall": "",
-        "redeploy": "",
         "instances": 1,
         "cost": 1,
-        "hp": "5",
-        "evasion": "10",
-        "edef": "10",
-        "pilot": false,
-        "mech": false,
-        "actions": [],
-        "bonuses": [],
-        "synergies": [],
-        "counters": []
+        "hp": 5,
+        "evasion": 10,
+        "edef": 10
       }
-    ],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_last_stand_armor",
@@ -637,10 +383,8 @@
     "source": "EH&S",
     "license": "TROY",
     "license_level": 2,
-    "effect": "",
     "type": "System",
     "sp": 3,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -650,24 +394,11 @@
       {
         "name": "Last Stand Armor",
         "activation": "Reaction",
-        "detail": "<p>The drone remains active until the end of your next turn. It is then destroyed at the end of that turn if it still has 0 HP and deals 6 Explosive damage to all characters in a Burst 2. Affected characters can make an Agility save to take half this damage instead.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
+        "detail": "The drone remains active until the end of your next turn. It is then destroyed at the end of that turn if it still has 0 HP and deals 6 Explosive damage to all characters in a Burst 2. Affected characters can make an Agility save to take half this damage instead.",
         "frequency": "1/round",
-        "init": "",
-        "trigger": "<p>A drone you control within Sensors is reduced to 0 HP.</p>"
+        "trigger": "A drone you control within Sensors is reduced to 0 HP."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_total_war",
@@ -675,22 +406,14 @@
     "source": "EH&S",
     "license": "TROY",
     "license_level": 2,
-    "effect": "<p>When you Barrage, you may redeploy an already-deployed drone within Sensors to a different space or recall it as a free action before your attack resolves.</p>",
+    "effect": "When you Barrage, you may redeploy an already-deployed drone within Sensors to a different space or recall it as a free action before your attack resolves.",
     "type": "System",
     "sp": 1,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_trojan_drone",
@@ -698,40 +421,18 @@
     "source": "EH&S",
     "license": "TROY",
     "license_level": 3,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
-    "tags": [],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
     "deployables": [
       {
         "name": "Trojan Drone",
         "type": "Drone",
-        "detail": "<p>This drone may be deployed in the same space as another character, where it latches onto that character and moves with them. An unwilling character can shake off the drone with a successful Hull save as a quick action, whereupon the drone is thrown off to an adjacent space. While latched on, the drone signals the target’s location to other mechs, automatically placing Lock On to the target. The target is then Locked On at the start of each of their turns if they do not have Lock On already.</p>",
+        "detail": "This drone may be deployed in the same space as another character, where it latches onto that character and moves with them. An unwilling character can shake off the drone with a successful Hull save as a quick action, whereupon the drone is thrown off to an adjacent space. While latched on, the drone signals the target’s location to other mechs, automatically placing Lock On to the target. The target is then Locked On at the start of each of their turns if they do not have Lock On already.",
         "size": 0.5,
-        "activation": "",
-        "deactivation": "",
-        "recall": "",
-        "redeploy": "",
         "instances": 1,
-        "cost": 1,
-        "hp": "5",
-        "evasion": "10",
-        "edef": "10",
-        "pilot": false,
-        "mech": false,
-        "actions": [],
-        "bonuses": [],
-        "synergies": [],
-        "counters": []
+        "cost": 1
       }
-    ],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_bloodied_grit",
@@ -739,22 +440,14 @@
     "source": "EH&S",
     "license": "DAMASCUS",
     "license_level": 1,
-    "effect": "<p>When you reduce a hostile character to 0 HP, your next melee attack gains +1 Accuracy. This effect can only occur once per round.</p>",
+    "effect": "When you reduce a hostile character to 0 HP, your next melee attack gains +1 Accuracy. This effect can only occur once per round.",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_atop_the_corpse_hill",
@@ -762,10 +455,9 @@
     "source": "EH&S",
     "license": "DAMASCUS",
     "license_level": 2,
-    "effect": "<p>When you reduce a hostile character to 0 HP, you may take 2 Heat and move to another free space adjacent to the defeated hostile character. This movement ignores engagement and reactions but cannot exceed your speed.</p>",
+    "effect": "When you reduce a hostile character to 0 HP, you may take 2 Heat and move to another free space adjacent to the defeated hostile character. This movement ignores engagement and reactions but cannot exceed your speed.",
     "type": "System",
     "sp": 3,
-    "description": "",
     "tags": [
       {
         "id": "tg_heat_self",
@@ -774,14 +466,7 @@
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_law_of_retribution",
@@ -789,10 +474,8 @@
     "source": "EH&S",
     "license": "DAMASCUS",
     "license_level": 3,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_heat_self",
@@ -810,24 +493,11 @@
       {
         "name": "Law of Retribution",
         "activation": "Reaction",
-        "detail": "<p>You may take 2 Heat and make an attack with a melee weapon against a hostile character within range. If this attack destroys the target, you are restored to full HP.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
+        "detail": "You may take 2 Heat and make an attack with a melee weapon against a hostile character within range. If this attack destroys the target, you are restored to full HP.",
         "frequency": "Unlimited",
-        "init": "",
-        "trigger": "<p>You take Structure damage.</p>"
+        "trigger": "You take Structure damage."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_damasqui_class_nhp",
@@ -835,10 +505,8 @@
     "source": "EH&S",
     "license": "DAMASCUS",
     "license_level": 3,
-    "effect": "",
     "type": "System",
     "sp": 3,
-    "description": "",
     "tags": [
       {
         "id": "tg_ai"
@@ -851,24 +519,10 @@
       {
         "name": "Activate DAMASQUI-Class NHP",
         "activation": "Protocol",
-        "detail": "<p>Your NHP finds ways to turn even the most humble of weapons into killing machines capable of rivaling top-of-the-line equipment, though it is not without risk. While active, you cannot make ranged or thrown weapon attacks. Your melee weapons gain the Armor Piercing tag if they did not already have it, and destroying a target with a melee attack results in it dealing 1d6 AP explosive damage to all characters within burst 3. If a target is destroyed by this effect, it also triggers the same burst 3 explosion. This effect can be disabled as a protocol.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Your NHP finds ways to turn even the most humble of weapons into killing machines capable of rivaling top-of-the-line equipment, though it is not without risk. While active, you cannot make ranged or thrown weapon attacks. Your melee weapons gain the Armor Piercing tag if they did not already have it, and destroying a target with a melee attack results in it dealing 1d6 AP explosive damage to all characters within burst 3. If a target is destroyed by this effect, it also triggers the same burst 3 explosion. This effect can be disabled as a protocol.",
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_kings_scouts",
@@ -876,22 +530,14 @@
     "source": "EH&S",
     "license": "BABYLON",
     "license_level": 1,
-    "effect": "<p>When you or an adjacent ally Lock On to a target, you automatically learn one piece of hidden information about the target and generic or public information about the target, as though you Scanned the target. This can only affect a given character once per scene.</p>",
+    "effect": "When you or an adjacent ally Lock On to a target, you automatically learn one piece of hidden information about the target and generic or public information about the target, as though you Scanned the target. This can only affect a given character once per scene.",
     "type": "System",
     "sp": 1,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_besiege_the_city",
@@ -899,22 +545,14 @@
     "source": "EH&S",
     "license": "BABYLON",
     "license_level": 1,
-    "effect": "<p>At the end of your turn, if you and at least one allied character are Engaged with the same enemy, that enemy must pass a System save or be Locked On.</p>",
+    "effect": "At the end of your turn, if you and at least one allied character are Engaged with the same enemy, that enemy must pass a System save or be Locked On.",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_execution_order",
@@ -922,10 +560,8 @@
     "source": "EH&S",
     "license": "BABYLON",
     "license_level": 2,
-    "effect": "",
     "type": "System",
     "sp": 3,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -935,24 +571,10 @@
       {
         "name": "Execution Order",
         "activation": "Quick Tech",
-        "detail": "<p>As a reaction, an allied character within Sensors may Overwatch.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "As a reaction, an allied character within Sensors may Overwatch.",
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_invasion_order",
@@ -960,10 +582,8 @@
     "source": "EH&S",
     "license": "BABYLON",
     "license_level": 3,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -973,24 +593,10 @@
       {
         "name": "Invasion Order",
         "activation": "Quick Tech",
-        "detail": "<p>As a reaction, an allied character may Invade a target within your Sensors.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "As a reaction, an allied character may Invade a target within your Sensors.",
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_the_gate_of_the_gods_opened",
@@ -998,10 +604,8 @@
     "source": "EH&S",
     "license": "BABYLON",
     "license_level": 3,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -1011,24 +615,10 @@
       {
         "name": "The Gate of the Gods, Opened",
         "activation": "Quick Tech",
-        "detail": "<p>Until the end of your next turn, you are Impaired, and all allied characters within Burst 2 have +2 Accuracy to attacks.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Until the end of your next turn, you are Impaired, and all allied characters within Burst 2 have +2 Accuracy to attacks.",
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_hand_of_fate",
@@ -1036,10 +626,8 @@
     "source": "EH&S",
     "license": "DELPHI",
     "license_level": 1,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -1049,24 +637,10 @@
       {
         "name": "Hand of Fate",
         "activation": "Quick Tech",
-        "detail": "<p>Roll 3d6 and note each result separately. Until the end of your next turn, as a reaction, when a character within Sensors rolls for Accuracy or Difficulty, you may replace the final Accuracy or Difficulty result with one of your d6s.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Roll 3d6 and note each result separately. Until the end of your next turn, as a reaction, when a character within Sensors rolls for Accuracy or Difficulty, you may replace the final Accuracy or Difficulty result with one of your d6s.",
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_temple_vapors",
@@ -1074,10 +648,8 @@
     "source": "EH&S",
     "license": "DELPHI",
     "license_level": 2,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -1087,24 +659,10 @@
       {
         "name": "Temple Vapors",
         "activation": "Quick Tech",
-        "detail": "<p>Choose one other character within Sensors. They become Impaired until the end of their next turn, but roll twice and choose the result to keep when they make any d20 roll for the duration. An unwilling character can ignore this effect with a successful Engineering save.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Choose one other character within Sensors. They become Impaired until the end of their next turn, but roll twice and choose the result to keep when they make any d20 roll for the duration. An unwilling character can ignore this effect with a successful Engineering save.",
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_omphalos_subroutine",
@@ -1112,10 +670,8 @@
     "source": "EH&S",
     "license": "DELPHI",
     "license_level": 3,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -1125,24 +681,10 @@
       {
         "name": "OMPHALOS Subroutine",
         "activation": "Quick Tech",
-        "detail": "<p>Choose one character within Sensors. They become Invisible to another character of your choosing within Sensors until the start of their next turn.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Choose one character within Sensors. They become Invisible to another character of your choosing within Sensors until the start of their next turn.",
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_return_cleansed",
@@ -1150,10 +692,8 @@
     "source": "EH&S",
     "license": "DELPHI",
     "license_level": 3,
-    "effect": "",
     "type": "System",
     "sp": 3,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -1163,24 +703,10 @@
       {
         "name": "Return Cleansed",
         "activation": "Quick Tech",
-        "detail": "<p>Choose one character within Sensors. Until the start of your next turn, their Accuracy and Difficulty rolls are automatically treated as 0s and cannot be replaced or changed by any other value. An unwilling character can ignore this effect with a successful Systems save.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Choose one character within Sensors. Until the start of your next turn, their Accuracy and Difficulty rolls are automatically treated as 0s and cannot be replaced or changed by any other value. An unwilling character can ignore this effect with a successful Systems save.",
+        "frequency": "Unlimited"
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_leylines_conduit",
@@ -1188,10 +714,8 @@
     "source": "EH&S",
     "license": "HÓLMAVÍK",
     "license_level": 1,
-    "effect": "",
     "type": "System",
     "sp": 3,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -1201,38 +725,17 @@
       {
         "name": "Activate Leylines",
         "activation": "Full Tech",
-        "detail": "<p>Until the end of the scene, your tech attacks and all tech attacks made within Burst 1 of you have +1 Accuracy. You can disable this effect as a protocol. While active, you gain the Runic Redirection reaction.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Until the end of the scene, your tech attacks and all tech attacks made within Burst 1 of you have +1 Accuracy. You can disable this effect as a protocol. While active, you gain the Runic Redirection reaction.",
+        "frequency": "Unlimited"
       },
       {
         "name": "Runic Redirection",
         "activation": "Reaction",
-        "detail": "<p>You take 2 Heat, and you attempt the same tech attack against a target of your choosing.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
+        "detail": "You take 2 Heat, and you attempt the same tech attack against a target of your choosing.",
         "frequency": "1/round",
-        "init": "",
-        "trigger": "<p>A tech attack within Sensors misses.</p>"
+        "trigger": "A tech attack within Sensors misses."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_limping_gait",
@@ -1240,10 +743,8 @@
     "source": "EH&S",
     "license": "HÓLMAVÍK",
     "license_level": 2,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -1253,38 +754,17 @@
       {
         "name": "Limping Gait",
         "activation": "Full Tech",
-        "detail": "<p>Make a tech attack against a character within Sensors. On hit, they take 2 Heat and until the end of their next turn, they are Slowed and have +1 Difficulty to Agility saves and checks. You gain the Guiding the Limp reaction until the start of your next turn.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Make a tech attack against a character within Sensors. On hit, they take 2 Heat and until the end of their next turn, they are Slowed and have +1 Difficulty to Agility saves and checks. You gain the Guiding the Limp reaction until the start of your next turn.",
+        "frequency": "Unlimited"
       },
       {
         "name": "Guiding the Limp",
         "activation": "Reaction",
-        "detail": "<p>You choose the direction and path of the character’s movement. This does not count as involuntary movement. An unwilling character can ignore this effect with a successful Agility save.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
+        "detail": "You choose the direction and path of the character’s movement. This does not count as involuntary movement. An unwilling character can ignore this effect with a successful Agility save.",
         "frequency": "Unlimited",
-        "init": "",
-        "trigger": "<p>A Slowed character within Sensors begins their standard movement.</p>"
+        "trigger": "A Slowed character within Sensors begins their standard movement."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_deny_shadows",
@@ -1292,10 +772,8 @@
     "source": "EH&S",
     "license": "HÓLMAVÍK",
     "license_level": 2,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -1305,38 +783,17 @@
       {
         "name": "Deny Shadows",
         "activation": "Full Tech",
-        "detail": "<p>Make a tech attack against a character within Sensors. This tech attack can target Hidden characters and ignores invisibility. On hit, they take 2 Heat, lose Hidden, and until the end of their next turn, they cannot Hide or benefit from Invisibility, and attacks against them treat all hard cover as soft cover. You gain the Light the Way reaction until the start of your next turn.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Make a tech attack against a character within Sensors. This tech attack can target Hidden characters and ignores invisibility. On hit, they take 2 Heat, lose Hidden, and until the end of their next turn, they cannot Hide or benefit from Invisibility, and attacks against them treat all hard cover as soft cover. You gain the Light the Way reaction until the start of your next turn.",
+        "frequency": "Unlimited"
       },
       {
         "name": "Light the Way",
         "activation": "Reaction",
-        "detail": "<p>You may Lock On to the target of the attack before the triggering attack resolves.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
+        "detail": "You may Lock On to the target of the attack before the triggering attack resolves.",
         "frequency": "1/round",
-        "init": "",
-        "trigger": "<p>A character attacks another character within Sensors benefiting from soft cover.</p>"
+        "trigger": "A character attacks another character within Sensors benefiting from soft cover."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_leaden_feet",
@@ -1344,10 +801,8 @@
     "source": "EH&S",
     "license": "HÓLMAVÍK",
     "license_level": 3,
-    "effect": "",
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -1357,38 +812,17 @@
       {
         "name": "Leaden Feet",
         "activation": "Full Tech",
-        "detail": "<p>Make a tech attack against a character within Sensors. They take 2 Heat. Until the end of their next turn, they are Immobilized. You gain the Silence the Heretic reaction until the start of your next turn.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Make a tech attack against a character within Sensors. They take 2 Heat. Until the end of their next turn, they are Immobilized. You gain the Silence the Heretic reaction until the start of your next turn.",
+        "frequency": "Unlimited"
       },
       {
         "name": "Silence the Heretic",
         "activation": "Reaction",
-        "detail": "<p>You may make a tech attack against the triggering character before damage is rolled. If your attack roll equals or exceeds theirs, the attack automatically misses.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
+        "detail": "You may make a tech attack against the triggering character before damage is rolled. If your attack roll equals or exceeds theirs, the attack automatically misses.",
         "frequency": "1/round",
-        "init": "",
-        "trigger": "<p>An Immobilized character within Sensors makes an attack with a weapon.</p>"
+        "trigger": "An Immobilized character within Sensors makes an attack with a weapon."
       }
-    ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    ]
   },
   {
     "id": "ms_rested_peace",
@@ -1396,10 +830,9 @@
     "source": "EH&S",
     "license": "HÓLMAVÍK",
     "license_level": 3,
-    "effect": "<p></p>",
+    "effect": "",
     "type": "System",
     "sp": 3,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
@@ -1409,37 +842,118 @@
       {
         "name": "Rested Peace",
         "activation": "Full Tech",
-        "detail": "<p>Make a tech attack against a character within Sensors. On hit, they take 2 Heat and are Jammed until the end of their next turn. You gain the Still the Dead until the start of your next turn.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Make a tech attack against a character within Sensors. On hit, they take 2 Heat and are Jammed until the end of their next turn. You gain the Still the Dead until the start of your next turn.",
+        "frequency": "Unlimited"
       },
       {
         "name": "Still the Dead",
         "activation": "Reaction",
-        "detail": "<p>The triggering character cannot take reactions until the end of their next turn. An unwilling character can ignore this effect with a successful Engineering save.</p>",
-        "cost": 0,
-        "pilot": false,
-        "damage": [],
-        "range": [],
-        "synergy_locations": [],
-        "tech_attack": false,
+        "detail": "The triggering character cannot take reactions until the end of their next turn. An unwilling character can ignore this effect with a successful Engineering save.",
         "frequency": "Unlimited",
-        "init": "",
-        "trigger": "<p>A Jammed character within Sensors loses the Jammed condition.</p>"
+        "trigger": "A Jammed character within Sensors loses the Jammed condition."
+      }
+    ]
+  },
+  {
+    "id": "ms_defensive_offense",
+    "name": "Defensive Offense",
+    "source": "HA",
+    "license": "MASAMUNE",
+    "license_level": 2,
+    "effect": "When you Brace, you may move 1 space, ignoring movement and reactions. If the triggering attacker is within threat of one of your non-Superheavy melee weapons, you may attack them with one of those weapons as part of the Brace. This attack can't deal bonus damage and cannot trigger any additional attacks or effects.",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "ms_raijin-class_nhp",
+    "name": "RAIJIN-Class NHP",
+    "source": "HA",
+    "license": "MASAMUNE",
+    "license_level": 3,
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
       }
     ],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    "actions": [
+      {
+        "name": "\"Zandatsu\" Doctrine",
+        "activation": "Reaction",
+        "detail": "Choose one of the target's weapons or systems. That weapon or system is disabled until the target either passes an Engineering check as a quick action or Stabilizes. This reaction can only be used 1/scene on each character.",
+        "frequency": "1/round",
+        "trigger": "You hit a character with a melee weapon."
+      }
+    ]
+  },
+  {
+    "id": "ms_foulke_targeting_array",
+    "name": "\"Foulke\" Targeting Array",
+    "source": "SSC",
+    "license": "PIXIE",
+    "license_level": 1,
+    "effect": "1/round, when you Boost, you may also Lock On at any point during that Boost.",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ]
+  },
+  {
+    "id": "ms_enhanced_launch_system",
+    "name": "Enhanced Launch System",
+    "source": "SSC",
+    "license": "PIXIE",
+    "license_level": 2,
+    "effect": "At the start of combat, after deployment but before any turns are taken, you may immediately move up to your speed.",
+    "type": "System",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ]
+  },
+  {
+    "id": "ms_sky-eye_defense",
+    "name": "Sky-Eye Defense",
+    "source": "SSC",
+    "license": "PIXIE",
+    "license_level": 3,
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Sky-Eye Defense",
+        "activation": "Reaction",
+        "detail": "You may take 2 Heat to Boost, interrupting the triggering attack. If you are no longer a valid target for the attack due to range or line of sight at the end of this movement, the attack automatically misses you.",
+        "frequency": "1/round",
+        "trigger": "You are attacked by an enemy at a lower elevation than you."
+      }
+    ]
   }
 ]
