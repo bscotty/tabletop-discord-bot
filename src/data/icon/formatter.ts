@@ -32,9 +32,11 @@ export class IconFormatter {
     private formatAbility(ability: TypedIconAbility): string {
         let range = ""
         if (ability.range) {
-            range = `${ability.range}, `
+            range = ability.range
         }
-        const tags = ability.tags.join(", ")
+
+        const tags = [range, ...ability.tags].join(", ")
+
         const description =
             `**${ability.name}** (Chapter ${ability.chapter} *${this.lookupJobName(ability.job)}* Ability)\n` +
             `${ability.action}\n${range}${tags}\n\n*${ability.description}*\n`
@@ -42,6 +44,11 @@ export class IconFormatter {
         let attack = ""
         if (ability.attack) {
             attack = "\n" + this.formatAttack(ability.attack)
+        }
+
+        let area = ""
+        if (ability.area) {
+            area = `\n**Area Effect:** ${ability.area}`
         }
 
         let trigger = ""
@@ -56,9 +63,19 @@ export class IconFormatter {
             charge = `\n**Charge:** ${ability.charge}`
         }
 
+        let refresh = ""
+        if (ability.refresh) {
+            refresh = `\n**Refresh:** ${ability.refresh}`
+        }
+
         let special = ""
         if (ability.special) {
             special = `\n**${ability.special.name}:** ${ability.special.description}`
+        }
+
+        let combo = ""
+        if (ability.combo) {
+            combo = `\n**Combo: ${ability.combo.name}** - ${ability.combo.description}`
         }
 
         const talents = "\n**Talents**\n" + ability.talents.map((it) => {
@@ -76,7 +93,7 @@ export class IconFormatter {
             }).join("\n")
         }
 
-        return `${description}${attack}${trigger}${effect}${charge}${special}${talents}${abilities}`
+        return `${description}${attack}${area}${trigger}${effect}${charge}${refresh}${special}${combo}${talents}${abilities}`
     }
 
     private formatClass(clazz: TypedIconClass): string {
@@ -118,6 +135,11 @@ export class IconFormatter {
             attack = "\n" + this.formatAttack(limitBreak.attack)
         }
 
+        let area = ""
+        if (limitBreak.area) {
+            area = `\n**Area Effect:** ${limitBreak.area}`
+        }
+
         let trigger = ""
         if (limitBreak.trigger) {
             trigger = `\n**Trigger:** ${limitBreak.trigger}`
@@ -150,7 +172,7 @@ export class IconFormatter {
             }).join("\n")
         }
 
-        return `${description}${attack}${trigger}${effect}${charge}${special}${talents}${abilities}`
+        return `${description}${attack}${area}${trigger}${effect}${charge}${special}${talents}${abilities}`
     }
 
     private formatTrait(trait: IconTrait): string {
@@ -174,6 +196,11 @@ export class IconFormatter {
             attack = "\n" + this.formatAttack(subAbility.attack)
         }
 
+        let area = ""
+        if (subAbility.area) {
+            area = `\n**Area Effect:** ${subAbility.area}`
+        }
+
         let trigger = ""
         if (subAbility.trigger) {
             trigger = `\n**Trigger:** ${subAbility.trigger}`
@@ -191,19 +218,21 @@ export class IconFormatter {
             special = `\n**${subAbility.special.name}:** ${subAbility.special.description}`
         }
 
-        return `${description}${attack}${trigger}${effect}${charge}${special}`
+        return `${description}${attack}${area}${trigger}${effect}${charge}${special}`
     }
 
     private formatAttack(attack: IconAttack): string {
-        let formattedAttack = `**Attack:** *On Hit:* ${attack.hit}. *Miss:* ${attack.miss}.`
+        let formattedAttack = `**Attack:** `
+        if (attack.miss) {
+            formattedAttack += `*On Hit:* ${attack.hit}. *Miss:* ${attack.miss}.`
+        } else {
+            formattedAttack += `*Autohit:* ${attack.hit}.`
+        }
         if (attack.crit) {
             formattedAttack += ` *On Crit:* ${attack.crit}`
         }
         if (attack.effect) {
             formattedAttack += ` *Effect:* ${attack.effect}`
-        }
-        if (attack.area) {
-            formattedAttack += `\n**Area Effect:** ${attack.area}`
         }
         return formattedAttack
     }

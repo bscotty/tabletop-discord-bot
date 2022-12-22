@@ -12,11 +12,13 @@ export type IconAbility = {
     action: string
     range?: string
     attack?: IconAttack
+    area?: string
     effect: string
     trigger?: string
     charge?: string
     refresh?: string
-    tags: string[]
+    combo?: IconTrait
+    tags?: string[]
     special?: IconTrait
     talents: IconTalent[]
     abilities?: IconSubAbility[]

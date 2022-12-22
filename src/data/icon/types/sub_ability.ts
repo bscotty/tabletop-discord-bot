@@ -9,6 +9,7 @@ export type IconSubAbility = {
     action: string
     range?: string
     attack?: IconAttack
+    area?: string
     effect: string
     trigger?: string
     charge?: string

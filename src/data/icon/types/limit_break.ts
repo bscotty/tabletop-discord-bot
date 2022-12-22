@@ -13,6 +13,7 @@ export type IconLimitBreak = {
     resolve: number
     range?: string
     attack?: IconAttack
+    area?: string
     trigger: string
     charge?: string
     effect: string
