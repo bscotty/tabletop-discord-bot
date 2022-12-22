@@ -1,0 +1,141 @@
+[
+  {
+    "id": "bastion",
+    "class": "stalwart",
+    "name": "Bastion",
+    "title": "Proud and Unbreakable Knight",
+    "description": "The Bastions are the shield lords of Arden Eld, larger than life figures that tread the ancient imperial roads with their heads held high and armor gleaming. From town to town they act as errant knights and mercenaries, protecting the weak and vulnerable, and driving back the Blights with hammer-like blows from their greatshields, which they throw like a discus with incredible force. The imperious and mighty presence of a Bastion in town is a stabilizing force and can become an event for a whole village. All Bastions follow an ancient and long-forgotten hero’s code, an old oath to stand against chaos in all its forms.",
+    "traits": [
+      {
+        "name": "Press the Advantage",
+        "description": "Once a round, when you shove a character, you or an ally of your choice may dash up to 3 spaces, as long as they end that movement adjacent to another character.",
+        "chapter": 0
+      },
+      {
+        "name": "Bull’s Strength",
+        "description": "When you shove a foe and they collide, they are dazed. Once a round, if that foe is already dazed, you may stun them instead.",
+        "chapter": 0
+      },
+      {
+        "name": "Shieldmaster",
+        "description": "You have aura 1. Allies are sturdy in the aura, and you are sturdy as long as you have at least one ally in the aura. If an ally ends their turn in the aura, or you end your turn with an ally in the aura, you gain vigilance 1.",
+        "chapter": 0
+      },
+      {
+        "name": "Rook",
+        "description": "Once a round, you can make any ability Heroic when you use it. If you do, after that ability resolves, until the end of your next turn all your damage dice automatically have a result of 1.",
+        "chapter": 0
+      },
+      {
+        "name": "Black Rock Vanguard",
+        "description": "You can take two interrupts per turn.",
+        "chapter": 3
+      }
+    ],
+    "abilities": [
+      "heracule",
+      "battering_ram",
+      "land_waster",
+      "valiant",
+      "endless_battlement",
+      "catapult",
+      "perseus",
+      "horn_breaker",
+      "great_giorgios"
+    ],
+    "limit_breaks": [
+      "helion"
+    ]
+  },
+  {
+    "id": "demon_slayer",
+    "class": "stalwart",
+    "name": "Demon Slayer",
+    "title": "Wielder of Forbidden Arts",
+    "description": "Warriors of impossible strength and insane bravado, demon slayers are warriors that specialize in fighting the largest and most dangerous monsters to crawl out of the pits that riddle the land. They relish in fighting against impossible odds, training themselves in forbidden techniques, arcane arts, and oversized weaponry that normal Kin would quake at wielding. They organize themselves into loose orders and train and hunt together, sharing tales and trophies of the colossal horrors they have slain. Some say in order to fight their quarries, the slayers must ingest demon blood to gain their strength, giving them dark and forbidden power that makes other Kin fear and respect them in equal measure.",
+    "traits": [
+      {
+        "name": "Dark Arts",
+        "description": "If you elect to take a slow turn, gain vigilance 1. Any charged or delayed ability you use deals bonus damage.",
+        "chapter": 0
+      },
+      {
+        "name": "Demon Strength",
+        "description": "You can make any ability Heroic when you use it. If you do, you can’t attack or use Heroics until the end of your following turn.",
+        "chapter": 0
+      },
+      {
+        "name": "Hissatsu",
+        "description": "If you don’t attack during your turn, your next attack gains +1 boon, true strike and its damage die is upgraded to d10. This effect ends after you hit with an attack.",
+        "chapter": 0
+      },
+      {
+        "name": "True Horn",
+        "description": "You are sturdy from the start of each round until the start of your turn.",
+        "chapter": 0
+      },
+      {
+        "name": "Rangiri",
+        "description": "If you take Hissatsu twice in a row, additionally double all damage of the triggering attack on hit or miss. Roll all damage (including bonus damage, critical hits, etc), add all fray damage, then double the total.",
+        "chapter": 3
+      }
+    ],
+    "abilities": [
+      "demon_cutter",
+      "comet",
+      "draken_cross",
+      "righteous_disdain",
+      "overkill",
+      "royal_guard",
+      "six_hells_trigram",
+      "breeze_cutter",
+      "wicked_sheath"
+    ],
+    "limit_breaks": [
+      "split_heaven_and_hell"
+    ]
+  },
+  {
+    "id": "colossus",
+    "class": "stalwart",
+    "name": "Colossus",
+    "title": "High Flying Grappler",
+    "description": "Ferocious followers of Arenheir, the Wolf Titan, the Colossi are a martial order of berserkers, pankrationists, and warriors that reaches across all of Arden Eld. They travel throughout the land seeking powerful foes, and taking trophies to return to their great lodges to offer in tribute to Arenheir in fierce hope of resurrecting their god. At their lodges they feast and drink to their deeds, companions, and boasts. Colossi seek glory and challenge through battle, and will often go for only the absolute strongest warriors and monsters, heedless of their own safety. They fight with wild abandon and unconventional techniques that would make even the dirtiest Knave raise an eyebrow.",
+    "traits": [
+      {
+        "name": "Furious Berserk",
+        "description": "While you’re bloodied, you are sturdy, gain vigilance 1 at the end of your turn, and have regeneration.",
+        "chapter": 0
+      },
+      {
+        "name": "Burning Blood",
+        "description": "You can take one wound or damage equal to 50% of your max hp, ignoring armor, to make an ability Heroic and double the total distance of any flight, dashes, or shoves made as part of that action. After every combat, heal one wound if you took a wound from Burning Blood.",
+        "chapter": 0
+      },
+      {
+        "name": "Heart of Arenheir",
+        "description": "Start every combat with defiance. You re-gain defiance each time you get up from being defeated.",
+        "chapter": 0
+      },
+      {
+        "name": "Great Leap",
+        "description": "When you make any movement onto a lower elevation from a higher one you may fly instead of move until that movement ends.",
+        "chapter": 0
+      }
+    ],
+    "abilities": [
+      "valkyrie",
+      "upheaval",
+      "dropkick",
+      "takedown",
+      "great_suplex",
+      "blood_rage",
+      "gigaton_whip",
+      "titanomachy",
+      "boiling_blood"
+    ],
+    "limit_breaks": [
+      "gigantas_crusher"
+    ]
+  }
+]

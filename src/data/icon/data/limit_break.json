@@ -1,0 +1,52 @@
+[
+  {
+    "id": "helion",
+    "job": "bastion",
+    "name": "Helion",
+    "description": "Your shield becomes the sun: a discus of light and motion, shattering enemy ranks and spurring allies forth.",
+    "chapter": 1,
+    "action": "1 Action",
+    "resolve": 1,
+    "range": null,
+    "attack": null,
+    "trigger": null,
+    "effect": "You hurl your shield, and every character on the battlefield is shoved 1 space in a direction of your choice. You may shove in any order, and may choose different directions for each character. Then you become unstoppable until the end of your next turn.",
+    "tags": [],
+    "special": null,
+    "talents": [
+      {
+        "rank": 3,
+        "description": "PERFECTED HELION: You can repeat this effect once on either allies or enemies."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "split_heaven_and_hell",
+    "job": "demon_slayer",
+    "name": "Split Heaven and Hell",
+    "description": "Sever Divinity and cut through the threads of possibility. Pour all your rage into one blow and topple the Gods.",
+    "chapter": 1,
+    "action": "1 Action",
+    "resolve": 3,
+    "range": null,
+    "attack": null,
+    "trigger": null,
+    "charge": null,
+    "effect": "End your turn, and start charging up a god cutting blow. Delay: Your next turn must be slow. At the start of that turn, you may take one of the following options. Sever Divine Thread: Swing your weapon in a line 5 area effect drawn from your position. This counts as using an attack this turn. Characters in the line take damage depending on their position on the line. • 1 space: 100% of max hp. • 2-4 spaces: 50% of max hp. • 5+ spaces: 25% of max hp. Divine Cancel: You may cancel this ability, refunding the resolve cost and dashing 2. You can limit break again this combat. Divine Delay: You continue to hold this ability. Your next turn must be slow and repeat this delay effect. Each time you do this, increase he width of the line by 1 space on either side (so 1>3>5), and its length by 3 spaces. You cannot attack while holding Divine Delay. Legend characters always take 25% of max hp from this ability instead of other effects.",
+    "tags": [
+      "End Turn",
+      "Delay",
+      "True Strike",
+      "Divine"
+    ],
+    "special": null,
+    "talents": [
+      {
+        "rank": 3,
+        "description": "GOD BANISHING DEVIL BLADE: While holding a God Cutting Blow, you are unstoppable and can dash 1 at the start of each turn that passes after yours, or any time after you are damaged by an ability."
+      }
+    ],
+    "abilities": []
+  }
+]

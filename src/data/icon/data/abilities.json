@@ -1,0 +1,778 @@
+[
+  {
+    "id": "heracule",
+    "job": "bastion",
+    "name": "Heracule",
+    "description": "Hurl your shield as a discus with irrepressible force.",
+    "chapter": 1,
+    "action": "Light Ranged Attack",
+    "range": "Range 3",
+    "attack": {
+      "hit": "[D]+fray",
+      "miss": "fray",
+      "effect": "Foe is dazed and shoved 1 in any direction.",
+      "crit": null,
+      "area": null
+    },
+    "effect": "A different foe in range 3 from your target is also shoved 1 in any direction.",
+    "trigger": null,
+    "charge": null,
+    "refresh": null,
+    "tags": [
+      "True Strike"
+    ],
+    "special": {
+      "name": "Heroic",
+      "description": "All ranges and shoves from this ability increased by +1."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Charge: Deals bonus damage, and all foes targeted are dazed."
+      },
+      {
+        "rank": 2,
+        "description": "Trigger Heracule’s second effect +1 more time."
+      },
+      {
+        "rank": 3,
+        "description": "PERFECT HERACULE: Heracule’s second effect triggers +1 more time, and the effect now deals fray damage."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "battering_ram",
+    "job": "bastion",
+    "name": "Battering Ram",
+    "description": "Use your shield, weapon, or armored fist and send your target flying.",
+    "chapter": 1,
+    "action": "1 Action",
+    "range": "Adjacent",
+    "attack": null,
+    "effect": "An adjacent character is shoved 2 spaces. Collide: character is winded if they are a foe.",
+    "trigger": null,
+    "charge": null,
+    "refresh": null,
+    "tags": [],
+    "special": {
+      "name": "Heroic",
+      "description": "Increase shove to 4."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Charge: you may dash 2 before using Battering Ram."
+      },
+      {
+        "rank": 2,
+        "description": "Shove all adjacent characters to your target’s final position 1 space away from them."
+      },
+      {
+        "rank": 3,
+        "description": "GATE SMASHER: You may increase the distance of this shove by +2. If you do, Battering ram’s target phases through characters instead of colliding with them. Characters they pass through take fray damage and are shoved 1 to either side."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "land_waster",
+    "job": "bastion",
+    "name": "Land Waster",
+    "description": "Crash your greatshield or weapon into the earth, sending up devastating shockwaves.",
+    "chapter": 1,
+    "action": "Heavy Melee Attack",
+    "range": "Adjacent",
+    "attack": {
+      "hit": "2[D]+fray",
+      "miss": "fray",
+      "effect": null,
+      "crit": null,
+      "area": null
+    },
+    "effect": "All characters other than you adjacent to your target are shoved 1. Foes affected take fray damage. Then shove your target 1.",
+    "trigger": null,
+    "charge": null,
+    "refresh": null,
+    "tags": [],
+    "special": {
+      "name": "Heroic",
+      "description": "Increase the effect area to range 2 of your target."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Charge: Attack target is also winded, and you may dash 1 before attacking."
+      },
+      {
+        "rank": 2,
+        "description": "If Shield Slam’s effect shockwave shoves 2 or more characters, cure yourself."
+      },
+      {
+        "rank": 3,
+        "description": "AJAX: Terrain effect: Before Shield slam’s effect triggers, you tear up the very ground, creating a height 1 boulder object in range 3 of you."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "valiant",
+    "job": "bastion",
+    "name": "Valiant",
+    "description": "Charge forth, with your shield held before you, battering aside foes.",
+    "chapter": 1,
+    "action": "2 Actions",
+    "range": null,
+    "attack": null,
+    "effect": "Dash 6 spaces in a straight line, or as far as possible without moving into an obstruction, phasing through characters. Foes you pass through take fray damage and are shoved 1 to either side. The first foe you pass through is removed from the battlefield as you slam into them and carry them with you. Then, at the end of your movement, place them back on the battlefield in an adjacent space and shove them 1. That foe is dazed. Collide: Foe is stunned. If a foe is sturdy or unstoppable, they are immune to this effect.",
+    "trigger": null,
+    "charge": null,
+    "refresh": null,
+    "tags": [
+      "True Strike"
+    ],
+    "special": {
+      "name": "Heroic",
+      "description": "After this ability resolves, dash back to your starting location."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If you’re bloodied, increase all shoves from this ability by +1."
+      },
+      {
+        "rank": 2,
+        "description": "Effect: If you pass through 2 or more characters during this move, cure yourself."
+      },
+      {
+        "rank": 3,
+        "description": "MARATHON: When you’re bloodied, valiant costs 1 action."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "endless_battlement",
+    "job": "bastion",
+    "name": "Endless Battlement",
+    "description": "The land itself is your castle, and you will never let its walls be breached. No matter where your allies step, your shield will be there.",
+    "chapter": 1,
+    "action": "1 Action",
+    "range": null,
+    "attack": null,
+    "effect": "Choose an ally. That ally gains aura 1 until the end of your next turn. The aura deactivates if your ally is further away from range 6 from you. While the aura is active, you can use the Heroic Intervention interrupt:",
+    "trigger": null,
+    "charge": null,
+    "refresh": null,
+    "tags": [],
+    "special": {
+      "name": "Heroic",
+      "description": "Ally also becomes sturdy and can clear a mark affecting them."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "While you are in the aura, attacks against your ally gain +1 curse"
+      },
+      {
+        "rank": 2,
+        "description": "You can take the interrupt +1 more times while bloodied."
+      },
+      {
+        "rank": 3,
+        "description": "PERFECT BATTLEMENT: Endless Battlement can be used on two allies, and becomes interrupt 2."
+      }
+    ],
+    "abilities": [
+      {
+        "id": "heroic_intervention",
+        "job": "bastion",
+        "name": "Heroic Intervention",
+        "description": null,
+        "action": "Interrupt 1",
+        "range": null,
+        "attack": null,
+        "effect": "You soar into the air, removing yourself from the battlefield, then return in any space in the aura. If that foe is adjacent to you, they must save or be dazed and shoved 3, or just shoved 1 on a successful save. If they are no longer in range for the ability, it is canceled and the action cost is refunded.",
+        "trigger": "A foe enters the aura, or targets your ally with an ability.",
+        "charge": null,
+        "tags": [],
+        "special": null
+      }
+    ]
+  },
+  {
+    "id": "catapult",
+    "job": "bastion",
+    "name": "Catapult",
+    "description": "Use your shield as a springboard to set up ally maneuvers or to deflect projectiles",
+    "chapter": 1,
+    "action": "Interrupt 1",
+    "range": null,
+    "attack": null,
+    "effect": "Shove that ally 3 spaces in any direction. If they collide with a character, they damage to that character equal to the spaces they were shoved before colliding instead of taking it themselves. Then they may dash 1.",
+    "trigger": "An ally moves into an adjacent space",
+    "charge": null,
+    "refresh": null,
+    "tags": [],
+    "special": {
+      "name": "Heroic",
+      "description": "The shoved ally may dash 4 spaces on colliding instead."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Your shield becomes a valid target for allied attacks with a listed range. When targeted, you can expend Catapult to retarget the attack from your position to a new target in range 3, drawing line of sight and the origin space from your location."
+      },
+      {
+        "rank": 2,
+        "description": "Catapult can also be triggered on foes. When triggered on foes, the effect becomes effect: shove foe 2 spaces."
+      },
+      {
+        "rank": 3,
+        "description": "MANGONEL: Catapult becomes Interrupt 3."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "perseus",
+    "job": "bastion",
+    "name": "Perseus",
+    "description": "Your armor and shield become a mirror, channeling and amplifying the destructive power of your allies’ attacks.",
+    "chapter": 2,
+    "action": "Interrupt 2",
+    "range": null,
+    "attack": null,
+    "effect": "You release a blast 1 area effect centered on you that extends the area effect to encompass the same area. You can choose whether to be affected by it or not.",
+    "trigger": "You are included in an allied area effect",
+    "charge": null,
+    "refresh": null,
+    "tags": [],
+    "special": {
+      "name": "Heroic",
+      "description": "Increase the area size by +1."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "The first time you trigger this interrupt in a combat, increase its area size by +1."
+      },
+      {
+        "rank": 2,
+        "description": "You can extend the area as a line 5 area effect instead."
+      },
+      {
+        "rank": 3,
+        "description": "CHAOS FINISHER: When this interrupt triggers, after the triggering effect resolves, you may deal fray damage to all affected foes from the triggering ability and shove them 1 in any direction."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "horn_breaker",
+    "job": "bastion",
+    "name": "Horn Breaker",
+    "description": "Prepare your foe for a mythic beating.",
+    "chapter": 2,
+    "action": "Heavy Melee Attack",
+    "range": "Adjacent",
+    "attack": {
+      "hit": "[D]+fray",
+      "miss": "fray",
+      "effect": null,
+      "crit": null,
+      "area": null
+    },
+    "effect": "Mark your foe, and gain the Horn Breaker interrupt. The mark fades at the start of your next turn.",
+    "trigger": null,
+    "charge": null,
+    "refresh": null,
+    "tags": [],
+    "special": {
+      "name": "Heroic",
+      "description": "You gain +1 boon on saves against your marked foe and are sturdy against them."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If you trigger Horn Breaker 1 or less times in a round, cure yourself at the start of your next turn."
+      },
+      {
+        "rank": 2,
+        "description": "If Horn Breaker triggers 3 or more times in a round, your foe gains hatred of you."
+      },
+      {
+        "rank": 3,
+        "description": "BLACK ROCK PUNISHER: The third time you trigger Horn Breaker, you may shove your target 4. Collide: Character takes double collide damage."
+      }
+    ],
+    "abilities": [
+      {
+        "id": "horn_breaker_",
+        "job": "bastion",
+        "name": "Horn Breaker",
+        "description": null,
+        "action": "Interrupt 3",
+        "range": null,
+        "attack": null,
+        "trigger": "A ally hits your target with an attack.",
+        "charge": null,
+        "effect": "You leap into the air, removing yourself from the battlefield, then return in any free space adjacent to your foe. When you land, deal fray damage to your target, then you may shove them 1.",
+        "tags": [],
+        "special": null
+      }
+    ]
+  },
+  {
+    "id": "great_giorgios",
+    "job": "bastion",
+    "name": "Great Giorgios",
+    "description": "The most legendary of bastions can walk through arrow fire as if it were a light rain.",
+    "chapter": 3,
+    "action": "Interrupt 1",
+    "range": null,
+    "attack": null,
+    "effect": " You may hurl your shield and roll a d6. On a 1-3, you knock the attack off course, granting it +1 curse. On a 4+, you deflect it, both granting it +1 curse and granting any of its targets resistance to its damage. On a 6, that character also takes [D].",
+    "trigger": "A foe makes a ranged attack within range 3 of you",
+    "charge": null,
+    "refresh": null,
+    "tags": [],
+    "special": {
+      "name": "Heroic",
+      "description": "Roll twice and choose the higher result, then regain this interrupt."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Dazed characters also take fray damage from this interrupt."
+      },
+      {
+        "rank": 2,
+        "description": "If you haven’t taken a turn this round, increase the range of this interrupt to 6."
+      },
+      {
+        "rank": 3,
+        "description": "DRAGON DEFLECTION: On a 6, if the attack was an AoE, you may also shift the AoE by 1 space in any direction, which could cause its attack or area effect spaces to move."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "demon_cutter",
+    "job": "demon_slayer",
+    "name": "Demon Cutter",
+    "description": "You slash your weapon in a deadly swing sending cutting shockwaves out that rip through enemy defenses.",
+    "chapter": 1,
+    "action": "Light Melee Attack",
+    "range": "Line 3",
+    "attack": {
+      "hit": "[D]+fray",
+      "miss": "fray",
+      "effect": "Foe is winded.",
+      "crit": null,
+      "area": "fray"
+    },
+    "effect": null,
+    "trigger": null,
+    "charge": "Change area effect to Arc 3.",
+    "refresh": null,
+    "tags": [
+      "True Strike"
+    ],
+    "special": {
+      "name": "Heroic",
+      "description": "Increase area by +2."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Charge: Ability gains range 2"
+      },
+      {
+        "rank": 2,
+        "description": "Effect: If you catch 2 or more foes in the area, cure yourself after this ability resolves."
+      },
+      {
+        "rank": 3,
+        "description": "BLOOD DRINKING DEVIL BLADE: Effect: After the attack resolves, all characters in the area take 2 damage once for each character caught in the area."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "comet",
+    "job": "demon_slayer",
+    "name": "Comet",
+    "description": "Your weapon becomes like a meteor, burning through the air as you smash it into the earth.",
+    "chapter": 1,
+    "action": "1 Action",
+    "range": "Line 3",
+    "attack": null,
+    "effect": "You hurl your weapon in a line 3 area effect, dealing fray damage to characters it passes through. Place your weapon at the end of the line, or as close as possible. Your weapon becomes a height 1 object, but while it’s out you cannot attack. When you move into an adjacent space or start your turn there, you may pick the weapon up, ending this effect. It’s also picked up if your weapon is removed for any reason. Any characters standing on your weapon when you pick it up are shoved 1 to the side of their choice.",
+    "trigger": null,
+    "charge": null,
+    "refresh": null,
+    "tags": [
+      "True Strike"
+    ],
+    "special": {
+      "name": "Heroic",
+      "description": "Increase the effect area to line 6 instead."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If you end your turn adjacent to your thrown weapon, gain vigilance 1."
+      },
+      {
+        "rank": 2,
+        "description": "Effect: When you pick your weapon up, your next attack deals bonus damage."
+      },
+      {
+        "rank": 3,
+        "description": "SINGING DEVIL BLADE: If you choose, your weapon automatically returns to you at the start of your next turn, hurling through the air. Foes within range 2 of you are shoved 1 in any direction and take 2 damage as it circles around you, then you pick it up."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "draken_cross",
+    "job": "demon_slayer",
+    "name": "Draken Cross",
+    "description": "Fill the air with the flurry of blades.",
+    "chapter": 1,
+    "action": "Heavy Melee Attack",
+    "range": "Cross 2, Range 2",
+    "attack": {
+      "hit": "2[D]+fray",
+      "miss": "fray",
+      "effect": null,
+      "crit": null,
+      "area": "fray"
+    },
+    "effect": null,
+    "trigger": null,
+    "charge": "Change area effect to Arc 5.",
+    "refresh": null,
+    "tags": [],
+    "special": {
+      "name": "Heroic",
+      "description": "After this ability resolves, end your turn, and Gain Delay: Your next turn must be slow. At the start of that turn, shockwaves rip through your targets, dealing fray damage to all characters targeted by this ability, ignoring armor, resistance, and vigor. This damage cannot reduce a character below 1 hp."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Slay: Cure yourself."
+      },
+      {
+        "rank": 2,
+        "description": "If you’re bloodied, increase this ability’s range by +2."
+      },
+      {
+        "rank": 3,
+        "description": "BONE CUTTING DEVIL BLADE: You may activate the heroic effect without spending the use of a heroic."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "righteous_disdain",
+    "job": "demon_slayer",
+    "name": "Righteous Disdain",
+    "description": "With a clap, you deflect a weapon or projectile with your bare hand or the flat edge of your blade.",
+    "chapter": 1,
+    "action": "Interrupt 1",
+    "range": null,
+    "attack": null,
+    "effect": "You may dash 1 towards your ally, then roll 1d6. You reduce the total damage from that attack by that amount. If the total damage is reduced to 0, you daze the attacker. If you haven’t acted yet this round, roll 2 dice and pick the highest.",
+    "trigger": "A foe makes an attack against an ally in range 2 of you, and damage has been rolled but not applied yet.",
+    "charge": null,
+    "refresh": null,
+    "tags": [],
+    "special": {
+      "name": "Heroic",
+      "description": "Increase range and dash by +2"
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If you’re bloodied, increase range and dashes by +1."
+      },
+      {
+        "rank": 2,
+        "description": "You can choose to increase the damage reduction die to 1d8, but become dazed."
+      },
+      {
+        "rank": 3,
+        "description": "DEMON CLAW: Righteous disdain gains additional effects depending on whether the attack was melee or ranged. Shirahadori (melee) : You catch and twist the attack, shoving the foe 2. Collide: Foe is winded. Jūdangiri (ranged): You deflect the projectile. A different foe in range 3 of you takes 3 damage and is inflicted by any blight inflicted by the triggering ability."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "overkill",
+    "job": "demon_slayer",
+    "name": "Overkill",
+    "description": "Time to end this.",
+    "chapter": 0,
+    "action": "1 Action",
+    "range": null,
+    "attack": null,
+    "effect": "End your turn. Your next attack slams your foe with incredible force. That attack deals bonus damage, and your foe becomes stunned on hit. While holding overkill, you can dash 1 space as an effect after taking damage from an attack or ability. This effect ends after you attack, or at the end of your next turn.",
+    "trigger": null,
+    "charge": "Your target also becomes winded.",
+    "refresh": null,
+    "tags": [
+      "End Turn"
+    ],
+    "special": {
+      "name": "Heroic",
+      "description": "You can dash up to 3 spaces before releasing the overkill attack."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If you’re bloodied, your overkill dash when taking damage increases by +1."
+      },
+      {
+        "rank": 2,
+        "description": "Your Overkill attack also gains true strike."
+      },
+      {
+        "rank": 3,
+        "description": "BRAVER: When you take Overkill, you are unstoppable and gain vigor 1. If you lose this vigor, or if it is replaced, you also lose unstoppable. Lose this vigor at the end of your next turn, or after you attack."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "royal_guard",
+    "job": "demon_slayer",
+    "name": "Royal Guard",
+    "description": "Bat aside every strike at you with supernatural precision.",
+    "chapter": 1,
+    "action": "1 Action",
+    "range": null,
+    "attack": null,
+    "effect": "When you take this stance or when it refreshes, the next time you take damage from a foe’s attack, gain resistance to all damage from that attack.",
+    "trigger": null,
+    "charge": null,
+    "refresh": null,
+    "tags": [
+      "Stance"
+    ],
+    "special": {
+      "name": "Heroic",
+      "description": "Also become sturdy until the end of your next turn."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "When you reduce damage with Royal Guard, your next attack deals bonus damage."
+      },
+      {
+        "rank": 2,
+        "description": "You can activate Royal Guard on attacks against adjacent allies."
+      },
+      {
+        "rank": 3,
+        "description": "DEMON SKIN: While you have a stack of royal guard, you cannot be critically hit (turn all critical hits into regular hits), cannot be stunned, and cannot take bonus damage."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "six_hells_trigram",
+    "job": "demon_slayer",
+    "name": "Six Hells Trigram",
+    "description": "Using dark arts, you summon up a sliver of the demon world, blocking out a dark trigram that traps enemies in its web.",
+    "chapter": 2,
+    "action": "1 Action",
+    "range": null,
+    "attack": null,
+    "effect": "End your turn. Terrain effect: Mark out a blast 2 area centered on you, then gain Delay: Your next turn must be slow, but at the start of that turn, the trigram activates. Foes inside when it activates are dazed. Any foes that wish to cross the border of the terrain effect during any turn must first pass a save, otherwise they cannot cross it for any reason until the start of their next turn, including teleporting or flying. This area lasts until this ability is used again.",
+    "trigger": null,
+    "charge": null,
+    "refresh": null,
+    "tags": [
+      "Delay",
+      "Terrain Effect"
+    ],
+    "special": {
+      "name": "Heroic",
+      "description": "Area is blast 3."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Foes inside the trigram are winded+ while inside."
+      },
+      {
+        "rank": 2,
+        "description": "Foes that end their turn inside the activated trigram must save or gain hatred of you."
+      },
+      {
+        "rank": 3,
+        "description": "FORBIDDANCE OF THE FIVE ELEMENTS: Foes can collide with the border of the trigram, taking divine fray damage instead of normal collide damage. This damage can’t activate more than once a round for each character."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "breeze_cutter",
+    "job": "demon_slayer",
+    "name": "Breeze Cutter",
+    "description": "Imbuing your weapon with aether, your strikes becoming so potent that the shockwaves from your blows become a terrifying cutting force.",
+    "chapter": 2,
+    "action": "1 Action",
+    "range": null,
+    "attack": null,
+    "effect": "While in this stance, your melee attacks gain +2 range, or +3 range if charged. Melee attacks without a listed range count as having range 1.",
+    "trigger": null,
+    "charge": null,
+    "refresh": "This stance refreshes at the start of your turn.",
+    "tags": [
+      "Stance"
+    ],
+    "special": {
+      "name": "Heroic",
+      "description": "Shove all adjacent foes 3 and deal 2 damage to them when taking this stance."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Also increase the effect of any line, arc, or cross effects by +2 in Breeze Cutter."
+      },
+      {
+        "rank": 2,
+        "description": "The first melee attack you make after taking Breeze Cutter has +4 range instead."
+      },
+      {
+        "rank": 3,
+        "description": "WIND CALLING DEVIL BLADE: At round 4 or later in combat, breeze cutter’s range bonuses are doubled."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "wicked_sheath",
+    "job": "demon_slayer",
+    "name": "Wicked Sheath",
+    "description": "The master art of the demon slayers - holding a single blow with ultimate patience, until it can slay the most tenebrous of monsters in one stroke.",
+    "chapter": 3,
+    "action": "Light Melee Attack",
+    "range": "Adjacent",
+    "attack": {
+      "hit": "fray and shove 1",
+      "miss": "fray",
+      "effect": null,
+      "crit": null,
+      "area": null
+    },
+    "effect": "After you attack, your weapon becomes charged with energy. At the start of the next round, gain a d4 power die at 1, and tick it up by 1 at the start of each subsequent round. For each tick of the die, increase the base damage on hit of Wicked Sheath by [D] and the shove by 1. Lose the power die after you hit with any attack.",
+    "trigger": null,
+    "charge": null,
+    "refresh": null,
+    "tags": [
+      "True Strike",
+      "Power Die"
+    ],
+    "special": {
+      "name": "Heroic",
+      "description": "Wicked Sheath does [D]+fray on hit when first used."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Effect: If you’re bloodied, gain the die at 1 right away after you attack Wicked Sheath"
+      },
+      {
+        "rank": 2,
+        "description": "You have counter while you have the Wicked Sheath power die."
+      },
+      {
+        "rank": 3,
+        "description": "MUGEN SHOMETSU: After you hit with an attack, roll the power die instead of discarding it. On a 1 or 2, keep it, using the new number."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "valkyrie",
+    "job": "colossus",
+    "name": "Valkyrie",
+    "description": "Soaring through the air like a vengeful spirit, you crash into your enemy.",
+    "chapter": 1,
+    "action": "Light Melee Attack",
+    "range": "Adjacent",
+    "attack": {
+      "hit": "[D] + fray",
+      "miss": "fray",
+      "effect": "Foe is winded.",
+      "crit": null,
+      "area": null
+    },
+    "effect": "You can fly 1 before making this attack.",
+    "trigger": null,
+    "charge": "Fly 3 instead",
+    "refresh": null,
+    "tags": [
+      "True Strike"
+    ],
+    "special": {
+      "name": "Heroic",
+      "description": "Gain effect: foe additionally must save or become immobile until the end of their next turn."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "You can also make Valkyrie as a ranged 3 attack."
+      },
+      {
+        "rank": 2,
+        "description": "Deal bonus damage if you started this ability from higher elevation."
+      },
+      {
+        "rank": 3,
+        "description": "VALHALLA: When you use Valkyrie, and for the rest of your turn, whenever you fly, all allies in range 2 of you can also fly the same distance in any direction."
+      }
+    ],
+    "abilities": []
+  },
+  {
+    "id": "upheaval",
+    "job": "colossus",
+    "name": "Upheaval",
+    "description": "The disciples of the wolf titan exhibit such legendary strength that they can rip up the earth itself with their bare hands.",
+    "chapter": 1,
+    "action": "1 Action",
+    "range": null,
+    "attack": null,
+    "effect": "Smash the battlefield, creating a height 1 boulder object in an unoccupied space in range 3. Adjacent characters take 2 damage and are shoved 1 away from the terrain when it appears.",
+    "trigger": null,
+    "charge": null,
+    "refresh": null,
+    "tags": [
+      "Terrain Effect"
+    ],
+    "special": {
+      "name": "Heroic",
+      "description": "Characters are also winded."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If a character collides with the object, it sheds rubble, and creates difficult terrain in every adjacent space to it."
+      },
+      {
+        "rank": 2,
+        "description": "If you're bloodied, increase the shove to 2."
+      },
+      {
+        "rank": 3,
+        "description": "BONES OF THE EARTH: You may use Upheaval as a free action if you’re bloodied."
+      }
+    ],
+    "abilities": []
+  }
+]

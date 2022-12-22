@@ -1,0 +1,40 @@
+[
+  {
+    "id": "stalwart",
+    "name": "Stalwart",
+    "title": "Weapon master and unparalleled soldier",
+    "strengths": "Tough, resistant to statuses, good at punishing foes, protecting allies, and controlling the battlefield.",
+    "weaknesses": "Lower mobility and weak to ranged attackers.",
+    "complexity": "Low",
+    "description": "Stalwarts are tough and vigorous warriors, with heavy armor and abilities that let them stand their ground, protect their allies, and control space. They largely eschew the use of ranged attacks and magic but are mythic soldiers and gods of the battlefield, able to perform incredible feats of physical prowess and resilience.\nStalwarts boast Daze, which makes it harder for enemies to land attacks, Winded, which allows them to slow down speedy foes, and access to Vigilance, which makes it much more risky for characters to move around them. They also easily gain Sturdy, making them resistant to being shoved and totally immune to being dazed, or stunned, and can in turn Shove their foes, knocking them around the battlefield.\nStalwarts are strong against skirmisher foes and weaker against artillery foes.",
+    "traits": [
+      {
+        "name": "Fortify",
+        "description": "Gain Vigilance 1 at the end of your turn. Lose all vigilance charges at the start of your turn.",
+        "chapter": 0
+      },
+      {
+        "name": "Armor 3",
+        "description": "Reduce all damage taken by 3.",
+        "chapter": 0
+      }
+    ],
+    "vit": 10,
+    "hp": 40,
+    "defense": 5,
+    "speed": 4,
+    "fray_damage": 4,
+    "damage_die": "D6",
+    "basic_attack": "Melee or Ranged 2",
+    "special": [
+      {
+        "name": "Heroics",
+        "description": "Stalwarts can perform Heroics, more powerful versions of their regular abilities. They get one free Heroic use of an ability per combat, however, other abilities may allow additional uses of Heroics."
+      },
+      {
+        "name": "Stalwart Gambit",
+        "description": "If you take a Stalwart ability as a non-Stalwart class, you get Heroics, and two free uses of Heroics instead of one."
+      }
+    ]
+  }
+]
