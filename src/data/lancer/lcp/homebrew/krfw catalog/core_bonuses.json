@@ -1,0 +1,67 @@
+[
+  {
+    "id": "krfwcb_ablative_heat_sinks",
+    "name": "Ablative Heat Sinks",
+    "source": "KRFW",
+    "effect": "External sources of Heat cannot cause you to exceed your heatcap unless your heatcap is already at maximum.",
+    "description": "Your mech prints with spare heat dissipation systems on its exterior. You can reroute heat through them, provided it builds slowly enough."
+  },
+  {
+    "id": "krfwcb_crossroads_repair_systems",
+    "name": "CROSSROADS Repair Systems",
+    "source": "KRFW",
+    "effect": "Gain +1 Repair. When you make a Structure check, you may reroll a number of dice up to the amount of Structure you have lost. You may reroll the same die multiple times, each reroll counting towards your total number of rerolls. If you reroll structure checks six or more times in a mission with this bonus, pay a price set by the GM after the mission ends.",
+    "bonuses": [
+      {
+        "id": "repcap",
+        "val": 1
+      }
+    ],
+    "description": "Your mech prints with an extra casket pre-installed, and a reserve of luck that would make any sailor jealous. After particularly rough missions, you find yourself performing tasks for someone you wish you could remember, even though you know you’re happier forgetting them."
+  },
+  {
+    "id": "krfwcb_ichabod_constructor_repurposer_activator_nanite_emitters",
+    "name": "\"Ichabod\" Constructor/Repurposer/Activator Nanite Emitters",
+    "source": "KRFW",
+    "effect": "Gain the following Quick Actions. Each may only be used 1/scene while adjacent to a wreck. Upon use, the wreck is destroyed, becoming difficult terrain. Any still living pilots still inside their wrecks will survive, but will be very upset with you.",
+    "actions": [
+      {
+        "name": "Construct",
+        "activation": "Quick",
+        "detail": "1/scene, while adjacent to a wreck, repair one destroyed weapon or system. Weapons and activated systems may be used once before breaking again, consuming Limited charges as normal. Passive systems function until you lose HP."
+      },
+      {
+        "name": "Repurpose",
+        "activation": "Quick",
+        "detail": "1/scene, while adjacent to a wreck, strip the wreck for parts. During your next rest, gain +1 Repair that can be used to repair Structure or rebuild a destroyed mech."
+      },
+      {
+        "name": "Activate",
+        "activation": "Quick",
+        "detail": "1/scene, while adjacent to a wreck, prime the wreck’s reactor to detonate. Whenever a character next moves adjacent to the primed wreck, it detonates in a Burst 1 area around the wreck. All characters in the Burst must pass an Agility save or take 2d6 energy damage and become Impaired until the end of their next turn, taking half damage and not becoming Impaired on a success."
+      }
+    ],
+    "description": "Your mech contains reserves of greywash nanites, hidden within its frame until the moment to deploy them comes. When you unleash them on the ruins of your enemies, your mech appears for a moment to be the specter of death itself."
+  },
+  {
+    "id": "krfwcb_integrated_blast_fences",
+    "name": "Integrated Blast Fences",
+    "source": "KRFW",
+    "effect": "When an allied character starts their turn adjacent to you, they may move 2 spaces as a Protocol. When you start your turn adjacent to an allied character, you may move 1 space as a Protocol.",
+    "description": "Your mech contains collapsable panels for other mechs to push off of, allowing them a burst of speed when they need it. You’ve considered putting them to use wherever you eventually retire as well, to make for good neighbors."
+  },
+  {
+    "id": "krfwcb_lifeboat_cockpit_retrofitting",
+    "name": "Lifeboat Cockpit Retrofitting",
+    "source": "KRFW",
+    "effect": "When your mech melts down or self-destructs, leave a size 1/2 object in a space your mech formerly occupied. Your pilot is safe inside, and the mech can be rebuilt from this central control capsule as if it had been destroyed. Your Self Destructs and Meltdowns are never canceled by your mech’s destruction.",
+    "description": "Your cockpit is hermetically sealed, and can survive up to a week in the vacuum of space. Karimi, Roux, & Fabjani also include a complimentary selection of books to read during this time, so you do not die bored."
+  },
+  {
+    "id": "krfwcb_reckless_safety_tolerances",
+    "name": "Reckless Safety Tolerances",
+    "source": "KRFW",
+    "effect": "Your mech increases its maximum HP and Heatcap by how much Structure or Stress you have marked, respectively.",
+    "description": "Your mech prints with a bit more wiggle than it should, allowing you to hastily shove its broken pieces back into place just long enough to finish the next fight. You’ve gotten used to the noises its joints make."
+  }
+]

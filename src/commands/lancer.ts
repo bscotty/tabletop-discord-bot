@@ -21,6 +21,7 @@ import {getGilgameshLcp} from "../data/lancer/lcp/homebrew/gilgamesh";
 import {getDustgraveLcp} from "../data/lancer/lcp/dustgrave";
 import {getSsmrPart1Lcp} from "../data/lancer/lcp/homebrew/ssmr part 1";
 import {getEHandSLCP} from "../data/lancer/lcp/homebrew/event horizon & suns";
+import {getKrfwCatalogLcp} from "../data/lancer/lcp/homebrew/krfw catalog";
 
 @Discord()
 export class Lancer {
@@ -48,6 +49,7 @@ export class Lancer {
             getEHandSLCP(),
             getGilgameshLcp(),
             getIronleafFoundryLcp(),
+            getKrfwCatalogLcp(),
             getLiminalSpaceLcp(),
             getMfecaneLcp(),
             getSciroccoLcp(),

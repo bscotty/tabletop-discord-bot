@@ -1,0 +1,55 @@
+[
+  {
+    "id": "krfwm_trebuchet_munitions",
+    "name": "Trebuchet Munitions",
+    "source": "KRFW",
+    "license": "CASTELLAN",
+    "license_level": 3,
+    "sp": 2,
+    "description": "“Launching munitions on an arc to delay arrival time and circumvent obstructions is nothing new. Humanity was doing it before they even discovered horses! No, what makes our specialized loads different is that we use cutting-edge, proprietary technology to remove them from existence during the entire flight path, preventing interception until the last possible moment.<br><br>“Hm? No, we don’t know where they go while they disappear. We’re still working on that.”<br>-Hanan Karimi, Founding Partner",
+    "effect": "The equipped weapon gains the Arcing tag. When you attack with this weapon, you may choose to delay fire, making your attack with this weapon at the start of the target's turn instead. If the equipped weapon attacks multiple targets, pick one to be the target of your delayed fire; at the start of the target's turn, determine all targets for the attack, making sure to include the target of your delayed fire.<br><br>If the target is out of range at the start of their turn, the attack still resolves as if they were in range. If the target is destroyed before their next turn, the attack is lost.<br><br>You may not take your next turn until the target of your delayed fire either takes their next turn or is destroyed.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "allowed_types": [
+      "Cannon",
+      "Launcher"
+    ],
+    "allowed_sizes": [
+      "Main",
+      "Heavy"
+    ],
+    "added_tags": [
+      {
+        "id": "tg_arcing"
+      }
+    ]
+  },
+  {
+    "id": "krfwm_superheated_barrel",
+    "name": "Superheated Barrel",
+    "source": "KRFW",
+    "license": "VIDAME",
+    "license_level": 1,
+    "sp": 2,
+    "description": "Despite its branding, the “Superheated Barrel” is a side effect of pilots upscaling the power of the munitions loaded in their firearm. With careful tuning, any weapon can be modified to shoot this custom-made, overpressure ammo, though the stress this causes to the gun often means modified firearms need to be scrapped and reprinted after a mission.",
+    "effect": "Firing your weapon causes munition casings to become devastatingly hot, requiring them to be cleared to prevent damage. The equipped weapon gains the Loading tag if it does not already have one.<br>Whenever you reload this weapon, a Burst 1 area around you becomes Dangerous Terrain until the start of your next turn. Whenever a character other than you enters or starts their turn in this area, they take 2 Heat and 1 Energy damage from the superheated shells scattered around. At the start of your next turn, the area cools, becoming normal terrain again.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "allowed_types": [
+      "CQB",
+      "Cannon",
+      "Rifle"
+    ],
+    "added_tags": [
+      {
+        "id": "tg_loading"
+      }
+    ]
+  }
+]
