@@ -39,7 +39,12 @@ export class IconFormatter {
             range = ability.range
         }
 
-        const tags = [range, ...ability.tags].join(", ")
+        let abilityTags: string[] = []
+        if (ability.tags) {
+            abilityTags = ability.tags
+        }
+
+        const tags = [range, ...abilityTags].join(", ")
 
         const description =
             `**${ability.name}** (Chapter ${ability.chapter} *${this.lookupJobName(ability.job)}* Ability)\n` +
@@ -106,26 +111,25 @@ export class IconFormatter {
     }
 
     private formatClass(clazz: TypedIconClass): string {
-        const description = `**${clazz.name}**\n*${clazz.title}*\n**Strengths:** ${clazz.strengths}` +
+        const description = `**${clazz.name}**\n*${clazz.title}*\n\n**Strengths:** ${clazz.strengths}` +
             `\n**Weaknesses:** ${clazz.weaknesses}\n**Complexity:** ${clazz.complexity}\n\n*${clazz.description}*\n`
 
-        const stats = `*VIT:* ${clazz.vit}\n*HP:* ${clazz.hp}\n*DEF:* ${clazz.defense}\n` +
-            `*SPEED:* ${clazz.speed}\n*Fray Damage:* ${clazz.fray_damage}\n*Damage Die:* ${clazz.damage_die}\n`
+        const stats = `\n**Statistics**\n*VIT:* ${clazz.vit}\n*HP:* ${clazz.hp}\n*Defense:* ${clazz.defense}\n` +
+            `*Speed:* ${clazz.speed} (Dash ${clazz.dash})\n*Fray Damage:* ${clazz.fray_damage}\n` +
+            `*Damage Die:* ${clazz.damage_die}\n`
 
-        const traits = clazz.traits.map((it) => this.formatTrait(it))
+        const traits = "\n**Traits**\n" + (clazz.traits.map((it) => this.formatTrait(it))).join("\n")
 
-        const special = clazz.special.map((it) => this.formatTrait(it))
+        const special = "\n**Special Mechanics**\n" + (clazz.special.map((it) => this.formatTrait(it))).join("\n")
 
-        return `${description}\n**Statistics**\n${stats}\n**Traits**\n${traits.join("\n")}` +
-            `\n**Special Mechanics**\n${special.join("\n")}`
+        return `${description}${stats}${traits}${special}`
     }
 
     private formatJob(job: TypedIconJob): string {
-        const description = `**${job.name}** - ${this.lookupClassName(job.class)}\n` +
-            `*${job.title}*\n\n*${job.description}*\n`
-        const traits = job.traits.map((it) => this.formatTrait(it))
-        const abilities = job.abilities.map((it) => this.lookupAbilityName(it))
-        return `${description}\n**Traits**\n${traits.join("\n")}\n**Abilities**\n${abilities.join(", ")}`
+        const description = `**${job.name}** - ${this.lookupClassName(job.class)}\n*${job.title}*\n`
+        const traits = "\n**Traits**\n" + (job.traits.map((it) => this.formatTrait(it))).join("\n")
+        const abilities = "\n**Abilities**\n" + (job.abilities.map((it) => this.lookupAbilityName(it))).join(", ")
+        return `${description}${traits}${abilities}`
     }
 
     private formatLimitBreak(limitBreak: TypedIconLimitBreak): string {
@@ -133,7 +137,12 @@ export class IconFormatter {
         if (limitBreak.range) {
             range = `${limitBreak.range}`
         }
-        const tags = [range, ...limitBreak.tags].join(", ")
+
+        let limitBreakTags: string[] = []
+        if (limitBreak.tags) {
+            limitBreakTags = limitBreak.tags
+        }
+        const tags = [range, ...limitBreakTags].join(", ")
 
         const description = `**${limitBreak.name}** - (Chapter ${limitBreak.chapter} ` +
             `${this.lookupJobName(limitBreak.job)} Limit Break)\n${limitBreak.resolve} Resolve, ${limitBreak.action}` +
@@ -193,7 +202,13 @@ export class IconFormatter {
         if (subAbility.range) {
             range = `${subAbility.range}, `
         }
-        const tags = [range, ...subAbility.tags].join(", ")
+
+        let abilityTags: string[] = []
+        if (subAbility.tags) {
+            abilityTags = subAbility.tags
+        }
+
+        const tags = [range, ...abilityTags].join(", ")
         const description = `**${subAbility.name}**\n${subAbility.action}\n${tags}\n${subAbility.description}`
 
         let attack = ""
@@ -258,7 +273,11 @@ export class IconFormatter {
     private formatSummon(summon: IconSummon): string {
         const summonName = `**Summon: ${summon.name}**`
         const summonSize = `\nSize ${summon.size}`
-        const summonTags = [summonSize, ...summon.tags].join(", ")
+        let tags: string[] = []
+        if (summon.tags) {
+            tags = summon.tags
+        }
+        const summonTags = [summonSize, ...tags].join(", ")
         const summonEffect = `\n*Summon Effect:* ${summon.effect}`
         let summonAction = ""
         if (summon.action) {
@@ -269,7 +288,12 @@ export class IconFormatter {
 
     private formatCombo(combo: IconCombo): string {
         let formattedCombo = `\n**Combo: ${combo.name}**\n${combo.effect}`
-        formattedCombo += [combo.range, ...combo.tags].filter((it) => it).join(", ")
+
+        let comboTags: string[] = []
+        if (combo.tags) {
+            comboTags = combo.tags
+        }
+        formattedCombo += [combo.range, ...comboTags].filter((it) => it).join(", ")
         if (combo.attack) {
             formattedCombo += "\n" + this.formatAttack(combo.attack)
         }

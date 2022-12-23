@@ -13,6 +13,7 @@ export type IconClass = {
     hp: number
     defense: number
     speed: number
+    dash: number
     fray_damage: number
     damage_die: string
     special: IconTrait[]
