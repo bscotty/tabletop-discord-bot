@@ -38,21 +38,11 @@ export class IconFormatter {
     }
 
     private formatAbility(ability: TypedIconAbility): string {
-        let range = ""
-        if (ability.range) {
-            range = ability.range
-        }
-
-        let abilityTags: string[] = []
-        if (ability.tags) {
-            abilityTags = ability.tags
-        }
-
-        const tags = [range, ...abilityTags].join(", ")
+        const tags = this.formatRangeAndTags(ability.range, ability.tags)
 
         const description =
             `**${ability.name}** (Chapter ${ability.chapter} *${this.lookupJobName(ability.job)}* Ability)\n` +
-            `${ability.action}\n${range}${tags}\n\n*${ability.description}*\n`
+            `${ability.action}${tags}\n\n*${ability.description}*\n`
 
         let attack = ""
         if (ability.attack) {
@@ -137,20 +127,10 @@ export class IconFormatter {
     }
 
     private formatLimitBreak(limitBreak: TypedIconLimitBreak): string {
-        let range = ""
-        if (limitBreak.range) {
-            range = `${limitBreak.range}`
-        }
+        const tags = this.formatRangeAndTags(limitBreak.range, limitBreak.tags)
 
-        let limitBreakTags: string[] = []
-        if (limitBreak.tags) {
-            limitBreakTags = limitBreak.tags
-        }
-        const tags = [range, ...limitBreakTags].join(", ")
-
-        const description = `**${limitBreak.name}** - (Chapter ${limitBreak.chapter} ` +
-            `${this.lookupJobName(limitBreak.job)} Limit Break)\n${limitBreak.resolve} Resolve, ${limitBreak.action}` +
-            `${tags}\n*${limitBreak.description}*\n`
+        const description = `**${limitBreak.name}** - *${this.lookupJobName(limitBreak.job)}* Limit Break` +
+            `\n${limitBreak.resolve} Resolve\n${limitBreak.action}${tags}\n\n*${limitBreak.description}*\n`
 
         let attack = ""
         if (limitBreak.attack) {
@@ -174,19 +154,29 @@ export class IconFormatter {
             charge = `\n**Charge:** ${limitBreak.charge}`
         }
 
+        let refresh = ""
+        if (limitBreak.refresh) {
+            refresh = `\n**Refresh:** ${limitBreak.refresh}`
+        }
+
         let special = ""
         if (limitBreak.special) {
             special = "\n" + this.formatSpecial(limitBreak.special)
         }
 
-        const talents = "\n**Talent**\n" + limitBreak.talents.map((it) => this.formatTalent(it)).join("\n")
+        let infusion = ""
+        if (limitBreak.infusion) {
+            infusion = "\n" + this.formatInfusion(limitBreak.infusion)
+        }
+
+        const talents = "\n\n**Talent**\n" + limitBreak.talents.map((it) => this.formatTalent(it)).join("\n")
 
         let abilities = ""
         if (limitBreak.abilities) {
             abilities = "\n" + limitBreak.abilities.map((it) => this.formatSubAbility(it)).join("\n")
         }
 
-        return `${description}${attack}${area}${trigger}${effect}${charge}${special}${talents}${abilities}`
+        return `${description}${attack}${area}${trigger}${effect}${charge}${refresh}${special}${infusion}${talents}${abilities}`
     }
 
     private formatGlossaryEntry(glossaryEntry: IconGlossaryEntry): string {
@@ -211,18 +201,8 @@ export class IconFormatter {
     }
 
     private formatSubAbility(subAbility: IconSubAbility): string {
-        let range = ""
-        if (subAbility.range) {
-            range = `${subAbility.range}, `
-        }
-
-        let abilityTags: string[] = []
-        if (subAbility.tags) {
-            abilityTags = subAbility.tags
-        }
-
-        const tags = [range, ...abilityTags].join(", ")
-        const description = `**${subAbility.name}**\n${subAbility.action}\n${tags}\n${subAbility.description}`
+        const tags = this.formatRangeAndTags(subAbility.range, subAbility.tags)
+        const description = `**${subAbility.name}**\n${subAbility.action}${tags}\n${subAbility.description}`
 
         let attack = ""
         if (subAbility.attack) {
@@ -256,10 +236,14 @@ export class IconFormatter {
 
     private formatTalent(talent: IconTalent): string {
         let formattedTalent: string
-        if (talent.rank < 3) {
+        if (typeof talent.rank === "number" && talent.rank < 3) {
             formattedTalent = `${talent.rank}. ${talent.description}`
         } else {
-            formattedTalent = `MASTERY: ${talent.description}`
+            let formattedResolve = ""
+            if (talent.resolve) {
+                formattedResolve = `\n${talent.resolve} Resolve`
+            }
+            formattedTalent = `MASTERY: ${talent.rank}${formattedResolve}\n${talent.description}`
         }
         if (talent.infusion) {
             formattedTalent += "\n" + this.formatInfusion(talent.infusion)
@@ -290,12 +274,15 @@ export class IconFormatter {
     private formatSummon(summon: IconSummon): string {
         const summonName = `\n> **Summon: ${summon.name}**`
         const summonSize = `\n> Size ${summon.size}`
+
         let tags: string[] = []
         if (summon.tags) {
             tags = summon.tags
         }
         const summonTags = [summonSize, ...tags].join(", ")
+
         const summonEffect = `\n> *Summon Effect:* ${summon.effect}`
+
         let summonAction = ""
         if (summon.action) {
             summonAction = `\n> *Summon Action:* ${summon.action}`
@@ -306,11 +293,8 @@ export class IconFormatter {
     private formatCombo(combo: IconCombo): string {
         let formattedCombo = `\n**Combo: ${combo.name}**\n${combo.effect}`
 
-        let comboTags: string[] = []
-        if (combo.tags) {
-            comboTags = combo.tags
-        }
-        formattedCombo += [combo.range, ...comboTags].filter((it) => it).join(", ")
+        formattedCombo += this.formatRangeAndTags(combo.range, combo.tags)
+
         if (combo.attack) {
             formattedCombo += "\n" + this.formatAttack(combo.attack)
         }
@@ -322,6 +306,9 @@ export class IconFormatter {
 
     private formatInfusion(infusion: IconInfusion): string {
         let formattedInfusion = `**Infuse ${infusion.cost}: ${infusion.name}**`
+        if (infusion.resolve) {
+            formattedInfusion += `\n${infusion.resolve} resolve`
+        }
         if (infusion.range) {
             formattedInfusion += `\n${infusion.range}`
         }
@@ -329,10 +316,36 @@ export class IconFormatter {
             formattedInfusion += "\n" + this.formatAttack(infusion.attack)
         }
         if (infusion.area) {
-            formattedInfusion += `**Area Effect:** ${infusion.area}`
+            formattedInfusion += `\n**Area Effect:** ${infusion.area}`
         }
-        formattedInfusion += `**Effect:** ${infusion.effect}`
+        if (infusion.effect) {
+            formattedInfusion += `\n**Effect:** ${infusion.effect}`
+        }
         return formattedInfusion
+    }
+
+    private formatRangeAndTags(range: string, tags: string[]): string {
+        let formattedRange = ""
+        if (range) {
+            formattedRange = range
+        }
+
+        let formattedTags = ""
+        if (tags) {
+            formattedTags = tags.join(", ")
+        }
+
+        let prefix = ""
+        if (formattedRange.length > 0 || formattedTags.length > 0) {
+            prefix = "\n"
+        }
+
+        let infix = ""
+        if (formattedRange.length > 0 && formattedTags.length > 0) {
+            infix = ", "
+        }
+
+        return `${prefix}${formattedRange}${infix}${formattedTags}`
     }
 
     private lookupJobName(id: string): string {

@@ -2,6 +2,7 @@ import {IconAttack} from "./attack";
 import {IconTalent} from "./talent";
 import {IconSubAbility} from "./sub_ability";
 import {IconSpecialMechanic} from "./special";
+import {IconInfusion} from "./infuse";
 
 export type IconLimitBreak = {
     id: string
@@ -16,7 +17,9 @@ export type IconLimitBreak = {
     area?: string
     trigger?: string
     charge?: string
+    refresh?: string
     effect: string
+    infusion?: IconInfusion
     tags?: string[]
     special?: IconSpecialMechanic
     talents: IconTalent[]

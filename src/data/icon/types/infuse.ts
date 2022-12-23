@@ -7,4 +7,5 @@ export type IconInfusion = {
     range?: string
     attack?: IconAttack
     area?: string
+    resolve?: number
 }

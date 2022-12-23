@@ -10,8 +10,8 @@
     "effect": "You hurl your shield, and every character on the battlefield is shoved 1 space in a direction of your choice. You may shove in any order, and may choose different directions for each character. Then you become unstoppable until the end of your next turn.",
     "talents": [
       {
-        "rank": 3,
-        "description": "PERFECTED HELION: You can repeat this effect once on either allies or enemies."
+        "rank": "Perfected Helion",
+        "description": "You can repeat this effect once on either allies or enemies."
       }
     ]
   },
@@ -23,7 +23,7 @@
     "chapter": 1,
     "action": "1 Action",
     "resolve": 3,
-    "effect": "End your turn, and start charging up a god cutting blow. Delay: Your next turn must be slow. At the start of that turn, you may take one of the following options. Sever Divine Thread: Swing your weapon in a line 5 area effect drawn from your position. This counts as using an attack this turn. Characters in the line take damage depending on their position on the line. • 1 space: 100% of max hp. • 2-4 spaces: 50% of max hp. • 5+ spaces: 25% of max hp. Divine Cancel: You may cancel this ability, refunding the resolve cost and dashing 2. You can limit break again this combat. Divine Delay: You continue to hold this ability. Your next turn must be slow and repeat this delay effect. Each time you do this, increase he width of the line by 1 space on either side (so 1>3>5), and its length by 3 spaces. You cannot attack while holding Divine Delay. Legend characters always take 25% of max hp from this ability instead of other effects.",
+    "effect": "End your turn, and start charging up a god cutting blow. Delay: Your next turn must be slow. At the start of that turn, you may take one of the following options.\nSever Divine Thread: Swing your weapon in a line 5 area effect drawn from your position. This counts as using an attack this turn. Characters in the line take damage depending on their position on the line.\n • 1 space: 100% of max hp.\n • 2-4 spaces: 50% of max hp.\n • 5+ spaces: 25% of max hp.\nDivine Cancel: You may cancel this ability, refunding the resolve cost and dashing 2. You can limit break again this combat.\nDivine Delay: You continue to hold this ability. Your next turn must be slow and repeat this delay effect. Each time you do this, increase he width of the line by 1 space on either side (so 1>3>5), and its length by 3 spaces. You cannot attack while holding Divine Delay.\nLegend characters always take 25% of max hp from this ability instead of other effects.",
     "tags": [
       "End Turn",
       "Delay",
@@ -32,8 +32,8 @@
     ],
     "talents": [
       {
-        "rank": 3,
-        "description": "GOD BANISHING DEVIL BLADE: While holding a God Cutting Blow, you are unstoppable and can dash 1 at the start of each turn that passes after yours, or any time after you are damaged by an ability."
+        "rank": "God Banishing Devil Blade",
+        "description": "While holding a God Cutting Blow, you are unstoppable and can dash 1 at the start of each turn that passes after yours, or any time after you are damaged by an ability."
       }
     ]
   },
@@ -51,8 +51,8 @@
     ],
     "talents": [
       {
-        "rank": 3,
-        "description": "Blood of the Wolf Soul - This ability gains Slay: Gain vigor 2"
+        "rank": "Blood of the Wolf Soul",
+        "description": "This ability gains Slay: Gain vigor 2"
       }
     ]
   },
@@ -65,13 +65,11 @@
     "action": "1 Action",
     "resolve": 2,
     "range": "Range 3",
-    "trigger": "string?",
-    "charge": "string?",
     "effect": "A foe in range 3 becomes dazed+, winded+, loses and cannot gain evasion or stealth, and gains hatred+ of you. These effects continue until they deal at least 1 damage to your hp with an attack.\nYou are immobile but become sturdy, and gain counter and resistance for the same duration. You can end all these effects (on both you and your foe) as a free action.",
     "talents": [
       {
-        "rank": 3,
-        "description": "TORMENT - While mock is active, your attacks against your target also gain on hit: gain vigor 1"
+        "rank": "Torment",
+        "description": "While mock is active, your attacks against your target also gain on hit: gain vigor 1"
       }
     ]
   },
@@ -89,8 +87,238 @@
     ],
     "talents": [
       {
-        "rank": 3,
-        "description": "FINALE - If you trigger any effect at 5+ spaces, gain Slay: Character explodes, dealing 6 divine damage and inflicting burning to all foes in the battlefield, regardless of range or line of sight."
+        "rank": "Finale",
+        "description": "If you trigger any effect at 5+ spaces, gain Slay: Character explodes, dealing 6 divine damage and inflicting burning to all foes in the battlefield, regardless of range or line of sight."
+      }
+    ]
+  },
+  {
+    "id": "aether_overdrive",
+    "job": "freelancer",
+    "name": "Aether Overdrive",
+    "description": "Become one with your weapon. Smite your foes with high caliber justice.",
+    "chapter": 1,
+    "action": "2 Actions",
+    "resolve": 4,
+    "effect": "Empty your weapon to deal 2 divine damage to each foe in line of sight, then Go Beyond Gun.\nWhen you Go Beyond Gun, you draw on raw Aether to pull bullets from nothingness. You can fire an extra shell at any foe, dealing 2 Divine damage. This can be the same or a different foe. You can then choose to keep firing shells at the same or different foe, one at a time. Each time you fire a shell, the damage of the next shell increases by 2 (so 2, 4, 6, etc)\nBefore you fire each shell past the first, roll a d6. On a 2+, you can fire normally, on a 1, your gun jams and overheats. This ability continues until you overheat or have fired 6 shells. If your gun overheats, your turn ends, and you cannot attack until the end of your next turn.",
+    "tags": [
+      "Divine"
+    ],
+    "talents": [
+      {
+        "rank": "Ultima Overdrive",
+        "description": "Go Beyond Gun can fire up to 10 shells."
+      }
+    ]
+  },
+  {
+    "id": "abyssal_ecstasy",
+    "job": "shade",
+    "name": "Abyssal Ecstasy",
+    "description": "A prayer and a drop of blood, and soothing darkness cloaks the battlefield.",
+    "chapter": 1,
+    "action": "1 Action",
+    "resolve": 2,
+    "effect": "Yourself, all allies and allied summons gain stealth, and all foes are blinded.",
+    "talents": [
+      {
+        "rank": "Ultima Ecstasy",
+        "description": "The stealth effect from this ability does not break on you normally when you use an ability, but instead lasts until the end of the next round. Extend this by 1 round when you trigger a slay effect."
+      }
+    ]
+  },
+  {
+    "id": "fomorian",
+    "job": "warden",
+    "name": "Fomorian",
+    "description": "The power of the titans flows into your companions, filling them with a wild vigor and unrelenting fury.",
+    "chapter": 1,
+    "action": "Free action",
+    "resolve": 3,
+    "effect": "Your beast companion summon becomes magically empowered. For the rest of combat or until recalled or defeated, it gains the following benefits:\n- It becomes immune to damage and statuses\n- It becomes size 2\n- It forces engagement\n- When it deals damage, it deals damage to all foes adjacent to both itself and its target, and also shoves them 1\n- When you gain stealth, your beast also gains stealth\n- While mounting the beast, increase your speed by +3.",
+    "talents": [
+      {
+        "rank": "Ultima Fomorian",
+        "description": "When you activate Formorian, you may merge with your beast, becoming one being. Instead of the above effects, remove your beast from the battlefield as it fuses with you. You increase your speed by +3, you become unstoppable, and you become size 2. This effect lasts until the rest of combat.",
+        "resolve": 4
+      }
+    ]
+  },
+  {
+    "id": "march_of_the_saints",
+    "job": "chanter",
+    "name": "March of the Saints",
+    "description": "You sing of the deeds of the first heroes, from the Doom. The Great Chant weaves around your allies and transforms them into echoes of those mighty heroes.",
+    "chapter": 1,
+    "action": "1 Action",
+    "resolve": 2,
+    "range": "string?",
+    "refresh": "This stance refreshes automatically at the start of your turns.",
+    "effect": "Stance: You begin weaving an epic song, a saga of legendary heroes. When you take this action, and when this stance refreshes, you may invest an ally in range 5 with the power of one of the great saints. Each saint must be chosen at least once before it can be chosen again. The effect takes place immediately and lasts until the end of their next turn.\n• Parzival: An allied character gains flying, cover from all directions, and inflicts electrified with their attacks\n• Leon: An allied character gains stealth, dodge, and the ability to move diagonally\n• Angrboda: An allied character gains sturdy, and their attacks gain true strike and shove 1\n• Farnese: An ally gains 1 blessing and +1 boon on all attacks and saves",
+    "tags": [
+      "Stance"
+    ],
+    "talents": [
+      {
+        "rank": "Divine Investment",
+        "description": "You also gain the benefit of any chosen saint, lasting until the start of your next turn."
+      }
+    ]
+  },
+  {
+    "id": "death_sentence",
+    "job": "harvester",
+    "name": "Death Sentence",
+    "description": "A flash of the scythe, and the line between life and death is blurred.",
+    "chapter": 1,
+    "action": "Free Action",
+    "resolve": 3,
+    "effect": "You slash an adjacent foe with your scythe, knocking their soul out of their body. Draw a line 4 area effect from your foe facing directly away from you and place the soul in the last available space. The soul is an intangible, immobile summon placed by you. It takes no actions and lasts until the end of your next turn.\nWhile they have their soul knocked out, foes can act normally. However, the soul can be targeted as if it was the body, transferring all damage or effects it would take to the body, no matter the distance or line or sight. Damage becomes divine. Abilities that are able to target both the body and soul of the foe (such as AoEs) can hit both.",
+    "talents": [
+      {
+        "rank": "Execution of Blossoms",
+        "description": "Death Sentence can be used as range 2, arc 3, and affects all characters within."
+      }
+    ]
+  },
+  {
+    "id": "passage_to_the_afterlife",
+    "job": "sealer",
+    "name": "Passage to the Afterlife",
+    "description": "You unleash the supreme Sealer war art, inflicting ten thousand blows and shattering the connections of your foe’s vital energy to their body, hurrying on the transmigration of immortal souls.",
+    "chapter": 1,
+    "action": "Heavy Melee Attack",
+    "resolve": 5,
+    "attack": {
+      "hit": "[D]+fray, three times",
+      "miss": "Twice",
+      "crit": "Deal [D]+fray two more times."
+    },
+    "effect": "You may teleport adjacent to the target before the attack if they’re in range 3. Every allied character in range 3 of the target can also teleport adjacent to your target. Your target then takes additional divine fray damage from each adjacent ally once.",
+    "tags": [
+      "Divine",
+      "+1 boon"
+    ],
+    "talents": [
+      {
+        "rank": "Reach Heaven Through Violence",
+        "description": "The teleport effect has the range of the battlefield for both allied characters and yourself. If your target is at or under 25% hp, they take fray damage twice from each ally instead."
+      }
+    ]
+  },
+  {
+    "id": "high_prophecy",
+    "job": "seer",
+    "name": "High Prophecy",
+    "description": "A burning third eye of pure etheric energy appears on your forehead. Possibilities unfurl before you, laid out like infinite gleaming threads.",
+    "chapter": 1,
+    "action": "Free Action",
+    "resolve": 2,
+    "effect": "Until the start of your next turn, every d6 you roll for boons, curses, or random d6s as part of abilities is either a 6 or a 1 (you choose). This effect also applies to any ability that targets you, from foes or allies.",
+    "talents": [
+      {
+        "rank": "Thoth",
+        "description": "This effect also extends to all characters in aura 2 from you.",
+        "resolve": 4
+      }
+    ]
+  },
+  {
+    "id": "gigaflare",
+    "job": "enochian",
+    "name": "Gigaflare",
+    "description": "I, who stand at the apex of things,\nCommand the imperishable eldflame,\nLet thy very bones become ash!.\nLet the air become death!\nIgnite, and be banished to Hell!",
+    "chapter": 1,
+    "action": "2 Actions",
+    "resolve": 4,
+    "effect": "You summon the eldflame, dealing [D] +fray divine damage to every character, hostile or allied, on the battlefield, ignoring cover and line of sight. Characters in range 2 of you are exempt from this ability.",
+    "infusion": {
+      "cost": 5,
+      "name": "Tetraflare",
+      "effect": "Deal [D] +fray twice instead.",
+      "resolve": 5
+    },
+    "tags": [
+      "Divine"
+    ],
+    "talents": [
+      {
+        "rank": "Meteor",
+        "description": "Gain the Meteor infuse option. You can pay the resolve, aether, and action cost of this spell with your life force, dying after this action resolves.",
+        "resolve": 6,
+        "infusion": {
+          "cost": 8,
+          "name": "Meteor",
+          "effect": "Deal [D]+fray four times instead."
+        }
+      }
+    ]
+  },
+  {
+    "id": "cataclysm",
+    "job": "geomancer",
+    "name": "Cataclysm",
+    "description": "I, protected by the holy trigram, Summon the molten gods of the underworld, Let loose with thy furies, and rend the earth Let my strike be magnified a hundred fold!",
+    "chapter": 1,
+    "action": "1 Action",
+    "resolve": 3,
+    "effect": "End your turn. You dive into the earth and off the battlefield. Remove yourself from play. Target a line area 5 spaces wide from one side of the battlefield to the next. All characters are aware of the area. Then gain Delay: Your next turn must be slow. At the start of that turn, you cause a rolling wave of earth to sweep across this area, from one side to the next. Non-flying characters within take [D] + fray as an effect and are shoved 1 in the direction of the line.\nAfter the first effect resolves, all your created objects in the area release an explosion for a blast 1 area effect centered on them, dealing [D]+fray as an area effect. Characters can be hit by more than one explosion.\nWhen this ability resolves, place yourself in any unoccupied space in the area.",
+    "tags": [
+      "Divine"
+    ],
+    "talents": [
+      {
+        "rank": "Molten Core",
+        "description": "After taking this move, you emerge with a shield of molten rock covering you. You gain unstoppable, counter, and vigor 2 until the end of your next turn. At that point, or if this vigor is replaced, it explodes off you, dealing [D]+fray Divine damage in a close blast 1 area effect."
+      }
+    ]
+  },
+  {
+    "id": "gran_levincross",
+    "job": "spellblade",
+    "name": "Gran Levincross",
+    "description": "I summon thee, gods of the cutting art,\nLet the might of the divine realm crash upon the piteous earth,\nStrike eighty thousand blows at once,\nAnd split the air asunder!",
+    "chapter": 1,
+    "action": "Heavy Ranged Attack",
+    "resolve": 4,
+    "effect": "Your blade extends and you make two massive cuts across the map, splitting the walls between worlds. Draw a cross section across the map, splitting it into four sections of any size. Deal [D]+fray divine damage and inflict electrified on all characters caught in the cross, then teleport all characters out of the affected area into the nearest free space of your choice. Characters can pass a save to choose which side they end up on.\nThe affected area becomes a crackling wall of lightning that does not block line of sight, but blocks all movement except teleporting. This effect ends at the end of the next round.\nAllies can spend 1 action to teleport across the wall from an adjacent space, placing them on the closest adjacent space on the other side.\nIf any version of this ability has no valid space in which teleport a character to, still deal damage, but this ability doesn’t create the lightning wall.",
+    "infusion": {
+      "cost": 3,
+      "name": "Ragnarok",
+      "area": "After this ability resolves, scathing divine lightning hits a quarter of the map of your choice. Characters within take [D]+fray Divine damage."
+    },
+    "tags": [
+      "Divine"
+    ],
+    "talents": [
+      {
+        "rank": "Götterdämmerung",
+        "description": "Gain the Götterdämmerung infuse option.",
+        "infusion": {
+          "cost": 6,
+          "name": "Götterdämmerung",
+          "area": "After this ability resolves, scathing divine lightning hits every quarter of the map but one of your choice. Characters within take 2[D]+fray Divine damage."
+        }
+      }
+    ]
+  },
+  {
+    "id": "elemental",
+    "job": "stormbender",
+    "name": "Elemental",
+    "description": "On account of the magic that is in my body,\nTurn aside, thou wretch, go with thy face diverted from my majesty!\nI call the elements into the temple of my body. Be scattered like dust, and feed the wind!",
+    "chapter": 1,
+    "action": "Free action",
+    "resolve": 4,
+    "effect": "While in this stance, you teleport to your sprite’s space and merge with them, replacing both of you with an Elemental form. This stance automatically refreshes at the start of your turn and ends if you exit it as a free action, are defeated, or leave combat. Re-summon your sprite if you exit this stance.\nWhile you are an Elemental:\n- You are a flying, phasing, blast 1 terrain effect as well as a character. You can share space with characters.\n- Your tumult trait now triggers in your space instead of your sprite’s.\n- You ignore the adjacency penalty for ranged attacks.\n- You have resistance to any character standing in your area\nWhen you take this ability, choose one of the following effects, which is active for the rest of combat:\n- Frost storm: Your area is difficult terrain for foes, even for flying characters, and foes that end their turn in your area are inflicted with frostbite. Frostbitten characters are shattered.\n- Battering storm: The area of your storm is cover for allies and difficult terrain for foes. At the start of your turn, you may shove all characters in your area 1 space in any direction.\n- Lightning storm: The area of your storm is dangerous terrain. At the start of your turn, roll a d6 for each character in your storm. On a 4+, they are struck by a lightning bolt, taking 2 piercing damage and become electrified.\n- Raging storm: While in Elemental form, your abilities gain Slay: gain 1 Aether, and you may move diagonally.",
+    "tags": [
+      "Stance"
+    ],
+    "talents": [
+      {
+        "rank": "Djinn of the Four Winds",
+        "description": "While in Elemental, all four effects are active at once.",
+        "resolve": 6
       }
     ]
   }
