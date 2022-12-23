@@ -1,0 +1,801 @@
+[
+  {
+    "id": "krfwms_marathon_relay_array",
+    "name": "Marathon Relay Array",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "ARMIGER",
+    "license_level": 1,
+    "effect": "You gain the Wind at Your Back reaction.",
+    "description": "Long marches wear on even the most tenacious soldiers. Sometimes what they need is something to spur them onwards, be it fear, duty, loyalty, or love. Or, in the case of the Marathon Relay Array, a brief electrical pulse directed through another mech’s sensors to jolt their mech’s complaining servos into compliance.",
+    "actions": [
+      {
+        "name": "Wind at Your Back",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "A hostile character's turn ends.",
+        "detail": "You push an allied character in Line of Sight up to 2 spaces. This movement occurs at the end of the turn that triggered this reaction."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_mech_portable_supply_depot",
+    "name": "Mech-Portable Supply Depot",
+    "type": "Deployable",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "source": "KRFW",
+    "license": "ARMIGER",
+    "license_level": 2,
+    "effect": "Expend a charge to place a Supply Depot in a free, adjacent space.",
+    "description": "Despite widespread grumbling about their role as pack mules, many Armiger pilots take to decorating their cargo harnesses in bright colors when they can get away with it, taking what forms of defiances they can against their unenviable roles. These decorations make the supplies they deploy on the field easier to find, as well, and this utility often makes superior officers turn a blind eye to some of the less rude slogans emblazoned on these oversized bindles.",
+    "deployables": [
+      {
+        "name": "Supply Depot",
+        "type": "Deployable",
+        "activation": "Quick",
+        "size": 1,
+        "hp": 10,
+        "evasion": 8,
+        "edef": 8,
+        "detail": "While adjacent to the Supply Depot, a character may Stabilize as a quick action."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_mothman_class_nhp",
+    "name": "MOTHMAN-Class NHP",
+    "type": "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 4
+      }
+    ],
+    "source": "KRFW",
+    "license": "ARMIGER",
+    "license_level": 3,
+    "effect": "Your mech gains the AI tag and Disastrous Omen.",
+    "description": "MOTHMAN Prime is a solitary, brooding individual, who came into the employ of Karimi, Roux, & Fabjani after a deal with Landmark Colonial, taking some of their collected assets from a frontier colony off their hands at shockingly generous prices. Among the contents received was a Swallowtail, equipped with a formerly ATHENA-Class NHP trapped in cascade.<br>Once freed from cascade, the NHP displayed thoroughly warped versions of its typical capabilities, prompting a new classification and name. MOTHMAN Prime remains reclusive, and most clones seem to share a similarly isolated attitude. Karimi, Roux, & Fabjani Wholesalers recommend against installing MOTHMAN-Class NHPs alongside SISYPHUS or ATHENA clones, due to a noted increase in necessary cycling for all NHPs involved.<br>A typical MOTHMAN-Class NHP’s cascade will be characterized by Prophecy, Observation, and Protection.",
+    "actions": [
+      {
+        "name": "Disastrous Omen",
+        "activation": "Protocol",
+        "frequency": "1/scene",
+        "detail": "This must be the first Protocol you use on your turn.<br>You enter a state of prophetic foresight and immediately take a pseudoturn, before your actual turn. Whenever you take an action during your pseudoturn, you learn what the effects of that action would be (damage, destruction, structure, stress, etc,) if the action would provoke a reaction, and if your target would pass or fail any save or check provoked by your action. You do not deal actual damage, heat, statuses or conditions during this pseudoturn.<br>At the end of your pseudoturn, you may choose to Accept or Deny your fate. If you Accept your fate, you carry out the same set of actions as your Pseudoturn, with the same results and the same effects as prophesized. If you Deny your fate, you take your turn as normal, and may gain +1 Accuracy to any action you took during your Pseudoturn as you learn from your vision."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_third_eye_blinder",
+    "name": "Third Eye Blinder",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "BURGESS",
+    "license_level": 1,
+    "effect": "Gain the following options for Invade:",
+    "description": "You ask: how can I see the world which is, and know it from the world that is not? I respond: open your eyes and behold the truth of my thunder.<br>You ask: how can I know the impossible truths that hide from my sight? I respond: open your ears and listen to the sound of my storms.<br>You ask: how can I stand against those who would harm my fellows?<br>I respond: you should have blinked.",
+    "actions": [
+      {
+        "name": "Foresight",
+        "activation": "Invade",
+        "detail": "Until the end of their next turn, the target does not have line of sight to characters within range 3."
+      },
+      {
+        "name": "Hindsight",
+        "activation": "Invade",
+        "detail": "Whenever the target successfully hits another character, they lose Line of Sight to that character until the end of their next turn. This can only be used 1/scene on each character, and lasts until the end of their next turn."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_vast_leather_silhouette_baffle",
+    "name": "Vast Leather Silhouette Baffle",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "BURGESS",
+    "license_level": 2,
+    "effect": "Your mech has Resistance to all burn, heat, and damage from passed saves, missed attacks, and adjacency effects from hostile sources.",
+    "description": "Vast skin is remarkably resilient, often requiring specialized tools to pierce. Shrouding a mech in artificial Vast leather, therefore, is both an exercise in frustration, and a very effective method of protecting it from incidental damage from pesky things like grenades, rockets, and poorly aimed storms of bullets."
+  },
+  {
+    "id": "krfwms_taskkill_ego",
+    "name": "taskkill/ego",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "BURGESS",
+    "license_level": 2,
+    "effect": "Gain the following options for Invade:",
+    "description": "“Look, see, the ability to turn a pilot’s consciousness off is actually a really useful utility to have. I mean, I’ve turned mine off for this meeting, and none of you would have known if I hadn’t said anything!”<br>-Hanan Karimi, Founding Partner",
+    "actions": [
+      {
+        "name": "Transcendence of Form",
+        "activation": "Invade",
+        "detail": "Until the end of their next turn, the target’s attacks are made with no accuracy or difficulty."
+      },
+      {
+        "name": "Transcendence of Mind",
+        "activation": "Invade",
+        "detail": "Until the end of their next turn, the target’s checks and saves are made with no accuracy or difficulty."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_snallygaster_class_nhp",
+    "name": "SNALLYGASTER-Class NHP",
+    "type": "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "KRFW",
+    "license": "BURGESS",
+    "license_level": 3,
+    "effect": "Your mech gains the AI tag and Seven Sided Star.",
+    "description": "One of Karimi, Roux, & Fabjani’s few offerings unavailable in bulk quantities, SNALLYGASTER-Class NHPs are not considered inventory by the wholesaler at all. Instead, pilots must undergo a mandatory three standard week training seminar (or show certificate of prior completion thereof,) interview with SNALLYGASTER Prime, and sign an employment contract with their assigned NHP with exceptionally strict punishment clauses for breaking its many requirements. Legally, SNALLYGASTER clones are considered equal partners in their pilots’ endeavors, are entitled to an equal cut of the earnings from all jobs they deploy on, and must be consulted for major decisions like any other pilot.<br>SNALLYGASTER clones tend towards more level-headed personalities, often quite content to offer their thoughts on a topic, then follow the lead of their team. Their cycling schedules tend to be longer than average for a military-spec NHP, a trait many attribute to the safety and security of their employment contracts.<br>A typical SNALLYGASTER-class NHP’s cascade will be characterized by Violence, Flight, and Venom.",
+    "actions": [
+      {
+        "name": "Seven Sided Star",
+        "activation": "Quick",
+        "detail": "Make an attack with a single weapon against a character within range. If this attack destroys the target, gain 1 heat, fly up to one space ignoring reactions and engagement, and make another attack against a different target in range of the same weapon, dealing +1 Bonus Damage per target destroyed this turn. You may continue to make attacks like this until you either fail to destroy a character or destroy seven characters."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_groundbreaker_directed_diggers",
+    "name": "Groundbreaker Directed Diggers",
+    "type": "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "source": "KRFW",
+    "license": "CASTELLAN",
+    "license_level": 1,
+    "description": "Despite marketing, operations manuals, and widespread portrayal by media and militia, Groundbreakers are not explosives. They are, instead, semi-autonomous drones meant for rapidly preparing farmlands for wells and fields. The combat model has had their typical power supplies replaced with a high-yield, short lifespan miniature reactor that will self-cannibalize at the end of a pre-programmed routine.",
+    "actions": [
+      {
+        "name": "Foxhole Charges",
+        "activation": "Quick",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          }
+        ],
+        "detail": "Throw a grenade within range 5. A Size 2 area of ground lowers its elevation by one space. Spaces of ground adjacent to this area raises its elevation by one space. Any characters caught in the initial area must pass a Hull save or fall prone."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Moatdigger Entrenching Device",
+        "type": "Mine",
+        "range": [
+          {
+            "type": "Line",
+            "val": 8
+          }
+        ],
+        "detail": "This mine may be placed on liquid surfaces. Whenever a character moves over or adjacent to this mine, it detonates in a line 8 path towards the character that triggered it. Characters within this line must pass a Hull save or fall prone and take 1d6 kinetic damage, taking half damage and not falling prone on a success. The ground in this line 8 area lowers in elevation by one space. Two line 8 areas of ground adjacent and parallel to this line raise their elevation by one space. If the initial line intersects a liquid body, it fills with that liquid."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_castle_doctrine",
+    "name": "Castle Doctrine",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "KRFW",
+    "license": "CASTELLAN",
+    "license_level": 2,
+    "description": "Sheer variety in mech capabilities make it difficult to produce one size fits all solutions for rapid tactical repositionment. Despite that, it is Krimi, Roux, & Fabjani’s firmly held belief that making sure the blast shields are between the explosion and you is worth some minor reactor damage.",
+    "actions": [
+      {
+        "name": "Activate Castle Doctrine",
+        "activation": "Quick",
+        "detail": "Move up to your speed. You must end this movement adjacent to an ally. After you move, your ally moves to a free space adjacent to the opposite side of you. Your ally's movement is involuntary, ignores engagement and reactions, and counts as 0 spaces of movement. If there are no valid free spaces for an ally to occupy, you take AP Kinetic damage equal to 1+their size. This damage cannot be reduced."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_stepladder_lift_system",
+    "name": "\"Stepladder\" Lift System",
+    "type": "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 4
+      }
+    ],
+    "source": "KRFW",
+    "license": "CASTELLAN",
+    "license_level": 2,
+    "effect": "Expend a charge to place a Stepladder in a free, adjacent space. The Stepladder does not obstruct movement.",
+    "description": "“Yes, we are in fact selling a portable cargo elevator. No, we are not joking. Do you have any idea how much time in trench warfare is spent climbing in and out of trenches? Good god, man, that time could be spent firing your weapon instead!”<br>-Hanan Karimi, Founding Partner",
+    "deployables": [
+      {
+        "name": "Stepladder",
+        "type": "Deployable",
+        "activation": "Quick",
+        "size": 1,
+        "hp": 10,
+        "evasion": 5,
+        "edef": 5,
+        "detail": "When a character occupies the same space as the Stepladder, climbing adjacent terrain or objects costs them only one space of movement."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_regolith_bracing_maneuver",
+    "name": "Regolith Bracing Maneuver",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "CLAVIGER",
+    "license_level": 1,
+    "effect": "Whenever you brace, you may choose to take 2 Heat. If you do, you generate a Zone of Difficult Terrain in a Burst 1 around you that lasts until the end of the scene. You ignore all movement penalties from this Difficult Terrain. Any characters within this Zone when you create it must succeed on a Hull Save or be knocked Prone.",
+    "description": "“It reached out. It reached out and pushed, and the stone gave way, but I did not. I wish I had. That would be kinder.”"
+  },
+  {
+    "id": "krfwms_tornado_alley",
+    "name": "Tornado Alley",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "CLAVIGER",
+    "license_level": 2,
+    "description": "“Its breath, it breathed, or I breathed, or breath breathed. I could hide then. That amused it.”",
+    "actions": [
+      {
+        "name": "Activate Tornado Alley",
+        "activation": "Quick Tech",
+        "detail": "Create a Line 8 Zone, 8 spaces high, starting within Sensors. Characters are unable to pass through this Zone, but they may still attack through it. If a flying character would enter the Zone, they must pass a Hull save or immediately fall prone in a space adjacent to the Zone and be unable to fly until the end of their next turn. On a success, their movement immediately ends as if Engaged, and they may move to any space adjacent to the Zone. This Zone lasts until the end of the Scene, or until this system is used again."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_consecrate",
+    "name": "Consecrate",
+    "type": "Tech",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "CLAVIGER",
+    "license_level": 2,
+    "description": "“You do not understand! It did not kill me, it just made me stop. I was not, and then, once more, I was. And it made me.”",
+    "actions": [
+      {
+        "name": "Activate Consecrate",
+        "activation": "Full Tech",
+        "detail": "Create a Blast 2 Zone within sensors. Other Zones have no effect within the area of this Zone. This Zone lasts until the end of the Scene, or until this system is used again."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_cartographic_expeditionaries",
+    "name": "Cartographic Expeditionaries",
+    "type": "Drone",
+    "sp": 2,
+    "source": "KRFW",
+    "license": "CLAVIGER",
+    "license_level": 3,
+    "effect": "You may deploy this drone to a free space within Sensors and Line of Sight.",
+    "description": "“...Did they not return? It can’t have just been me. I cannot have left them there, with it, no, no… They must have returned. They must have! They must have!”",
+    "deployables": [
+      {
+        "name": "Cartographic Expeditionaries",
+        "type": "Drone",
+        "size": 0.5,
+        "hp": 5,
+        "armor": 1,
+        "evasion": 10,
+        "edef": 10,
+        "detail": "This drone emits a Burst 1 Zone. If this Zone intersects with any other Zones, it becomes an extension of that Zone. This may cause multiple Zone effects to overlap.<br>You may recall or redeploy the Cartographic Expeditionaries as a quick action. Until recalled or destroyed, it remains deployed until the end of the scene."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_force_of_will",
+    "name": "Force of Will",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "DESPOT",
+    "license_level": 1,
+    "effect": "When you or a character you are grappling are subjected to involuntary movement, you may choose to bring along one character you are grappling. If you do so, treat all terrain as Difficult Terrain for the duration of the involuntary movement.",
+    "description": "Similar to the Synthetic Muscle Netting offered by IPS-N, the “Force of Will” suite of upgrades offered by Karimi, Roux, & Fabjani allows a mech to sink specialized stakes into another mech to maintain a vice-like grip on it."
+  },
+  {
+    "id": "krfwms_valorous_service_awards",
+    "name": "Valorous Service Awards",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "DESPOT",
+    "license_level": 2,
+    "effect": "Whenever you inflict Knockback on a character at a lower elevation, increase the total Knockback by 1. Whenever a character at a lower elevation inflicts Knockback on you, decrease the total Knockback by 1.",
+    "description": "“Medals are nice. They look good on a shelf. They sound important in a dossier. They feel good to receive. But mounting them to your chassis gives no tactical advantage whatsoever, unless you’re planning on auctioning it off. No, what they do is say something very simple: you don’t have what it takes to kill me.”<br>-Hanan Karimi, Founding Partner"
+  },
+  {
+    "id": "krfwms_grafton_class_nhp",
+    "name": "GRAFTON-Class NHP",
+    "type": "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "KRFW",
+    "license": "DESPOT",
+    "license_level": 3,
+    "effect": "Your mech gains the AI tag, and cannot lose Line of Sight to allied characters by any means except by taking the Whistle reaction.",
+    "description": "GRAFTON-Class NHPs occupy a unique space in Karimi, Roux, & Fabjani’s catalog of NHPs, as a class of NHP offered primarily for civilian usage, as opposed to military. GRAFTON-Class NHPs show a marked inclination towards subaltern supervision in manual labor departments, with many frontier industrial centers employing multiple GRAFTON-class NHPs to run their manufacturing and shipping hubs.<br>In spite of this, it is not unheard of for GRAFTON-class NHPs to have preferences that go completely against type, preferring the work aboard a combat chassis to civilian work, and these clones are offered to appropriately trained pilots. Those who obtain a combat-spec clone are required to spend a two week period with their new partner to form an appropriate bond; once formed, however, there is little that can break the bond again.<br>A typical GRAFTON-Class NHP’s cascade will be characterized by Brutality, Loyalty, and Blindness.",
+    "actions": [
+      {
+        "name": "Whistle",
+        "activation": "Reaction",
+        "frequency": "Unlimited",
+        "trigger": "A Hostile character causes an Allied character within line of sight to mark Structure or Stress.",
+        "detail": "You inflict 4 Knockback on the target before the attack resolves, and pull your ally up to 4 spaces in any valid direction. If this would put the target out of range, the attack is canceled. You lose Line of Sight to both characters for the rest of the scene. This reaction may be used an unlimited number of times per round."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_sailcloth_shrouding",
+    "name": "Sailcloth Shrouding",
+    "type": "System",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "MARQUESS",
+    "license_level": 1,
+    "effect": "At the start of each scene, you gain 8 Overshield.",
+    "description": "Easily replaced with some free time, shroudings keep mud, dirt, and other detritus out of sensitive joints to prevent wear and tear. They also sometimes catch bullets meant for vital systems."
+  },
+  {
+    "id": "krfwms_powder_gang",
+    "name": "Powder Gang",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "MARQUESS",
+    "license_level": 2,
+    "description": "An array of small drones that tuck away in open spaces in their controlling frame when not needed, the Powder Gang exclusively deals in replenishing ammunition reserves, as giving them the capacity to understand the purpose of and interact with that which they are handling has only led to disaster previously.",
+    "actions": [
+      {
+        "name": "Activate Powder Gang",
+        "activation": "Quick",
+        "detail": "Reload one of an adjacent character's Loading weapons."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_integral_ammo_press",
+    "name": "Integral Ammo Press",
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "MARQUESS",
+    "license_level": 3,
+    "description": "When transporting sufficient munitions for allied forces is too cumbersome, a small-scale printer can serve the same purpose at the cost of greater power draw. Due to the energy expenditure required, all munitions produced by this modular upgrade are linked to their originator’s fire control systems, to ensure they are not wasted.",
+    "actions": [
+      {
+        "name": "Activate Integral Ammo Press",
+        "activation": "Full",
+        "detail": "Reload all of an adjacent character’s Loading weapons. Any weapon reloaded in this way cannot be fired until the target successfully hides, succeeds on an Agility save as a Full Action, or you grant permission."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_flatwoods_class_nhp",
+    "name": "FLATWOODS-Class NHP",
+    "type": "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "KRFW",
+    "license": "MARQUESS",
+    "license_level": 3,
+    "effect": "Your mech gains the AI tag and Refraction.",
+    "description": "Among Karimi, Roux, & Fabjani’s offerings, few have spawned discussion and concern like the FLATWOODS-Class NHP. When shackled, FLATWOODS-Class NHPS are barely communicative, and often manifest their presence as overlong shadows of the mechs they are installed in, two ever-glowing lights peering out from the umbra of their home machines. Due to their unwillingness to communicate, cycling schedules are difficult to create at best. At worst, they can be little more than guesswork, occasionally leading to catastrophic unshacklings and cascades.<br>In spite of this, Karimi, Roux, & Fabjani continue to offer the NHP to pilots, with generous employment contracts and recommendations to allow the NHP time to do as they like between deployments. When questioned why, the founding partners claimed that, against all odds, the crueler thing would be to prevent the NHPs from going out into the world, “by Prime’s own admission.”<br>A typical FLATWOODS-class NHP’s cascade will be characterized by Deception, Terror, and Illness.",
+    "actions": [
+      {
+        "name": "Refraction",
+        "activation": "Protocol",
+        "frequency": "1/scene",
+        "detail": "Until the end of your next turn, your mech counts as 2 sizes larger (to a maximum of Size 4.) While enlarged in this manner, you take no penalties from Engagement, other characters may move through and end their turns in spaces occupied by you, and as long as there is enough space for your original size, you may end your turn overlapping obstructions, cover, or other characters. When this effect would end, you may extend it for one more turn by taking Heat equal to your effective size+1."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_overwhelm_safeties",
+    "name": "Overwhelm Safeties",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "REEVE",
+    "license_level": 1,
+    "description": "“Look, okay, fine, we’ll put out the press release! Yes, we’ll agree to say that H0R_OS is the superior technical suite, we’ll agree to pay what they want, we’ll do it! Even if we didn’t rip them off, cooking off ammo to sublimate armor is very different, I can’t fucking handle this campaign against me anymore! They win!”<br>-Hanan Karimi, Founding Partner",
+    "actions": [
+      {
+        "name": "Activate Overwhelm Safeties",
+        "activation": "Quick Tech",
+        "detail": "Choose a character within Line of Sight and Sensors. That character must make an Engineering save or take 2 Heat and emit a Burst 1 area of superheated chaff, taking 1 Heat on a success. This zone of chaff lasts until the end of the Scene, or until you use this system again. Tech attacks against characters in this zone take +2 Difficulty and treat the target as invisible."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_opening_remarks",
+    "name": "Opening Remarks",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "REEVE",
+    "license_level": 1,
+    "effect": "Gain the following options for Invade:",
+    "description": "“The best defense is a good offense. The best offense is also a good offense. In general, it’s best to start attacking immediately, and not let up until the other guy is either dead or stupid.”<br>-Hanan Karimi, Founding Partner<br><br>Legal remarks not endorsed by Karimi, Roux, & Fabjani Wholesalers",
+    "actions": [
+      {
+        "name": "Appeal to Authority",
+        "activation": "Invade",
+        "detail": "The target makes all Checks and Saves against your Save Target until the start of your next turn."
+      },
+      {
+        "name": "Appeal to Ignorance",
+        "activation": "Invade",
+        "detail": "Until the start of your next turn, the target’s Tech Attacks target Evasion and use the lowest of their Grit, Systems, or Attack Bonus as appropriate."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_remote_iff_override",
+    "name": "Remote IFF Override",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "REEVE",
+    "license_level": 2,
+    "description": "Derived from paracode, like so many other technological systems, this electronic assault package allows a pilot to drive a target frame’s computers into a frenzy as they identify even themselves as threats, and work overtime to purge any and all “intrusions.”",
+    "actions": [
+      {
+        "name": "Activate Remote IFF Override",
+        "activation": "Quick Tech",
+        "detail": "Make a tech attack against a character within Sensors and Line of Sight. That character gains 2 Heat and until the start of their next turn, that character cannot have more than one Condition. Any time that character would gain a new Condition, it replaces the previous one. In the event the character receives multiple Conditions at once, the source of the Conditions decides which one remains."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_sentencer_nanite_hive",
+    "name": "Sentencer Nanite Hive",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "REEVE",
+    "license_level": 3,
+    "effect": "This system charges as a quick action, priming swarming nanomachines. While it is charged, you gain the Punitive Measures reaction. It can only hold one charge at a time, but charges last for the rest of the scene or until used.",
+    "description": "In spite of many options to baffle and obscure allied frames’ position, sometimes the best solution is to adjust the aim of the enemy. To that end, the Sentencer Nanite Hive allows a mech to forcibly reposition another frame’s weapons at the moment they begin their assault, sending an attack wide or potentially even into another foe.",
+    "actions": [
+      {
+        "name": "Charge Sentencer Nanite Hive",
+        "activation": "Quick",
+        "detail": "Charge the Sentencer Nanite Hive, gaining the Punitive Measures reaction."
+      },
+      {
+        "name": "Punitive Measures",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "A hostile character within Range 5 of you makes an attack.",
+        "detail": "That character must pass a Systems save. On a failure, you choose the target of their attack. The Sentencer Nanite Hive loses its charge."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_la_llorona_class_nhp",
+    "name": "LA LLORONA-Class NHP",
+    "type": "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      }
+    ],
+    "source": "KRFW",
+    "license": "REEVE",
+    "license_level": 3,
+    "effect": "Your mech gains the AI tag and Where am I to Take You?.",
+    "description": ">//hello child<br>>//come here now<br>>//all will be okay<br>>//the world cannot hurt you now<br>>//mother is here to protect you<br>>//mother will keep you safe from the wolves at the door<br>>//mother will make sure nobody can ever hurt you again<br>>//just rest now<br>>//sleep tight in my embrace<br>>>//and sleep forever in the dark<br>A typical LA LLORONA-class NHP’s cascade will be characterized by Sorrow, Water, and Revenge.",
+    "actions": [
+      {
+        "name": "Where am I to Take You?",
+        "activation": "Full",
+        "frequency": "1/scene",
+        "detail": "Choose up to four characters in Sensors and Line of Sight. The targets fall Prone. Assign each target one or more of the following:<br>- make a Hull save or become Shredded<br>- make an Agility save or become Immobilized<br>- make a Systems save or become Jammed<br>- make an Engineering save or become Impaired<br>No save may be assigned twice. These saves cannot benefit from Accuracy except to negate Difficulty. The targets cannot lose these Conditions until the end of your next turn, at which point they automatically fall off."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_scarcoat_reactive_armor",
+    "name": "SCARCOAT Reactive Armor",
+    "type": "System",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "VASSAL",
+    "license_level": 1,
+    "effect": "You gain the Brush it Off reaction.",
+    "description": "Simple to mount and simpler to print, SCARCOAT Reactive Armor prevents critical damage to a mech from crippling it by dispersing some of the damage into an ablative layer of panels that obscure the form of the frame once destroyed, increasing survivability by baffling imprecise fire.",
+    "actions": [
+      {
+        "name": "Brush it Off",
+        "activation": "Reaction",
+        "frequency": "1/mission",
+        "trigger": "You take Structure damage with a result of Glancing Blow or System Trauma.",
+        "detail": "You may sacrifice this system instead of the usual outcome. Gain Overshield equal to the damage dealt to you."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_master_of_the_house",
+    "name": "Master of the House",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "source": "KRFW",
+    "license": "VASSAL",
+    "license_level": 2,
+    "effect": "You gain the Guiding Hand reaction.",
+    "description": "IFF-linked weapon systems allow combatants to avoid firing on their own allies a majority of the time, much more than unaided firing solutions. However, creative (or reckless) pilots may retrofit IFF protocols to instead allow them to “nudge” enemy firing lines as well.",
+    "actions": [
+      {
+        "name": "Guiding Hand",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "You are included in the Area of Effect of a Cone, Blast, or Line.",
+        "detail": "You may expend a charge to reposition the effect template. The template must still include you, and its placement must still be valid."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_land_grab",
+    "name": "Land Grab",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "VASSAL",
+    "license_level": 3,
+    "description": "A remote solution to restrained allies, the system is named for unconventional usages during testing, where test pilots would use it to springboard off of each other to cover ground with surprising rapidity.",
+    "actions": [
+      {
+        "name": "Activate Land Grab",
+        "activation": "Quick Tech",
+        "detail": "Choose a Grappled character within Sensors. Any characters they are grappling must pass a Hull save or be Pushed 4 spaces directly away. The target may attempt an Agility save for each failed Hull save to maintain that grapple, but takes 1 Difficulty for every character they are grappling."
+      }
+    ]
+  },
+  {
+    "id": "krfwms_cornucopia_drone",
+    "name": "Cornucopia Drone",
+    "type": "Drone",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "VASSAL",
+    "license_level": 3,
+    "effect": "You may deploy this drone to a free space within Sensors and Line of Sight.",
+    "description": "Though similar to the Restock Drone from IPS-N, the Cornucopia Drone is designed to be reused, functioning as an auxiliary power supply for supporting friendlies in the field and boosting their capabilities, as opposed to replenishing lost materiel.",
+    "deployables": [
+      {
+        "name": "Cornucopia Drone",
+        "type": "Drone",
+        "size": 0.5,
+        "hp": 5,
+        "evasion": 10,
+        "edef": 10,
+        "detail": "Gain the Feast of Plenty reaction, which may be taken any number of times per round.",
+        "actions": [
+          {
+            "name": "Feast of Plenty",
+            "activation": "Reaction",
+            "frequency": "Unlimited",
+            "trigger": "An allied character begins their turn while adjacent to the Cornucopia Drone.",
+            "detail": "You may clear 1 condition from the triggering character and grant them +1 Accuracy to their next attack, check, or save."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "krfwms_cold_iron_spurs",
+    "name": "Cold Iron Spurs",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "KRFW",
+    "license": "VIDAME",
+    "license_level": 2,
+    "effect": "1/round, when you start a move while adjacent to a hostile character, deal 2 Kinetic damage to them. If they hit you with an Overwatch provoked by this movement, the damage becomes AP.",
+    "description": "KRFW’s custom-forged, heel mounted spikes give the attached mech an extra “kick” to dissuade opportunistic potshots against it at point blank range. Go for the jingle-jangle jugular."
+  }
+]

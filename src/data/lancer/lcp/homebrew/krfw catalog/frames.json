@@ -1,0 +1,500 @@
+[
+  {
+    "id": "krfwf_armiger",
+    "license_level": 2,
+    "source": "KRFW",
+    "name": "ARMIGER",
+    "mechtype": [
+      "Artillery",
+      "Support"
+    ],
+    "description": "Designed in conjunction with the Castellan, the Armiger provides militia support from the backlines, maintaining the ever-critical supply lines with both watchful eye and heavy weaponry. Its rugged construction makes it well suited to its typical role of militia pack mule, hauling large-scale ordnance and small printers to the battlefield before taking position in its favored spaces.<br><br>In spite of its own incredible weight capacity, many initial deployments of Armigers found the mechs used for cargo more than combat, to the point that they would be fielded with no weapons at all in order to make room for more equipment. Armiger pilots who came under attack would then inevitably defend themselves with their supplies, leading to the Armiger’s unique line of semi-improvised weaponry.",
+    "mounts": [
+      "Flex",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 3,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Stable, Steady",
+        "description": "Allies within Range 1 of the Armiger may use weapons with the Ordnance tag after taking other actions or moving."
+      },
+      {
+        "name": "Rangefinder",
+        "description": "When the Armiger attacks with any Difficulty, it subtracts the lowest result of all Difficulty dice, not the highest."
+      },
+      {
+        "name": "Overloaded",
+        "description": "The Armiger takes 1 heat whenever it boosts. When printing or repairing, the Armiger is always the last mech completed."
+      }
+    ],
+    "core_system": {
+      "name": "Gravitational Reduction Suite",
+      "description": "Developed using technology re-engineered from a mothballed and then promptly lost Iskander, the Gravitational Reduction Suite is a nexus of support systems attached to the Armiger’s external frame that allow it to carry several times its own weight in supplies. Easy access to these supplies enables unparalleled in-field flexibility, allowing the Armiger to carry an entire squad’s munitions and repair materials by itself. Foiling designer intentions, however, most Armiger pilots tend to allocate the entirety of their supply capacity to their own needs.",
+      "active_name": "Resupply",
+      "active_effect": "The Armiger may immediately replace all equipped weapons and systems with other weapons or systems it has access to. Limited systems and weapons retain their total number of charges left when switched out. Weapons or Systems which have been destroyed, have no charges left, or are Unloaded cannot be switched out. This action is <b>Efficient</b>, and refunds 1 Core Power at the end of any scene in which it’s used.",
+      "activation": "Protocol"
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "y_pos": 0
+  },
+  {
+    "id": "krfwf_burgess",
+    "license_level": 2,
+    "source": "KRFW",
+    "name": "BURGESS",
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "description": "An early model of mech from Karimi, Roux, & Fabjani, the Burgess never reached market saturation the way other mechs from similarly sized companies did, in part due to its bizarre reactor array, and in part due to its limited armament capacity. Filling an unusual space in the catalog, the Burgess became a more specialist pick for groups that needed its very specific form of flexibility.<br><br>In recent years, though, the Burgess has seen a surge in popularity among mercenary groups and freelance operators. Its limited deployment in the time since its release has made it a well-supported but still relatively unknown mech for pilots who enjoy its unusual, cyclical plan of attack.",
+    "mounts": [
+      "Main",
+      "Main",
+      "Main"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Concealed Carry",
+        "description": "When resting, the Burgess may repair one weapon or system for free."
+      },
+      {
+        "name": "Featherfoot",
+        "description": "When subject to forced movement, the Burgess may move one less space."
+      },
+      {
+        "name": "Blaze of Glory",
+        "description": "When the Burgess melts down or Self Destructs, it explodes in a Blast 3. Characters caught in the blast take +1 Difficulty on the Agility save."
+      }
+    ],
+    "core_system": {
+      "name": "\"Pale Flame\" Tripartite Reactor Array",
+      "description": "During initial prototyping, due to issues with power draw from the original reactor, the Burgess was fitted with an experimental rotating array of three coldcores instead. After they resumed testing, the team soon found the initial flaw that limited power consumption, and were left with the unusual, high-power array. Rather than retrofit the initial reactor back into place, they elected to experiment with diverting the array’s power flow to maximize the Burgess’s output.<br><br>Despite the initial successes of this system, a company policy of safety took precedence over the sheer power now available, and the array was adjusted to focus the power draw in a more controlled manner, prompting the current release of the mech to adjust stances and focuses as it cycles through its three reactors to maintain even power draw.",
+      "active_name": "Dreadfully Distinct Against the Dark",
+      "active_effect": "The Burgess does not take a turn next round. At the end of each ally’s turn, the Burgess may make one Quick Action. At the end of each hostile character’s turn, the Burgess may Overcharge, gaining heat and increasing the Overcharge die as normal. If the Burgess has less than three allies, it may ignore Overcharge costs until it has taken three Quick Actions.",
+      "activation": "Full",
+      "passive_name": "A System of Cells, Interlinked",
+      "passive_effect": "The Burgess enters the battlefield in a Stance of its choice. Using a Stance’s benefit immediately cycles the Burgess to the next Stance in order. The Burgess may not use more than one Stance’s benefit in a round.<br>-<i>Rising Sun Stance:</i> The Burgess deals +1d6 Bonus Damage on a Ranged attack.<br>-<i>Clear Sky Stance:</i> The Burgess deals +1d6 Bonus Damage on a Melee attack.<br>-<i>Falling Twilight Stance:</i> The Burgess deals +2 Heat on a Tech attack."
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "y_pos": 0
+  },
+  {
+    "id": "krfwf_castellan",
+    "license_level": 2,
+    "source": "KRFW",
+    "name": "CASTELLAN",
+    "mechtype": [
+      "Defender"
+    ],
+    "description": "Due to the reality of supply times out on the frontier of the galaxy, one of the very first things most colonies need to establish is an agrarian base, converting swathes of terrain to farmland. Huge expanses of open, sweeping land inevitably prove difficult for defending forces, however, and skirmishes that break out on freshly developing border colonies can often result in widespread damage.<br><br>In an effort to mitigate this problem, Karimi, Roux, & Fabjani offer Castellan licenses in bulk to colonial militias, the workhorse chassis serving as a combination defensive emplacement and firing platform. Its thickened armor makes it a popular choice for its intended role providing frontline cover for other frames, while its associated armaments have made it a popular choice for boarding and siege operations as well.",
+    "mounts": [
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Crenelated",
+        "description": "The Castellan grants Hard Cover as an object of the same size. The Castellan blocks Line of Sight for characters the same size as it or smaller."
+      },
+      {
+        "name": "Emplacement",
+        "description": "The Castellan is immune to all forced movement and Prone from characters the same size as it or smaller."
+      },
+      {
+        "name": "Layered Defenses",
+        "description": "1/round, the Castellan’s pilot may reroll a save or check that targets them directly. If the Pilot goes Down and Out, they gain +2 to the d6 roll."
+      }
+    ],
+    "core_system": {
+      "name": "\"Portcullis\" Active Defense System",
+      "description": "As frontier colonies may often find printstock in short supply, the Castellan’s design incorporates a secondary reactor to power its signature defense system. When spun up, the “Portcullis” makes use of local materials to generate and maintain further cover, augmenting the Castellan’s capabilities as a mobile bulwark.<br><br>Karimi, Roux, & Fabjani disavows any knowledge of blueprints on the Omninet to turn a decommissioned Castellan’s “Portcullis” Active Defense System into a soil aeration tool.",
+      "active_name": "Clear the Room",
+      "active_effect": "For the rest of the scene, the Castellan may draw line of sight from any adjacent objects that grant Hard Cover. 1/round, the Castellan may use an adjacent object that grants Hard Cover as the source of an attack, drawing Sensors, Range, and Threat from it.",
+      "activation": "Protocol",
+      "passive_name": "Doors and Corners",
+      "passive_effect": "The Castellan enters the battlefield with two Size 1 Fortifications placed in spaces adjacent to it. These Fortifications move with the Castellan, provide Hard Cover, share its evasion, e-defense, armor, and hp, and have resistance to all damage. As a protocol, the Castellan may reposition either or both of its Fortifications to different spaces adjacent to it.<br>Whenever you rest or repair, your Fortifications regain all HP, and are automatically repaired if they were destroyed."
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "y_pos": 0
+  },
+  {
+    "id": "krfwf_claviger",
+    "license_level": 2,
+    "source": "KRFW",
+    "name": "CLAVIGER",
+    "mechtype": [
+      "Controller"
+    ],
+    "description": "Intended as an expeditionary machine first, the Claviger is a vanguard frame from Karimi, Roux, & Fabjani that specializes in safeguarding its allies from threats without violent solutions. Chrono-ontological engines mounted to the machine allow it to keep a nearby “bubble” of spacetime selectively frozen, preventing allies from setting off hostile munitions, suffering the effects of weathering, or even briefly reverting terrain to a more passable state.<br><br>Claviger pilots require regular evaluations, and demonstrate an increased burnout rate in comparison to their fellows in other KRFW frames. Despite prevalent jokes in militia forces making use of Clavigers, pilots are not affected by the Chrono-ontological effects of their machine. Burnout is instead attributed to a statistically significant in nightmares, hallucinations, or other spectral visions of a shape described only as a “chitinous, leaping void.”<br><br>New Keyword:<br><b>Zone:</b> A Zone is an area with persistent effects, not attached to a character. Zones can be objectives, Terrain, Soft Cover, or placed by systems or environmental effects.",
+    "mounts": [
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Rules of Hospitality",
+        "description": "Proximity-based systems adjacent to the Claviger do not expire, and only activate if the Claviger permits."
+      },
+      {
+        "name": "Mind the Gap",
+        "description": "Environmental effects and Dangerous Terrain have no effect in spaces adjacent to the Claviger."
+      }
+    ],
+    "core_system": {
+      "name": "Glimpse of the Dying Light",
+      "description": "“-and it looked at me. Do you know what it means to be seen by something like that? To exist in its view? You realize you are but one reflection in one facet of one of its eyes, but it sees you, and it knows you are there, outside of here, and it recognizes you. It is still recognizing me, here, now. You can not let it see you too.”",
+      "active_name": "Rage",
+      "active_effect": "Choose a Zone you are currently occupying. You become Immobilized and cannot benefit from Cover until the end of the scene, but no character outside the zone can enter it. Characters already in the zone can leave it but cannot re-enter it. You may end this effect as a Quick Action, or it deactivates immediately if you are removed from the Zone, which are the only ways to remove this Immobilized.",
+      "activation": "Full"
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "y_pos": 0
+  },
+  {
+    "id": "krfwf_despot",
+    "license_level": 2,
+    "source": "KRFW",
+    "name": "DESPOT",
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "description": "Ever since the development of flight, aerial control has been a deciding factor in combat. While mechanized chassis are capable of powered flight, few are purpose-designed for it. Enter the KRFW Despot, a frame designed not only to make use of the skies, but punish other frames who dare to try and take control of the battlefield from above.<br><br>In spite of its commanding role on the field, the Despot is KRFW’s smallest frame by far, dwarfed by the majority of the catalog and even more compact than the Vassal. The majority of its bulk comes from the systems necessary to maintain flight, gimbal-mounted engines and directional controls on the mech’s limbs making it surprisingly maneuverable.",
+    "mounts": [
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 4,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Integrated Flight Systems",
+        "description": "The Despot can fly when it moves or Boosts."
+      },
+      {
+        "name": "Course Correction",
+        "description": "When the Despot flies or is subjected to forced movement, it may move one space in a direction of its choice at any point during the movement."
+      },
+      {
+        "name": "Grandeur",
+        "description": "The Despot counts as Size 3 when Ramming or inflicting Knockback."
+      }
+    ],
+    "core_system": {
+      "name": "Retaliation Gauntlets",
+      "description": "A paired set of armored gauntlets for the Despot, the Retaliation Gauntlets allow a pilot to exert control over the normal force in a localized space. Extensive experimentation allows the Despot to further extend the gauntlets’ reach, trading increased power draw for what is hyperbolically marketed as “the ability to snap the laws of motion in half.”",
+      "active_name": "Iron Fist",
+      "active_effect": "For the rest of the scene, the Despot can inflict Knockback in any direction. Whenever the Despot inflicts Knockback on any character, including itself, it can force the target one extra space.",
+      "activation": "Protocol",
+      "passive_name": "Velvet Glove",
+      "passive_effect": "1/turn, when the Despot inflicts Knockback, it may inflict a lesser amount of that Knockback. It may then take the remaining amount of Knockback itself in the opposite direction."
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "y_pos": 0
+  },
+  {
+    "id": "krfwf_marquess",
+    "license_level": 2,
+    "source": "KRFW",
+    "name": "MARQUESS",
+    "mechtype": [
+      "Support"
+    ],
+    "description": "The Marquess, unlike many other frames by Karimi, Roux, & Fabjani, was designed to fill a market niche, rather than an operational one. In an attempt to claim market share from the proliferation of Big Four mechs built around signature weaponry, such as the Sherman, the Marquess was designed around an array of weapons built into its frame that would be able to accept multiple different forms of ammunition to adapt to any situation or defenses.<br><br>During initial testing, the Marquess performed well below expectations, its integral weapons unable to penetrate any test materials. Instead of being scuttled, however, the engineers on the project lobbied for a chance to review the tests. In the aftermath, they discovered that while the Marquess failed to deal meaningful damage, its assault compromised armor on a fundamental level, enabling stronger weapons to strike much harder. With another round of revisions, the Marquess shipped to market as a frontline support frame, capable of standing alongside other vanguard mechs to provide them the force multipliers they needed.",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Seaworthy",
+        "description": "The Marquess is immune to forced movement from environmental effects. Additionally, the Marquess may ignore Difficult or Dangerous terrain effects from liquid surfaces, and may treat liquids as solid ground."
+      },
+      {
+        "name": "Plunderer",
+        "description": "Whenever a non-grunt, non-drone character adjacent to the Marquess is destroyed, the Marquess may gain 2 Overshield as a reaction."
+      },
+      {
+        "name": "To the Teeth",
+        "description": "The Marquess cannot gain new mounts or Integrated Weapons."
+      }
+    ],
+    "core_system": {
+      "name": "Misery's End 32-Pounders",
+      "description": "In lieu of the auxiliary hardpoints many other mechs have, the Marquess integrates a bristling array of comparatively weak weapons that soften targets up for allied attacks. This array typically fires in a directed barrage, but can also strike a devastating swath of the battlefield with sufficient power.",
+      "active_name": "Broadside",
+      "active_effect": "Misery’s End 32-Pounders becomes Cone 7 for the rest of the Scene.",
+      "activation": "Protocol",
+      "integrated": [
+        "krfwmw_marquess_integrated"
+      ]
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "y_pos": 0
+  },
+  {
+    "id": "krfwf_reeve",
+    "license_level": 2,
+    "source": "KRFW",
+    "name": "REEVE",
+    "mechtype": [
+      "Controller"
+    ],
+    "description": "In a departure from their usual model, Karimi, Roux, & Fabjani Wholesalers does not offer the Reeve at bulk rates. This mobile logistics hub is instead only available in individual lots, as its onboard e-war suites often identify other Reeves as hostile actors due to the sheer degree of control each one attempts to exert on the battlefield. Due to this, Reeve pilots tend to wind up with reputations as being hot-headed, arrogant, or otherwise inclined to seize control.<br><br>Another departure from the norm comes in the official documentation of the Reeve’s design, as Karimi, Roux, & Fabjani include very little history of the frame’s development in their documentation. This has led to no small amount of speculation as to the reasoning for the decision, which is only exacerbated by small oddities in the frame’s codebase, which has given rise to a small, dedicated community of individuals poring through every update of the frame’s license for the next piece of the supposed puzzle.",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 12,
+      "speed": 4,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Blind Justice",
+        "description": "Whenever a character fails a save forced by the Reeve, they cannot draw Line of Sight to it or any adjacent characters until the end of their next turn."
+      },
+      {
+        "name": "Above the Law",
+        "description": "The Reeve can use Tech actions on characters unable to be affected by them. Whenever it uses a Tech action on a character that would normally be unaffected, it deals half Heat."
+      },
+      {
+        "name": "Inflexible",
+        "description": "The Reeve takes +1 Difficulty on all agility checks and saves."
+      }
+    ],
+    "core_system": {
+      "name": "Judgment Engines",
+      "description": "In an attempt to corral the hyperactive IFF systems of the Reeve, the frame includes a collection of specially trained machine algorithms, designed to review targets and determine proper response. However, when not utilized for prolonged periods of time, the algorithms can become difficult to control, so the frame also includes provisions for unleashing its full power to override a hostile frame’s systems and force them to reboot prematurely.",
+      "active_name": "Jury Trial",
+      "active_effect": "For the rest of the scene, gain the <b>Execute</b> Reaction.",
+      "activation": "Protocol",
+      "active_actions": [
+        {
+          "name": "Execute",
+          "activation": "Reaction",
+          "trigger": "A character begins their turn.",
+          "detail": "That character must pass a Systems save or their turn immediately ends. If the target has any Burn at the end of their turn, they automatically fail to clear it. On a successful saving throw, that character must reroll all attacks, checks, and saves made on their turn, taking the lower result. This reaction may only be used on any given character 1/scene."
+        }
+      ]
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "y_pos": 0
+  },
+  {
+    "id": "krfwf_vassal",
+    "license_level": 2,
+    "source": "KRFW",
+    "name": "VASSAL",
+    "mechtype": [
+      "Defender",
+      "Support"
+    ],
+    "description": "Friendly fire is inevitable in combat, even in an age of precision controlled smart munitions and semi-real retrocausal projectiles. Rather than attempting to doctrinally re-engineer humanity, Karimi, Roux, & Fabjani engineered a different solution: a mech chassis that could take the punishment of being shot by its allies and stay standing.<br><br>The KRFW Vassal is heavily armored for a frame of its size, making use of advanced intelligent armor plating and networked IFF counterfire systems that enable it to interface with its allies and nudge their aim subtly in the milliseconds before firing to minimize damage to the Vassal.",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 3,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 6,
+      "heatcap": 5,
+      "repcap": 6,
+      "sensor_range": 8,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 4,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Well-Trod",
+        "description": "The Vassal has Resistance to all damage from Allied characters. Allied characters cannot ignore the Vassal’s Armor or Resistance in any way."
+      },
+      {
+        "name": "Footstool",
+        "description": "The Vassal may share spaces with Allied characters."
+      },
+      {
+        "name": "My Own Business",
+        "description": "The Vassal takes +1 Difficulty to all Saves originating from Allied characters. Allied characters treat the Vassal as having 5 Evasion and 5 E-Defense."
+      }
+    ],
+    "core_system": {
+      "name": "Force Distribution Layered Shield Mesh",
+      "description": "The outermost layer of the Vassal, on top of its smart armor and reinforced construction, is the cutting edge Shield Mesh that gives the mech its distinctive battlefield control capabilities. The Vassal automatically absorbs the energy from IFF-linked weaponry thanks to paracausal warning systems, then reroutes excess energy into a blast around the mech to prevent critical damage.",
+      "active_name": "Spread the Wealth",
+      "active_effect": "For the rest of the scene, Share the Blame becomes Range 2.",
+      "activation": "Protocol",
+      "passive_name": "Share the Blame",
+      "passive_effect": "When an Allied character hits the Vassal with an attack, they attack all other characters, objects, and Terrain within Range 1 of the Vassal as well."
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "y_pos": 0
+  },
+  {
+    "id": "krfwf_vidame",
+    "license_level": 2,
+    "source": "KRFW",
+    "name": "VIDAME",
+    "mechtype": [
+      "Striker"
+    ],
+    "description": "The Vidame is one of Karimi, Roux, & Fabjani’s less common licenses, a rare “black-catalog” offering from the company, exclusively made available to pilots with some degree of notoriety or infamy. Like many of KRFW’s frames, the Vidame is designed using blueprints or technology developed by other corporations, in this case based off of the IPS-N Störtebeker. However, unlike the majority of KRFW’s licenses, the Vidame was never intended for dispersal among colonial militias and peacekeeping forces; the frame was, in fact, a personal project of Founding Partner Hanan Karimi, intended for her alone.<br><br>Once more, the base frame would have its core systems ripped out and replaced, the Störtebeker’s TRUESILVER nanites tossed aside in favor of dedicated targeting software and enhanced neural bridges, to further cut down on response delays between pilot thoughts and frame actions. While computational systems and reactor capability suffered in the process, the resultant frame was more than quick and nimble enough for Karimi’s desires.<br><br>According to publicly available logs, the prototype frame was deployed exactly once, though the details of the mission have been stricken from the record. Attempts to reference what fragments have been unencrypted have turned up only dead ends; names of planets that do not exist, star charts that do not match the skies. When interviewed, Karimi denies the test run’s existence at all, seemingly convinced no test run ever happened at all. All the same, the company continues to exclusively offer the frame almost exclusively to those it can plausibly deny any personal connection to…",
+    "mounts": [
+      "Flex",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 6,
+      "heatcap": 4,
+      "repcap": 5,
+      "sensor_range": 3,
+      "tech_attack": -2,
+      "save": 11,
+      "speed": 6,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Tumbleweed",
+        "description": "The Vidame’s movement ignores Engagement, and it can freely move through the spaces of other characters (but may not stop there.) The first time the Vidame passes through another character’s space each round, it reloads all weapons with the Loading tag on one mount."
+      },
+      {
+        "name": "Deadeye",
+        "description": "The Vidame may reroll any Invisibility (or equivalent) roll once."
+      },
+      {
+        "name": "Quickdraw",
+        "description": "The Vidame starts each combat with all of its Loading weapons unloaded."
+      }
+    ],
+    "core_system": {
+      "name": "Járnglófar Compensator Gauntlets",
+      "description": "Even the steadiest of hands can prove themselves fallible in the moment. For frames that specialize in weapons requiring frequent reloading, however, the risks of missing thanks to an errant twitch can prove excessive; the Vidame is no exception to this. In order to maintain the frame’s reaction speeds, however, Karimi required an alternative solution to stabilized, delayed inputs. Enter the Járnglófar Compensator Gauntlets, specialized targeting systems that can keep an errant shot on track and, in a pinch, turn a successful hit into a ricocheting blow worthy of legend.",
+      "active_name": "Showdown",
+      "active_effect": "Trickshot deals full damage for this turn, and may be used on every hit with a Loading weapon. This core power is Efficient, and refunds 1 Core Power at the end of any scene in which it’s used.",
+      "activation": "Protocol",
+      "passive_name": "Trickshot",
+      "passive_effect": "1/round, when you hit with an attack using a Loading weapon, before rolling damage, you may declare that attack a Trickshot. Make a second attack against another target with the same weapon, drawing Range and line of sight from the original target. Both targets take half damage from the attack."
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "y_pos": 0
+  }
+]
