@@ -74,5 +74,24 @@
         "description": "TORMENT - While mock is active, your attacks against your target also gain on hit: gain vigor 1"
       }
     ]
+  },
+  {
+    "id": "curtain_call",
+    "job": "fool",
+    "name": "Curtain Call",
+    "description": "Bring out the fireworks. Fire up the elden magic. Time for a showstopper.",
+    "chapter": 1,
+    "action": "2 Actions",
+    "resolve": 4,
+    "effect": "Target a line area of 1d6+3 spaces, with a maximum of 9 spaces. Teleport adjacent to the first foe in that line, then deliver a killing blow, dealing divine damage. This ability has different effects depending on their position on the line.\nRoll [D] + fray damage once, then apply it the numberoftimeslisted.\n4 spaces: 1 damage. Inflict burning, refund resolve, and can use this limit break again this combat.\n5-6 spaces: x2, inflict Burning\n7-8 spaces: x3, inflict Burning\n9 spaces: x4, inflict burning, and the character is stunned.",
+    "tags": [
+      "Divine"
+    ],
+    "talents": [
+      {
+        "rank": 3,
+        "description": "FINALE - If you trigger any effect at 5+ spaces, gain Slay: Character explodes, dealing 6 divine damage and inflicting burning to all foes in the battlefield, regardless of range or line of sight."
+      }
+    ]
   }
 ]

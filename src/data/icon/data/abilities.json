@@ -1156,5 +1156,278 @@
         "description": "DEMORALIZE - Bleak Mercy gains Slay: daze all foes and shove them 1 in any direction."
       }
     ]
+  },
+  {
+    "id": "cavaliere",
+    "job": "fool",
+    "name": "Cavaliere",
+    "description": "It is not enough to rudely and plainly strike your foe down. One must make it entertaining.",
+    "chapter": 1,
+    "action": "Heavy Melee Attack",
+    "attack": {
+      "hit": "2[D]+fray",
+      "miss": "fray",
+      "effect": "Inflict burning"
+    },
+    "effect": "Before attacking, you must dash exactly 3 spaces in a straight line, then 1 space to the left or right of your movement. Gain phasing during this movement. Any foes you passed through are blinded.",
+    "special": {
+      "name": "Finishing Blow or Slay",
+      "description": "All foes affected take fray damage."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If you start the movement from a higher elevation, the attack gains +1 boon"
+      },
+      {
+        "rank": 2,
+        "description": "Slay: Character explodes with a blast 1 area effect centered on them, dealing 2 piercing damage and inflicting burning to characters other than you."
+      },
+      {
+        "rank": 3,
+        "description": "ORAZIERRE - Charge: You may change the dash effect to anywhere from 1 to 6, and either 1 or two spaces left or right."
+      }
+    ]
+  },
+  {
+    "id": "spinning_top",
+    "job": "fool",
+    "name": "Spinning Top",
+    "description": "A blur of cape, a flash of color, the gleaming of blades.",
+    "chapter": 1,
+    "action": "Free action",
+    "effect": "Roll 1d6 and dash that far in a whirling dance. You must move the maximum number of spaces rolled, or as far as possible before an obstruction causes you to stop, and you must move in the same direction. However, you can interrupt spinning top with any other action, including your standard move action.",
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If you start spinning top’s movement from a higher elevation, roll 2d6 and pick either die."
+      },
+      {
+        "rank": 2,
+        "description": "If you trigger a slay effect, you can use spinning top immediately, ignoring the no-repeats rule."
+      },
+      {
+        "rank": 3,
+        "description": "Spinning top can be taken twice a turn."
+      }
+    ]
+  },
+  {
+    "id": "death",
+    "job": "fool",
+    "name": "Death",
+    "description": "A shard of Divine Death, summoned with a snap of the finger.",
+    "chapter": 1,
+    "action": "Light Ranged Attack",
+    "attack": {
+      "hit": "[D] + fray divine damage and inflict burning"
+    },
+    "tags": [
+      "Divine"
+    ],
+    "special": {
+      "name": "Finishing Blow or Slay",
+      "description": "Dash 2 and Gain evasion until the start of your next turn"
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If there’s a bloodied character in the area, roll 1 more d6 and choose any result."
+      },
+      {
+        "rank": 2,
+        "description": "If there’s a burning character in the area, roll 1 more d6 and choose any result."
+      },
+      {
+        "rank": 3,
+        "description": "ULTIMA DEATH - Death deals 999 divine damage on hit to any character at 16 HP or less."
+      }
+    ]
+  },
+  {
+    "id": "carnivale",
+    "job": "fool",
+    "name": "Carnivale",
+    "description": "Get the party started.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Summon: You throw out a volatile bomb in range 3. If you use this ability while you have active bombs, all previously active bombs defuse and are removed from the battlefield.",
+    "summon": {
+      "name": "Carnivale Bomb",
+      "size": 1,
+      "effect": "The bomb’s space can be shared by other characters, and it can also be shoved. When any character passes through the bomb’s space, they can carry the bomb with them and drop it at any point during the movement, leaving it in any space they vacate.",
+      "action": "Roll a d6 at the end of each turn that passes after yours. On a 6, the bomb explodes in a blast 1 area effect centered on it, destroying it. Characters within take [D] damage and are blinded and burning.",
+      "tags": [
+        "Intangible"
+      ]
+    },
+    "tags": [
+      "Summon"
+    ],
+    "special": {
+      "name": "Slay",
+      "description": "Re-summon the bomb."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If you’re adjacent to the bomb, you can choose not to roll for its detonation."
+      },
+      {
+        "rank": 2,
+        "description": "When a character misses you with an attack, you may check for the bomb’s fuse."
+      },
+      {
+        "rank": 3,
+        "description": "IL CAOS FA LA MUSA - You may summon two bombs instead. Check for both fuses with one roll, and a character can only be affected by one explosion at once."
+      }
+    ]
+  },
+  {
+    "id": "gallows_humor",
+    "job": "fool",
+    "name": "Gallows Humor",
+    "description": "The power of Divine Death flows through you, empowering your strikes.",
+    "chapter": 1,
+    "action": "Stance",
+    "effect": "Set out a d4 power die, starting at 1. While in this stance, when you or an adjacent ally misses or is missed by an attack, tick the die up by 1. When the die is 4, you may reset it to 1 when you or an adjacent ally uses an ability to empower it. The ability deals bonus damage and triggers any slay effects, hit or miss. These effects can trigger again if the character is also slain by the ability.",
+    "trigger": "string?",
+    "charge": "string?",
+    "refresh": "This stance refreshes at the start of your turn. When it refreshes, tick the die up by 1.",
+    "tags": [
+      "Power Die"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Gallows humor instantly ticks up to 4 if an ally is defeated anywhere."
+      },
+      {
+        "rank": 2,
+        "description": "When you would expend the die, roll 1d6. On a 6, keep the die at 4 instead of resetting it."
+      },
+      {
+        "rank": 3,
+        "description": "MAESTRIA MORTALE - While in this stance, all your abilities gain slay: all allies may dash 2, then deal 2 damage to an adjacent foe."
+      }
+    ]
+  },
+  {
+    "id": "mummery",
+    "job": "fool",
+    "name": "Mummery",
+    "description": "What they thought was you was merely a magical mockery.",
+    "chapter": 1,
+    "action": "Interrupt 1",
+    "effect": "Teleport 2 spaces and summon a decoy in your original space, or as close to it as possible.",
+    "trigger": "A character misses you with an attack.",
+    "summon": {
+      "name": "Decoy",
+      "size": 1,
+      "effect": "A magical illusion of yourself. When targeted by any action or ability, or at the start of your next turn, it explodes and is destroyed. Foes in a blast 1 area become blinded. Blinded characters take [D].",
+      "tags": [
+        "1 Hp"
+      ]
+    },
+    "tags": [
+      "Summon"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If a character is burning, they also become slowed"
+      },
+      {
+        "rank": 2,
+        "description": "When you’re bloodied, this becomes Interrupt 2"
+      },
+      {
+        "rank": 3,
+        "description": "PINNOCHIO - When the decoy appears, all adjacent foes gain hatred of the decoy."
+      }
+    ]
+  },
+  {
+    "id": "masquerade",
+    "job": "fool",
+    "name": "Masquerade",
+    "description": "The Fool knows how to move unseen, slipping through shifting faces and voices like a fish through water.",
+    "chapter": 2,
+    "action": "Interrupt 1",
+    "effect": "Swap places with your ally, teleporting both of you, and the attack targets your ally instead. If you or your ally can’t teleport, or someone is already sharing the space you’d teleport your ally to, this interrupt can’t be made.",
+    "trigger": "An character makes an attack against you, and there’s a willing ally in range 3.",
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If you or your ally is bloodied, your ally gain evasion against the triggering attack."
+      },
+      {
+        "rank": 2,
+        "description": "Gain stealth after swapping."
+      },
+      {
+        "rank": 3,
+        "description": "HALL OF MIRRORS - Masquerade has no maximum range"
+      }
+    ]
+  },
+  {
+    "id": "diablo",
+    "job": "fool",
+    "name": "Diablo",
+    "description": "A snap of the finger summons the fool’s cross, the mark of the Laughing God, writ in hellish flames.",
+    "chapter": 2,
+    "action": "Light Melee Attack",
+    "range": "Cross 1, range 2",
+    "attack": {
+      "hit": "[D]",
+      "miss": "-"
+    },
+    "area": "or Slay: Deal 2 damage once to all characters in the area for every foe in end spaces of the cross.",
+    "effect": "Inflict burning and poisoned. The attack space of this ability is your choice of one of the four ends of the cross.",
+    "special": {
+      "name": "Finishing Blow",
+      "description": "Character counts as 2 characters in the cross."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If you catch 3 or more foes in the end spaces of the cross, the attack is a critical hit."
+      },
+      {
+        "rank": 2,
+        "description": "Charge: Increase cross size and range by +1."
+      },
+      {
+        "rank": 3,
+        "description": "DOUBLE DEVIL - Summon: Summon an intangible size 1 devil duplicate summon in the center space after the attack resolves, which can share space with other characters. Delay: You must take a slow turn next round. At the start of that turn, the duplicate creates a cross 2 area effect centered on itself, dealing [D]+fray damage to all within, then is destroyed."
+      }
+    ]
+  },
+  {
+    "id": "chronotemper",
+    "job": "fool",
+    "name": "Chronotemper",
+    "description": "Laugh at time itself.",
+    "chapter": 3,
+    "action": "1 Action",
+    "effect": "Mark: Mark self or an adjacent ally. The marked character gains aura 1. Any time a foe takes an action in the aura, the marked character can dash 2 as an effect after that action resolves, then deal 2 damage to an adjacent character. This effect can trigger any number of times a turn or round.",
+    "tags": [
+      "Mark"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "While the marked character is bloodied, they also have evasion."
+      },
+      {
+        "rank": 2,
+        "description": "Once around, the marked character can re-roll any random d6 as part of a random effect, taking the second result as final."
+      },
+      {
+        "rank": 3,
+        "description": "FIVE FATE THIEF - When the character is marked, the aura becomes aura 3 until the start of their next turn."
+      }
+    ]
   }
 ]
