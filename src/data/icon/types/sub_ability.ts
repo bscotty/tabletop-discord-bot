@@ -14,6 +14,6 @@ export type IconSubAbility = {
     trigger?: string
     charge?: string
     refresh?: string
-    tags: string[]
+    tags?: string[]
     special?: IconTrait
 }

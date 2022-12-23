@@ -23,6 +23,7 @@
     "hp": 40,
     "defense": 5,
     "speed": 4,
+    "dash": 2,
     "fray_damage": 4,
     "damage_die": "D6",
     "basic_attack": "Melee or Ranged 2",
@@ -34,6 +35,137 @@
       {
         "name": "Stalwart Gambit",
         "description": "If you take a Stalwart ability as a non-Stalwart class, you get Heroics, and two free uses of Heroics instead of one."
+      }
+    ]
+  },
+  {
+    "id": "vagabond",
+    "name": "Vagabond",
+    "title": "Rogue, Scoundrel, and Blade for Hire",
+    "strengths": "High mobility and damage, strong summons and marks, strong against isolated foes",
+    "weaknesses": "Relatively low durability, relies on support",
+    "complexity": "Medium",
+    "description": "Vagabonds are the mercenaries and wanderers of Arden Eld. They know how to aim a crossbow bolt through the helmet slit of a knight or the weak spot of a monster, how to move quietly and quickly, and how to fling a knife with deadly precision.\n\nVagabonds boast high damage and even higher mobility. Skirmisher lets them move faster and further than other classes, while Dodge lets them avoid damage unless targeted directly. They make use of Stealth, Blind, Evasion, and Finishing Blow to crush weak, isolated, or ranged enemies and avoid their counterattacks.\n\nVagabonds are strong against artillery foes and weaker against heavy foes.",
+    "traits": [
+      {
+        "name": "Skirmisher",
+        "description": "A character with this trait can move diagonally and dash at full speed."
+      },
+      {
+        "name": "Dodge",
+        "description": "Immune to all damage from missed attacks, successful saves, and area effects."
+      }
+    ],
+    "vit": 6,
+    "hp": 24,
+    "defense": 12,
+    "speed": 4,
+    "dash": 4,
+    "fray_damage": 3,
+    "damage_die": "D10",
+    "basic_attack": "Melee or Ranged 4",
+    "special": [
+      {
+        "name": "Finishing Blow",
+        "description": "When you attack a bloodied foe, you score a finishing blow, dealing bonus damage. Your abilities with a Finishing Blow effects gain more powerful effects if their primary target is a bloodied foe, even if they are not an attack. Effects depend on the action."
+      },
+      {
+        "name": "Vagabond Gambit",
+        "description": "If you take a Vagabond Ability as a non-Vagabond class, you get Finishing Blow."
+      }
+    ]
+  },
+  {
+    "id": "mendicant",
+    "name": "Mendicant",
+    "title": "Wandering Healer and Storyteller",
+    "strengths": "Strong all-rounders, with many potent effects and the ability to heal allies and lift statuses",
+    "weaknesses": "Low damage and reliant on allies",
+    "complexity": "High",
+    "description": "Mendicants are the itinerant priests, exorcists, and healers of Arden Eld. They travel from town to down, healing sicknesses of the body and soul, cleansing the damage dealt by the ruins, consulting with local spirits, and setting up wards against evil. Many mendicants are highly learned scholars, but others come from folk practices, temple monks, green witch circles, or town priesthoods. They are a highly diverse lot, and attuned to the land and the people that they care for.\n\nMendicants are the only class that can consistently grant vigor and lift statuses with the potent cure effect. They protect allies and guide their attacks with the Branded and Pacified statuses, while making use of powerful combos, auras, and marks to stack negative effects on foes while empowering allies.\n\nMendicants aren’t weak or strong against any particular type of foe, but have different strengths and weaknesses depending on job. This can make then a little more complex than other jobs.",
+    "traits": [
+      {
+        "name": "Heal (1 action)",
+        "description": "Cure an ally in range 4. (A character that’s cured can immediately clear a status or blight. Then, if that character is bloodied, they gain vigor 1.)"
+      },
+      {
+        "name": "Bless (1 action)",
+        "description": "Grant a blessing token to self or an ally in range 4."
+      },
+      {
+        "name": "Shelter",
+        "description": "Make all saves with +1 boon."
+      },
+      {
+        "name": "Succor",
+        "description": "Mendicants may use Rescue to bring up a defeated ally at range 5 instead of adjacent."
+      }
+    ],
+    "vit": 10,
+    "hp": 40,
+    "defense": 8,
+    "speed": 4,
+    "dash": 2,
+    "fray_damage": 3,
+    "damage_die": "D6",
+    "basic_attack": "Melee or Ranged 5",
+    "special": [
+      {
+        "name": "Blessing",
+        "description": "Certain actions give characters a Blessing token. A character can spend an action and a blessing token to cure themselves. All Mendicant jobs also have different ways to use blessings tokens. All blessings are discarded at the end of combat.\nBlessings are not unique (they don’t ‘belong’ to a character) and as long as a character has blessings from anyone, they can use them for any effects that require blessing tokens."
+      },
+      {
+        "name": "Mendicant Gambit",
+        "description": "If you take a Mendicant Ability as a non-Mendicant job, you gain this class' Bless action."
+      }
+    ]
+  },
+  {
+    "id": "wright",
+    "name": "Wright",
+    "title": "Mage, Thaumaturge, and Master of the Arcane Arts",
+    "strengths": "High damage and excellent range, strong area of effect, and become more powerful the longer fights go on",
+    "weaknesses": "Low durability and weak to foes that can engage them up close",
+    "complexity": "Medium",
+    "description": "Wrights are those who have mastered the manipulation of the raw power of creation: Aether. All souls are connected to Aether, and everyone is able to connect to it and feel it to some degree. Those with training, potential, and ability can learn to form and shape Aether as natural as they move their own flesh and blood. Wrights wield terrifying power - and they know it.\n\nWrights become stronger the longer fights go on by the power of Aether, which they can use to Infuse their abilities to unleash some of the most spectacular attacks in the game. Wrights focus heavily on blights, piercing damage, the shattered and vulnerable statuses, and Area of Effect abilities.\n\nWrights are strong against heavy foes since they can bypass their armor and hit them from range, but weaker against skirmisher foes that can quickly close the gap",
+    "traits": [
+      {
+        "name": "Slip",
+        "description": "As an action, or instead of their standard move, Wrights may remove themselves from the battlefield, then return within 1 space."
+      },
+      {
+        "name": "Grand Levitation",
+        "description": "Wrights ignore pits, difficult, and dangerous terrain."
+      },
+      {
+        "name": "Aetherwall",
+        "description": "Wrights gain automatic cover against all attacks that originate outside of range 2 from them (Cover grants resistance against ranged attacks, reducing it by 1/2)"
+      },
+      {
+        "name": "Chain Reaction",
+        "description": "1/round, if a wright catches 2 or more foes in an an abilities’ area of effect, gain 1 Aether."
+      }
+    ],
+    "vit": 8,
+    "hp": 32,
+    "defense": 6,
+    "speed": 4,
+    "dash": 2,
+    "fray_damage": 4,
+    "damage_die": "D8",
+    "basic_attack": "Melee or Ranged 6",
+    "special": [
+      {
+        "name": "Aether",
+        "description": "All Wrights gather Aether during combat, passively gaining 1 at the start of their turn, starting with 0. Use a d6 to track Aether. Other abilities and Chain Reaction will generate Aether when used. Aether has a maximum of 6 normally. All Aether disperses at the end of combat."
+      },
+      {
+        "name": "Infuse X",
+        "description": "Many wright abilities have upgraded versions that can only be cast by Infusing them by spending X Aether as part of the ability. Aether is consumed at the start of the action. Infused abilities count as the same ability and also benefit from all talents."
+      },
+      {
+        "name": "Wright Gambit",
+        "description": "If you take a Wright ability as a non-wright class, you get Aether and Chain Reaction."
       }
     ]
   }

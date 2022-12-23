@@ -14,13 +14,13 @@ export type IconLimitBreak = {
     range?: string
     attack?: IconAttack
     area?: string
-    trigger: string
+    trigger?: string
     charge?: string
     effect: string
-    tags: string[]
+    tags?: string[]
     special?: IconTrait
     talents: IconTalent[]
-    abilities: IconSubAbility[]
+    abilities?: IconSubAbility[]
 }
 
 export type TypedIconLimitBreak = IconLimitBreak & {

@@ -880,7 +880,7 @@
     "effect": "string",
     "combo": {
       "name": "The Gauntlet",
-      "description": "Gains range 2 and effect: Shove character 1 towards you."
+      "effect": "Gains range 2 and effect: Shove character 1 towards you."
     },
     "tags": [
       "Combo",
@@ -920,7 +920,7 @@
     "effect": "Gain unstoppable and counter until the end of your next turn.",
     "combo": {
       "name": "Indignation",
-      "description": "Replace the base effect with effect: Deal 2 damage, once, to your target for every status they are suffering from, to a maximum of six times, then gain counter until the end of your next turn."
+      "effect": "Replace the base effect with effect: Deal 2 damage, once, to your target for every status they are suffering from, to a maximum of six times, then gain counter until the end of your next turn."
     },
     "tags": [
       "Combo"

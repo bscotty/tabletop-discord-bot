@@ -6,6 +6,10 @@ import {TypedIconLimitBreak} from "./types/limit_break";
 import {IconTrait} from "./types/trait";
 import {IconSubAbility} from "./types/sub_ability";
 import {IconAttack} from "./types/attack";
+import {IconSummon} from "./types/summon";
+import {IconCombo} from "./types/combo";
+import {IconInfusion} from "./types/infuse";
+import {IconTalent} from "./types/talent";
 
 export class IconFormatter {
     constructor(
@@ -56,7 +60,10 @@ export class IconFormatter {
             trigger = `\n**Trigger:** ${ability.trigger}`
         }
 
-        const effect = `\n**Effect:** ${ability.effect}`
+        let effect = ""
+        if (ability.effect) {
+            effect = `\n**Effect:** ${ability.effect}`
+        }
 
         let charge = ""
         if (ability.charge) {
@@ -75,25 +82,27 @@ export class IconFormatter {
 
         let combo = ""
         if (ability.combo) {
-            combo = `\n**Combo: ${ability.combo.name}** - ${ability.combo.description}`
+            combo = "\n" + this.formatCombo(ability.combo)
         }
 
-        const talents = "\n**Talents**\n" + ability.talents.map((it) => {
-            if (it.rank < 3) {
-                return `${it.rank}. ${it.description}`
-            } else {
-                return `MASTERY: ${it.description}`
-            }
-        }).join("\n")
+        let summon = ""
+        if (ability.summon) {
+            summon = "\n" + this.formatSummon(ability.summon)
+        }
+
+        let infusion = ""
+        if (ability.infusion) {
+            infusion = "\n" + this.formatInfusion(ability.infusion)
+        }
+
+        const talents = "\n**Talents**\n" + ability.talents.map((it) => this.formatTalent(it)).join("\n")
 
         let abilities = ""
         if (ability.abilities) {
-            abilities = "\n" + ability.abilities.map((it) => {
-                return this.formatSubAbility(it)
-            }).join("\n")
+            abilities = "\n" + ability.abilities.map((it) => this.formatSubAbility(it)).join("\n")
         }
 
-        return `${description}${attack}${area}${trigger}${effect}${charge}${refresh}${special}${combo}${talents}${abilities}`
+        return `${description}${attack}${area}${trigger}${effect}${charge}${refresh}${special}${combo}${summon}${infusion}${talents}${abilities}`
     }
 
     private formatClass(clazz: TypedIconClass): string {
@@ -157,19 +166,11 @@ export class IconFormatter {
             special = `\n**${limitBreak.special.name}:** ${limitBreak.special.description}`
         }
 
-        const talents = "\n**Talent**\n" + limitBreak.talents.map((it) => {
-            if (it.rank < 3) {
-                return `${it.rank}. ${it.description}`
-            } else {
-                return `MASTERY: ${it.description}`
-            }
-        }).join("\n")
+        const talents = "\n**Talent**\n" + limitBreak.talents.map((it) => this.formatTalent(it)).join("\n")
 
         let abilities = ""
         if (limitBreak.abilities) {
-            abilities = "\n" + limitBreak.abilities.map((it) => {
-                return this.formatSubAbility(it)
-            }).join("\n")
+            abilities = "\n" + limitBreak.abilities.map((it) => this.formatSubAbility(it)).join("\n")
         }
 
         return `${description}${attack}${area}${trigger}${effect}${charge}${special}${talents}${abilities}`
@@ -180,7 +181,11 @@ export class IconFormatter {
         if (trait.chapter && trait.chapter == 3) {
             chapterPrefix = `(Chapter 3 Trait) `
         }
-        return `• *${trait.name}* ${chapterPrefix}- ${trait.description}`
+        let summon = ""
+        if (trait.summon) {
+            summon = "\n" + this.formatSummon(trait.summon)
+        }
+        return `• *${trait.name}* ${chapterPrefix}- ${trait.description}${summon}`
     }
 
     private formatSubAbility(subAbility: IconSubAbility): string {
@@ -188,8 +193,8 @@ export class IconFormatter {
         if (subAbility.range) {
             range = `${subAbility.range}, `
         }
-        const tags = subAbility.tags.join(", ")
-        const description = `**${subAbility.name}**\n${subAbility.action}\n${range}${tags}\n${subAbility.description}`
+        const tags = [range, ...subAbility.tags].join(", ")
+        const description = `**${subAbility.name}**\n${subAbility.action}\n${tags}\n${subAbility.description}`
 
         let attack = ""
         if (subAbility.attack) {
@@ -221,6 +226,19 @@ export class IconFormatter {
         return `${description}${attack}${area}${trigger}${effect}${charge}${special}`
     }
 
+    private formatTalent(talent: IconTalent): string {
+        let formattedTalent: string
+        if (talent.rank < 3) {
+            formattedTalent = `${talent.rank}. ${talent.description}`
+        } else {
+            formattedTalent = `MASTERY: ${talent.description}`
+        }
+        if (talent.infusion) {
+            formattedTalent += "\n" + this.formatInfusion(talent.infusion)
+        }
+        return formattedTalent
+    }
+
     private formatAttack(attack: IconAttack): string {
         let formattedAttack = `**Attack:** `
         if (attack.miss) {
@@ -237,13 +255,52 @@ export class IconFormatter {
         return formattedAttack
     }
 
+    private formatSummon(summon: IconSummon): string {
+        const summonName = `**Summon: ${summon.name}**`
+        const summonSize = `\nSize ${summon.size}`
+        const summonTags = [summonSize, ...summon.tags].join(", ")
+        const summonEffect = `\n*Summon Effect:* ${summon.effect}`
+        let summonAction = ""
+        if (summon.action) {
+            summonAction = `\n*Summon Action:* ${summon.action}`
+        }
+        return `${summonName}${summonTags}${summonEffect}${summonAction}`
+    }
+
+    private formatCombo(combo: IconCombo): string {
+        let formattedCombo = `\n**Combo: ${combo.name}**\n${combo.effect}`
+        formattedCombo += [combo.range, ...combo.tags].filter((it) => it).join(", ")
+        if (combo.attack) {
+            formattedCombo += "\n" + this.formatAttack(combo.attack)
+        }
+        if (combo.area) {
+            formattedCombo += `\n**Area Effect:** ${combo.area}`
+        }
+        return formattedCombo
+    }
+
+    private formatInfusion(infusion: IconInfusion): string {
+        let formattedInfusion = `**Infuse ${infusion.cost}: ${infusion.name}**`
+        if (infusion.range) {
+            formattedInfusion += `\n${infusion.range}`
+        }
+        if (infusion.attack) {
+            formattedInfusion += "\n" + this.formatAttack(infusion.attack)
+        }
+        if (infusion.area) {
+            formattedInfusion += `**Area Effect:** ${infusion.area}`
+        }
+        formattedInfusion += `**Effect:** ${infusion.effect}`
+        return formattedInfusion
+    }
+
     private lookupJobName(id: string): string {
         const job = this.jobs.find(job => job.id == id)
         if (job) {
             return job.name
         } else {
             console.error(`Cannot find job with id ${id}`)
-            return ""
+            return `{Unknown_Id: ${id}}`
         }
     }
 
@@ -253,7 +310,7 @@ export class IconFormatter {
             return clazz.name
         } else {
             console.error(`Cannot find class with id ${id}`)
-            return ""
+            return `{Unknown_Id: ${id}}`
         }
     }
 
@@ -263,7 +320,7 @@ export class IconFormatter {
             return ability.name
         } else {
             console.error(`Cannot find ability with id ${id}`)
-            return ""
+            return `{Unknown_Id: ${id}}`
         }
     }
 }
