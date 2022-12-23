@@ -26,7 +26,7 @@ export class Icon {
         if (this._searcher == undefined) {
             const packages = this.packages()
             const items: IconSearchable[] = packages.flatMap((it) => {
-                return [...it.jobs, ...it.classes, ...it.abilities, ...it.limitBreaks]
+                return [...it.jobs, ...it.classes, ...it.abilities, ...it.limitBreaks, ...it.glossary]
             })
             this._searcher = new Searcher(items, ["name"])
         }

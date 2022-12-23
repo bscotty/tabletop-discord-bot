@@ -1,4 +1,4 @@
-import {IconSearchable, isAbility, isClass, isJob, isLimitBreak} from "./types/searchable";
+import {IconSearchable, isAbility, isClass, isGlossaryEntry, isJob, isLimitBreak} from "./types/searchable";
 import {IconAbility, TypedIconAbility} from "./types/ability";
 import {IconClass, TypedIconClass} from "./types/class";
 import {IconJob, TypedIconJob} from "./types/job";
@@ -11,6 +11,7 @@ import {IconCombo} from "./types/combo";
 import {IconInfusion} from "./types/infuse";
 import {IconTalent} from "./types/talent";
 import {IconSpecialMechanic} from "./types/special";
+import {IconGlossaryEntry} from "./types/glossary_entry";
 
 export class IconFormatter {
     constructor(
@@ -29,6 +30,8 @@ export class IconFormatter {
             return this.formatJob(searchable)
         } else if (isLimitBreak(searchable)) {
             return this.formatLimitBreak(searchable)
+        } else if (isGlossaryEntry(searchable)) {
+            return this.formatGlossaryEntry(searchable)
         } else {
             throw Error(`This is impossible - item is not valid: ${searchable}`)
         }
@@ -186,6 +189,15 @@ export class IconFormatter {
         return `${description}${attack}${area}${trigger}${effect}${charge}${special}${talents}${abilities}`
     }
 
+    private formatGlossaryEntry(glossaryEntry: IconGlossaryEntry): string {
+        let formattedGlossaryEntry = `**${glossaryEntry.name}**`
+        if (glossaryEntry.category) {
+            formattedGlossaryEntry += ` (${glossaryEntry.category})`
+        }
+        formattedGlossaryEntry += `\n${glossaryEntry.description}`
+        return formattedGlossaryEntry
+    }
+
     private formatTrait(trait: IconTrait): string {
         let chapterPrefix = ""
         if (trait.chapter && trait.chapter == 3) {
@@ -276,17 +288,17 @@ export class IconFormatter {
     }
 
     private formatSummon(summon: IconSummon): string {
-        const summonName = `\n\> **Summon: ${summon.name}**`
-        const summonSize = `\n\> Size ${summon.size}`
+        const summonName = `\n> **Summon: ${summon.name}**`
+        const summonSize = `\n> Size ${summon.size}`
         let tags: string[] = []
         if (summon.tags) {
             tags = summon.tags
         }
         const summonTags = [summonSize, ...tags].join(", ")
-        const summonEffect = `\n\> *Summon Effect:* ${summon.effect}`
+        const summonEffect = `\n> *Summon Effect:* ${summon.effect}`
         let summonAction = ""
         if (summon.action) {
-            summonAction = `\n\> *Summon Action:* ${summon.action}`
+            summonAction = `\n> *Summon Action:* ${summon.action}`
         }
         return `${summonName}${summonTags}${summonEffect}${summonAction}`
     }
