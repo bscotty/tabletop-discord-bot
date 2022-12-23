@@ -58,7 +58,7 @@
         "detail": "You become Jammed.<br>You gain Immunity to Impaired.<br>Your armor increases by 2, this may bring you above 4 Armor."
       },
       {
-        "name": "JUICE",
+        "name": "EDGE",
         "activation": "Protocol",
         "detail": "You become Slowed.<br>You gain Immunity to Jammed.<br>Your next attack this turn gains +1 Accuracy."
       },
@@ -88,5 +88,39 @@
     "effect": "1/Scene when targeted by a Tech attack you may give that attack +1 Difficulty as a Reaction. You gain Immunity to the MesmerTrance environmental effect.",
     "description": "Handed to you by the Talons, the MesmerTrance Dampener supposedly stops the highly advanced and aggressive virus “MesmerTrance” from affecting your mech. As a side effect It also provides limited protection against other, less sophisticated, attacks on your mech’s systems.",
     "license_id": ""
+  },
+  {
+    "id": "ms_armament_redundancy",
+    "name": "Armament Redundancy",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_indestructible"
+      }
+    ],
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "effect": "You may choose to ignore weapon destruction as a result of the SYSTEM TRAUMA result when taking structure damage. This system can only be used once before each FULL REPAIR, and is not a valid target for system destruction.",
+    "description": "By installing additional armor plating, redundant firing circuits and enhanced insulation to magazines the longevity of a frame’s armaments can be greatly enhanced.",
+    "license_id": ""
   }
 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

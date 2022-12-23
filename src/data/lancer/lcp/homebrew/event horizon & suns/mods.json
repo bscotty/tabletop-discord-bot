@@ -5,9 +5,8 @@
     "source": "EH&S",
     "license": "DELPHI",
     "license_level": 2,
-    "effect": "<p>The weapon this mod is applied to gains Reliable 2. If it already had Reliable 2 or higher, add 1 to its Reliable damage.</p>",
+    "effect": "The weapon this mod is applied to gains Reliable 2. If it already had Reliable 2 or higher, add 1 to its Reliable damage.",
     "sp": 2,
-    "description": "",
     "allowed_types": [
       "Melee",
       "Rifle",
@@ -26,21 +25,40 @@
       "Auxiliary",
       "Superheavy"
     ],
-    "added_damage": [],
-    "added_range": [],
     "added_tags": [
       {
         "id": "tg_reliable",
         "val": 2
       }
+    ]
+  },
+  {
+    "id": "wm_high-frequency_weapon_insulation",
+    "name": "High-Frequency Weapon Insulation",
+    "source": "HA",
+    "license": "MASAMUNE",
+    "license_level": 2,
+    "effect": "When you make an attack with the weapon this mod is applied to, you may activate this system, unloading it and taking 2 Heat. If you do, your attack deals +1d6 explosive bonus damage on a hit. This system is treated as a weapon for the purposes of effects that load or unload weapons.",
+    "sp": 2,
+    "allowed_types": [
+      "Melee"
     ],
-    "tags": [],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": []
+    "allowed_sizes": [
+      "Main",
+      "Heavy",
+      "Superheavy"
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ]
   }
 ]

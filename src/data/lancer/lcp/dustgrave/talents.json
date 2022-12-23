@@ -39,18 +39,25 @@
     "description": "You have acquired an NHP, or has it acquired you? Together you have set out to achieve greatness and to push boundaries. The two of you are in it together and you’ll be able to achieve fantastical things. Perhaps you are unaware of the risks, perhaps you willfully choose to ignore them. The power you can tap into with the help of your companion is, however, undeniable. And with such power who is to stop the two of you from breaking some taboos?",
     "ranks": [
       {
-        "name": "Transgressing",
+        "name": "Transgression",
         "description": "You may choose to equip your mech with an UNSTABLE-NHP system. You are unable to hand over control of your mech to the UNSTABLE-NHP as a Protocol, but it is capable of cascading. \"NHPs\" are Systems that grant your Mech the AI tag and that are capable of cascading or can be allowed to cascade.",
         "special_equipment": [
           "ms_twisted_genius"
         ]
       },
       {
-        "name": "Transmuting",
-        "description": "Whenever you perform any action granted to you by an NHP, excluding you handing control of your mech over to the NHP as a Protocol, you may immediately create a Line 3 lightning arc as a Free Action. Characters of your choice in the Line are dealt 2 Armor-Piercing Energy damage. Each NHP may only trigger this Action 1/Round."
+        "name": "Transmutation",
+        "description": "After performing any action granted to you by an NHP, excluding handing control of your mech over to the NHP as a protocol, you may immediately perform the TRANSMUTING SPARK free action. Each NHP may only trigger this action 1/round.",
+        "actions": [
+          {
+            "name": "Transmuting Spark",
+            "activation": "Free",
+            "detail": "Project a LINE 3 lightning arc as a free action. Characters of your choice in the LINE take 2 AP energy damage."
+          }
+        ]
       },
       {
-        "name": "Transcending",
+        "name": "Transcension",
         "description": "Gain a Transcendence Die, a D3 starting at 3. When using “Transmuting” reduce the die by 1. If the die is already at 1 you may enter a transcendent state and reset the Transcendence Die to 3. The transcendent state lasts until the end of your next turn. <br>While in this state: <br>● Your Transcendence Die can’t decrease. <br>● “Memetic Spark” increases its damage by 4 and Range by 5. <br>● Unless flying or climbing, you are forced to permanently Hover exactly 1 Space above any surface at all times. <br>● You become Immune to involuntary movement. <br>Whenever you cascade and lose control of your mech, you enter a transcendent state for the duration, cascading NHPs have access to this Talent. Your Transcendence Die resets at the end of the Scene."
       }
     ],
@@ -63,7 +70,7 @@
     "ranks": [
       {
         "name": "Tactical Intelligence",
-        "description": "Whenever an allied character in line of sight misses with an attack, you know by how much it missed. Gain access to the “Superior Intelligence” Reaction, which you may use 2/Round.",
+        "description": "Whenever an allied character in line of sight misses with an attack, you know by how much it missed. Gain access to the “Superior Intelligence” Reaction.",
         "actions": [
           {
             "name": "Superior Intelligence",
@@ -79,7 +86,7 @@
         "description": "At the start of each combat, you gain an Intelligence Die, a d6 starting at 1. At the end of your turn, if you didn’t take any actions that affected a hostile character during your turn, except Scan, your Intelligence Die increases by 2. Whenever you use Superior Intelligence, you may increase the attack roll by the value of your Intelligence die instead of 1. It is reset to 1 afterwards. The Intelligence Die lasts until the end of the Scene."
       },
       {
-        "name": "Clandestine Collection",
+        "name": "Active Interference",
         "description": "Whenever a hostile character in line of sight hits with an attack you know what they rolled. You may use the Superior Intelligence Reaction when a hostile character in Line of Sight has rolled an Attack Roll. Instead of adding to the attack roll you subtract from it in the same manner. Each attack roll can only be affected once by Superior Intelligence."
       }
     ],

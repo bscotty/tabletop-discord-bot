@@ -7,7 +7,7 @@
     "mechtype": [
       "Defender"
     ],
-    "description": "<p>In the ancient days of mankind, fire was all that separated men from beasts. They delighted in it, nourished it, bowed before it as a god, and they used it to conquer the Cradle until all was ash. Never forget that the wildfire burns indiscriminately. The volcano ruptures the homes of good and evil alike. And from the fleeting cinders on solar winds, the dead’s stories fade to silence, bones lost to ash. To wield fire now is to recognize that the flame is not what separated mankind from the wolves and lions they once feared. Only the truly reckless and foolhardy would believe they can control the flames long enough to protect not only themselves but others before everything is reduced to dying embers and soot on the soldiers’ feet. Fire does not make men of beasts; it makes beasts of men.</p>",
+    "description": "In the ancient days of mankind, fire was all that separated men from beasts. They delighted in it, nourished it, bowed before it as a god, and they used it to conquer the Cradle until all was ash. Never forget that the wildfire burns indiscriminately. The volcano ruptures the homes of good and evil alike. And from the fleeting cinders on solar winds, the dead’s stories fade to silence, bones lost to ash. To wield fire now is to recognize that the flame is not what separated mankind from the wolves and lions they once feared. Only the truly reckless and foolhardy would believe they can control the flames long enough to protect not only themselves but others before everything is reduced to dying embers and soot on the soldiers’ feet. Fire does not make men of beasts; it makes beasts of men.",
     "mounts": [
       "Main",
       "Main",
@@ -32,64 +32,28 @@
     "traits": [
       {
         "name": "Pyroclastic Eruption",
-        "use": "",
-        "description": "<p>When the Pompeii has 4 or more Burn, enemies treat it as having soft cover. When the Pompeii has 8 or more Burn, enemies treat it as having hard cover. When the Pompeii has 12 or more burn, the Pompeii becomes Exposed.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "When the Pompeii has 4 or more Burn, enemies treat it as having soft cover. When the Pompeii has 8 or more Burn, enemies treat it as having hard cover. When the Pompeii has 12 or more burn, the Pompeii becomes Exposed."
       },
       {
         "name": "Fumaroles",
-        "use": "",
-        "description": "<p>Adjacent enemies take 1 additional Heat when they gain Heat.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "Adjacent enemies take 1 additional Heat when they gain Heat."
       },
       {
         "name": "Guardian",
-        "use": "",
-        "description": "<p>Adjacent allied characters can use the Pompeii for hard cover.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "Adjacent allied characters can use the Pompeii for hard cover."
       }
     ],
     "core_system": {
       "name": "Pompeii Suite",
       "active_name": "Vesuvian Wrath",
-      "active_effect": "<p>Until the end of the scene, your Crater Maker weapon deals damage in a Cone 5 area of effect.</p>",
+      "active_effect": "Until the end of the scene, your Crater Maker weapon deals damage in a Cone 5 area of effect.",
       "activation": "Protocol",
-      "description": "",
-      "deactivation": "",
       "use": "Encounter",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
       "passive_name": "Afterburn",
-      "passive_effect": "<p>Each time you take damage from a hostile source, you may take it normally or choose to stagger it. When you stagger damage, up to half of it is added to you as burn before any modifications (such as from Armor or conditions) and the remaining damage is taken normally. Burn taken in this way does not deal damage immediately and only deals damage at the end of the Pompeii’s turn after a failed Engineering check.</p>",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
+      "passive_effect": "Each time you take damage from a hostile source, you may take it normally or choose to stagger it. When you stagger damage, up to half of it is added to you as burn before any modifications (such as from Armor or conditions) and the remaining damage is taken normally. Burn taken in this way does not deal damage immediately and only deals damage at the end of the Pompeii’s turn after a failed Engineering check.",
       "integrated": [
         "mw_crater_maker"
-      ],
-      "special_equipment": [],
-      "tags": []
+      ]
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "y_pos": "25"
@@ -103,7 +67,6 @@
       "Defender",
       "Support"
     ],
-    "description": "",
     "mounts": [
       "Main",
       "Flex",
@@ -128,64 +91,27 @@
     "traits": [
       {
         "name": "Chevalier of Fortune",
-        "use": "",
-        "description": "<p>The Camelot can ride another mech that is at least one size larger than itself as part of a move or Boost entering into a mech’s space. When riding another mech, the Camelot and the other mech share a space, the Camelot is considered to have soft cover, and the Camelot moves with the other mech even if Slowed. An unwilling character can shake off the Camelot and end this riding effect with a successful contested Hull check as a quick action. If the Camelot is knocked off of this mech through a push, pull, or knockback, or by becoming Prone, Stunned, Immobilized, or destroyed, it lands Prone in an adjacent space.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "The Camelot can ride another mech that is at least one size larger than itself as part of a move or Boost entering into a mech’s space. When riding another mech, the Camelot and the other mech share a space, the Camelot is considered to have soft cover, and the Camelot moves with the other mech even if Slowed. An unwilling character can shake off the Camelot and end this riding effect with a successful contested Hull check as a quick action. If the Camelot is knocked off of this mech through a push, pull, or knockback, or by becoming Prone, Stunned, Immobilized, or destroyed, it lands Prone in an adjacent space."
       },
       {
         "name": "Nimble Cavalier",
-        "use": "",
-        "description": "<p>When the Camelot is riding another mech, it uses that mech’s Evasion for the purposes of determining its defenses.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "When the Camelot is riding another mech, it uses that mech’s Evasion for the purposes of determining its defenses."
       },
       {
         "name": "Steady Righteousness",
-        "use": "",
-        "description": "<p>When the Camelot is riding another mech, the other mech gets +1 Accuracy to Hull checks and saves if they are an allied character.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "When the Camelot is riding another mech, the other mech gets +1 Accuracy to Hull checks and saves if they are an allied character."
       }
     ],
     "core_system": {
       "name": "Camelot Suite",
       "active_name": "Throw the Gauntlet",
-      "active_effect": "<p>Until the end of the scene, the Camelot gains +1 Accuracy on any attacks it makes as part of a joust, and it heals up to 1/4 of its HP whenever it wins a joust.</p>",
-      "activation": "",
-      "description": "",
-      "deactivation": "",
-      "use": "",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
+      "active_effect": "Until the end of the scene, the Camelot gains +1 Accuracy on any attacks it makes as part of a joust, and it heals up to 1/4 of its HP whenever it wins a joust.",
+      "activation": "Protocol",
       "passive_name": "Joust",
-      "passive_effect": "<p>Whenever the Camelot makes a melee attack roll, it may declare instead to joust its target. Doing so has the Camelot and the target make contested attack rolls with weapons of their choosing. The winner of the joust deals damage as normal and applies other effects for the weapon they used. The loser of the joust cannot make reactions until the start of their next turn.</p>",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
+      "passive_effect": "Whenever the Camelot makes a melee attack roll, it may declare instead to joust its target. Doing so has the Camelot and the target make contested attack rolls with weapons of their choosing. The winner of the joust deals damage as normal and applies other effects for the weapon they used. The loser of the joust cannot make reactions until the start of their next turn.",
       "integrated": [
         "mw_knightly_arms"
-      ],
-      "special_equipment": [],
-      "tags": []
+      ]
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "y_pos": "25"
@@ -199,7 +125,7 @@
       "Defender",
       "Controller"
     ],
-    "description": "<p>When they are cast from society, the ostracized lose trust in even their fellow outcasts. But they know more than anyone else that every pack needs a scapegoat, for otherwise, they are wont to turn on one another. When all society’s woes fall upon one person like a lightning rod, at least the others are unified as they stand back and watch the bolt strike home.</p>",
+    "description": "When they are cast from society, the ostracized lose trust in even their fellow outcasts. But they know more than anyone else that every pack needs a scapegoat, for otherwise, they are wont to turn on one another. When all society’s woes fall upon one person like a lightning rod, at least the others are unified as they stand back and watch the bolt strike home.",
     "mounts": [
       "Main",
       "Flex",
@@ -224,62 +150,23 @@
     "traits": [
       {
         "name": "Athenian Rebuttal",
-        "use": "",
-        "description": "<p>The Ostrakon benefits from cover against tech attacks.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "The Ostrakon benefits from cover against tech attacks."
       },
       {
         "name": "Aristides' Exile",
-        "use": "",
-        "description": "<p>1/round, at the start of another character’s turn, the Ostrakon may turn Invisible until the end of the turn as a reaction. If it does so, it places an Exile Mark on the character whose turn triggered the reaction, and the Ostrakon declares a quick tech it is capable of doing. When a character has an Exile Mark, they treat all movement away from the Ostrakon as though it were difficult terrain, and, if they make an attack that does not include the Ostrakon in its effect, become targeted by the declared quick tech action before the attack resolves. The Exile Mark is removed when the quick tech successfully affects the target.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "1/round, at the start of another character’s turn, the Ostrakon may turn Invisible until the end of the turn as a reaction. If it does so, it places an Exile Mark on the character whose turn triggered the reaction, and the Ostrakon declares a quick tech it is capable of doing. When a character has an Exile Mark, they treat all movement away from the Ostrakon as though it were difficult terrain, and, if they make an attack that does not include the Ostrakon in its effect, become targeted by the declared quick tech action before the attack resolves. The Exile Mark is removed when the quick tech successfully affects the target."
       },
       {
         "name": "The Penalty of Return",
-        "use": "",
-        "description": "<p>Attacks made against the Ostrakon within Range 3 have +1 Accuracy.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "Attacks made against the Ostrakon within Range 3 have +1 Accuracy."
       }
     ],
     "core_system": {
-      "name": "",
+      "name": "Ostrakon Suite",
       "active_name": "Ostracized from All",
-      "active_effect": "<p>Until the end of the scene, the Ostrakon may use its Aristides’ Exile reaction once per turn instead of once per round.</p>",
+      "active_effect": "Until the end of the scene, the Ostrakon may use its Aristides’ Exile reaction once per turn instead of once per round.",
       "activation": "Protocol",
-      "description": "",
-      "deactivation": "",
-      "use": "Encounter",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
-      "passive_name": "",
-      "passive_effect": "",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      "use": "Encounter"
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "y_pos": "25"
@@ -293,7 +180,6 @@
       "Defender",
       "Artillery"
     ],
-    "description": "",
     "mounts": [
       "Main",
       "Flex",
@@ -318,62 +204,23 @@
     "traits": [
       {
         "name": "Ark Firewall",
-        "use": "",
-        "description": "<p>The Jericho has Resistance to ranged weapon attacks, but melee attacks deal damage to it as though it were Exposed.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "The Jericho has Resistance to ranged weapon attacks, but melee attacks deal damage to it as though it were Exposed."
       },
       {
         "name": "Aim Assist",
-        "use": "",
-        "description": "<p>Adjacent allied characters gain +2 range on ranged weapons.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "Adjacent allied characters gain +2 range on ranged weapons."
       },
       {
         "name": "Guardian",
-        "use": "",
-        "description": "<p>Adjacent allied characters can use the Jericho for hard cover.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "Adjacent allied characters can use the Jericho for hard cover."
       }
     ],
     "core_system": {
       "name": "Jericho Suite",
       "active_name": "Invasion Repulsion Sequence",
-      "active_effect": "<p>For the rest of the scene, the Jericho emits a Burst 2 repulsion field. Hostile characters that start or end their turn in one of the affected spaces or enter one for the first time in a round must pass a Hull save or be knocked back 2 spaces and knocked Prone.</p>",
+      "active_effect": "For the rest of the scene, the Jericho emits a Burst 2 repulsion field. Hostile characters that start or end their turn in one of the affected spaces or enter one for the first time in a round must pass a Hull save or be knocked back 2 spaces and knocked Prone.",
       "activation": "Protocol",
-      "description": "",
-      "deactivation": "",
-      "use": "Encounter",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
-      "passive_name": "",
-      "passive_effect": "",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      "use": "Encounter"
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "y_pos": "25"
@@ -386,7 +233,6 @@
     "mechtype": [
       "Striker"
     ],
-    "description": "",
     "mounts": [
       "Main",
       "Flex",
@@ -411,77 +257,34 @@
     "traits": [
       {
         "name": "Abandon Sinon",
-        "use": "",
-        "description": "<p>If the Troy is adjacent to one of its deployed drones, it may spend its standard movement to teleport to a space adjacent to another one of its deployed drones within Sensors. This movement cannot be completed if there are no valid spaces next to the target drone that the Troy can occupy.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "If the Troy is adjacent to one of its deployed drones, it may spend its standard movement to teleport to a space adjacent to another one of its deployed drones within Sensors. This movement cannot be completed if there are no valid spaces next to the target drone that the Troy can occupy."
       },
       {
         "name": "Tros' Command",
-        "use": "",
-        "description": "<p>The Troy’s deployed drones deal an additional 3 energy damage when they damage a character.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "The Troy’s deployed drones deal an additional 3 energy damage when they damage a character."
       },
       {
         "name": "Drone Reserves",
-        "use": "",
-        "description": "<p>When spending repairs or Stabilizing, the Troy may repair one system with the Drone tag for free.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "When spending repairs or Stabilizing, the Troy may repair one system with the Drone tag for free."
       }
     ],
     "core_system": {
       "name": "Troy Suite",
       "active_name": "Kill the Wounded",
-      "active_effect": "<p>You gain the Kill the Wounded reaction until the end of the scene.</p>",
+      "active_effect": "You gain the Kill the Wounded reaction until the end of the scene.",
       "activation": "Protocol",
-      "description": "",
-      "deactivation": "",
       "use": "Encounter",
       "active_actions": [
         {
           "name": "Kill the Wounded",
           "activation": "Reaction",
-          "detail": "<p>A drone within Sensors deals 3 energy damage to the triggering character.</p>",
-          "cost": 0,
-          "pilot": false,
-          "damage": [],
-          "range": [],
-          "synergy_locations": [],
-          "tech_attack": false,
+          "detail": "A drone within Sensors deals 3 energy damage to the triggering character.",
           "frequency": "Unlimited",
-          "init": "",
-          "trigger": "<p>A hostile character within Sensors takes damage from a weapon attack.</p>"
+          "trigger": "A hostile character within Sensors takes damage from a weapon attack."
         }
       ],
-      "active_bonuses": [],
-      "active_synergies": [],
       "passive_name": "Mass Drone Printing",
-      "passive_effect": "<p>Once per round as a free action, the Troy may deploy a Mass Produced Drone. These drones are size 1/2 and have 1 HP, 6 Evasion, 6 E-Defense, and do not have any special abilities. Up to three Mass Produced Drones may be deployed at a given time.</p>",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      "passive_effect": "Once per round as a free action, the Troy may deploy a Mass Produced Drone. These drones are size 1/2 and have 1 HP, 6 Evasion, 6 E-Defense, and do not have any special abilities. Up to three Mass Produced Drones may be deployed at a given time."
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "y_pos": "25"
@@ -494,7 +297,6 @@
     "mechtype": [
       "Striker"
     ],
-    "description": "",
     "mounts": [
       "Flex",
       "Flex",
@@ -519,77 +321,33 @@
     "traits": [
       {
         "name": "Killing Edge",
-        "use": "",
-        "description": "<p>When determining critical hit damage from melee attacks, the Damascus rolls a given die three times and takes the higher result instead of twice.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "When determining critical hit damage from melee attacks, the Damascus rolls a given die three times and takes the higher result instead of twice."
       },
       {
         "name": "Damascan Steel",
-        "use": "",
-        "description": "<p>During a rest, the Damascus may repair one of its own destroyed melee weapons without spending any repairs.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "During a rest, the Damascus may repair one of its own destroyed melee weapons without spending any repairs."
       },
       {
         "name": "Liquid Metal Flow",
-        "use": "",
-        "description": "<p>At the end of the Damascus’ turn, if it dealt at least 1 damage to two or more hostile characters in that turn, it increases its melee weapons’ Threat by 1 until the start of its next turn.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "At the end of the Damascus’ turn, if it dealt at least 1 damage to two or more hostile characters in that turn, it increases its melee weapons’ Threat by 1 until the start of its next turn."
       }
     ],
     "core_system": {
       "name": "Damascus Suite",
       "active_name": "Blood Rivers Undammed",
-      "active_effect": "<p>Until the end of the scene, you may use Carnage Overflow once per attack instead of once per round, and it does not count against your reactions per turn. Carnage Overflow reactions cannot trigger additional uses of Carnage Overflow.</p>",
+      "active_effect": "Until the end of the scene, you may use Carnage Overflow once per attack instead of once per round, and it does not count against your reactions per turn. Carnage Overflow reactions cannot trigger additional uses of Carnage Overflow.",
       "activation": "Protocol",
-      "description": "",
-      "deactivation": "",
       "use": "Encounter",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
       "passive_name": "Carnage Overflow",
-      "passive_effect": "",
       "passive_actions": [
         {
           "name": "Carnage Overflow",
           "activation": "Reaction",
-          "detail": "<p>Make a melee weapon attack against another hostile character within range. On hit, the excess damage from the triggering character is dealt to the new target.</p>",
-          "cost": 0,
-          "pilot": false,
-          "damage": [],
-          "range": [],
-          "synergy_locations": [],
-          "tech_attack": false,
+          "detail": "Make a melee weapon attack against another hostile character within range. On hit, the excess damage from the triggering character is dealt to the new target.",
           "frequency": "1/round",
-          "init": "",
-          "trigger": "<p>A hostile character is reduced to 0 HP by one of your melee attacks, took damage in excess of their remaining HP, and has no Structure remaining.</p>"
+          "trigger": "A hostile character is reduced to 0 HP by one of your melee attacks, took damage in excess of their remaining HP, and has no Structure remaining."
         }
-      ],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      ]
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "y_pos": "25"
@@ -603,7 +361,6 @@
       "Striker",
       "Support"
     ],
-    "description": "",
     "mounts": [
       "Main",
       "Flex",
@@ -628,62 +385,23 @@
     "traits": [
       {
         "name": "Sin-Muballit's Decree",
-        "use": "",
-        "description": "<p>At the end of the Babylon’s turn, they may mark one enemy they attacked that turn. Until the start of the Babylon’s next turn, as a reaction to rolling damage, an allied character may consume this mark to reroll the damage of one attack against this target. They must take the second result, even if it is worse.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "At the end of the Babylon’s turn, they may mark one enemy they attacked that turn. Until the start of the Babylon’s next turn, as a reaction to rolling damage, an allied character may consume this mark to reroll the damage of one attack against this target. They must take the second result, even if it is worse."
       },
       {
         "name": "Strength in Numbers",
-        "use": "",
-        "description": "<p>When the Babylon has an ally within Sensors, the Babylon can still use comms to talk to other characters and take reactions even if Jammed.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "When the Babylon has an ally within Sensors, the Babylon can still use comms to talk to other characters and take reactions even if Jammed."
       },
       {
         "name": "Way of Kings",
-        "use": "",
-        "description": "<p>1/round, when the Babylon Boosts, an allied character within Sensors may move up to 2 spaces in any direction as a reaction. This movement ignores engagement and doesn’t provoke reactions.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "1/round, when the Babylon Boosts, an allied character within Sensors may move up to 2 spaces in any direction as a reaction. This movement ignores engagement and doesn’t provoke reactions."
       }
     ],
     "core_system": {
       "name": "Babylon Suite",
       "active_name": "Hammurabi's Code",
-      "active_effect": "<p>For the rest of the scene, when the Babylon or an allied character within Sensors is attacked, another allied character within Sensors may Overwatch the attacker as a reaction. If they do, they get +1 Accuracy to the attack.</p>",
+      "active_effect": "For the rest of the scene, when the Babylon or an allied character within Sensors is attacked, another allied character within Sensors may Overwatch the attacker as a reaction. If they do, they get +1 Accuracy to the attack.",
       "activation": "Protocol",
-      "description": "",
-      "deactivation": "",
-      "use": "Encounter",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
-      "passive_name": "",
-      "passive_effect": "",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      "use": "Encounter"
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "y_pos": "25"
@@ -696,7 +414,6 @@
     "mechtype": [
       "Support"
     ],
-    "description": "",
     "mounts": [
       "Main",
       "Aux/Aux",
@@ -721,50 +438,21 @@
     "traits": [
       {
         "name": "PYTHIC Code",
-        "use": "",
-        "description": "<p>1/round, when attacking, making a check, or making a save, the Delphi may roll 3d6 instead of a d20 to determine success or failure. It is still affected by modifiers as normal.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "1/round, when attacking, making a check, or making a save, the Delphi may roll 3d6 instead of a d20 to determine success or failure. It is still affected by modifiers as normal."
       },
       {
         "name": "Forewarned",
-        "use": "",
-        "description": "<p>1/round, as a reaction to an attack made by a hostile character within Sensors, you may replace the d20 roll with a 3d6 roll. It is still affected by modifiers as normal.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "1/round, as a reaction to an attack made by a hostile character within Sensors, you may replace the d20 roll with a 3d6 roll. It is still affected by modifiers as normal."
       }
     ],
     "core_system": {
       "name": "Delphi Suite",
       "active_name": "Apollonian Balance",
-      "active_effect": "<p>Until the end of the scene, all attacks, checks, and saves you roll are determined with 3d6 instead of d20.</p>",
+      "active_effect": "Until the end of the scene, all attacks, checks, and saves you roll are determined with 3d6 instead of d20.",
       "activation": "Protocol",
-      "description": "",
-      "deactivation": "",
       "use": "Encounter",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
       "passive_name": "Gamble with the Gods",
-      "passive_effect": "<p>At the start of the Delphi’s turn, if you do not have a value stored from this ability already, roll 3d6, note the result, and you may use it in place of rolling a d20 for a single attack roll, check, or save. When used for a roll, this value cannot be replaced by any other reroll or value.</p>",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      "passive_effect": "At the start of the Delphi’s turn, if you do not have a value stored from this ability already, roll 3d6, note the result, and you may use it in place of rolling a d20 for a single attack roll, check, or save. When used for a roll, this value cannot be replaced by any other reroll or value."
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "y_pos": "25"
@@ -777,7 +465,6 @@
     "mechtype": [
       "Controller"
     ],
-    "description": "",
     "mounts": [
       "Main",
       "Flex",
@@ -802,62 +489,204 @@
     "traits": [
       {
         "name": "Ginfaxi",
-        "use": "",
-        "description": "<p>You gain +1 Accuracy to tech attacks while in the Danger Zone.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "You gain +1 Accuracy to tech attacks while in the Danger Zone."
       },
       {
         "name": "Gapaldur",
-        "use": "",
-        "description": "<p>The Hólmavík may Boost as a free action once per scene while in the Danger Zone.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "The Hólmavík may Boost as a free action once per scene while in the Danger Zone."
       },
       {
         "name": "Katla Aftershock",
-        "use": "",
-        "description": "<p>When the Hólmavík uses a full tech action, it may double its current Heat (minimum +1 Heat) to use a quick tech as a free action on a character within Sensors.</p>",
-        "actions": [],
-        "bonuses": [],
-        "counters": [],
-        "deployables": [],
-        "synergies": [],
-        "integrated": [],
-        "special_equipment": []
+        "description": "When the Hólmavík uses a full tech action, it may double its current Heat (minimum +1 Heat) to use a quick tech as a free action on a character within Sensors."
       }
     ],
     "core_system": {
       "name": "Hólmavík Suite",
       "active_name": "Galdr Hymn",
-      "active_effect": "<p>For the rest of the scene, your Galdr Invocations are free actions, and you gain one use of every Invocation you chose during this mech’s last printing or your last full repair if you do not have any remaining. If you chose a given Galdr Invocation multiple times, you still only get one use of it. These additional uses do not persist between scenes.</p>",
+      "active_effect": "For the rest of the scene, your Galdr Invocations are free actions, and you gain one use of every Invocation you chose during this mech’s last printing or your last full repair if you do not have any remaining. If you chose a given Galdr Invocation multiple times, you still only get one use of it. These additional uses do not persist between scenes.",
       "activation": "Protocol",
-      "description": "",
-      "deactivation": "",
       "use": "Encounter",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
       "passive_name": "Galdr",
-      "passive_effect": "<p>When you print this mech or during a full repair, choose five Galdr Invocations. A given Galdr Invocation can be chosen up to three times. As a protocol, you may activate one of your chosen invocations. These invocations do not count as a limited system and cannot be replenished or enhanced by systems and abilities that affect limited systems.</p><p><strong>Lukkustafir</strong>: Until the end of your current turn, if you roll 20+ on a tech attack, the target becomes Locked On as well as Impaired and Slowed until the end of their next turn.</p><p><strong>Ægishjálmur</strong>: Choose one mech skill: Hull, Agility, Systems, Engineering. All tech attacks you make this turn that allow a save or check use that mech skill until the end of your turn, and targets of those tech attacks take +1 Difficulty to saves and checks using that mech skill until the end of their next turn.</p><p><strong>Dreprún</strong>: Tech attacks you make this turn deal an additional +2 Heat on hit and can affect characters with the biological tag.</p><p><strong>Hólastafur</strong>: Instead of targeting a character, you deploy a mine within Sensors of tech attacks you make this turn. When activated, the mine affects all characters within Burst 3.</p><p><strong>Kaupaloki</strong>: The next tech attack you make this turn may target a number of characters within Sensors equal to your current Heat after activating this protocol.</p><p><strong>Angurgapi</strong>: Tech actions you take this turn are treated as though you have Sensors 15.</p><p><strong>Draumstafir</strong>: Tech actions you take this turn are “stored”. Instead of targeting a character and going into effect, until the start of your next turn, it turns into a 1/round reaction with one of the following triggers of your choosing, selected at the time of taking the action during your turn:</p><p>An allied character starts their turn.</p><p>A hostile character starts their turn.</p><p>An allied character ends their turn.</p><p>A hostile character ends their turn.</p>",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      "passive_effect": "When you print this mech or during a full repair, choose five Galdr Invocations. A given Galdr Invocation can be chosen up to three times. As a protocol, you may activate one of your chosen invocations. These invocations do not count as a limited system and cannot be replenished or enhanced by systems and abilities that affect limited systems.<ul><li><strong>Lukkustafir</strong>: Until the end of your current turn, if you roll 20+ on a tech attack, the target becomes Locked On as well as Impaired and Slowed until the end of their next turn.</li><li><strong>Ægishjálmur</strong>: Choose one mech skill: Hull, Agility, Systems, Engineering. All tech attacks you make this turn that allow a save or check use that mech skill until the end of your turn, and targets of those tech attacks take +1 Difficulty to saves and checks using that mech skill until the end of their next turn.</li><li><strong>Dreprún</strong>: Tech attacks you make this turn deal an additional +2 Heat on hit and can affect characters with the biological tag.</li><li><strong>Hólastafur</strong>: Instead of targeting a character, you deploy a mine within Sensors of tech attacks you make this turn. When activated, the mine affects all characters within Burst 3.</li><li><strong>Kaupaloki</strong>: The next tech attack you make this turn may target a number of characters within Sensors equal to your current Heat after activating this protocol.</li><li><strong>Angurgapi</strong>: Tech actions you take this turn are treated as though you have Sensors 15.</li><li><strong>Draumstafir</strong>: Tech actions you take this turn are “stored”. Instead of targeting a character and going into effect, until the start of your next turn, it turns into a 1/round reaction with one of the following triggers of your choosing, selected at the time of taking the action during your turn:An allied character starts their turn.A hostile character starts their turn.An allied character ends their turn.A hostile character ends their turn.</li></ul>"
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": "25"
+  },
+  {
+    "id": "mf_masamune",
+    "source": "HA",
+    "license_level": 2,
+    "name": "MASAMUNE",
+    "mechtype": [
+      "Striker",
+      "Defender"
+    ],
+    "mounts": [
+      "Main",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 3,
+      "sensor_range": 3,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Lone Swordsman",
+        "description": "The Masamune ignores engagement from larger characters and can freely move through and share the spaces they occupy (even if they’re hostile). While occupying the same spaces as a hostile character, that character gains +1 difficulty to attack characters other than the Masamune."
+      },
+      {
+        "name": "Tumbling Dodge",
+        "description": "When the Masamune Braces, it may still use free actions and its standard move on its next turn."
+      },
+      {
+        "name": "Weak Computer",
+        "description": "The Masamune has +1 difficulty on Systems checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "systems"
+            ],
+            "detail": "The Masamune has +1 difficulty on Systems checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Crescent Moon's Perfection",
+      "active_name": "Recenter",
+      "active_effect": "The Masamune stabilizes. This ability is <strong>Efficient</strong> and refunds 1 Core Power at the end of any scene in which it's used.",
+      "activation": "Protocol",
+      "passive_name": "Silver Flash",
+      "passive_effect": "When the Masamune stabilizes, the next attack made against it before the start of its next turn treats it as if it were invisible. This effect does not stack with invisibility."
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": "25"
+  },
+  {
+    "id": "mf_pixie",
+    "source": "SSC",
+    "license_level": 2,
+    "name": "PIXIE",
+    "mechtype": [
+      "Artillery"
+    ],
+    "mounts": [
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 2,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 6,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Integrated SSC Flight Suite",
+        "description": "The Pixie can fly when it moves or boosts."
+      },
+      {
+        "name": "Advanced Targeting System",
+        "description": "The Pixie's Launchers and Cannons ignore cover."
+      },
+      {
+        "name": "Fragile",
+        "description": "The Pixie has +1 difficulty on Hull checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "hull"
+            ],
+            "detail": "The Pixie has +1 difficulty on Hull checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Solo Wing Flight System",
+      "active_name": "A World Without Borders",
+      "active_effect": "The Pixie flies up to twice its speed, ignoring engagement and reactions, and may select a Blast 2 area originating within a space that it passed over during its movement. Characters within the area must pass an Agility save or take 3d6 explosive damage. On a success, they take half damage.",
+      "activation": "Quick",
+      "use": "Scene"
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": "25"
+  },
+  {
+    "id": "mf_balrog",
+    "source": "HORUS",
+    "license_level": 2,
+    "name": "BALROG",
+    "variant": "BALOR",
+    "mechtype": [
+      "Defender",
+      "Controller"
+    ],
+    "mounts": [
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 12,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 3,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Blackheart",
+        "description": "When the Balrog would normally be able to Overwatch, it may attempt to Grapple the triggering character instead. If the character was not adjacent to the Balrog already, they are moved to the nearest adjacent space to the Balrog, ignoring engagement and reactions."
+      },
+      {
+        "name": "Fuel for the Flames",
+        "description": "While a character is Grappled by the Balrog, they take +1 Difficulty to all attacks made against any character other than the Balrog."
+      },
+      {
+        "name": "Balrog Swarm",
+        "description": "When a character Grappled by the Balrog deals damage or Heat to the Balrog, the Balrog restores 1/4 of its maximum HP. This effect can only occur once per round and occurs after damage or Heat is resolved."
+      }
+    ],
+    "core_system": {
+      "name": "Balrog Suite",
+      "active_name": "The Pyre Overcomes",
+      "active_effect": "Until the end of the scene, the Balrog counts as Size 4 for the purposes of Grappling and automatically heals 1/4 of its maximum HP at the start of the turns of any hostile characters involved in a Grapple with it.",
+      "activation": "Protocol",
+      "use": "Scene",
+      "passive_name": "Silver Tree Idol",
+      "passive_effect": "1/round, when the Balrog critically hits with a weapon attack or Grapple against a character, the Balrog may attempt to Invade the same character. If an attack hits multiple characters, only one may be Invaded in this way."
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "y_pos": "25"

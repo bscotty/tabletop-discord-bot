@@ -38,7 +38,7 @@
     "source": "EXOTIC",
     "license_level": 0,
     "effect": "",
-    "on_crit": "Target must perform a Hull save or be knocked Prone.",
+    "on_crit": "Target is knocked Prone.",
     "description": "The signature weapon of the perpetual champion of Crater Pit, until now. After being defeated in glorious mech combat this massive tungsten ball on a reinforced chain is now wielded by someone else. An ultimately primitive weapon it makes up for what it lacks in elegance with sheer brutality.",
     "license_id": ""
   },
@@ -236,7 +236,7 @@
     "damage": [
       {
         "type": "Energy",
-        "val": "3d6+2"
+        "val": "3d6+4"
       }
     ],
     "range": [
@@ -248,9 +248,6 @@
     "tags": [
       {
         "id": "tg_ap"
-      },
-      {
-        "id": "tg_overkill"
       },
       {
         "id": "tg_knockback",
@@ -286,7 +283,10 @@
     ],
     "tags": [
       {
-        "id": "tg_arcing"
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_seeking"
       },
       {
         "id": "tg_ordnance"

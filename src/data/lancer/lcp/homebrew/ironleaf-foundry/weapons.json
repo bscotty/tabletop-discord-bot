@@ -1140,5 +1140,39 @@
         "id": "tg_loading"
       }
     ]
+  },
+  {
+    "id": "mw_nanotoxin_injector",
+    "name": "Nanotoxin Injector",
+    "license_level": 1,
+    "on_hit": "Choose one of the following:<ul><li><b>Decay:</b> Until the end of the target's next turn, they take 1 burn each time they make an attack or take a standard move, boost or reaction.</li><li><b>Catalyst:</b> The attack deals bonus energy damage equal to the target's current burn, then the target clears all burn.</b></li></ul>",
+    "mount": "Main",
+    "type": "Melee",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "no_attack": false,
+    "no_mods": false,
+    "no_core_bonus": false,
+    "no_bonus": false,
+    "no_synergy": false,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": 3
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_ap"
+      }
+    ]
   }
 ]
