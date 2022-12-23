@@ -1,10 +1,10 @@
-import {IconTrait} from "./trait";
 import {IconAttack} from "./attack";
 import {IconTalent} from "./talent";
 import {IconSubAbility} from "./sub_ability";
 import {IconSummon} from "./summon";
 import {IconCombo} from "./combo";
 import {IconInfusion} from "./infuse";
+import {IconSpecialMechanic} from "./special";
 
 export type IconAbility = {
     id: string
@@ -24,7 +24,7 @@ export type IconAbility = {
     summon?: IconSummon
     infusion?: IconInfusion
     tags?: string[]
-    special?: IconTrait
+    special?: IconSpecialMechanic
     talents: IconTalent[]
     abilities?: IconSubAbility[]
 }

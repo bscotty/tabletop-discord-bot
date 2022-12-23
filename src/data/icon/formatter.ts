@@ -10,6 +10,7 @@ import {IconSummon} from "./types/summon";
 import {IconCombo} from "./types/combo";
 import {IconInfusion} from "./types/infuse";
 import {IconTalent} from "./types/talent";
+import {IconSpecialMechanic} from "./types/special";
 
 export class IconFormatter {
     constructor(
@@ -82,7 +83,7 @@ export class IconFormatter {
 
         let special = ""
         if (ability.special) {
-            special = `\n**${ability.special.name}:** ${ability.special.description}`
+            special = "\n" + this.formatSpecial(ability.special)
         }
 
         let combo = ""
@@ -92,7 +93,7 @@ export class IconFormatter {
 
         let summon = ""
         if (ability.summon) {
-            summon = "\n" + this.formatSummon(ability.summon)
+            summon = this.formatSummon(ability.summon)
         }
 
         let infusion = ""
@@ -112,23 +113,23 @@ export class IconFormatter {
 
     private formatClass(clazz: TypedIconClass): string {
         const description = `**${clazz.name}**\n*${clazz.title}*\n\n**Strengths:** ${clazz.strengths}` +
-            `\n**Weaknesses:** ${clazz.weaknesses}\n**Complexity:** ${clazz.complexity}\n\n*${clazz.description}*\n`
+            `\n**Weaknesses:** ${clazz.weaknesses}\n**Complexity:** ${clazz.complexity}`
 
-        const stats = `\n**Statistics**\n*VIT:* ${clazz.vit}\n*HP:* ${clazz.hp}\n*Defense:* ${clazz.defense}\n` +
-            `*Speed:* ${clazz.speed} (Dash ${clazz.dash})\n*Fray Damage:* ${clazz.fray_damage}\n` +
-            `*Damage Die:* ${clazz.damage_die}\n`
+        const stats = `\n\n**Statistics**\nVIT: **${clazz.vit}**\tHP: **${clazz.hp}**` +
+            `\tDefense: **${clazz.defense}**\tSpeed: **${clazz.speed}** (Dash: **${clazz.dash}**)` +
+            `\nFray Damage: **${clazz.fray_damage}**\tDamage Die: **${clazz.damage_die}**`
 
-        const traits = "\n**Traits**\n" + (clazz.traits.map((it) => this.formatTrait(it))).join("\n")
+        const traits = "\n\n**Traits**\n" + (clazz.traits.map((it) => this.formatTrait(it))).join("\n")
 
-        const special = "\n**Special Mechanics**\n" + (clazz.special.map((it) => this.formatTrait(it))).join("\n")
+        const special = "\n\n**Special Mechanics**\n" + (clazz.special.map((it) => "• " + this.formatSpecial(it))).join("\n")
 
         return `${description}${stats}${traits}${special}`
     }
 
     private formatJob(job: TypedIconJob): string {
-        const description = `**${job.name}** - ${this.lookupClassName(job.class)}\n*${job.title}*\n`
-        const traits = "\n**Traits**\n" + (job.traits.map((it) => this.formatTrait(it))).join("\n")
-        const abilities = "\n**Abilities**\n" + (job.abilities.map((it) => this.lookupAbilityName(it))).join(", ")
+        const description = `**${job.name}** - ${this.lookupClassName(job.class)}\n*${job.title}*`
+        const traits = "\n\n**Traits**\n" + (job.traits.map((it) => this.formatTrait(it))).join("\n")
+        const abilities = "\n\n**Abilities**\n" + (job.abilities.map((it) => this.lookupAbilityName(it))).join(", ")
         return `${description}${traits}${abilities}`
     }
 
@@ -172,7 +173,7 @@ export class IconFormatter {
 
         let special = ""
         if (limitBreak.special) {
-            special = `\n**${limitBreak.special.name}:** ${limitBreak.special.description}`
+            special = "\n" + this.formatSpecial(limitBreak.special)
         }
 
         const talents = "\n**Talent**\n" + limitBreak.talents.map((it) => this.formatTalent(it)).join("\n")
@@ -188,11 +189,11 @@ export class IconFormatter {
     private formatTrait(trait: IconTrait): string {
         let chapterPrefix = ""
         if (trait.chapter && trait.chapter == 3) {
-            chapterPrefix = `(Chapter 3 Trait) `
+            chapterPrefix = `(Chapter 3) `
         }
         let summon = ""
         if (trait.summon) {
-            summon = "\n" + this.formatSummon(trait.summon)
+            summon = this.formatSummon(trait.summon)
         }
         return `• *${trait.name}* ${chapterPrefix}- ${trait.description}${summon}`
     }
@@ -235,7 +236,7 @@ export class IconFormatter {
 
         let special = ""
         if (subAbility.special) {
-            special = `\n**${subAbility.special.name}:** ${subAbility.special.description}`
+            special = "\n" + this.formatSpecial(subAbility.special)
         }
 
         return `${description}${attack}${area}${trigger}${effect}${charge}${special}`
@@ -270,18 +271,22 @@ export class IconFormatter {
         return formattedAttack
     }
 
+    private formatSpecial(special: IconSpecialMechanic): string {
+        return `**${special.name}:** ${special.description}`
+    }
+
     private formatSummon(summon: IconSummon): string {
-        const summonName = `**Summon: ${summon.name}**`
-        const summonSize = `\nSize ${summon.size}`
+        const summonName = `\n\> **Summon: ${summon.name}**`
+        const summonSize = `\n\> Size ${summon.size}`
         let tags: string[] = []
         if (summon.tags) {
             tags = summon.tags
         }
         const summonTags = [summonSize, ...tags].join(", ")
-        const summonEffect = `\n*Summon Effect:* ${summon.effect}`
+        const summonEffect = `\n\> *Summon Effect:* ${summon.effect}`
         let summonAction = ""
         if (summon.action) {
-            summonAction = `\n*Summon Action:* ${summon.action}`
+            summonAction = `\n\> *Summon Action:* ${summon.action}`
         }
         return `${summonName}${summonTags}${summonEffect}${summonAction}`
     }

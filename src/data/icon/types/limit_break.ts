@@ -1,7 +1,7 @@
 import {IconAttack} from "./attack";
-import {IconTrait} from "./trait";
 import {IconTalent} from "./talent";
 import {IconSubAbility} from "./sub_ability";
+import {IconSpecialMechanic} from "./special";
 
 export type IconLimitBreak = {
     id: string
@@ -18,7 +18,7 @@ export type IconLimitBreak = {
     charge?: string
     effect: string
     tags?: string[]
-    special?: IconTrait
+    special?: IconSpecialMechanic
     talents: IconTalent[]
     abilities?: IconSubAbility[]
 }

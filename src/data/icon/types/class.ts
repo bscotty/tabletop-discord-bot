@@ -1,4 +1,5 @@
 import {IconTrait} from "./trait";
+import {IconSpecialMechanic} from "./special";
 
 export type IconClass = {
     id: string
@@ -16,7 +17,7 @@ export type IconClass = {
     dash: number
     fray_damage: number
     damage_die: string
-    special: IconTrait[]
+    special: IconSpecialMechanic[]
 }
 
 export type TypedIconClass = IconClass & {

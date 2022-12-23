@@ -1,5 +1,5 @@
-import {IconTrait} from "./trait";
 import {IconAttack} from "./attack";
+import {IconSpecialMechanic} from "./special";
 
 export type IconSubAbility = {
     id: string
@@ -15,5 +15,5 @@ export type IconSubAbility = {
     charge?: string
     refresh?: string
     tags?: string[]
-    special?: IconTrait
+    special?: IconSpecialMechanic
 }
