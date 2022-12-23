@@ -1429,5 +1429,872 @@
         "description": "FIVE FATE THIEF - When the character is marked, the aura becomes aura 3 until the start of their next turn."
       }
     ]
+  },
+  {
+    "id": "strafe_shot",
+    "job": "freelancer",
+    "name": "Strafe Shot",
+    "description": "Faster than a speeding bullet.",
+    "chapter": 1,
+    "action": "Light Ranged Attack",
+    "range": "Range 4",
+    "attack": {
+      "hit": "[D]+fray",
+      "miss": "fray",
+      "effect": "Inflict electrified."
+    },
+    "effect": "You may dash 1 before and after the attack.",
+    "tags": [
+      "+1 boon"
+    ],
+    "special": {
+      "name": "Finishing blow or Critical Hit",
+      "description": "Dash 1 and gain stealth"
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If you target an electrified character with this ability, turn all dashes into teleports."
+      },
+      {
+        "rank": 2,
+        "description": "Effect: Also electrify all characters adjacent to your target."
+      },
+      {
+        "rank": "Sidereal Rodeo",
+        "description": "Increase the distances of all movement by +2 and gain phasing during this ability."
+      }
+    ]
+  },
+  {
+    "id": "astral_guardian",
+    "job": "freelancer",
+    "name": "Astral Guardian",
+    "description": "Calling out their true name, in a flurry of celestial wings, you summon your bound spirit.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Summon an astral seraph in range 3. The seraph lasts until you use this ability again, or until reduced to 0 hp.",
+    "summon": {
+      "name": "Astral Seraph",
+      "size": 1,
+      "effect": "Summon Effect: At the end of your turn, you can teleport your seraph to a space in range 3 of you.\n • You can target your seraph with ranged attacks with a listed range. If you do, the seraph takes no damage or effects, but re-directs the attack to a new target in range 3 of the seraph. Attacks that the seraph re- directs electrify their target and count the seraph’s space as the origin space for cover, aoe, and other effects. \n • When you trigger a Finishing Blow with an attack against a character in range 3 of the Seraph, they may teleport adjacent to that character and deal fray damage",
+      "action": "string?",
+      "tags": [
+        "Phasing",
+        "Flying"
+      ]
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Allies can also ricochet attacks off the seraph."
+      },
+      {
+        "rank": 2,
+        "description": "If your seraph is in range 4, you can use your standard move to teleport to any free space adjacent to it, or vice versa."
+      },
+      {
+        "rank": "Archangel",
+        "description": "When you ricochet a shot off the seraph, after the attack resolves it shoots a flurry of divine bolts, dealing divine fray damage to all marked or electrified targets in range 3 of it."
+      }
+    ]
+  },
+  {
+    "id": "astral_chain",
+    "job": "freelancer",
+    "name": "Astral Chain",
+    "description": "With your heavenly chain skillfully whirling through the air, you dispense divine justice.",
+    "chapter": 1,
+    "action": "Heavy Melee Attack",
+    "range": "Range 3",
+    "attack": {
+      "hit": "[D]+fray",
+      "miss": "fray",
+      "effect": "Slow and electrify your foe."
+    },
+    "effect": "Mark: Your foe is marked. As long as your foe is marked by you, at the start of your turn, if they are in range 3, they take [D] damage from you as a bolt of celestial lightning shoots between you.\nWhenever you score a Finishing Blow or Critical Hit, including as part of this ability, your marked foe may be teleported 2.",
+    "tags": [
+      "Mark"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Gain evasion against your marked foe while they’re in range 3 of you."
+      },
+      {
+        "rank": 2,
+        "description": "Your attacks against your marked target teleport them 1 in any direction on hit."
+      },
+      {
+        "rank": "Astral Punisher",
+        "description": "When Astral Chain’s teleports trigger, they also triggers on all foes within range 2 of your target and deal fray damage to them."
+      }
+    ]
+  },
+  {
+    "id": "hot_chamber",
+    "job": "freelancer",
+    "name": "Hot Chamber",
+    "description": "Fan the hammer.",
+    "chapter": 1,
+    "action": "Interrupt 1",
+    "effect": "Roll 1d6 and fire up to that many shells from a sidearm at foes in range 4 of you, each dealing 2 damage. Each foe can only be hit by one shell.",
+    "trigger": "You score a critical hit.",
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If you fire 4 or more shells, gain stealth after this interrupt resolves."
+      },
+      {
+        "rank": 2,
+        "description": "Electrified characters can be hit by 2 shells."
+      },
+      {
+        "rank": "Vertigo Bullet",
+        "description": "You may teleport 1 between firing each shell, which could put new characters in range."
+      }
+    ]
+  },
+  {
+    "id": "divine_binding",
+    "job": "freelancer",
+    "name": "Divine Binding",
+    "description": "You lash out with ethereal cords, lassoing your enemy in an inescapable web.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Mark: Mark a foe in range 3 of you, choose a space adjacent to you, and lash to them with an astral chain, tying them to that space. If that target ends their turn further away from range 3 of that space, the chain snaps. That foe takes fray damage twice and becomes slow. Otherwise, the mark ends at the end of their turn.",
+    "tags": [
+      "Mark"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Your foe cannot benefit from evasion or dodge while marked."
+      },
+      {
+        "rank": 2,
+        "description": "If your target is bloodied, they must also save or become stunned if the chain snaps."
+      },
+      {
+        "rank": "Solar Rodeo",
+        "description": "Against bloodied foes, the mark no longer expires at the end of the foe’s turn, but instead lasts until the chain snaps."
+      }
+    ]
+  },
+  {
+    "id": "ace",
+    "job": "freelancer",
+    "name": "Ace",
+    "description": "The world goes still, and is split by a bolt of lightning.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "End your turn and gain Stance: When you take this stance, or when it refreshes, your attack deals bonus damage and triggers any critical hit effects, even on hit or miss.\nRoll a d6 after the attack resolves. On a 4+, gain stealth.",
+    "refresh": " Refresh this stance if you score a finishing blow.",
+    "tags": [
+      "Stance",
+      "End Turn"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If you roll a 6 on Ace's effect, the stasnce also refreshes."
+      },
+      {
+        "rank": 2,
+        "description": "Against electrified characters, roll two dice and pick the highest."
+      },
+      {
+        "rank": "Divinity Discharge",
+        "description": "After you make an attack empowered by Ace, you can discharge the divine energy from your weapon, dealing divine fray damage to a character in range 3 as an effect."
+      }
+    ]
+  },
+  {
+    "id": "cerberus",
+    "job": "freelancer",
+    "name": "Cerberus",
+    "description": "The most dangerous of rogue spirits enter the Freelancer’s arsenal as loyal servants - bestial divine hounds that pursue their chosen prey with zealous ferocity.",
+    "chapter": 2,
+    "action": "1 Action",
+    "effect": "Summon a celestial hound in range 3. The hound lasts until defeated or this ability is used again.",
+    "summon": {
+      "name": "Celestial Hound",
+      "size": 1,
+      "effect": "Once a round, if a foe ends their turn within range 2 of the hound, it catches their scent and may dash up to 3 spaces towards them. If it’s then adjacent to them, it deals fray damage. Damage becomes fray damage twice instead if the foe is marked.",
+      "action": "At the start of your turn, the hound may move up to 3 spaces."
+    },
+    "tags": [
+      "Summon"
+    ],
+    "special": {
+      "name": "Finishing Blow",
+      "description": "When you score a finishing blow, you may teleport the hound to any space within range 3 of a foe."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "The hound can phase through terrain and characters. When it phases through foes, it inflicts electrified."
+      },
+      {
+        "rank": 2,
+        "description": "The hound counts bloodied foes as marked."
+      },
+      {
+        "rank": "Gatekeeper",
+        "description": "Your hound gains aura 2. Foes that exit the aura on their turn immediately trigger the hound’s effect."
+      }
+    ]
+  },
+  {
+    "id": "chain_of_salvation",
+    "job": "freelancer",
+    "name": "Chain of Salvation",
+    "description": "When skillfully used, the astral chain can be used to maneuver in the blink of an eye.",
+    "chapter": 2,
+    "action": "1 Action",
+    "effect": "Mark and grapple on to an ally or allied summon in range 4 from you with an ethereal lasso and gain the Deus Ex Machina interrupt while that character is marked. You can take the interrupt regardless of distance.",
+    "tags": [
+      "Mark"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If the teleported character is bloodied, they can be teleported 6 spaces instead."
+      },
+      {
+        "rank": 2,
+        "description": "You can also use this ability on foes. They can save to avoid the interrupt."
+      },
+      {
+        "rank": "Whip of the Thrones",
+        "description": "While you or your target has stealth, regain this interrupt at the start of each turn."
+      }
+    ],
+    "abilities": [
+      {
+        "id": "deus_ex_machina",
+        "job": "freelancer",
+        "name": "Deus Ex Machina",
+        "action": "Interrupt 1",
+        "effect": "Teleport up to 3 spaces towards the target or teleport your target 3 spaces towards you. The teleport must end with both of you closer together.",
+        "trigger": "The end of any turn."
+      }
+    ]
+  },
+  {
+    "id": "soul_shot",
+    "job": "freelancer",
+    "name": "Soul Shot",
+    "description": "The ultimate freelancer technique - using the soul aether of their companions to supercharge astral bullets.",
+    "chapter": 3,
+    "action": "Light Ranged Attack",
+    "range": "Line 4",
+    "attack": {
+      "hit": "[D]+fray",
+      "miss": "fray"
+    },
+    "area": "fray",
+    "effect": "Inflict electrified and burning.\nAllies are immune to damage and blights from this ability. Gains bonus damage for every ally or allied summon it fires through.",
+    "tags": [
+      "+1 boon"
+    ],
+    "special": {
+      "name": "Finishing Blow or Critical Hit",
+      "description": "Allies or allied summons in the line may teleport 2 spaces."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Effect: Allies or allied summons in the area also gain phasing until the end of their next turn."
+      },
+      {
+        "rank": 2,
+        "description": "Becomes a critical hit if 3 or more characters are caught in the line."
+      },
+      {
+        "rank": "Great Angelos",
+        "description": "This ability gains critical hit: cure allies and allied summons in the line."
+      }
+    ]
+  },
+  {
+    "id": "umbra",
+    "job": "shade",
+    "name": "Umbra",
+    "description": "By the power of darkness.",
+    "chapter": 1,
+    "action": "Light Ranged Magical Attack",
+    "range": "Range 4",
+    "attack": {
+      "hit": "[D]+fray",
+      "miss": "fray"
+    },
+    "effect": "You may teleport to any space within range 2 of your target either before or after the attack.\nInflict frostbite.",
+    "combo": {
+      "name": "Penumbra",
+      "effect": "Teleport your foe to any space within range 2 of you instead. A foe can save to avoid this effect. Frostbitten foes fail this save."
+    },
+    "tags": [
+      "+1 boon",
+      "Combo"
+    ],
+    "special": {
+      "name": "Finishing Blow",
+      "description": " Gain stealth, and your foe is blinded."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Critical Hit: You may swap places with your foe, teleporting, after this ability resolves."
+      },
+      {
+        "rank": 2,
+        "description": "Against a frostbitten character, you may create a pit underneath them after this ability resolves."
+      },
+      {
+        "rank": "Devil Frog Technique",
+        "description": "Umbra has the range of the battlefield against blinded or frostbitten characters."
+      }
+    ]
+  },
+  {
+    "id": "shrike",
+    "job": "shade",
+    "name": "Shrike",
+    "description": "With the flick of a wrist, you hurl a spectral blade, marking your foe with an umbral seal.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Mark: Flick a dagger at a character in range 4 and line of sight, marking that character and dealing 1 damage. While marked, that character is frostbitten+, and each time you teleport, if that character is in range 4 and line of sight from you, you flick a dagger at them, dealing 1 damage.",
+    "tags": [
+      "Mark"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "At the start of your turn, you may teleport to any space in range 2 of your target."
+      },
+      {
+        "rank": 2,
+        "description": "While you have a character marked by Shrike, your critical hits gain effect: Teleport 1."
+      },
+      {
+        "rank": "Twintail",
+        "description": "You may throw an additional dagger at a different foe, marking both. You may deal damage or activate effects against one or both foes when this ability activates."
+      }
+    ]
+  },
+  {
+    "id": "death_blossom",
+    "job": "shade",
+    "name": "Death Blossom",
+    "description": "From beneath a cloak, out from flying sleeves, or hidden in coils of hair - infinite blades. One more sweep, and shadowy bolts of cloth cut through your foes like razors.",
+    "chapter": 1,
+    "action": "Heavy Melee Attack",
+    "range": "Close blast 1",
+    "attack": {
+      "hit": "2[D]+fray",
+      "miss": "fray",
+      "effect": "Foe is blinded and frostbitten"
+    },
+    "area": "fray",
+    "combo": {
+      "name": "Flying Sleeve",
+      "effect": "If you catch yourself or an allied summon in the area, you, your allies, and your summons are immune to this ability's damage and effects, and you may extend the arc effect to Arc 8.",
+      "range": "Arc 3"
+    },
+    "special": {
+      "name": "Finishing Blow or Slay",
+      "description": "All characters are inflicted with frostbite and take fray damage again."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Critical hit: Teleport all characters in the area 1."
+      },
+      {
+        "rank": 2,
+        "description": "If you’re on a higher elevation than your target space, this ability deals bonus damage."
+      },
+      {
+        "rank": "Shukuchi",
+        "description": "You can teleport 3 spaces before and after using this ability."
+      }
+    ]
+  },
+  {
+    "id": "nightmare",
+    "job": "shade",
+    "name": "Nightmare",
+    "description": "Draw out a fragment of true darkness, roaming and hunting for warmth.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "End your turn and summon a nightmare in range 4.",
+    "summon": {
+      "name": "Nightmare",
+      "size": 1,
+      "effect": " Does not provide obstruction and can share space with characters.\n • When a foe enters a nightmare’s space or starts their turn there, it deals 2 damage to them, then un-summon it and replace it with a pit. Blinded characters take 2 damage twice instead.\n • If you enter a nightmare’s space or start your turn there, you may choose to un-summon and absorb it. It covers you like a second skin. You gain stealth, and evasion agains the next attack taken against you. After that attack is made, end this effect.",
+      "tags": [
+        "intangible"
+      ]
+    },
+    "tags": [
+      "Summon",
+      "End Turn"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Allies can also be covered by a nightmare."
+      },
+      {
+        "rank": 2,
+        "description": "At the start of your turn, all nightmares you control can move 1."
+      },
+      {
+        "rank": "Hell Centipede Technique",
+        "description": "You can summon a nightmare as a free action once a round without ending your turn when you trigger a slay or critical hit effect."
+      }
+    ]
+  },
+  {
+    "id": "nocturne",
+    "job": "shade",
+    "name": "Nocturne",
+    "description": "You capture a thin silver thread of spilled life force of a foe and use it to tear open a space of night and cold.",
+    "chapter": 1,
+    "action": "Interrupt 1",
+    "effect": "Terrain Effect: Mark a blast 1 area around that character, then create a terrain effect in that area. This cloud of shadow is difficult terrain for foes, and yourself or allies that enter the area gain stealth. If you trigger this interrupt again, you can replace the zone or refresh the duration of your existing zone.",
+    "trigger": "You trigger a finishing blow or slay effect.",
+    "tags": [
+      "Terrain Effect"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "The area inflicts frostbite on foes that start or end their turn there. Frostbitten foes take fray damage."
+      },
+      {
+        "rank": 2,
+        "description": "You deal bonus damage against characters in the area."
+      },
+      {
+        "rank": "Spider Technique",
+        "description": "When you score a finishing blow or trigger a slay effect, you may increase the size of the zone by +1, up to a maximum of blast 3."
+      }
+    ]
+  },
+  {
+    "id": "danse_macabre",
+    "job": "shade",
+    "name": "Danse Macabre",
+    "description": "You step through the air, emerging from the shadows of your foes and allies.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Teleport adjacent to a character in range 2, then teleport adjacent to a character in range 2 from your new location. Between the first and second teleport, you can use an ability or action. You can’t teleport to the same character twice, and you must end each teleport adjacent to a character.",
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Also gain stealth after this ability resolves."
+      },
+      {
+        "rank": 2,
+        "description": "If you have stealth when you start Danse Macabre, increase its teleports by +1"
+      },
+      {
+        "rank": "Thousand Year Lizard Technique",
+        "description": "At round 5 or later, this ability has no maximum range."
+      }
+    ]
+  },
+  {
+    "id": "umbral_echo",
+    "job": "shade",
+    "name": "Umbral Echo",
+    "description": "Spinning threads of night and frost, you call upon the nascent Darksides of your allies to emerge and frolic freely.",
+    "chapter": 2,
+    "action": "2 Actions",
+    "effect": "Create a shadow clone in a free adjacent space to every ally or allied summon in a close blast 1 area. Clones last until this ability is used again.",
+    "summon": {
+      "name": "Shadow Clone",
+      "size": 1,
+      "effect": " Can share space with other characters. While adjacent to, or sharing a space with any shadow clone, yourself and allies have evasion. However, destroy that clone if you or they successfully evade an attack this way.",
+      "action": "When you take this action, and at the start of your turn, you may move all shadow clones up to 3 spaces in a direction of your choice.",
+      "tags": [
+        "Phasing",
+        "Intangible"
+      ]
+    },
+    "tags": [
+      "Summon"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If you catch a frostbitten character in the area, Increase size to blast 2."
+      },
+      {
+        "rank": 2,
+        "description": "As a free action, you can swap places with any shadow clone, teleporting, regardless of distance."
+      },
+      {
+        "rank": "Rapturous Echo",
+        "description": "The first time it’s used in a combat, Umbral Echo affects all allies and allied summons in range 3."
+      }
+    ]
+  },
+  {
+    "id": "hollow",
+    "job": "shade",
+    "name": "Hollow",
+    "description": "Wreath yourself in the innermost darkness of the soul, a terror that cannot be fought by anyone alone.",
+    "chapter": 2,
+    "action": "1 Action",
+    "effect": "While in this stance, when you attack a foe with none of its allies adjacent, your attacks gain +1 boon and trigger a finishing blow even if that character is above bloodied.",
+    "refresh": "Refresh hollow at the start of your turn.",
+    "tags": [
+      "Stance"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "You may also teleport 2 after the attack if hollow triggers."
+      },
+      {
+        "rank": 2,
+        "description": "Also deal bonus damage when hollow triggers."
+      },
+      {
+        "rank": "Nosferatu",
+        "description": "Gain a d4 power die while in Hollow, starting at 1. When you trigger its effect tick the die up by 1. When the die is at 4, you become Intangible until the end of your next turn, then the die resets to 1."
+      }
+    ]
+  },
+  {
+    "id": "incubus",
+    "job": "shade",
+    "name": "Incubus",
+    "description": "The thirteenth scroll art, a void-sheathed blade that cuts away at the aether of the very soul, leaving a cut that creates bleeding darkness.",
+    "chapter": 3,
+    "action": "Light Melee Attack",
+    "attack": {
+      "hit": "[D]",
+      "miss": "1 damage"
+    },
+    "effect": "Inflict frostbite and electrified.\nMark: Mark your foe. While marked, if any ally of your target ends their turn adjacent to your marked foe, or your foe ends their turn adjacent to any allies, then both the target and any adjacent allies take fray damage and are blinded.",
+    "tags": [
+      "Mark",
+      "+1 boon"
+    ],
+    "special": {
+      "name": "Finishing Blow",
+      "description": "Immediately trigger the mark effect."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Also gain slay: immediately trigger the mark effect."
+      },
+      {
+        "rank": 2,
+        "description": "Incubus deals bonus damage for every ally of your target adjacent to your target."
+      },
+      {
+        "rank": "Widow Technique",
+        "description": "You may mark any number of characters with Incubus. When a character takes damage from an Incubus mark, you may also mark them."
+      }
+    ]
+  },
+  {
+    "id": "apex",
+    "job": "warden",
+    "name": "Apex",
+    "description": "Stirring up toxins and pheromones into a viscous paste on an arrow, javelin, or bullet, wardens can summon the wild’s deadliest creatures.",
+    "chapter": 1,
+    "action": "Light Ranged Attack",
+    "range": "Range 4",
+    "attack": {
+      "hit": "[D]+fray",
+      "miss": "fray"
+    },
+    "effect": "Summon a venomous beast in an adjacent space to your target after the attack resolves.",
+    "summon": {
+      "name": "Venemous Beast (1 hp)",
+      "size": 1,
+      "effect": "When you attack a foe in range 2 of this summon, remove it from the battlefield, then place it in an adjacent space to them. It deals 1 damage, and poisons your target. If your target is already poisoned, it deals 2 damage instead."
+    },
+    "tags": [
+      "+1 boon",
+      "Summon"
+    ],
+    "special": {
+      "name": "Finishing blow or Critical Hit",
+      "description": "Summon two beasts."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Gain effect: After the attack resolves, all allies and summons adjacent to your target gain stealth."
+      },
+      {
+        "rank": 2,
+        "description": "Attack ignores vigor against poisoned targets."
+      },
+      {
+        "rank": "Snipe",
+        "description": "If made from stealth, increase range to 12 and ignores cover."
+      }
+    ]
+  },
+  {
+    "id": "gwynt",
+    "job": "warden",
+    "name": "Gwynt",
+    "description": "With catlike reflexes, you pounce, spurring allies to action.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Dash up to 2 spaces, then deal 2 damage to an adjacent foe.\nAn ally or summon in range 3 of your ending location may also dash up to 2 spaces towards your foe. If that puts them adjacent to your target, they deal 2 damage to them. Then roll 1d6. On a 4 or higher, you may repeat this effect on a new ally or summon in range.",
+    "special": {
+      "name": "Finishing Blow",
+      "description": "After this ability resolves, your foe takes 2 damage, once for each adjacent ally or summon."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If made from stealth, the initial dash from this ability becomes 4."
+      },
+      {
+        "rank": 2,
+        "description": "You and each ally or summon may each shove your target 1 space when each effect triggers."
+      },
+      {
+        "rank": "Great Gwynt",
+        "description": "Increase all ranges and dashes as part of this move by +1, and you may turn the dashes from this move into a teleport or fly instead (you may choose for each one)."
+      }
+    ]
+  },
+  {
+    "id": "circle_the_oak",
+    "job": "warden",
+    "name": "Circle the Oak",
+    "description": "Ten palm strikes with the heel of the hand or the haft of the axe will shatter even the most tenacious bark.",
+    "chapter": 1,
+    "action": "Heavy Melee Attack",
+    "attack": {
+      "hit": "Deal fray damage"
+    },
+    "effect": "Your target is poisoned and slow. If they’re already poisoned, this attack ignores all vigor.\nIf you’re adjacent to your foe, dash in a full circle clockwise through every adjacent space to your foe. You may phase through ally’s and allied summons’ spaces. Each time you pass through an ally or summon’s space, deal fray damage to your foe. Stop if you would enter the space of another foe or obstruction.",
+    "special": {
+      "name": "Finishing Blow",
+      "description": "You may complete two circles."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "You may dash up to 1 space before taking this ability. If made from stealth, increase this to 3 spaces."
+      },
+      {
+        "rank": 2,
+        "description": "You may shove allies and summons you pass through 2 spaces away from your target."
+      },
+      {
+        "rank": "Timber Split",
+        "description": "Enemies no longer stop this move, and you may phase through their spaces. Enemies you pass through are shoved 1, take fray damage, and are poisoned."
+      }
+    ]
+  },
+  {
+    "id": "stampede",
+    "job": "warden",
+    "name": "Stampede",
+    "description": "With a bellow or a clenched fist, you summon an immense spirit to pound your enemies.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Mark: You mark a foe in range 4. At the end of that foe’s turn, summon a rampaging spirit beast, which charges in from the edge of the battlefield, dashing in a straight line, with phasing, ending adjacent to that foe. The foe takes fray damage, is shoved 1 and slow. Foes the beast passes through take fray damage.\nIf you use this mark again, you may choose if it summons a new beast, dispersing the old one, or moves the old one. If the mark is removed, the beast disappears.",
+    "summon": {
+      "name": "Stampede Beast",
+      "size": 1,
+      "effect": "After charging the beast condenses into a real creature and remains adjacent to your foe, becoming a summon. When you hit the marked foe with an attack, the beast may dash 4 towards your marked foe with phasing, then may deal fray damage to them if adjacent, and all characters they pass through."
+    },
+    "tags": [
+      "Mark",
+      "Summon"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "When you trigger a finishing blow on a foe, you may transfer the mark to them before activating the summon's effect."
+      },
+      {
+        "rank": 2,
+        "description": "If you’re in stealth when the beast charges, foes the beast passes through are shoved 1 to either side and slowed as well."
+      },
+      {
+        "rank": "Lord of the Steppe",
+        "description": "Yourself and allies can ride the beast if it passes through their space, removing themselves from the battlefield. When it ends its movement, they hop off and must place themselves in an adjacent space, or as close as possible."
+      }
+    ]
+  },
+  {
+    "id": "sidhe",
+    "job": "warden",
+    "name": "Sidhe",
+    "description": "With the ways of the green kenning, you can be anywhere at any time, using nature as a cloak.",
+    "chapter": 1,
+    "action": "Free action",
+    "effect": "Swap places with an adjacent ally or allied summon, teleporting. If your ally or summon was adjacent to a foe, they gain evasion until the end of their next turn.",
+    "talents": [
+      {
+        "rank": 1,
+        "description": "You can use this ability on foes, but they can save to avoid the effect. If they can’t occupy the space you left, the action can’t be taken. If they’re poisoned, they fail the save."
+      },
+      {
+        "rank": 2,
+        "description": "Your ally or summon also gains stealth after this ability."
+      },
+      {
+        "rank": "Deep Sidhe",
+        "description": "When made from stealth, this ability has range 5."
+      }
+    ]
+  },
+  {
+    "id": "morrigan",
+    "job": "warden",
+    "name": "Morrigan",
+    "description": "Responding to your call, a dark wing descends upon the battlefield.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "A winged beast summon lands in a free space of your choice in range 4.\nThe beast remains and can be used as long as it’s active. Using this ability again either summons a new beast or moves the current one.",
+    "summon": {
+      "name": "Winged Beast",
+      "size": 1,
+      "effect": "Yourself or allied characters can grab onto the beast by spending an action and ending their turn when adjacent. The beast picks them up, removing them from the battlefield, then carries them to any free space on the battlefield, placing them back on the battlefield. Then place the beast in an adjacent space to them.",
+      "tags": [
+        "Flying"
+      ]
+    },
+    "tags": [
+      "Summon"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "When you trigger a finishing blow, you can cause the beast to soar into the air and land in a new space in range 4 of you."
+      },
+      {
+        "rank": 2,
+        "description": "When the beast lands, it deals fray damage to adjacent foes."
+      },
+      {
+        "rank": "Lord of the Wing",
+        "description": "After the beast lands, characters that mount the beast may remain mounted on the beast until the end of their next turn. The beast shares their space and moves or teleports with them. They have cover, flying, and the skirmisher trait while mounted. At the end of that turn, they dismount, losing these benefits. Only one character can be mounted at once, and the beast can’t be used to transport if someone is mounted on it."
+      }
+    ]
+  },
+  {
+    "id": "underway",
+    "job": "warden",
+    "name": "Underway",
+    "description": "You open the greenways to your allies, allowing them to step the branch-paths and cross distances in an instant.",
+    "chapter": 2,
+    "action": "1 Action",
+    "effect": "When you take this stance, or when it refreshes, you may create a leafy portal in a free adjacent space. You can have up to 3 underways active at once, and can choose which one to replace when you create a new one.",
+    "refresh": "You may refresh this stance if you end your turn in difficult terrain, a terrain effect, or adjacent to an object other than an underway.",
+    "summon": {
+      "name": "Underway",
+      "size": 1,
+      "effect": "You and allies can use 1 action or their standard move while adjacent to an underway to teleport to a free adjacent space to any other underway, or adjacent to you.",
+      "tags": [
+        "Object"
+      ]
+    },
+    "tags": [
+      "Stance"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Allies that end their turn adjacent to an underway gain stealth."
+      },
+      {
+        "rank": 2,
+        "description": "The area around your underways is difficult terrain for foes."
+      },
+      {
+        "rank": "Bale Portal",
+        "description": "Foes that end any turn adjacent to an underway can be teleported to any space adjacent to you or or any other underway. A foe can save to avoid this effect. Poisoned foes fail this save."
+      }
+    ]
+  },
+  {
+    "id": "mist_strider",
+    "job": "warden",
+    "name": "Mist Strider",
+    "description": "Call on the beasts of the deep mists and rains, whose form is shadow and water.",
+    "chapter": 2,
+    "action": "1 Action",
+    "effect": "Summon a mist strider in range 3",
+    "summon": {
+      "name": "Mist Strider",
+      "size": 1,
+      "effect": "The beast has aura 1. Yourself or allies inside the aura that end their turn in the aura gain stealth.",
+      "action": "At the start of your turn, the beast may dash 3. Allies in the aura may also dash 3, or as far as possible, mirroring its movement, and gain phasing while dashing this way.",
+      "tags": [
+        "Phasing",
+        "Permanent Stealth"
+      ]
+    },
+    "tags": [
+      "Summon"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "While in the aura, allies also have evasion against ranged attacks."
+      },
+      {
+        "rank": 2,
+        "description": "You may also trigger the beast’s effect if it’s damaged by a foe’s attack or ability."
+      },
+      {
+        "rank": "Lord of the Hunt",
+        "description": "You can trigger the beast’s action whenever you gain or lose stealth."
+      }
+    ]
+  },
+  {
+    "id": "gorgon",
+    "job": "warden",
+    "name": "Gorgon",
+    "description": "Dip your weapons in the toxins of the deadliest creatures to roam the deep green. Mere preparation of this technique requires years of ritual, patience, and training.",
+    "chapter": 3,
+    "action": "Light Melee Attack",
+    "attack": {
+      "hit": "[D]",
+      "miss": "1 damage",
+      "crit": "Create a blast 1 area of dangerous terrain centered on your foe."
+    },
+    "effect": "Inflict poisoned and frostbite.\nYour target is injected with a catalyzing toxin. While injected with the toxin, if they move voluntarily before the end of their next turn, they must save or take fray damage twice on a failed save, or just once on a successful save. Then, this effect ends.",
+    "tags": [
+      "+1 boon"
+    ],
+    "special": {
+      "name": "Finishing Blow",
+      "description": "Shove your target 2 spaces."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Bloodied characters take +1 curse on the save."
+      },
+      {
+        "rank": 2,
+        "description": "If the foe moves and triggers the toxin, your foe explodes with poison, also poisoning all adjacent foes and causing all foes affected to lose all vigor."
+      },
+      {
+        "rank": "Great Fume Poison",
+        "description": "While injected with the toxin, your foe treats all foes as having evasion and dodge. This effect ends if the toxin is triggered."
+      }
+    ]
   }
 ]
