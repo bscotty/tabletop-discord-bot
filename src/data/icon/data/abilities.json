@@ -2018,9 +2018,12 @@
     },
     "effect": "Summon a venomous beast in an adjacent space to your target after the attack resolves.",
     "summon": {
-      "name": "Venemous Beast (1 hp)",
+      "name": "Venemous Beast",
       "size": 1,
-      "effect": "When you attack a foe in range 2 of this summon, remove it from the battlefield, then place it in an adjacent space to them. It deals 1 damage, and poisons your target. If your target is already poisoned, it deals 2 damage instead."
+      "effect": "When you attack a foe in range 2 of this summon, remove it from the battlefield, then place it in an adjacent space to them. It deals 1 damage, and poisons your target. If your target is already poisoned, it deals 2 damage instead.",
+      "tags": [
+        "1 hp"
+      ]
     },
     "tags": [
       "+1 boon",
@@ -2294,6 +2297,916 @@
       {
         "rank": "Great Fume Poison",
         "description": "While injected with the toxin, your foe treats all foes as having evasion and dodge. This effect ends if the toxin is triggered."
+      }
+    ]
+  },
+  {
+    "id": "holy",
+    "job": "chanter",
+    "name": "Holy",
+    "description": "You ring the bell of purity and a tone rings out that soothes the peaceful and chastises the violent. A second ring from the bell shatters the tone from the first, breaking open the earth.",
+    "chapter": 1,
+    "action": "Light Ranged Attack",
+    "range": "Ranged 5",
+    "effect": "Mark, electrify, and pacify a foe, then cure an ally in range 3 of your foe.",
+    "combo": {
+      "name": "Hades",
+      "effect": "Create a blast 1 area centered on your foe marked by Holy, regardless of range or line of sight.\nTerrain effect: Create up to two pits in free space in the area.",
+      "attack": {
+        "hit": "Fray damage",
+        "effect": "Inflict electrified. Characters suffering from electrified already can be teleported 1 after this ability resolves."
+      },
+      "area": "Fray damage"
+    },
+    "tags": [
+      "Combo",
+      "Mark"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Charge: Increase Hades area to blast 2, or cure a second ally with Holy."
+      },
+      {
+        "rank": 2,
+        "description": "When used against a Pacified foe, Holy deals fray damage twice."
+      },
+      {
+        "rank": "Dante",
+        "description": "Hades may create up to 3 pits in its area, and they can be created under characters."
+      }
+    ]
+  },
+  {
+    "id": "felicity",
+    "job": "chanter",
+    "name": "Felicity",
+    "description": "You ring the bell of fleeting guardians, and an ally feels their step lifted by invisible wings.",
+    "chapter": 1,
+    "action": "1 Action",
+    "range": "Range 5",
+    "effect": "Mark: Mark an ally in range. That character gains a blessing and can dash 2 as an effect. Whenever you use a combo version of an ability, your marked character can dash 2 as an effect.",
+    "combo": {
+      "name": "Fleet",
+      "effect": "An ally in range may fly 4. Characters they pass over are electrified. Electrified characters take fray damage."
+    },
+    "tags": [
+      "Combo",
+      "Mark"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Felicity’s marked character has evasion against electrified characters."
+      },
+      {
+        "rank": 2,
+        "description": "Fleet’s target may dash 6 if they’re bloodied."
+      },
+      {
+        "rank": "Fantasia",
+        "description": "Gain an alternate combo ability:",
+        "combo": {
+          "name": "Fantasia",
+          "effect": "Any allies marked by you may teleport 4"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pandaemonium",
+    "job": "chanter",
+    "name": "Pandaemonium",
+    "description": "You sing a passage of the days of chaos and battle, where the tumult of the battlefield was like the churning of the sea, and divine lightning scathed the land.",
+    "chapter": 1,
+    "action": "Heavy Ranged Attack",
+    "range": "Range 4, Blast 1",
+    "attack": {
+      "hit": "[D]+fray",
+      "effect": "Electrify your foe."
+    },
+    "area": "Fray",
+    "effect": "Teleport allies in the area to any unoccupied space in the area instead of dealing damage to them. Then, teleport any enemies, including the primary target, in the area to any unoccupied space in the area.",
+    "combo": {
+      "name": "Purgatorio",
+      "effect": "For each affected foe, you may create a pit in a free adjacent space.",
+      "range": "Range 4",
+      "attack": {
+        "hit": "[D]+fray"
+      },
+      "area": "[D]+fray damage to all foes contiguously connected to your attack target, not counting diagonals."
+    },
+    "tags": [
+      "Combo"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Charge: Increase blast size by +1 for Pandaemonium and increase range to 6 for Purgatorio."
+      },
+      {
+        "rank": 2,
+        "description": "Electrified characters count as contiguous for Purgatorio as long as they’re in range 2 of any target."
+      },
+      {
+        "rank": "Dulce Purgatorio",
+        "description": "Pandaemomium/Purgatorio deals bonus damage and its area effects also affect all characters inside a pit on the battlefield."
+      }
+    ]
+  },
+  {
+    "id": "chaos",
+    "job": "chanter",
+    "name": "Chaos",
+    "description": "You sing of darkness and demons, and the strength of the soul. The note causes your allies’ weapons to burst with aetheric energy.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Until the end of your next turn, you gain aura 1. Your attacks and the attacks of your allies in the aura gain true strike and inflict an elemental blight (roll 1d6 when taking this ability).\n1 - Burning\n2 - Frostbite\n3 - Poisoned\n4 - Electrified\n5 - Choose one\n6 - Choose two",
+    "combo": {
+      "name": "Communion",
+      "effect": "Gain aura 1 until the end of your next turn. While in the aura, yourself and allies have immunity to the effects of marks and blights, and cannot gain new marks or blights."
+    },
+    "tags": [
+      "Combo"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Allies that end their turn in the Communion or Chaos auras can end all blights."
+      },
+      {
+        "rank": 2,
+        "description": "Charge: Aura 2"
+      },
+      {
+        "rank": "Circle of Power",
+        "description": "The first time in combat you use this ability, you can create a terrain effect underneath you with this ability with a blast size equal to the aura size. The terrain effect has no maximum duration. It is difficult terrain for foes, and characters inside the area count as being in your aura for Chaos or Communion when it is active."
+      }
+    ]
+  },
+  {
+    "id": "dervish",
+    "job": "chanter",
+    "name": "Dervish",
+    "description": "You speak of the comfort of companions, and the dawn that surely will follow.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Until the start of your next turn, you may teleport any willing ally that ends their turn in range 4 from you to any adjacent space to you.",
+    "combo": {
+      "name": "Dawn",
+      "effect": "Cure all adjacent allies. Bloodied allies can end all statuses and blights."
+    },
+    "tags": [
+      "Combo"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Charge: An aura 1 of winds swirls around you when you take Dervish, granting +1 curse on ranged attacks against yourself and allies in the aura for the duration of the ability."
+      },
+      {
+        "rank": 2,
+        "description": "If you’re flying, increase the range of Dawn to range 2 instead of adjacent."
+      },
+      {
+        "rank": "Beacon of Hope",
+        "description": "After an allied character teleports to you with Dervish, you may fly 2 spaces as an effect in the middle of the action, potentially putting you in range of new allies. Defeated characters can be rescued by Dawn before being cured and become sturdy for the rest of combat if rescued this way."
+      }
+    ]
+  },
+  {
+    "id": "slumber",
+    "job": "chanter",
+    "name": "Slumber",
+    "description": "A gentle trick, often used to help junior chroniclers rest after difficult exams - but no less potent in battle.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "A character in range 6 gains vigor 1, then is pacified and becomes so sleepy that they gain +1 curse on all attacks until the end of their next turn. All these effects, including the vigor, end at the end of their next turn. A foe can choose to save to avoid these effects, including the vigor.",
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Bloody foes don’t gain vigor from this ability. Bloody allies are also blessed."
+      },
+      {
+        "rank": 2,
+        "description": "Charge: Affected foes also cannot dash for duration. Affected allies can end any status other than pacified."
+      },
+      {
+        "rank": "Morpheus",
+        "description": "Slumber also effects all characters in a blast 1 area centered on the targeted character. Allies can choose to be affected or not."
+      }
+    ]
+  },
+  {
+    "id": "gentleness",
+    "job": "chanter",
+    "name": "Gentleness",
+    "description": "You radiate an aura of such powerful peace that all close to you, monster or man, find it impossible to raise a hand in violence.",
+    "chapter": 2,
+    "action": "1 Action",
+    "effect": "End your turn and gain Stance: When you take this stance, or when it refreshes, until the end of your next turn gain aura 1. All characters (including yourself) are pacified+ while in the aura and cannot use attack abilities.",
+    "refresh": "You may refresh this stance if you take damage from an attack or ability from a foe.",
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Charge: Don’t end your turn."
+      },
+      {
+        "rank": 2,
+        "description": "Bloodied characters that end their turn in the aura gain defiance."
+      },
+      {
+        "rank": "Gentle Prayer",
+        "description": "When you enter this stance, or when it refreshes, you can choose to become immobile until the end of your next turn. If you do, the aura also grants resistance to all characters inside."
+      }
+    ]
+  },
+  {
+    "id": "monogatari",
+    "job": "chanter",
+    "name": "Monogatari",
+    "description": "Some chanters also study the Book of Ages, the great mythic chronicle of heroes from the time of the Doom. This unorthodox text inherits some of their ability to sing the chant, granting it tangible power.",
+    "chapter": 2,
+    "action": "Free Action",
+    "effect": "Sing a short passage from the book of ages. At the end of your turn, roll 1d6 and consult the following table to see which tale you sing. The song resonates in the air until the start of your next turn. Allies that complete the described course of action from the song passage before then, including you, are cured or blessed (they may choose which).\n 1. A Tale of Fury: Slay or bloody a character\n 2. A Tale of Travels: Move more than 5 spaces from your starting point on your turn\n 3. A Tale of Green and Pleasant Times: Do not attack\n 4. A Tale of Cunning: Use an interrupt\n 5. A Tale of Boon Companions: End your turn adjacent to an ally or allied summon.\n 6. A Tale of Triumph: Use an ability on an ally",
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Allies that fulfill the conditions can also fly 1."
+      },
+      {
+        "rank": 2,
+        "description": "When an ally fulfills a condition, they may pacify an adjacent foe."
+      },
+      {
+        "rank": "Jubilant Waltz",
+        "description": "Every time you or an ally fulfills the condition, as an effect you may fly 1, then electrify and deal 2 damage to an adjacent foe."
+      }
+    ]
+  },
+  {
+    "id": "chastise",
+    "job": "chanter",
+    "name": "Chastise",
+    "description": "You sing out with the power of true names, forbidding your foes in august tones against harming an ally.",
+    "chapter": 3,
+    "action": "Light Ranged Attack",
+    "range": "Range 6",
+    "attack": {
+      "hit": "Fray"
+    },
+    "effect": "Choose either yourself or an ally in range. Until the end of your foe’s next turn, if they damage your chosen character with an ability, they take [D] damage and are pacified after that ability resolves. Whether this ability triggered or not, this effect ends at the end of that turn.",
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Charge: Choose yourself and an ally in range."
+      },
+      {
+        "rank": 2,
+        "description": "Your foe also gets +1 curse if they attack your chosen character(s)."
+      },
+      {
+        "rank": "Supreme Forbiddance",
+        "description": "The first time you use this ability in a combat, yourself or your chosen ally is immune to all damage from and unstoppable against your chosen foe until the end of the current round."
+      }
+    ]
+  },
+  {
+    "id": "sow",
+    "job": "harvester",
+    "name": "Sow",
+    "description": "You throw out a poison seed that bursts into thorny death.",
+    "chapter": 1,
+    "action": "Light Ranged Attack",
+    "range": "Range 5",
+    "attack": {
+      "hit": "1 damage",
+      "effect": "Your foe is poisoned. poisoned foes are branded."
+    },
+    "effect": "Mark: You foe is marked. When marked, and when you hit your marked foe with an attack thereafter, bless an ally in range 3 of your foe.",
+    "combo": {
+      "name": "Reap",
+      "effect": "Slay: Summon two Vine Thralls adjacent to your target.",
+      "attack": {
+        "hit": "[D]+fray",
+        "effect": "You can make this melee attack against the target marked by sow regardless of distance or line of sight."
+      },
+      "tags": [
+        "Pierce"
+      ]
+    },
+    "summon": {
+      "name": "Vine Thrall",
+      "size": 1,
+      "action": "At the start of your turn, all vine thralls can move up to 3 spaces and deal 2 piercing damage to an adjacent foe as an effect.",
+      "tags": [
+        "1 hp"
+      ]
+    },
+    "tags": [
+      "Combo",
+      "Mark"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Sow deals piercing fray damage against poisoned foes."
+      },
+      {
+        "rank": 2,
+        "description": "If you’re bloodied, Reap’s Slay effect always triggers."
+      },
+      {
+        "rank": "Spectral Scythe",
+        "description": "Reap and Sow also create an arc 6 area effect that deals piercing fray damage, drawn from your target as the origin space."
+      }
+    ]
+  },
+  {
+    "id": "kinchewer",
+    "job": "harvester",
+    "name": "Kinchewer",
+    "description": "Vines coil from the earth into a fanged and flowered nightmare.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Summon a carnivorous plant in unoccupied space in range 4. The plant lasts until defeated, or until you use this ability again to summon a new one.",
+    "summon": {
+      "name": "Kinchewer",
+      "size": 1,
+      "action": "When you summon the plant, and as a free action on any subsequent turn, you can direct the plant to bite a foe in range 2. That foe takes 2 piercing damage and must save or be immobile until the end of their next turn as the plant chews on them. This effect ends early if the two are moved for any reason, such as being shoved or teleported, or the plant is defeated.",
+      "tags": [
+        "Sturdy"
+      ]
+    },
+    "tags": [
+      "Mark",
+      "Summon"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Foes adjacent to the plant take bonus damage."
+      },
+      {
+        "rank": 2,
+        "description": "If a slay effect is triggered within range 2 of the plant, grant a blessing to an ally in range 3 of the plant."
+      },
+      {
+        "rank": "Deeproot",
+        "description": "When you summon a kinchewer, you can take damage equal to 25% of your maximum HP. If you do, the plant uproots itself. It becomes immune to all damage and at the start of your turns can move up to 3 spaces. Foes take +1 curse on saves against its devour effect, and it deals 2 piercing damage, twice."
+      }
+    ]
+  },
+  {
+    "id": "harvest",
+    "job": "harvester",
+    "name": "Harvest",
+    "description": "No description available.",
+    "chapter": 1,
+    "action": "Heavy Melee Attack",
+    "range": "Arc 4",
+    "attack": {
+      "hit": "2[D]+fray",
+      "miss": "fray",
+      "effect": "Poison your foe."
+    },
+    "area": "Bless allies in the area. Foes take fray damage.",
+    "effect": "Slay: Summon a Vine Thrall adjacent to each character in the area.",
+    "summon": {
+      "name": "Vine Thrall",
+      "size": 1,
+      "action": "At the start of your turn, all vine thralls can move up to 3 spaces and deal 2 piercing damage to an adjacent foe as an effect.",
+      "tags": [
+        "1 hp"
+      ]
+    },
+    "tags": [
+      "Summon"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Attack also gains +1 boon against poisoned foes."
+      },
+      {
+        "rank": 2,
+        "description": "If this attack is made against a foe with any amount of vigor, it deals bonus damage and triggers the Slay effect."
+      },
+      {
+        "rank": "Full Moon",
+        "description": "Harvest becomes range 6, Arc 6"
+      }
+    ]
+  },
+  {
+    "id": "blood_grove",
+    "job": "harvester",
+    "name": "Blood Grove",
+    "description": "The wilderness boils with explosive growth, fed by the blood of the battlefield.",
+    "chapter": 1,
+    "action": "2 Actions",
+    "effect": "Terrain Effect: Grow a blast 1 area of undergrowth. The area is difficult and dangerous terrain for foes, and melee attacks against allies and allies summons in the area gain +1 curse. The area disappears if you use this ability again.\nIf a foe is defeated inside, increase the size of the zone by +1, up to a maximum of 3. Any character can also extend it by voluntarily taking damage equal to 50% of their maximum hp while inside as a free action.",
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Foes are branded+ while in the area."
+      },
+      {
+        "rank": 2,
+        "description": "All your summons become intangible while in the zone."
+      },
+      {
+        "rank": "Hungry Grove",
+        "description": "At the start of your turn, you can move the zone up to 2 spaces, shoving any characters inside in the same direction."
+      }
+    ]
+  },
+  {
+    "id": "growing_season",
+    "job": "harvester",
+    "name": "Growing Season",
+    "description": "Blow magical spores in the air, which are disturbed by the chaos of combat. Where they fall, the fruit of life and death blooms.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Mark: Mark an ally or foe in range 5. While marked, after that character ends their turn, summon a sprouting edenfruit in an adjacent unoccupied space. Fruits last until the rest of combat or until destroyed.",
+    "summon": {
+      "name": "Edenfruit",
+      "size": 1,
+      "effect": "The fruit has a blessing token on it. Yourself or allies that pass through the space can pick up the blessing token. The fruit is then destroyed. Foes that pass through the space destroy the fruit and token but are poisoned and branded.",
+      "tags": [
+        "Intangible"
+      ]
+    },
+    "tags": [
+      "Mark",
+      "Summon"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Foes that pass through a fruit must also save or become pacified. Poisoned foes fail the save."
+      },
+      {
+        "rank": 2,
+        "description": "Roll a d6 at the end of a marked character’s turn. On a 5+, summon an additional fruit in an adjacent space."
+      },
+      {
+        "rank": "Tsumi’s Bounty",
+        "description": "When fruits are destroyed, they pop in a blast 1 area effect. Yourself and allies in the area are blessed, enemies are poisoned and branded."
+      }
+    ]
+  },
+  {
+    "id": "rot",
+    "job": "harvester",
+    "name": "Rot",
+    "description": "Leaves shrivel. Hair Curls. Wounds fail to heal.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Mark: Mark a foe in range 5. That foe is poisoned while marked, cannot gain vigor while marked, and cannot end statuses except by saving against them at the end of their turn.",
+    "combo": {
+      "name": "Regenerate",
+      "effect": "Mark: Mark an ally in range 4. While marked, that character has regeneration. This effect and mark ends if they take at least 1 damage to hp. This mark can be placed even if Rot is already active."
+    },
+    "tags": [
+      "Combo",
+      "Mark"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Also gain regeneration while your ally is marked by regenerate."
+      },
+      {
+        "rank": 2,
+        "description": "Rot’s target gains aura 1. Allies of the target in the aura cannot gain vigor."
+      },
+      {
+        "rank": "Wild Growth",
+        "description": "When you cure any character, summon a vine thrall in a free space in range 2 of either your rot or regenerate target. This effect can only trigger twice a turn.",
+        "summon": {
+          "name": "Vine Thrall",
+          "size": 1,
+          "action": "At the start of your turn, all vine thralls can move up to 3 spaces and deal 2 piercing damage to an adjacent foe as an effect.",
+          "tags": [
+            "1 hp"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "thornwillow",
+    "job": "harvester",
+    "name": "Thornwillow",
+    "description": "The holy plant of the Harvesters is a particularly vigorous sort, a writhing animate vine that feeds on blood, which it gets in plenty by lashing out with whiplike branches.",
+    "chapter": 2,
+    "action": "Free Action",
+    "effect": "Summon a thornwillow in range 4.",
+    "summon": {
+      "name": "Thornwillow",
+      "size": 1,
+      "effect": "The willow can be blessed. At the end of any turn it has 3 or more blessings, it blooms and you gain the Willow Lash interrupt.",
+      "tags": [
+        "Immobile",
+        "Immune to Shove"
+      ]
+    },
+    "tags": [
+      "Summon"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "The willow gains a blessing if any bloodied character ends a turn adjacent to it."
+      },
+      {
+        "rank": 2,
+        "description": "If you’re bloodied when you plant the willow, immediately bless it."
+      },
+      {
+        "rank": "Mother Bloodwillow",
+        "description": "Even when not bloomed, the willow has aura 2 of blood-fatted roots. The aura is dangerous terrain for foes, and when a slay effect is triggered in the area, the Oak lashes out, dealing piercing fray damage to all foes, and curing all allies."
+      }
+    ],
+    "abilities": [
+      {
+        "id": "willow_lash",
+        "job": "harvester",
+        "name": "Willow Lash",
+        "action": "Interrupt 2",
+        "effect": "The willow lashes out against that character, dealing piercing fray damage. Poisoned characters take piercing fray damage twice.\nUsing this ability again while you have a Thorn Willow summoned causes any of your existing willows to wither and die.",
+        "trigger": "A foe in range 3 of the willow is hit by an attack."
+      }
+    ]
+  },
+  {
+    "id": "fairy_ring",
+    "job": "harvester",
+    "name": "Fairy Ring",
+    "description": "You cast out a handful of aether-feeding fungi, holy spores that grow into a ringed garden of colorful and deadly mushrooms.",
+    "chapter": 2,
+    "action": "1 Action",
+    "effect": "Terrain effect: End your turn and create a ring of mushrooms, a blast 2 terrain effect, within range 4. The ring can be created overlapping any terrain and underneath characters. While the ring is active, gain the Spirit Away interrupt. The ring lasts until the rest of combat or until this ability is used again.",
+    "tags": [
+      "Terrain Effect",
+      "End Turn"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Foes that end their turn in the ring are poisoned. Poisoned foes cannot gain vigor inside the ring."
+      },
+      {
+        "rank": 2,
+        "description": "You can use Spirit Away on allies. If you do, it doesn’t brand them."
+      },
+      {
+        "rank": "Spore Shroud",
+        "description": "Allies inside the ring are immune to the effects of existing marks and blights and cannot gain new ones while inside. In addition, allies gain stealth when they cross the border."
+      }
+    ],
+    "abilities": [
+      {
+        "id": "spirit_away",
+        "job": "harvester",
+        "name": "Spirit Away",
+        "action": "Interrupt 2",
+        "effect": "Immediately teleport that foe 2 spaces in any direction and brand them.",
+        "trigger": "A foe crosses the border of the fairy ring or starts it turn on the border."
+      }
+    ]
+  },
+  {
+    "id": "dark_sliver",
+    "job": "harvester",
+    "name": "Dark Sliver",
+    "description": "The blade edges of the harvesters are so sharp they can cut the very soul.",
+    "chapter": 3,
+    "action": "Light Melee Attack",
+    "range": "Range 2",
+    "attack": {
+      "hit": "[D]",
+      "miss": "1 damage",
+      "effect": "Inflict frostbite and poisoned."
+    },
+    "effect": "Summon: Cut away a piece of your target’s life force, creating a size 1 intangible summon within range 4 of them. They can re-unite with it by ending their turn in or adjacent to the summon’s space. If they don’t, it dissipates at the end of that turn, destroying it and dealing piercing fray damage to them twice as an effect.",
+    "tags": [
+      "Summon"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Slay: Dealing piercing fray damage to a character in range 3 from your foe or their soul sliver."
+      },
+      {
+        "rank": 2,
+        "description": "When a character reunites with their soul, they are branded."
+      },
+      {
+        "rank": "Recycle",
+        "description": "If your target doesn’t unite with their soul sliver, bless and cure any of your allies in range 2 of it when it disappears."
+      }
+    ]
+  },
+  {
+    "id": "god_hand",
+    "job": "sealer",
+    "name": "God Hand",
+    "description": "Divine energy infuses you, allowing hammer-like blows that would fell a demon with even your bare hands.",
+    "chapter": 1,
+    "action": "Light Melee Attack",
+    "attack": {
+      "hit": "[D]+fray",
+      "miss": "fray",
+      "crit": "Foe is pacified."
+    },
+    "effect": "An ally in range 3 of you is blessed.",
+    "combo": {
+      "name": "Devil Hand",
+      "effect": "Inflict burning. Burning characters are branded and explode in a blast 1 area centered on them, dealing 2 piercing damage to all foes.",
+      "attack": {
+        "hit": "[D]+fray",
+        "miss": "fray"
+      },
+      "tags": [
+        "+1 boon"
+      ]
+    },
+    "tags": [
+      "Combo",
+      "+1 boon"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Critical hit: Gain counter until the end of your next turn."
+      },
+      {
+        "rank": 2,
+        "description": "If you attack a bloodied foe, they explode in a blast 1 area centered on them, dealing 2 piercing damage to all foes."
+      },
+      {
+        "rank": "Fists of Heaven and Hell",
+        "description": "Add an alternate combo action. It gains all talent effects of this ability.",
+        "combo": {
+          "name": "Fists of Heaven and Hell",
+          "effect": "Your foe is burning. If your foe is already burning, brand them. They explode in a blast 1 area centered on them, dealing 2 piercing damage to all foes. Allies in the area are blessed.",
+          "attack": {
+            "hit": "[D]+fray",
+            "miss": "fray"
+          },
+          "tags": [
+            "+1 boon"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "grand_seal",
+    "job": "sealer",
+    "name": "Grand Seal",
+    "description": "Bind an enemy in an astral seal, condemning them and crushing them under the weight of their own evil.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Mark: A foe in range 4 becomes marked. While marked, each time they use an ability that damages an ally of yours, they take fray damage. A foe can pass a save at the end of their turn to end this mark, or it also ends at the end of any turn they did not attack. Burning foes gain +1 curse on the save.",
+    "tags": [
+      "Mark"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Bloodied foes gain +1 curse on the save."
+      },
+      {
+        "rank": 2,
+        "description": "If a foe triggers this effect more than once on their turn, they become pacified."
+      },
+      {
+        "rank": "Milk Sutra",
+        "description": "When this mark ends, if there is a new foe in range 4 of your target, you may transfer it to that foe as an effect."
+      }
+    ]
+  },
+  {
+    "id": "matsuri",
+    "job": "sealer",
+    "name": "Matsuri",
+    "description": "Swing your weapon in a flaming arc that sends sprays of fire in bright displays, lighting up the sky.",
+    "chapter": 1,
+    "action": "Heavy Melee Attack",
+    "attack": {
+      "hit": "2[D]+fray and inflict burning.",
+      "miss": "fray"
+    },
+    "effect": "Slay or Critical Hit: Bless all allies in range 2 of your target",
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Critical hit: Allies in range 2 of your target may teleport 1 space."
+      },
+      {
+        "rank": 2,
+        "description": "+1 boon against bloodied foes, and foe explodes on hit in a blast 1 area centered on them, dealing 2 piercing damage to all foes."
+      },
+      {
+        "rank": "Blood Festival",
+        "description": "The first time you use with Matsuri in a combat, all its damage becomes divine, it deals bonus damage, and it triggers any critical hit effects, hit or miss."
+      }
+    ]
+  },
+  {
+    "id": "justice",
+    "job": "sealer",
+    "name": "Justice",
+    "description": "Invoking the spirits of the land and air, you move at impossible speed, doling out blows faster than the eye can see.",
+    "chapter": 1,
+    "action": "Interrupt 1",
+    "effect": "Teleport adjacent to every character in range 2 of you in any order. Foes become burning, allies are blessed. Burning foes take 2 piercing damage instead.",
+    "trigger": "You score a critical hit or trigger a critical hit effect.",
+    "combo": {
+      "name": "Judgement",
+      "trigger": "You score a critical hit or trigger a critical hit effect.",
+      "effect": "All allies in range 2 are cured. Roll a d6 for each foe. On a 6, a foe is struck by a fiery bolt from heaven and takes [D] divine damage."
+    },
+    "tags": [
+      "Combo"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Judgement’s roll becomes a 5+ for burning foes."
+      },
+      {
+        "rank": 2,
+        "description": "You can teleport 2 spaces after triggering justice or judgement but before applying the effect."
+      },
+      {
+        "rank": "Gran Judicata",
+        "description": "Add an alternate combo action.",
+        "combo": {
+          "name": "Gran Judicata",
+          "trigger": "You score a critical hit or trigger a critical hit effect.",
+          "effect": "Cure every bloodied ally on the battlefield. Deal divine fray damage to every non-bloodied foe."
+        }
+      }
+    ]
+  },
+  {
+    "id": "sanctify",
+    "job": "sealer",
+    "name": "Sanctify",
+    "description": "You throw out a handful of glittering salt, scorching the spiritually impure.",
+    "chapter": 1,
+    "action": "2 Actions",
+    "effect": "Terrain Effect: You scatter salt in a close blast 1 area. Foes that end their turn in the area become pacified and burning. Allies that end their turn in the area are cured. The area persists until you take this action again or until the end of combat.",
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Bloodied foes must save if they attempt to enter the area from the outside. On a failed save, they become unable to enter the area until the start of their next turn unless shoved or teleported by another character."
+      },
+      {
+        "rank": 2,
+        "description": "Allied characters save in the area with +1 boon."
+      },
+      {
+        "rank": "Elden Salt",
+        "description": "Sanctify inflicts [D] damage, burning, and pacify as an effect to hostile characters in the area when you take this action."
+      }
+    ]
+  },
+  {
+    "id": "enshrine",
+    "job": "sealer",
+    "name": "Enshrine",
+    "description": "You place a holy seal over your ally, enveloping them in divine protection.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Mark: Mark an ally in range 3. While marked, foes that attempt to use an ability against your target must first save. On a successful save, they can act normally. On a failed save, they don’t lose the action but are unable to directly target that ally for the rest of the turn, then this mark fades.\nBurning or bloodied characters get +1 curse on this save.",
+    "tags": [
+      "Mark"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Your ally can teleport 1 as an effect after being attacked."
+      },
+      {
+        "rank": 2,
+        "description": "Burning foes that end their turn adjacent to your marked ally take fray damage and are shoved 1."
+      },
+      {
+        "rank": "Shroud from Heaven",
+        "description": "This mark can be activated twice before it fades."
+      }
+    ]
+  },
+  {
+    "id": "grand_banishment",
+    "job": "sealer",
+    "name": "Grand Banishment",
+    "description": "With a word and a quickly drawn talisman, you stomp your foot and forbid your foe from taking another step towards you.",
+    "chapter": 2,
+    "action": "1 Action",
+    "effect": "End your turn and choose a foe in range 5, sealing their movement with force of will. Until the start of your next turn, the foe must pass a save when they attempt to willingly move closer to you. On a failed save, they cannot make any movement that would move them closer to you for the duration of this ability, including as part of the triggering action or ability. If they pass a save, they are immune to this effect until the end of the current turn.",
+    "tags": [
+      "End Turn"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "A character that fails the save also treats you and any allies adjacent to you as having cover."
+      },
+      {
+        "rank": 2,
+        "description": "Bloodied or burning characters gain +1 curse on the save."
+      },
+      {
+        "rank": "Horse and Ox Seal",
+        "description": "When you take this ability, this effect also applies to aura 2 around you."
+      }
+    ]
+  },
+  {
+    "id": "spirit_shrine",
+    "job": "sealer",
+    "name": "Spirit Shrine",
+    "description": "Many sealers carry portable shrines to the local spirits, adding on talismans, images, icons, or offerings to whichever small god holds dominion over the areas they travel through. In a pinch, they can set these shrines down and beseech the spirits for aid.",
+    "chapter": 2,
+    "action": "1 Action",
+    "effect": "Create a shrine in a free adjacent space.",
+    "summon": {
+      "name": "Shrine",
+      "size": 1,
+      "effect": "Aura 1. Allies in the aura gain +1 boon on attack rolls. You can place the shrine on top of another object, increasing the aura size to 2 instead. Using this ability again destroys any of your currently active spirit shrines. If a shrine is destroyed, it reforms on your back and can be placed again normally.",
+      "tags": [
+        "Object"
+      ]
+    },
+    "tags": [
+      "Terrain Effect"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Bloodied allies in the area are immune to the effects of marks and blights, and cannot gain new marks or blights."
+      },
+      {
+        "rank": 2,
+        "description": "Enemies treat the shrine’s area as difficult terrain."
+      },
+      {
+        "rank": "Spirit Patronage",
+        "description": "Gain the Grace of the Spirits interrupt."
+      }
+    ],
+    "abilities": [
+      {
+        "id": "grace_of_the_spirits",
+        "job": "sealer",
+        "name": "Grace of the Spirits",
+        "action": "Interrupt 1",
+        "effect": "Your ally becomes immune to damage from that attack or ability, but destroy the shrine. You cannot place a new shrine on your next turn.",
+        "trigger": "An ally in the aura is damaged by an attack or ability."
+      }
+    ]
+  },
+  {
+    "id": "open_the_gates",
+    "job": "sealer",
+    "name": "Open the Gates",
+    "description": "This aptly named technique can be used to deliver an extremely powerful blow - but focusing the body’s aether in such a way takes a long time to recharge.",
+    "chapter": 3,
+    "action": "Light Melee Attack",
+    "attack": {
+      "hit": "[D]+fray and foe is branded",
+      "miss": "fray"
+    },
+    "effect": "Inflict burning and electrified.\nThis attack deals bonus damage, cannot miss (turn any miss into a hit) and triggers any critical hit effects the first time it is used in combat.",
+    "combo": {
+      "name": "Center the Temple",
+      "effect": "Become unstoppable until the end of your next turn",
+      "attack": {
+        "hit": "fray damage"
+      }
+    },
+    "tags": [
+      "Combo",
+      "+1 boon"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "The first time it’s used in a combat, you may teleport up to 3 spaces before using this attack."
+      },
+      {
+        "rank": 2,
+        "description": "Critical hit: Shove 3. Collide: Foe is stunned."
+      },
+      {
+        "rank": "Burial Fist",
+        "description": "Open the gates becomes a critical hit on hit at round 5 or later. Center the temple also cures."
       }
     ]
   }

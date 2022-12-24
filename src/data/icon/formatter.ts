@@ -94,7 +94,7 @@ export class IconFormatter {
             infusion = "\n" + this.formatInfusion(ability.infusion)
         }
 
-        const talents = "\n**Talents**\n" + ability.talents.map((it) => this.formatTalent(it)).join("\n")
+        const talents = "\n\n**Talents**\n" + ability.talents.map((it) => this.formatTalent(it)).join("\n")
 
         let abilities = ""
         if (ability.abilities) {
@@ -202,7 +202,11 @@ export class IconFormatter {
 
     private formatSubAbility(subAbility: IconSubAbility): string {
         const tags = this.formatRangeAndTags(subAbility.range, subAbility.tags)
-        const description = `**${subAbility.name}**\n${subAbility.action}${tags}\n${subAbility.description}`
+        let description = `**${subAbility.name}**\n${subAbility.action}${tags}`
+
+        if (subAbility.description) {
+            description += `\n\n*${subAbility.description}*\n`
+        }
 
         let attack = ""
         if (subAbility.attack) {
@@ -248,6 +252,12 @@ export class IconFormatter {
         if (talent.infusion) {
             formattedTalent += "\n" + this.formatInfusion(talent.infusion)
         }
+        if (talent.combo) {
+            formattedTalent += "\n" + this.formatCombo(talent.combo)
+        }
+        if (talent.summon) {
+            formattedTalent += "\n" + this.formatSummon(talent.summon)
+        }
         return formattedTalent
     }
 
@@ -291,9 +301,15 @@ export class IconFormatter {
     }
 
     private formatCombo(combo: IconCombo): string {
-        let formattedCombo = `\n**Combo: ${combo.name}**\n${combo.effect}`
+        let formattedCombo = `\n**Combo: ${combo.name}**`
 
         formattedCombo += this.formatRangeAndTags(combo.range, combo.tags)
+
+        if (combo.trigger) {
+            formattedCombo += `\n**Trigger:** ${combo.trigger}`
+        }
+
+        formattedCombo += `\n**Effect:** ${combo.effect}`
 
         if (combo.attack) {
             formattedCombo += "\n" + this.formatAttack(combo.attack)
