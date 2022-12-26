@@ -3209,5 +3209,263 @@
         "description": "Open the gates becomes a critical hit on hit at round 5 or later. Center the temple also cures."
       }
     ]
+  },
+  {
+    "id": "sleight_of_hand",
+    "job": "seer",
+    "name": "Sleight of Hand",
+    "description": "A flash of bright color, and a card is stuck to your foe, bursting with power.",
+    "chapter": 1,
+    "action": "Light Ranged Attack",
+    "range": "Range 6",
+    "attack": {
+      "hit": "You attach a magical card to a foe in range, branding them and inflicting frostbite."
+    },
+    "effect": "The next time an ally hits the target with an attack, the card explodes in a blast 1 area effect. All characters in the area take fray damage, and that ally gains a blessing. Frostbitten characters take fray damage twice instead. The triggering ally is immune to all damage from this ability.",
+    "talents": [
+      {
+        "rank": 1,
+        "description": "You can target an allied character with this attack to attach the card to them instead. It triggers when they are hit by an attack, and they’re immune to its damage and effects."
+      },
+      {
+        "rank": 2,
+        "description": "A card may be thrown as an Arc4 area effect. It only attaches to a character in the attack space. Foes the card passes through take 2 damage."
+      },
+      {
+        "rank": "King of Swords",
+        "description": "After you throw a card, you gain two spectral blades that hover behind you. You can stock up to six of these blades. When an ally hits an attack in range 6 of you, you can cause a blade to fly out, dealing fray damage to that character."
+      }
+    ]
+  },
+  {
+    "id": "wild_card",
+    "job": "seer",
+    "name": "Wild Card",
+    "description": "You flick a beautifully illustrated ethereal card onto the battlefield, laden with the threads of potential.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Summon a wild card in range 5.",
+    "summon": {
+      "name": "Wild Card",
+      "size": 1,
+      "effect": "When it’s hit by an allied area of effect ability, the card explodes in a blast 2 aoe, extending the area effect space of that AoE to encompass its area and destroying the card. Wild cards can be triggered by other wild cards.",
+      "tags": [
+        "Intangible"
+      ]
+    },
+    "tags": [
+      "Summon"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Effect: After a Wild Card explodes, bless an ally in range 3 of the card"
+      },
+      {
+        "rank": 2,
+        "description": "You can throw a Master Card instead of a regular card. It’s not destroyed when it explodes, but using this ability again will replace the last card created."
+      },
+      {
+        "rank": "Royalty Card",
+        "description": "When a Wild Card is triggered, roll 1d6 and apply one of the following effects.\n1. Re-summon the card in the same space\n2. All characters are electrified and you may teleport them 1\n3. All characters are frostbitten. Create a blast 1 area of difficult terrain under the card.\n4. All characters are burning and take 2 piercing damage.\n5. All characters are poisoned and lose all vigor.\n6. Choose two"
+      }
+    ]
+  },
+  {
+    "id": "astra",
+    "job": "seer",
+    "name": "Astra",
+    "description": "You call down the heavens themselves on your foes.",
+    "chapter": 1,
+    "action": "Heavy Ranged Attack",
+    "range": "Line 5 + Cross 2",
+    "attack": {
+      "hit": "[D]+fray damage and inflict frostbite"
+    },
+    "area": "Fray",
+    "effect": "Roll 1d6 after the attack resolves. On a 6, all foes take [D] again. Effect becomes 4+ if the attack is against a frostbitten foe.",
+    "combo": {
+      "name": "Fortuna",
+      "effect": "string",
+      "range": "Blast 1, Range 4",
+      "attack": {
+        "hit": "[D]+fray"
+      },
+      "area": "Bless all allied characters in the area. All foes are branded."
+    },
+    "tags": [
+      "Combo"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Terrain effect: Against a frostbitten foe, create a pit under them after this ability resolves."
+      },
+      {
+        "rank": 2,
+        "description": "Charge: Increase area of effect for all areas by 1"
+      },
+      {
+        "rank": "The Chalice",
+        "description": "After you use Astra or Fortuna, a shield of floating stars surrounds a character of your choice in the area of effect, granting them regeneration until they take at least 1 damage to HP."
+      }
+    ]
+  },
+  {
+    "id": "doom",
+    "job": "seer",
+    "name": "Doom",
+    "description": "You crook a finger, and pull on the threads of fate, casting an irrevocable curse.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Mark: Mark a character in range 6 with a magical card, which pulses with astral energy.\n• At the end of any of the marked character’s turns, you roll a d6. On a 6, the card explodes in a blast 1 area effect centered on that character. This becomes 4+ for frostbitten characters.\n• A character can pass the card off to another adjacent character as an action on their turn. The card deals bonus damage for each time it was passed. If it’s passed at least twice, increase the blast size to 2.\n• The card also explodes if the character is defeated.\nWhen the card explodes, characters in the area take [D]+fray and are branded.",
+    "tags": [
+      "Mark"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If a critical hit effect is triggered on the target, immediately roll for the card exploding."
+      },
+      {
+        "rank": 2,
+        "description": "If a character is defeated while under the effects of Doom, the card may pass to a new character of your choice in range 3 of the defeated character."
+      },
+      {
+        "rank": "Black Knight Grave",
+        "description": "When Doom is passed at least twice, it deals 2[D]+fray instead and stuns the marked character."
+      }
+    ]
+  },
+  {
+    "id": "polaris",
+    "job": "seer",
+    "name": "Polaris",
+    "description": "A distant glint in the heavens, portents of the devastation to come.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Choose a space on the battlefield in range 5, which becomes known to all characters. At the end of every turn that passes after yours (allied or foe), roll 1d6. On a 6, a meteor lands in that spot, exploding for a blast 2 explosion, dealing [D]+fray as an area effect and inflicting Frostbite. Frostbitten characters must also save or become stunned. This effect ends when triggered.",
+    "talents": [
+      {
+        "rank": 1,
+        "description": "You can choose to make the meteor check on only allied or enemy turns (pick one) when you cast it. If you do, it checks at 5+."
+      },
+      {
+        "rank": 2,
+        "description": "Also check for the meteor falling at the end of your turn."
+      },
+      {
+        "rank": "Moon Silver Princess",
+        "description": "Create two meteors. A character can only be affected by a meteor once a round."
+      }
+    ]
+  },
+  {
+    "id": "gran_reversa",
+    "job": "seer",
+    "name": "Gran Reversa",
+    "description": "Causality unmakes itself around you, as wounds heal instantly.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Gain aura 2. While in this stance, the first time on a turn any character in the aura takes damage, roll a d6. On a 5+, they are cured afterwards as an effect. This applies to foes and allies alike.",
+    "refresh": "This stance refreshes automatically at the start of your turn.",
+    "tags": [
+      "Stance"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Allies gain a blessing if this effect triggers."
+      },
+      {
+        "rank": 2,
+        "description": "Foes this effect triggers on are also pacified."
+      },
+      {
+        "rank": "Misericordia",
+        "description": "If a character or summon (foe or ally) in the aura would be reduced to 0 hp, roll a d6. On a 5+, they immediately gain and lose Defiance, triggering it, and are returned to 1 hp instead."
+      }
+    ]
+  },
+  {
+    "id": "eclipse",
+    "job": "seer",
+    "name": "Eclipse",
+    "description": "You summon a burning star brand, which ignites the very air unless quenched by a brave soul.",
+    "chapter": 2,
+    "action": "1 Action",
+    "effect": "Terrain Effect: Create a burning brand of star fire in range 6, a 1 space terrain effect that can be placed under characters. Delay: You must take a slow turn next round. At the start of that turn:\n• If the space is not occupied by a character or object, all characters in a blast 2 area effect centered on it are afflicted with frostbite and burning, and must save or take [D]+fray, or just fray damage on a successful save. Characters already affected by either of these blights fail the save.\n• If the space is occupied by a character, only that character takes the effect. If the space is occupied by an object, that object is destroyed or un-summoned.\nThen, this brand fades.",
+    "tags": [
+      "Terrain Effect"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If you are bloodied, increase the blast size by +1."
+      },
+      {
+        "rank": 2,
+        "description": "Foes that end their turn in the area are branded. Branded characters take fray damage."
+      },
+      {
+        "rank": "The Helm",
+        "description": "You may elect to repeat the delay effect when Eclipse goes off. If you do, the brand does not fade and the effect remains active. However, placing a new brand will cause the old one to fade."
+      }
+    ]
+  },
+  {
+    "id": "wish",
+    "job": "seer",
+    "name": "Wish",
+    "description": "You struggle against fate itself, undoing causality and defying the stars.",
+    "chapter": 2,
+    "action": "Interrupt 1",
+    "effect": "Reverse the flow of causality. That damage cannot reduce your ally past 1 hp, and they gain vigor 1 after it resolves. The stress of taking this action causes you to take divine damage equal to 25% of your max hp, which cannot bring you below 1 hp.",
+    "trigger": "An ally on the battlefield takes damage from a foe equal to 25% of their max hp or more.",
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If your ally is bloodied, they are also blessed after this interrupt resolves and may dash 2."
+      },
+      {
+        "rank": 2,
+        "description": "If this damage would have reduced your ally to 0 hp, they can also end a status, mark, or blight."
+      },
+      {
+        "rank": "Star Scorned Hermit",
+        "description": "If the damage would have reduced your ally to 0 hp, the ally may gain vigor equal to the HP they just lost instead of vigor 1."
+      }
+    ]
+  },
+  {
+    "id": "the_tower",
+    "job": "seer",
+    "name": "The Tower",
+    "description": "You invoke the ultimate power of the tower card, sealing a foe’s fate. In short order, untold calamity befalls them.",
+    "chapter": 3,
+    "action": "Light Ranged Attack",
+    "range": "Range 6",
+    "attack": {
+      "hit": "Mark: Mark a foe in range 6, then gain a d6 power die, starting at 6. When that foe is hit by an allied attack, tick the die down by 1. When a round passes, tick the die down by 1. If the die would reach 0, that foe takes 999 divine damage. Then, they explode, dealing divine damage equal to 25% of their their max hp to all foes in a blast 1 area effect centered on them. Then this mark ends.\nLegends are immune to this effect."
+    },
+    "effect": "",
+    "tags": [
+      "Mark",
+      "Divine"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If your foe is bloodied, set the power die at d4 (4) instead."
+      },
+      {
+        "rank": 2,
+        "description": "If you are bloodied when you use this ability, or become bloodied while it is active, tick the die down by 1."
+      },
+      {
+        "rank": "Play of Emeralds",
+        "description": "Increase the explosion damage to 50% of a foe’s max hp, and the blast radius to blast 2."
+      }
+    ]
   }
 ]
