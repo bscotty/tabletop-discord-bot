@@ -3467,5 +3467,308 @@
         "description": "Increase the explosion damage to 50% of a foe’s max hp, and the blast radius to blast 2."
       }
     ]
+  },
+  {
+    "id": "dagon",
+    "job": "stormbender",
+    "name": "Dagon",
+    "description": "You pull an enormous weapon made of pure ice out of the air, and hurl it through foes, where it starts gathering momentum. With a cavernous crash, it then returns to its starting location, cleaving any soul standing in its path.",
+    "chapter": 1,
+    "action": "Heavy Ranged Attack",
+    "range": "Line 6",
+    "attack": {
+      "hit": "2[D]+fray",
+      "miss": "fray",
+      "effect": "Foe is frostbitten."
+    },
+    "area": "fray",
+    "effect": "After the attack resolves, you may choose to Delay: The weapon lingers in the final space of the attack area. Keep the area effect marked. Your next turn must be slow, but at the start of that turn, the weapon flies back along the line, returning to its starting location and ending this effect. Characters inside must save or take [D]+Fray damage, or fray damage on a successful save. Frostbitten characters fail this save.",
+    "infusion": {
+      "cost": 1,
+      "name": "Triton",
+      "effect": "On Hit: Dagon creates a pit under its target."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "When you create the line area from Dagon, you may shove any characters adjacent to the line area 1 space into the area."
+      },
+      {
+        "rank": 2,
+        "description": "Until it activates, Dagon's area is difficult terrain."
+      },
+      {
+        "rank": "Deep Water Curse",
+        "description": "You can redirect Dagon when its Delay effect goes off to any valid line area drawn from its location."
+      }
+    ]
+  },
+  {
+    "id": "tsunami",
+    "job": "stormbender",
+    "name": "Tsunami",
+    "description": "The stormbenders can ride swells of water as easily as any terrestrial steed. For those not as gifted, the experience is less pleasant.",
+    "chapter": 1,
+    "action": "2 Actions",
+    "effect": "Terrain Effect: Create a huge swell of elemental water from any visible edge of the map. The area is a blast 1 terrain effect that is difficult and dangerous terrain.\nWhen you summon Tsunami, pick a compass direction (north south east west). When you use this ability, and the start of your turns, Tsunami moves 4 spaces in that direction in a straight line.\nAny non-flying characters in Tsunami when it moves are dragged with it, shoving them. If they are blocked by obstructions, they collide which could cause Tsunami to move on without them. Characters that collide are shattered.\nAll your Tsunamis disappear if you use this ability again, or they reach an edge of the map.",
+    "infusion": {
+      "cost": 1,
+      "name": "Stormlash",
+      "effect": "As a free action, redirect any Tsunamis (do not summon a new one)."
+    },
+    "tags": [
+      "Terrain Effect"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "You and your summons are immune to Tsunami's terrain effects, and can choose whether to be dragged by Tsunami or not."
+      },
+      {
+        "rank": 2,
+        "description": "Foes inside Tsunami take +1 curse on saves."
+      },
+      {
+        "rank": "Legendary Storm",
+        "description": "Tsunami moves anywhere from 1 to 6 spaces instead of a flat 4, and also affects flying foes."
+      }
+    ]
+  },
+  {
+    "id": "cryo",
+    "job": "stormbender",
+    "name": "Cryo",
+    "description": "You shoot a spear of frozen water aether at your foe, stirring up ambient water aether in the air.",
+    "chapter": 1,
+    "action": "Light Ranged Attack",
+    "range": "Range 8",
+    "attack": {
+      "hit": "1 damage and character is shattered and frostbitten.",
+      "effect": "Gain 1 Aether.\nIf character is already frostbitten, create a pit under them."
+    },
+    "infusion": {
+      "cost": 2,
+      "name": "Cryotic",
+      "effect": "Change area to Cross 2, Range 6 and gains Area Effect: Inflict frostbite. Characters already inflicted with frostbite become shattered."
+    },
+    "tags": [
+      "Pierce"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Also create a pit if the character is shattered."
+      },
+      {
+        "rank": 2,
+        "description": "Cryotic may be used as infuse X, cross X, range 6, where X is the amount of Aether infused."
+      },
+      {
+        "rank": "Magnacryo",
+        "description": "Gain the Magnacryo infuse option. Magnacryo benefits from all Cryo talents.",
+        "infusion": {
+          "cost": "X",
+          "name": "Magnacryo",
+          "action": "Superheavy Ranged Attack",
+          "range": "Line 3 per Aether spent",
+          "attack": {
+            "hit": "[D]+fray"
+          },
+          "area": "[D]+fray",
+          "effect": "Inflict frostbite on all foes.\nThe attack target is impaled with an icy harpoon, then shoved along the line as far as possible towards the caster, phasing through all terrain and characters. Characters they are dragged through take 2 piercing damage.",
+          "tags": [
+            "Pierce"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "tailwind",
+    "job": "stormbender",
+    "name": "Tailwind",
+    "description": "The stormbenders are friend to breeze and gale, and have learned how to coax the wind into doing their bidding.",
+    "chapter": 1,
+    "action": "Free Action",
+    "effect": "Terrain Effect: Summon a tailwind in a free space in range 5. Characters inside the tailwind gain cover, and a character that starts their turn in a tailwind gains flying until the start of their next turn.\nIf there are no characters in a tailwind at the start of any of your turns, it grows to a blast 1 terrain effect for the rest of combat.\nIf you summon a new tailwind, the old one disappears.",
+    "infusion": {
+      "cost": 2,
+      "name": "Great Breeze",
+      "effect": "Tailwind grows immediately to a blast 1 area."
+    },
+    "tags": [
+      "Terrain Effect"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Your own and allies' attacks from inside a tailwind inflict frostbite on hit."
+      },
+      {
+        "rank": 2,
+        "description": "You don't count as being in the area for tailwind growing in size."
+      },
+      {
+        "rank": "Vicious Gale",
+        "description": "When a foe ends their turn inside a tailwind, you may shove them 3 in any direction. Collide: character must save or become stunned."
+      }
+    ]
+  },
+  {
+    "id": "heave-ho",
+    "job": "stormbender",
+    "name": "Heave-Ho",
+    "description": "Better get your sea legs.",
+    "chapter": 1,
+    "action": "Interrupt 1",
+    "effect": "After the triggering ability resolves, a wave batters your target, in a close blast 1 area around you or your summon. Foes caught in the area take 2 piercing damage and are shoved 1. Allies caught in the area don't take damage and can fly 1 as an effect.",
+    "trigger": "A foe damages you, or an ally adjacent to you or a summon you control with an ability.",
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If only one foe is caught in the area of the wave, also create a pit underneath them."
+      },
+      {
+        "rank": 2,
+        "description": "If you don't use this interrupt, stock up another use of it. You can stock up to interrupt 3."
+      },
+      {
+        "rank": "Deepwrath",
+        "description": "Gain the Deepwrath infuse option.",
+        "infusion": {
+          "cost": "X",
+          "name": "Deepwrath",
+          "effect": "The shove and flight spaces become 2 times X. Collide: Foe is also shattered."
+        }
+      }
+    ]
+  },
+  {
+    "id": "watery_doom",
+    "job": "stormbender",
+    "name": "Watery Doom",
+    "description": "You mark your foe with the symbol of the Deep Water Titan. No matter where they run, the land turns to freezing water beneath them and drags them back to where they belong.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Mark: Mark a foe in range 6. At the end of that character's turn, teleport them to any space in or adjacent to a summon, object, or terrain effect you created, as long as that space is in range 4 of them.",
+    "tags": [
+      "Mark"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "While marked, your character treats all difficult terrain as dangerous terrain."
+      },
+      {
+        "rank": 2,
+        "description": "If a character fails a saving throw while under this mark, they take 1 piercing damage."
+      },
+      {
+        "rank": "The Locker",
+        "description": "A marked character takes 3 piercing damage, twice, if they use an interrupt, activate an effect from an ability, or use an ability outside of their turn. This damage can only be activated once a round."
+      }
+    ]
+  },
+  {
+    "id": "gust",
+    "job": "stormbender",
+    "name": "Gust",
+    "description": "The air ripples. Sails billow. Kin are blown along like leaves.",
+    "chapter": 2,
+    "action": "1 Action",
+    "effect": "Terrain Effect: Create a line 4 terrain effect. The area is difficult terrain. However, characters that enter any end space of the line gain phasing, then are shoved to the other end space of the line. Once they reach that space, they are flung out and shoved 1 in a direction of your choice. Collide: Character is shattered.",
+    "infusion": {
+      "cost": "X",
+      "name": "Great Gust",
+      "effect": "Increase the line area of Gust by 2 spaces per Aether infused."
+    },
+    "tags": [
+      "Terrain Effect"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Gust grants cover to adjacent allies as if it were terrain."
+      },
+      {
+        "rank": 2,
+        "description": "Bloodied characters are shoved 3 at the end instead."
+      },
+      {
+        "rank": "Northsoul",
+        "description": "If either end space of Gust is targeted by the attack space of an area of effect attack ability, it moves the target space to the other end of gust, then moves it 1 (as if it were a character). The area effect or terrain effect is then created in that location, regardless of range."
+      }
+    ]
+  },
+  {
+    "id": "selkie",
+    "job": "stormbender",
+    "name": "Selkie",
+    "description": "You summon a friendly water spirit, handy for rescuing sailors or hurling around foes.",
+    "chapter": 2,
+    "action": "1 Action",
+    "effect": "Summon: Summon a rippling orb of water in range 4.",
+    "summon": {
+      "name": "Selkie",
+      "size": 1,
+      "effect": "Selkie has aura 2. At the start of your turn, you may have Selkie suck in any characters of your choice size 1 or smaller inside the aura. Foes can pass a save to avoid this effect, and allies can always avoid it. When a character is sucked in, they are removed from the battlefield. At the end of your turn, or if Selkie is defeated, Selkie spits out all characters it sucked in, in any order. Characters that are spit out are placed adjacent to Selkie or as close as possible, then may be shoved 2.",
+      "action": "Once on your turn, or any time you infuse a spell, you can move Selkie 2 spaces.",
+      "tags": [
+        "Flying"
+      ]
+    },
+    "tags": [
+      "Summon"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Foes that get sucked in are inflicted with frostbite. Frostbitten characters are also shattered."
+      },
+      {
+        "rank": 2,
+        "description": "If only one foe or ally is inside Selkie, you may shove them 4 instead."
+      },
+      {
+        "rank": "Adaptive Selkie",
+        "description": "When targeted by an effect that deals an elemental blight, Selkie absorbs it and gains a new effect for its aura, replacing the last.\n- Frostbite: The aura is difficult terrain.\n- Poison: Characters in the aura cannot benefit from vigor.\n- Burning: Characters in the aura are vulnerable+.\n- Electrified: Characters cannot take interrupts in the area."
+      }
+    ]
+  },
+  {
+    "id": "eye_of_the_storm",
+    "job": "stormbender",
+    "name": "Eye of the Storm",
+    "description": "A storm of vigorous thunder and acid rain descends at your command, but the center remains calm.",
+    "chapter": 3,
+    "action": "Light Ranged Attack",
+    "range": "Blast 1, Range 8",
+    "attack": {
+      "hit": "Inflict frostbite and poisoned",
+      "effect": "If an ally is in the center space, they can clear a status."
+    },
+    "area": "[D]",
+    "infusion": {
+      "cost": 3,
+      "name": "Eye of Terror",
+      "effect": "Increase area effect to blast 2. The center space is still clear."
+    },
+    "tags": [
+      "Pierce"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If you surround an ally with this attack, they gain flying until the end of their next turn."
+      },
+      {
+        "rank": 2,
+        "description": "If you surround an enemy with this attack, summon a pit under them."
+      },
+      {
+        "rank": "Great Aeoncloud",
+        "description": "Terrain Effect: After attacking, you may create a terrain effect in the area effect spaces. The area is difficult and dangerous terrain. Any character standing in the center space gains flying until the end of their turn, and gains +1 boon, pierce, and inflicts bonus damage against any characters standing in the rest of the area. If you create this effect again, replace the last one created."
+      }
+    ]
   }
 ]

@@ -44,6 +44,10 @@
     "description": "At or under 50% hp."
   },
   {
+    "name": "Bonus Damage",
+    "description": "If an ability lets you increased damage, it will usually grant you bonus damage. If you deal bonus damage, roll 1 more die than normal and pick the highest total result. For example, an attack that deals [D] normally, you would roll 2 dice (1 base, 1 from bonus damage) and pick the highest 1. For an attack that deals 2[D], you would roll 3 dice and pick the highest 2, etc."
+  },
+  {
     "name": "Boon",
     "description": "For each boon, roll 1d6, pick the highest total result, then add it to your d20 roll total. Boons and curses cancel out each other, 1 to 1."
   },
@@ -62,6 +66,10 @@
   {
     "name": "Cover",
     "description": "If a character has cover from a ranged attack, it is resistant to that attack, halving all damage."
+  },
+  {
+    "name": "Critical Hit",
+    "description": "A critical hit triggers on any total attack roll of 20+, or from certain abilities. If you roll a critical hit or gain it from other sources, increase damage by +[D].\nThis effect doesn’t stack, and if you get a critical hit again, gain bonus damage instead for each time past the first.\nA critical hit still counts as a hit for anything that relies on hitting."
   },
   {
     "name": "Cross X",

@@ -1,7 +1,7 @@
 import {IconAttack} from "./attack";
 
 export type IconInfusion = {
-    cost: number
+    cost: number | string
     name: string
     effect?: string
     range?: string
