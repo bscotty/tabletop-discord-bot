@@ -3469,6 +3469,319 @@
     ]
   },
   {
+    "id": "bolt",
+    "job": "spellblade",
+    "name": "Bolt",
+    "description": "A bright lance of lightning shoots from your weapon or hand, piercing your foes with a hundred shards.",
+    "chapter": 1,
+    "action": "Light Ranged Attack",
+    "range": "Line 8",
+    "attack": {
+      "hit": "[D]+fray",
+      "miss": "fray",
+      "effect": "Foe is vulnerable and electrified."
+    },
+    "area": "fray",
+    "effect": "If your attack target has no other characters adjacent, deal 2 piercing damage to them.\nTeleport 1 before or after the attack.",
+    "infusion": {
+      "cost": 2,
+      "name": "Levincross",
+      "effect": "Change attack area to Line 8 + Cross 2."
+    },
+    "tags": [
+      "Pierce"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Trigger this ability's damage effect again if your foe is bloodied."
+      },
+      {
+        "rank": 2,
+        "description": "If a character is already electrified, teleport them 1 after this ability resolves."
+      },
+      {
+        "rank": "Gungnir",
+        "description": "Gain the Gungnir infuse option. Gungnir benefits from any Bolt talents.",
+        "infusion": {
+          "cost": 5,
+          "name": "Gungnir",
+          "action": "Superheavy Ranged Attack",
+          "range": "Line 10 + Cross 4",
+          "attack": {
+            "hit": "2[D]+fray damage and character is vulnerable.",
+            "miss": "[D]+fray"
+          },
+          "area": "[D]+fray",
+          "effect": "Electrify all characters in the area. Electrified characters become vulnerable.\nTeleport 1 before or after the attack.\nGungnir deals 2 piercing damage to any character again if they have no other characters adjacent.",
+          "tags": [
+            "Pierce"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "odinforce",
+    "job": "spellblade",
+    "name": "Odinforce",
+    "description": "You thrust your weapon skyward, and pierce the heavens.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "End your turn and gain Stance: Shoot a flurry of lightning bolts into the air and set out a d6 power die, starting at 6. When you enter this stance, or any time you teleport, you may call a bolt down, hitting a character in range 3 and dealing 1 piercing damage, then reducing your power die by 1. This effect can trigger any number of times a turn. If you run out of bolts, Odinforce ends.",
+    "refresh": "This stance automatically refreshes at the start of your turns. When this stance refreshes, gain 3 more bolts, to a maximum of 6.",
+    "infusion": {
+      "cost": 2,
+      "name": "Lichtschild",
+      "effect": "While in this stance, you can also call down an Odinforce bolt when a character enters or exits an adjacent space."
+    },
+    "tags": [
+      "Power Die",
+      "Stance"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Hitting a bloodied character with an Odinforce bolt does not deplete a bolt."
+      },
+      {
+        "rank": 2,
+        "description": "Slaying a character immediately refreshes Odinforce's bolts to maximum."
+      },
+      {
+        "rank": "Nothung",
+        "description": "You can end Odinforce early as an action, dealing 1 piercing damage six times, to a character in range 3. If you do so, you can't use the stance again for the rest of combat."
+      }
+    ]
+  },
+  {
+    "id": "levinblade",
+    "job": "spellblade",
+    "name": "Levinblade",
+    "description": "You summon a blade of pure lightning energy, sweeping it in a shining arc.",
+    "chapter": 1,
+    "action": "Heavy Melee Attack",
+    "range": "Range 2, Arc 4",
+    "attack": {
+      "hit": "2[D]+fray",
+      "miss": "fray",
+      "effect": "Foe is electrified."
+    },
+    "area": "fray",
+    "effect": "You may teleport 1 before or after the attack.\nDeal 1 piercing damage again once for every character adjacent to your target, up to a maximum of 4 times.",
+    "infusion": {
+      "cost": 2,
+      "name": "Freya",
+      "effect": "Increase effect area and teleport distance by +2."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If a character is already electrified, teleport them 1."
+      },
+      {
+        "rank": 2,
+        "description": "Slay: Summon a hail of lightning bolts, dealing 1 piercing damage to all foes in range 3."
+      },
+      {
+        "rank": "Excalibur",
+        "description": "After Levinblade resolves, your attack target is infused with lightning energy. At the end of their turn, they take 1 piercing damage again for every adjacent character, up to a maximum of 4 times."
+      }
+    ]
+  },
+  {
+    "id": "atherwand",
+    "job": "spellblade",
+    "name": "Ätherwand",
+    "description": "You summon the highwinds to batter your foes.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Terrain Effect: Swipe your weapon to create a line 4 area of crackling winds in range 5. The area grants cover to allies, and foes that either attempt to move into or start their turn in the wall's space must pass a save or be unable to move into the area for the rest of the turn and be shoved 1 space away from it. Electrified characters fail the save. The area lasts until the end of the combat or until you use this ability again.",
+    "infusion": {
+      "cost": "X",
+      "name": "Äthersturm",
+      "effect": "Infuse X aether, and extend the area by 2 spaces for every Aether infused."
+    },
+    "tags": [
+      "Terrain Effect"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "When you pass through the area for the first time on your turn, you may teleport 3 as a free action. This movement can be taken in the middle of other movement and actions."
+      },
+      {
+        "rank": 2,
+        "description": "Characters that fail their save are also electrified."
+      },
+      {
+        "rank": "Hellerwind",
+        "description": "Allies that either pass through the area for the first time on their turn or start their turn there can teleport 3 as a free action. This movement can be taken in the middle of other movement and actions."
+      }
+    ]
+  },
+  {
+    "id": "electromagnetism",
+    "job": "spellblade",
+    "name": "Electromagnetism",
+    "description": "You charge your target with unstable magnetic energy, causing unstoppable attractive force.",
+    "chapter": 1,
+    "action": "1 Action",
+    "effect": "Mark: A character in range 6 is marked. Foes are electrified+ while marked. The character gains aura 2 while marked. At the start of your turn, you may shove all characters in the aura 1 towards or away from the marked character. Electrified characters treat the aura as difficult terrain.",
+    "tags": [
+      "Mark"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Effect: You may also deal 1 piercing damage to your target for every electrified character other than the marked character in the aura at the start of your turn."
+      },
+      {
+        "rank": 2,
+        "description": "If you start your turn in the aura, you can teleport 2."
+      },
+      {
+        "rank": "Hand of Tyr",
+        "description": "Ranged attacks against the target change depending on whether you marked a foe or an ally.\n• On a foe, attacks are pulled towards it. They have no maximum range if they have a listed range and target the foe, deal bonus damage, and ignore cover.\n• On an ally, ranged attacks cannot critical hit (turn any critical hit into a regular hit), cannot deal bonus damage, and gain +1 curse."
+      }
+    ]
+  },
+  {
+    "id": "sturmreiten",
+    "job": "spellblade",
+    "name": "Sturmreiten",
+    "description": "You transmute yourself and your gear into pure lightning Aether, coursing through the boundaries between worlds in a moment.",
+    "chapter": 1,
+    "action": "2 Actions",
+    "effect": "Dash up to 6 spaces in a straight line. You gain phasing and intangible while dashing. Foes you pass through for the first time on your turn are electrified. Electrified characters take 2 piercing damage.\nIf you defeat a character or trigger a Slay effect, you may use Sturmreiten as a free action.",
+    "infusion": {
+      "cost": 2,
+      "name": "Instant Transmission",
+      "effect": "Cost becomes 1 Action."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Moving through terrain or the spaces of electrified characters costs 0 movement."
+      },
+      {
+        "rank": 2,
+        "description": "Every character you pass through increases the movement remaining from Sturmreiten by 1. This effect only triggers once for each character per use of this ability."
+      },
+      {
+        "rank": "Mjöllnir",
+        "description": "Dash in an Arc 8 area instead."
+      }
+    ]
+  },
+  {
+    "id": "grand_fork",
+    "job": "spellblade",
+    "name": "Grand Fork",
+    "description": "You infuse your foe with raw lightning aether, causing scathing charges of static electricity to arc to them whenever a strike is made nearby.",
+    "chapter": 2,
+    "action": "1 Action",
+    "effect": "Mark: Mark a foe in range 6. While marked, they are electrified+ and gain aura 1. When another character in that aura takes damage, they take 1 piercing damage.",
+    "tags": [
+      "Mark"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "If the marked foe is bloodied, increase the size of the aura to 2."
+      },
+      {
+        "rank": 2,
+        "description": "If the marked foe is bloodied, they are also vulnerable+ while marked."
+      },
+      {
+        "rank": "Split Ionize",
+        "description": "The aura can be inverted when this mark is used. When the marked character takes damage, all other characters in the aura take 1 piercing damage."
+      }
+    ]
+  },
+  {
+    "id": "dancing_sword",
+    "job": "spellblade",
+    "name": "Dancing Sword",
+    "description": "Lightning sprites are a rare sight - minor ones tend to explode from their own rampant aether shortly after being summoned, a fact that canny Spellblades can take advantage of, binding them to weapons made of Aether.",
+    "chapter": 2,
+    "action": "1 Action",
+    "effect": "Summon: Summon a dancing sword in range 3.",
+    "infusion": {
+      "cost": 3,
+      "name": "Fafnir",
+      "effect": "Use this infuse at the start of your turn. Extend the duration of any of your swords by 1 turn."
+    },
+    "summon": {
+      "name": "Dancing Sword",
+      "size": 1,
+      "effect": "When you teleport, your sword may dash 3 as an area effect in a straight line. Characters it passes through are electrified and take 2 piercing damage. This effect can trigger any number of times a turn but each character can only be damaged once a turn by this weapon.\nAt the start of your next turn, your sword detonates, destroying it. Adjacent characters are shattered.",
+      "tags": [
+        "Phasing"
+      ]
+    },
+    "tags": [
+      "Summon"
+    ],
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Already electrified characters cost 0 movement for your sword to pass through."
+      },
+      {
+        "rank": 2,
+        "description": "Your sword can also dash when you summon it."
+      },
+      {
+        "rank": "Rampant Blade",
+        "description": "Set out a d4 power die when you summon a dancing sword. Tick it up by 1 when the sword passes through a character. When a sword explodes, it deals 1 piercing damage once to adjacent characters for each tick on its die."
+      }
+    ]
+  },
+  {
+    "id": "drifting_leaf",
+    "job": "spellblade",
+    "name": "Drifting Leaf",
+    "description": "Agile and alert, your swordcraft spells doom for your foe. When they go to retaliate, you were never there.",
+    "chapter": 3,
+    "action": "Heavy Melee Attack",
+    "attack": {
+      "hit": "2[D]+fray",
+      "miss": "fray"
+    },
+    "effect": "Inflict electrified and frostbite.\nAfter the attack resolves, teleport 1, then gain the Leaf on the Wind interrupt until the start of your next turn.",
+    "infusion": {
+      "cost": 2,
+      "name": "Phantom Blade",
+      "effect": "When the interrupt triggers before the start of your next turn, also summon a hail of lightning bolts, dealing 1 piercing damage to all foes in range 3."
+    },
+    "talents": [
+      {
+        "rank": 1,
+        "description": "Electrify any foe that triggers Leaf on the Wind. Electrified characters take piercing fray damage."
+      },
+      {
+        "rank": 2,
+        "description": "If you're bloodied, gain one more use of Leaf on the Wind."
+      },
+      {
+        "rank": "Great Cyclone",
+        "description": "Leaf on the Wind becomes interrupt 3."
+      }
+    ],
+    "abilities": [
+      {
+        "id": "leaf_on_the_wind",
+        "job": "spellblade",
+        "name": "Leaf on the Wind",
+        "action": "Interrupt 1",
+        "effect": "Teleport 3.",
+        "trigger": "A foe enters or exits a space adjacent to you."
+      }
+    ]
+  },
+  {
     "id": "dagon",
     "job": "stormbender",
     "name": "Dagon",
