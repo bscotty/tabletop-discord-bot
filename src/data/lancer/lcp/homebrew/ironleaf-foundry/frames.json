@@ -33,7 +33,7 @@
     "traits": [
       {
         "name": "Blastwave Rider",
-        "description": "1/Round when the Lily takes damage from a Blast, Burst, Line or Cone it can fly up to 5 spaces in any direction. This movement does not cause reactions, ignores engagement and can still be made even if the Lily is Slowed. If the Lily or an allied character is the source of the damage, it also reduces damage and heat taken to 1."
+        "description": "1/Round when the Lily takes damage from a Blast, Burst, Line or Cone it can fly up to 5 spaces in any direction. This movement does not cause reactions, ignores engagement and can still be made even if the Lily is Slowed or Immune to the effect."
       },
       {
         "name": "Unrestrained",
@@ -87,7 +87,7 @@
     "traits": [
       {
         "name": "Immortal Skill",
-        "description": "The Rose is treated as size 2 for the purpose of Ram and Grapple and ignores engagement by characters larger than itself.",
+        "description": "The Rose is treated as size 1 for the purpose of Ram and Grapple and ignores engagement by characters larger than itself.",
         "synergies": [
           {
             "locations": [
@@ -329,7 +329,7 @@
     "traits": [
       {
         "name": "Cold Iron",
-        "description": "When the Silversword would be targeted by a hostile tech action, roll 1d6. On a 4+ the tech action misses and has no effect. This does not stack with invisible."
+        "description": "When the Silversword would be targeted by a hostile tech action, roll 1d6. On a 5+ the tech action misses and has no effect. This does not stack with invisible. When the Silversword Braces against a tech attack, the tech attack automatically misses."
       },
       {
         "name": "Scaled Wisdom",
@@ -446,6 +446,7 @@
     ],
     "core_system": {
       "name": "Silver Strings",
+      "description": "Surrounded by a flurry of thin cables strong enough to entangle the largest of megafauna, Rowan pilots are infamous for using them to throw their larger opponents into walls both for staggering agile foes and giving a chance for additional showboating.",
       "active_name": "Silver Strings - Unlimited Release",
       "active_effect": "Knock back any number of characters in Range 50 up to 3 spaces in any direction. Hostile characters moved this way are knocked reeling, becoming Slowed, Impaired, and unable to take reactions until the end of their next turn.",
       "activation": "Quick",
@@ -511,7 +512,69 @@
         "mw_nanotoxin_injector"
       ]
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
-    "y_pos": "25"
+    "image_url": "https://cdn.discordapp.com/attachments/729896234877452371/1062875593097621514/Ikiryo_Kudzu_Comm.png",
+    "y_pos": "16"
+  },
+  {
+    "id": "mf_scilla",
+    "source": "IF",
+    "license_level": 2,
+    "name": "SCILLA",
+    "mechtype": [
+      "Defender",
+      "Striker"
+    ],
+    "description": "A titanic mech, the Scilla heavily treads the line between ‘spaceship’ and ‘mech’, being unable to support itself on legs and relying entirely on flight systems to maintain even the hint of mobility in-atmosphere. This massive frame mounts heavy weapons and, most impressively, advanced matter-energy conversion drives that allow it to make impossible bursts of movement and to shield those around it from incoming fire.<br><br>Despite their size and bleeding edge propulsion, analysis of schematics have shown indications that the Scilla is a downsize of a significantly larger design with several removed modules of unknown purpose. When asked, Ironleaf Foundry designers have simply said that none of the originals have existed for a long time and the time for vessels such as they were has long ago passed.",
+    "mounts": [
+      "Main",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 10,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 7,
+      "repcap": 5,
+      "sensor_range": 12,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Floating Fortress",
+        "description": "The Scilla can hover when it moves. Its sheer scale and gravity wake allow attacks it makes or that target it to ignore height. The Scilla is Immune to falling damage and automatically passes agility checks to remain flying when it loses structure."
+      },
+      {
+        "name": "Capital Class",
+        "description": "The Scilla has +1 Accuracy on Engineering Checks and saves but +1 Difficulty on Agility Checks and Saves. Outside of combat scenes, the Scilla can transport up to 30 size ½ non-mech characters and other characters smaller than it with a total size equal to twice its size."
+      }
+    ],
+    "core_system": {
+      "name": "Vessel of the Tuatha",
+      "description": "“If the choir sings of nothing but death and misery, we must set our song against it no matter the cost.” - Unknown.",
+      "active_name": "Wave Sweeper",
+      "active_effect": "Fly up to 8 spaces in a straight line. Any number of Characters of your choice you pass over during this movement are converted into raw energy and removed from the battlefield as data. Affected characters can take no actions until the end of their next turn when they are returned to the battlefield in a free space under you or as close as possible. Hostile characters can pass an engineering save to avoid being converted and instead be Impaired and Slowed until the end of their next turn.",
+      "activation": "Full",
+      "use": "Scene",
+      "passive_name": "Steel Ark",
+      "passive_effect": "Allied characters at least partially under the Scilla have Soft Cover. Hostile characters at least partially under the Scilla have +1 Difficulty on attacks.",
+      "passive_actions": [
+        {
+          "name": "Warding Geas",
+          "activation": "Quick Tech",
+          "detail": "You inflict a Geas on a hostile character in sensors until the end of the scene. 1/round when a Geas’d character would make an attack that does not include the Scilla, the Scilla may teleport to any free space above the target as a reaction before the attack.",
+          "frequency": "Unlimited"
+        }
+      ]
+    },
+    "image_url": "https://cdn.discordapp.com/attachments/729896234877452371/1064998225553129502/ikiryo_saucer_comm.png",
+    "y_pos": "30"
   }
 ]
