@@ -5,7 +5,7 @@
     "source": "IF",
     "license": "LILY",
     "license_level": 1,
-    "effect": "When you cause a character to be pushed, pulled or knocked back, they can pass over and onto obstacles of up to Height 5, counting as flying during the movement. In addition, when you lay a Mine, you can attach it to yourself, measuring all effects of the mine from your own space and being unable to trigger it with your own movements. If this mine forces you to make a save, you can roll the save twice and take the higher result. You can only have one mine attached to you this way at a time.",
+    "effect": "When you cause a character to be pushed, pulled or knocked back, they can pass over and onto obstacles of up to Height 5, counting as flying during the movement. In addition, when you lay a Mine, you can attach it to the shield, measuring all effects of the mine from your own space and being unable to trigger it with your own movements. If this mine forces you to make a save, you can roll the save twice and take the higher result. You can only have one mine attached to the shield this way at a time.",
     "type": "System",
     "sp": 2,
     "description": "‘This side towards enemy’",
@@ -293,7 +293,7 @@
     "actions": [
       {
         "activation": "Quick",
-        "detail": "Spend 1 Repair to restore all HP."
+        "detail": "Spend 1 Repair to restore all HP or repair a destroyed weapon or system."
       }
     ]
   },
@@ -699,6 +699,81 @@
         "name": "Doctor's Orders",
         "activation": "Protocol",
         "detail": "Push one character in Range 12 and Line of Sight up to 2 spaces or up to 4 spaces if the target is suffering from Burn or a Condition. Hostile characters may pass a Systems save to avoid this effect."
+      }
+    ]
+  },
+  {
+    "id": "ms_book_of_invasions_cyclic_engram",
+    "name": "“Book of Invasions” Cyclic Engram",
+    "source": "IF",
+    "license": "SCILLA",
+    "license_level": 1,
+    "effect": "When a hostile character in Line of Sight makes an attack that does not include you, that attack suffers +3 difficulty if it is the first round of the scene or if they entered from reinforcements this round.",
+    "type": "System",
+    "sp": 1,
+    "description": "Each warrior of them burnt his ship<br>when he reached Ireland in a fog;<br>it was a powerful fight being set,<br>the smoke of the ships as they burned.<br><br>The reason why they burnt the ships<br>was that they should never retreat;<br>and that the host of tuneful Balar should not come<br>in them to settle in Ireland.<br>-Lebor Gabala Erenn",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ]
+  },
+  {
+    "id": "ms_taghairm_optimization_module",
+    "name": "“Taghairm” Optimization Module",
+    "source": "IF",
+    "license": "SCILLA",
+    "license_level": 2,
+    "type": "System",
+    "sp": 2,
+    "description": "For all of their casual flippancy around danger, Ironleaf Foundry’s damage reports are flawless. Designers trawl through every record of a shot that passed the pilot seals or the death throes of a gyro as it ground itself apart on a railgun round. This has given them a grim and grisly mastery of defensive countermeasures, each bought with data of a previous attempt that failed when put to the test.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Temper Steel",
+        "activation": "Quick Tech",
+        "detail": "One character in sensors gains +2 Armor (To a maximum of 4) until the end of their next turn. During this time they can apply armor while Shredded and against Damage that is AP or Burn."
+      },
+      {
+        "name": "Preternatural Reflexes",
+        "activation": "Quick Tech",
+        "detail": "One character in sensors gains Soft Cover until the end of their next turn. During this time, they can apply cover against Tech Attacks and other attacks that would ignore cover."
+      }
+    ]
+  },
+  {
+    "id": "ms_fusion_interdiction_module",
+    "name": "Fusion Interdiction Module",
+    "source": "IF",
+    "license": "SCILLA",
+    "license_level": 3,
+    "type": "System",
+    "sp": 2,
+    "description": "“You have the power of a sun at your command and you use it to strike down the defenseless. You have taken the sacred and turned it into little more than a bloodied knife. You are not worthy of it. Choke on the fumes of hate, death and iron.” -Dr Ashryn Ironleaf",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Revoke the Gift of Flame",
+        "activation": "Reaction",
+        "frequency": "Unlimited",
+        "trigger": "A hostile character in Range 10 would use a weapon, system or trait that is Loading, Recharge or Limited.",
+        "detail": "Make an opposed Engineering check against the triggering character. On a success, you can spend a Limited Charge to have the triggering character's weapon, system or trait have no effect and allow you to reload a weapon or cool half your current heat."
       }
     ]
   }

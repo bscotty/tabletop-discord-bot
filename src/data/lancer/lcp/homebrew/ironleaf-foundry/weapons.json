@@ -10,14 +10,6 @@
     "on_hit": "The target becomes Slowed and cannot fly or teleport until the end of their next turn. If the target is flying, they also immediately fall.",
     "mount": "Main",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Explosive",
@@ -51,14 +43,6 @@
     "on_hit": "If the target has flown or teleported before this attack since the start of their last turn, this hit becomes a critical hit.",
     "mount": "Heavy",
     "type": "CQB",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Explosive",
@@ -93,13 +77,6 @@
     "mount": "Main",
     "type": "Melee",
     "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -126,13 +103,6 @@
     "mount": "Main",
     "type": "Nexus",
     "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Energy",
@@ -170,13 +140,6 @@
     "mount": "Main",
     "type": "Melee",
     "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -192,8 +155,7 @@
     "sp": 0,
     "tags": [
       {
-        "id": "tg_arcing",
-        "val": null
+        "id": "tg_arcing"
       }
     ]
   },
@@ -206,14 +168,6 @@
     "description": "Precision-tooled weapons, Gyrojet Pistols have a reach that few other pistols can manage meshed with the kick of a much larger weapon.",
     "mount": "Auxiliary",
     "type": "Launcher",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Explosive",
@@ -248,14 +202,6 @@
     "effect": "This weapon can make two attacks when fired, against the same target or against different targets. The second attack does not benefit from bonus damage.",
     "mount": "Auxiliary",
     "type": "CQB",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -289,14 +235,6 @@
     "effect": "All successful attacks with this weapon become Critical Hits.",
     "mount": "Auxiliary",
     "type": "Rifle",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -328,14 +266,6 @@
     "description": "The fundamentals each boxer learns; The Jab and the Cross are two of the most eternally useful tools in any combatants repertoire. A fighter might know a million tricks but sheer practiced technique can’t be matched with cheap tricks, only with equal skill.",
     "mount": "Auxiliary",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -369,14 +299,6 @@
     "effect": "When you Brace, if the Kinetic Driver is loaded, you can attack with it as part of the Brace.",
     "mount": "Main",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -413,14 +335,6 @@
     "on_hit": "If this target was hit with Denting Iron in the previous round it deals maximum damage, though bonus damage is still rolled as normal.",
     "mount": "Main",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -447,14 +361,6 @@
     "effect": "You may only fire the Disposable Gyrostorm Pods once per scene.",
     "mount": "Main",
     "type": "Rifle",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "sp": 0,
     "profiles": [
       {
@@ -553,14 +459,6 @@
     "description": "Firing high velocity needles with secondary charges to allow on-the fly targeting, Zhuge 𝜈-Model Needlerifles give a pilot much of the precision of a hunter-killer drone meshed with a staggering rate of fire.",
     "mount": "Main",
     "type": "Rifle",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Energy",
@@ -590,14 +488,6 @@
     "effect": "This weapon can attack two targets at a time. If it does so, it deals 4 Kinetic Damage with Reliable 2.",
     "mount": "Heavy",
     "type": "Rifle",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -628,14 +518,6 @@
     "effect": "You gain the Brrrt reaction, usable once per round.",
     "mount": "Main",
     "type": "Rifle",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "val": "6",
@@ -686,14 +568,6 @@
     "description": "Popular among security crews, Pulse Spears provide an excellent mix of flexibility and power to defenders allowing teams using them to dominate narrow chokepoints without being so unwieldy as to be difficult to use when the press of melee begins.",
     "mount": "Main",
     "type": "CQB",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Energy",
@@ -728,17 +602,9 @@
     "effect": "As a protocol, you can change to one of the following Modes. The Mode continues until you change to a new Mode with this weapon. You start any given fight with one of the following Modes of your choice.",
     "mount": "Heavy",
     "type": "Rifle",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
+    "sp": 2,
     "damage": [],
     "range": [],
-    "sp": 2,
     "actions": [
       {
         "name": "Change Mode",
@@ -846,14 +712,6 @@
     "on_hit": "The target is unable to take Reactions, Protocols or Free Actions until the end of their next turn.",
     "mount": "Main",
     "type": "Nexus",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Energy",
@@ -891,14 +749,6 @@
     "on_attack": "The nexus attacks a single target in the area and leaves a Starburst in any space in the area. While you have any Starbursts on the battlefield, you gain the Starburst Bind Quick Action.",
     "mount": "Heavy",
     "type": "Nexus",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Energy",
@@ -938,14 +788,6 @@
     "description": "Loaded with tandem charge fuel-air/kinetic pulse grenades, Sauterelles are capable of concussing foes caught in their blast, setting equipment ablaze even as defenders struggle to regain their bearings.",
     "mount": "Main",
     "type": "Rifle",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Burn",
@@ -987,14 +829,6 @@
     "on_hit": "The target must pass an engineering save or fall prone and be immobilized until the start of their next turn.",
     "mount": "Main",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -1026,14 +860,6 @@
     "effect": "This weapon may attack with Overwatch when hostile characters enter, leave, or exit spaces within its Threat, no matter whether they started their movement there. You gain the Solstice Knight reaction.",
     "mount": "Main",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Energy",
@@ -1073,18 +899,10 @@
     "on_crit": "This weapon deals 1 Kinetic Damage for each hostile character in Threat to all hostile characters in Threat, to a maximum of 3.",
     "mount": "Heavy",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
-        "val": "1d6+3"
+        "val": "1d6+2"
       }
     ],
     "range": [
@@ -1107,14 +925,6 @@
     "on_hit": "This attack deals bonus damage equal to the target's maximum structure or layers. If the target suffers Structure Damage this turn, the target must roll twice and take the lower result, ignoring all similar effects.",
     "mount": "Auxiliary",
     "type": "CQB",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Energy",
@@ -1148,14 +958,6 @@
     "on_hit": "Choose one of the following:<ul><li><b>Decay:</b> Until the end of the target's next turn, they take 1 burn each time they make an attack or take a standard move, boost or reaction.</li><li><b>Catalyst:</b> The attack deals bonus energy damage equal to the target's current burn, then the target clears all burn.</b></li></ul>",
     "mount": "Main",
     "type": "Melee",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -1172,6 +974,136 @@
     "tags": [
       {
         "id": "tg_ap"
+      }
+    ]
+  },
+  {
+    "id": "mw_particle_shredder",
+    "name": "Particle Shredder",
+    "source": "IF",
+    "license": "SCILLA",
+    "license_level": 1,
+    "description": "A particle shredder flays layer after layer of plating off foes, each one evaporating in small-scale nuclear fission. The significant recharge time prevents repeated shots but each burst has enough time on target to engage a swath of foes before power is drained.",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Line",
+        "val": 3
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_ap"
+      }
+    ]
+  },
+  {
+    "id": "mw_resonance_shockwave",
+    "name": "Resonance Shockwave",
+    "source": "IF",
+    "license": "SCILLA",
+    "license_level": 2,
+    "description": "“Many liberation squads have a story of a glorious hero. One who spat in the face of oppression, taking many times their number with them as they dove into the teeth of hell laughing. A lot less talk about the advocate who had to give their family platitudes about how important they were because they can't give them the person they loved back.” -Tia Maddalen, DOJ/HR Field Advocate.",
+    "mount": "Main",
+    "type": "CQB",
+    "effect": "This weapon does not attack allied characters and gains knockback equal to the number of characters in the burst when used.",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Burst",
+        "val": 2
+      }
+    ],
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_knockback",
+        "val": "X"
+      }
+    ]
+  },
+  {
+    "id": "mw_ground_zero",
+    "name": "Ground Zero",
+    "source": "IF",
+    "license": "SCILLA",
+    "license_level": 3,
+    "description": "A powerful molecular destabilizer, the Ground Zero is capable of causing nuclear fission to occur in any target provided to it. While engaging a full fission effect is slow and requires close-range targeting, the air around a target can be rapidly shredded by blossoming nuclear ribbons with great ease.",
+    "mount": "Superheavy",
+    "type": "CQB",
+    "damage": [],
+    "range": [],
+    "profiles": [
+      {
+        "name": "Shredder Ribbons",
+        "effect": "This weapon can attack up to four targets at a time.",
+        "damage": [
+          {
+            "type": "Energy",
+            "val": 5
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_arcing"
+          },
+          {
+            "id": "tg_ap"
+          }
+        ]
+      },
+      {
+        "name": "Full Fission",
+        "effect": "This weapon ignores height and penalties for being Engaged. Objects in this area take 40 AP energy damage, with no attack roll required.",
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "4d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Burst",
+            "val": 1
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_loading"
+          }
+        ]
       }
     ]
   }
