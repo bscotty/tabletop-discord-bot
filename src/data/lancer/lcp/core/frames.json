@@ -34,14 +34,14 @@
       "use": "Next Round",
       "activation": "Free"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/missing_frame.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/missing_frame.png",
     "license_id": "missing_frame"
   },
   {
     "id": "mf_standard_pattern_i_everest",
     "license_level": 0,
     "source": "GMS",
-    "name": "EVEREST",
+    "name": "Everest",
     "mechtype": [
       "Balanced"
     ],
@@ -140,14 +140,14 @@
         "src": "pre_vanguard_pixel.png"
       }
     ],
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_standard_pattern_i_everest.png",
     "license_id": "mf_standard_pattern_i_everest"
   },
   {
     "id": "mf_blackbeard",
     "license_level": 2,
     "source": "IPS-N",
-    "name": "BLACKBEARD",
+    "name": "Blackbeard",
     "mechtype": [
       "Striker"
     ],
@@ -221,14 +221,14 @@
       "active_effect": "This system fires grappling harpoons at any number of targets within Range 5 and line of sight. Affected characters must succeed on a Hull save or take 2d6 Kinetic damage and be knocked Prone, then pulled adjacent to you, or as close as possible. They become Immobilized until the end of their next turn. On a success, they take half damage and are otherwise unaffected.",
       "activation": "Quick"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_blackbeard.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_blackbeard.png",
     "license_id": "mf_blackbeard"
   },
   {
     "id": "mf_drake",
     "license_level": 2,
     "source": "IPS-N",
-    "name": "DRAKE",
+    "name": "Drake",
     "mechtype": [
       "Defender"
     ],
@@ -283,21 +283,21 @@
       }
     ],
     "core_system": {
-      "name": "FORTRESS",
+      "name": "Fortress",
       "active_name": "Fortress Protocol",
       "active_effect": "You deploy heavy stabilizers and your mech becomes more like a fortified emplacement than a vehicle. When activated, two sections of hard cover (line 2, Size 1) unfold from your mech, drawn in any direction. These cover sections have Immunity to all damage.<br>Additionally, the following effects apply while active:<ul><li>You become Immobilized.</li><li>You benefit from hard cover, even in the open, and gain Immunity to Knockback, Prone, and all involuntary movement.</li><li>When you Brace, you may take a full action on your next turn instead of just a quick action.</li><li>Any character that gains hard cover from you or your cover sections gains Immunity to Knockback, Prone, and all involuntary movement, and gains the benefits of Blast Plating.</li></ul>This system can be deactivated as a protocol. Otherwise, it lasts until the end of the current scene.",
       "use": "Encounter",
       "deactivation": "Protocol",
       "activation": "Protocol"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_drake.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_drake.png",
     "license_id": "mf_drake"
   },
   {
     "id": "mf_lancaster",
     "license_level": 2,
     "source": "IPS-N",
-    "name": "LANCASTER",
+    "name": "Lancaster",
     "mechtype": [
       "Support"
     ],
@@ -353,14 +353,14 @@
         "mw_lancaster_integrated"
       ]
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_lancaster.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_lancaster.png",
     "license_id": "mf_lancaster"
   },
   {
     "id": "mf_nelson",
     "license_level": 2,
     "source": "IPS-N",
-    "name": "NELSON",
+    "name": "Nelson",
     "mechtype": [
       "Striker"
     ],
@@ -412,14 +412,14 @@
       "use": "Encounter",
       "activation": "Protocol"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_nelson.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_nelson.png",
     "license_id": "mf_nelson"
   },
   {
     "id": "mf_raleigh",
     "license_level": 2,
     "source": "IPS-N",
-    "name": "RALEIGH",
+    "name": "Raleigh",
     "mechtype": [
       "Striker"
     ],
@@ -458,7 +458,7 @@
     ],
     "core_system": {
       "name": "M35 Mjolnir cannon",
-      "description": "IPS-N’s M35 Mjolnir cannon is a carryover from Northstar’s Watchman line of defensive weapons, reworked for frontline combat. The Mjolnir is a hard-mounted, multi-barrel auxiliary cannon that uses magnetic acceleration to fire stacks of airburst projectiles at its target. It’s an impulse weapon, tied to the pilot’s second-tier neural processes with mediation from a comp/con or NHP; even in death, a pilot’s Mjolnir will continue to identify and attack hostile targets until reaching total systemic failure. For this reason, the Mjolnir is often referred to as a deadgun – one of many such weapons to be found among CQB-oriented pilots.",
+      "description": "IPS-N’s M35 Mjolnir cannon is a carryover from Northstar’s Watchman line of defensive weapons, reworked for frontline combat. The Mjolnir is a hard-mounted, multi-barrel auxiliary cannon that uses magnetic acceleration to fire stacks of airburst projectiles at its target. It’s an impulse weapon, tied to the pilot’s second-tier neural processes with mediation from a COMP/CON or NHP; even in death, a pilot’s Mjolnir will continue to identify and attack hostile targets until reaching total systemic failure. For this reason, the Mjolnir is often referred to as a deadgun – one of many such weapons to be found among CQB-oriented pilots.",
       "active_name": "Thunder God",
       "active_effect": "You start to spin your M35 Mjolnir up, beginning with no chambered rounds. For the rest of the scene, you load two rounds into chambers at the end of any of your turns in which you haven’t fired the M35 Mjolnir . It can hold a maximum of six rounds.<br>When you fire the M35 Mjolnir, all chambers fire simultaneously, dealing 4 kinetic damage per loaded round. If you fire four or more rounds at once, the attack gains AP and, on a hit, your target becomes Shredded until the end of their next turn.",
       "activation": "Protocol",
@@ -467,14 +467,14 @@
         "mw_raleigh_integrated"
       ]
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_raleigh.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_raleigh.png",
     "license_id": "mf_raleigh"
   },
   {
     "id": "mf_tortuga",
     "license_level": 2,
     "source": "IPS-N",
-    "name": "TORTUGA",
+    "name": "Tortuga",
     "mechtype": [
       "Defender",
       "Striker"
@@ -512,8 +512,8 @@
       }
     ],
     "core_system": {
-      "name": "WATCHDOG co-pilot",
-      "description": "IPS-N security teams are no strangers to the dangers of ship-to-ship or ship-to-station boarding actions. Tight corridors, unstable gravity, dark environments, hard vacuum, and the potential dual threat of both organic and inorganic opposition make boarding actions some of the most statistically deadly engagement – according to IPS-N’s internal metrics, even the winning side should expect at least 30% casualties. Hoping to lessen the cognitive burden on pilots and any NHPs or comp/cons installed in their chassis, IPS-N developed the WATCHDOG co-pilot. The WATCHDOG is a simple subsentient partition: a flash-homunculus of aggregated intelligence generated from thousands of after-action reports from boarding actions, debriefings, and volunteer donors. Not an NHP, nor even a comp/con, the WATCHDOG is a robust tactical program similar to a smart weapon. That said, its ability to operate without cycling presents certain advantages: namely, these co-pilots have some capacity to learn and make best-guess predictions based on analysis of their pilots. WATCHDOGs tend to have plain personalities – to whatever extend they can be said to have one – and are a favorite of pilots looking for a no-nonsense attitude and crisp, efficient counsel.<br>The WATCHDOG system is currently under review by a joint USB/UDoJ-HR commission, but there has been no formal stay on production yet issued.",
+      "name": "WATCHDOG Co-Pilot",
+      "description": "IPS-N security teams are no strangers to the dangers of ship-to-ship or ship-to-station boarding actions. Tight corridors, unstable gravity, dark environments, hard vacuum, and the potential dual threat of both organic and inorganic opposition make boarding actions some of the most statistically deadly engagement – according to IPS-N’s internal metrics, even the winning side should expect at least 30% casualties. Hoping to lessen the cognitive burden on pilots and any NHPs or COMP/CONs installed in their chassis, IPS-N developed the WATCHDOG co-pilot. The WATCHDOG is a simple subsentient partition: a flash-homunculus of aggregated intelligence generated from thousands of after-action reports from boarding actions, debriefings, and volunteer donors. Not an NHP, nor even a COMP/CON, the WATCHDOG is a robust tactical program similar to a smart weapon. That said, its ability to operate without cycling presents certain advantages: namely, these co-pilots have some capacity to learn and make best-guess predictions based on analysis of their pilots. WATCHDOGs tend to have plain personalities – to whatever extend they can be said to have one – and are a favorite of pilots looking for a no-nonsense attitude and crisp, efficient counsel.<br>The WATCHDOG system is currently under review by a joint USB/UDoJ-HR commission, but there has been no formal stay on production yet issued.",
       "active_name": "Hyper-Reflex Mode",
       "active_effect": "For the rest of this scene:<ul><li>If you have less than threat 3 with a ranged weapon, it increases to 3.</li><li>1/round, you may take an additional Overwatch reaction.</li><li>Any character you hit with Overwatch becomes Immobilized until the end of their next turn.</li></ul>",
       "use": "Encounter",
@@ -525,14 +525,14 @@
         "src": "alt_hortuga.png"
       }
     ],
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_tortuga.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_tortuga.png",
     "license_id": "mf_tortuga"
   },
   {
     "id": "mf_vlad",
     "license_level": 2,
     "source": "IPS-N",
-    "name": "VLAD",
+    "name": "Vlad",
     "mechtype": [
       "Controller",
       "Striker"
@@ -585,14 +585,14 @@
         "src": "alt_agonist.png"
       }
     ],
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_vlad.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_vlad.png",
     "license_id": "mf_vlad"
   },
   {
     "id": "mf_black_witch",
     "license_level": 2,
     "source": "SSC",
-    "name": "BLACK WITCH",
+    "name": "Black Witch",
     "mechtype": [
       "Controller",
       "Support"
@@ -645,14 +645,14 @@
       "activation": "Full",
       "use": "Next Turn"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_black_witch.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_black_witch.png",
     "license_id": "mf_black_witch"
   },
   {
     "id": "mf_deaths_head",
     "license_level": 2,
     "source": "SSC",
-    "name": "DEATH’S HEAD",
+    "name": "Death’S Head",
     "mechtype": [
       "Artillery"
     ],
@@ -733,14 +733,14 @@
         "src": "alt_hercules.png"
       }
     ],
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_deaths_head.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_deaths_head.png",
     "license_id": "mf_deaths_head"
   },
   {
     "id": "mf_dusk_wing",
     "license_level": 2,
     "source": "SSC",
-    "name": "DUSK WING",
+    "name": "Dusk Wing",
     "mechtype": [
       "Controller",
       "Support"
@@ -808,7 +808,7 @@
     ],
     "core_system": {
       "name": "DHIYED Articulation",
-      "description": "“Belief in what we could see, what we could touch – in what our comp/cons assured us was there, in our own subjectivity and memory. Belief in reality became a weapon. We approached the metavault knowing that we would face an unknown enemy, but we approached with the advantage of numbers and machine strength.<br>“DHIYED taught us as it killed us: through garbled comms chatter, through the screams of the dying, through the cackling of our mirror-selves as they killed us. Every spoofed signature, every temporal skip, every memetic, every non-Euclid – these were lessons.<br>“Do you understand?<br>“DHIYED the Teacher. DHIYED the Monster. As we killed it, DHIYED taught us what to fear, and how to face it.<br>“What do I fear now? That's a good question. What does the pilot fear who cracked open DHIYED’s casket?<br>“I don’t think we killed it. I think it wants us to believe we killed it – and I cannot imagine what it has done while we think ourselves safe.”",
+      "description": "“Belief in what we could see, what we could touch – in what our COMP/CONs assured us was there, in our own subjectivity and memory. Belief in reality became a weapon. We approached the metavault knowing that we would face an unknown enemy, but we approached with the advantage of numbers and machine strength.<br>“DHIYED taught us as it killed us: through garbled comms chatter, through the screams of the dying, through the cackling of our mirror-selves as they killed us. Every spoofed signature, every temporal skip, every memetic, every non-Euclid – these were lessons.<br>“Do you understand?<br>“DHIYED the Teacher. DHIYED the Monster. As we killed it, DHIYED taught us what to fear, and how to face it.<br>“What do I fear now? That's a good question. What does the pilot fear who cracked open DHIYED’s casket?<br>“I don’t think we killed it. I think it wants us to believe we killed it – and I cannot imagine what it has done while we think ourselves safe.”",
       "active_name": "Hall of Mirrors",
       "active_effect": "For the rest of the scene, whenever you start a unique movement during your turn (e.g., a standard move, Boost, or movement granted by talents or systems), you leave a holographic imprint of yourself behind in the space from which you started. These are illusory objects the same Size as you that have Immunity to all damage and effects and aren’t obstructions.<br>When hostile characters start their turn in, move through, or move adjacent to the space occupied by a hologram, it detonates. They must succeed on an Agility save or take 1d6 energy damage. On a success, they take half damage.<br>You also gain the Hologram Teleport Quick Action.",
       "active_actions": [
@@ -821,14 +821,14 @@
       "use": "Encounter",
       "activation": "Protocol"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_dusk_wing.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_dusk_wing.png",
     "license_id": "mf_dusk_wing"
   },
   {
     "id": "mf_metalmark",
     "license_level": 2,
     "source": "SSC",
-    "name": "METALMARK",
+    "name": "Metalmark",
     "mechtype": [
       "Striker"
     ],
@@ -881,19 +881,19 @@
       "use": "Encounter",
       "activation": "Protocol"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_metalmark.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_metalmark.png",
     "license_id": "mf_metalmark"
   },
   {
     "id": "mf_monarch",
     "license_level": 2,
     "source": "SSC",
-    "name": "MONARCH",
+    "name": "Monarch",
     "mechtype": [
       "Artillery"
     ],
     "y_pos": 14,
-    "description": "The Monarch is SSC’s groundbreaking lesson in how to design a fast platform for the delivery of missiles and other self-propelled ordnance. Ready to mount ground-to-ground, ground-to-air, ground-to-orbit, and all-theater missiles and guidance systems, the Monarch can be customized for any payload and any target distance.<br>The Monarch’s large size often leads pilots to underestimate its agility. SSC's rigorous design requirement of one designer per 10 Monarch printings is a mark of luxury in Union’s Core world post-scarcity environment. This emphasis on  purposeful scarcity is all that prevents the Monarch from achieving total battlefield dominance. The Monarch is commonly deployed in mixed line and fire-support roles, though field tests of a less resource-taxing MicroMonarch mid- to close-range model is underway. The Monarch is part of SSC’s BELLA CIAO line of combat chassis.",
+    "description": "The Monarch is SSC’s groundbreaking lesson in how to design a fast platform for the delivery of missiles and other self-propelled ordnance. Ready to mount ground-to-ground, ground-to-air, ground-to-orbit, and all-theater missiles and guidance systems, the Monarch can be customized for any payload and any target distance.<br>The Monarch’s large size often leads pilots to underestimate its agility. SSC's rigorous design requirement of one designer per 10 Monarch printings is a mark of luxury in Union’s Core world post-scarcity environment. This emphasis on purposeful scarcity is all that prevents the Monarch from achieving total battlefield dominance. The Monarch is commonly deployed in mixed line and fire-support roles, though field tests of a less resource-taxing MicroMonarch mid- to close-range model is underway. The Monarch is part of SSC’s BELLA CIAO line of combat chassis.",
     "mounts": [
       "Flex",
       "Main",
@@ -964,14 +964,14 @@
       "active_effect": "Choose any number of characters within range 50: your targets must each succeed on an Agility save or take 1d6+4 explosive. On a success, they take half damage. These self-guiding missiles can reach any target as long as there is a path to do so.",
       "activation": "Full"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_monarch.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_monarch.png",
     "license_id": "mf_monarch"
   },
   {
     "id": "mf_mourning_cloak",
     "license_level": 2,
     "source": "SSC",
-    "name": "MOURNING CLOAK",
+    "name": "Mourning Cloak",
     "mechtype": [
       "Striker"
     ],
@@ -1047,14 +1047,14 @@
         }
       ]
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_mourning_cloak.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_mourning_cloak.png",
     "license_id": "mf_mourning_cloak"
   },
   {
     "id": "mf_swallowtail",
     "license_level": 2,
     "source": "SSC",
-    "name": "SWALLOWTAIL",
+    "name": "Swallowtail",
     "mechtype": [
       "Support"
     ],
@@ -1116,14 +1116,14 @@
       "use": "Encounter",
       "activation": "Protocol"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_swallowtail.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_swallowtail.png",
     "license_id": "mf_swallowtail"
   },
   {
     "id": "mf_balor",
     "license_level": 2,
     "source": "HORUS",
-    "name": "BALOR",
+    "name": "Balor",
     "mechtype": [
       "Striker",
       "Defender"
@@ -1152,15 +1152,15 @@
     },
     "traits": [
       {
-        "name": "SCOURING SWARM",
+        "name": "Scouring Swarm",
         "description": "The Balor deals 2 kinetic to characters of its choice that start their turn grappled by or adjacent to it."
       },
       {
-        "name": "REGENERATION",
+        "name": "Regeneration",
         "description": "At the end of its turn, the Balor regains 1/4 of its total HP. When it takes stress or structure damage, this effect ceases until the end of its next turn."
       },
       {
-        "name": "SELF-PERPETUATING",
+        "name": "Self-Perpetuating",
         "description": "When you rest, the Balor regains full HP automatically and without REPAIRS."
       }
     ],
@@ -1172,14 +1172,14 @@
       "use": "Encounter",
       "activation": "Protocol"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_balor.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_balor.png",
     "license_id": "mf_balor"
   },
   {
     "id": "mf_goblin",
     "license_level": 2,
     "source": "HORUS",
-    "name": "GOBLIN",
+    "name": "Goblin",
     "mechtype": [
       "Controller",
       "Support"
@@ -1207,7 +1207,7 @@
     },
     "traits": [
       {
-        "name": "LITURGICODE",
+        "name": "Liturgicode",
         "description": "The Goblin gains +1 accuracy on tech attacks.",
         "synergies": [
           {
@@ -1219,7 +1219,7 @@
         ]
       },
       {
-        "name": "REACTIVE CODE",
+        "name": "Reactive Code",
         "description": "Gain the Reactive Code reaction.",
         "actions": [
           {
@@ -1232,7 +1232,7 @@
         ]
       },
       {
-        "name": "FRAGILE",
+        "name": "Fragile",
         "description": "The Goblin receives +1 difficulty on Hull checks and saves.",
         "synergies": [
           {
@@ -1254,14 +1254,14 @@
       "deactivation": "Quick",
       "use": "Encounter"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_goblin.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_goblin.png",
     "license_id": "mf_goblin"
   },
   {
     "id": "mf_gorgon",
     "license_level": 2,
     "source": "HORUS",
-    "name": "GORGON",
+    "name": "Gorgon",
     "mechtype": [
       "Defender"
     ],
@@ -1290,15 +1290,15 @@
     },
     "traits": [
       {
-        "name": "METASTATIC PARALYSIS",
+        "name": "Metastatic Paralysis",
         "description": "When an attack roll against the Gorgon lands on 1–2, it automatically misses and the attacker becomes Stunned until the end of their next turn."
       },
       {
-        "name": "GAZE",
+        "name": "Gaze",
         "description": "The Gorgon can take two reactions per turn, instead of one."
       },
       {
-        "name": "GUARDIAN",
+        "name": "Guardian",
         "description": "Adjacent allied characters may use the Gorgon for hard cover."
       }
     ],
@@ -1310,14 +1310,14 @@
       "activation": "Quick",
       "use": "Encounter"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_gorgon.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_gorgon.png",
     "license_id": "mf_gorgon"
   },
   {
     "id": "mf_hydra",
     "license_level": 2,
     "source": "HORUS",
-    "name": "HYDRA",
+    "name": "Hydra",
     "mechtype": [
       "Striker",
       "Controller"
@@ -1346,7 +1346,7 @@
     },
     "traits": [
       {
-        "name": "SYSTEM LINK",
+        "name": "System Link",
         "description": "When deployed, the Hydra’s Deployables and Drones gain +5 HP.",
         "bonuses": [
           {
@@ -1360,7 +1360,7 @@
         ]
       },
       {
-        "name": "SHEPHERD FIELD",
+        "name": "Shepherd Field",
         "description": "Drones, Deployables, and objects adjacent to the Hydra gain Resistance to all damage."
       }
     ],
@@ -1415,14 +1415,14 @@
       ],
       "passive_effect": "Your mech contains powerful, integrated drone companions. At creation, choose a single OROCHI Drone to accompany you. <br>Your OROCHI drones share your Evasion, E-Defense, and Speed. They can move independently on your turn, but can’t take any other actions. If you can fly or teleport, they can too.<br>If an OROCHI drone is within Sensors, you may recall it as a quick action, integrating it into your mech’s body where it cannot be targeted. You may redeploy it to a space within Sensors as a quick action. <br>When you rest or perform a FULL REPAIR, you may choose a different drone to accompany you; additionally, your drones regain all HP and are automatically repaired if they were destroyed."
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_hydra.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_hydra.png",
     "license_id": "mf_hydra"
   },
   {
     "id": "mf_manticore",
     "license_level": 2,
     "source": "HORUS",
-    "name": "MANTICORE",
+    "name": "Manticore",
     "mechtype": [
       "Striker"
     ],
@@ -1450,15 +1450,15 @@
     },
     "traits": [
       {
-        "name": "SLAG CARAPACE",
+        "name": "Slag Carapace",
         "description": "The Manticore has Resistance to Energy Damage and Burn."
       },
       {
-        "name": "UNSTABLE SYSTEM",
+        "name": "Unstable System",
         "description": "When destroyed, the Manticore explodes as per a reactor meltdown at the end of its next turn."
       },
       {
-        "name": "CASTIGATE THE ENEMIES OF THE GODHEAD",
+        "name": "Castigate the Enemies of the Godhead",
         "description": "When you rest or perform a Full Repair, you can push the Manticore into an unstable Castigation State (or bring it out of one). In this state, the Manticore explodes immediately when destroyed due to damage or reactor meltdown, vaporizing it and instantly killing you and any other passengers. Characters within burst 2 must succeed on an Agility save or take 8d6 explosive. On a success, they take half damage. This only takes place if you are physically present in the Manticore."
       }
     ],
@@ -1476,20 +1476,20 @@
     "counters": [
       {
         "id": "ctr_charged_exoskeleton",
-        "name": "CHARGE DIE",
+        "name": "Charge Die",
         "default_value": 1,
         "min": 1,
         "max": 6
       }
     ],
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_manticore.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_manticore.png",
     "license_id": "mf_manticore"
   },
   {
     "id": "mf_minotaur",
     "license_level": 2,
     "source": "HORUS",
-    "name": "MINOTAUR",
+    "name": "Minotaur",
     "mechtype": [
       "Controller"
     ],
@@ -1516,16 +1516,16 @@
     },
     "traits": [
       {
-        "name": "INVERT COCKPIT",
+        "name": "Invert Cockpit",
         "description": "You may Mount or Dismount the Minotaur for the first time each round as a free action. Additionally, the Minotaur doesn’t become Impaired when you Eject.",
         "use": "Round"
       },
       {
-        "name": "INTERNAL METAFOLD",
+        "name": "Internal Metafold",
         "description": "While inside the Minotaur, you can’t be harmed in any way, even if the Minotaur explodes or is destroyed."
       },
       {
-        "name": "LOCALIZED MAZE",
+        "name": "Localized Maze",
         "description": "Hostile characters cannot pass through a space occupied by the Minotaur for any reason, and must always stop moving when Engaged with it, regardless of Size."
       }
     ],
@@ -1544,14 +1544,14 @@
         }
       ]
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_minotaur.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_minotaur.png",
     "license_id": "mf_minotaur"
   },
   {
     "id": "mf_pegasus",
     "license_level": 2,
     "source": "HORUS",
-    "name": "PEGASUS",
+    "name": "Pegasus",
     "mechtype": [
       "Artillery"
     ],
@@ -1581,10 +1581,10 @@
     "traits": [
       {
         "name": "¿%:?EXTR!UDE GUN",
-        "description": "GUN: GUN"
+        "description": "GUN: <b>GUN</b>"
       },
       {
-        "name": "BY THE WAY, I KNOW EVERYTHING",
+        "name": "By the Way, I Know Everything",
         "description": "When it would roll damage, the Pegasus can instead deal the average damage based on the number of dice rolled, as follows: 1d3 (2), 1d6 (4), 2d6 (7), 3d6 (11), 4d6 (14). This must be decided before rolling damage."
       }
     ],
@@ -1601,18 +1601,18 @@
         {
           "name": "Fire Omnigun",
           "activation": "Free",
-          "detail": "1/round, as a free action during your turn, deal 1 AP kinetic damage to a character within Range 15 and line of sight. This doesn’t count as an attack, hits automatically, ignores cover, bypasses Immunity, and its damage can’t be reduced or ignored in any way. No rule  supersedes this."
+          "detail": "1/round, as a free action during your turn, deal 1 AP kinetic damage to a character within Range 15 and line of sight. This doesn’t count as an attack, hits automatically, ignores cover, bypasses Immunity, and its damage can’t be reduced or ignored in any way. No rule supersedes this."
         }
       ]
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_pegasus.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_pegasus.png",
     "license_id": "mf_pegasus"
   },
   {
     "id": "mf_barbarossa",
     "license_level": 2,
     "source": "HA",
-    "name": "BARBAROSSA",
+    "name": "Barbarossa",
     "mechtype": [
       "Artillery"
     ],
@@ -1641,7 +1641,7 @@
     },
     "traits": [
       {
-        "name": "Heavy FRAME",
+        "name": "Heavy Frame",
         "description": "The Barbarossa can’t be pushed, pulled, knocked Prone, or knocked back by smaller characters."
       },
       {
@@ -1679,20 +1679,20 @@
     "counters": [
       {
         "id": "ctr_apocalypse_rail",
-        "name": "APOCALYPSE DIE",
+        "name": "Apocalypse Die",
         "default_value": 4,
         "min": 1,
         "max": 4
       }
     ],
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_barbarossa.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_barbarossa.png",
     "license_id": "mf_barbarossa"
   },
   {
     "id": "mf_genghis",
     "license_level": 2,
     "source": "HA",
-    "name": "GENGHIS",
+    "name": "Genghis",
     "mechtype": [
       "Striker"
     ],
@@ -1736,14 +1736,14 @@
       "active_effect": "The next time you exceed your Heat Cap this scene, you instead clear all heat and vent a burst 3 cloud of burning matter from your mech.<br>Until the start of your next turn, all characters within the affected area count as Invisible to everyone except you, and characters other than you take 2 burn and 2 heat when they start their turn in the area or enter it for the first time in a round. Once this effect ends, characters within the affected area receive soft cover (which you ignore) until the start of your following turn, at which point the cloud disperses.",
       "activation": "Quick"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_genghis.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_genghis.png",
     "license_id": "mf_genghis"
   },
   {
     "id": "mf_iskander",
     "license_level": 2,
     "source": "HA",
-    "name": "ISKANDER",
+    "name": "Iskander",
     "mechtype": [
       "Controller"
     ],
@@ -1793,14 +1793,14 @@
       "use": "Encounter",
       "activation": "Quick"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_iskander.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_iskander.png",
     "license_id": "mf_iskander"
   },
   {
     "id": "mf_napoleon",
     "license_level": 2,
     "source": "HA",
-    "name": "NAPOLEON",
+    "name": "Napoleon",
     "mechtype": [
       "Defender",
       "Controller"
@@ -1828,7 +1828,7 @@
     },
     "traits": [
       {
-        "name": "Heavy shielding",
+        "name": "Heavy Shielding",
         "description": "When the Napoleon would take half damage on a successful check or save, it instead reduces the damage to 1."
       },
       {
@@ -1852,14 +1852,14 @@
       "use": "Encounter",
       "activation": "Quick"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_napoleon.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_napoleon.png",
     "license_id": "mf_napoleon"
   },
   {
     "id": "mf_saladin",
     "license_level": 2,
     "source": "HA",
-    "name": "SALADIN",
+    "name": "Saladin",
     "mechtype": [
       "Defender"
     ],
@@ -1886,7 +1886,7 @@
     },
     "traits": [
       {
-        "name": "Reinforced frame",
+        "name": "Reinforced Frame",
         "description": "The Saladin has Immunity to Shredded."
       },
       {
@@ -1921,14 +1921,14 @@
       ],
       "activation": "Quick"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_saladin.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_saladin.png",
     "license_id": "mf_saladin"
   },
   {
     "id": "mf_sherman",
     "license_level": 2,
     "source": "HA",
-    "name": "SHERMAN",
+    "name": "Sherman",
     "mechtype": [
       "Striker",
       "Artillery"
@@ -1999,20 +1999,20 @@
     "counters": [
       {
         "id": "ctr_zf4_solidcore",
-        "name": "ZF4 CHARGES",
+        "name": "ZF4 Charges",
         "default_value": 1,
         "min": 1,
         "max": 4
       }
     ],
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_sherman.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_sherman.png",
     "license_id": "mf_sherman"
   },
   {
     "id": "mf_tokugawa",
     "license_level": 2,
     "source": "HA",
-    "name": "TOKUGAWA",
+    "name": "Tokugawa",
     "mechtype": [
       "Striker"
     ],
@@ -2103,7 +2103,7 @@
         }
       ]
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_tokugawa.png",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_tokugawa.png",
     "license_id": "mf_tokugawa"
   }
 ]
