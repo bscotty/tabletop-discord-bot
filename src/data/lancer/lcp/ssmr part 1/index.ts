@@ -1,4 +1,4 @@
-import {Lcp} from "../../../types/lcp";
+import {Lcp} from "../../types/lcp";
 import frames from "./frames.json"
 import info from "./lcp_manifest.json"
 import talents from "./talents.json"
