@@ -33,15 +33,22 @@ export class Lancer {
     private lcpData(): Lcp[] {
         if (!this._lcpData)
             this._lcpData = [
-                getCoreLcp(),
-                getKtbLcp(),
-                getLongRimLcp(),
-                getWallflowerLcp(),
-                getSolsticeRainData(),
-                getDustgraveLcp(),
+                ...this.firstParty(),
                 ...this.homebrew()
             ]
         return this._lcpData
+    }
+
+    private firstParty(): Lcp[] {
+        return [
+            getCoreLcp(),
+            getKtbLcp(),
+            getLongRimLcp(),
+            getWallflowerLcp(),
+            getSolsticeRainData(),
+            getSsmrPart1Lcp(),
+            getDustgraveLcp()
+        ]
     }
 
     private homebrew(): Lcp[] {
@@ -53,7 +60,6 @@ export class Lancer {
             getLiminalSpaceLcp(),
             getMfecaneLcp(),
             getSciroccoLcp(),
-            getSsmrPart1Lcp(),
             getStolenCrownLcp(),
             getSuldanLcp()
         ]
@@ -103,6 +109,23 @@ export class Lancer {
             interaction.reply(response)
                 .catch((it) => console.log(`error with message: ${it}`))
         }
+    }
+
+    @Slash("lancer-versions", {description: "Print all currently used Lancer LCP versions"})
+    public async lancerVersions(
+        interaction: CommandInteraction
+    ) {
+        const firstPartyInfos = this.firstParty().map((lcp) => this.versionDump(lcp)).join(`\n`)
+        const homebrewInfos = this.homebrew().map((lcp) => this.versionDump(lcp)).join(`\n`)
+
+        const output = `__**First Party**__\n` + firstPartyInfos + `\n\n__**Homebrew**__\n` + homebrewInfos
+
+        return interaction.reply(output)
+            .catch((it) => console.error(`Error with Lancer LCP Version command ${it}`))
+    }
+
+    private versionDump(lcp: Lcp): string {
+        return `${lcp.info.name} - ${lcp.info.version}`
     }
 
     private async split(interaction: CommandInteraction, response: string) {
