@@ -6,34 +6,34 @@
     "ranks": [
       {
         "name": "Uplift Them",
-        "description": "When you take the bolster action the effects now apply to all checks or saves until the end of your target’s next turn but provide +1 accuracy instead of 2. (you may still chose to bolster normally per the normal rules)"
+        "description": "When you take the Bolster action the effects now apply to all checks or saves until the end of your target’s next turn but provide +1 accuracy instead of 2 (you may still chose to bolster normally per the normal rules)."
       },
       {
         "name": "See Them Your Equal",
-        "description": "When you take the bolster action you may immediately bolster another ally adjacent to you as a free action."
+        "description": "When you take the Bolster action you may immediately Bolster another ally adjacent to you as a free action."
       },
       {
         "name": "I Am, Because We Are",
-        "description": "When you take the bolster action in addition to the normal effects, your target may gain one of the three effects that last until the end of your next turn: <b>Run with the Bulls:</b> your target’s boosts gains 2 extra movement <b>Lion’s Mane:</b> your target gains overshield 2 or <b>Leopard’s Attack:</b> Your target’s next ranged or melee attack gains 1 accuracy. A character can only benefit from this effect once, and cannot be bolstered again until these effects expire."
+        "description": "When you take the Bolster action in addition to the normal effects, your target may gain one of three extra effects that last until the end of their next turn: <li><b>Run with the Bulls:</b> your target’s boosts gains 2 extra movement. <li><b>Lion’s Mane:</b> your target gains overshield 2. <li><b>Leopard’s Attack:</b> Your target’s next ranged or melee attack gains 1 accuracy. <p></p> A character can only benefit from this effect once, and cannot be bolstered again until these effects expire."
       }
     ]
   },
   {
     "id": "mfc_Lintonga",
     "name": "Lintonga",
-    "description": "The widely adopted and expansive martial art that it is, Lintonga has also found its way into the applications of mech combat. Many if not all impi practice some iteration of Lintonga and take their skills for the discipline into the pilot seat of mechs. Pioneered by an impi of the Chest Order’s umCijo, the battle techniques they employed at the helm of the Ibutho during the conflict of El’Rasna are said to be told even by today’s youngest of Sangomas. Lintonga masters, move fast and systematically take down foes 1 by 1 until nothing else stands",
+    "description": "The widely adopted and expansive martial art that it is Lintonga has also found its way into the applications of mech combat. Many if not all impi practice some iteration of Lintonga and take their skills for the discipline into the pilot seat of mechs. Pioneered by an impi of the Chest Order’s umCijo the battle techniques they employed at the helm of the Ibutho during the conflict of El’Rasna are said to be told even by today’s youngest of Sangomas. Lintonga masters move fast and systematically take down foes one by one until nothing else stands",
     "ranks": [
       {
         "name": "Ukuthinta, My Grasp",
-        "description": "1/round, as a free action after you boost, you may immediately lock on to a hostile character within threat of one of your melee weapons."
+        "description": "1/round, as a free action after you boost you may immediately Lock On to a hostile character within threat of one of your melee weapons."
       },
       {
         "name": "Ukubona, My Sight",
-        "description": "When you consume Lock On as part of an attack with a melee weapon and perform a critical hit, you inflict lock-on."
+        "description": "When you consume Lock On as part of an attack with a melee weapon and perform a critical hit you inflict Lock On."
       },
       {
         "name": "Ukulawula, My Control",
-        "description": "Hostile characters with lock-on provoke your overwatch when they move into the threat of one of your melee weapons. Additionally, when you consume lock-on during an overwatch your attacks do not provoke reactions and on hit cause the target to immediately stop, giving up all their unused movement from the triggering action or movement."
+        "description": "Hostile characters with Lock On provoke your Overwatch when they move into the threat of one of your melee weapons. Additionally, when you consume Lock On during an Overwatch your attacks do not provoke reactions and on hit cause the target to immediately stop, giving up all their unused movement from the triggering action or movement."
       }
     ]
   }

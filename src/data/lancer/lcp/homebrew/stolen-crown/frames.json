@@ -1,200 +1,217 @@
 [
-    {
-        "id": "gms_orohena",
-        "license_level": 0,
-        "source": "GMS",
-        "name": "OROHENA",
-        "mechtype": ["Striker", "Controller"],
-        "image_url": "https://i.imgur.com/6UjRq60.jpg",
-        "y_pos": 0,
-        "description": "A frame built for extreme environments and large opponents, the Orohena’s massive size created serious engineering difficulties for its designers, who compensated by introducing environmental cooling systems which rely on sub-zero external temperatures to function. In the hands of a capable pilot however, the Orohena’s frame can be fine tuned to any environment.",
-        "mounts": ["Main", "Flex", "Heavy"],
-        "stats": {
-            "size": 3,
-            "structure": 4,
-            "stress": 4,
-            "armor": 2,
-            "hp": 10,
-            "evasion": 6,
-            "edef": 8,
-            "heatcap": 6,
-            "repcap": 5,
-            "sensor_range": 10,
-            "tech_attack": -2,
-            "save": 10,
-            "speed": 4,
-            "sp": 5
-        },
-        "traits": [
-            {
-                "name": "MEGAFAUNA HUNTER",
-                "description": "1/round, when the OROHENA attacks it may deal +1d6 bonus Energy damage against Biological targets within the attack."
-            },
-            {
-                "name": "HAND SCULPTED FISTS",
-                "description": "The OROHENA gains +1 Accuracy on Grapple, Ram and Improvised Attacks against targets of Size 2 or larger, and +1 Accuracy when attempting to Grapple Size 1 targets."
-            },
-            {
-                "name": "ENVIRONMENTAL TUNING",
-                "description": "Based on the current mission environment, gain the relevant HASE Accuracy/Difficulty for Checks and Saves as listed below. You can benefit from multiple of these bonuses simultaneously, but they can also cancel each other out or stack:<ul><li>Sub-Zero: +1 Accuracy to Engineering.</li><li>Extreme Heat: +1 Accuracy to Agility, +1 Difficulty to Engineering.</li><li>Intense Pressure: +1 Accuracy to Hull, +1 Difficulty to Agility.</li><li>Low Pressure: +1 Accuracy to Agility, +1 Difficulty to Hull.</li><li>Electrically Charged: +1 Accuracy to Systems, +1 Difficulty to Hull.</li></ul>"
-            }
-        ],
-        "core_system": {
-            "name": "Surtr Mobility Suite",
-            "description": "Developed in close coalition with anthropologists studying traditional hunting practices in the Yuga Pocket in Sparr, the Surtr Mobility Suite combines centuries of expertise with the most up-to-date technology. ",
-            "active_name": "ANCESTRAL HUNTING ARTS",
-            "activation": "Protocol",
-            "active_effect": "After activating this Core Power, until the end of the Scene:<ul><li>You may make Grapples/Rams against targets within a Burst 2 area rather than against adjacent targets, and may maintain Grapples within this area.</li><li>You may Grapple or Ram 1/round as a Free Action.</li><li>You may make an Improvised attack or use the Knockout Blow (provided you have access to it) as a Quick Action 1/round.</li><li>You generate 1 Heat at the end of your turn while the Core Power is active, and then every character within Burst 2 of you takes half of your current heat when you end your turn.</li></ul><br><br>You may deactivate this power as a Protocol; and may reactivate it in the same scene it was activated in as a Protocol."
-        }
+  {
+    "id": "gms_orohena",
+    "license_level": 0,
+    "source": "GMS",
+    "name": "OROHENA",
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "image_url": "https://i.imgur.com/6UjRq60.jpg",
+    "y_pos": 0,
+    "description": "A frame built for extreme environments and large opponents, the Orohena’s massive size created serious engineering difficulties for its designers, who compensated by introducing environmental cooling systems which rely on sub-zero external temperatures to function. In the hands of a capable pilot however, the Orohena’s frame can be fine tuned to any environment.",
+    "mounts": [
+      "Main",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 10,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 4,
+      "sp": 5
     },
-    {
-        "id": "privately_manufactured_loki_big",
-        "license_level": 0,
-        "source": "VDL",
-        "name": "LOKI (SIZE ONE)",
-        "mechtype": ["Controller"],
-        "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
-        "y_pos": 0,
-        "description": "Experimental technology developed by Volsung Technoshamans in Sparr, the LOKI is awaiting sale to whichever of the Big 4 is willing to license the design. The LOKI’s changeable size and support capabilities are based on a legendary Sparri sorcerer and shapeshifter, and is designed to be used alongside allied mechs and Machine Spirits.",
-        "mounts": ["Flex", "Main"],
-        "stats": {
-            "size": 1,
-            "structure": 4,
-            "stress": 4,
-            "armor": 0,
-            "hp": 8,
-            "evasion": 10,
-            "edef": 10,
-            "heatcap": 5,
-            "repcap": 3,
-            "sensor_range": 15,
-            "tech_attack": 2,
-            "save": 11,
-            "speed": 5,
-            "sp": 7
-        },
-        "traits": [
-            {
-                "name": "Aesir's Aid",
-                "description": "When Stabilizing and clearing an adjacent allied character's condition that wasn't caused by one of their own systems, talents, etc. you may also end one tech effect of any kind on them regardless of the source. You may select this option when Stabilizing even when the adjacent allied character has no condition that wasn’t caused by one of their own systems, talents, etc."
-            },
-            {
-                "name": "Thokk's Refusal",
-                "description": "Gain the Thokk's Refusal Reaction.<br>While formatted as two Reactions in Comp/Con, this is part of the same Reaction in the PDF and they share the same 1/encounter limit.",
-                "actions": [
-                    {
-                        "name": "Thokk's Refusal",
-                        "activation": "Reaction",
-                        "trigger": "An ally within Sensor range and Line of Sight is about to make a Check/Save but hasn't rolled it yet.",
-                        "frequency": "1/encounter",
-                        "detail": "They automatically succeed the Check/Save."
-                    },
-                    {
-                        "name": "Thokk's Refusal",
-                        "activation": "Reaction",
-                        "trigger": "An ally within Sensor range and Line of Sight has failed a Check/Save.",
-                        "frequency": "1/encounter",
-                        "detail": "They may reroll that Check/Save."
-                    }
-                ]
-            },
-            {
-                "name": "Mutable Form",
-                "description": "The LOKI can choose whether its Size is 1 or 1/2 on re-print."
-            },
-            {
-                "name": "Accomplished Shaman",
-                "description": "As a Quick Action, you may clear the Jammed Condition from an adjacent ally, and may make a Contested Systems Check to stop a Cascading NHP if they have one.",
-                "actions": [
-                    {
-                        "name": "Soothe",
-                        "activation": "Quick",
-                        "detail": "Clear the Jammed Condition from an adjacent allied character, and you may make a Contested Systems Check to stop a Cascading NHP if they have one."
-                    }
-                ]
-            }
-        ],
-        "core_system": {
-            "name": "“Flyting” System Upgrades",
-            "description": "In designing the Loki’s Core system, the Volsung technoshamans took inspiration from the myth of the Lokasenna, an infamous flyting (or verbal battle) between the shapeshifter Loki and other members of his clan. The goal of the Lokasenna system is to elevate the offensive and defensive capabilities of technological attacks, allowing lightning-quick attacks and rebuttals typical of the idealized flyting.",
-            "active_name": "LOKASENNA",
-            "activation": "Protocol",
-            "active_effect": "Until the end of this turn, gain +1 Accuracy on all Tech Attacks.<br>Until the end of this Scene, you grant all allies within Sensors a flat +1 to all Checks and Saves related to Tech Actions and you may 1/round Bolster an allied character within Sensors as a Free Action."
-        }
-    },
-    {
-        "id": "privately_manufactured_loki_small",
-        "license_level": 0,
-        "source": "VDL",
-        "name": "LOKI (SIZE HALF)",
-        "mechtype": ["Controller"],
-        "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
-        "y_pos": 0,
-        "description": "Experimental technology developed by Volsung Technoshamans in Sparr, the LOKI is awaiting sale to whichever of the Big 4 is willing to license the design. The LOKI’s changeable size and support capabilities are based on a legendary Sparri sorcerer and shapeshifter, and is designed to be used alongside allied mechs and Machine Spirits.",
-        "mounts": ["Flex", "Main"],
-        "stats": {
-            "size": 0.5,
-            "structure": 4,
-            "stress": 4,
-            "armor": 0,
-            "hp": 8,
-            "evasion": 10,
-            "edef": 10,
-            "heatcap": 5,
-            "repcap": 3,
-            "sensor_range": 15,
-            "tech_attack": 2,
-            "save": 11,
-            "speed": 5,
-            "sp": 7
-        },
-        "traits": [
-            {
-                "name": "Aesir's Aid",
-                "description": "When Stabilizing and clearing an adjacent allied character's condition that wasn't caused by one of their own systems, talents, etc. you may also end one tech effect of any kind on them regardless of the source. You may select this option when Stabilizing even when the adjacent allied character has no condition that wasn’t caused by one of their own systems, talents, etc."
-            },
-            {
-                "name": "Thokk's Refusal",
-                "description": "Gain the Thokk's Refusal Reaction.<br>While formatted as two Reactions in Comp/Con, this is part of the same Reaction in the PDF and they share the same 1/encounter limit.",
-                "actions": [
-                    {
-                        "name": "Thokk's Refusal",
-                        "activation": "Reaction",
-                        "trigger": "An ally within Sensor range and Line of Sight is about to make a Check/Save but hasn't rolled it yet.",
-                        "frequency": "1/encounter",
-                        "detail": "They automatically succeed the Check/Save."
-                    },
-                    {
-                        "name": "Thokk's Refusal",
-                        "activation": "Reaction",
-                        "trigger": "An ally within Sensor range and Line of Sight has failed a Check/Save.",
-                        "frequency": "1/encounter",
-                        "detail": "They may reroll that Check/Save."
-                    }
-                ]
-            },
-            {
-                "name": "Mutable Form",
-                "description": "The LOKI can choose whether its Size is 1 or 1/2 on re-print."
-            },
-            {
-                "name": "Accomplished Shaman",
-                "description": "As a Quick Action, you may clear the Jammed Condition from an adjacent ally, and may make a Contested Systems Check to stop a Cascading NHP if they have one.",
-                "actions": [
-                    {
-                        "name": "Soothe",
-                        "activation": "Quick",
-                        "detail": "Clear the Jammed Condition from an adjacent allied character, and you may make a Contested Systems Check to stop a Cascading NHP if they have one."
-                    }
-                ]
-            }
-        ],
-        "core_system": {
-            "name": "“Flyting” System Upgrades",
-            "description": "In designing the Loki’s Core system, the Volsung technoshamans took inspiration from the myth of the Lokasenna, an infamous flyting (or verbal battle) between the shapeshifter Loki and other members of his clan. The goal of the Lokasenna system is to elevate the offensive and defensive capabilities of technological attacks, allowing lightning-quick attacks and rebuttals typical of the idealized flyting.",
-            "active_name": "LOKASENNA",
-            "activation": "Protocol",
-            "active_effect": "Until the end of this turn, gain +1 Accuracy on all Tech Attacks.<br>Until the end of this Scene, you grant all allies within Sensors a flat +1 to all Checks and Saves related to Tech Actions and you may 1/round Bolster an allied character within Sensors as a Free Action."
-        }
+    "traits": [
+      {
+        "name": "MEGAFAUNA HUNTER",
+        "description": "1/round, when the OROHENA attacks it may deal +1d6 bonus Energy damage against Biological targets within the attack."
+      },
+      {
+        "name": "HAND SCULPTED FISTS",
+        "description": "The OROHENA gains +1 Accuracy on Grapple, Ram and Improvised Attacks against targets of Size 2 or larger, and +1 Accuracy when attempting to Grapple Size 1 targets."
+      },
+      {
+        "name": "ENVIRONMENTAL TUNING",
+        "description": "Based on the current mission environment, gain the relevant HASE Accuracy/Difficulty for Checks and Saves as listed below. You can benefit from multiple of these bonuses simultaneously, but they can also cancel each other out or stack:<ul><li>Sub-Zero: +1 Accuracy to Engineering.</li><li>Extreme Heat: +1 Accuracy to Agility, +1 Difficulty to Engineering.</li><li>Intense Pressure: +1 Accuracy to Hull, +1 Difficulty to Agility.</li><li>Low Pressure: +1 Accuracy to Agility, +1 Difficulty to Hull.</li><li>Electrically Charged: +1 Accuracy to Systems, +1 Difficulty to Hull.</li></ul>"
+      }
+    ],
+    "core_system": {
+      "name": "Surtr Mobility Suite",
+      "description": "Developed in close coalition with anthropologists studying traditional hunting practices in the Yuga Pocket in Sparr, the Surtr Mobility Suite combines centuries of expertise with the most up-to-date technology. ",
+      "active_name": "ANCESTRAL HUNTING ARTS",
+      "activation": "Protocol",
+      "active_effect": "After activating this Core Power, until the end of the Scene:<ul><li>You may make Grapples/Rams against targets within a Burst 2 area rather than against adjacent targets, and may maintain Grapples within this area.</li><li>You may Grapple or Ram 1/round as a Free Action.</li><li>You may make an Improvised attack or use the Knockout Blow (provided you have access to it) as a Quick Action 1/round.</li><li>You generate 1 Heat at the end of your turn while the Core Power is active, and then every character within Burst 2 of you takes half of your current heat when you end your turn.</li></ul><br><br>You may deactivate this power as a Protocol; and may reactivate it in the same scene it was activated in as a Protocol."
     }
+  },
+  {
+    "id": "privately_manufactured_loki_big",
+    "license_level": 0,
+    "source": "VDL",
+    "name": "LOKI (SIZE ONE)",
+    "mechtype": [
+      "Controller"
+    ],
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": 0,
+    "description": "Experimental technology developed by Volsung Technoshamans in Sparr, the LOKI is awaiting sale to whichever of the Big 4 is willing to license the design. The LOKI’s changeable size and support capabilities are based on a legendary Sparri sorcerer and shapeshifter, and is designed to be used alongside allied mechs and Machine Spirits.",
+    "mounts": [
+      "Flex",
+      "Main"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 2,
+      "save": 11,
+      "speed": 5,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Aesir's Aid",
+        "description": "When Stabilizing and clearing an adjacent allied character's condition that wasn't caused by one of their own systems, talents, etc. you may also end one tech effect of any kind on them regardless of the source. You may select this option when Stabilizing even when the adjacent allied character has no condition that wasn’t caused by one of their own systems, talents, etc."
+      },
+      {
+        "name": "Thokk's Refusal",
+        "description": "Gain the Thokk's Refusal Reaction.<br>While formatted as two Reactions in Comp/Con, this is part of the same Reaction in the PDF and they share the same 1/encounter limit.",
+        "actions": [
+          {
+            "name": "Thokk's Refusal",
+            "activation": "Reaction",
+            "trigger": "An ally within Sensor range and Line of Sight is about to make a Check/Save but hasn't rolled it yet.",
+            "frequency": "1/encounter",
+            "detail": "They automatically succeed the Check/Save."
+          },
+          {
+            "name": "Thokk's Refusal",
+            "activation": "Reaction",
+            "trigger": "An ally within Sensor range and Line of Sight has failed a Check/Save.",
+            "frequency": "1/encounter",
+            "detail": "They may reroll that Check/Save."
+          }
+        ]
+      },
+      {
+        "name": "Mutable Form",
+        "description": "The LOKI can choose whether its Size is 1 or 1/2 on re-print."
+      },
+      {
+        "name": "Accomplished Shaman",
+        "description": "As a Quick Action, you may clear the Jammed Condition from an adjacent ally, and may make a Contested Systems Check to stop a Cascading NHP if they have one.",
+        "actions": [
+          {
+            "name": "Soothe",
+            "activation": "Quick",
+            "detail": "Clear the Jammed Condition from an adjacent allied character, and you may make a Contested Systems Check to stop a Cascading NHP if they have one."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "“Flyting” System Upgrades",
+      "description": "In designing the Loki’s Core system, the Volsung technoshamans took inspiration from the myth of the Lokasenna, an infamous flyting (or verbal battle) between the shapeshifter Loki and other members of his clan. The goal of the Lokasenna system is to elevate the offensive and defensive capabilities of technological attacks, allowing lightning-quick attacks and rebuttals typical of the idealized flyting.",
+      "active_name": "LOKASENNA",
+      "activation": "Protocol",
+      "active_effect": "Until the end of this turn, gain +1 Accuracy on all Tech Attacks.<br>Until the end of this Scene, you grant all allies within Sensors a flat +1 to all Checks and Saves related to Tech Actions and you may 1/round Bolster an allied character within Sensors as a Free Action."
+    }
+  },
+  {
+    "id": "privately_manufactured_loki_small",
+    "license_level": 0,
+    "source": "VDL",
+    "name": "LOKI (SIZE HALF)",
+    "mechtype": [
+      "Controller"
+    ],
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": 0,
+    "description": "Experimental technology developed by Volsung Technoshamans in Sparr, the LOKI is awaiting sale to whichever of the Big 4 is willing to license the design. The LOKI’s changeable size and support capabilities are based on a legendary Sparri sorcerer and shapeshifter, and is designed to be used alongside allied mechs and Machine Spirits.",
+    "mounts": [
+      "Flex",
+      "Main"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 2,
+      "save": 11,
+      "speed": 5,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Aesir's Aid",
+        "description": "When Stabilizing and clearing an adjacent allied character's condition that wasn't caused by one of their own systems, talents, etc. you may also end one tech effect of any kind on them regardless of the source. You may select this option when Stabilizing even when the adjacent allied character has no condition that wasn’t caused by one of their own systems, talents, etc."
+      },
+      {
+        "name": "Thokk's Refusal",
+        "description": "Gain the Thokk's Refusal Reaction.<br>While formatted as two Reactions in Comp/Con, this is part of the same Reaction in the PDF and they share the same 1/encounter limit.",
+        "actions": [
+          {
+            "name": "Thokk's Refusal",
+            "activation": "Reaction",
+            "trigger": "An ally within Sensor range and Line of Sight is about to make a Check/Save but hasn't rolled it yet.",
+            "frequency": "1/encounter",
+            "detail": "They automatically succeed the Check/Save."
+          },
+          {
+            "name": "Thokk's Refusal",
+            "activation": "Reaction",
+            "trigger": "An ally within Sensor range and Line of Sight has failed a Check/Save.",
+            "frequency": "1/encounter",
+            "detail": "They may reroll that Check/Save."
+          }
+        ]
+      },
+      {
+        "name": "Mutable Form",
+        "description": "The LOKI can choose whether its Size is 1 or 1/2 on re-print."
+      },
+      {
+        "name": "Accomplished Shaman",
+        "description": "As a Quick Action, you may clear the Jammed Condition from an adjacent ally, and may make a Contested Systems Check to stop a Cascading NHP if they have one.",
+        "actions": [
+          {
+            "name": "Soothe",
+            "activation": "Quick",
+            "detail": "Clear the Jammed Condition from an adjacent allied character, and you may make a Contested Systems Check to stop a Cascading NHP if they have one."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "“Flyting” System Upgrades",
+      "description": "In designing the Loki’s Core system, the Volsung technoshamans took inspiration from the myth of the Lokasenna, an infamous flyting (or verbal battle) between the shapeshifter Loki and other members of his clan. The goal of the Lokasenna system is to elevate the offensive and defensive capabilities of technological attacks, allowing lightning-quick attacks and rebuttals typical of the idealized flyting.",
+      "active_name": "LOKASENNA",
+      "activation": "Protocol",
+      "active_effect": "Until the end of this turn, gain +1 Accuracy on all Tech Attacks.<br>Until the end of this Scene, you grant all allies within Sensors a flat +1 to all Checks and Saves related to Tech Actions and you may 1/round Bolster an allied character within Sensors as a Free Action."
+    }
+  }
 ]

@@ -18,30 +18,26 @@
       "size": 1,
       "stress": 4,
       "structure": 4,
-      "armor": 1,
-      "hp": 12,
-      "evasion": 6,
+      "armor": 2,
+      "hp": 10,
+      "evasion": 7,
       "edef": 6,
       "heatcap": 6,
       "repcap": 4,
       "sensor_range": 5,
-      "tech_attack": 0,
+      "tech_attack": -2,
       "save": 10,
       "speed": 5,
       "sp": 5
     },
     "traits": [
       {
-        "name": "INDOMITABLE FORCE",
-        "description": "<p>When the Empakaai Braces it may additionally sacrifice its other quick action on its following turn to gain the following benefits that apply to its brace.</p><p>The Empakaai may immediately become  <b>immobilized</b> until the end of their next turn, to be pulled 5 spaces by the shortest route possible directly towards the triggering character. </p><p>The Empakaai may attempt to grapple a character within threat of its Colossus Thero-Unguis and on hit, the target is pulled adjacent.</p><p>On its following turn, the Empakaai can still use protocols and gains a special free action (see below).</p>"
-      },
-      {
-        "name": "AUTONOMOUS EXTREMITIES",
-        "description": "All of the Empakaai's integrated weapons can be used even while Jammed. After activating Protocols, if the Empakaai has no quick or full actions available due to its Indomitable Force trait, it may still, as a free action, either Ram, Grapple, Improvised Attack, Skirmish or Barrage using only integrated weapons."
-      },
-      {
         "name": "UNTENABLE POWER",
         "description": "Hull Checks and Saves forced by the Empakaai are made at +1 difficulty."
+      },
+      {
+        "name": "INDOMITABLE FORCE",
+        "description": "The Empakaai gains RESISTANCE to damage and HEAT dealt from characters it is GRAPPLING."
       }
     ],
     "core_system": {
@@ -49,17 +45,17 @@
       "description": "<i><p>Ololade Omotanwa’s sculpted mountain. - his message inscribed under the cold-span limiters of Iku’s Hand.</p><p>“I gift to you a mountain.</p><p> Rolling hills, curvilinear egresses, a shattered spine, and a crown glazed in voluminous spires. Let this be a treaty to your foes. Your promise is that their eyes will witness the beauty that is Iku’s hands before they descend to Kalunga. Hell, fire and dark ash, together they will burn cavities in souls.</p><p>I gift you my mountain.”</p></i>",
       "active_name": "MARROW ANCHORS",
       "use": "Mission",
-      "active_effect": "Upon activation, and for the duration of the scene  when grappling larger or multiple targets with a cumulative size larger than the Empakaai, it counts as 1 size larger. Additionally the Empakaai gains Iku’s Hand and Catalytic Infusor.",
+      "active_effect": "Upon activation, when GRAPPLING targets of equal or greater SIZE or multiple targets with a cumulative SIZE greater than yours, you count as 1 SIZE larger  than their combined size. Additionally, you gain IKU’S HAND and CATALYTIC INFUSOR.  These benefits last for the rest of the scene.",
       "active_actions": [
         {
           "name": "IKU'S HAND",
           "activation": "Free",
-          "detail": "After successfully hitting a character with a melee attack, the Empakaai may grapple the target as a free action, if successful the target is pulled adjacent and grappled."
+          "detail": "After successfully hitting a character with a melee attack, the Empakaai may GRAPPLE the target as a free action. On a success, the target is pulled adjacent and GRAPPLED"
         },
         {
           "name": "CATALYTIC INFUSOR",
           "activation": "Free",
-          "detail": "At the end of the Empakaai’s turn it deals its current heat in AP energy damage to all characters it is grappled with."
+          "detail": "At the end of the Empakaai’s turn, it deals its current HEAT in AP energy damage to all characters it is GRAPPLED with"
         }
       ],
       "activation": "Protocol",

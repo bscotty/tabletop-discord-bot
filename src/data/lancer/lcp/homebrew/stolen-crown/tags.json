@@ -1,7 +1,7 @@
 [
-    {
-        "id": "tg_prototype",
-        "name": "PROTOTYPE",
-        "description": "Only one copy of this system exists and it cannot be equipped by more than one character."
-    }
+  {
+    "id": "tg_prototype",
+    "name": "PROTOTYPE",
+    "description": "Only one copy of this system exists and it cannot be equipped by more than one character."
+  }
 ]

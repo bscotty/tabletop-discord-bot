@@ -4,7 +4,7 @@
     "name": "COLOSSUS TERMO-UNGUIS",
     "mount": "Superheavy",
     "type": "Melee",
-    "effect": "The attack’s target and any characters adjacent to it of the Empakaai's choice must make a hull save or be pulled adjacent and automatically grappled.",
+    "effect": "<p>The Empakaai’s COLOSSUS TERMO-UNGUIS can be used even while JAMMED.</p> Before rolling, your target and any characters adjacent to it of your choice must make a HULL save or be pulled adjacent and automatically GRAPPLED",
     "damage": [
       {
         "type": "Kinetic",
@@ -12,7 +12,7 @@
       },
       {
         "type": "Heat",
-        "val": "4"
+        "val": 4
       },
       {
         "type": "Burn",

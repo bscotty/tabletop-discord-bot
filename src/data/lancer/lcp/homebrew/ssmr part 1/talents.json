@@ -6,15 +6,15 @@
     "ranks": [
       {
         "name": "Convincing Rhetoric",
-        "description": "<p><b>Trigger</b>You or an ally uses the lock on or scan action against a hostile character.</p><b>You open a secluded comms channel with the targeted character. The target becomes impaired until it succeeds at a contested systems check at the end of their turn to end this effect. The impaired condition cannot be cleared any other way. Using this talent again on a new character ends this effect early.</b>"
+        "description": "<p><b>Trigger</b>You or an ally uses the scan action against a hostile character.</p><p><b>Effect</b>You open an isolated comms channel with your target and they become IMPAIRED. This lasts until they succeed on a SYSTEMS check at the end of their turn. They cannot clear IMPAIRED any other way. Using this reaction again on a new character ends the IMPAIRED condition early.</p>"
       },
       {
         "name": "Voice of Reason",
-        "description": "<p>You start combat with 1 Orator die - a d6- representing your power of speech. At the end of your turn when you do not attack or force any saves from hostile characters, you gain 1 Orator die up to a maximum of 3 Orator Die. They last until expended or the current scene ends. </p><p>1/round as a free action you can expend Orator Dice for one of the following effects:</p><p>Investigate (1 die) - Choose a hostile character in line of sight. The next attack made against that character is rolled twice, taking the highest result as final.</p><p>Object (1 die)- Choose a hostile character in line of sight. The next attack from that character is rolled twice, choosing the lowest result.</p><p>Cast Doubt - (2 dice) Choose a hostile character in line of sight. That character cannot benefit from or be targeted by their allies' systems or traits until the end of their next turn.</p>"
+        "description": "<p>You start combat with 1 Orator die - a d6- representing your power of speech. At the end of your turn when you do not attack or force any saves from hostile characters, you gain 1 Orator die up to a maximum of 3 Orator Die. They last until expended or the current scene ends. </p><p>1/round as a free action you can expend Orator Dice for one of the following effects as long as you can communicate with your target:</p><p>Encourage (1 die) - An ally in line of sight may make a systems check against any non self inflicted conditions affecting them, using the Orator Die as an accuracy, ending that conditon on a successful check. </p><p>Investigate (2 dice)- Choose a hostile character in line of sight. The next time you or your allies make an attack against that character the attack is rolled twice, choosing the highest result.</p><p>Cast Doubt - (2 dice) Choose a hostile character in line of sight. That character cannot benefit from or be targeted by their allies' systems or traits until the end of their next turn.</p>"
       },
       {
         "name": "The March of the Ten Thousand",
-        "description": "<p>Start combat with 1 additional Orator die<br>Gain an additional option for your orator die:</br></p><p>Demoralize - (3 dice) Choose a hostile character in line of sight. That character cannot attack until the end of its next turn. An affected character then becomes immune to this effect until the end of combat.</p>"
+        "description": "<p>Start combat with 1 additional Orator die<br>Gain an additional option for your orator die:</br></p><p>Demoralize - (3 dice) Choose a hostile character in line of sight. They cannot move, attack, force saves or take tech actions until the end of their next turn. They then gain IMMUNITY to this effect until the end of the scene.</p>"
       }
     ]
   }

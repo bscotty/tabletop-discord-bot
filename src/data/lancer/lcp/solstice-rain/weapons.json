@@ -5,21 +5,16 @@
     "source": "EXOTIC",
     "license": "",
     "license_level": 0,
-    "description": "<p>The GMS MC-AR assault rifle currently in use throughout Union forces and beyond is a time-tested and reliable design, and so rather than attempting to replace it outright Union CENTCOMM has put out a call for a supplementary standardized battle rifle system which can operate alongside the MC-AR in mixed fireteams, or as a primary weapon system for engaging heavily armored opposition at longer ranges than the MC-TR thermal rifle. The XC-BR uses an advanced caseless electrochemical propellant design capable of firing larger-caliber, armor defeating rounds while minimizing recoil along with an integrated dynamic targeting system, though the weapon is still plagued by intermittent heat issues which can adversely affect performance.</p>",
-    "effect": "<p>You may attack characters with the Lock On condition using this weapon as though it was range 15.</p>",
+    "description": "The GMS MC-AR assault rifle currently in use throughout Union’s forces and beyond is a time-tested and reliable design. Rather than attempting to replace it outright, CentComm's Defense Logistics Committee has put out a call for a supplementary standardized battle rifle system that can operate alongside the MC-AR in mixed fireteams, or as a primary weapon system for engaging heavily armored opposition at longer ranges than the MC-TR thermal rifle. The XC-BR uses an advanced caseless electrochemical propellant design capable of firing larger-caliber, armor-defeating rounds while minimizing recoil along with an integrated dynamic targeting system, though the weapon is still plagued by intermittent heat issues that can adversely affect performance.</p>",
+    "effect": "You may attack characters with the Lock On condition using this weapon as though it is range 15.",
     "on_attack": "",
     "on_hit": "",
-    "on_crit": "<p>The target becomes Locked On.</p>",
+    "on_crit": "The target becomes Locked On",
     "mount": "Main",
     "type": "Rifle",
     "cost": 1,
     "barrage": true,
     "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -43,15 +38,7 @@
       {
         "id": "tg_exotic"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   },
   {
     "id": "mw_xc_dpm_predator_nexus",
@@ -59,8 +46,8 @@
     "source": "EXOTIC",
     "license": "",
     "license_level": 0,
-    "description": "<p>One of GMS' most advanced nexus weapons currently undergoing field-testing, the XC-DPM Predator project is the direct descendant of the earlier MC-DHK hunter/killer program, itself a joint venture between the Special Research Agency and GMS engineers. The Predator nexus benefits from from a comprehensive targeting and autonomy upgrade, incorporating MD+ \"Muse Drive\" smart weapon design. This system's heuristics, though declared Turing-Null, display startlingly advanced target acquisition capabilities even when confronted with active countermeasures that might otherwise confound traditional smart weapon platforms.</p>",
-    "effect": "<p>Attacks with this weapon ignore Invisibility.</p>",
+    "description": "<p>One of GMS’s most advanced nexus weapons currently undergoing field-testing, the XC-DPM Predator project is the direct descendant of the earlier MC-DHK Hunter-Killer program, itself a joint venture between the Advanced Projects Special Research Agency and GMS engineers. The Predator nexus benefits from a comprehensive targeting and autonomy upgrade, incorporating MD+ “Muse Drive” smart weapon design. This system’s heuristics, though declared Turing-Null, display startlingly advanced target acquisition capabilities even when confronted with active countermeasures that might otherwise confound traditional smart weapon platforms.</p>",
+    "effect": "Attacks with this weapon ignore Invisible",
     "on_attack": "",
     "on_hit": "",
     "on_crit": "",
@@ -69,11 +56,6 @@
     "cost": 1,
     "barrage": true,
     "skirmish": true,
-    "no_attack": false,
-    "no_mods": false,
-    "no_core_bonus": false,
-    "no_bonus": false,
-    "no_synergy": false,
     "damage": [
       {
         "type": "Kinetic",
@@ -97,14 +79,6 @@
       {
         "id": "tg_exotic"
       }
-    ],
-    "actions": [],
-    "bonuses": [],
-    "synergies": [],
-    "deployables": [],
-    "counters": [],
-    "integrated": [],
-    "special_equipment": [],
-    "profiles": []
+    ]
   }
 ]
