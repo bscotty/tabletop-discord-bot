@@ -1,0 +1,14 @@
+[
+  {
+    "id": "tg_heavyweight",
+    "name": "HEAVYWEIGHT {VAL}",
+    "description": "<div><em>This weapon is equipped to be easily stabilized while firing. When you barrage with this weapon, you may choose to </em><strong><em>Heavy Fire</em></strong><em> it, forgoing attacks with all other weapons. If you do, for the duration of the barrage, the weapon gains +1 Accuracy and increases its range if it is a ranged weapon or threat if it is melee by {VAL}.</em></div>",
+    "val": 10
+  },
+  {
+    "id": "tg_spool",
+    "name": "SPOOL {VAL}",
+    "description": "<div><em>This weapon, grenade, or mine is equipped to fire at enhanced outputs via charging its capacitors or winding its motors. You may choose to </em><strong><em>Spool</em></strong><em> this gear as a quick action, or a full action if it is a superheavy weapon. While </em><strong><em>Spooled</em></strong><em>, you cannot use it until the start of your next turn, whereupon you immediately activate it as a protocol, dealing +{VAL} bonus damage on hit if it is a weapon, or adding {VAL} damage to the effect if it is a grenade or mine. This gear must be reloaded before you can use it again.</em></div>",
+    "val": 0
+  }
+]
