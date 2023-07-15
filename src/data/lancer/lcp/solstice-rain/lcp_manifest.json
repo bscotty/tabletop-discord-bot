@@ -1,9 +1,9 @@
 {
-  "name": "Operation Solstice Rain",
-  "version": "0.1.7",
-  "author": "Kai Tave",
-  "item_prefix": "op-sr",
-  "image_url": "",
-  "description": "LCP for content from the Operation Solstice Rain mission series. Content by Kai Tave on behalf of Massif Press, compiled into LCP for COMP/CON use by Nasajin.",
-  "website": "https://massif-press.itch.io/"
+  "name": "Operation Solstice Rain Data",
+  "author": "Massif Press",
+  "description": "Player-side data for Operation Solstice Rain, a structured mission module for Lancer, written and designed by Kai Tave. Includes The GMS Chomolungma, new talents, and exotic gear.",
+  "item_prefix": "osr",
+  "version": "1.1.1",
+  "image_url": "https://img.itch.zone/aW1nLzExMTQ3Mzc4LnBuZw==/315x250%23cb/gKzgBK.png",
+  "website": "https://massif-press.itch.io/operation-solstice-rain"
 }

@@ -1,23 +1,23 @@
 [
-    {
-        "id": "reserve_causality_fragment",
-        "name": "Causality Fragment",
-        "type": "Resource",
-        "label": "Non-Gear Item",
-        "description": "At any time, you may replace a d20 roll with either a 20 or a 1. This can be any d20 roll at all. You may only do this once, but you can decide after the dice has been rolled and the outcome has been announced."
-    },
-    {
-        "id": "insignia_of_valor",
-        "name": "Insignia of Valor",
-        "type": "Bonus",
-        "label": "Reward",
-        "description": "A character with the Sparri Insignia of Valor gains a +2 Trigger: Impress or Boast. If characters already have this or another similar trigger, add a +2 bonus to it. "
-    },
-    {
-        "id": "requisition_card",
-        "name": "Requisition Card",
-        "type": "Bonus",
-        "label": "Reward",
-        "description": "The Requisition Card can be used one time only to gain access to any Reserves (at the GM’s discretion, but should be generous)."
-    }
+  {
+    "id": "reserve_causality_fragment",
+    "name": "Causality Fragment",
+    "type": "Resource",
+    "label": "Non-Gear Item",
+    "description": "At any time, you may replace a d20 roll with either a 20 or a 1. This can be any d20 roll at all. You may only do this once, but you can decide after the dice has been rolled and the outcome has been announced."
+  },
+  {
+    "id": "insignia_of_valor",
+    "name": "Insignia of Valor",
+    "type": "Bonus",
+    "label": "Reward",
+    "description": "A character with the Sparri Insignia of Valor gains a +2 Trigger: Impress or Boast. If characters already have this or another similar trigger, add a +2 bonus to it. "
+  },
+  {
+    "id": "requisition_card",
+    "name": "Requisition Card",
+    "type": "Bonus",
+    "label": "Reward",
+    "description": "The Requisition Card can be used one time only to gain access to any Reserves (at the GM’s discretion, but should be generous)."
+  }
 ]
