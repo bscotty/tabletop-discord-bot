@@ -1,32 +1,33 @@
 import {Lcp} from "../../../types/lcp";
-import frames from "./frames.json"
+import backgrounds from "./backgrounds.json"
 import info from "./lcp_manifest.json"
-import talents from "./talents.json"
+import pilot_gear from "./pilot_gear.json"
+import systems from "./systems.json"
 import weapons from "./weapons.json"
 
-export function getSsmrPart1Lcp(): Lcp {
+export function getLegionnaireLcp(): Lcp {
     return new Lcp(
         [],
+        backgrounds,
         [],
         [],
         [],
         [],
         [],
-        frames,
         [],
         info,
         [],
         [],
-        [],
-        [],
-        undefined,
-        [],
-        [],
-        [],
+        pilot_gear,
         [],
         undefined,
         [],
-        talents,
+        [],
+        [],
+        systems,
+        undefined,
+        [],
+        [],
         weapons
     )
 }

@@ -1,0 +1,195 @@
+[
+  {
+    "id": "GMSC_systems_pattern-b_concussion_charges",
+    "name": "PATTERN-B CONCUSSION CHARGES",
+    "source": "GMS",
+    "license": "",
+    "license_level": 0,
+    "type": "System",
+    "sp": 2,
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_quick_action"
+      },
+      {
+        "id": "tg_grenade"
+      },
+      {
+        "id": "tg_mine"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "CONCUSSION GRENADE",
+        "activation": "Quick",
+        "detail": "<div>Throw a Concussion Grenade within Range 5. All characters within a Blast 2 area must pass a hull save or be pushed 2 spaces away from the center on failure or 1 space on a success.</div>",
+        "cost": 0,
+        "pilot": false,
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Blast",
+            "val": 2
+          }
+        ],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "CONCUSSION MINE",
+        "activation": "Quick",
+        "detail": "<div>Deploy a Concussion mine. All characters within the affected area are knocked back 2 spaces and must pass a hull save or be knocked prone.</div>",
+        "pilot": false,
+        "range": [
+          {
+            "type": "Burst",
+            "val": 2
+          }
+        ],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "GMSC_systems_micro-maintenance_suite",
+    "name": "MICRO-MAINTENANCE SUITE",
+    "source": "GMS",
+    "license": "",
+    "license_level": 0,
+    "effect": "<div>Two allied mech characters in line of sight and sensors gain 3 overshield.</div>",
+    "type": "Shield",
+    "sp": 2,
+    "description": "<div><em>The GMS Micro-Maintenance Suite activates spare motile ablative and fabrication modules commonly found in combat vehicles to proactive protect key components.</em></div>",
+    "tags": [
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_quick_action"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ]
+  },
+  {
+    "id": "GMSC_systems_systems_override_",
+    "name": "SYSTEMS OVERRIDE ",
+    "source": "GMS",
+    "license": "",
+    "license_level": 0,
+    "effect": "<div></div>",
+    "type": "Tech",
+    "sp": 2,
+    "description": "<div><em>GMS wartime electronic assault packages typically focus on exploiting commonalities among mech systems.</em></div>",
+    "tags": [
+      {
+        "id": "tg_full_tech",
+        "val": null
+      },
+      {
+        "id": "tg_unique",
+        "val": null
+      }
+    ],
+    "actions": [
+      {
+        "name": "SYSTEMS OVERRIDE",
+        "activation": "Full Tech",
+        "detail": "<div>Make a tech attack against an hostile character in line of sight and sensors. On a success, the target takes 4 heat and is impaired and immobilized until the end of their next turn.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "GMSC_systems_pattern-b_shock_charges",
+    "name": "Pattern-B Shock Charges",
+    "source": "GMS",
+    "license": "",
+    "license_level": 0,
+    "type": "System",
+    "sp": 2,
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_grenade",
+        "val": null
+      },
+      {
+        "id": "tg_mine",
+        "val": null
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique",
+        "val": null
+      }
+    ],
+    "actions": [
+      {
+        "name": "Shock Grenade",
+        "activation": "Quick",
+        "detail": "<div>&nbsp;All characters within the affected area must pass an engineering save. On a failure, they take 2 heat and are impaired until the end of their next turn. On a success, they take 1 heat and they are not impaired.</div>",
+        "pilot": false,
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Shock Mine",
+        "activation": "Quick",
+        "detail": "<div>All characters within the affected area must pass an engineering save. On a failure, they take 4 heat and are jammed until the end of their next turn. On a success, they take 2 heat and they are not jammed.</div>",
+        "pilot": false,
+        "range": [
+          {
+            "type": "Burst",
+            "val": 1
+          }
+        ],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  }
+]

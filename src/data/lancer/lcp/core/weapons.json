@@ -672,7 +672,7 @@
   },
   {
     "id": "mw_bristlecrown_flechette_launcher",
-    "name": "BRISTLECROWN FLECHETTE LAUNCHER",
+    "name": "Bristlecrown Flechette Launcher",
     "mount": "Auxiliary",
     "type": "CQB",
     "damage": [
@@ -1570,7 +1570,7 @@
     "source": "SSC",
     "license": "MONARCH",
     "license_level": 2,
-    "description": "Gandiva missiles are a reliable mainstay from Smith-Shimano’s BELLA CIAO line. Like the heavier Pinaka, the Gandiva is equipped with jet-assisted midflight repositioning systems, enhancing target navigation in rapidly changing battlefield environments. The Gandiva’s delivery platform is administered by a hivemind comp/con drone AI, giving it the capacity to learn from each right-of-launch experience.",
+    "description": "Gandiva missiles are a reliable mainstay from Smith-Shimano’s BELLA CIAO line. Like the heavier Pinaka, the Gandiva is equipped with jet-assisted midflight repositioning systems, enhancing target navigation in rapidly changing battlefield environments. The Gandiva’s delivery platform is administered by a hivemind COMP/CON drone AI, giving it the capacity to learn from each right-of-launch experience.",
     "sp": 1,
     "license_id": "mf_monarch"
   },
@@ -1607,7 +1607,7 @@
     "source": "SSC",
     "license": "MONARCH",
     "license_level": 3,
-    "effect": "Attacks with this weapon create up to two blast 1 areas, which cannot overlap.<br>You may also delay the impact of attacks made with this weapon. Choose the target area(s), which become visible to all characters: the  missiles land at the end of the next round, after all characters have acted, and deal 3d6 explosive damage instead of 2d6, but you become Slowed until the end of your next turn.",
+    "effect": "Attacks with this weapon create up to two blast 1 areas, which cannot overlap.<br>You may also delay the impact of attacks made with this weapon. Choose the target area(s), which become visible to all characters: the missiles land at the end of the next round, after all characters have acted, and deal 3d6 explosive damage instead of 2d6, but you become Slowed until the end of your next turn.",
     "description": "Pinaka missiles are massive, two-stage missiles typically mounted along a mech’s spine or carried, disassembled, to be launched from a brachial mount. The Pinaka was originally adapted from ship-to-ship missiles; as such, their second stage uses jet-assist repositioning for midflight orientation.",
     "license_id": "mf_monarch"
   },
@@ -2596,7 +2596,7 @@
     "source": "HA",
     "license": "TOKUGAWA",
     "license_level": 2,
-    "description": "The Torch is a potent weapon: a heavy  crescent-bladed plasma cutter, powered straight from a chassis’ reactor. Torches generally project as axes, though their blades can be changed to a range of other shapes. A common weapon in CQB theaters, the torch has lately become a status symbol among officers, carried by many alongside a smaller auxiliary weapon.",
+    "description": "The Torch is a potent weapon: a heavy crescent-bladed plasma cutter, powered straight from a chassis’ reactor. Torches generally project as axes, though their blades can be changed to a range of other shapes. A common weapon in CQB theaters, the torch has lately become a status symbol among officers, carried by many alongside a smaller auxiliary weapon.",
     "license_id": "mf_tokugawa"
   },
   {
@@ -2932,7 +2932,7 @@
             "val": "1d6"
           }
         ],
-        "effect": "This weapon’s profile is determined by the number of Charges it carries. It begins with 1 Charge, dealing 1d6 energy with line 4. Each time you Stabilize, you gain an additional 1 Charge, up to a maximum of 4. The ZF4 gains an additional +4 range and +1d6 energy damage for each charge, and resets to 1 Charge after each attack. Charges persist between scenes, but are lost during a full repair."
+        "effect": "This weapon’s profile is determined by the number of Charges it carries. It begins with 1 Charge, dealing 1d6 energy with line 4. Each time you Stabilize, you gain an additional 1 Charge, up to a maximum of 4. The ZF4 gains an additional +4 line and +1d6 energy damage for each charge, and resets to 1 Charge after each attack. Charges persist between scenes, but are lost during a full repair."
       },
       {
         "name": "2 Charges",
@@ -2948,7 +2948,7 @@
             "val": "2d6"
           }
         ],
-        "effect": "This weapon’s profile is determined by the number of Charges it carries. It begins with 1 Charge, dealing 1d6 energy with line 4. Each time you Stabilize, you gain an additional 1 Charge, up to a maximum of 4. The ZF4 gains an additional +4 range and +1d6 energy damage for each charge, and resets to 1 Charge after each attack. Charges persist between scenes, but are lost during a full repair."
+        "effect": "This weapon’s profile is determined by the number of Charges it carries. It begins with 1 Charge, dealing 1d6 energy with line 4. Each time you Stabilize, you gain an additional 1 Charge, up to a maximum of 4. The ZF4 gains an additional +4 line and +1d6 energy damage for each charge, and resets to 1 Charge after each attack. Charges persist between scenes, but are lost during a full repair."
       },
       {
         "name": "3 Charges",
@@ -2964,7 +2964,7 @@
             "val": "3d6"
           }
         ],
-        "effect": "This weapon’s profile is determined by the number of Charges it carries. It begins with 1 Charge, dealing 1d6 energy with line 4. Each time you Stabilize, you gain an additional 1 Charge, up to a maximum of 4. The ZF4 gains an additional +4 range and +1d6 energy damage for each charge, and resets to 1 Charge after each attack. Charges persist between scenes, but are lost during a full repair."
+        "effect": "This weapon’s profile is determined by the number of Charges it carries. It begins with 1 Charge, dealing 1d6 energy with line 4. Each time you Stabilize, you gain an additional 1 Charge, up to a maximum of 4. The ZF4 gains an additional +4 line and +1d6 energy damage for each charge, and resets to 1 Charge after each attack. Charges persist between scenes, but are lost during a full repair."
       },
       {
         "name": "4 Charges",
@@ -2980,7 +2980,7 @@
             "val": "4d6"
           }
         ],
-        "effect": "This weapon’s profile is determined by the number of Charges it carries. It begins with 1 Charge, dealing 1d6 energy with line 4. Each time you Stabilize, you gain an additional 1 Charge, up to a maximum of 4. The ZF4 gains an additional +4 range and +1d6 energy damage for each charge, and resets to 1 Charge after each attack. Charges persist between scenes, but are lost during a full repair."
+        "effect": "This weapon’s profile is determined by the number of Charges it carries. It begins with 1 Charge, dealing 1d6 energy with line 4. Each time you Stabilize, you gain an additional 1 Charge, up to a maximum of 4. The ZF4 gains an additional +4 line and +1d6 energy damage for each charge, and resets to 1 Charge after each attack. Charges persist between scenes, but are lost during a full repair."
       }
     ],
     "tags": [

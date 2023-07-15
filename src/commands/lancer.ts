@@ -19,9 +19,11 @@ import {getSuldanLcp} from "../data/lancer/lcp/homebrew/suldan";
 import {getStolenCrownLcp} from "../data/lancer/lcp/homebrew/stolen-crown";
 import {getGilgameshLcp} from "../data/lancer/lcp/homebrew/gilgamesh";
 import {getDustgraveLcp} from "../data/lancer/lcp/dustgrave";
-import {getSsmrPart1Lcp} from "../data/lancer/lcp/homebrew/ssmr part 1";
+import {getSsmrPart1Lcp} from "../data/lancer/lcp/ssmr part 1";
 import {getEHandSLCP} from "../data/lancer/lcp/homebrew/event horizon & suns";
 import {getKrfwCatalogLcp} from "../data/lancer/lcp/homebrew/krfw catalog";
+import {getLegionnaireLcp} from "../data/lancer/lcp/homebrew/legionnaire";
+import {getCrisisCoreLcp} from "../data/lancer/lcp/homebrew/crisis core";
 
 @Discord()
 export class Lancer {
@@ -53,10 +55,12 @@ export class Lancer {
 
     private homebrew(): Lcp[] {
         return [
+            getCrisisCoreLcp(),
             getEHandSLCP(),
             getGilgameshLcp(),
             getIronleafFoundryLcp(),
             getKrfwCatalogLcp(),
+            getLegionnaireLcp(),
             getLiminalSpaceLcp(),
             getMfecaneLcp(),
             getSciroccoLcp(),

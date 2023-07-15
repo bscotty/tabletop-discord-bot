@@ -1,0 +1,88 @@
+[
+  {
+    "id": "GMSC_frames_denali",
+    "source": "GMS",
+    "license_level": 0,
+    "name": "DENALI",
+    "mechtype": [
+      "Support"
+    ],
+    "description": "<div>All characters have access to the Denali from LL0 onwards. This variant FRAME is not mutually exclusive with the EVEREST.</div><div>One of many militia-grade dual purpose civic and military chassis, the Denali chassis sees notable use among combined force doctrine armies and small scale militia-tier armed forces for its logistical and utilitarian merits, coupled with sizable armament.</div>",
+    "mounts": [
+      "Flex",
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "FIELD SUPPLY",
+        "use": "",
+        "description": "<div>When you <strong>Stabilize </strong>the Denali, adjacent allied characters may clear all burn, clear one condition, or reload all weapons.</div>"
+      },
+      {
+        "name": "ALTRUISM",
+        "use": "",
+        "description": "<div><strong>1/scene</strong>, When the Denali performs a <strong>Barrage</strong> or uses a <strong>Full Tech Action</strong>, adjacent allied characters may <strong>Stabilize</strong> as a reaction, even if they would not normally be able to take reactions.</div>"
+      },
+      {
+        "name": "REPLACEABLE PARTS",
+        "use": "",
+        "description": "<div>While resting, the Denali can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs.</div>"
+      }
+    ],
+    "core_system": {
+      "name": "AUTO-LOGISTIC COMP/CON",
+      "active_name": "Optimizer",
+      "active_effect": "<p>For the rest of the scene, you may stabilize as a quick action. Additionally, <strong>1/round</strong>, when you stabilize, you may choose all options at once. Adjacent allied characters clear all heat and exposed and reload all weapons whenever you or they stabilize.</p>",
+      "activation": "Protocol",
+      "description": "",
+      "deactivation": "",
+      "use": "Mission",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "Force Multiplier",
+      "passive_effect": "",
+      "passive_actions": [
+        {
+          "name": "Force Multiplier",
+          "activation": "Full Tech",
+          "detail": "<p>Choose an adjacent allied character. They gain 1 of the following benefits until the end of their next turn as long as they remain within <strong>Sensors</strong> and line of sight:<br><br>-They ignore <strong>Invisibility</strong> and <strong>Hidden</strong> and gain +1 Accuracy on their next attack.<br>-Whenever they take damage, they first gain 2 <strong>Overshield.<br></strong>-They gain +1 Accuracy on all checks and saves and hostile tech actions have a 50% chance to fail against them, granting them <strong>Immunity</strong> to all its effects.<br><br>Each effect can only be used 1/scene on each character.</p>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        }
+      ],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "image_url": "",
+    "y_pos": 0
+  }
+]
