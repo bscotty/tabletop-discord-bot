@@ -25,7 +25,8 @@
       {
         "id": "tg_arcing"
       }
-    ]
+    ],
+    "license_id": "krfwf_castellan"
   },
   {
     "id": "krfwm_superheated_barrel",
@@ -50,6 +51,7 @@
       {
         "id": "tg_loading"
       }
-    ]
+    ],
+    "license_id": "krfwf_vidame"
   }
 ]

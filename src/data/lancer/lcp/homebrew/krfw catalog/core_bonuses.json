@@ -38,7 +38,7 @@
       {
         "name": "Activate",
         "activation": "Quick",
-        "detail": "1/scene, while adjacent to a wreck, prime the wreck’s reactor to detonate. Whenever a character next moves adjacent to the primed wreck, it detonates in a Burst 1 area around the wreck. All characters in the Burst must pass an Agility save or take 2d6 energy damage and become Impaired until the end of their next turn, taking half damage and not becoming Impaired on a success."
+        "detail": "1/scene, while adjacent to a wreck, prime the wreck’s reactor to detonate. Whenever a character next moves adjacent to the primed wreck, it detonates in a Burst 1 area around the wreck. All characters except you in the Burst must pass an Agility save or take 2d6 energy damage and become Impaired until the end of their next turn, taking half damage and not becoming Impaired on a success."
       }
     ],
     "description": "Your mech contains reserves of greywash nanites, hidden within its frame until the moment to deploy them comes. When you unleash them on the ruins of your enemies, your mech appears for a moment to be the specter of death itself."
@@ -54,8 +54,8 @@
     "id": "krfwcb_lifeboat_cockpit_retrofitting",
     "name": "Lifeboat Cockpit Retrofitting",
     "source": "KRFW",
-    "effect": "When your mech melts down or self-destructs, leave a size 1/2 object in a space your mech formerly occupied. Your pilot is safe inside, and the mech can be rebuilt from this central control capsule as if it had been destroyed. Your Self Destructs and Meltdowns are never canceled by your mech’s destruction.",
-    "description": "Your cockpit is hermetically sealed, and can survive up to a week in the vacuum of space. Karimi, Roux, & Fabjani also include a complimentary selection of books to read during this time, so you do not die bored."
+    "effect": "When your mech melts down or self-destructs, leave a size 1/2 object in a space your mech formerly occupied. This Lifeboat has 10 Evasion, 10 E-defense, 10 HP, and resistance to all damage. Your pilot is safe inside, and the mech can be rebuilt from this central control capsule as if it had been destroyed. Your Self Destructs and Meltdowns are never canceled by your mech’s destruction.",
+    "description": "Your cockpit is hermetically sealed, and can survive up to a week in the vacuum of space. Karimi, Roux, & Fabjani also includes a complimentary selection of books to read during this time, so you do not die bored."
   },
   {
     "id": "krfwcb_reckless_safety_tolerances",
@@ -63,5 +63,18 @@
     "source": "KRFW",
     "effect": "Your mech increases its maximum HP and Heatcap by how much Structure or Stress you have marked, respectively.",
     "description": "Your mech prints with a bit more wiggle than it should, allowing you to hastily shove its broken pieces back into place just long enough to finish the next fight. You’ve gotten used to the noises its joints make."
+  },
+  {
+    "id": "krfwcb_parallel_processors",
+    "name": "Parallel Processors",
+    "source": "KRFW",
+    "effect": "You may install an additional AI in your mech. If one of your AIs enters cascade, Shutting Down your mech becomes a Protocol until the cascade is over. This core bonus may not be taken if you have The Lesson of Shaping, and you may not take The Lesson of Shaping if you have Parallel Processors.",
+    "description": "You can fit two caskets into your cockpit where most pilots can only fit one. Your co-pilots may have their own opinions about the seating arrangement; be prepared to negotiate who gets shotgun.",
+    "bonuses": [
+      {
+        "id": "ai_cap",
+        "val": 1
+      }
+    ]
   }
 ]
