@@ -32,7 +32,8 @@
     "license_level": 1,
     "description": "Armigers are often pressganged into providing power for the light systems needed to keep camps running in the dark of night, easily able to mount entire arrays of lights on their frames to cover wide swathes of the camp. However, deliberate misalignment of the optics and attaching the power cables incorrectly can result in a directed energy weapon, useful for keeping other weapons on target.",
     "sp": 1,
-    "on_hit": "Allied characters may use Ordnance weapons to attack the target after moving or taking other actions until the target moves or is moved."
+    "on_hit": "Allied characters may use Ordnance weapons to attack the target after moving or taking other actions until the target moves or is moved.",
+    "license_id": "krfwf_armiger"
   },
   {
     "id": "krfwmw_active_diagnostics_module",
@@ -63,7 +64,8 @@
     "license": "ARMIGER",
     "license_level": 2,
     "description": "“Listen. Listen. I know it trashed a state of the art medical drone in the process, but I’ve seen the footage. It took out another mech with one shot using something that was never meant to be fired to begin with! I don’t care if it’s being court martialed right now, I want to talk to that soldier and start signing some licensing agreements!”<br>-Hanan Karimi, Founding Partner",
-    "effect": "This weapon gains +1 Accuracy for every attack that has hit the target this turn.<br>This weapon grants +1 Accuracy to rolls to repair, diagnose, or heal machines or people while equipped."
+    "effect": "This weapon gains +1 Accuracy for every attack that has hit the target this turn.<br>This weapon grants +1 Accuracy to rolls to repair, diagnose, or heal machines or people while equipped.",
+    "license_id": "krfwf_armiger"
   },
   {
     "id": "krfwmw_lobbed_greywash_device",
@@ -101,7 +103,8 @@
     "source": "KRFW",
     "license": "ARMIGER",
     "license_level": 3,
-    "description": "A small, dedicated greywash printer, a container full of already printed swarms, a chunk of a dismembered Balor-PG mech, this weapon comes in all shapes and sizes. The important part, for most pilots, is that it can be thrown, and that it discourages hostile forces from getting close."
+    "description": "A small, dedicated greywash printer, a container full of already printed swarms, a chunk of a dismembered Balor-PG mech, this weapon comes in all shapes and sizes. The important part, for most pilots, is that it can be thrown, and that it discourages hostile forces from getting close.",
+    "license_id": "krfwf_armiger"
   },
   {
     "id": "krfwmw_reinforced_tonfa",
@@ -129,7 +132,8 @@
     "license": "BURGESS",
     "license_level": 1,
     "description": "“It’s a slab of material with a handle, we don’t need to include an operating manual. Yes, I do have that much faith in our customers. If they can’t figure out how to put something between them and a sword, I don’t think they’re going to be repeat customers anyway.”<br>-Hanan Karimi, Founding Partner",
-    "effect": "If you do not attack with this weapon during your turn, characters take +1 Difficulty when attacking you with Melee attacks until the start of your next turn."
+    "effect": "If you do not attack with this weapon during your turn, characters take +1 Difficulty when attacking you with Melee attacks until the start of your next turn.",
+    "license_id": "krfwf_burgess"
   },
   {
     "id": "krfwmw_roseary_takedown_carbine",
@@ -157,7 +161,8 @@
     "license": "BURGESS",
     "license_level": 3,
     "description": "A complete overhaul of a shipment of GMS pistol components into a larger scale weapon, the Rosary Takedown Carbine makes up for its lack of firepower by being able to fill many roles in the hands of a well-trained pilot, as well as the debatable utility of being able to store the entire weapon in its own hollow buttstock.",
-    "effect": "When attacking with this weapon, it may also count as an Auxiliary or Heavy weapon for talents, systems, and other effects."
+    "effect": "When attacking with this weapon, it may also count as an Auxiliary or Heavy weapon for talents, systems, and other effects.",
+    "license_id": "krfwf_burgess"
   },
   {
     "id": "krfwmw_reveille_mk_4_breaching_tool",
@@ -189,7 +194,8 @@
     "license": "CASTELLAN",
     "license_level": 1,
     "description": "A variation on the GMS mortar, designed to fire special two-stage shells that penetrate cover before detonating their main payload, focusing damage on a single target instead of a wide area.<br><br>Bugle sold separately.",
-    "effect": "This weapon gains +1 Accuracy instead of +2 Difficulty when attacking characters with Hard Cover."
+    "effect": "This weapon gains +1 Accuracy instead of +2 Difficulty when attacking characters with Hard Cover.",
+    "license_id": "krfwf_castellan"
   },
   {
     "id": "krfwmw_solicitor_payload_delivery_system",
@@ -228,7 +234,8 @@
     "license": "CASTELLAN",
     "license_level": 3,
     "description": "An array of dorsally mounted tubes, each loaded with high-yield explosive projectiles. The name comes from the weapon’s tendency for projectiles to misfire on impact with sufficiently soft targets, leaving still-live explosives scattered in the line of fire. Though initially worth concern, the addition of time-delay fuses transforms prohibitive defusal operations into much simpler clean-up ones.",
-    "effect": "This weapon deals 10 AP Explosive to terrain on hit. Any terrain destroyed by this weapon becomes an Unexploded Munition. At the start of your next turn, all Unexploded Munitions detonate in a Blast 1 area, dealing 1d6 Explosive to all characters caught in the blast."
+    "effect": "This weapon deals 10 AP Explosive to terrain on hit. Any terrain destroyed by this weapon becomes an Unexploded Munition. At the start of your next turn, all Unexploded Munitions detonate in a Blast 1 area, dealing 1d6 Explosive to all characters caught in the blast.",
+    "license_id": "krfwf_castellan"
   },
   {
     "id": "krfwmw_aggressive_core_vent",
@@ -264,7 +271,8 @@
     "license": "CLAVIGER",
     "license_level": 1,
     "description": "“My weapons did nothing. You cannot scratch what is not there. The machine no longer listens to me. It hears only itself, and when it speaks, it answers.”",
-    "effect": "When you hit a character within range 3 with another weapon, you may attack with this weapon as a reaction. This is the only way to fire this weapon."
+    "effect": "When you hit a character within range 3 with another weapon, you may attack with this weapon as a reaction. This is the only way to fire this weapon.",
+    "license_id": "krfwf_claviger"
   },
   {
     "id": "krfwmw_hells_own_delayed_activation_grenade_silos",
@@ -305,7 +313,8 @@
     "license": "CLAVIGER",
     "license_level": 3,
     "description": "HODAGS are a pair of spinal-mounted silos loaded with high-explosive grenades on a delayed fuse, requiring a sizable shunt of core power to use, but capable of clearing wide swaths of terrain of hostiles and obstructions. Due to the high yield of the munitions used, Karimi, Roux, & Fabjani require all pilots who request the weapon be informed of its nearly 100% mortality rate before deploying it against live targets, to avoid any being caught unaware by the power or lethality of the weapon.<br><br>Despite concerns raised by those both within and without the company, Karimi, Roux, & Fabjani do not permit Clavigers to be sold without offering HODAGS.",
-    "effect": "This weapon deals 10 AP Kinetic, 10 AP Energy, and 10 AP Explosive damage to any terrain it hits. Any character destroyed by this weapon is completely vaporized and does not leave a wreck; instead, the spaces they occupied become a Zone of Soft Cover until the end of the scene. This does not count as being destroyed for hostile effects that trigger off of destruction."
+    "effect": "This weapon deals 10 AP Kinetic, 10 AP Energy, and 10 AP Explosive damage to any terrain it hits. Any character destroyed by this weapon is completely vaporized and does not leave a wreck; instead, the spaces they occupied become a Zone of Soft Cover until the end of the scene. This does not count as being destroyed for hostile effects that trigger off of destruction.",
+    "license_id": "krfwf_claviger"
   },
   {
     "id": "krfwmw_coolant_discharge_suite",
@@ -345,7 +354,8 @@
     "source": "KRFW",
     "license": "DESPOT",
     "license_level": 1,
-    "description": "Many pilots prove gun-shy on their first sorties with extensive heat-generating equipment, sometimes compromising the mission out of fear of the damage they will cause themselves. This set of bypasses, toggles, and fundamental tweaks to a chassis’ reactor helps many of these rookie pilots buy themselves some breathing room as they vent their reactors; though it does nothing to alleviate heat buildup, the placebo effect often helps ease them into using their more costly options."
+    "description": "Many pilots prove gun-shy on their first sorties with extensive heat-generating equipment, sometimes compromising the mission out of fear of the damage they will cause themselves. This set of bypasses, toggles, and fundamental tweaks to a chassis’ reactor helps many of these rookie pilots buy themselves some breathing room as they vent their reactors; though it does nothing to alleviate heat buildup, the placebo effect often helps ease them into using their more costly options.",
+    "license_id": "krfwf_despot"
   },
   {
     "id": "krfwmw_tribunal_assault_battery",
@@ -364,17 +374,19 @@
         "val": 10
       }
     ],
-    "effect": "All characters adjacent to a character or object hit by this weapon must pass a Hull save or be knocked back 2 spaces.",
+    "effect": "All characters adjacent to a character or object hit by this weapon must pass a Hull save or be knocked back 1 space.",
     "tags": [
       {
         "id": "tg_knockback",
-        "val": 2
+        "val": 1
       }
     ],
     "source": "KRFW",
     "license": "DESPOT",
     "license_level": 2,
-    "description": "Tribunal Assault Batteries are a set of mounted micromissile silos, typically mounted on the chest and forearms of a humanoid mech, or arranged in a triangular pattern on chassis without arms. The miniature missiles use a proprietary, resource-light design, to avoid straining requisite onboard printers."
+    "description": "Tribunal Assault Batteries are a set of mounted micromissile silos, typically mounted on the chest and forearms of a humanoid mech, or arranged in a triangular pattern on chassis without arms. The miniature missiles use a proprietary, resource-light design, to avoid straining requisite onboard printers.",
+    "sp": 2,
+    "license_id": "krfwf_despot"
   },
   {
     "id": "krfwmw_legionspace_firing_squad",
@@ -407,7 +419,8 @@
     "license": "DESPOT",
     "license_level": 3,
     "description": "A set of Companion/Concierge units, mounted in a specialized frame, capable of replicating the gestalt consciousness of fleet NHPs in a mech-portable form. The Legionspace Firing Squad is not a true Legion by any means, but is capable of similarly esoteric combat, which has led to multiple Union reviews of the weapon to ensure ethical compliance.",
-    "on_attack": "Draw two additional Line 10 areas adjacent and parallel to your attack. This weapon only attacks targets in these areas, not the initial Line."
+    "on_attack": "Draw two additional Line 10 areas adjacent and parallel to your attack. This weapon only attacks targets in these areas, not the initial Line.",
+    "license_id": "krfwf_despot"
   },
   {
     "id": "krfwmw_marquess_integrated",
@@ -420,7 +433,8 @@
         "val": 7
       }
     ],
-    "effect": "This weapon does not and can not deal damage. Instead, when it hits a character, it applies the Letter of Marque condition to them. Any character making a ranged or melee attack against a character with Letter of Marque may choose to deal +1d6 Bonus Damage on that attack and then clear the Letter of Marque condition after the attack resolves."
+    "effect": "This weapon does not and can not deal damage. Instead, when it hits a character, it applies the Letter of Marque condition to them. Any character making a ranged or melee attack against a character with Letter of Marque may choose to deal +1d6 Bonus Damage on that attack and then clear the Letter of Marque condition after the attack resolves.",
+    "license_id": ""
   },
   {
     "id": "krfwmw_boarding_cutlass",
@@ -443,7 +457,8 @@
     "license": "MARQUESS",
     "license_level": 1,
     "description": "A curved, metal blade, with a basket hilt and some procedurally generated filigree. This is not a miracle of engineering, technology, or science, it is simply an ancient, effective design.",
-    "on_hit": "Target must pass an Agility save or immediately break all grapples initiated by them."
+    "on_hit": "Target must pass an Agility save or immediately break all grapples initiated by them.",
+    "license_id": "krfwf_marquess"
   },
   {
     "id": "krfwmw_bodice_ripper",
@@ -466,7 +481,8 @@
     "license": "MARQUESS",
     "license_level": 2,
     "description": "Though named for a distinct artistic trend with romantic works, this weapon is a serrated dagger designed to penetrate hardened objects and arrest the descent of any holding on to it. Its hooked tip was added late in development, after it gained its name, as a concession to its inevitable legacy.",
-    "effect": "When you have this weapon equipped, you may choose to fall only 5 spaces at the end of your turn so long as you are adjacent to an object or terrain when you begin to fall. You take no falling damage if you slow your fall in this way."
+    "effect": "When you have this weapon equipped, you may choose to fall only 5 spaces at the end of your turn so long as you are adjacent to an object or terrain when you begin to fall. You take no falling damage if you slow your fall in this way.",
+    "license_id": "krfwf_marquess"
   },
   {
     "id": "krfwmw_magistrates_gavel",
@@ -497,7 +513,8 @@
     "license": "REEVE",
     "license_level": 2,
     "description": "This weapon has been precisely designed to optimize the power of its swings by ensuring the weapon is always swung in the exact same manner, every time. By controlling this variable, the weapon’s effectiveness is ultimately reliant on external variances instead, which are not sufficient cause to apply for any refunds.",
-    "on_attack": "All characters adjacent to the target must succeed on a Hull save or fall prone."
+    "on_attack": "All characters adjacent to the target must succeed on a Hull save or fall prone.",
+    "license_id": "krfwf_reeve"
   },
   {
     "id": "krfwmw_mk_17_sleeve_pistol",
@@ -529,7 +546,8 @@
     "license": "VASSAL",
     "license_level": 1,
     "description": "A smoothbore firearm, based on ancient Cradle weaponry, the Mk. 17 Sleeve Pistol is designed for concealment in loose fabric or specifically designed paneling on a frame, deployed by a tensioned mounting in an instant to fire a shot. The weapon’s accuracy is poor, but it can be fired using locally-sourced material in a pinch.",
-    "effect": "If this weapon has less than 2 charges at the start of a scene, it regains 2 charges (to a maximum of 2)."
+    "effect": "If this weapon has less than 2 charges at the start of a scene, it regains 2 charges (to a maximum of 2).",
+    "license_id": "krfwf_vassal"
   },
   {
     "id": "krfwmw_humbler_manipulator_cladding",
@@ -552,7 +570,8 @@
     "license": "VASSAL",
     "license_level": 2,
     "description": "Crafted from a proprietary blend of conductive and fibrous materials, the “Humbler” protects a mech’s manipulators from dangerous levels of electrical feedback, allowing it to reach through hazards that would damage other mechs. Many pilots tend to use this weave as an impromptu weapon, however, making use of its conductive properties to preemptively dissipate enemy defensive shielding.",
-    "on_hit": "Target loses all Overshield."
+    "on_hit": "Target loses all Overshield.",
+    "license_id": "krfwf_vassal"
   },
   {
     "id": "krfwmw_oakwood_target_pistol",
@@ -579,7 +598,8 @@
     "source": "KRFW",
     "license": "VIDAME",
     "license_level": 1,
-    "description": "The Oakwood Target Pistol is descended from competition airguns, scaled up for use by a mechanized chassis. The design has been altered significantly, however, enabling considerably more power behind its munitions, at the price of the weapon needing to be recharged after every shot."
+    "description": "The Oakwood Target Pistol is descended from competition airguns, scaled up for use by a mechanized chassis. The design has been altered significantly, however, enabling considerably more power behind its munitions, at the price of the weapon needing to be recharged after every shot.",
+    "license_id": "krfwf_vidame"
   },
   {
     "id": "krfwmw_broomstick_ridealong_rifle",
@@ -610,7 +630,8 @@
     "source": "KRFW",
     "license": "VIDAME",
     "license_level": 2,
-    "description": "The Broomstick is a single-shot, break-action rifle designed for sharpshooters and shipment guards, first and foremost. Though it does not have the inherent accuracy of many similar designs due to its swiveling breech, its intended munitions include a miniaturized smart explosive that ensures that even a worst case scenario will leave a mark."
+    "description": "The Broomstick is a single-shot, break-action rifle designed for sharpshooters and shipment guards, first and foremost. Though it does not have the inherent accuracy of many similar designs due to its swiveling breech, its intended munitions include a miniaturized smart explosive that ensures that even a worst case scenario will leave a mark.",
+    "license_id": "krfwf_vidame"
   },
   {
     "id": "krfwmw_heavy_pump_action_shotgun",
@@ -641,8 +662,9 @@
     "license": "VIDAME",
     "license_level": 3,
     "description": "A common problem with specialty munitions in firearms comes from an inherent aspect of the weapon’s operation; a certain amount of force tends to be necessary to ensure the weapon properly cycles the next round. Manual operation can bypass this limitation, however, allowing pilots to load anything they can fit in a cartridge and attempt to fire it. Damage from using bespoke, hand-loaded, or “DIY” munitions, however, is not covered in KRFW warranties.",
-    "effect": "Whenever you reload this weapon, select one of the following ammo types to load into it:<br>- Scattershot: The next attack made with this weapon is made in a Cone 5 with Threat 3.<br>- Slugs: The next attack made with this weapon deals 3d6 Kinetic, instead of 2d6.<br>- Ricochet Rounds: The next attack made with this weapon gains Arcing, Overkill, and Knockback 3.<br>- Breaching Rounds: The next attack made with this weapon gains Seeking and is made in a Line 10. Any objects in this Line take 20 AP Kinetic damage.",
-    "sp": 2
+    "effect": "Whenever you reload this weapon, select one of the following ammo types to load into it:<br>- <i>Scattershot</i>: The next attack made with this weapon is made in a Cone 5 with Threat 3.<br>- <i>Slugs</i>: The next attack made with this weapon deals 3d6 Kinetic, instead of 2d6.<br>- <i>Ricochet Rounds</i>: The next attack made with this weapon gains Arcing, Overkill, and Knockback 3.<br>- <i>Breaching Rounds</i>: The next attack made with this weapon gains Seeking and is made in a Line 10. Any objects in this Line take 20 AP Kinetic damage.",
+    "sp": 2,
+    "license_id": "krfwf_vidame"
   },
   {
     "id": "krfwmw_goatsucker",
@@ -674,6 +696,101 @@
     "license_level": 3,
     "description": "“Miss Karimi is not accepting visitors, nor is she granting interviews at this time. In addition, Karimi, Roux, & Fabjani categorically denies any knowledge of any ‘entities’ she may have referenced in previously held interviews over the last ten months. Any further intimations that the company ‘knows something it is not telling us’ will be met with legal action.”<br>-Press relief from Cornielle de Roux, Founding Partner",
     "effect": "This weapon cannot be Thrown.",
-    "on_hit": "Gain 2 Overshield."
+    "on_hit": "Gain 2 Overshield.",
+    "license_id": "krfwf_vidame"
+  },
+  {
+    "id": "krfwmw_primor_integrated",
+    "name": "Hussar Drone Tubes",
+    "mount": "Superheavy",
+    "type": "Drone Catapult",
+    "skirmish": false,
+    "barrage": false,
+    "range": [
+      {
+        "override": true,
+        "type": "Range",
+        "val": "N/A"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_arcing"
+      }
+    ],
+    "effect": "This weapon does not make attacks. Instead, when firing this weapon, select a character or object within a range equal to five plus twice your Elevation, then deploy a Hussar Drone in an adjacent space to you, at your elevation.",
+    "deployables": [
+      {
+        "name": "Hussar Drone",
+        "type": "Drone",
+        "activation": "Free",
+        "size": 0.5,
+        "hp": 10,
+        "evasion": 10,
+        "edef": 10,
+        "detail": "The Hussar Drone flies 5 spaces directly towards the target at the start of each of their turns, falling two spaces as it does (though you may choose to have it fall up to five.) When the Hussar Drone collides with the target, an obstruction, or the ground, it explodes in a Burst 1. All characters in the area must pass a Hull save or take 3d6 Explosive damage and 1d6 Kinetic damage. A successful save halves the Explosive damage."
+      }
+    ],
+    "license_id": ""
+  },
+  {
+    "id": "krfwmw_pinball_atmospheric_ionizer",
+    "name": "\"Pinball\" Atmospheric Ionizer",
+    "mount": "Main",
+    "type": "Cannon",
+    "profiles": [
+      {
+        "name": "Primary",
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "1d6+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 8
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_smart"
+          },
+          {
+            "id": "tg_inaccurate"
+          }
+        ],
+        "on_hit": "If you hit a Drone, you may choose to deal half damage and make a secondary attack with this weapon using the Secondary profile, using the Drone's spaces as the origin of the attack. This is the only way to use the Secondary profile."
+      },
+      {
+        "name": "Secondary",
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "2d3+3"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 8
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_smart"
+          },
+          {
+            "id": "tg_accurate"
+          }
+        ]
+      }
+    ],
+    "source": "KRFW",
+    "license": "PRIMOR",
+    "license_level": 2,
+    "description": "Originally acquired from a lot of lost SSC technology in KRFW’s early days, the “Vajra” as it was known then languished in company storage for years for want of a buyer. Even when the company moved into manufacturing mechs, the Vajra was left on the shelf, not fitting with the design ethos of any of their frames. When the Primor was in early testing phases, however, an engineer found the weapon and installed it, finding it reacted shockingly well with the alloys used in KRFW drones. Retrofitted and rebranded as the “Pinball” Atmospheric Ionizer, it became one of the signature weapons of the floating fortress.",
+    "license_id": "krfwf_primor"
   }
 ]

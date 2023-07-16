@@ -3,7 +3,7 @@
     "id": "krfwf_armiger",
     "license_level": 2,
     "source": "KRFW",
-    "name": "ARMIGER",
+    "name": "Armiger",
     "mechtype": [
       "Artillery",
       "Support"
@@ -41,7 +41,7 @@
       },
       {
         "name": "Overloaded",
-        "description": "The Armiger takes 1 heat whenever it boosts. When printing or repairing, the Armiger is always the last mech completed."
+        "description": "The Armiger counts as Size 3 for all matters pertaining to weight, mass, capacity, or thrust. When printing or repairing, the Armiger is always the last mech completed."
       }
     ],
     "core_system": {
@@ -58,7 +58,7 @@
     "id": "krfwf_burgess",
     "license_level": 2,
     "source": "KRFW",
-    "name": "BURGESS",
+    "name": "Burgess",
     "mechtype": [
       "Striker",
       "Controller"
@@ -106,7 +106,7 @@
       "active_effect": "The Burgess does not take a turn next round. At the end of each ally’s turn, the Burgess may make one Quick Action. At the end of each hostile character’s turn, the Burgess may Overcharge, gaining heat and increasing the Overcharge die as normal. If the Burgess has less than three allies, it may ignore Overcharge costs until it has taken three Quick Actions.",
       "activation": "Full",
       "passive_name": "A System of Cells, Interlinked",
-      "passive_effect": "The Burgess enters the battlefield in a Stance of its choice. Using a Stance’s benefit immediately cycles the Burgess to the next Stance in order. The Burgess may not use more than one Stance’s benefit in a round.<br>-<i>Rising Sun Stance:</i> The Burgess deals +1d6 Bonus Damage on a Ranged attack.<br>-<i>Clear Sky Stance:</i> The Burgess deals +1d6 Bonus Damage on a Melee attack.<br>-<i>Falling Twilight Stance:</i> The Burgess deals +2 Heat on a Tech attack."
+      "passive_effect": "The Burgess enters the battlefield in a Stance of its choice. Using a Stance’s benefit immediately cycles the Burgess to the next Stance in order. The Burgess may not use more than one Stance’s benefit in a round.<br>-<i>Rising Sun Stance:</i> The Burgess deals +1d6 Bonus Damage on a Ranged attack.<br>-<i>Clear Sky Stance:</i> The Burgess deals +1d6 Bonus Damage on a Melee attack.<br>-<i>Falling Twilight Stance:</i> The Burgess deals +2 Heat on a Tech attack.<br>1/turn, the Burgess may choose to cycle to the next Stance as a Quick Action. It may not benefit from its new Stance this round."
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
     "y_pos": 0
@@ -115,7 +115,7 @@
     "id": "krfwf_castellan",
     "license_level": 2,
     "source": "KRFW",
-    "name": "CASTELLAN",
+    "name": "Castellan",
     "mechtype": [
       "Defender"
     ],
@@ -170,11 +170,11 @@
     "id": "krfwf_claviger",
     "license_level": 2,
     "source": "KRFW",
-    "name": "CLAVIGER",
+    "name": "Claviger",
     "mechtype": [
       "Controller"
     ],
-    "description": "Intended as an expeditionary machine first, the Claviger is a vanguard frame from Karimi, Roux, & Fabjani that specializes in safeguarding its allies from threats without violent solutions. Chrono-ontological engines mounted to the machine allow it to keep a nearby “bubble” of spacetime selectively frozen, preventing allies from setting off hostile munitions, suffering the effects of weathering, or even briefly reverting terrain to a more passable state.<br><br>Claviger pilots require regular evaluations, and demonstrate an increased burnout rate in comparison to their fellows in other KRFW frames. Despite prevalent jokes in militia forces making use of Clavigers, pilots are not affected by the Chrono-ontological effects of their machine. Burnout is instead attributed to a statistically significant in nightmares, hallucinations, or other spectral visions of a shape described only as a “chitinous, leaping void.”<br><br>New Keyword:<br><b>Zone:</b> A Zone is an area with persistent effects, not attached to a character. Zones can be objectives, Terrain, Soft Cover, or placed by systems or environmental effects.",
+    "description": "Intended as an expeditionary machine first, the Claviger is a vanguard frame from Karimi, Roux, & Fabjani that specializes in safeguarding its allies from threats without violent solutions. Chrono-ontological engines mounted to the machine allow it to keep a nearby “bubble” of spacetime selectively frozen, preventing allies from setting off hostile munitions, suffering the effects of weathering, or even briefly reverting terrain to a more passable state.<br><br>Claviger pilots require regular evaluations, and demonstrate an increased burnout rate in comparison to their fellows in other KRFW frames. Despite prevalent jokes in militia forces making use of Clavigers, pilots are not affected by the Chrono-ontological effects of their machine. Burnout is instead attributed to a statistically significant increase in nightmares, hallucinations, or other spectral visions of a shape described only as a “chitinous, leaping void.”<br><br>New Keyword:<br><b>Zone:</b> A Zone is an area with persistent effects, not attached to a character. Zones can be objectives, Terrain, Soft Cover, or placed by systems or environmental effects.",
     "mounts": [
       "Main",
       "Heavy"
@@ -219,7 +219,7 @@
     "id": "krfwf_despot",
     "license_level": 2,
     "source": "KRFW",
-    "name": "DESPOT",
+    "name": "Despot",
     "mechtype": [
       "Striker",
       "Controller"
@@ -252,7 +252,7 @@
       },
       {
         "name": "Course Correction",
-        "description": "When the Despot flies or is subjected to forced movement, it may move one space in a direction of its choice at any point during the movement."
+        "description": "When the Despot is subjected to forced movement, it may move one space in a direction of its choice at any point during the movement."
       },
       {
         "name": "Grandeur",
@@ -275,7 +275,7 @@
     "id": "krfwf_marquess",
     "license_level": 2,
     "source": "KRFW",
-    "name": "MARQUESS",
+    "name": "Marquess",
     "mechtype": [
       "Support"
     ],
@@ -327,10 +327,67 @@
     "y_pos": 0
   },
   {
+    "id": "krfwf_primor",
+    "license_level": 2,
+    "source": "KRFW",
+    "name": "Primor",
+    "mechtype": [
+      "Artillery",
+      "Controller"
+    ],
+    "description": "There are times when a militia is not enough to defend a settlement, no matter how well equipped. In such situations, it becomes necessary for the settlement to defend itself. Enter the KRFW Primor, a behemoth of a frame that serves double duty as drone command and defensive emplacement. Primors can be purchased in bulk to control frontier drone networks, making use of their extensive internal supplies to keep the workforce at full capacity as they tend to fields and security alike. When the settlement comes under attack, however, the mechs take to the skies to rain Hell down on those who threaten their homes.<br><br>Though Primors are sold in bulk like many other KRFW frames, the company maintains a contract for their sale with terms so restrictive and ironclad they are often only reserved for their one-off frames, such as the Vidame or the Reeve. Their terms are simple: the Primor is yours to do as you see fit, but do none of the following, or KRFW will not be able to assist you.<br><br>Do not allow the Primor to see combat more than twelve times.<br><br>Do not open the Reactor cladding.<br><br>Do not answer the knock at the door.",
+    "mounts": [
+      "Main",
+      "Flex"
+    ],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 6,
+      "sensor_range": 12,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 2,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Pillar of Flame",
+        "description": "As its Standard Move, the Primor may choose to fly up to four spaces vertically, and up to one space horizontally. This is the only way the Primor may fly. When the Primor falls, it may move up to one space horizontally for every three spaces it falls. The Primor is Immune to Fall Damage."
+      },
+      {
+        "name": "Ballistic Analysis",
+        "description": "The Primor increaes the Range of all equipped and integrated weapons by its elevation."
+      },
+      {
+        "name": "Precisely Balanced",
+        "description": "The Primor may not equip Superheavy weapons, initiate Grapples, or pick up or drag objects."
+      }
+    ],
+    "core_system": {
+      "name": "Leeds' Black Army",
+      "description": "The primary selling point of the Primor is its advanced drone mesh network, enabling it to control many drones at once from a fairly stationary position. These drones are easily converted to offensive duties in the field, though, traditionally painted a solid black when drafted into service. These “Black Armies” are based on a design from an early test pilot who came under fire during a dry run of a prototype Primor. With no ammunition loaded, one Dabenielle Leeds rerouted the systems of her Primor by hand to transform the drone deployers from a tool of efficient production to high-velocity launch tubes, to devastating effect.",
+      "active_name": "Throw Wide the Gates",
+      "active_effect": "The Hussar Drone Tubes may fire on up to two targets within Range 50 when fired. While this core is active, you may choose to have a Hussar Drone fall between 1 and 10 spaces instead of between 2 and 5.",
+      "activation": "Protocol",
+      "integrated": [
+        "krfwmw_primor_integrated"
+      ]
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "y_pos": 0
+  },
+  {
     "id": "krfwf_reeve",
     "license_level": 2,
     "source": "KRFW",
-    "name": "REEVE",
+    "name": "Reeve",
     "mechtype": [
       "Controller"
     ],
@@ -390,7 +447,7 @@
     "id": "krfwf_vassal",
     "license_level": 2,
     "source": "KRFW",
-    "name": "VASSAL",
+    "name": "Vassal",
     "mechtype": [
       "Defender",
       "Support"
@@ -445,7 +502,7 @@
     "id": "krfwf_vidame",
     "license_level": 2,
     "source": "KRFW",
-    "name": "VIDAME",
+    "name": "Vidame",
     "mechtype": [
       "Striker"
     ],
@@ -489,7 +546,7 @@
       "name": "Járnglófar Compensator Gauntlets",
       "description": "Even the steadiest of hands can prove themselves fallible in the moment. For frames that specialize in weapons requiring frequent reloading, however, the risks of missing thanks to an errant twitch can prove excessive; the Vidame is no exception to this. In order to maintain the frame’s reaction speeds, however, Karimi required an alternative solution to stabilized, delayed inputs. Enter the Járnglófar Compensator Gauntlets, specialized targeting systems that can keep an errant shot on track and, in a pinch, turn a successful hit into a ricocheting blow worthy of legend.",
       "active_name": "Showdown",
-      "active_effect": "Trickshot deals full damage for this turn, and may be used on every hit with a Loading weapon. This core power is Efficient, and refunds 1 Core Power at the end of any scene in which it’s used.",
+      "active_effect": "Trickshot deals full damage for this turn, and may be used on every hit with a Loading weapon. This core power is <b>Efficient</b>, and refunds 1 Core Power at the end of any scene in which it’s used.",
       "activation": "Protocol",
       "passive_name": "Trickshot",
       "passive_effect": "1/round, when you hit with an attack using a Loading weapon, before rolling damage, you may declare that attack a Trickshot. Make a second attack against another target with the same weapon, drawing Range and line of sight from the original target. Both targets take half damage from the attack."
