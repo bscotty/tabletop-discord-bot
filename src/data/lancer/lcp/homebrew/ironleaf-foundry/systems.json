@@ -131,7 +131,7 @@
     "source": "IF",
     "license": "ROSE",
     "license_level": 2,
-    "effect": "You can fly when you move or boost; however, you must end the turn on the ground or another solid surface, or else immediately begin falling and you take Size+1 heat at the end of any of your turns in which you flew this way.In addition, when you Brace, you can attempt a final dodge. If you do, roll 1d6. On a 4+, the triggering attack automatically misses. Otherwise, you are hit as normal and do not gain Resistance from the Brace.",
+    "effect": "You can fly when you move or boost; however, you must end the turn on the ground or another solid surface, or else immediately begin falling and you take Size+1 heat at the end of any of your turns in which you flew this way.<br><br>In addition, when you Brace, you can attempt a final dodge. If you do, roll 1d6. On a 4+, the triggering attack automatically misses. Otherwise you are hit as normal, expending the Brace but gaining no effects of it, positive or negative.",
     "type": "System",
     "sp": 2,
     "description": "Despite suspicions that the basis behind the programmed reflexes of this system being adapted from ninjutsu, jäger kunst or a host of other martial arts, the truth is honestly much simpler and accurate to its name. Dancing shadow uses an amalgam of dozens of different dance styles from the conventional to the fantastical to allow the mech to move with grace that few could hope to match, making soaring leaps or spinning around an opponent like it is performing upon a stage.",
@@ -539,14 +539,18 @@
     "source": "IF",
     "license": "ROWAN",
     "license_level": 3,
-    "effect": "A hostile character in range 5 and line of sight must pass an agility save or be Humiliated. While humiliated, whenever they make a check or save if the target fails to match or beat your save target in addition to the original target they fail, even on opposed checks. They can end this effect by passing an agility save as a quick action.Whenever a character Humiliated by you in Line of Sight fails an attack, check or save, you gain 2 Overshield.",
+    "effect": "Whenever a character Humiliated by you in Line of Sight fails an attack, check or save, you gain 2 Overshield.",
+    "actions": [
+      {
+        "name": "Humiliate",
+        "activation": "Quick",
+        "detail": "A hostile character in range 5 and line of sight must pass an agility save or be Humiliated. While humiliated, whenever they make a check or save if the target fails to match or beat your save target in addition to the original target they fail, even on opposed checks. They can end this effect by passing an agility save as a quick action."
+      }
+    ],
     "type": "System",
     "sp": 3,
     "description": "\"Every battle is won and lost in the mind before a single shot is fired. That's why I like to crush it first. It's much more effective to take down a foe who's foaming at the mouth in rage or paralyzed with shame than one making logical, careful decisions.\" -Aphrodite Alpha",
     "tags": [
-      {
-        "id": "tg_quick_action"
-      },
       {
         "id": "tg_unique"
       }

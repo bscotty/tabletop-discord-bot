@@ -87,7 +87,7 @@
     "traits": [
       {
         "name": "Immortal Skill",
-        "description": "The Rose is treated as size 1 for the purpose of Ram and Grapple and ignores engagement by characters larger than itself.",
+        "description": "The Rose is treated as size 2 for the purpose of Ram and Grapple and ignores engagement by characters larger than itself.",
         "synergies": [
           {
             "locations": [
@@ -402,8 +402,8 @@
         "mw_disposable_gyrostorm_pods"
       ]
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
-    "y_pos": "25"
+    "image_url": "https://cdn.discordapp.com/attachments/767728158610161705/1120152153407897720/ikiryo_ironleaf_comm.jpg",
+    "y_pos": "27"
   },
   {
     "id": "mf_rowan",
@@ -576,5 +576,60 @@
     },
     "image_url": "https://cdn.discordapp.com/attachments/729896234877452371/1064998225553129502/ikiryo_saucer_comm.png",
     "y_pos": "30"
+  },
+  {
+    "id": "mf_scilla_alt_laurel",
+    "source": "IF",
+    "name": "LAUREL",
+    "variant": "SCILLA",
+    "license_id": "mf_scilla",
+    "license_level": 2,
+    "mechtype": [
+      "Striker",
+      "Artillery"
+    ],
+    "description": "The first Laurel was made centuries before the first modern mech took a single step. Commander mac Nessa had the first Laurel made for his personal use, a new armored vehicle for a new world to act as the invincible backbone of his forces. Built from salvaged parts from the finest machines of the Union Space Program, it was an undeniable threat, a machine so armoured, armed and foreboding as to drive off anyone attempting to assault their new settlement of Conchobar.<br>Conchobar has made sure that in every generation of armored vehicles, there is a Laurel design among their numbers. Where the first generations were superheavy tanks, iterations after meeting Thirdcomm have drawn more and more from the lessons from mechanized chassis design. The newest Laurel has only just been unveiled, ready to break metal and morale alike.",
+    "mounts": [
+      "Main",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 3,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 6,
+      "heatcap": 7,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 3,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Earthbreaker",
+        "description": "The Laurel can share a space with characters the same size or smaller. The Laurel's attacks against a character within a Devastation or adjacent to it gain Knockback 3. Each character can only be moved this way once per turn."
+      },
+      {
+        "name": "Conqueror",
+        "description": "When the Laurel starts a standard move or boost during the first Round or within a Devastation, it can move up to +2 spaces."
+      }
+    ],
+    "core_system": {
+      "name": "“Tathlum” Solid-State Battle Computer",
+      "active_name": "Fighting Machine",
+      "active_effect": "For the rest of the scene, Laurel raises shields that make it immune to damage. These shields are lowered after the Laurel is hit by an attack that would deal any amount of damage (Even damage the Laurel is immune to).<br>At the start of each of its turns, the Laurel creates a Devastation area in Sensors and the shields are raised.",
+      "activation": "Protocol",
+      "passive_name": "The Blade Itself",
+      "passive_effect": "Before the first round of any combat and before any deployment takes place, create two size 2 Devastation areas in Range 50, dealing 30 AP energy damage to all objects within the Devastation. Hostile characters within a Devastation cannot benefit from Resistance. When the Laurel Stabilizes, it can create a new Devastation in Sensors.",
+      "description": "Replacing full crews of expert pilots in previous Laurels, the Tahlum is a joint project between Conchobar’s finest Comp/Con engineers and the Janus Combine, helping the Laurel direct fire as easily as the pilot’s body."
+    },
+    "image_url": "https://cdn.discordapp.com/attachments/1057060831940059226/1120159408878538772/laureltransparent.png",
+    "y_pos": "25"
   }
 ]
