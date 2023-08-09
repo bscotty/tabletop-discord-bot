@@ -10,5 +10,11 @@
     "name": "SPOOL {VAL}",
     "description": "<div><em>This weapon, grenade, or mine is equipped to fire at enhanced outputs via charging its capacitors or winding its motors. You may choose to </em><strong><em>Spool</em></strong><em> this gear as a quick action, or a full action if it is a superheavy weapon. While </em><strong><em>Spooled</em></strong><em>, you cannot use it until the start of your next turn, whereupon you immediately activate it as a protocol, dealing +{VAL} bonus damage on hit if it is a weapon, or adding {VAL} damage to the effect if it is a grenade or mine. This gear must be reloaded before you can use it again.</em></div>",
     "val": 0
+  },
+  {
+    "id": "tg_vehicle",
+    "name": "VEHICLE",
+    "description": "<div><em>This piece of gear is a vehicle of some kind, capable of transporting at least 1 human-sized rider. Unless otherwise specified, Vehicles are Size 1/2 and have 5 HP, 10 Evasion, 8 E-defense, and 6 Speed. While unmounted, vehicles count as objects and cannot take actions of any kind. A Pilot can mount or dismount a vehicle as a quick action as long as they are not stunned or immobilized, gaining the Vehicle's Evasion, E-Defense and Speed while riding. In addition to their standard move, the only actions a pilot can take while riding, is to boost, or dismount, and a pilot or passenger can still be targeted while riding. Vehicles cannot jump unless specified otherwise, and can only move in straight lines, although they can move and Boost in separate directions.<br><br>If a vehicle is destroyed or knocked Prone while riding, the pilot and all passengers immediately fall off and fall Prone. A vehicle clears prone automatically whenever the pilot mounts the vehicle. A pilot can only ever have 1 equipment with the Vehicle Tag on their person.</em></div>",
+    "val": 0
   }
 ]

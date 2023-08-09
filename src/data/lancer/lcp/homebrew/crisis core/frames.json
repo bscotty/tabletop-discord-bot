@@ -48,8 +48,8 @@
     "core_system": {
       "name": "AUTO-LOGISTIC COMP/CON",
       "active_name": "Optimizer",
-      "active_effect": "<p>For the rest of the scene, you may stabilize as a quick action. Additionally, <strong>1/round</strong>, when you stabilize, you may choose all options at once. Adjacent allied characters clear all heat and exposed and reload all weapons whenever you or they stabilize.</p>",
-      "activation": "Protocol",
+      "active_effect": "<p>You and all allied mech characters in <strong>Sensors</strong> and line of sight immediately clear all Heat and <strong>Stabilize</strong>. Allied characters affected by this action gain <strong>Immunity</strong> to all conditions from outside sources until the end of their next turn. You may then use <strong>Force Multiplier</strong> on one allied character in line of sight and <strong>Sensors</strong> or end all ongoing hostile effects on that character.</p>",
+      "activation": "Full Tech",
       "description": "",
       "deactivation": "",
       "use": "Mission",
@@ -82,7 +82,7 @@
       "special_equipment": [],
       "tags": []
     },
-    "image_url": "",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_standard_pattern_i_everest.png",
     "y_pos": 0
   }
 ]

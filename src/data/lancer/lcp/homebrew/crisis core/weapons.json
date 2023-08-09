@@ -108,7 +108,7 @@
     "source": "GMS",
     "license": "",
     "license_level": 0,
-    "description": "<div>GMS maintains a full catalogue of weaponry intended for use in both irregular and regular warfare, and in the event of emergency defense or wide-spread planetary or local system conflict, ranking Union Naval and Administrative personnel are authorized to grant all able-bodied combatants and partisans  access to the full suite of GMS weapons for the duration of the crisis.<br>The Type-III (T-3) line is made up of heavy weapons, ordnance, and other exotic, specialized, or massive weapons. A broad classification, the T-3 range includes conventional-kinetic anti-materiel rifles, super-rapid cycling pulse rifles, missile racks, cannons, and drone nexuses – “hive”-style launchers that serve as miniature factory, hangar, and deployment systems for portable drones. The classification also includes the fearsome “segment knife”, a system that uses flash-printing to produce disposable edged weapons in a vicinity around the user.</div>",
+    "description": "<div>GMS maintains a full catalogue of weaponry intended for use in both irregular and regular warfare, and in the event of emergency defense or wide-spread planetary or local system conflict, ranking Union Naval and Administrative personnel are authorized to grant all able-bodied combatants and partisans access to the full suite of GMS weapons for the duration of the crisis.<br>The Type-III (T-3) line is made up of heavy weapons, ordnance, and other exotic, specialized, or massive weapons. A broad classification, the T-3 range includes conventional-kinetic anti-materiel rifles, super-rapid cycling pulse rifles, missile racks, cannons, and drone nexuses – “hive”-style launchers that serve as miniature factory, hangar, and deployment systems for portable drones. The classification also includes the fearsome “segment knife”, a system that uses flash-printing to produce disposable edged weapons in a vicinity around the user.</div>",
     "mount": "Main",
     "type": "Cannon",
     "cost": 1,
@@ -117,7 +117,7 @@
     "damage": [
       {
         "type": "Kinetic",
-        "val": "1D6"
+        "val": "1D6+2"
       }
     ],
     "range": [
@@ -129,6 +129,9 @@
     "tags": [
       {
         "id": "tg_ap"
+      },
+      {
+        "id": "tg_loading"
       },
       {
         "id": "tg_heat_self",
@@ -302,6 +305,82 @@
     "tags": [
       {
         "id": "tg_inaccurate"
+      }
+    ],
+    "profiles": []
+  },
+  {
+    "id": "GMSC_weapons_ultraheavy_combat_maul",
+    "name": "Ultraheavy Combat Maul",
+    "source": "GMS",
+    "license": "",
+    "license_level": 0,
+    "description": "<div>GMS maintains a full catalogue of weaponry intended for use in both irregular and regular warfare, and in the event of emergency defense or wide-spread planetary or local system conflict, ranking Union Naval and Administrative personnel are authorized to grant all able-bodied combatants and partisans  access to the full suite of GMS weapons for the duration of the crisis.<br>The Type-I (T-1) line is defined by powerful, reliable, and conventional-kinetic ranged and melee weapons, including the GMS assault rifle, heavy machine gun, shotgun, pistol, and various light and heavy blades. Reliable galactic standards, the GMS T-1 line is the most widely used mech-scale line of weaponry across the galaxy. Echoing the Everest’s design notes, T-1 weapons are simply designed, with few (if any) moving parts, intended to be used in or adaptable to any environment.</div>",
+    "mount": "Superheavy",
+    "type": "Melee",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": false,
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "2d6+5"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "val": 4
+      },
+      {
+        "id": "tg_reliable",
+        "val": 6
+      }
+    ],
+    "profiles": []
+  },
+  {
+    "id": "GMSC_weapons_deluge_missiles",
+    "name": "Deluge Missiles",
+    "source": "GMS",
+    "license": "",
+    "license_level": 0,
+    "description": "<div>GMS maintains a full catalogue of weaponry intended for use in both irregular and regular warfare, and in the event of emergency defense or wide-spread planetary or local system conflict, ranking Union Naval and Administrative personnel are authorized to grant all able-bodied combatants and partisans  access to the full suite of GMS weapons for the duration of the crisis.<br>The Type-III (T-3) line is made up of heavy weapons, ordnance, and other exotic, specialized, or massive weapons. A broad classification, the T-3 range includes conventional-kinetic anti-materiel rifles, super-rapid cycling pulse rifles, missile racks, cannons, and drone nexuses – “hive”-style launchers that serve as miniature factory, hangar, and deployment systems for portable drones. The classification also includes the fearsome “segment knife”, a system that uses flash-printing to produce disposable edged weapons in a vicinity around the user.</div>",
+    "mount": "Superheavy",
+    "type": "Launcher",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": false,
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "2d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Cone",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "val": 3
+      },
+      {
+        "id": "tg_reliable",
+        "val": 4
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
       }
     ],
     "profiles": []
