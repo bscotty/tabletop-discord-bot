@@ -3,7 +3,7 @@
     "id": "mw_cratermaker",
     "name": "Cratermaker",
     "source": "IF",
-    "license": "LILY",
+    "license": "Lily",
     "license_level": 2,
     "description": "“Oh, you flyboys think you’re too good to get down in the mud with the rest of us? Well, I’ve got a surprise for you!” -Aoife, IF Test Pilot",
     "effect": "If you are flying and have moved at least 3 spaces this turn, attacks with this weapon do not provoke reactions.",
@@ -36,7 +36,7 @@
     "id": "mw_gloriosa_scattergun",
     "name": "\"Gloriosa\" Scattergun",
     "source": "IF",
-    "license": "LILY",
+    "license": "Lily",
     "license_level": 3,
     "description": "“If Aun had wanted you to live, he would not have created me!” -Ceridwen, IF Test Pilot",
     "effect": "This weapon can Overwatch characters teleporting or involuntarily moving, even though that would not normally provoke reactions, as long as the source of the movement is the target or a character allied to it.",
@@ -70,7 +70,7 @@
     "id": "mw_swordbreaker",
     "name": "Swordbreaker",
     "source": "IF",
-    "license": "ROSE",
+    "license": "Rose",
     "license_level": 1,
     "description": "A modern take on an ageless design, Ironleaf Foundry’s swordbreakers are thick and strong blades with ridges designed to easily catch the weapon or limb of an opponent, twisting it out of position and interfering with the most carefully thought out plans.",
     "on_hit": "The target is Slowed and Impaired until the end of their next turn.",
@@ -95,7 +95,7 @@
     "id": "mw_cwn_annwn",
     "name": "Cŵn Annwn",
     "source": "IF",
-    "license": "ROSE",
+    "license": "Rose",
     "license_level": 2,
     "description": "Semi-Sapient Attack Weapons are nothing new on the battlefield but few can match up to the sheer precision of the Cŵn Annwn. More than a few spec ops groups have rapidly discovered they are capable of chasing down even the most well hidden foes like bloodhounds on a trail.",
     "on_hit": "The target is hunted until the end of their next turn. During this time, if they become hidden or make any voluntary movements that move them away from you, they suffer 4 energy damage and the hunt ends.",
@@ -128,7 +128,7 @@
     "id": "mw_polyfilament_kusarigama",
     "name": "Polyfilament Kusarigama",
     "source": "IF",
-    "license": "ROSE",
+    "license": "Rose",
     "license_level": 1,
     "description": "While very deadly, Kusarigama are a very specialized weapon that require extensive training to be used effectively. The long chain can allow it to lash out at ranges beyond most other melee weapons and the razor sharp edge can cut through plating with even minimal force. Ironleaf Foundry takes no responsibility for untrained warriors inflicting harm or embarrassment on themselves with such a weapon and highly recommends their extensive martial arts training programs.",
     "effect": "During your turn, this weapon gains +4 Threat.",
@@ -159,7 +159,7 @@
     "id": "mw_gyrojet_pistol",
     "name": "Gyrojet Pistol",
     "source": "IF",
-    "license": "MISTLETOE",
+    "license": "Mistletoe",
     "license_level": 1,
     "description": "Precision-tooled weapons, Gyrojet Pistols have a reach that few other pistols can manage meshed with the kick of a much larger weapon.",
     "mount": "Auxiliary",
@@ -192,7 +192,7 @@
     "id": "mw_helstorm_assault_pistol",
     "name": "\"Helstorm\" Assault Pistol",
     "source": "IF",
-    "license": "MISTLETOE",
+    "license": "Mistletoe",
     "license_level": 2,
     "description": "Machine pistols with an incredible rate of fire, the only thing faster than how quickly they can bring down targets is how rapidly the pistols can expend an entire high capacity magazine.",
     "effect": "This weapon can make two attacks when fired, against the same target or against different targets. The second attack does not benefit from bonus damage.",
@@ -225,7 +225,7 @@
     "id": "mw_dueliing_pistol",
     "name": "Dueling Pistol",
     "source": "IF",
-    "license": "MISTLETOE",
+    "license": "Mistletoe",
     "license_level": 3,
     "description": "When dealing with foes the size of buildings, only a certain level of precision is required. Most pilots aim for center mass to increase the chance of hits and to minimize the effects of any inaccuracy. The Ironleaf Foundry Dueling Pistol is an exception to this rule, designed to allow for millimeter precision even at maximum range. A skilled shot from a dueling pistol can pass right through the lens of a mech’s cameras or bounce inside an air intake without much issue.",
     "effect": "All successful attacks with this weapon become Critical Hits.",
@@ -257,7 +257,7 @@
     "id": "mw_silver_hand",
     "name": "Silver Hand",
     "source": "IF",
-    "license": "CLOVER",
+    "license": "Clover",
     "license_level": 1,
     "description": "The fundamentals each boxer learns; The Jab and the Cross are two of the most eternally useful tools in any combatants repertoire. A fighter might know a million tricks but sheer practiced technique can’t be matched with cheap tricks, only with equal skill.",
     "mount": "Auxiliary",
@@ -289,7 +289,7 @@
     "id": "mw_kinetic_driver",
     "name": "Kinetic Driver",
     "source": "IF",
-    "license": "CLOVER",
+    "license": "Clover",
     "license_level": 2,
     "description": "“It’s not about who strikes first, it’s about who strikes last. You can’t win anything, anywhere in life without some risk. So take my advice: Clench your fucking teeth and get ready to make him regret swinging.” -Tia Maddalen, DOJ/HR Field Advocate.",
     "effect": "When you Brace, if the Kinetic Driver is loaded, you can attack with it as part of the Brace.",
@@ -325,22 +325,42 @@
     "id": "mw_denting_iron",
     "name": "Denting Iron",
     "source": "IF",
-    "license": "CLOVER",
+    "license": "Clover",
     "license_level": 3,
     "description": "Nothing can take abuse forever. The most advanced living metals, the hardest alloys and the most well trained muscles; each has a limit. If you push them far enough, they'll snap and never be quite as strong again. Some articulation enhancements are designed to do exactly that, to lay precision blow after precision blow into systems pushed to the breaking point.",
-    "on_hit": "If this target was hit with Denting Iron in the previous round it deals maximum damage, though bonus damage is still rolled as normal.",
     "mount": "Main",
     "type": "Melee",
-    "damage": [
+    "profiles": [
       {
-        "type": "Kinetic",
-        "val": "1d6+2"
-      }
-    ],
-    "range": [
+        "name": "Default",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "on_hit": "This weapon gains the Hammer Weakness profile against that character only until you attack a new character with this weapon."
+      },
       {
-        "type": "Threat",
-        "val": 1
+        "name": "Hammer Weakness",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": 8
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ]
       }
     ],
     "sp": 1,
@@ -450,7 +470,7 @@
     "id": "mw_zhuge_needlerifle",
     "name": "Zhuge 𝜈-Model Needlerifle",
     "source": "IF",
-    "license": "POPPY",
+    "license": "Poppy",
     "license_level": 1,
     "description": "Firing high velocity needles with secondary charges to allow on-the fly targeting, Zhuge 𝜈-Model Needlerifles give a pilot much of the precision of a hunter-killer drone meshed with a staggering rate of fire.",
     "mount": "Main",
@@ -478,7 +498,7 @@
     "id": "mw_rook_medium_machine_gun",
     "name": "\"Rook\" Medium Machine Gun",
     "source": "IF",
-    "license": "POPPY",
+    "license": "Poppy",
     "license_level": 2,
     "description": "Designed to act as a frontline unit support weapon, Rooks are just as comfortable propped up on an emplacement as they are advancing at full fire. More advanced than the gun itself is the gyrostabilization mountings it uses to achieve unmatched field of fire and consistency of results.",
     "effect": "This weapon can attack two targets at a time. If it does so, it deals 4 Kinetic Damage with Reliable 2.",
@@ -508,7 +528,7 @@
     "id": "mw_goalkeeper_vulcan",
     "name": "Goalkeeper Vulcan",
     "source": "IF",
-    "license": "POPPY",
+    "license": "Poppy",
     "license_level": 3,
     "description": "“The history of defense starts with passive defense, armour and plating, but rapidly moves into active defense. Mostly because if my choices are ‘get shot’ or ‘be so shooty that even other bullets are afraid of getting merc’d’, I know which side is a lot more interesting.” -Tia Maddalen, DOJ/HR Field Advocate.",
     "effect": "You gain the Brrrt reaction, usable once per round.",
@@ -559,7 +579,7 @@
     "id": "mw_pulse_spear",
     "name": "Pulse Spear",
     "source": "IF",
-    "license": "SILVERSWORD",
+    "license": "Silversword",
     "license_level": 1,
     "description": "Popular among security crews, Pulse Spears provide an excellent mix of flexibility and power to defenders allowing teams using them to dominate narrow chokepoints without being so unwieldy as to be difficult to use when the press of melee begins.",
     "mount": "Main",
@@ -592,7 +612,7 @@
     "id": "mw_luin_celtchair",
     "name": "Lúin Celtchair",
     "source": "IF",
-    "license": "SILVERSWORD",
+    "license": "Silversword",
     "license_level": 3,
     "description": "A unique weapon even among Ironleaf Foundry's endless variety of artisanal weapons, each single-shot capacitor for this anti-tank energy lance is hand-crafted by the elite of the company's gunsmiths. This gives them unprecedented versatility, from scorching an entire area around the firer to ash or pushing the weapon to its limit to annihilate even the most armoured of targets. Unwilling to sell such prized creations for mere money, each holder has a unique contract drawn up for these powerful weapons. The one common point in every one of these contracts: The purchaser must publicly say, if asked, that Ironleaf Foundry makes better weapons than the Terrashima Enclaves.",
     "effect": "As a protocol, you can change to one of the following Modes. The Mode continues until you change to a new Mode with this weapon. You start any given fight with one of the following Modes of your choice.",
@@ -701,7 +721,7 @@
     "id": "mw_transaxle_butterfly",
     "name": "Transaxle Butterfly",
     "source": "IF",
-    "license": "ROWAN",
+    "license": "Rowan",
     "license_level": 1,
     "description": "Rapidly bouncing between foes and shattering concentration, transaxle butterflies made waves in their initial release, the spinning energy discs carving through mockery to prove that Ironleaf Foundry’s designs are never to be underestimated.",
     "effect": "This weapon does not attack you or allied characters caught in the area.",
@@ -739,7 +759,7 @@
     "id": "mw_starburst_spinner",
     "name": "Starburst Spinner",
     "source": "IF",
-    "license": "ROWAN",
+    "license": "Rowan",
     "license_level": 2,
     "description": "The result of Ironleaf Foundry's work on exotic cultivated materials, the starburst spinner is a synthetic crystal with psychoresponsive properties easily directed to impact opponents at close range. With the aid of guiding wires to maintain connection, a starburst spinner can assault foes from many directions, driving them back with forceful impacts and crackling energy left in its wake.",
     "on_attack": "The nexus attacks a single target in the area and leaves a Starburst in any space in the area. While you have any Starbursts on the battlefield, you gain the Starburst Bind Quick Action.",
@@ -779,7 +799,7 @@
     "id": "mw_sauterelle",
     "name": "Sauterelle",
     "source": "IF",
-    "license": "KUDZU",
+    "license": "Kudzu",
     "license_level": 1,
     "description": "Loaded with tandem charge fuel-air/kinetic pulse grenades, Sauterelles are capable of concussing foes caught in their blast, setting equipment ablaze even as defenders struggle to regain their bearings.",
     "mount": "Main",
@@ -819,10 +839,10 @@
     "id": "mw_electrobaton",
     "name": "Electrobaton",
     "source": "IF",
-    "license": "KUDZU",
+    "license": "Kudzu",
     "license_level": 2,
     "description": "“The shock will continue to arc through them for quite some time, seizing servos, shorting out systems and generally leaving the pilot not sure what hit them.<br><br>I recommend using the chance to stomp their face into the dirt.” -Tia Maddalen, DOJ/HR Field Advocate.",
-    "on_hit": "The target must pass an engineering save or fall prone and be immobilized until the start of their next turn.",
+    "on_hit": "The target must pass an engineering save or fall prone and be immobilized and unable to take reactions until the start of their next turn.",
     "mount": "Main",
     "type": "Melee",
     "damage": [
@@ -957,7 +977,7 @@
     "damage": [
       {
         "type": "Kinetic",
-        "val": 3
+        "val": 4
       }
     ],
     "range": [
@@ -977,11 +997,12 @@
     "id": "mw_particle_shredder",
     "name": "Particle Shredder",
     "source": "IF",
-    "license": "SCILLA",
+    "license": "Scilla",
     "license_level": 1,
     "description": "A particle shredder flays layer after layer of plating off foes, each one evaporating in small-scale nuclear fission. The significant recharge time prevents repeated shots but each burst has enough time on target to engage a swath of foes before power is drained.",
-    "mount": "Main",
+    "mount": "Heavy",
     "type": "CQB",
+    "on_crit": "The target is Shredded until the end of their next turn.",
     "damage": [
       {
         "type": "Energy",
@@ -991,17 +1012,22 @@
     "range": [
       {
         "type": "Range",
-        "val": 5
+        "val": 8
       },
       {
         "type": "Line",
+        "val": 3
+      },
+      {
+        "type": "Threat",
         "val": 3
       }
     ],
     "sp": 0,
     "tags": [
       {
-        "id": "tg_loading"
+        "id": "tg_heat_self",
+        "val": 3
       },
       {
         "id": "tg_ap"
@@ -1012,7 +1038,7 @@
     "id": "mw_resonance_shockwave",
     "name": "Resonance Shockwave",
     "source": "IF",
-    "license": "SCILLA",
+    "license": "Scilla",
     "license_level": 2,
     "description": "“Many liberation squads have a story of a glorious hero. One who spat in the face of oppression, taking many times their number with them as they dove into the teeth of hell laughing. A lot less talk about the advocate who had to give their family platitudes about how important they were because they can't give them the person they loved back.” -Tia Maddalen, DOJ/HR Field Advocate.",
     "mount": "Main",
@@ -1048,7 +1074,7 @@
     "id": "mw_ground_zero",
     "name": "Ground Zero",
     "source": "IF",
-    "license": "SCILLA",
+    "license": "Scilla",
     "license_level": 3,
     "description": "A powerful molecular destabilizer, the Ground Zero is capable of causing nuclear fission to occur in any target provided to it. While engaging a full fission effect is slow and requires close-range targeting, the air around a target can be rapidly shredded by blossoming nuclear ribbons with great ease.",
     "mount": "Superheavy",
@@ -1104,6 +1130,110 @@
             "id": "tg_loading"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "mw_if_exotic_champions_blade",
+    "name": "Champion's Blade",
+    "source": "EXOTIC",
+    "mount": "Main",
+    "type": "Melee",
+    "description": "When the Airgead Barrow was first opened, within its halls a quartet of swords were found. These barrowblades at first seemed to be nothing but a hilt and would be too large for an unaugmented human to hope to wield comfortably even if otherwise. However, during the attack by a hunting megafauna, a young defender in an exoskeleton grasped the handle of one of the swords when her own rifle was knocked from her hand. In this moment of danger, a dancing blade of shimmering rainbow light was revealed as thin as the gap between life and death itself.<br><br>Attempts to store the swords for long have proven rarely successful, the weapons being found again and again when the desperate and the hopeful need something to turn the tide. The one exception to this is a single sword, locked behind powerful metastatic barriers and sealed with chains of hereticode in the vaults of Magnum Opus Interstellar, stolen during the creation of the Blink Gate near Milisea. Attempts to reclaim the weapon legally are stymied in Union courts by the Corpostate's lawyers but the people of Milisea believe that one day even that blade will once more be free to defend those in need.",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": 4
+      },
+      {
+        "type": "Burn",
+        "val": 1
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "if_tg_devoted"
+      },
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Heroes Grace",
+        "activation": "Full",
+        "detail": "You bring your blade down on a hostile character in Range 3, dealing 4 Kinetic Damage times your Devotion die and granting yourself or one allied character in line of sight Overshield equal to 3 times your Devotion die. The hostile character can pass a systems save to halve the damage. Then reset your Devotion die to 1."
+      }
+    ]
+  },
+  {
+    "id": "mw_if_exotic_spear_of_flame",
+    "name": "Spear of Flame",
+    "source": "EXOTIC",
+    "mount": "Heavy",
+    "type": "Melee",
+    "description": "When Commander mac Nessa left the fledgling colony, he spoke of the respect soldiers were due and how only they had the will to maintain the glory of the Union Space Program. To symbolize this oath that his new Tuatha of Conchobar swore, each officer among his unit was forged a mighty spear for their exoskeletons. Made from the metal of their Needleships and the blood of each officer spilled into the mould as it was crafted, these spears never truly cooled. They are believed to still hold the militaristic obsession of their first wielders, truly alive only in the chaos of war.<br><br>While many of these spears still adorn the landmarks of Conchobar, others have been lost in various mercenary parties or skirmishes over the centuries. The people of Conchobar hold them in awe, symbols of the righteousness of their purpose and the truth that all power flows from the point of a spear.",
+    "effect": "You may attack with this weapon without expending charges. You gain the Ender of Armies full action, which consumes a Limited charge on use.",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+3"
+      },
+      {
+        "type": "Burn",
+        "val": 1
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "if_tg_devoted"
+      },
+      {
+        "id": "tg_thrown",
+        "val": 8
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_arcing"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Ender of Armies",
+        "activation": "Full",
+        "detail": "You bring your blade down on a hostile character in Range 3, dealing 4 Kinetic Damage times your Devotion die and granting yourself or one allied character in line of sight Overshield equal to 3 times your Devotion die. The hostile character can pass a systems save to halve the damage. Then reset your Devotion die to 1."
       }
     ]
   }

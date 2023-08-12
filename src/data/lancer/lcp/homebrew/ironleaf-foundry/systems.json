@@ -3,7 +3,7 @@
     "id": "ms_claymore_buckler",
     "name": "Claymore Buckler",
     "source": "IF",
-    "license": "LILY",
+    "license": "Lily",
     "license_level": 1,
     "effect": "When you cause a character to be pushed, pulled or knocked back, they can pass over and onto obstacles of up to Height 5, counting as flying during the movement. In addition, when you lay a Mine, you can attach it to the shield, measuring all effects of the mine from your own space and being unable to trigger it with your own movements. If this mine forces you to make a save, you can roll the save twice and take the higher result. You can only have one mine attached to the shield this way at a time.",
     "type": "System",
@@ -19,7 +19,7 @@
     "id": "ms_sonic_spall_charges",
     "name": "Sonic Spall Charges",
     "source": "IF",
-    "license": "LILY",
+    "license": "Lily",
     "license_level": 1,
     "type": "System",
     "sp": 2,
@@ -56,7 +56,7 @@
     "id": "ms_shockwave_charges",
     "name": "Shockwave Charges",
     "source": "IF",
-    "license": "LILY",
+    "license": "Lily",
     "license_level": 2,
     "type": "System",
     "sp": 2,
@@ -93,11 +93,11 @@
     "id": "ms_bunker_buster",
     "name": "Bunker Buster",
     "source": "IF",
-    "license": "LILY",
+    "license": "Lily",
     "license_level": 3,
     "type": "System",
     "sp": 3,
-    "description": "One of the more controversial weapons being provided with the Lily Licence is the bunker buster, a low yield but focused nuclear super penetrator charge in a disposable launch tube. While significantly below what is used for ship to ship combat, it is more than capable of blasting straight through the sides of most spaceships to provide an entry point for assault troops or bringing down even the most reinforced bunkers right onto the heads of any defenders.",
+    "description": "One of the more controversial weapons being provided with the Scilla Licence is the bunker buster, a low yield but focused nuclear super penetrator charge in a disposable launch tube. While significantly below what is used for ship to ship combat, it is more than capable of blasting straight through the sides of most spaceships to provide an entry point for assault troops or bringing down even the most reinforced bunkers right onto the heads of any defenders.",
     "tags": [
       {
         "id": "tg_limited",
@@ -129,7 +129,7 @@
     "id": "ms_dancing_shadow_module",
     "name": "Dancing Shadow Module",
     "source": "IF",
-    "license": "ROSE",
+    "license": "Rose",
     "license_level": 2,
     "effect": "You can fly when you move or boost; however, you must end the turn on the ground or another solid surface, or else immediately begin falling and you take Size+1 heat at the end of any of your turns in which you flew this way.<br><br>In addition, when you Brace, you can attempt a final dodge. If you do, roll 1d6. On a 4+, the triggering attack automatically misses. Otherwise you are hit as normal, expending the Brace but gaining no effects of it, positive or negative.",
     "type": "System",
@@ -145,7 +145,7 @@
     "id": "ms_ragnarok_dive",
     "name": "Ragnarok Dive",
     "source": "IF",
-    "license": "MISTLETOE",
+    "license": "Mistletoe",
     "license_level": 1,
     "type": "System",
     "sp": 2,
@@ -171,7 +171,7 @@
     "id": "ms_invocation_of_sigrun",
     "name": "Invocation of Sigrun",
     "source": "IF",
-    "license": "MISTLETOE",
+    "license": "Mistletoe",
     "license_level": 2,
     "effect": "When you reload one or more weapons, you or one character in Range 5 and Line of Sight can move 3 Spaces and clear a Condition that wasn’t caused by one of their own systems, talents, etc.",
     "type": "System",
@@ -187,7 +187,7 @@
     "id": "ms_freyja_class_nhp",
     "name": "FREYJA-Class NHP",
     "source": "IF",
-    "license": "MISTLETOE",
+    "license": "Mistletoe",
     "license_level": 3,
     "type": "System",
     "sp": 3,
@@ -218,7 +218,7 @@
     "id": "ms_rope_a_dope",
     "name": "Rope-A-Dope",
     "source": "IF",
-    "license": "CLOVER",
+    "license": "Clover",
     "license_level": 1,
     "effect": "When you Brace, the triggering character gains Lock On and their next attack before the end of their next turn that would deal damage, burn or heat deals half damage, burn and heat.",
     "type": "System",
@@ -234,7 +234,7 @@
     "id": "ms_iron_will",
     "name": "Iron Will",
     "source": "IF",
-    "license": "CLOVER",
+    "license": "Clover",
     "license_level": 2,
     "effect": "After you roll a structure damage roll or overheating check; or would be Stunned by an effect, you can delay suffering the effect until the end of your next turn. Each effect can only be delayed once this way and if the effect would cause you to be destroyed, during this time you are immune to damage and effects, and can’t be moved, targeted, or affected by any other character or effect.",
     "type": "System",
@@ -250,7 +250,7 @@
     "id": "ms_setanta_class_nhp",
     "name": "SETANTA-Class NHP",
     "source": "IF",
-    "license": "CLOVER",
+    "license": "Clover",
     "license_level": 3,
     "type": "System",
     "sp": 3,
@@ -279,7 +279,7 @@
     "id": "ms_patch_kit",
     "name": "Patch Kit",
     "source": "IF",
-    "license": "POPPY",
+    "license": "Poppy",
     "license_level": 1,
     "type": "System",
     "sp": 2,
@@ -301,7 +301,7 @@
     "id": "ms_camouflaged_foxhole",
     "name": "Camouflaged Foxhole",
     "source": "IF",
-    "license": "POPPY",
+    "license": "Poppy",
     "license_level": 2,
     "type": "System",
     "sp": 2,
@@ -323,7 +323,7 @@
     "id": "ms_blackout_missile",
     "name": "Blackout Missile",
     "source": "IF",
-    "license": "POPPY",
+    "license": "Poppy",
     "license_level": 3,
     "type": "System",
     "sp": 3,
@@ -349,7 +349,7 @@
     "id": "ms_fianna_system_initiation",
     "name": "Fianna System Initiation",
     "source": "IF",
-    "license": "SILVERSWORD",
+    "license": "Silversword",
     "license_level": 1,
     "type": "System",
     "sp": 2,
@@ -376,7 +376,7 @@
     "id": "ms_samhain_system_illumination",
     "name": "Samhain System Illumination",
     "source": "IF",
-    "license": "SILVERSWORD",
+    "license": "Silversword",
     "license_level": 2,
     "type": "System",
     "sp": 2,
@@ -403,7 +403,7 @@
     "id": "ms_kachunk",
     "name": "Ka-Chunk!",
     "source": "IF",
-    "license": "SILVERSWORD",
+    "license": "Silversword",
     "license_level": 2,
     "type": "System",
     "sp": 1,
@@ -425,7 +425,7 @@
     "id": "ms_winding_woods",
     "name": "Winding Woods",
     "source": "IF",
-    "license": "SILVERSWORD",
+    "license": "Silversword",
     "license_level": 3,
     "effect": "This system creates an illusion line up to 5 spaces long, up to 5 spaces high – with at least 1 space adjacent to you. It lasts for the rest of the scene and if a new one is placed, the old one deactivates. The illusion does not normally obstruct movement, however any character attempting to pass through the illusion must pass a systems save or gain 2 heat and be immobilized until the end of the current turn. This effect even applies to characters attempting to teleport, if the winding woods are between the start and end locations of the teleport.This illusion provides soft cover but tech attacks and smart weapons that pass through the wall (Even if they do not require line of sight) have a 50% chance to be lost and have no effect. This does not stack with invisible.",
     "type": "System",
@@ -444,7 +444,7 @@
     "id": "ms_arrowstorm_variable_charges",
     "name": "\"Arrowstorm\" Variable Charges",
     "source": "IF",
-    "license": "ROWAN",
+    "license": "Rowan",
     "license_level": 1,
     "type": "System",
     "sp": 2,
@@ -465,7 +465,7 @@
       {
         "name": "Hyperpenetration Flechette",
         "activation": "Quick",
-        "detail": "Throw a grenade at a single target within Range 10. Your target suffers 1d3+3 AP Kinetic Damage. A successful engineering save halves the damage."
+        "detail": "Throw a grenade at a single target within Range 10. Your target suffers 4 AP kinetic damage and must pass an engineering save or have their guard broken; being treated as the smaller character for all effects and being unable to benefit from effects that would prevent being pushed, pulled, knocked Prone, or knocked back until the end of their next turn."
       }
     ],
     "bonuses": [],
@@ -474,7 +474,7 @@
       {
         "name": "Seeker Claymore",
         "type": "Mine",
-        "detail": "This mine is triggered when a hostile character enters a space within Range 3 without Disengaging, regardless of height. The triggering character suffers 1d6+3 AP Kinetic Damage. A successful engineering save halves the damage."
+        "detail": "This mine is triggered when a hostile character enters a space within Range 3 without Disengaging, regardless of height. The triggering character suffers 5 AP Kinetic Damage and is impaled by a kinetic microflechette; while impaled this way, each time that character suffers damage from you or an allied character, they are also pushed 1 space in a direction of the damaging character's choice. This movement ignores any effects that would prevent the target from being moved. An impaled character can attempt to remove the flechette by passing an Engineering save as a full action."
       }
     ]
   },
@@ -482,7 +482,7 @@
     "id": "ms_caillechs_step_quake_generator",
     "name": "\"Caillech's Step\" Quake Generator",
     "source": "IF",
-    "license": "ROWAN",
+    "license": "Rowan",
     "license_level": 2,
     "type": "System",
     "sp": 2,
@@ -513,7 +513,7 @@
     "id": "ms_buffer_counterdeployment_module",
     "name": "“Buffer” Counterdeployment Module",
     "source": "IF",
-    "license": "ROWAN",
+    "license": "Rowan",
     "license_level": 3,
     "type": "System",
     "sp": 2,
@@ -537,7 +537,7 @@
     "id": "ms_psychofracture_analysis",
     "name": "Psychofracture Analysis",
     "source": "IF",
-    "license": "ROWAN",
+    "license": "Rowan",
     "license_level": 3,
     "effect": "Whenever a character Humiliated by you in Line of Sight fails an attack, check or save, you gain 2 Overshield.",
     "actions": [
@@ -560,7 +560,7 @@
     "id": "ms_medb_class_nhp",
     "name": "MEDB-Class NHP",
     "source": "IF",
-    "license": "ROSE",
+    "license": "Rose",
     "license_level": 3,
     "type": "System",
     "sp": 3,
@@ -585,7 +585,7 @@
     "id": "ms_dullahan_lunge",
     "name": "Dullahan Lunge",
     "source": "IF",
-    "license": "ROSE",
+    "license": "Rose",
     "license_level": 3,
     "type": "System",
     "sp": 2,
@@ -607,7 +607,7 @@
     "id": "ms_triage_module",
     "name": "Triage Module",
     "source": "IF",
-    "license": "KUDZU",
+    "license": "Kudzu",
     "license_level": 1,
     "effect": "When a biological character in range 10 would be destroyed and isn't already Down And Out, you can instead have them gain the Down And Out status. In addition, gain the MEDIC! reaction, which expends charges from this system.",
     "type": "System",
@@ -636,7 +636,7 @@
     "id": "ms_immunization",
     "name": "Immunization",
     "source": "IF",
-    "license": "KUDZU",
+    "license": "Kudzu",
     "license_level": 2,
     "type": "System",
     "sp": 2,
@@ -662,11 +662,11 @@
     "id": "ms_fatuity_beam",
     "name": "Fatuity Beam",
     "source": "IF",
-    "license": "KUDZU",
+    "license": "Kudzu",
     "license_level": 3,
     "type": "System",
     "sp": 2,
-    "description": "\"Thought patterns are electrical impulses like any other. By applying counter-wavelengths, we can negate a sizable percentage of those electrical impulses and cause significant reductions in operational capacity.\" - Dr Lily Realtin, lying to Ironleaf Foundry about how she didn't spend their money making a 'Stupid Ray'.",
+    "description": "\"Thought patterns are electrical impulses like any other. By applying counter-wavelengths, we can negate a sizable percentage of those electrical impulses and cause significant reductions in operational capacity.\" - Dr Scilla Realtin, lying to Ironleaf Foundry about how she didn't spend their money making a 'Stupid Ray'.",
     "tags": [
       {
         "id": "tg_unique"
@@ -684,7 +684,7 @@
     "id": "ms_doctors_orders",
     "name": "Doctor's Orders",
     "source": "IF",
-    "license": "KUDZU",
+    "license": "Kudzu",
     "license_level": 3,
     "type": "System",
     "sp": 3,
@@ -710,7 +710,7 @@
     "id": "ms_book_of_invasions_cyclic_engram",
     "name": "“Book of Invasions” Cyclic Engram",
     "source": "IF",
-    "license": "SCILLA",
+    "license": "Scilla",
     "license_level": 1,
     "effect": "When a hostile character in Line of Sight makes an attack that does not include you, that attack suffers +3 difficulty if it is the first round of the scene or if they entered from reinforcements this round.",
     "type": "System",
@@ -726,7 +726,7 @@
     "id": "ms_taghairm_optimization_module",
     "name": "“Taghairm” Optimization Module",
     "source": "IF",
-    "license": "SCILLA",
+    "license": "Scilla",
     "license_level": 2,
     "type": "System",
     "sp": 2,
@@ -757,7 +757,7 @@
     "id": "ms_fusion_interdiction_module",
     "name": "Fusion Interdiction Module",
     "source": "IF",
-    "license": "SCILLA",
+    "license": "Scilla",
     "license_level": 3,
     "type": "System",
     "sp": 2,
@@ -778,6 +778,53 @@
         "frequency": "Unlimited",
         "trigger": "A hostile character in Range 10 would use a weapon, system or trait that is Loading, Recharge or Limited.",
         "detail": "Make an opposed Engineering check against the triggering character. On a success, you can spend a Limited Charge to have the triggering character's weapon, system or trait have no effect and allow you to reload a weapon or cool half your current heat."
+      }
+    ]
+  },
+  {
+    "id": "ms_if_exotic_founding_stone",
+    "name": "Founding Stone",
+    "source": "EXOTIC",
+    "type": "System",
+    "sp": 3,
+    "description": "On Milisea, tradition holds that the first stone laid in a new settlement be placed in the center of the future town. An idea originally created by architects attempting to standardize designs, it has blossomed into a way for each town to personalize the commons with a stone carved by local artists, each generation adding a new flair or flourish to the design of a large Menhir.<br><br>Superstition holds that to carry a fragment of such a stone into battle is to put the hopes and dreams of every resident behind you, a force of faith that can warp the plans of fate, helping the bearer in their battles and setting into play chains of destiny that put foes in a place they can accidently sabotage their own dark plans.",
+    "effect": "At the start of each scene, roll 5 d6 and set them aside. When any character in line of sight rolls one or more d6 for Accuracy, Difficult or Damage and you do not like the result, you can consume any number of the dice to replace rolled dice with the consumed dice. Initiating this interruption does not count as a reaction.<br><br>When a hostile character would start their turn, if your Devotion die is at 6, you can reset it to 1. If you do, that character changes allegiance temporarily, becoming an allied character until the end of their current turn. They treat your allied characters and hostile characters as their own and act under your direct control. Initiating this interruption does not count as a reaction.",
+    "tags": [
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "if_tg_devoted"
+      }
+    ]
+  },
+  {
+    "id": "ms_if_exotic_cauldron_of_plenty",
+    "name": "Cauldron of Plenty",
+    "source": "EXOTIC",
+    "type": "System",
+    "sp": 3,
+    "description": "Very rare even on Milesia, the Cauldrons of Plenty are powerful nanotech printers based on lost Firstcom designs and unconnected from Union's network. Nearly impossible to replicate, they are capable of producing vast quantities of medical supplies, ammunition and repair material at a moment's notice. To Union's great shock however, they are capable of the one thing that no other printer is yet capable of and something that was thought impossible: Food printed by the Cauldron is delicious.",
+    "effect": "You have the Extra Rations pilot gear in addition to any others. When you or another allied character in Range 5 Stabilizes or when an allied character Rests, they can be restored to 1/2 of their maximum HP without spending a Repair.",
+    "tags": [
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "if_tg_devoted"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Feast of Heroes",
+        "activation": "Quick",
+        "detail": "This action can only be taken if your Devotion die is at 6. Choose any number of characters in Range 50. Non-mech characters are restored to full HP, while Mech characters may immediately make any quick action of their choice as a reaction. Then reset your Devotion die to 1."
       }
     ]
   }
