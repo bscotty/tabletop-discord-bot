@@ -1,0 +1,174 @@
+{
+  "glossary": {
+    "name": "",
+    "description": "",
+    "type": ""
+  },
+  "class": {
+    "name": "",
+    "title": "",
+    "strengths": "",
+    "weaknesses": "",
+    "complexity": "",
+    "description": "",
+    "vit": 0,
+    "defense": 0,
+    "speed": 0,
+    "fray_damage": 0,
+    "damage_die": "d",
+    "basic_attack_range": 0,
+    "special_mechanic": {
+      "name": "",
+      "description": "",
+      "cross_class": {
+        "name": "",
+        "description": ""
+      }
+    },
+    "traits": [
+      {
+        "name": "",
+        "description": ""
+      },
+      {
+        "name": "",
+        "description": ""
+      },
+      {
+        "name": "",
+        "description": ""
+      }
+    ]
+  },
+  "job": {
+    "name": "",
+    "title": "",
+    "description": "",
+    "traits": [
+      {
+        "name": "",
+        "description": ""
+      },
+      {
+        "name": "",
+        "description": ""
+      },
+      {
+        "name": "",
+        "description": ""
+      },
+      {
+        "name": "",
+        "description": ""
+      },
+      {
+        "name": "",
+        "description": "",
+        "chapter_unlock": 3
+      }
+    ],
+    "abilities": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "limit_break": ""
+  },
+  "limit_break": {},
+  "ability": {
+    "name": "",
+    "job": "",
+    "chapter": 0,
+    "action": "",
+    "tags": [
+      ""
+    ],
+    "area": [
+      {
+        "area_type": "",
+        "range": 0
+      }
+    ],
+    "description": "",
+    "attack": {
+      "on_hit": "",
+      "on_miss": ""
+    },
+    "effects": [
+      {
+        "effect_names": [
+          ""
+        ],
+        "result": "",
+        "sub_ability": {
+          "sub_ability_name": "",
+          "type": "",
+          "sub_effects": [
+            {
+              "effect_names": [
+                ""
+              ],
+              "result": ""
+            }
+          ]
+        }
+      }
+    ],
+    "combo": {
+      "name": "",
+      "description": ""
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": ""
+      },
+      {
+        "name": "ii",
+        "description": ""
+      }
+    ],
+    "mastery": {
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "effect_names": [
+            ""
+          ],
+          "result": "",
+          "sub_ability": {
+            "sub_ability_name": "",
+            "type": "",
+            "sub_effects": [
+              {
+                "effect_names": [
+                  ""
+                ],
+                "result": ""
+              }
+            ]
+          }
+        }
+      ],
+      "sub_ability": {
+        "sub_ability_name": "",
+        "type": "",
+        "sub_effects": [
+          {
+            "effect_names": [
+              ""
+            ],
+            "result": ""
+          }
+        ]
+      }
+    }
+  }
+}

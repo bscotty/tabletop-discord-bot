@@ -1,0 +1,166 @@
+[
+  {
+    "name": "Bastion",
+    "title": "Unbreakable Knight",
+    "class": "Stalwart",
+    "description": "The Bastions are the shield lords of Arden Eld, larger than life figures that tread the ancient imperial roads with their heads held high and armor gleaming. From town to town they act as errant knights and mercenaries, protecting the weak and vulnerable, and driving back the Blights with hammer-like blows from their greatshields, which they throw like a discus with incredible force. The imperious and mighty presence of a Bastion in town is a stabilizing force and can become an event for a whole village.All Bastions follow an ancient and long-forgotten hero’s code, an old oath to stand against chaos in all its forms.",
+    "traits": [
+      {
+        "name": "Strive",
+        "description": "You may cause any ability to trigger its *heroic* effects when you use it, and increase the distance of any *shoves* by +1. If you do, after that ability resolves, you can’t use heroics until the end of your next turn, and deal *half damage* during that turn."
+      },
+      {
+        "name": "Press the Advantage",
+        "description": "Once a round, when you shove a character, you and an ally of your choice anywhere can each *rush 1*."
+      },
+      {
+        "name": "Bull’s Strength",
+        "description": "All your abilities gain *collide*: deal 2 damage. Characters can’t take this damage more than once a turn."
+      },
+      {
+        "name": "Shieldmaster",
+        "description": "You have *aura 1*. If you end your turn with an ally in the aura, gain *vigilance +1* and become *sturdy* until the start of your turn."
+      },
+      {
+        "name": "Black Rock Vanguard",
+        "description": "You can take any number of interrupts per turn. When you take an interrupt, you may rush 1 after it resolves.",
+        "chapter_unlock": 3
+      }
+    ],
+    "abilities": [
+      "Heracule",
+      "Battering Ram",
+      "Land Waster",
+      "Valiant",
+      "Endless Battlement",
+      "Catapult",
+      "Perseus",
+      "Rook",
+      "Great Giorgios"
+    ],
+    "limit_break": "Helion"
+  },
+  {
+    "name": "Demon Slayer",
+    "title": "Master of the Forbidden Arts",
+    "class": "Stalwart",
+    "description": "Warriors of impossible strength and insane bravado, demon slayers are warriors that specialize in fighting the largest and most dangerous monsters to crawl out of the pits that riddle the land. They relish in fighting against impossible odds, training themselves in forbidden techniques, arcane arts, and oversized weaponry that normal Kin would quake at wielding. They organize themselves into loose orders and train and hunt together, sharing tales and trophies of the colossal horrors they have slain. Some say in order to fight their quarries, the slayers must ingest demon blood to gain their strength, giving them dark and forbidden power that makes other Kin fear and respect them in equal measure.",
+    "traits": [
+      {
+        "name": "Demon Edge",
+        "description": "If you elect to take a *slow turn* or use a *delay* effect, gain *vigilance +1*, and all your abilities deal *bonus damage* and gain *true strike* until the end of your next turn."
+      },
+      {
+        "name": "Demon Strength",
+        "description": "You can make any ability Heroic when you use it. If you do, you can’t attack or use Heroics until the end of your following turn."
+      },
+      {
+        "name": "Hissatsu",
+        "description": "If you don’t attack during your turn, your next attack ability gains +1 boon, *true strike*, and upgrades its damage die to **d10**. This effect ends after you hit with an attack."
+      },
+      {
+        "name": "True Horn",
+        "description": "You are *sturdy* from the start of each round until the start of your turn."
+      },
+      {
+        "name": "Rangiri",
+        "description": "If you trigger Hissatsu twice in a row, your attack ability becomes upgraded further. The entire ability now deals *double damage*. Roll and determine all damage on the attacker’s end when making it, then double the total before applying it.",
+        "chapter_unlock": 3
+      }
+    ],
+    "abilities": [
+      "Demon Cutter",
+      "Comet",
+      "Draken Cross",
+      "Righteous Disdain",
+      "Demon Claw",
+      "Gates of Hell",
+      "Soul Blade",
+      "Six Hells Trigram",
+      "Wicked Sheath"
+    ],
+    "limit_break": "Split Heaven and Hell"
+  },
+  {
+    "name": "Colossus",
+    "title": "High Flying Grappler",
+    "class": "Stalwart",
+    "description": "Ferocious followers of Arenheir, the Wolf Titan, the Colossi are a martial order of berserkers, pankrationists, and warriors that reaches across all of Arden Eld. They travel throughout the land seeking powerful foes, and taking trophies to return to their great lodges to offer in tribute to Arenheir in fierce hope of resurrecting their god. At their lodges they feast and drink to their deeds, companions, and boasts. Colossi seek glory and challenge through battle, and will often go for only the absolute strongest warriors and monsters, heedless of their own safety. They fight with wild abandon and unconventional techniques that would make even the dirtiest Knave raise an eyebrow.",
+    "traits": [
+      {
+        "name": "Furious Berserk",
+        "description": "You go into a furious blood rage as you take damage, giving you the following benefits:\n* You start combat with *defiance*\n* You have *regeneration*, and regain regeneration if defeated and rescued.\n* While you’re *bloodied*, you are *sturdy*, and gain *vigilance +1* at the end of your turn."
+      },
+      {
+        "name": "Wolfheart",
+        "description": "Once a round, you may sacrifice 25% of your max hp to make an ability Heroic and increase the distance of any flight, rush, or dash as part of that move by +1."
+      },
+      {
+        "name": "Pulverize",
+        "description": "When you start an attack ability on higher elevation than your target, it deals bonus damage. If you are two or more levels higher, it also triggers all *exceed* effects."
+      },
+      {
+        "name": "Great Leap",
+        "description": "When you would end any movement on a lower elevation than you started, you may gain *flying* for the duration of that movement."
+      },
+      {
+        "name": "Unbreakable",
+        "description": "If defeated, you can *rescue* yourself and take a turn as normal. This doesn’t take an action and takes place at the start of your turn. In addition, after being rescued in any way, including as part of this trait. you can *rush 1* and deal 2 damage to all adjacent characters.",
+        "chapter_unlock": 3
+      }
+    ],
+    "abilities": [
+      "Valkyrie",
+      "Upheaval",
+      "Dropkick",
+      "Massive Overhead",
+      "Takedown",
+      "Great Suplex",
+      "Gigaton Whip",
+      "Raging Wolf",
+      "Boiling Blood"
+    ],
+    "limit_break": "Gigantas Crusher"
+  },
+  {
+    "name": "Knave",
+    "title": "Absolute Bastard",
+    "class": "Stalwart",
+    "description": "The advent of the Churning Age has coincided with the rise of a certain class of person with heavy pockets and a long list of ‘problems’ to solve. The Knaves are the solution. Hedge knights, rogue warriors, duelists, deserters, and veterans, they roam the land offering their services to whoever has the dust to spare. Though some of them are altruistically minded, they tend to go where the work, food, and fighting is thickest, and never stay for long in one location. Knaves operate under a loose moral code and an even looser no-holds-barred fighting style, using hilts, head butts, and gauntleted fists to inflict pain, punishment, and humiliation on their opponents in equal measure. These braggadocios warriors spare no effort in flexing their incredible strength - if the price is right. For a freshly roasted chicken, a pocket full of dust, and a polish of their boots, they’ll do just about anything.",
+    "traits": [
+      {
+        "name": "Martial Master",
+        "description": "You can take two stances at once."
+      },
+      {
+        "name": "Blackheart",
+        "description": "While you’re suffering from a status, gain *vigilance +1* at the end of your turn. If you are suffering from two or more, also deal *bonus damage* with all abilities."
+      },
+      {
+        "name": "Taunt (1 action)",
+        "description": "A foe in range 3 gains *hatred* of you."
+      },
+      {
+        "name": "Spite",
+        "description": "You can choose to use the Heroic effects of any ability when you use it. However, after it resolves, gain *Hatred+* of the closest foe to you until the end of your next turn and you can’t use Heroics again for the same duration. If multiple foes are equidistant, you can choose."
+      },
+      {
+        "name": "Way of the Crow",
+        "description": "If any ally is *defeated*, *cure* yourself and become *unstoppable* until the end of your next turn.",
+        "chapter_unlock": 3
+      }
+    ],
+    "abilities": [
+      "Low Blow",
+      "Provoke",
+      "Revenge",
+      "Riposte",
+      "Dark Knight",
+      "Strongarm",
+      "Intimidate",
+      "Sucker Punch",
+      "Bleak Mercy"
+    ],
+    "limit_break": "Mock"
+  }
+]

@@ -1,0 +1,488 @@
+[
+  {
+    "name": "Demon Cutter",
+    "job": "Demon Slayer",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "True Strike"
+    ],
+    "area": [
+      {
+        "area_type": "Line",
+        "range": 3
+      }
+    ],
+    "description": "You slash your weapon in a deadly swing sending cutting shockwaves out that rip through enemy defenses.",
+    "attack": {
+      "on_hit": "[D]+ fray",
+      "on_miss": "fray"
+    },
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Attack target is slashed"
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "Fray"
+      },
+      {
+        "effect_names": [
+          "Charge",
+          "Heroic"
+        ],
+        "result": "Gains range 2, and repeat the area effect in a new line 3 area in range. The areas cannot overlap."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "*Exceed*: Gain 6 vigor."
+      },
+      {
+        "name": "ii",
+        "description": "Your can *rush 1* before using Demon Cutter. *Charge*: *Rush 3* instead."
+      }
+    ],
+    "mastery": {
+      "name": "Blood Drinking Devil Blade",
+      "description": "After this ability resolves, gain 2 vigor for every foe damaged."
+    }
+  },
+  {
+    "name": "Comet",
+    "job": "Demon Slayer",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Object"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 3
+      },
+      {
+        "area_type": "Blast",
+        "range": "Medium"
+      }
+    ],
+    "description": "Your weapon becomes like a meteor, burning through the air as you hurl at at your foes and smash it into the earth",
+    "effects": [
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "2 damage"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "After throwing your weapon, it becomes an object placed in the center space of the area, or as close as possible.",
+        "sub_ability": {
+          "sub_ability_name": "Thrown Weapon",
+          "type": "Height 1",
+          "sub_effects": [
+            {
+              "effect_names": [
+                "Object"
+              ],
+              "result": "Space adjacent to it have *rampart*. While this object is active, you cannot attack. You can pick your weapon up if you enter or exit any space adjacent to it or start your turn there, ending this effect and removing the object. You also pick it up if it’s removed for any other reason."
+            }
+          ]
+        }
+      },
+      {
+        "effect_names": [
+          "Charge",
+          "Heroic"
+        ],
+        "result": "*Rush 3* after throwing your weapon."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If you end your turn adjacent to your thrown weapon, gain *vigilance +1*."
+      },
+      {
+        "name": "ii",
+        "description": "Yourself and allies that end their turn adjacent to your weapon gain 2 *vigor*."
+      }
+    ],
+    "mastery": {
+      "name": "Exalted Blossoms Devil Blade",
+      "effects": [
+        {
+          "effect_names": [
+            "Effect"
+          ],
+          "result": "You may teleport to any space adjacent to your weapon at the start and end of your turn."
+        }
+      ]
+    }
+  },
+  {
+    "name": "Draken Cross",
+    "job": "Demon Slayer",
+    "chapter": 1,
+    "action": "2 actions",
+    "tags": [
+      "Attack"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 3
+      },
+      {
+        "area_type": "Blast",
+        "range": "Small"
+      }
+    ],
+    "description": "Fill the air with the flurry of blades.",
+    "attack": {
+      "on_hit": "2[D] + fray",
+      "on_miss": "fray"
+    },
+    "effects": [
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "Fray"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "You may *rush 1*, then target another small blast area in range 3 with *area effect*: fray damage. The areas cannot overlap."
+      },
+      {
+        "effect_names": [
+          "Charge",
+          "Heroic"
+        ],
+        "result": "Gains *true strike*, and may repeat the effect."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "*Exceed*: Deal fray damage again to all characters in any area created by this ability."
+      },
+      {
+        "name": "ii",
+        "description": "*Charge*: Increase range to 5, and all areas may be increased to medium blasts instead."
+      }
+    ],
+    "mastery": {
+      "name": "Dark Wind Devil Blade",
+      "description": "After using this ability, you may teleport to any space of any area created, then all foes in any area you created with this ability are *slashed* and take 2 *divine* damage."
+    }
+  },
+  {
+    "name": "Righteous Disdain",
+    "job": "Demon Slayer",
+    "chapter": 1,
+    "action": "Interrupt 1",
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 2
+      }
+    ],
+    "description": "With a clap, you deflect a weapon or projectile with your bare hand or the flat edge of your blade.",
+    "effects": [
+      {
+        "effect_names": [
+          "Trigger"
+        ],
+        "result": "A foe uses an ability that targets an ally in range, and damage to your ally has been determined on the foe’s end but not applied yet."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Apply the damage to both you and your ally, but both of you gain *resistance* to it, and are *sturdy* against its effects."
+      },
+      {
+        "effect_names": [
+          "Heroic"
+        ],
+        "result": "Gain vigor 4 after this ability resolves"
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "You can *rush 1* before triggering this ability, and your ally may *rush 1* afterwards."
+      },
+      {
+        "name": "ii",
+        "description": "Shove the triggering foe and ally each 1 space in any direction after this ability resolves."
+      }
+    ],
+    "mastery": {
+      "name": "Shirahadori",
+      "description": "The damage from Righteous Disdain cannot reduce you past 1 hp."
+    }
+  },
+  {
+    "name": "Demon Claw",
+    "job": "Demon Slayer",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "True Strike"
+    ],
+    "description": "Even unarmed, a Demon Slayer can employ ferocious strength and unleash blows with their bare hands that can crumple steel.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "*Rush 1*, then *rush 1*. Each time, you may deal 2 damage to an adjacent foe. Foes can only be damaged once per use of this ability."
+      },
+      {
+        "effect_names": [
+          "Special"
+        ],
+        "result": "If you didn’t attack on your turn before using this ability, it deals damage to all adjacent foes."
+      },
+      {
+        "effect_names": [
+          "Charge",
+          "Heroic"
+        ],
+        "result": "Weaken all adjacent characters after the first or second rush."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Instead of any *rush* from Demon claw, you can gain 2 vigor."
+      },
+      {
+        "name": "ii",
+        "description": "After the second rush, you can shove an adjacent character 2 spaces."
+      }
+    ],
+    "mastery": {
+      "name": "Raging Demon",
+      "description": "Demon Claw’s damage increases by 1 for every 25% of your maximum hp you are missing, up to a maximum of +3 damage."
+    }
+  },
+  {
+    "name": "Gates of Hell",
+    "job": "Demon Slayer",
+    "chapter": 1,
+    "action": "1 action",
+    "description": "You move so quickly that even your afterimages are capable of deflecting blows.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "*Rush 2*"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Gain +1 vigilance. Until the start of your next turn, you gain *counter*, and may *rush 2* after activating *vigilance*. This effect can trigger any number of times a round, but only once a turn."
+      },
+      {
+        "effect_names": [
+          "Heroic"
+        ],
+        "result": "Gain +2 vigilance instead."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Gain 2 vigor after any time Gates of Hell’s second effect activates."
+      },
+      {
+        "name": "ii",
+        "description": "Vigilance’s range increases by +1 while Gates of Hell is active."
+      }
+    ],
+    "mastery": {
+      "name": "Flash Step",
+      "description": "After Gates of Hell resolves, you create an afterimage terrain effect in a free adjacent space. The afterimage is dangerous terrain, but only for foes. You also gain the following ability.",
+      "sub_ability": {
+        "sub_ability_name": "Flash Step",
+        "type": "Free Action",
+        "sub_effects": [
+          {
+            "effect_names": [
+              "Effect"
+            ],
+            "result": "Remove an afterimage that has no characters occupying it, then remove yourself and place yourself in its space."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Soul Blade",
+    "job": "Demon Slayer",
+    "chapter": 2,
+    "action": "1 action",
+    "tags": [
+      "Stance"
+    ],
+    "description": "You imbue your weapon with aether, causing additional cuts at the very aether of your foe.",
+    "effects": [
+      {
+        "effect_names": [
+          "Stance"
+        ],
+        "result": "When entering this stance, gain a d6 power die, starting at 2.\n* When the stance refreshes, tick the die up by 1.\nWhen you attack, you can tick the die down by any amount to cause an additional aether slash as a line 3 *area effect* that must include your target, after the attack resolves. The area has *true strike*. Foes in the area take damage equal to the amount you ticked down.\n* If you tick the die down by 3 or more, you also gain vigor equal to the number on the die.\n* If you tick the die down by 6, the slash deals +3 more total damage and grants you +3 more total vigor.\n* If the die goes to 0, you exit this stance."
+      },
+      {
+        "effect_names": [
+          "Heroic"
+        ],
+        "result": "Gain +1 tick on the die for every adjacent foe when you enter this stance."
+      },
+      {
+        "effect_names": [
+          "Refresh"
+        ],
+        "result": "This stance refreshes if you end a turn without attacking, or if you start a slow turn."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "You may also increase the area of any line or arc effects by +1 in Soul Blade, including from this stance."
+      },
+      {
+        "name": "ii",
+        "description": "While in Soul Blade, your attacks gain *exceed*: tick the die up by 1."
+      }
+    ],
+    "mastery": {
+      "name": "Wind Calling Devil Blade",
+      "description": "At round 4 or later in combat, soul blade also refreshes at the start of your turn and any area created by it shoves all characters inside 1 space."
+    }
+  },
+  {
+    "name": "Six Hells Trigram",
+    "job": "Demon Slayer",
+    "chapter": 2,
+    "action": "1 action",
+    "tags": [
+      "Delay",
+      "Terrain effect"
+    ],
+    "description": "Using dark arts, you summon up a sliver of the demon world, blocking out a dark arena that traps enemies in its web.",
+    "effects": [
+      {
+        "effect_names": [
+          "End your turn"
+        ],
+        "result": "and gain"
+      },
+      {
+        "effect_names": [
+          "Terrain effect"
+        ],
+        "result": "Mark out a burst 2 (self) area, then gain"
+      },
+      {
+        "effect_names": [
+          "Delay"
+        ],
+        "result": "Delay: Your next turn must be slow, but at the start of that turn, the trigram activates.\n* When the trigram activates, all foes inside are *weakened*.\n* While active, any foes that attempt to exit the *terrain effect* during any turn must first pass a save, or become unable to do so until the start of their next turn. If they are moving, they don’t lose their movement but can’t consider the area outside valid space to move to.\nThis area lasts until this ability is used again."
+      },
+      {
+        "effect_names": [
+          "Heroic"
+        ],
+        "result": "The area has *rampart* and foes in the are when it activates take *fray damage*."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "You have counter and are sturdy while inside the area."
+      },
+      {
+        "name": "ii",
+        "description": "Allies inside the area reduce all damage by 2, as if from armor."
+      }
+    ],
+    "mastery": {
+      "name": "Dark Wind Chain",
+      "description": "While inside the area, you gain the following ability.",
+      "sub_ability": {
+        "sub_ability_name": "Dark Wind Chain",
+        "type": "Free action",
+        "sub_effects": [
+          {
+            "effect_names": [
+              "Effect"
+            ],
+            "result": "Deal 2 damage to any foe in range 4 and shove them 1 space towards you, then force them to save. On a failed save, they are shoved 2 more spaces towards you."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Wicked Sheath",
+    "job": "Demon Slayer",
+    "chapter": 3,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "True Strike",
+      "Power Die"
+    ],
+    "description": "The master art of the demon slayers - holding a single blow with ultimate patience, until it can slay the most tenebrous of monsters in one stroke.",
+    "attack": {
+      "on_hit": "fray and shove 1",
+      "on_miss": "fray"
+    },
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "After you attack, your weapon becomes charged with energy. At the start of each round, gain a d4 power die at 1, or tick it up by 1. For each tick of the die:\n* Increase the base damage on hit of Wicked Sheath by [D] and the shove by 1\n* the attack gains +1 boon.\nDiscard the power die after you hit with any attack."
+      },
+      {
+        "effect_names": [
+          "Charge",
+          "Heroic"
+        ],
+        "result": "You may also rush 1 before making the attack once for each charge on the die."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Also shove your foe 1 for every charge on the die. *Collide*: Your foe is *stunned*."
+      },
+      {
+        "name": "ii",
+        "description": "*Exceed*: Draw a line 4 area effect that includes your target. Characters inside other than your target take 2 damage, once, for every charge on the die."
+      }
+    ],
+    "mastery": {
+      "name": "Mugen Shometsu",
+      "description": "If the die is 2 or higher and you would discard it, roll it instead of discarding it. On a 1 or 2, keep it, using the new number."
+    }
+  }
+]
