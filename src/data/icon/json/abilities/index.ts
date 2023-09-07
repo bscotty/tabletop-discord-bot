@@ -11,8 +11,12 @@ import chanter from "./chanter.json"
 import harvester from "./harvester.json"
 import sealer from "./sealer.json"
 import seer from "./seer.json"
+import enochian from "./enochian.json"
+import geomancer from "./geomancer.json"
+import spellblade from "./spellblade.json"
+import stormbender from "./stormbender.json"
 
-export function abilities(): IconAbility[] {
+export function iconAbilities(): IconAbility[] {
     return [
         ...bastion,
         ...demon_slayer,
@@ -25,6 +29,10 @@ export function abilities(): IconAbility[] {
         ...chanter,
         ...harvester,
         ...sealer,
-        ...seer
+        ...seer,
+        ...enochian,
+        ...geomancer,
+        ...spellblade,
+        ...stormbender
     ]
 }
