@@ -10,11 +10,17 @@
       "True Strike"
     ],
     "description": "Hit them right in the gronch.",
-    "attack": {
-      "on_hit": "[D] + fray",
-      "on_miss": "fray"
-    },
     "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "You may *Rush 1*."
+      },
+      {
+        "on_hit": "[D] + fray",
+        "on_miss": "fray"
+      },
       {
         "effect_names": [
           "Effect"
@@ -131,11 +137,11 @@
       "Combo"
     ],
     "description": "No matter how hard pressed, your hands, feet, and armor are ready to retaliate.",
-    "attack": {
-      "on_hit": "[D]+fray",
-      "on_miss": "fray"
-    },
     "effects": [
+      {
+        "on_hit": "[D]+fray",
+        "on_miss": "fray"
+      },
       {
         "effect_names": [
           "Effect"
@@ -421,11 +427,11 @@
       "Combo"
     ],
     "description": "Crush your foes and see them driven before you.",
-    "attack": {
-      "on_hit": "2[D]+fray",
-      "on_miss": "fray"
-    },
     "effects": [
+      {
+        "on_hit": "2[D]+fray",
+        "on_miss": "fray"
+      },
       {
         "effect_names": [
           "Effect"

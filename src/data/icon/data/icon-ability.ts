@@ -11,10 +11,9 @@ export type IconAbility = {
     chapter: number
     action: string
     area?: IconArea[]
-    attack?: IconAttack
     tags?: string[]
     description: string
-    effects: IconBonusEffect[]
+    effects: (IconBonusEffect | IconAttack)[]
     combo?: IconNameDescription
     talents: IconTalent[]
     mastery: IconMasteryTalent

@@ -9,16 +9,16 @@
       "True Strike"
     ],
     "description": "Soaring through the air like a vengeful spirit, you crash into your enemy.",
-    "attack": {
-      "on_hit": "[D] + fray",
-      "on_miss": "fray"
-    },
     "effects": [
       {
         "effect_names": [
           "Effect"
         ],
         "result": "You may *fly 1*."
+      },
+      {
+        "on_hit": "[D] + fray",
+        "on_miss": "fray"
       },
       {
         "effect_names": [
@@ -189,11 +189,11 @@
       "Attack"
     ],
     "description": "You deliver a mighty blow with wild abandon, so strong that you yourself are left reeling.",
-    "attack": {
-      "on_hit": "[D]+fray",
-      "on_miss": "fray"
-    },
     "effects": [
+      {
+        "on_hit": "[D]+fray",
+        "on_miss": "fray"
+      },
       {
         "effect_names": [
           "Effect"
@@ -229,10 +229,6 @@
     "chapter": 1,
     "action": "2 actions",
     "description": "Wrapping your arms around your foe, you fling the two of you backwards with a force that liquifies rock.",
-    "attack": {
-      "on_hit": "",
-      "on_miss": ""
-    },
     "effects": [
       {
         "effect_names": [
@@ -278,12 +274,12 @@
       "True Strike"
     ],
     "description": "You fling your foe into a wall, catching them on the rebound.",
-    "attack": {
-      "on_hit": "[D]",
-      "on_miss": "1 damage",
-      "effect": "Shove 2"
-    },
     "effects": [
+      {
+        "on_hit": "[D]",
+        "on_miss": "1 damage",
+        "effect": "Shove 2"
+      },
       {
         "effect_names": [
           "Collide"
@@ -377,10 +373,6 @@
     "chapter": 3,
     "action": "Interrupt 1",
     "description": "Colossi can lash out with the last of their strength, using the heat and strength of their body to punish their foes before expiring.",
-    "attack": {
-      "on_hit": "",
-      "on_miss": ""
-    },
     "effects": [
       {
         "effect_names": [

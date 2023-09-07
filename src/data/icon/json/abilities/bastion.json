@@ -15,11 +15,11 @@
       }
     ],
     "description": "Hurl your shield or weapon as a discus with irrepressible force.",
-    "attack": {
-      "on_hit": "[D] + fray",
-      "on_miss": "fray"
-    },
     "effects": [
+      {
+        "on_hit": "[D] + fray",
+        "on_miss": "fray"
+      },
       {
         "effect_names": [
           "Effect"
@@ -108,11 +108,11 @@
       }
     ],
     "description": "Crash your greatshield or weapon into the earth, sending up devastating shockwaves.",
-    "attack": {
-      "on_hit": "2[D] + fray",
-      "on_miss": "fray"
-    },
     "effects": [
+      {
+        "on_hit": "2[D] + fray",
+        "on_miss": "fray"
+      },
       {
         "effect_names": [
           "Area effect"
@@ -361,11 +361,11 @@
       "Aura"
     ],
     "description": "Your stance is powerful as you strike, and stand tall, an armored sentinel. No enemy can safely set foot where your gaze falls.",
-    "attack": {
-      "on_hit": "[D]+fray",
-      "on_miss": "fray"
-    },
     "effects": [
+      {
+        "on_hit": "[D]+fray",
+        "on_miss": "fray"
+      },
       {
         "effect_names": [
           "Effect"

@@ -1,0 +1,420 @@
+[
+  {
+    "name": "Cavaliere",
+    "job": "Fool",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "+1 boon"
+    ],
+    "description": "It is not enough to rudely and plainly strike your foe down. One must make it entertaining.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Dash 3, then dash 1 space to the side of your movement. This movement ignores all movement penalties and has *phasing*. However:\n* You must move if able\n* You must move as far as possible\n* You cannot move diagonally during this movement"
+      },
+      {
+        "on_hit": "[D]+fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Foe is *dazed*."
+      },
+      {
+        "effect_names": [
+          "Finishing Blow",
+          "Slay"
+        ],
+        "result": "Summon a **bomb**."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If you pass through an ally or summon during this movement, deal bonus damage."
+      },
+      {
+        "name": "ii",
+        "description": "Allies you pass through during this movement can dash 1."
+      }
+    ],
+    "mastery": {
+      "name": "Pegaso",
+      "description": "After Cavaliere resolves, you may *fly 4*."
+    }
+  },
+  {
+    "name": "Carnevale",
+    "job": "Fool",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Summon"
+    ],
+    "description": "Get the party started.",
+    "effects": [
+      {
+        "effect_names": [
+          "Summon"
+        ],
+        "result": "Summon two **bombs** in range 2. You may dash 1 after summoning each bomb."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "If you end your turn without attacking, you can then immediately gamble to detonate all bombs."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Fly 1 after summoning each bomb instead. *Charge*: Fly 2 instead."
+      },
+      {
+        "name": "ii",
+        "description": "You can allow any ally in range 2 to dash 1 before summoning a bomb instead."
+      }
+    ],
+    "mastery": {
+      "name": "Il Caos, La Mia Musa",
+      "description": "When you summon a bomb with this ability, you may bounce it it off a character in range, dealing 2 damage, then summon it in range 2 of that character."
+    }
+  },
+  {
+    "name": "Spinning Top",
+    "job": "Fool",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Gamble"
+    ],
+    "description": "A blur of cape, a flash of color, the gleaming of blades.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "*Gamble*, then dash that many spaces +2 in a whirling dance.\n* You must move as far as possible before an obstruction causes you to stop\n* You must make all movement in the same direction.\n* You cannot move diagonally using this movement\n* However, you can interrupt spinning top with any number of other abilities without causing the movement to end."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "If you move the maximum distance rolled by Spinning Top, gain *evasion* until the start of your next turn."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "You can always choose to dash 3 spaces with spinning top after seeing your gamble result."
+      },
+      {
+        "name": "ii",
+        "description": "*Charge*: Spinning top becomes fly instead."
+      }
+    ],
+    "mastery": {
+      "name": "Vortice di Follia",
+      "description": "If you triggered a *slay* effect during your turn before using spinning top, it becomes a *free action*."
+    }
+  },
+  {
+    "name": "Death",
+    "job": "Fool",
+    "chapter": 1,
+    "action": "2 actions",
+    "tags": [
+      "Attack"
+    ],
+    "area": [
+      {
+        "area_type": "Line",
+        "range": 6
+      }
+    ],
+    "description": "A shard of Divine Death, summoned with a snap of the finger.",
+    "effects": [
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "*Gamble*, then count the spaces out from you along the line. The space rolled is the attack space."
+      },
+      {
+        "on_hit": "2[D]+fray",
+        "on_miss": "",
+        "auto_hit": true
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "fray"
+      },
+      {
+        "effect_names": [
+          "Finishing Blow",
+          "Slay"
+        ],
+        "result": "Character explodes in a large blast *area effect* centered on them, dealing fray damage."
+      },
+      {
+        "effect_names": [
+          "Special Effect"
+        ],
+        "result": "Death deals 999 divine damage instead to your attack target if they are at 8 hp or less."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If there’s a *bloodied* character in the area, roll 1 more d6 and choose any result."
+      },
+      {
+        "name": "ii",
+        "description": "*Slay*: create a *pit* under your target, and summon a **bomb** in the pit."
+      }
+    ],
+    "mastery": {
+      "name": "Ultima Death",
+      "description": "Increase death’s threshold to 16 hp or less."
+    }
+  },
+  {
+    "name": "Gallows Humor",
+    "job": "Fool",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Stance",
+      "Power Die"
+    ],
+    "description": "The power of Divine Death flows through you, empowering your strikes.",
+    "effects": [
+      {
+        "effect_names": [
+          "Stance"
+        ],
+        "result": "Set out a d6 power die, starting at 1. While in this stance:\n* When this stance refreshes, or when you or an ally anywhere misses or is missed by an attack, tick the die up by 1.\n* When the die is at maximum, you may reset it to 1 when you or an ally uses an ability to empower it. The ability deals bonus damage and triggers any slay effects, hit or miss."
+      },
+      {
+        "effect_names": [
+          "Refresh"
+        ],
+        "result": "This stance refreshes at the start of your turn."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Gallows humor instantly ticks up to maximum if an ally is defeated anywhere."
+      },
+      {
+        "name": "ii",
+        "description": "The empowered ability gains *effect*: deal 4 damage again to any target at 25% hp or lower."
+      }
+    ],
+    "mastery": {
+      "name": "Maestra Mortale",
+      "description": "While in this stance, all your abilities with an action cost of 1 or 2 gain *slay*: all allies may dash 1, then foes adjacent to at least one ally that dashed this way take 2 damage."
+    }
+  },
+  {
+    "name": "Party Favor",
+    "job": "Fool",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Terrain Effect"
+    ],
+    "description": "The Fool’s arsenal is deep, their mirth infinite, and their ability to turn nearly anything into an explosive is legendary.",
+    "effects": [
+      {
+        "effect_names": [
+          "Terrain Effect"
+        ],
+        "result": "You throw an explosive mine into a free space in range 3. When any character enters the space, the mine explodes with a medium blast area effect centered on it. When activated, *gamble* to see the effects, which stack. Then, the mine is destroyed, ending the terrain effect.\n* 1-3: Yourself and allies in the area fly 1. Foes take 2 damage.\n* 4-5: Foes are additionally blinded.\n* 6: Yourself and allies also gain stealth."
+      },
+      {
+        "effect_names": [
+          "Finishing Blow"
+        ],
+        "result": "Foes take 2 damage, twice."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Increase flight on yourself to 3."
+      },
+      {
+        "name": "ii",
+        "description": "*Dazed* or *Blinded* foes activate the *Finishing Blow* effect."
+      }
+    ],
+    "mastery": {
+      "name": "Amico",
+      "description": "You can throw the party favor at any character in range instead, making it a *mark*. You can *gamble* at the end of any turn after yours to detonate it, ending the mark and effect."
+    }
+  },
+  {
+    "name": "Masquerade",
+    "job": "Fool",
+    "chapter": 2,
+    "action": "Interrupt 1",
+    "description": "The Fool knows how to move unseen, slipping through shifting faces and voices like a fish through water.",
+    "effects": [
+      {
+        "effect_names": [
+          "Trigger"
+        ],
+        "result": "An character uses an ability against you, and there’s a willing ally in range 3."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Swap places with your ally, teleporting both of you, and the ability targets your ally instead. If you or your ally can’t make a valid teleport, this interrupt can’t be made."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If you haven't acted yet this round, gain *evasion* after swapping until the end of your next turn."
+      },
+      {
+        "name": "ii",
+        "description": "Fly 1, then summon a **bomb** after swapping."
+      }
+    ],
+    "mastery": {
+      "name": "Hall of Mirrors",
+      "description": "Masquerade has no maximum range."
+    }
+  },
+  {
+    "name": "Diablo",
+    "job": "Fool",
+    "chapter": 2,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "+1 boon",
+      "Unerring"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 3
+      },
+      {
+        "area_type": "Blast",
+        "range": "Small"
+      }
+    ],
+    "description": "A snap of the finger summons the fool’s cross, the mark of the Laughing God, writ in hellish flames.",
+    "effects": [
+      {
+        "effect_names": [
+          "Special"
+        ],
+        "result": "The attack space of this ability is your choice of one of the four edge spaces of the blast."
+      },
+      {
+        "on_hit": "[D]",
+        "on_miss": "1 damage"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Attack target is *blinded*."
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "Deal 2 damage, once, to all foes in the area for every foe or ally in end spaces of the cross, including the attack space."
+      },
+      {
+        "effect_names": [
+          "Finishing Blow",
+          "Slay"
+        ],
+        "result": "Cross counts as having +1 foe in an end space."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If you catch 2 or more foes or allies in the end spaces of the cross, summon a **bomb** in the center space if it is free."
+      },
+      {
+        "name": "ii",
+        "description": "Allies in the area can fly 1. *Charge*: Allies in the area can fly 3."
+      }
+    ],
+    "mastery": {
+      "name": "Hell Festival",
+      "description": "You can also choose to *end your turn*, mark out the area effect and gain *delay*: You must take a *slow turn* next round. At the start of that turn, the area explodes again, dealing [D] damage to all characters within as an *area effect*, and summoning a **bomb** adjacent to each foe in the area."
+    }
+  },
+  {
+    "name": "Chronotemper",
+    "job": "Fool",
+    "chapter": 3,
+    "action": "1 action",
+    "tags": [
+      "Mark",
+      "Power Die"
+    ],
+    "description": "Laugh at time itself.",
+    "effects": [
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "Mark self or an ally in range 2. While marked, that character can use the following interrupt:",
+        "sub_ability": {
+          "sub_ability_name": "Cheat Time",
+          "type": "Interrupt 1",
+          "sub_effects": [
+            {
+              "effect_names": [
+                "Trigger"
+              ],
+              "result": "The start or end of any turn other than yours."
+            },
+            {
+              "effect_names": [
+                "Effect"
+              ],
+              "result": "*Gamble*, then the marked character dashes a number of spaces equal to the gamble result, 1 space at a time. Each time they finish a dash, they may deal 2 damage to an adjacent foe, but cannot damage the same foe more than once in the same turn."
+            }
+          ]
+        }
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "This dash gains *phasing* and ignores movement penalties from terrain."
+      },
+      {
+        "name": "ii",
+        "description": "Before and after the dash, *fly 1*."
+      }
+    ],
+    "mastery": {
+      "name": "Revolution",
+      "description": "You can take this interrupt three times a round. The second time you use it, the dash becomes just 2 spaces, and the third time just 1 space."
+    }
+  }
+]

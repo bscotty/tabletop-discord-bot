@@ -1,0 +1,458 @@
+[
+  {
+    "name": "Umbra",
+    "job": "Shade",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "+1 boon",
+      "Combo"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 3
+      }
+    ],
+    "description": "By the power of darkness.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "You may teleport 3."
+      },
+      {
+        "on_hit": "[D] + fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Your foe is blinded."
+      },
+      {
+        "effect_names": [
+          "Finishing Blow"
+        ],
+        "result": "Summon a **shadow** adjacent to your target."
+      }
+    ],
+    "combo": {
+      "name": "Penumbra",
+      "description": "Teleport your foe up to 3 spaces towards you instead of teleporting yourself. A foe can save to avoid this effect. Blinded foes fail this save."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "*Slay*: Gain *defiance*."
+      },
+      {
+        "name": "ii",
+        "description": "You can *sacrifice* 2 or consume a *shadow* in range 2 of you to gain a combo token after using this move."
+      }
+    ],
+    "mastery": {
+      "name": "Devil Frog Technique",
+      "description": "Increase Umbra and Penumbra’s range to 6 and it gains *unerring*."
+    }
+  },
+  {
+    "name": "Harrow",
+    "job": "Shade",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Mark"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 3
+      }
+    ],
+    "description": "You mark your foe with a dire seal. Shadowy tendrils reach out from an unknown space and jerk them like a puppet.",
+    "effects": [
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "Flick an umbral seal at a character in range 3, marking them. While marked, once a round when you teleport, you can also teleport the marked character 1 spaces and deal 2 damage to them if they’re a foe."
+      },
+      {
+        "effect_names": [
+          "Finishing Blow"
+        ],
+        "result": "When marking a *bloodied* character, immediately trigger the effect, ignoring the round limit."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "At the start of your turn, you may teleport to any space in range 2 of your target."
+      },
+      {
+        "name": "ii",
+        "description": "You can also *sacrifice 2* or consume a **shadow** in range 2 of you when marking a foe to also create a *pit* under them."
+      }
+    ],
+    "mastery": {
+      "name": "Bone Raven Technique",
+      "description": "This effect can trigger twice a round by default instead."
+    }
+  },
+  {
+    "name": "Death Blossom",
+    "job": "Shade",
+    "chapter": 1,
+    "action": "2 actions",
+    "tags": [
+      "Attack",
+      "Unerring"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 2
+      },
+      {
+        "area_type": "Burst",
+        "range": 1,
+        "qualifier": "target"
+      }
+    ],
+    "description": "From beneath a cloak, out from flying sleeves, or hidden in coils of hair - infinite blades. One more sweep, and shadowy bolts of cloth cut through your foes like razors.",
+    "effects": [
+      {
+        "on_hit": "2[D]+fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "fray"
+      },
+      {
+        "effect_names": [
+          "Finishing Blow"
+        ],
+        "result": "After this ability resolves, create a *pit* under your attack target. The pit is also a **shadow cloud**."
+      }
+    ],
+    "combo": {
+      "name": "Flying Sleeves",
+      "description": "Area becomes Arc 4. Gain *Effect*: If you catch an ally or allied summon in the area, you and your allies are immune to this ability’s damage and effects, and you may extend the area effect to arc 8."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "*Finishing Blow*: Teleport all characters in the area 1."
+      },
+      {
+        "name": "ii",
+        "description": "*Slay*: Teleport 2, then throw knives, dealing 2 damage to up to three foes in range 3."
+      }
+    ],
+    "mastery": {
+      "name": "Shukuchi",
+      "description": "You can teleport 2 spaces before and after using this ability."
+    }
+  },
+  {
+    "name": "Nightmare",
+    "job": "Shade",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Summon",
+      "Aura"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 2
+      }
+    ],
+    "description": "Draw out a fragment of true darkness, roaming and hunting for warmth.",
+    "effects": [
+      {
+        "effect_names": [
+          "Summon"
+        ],
+        "result": "Summon 2 **shadows** in range 2."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Until the start of your next turn, you gain *aura 2*. You may consume a **shadow** in the aura when you or any ally in the aura is targeted by an attack to grant *evasion* against that attack."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "When you summon a **shadow**, you or an ally or allied summon in range 2 may teleport 1."
+      },
+      {
+        "name": "ii",
+        "description": "While Umbra’s effect is active, you or allies can *rebound* abilities off **shadows** in the aura. Doing so consumes the shadow, removing it."
+      }
+    ],
+    "mastery": {
+      "name": "Hell Centipede Technique",
+      "description": "Gain *effect*: until the start of your next turn, when a **shadow** is consumed in the aura, you may also create a *pit* in or adjacent to its space."
+    }
+  },
+  {
+    "name": "Shadow Play",
+    "job": "Shade",
+    "chapter": 1,
+    "action": "1 action",
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 2
+      }
+    ],
+    "description": "Using forbidden scroll techniques, you confuse the senses of foes and allies alike.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Choose a character other than yourself in range, then a different character other than yourself in range 3 of that character. Swap their places, removing and placing them. Allies swapped gain *stealth*. Foes swapped are *dazed*."
+      },
+      {
+        "effect_names": [
+          "Finishing Blow"
+        ],
+        "result": "Repeat the effect."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If you swap two foes, you may then teleport them 1 after this ability resolves."
+      },
+      {
+        "name": "ii",
+        "description": "If you swap two allies, one of them can gain *evasion* until the start of their next turn."
+      }
+    ],
+    "mastery": {
+      "name": "Pale Rat Technique",
+      "description": "At round 4 or later in combat, Shadow Play becomes a *free action*."
+    }
+  },
+  {
+    "name": "Umbral Echo",
+    "job": "Shade",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Stance",
+      "Power Die"
+    ],
+    "description": "You split echoes of your soul into clones that overlay your movements.",
+    "effects": [
+      {
+        "effect_names": [
+          "Stance"
+        ],
+        "result": "You create shadowy copies of yourself, granting a d4 power die, starting at 2. If the die ticks down to 0, end this stance. While in this stance:\n* When you use an ability that targets a foe, you may trigger any finishing blow effects of that ability, then tick the die down by 1.\n* After you tick the die down, you may teleport 1."
+      },
+      {
+        "effect_names": [
+          "Refresh"
+        ],
+        "result": "Refresh this stance if you end your turn with no foes adjacent. When you do, tick the die up by 1."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "While in this stance, your abilities gain *slay*: summon a **shadow**. This effect can only trigger once a round."
+      },
+      {
+        "name": "ii",
+        "description": "While in Umbral Echo, you have *phasing* and entering the space of **shadows** always costs a maximum of 1 movement."
+      }
+    ],
+    "mastery": {
+      "name": "Bunshin",
+      "description": "Gain the following interrupt while in this stance:",
+      "sub_ability": {
+        "sub_ability_name": "Soul Proxy",
+        "type": "Interrupt 1",
+        "sub_effects": [
+          {
+            "effect_names": [
+              "Trigger"
+            ],
+            "result": "You take damage from a foe."
+          },
+          {
+            "effect_names": [
+              "Effect"
+            ],
+            "result": "End this stance, consume and remove all **shadows** in range 2 of you, and immediately gain *defiance* against the incoming damage. Deal 2 damage, once, to the triggering foe for each **shadow** consumed this way. You cannot take this stance again for the rest of combat."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Assassinate",
+    "job": "Shade",
+    "chapter": 2,
+    "action": "1 action",
+    "tags": [
+      "End Turn"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 3
+      }
+    ],
+    "description": "You step through the air, emerging from the shadow of your foe, where they find only gleaming knives.",
+    "effects": [
+      {
+        "effect_names": [
+          "End your turn"
+        ],
+        "result": "Choose a foe in range. At the end of that foe’s turn, as long as they’re in range 3, teleport to any space adjacent to them and deal 2 damage, three times to them and inflict *blinded*. Reduce this damage to just 2 damage if they have an adjacent ally. Then, you may kick off them and *fly 2*."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If you’re in *stealth*, increase all ranges by +2, and doesn’t break stealth."
+      },
+      {
+        "name": "ii",
+        "description": "While you’re holding assassinate, you have *evasion*."
+      }
+    ],
+    "mastery": {
+      "name": "Thousand Year Lizard Technique",
+      "description": "At round 4 or later, you can choose two foes with this ability. Trigger its effects in any order."
+    }
+  },
+  {
+    "name": "Nocturne",
+    "job": "Shade",
+    "chapter": 2,
+    "action": "Interrupt 1",
+    "tags": [
+      ""
+    ],
+    "description": "You capture a thin silver thread of spilled life force of a foe and use it to tear open a space of night and cold.",
+    "effects": [
+      {
+        "effect_names": [
+          "Trigger"
+        ],
+        "result": "You trigger a finishing blow effect."
+      },
+      {
+        "effect_names": [
+          "Terrain Effect"
+        ],
+        "result": "Mark a small blast centered on that character, then create a terrain effect in the area. All spaces of this terrain effect are **shadow clouds**. This area lasts until this ability is used again."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "While Nocturne is active, you may teleport up to 2 spaces in or out of the area as a free action."
+      },
+      {
+        "name": "ii",
+        "description": "You may *sacrifice 2* when the area is created to increase the size of the area to medium blast, or *sacrifice 4* to increase it to large blast."
+      }
+    ],
+    "mastery": {
+      "name": "Trap Door Spider Technique",
+      "description": "You can weave shadow magic when the area is created to teleport any characters in range 2 of you into any free space inside the area, as long as there is room for that character.",
+      "effects": [
+        {
+          "effect_names": [
+            ""
+          ],
+          "result": "",
+          "sub_ability": {
+            "sub_ability_name": "",
+            "type": "",
+            "sub_effects": [
+              {
+                "effect_names": [
+                  ""
+                ],
+                "result": ""
+              }
+            ]
+          }
+        }
+      ],
+      "sub_ability": {
+        "sub_ability_name": "",
+        "type": "",
+        "sub_effects": [
+          {
+            "effect_names": [
+              ""
+            ],
+            "result": ""
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Incubus",
+    "job": "Shade",
+    "chapter": 3,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "Mark",
+      "+1 boon",
+      "Combo"
+    ],
+    "description": "The thirteenth scroll art, a void-sheathed blade that cuts away at the aether of the very soul, leaving a cut that creates slashed darkness.",
+    "effects": [
+      {
+        "on_hit": "[D]+fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "Mark your foe. While marked, if any foe ends their turn adjacent to your marked foe, or your foe ends their turn adjacent to any other foe, then both the target and any adjacent foes take 2 damage and are *dazed*. This effect can only trigger once per round."
+      }
+    ],
+    "combo": {
+      "name": "Succubus",
+      "description": "Instead of the *mark*, gain *Effect*: deal 3 damage to all characters marked by Incubus, and teleport them 2."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "Incubus gains range 3. If you make it from *stealth*, gains range 5."
+      },
+      {
+        "name": "ii",
+        "description": "Incubus deals *bonus damage* for every ally of your target adjacent to your target."
+      }
+    ],
+    "mastery": {
+      "name": "Toxic Widow Technique",
+      "description": "Incubus’ mark stacks with other marks. You may mark any number of characters with Incubus. When a character takes damage from an Incubus mark, you may also mark them."
+    }
+  }
+]

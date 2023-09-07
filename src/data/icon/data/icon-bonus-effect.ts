@@ -14,7 +14,7 @@ export function formatBonusEffect(bonusEffect: IconBonusEffect): string {
     }
     let separator = "or"
     if (bonusEffect.and) {
-        separator = "and"
+        separator = "and gain"
     }
     return bonusEffect.effect_names.map((it) => `**${it}**`).join(` ${separator} `) + ": " + bonusEffect.result +
         subAbilitySuffix

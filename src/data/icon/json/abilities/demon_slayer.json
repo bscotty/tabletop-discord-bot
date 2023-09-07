@@ -15,11 +15,11 @@
       }
     ],
     "description": "You slash your weapon in a deadly swing sending cutting shockwaves out that rip through enemy defenses.",
-    "attack": {
-      "on_hit": "[D]+ fray",
-      "on_miss": "fray"
-    },
     "effects": [
+      {
+        "on_hit": "[D]+ fray",
+        "on_miss": "fray"
+      },
       {
         "effect_names": [
           "Effect"
@@ -148,11 +148,11 @@
       }
     ],
     "description": "Fill the air with the flurry of blades.",
-    "attack": {
-      "on_hit": "2[D] + fray",
-      "on_miss": "fray"
-    },
     "effects": [
+      {
+        "on_hit": "2[D] + fray",
+        "on_miss": "fray"
+      },
       {
         "effect_names": [
           "Area Effect"
@@ -390,14 +390,10 @@
     "effects": [
       {
         "effect_names": [
-          "End your turn"
-        ],
-        "result": "and gain"
-      },
-      {
-        "effect_names": [
+          "End your turn",
           "Terrain effect"
         ],
+        "and": true,
         "result": "Mark out a burst 2 (self) area, then gain"
       },
       {
@@ -451,11 +447,11 @@
       "Power Die"
     ],
     "description": "The master art of the demon slayers - holding a single blow with ultimate patience, until it can slay the most tenebrous of monsters in one stroke.",
-    "attack": {
-      "on_hit": "fray and shove 1",
-      "on_miss": "fray"
-    },
     "effects": [
+      {
+        "on_hit": "fray and shove 1",
+        "on_miss": "fray"
+      },
       {
         "effect_names": [
           "Effect"
