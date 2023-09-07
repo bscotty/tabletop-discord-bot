@@ -1,0 +1,470 @@
+[
+  {
+    "name": "Sow",
+    "job": "Harvester",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "Mark",
+      "Pierce",
+      "Combo"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 4
+      }
+    ],
+    "description": "You throw out a poison seed that bursts into thorny death.",
+    "effects": [
+      {
+        "on_hit": "fray",
+        "on_miss": "",
+        "auto_hit": true
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Your foe is sealed."
+      },
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "You foe is marked. When marked, and after you attack your marked foe thereafter, bless yourself or an ally in range 3 of your target."
+      }
+    ],
+    "combo": {
+      "name": "Reap",
+      "effects": [
+        {
+          "on_hit": "[D]+fray",
+          "on_miss": "fray"
+        },
+        {
+          "effect_names": [
+            "Effect"
+          ],
+          "result": "Summon a Thrall adjacent to your target."
+        },
+        {
+          "effect_names": [
+            "Slay"
+          ],
+          "result": "Repeat the effect."
+        },
+        {
+          "effect_names": [
+            "Special"
+          ],
+          "result": "You can make this melee attack against the target marked by Sow regardless of distance or line of sight. It also gains *unerring* if made this way."
+        }
+      ]
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "*Effect*: If Sow’s marked foe is defeated, it can be transferred to a different foe in range 3 from that foe."
+      },
+      {
+        "name": "ii",
+        "description": "*Comeback:* Reap’s *Slay* effect triggers."
+      }
+    ],
+    "mastery": {
+      "name": "Spectral Scythe",
+      "description": "Reap and Sow also create an arc 4 *area effect* drawn from your target as the origin space, that cannot include your target. Foes inside take 2 *piercing* damage, and allies inside gain 2 vigor."
+    }
+  },
+  {
+    "name": "Growing Season",
+    "job": "Harvester",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Mark"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 4
+      }
+    ],
+    "description": "Blow magical spores in the air, which are disturbed by the chaos of combat. Where they fall, the fruit of life and death blooms.",
+    "effects": [
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "Mark a character in range. Once a round after that character ends their turn, create a **plant** adjacent to their space."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "If that character is *bloodied*, repeat this effect. Foes are additionally *pacified*."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Abilities used against a character marked by growing season gain *slay*: create an Eden vine *terrain effect* in an adjacent space. The vine is *difficult terrain* and a *pit* and creates a **plant** in its space at the start of the round if there isn't already a plant there."
+      },
+      {
+        "name": "ii",
+        "description": "Abilities used against a character marked by growing season gain *slay*: create a height 1 blood tree object in adjacent space. The tree creates a plant on top of it at the start of the round if there isn't already a plant there."
+      }
+    ],
+    "mastery": {
+      "name": "Soothing Spore",
+      "description": "Foes marked by Growing Season are *pacified+* while in or adjacent to spaces occupied by **plants**."
+    }
+  },
+  {
+    "name": "Gravebirth",
+    "job": "Harvester",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Stance"
+    ],
+    "description": "Vine and root coil through the deep soil, bringing forth the restless dead.",
+    "effects": [
+      {
+        "effect_names": [
+          "Stance"
+        ],
+        "result": "When you enter this stance, or when it refreshes, Summon a **thrall** in free space in range 2. While in this stance, you have aura 2, with the following effects:\n* At the end of your turn, you may consume any *blessing* tokens in the aura to summon one **thrall** in the aura per blessing consumed.\n* At the start of your turn, you can prevent up to three thralls in the area from collapsing into **plants**."
+      },
+      {
+        "effect_names": [
+          "Refresh"
+        ],
+        "result": "Refresh this stance once a round when you trigger a *slay* effect."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "When you end your turn, all **thralls** of your choice burrow, removing them from the battlefield, then you may place them in free space in your aura."
+      },
+      {
+        "name": "ii",
+        "description": "At the end of your turn, you may *sacrifice 2* to summon an additional **thrall**."
+      }
+    ],
+    "mastery": {
+      "name": "Recycle",
+      "description": "While Gravebirth’s aura is active, as a *free action* you can cause any two **thralls** in the aura to collapse into **plants** to *cure* an ally in range 4."
+    }
+  },
+  {
+    "name": "Harvest",
+    "job": "Harvester",
+    "chapter": 1,
+    "action": "2 actions",
+    "tags": [
+      "Attack"
+    ],
+    "area": [
+      {
+        "area_type": "Arc",
+        "range": 6
+      }
+    ],
+    "description": "You swing with a blade as bright as the new moon.",
+    "effects": [
+      {
+        "on_hit": "2[D] + fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "Foes take fray damage. Allies are *blessed*."
+      },
+      {
+        "effect_names": [
+          "Slay"
+        ],
+        "result": "Summon a **Thrall** for each foe in the area, and deal 2 *piercing* damage again as an *area effect* to those foes."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Allies in the area also gain 2 vigor, or 4 vigor if Harvest’s Slay effect triggers."
+      },
+      {
+        "name": "ii",
+        "description": "Gains Range 2. *Comeback*: Range 5"
+      }
+    ],
+    "mastery": {
+      "name": "Harvest Moon",
+      "description": "When this ability passes through a plant, you can cause that plant to explode, dealing 2 piercing damage in a small blast area effect centered on each plant, and granting its blessing character to yourself or any other ally in range 3 of that plant. Characters can only be damaged by one of these explosions a turn."
+    }
+  },
+  {
+    "name": "Blood Grove",
+    "job": "Harvester",
+    "chapter": 1,
+    "action": "2 actions",
+    "tags": [
+      "Terrain Effect",
+      "Summon"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 2
+      }
+    ],
+    "description": "The wilderness boils with explosive growth, fed by the blood of the battlefield.",
+    "effects": [
+      {
+        "effect_names": [
+          "Terrain Effect"
+        ],
+        "result": "Grow a medium blast area of undergrowth, with its center space in range. The area is *dangerous terrain* for foes and disappears if you use this ability again."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "As long as you are in the area, summon a **thrall** in or adjacent to the area at the end of your turn for each of these conditions you fulfilled this turn:\n* Triggered a *slay* effect\n* *Sacrificed* as part of an ability\n* Are *bloodied*\nEach condition can only trigger once."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "All spaces of the area cost 0 movement for **thralls** to enter."
+      },
+      {
+        "name": "ii",
+        "description": "Once on your turn you, while inside the area, you can *sacrifice 2* to extend the area by 2 spaces, adding to its total area on any edge."
+      }
+    ],
+    "mastery": {
+      "name": "Hungry Grove",
+      "description": "Each time you summon a **thrall** with Blood Grove, extend the area by 1 space, added to its total area, as long as those spaces are placed adjacent to the area when the effect is triggered."
+    }
+  },
+  {
+    "name": "Rot",
+    "job": "Harvester",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Combo",
+      "Mark"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 4
+      }
+    ],
+    "description": "Leaves shrivel. Hair Curls. Wounds fail to heal.",
+    "effects": [
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "Mark a foe in range. While marked, that character cannot be *cured*, cannot gain or benefit from vigor, and gains +1 curse on saves. If that character is at 25% hp or lower when marked, they also lose *defiance*."
+      }
+    ],
+    "combo": {
+      "name": "Regenerate",
+      "effects": [
+        {
+          "effect_names": [
+            "Mark"
+          ],
+          "result": "Mark an ally in range. While marked, that character has regeneration. If that character is at 25% hp or lower when marked, they also gain defiance."
+        },
+        {
+          "effect_names": [
+            "Special"
+          ],
+          "result": "This mark can be placed even if Rot is already active."
+        }
+      ]
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "Characters marked by Regenerate gain *comeback*: summon a **plant** in an adjacent space at the start of their turn."
+      },
+      {
+        "name": "ii",
+        "description": "Foes that start their turn adjacent to a character marked by Rot take 2 *piercing* damage."
+      }
+    ],
+    "mastery": {
+      "name": "Regrowth",
+      "description": "Gain an alternate combo action:",
+      "combo": {
+        "name": "Regrowth",
+        "effects": [
+          {
+            "effect_names": [
+              "Mark"
+            ],
+            "result": "Mark a character in range 4. If that character would be defeated before the start of your next turn, they are instantly *rescued* after being defeated, then gain a vigor surge and become *unstoppable* until the end of their next turn. Then, even if this effect didn’t trigger, summon a **plant** in an adjacent space to them and end this mark."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Crimson BLoom",
+    "job": "Harvester",
+    "chapter": 2,
+    "action": "1 action",
+    "tags": [
+      "Mark",
+      "Summon",
+      "Power Die"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 4
+      }
+    ],
+    "description": "You release a rapidly growing seed of the Thornwillow, the blood-fatted plant of the harvesters whose sap is a powerful intoxicant.",
+    "effects": [
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "Mark a character in range. At the end of any turn that character took damage, or after they attack, set out a d6 power die or increase the die by 1. When the die would tick to 6, consume it. The marked character *sacrifices 6*, but then gains 6 vigor, deals *bonus damage* with all abilities, and becomes *unstoppable* until the end of their next turn."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "When the die is consumed, summon a **plant**, and pass this mark to a new character of your choice in in range 3 of the original character. You must pass the mark if possible. If there are no valid characters, the mark ends."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If Crimson Bloom’s damage would reduce an ally to 1 hp or below, they also gain *defiance*."
+      },
+      {
+        "name": "ii",
+        "description": "Foes at 25% hp or lower sacrifice 10 instead."
+      }
+    ],
+    "mastery": {
+      "name": "Mother Bloodwillow",
+      "description": "At round 4 or later, Crimson Bloom becomes a *free action* and its power die starts at 3 ticks."
+    }
+  },
+  {
+    "name": "Fairy Ring",
+    "job": "Harvester",
+    "chapter": 2,
+    "action": "1 action",
+    "tags": [
+      "End Turn",
+      "Terrain Effect"
+    ],
+    "description": "You cast out a handful of aether-feeding fungi, holy spores that grow into a ringed garden of colorful and deadly mushrooms.",
+    "effects": [
+      {
+        "effect_names": [
+          "End your turn",
+          "Terrain Effect"
+        ],
+        "and": true,
+        "result": "Create a ring of mushrooms, a burst 2 (self) *terrain effect*. The ring can be created overlapping any terrain and underneath characters. While the ring is active, gain the following interrupt. The ring lasts until this ability is used again.",
+        "sub_ability": {
+          "sub_ability_name": "Spirit Away",
+          "type": "Interrupt 2",
+          "sub_effects": [
+            {
+              "effect_names": [
+                "Trigger"
+              ],
+              "result": "A foe enters or exits the area."
+            },
+            {
+              "effect_names": [
+                "Effect"
+              ],
+              "result": "Teleport that foe 2 and *seal* them. This interrupts but does not end their movement."
+            }
+          ]
+        }
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Foes cannot gain vigor inside of the ring, and lose all vigor if they start their turn there."
+      },
+      {
+        "name": "ii",
+        "description": "You can use Spirit Away on allies. If you do, it doesn’t *seal* them."
+      }
+    ],
+    "mastery": {
+      "name": "Spore Shroud",
+      "description": "Whenever the rings’ interrupt activates, create a height 1 Megamushroom object anywhere inside or adjacent to the area. The object has a *blessing* token on it and counts as a **plant**, but isn’t removed if the token is removed."
+    }
+  },
+  {
+    "name": "Dark Sliver",
+    "job": "Harvester",
+    "chapter": 3,
+    "action": "1 action",
+    "tags": [
+      "Attack"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 2
+      }
+    ],
+    "description": "The blade edges of the harvesters are so sharp they can cut the very soul.",
+    "effects": [
+      {
+        "on_hit": "[D]+fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Terrain Effect"
+        ],
+        "result": "Cut away a part of the target’s soul, choosing a free space in range 3 of your foe. If the foe is not occupying that space at the end of their next turn, they take 2 piercing damage, are *pacified*, and summon a **plant** in that space."
+      },
+      {
+        "effect_names": [
+          "Slay"
+        ],
+        "result": "Create a **plant** in range 3 of your foe."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "*Comeback*: Deal bonus damage, and increase all ranges by +1."
+      },
+      {
+        "name": "ii",
+        "description": "*Sacrifice 2*: Ability gains range 6."
+      }
+    ],
+    "mastery": {
+      "name": "Recycle",
+      "description": "Dark Sliver can summon a mote of life instead of any regular plant. A mote of life is a **plant**, but becomes a *terrain effect* when its *blessing* is removed. Inside, any ally gains *regeneration* while standing in its space."
+    }
+  }
+]

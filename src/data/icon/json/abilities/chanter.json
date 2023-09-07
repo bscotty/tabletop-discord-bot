@@ -1,0 +1,515 @@
+[
+  {
+    "name": "Holy",
+    "job": "Chanter",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "Combo"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 5
+      }
+    ],
+    "description": "You ring the bell of purity and a tone rings out that soothes the peaceful and chastises the violent. A second ring from the bell shatters the tone from the first, breaking open the earth.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Foe is *pacified*."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "*Cure* a character in range 2 of that foe."
+      },
+      {
+        "effect_names": [
+          "Charge"
+        ],
+        "result": "Grant 3 vigor to all other characters of your choice in range 2 of your foe."
+      }
+    ],
+    "combo": {
+      "name": "Hades",
+      "description": "Gains *True Strike* and medium blast",
+      "effects": [
+        {
+          "on_hit": "Fray",
+          "on_miss": "",
+          "auto_hit": true
+        },
+        {
+          "effect_names": [
+            "Area Effect"
+          ],
+          "result": "Fray"
+        },
+        {
+          "effect_names": [
+            "Terrain Effect"
+          ],
+          "result": "Create a *pit* under your target."
+        }
+      ]
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "After Hades resolves, *gamble*, then all *pits* in the area explode for a medium blast *area effect*, centered on them. *Area effect*: characters in at least one area take damage equal to half the gamble result."
+      },
+      {
+        "name": "ii",
+        "description": "You may *fly 1* before using Holy, or 3 when *charged*."
+      }
+    ],
+    "mastery": {
+      "name": "Magnasancti",
+      "description": "Holy creates a small blast *terrain effect* after resolving. Only one of these areas can be placed at once. Allies have *flying* in the area, and allies that end their turn in the area may gain 2 vigor."
+    }
+  },
+  {
+    "name": "Felicity",
+    "job": "Chanter",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Mark",
+      "Combo"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 5
+      }
+    ],
+    "description": "You ring the bell of fleeting guardians, and an ally feels their step lifted by invisible wings.",
+    "effects": [
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "Mark an ally in range. That character gains a *blessing* and can *fly 2*. Whenever you spend a combo token, your marked character can *fly 2*."
+      },
+      {
+        "effect_names": [
+          "Charge"
+        ],
+        "result": "That ally gains two *blessings* instead."
+      }
+    ],
+    "combo": {
+      "name": "Fleet",
+      "effects": [
+        {
+          "effect_names": [
+            "Effect"
+          ],
+          "result": "An ally in range 5 is *blessed* and may *fly 4*. For every foe or ally they pass over during this movement, they gain 2 vigor."
+        }
+      ]
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "When an ally ends any movement from this ability, they can shove all adjacent characters 1."
+      },
+      {
+        "name": "ii",
+        "description": "You can *fly 1*, then shove an adjacent character 1 when granting movement from this ability."
+      }
+    ],
+    "mastery": {
+      "name": "Fantasia",
+      "description": "Gain an alternate combo ability. You can choose this ability or Fleet when you spend a token:",
+      "combo": {
+        "name": "Fantasia",
+        "action": "2 actions",
+        "effects": [
+          {
+            "effect_names": [
+              "Effect"
+            ],
+            "result": "Remove an ally in range 5 from the battlefield. Return them to the battlefield in their original location or as close as possible at the start of their turn, then they may *fly 1*."
+          },
+          {
+            "effect_names": [
+              "Special"
+            ],
+            "result": "Reduce the action cost of this ability by 1 for every two *blessing* tokens your target has, down to a minimum of a *free action*."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Pandaemonium",
+    "job": "Chanter",
+    "chapter": 1,
+    "action": "2 actions",
+    "tags": [
+      "Combo"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 5
+      },
+      {
+        "area_type": "Blast",
+        "range": "Medium"
+      }
+    ],
+    "description": "You sing a passage of the days of chaos and battle, where the tumult of the battlefield was like the churning of the sea, and divine lightning scathed the land.",
+    "effects": [
+      {
+        "on_hit": "[D]+fray",
+        "on_miss": "",
+        "auto_hit": true
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "Remove all characters in the area, then place them back in any other space in the area."
+      },
+      {
+        "effect_names": [
+          "Charge"
+        ],
+        "result": "Increase area to Large Blast, and allies in the area gain 4 vigor."
+      }
+    ],
+    "combo": {
+      "name": "Purgatorio",
+      "effects": [
+        {
+          "on_hit": "[D]+fray",
+          "on_miss": "",
+          "auto_hit": true
+        },
+        {
+          "effect_names": [
+            "Area Effect"
+          ],
+          "result": "Fray"
+        },
+        {
+          "effect_names": [
+            "Effect"
+          ],
+          "result": "All *pits* in the area explode for a medium blast *area effect*, centered on them. *Area effect*: fray damage."
+        },
+        {
+          "effect_names": [
+            "Effect"
+          ],
+          "result": "Create a *pit* under the attack target"
+        }
+      ]
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "After Pandaemonium resolves, *gamble*. Shove all characters affected 1 space in any direction. On a 4+, shove them 1 again. On a 6, shove them 1 again."
+      },
+      {
+        "name": "ii",
+        "description": "Purgatorio’s damage does not break *pacified* and its effect causes *pits* to appear under every *pacified* foe."
+      }
+    ],
+    "mastery": {
+      "name": "Dulce Purgatorio",
+      "description": "This ability deals bonus damage. Pandaemonium’s area effect and Purgatorio’s pit explosion effect extend to all pits on the battlefield."
+    }
+  },
+  {
+    "name": "Aria",
+    "job": "Chanter",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "True Strike",
+      "Delay"
+    ],
+    "description": "You pose, then deliver a striking performance that resonates through the soul.",
+    "effects": [
+      {
+        "effect_names": [
+          "End your turn",
+          "Delay"
+        ],
+        "and": true,
+        "result": "Your next turn must be *slow*. At the start of that turn, you deliver a stunning performance, affecting a small blast *area effect* centered on you. Foes in the area take fray damage twice and are *sealed*. *Sealed* or *Pacified* foes are shoved 1. Allies in the area are *cured*."
+      },
+      {
+        "effect_names": [
+          "Special"
+        ],
+        "result": "If you are damaged by a foe’s ability before the start of that turn, the area becomes a medium blast. If you are damaged again, it becomes a large blast."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "You may fly 1 when Aria’s special effect triggers."
+      },
+      {
+        "name": "ii",
+        "description": "If Aria’s special effect triggers twice, gain *defiance* and also become *unstoppable* until the start of your turn."
+      }
+    ],
+    "mastery": {
+      "name": "Power Chord",
+      "description": "At round 4 or later, Aria gains charge: free action."
+    }
+  },
+  {
+    "name": "Dervish",
+    "job": "Chanter",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Combo"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 4
+      }
+    ],
+    "description": "You sing of the comfort of companions, and the dawn that surely will follow.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "You *fly 1*, then whisk an ally in range away with powerful winds, removing them from the battlefield and placing them in any space adjacent to you."
+      },
+      {
+        "effect_names": [
+          "Charge"
+        ],
+        "result": "Choose a second ally."
+      }
+    ],
+    "combo": {
+      "name": "Dawn",
+      "effects": [
+        {
+          "effect_names": [
+            "Effect"
+          ],
+          "result": "Gain aura 1 until the end of your next turn. While in the aura, yourself and allies gain +1 boon on saves and can save to end statuses and other effects at the *start* of your turns instead of the end."
+        }
+      ]
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "A swirling aura 1 of winds surrounds you after taking this ability until the start of your next turn, granting you and allies inside *counter*."
+      },
+      {
+        "name": "ii",
+        "description": "Before you use this ability, you can cause a wind blast, shoving all adjacent foes 1 and dealing 2 damage to them."
+      }
+    ],
+    "mastery": {
+      "name": "Beacon of Hope",
+      "description": "You can empower this ability to gain both effects at once and automatically activate their charge effects. This also counts as spending a combo token, though you don’t actually need to spend one. If you empower the ability this way, it cannot be used for the rest of combat."
+    }
+  },
+  {
+    "name": "Symphony",
+    "job": "Chanter",
+    "chapter": 1,
+    "action": "2 actions",
+    "tags": [
+      "True Strike"
+    ],
+    "description": "You ring the bell of thresholds, creating crystalline fragments of the ancient power that courses through the Chant.",
+    "effects": [
+      {
+        "effect_names": [
+          "Terrain Effect"
+        ],
+        "result": "Remove up to four blessings from characters anywhere to create pulsing motes of energy that descend, creating terrain spaces in free space on the map. None can be placed adjacent to each other or overlap.\n* Any character that enters an affected space or starts their turn there detonates the mote, removing it and creating a small blast explosion as an *area effect*, centered on them. Foes inside take fray damage, and allies inside gain 2 vigor.\n* If the character was yourself or an ally, they are *blessed* and can *fly 1*. If that character was a foe, they also have a *pit* created under them."
+      },
+      {
+        "effect_names": [
+          "Charge"
+        ],
+        "result": "Create +2 more spaces."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "When motes explode, they deal 2 damage again to all foes inside and shove them 1 away from the center space if at least one other mote was already exploded this turn."
+      },
+      {
+        "name": "ii",
+        "description": "Allies are *cured* after detonating their second mote in the same turn."
+      }
+    ],
+    "mastery": {
+      "name": "Crescendo",
+      "description": "If you create four or more motes with this ability, you can create a mote in range 5 as a *free action* as part of ending your turn for the rest of combat. This effect does not stack."
+    }
+  },
+  {
+    "name": "Gentleness",
+    "job": "Chanter",
+    "chapter": 2,
+    "action": "1 action",
+    "tags": [
+      "Stance"
+    ],
+    "description": "You radiate an aura of such powerful peace that all close to you, monster or man, find it impossible to raise a hand in violence.",
+    "effects": [
+      {
+        "effect_names": [
+          "Stance"
+        ],
+        "result": "When you take this stance, you have aura 1. All characters (including yourself) in the aura gain +1 curse on attacks and take 1 *divine* damage each time they deal damage to another character."
+      },
+      {
+        "effect_names": [
+          "Refresh"
+        ],
+        "result": "Refresh or exit this stance at the start of your turn."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Yourself and allies inside the aura also have counter in this stance."
+      },
+      {
+        "name": "ii",
+        "description": "Characters cannot critically hit or be critical hit inside Gentleness’ aura, and also cannot gain, deal, or take bonus damage."
+      }
+    ],
+    "mastery": {
+      "name": "Gentle Terror",
+      "effects": [
+        {
+          "effect_names": [
+            "Special Effect"
+          ],
+          "result": "When the aura refreshes, you may increase or decrease the aura size by +1, to a maximum of 3 or a minimum of 1. When you do, foes inside must save or be *pacified*."
+        }
+      ]
+    }
+  },
+  {
+    "name": "Monogatari",
+    "job": "Chanter",
+    "chapter": 2,
+    "action": "1 action",
+    "tags": [
+      "Gamble"
+    ],
+    "description": "Some chanters also study the Book of Ages, the great mythic chronicle of heroes from the time of the Doom. This unorthodox text inherits some of their ability to sing the chant, granting it tangible power.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Sing a short passage from the book of ages. At the end of your turn, *gamble* and consult the following table to see which tale you sing. The song resonates in the air until this ability is used again. Yourself or allies that complete the described course of action from the song passage are *blessed* at the end of their turn they complete it and may *fly 2*. Characters can only fulfill this condition once per song."
+      },
+      {
+        "effect_names": [
+          "Charge"
+        ],
+        "result": "Roll one extra d6 when gambling and choose *any* result.\n\n1. **A Tale of Fury**: Reduce a character to 0 hp or reduce them below 50% hp if above.\n2. **A Tale of Travels**: Move more than 4 spaces from your starting point on your turn\n3. **A Tale of Green and Pleasant Times**: Do not attack\n4. **A Tale of Cunning**: Use an interrupt\n5. **A Tale of Boon Companions**: End your turn adjacent to an ally\n6. **A Tale of Triumph**: Use an ability on an ally."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "You can cause the effect to also apply to foes. Foes that fulfill the condition are *sealed*."
+      },
+      {
+        "name": "ii",
+        "description": "You can spend any number of blessings on characters in range 2 to roll 1 extra d6 per blessing spent when gambling."
+      }
+    ],
+    "mastery": {
+      "name": "Raconteur",
+      "description": "Roll 1 extra d6 when gambling, and when gambling, you can choose any two results. Yourself and allies that complete both results in the same turn are also *cured*."
+    }
+  },
+  {
+    "name": "Chastise",
+    "job": "Chanter",
+    "chapter": 3,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "Combo"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 5
+      }
+    ],
+    "description": "You ring the bell of true names, forbidding your foes in august tones against harming an ally.",
+    "effects": [
+      {
+        "on_hit": "Fray",
+        "on_miss": "",
+        "auto_hit": true
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Foe is *sealed*."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Choose either yourself or an ally in range. Until the end of your foe’s next turn, if they damage any character chosen with an ability, they take 1 *divine* damage three times at the end of that turn. Whether this ability triggered or not, this effect then ends."
+      },
+      {
+        "effect_names": [
+          "Charge"
+        ],
+        "result": "Choose yourself and an ally in range."
+      }
+    ],
+    "combo": {
+      "name": "Charism",
+      "effects": [
+        {
+          "effect_names": [
+            "Effect"
+          ],
+          "result": "Choose a foe in range. At the end of that foe’s next turn, either *cure* or *bless* allies in a small blast area centered on them (choose). If there were two or more allies in the area, then create a *pit* under that foe."
+        }
+      ]
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "While either effect from this ability is active, your foe takes 1 *divine* damage after using any ability that damages another character."
+      },
+      {
+        "name": "ii",
+        "description": "While either effect from this ability is active, if your foe defeats any character, they take 1 *divine* damage three times."
+      }
+    ],
+    "mastery": {
+      "name": "Supreme Forbiddance",
+      "description": "The first time you use this ability in a combat, any character chosen is *immune* to all damage from the chosen foe until the start of your next turn."
+    }
+  }
+]

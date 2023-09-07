@@ -1,0 +1,455 @@
+[
+  {
+    "name": "Sleight of Hand",
+    "job": "Seer",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Attack"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 5
+      },
+      {
+        "area_type": "Blast",
+        "range": "Small"
+      }
+    ],
+    "description": "A flash of bright color, and a card is stuck to your foe, bursting into arcane fire in a flash.",
+    "effects": [
+      {
+        "on_hit": "fray",
+        "on_miss": "",
+        "auto_hit": true
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Your foe is *pacified*."
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "Fray damage."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Summon a **wild card** in range 2 of your foe."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "This ability does not break the *pacified* condition and deals 2 damage again to any *pacified* foes in the area."
+      },
+      {
+        "name": "ii",
+        "description": "After this ability resolves, roll 1 more d6 the next time you *gamble* this turn. *Charge*: 2 more d6s."
+      }
+    ],
+    "mastery": {
+      "name": "King of Swords",
+      "description": "After using this ability, you gain six spectral blades that hover behind you, using a d6 power die starting at 6 to track them. At the end of your turn, *gamble*. If you roll under the number of blades remaining, a blade flies out and deals 2 *divine* damage to a foe in range 6. Using this ability again with blades active restocks them."
+    }
+  },
+  {
+    "name": "Chaos Tarot",
+    "job": "Seer",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Summon"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 5
+      },
+      {
+        "area_type": "Blast",
+        "range": "Small"
+      }
+    ],
+    "description": "You flick a beautifully illustrated ethereal card onto the battlefield, laden with the threads of potential.",
+    "effects": [
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "*Gamble*, then apply the listed effect in the area.\n1. Card explodes for fray damage.\n2. All characters in the area are teleported 2.\n3. Create two spaces of *difficult terrain* in the area.\n4. *Bless* up to two characters in the area.\n5. Seal up to two characters in the area.\n6. Choose two."
+      },
+      {
+        "effect_names": [
+          "Summon"
+        ],
+        "result": "Then, summon a **wild card** in the area."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "You can consume any number of blessings on character in Chaos Tarot’s area before gambling to roll 1 extra d6 per blessing consumed."
+      },
+      {
+        "name": "ii",
+        "description": "You can move Chaos Tarot’s area up to 2 spaces in any direction before applying the gamble effect. *Charge*: 4 spaces"
+      }
+    ],
+    "mastery": {
+      "name": "Royalty Gold",
+      "description": "Instead of summoning a **wild card** with this ability, you can instead *end your turn* and summon a Master Card. You can only have one Master Card active at once. The Master Card acts as a **wild card**, but also gains the gamble effect of Chaos Tarot, which it grants to any area ability that triggers it. It is consumed as normal after being activated."
+    }
+  },
+  {
+    "name": "Astra",
+    "job": "Seer",
+    "chapter": 1,
+    "action": "2 actions",
+    "tags": [
+      "Attack",
+      "Combo"
+    ],
+    "area": [
+      {
+        "area_type": "Line",
+        "range": 5
+      }
+    ],
+    "description": "You call down the heavens themselves on your foes.",
+    "effects": [
+      {
+        "on_hit": "[D]+fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "Fray"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Foe explodes in a medium blast *area effect*, centered on them. *Gamble*, then deal that much damage again to all characters in the area. On a 4+, create two spaces of *difficult terrain* in the area. On a 6, a meteor also lands, creating a height 1 meteor object in any part of the area and dealing 2 damage to adjacent characters when it lands."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "You can remove any number of *blessings* from allies in the area to roll 1 extra d6 per blessing removed when *gambling*."
+      }
+    ],
+    "combo": {
+      "name": "Fortuna",
+      "area": [
+        {
+          "area_type": "Range",
+          "range": 5
+        },
+        {
+          "area_type": "Blast",
+          "range": "Medium"
+        }
+      ],
+      "effects": [
+        {
+          "on_hit": "[D]+fray",
+          "on_miss": "",
+          "auto_hit": true
+        },
+        {
+          "effect_names": [
+            "Area Effect"
+          ],
+          "result": "Foes take fray damage. Allies gain 3 vigor and are *blessed*."
+        },
+        {
+          "effect_names": [
+            "Summon"
+          ],
+          "result": "Summon a **wild card** in the area"
+        }
+      ]
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "Any version of this ability explodes with meteor showers when used, creating two spaces of *difficult terrain* in the area. *Charge*: Also create a height 1 meteor object in any part of the area, dealing 2 damage to adjacent foes when it lands."
+      },
+      {
+        "name": "ii",
+        "description": "If two or more allies are caught in the area of this ability, increase all medium blasts to large blasts, and this ability deals *bonus damage*."
+      }
+    ],
+    "mastery": {
+      "name": "The Chalice",
+      "description": "After you use any version of this ability, deal 2 *divine* damage, once, to a foe in the area for each blessed ally in the area, up to a maximum of three times. Foes can be damaged more than once by this effect."
+    }
+  },
+  {
+    "name": "Polaris",
+    "job": "Seer",
+    "chapter": 1,
+    "action": "1 action",
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 5
+      }
+    ],
+    "description": "A distant glint in the heavens, portents of the devastation to come.",
+    "effects": [
+      {
+        "effect_names": [
+          "Terrain Effect"
+        ],
+        "result": "Choose a space on the battlefield in range 5. While you have at least one Polaris space active, you may gamble at the end of any turn after yours with the following effects: *Gamble*: A meteor lands in every space chosen by Polaris, exploding. The effects of each space vary depending on how many spaces are active. Each effect other than the blast size stacks:\n1: Small blast *area effect*, deals damage equal to the gamble result.\n2: Medium Blast, deals +2 damage\n3: Large Blast, deals +2 damage, and characters in center spaces are *stunned*.\nThen, remove all spaces."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "You can cause one of your Polaris to follow a character as a mark instead of a space."
+      },
+      {
+        "name": "ii",
+        "description": "Create a space of *difficult terrain* under the center space of each Polaris space after it resolves. On a gamble result of 4+, create either a height 1 meteor object or a pit instead."
+      }
+    ],
+    "mastery": {
+      "name": "Moon Silver Princess",
+      "description": "At round 4+, Polaris becomes a free action"
+    }
+  },
+  {
+    "name": "Sisyphus",
+    "job": "Seer",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Mark"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 5
+      }
+    ],
+    "description": "You bend a character’s fate, reversing causality so that the very ground warps under their feet.",
+    "effects": [
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "Mark a character in range. While marked, note their starting position at the start of their turn. If they’re in range 3 of their starting position at the end of their turn, you may remove them from the battlefield and return them to their starting position, or as close as possible if it’s occupied. Then, a foe can save, ending this mark on a success."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If they’re *bloodied*, foes gain +1 curse on the save, and are also *pacified* after being returned to their starting location."
+      },
+      {
+        "name": "ii",
+        "description": "Allies are *blessed* after being moved with Sisyphus and gain 2 vigor. If they’re at 25% hp or lower, they can also be *cured*."
+      }
+    ],
+    "mastery": {
+      "name": "Black Knight Grave",
+      "description": "Sisyphus triggers no matter how far away a character is from their starting position at the end of their turn."
+    }
+  },
+  {
+    "name": "Gran Reversa",
+    "job": "Seer",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Stance",
+      "Aura",
+      "Interrupt",
+      "Power Die"
+    ],
+    "description": "Causality unmakes itself around you, as wounds heal instantly.",
+    "effects": [
+      {
+        "effect_names": [
+          "Stance"
+        ],
+        "result": "Gain aura 2, and a d4 power die, starting at 4. While in this stance, gain the following interrupt:",
+        "sub_ability": {
+          "sub_ability_name": "Reverse Fate",
+          "type": "Interrupt 1",
+          "sub_effects": [
+            {
+              "effect_names": [
+                "Trigger"
+              ],
+              "result": "An ally in the aura is targeted by a foe’s ability."
+            },
+            {
+              "effect_names": [
+                "Effect"
+              ],
+              "result": "Tick down your power die by any amount. *Gamble* with a number of d6s equal to the number of ticks you spent, then that ally gains vigor equal to double the gamble result. However, at the end of the current turn, your ally loses all vigor."
+            }
+          ]
+        }
+      },
+      {
+        "effect_names": [
+          "Refresh"
+        ],
+        "result": "You may exit or refresh this stance at the start of your turn. When you refresh this stance, tick the die up by 1."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Your power die from this ability starts at d6, with 6 charges."
+      },
+      {
+        "name": "ii",
+        "description": "If your ally was *bloodied*, instantly regain a tick on this die after this ability resolves."
+      }
+    ],
+    "mastery": {
+      "name": "Misericordia",
+      "description": "Vigor granted by Gran Reversa can increase a character’s total vigor over their maximum."
+    }
+  },
+  {
+    "name": "Eclipse",
+    "job": "Seer",
+    "chapter": 2,
+    "action": "1 action",
+    "tags": [
+      "Delay",
+      "End Turn",
+      "Terrain Effect"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 6
+      }
+    ],
+    "description": "",
+    "effects": [
+      {
+        "effect_names": [
+          "End your turn",
+          "Terrain Effect"
+        ],
+        "and": true,
+        "result": "Create a burning brand of star fire in range, *dangerous terrain*, then gain *delay*: Your next turn must be *slow*. At the start of that turn, check if there is a character standing in that space:\n* If there is, that character takes 2 divine damage and is sealed.\n* If there isn’t, it explodes for a large blast *area effect* centered on that space, scattering star fire everywhere. All characters in the area take 2 *divine* damage, and create a space of *dangerous terrain* under every foe in the area.\nThen, end the effect."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If eclipse explodes, create a fiery *pit* in its center space. The pit is also *dangerous terrain*. Characters adjacent to the pit are *sealed* when it is created."
+      },
+      {
+        "name": "ii",
+        "description": "If eclipse explodes, it creates a shower of bolides, dealing 3 damage again to up to three characters in its *area effect*."
+      }
+    ],
+    "mastery": {
+      "name": "The Helm",
+      "description": "If you choose, at the start of your turn, Eclipse’s effect does not expire after activating. Instead, you can repeat its delay effect at the end of your turn without ending your turn or creating a new area. The area also disappears if you use this ability again."
+    }
+  },
+  {
+    "name": "Wish",
+    "job": "Seer",
+    "chapter": 2,
+    "action": "Interrupt 1",
+    "description": "You struggle against fate itself, undoing causality and defying the stars.",
+    "effects": [
+      {
+        "effect_names": [
+          "Trigger"
+        ],
+        "result": "An ally on the battlefield takes damage from a foe equal to 25% of their max hp or more."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Reverse the flow of causality. That damage cannot reduce your ally past 1 hp, and they are *cured* after it resolves. The stress of taking this action causes you to *sacrifice* 25% of your maximum HP."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If your ally is *bloodied*, they are also *blessed* after this interrupt resolves and may dash 2."
+      },
+      {
+        "name": "ii",
+        "description": "If this damage would have reduced your ally to 0 hp, also *cure* yourself after this ability resolves."
+      }
+    ],
+    "mastery": {
+      "name": "Star Scorned Hermit",
+      "description": "If the damage would have reduced your ally to 0 hp, they also gain *defiance*, then become *unstoppable* until the end of their next turn."
+    }
+  },
+  {
+    "name": "The Tower",
+    "job": "Seer",
+    "chapter": 3,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "Gamble"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 5
+      }
+    ],
+    "description": "You invoke the ultimate power of the tower card, sealing a foe’s fate. In short order, untold calamity befalls them.",
+    "effects": [
+      {
+        "on_hit": "1 damage and foe is *sealed*.",
+        "on_miss": "",
+        "auto_hit": true
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "At the end of that foe’s turn, *gamble*. A massive meteor hits for a large blast *area effect* centered on them, dealing damage equal to the number on the gamble die +2 to all characters."
+      },
+      {
+        "effect_names": [
+          "Terrain Effect"
+        ],
+        "result": "Then, create a height 1 meteor object in the area."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Roll an extra 1d6 when gambling for this ability. *Charge*: Also gains range 10."
+      },
+      {
+        "name": "ii",
+        "description": "The meteor scatters debris when landing, creating two spaces of difficult terrain in the area, which could also be created under characters."
+      }
+    ],
+    "mastery": {
+      "name": "Sueprbolide",
+      "description": "If the chosen character is at 25% hp or lower, they take double damage from Eclipse’s meteor effect, and the effect also ignores *defiance*."
+    }
+  }
+]

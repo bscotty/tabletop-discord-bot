@@ -7,6 +7,10 @@ import fool from "./fool.json"
 import freelancer from "./freelancer.json"
 import shade from "./shade.json"
 import warden from "./warden.json"
+import chanter from "./chanter.json"
+import harvester from "./harvester.json"
+import sealer from "./sealer.json"
+import seer from "./seer.json"
 
 export function abilities(): IconAbility[] {
     return [
@@ -17,6 +21,10 @@ export function abilities(): IconAbility[] {
         ...fool,
         ...freelancer,
         ...shade,
-        ...warden
+        ...warden,
+        ...chanter,
+        ...harvester,
+        ...sealer,
+        ...seer
     ]
 }

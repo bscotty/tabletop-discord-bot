@@ -1,10 +1,12 @@
 import {IconAbility} from "../data/icon-ability";
-import {formatArea, IconArea} from "../data/icon-area";
-import {formatBonusEffect, IconBonusEffect} from "../data/icon-bonus-effect";
+import {IconArea} from "../data/icon-area";
+import {IconBonusEffect} from "../data/icon-bonus-effect";
 import {formatTalent, IconTalent} from "../data/icon-talent";
-import {formatAttack, IconAttack} from "../data/icon-attack";
+import {IconAttack} from "../data/icon-attack";
 import {formatMastery, IconMasteryTalent} from "../data/icon-mastery-talent";
-import {formatNameDescription, IconNameDescription} from "../data/icon-name-description";
+import {formatCombo, IconCombo} from "../data/icon-combo";
+import {iconSharedFormat} from "../data/icon-shared-format";
+import {formatInfusion, IconInfusion} from "../data/icon-infusion";
 
 export class SearchableAbility {
     public readonly name: string
@@ -15,7 +17,8 @@ export class SearchableAbility {
     public readonly tags?: string[]
     public readonly description: string
     public readonly effects: (IconBonusEffect | IconAttack)[]
-    public readonly combo?: IconNameDescription
+    public readonly combo?: IconCombo
+    public readonly infusion?: IconInfusion
     public readonly talents: IconTalent[]
     public readonly mastery: IconMasteryTalent
     public readonly data_type = "ability"
@@ -30,46 +33,38 @@ export class SearchableAbility {
         this.description = ability.description
         this.effects = ability.effects
         this.combo = ability.combo
+        this.infusion = ability.infusion
         this.talents = ability.talents
         this.mastery = ability.mastery
     }
 
     public toFormattedString(): string {
-        let attackTagFlag = ""
-        if (this.tags.find((it) => it == "Attack")) {
-            attackTagFlag = ", Attack"
-        }
-        let areaFlag = ""
-        if (this.area) {
-            areaFlag = ", " + this.area.map((it) => formatArea(it)).join(", ")
-        }
-        let tagsFlag = ""
-        if (this.tags) {
-            tagsFlag = "\n" + this.tags.filter((it) => it != "Attack").join("\n")
-        }
-        let comboFlag = ""
-        if (this.combo) {
-            comboFlag = "\n**Combo**: " + formatNameDescription(this.combo, true)
-        }
-
-        return `**${this.name}** (Chapter ${this.chapter} ${this.job} Ability)\n` +
-            `${this.action}${attackTagFlag}${areaFlag}${tagsFlag}\n\n` +
-            `${this.description}\n` + this.formatEffects().join("\n") + "\n" + comboFlag +
-            `**Talents**:\n` + this.talents.map((it) => formatTalent(it)).join("\n") + "\n" + formatMastery(this.mastery)
-    }
-
-    private formatEffects(): string[] {
-        function isAttack(effect: IconBonusEffect | IconAttack): effect is IconAttack {
-            return effect.hasOwnProperty("on_hit")
-        }
-
-        return this.effects.map((it: IconBonusEffect | IconAttack) => {
-            if (isAttack(it)) {
-                return formatAttack(it)
-            } else {
-                // smart-cast to IconBonusEffect
-                return formatBonusEffect(it)
+        function formatComboOrEmpty(optionalCombo?: IconCombo): string {
+            let combo = ""
+            if (optionalCombo) {
+                combo = "\n" + formatCombo(optionalCombo)
             }
-        })
+            return combo
+        }
+
+        function formatInfusionOrEmpty(optionalInfusion?: IconInfusion) {
+            let infusion = ""
+            if (optionalInfusion) {
+                infusion = formatInfusion(optionalInfusion)
+            }
+            return infusion
+        }
+
+        const formattedParts = [
+            `**${this.name}** (Chapter ${this.chapter} ${this.job} Ability)`,
+            iconSharedFormat(this, true),
+            formatComboOrEmpty(this.combo),
+            formatInfusionOrEmpty(this.infusion),
+            `**Talents**:`,
+            ...this.talents.map((it) => formatTalent(it)),
+            formatMastery(this.mastery)
+        ]
+
+        return formattedParts.filter((it) => it != "").join("\n")
     }
 }

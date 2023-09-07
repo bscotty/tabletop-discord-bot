@@ -144,7 +144,15 @@
     ],
     "combo": {
       "name": "Flying Sleeves",
-      "description": "Area becomes Arc 4. Gain *Effect*: If you catch an ally or allied summon in the area, you and your allies are immune to this ability’s damage and effects, and you may extend the area effect to arc 8."
+      "description": "Area becomes Arc 4.",
+      "effects": [
+        {
+          "effect_names": [
+            "Effect"
+          ],
+          "result": "If you catch an ally or allied summon in the area, you and your allies are immune to this ability’s damage and effects, and you may extend the area effect to arc 8."
+        }
+      ]
     },
     "talents": [
       {

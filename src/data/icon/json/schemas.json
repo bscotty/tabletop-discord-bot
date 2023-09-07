@@ -81,6 +81,110 @@
     "limit_break": ""
   },
   "limit_break": {},
+  "combo": {
+    "name": "",
+    "action": "",
+    "tags": [
+      ""
+    ],
+    "area": [
+      {
+        "area_type": "",
+        "range": 0
+      }
+    ],
+    "description": "",
+    "effects": [
+      {
+        "on_hit": "",
+        "on_miss": ""
+      },
+      {
+        "effect_names": [
+          ""
+        ],
+        "result": "",
+        "sub_ability": {
+          "sub_ability_name": "",
+          "type": "",
+          "sub_effects": [
+            {
+              "effect_names": [
+                ""
+              ],
+              "result": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "infusion": {
+    "cost": 0,
+    "other_triggers": [
+      ""
+    ],
+    "name": "",
+    "action": "",
+    "tags": [
+      ""
+    ],
+    "area": [
+      {
+        "area_type": "",
+        "range": 0
+      }
+    ],
+    "description": "",
+    "effects": [
+      {
+        "on_hit": "",
+        "on_miss": ""
+      },
+      {
+        "effect_names": [
+          ""
+        ],
+        "result": "",
+        "sub_ability": {
+          "sub_ability_name": "",
+          "type": "",
+          "sub_effects": [
+            {
+              "effect_names": [
+                ""
+              ],
+              "result": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "attack": {
+    "on_hit": "",
+    "on_miss": "",
+    "effect": "",
+    "auto_hit": true
+  },
+  "sub_ability": {
+    "sub_ability_name": "",
+    "type": "",
+    "sub_effects": [
+      {
+        "effect_names": [
+          ""
+        ],
+        "result": ""
+      }
+    ]
+  },
+  "effect": {
+    "effect_names": [
+      ""
+    ],
+    "result": ""
+  },
   "ability": {
     "name": "",
     "job": "",
@@ -122,7 +226,83 @@
     ],
     "combo": {
       "name": "",
-      "description": ""
+      "action": "",
+      "tags": [
+        ""
+      ],
+      "area": [
+        {
+          "area_type": "",
+          "range": 0
+        }
+      ],
+      "description": "",
+      "effects": [
+        {
+          "on_hit": "",
+          "on_miss": ""
+        },
+        {
+          "effect_names": [
+            ""
+          ],
+          "result": "",
+          "sub_ability": {
+            "sub_ability_name": "",
+            "type": "",
+            "sub_effects": [
+              {
+                "effect_names": [
+                  ""
+                ],
+                "result": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "infusion": {
+      "cost": 0,
+      "other_triggers": [
+        ""
+      ],
+      "name": "",
+      "action": "",
+      "tags": [
+        ""
+      ],
+      "area": [
+        {
+          "area_type": "",
+          "range": 0
+        }
+      ],
+      "description": "",
+      "effects": [
+        {
+          "on_hit": "",
+          "on_miss": ""
+        },
+        {
+          "effect_names": [
+            ""
+          ],
+          "result": "",
+          "sub_ability": {
+            "sub_ability_name": "",
+            "type": "",
+            "sub_effects": [
+              {
+                "effect_names": [
+                  ""
+                ],
+                "result": ""
+              }
+            ]
+          }
+        }
+      ]
     },
     "talents": [
       {
@@ -157,6 +337,86 @@
           }
         }
       ],
+      "combo": {
+        "name": "",
+        "action": "",
+        "tags": [
+          ""
+        ],
+        "area": [
+          {
+            "area_type": "",
+            "range": 0
+          }
+        ],
+        "description": "",
+        "effects": [
+          {
+            "on_hit": "",
+            "on_miss": ""
+          },
+          {
+            "effect_names": [
+              ""
+            ],
+            "result": "",
+            "sub_ability": {
+              "sub_ability_name": "",
+              "type": "",
+              "sub_effects": [
+                {
+                  "effect_names": [
+                    ""
+                  ],
+                  "result": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "infusion": {
+        "cost": 0,
+        "other_triggers": [
+          ""
+        ],
+        "name": "",
+        "action": "",
+        "tags": [
+          ""
+        ],
+        "area": [
+          {
+            "area_type": "",
+            "range": 0
+          }
+        ],
+        "description": "",
+        "effects": [
+          {
+            "on_hit": "",
+            "on_miss": ""
+          },
+          {
+            "effect_names": [
+              ""
+            ],
+            "result": "",
+            "sub_ability": {
+              "sub_ability_name": "",
+              "type": "",
+              "sub_effects": [
+                {
+                  "effect_names": [
+                    ""
+                  ],
+                  "result": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
       "sub_ability": {
         "sub_ability_name": "",
         "type": "",
