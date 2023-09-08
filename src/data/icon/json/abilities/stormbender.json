@@ -1,0 +1,502 @@
+[
+  {
+    "name": "Rime",
+    "job": "Stormbender",
+    "chapter": 1,
+    "action": "2 actions",
+    "tags": [
+      "Attack",
+      "Summon"
+    ],
+    "area": [
+      {
+        "area_type": "Line",
+        "range": 6
+      }
+    ],
+    "description": "You pull an enormous weapon made of pure ice out of the air, and hurl it through foes.",
+    "effects": [
+      {
+        "on_hit": "2[D]+fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "Fray"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Shove all characters 1 to either side of the line. You can shove in different directions for all characters. Then shove the attack target 1 and summon a **salt sprite** in any space in range 2 from them."
+      },
+      {
+        "effect_names": [
+          "Collide"
+        ],
+        "result": "Summon a **Salt Sprite**."
+      }
+    ],
+    "infusion": {
+      "cost": 3,
+      "name": "Dagon",
+      "description": "This ability gains range 6, and gains *collide*: creates a watery *pit* under this character after this ability resolves."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "If the end space of Rime hits a pit or object, the weapon bounces back and deals 1 *piercing* damage, twice, as an *area effect* to all affected characters again."
+      },
+      {
+        "name": "ii",
+        "description": "If the end space of Rime hits a pit or object, it explodes into a shower of icicles, dealing 1 piercing damage to one or two characters as an *area effect* in range 3 of that pit or object, and summoning a **salt sprite** adjacent to each of those characters."
+      }
+    ],
+    "mastery": {
+      "name": "Magnarime",
+      "infusion": {
+        "cost": "X",
+        "name": "Magnarime",
+        "description": "Rime can be infused with massive aether, becoming Infuse X. If so:\n* The area gains range 6 and becomes Arc 4, plus one per aether infused.\n* Summon a pit in the area after the ability resolves for every two aether infused.\n* Deal 1 piercing damage to all characters in the area again after the ability resolves for every two aether infused."
+      }
+    }
+  },
+  {
+    "name": "Tsunami",
+    "job": "Stormbender",
+    "chapter": 1,
+    "action": "2 actions",
+    "tags": [
+      "Terrain Effect"
+    ],
+    "description": "The stormbenders can ride swells of water as easily as any terrestrial steed. For those not as gifted, the experience is less pleasant.",
+    "effects": [
+      {
+        "effect_names": [
+          "Terrain Effect"
+        ],
+        "result": "Create a huge swell of elemental water. The area is a medium blast *terrain effect* that is difficult and dangerous terrain that you may place anywhere as long as its edge is adjacent to an edge of the map.\nWhen you use this ability, choose another edge of the map. When you use this ability, and the start of your turns, your tsunami moves 4 spaces in a straight line towards that edge. When a space of the tsunami would move off the map, the effect ends.\nAny non-flying characters in Tsunami when it moves are dragged with it, shoving them. If they are blocked by obstructions, they collide which could cause Tsunami to move on without them.\nAll your Tsunamis disappear if you use this ability again, or they reach an edge of the map."
+      },
+      {
+        "effect_names": [
+          "Collide"
+        ],
+        "result": "Character is shattered."
+      }
+    ],
+    "infusion": {
+      "cost": 1,
+      "name": "Stormlash",
+      "action": "Free Action",
+      "description": "Choose an edge of the map. Your active tsunamis move 2 spaces in that direction."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "Tsunami creates a *pit* in its center space after completing its movement. The pit remains even if Tsunami moves on."
+      },
+      {
+        "name": "ii",
+        "description": "Foes inside Tsunami take +1 curse on saves."
+      }
+    ],
+    "mastery": {
+      "name": "Legendary Storm",
+      "description": "At round 4+, Tsunami becomes 1 action, moves anywhere from to 1 to 4 spaces instead of a flat 4, and also affects flying foes."
+    }
+  },
+  {
+    "name": "Cryo",
+    "job": "Stormbender",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "Pierce"
+    ],
+    "area": [
+      {
+        "area_type": "Line",
+        "range": 8
+      }
+    ],
+    "description": "You shoot a spear of frozen water aether at your foe, stirring up ambient water aether in the air.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Foe is *shattered* and shoved 1 towards you."
+      },
+      {
+        "on_hit": "1 damage",
+        "on_miss": "",
+        "auto_hit": true
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "1 damage"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Gain 1 **Aether**."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "If any character is already *shattered*, create a *pit* under them."
+      }
+    ],
+    "infusion": {
+      "cost": 3,
+      "other_triggers": [
+        "Cryotic"
+      ],
+      "description": "Change area to Line 8, increase damage to fray damage, and gains effect: summon a **salt sprite** for every character in the area adjacent to those characters."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "At round 4 or later, this ability generates +1 **Aether** when used."
+      },
+      {
+        "name": "ii",
+        "description": "At round 4 or later, this ability *shatters* all characters in its area."
+      }
+    ],
+    "mastery": {
+      "name": "Magnacryo",
+      "description": "Magnacryo benefits from all Cryo Talents.",
+      "infusion": {
+        "cost": "X",
+        "name": "Magnacryo",
+        "action": "2 actions",
+        "tags": [
+          "Attack",
+          "Pierce"
+        ],
+        "area": [
+          {
+            "area_type": "Line",
+            "range": 4
+          }
+        ],
+        "description": "",
+        "effects": [
+          {
+            "effect_names": [
+              "Effect"
+            ],
+            "result": "Increase the line length by 2 and attack deals bonus damage for every two aether spent"
+          },
+          {
+            "on_hit": "2[D]+fray",
+            "on_miss": "[D]+fray"
+          },
+          {
+            "effect_names": [
+              "Effect"
+            ],
+            "result": "Attack target is *shattered*."
+          },
+          {
+            "effect_names": [
+              "Area Effect"
+            ],
+            "result": "[D]+fray"
+          },
+          {
+            "effect_names": [
+              "Effect"
+            ],
+            "result": "The attack target is impaled with an icy harpoon, then shoved along the line as far as possible towards you, until they collide or are stopped by an obstruction."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Geyser",
+    "job": "Stormbender",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Object",
+      "Summon"
+    ],
+    "description": "You awaken the water aether lying dormant in the land or sea, causing it to surge up in a vigorous burst.",
+    "effects": [
+      {
+        "effect_names": [
+          "Object Effect"
+        ],
+        "result": "Summon a height 1 geyser *object* in a free space in range 4. If any character either starts or ends their turn on a geyser, you can cause it to erupt, removing that character from the battlefield, then placing them one or two spaces away. Then, remove the geyser."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "After the geyser is removed, summon a **Salt Sprite** in its space."
+      }
+    ],
+    "infusion": {
+      "cost": 3,
+      "name": "Volcanic Geyser",
+      "description": "Create a Volcanic Geyser instead. When it erupts, it removes and places all characters in a medium blast *area effect* centered on it, and creates *dangerous terrain* under foes."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "Increase the height of all geysers by +1 at the start of your turn. Allies standing on a geyser have *cover* from all directions."
+      },
+      {
+        "name": "ii",
+        "description": "Once a round, when a character *collides* with a geyser, summon a **Salt Sprite** in range 2 from them."
+      }
+    ],
+    "mastery": {
+      "name": "Great Geyser",
+      "description": "Allies can be placed up to three spaces away by a geyser and after landing gain *flying* until the end of their next turn."
+    }
+  },
+  {
+    "name": "Gust",
+    "job": "Stormbender",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Terrain Effect"
+    ],
+    "description": "The stormbenders are friend to breeze and gale, and have learned how to coax the wind into doing their bidding.",
+    "effects": [
+      {
+        "effect_names": [
+          "Terrain Effect"
+        ],
+        "result": "Create a line 3 terrain effect. Characters that enter any end space of the line gain *phasing*, then are shoved to the other end space of the line, or as far as possible. Once they stop, they are flung out and shoved 1 in a direction of your choice outside of the area. Characters entering a middle space can be shoved in a direction of your choice.\nThe area is replaced if this ability is used again."
+      },
+      {
+        "effect_names": [
+          "Collide"
+        ],
+        "result": "Character releases a wind blast as a burst 1 *area effect* centered on them, shoving all characters inside 1 space away from them and dealing 2 *piercing* damage."
+      }
+    ],
+    "infusion": {
+      "cost": 4,
+      "name": "Great Gust",
+      "description": "Gust can be created over characters, and immediately activates its effect when it is created, as if characters inside had entered its space."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "Gust can be used for *cover* by allies as if it were height 1 terrain."
+      },
+      {
+        "name": "ii",
+        "description": "Yourself and allies that are shoved by gust can fly 2 after stopping instead of being shoved."
+      }
+    ],
+    "mastery": {
+      "name": "Northsoul",
+      "description": "Gust’s area is not replaced if the ability is used again, though you cannot have more than three areas active."
+    }
+  },
+  {
+    "name": "Heave-ho",
+    "job": "Stormbender",
+    "chapter": 1,
+    "action": "Interrupt 1",
+    "description": "Better get your sea legs.",
+    "effects": [
+      {
+        "effect_names": [
+          "Trigger"
+        ],
+        "result": "A foe damages you or an ally adjacent to either you or a summon you control with an ability."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "After the triggering ability resolves create a crashing wave in a medium blast *area effect* placed adjacent to you or your summon. Characters caught in the area are shoved 1, and foes become vulnerable."
+      },
+      {
+        "effect_names": [
+          "Collide"
+        ],
+        "result": "Summon a **salt sprite**."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If only one foe is caught in the area of wave, also create a *pit* underneath them."
+      },
+      {
+        "name": "ii",
+        "description": "If you don’t use this interrupt, stock up another use of it at the start of your turn. You can stock it up to interrupt 3."
+      }
+    ],
+    "mastery": {
+      "name": "Tidal Smash",
+      "infusion": {
+        "cost": "X",
+        "name": "Tidal Smash",
+        "description": "The shove spaces become shove X. *Collide*: foes are *shattered*."
+      }
+    }
+  },
+  {
+    "name": "Deepwrath",
+    "job": "Stormbender",
+    "chapter": 2,
+    "action": "1 action",
+    "tags": [
+      "Mark"
+    ],
+    "description": "You mark your foe with the symbol of the Deep Water Titan. No matter where they step, the deeps come up to claim them.",
+    "effects": [
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "Mark a character in range 6. While marked, create a watery *pit* under them at the start of their turn."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "If the marked character ends their turn inside a *pit*, you can drag them under, removing them from the battlefield, then placing them in the space of any other pit in range 3 from their original location."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Marked allies gain +1 boon on saves in pits, and foes don’t gain any height advantage against them while they are inside pits."
+      },
+      {
+        "name": "ii",
+        "description": "Marked foes take bonus damage from all sources and are *shattered+* while inside pits."
+      }
+    ],
+    "mastery": {
+      "name": "Darktide",
+      "description": "The first time the marked character vacates a space during their turn, they leave a *dangerous terrain* space behind them. Marked allies are immune to *dangerous terrain*, and marked foes take +1 more damage from *dangerous terrain*."
+    }
+  },
+  {
+    "name": "Waterspout",
+    "job": "Stormbender",
+    "chapter": 2,
+    "action": "1 action",
+    "description": "You grab the reigns of the storm and pull it to earth, causing a rippling tornado of water.",
+    "effects": [
+      {
+        "effect_names": [
+          "Terrain Effect"
+        ],
+        "result": "Summon a waterspout in a space in range that is difficult terrain. When summoned, or at the start of your turn, you you may have the waterspout suck in any characters of your choice in range 2 of it. Foes can pass a save to avoid this effect, and allies can always choose to avoid it. When a character is sucked in, they are removed from the battlefield. At the end of your turn, the waterspout spits out all characters it sucked in, in any order, placing them in any other free space in range 2 outside of the spout.\nThe spout is replaced if this ability is used again."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Once during your turn, you may move the waterspout 1 space"
+      }
+    ],
+    "infusion": {
+      "cost": 2,
+      "name": "Great Waterspout",
+      "description": "The waterspout can also suck in *objects* in the area, removing and placing them before all characters."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "After characters are spit out, they are shoved 1 away from the waterspout."
+      },
+      {
+        "name": "ii",
+        "description": "If only one foe or ally is inside the waterspout, it can move 3 space instead, and leaves a space of *difficult terrain* in one space that it vacates."
+      }
+    ],
+    "mastery": {
+      "name": "Hurricane",
+      "description": "At round 4 or later, waterspouts grow to a small blast area instead of a single space. They become *dangerous terrain*, and characters that start their turns adjacent to the area are shoved 1 in a direction of your choice."
+    }
+  },
+  {
+    "name": "Eye of the Storm",
+    "job": "Stormbender",
+    "chapter": 3,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "Pierce"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 8
+      },
+      {
+        "area_type": "Blast",
+        "range": "Medium"
+      }
+    ],
+    "description": "A storm of vigorous thunder and acid rain descends at your command, but the center remains calm.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "This attack has no attack space. Instead, the attack space is clear and exempt from this area."
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "[D]"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "If an ally is in the center space, they may fly 4 after the ability resolves. If an enemy is in the center space, they become *vulnerable*."
+      }
+    ],
+    "infusion": {
+      "cost": 3,
+      "name": "Aeoncloud",
+      "description": "Increase area effect to a large blast and damage to [D]+fray. The center space is still clear."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "If there is no character in the center space, create a *pit* there. The pit is also *dangerous terrain*."
+      },
+      {
+        "name": "ii",
+        "description": "The center character may also take 1 *piercing* damage, once, for every foe or ally in in the area effect, up to three times."
+      }
+    ],
+    "mastery": {
+      "name": "Great Aeoncloud",
+      "effects": [
+        {
+          "effect_names": [
+            "Object"
+          ],
+          "result": "If there is no character in the center space, you may also create a height 1 aethercloud *object* in the center space. At the start of your turn, the cloud drifts 3 spaces in a space of your choice. Any character on top of the cloud when it moves moves with it, and is unstoppable while moving this way."
+        }
+      ]
+    }
+  }
+]

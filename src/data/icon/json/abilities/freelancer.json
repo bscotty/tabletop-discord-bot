@@ -1,0 +1,449 @@
+[
+  {
+    "name": "Strafe Shot",
+    "job": "Freelancer",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "+1 boon"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 3
+      }
+    ],
+    "description": "Faster than a speeding bullet.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "You may dash 1."
+      },
+      {
+        "on_hit": "[D] + fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Your foe is *blinded*."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "You may dash 1."
+      },
+      {
+        "effect_names": [
+          "Finishing Blow",
+          "Exceed"
+        ],
+        "result": "Release a flurry of fire, dealing 2 *unerring* damage to all foes at exactly range 3 from you."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "*Exceed*: Gain *evasion* until the start of your next turn."
+      },
+      {
+        "name": "ii",
+        "description": "*Exceed*: Dash 3 again."
+      }
+    ],
+    "mastery": {
+      "name": "Platinum Chamber",
+      "description": "Strafe shot can interrupt and break up any movement you make without halting it."
+    }
+  },
+  {
+    "name": "Exorcism",
+    "job": "Freelancer",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Mark",
+      "Power Die",
+      "Unerring"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 3
+      }
+    ],
+    "description": "The mantra of the exorcist. Every bullet or arrow shot is imbued with the soul aether of its master, and seeks its foe like a loyal hound.",
+    "effects": [
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "Mark: You mark a foe in range, with the following effects:\n* When you end your turn in range 3 from your foe, or that foe ends their turn in range 3 of you, set out a d4 power die, starting at 1, or tick it up by 1.\n* When you set out the die or tick it up, shoot a projectile at your foe, dealing 2 damage. The projectile remains, hovering in the air, and tracking your foe.\n* At the end of any turn the die is at maximum, every projectile shot flies at your foe, dealing 2 damage once for each charge on the die and ending this effect and mark."
+      },
+      {
+        "effect_names": [
+          "Finishing Blow"
+        ],
+        "result": "When marking a *bloodied* foe, immediately gain the die at 1."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "While this mark is active, your attacks gain *Exceed*: tick the die up by 1."
+      },
+      {
+        "name": "ii",
+        "description": "If your target is defeated while marked by exorcism, the projectiles scatter, dealing 2 damage, once, per charge on the die to all foes in a large blast *area effect* centered on the foe."
+      }
+    ],
+    "mastery": {
+      "name": "Puresilver",
+      "description": "If exorcism's target is defeated, you can cause the projectiles to fly and track a new target in range 3 of you or the original target, transferring the mark and keeping the power die."
+    }
+  },
+  {
+    "name": "Trick Shot",
+    "job": "Freelancer",
+    "chapter": 1,
+    "action": "1 action",
+    "description": "Shoot with your heart.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Your next ability with a listed range gains *unerring*, +1 boon on attacks, and *rebound*."
+      },
+      {
+        "effect_names": [
+          "Finishing Blow"
+        ],
+        "result": "Gain *stealth* after the ability resolves."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "When Trick Shot *rebounds* off an ally or summon, you may teleport them 2."
+      },
+      {
+        "name": "ii",
+        "description": "After Trick Shot *rebounds*, it causes phantom projectiles to split off, dealing 2 *unerring* damage to all foes at exactly range 3 from its rebound target."
+      }
+    ],
+    "mastery": {
+      "name": "Golden Bullet",
+      "description": "Trick Shot can cause an ability to *rebound* twice. The second bounce must be off a new character or object in range 3 of the first."
+    }
+  },
+  {
+    "name": "Astral Chain",
+    "job": "Freelancer",
+    "chapter": 1,
+    "action": "2 actions",
+    "tags": [
+      "Attack",
+      "Mark"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 3
+      }
+    ],
+    "description": "With your heavenly chain skillfully whirling through the air, you dispense divine justice.",
+    "effects": [
+      {
+        "on_hit": "2[D] + fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "Your foe is marked. While marked, at the start of your turn, if they are in range 3, they take 2 *unerring* damage from you as bolt of celestial lightning shoots between you. If they are at exactly range 3, increase damage to 2 damage, twice instead."
+      },
+      {
+        "effect_names": [
+          "Finishing Blow",
+          "Exceed"
+        ],
+        "result": "You may *fly 4*."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "While marked, gain *evasion* against your marked foe while they are in range 3."
+      },
+      {
+        "name": "ii",
+        "description": "While marked, all attacks from you or allies against your marked foe may gain *rebound* and deal *bonus damage* if they are rebounded."
+      }
+    ],
+    "mastery": {
+      "name": "Diamond Punisher",
+      "description": "While your foe is marked and in range 3 of you, they must save if they attempt to move to any space more than 3 spaces away from you. On a successful save, they can move as normal. On a failed save, they can’t consider any space further away than range 3 of you valid space to move to until the start of their next turn, then become immune to this effect for the rest of combat."
+    }
+  },
+  {
+    "name": "Deus Ex Machina",
+    "job": "Freelancer",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Mark"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 3
+      }
+    ],
+    "description": "When skillfully used, the astral chain can be used to maneuver in the blink of an eye.",
+    "effects": [
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "Mark and grapple on to a foe, ally, or summon in range from you with an ethereal lasso and gain the following interrupt while that character is marked. You can take the interrupt regardless of distance.",
+        "sub_ability": {
+          "name": "Divine Intervention",
+          "count": 1,
+          "effects": [
+            {
+              "effect_names": [
+                "Trigger"
+              ],
+              "result": "The end of any turn."
+            },
+            {
+              "effect_names": [
+                "Effect"
+              ],
+              "result": "Teleport 2 towards the target or teleport your target 1 towards you. The teleport must end with both of you closer together. Allies can choose whether to take this teleport."
+            }
+          ]
+        }
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Allies and summons can be teleported up to 4 spaces instead."
+      },
+      {
+        "name": "ii",
+        "description": "Using this interrupt on a foe *dazes* or *blinds* them (your choice)."
+      }
+    ],
+    "mastery": {
+      "name": "Whip of the Thrones",
+      "description": "Gain *stealth* after marking your target. This interrupt does not break stealth, and while you have stealth, it can be used +1 more time a round."
+    }
+  },
+  {
+    "name": "Ace",
+    "job": "Freelancer",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Stance",
+      "End Turn"
+    ],
+    "description": "The world goes still, and is split by a bolt of lightning.",
+    "effects": [
+      {
+        "effect_names": [
+          "End your turn",
+          "Stance"
+        ],
+        "result": "When you take this stance, or when it refreshes, you may dash 1 and your next attack triggers all *exceed* effects, *dazes* your foe, and gains *unerring*.",
+        "and": true
+      },
+      {
+        "effect_names": [
+          "Refresh"
+        ],
+        "result": "Refresh this stance after you score a *finishing blow*."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If your attack target is at exactly range 3, they explode with a medium blast *area effect* centered on them. Foes inside are *dazed*."
+      },
+      {
+        "name": "ii",
+        "description": "If your attack target is at exactly range 3, you may also teleport them 2 after the attack resolves."
+      }
+    ],
+    "mastery": {
+      "name": "Hot Chamber",
+      "description": "At round 4 or later, Ace becomes a free action to enter if you have not used it yet this combat. It also refreshes automatically at the start of your turn, and its dash increases to 3."
+    }
+  },
+  {
+    "name": "Showdown",
+    "job": "Freelancer",
+    "chapter": 2,
+    "action": "1 action",
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 3
+      }
+    ],
+    "description": "With a glint in your eye, you zero in on a foe with preternatural accuracy.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Choose a foe in range 3 and become immobile until the end of your current turn. At the end of that foe’s next turn, if they’re in range 3 of you, you may dash 2, and the effect ends. If they’re at range 4 or higher, they take 2 *unerring* damage from you twice, ignoring cover."
+      },
+      {
+        "effect_names": [
+          "Finishing Blow"
+        ],
+        "result": "Deal 2 damage four times instead."
+      },
+      {
+        "effect_names": [
+          "Special"
+        ],
+        "result": "Showdown can be used as *free action* if you activated an *exceed* effect or scored a *critical hit* this turn."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Each time you deal damage with Showdown, you may teleport 1."
+      },
+      {
+        "name": "ii",
+        "description": "When you activate Showdown, gain *stealth*."
+      }
+    ],
+    "mastery": {
+      "name": "Quench",
+      "effects": [
+        {
+          "effect_names": [
+            "Terrain Effect"
+          ],
+          "result": "After activating showdown, you may create a small blast *terrain effect* on you of smoke. The area grants *cover*, and yourself and allies exiting the area can gain *stealth*, but no more than once a round for each character. It lasts until created again."
+        }
+      ]
+    }
+  },
+  {
+    "name": "Warding Bolts",
+    "job": "Freelancer",
+    "chapter": 2,
+    "action": "Interrupt 1",
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 3
+      }
+    ],
+    "description": "You rapidly fire a massive barrage from your weapon into the air. The projectiles hover in the air like hunting eagles, waiting to strike.",
+    "effects": [
+      {
+        "effect_names": [
+          "Trigger"
+        ],
+        "result": "You score a *critical hit* or trigger an *exceed* effect."
+      },
+      {
+        "effect_names": [
+          "Terrain Effect"
+        ],
+        "result": "You shoot out a flurry of projectiles into the air, where they hover in place, creating a small blast *terrain effect* in range, which can overlap characters. Foes that start their turn in the area that end their turn outside of the area are struck by a projectile, taking 2 *unerring* damage and *dazing* them. The area lasts until this ability is used again."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "You can consume the area as a free action to disperse the bolts, dealing 2 *unerring* damage to all foes at exactly range 3 from the center space of the area, and ending the effect."
+      },
+      {
+        "name": "ii",
+        "description": "Marked foes take 2 damage, twice, instead."
+      }
+    ],
+    "mastery": {
+      "name": "Phantom Bolts",
+      "description": "You can cause the area to hover around you as an Aura 2 instead, which lasts for the rest of combat, with the same effect as the default area. When this ability triggers again, you may deal 2 *unerring* damage to all foes in this aura instead of replacing the aura."
+    }
+  },
+  {
+    "name": "Soul Shot",
+    "job": "Freelancer",
+    "chapter": 3,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "+1 boon"
+    ],
+    "area": [
+      {
+        "area_type": "Line",
+        "range": 3
+      }
+    ],
+    "description": "The ultimate freelancer technique - using the soul aether of their companions to supercharge astral bullets.",
+    "effects": [
+      {
+        "on_hit": "[D]+fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Foe is blinded."
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "fray"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Allies are *immune* to damage from this ability. If it passes through two or more allies, automatically triggers all *exceed* effects."
+      },
+      {
+        "effect_names": [
+          "Finishing Blow",
+          "Exceed"
+        ],
+        "result": "Attack target explodes with a large blast *area effect* placed centered on them. Foes inside take 2 damage and are *blinded*. Blinded foes take 2 damage twice instead."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "At round 4 or greater, Soul Shot considers all characters in the line to be at exactly range 3."
+      },
+      {
+        "name": "ii",
+        "description": "At round 4 or greater, Soul Shot becomes Line 6."
+      }
+    ],
+    "mastery": {
+      "name": "Great Angelos",
+      "description": "Allies Soul Shot passes through gain 3 *vigor* and may *fly 3*."
+    }
+  }
+]

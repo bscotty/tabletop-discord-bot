@@ -1,0 +1,589 @@
+[
+  {
+    "name": "Pyre",
+    "job": "Enochian",
+    "chapter": 1,
+    "action": "2 actions",
+    "tags": [
+      "Attack"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 6
+      },
+      {
+        "area_type": "Blast",
+        "range": "Medium"
+      }
+    ],
+    "description": "Power curls into a writhing ball in your hand, before it’s unleashed on your enemies.",
+    "effects": [
+      {
+        "on_hit": "2[D]+fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "Fray"
+      },
+      {
+        "effect_names": [
+          "Comeback",
+          "Exceed"
+        ],
+        "result": "After the ability resolves, the area explodes again, dealing 2 *piercing* damage to all characters."
+      }
+    ],
+    "infusion": {
+      "cost": 3,
+      "name": "Pyrotic",
+      "description": "Increase range to 10 and blast size to Large Blast. Create a *pit* under the attack target after this ability resolves."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "*Comeback*: Allies are immune to damage from this ability."
+      },
+      {
+        "name": "ii",
+        "description": "*Exceed*: You may shove all characters in the area 2 spaces."
+      }
+    ],
+    "mastery": {
+      "name": "Magnapyre",
+      "description": "Magnapyre benefits from Pyre talents.",
+      "infusion": {
+        "cost": 6,
+        "name": "Magnapyre",
+        "action": "2 actions",
+        "tags": [
+          ""
+        ],
+        "area": [
+          {
+            "area_type": "Range",
+            "range": 12
+          },
+          {
+            "area_type": "Blast",
+            "range": "Large"
+          }
+        ],
+        "description": "",
+        "effects": [
+          {
+            "on_hit": "2[D] + fray",
+            "on_miss": "[D] + fray"
+          },
+          {
+            "effect_names": [
+              "Area Effect"
+            ],
+            "result": "[D] + fray"
+          },
+          {
+            "effect_names": [
+              "Effect"
+            ],
+            "result": "Create a pit under your attack target."
+          },
+          {
+            "effect_names": [
+              "Effect"
+            ],
+            "result": "After the ability resolves, the area explodes again, inflicting 2 piercing damage to all characters."
+          },
+          {
+            "effect_names": [
+              "Comeback",
+              "Exceed"
+            ],
+            "result": "The area explodes again, dealing 2 piercing damage to all characters."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Elden Rune",
+    "job": "Enochian",
+    "chapter": 1,
+    "action": "1 action",
+    "description": "You carve a burning rune of power into the very ground beneath you.",
+    "effects": [
+      {
+        "effect_names": [
+          "Terrain Effect"
+        ],
+        "result": "Inscribe an Elden Rune on the space underneath you. While standing on an Elden Rune space, the range of all abilities with a listed range is increased by +3. The rune lasts until the end of the scene. A foe can scrub out an Elden Rune by entering or exiting its space."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "You can *sacrifice 2* to cast a rune down as a *free action*."
+      }
+    ],
+    "infusion": {
+      "cost": 3,
+      "name": "Great Rune",
+      "description": "Grant the following effect to your rune: your attacks also *shatter* their main target while standing in this rune."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "You can teleport up to 3 spaces into an Elden Rune space as a *free action*."
+      },
+      {
+        "name": "ii",
+        "description": "While standing in an Elden Rune, the infuse costs of your spells are reduced by 1, to a minimum of 1."
+      }
+    ],
+    "mastery": {
+      "name": "Arkenrune",
+      "description": "You can put an Arkenrune down instead of a regular Elden Rune, but only one at a time, replacing the last Arkenrune you placed. Arkenrunes can’t be scrubbed out, extend to a small blast area, and their benefits also extend to allies."
+    }
+  },
+  {
+    "name": "Lance",
+    "job": "Enochian",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "Pierce"
+    ],
+    "area": [
+      {
+        "area_type": "Line",
+        "range": 8
+      }
+    ],
+    "description": "A flash scorches the eyeballs, and a thin line burns through rock, flesh, and armor.",
+    "effects": [
+      {
+        "on_hit": "[D] + fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Foe is *vulnerable*."
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "fray"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Line of sight can’t be blocked by objects, and ignores *cover* granted by objects or terrain."
+      },
+      {
+        "effect_names": [
+          "Comeback",
+          "Exceed"
+        ],
+        "result": "Also deals bonus damage for every unique object it passed through."
+      }
+    ],
+    "infusion": {
+      "cost": 3,
+      "name": "Volvaga",
+      "description": "Gains width +1 and may melt any objects of your choice in its path, removing them."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "When this ability passes through an object, it releases a soul ember, dealing 1 *piercing* damage to a character in range 3 of that object. Each character can only be struck by one ember by a single use of this ability."
+      },
+      {
+        "name": "ii",
+        "description": "If you are at 1 hp or lower, this ability deals maximum base damage (before critical hits)."
+      }
+    ],
+    "mastery": {
+      "name": "Great Spirit Lance",
+      "description": "Great spirit lance benefits from lance talents.",
+      "infusion": {
+        "cost": 6,
+        "name": "Great Spirit Lance",
+        "action": "2 Actions",
+        "tags": [
+          "Attack"
+        ],
+        "area": [
+          {
+            "area_type": "Line",
+            "range": 10
+          },
+          {
+            "area_type": "Width",
+            "range": 3
+          }
+        ],
+        "effects": [
+          {
+            "on_hit": "2[D]+fray",
+            "on_miss": "[D]+fray"
+          },
+          {
+            "effect_names": [
+              "Area Effect"
+            ],
+            "result": "[D]+fray"
+          },
+          {
+            "effect_names": [
+              "Effect"
+            ],
+            "result": "Line of sight can’t be blocked by objects, and ignores cover granted by objects or terrain."
+          },
+          {
+            "effect_names": [
+              "Effect"
+            ],
+            "result": "After the ability resolves, every foe or ally in the area explodes, taking 2 *piercing* damage as an *area effect*. If you catch at least three foes or allies in the area, every foe or ally in the area takes 2 *piercing* damage twice instead."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Soul Burn",
+    "job": "Enochian",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Stance"
+    ],
+    "description": "You stoke the furnace with the very essence of your being.",
+    "effects": [
+      {
+        "effect_names": [
+          "Stance"
+        ],
+        "result": "Burn your own life force into a fierce blaze. In this stance:\n* You *sacrifice 2* at the end of your turn.\n* Your abilities automatically activate any *comeback* triggers.\n* After you *sacrifice* with this ability, or after any other of your abilities with a *sacrifice* effect resolves, you can spark a soul ember at a character in range 5, dealing 1 *piercing* damage."
+      },
+      {
+        "effect_names": [
+          "Refresh"
+        ],
+        "result": "Refresh or exit this stance at the start of your turn."
+      }
+    ],
+    "infusion": {
+      "cost": 4,
+      "name": "Incandius",
+      "description": "When entering this stance, shove all adjacent characters 3 and spark a soul ember at them, dealing 1 *piercing* damage to them. *Collide*: Characters are *vulnerable*."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "If a foe is struck by two or more soul embers from this ability in the same turn, they become *vulnerable*."
+      },
+      {
+        "name": "ii",
+        "description": "Foes that end their turn adjacent to you while Soul Burn is active take 1 piercing damage and are shoved 1."
+      }
+    ],
+    "mastery": {
+      "name": "Soul Spark",
+      "description": "*Free Action*: You can willingly siphon off your burning life force to empower your next ability, *sacrificing 4*, then ending the stance. The ability deals bonus damage, cannot miss (turn any attack miss into a hit), activates all *exceed* effects, and foes gain +1 curse on any saves."
+    }
+  },
+  {
+    "name": "Blazing Bond",
+    "job": "Enochian",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Mark"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 4
+      }
+    ],
+    "description": "You link the soul aether of you and a companion with a chain of pure fire aether, drawing from the strength of one to bolster the other.",
+    "effects": [
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "An ally in range is marked by you. While affected by this mark and in range, gain the following interrupt:",
+        "sub_ability": {
+          "name": "Heartfire",
+          "count": 2,
+          "effects": [
+            {
+              "effect_names": [
+                "Trigger"
+              ],
+              "result": "You or your ally takes damage or *sacrifices* hp."
+            },
+            {
+              "effect_names": [
+                "Effect"
+              ],
+              "result": "You can choose to reduce that damage by 3, as if by armor, or the *sacrifice* cost by 3. If you do, the other partner *sacrifices* 3."
+            },
+            {
+              "effect_names": [
+                "Comeback"
+              ],
+              "result": "Reduce partner sacrifice to 1."
+            }
+          ]
+        }
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "While marked, you can teleport yourself or your ally 2 spaces at the end of your turn, as long as you end closer to each other."
+      },
+      {
+        "name": "ii",
+        "description": "*Comeback*: Grant both you and your ally *defiance* when taking this action."
+      }
+    ],
+    "mastery": {
+      "name": "Great Soul Bond",
+      "description": "If one of the partners would take damage from an ability that would reduce them below 1 hp, the other can reduce themselves to 1 hp to grant that ally immunity to all damage from the triggering ability. The bond then snaps, ending this mark."
+    }
+  },
+  {
+    "name": "Aethershard",
+    "job": "Enochian",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Object"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 6
+      }
+    ],
+    "description": "You crystallize ambient Aether with force of will, forcing it to take a useful form",
+    "effects": [
+      {
+        "effect_names": [
+          "Object"
+        ],
+        "result": "*Sacrifice 3* and summon an Aethershard in a free space in range 6.",
+        "sub_ability": {
+          "name": "Aethershard",
+          "height": 1,
+          "effects": [
+            {
+              "effect_names": [
+                "Summon Effect"
+              ],
+              "result": "When you include the Aethershard in the *area effect* of any ability, the ability resonates with the shards, dealing 2 *piercing* damage as an area effect, once, to all characters in the area for every one of your Aethershards caught in the same ability. Then destroy all Aethershards activated this way and gain 1 **Aether**."
+            },
+            {
+              "effect_names": [
+                "Comeback"
+              ],
+              "result": "Reduce *sacrifice* to 1."
+            }
+          ]
+        }
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "When you take any action that spends **Aether**, you can first remove one of your aethershards, then place it in any free space up to range 2 from its original location."
+      },
+      {
+        "name": "ii",
+        "description": "Your abilities gain *pierce* against characters adjacent to Aethershards."
+      }
+    ],
+    "mastery": {
+      "name": "Aethershift",
+      "description": "If you start or end your turn adjacent to an Aethershard, gain *phasing* until the end of your next turn. The spaces of objects cost a maximum of 0 spaces for you to enter for the same duration."
+    }
+  },
+  {
+    "name": "Implode",
+    "job": "Enochian",
+    "chapter": 2,
+    "action": "1 action",
+    "tags": [
+      "End Turn",
+      "Delay"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 6
+      }
+    ],
+    "description": "You burn away the air itself, creating a sucking void that rips your foes into its howling embrace.",
+    "effects": [
+      {
+        "effect_names": [
+          "End your turn",
+          "Delay"
+        ],
+        "and": true,
+        "result": "Choose a space in range. Your next turn must be *slow*, but at the start of that turn, that space explodes with gravitational energy, shoving all characters in a large blast *area effect* around it as close as possible towards it. Characters are shoved in any order you like. Any character that is in the center space when this ability activates must save or be *stunned*."
+      },
+      {
+        "effect_names": [
+          "Comeback"
+        ],
+        "result": "Free action"
+      }
+    ],
+    "infusion": {
+      "cost": 4,
+      "name": "Null",
+      "description": "All characters adjacent to the *area effect* are also affected."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "Any character in the center space is also *shattered* when this ability activates."
+      },
+      {
+        "name": "ii",
+        "description": "The center space also becomes a *pit*."
+      }
+    ],
+    "mastery": {
+      "name": "Waking Void",
+      "description": "You can choose a character with this ability instead of a space, but it doesn’t stun the center character. If that character is defeated, Implode immediately activates."
+    }
+  },
+  {
+    "name": "Pyroclast",
+    "job": "Enochian",
+    "chapter": 2,
+    "action": "1 action",
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 6
+      }
+    ],
+    "description": "Taking a page from the geomancers, Enochians can send a pulse of fire aether into the earth itself, causing tectonic upheaval.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Choose yourself or a character in range. At the end of that character’s next turn, the ground beneath them erupts. Create a height 1 magma spire *object* under them, pushing them up. All characters adjacent to that object, but not the original character, are shoved 1 and take 2 *piercing* damage."
+      },
+      {
+        "effect_names": [
+          "Comeback"
+        ],
+        "result": "You may choose yourself and another character."
+      }
+    ],
+    "infusion": {
+      "cost": 3,
+      "name": "Pyrosphere",
+      "description": "Terrain space becomes height 3."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "Also cause a magma eruption adjacent to your target, creating 2 spaces of dangerous terrain."
+      },
+      {
+        "name": "ii",
+        "description": "You may *sacrifice 2* to immediately *shatter* your target as part of this ability."
+      }
+    ],
+    "mastery": {
+      "name": "Magmotic",
+      "description": "Instead of creating a spire, you can create a magma-filled *pit*. The pit is additionally *dangerous terrain*. When it appears, the eruption causes a medium blast *area effect* centered on your target that inflicts 2 *piercing* damage."
+    }
+  },
+  {
+    "name": "Blackstar",
+    "job": "Enochian",
+    "chapter": 3,
+    "action": "2 actions",
+    "tags": [
+      "Attack",
+      "Pierce"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 8
+      },
+      {
+        "area_type": "Blast",
+        "range": "Large"
+      }
+    ],
+    "description": "You burn and condense your own aether into super condensed form, creating a crackling black orb that inflicts maximum destruction. Without the time to stabilize this attack, its use can rip away your very life force.",
+    "effects": [
+      {
+        "on_hit": "2[D]+fray",
+        "on_miss": "[D]+fray"
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "[D]+fray"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Attack target is *shattered*."
+      },
+      {
+        "effect_names": [
+          "Comeback",
+          "Exceed"
+        ],
+        "result": "Deals bonus damage, creates a *pit* under the center space, and up to three spaces of *difficult terrain* in the area."
+      },
+      {
+        "effect_names": [
+          "Special Effect"
+        ],
+        "result": "Also *Sacrifice 50%* of your max hp unless the round number is 6 or higher."
+      }
+    ],
+    "infusion": {
+      "cost": 5,
+      "name": "Astral Blackstar",
+      "description": "Ignore Blackstar’s round requirement."
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "If Blackstar’s special effect triggers, capture your fleeing soul aether and gain 1 **aether** after this ability resolves."
+      },
+      {
+        "name": "ii",
+        "description": "If Blackstar’s special effect triggers, gain 5 vigor after this ability resolves."
+      }
+    ],
+    "mastery": {
+      "name": "Great Spirit Bomb",
+      "description": "When you use Blackstar, if it’s special effect triggers, you can split *sacrifice* into 25% max hp to yourself, and 25% to an ally in range 4."
+    }
+  }
+]

@@ -24,6 +24,7 @@ import {getEHandSLCP} from "../data/lancer/lcp/homebrew/event horizon & suns";
 import {getKrfwCatalogLcp} from "../data/lancer/lcp/homebrew/krfw catalog";
 import {getLegionnaireLcp} from "../data/lancer/lcp/homebrew/legionnaire";
 import {getCrisisCoreLcp} from "../data/lancer/lcp/homebrew/crisis core";
+import {safeReply} from "./util/safe-reply";
 
 @Discord()
 export class Lancer {
@@ -106,13 +107,8 @@ export class Lancer {
         }
 
         const response = format(this.formatter(), result)
-        if (response.length > 2000) {
-            this.split(interaction, response)
-                .catch((it) => console.log(`error with split message: ${it}`))
-        } else {
-            interaction.reply(response)
-                .catch((it) => console.log(`error with message: ${it}`))
-        }
+        await safeReply(interaction, response)
+            .catch((it) => console.log(`error with message: ${it}`))
     }
 
     @Slash("lancer-versions", {description: "Print all currently used Lancer LCP versions"})
@@ -130,29 +126,5 @@ export class Lancer {
 
     private versionDump(lcp: Lcp): string {
         return `${lcp.info.name} - ${lcp.info.version}`
-    }
-
-    private async split(interaction: CommandInteraction, response: string) {
-        const responses: string[] = response.split("\n")
-        const splitResponse: string[] = [""]
-
-        responses.forEach(response => {
-            const index = splitResponse.findIndex((entry) => (entry.length + response.length) < 2000)
-            if (index < 0) {
-                splitResponse.push(response)
-            } else {
-                splitResponse[index] = splitResponse[index] + "\n" + response
-            }
-        })
-
-        await interaction.reply({content: splitResponse[0]})
-            .catch((it) => console.log(`there was a problem with the first split: ${it}`))
-            .then(() => {
-                splitResponse.forEach(async (split, index) => {
-                    if (index > 0)
-                        await interaction.channel.send(split)
-                            .catch((it) => console.log(`there was a problem with split ${index}: ${it}`))
-                })
-            })
     }
 }

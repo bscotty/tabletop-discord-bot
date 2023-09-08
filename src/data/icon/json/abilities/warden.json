@@ -1,0 +1,439 @@
+[
+  {
+    "name": "Apex",
+    "job": "Warden",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "+1 boon"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 3
+      }
+    ],
+    "description": "Your strike is a clarion call to the forest, the plains, and the deep places of the Green, bringing forth their denizens to fight for you.",
+    "effects": [
+      {
+        "on_hit": "[D] + fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Foe is *dazed*."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Summon a **beast** in an adjacent space to your target after the attack resolves."
+      },
+      {
+        "effect_names": [
+          "Finishing Blow",
+          "Charge"
+        ],
+        "result": "Summon one more **beast**, then gain *stealth*."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "*Terrain effect*: You can replace any **beast** you summon with a space of *dangerous terrain* instead."
+      },
+      {
+        "name": "ii",
+        "description": "If you attack a foe at exactly range 3, this ability gain *unerring* and you may shove your foe 1 in any direction after this ability resolves."
+      }
+    ],
+    "mastery": {
+      "name": "Loaded Quiver",
+      "description": "If you end your turn without attacking, the next time you use Apex, summon +1 more beasts, and deal 2 damage, once, to your target for every beast you summon."
+    }
+  },
+  {
+    "name": "Gwynt",
+    "job": "Warden",
+    "chapter": 1,
+    "action": "1 action",
+    "description": "With catlike reflexes, you pounce, spurring allies to action.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Dash up to 2 spaces, then deal 2 damage to an adjacent foe."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "An ally or allied summon in range 3 of your foe may also dash 2. If that puts them adjacent to your target, they also deal 2 damage to them."
+      },
+      {
+        "effect_names": [
+          "Finishing Blow",
+          "Charge"
+        ],
+        "result": "You and all chosen allies or summons gain *stealth* after this ability resolves."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If made from *stealth*, increase the dashes and range of this ability by +1."
+      },
+      {
+        "name": "ii",
+        "description": "You and your ally or summon may each shove your target 1 space."
+      }
+    ],
+    "mastery": {
+      "name": "Great Gwynt",
+      "description": "Increase dashes and ranges by +1, and the effect can be used on an additional ally or allied summon in range."
+    }
+  },
+  {
+    "name": "Circle the Oak",
+    "job": "Warden",
+    "chapter": 1,
+    "action": "2 actions",
+    "tags": [
+      "Attack"
+    ],
+    "description": "Ten palm strikes with the heel of the hand or the haft of the axe will shatter even the most tenacious bark.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Dash 2"
+      },
+      {
+        "on_hit": "2[D]",
+        "on_miss": "1 damage"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "If you’re adjacent to your foe, dash in a full circle clockwise through every adjacent space to your foe, phasing through allies or allied summons, or as far as possible until stopped. Each time you pass through an ally or summon’s space, deal fray damage to your foe, up to a maximum of four times. Stop if you would enter the space of a foe or obstruction."
+      },
+      {
+        "effect_names": [
+          "Finishing Blow",
+          "Charge"
+        ],
+        "result": "Increase initial dash to 5. After the ability resolves, you may shove your foe 2."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Allies you pass through with Circle the Oak may dash 1 after this ability resolves."
+      },
+      {
+        "name": "ii",
+        "description": "If you passed through two or more allies or allied summons, also gain *evasion* until the end of your next turn."
+      }
+    ],
+    "mastery": {
+      "name": "Timber Split",
+      "description": "Enemies no longer stop this move, and you may phase through their spaces. Enemies you pass through are shoved 1, take fray damage, and are *dazed*."
+    }
+  },
+  {
+    "name": "Mist Strider",
+    "job": "Warden",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Terrain Effect",
+      "Summon"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 3
+      }
+    ],
+    "description": "Call on the beasts of the deep mists and rains, whose form is shadow and water.",
+    "effects": [
+      {
+        "effect_names": [
+          "Terrain Effect"
+        ],
+        "result": "Create small blast misty cloud in free space in range, with the following effects:\n* The spaces of the area always cost a maximum of 1 movement for you and allies to move across, and characters have *phasing* while moving this way.\n* Foes inside are *blinded+*\nClouds created with this ability last until this ability is used again."
+      },
+      {
+        "effect_names": [
+          "Charge"
+        ],
+        "result": "Create a second cloud."
+      },
+      {
+        "effect_names": [
+          "Summon"
+        ],
+        "result": "At the start of your turn, you can consume a cloud as a *free action* to condense it into a fey creature, summoning a **beast** in any of its spaces and ending this effect."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Once a round, when you enter or exit the area, you can gain *stealth*."
+      },
+      {
+        "name": "ii",
+        "description": "Foes in the area count all characters as having *evasion*."
+      }
+    ],
+    "mastery": {
+      "name": "River Guardians",
+      "description": "This ability creates a beast inside when an area is created. Foes that start their turn inside the area that end their turn outside of it take 2 damage and are dazed."
+    }
+  },
+  {
+    "name": "Stampede",
+    "job": "Warden",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Mark",
+      "Summon"
+    ],
+    "description": "With a bellow or a clenched fist, you summon an immense spirit to pound your enemies.",
+    "effects": [
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "You mark a foe in range. Once a round, at the end of that foe’s turn, a rampaging spirit beast, charges in from any edge of the battlefield. Create a line *area effect* drawn from the edge of the battlefield that includes your foe. The beast charges down the line until it enters an adjacent space to your foe, shoving all characters 1 to either side of the line."
+      },
+      {
+        "effect_names": [
+          "Summon"
+        ],
+        "result": "Then the beast deals 2 damage to your foe, shoves them 1, then coalesces into a real creature, becoming a **beast** summon."
+      },
+      {
+        "effect_names": [
+          "Collide",
+          "Charge"
+        ],
+        "result": "Foes affected take 2 damage after this ability resolves."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "When you trigger a *finishing blow* on a foe, you may transfer the mark to them as a *free action*."
+      },
+      {
+        "name": "ii",
+        "description": "If the beast passes through two or more characters before reaching your foe it deals 4 damage and shoves them 2 instead."
+      }
+    ],
+    "mastery": {
+      "name": "Lord of the Steppe",
+      "description": "Yourself and allies can ride the beast if it passes through their space, removing themselves from the battlefield instead of taking damage and shove. When it ends its movement, they hop off and must place themselves in an adjacent space, or as close as possible."
+    }
+  },
+  {
+    "name": "Strength of the Pack",
+    "job": "Warden",
+    "chapter": 1,
+    "action": "2 actions",
+    "tags": [
+      "Stance",
+      "Aura"
+    ],
+    "description": "Your senses sync with those of the herd, and you strike as one.",
+    "effects": [
+      {
+        "effect_names": [
+          "Stance"
+        ],
+        "result": "In this stance, gain aura 2.\n* When entering this stance, or when it refreshes, summon a beast in free space in the aura, then you and all allies and summons in the aura may dash 1 space.\n* Foes in the aura take +1 damage from summons."
+      },
+      {
+        "effect_names": [
+          "Refresh"
+        ],
+        "result": "Refresh this stance at the start of your turn."
+      },
+      {
+        "effect_names": [
+          "Special"
+        ],
+        "result": "While adjacent to 3 or more summons, the action cost of this ability is reduced to 1."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "When you first enter this stance, increase the dash granted to 4."
+      },
+      {
+        "name": "ii",
+        "description": "While you have three or more summons in this aura, you have *evasion*."
+      }
+    ],
+    "mastery": {
+      "name": "Cú Chulainn",
+      "description": "Strength of the Pack becomes a *free action* at round 4 or later and its aura affects the entire battlefield."
+    }
+  },
+  {
+    "name": "Underway",
+    "job": "Warden",
+    "chapter": 2,
+    "action": "1 action",
+    "tags": [
+      "Terrain Effect"
+    ],
+    "description": "You open the greenways to your allies, allowing them to step the branch-paths and cross distances in an instant.",
+    "effects": [
+      {
+        "effect_names": [
+          "Terrain Effect"
+        ],
+        "result": "Create a leafy portal object in a free adjacent space. At the end of your turn, create another portal in a free adjacent space. Portals last until this ability is used again. Portals don’t provide obstruction and can’t stack or be stacked on other objects.",
+        "sub_ability": {
+          "name": "Underway",
+          "height": 1,
+          "effects": [
+            {
+              "effect_names": [
+                "Object Effect"
+              ],
+              "result": "As a free action ability, you and allies can teleport from any space adjacent to an underway to a free adjacent space to any other underway. This ability does not interrupt movement or other action."
+            },
+            {
+              "effect_names": [
+                ""
+              ],
+              "result": ""
+            }
+          ]
+        }
+      },
+      {
+        "effect_names": [
+          "Charge"
+        ],
+        "result": "Summon a beast each time you create an underway this turn."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "While you have stealth, you can create a third underway at any point during your turn as a *free action*. This underway is replaced if created again."
+      },
+      {
+        "name": "ii",
+        "description": "When you create an underway, you may create up to three spaces of leafy *difficult terrain* in adjacent spaces. Allies adjacent to underways have *cover*."
+      }
+    ],
+    "mastery": {
+      "name": "Bale Portal",
+      "description": "Foes that are shoved into portals or that end their turn adjacent to an underway can be teleported to any free space adjacent to any other underway. A foe can pass a save to avoid it, and can only be successfully teleported this way once a round. Bloodied foes fail the save."
+    }
+  },
+  {
+    "name": "Morrigan",
+    "job": "Warden",
+    "chapter": 2,
+    "action": "1 action",
+    "tags": [
+      "End Turn",
+      "Delay"
+    ],
+    "description": "You call in the winged warriors of the sky to smite your foes.",
+    "effects": [
+      {
+        "effect_names": [
+          "End your turn",
+          "Delay"
+        ],
+        "and": true,
+        "result": "Your next turn must be slow. At the start of that turn, you summon a massive flock of winged beasts that lashes out at all characters in range 2. Yourself, allies, and allied summons in range can dash 2, then gain *stealth*. Foes in range are shoved 2, and are *blinded*."
+      },
+      {
+        "effect_names": [
+          "Collide"
+        ],
+        "result": "Summon a **beast**."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "While holding Morrigan, you have *cover* and ranged attacks against you take +1 difficulty."
+      },
+      {
+        "name": "ii",
+        "description": "After Morrigan resolves, some of the winged creatures linger, creating two spaces of *dangerous terrain* in range 2."
+      }
+    ],
+    "mastery": {
+      "name": "Dark Wing",
+      "description": "After Morrigan resolves, you can redirect the flock, creating a small blast terrain effect in range 3. The are is *dangerous terrain* for foes, and allies in the area have *cover*. It lasts until this effect is repeated."
+    }
+  },
+  {
+    "name": "Sidhe",
+    "job": "Warden",
+    "chapter": 3,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "Melee",
+      "+1 boon"
+    ],
+    "description": "Dip your weapons in the toxins of the deadliest creatures to roam the deep green. Mere preparation of this technique requires years of ritual, patience, and training.",
+    "effects": [
+      {
+        "on_hit": "[D]",
+        "on_miss": "1 damage"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Your foe is *blinded*."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Your target is injected with a catalyzing toxin. At the end of their next turn, they take 6 damage. Reduce this damage to 3 if they end that turn adjacent to an ally. Then, this effect ends."
+      },
+      {
+        "effect_names": [
+          "Finishing Blow",
+          "Charge"
+        ],
+        "result": "Shove your target 2."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Also create a space of *dangerous terrain* adjacent to your foe after the effect expires."
+      },
+      {
+        "name": "ii",
+        "description": "When the effect expires, your foe explodes with a medium blast *area effect*, dealing 2 damage to all other characters within."
+      }
+    ],
+    "mastery": {
+      "name": "Great Fume Poison",
+      "description": "While the toxin’s effect is active, your foe treats all other characters as having *cover*, *evasion* and *dodge*. This effect turns off while they are adjacent to an ally."
+    }
+  }
+]

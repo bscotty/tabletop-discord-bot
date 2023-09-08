@@ -1,0 +1,534 @@
+[
+  {
+    "name": "God Hand",
+    "job": "Sealer",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "Combo"
+    ],
+    "description": "Divine energy infuses you, allowing hammer-like blows that would fell a demon with even your bare hands.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Teleport 1."
+      },
+      {
+        "on_hit": "[D]+fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Seal your foe, then bless yourself or ally in range 2."
+      },
+      {
+        "effect_names": [
+          "Exceed"
+        ],
+        "result": "You and allies in range 2 gain 3 vigor."
+      }
+    ],
+    "combo": {
+      "name": "Devil Hand",
+      "tags": [
+        "+1 boon"
+      ],
+      "effects": [
+        {
+          "effect_names": [
+            "Effect"
+          ],
+          "result": "Teleport 1."
+        },
+        {
+          "on_hit": "[D]+fray",
+          "on_miss": "fray"
+        },
+        {
+          "effect_names": [
+            "Effect"
+          ],
+          "result": "Character explodes in a medium blast *area effect* centered on them, dealing 1 *divine* damage to all foes."
+        },
+        {
+          "effect_names": [
+            "Exceed"
+          ],
+          "result": "Repeat the effect."
+        }
+      ]
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "All versions of this ability gain *Exceed*: Gain *evasion* until the end of your next turn."
+      },
+      {
+        "name": "ii",
+        "description": "Increase teleports to 2, and all versions of this ability gain *Slay*: gain or lose a *combo* token."
+      }
+    ],
+    "mastery": {
+      "name": "Fists of Heaven and Hell",
+      "description": "Add an alternate combo action. It gains all talent effects of this ability.",
+      "combo": {
+        "name": "Fists of Heaven and Hell",
+        "tags": [
+          "+1 boon"
+        ],
+        "area": [
+          {
+            "area_type": "",
+            "range": 0
+          }
+        ],
+        "description": "",
+        "effects": [
+          {
+            "effect_names": [
+              "Effect"
+            ],
+            "result": "Teleport 1."
+          },
+          {
+            "on_hit": "[D]+fray",
+            "on_miss": "fray"
+          },
+          {
+            "effect_names": [
+              "Effect"
+            ],
+            "result": "Character explodes in a medium blast *area effect* centered on them, dealing 1 *divine* damage to all foes."
+          },
+          {
+            "effect_names": [
+              "Exceed"
+            ],
+            "result": "Repeat all effects."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Grand Seal",
+    "job": "Sealer",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Mark"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 4
+      }
+    ],
+    "description": "Bind an enemy in an astral seal, condemning them and crushing them under the weight of their own evil.",
+    "effects": [
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "A foe in range becomes *sealed* and marked. While marked, after they use an ability that damages an ally of yours, they take 2 *divine* damage. A foe can pass a save at the end of their turn to end this mark."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "*Bloodied* foes gain +1 curse on saves while marked."
+      },
+      {
+        "name": "ii",
+        "description": "*Bloodied* foes are also *pacified+* while marked."
+      }
+    ],
+    "mastery": {
+      "name": "Milk Sutra",
+      "description": "When this mark ends, if there is a new foe in range 3 of your target, you may transfer it to that foe."
+    }
+  },
+  {
+    "name": "Matsuri",
+    "job": "Sealer",
+    "chapter": 1,
+    "action": "2 actions",
+    "tags": [
+      "Attack"
+    ],
+    "description": "Swing your weapon in a flaming arc that sends sprays of fire in bright displays, lighting up the sky.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Teleport 2. Allies in range 2 may teleport 1."
+      },
+      {
+        "on_hit": "[2]D+fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Exceed"
+        ],
+        "result": "Create a large blast explosion *area effect* centered on your foe. Yourself and allies inside gain 3 vigor. Foes take 2 *divine* damage."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Increase teleports by +1 and gains *Slay*: Repeat the teleport effect."
+      },
+      {
+        "name": "ii",
+        "description": "*Bloodied* foes take bonus damage and must also save or be *stunned*."
+      }
+    ],
+    "mastery": {
+      "name": "Blood Festival",
+      "description": "The first time you use Matsuri in a combat, you may increase all its teleports by +2, it deals *bonus damage*, and it triggers all *exceed* effects."
+    }
+  },
+  {
+    "name": "Spirit Shrine",
+    "job": "Sealer",
+    "chapter": 1,
+    "action": "1 action",
+    "description": "Many sealers carry portable shrines to the local spirits, adding on talismans, images, icons, or offerings to whichever small god holds dominion over the areas they travel through. In a pinch, they can set these shrines down and beseech the spirits for aid.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Create a shrine in a free adjacent space. The shrine can be placed on other objects, and lasts until this ability is used again without increasing its height (see below).",
+        "sub_ability": {
+          "name": "Shrine",
+          "height": 1,
+          "effects": [
+            {
+              "effect_names": [
+                "Object Effect"
+              ],
+              "result": "Aura 2. You can use this ability again while adjacent to your shrine to increase its size, increasing the height by +1. The shrine gains additional benefits equal to its total height, including other objects it is stacked on:\n* 1: Yourself and allies in the aura have *cover* from characters from the outside and gain +1 boon on attack rolls.\n* 2: Yourself and allies in the aura gain 2 vigor when you end your turn there.\n* 3+: Yourself and allies in the aura have *evasion*."
+            }
+          ]
+        }
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If you or an ally ends their turn inside the Shrine’s aura and didn’t attack, they are *blessed* and gain 2 vigor."
+      },
+      {
+        "name": "ii",
+        "description": "Foes that use any ability inside the shrine’s aura can be teleported 1 after the triggering ability resolves."
+      }
+    ],
+    "mastery": {
+      "name": "Spirit Patronage",
+      "description": "Gain the following interrupt:",
+      "sub_ability": {
+        "name": "Grace of the Spirits",
+        "count": 1,
+        "effects": [
+          {
+            "effect_names": [
+              "Trigger"
+            ],
+            "result": "An ally in the aura is damaged by a foe’s ability."
+          },
+          {
+            "effect_names": [
+              "Effect"
+            ],
+            "result": "Your ally becomes immune to all damage from the triggering ability. Destroy the shrine, then deal 2 *divine* damage, once, to the foe per height of the shrine. You cannot place shrines for the rest of combat."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Sanctify",
+    "job": "Sealer",
+    "chapter": 1,
+    "action": "2 actions",
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 2
+      }
+    ],
+    "description": "You throw out a handful of glittering salt, scorching the spiritually impure.",
+    "effects": [
+      {
+        "effect_names": [
+          "Terrain Effect"
+        ],
+        "result": "You scatter salt in a medium blast *area effect* in range, creating a terrain effect in those spaces. Foes in the area effect take 1 *divine* damage. While in the area, foes take +1 curse on saves and are *pacified* if they start or end their turn there. Allies inside the area take +1 boon on saves. The area persists until you take this action again or until the end of combat."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "After using any ability that triggers an *exceed* effect, deal 1 *divine* damage to all foes in the area, and grant 2 vigor to all allies in the area."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "*Bloodied* foes must save if they attempt to enter the area. On a failed save, they cannot voluntarily enter the area until the start of their next turn."
+      },
+      {
+        "name": "ii",
+        "description": "*Bloodied* allies inside gain 4 vigor for ending their turn inside instead."
+      }
+    ],
+    "mastery": {
+      "name": "Elden Salt",
+      "description": "You can place two areas with Sanctify without replacing the first. At round 4+, Sanctify becomes 1 action."
+    }
+  },
+  {
+    "name": "Grand Banishment",
+    "job": "Sealer",
+    "chapter": 1,
+    "action": "1 action",
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 4
+      }
+    ],
+    "description": "With a word and a quickly drawn talisman, you stomp your foot and forbid your foe from taking another step towards you.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Teleport 1"
+      },
+      {
+        "effect_names": [
+          "End your turn"
+        ],
+        "result": "Choose a foe in range, sealing their movement with force of will. Until the end of that foe’s next turn, they take 3 *divine* damage after they or an ally uses any ability that moves them closer to you."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Your chosen character treats you and any allies in range 2 of you as having *cover*."
+      },
+      {
+        "name": "ii",
+        "description": "*Bloodied* foes can be teleported 2 at the end of any turn this ability’s damage activates."
+      }
+    ],
+    "mastery": {
+      "name": "Horse and Ox Seal",
+      "description": "When you take this ability, you can also choose to invert the effect for the duration, dealing damage to the chosen foe if they move away from you instead."
+    }
+  },
+  {
+    "name": "Divine Aegis",
+    "job": "Sealer",
+    "chapter": 2,
+    "action": "1 action",
+    "tags": [
+      "Mark"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 4
+      }
+    ],
+    "description": "You place a holy seal over your ally, enveloping them in divine protection.",
+    "effects": [
+      {
+        "effect_names": [
+          "Mark"
+        ],
+        "result": "Mark an ally in range 3. While marked, any foe that attempts to use an ability that includes that ally as a target must first save. On a successful save, there are no further effects, and the mark remains active. On a failed save, the chosen ally is *unstoppable* and gains *resistance* to all damage from the triggering ability for its duration, then the mark fades."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If your ally is at 25% hp or lower when marked, marking them becomes a *free action*."
+      },
+      {
+        "name": "ii",
+        "description": "If your ally is at 25% hp or lower when marked, they also gain defiance."
+      }
+    ],
+    "mastery": {
+      "name": "Shroud From Heaven",
+      "description": "This mark can be activated twice before it fades."
+    }
+  },
+  {
+    "name": "Justice",
+    "job": "Sealer",
+    "chapter": 2,
+    "action": "Interrupt 1",
+    "tags": [
+      "Combo"
+    ],
+    "description": "Invoking the spirits of the land and air, you move at impossible speed, doling out blows faster than the eye can see. A second blow scatters your foes and whisks away your allies.",
+    "effects": [
+      {
+        "effect_names": [
+          "Trigger"
+        ],
+        "result": "You score a Critical Hit or trigger an Exceed effect."
+      },
+      {
+        "effect_names": [
+          "Area Effect"
+        ],
+        "result": "Burst 2 (self): Foes take 1 *divine* damage. Allies are *blessed*."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Then, teleport 2."
+      }
+    ],
+    "combo": {
+      "name": "Judgement",
+      "action": "Interrupt 1",
+      "tags": [
+        "Gamble"
+      ],
+      "effects": [
+        {
+          "effect_names": [
+            "Trigger"
+          ],
+          "result": "You score a *Critical Hit* or trigger an *Exceed* effect."
+        },
+        {
+          "effect_names": [
+            "Effect"
+          ],
+          "result": "*Gamble*, then you may teleport yourself and each character in range 2 half that far. Foes are *pacified*."
+        }
+      ]
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "Allies affected by either interrupt gain 2 vigor."
+      },
+      {
+        "name": "ii",
+        "description": "You can teleport 1 space before and after triggering either interrupt."
+      }
+    ],
+    "mastery": {
+      "name": "Gran Judicata",
+      "description": "Add an alternate combo action:",
+      "combo": {
+        "name": "Gran Judicata",
+        "action": "Interrupt 1",
+        "effects": [
+          {
+            "effect_names": [
+              "Trigger"
+            ],
+            "result": "You score a *Critical Hit* or trigger an *Exceed* effect."
+          },
+          {
+            "effect_names": [
+              "Effect"
+            ],
+            "result": "Deal 4 *divine* damage to all foes on the battlefield above *bloodied*, and all *bloodied* allies are *blessed* and gain 2 vigor."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Open the Gates",
+    "job": "Sealer",
+    "chapter": 3,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "Combo"
+    ],
+    "description": "This aptly named technique can be used to deliver an extremely powerful blow - but focusing the body’s aether in such a way takes a long time to recharge.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Teleport 1."
+      },
+      {
+        "on_hit": "[D]+fray and foe is pacified.",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Exceed"
+        ],
+        "result": "Shove your foe 1, then teleport 1, then shove your foe 1, then teleport 1"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "This attack gains +1 boon, cannot miss (turn any miss into a hit) and triggers any *exceed* effects the first time it is used in combat."
+      }
+    ],
+    "combo": {
+      "name": "Center the Temple",
+      "action": "1 action",
+      "tags": [
+        "Attack"
+      ],
+      "effects": [
+        {
+          "effect_names": [
+            "Effect"
+          ],
+          "result": "Teleport spaces equal to the round number before the attack."
+        },
+        {
+          "on_hit": "[D]+fray",
+          "on_miss": "fray"
+        },
+        {
+          "effect_names": [
+            "Exceed"
+          ],
+          "result": "Deal 1 damage again to your target. At round 4 or later, increase this damage to 6."
+        }
+      ]
+    },
+    "talents": [
+      {
+        "name": "i",
+        "description": "You may teleport an ally in range 2 instead of teleporting yourself with any of this ability’s teleports."
+      },
+      {
+        "name": "ii",
+        "description": "Both versions of this ability gains a range equal to the round number."
+      }
+    ],
+    "mastery": {
+      "name": "Burial Fist",
+      "description": "Any version of this ability deals *bonus damage* and always triggers *exceed* effects at round 4 or later."
+    }
+  }
+]

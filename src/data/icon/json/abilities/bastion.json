@@ -1,0 +1,436 @@
+[
+  {
+    "name": "Heracule",
+    "job": "Bastion",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Attack",
+      "True Strike"
+    ],
+    "area": [
+      {
+        "area_type": "Range",
+        "range": 3
+      }
+    ],
+    "description": "Hurl your shield or weapon as a discus with irrepressible force.",
+    "effects": [
+      {
+        "on_hit": "[D] + fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Attack target is weakened and shoved 1"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "A different foe in range 3 from your target is shoved 1 away from your main target."
+      },
+      {
+        "effect_names": [
+          "Collide",
+          "Heroic"
+        ],
+        "result": "Repeat the above effect."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Heracule’s shoves can be in any direction."
+      },
+      {
+        "name": "ii",
+        "description": "Heracule’s second effect triggers +1 more time."
+      }
+    ],
+    "mastery": {
+      "name": "Perfect Heracule",
+      "description": "Heracule gains rebound, and its second effect triggers +1 more time."
+    }
+  },
+  {
+    "name": "Battering Ram",
+    "job": "Bastion",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [],
+    "description": "Use your shield, weapon, or armored fist and send your target flying.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "An adjacent character is shoved 2 spaces"
+      },
+      {
+        "effect_names": [
+          "Collide",
+          "Heroic"
+        ],
+        "result": "Foe is *slashed*, and refund the action cost of this ability."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "You may *rush 1* before using Battering Ram."
+      },
+      {
+        "name": "ii",
+        "description": "You can also shove objects with Battering Ram. The object triggers *collide* effects on the first character it collides with."
+      }
+    ],
+    "mastery": {
+      "name": "Gate Smasher",
+      "description": "Once a turn, if you trigger Battering Ram’s *Collide* or *Heroic* effect, the ability can be used one more time this turn."
+    }
+  },
+  {
+    "name": "Land Waster",
+    "job": "Bastion",
+    "chapter": 1,
+    "action": "2 actions",
+    "tags": [
+      "Attack"
+    ],
+    "area": [
+      {
+        "area_type": "Burst",
+        "range": 1,
+        "qualifier": "target"
+      }
+    ],
+    "description": "Crash your greatshield or weapon into the earth, sending up devastating shockwaves.",
+    "effects": [
+      {
+        "on_hit": "2[D] + fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Area effect"
+        ],
+        "result": "Foes take fray damage."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Shove all characters in the area except you 1 space away from your attack target, then, shove your target 1."
+      },
+      {
+        "effect_names": [
+          "Heroic"
+        ],
+        "result": "Gains True Strike and becomes Burst 2 (target)"
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "If Land Waster’s effect shockwave shoves 3 or more foes or allies, it shoves +1 and stuns your target."
+      },
+      {
+        "name": "ii",
+        "description": "If Land Waster’s effect shockwave shoves 2 or more foes or allies, cure yourself."
+      }
+    ],
+    "mastery": {
+      "name": "Ajax",
+      "effects": [
+        {
+          "effect_names": [
+            "Terrain effect"
+          ],
+          "result": "Before Land Waster’s effect triggers, you tear up the very ground, creating a height 1 boulder object in range 3 of you."
+        }
+      ]
+    }
+  },
+  {
+    "name": "Valiant",
+    "job": "Bastion",
+    "chapter": 1,
+    "action": "1 action",
+    "description": "Stride forth, with your shield held before you, battering aside foes.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "*Rush 1*, then *rush 1*. After each rush, shove all adjacent characters 1."
+      },
+      {
+        "effect_names": [
+          "Collide",
+          "Heroic"
+        ],
+        "result": "*Rush 1* again, then shove all adjacent characters 1.",
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "*Collide*: Become *unstoppable* for the rest of your turn."
+      },
+      {
+        "name": "ii",
+        "description": "If you only shove one foe, they gain *hatred* of you after this ability resolves."
+      }
+    ],
+    "mastery": {
+      "name": "Second Wind",
+      "description": "At round 4 or higher in combat, valiant becomes a free action."
+    }
+  },
+  {
+    "name": "Endless Battlement",
+    "job": "Bastion",
+    "chapter": 1,
+    "action": "1 action",
+    "tags": [
+      "Stance",
+      "Aura"
+    ],
+    "description": "The land itself is your castle, and you will never let its walls be breached. No matter where your allies step, your shield will be there.",
+    "effects": [
+      {
+        "effect_names": [
+          "Stance"
+        ],
+        "result": "When you enter this stance, or when it refreshes, choose an ally in range 4. That ally gains aura 1 until the start of your next turn. The aura deactivates if your ally is out of range. While the aura is active, you can use the following interrupt:",
+        "sub_ability": {
+          "name": "Heroic Intervention",
+          "count": 1,
+          "effects": [
+            {
+              "effect_names": [
+                "Trigger"
+              ],
+              "result": "A foe targets your ally with an ability."
+            },
+            {
+              "effect_names": [
+                "Effect"
+              ],
+              "result": "You soar into the air, removing yourself from the battlefield, then return in any space in the aura. Adjacent foes take 2 damage."
+            }
+          ]
+        }
+      },
+      {
+        "effect_names": [
+          "Refresh"
+        ],
+        "result": "Refresh this stance at the start of your turn."
+      },
+      {
+        "effect_names": [
+          "Heroic"
+        ],
+        "result": "Immediately activate the interrupt effect."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "While you are in the aura, attacks against your ally gain +1 curse."
+      },
+      {
+        "name": "ii",
+        "description": "You and your ally both have have *counter* while you are in the aura."
+      }
+    ],
+    "mastery": {
+      "name": "Perfect Battlement",
+      "description": "At round 4 or higher, Endless Battlement has no maximum range, deals 4 damage instead of 2, and becomes interrupt 2."
+    }
+  },
+  {
+    "name": "Catapult",
+    "job": "Bastion",
+    "chapter": 1,
+    "action": "Interrupt 1",
+    "description": "Use your shield as a springboard to set up ally maneuvers or to deflect projectiles",
+    "effects": [
+      {
+        "effect_names": [
+          "Trigger"
+        ],
+        "result": "An ally ends a movement in an adjacent space."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Shove that ally 2 in any direction."
+      },
+      {
+        "effect_names": [
+          "Collide",
+          "Heroic"
+        ],
+        "result": "That ally gains 2 vigor and may *rush 1*."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "Your shield becomes a valid target for allied abilities. You can expend this interrupt to grant them *rebound*."
+      },
+      {
+        "name": "ii",
+        "description": "Catapult can also be triggered on foes. When triggered on foes, the effect becomes effect: shove 1. *Collide*: you may rush 1"
+      }
+    ],
+    "mastery": {
+      "name": "Mangonel",
+      "description": "Catapult becomes Interrupt 3"
+    }
+  },
+  {
+    "name": "Perseus",
+    "job": "Bastion",
+    "chapter": 2,
+    "action": "Interrupt 2",
+    "tags": [
+      "Aura"
+    ],
+    "description": "Your armor and shield become a mirror, channeling and amplifying the destructive power of your allies’ attacks.",
+    "effects": [
+      {
+        "effect_names": [
+          "Trigger"
+        ],
+        "result": "You are included in an allied area effect."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "You release an aura 1 effect centered on you that lasts for the duration of the triggering ability, extending the area effect to encompass the aura. You can choose to be immune to any part of the triggering ability."
+      },
+      {
+        "effect_names": [
+          "Heroic"
+        ],
+        "result": "Increase the aura size by +1."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "You gain 4 vigor the first time in a round this ability triggers."
+      },
+      {
+        "name": "ii",
+        "description": "You can extend the area as a line 5 *area effect* instead of an aura.."
+      }
+    ],
+    "mastery": {
+      "name": "Chaos Finisher",
+      "description": "When this interrupt triggers, after the triggering effect resolves, you may deal 2 damage to all affected foes from the triggering ability and shove them 1 in any direction."
+    }
+  },
+  {
+    "name": "Rook",
+    "job": "Bastion",
+    "chapter": 2,
+    "action": "2 actions",
+    "tags": [
+      "Attack",
+      "Aura"
+    ],
+    "description": "Your stance is powerful as you strike, and stand tall, an armored sentinel. No enemy can safely set foot where your gaze falls.",
+    "effects": [
+      {
+        "on_hit": "[D]+fray",
+        "on_miss": "fray"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Shove 1"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "You gain aura 1 until the end of your next turn. Any foe in the aura that is shoved is shoved +1. If any foe ends their turn in the aura, you may deal fray damage to them and shove them 1."
+      },
+      {
+        "effect_names": [
+          "Collide"
+        ],
+        "result": "Character is *slashed*."
+      },
+      {
+        "effect_names": [
+          "Heroic"
+        ],
+        "result": "Gains *true strike*, and increase aura to Aura 2."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "You also have *counter* while Rook’s aura is active."
+      },
+      {
+        "name": "ii",
+        "description": "You can also inflict *hatred* on a foe that triggers Rook’s effect, but no more than once a round."
+      }
+    ],
+    "mastery": {
+      "name": "Implacable Fortress",
+      "description": "Allies in the aura also reduce all damage by 2, as if by armor."
+    }
+  },
+  {
+    "name": "Great Giorgios",
+    "job": "Bastion",
+    "chapter": 3,
+    "action": "1 action",
+    "tags": [
+      "End turn"
+    ],
+    "description": "You call a challenge to your foe to stand and fight. Cowards are blown away by your massive charge.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Choose a foe in range 3, then *end your turn*. At the end of that foe’s turn, you may rush 4, as long as you end each space of your movement closer to them from when you started (if you are adjacent, you don’t move at all). Then, if your foe is adjacent, they are shoved a number of spaces equal to the spaces you just moved, then take damage equal to that number +2."
+      },
+      {
+        "effect_names": [
+          "Collide",
+          "Heroic"
+        ],
+        "result": "Foe also gains *hatred* of you after this ability resolves."
+      }
+    ],
+    "talents": [
+      {
+        "name": "i",
+        "description": "You gain *phasing* while *rushing*. Foes you passed through take 2 damage after your movement resolves, and are shoved 1 to either side of your movement."
+      },
+      {
+        "name": "ii",
+        "description": "Allies adjacent to you during any part of this rush are shoved 1 in any direction after this ability resolves."
+      }
+    ],
+    "mastery": {
+      "name": "Dragonslayer",
+      "description": "You can choose to Delay Great Giorgios. Your next turn must be slow, but the effect activates at the start of that turn instead of at the end of your target’s turn, and it deals double damage."
+    }
+  }
+]

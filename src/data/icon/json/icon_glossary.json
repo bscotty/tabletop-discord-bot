@@ -1,0 +1,354 @@
+[
+  {
+    "name": "Armor X",
+    "description": "Reduce all damage taken by X. Always reduce by the highest value."
+  },
+  {
+    "name": "Area Ability",
+    "description": "An ability that applies *area effects* in a large, fixed pattern."
+  },
+  {
+    "name": "Aura X",
+    "description": "This ability is a continuous, *ongoing (+)* effect that affects all characters specified within range X of an origin point, usually a character. Characters are only affected by an aura while inside."
+  },
+  {
+    "name": "Auto-hit",
+    "description": "This attack doesn’t make an attack roll but always scores a hit (not critical hit or miss)."
+  },
+  {
+    "name": "Blessing",
+    "description": "Certain abilities give yourself or allies a Blessing token, and ways to spend those tokens for powerful effects. By default a character can use a blessing token to gain +1 boon when they make a save. All blessings are discarded at the end of combat."
+  },
+  {
+    "name": "Blind",
+    "description": "Max range of all abilities is 2.",
+    "type": "Status"
+  },
+  {
+    "name": "Bloodied",
+    "description": "At or under 50% hp",
+    "type": "Special State"
+  },
+  {
+    "name": "Bonus Damage",
+    "description": "When an ability gains bonus damage, roll one more [D] for each instance of bonus damage and pick the highest result."
+  },
+  {
+    "name": "Charge",
+    "description": "A *triggered effect* that activates when the ability is used on a slow turn."
+  },
+  {
+    "name": "Chain Reaction",
+    "description": "Wright-only *triggered effect*. Triggers when a character damages two or more foes with this ability."
+  },
+  {
+    "name": "Collide",
+    "description": "A *triggered effect* that occurs on any character *shoved* into an obstruction by this ability."
+  },
+  {
+    "name": "Combo",
+    "description": "Actions with Combo have two versions, a base version and combo version. When you use the base ability, gain a combo token. Any time you use a combo ability and have a token, you use the combo version instead, discarding the token. You can only have one combo token at once, and discard all tokens at the end of combat."
+  },
+  {
+    "name": "Comeback",
+    "description": "A *triggered effect* that happens when this ability is used while *bloodied*."
+  },
+  {
+    "name": "Counter",
+    "description": "When damaged by an ability, deal 2 damage back, each time damage is applied.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Critical Hit",
+    "description": "Increase total attack damage by + [D]. Can only apply to an attack, can only apply once, and can trigger normally on a total attack roll of 20+."
+  },
+  {
+    "name": "Cure",
+    "description": "A character that’s cured gains *vigor* 4, or a *vigor surge* if *bloodied*. Then, that character may save against all statuses, ending them on a success."
+  },
+  {
+    "name": "[D]",
+    "description": "Your class damage die. Roll that die when you see this symbol."
+  },
+  {
+    "name": "Dangerous Terrain",
+    "description": "Take 2 *piercing* damage when entering or exiting a space of dangerous terrain, but only take this damage once per turn."
+  },
+  {
+    "name": "Dash",
+    "description": "Special movement that ignores *engagement*."
+  },
+  {
+    "name": "Dazed",
+    "description": "+1 curse on attacks",
+    "type": "Status"
+  },
+  {
+    "name": "Defiance",
+    "description": "Prevents hit points from being reduced past 1 hp. When this triggers, remove this effect and character becomes immune to all damage for the rest of the current turn.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Delay",
+    "description": "Slow but powerful effect that typically ends your turn. When you use a delay effect, your next turn must be *slow*. The effect occurs at the start of that turn, before anything else happens."
+  },
+  {
+    "name": "Difficult Terrain",
+    "description": "Costs +1 space of movement to exit."
+  },
+  {
+    "name": "Divine",
+    "description": "Damage from this ability cannot be reduced, mitigated, or negated in any way except *immunity* (ignores *armor*, *weak*, *resistance*, *defiance*, and bypasses *vigor*).",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Dodge",
+    "description": "Immune to all damage from misses, successful saves, and area effects.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Effect",
+    "description": "A part of an ability that simply happens and is applied to all targets, no roll or save required."
+  },
+  {
+    "name": "End turn",
+    "description": "This ability ends your turn. If multiple abilities or effects would end your turn at the same time, you can only choose one."
+  },
+  {
+    "name": "Engagement",
+    "description": "A character must spend +1 space of movement to exit a space adjacent to a foe."
+  },
+  {
+    "name": "Evasion",
+    "description": "Roll a d6 when targeted by an attack. On a 4+, the attack automatically misses. Check before the attack roll.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Exceed",
+    "description": "A *triggered effect* that takes place on a total attack roll of 15+."
+  },
+  {
+    "name": "Finishing Blow",
+    "description": "Vagabond only *triggered effect* that triggers if this ability targets a bloodied foe."
+  },
+  {
+    "name": "Flying",
+    "description": "A flying character ignores all terrain types other than impassable terrain, and ignores *engagement* and obstruction.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Fray damage",
+    "description": "Fixed damage. Usually added to all attacks on hit or miss."
+  },
+  {
+    "name": "Gamble",
+    "description": "Roll 1d6, then trigger an effect on a certain result or higher."
+  },
+  {
+    "name": "Hatred of X",
+    "description": "Deal half damage to all foes other than foe X. End this status at the end of your turn, or if foe X becomes *immune* to damage or un-targetable.",
+    "type": "Status"
+  },
+  {
+    "name": "Heroic",
+    "description": "Stalwart only *triggered effect*. Triggers when its special condition is fulfilled, depending on job (shove a character, sacrifice health, etc)."
+  },
+  {
+    "name": "Immobile",
+    "description": "Can’t move, be moved, or be removed from the battlefield in any way.",
+    "type": "Special State"
+  },
+  {
+    "name": "Immune to X",
+    "description": "Not affected by X in any way. A character that’s immune to damage or effects doesn’t even count as taking them."
+  },
+  {
+    "name": "Impassible",
+    "description": "Blocks movement of all kinds except *phasing*, and blocks line of sight. Could be something like a pillar, cliff, or a solid rock wall that goes to the ceiling."
+  },
+  {
+    "name": "Incapacitated",
+    "description": "An incapacitated character doesn’t take turns, doesn’t provide obstruction or engagement, can’t move, take actions, or use abilities or traits. All effects on that character end. All effects, marks and summons created by that character are removed. Objects and terrain effects remain.",
+    "type": "Special State"
+  },
+  {
+    "name": "Intangible",
+    "description": "Immune to damage and effects from foes. Does not provide *obstruction* or *engagement*.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Mark",
+    "description": "Places a mark, an *ongoing (+)* effect, on a specific character. Each ability can only place one mark at a time, and a character can mark another character with one mark at a time. If you place a new mark on a character with a mark from you, you can choose which to keep or which to discard. Marks end when the character that placed the mark is defeated, or under other listed conditions."
+  },
+  {
+    "name": "Object",
+    "description": "Categorized by height, 1-3. Blocks movement. Provides *cover* if you’re the same height. Blocks line of sight if you’re smaller. Characters can move up and stand on top of objects. Costs +1 movement per difference in height to move on."
+  },
+  {
+    "name": "Obstruction",
+    "description": "A character can’t normally enter a space occupied by an obstruction. By default this means foes, terrain, and objects."
+  },
+  {
+    "name": "Ongoing (+)",
+    "description": "A status or effect that is ongoing can’t be ended until the thing causing it (a *mark*, a *stance*) is ended. Indicated by a + symbol."
+  },
+  {
+    "name": "Pacified",
+    "description": "Character deals half damage. Breaks on taking damage from a foe’s ability.",
+    "type": "Status"
+  },
+  {
+    "name": "Phasing",
+    "description": "Can ignore *obstruction* and pass through, but not end your turn in, terrain, objects, or characters.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Pierce",
+    "description": "Damage cannot be reduced by *armor* or *weakened*.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Pit",
+    "description": "Counts as -1 height than its base space."
+  },
+  {
+    "name": "Power Die",
+    "description": "A die set out and and ticked up or down depending on certain conditions. You can use a physical die to represent it, or just a tracker. Each power die is unique to the ability that granted it. You typically gain power dice at 1 tick, and if a power die ticks to 0, discard it."
+  },
+  {
+    "name": "Rampart",
+    "description": "Foes cannot enter or exit any space affected by a character’s Rampart by *dashing*, *flying*, or *teleporting*.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Rebound",
+    "description": "An ability that is rebounded can be bounced off a character in range. The ability has no effect, but is instead redirected from that character’s space as the origin space, taking into account cover, line of sight, and other similar effects from their space. Any effects that apply to the original user of the ability still apply to them (such as sacrificing hp, or moving). Rebound does not stack."
+  },
+  {
+    "name": "Regeneration",
+    "description": "If *bloodied*, gain 4 *vigor* at the end of your turn.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Resistance",
+    "description": "Take half damage, rounded up."
+  },
+  {
+    "name": "Rush X",
+    "description": "Move X spaces. You are *unstoppable* and *immune* to all damage while moving."
+  },
+  {
+    "name": "Sacrifice X",
+    "description": "Reduce your hp by X, usually as a cost for an ability. Sacrifice costs are paid at the start of an ability, cannot be reduced, ignored, transferred, or resisted, cannot bring your hp below 1, and you can pay them even if you don’t have enough hp left."
+  },
+  {
+    "name": "Sealed",
+    "description": "Character cannot inflict *statuses* while sealed.",
+    "type": "Status"
+  },
+  {
+    "name": "Shattered",
+    "description": "Character cannot gain or benefit from *Vigor*.",
+    "type": "Status"
+  },
+  {
+    "name": "Shove X",
+    "description": "Move a character involuntarily X spaces in a straight line away from you. If they would move into another character’s space, an object, or into a higher elevation space, they *Collide* and stop moving."
+  },
+  {
+    "name": "Skirmisher",
+    "description": "Can move diagonally, and dash is full speed.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Slashed",
+    "description": "Take 4 damage after you or an ally uses an ability that moves you, but no more than once a turn.",
+    "type": "Status"
+  },
+  {
+    "name": "Slay",
+    "description": "A *triggered effect* that activates when this ability reduces a character to 0 hp."
+  },
+  {
+    "name": "Slow Turn",
+    "description": "Go after all other characters. If multiple characters take slow turns, it takes the same order as regular turns (ally/enemy/ally)"
+  },
+  {
+    "name": "Stance",
+    "description": "An *ongoing (+)*, positive effect. A character can only have one stance active at a time and can drop a stance by taking a new stance or as a free action at the start of their turn. When a stance refreshes, regain its effects."
+  },
+  {
+    "name": "Status",
+    "description": "A negative effect."
+  },
+  {
+    "name": "Standard move",
+    "description": "An ability all characters can take as a free action to move their speed."
+  },
+  {
+    "name": "Stealth",
+    "description": "Cannot be directly targeted except from an adjacent space. Breaks on using any ability other than dash or standard move.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Stunned",
+    "description": "Can’t take interrupts. Your next ability used ends your turn, then end this status.",
+    "type": "Status"
+  },
+  {
+    "name": "Sturdy",
+    "description": "When moved or removed and placed by a foe, can only be moved max 1 space a turn.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Summon",
+    "description": "A character controlled by its Summoner. Summons are *intangible* and do not count as foes or allies for the purposes of abilities. Summons do not take turns. Instead, they have a **summon action** that they use on their summoner’s turn, or a **summon effect** that is always active, and otherwise don’t take actions or move on their own. Summons are removed from the battlefield when their summoner is defeated."
+  },
+  {
+    "name": "Teleport X",
+    "description": "Instantly move to a free space within range X."
+  },
+  {
+    "name": "Terrain Effect",
+    "description": "Something that creates or modifies the terrain spaces on the battlefield."
+  },
+  {
+    "name": "Triggered effect",
+    "description": "An effect that actives under a certain condition. Common effects are *critical hit*, *slay*, *collide*, *finishing blow*, and *charge*. Each unique effect can only trigger once per ability, and once per trigger."
+  },
+  {
+    "name": "True Strike",
+    "description": "Ignores *dodge*, *evasion*, *blind*, and *stealth*.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Unerring",
+    "description": "Ignores *cover* and *aetherwall*",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Unstoppable",
+    "description": "Immune to all *statuses*. Cannot be moved by foes, and movement ignores *engagement* and *rampart*.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Vigilance X",
+    "description": "A special effect with X charges, each represented by a d6. Like a *triggered effect*, can only be activated once per trigger. Vigilance charges stack up to 6, and last until the end of combat. A character can spend any number of charges of Vigilance for one of the following effects, rolling 1d6 per charge spent and picking the highest result:\n• When an ally in range 2 is damaged by a foe’s ability, reduce the damage by the amount rolled as if with armor.\n• When a foe breaks adjacency with you, deal that much damage to them.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Vigor",
+    "description": "Gain a shield that goes over your hit points, equal to your VIT value. Damage goes to Vigor before Hit Points, and it benefits from *armor* and *resistance*. Vigor stacks, but cannot go past 25% of your hp. If you gain a vigor surge, gain maximum vigor. Lose all vigor at the end of combat.",
+    "type": "Positive Effect"
+  },
+  {
+    "name": "Vulnerable",
+    "description": "All damage taken increased by 1.",
+    "type": "Status"
+  },
+  {
+    "name": "Weakened",
+    "description": "All damage dealt reduced by 2.",
+    "type": "Status"
+  }
+]
