@@ -62,9 +62,10 @@ export function iconSharedFormat(formattable: IconSharedFormat, extraNewLineBefo
         let description = ""
         if (formattable.description) {
             if (shouldAddNewLine) {
-                description = "\n"
+                description = `\n*${formattable.description}*`
+            } else {
+                description = formattable.description
             }
-            description += formattable.description
         }
         return description
     }

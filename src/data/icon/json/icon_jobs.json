@@ -166,6 +166,7 @@
   {
     "name": "Fool",
     "title": "Masked Avenger",
+    "class": "Vagabond",
     "description": "Fools are dedicated defenders of the common people of Arden Eld, part folk hero, and part hired killer. They have no official organization, and cover their faces with masks to hide their identity, wearing bells and motley to cover their collections of deadly weapons and explosives.\nSome people fear the Fools, calling them self-interested thugs or anarchic cultists of the Laughing God. They may not be entirely wrong, but none can deny their flair for the theatrical.\nThey are feared rightly by all would-be tyrants, under-barons, and aspiring imperial lords. Wherever kin labor under oppression, someone will take up the mask and knives and sent cold jolts of fear into the hearts of the rich and comfortable.",
     "traits": [
       {
@@ -232,6 +233,7 @@
   {
     "name": "Freelancer",
     "title": "Divine Punisher",
+    "class": "Vagabond",
     "description": "Freelancers are free-roaming exorcists and hired guns, roaming the land and fighting blights, demons and bandits in the name of justice. They tend to act as wild cards: highly independent, highly effective,and sticking to their codes of honor.\nFreelancers have their history in an ancient disgraced knightly order from one of the Seven Families of the Thrynn. They each wield a bright metal six gun, a bow, or a long rifle with extreme skill, the bullets, shot, or arrows of which they infuse with raw Aether drawn from their very souls. Each weapon is a relic passed down from master to student over the years, and can only be won in a duel with another freelancer. The freelancer’s ultimate weapon is the Astral Chain, a holy gauntlet which they use to purge and bind demons and rogue spirits into their service as Seraphim.",
     "traits": [
       {
@@ -295,6 +297,7 @@
   {
     "name": "Shade",
     "title": "Nocturnal Assassin",
+    "class": "Vagabond",
     "description": "Night-walkers, shadow-steppers, and masters of secret scroll arts, the Shades are spies, scouts, and assassins of unparalleled skill. Their number forms a secret and deadly society of Shadow Clans spread across Arden Eld, each practicing and refining the Night Venom Techniques. Joining the shades is presumed to be extremely difficult, but they tend to open their ranks to anyone that has been lost or abandoned.\nThe legends say Shades make a deal with the Weeper, the dead titan queen of night and air, and drink her tears, splitting their soul in two. Their shadow becomes animate, bestial and hungry. Over a week and a day, they must fast and train their shadow to obey them, transforming them into agile and silent warriors of the highest order. The Shades say the stories are rumors, and they get along with their Darksides. They do have a tendency to appear when least expected, in uncanny and unsettling ways.",
     "traits": [
       {
@@ -366,6 +369,7 @@
   {
     "name": "Warden",
     "title": "Friend to Beast and Bough",
+    "class": "Vagabond",
     "description": "The Wardens are the protectors and keepers of the Deep Green, the old and untamed parts of Arden Eld, lorded over by the beasts and the ancient trees. They are both the keepers and the servants of the herd and root, tending to their health, and culling them when it becomes necessary. They sleep under the stars and make their home under bough and root, making staunch allies of the ferocious beasts of the deep wilds through a combination of rigorous training and mutual respect. Their fierce defense of the wild sometimes puts them at odds with civilization, which they tend to have a distaste for.\nWardens are the keepers of the green kenning, the old ranger arts, that allow one to travel noiselessly, hide in plain sight, live off the land, and become immune to even the most deadly of toxins. They are solitary and powerful fighters. It is not uncommon for a Warden on a long sojourn to go without speaking the tongue of Kin for years at a time.",
     "traits": [
       {
@@ -453,6 +457,7 @@
   {
     "name": "Chanter",
     "title": "Songweaver of the Great Chant",
+    "class": "Mendicant",
     "description": "Descending from numerous holy orders that have their roots high in the chronicler monasteries, the chanters are part singer, part storyteller, and part priest. At the time of the Doom, when all knowledge was deemed lost and everything put to page was transformed into ash, the only thing that persisted was the power of song, poetry, and the spirit of survival. A select order of priests committed all the great and necessary knowledge of Kin to memory, creating a single, continuous song, known as the Great Chant. In myths, stories, and histories, they recorded the knowledge of the ancients, transforming it into liturgy.\nThe Chant performed its role, and it was through its power that the early bands of Kin survived and persevered through the darkest days. Today, however, it is so archaic, convoluted, and long that many dispute the meaning of its dogma, though none can deny its value as a mythic text. The Old Church of the chroniclers has splintered into factions that mostly squabble over its meaning and try to draw some angle from its numerous and sometimes contradictory adaptions into holy texts.\nNevertheless, the Chant still holds power - real, tangible power - to heal, mend, and uplift. There are still those that take to the road and use its awesome power for good, ringing the bells of awakening and purification, as they sing to victory.",
     "traits": [
       {
@@ -493,6 +498,7 @@
   {
     "name": "Harvester",
     "title": "Arbiter of Life and Death",
+    "class": "Mendicant",
     "description": "Servants of Tsumi, the Moon Titan, the Harvesters are the death priests of Arden Eld. They travel from land to land, sanctifying burial sites, performing funeral rites, and helping lingering spirits move on. The land is full of the malice and unfulfilled wishes of the long suffering dead, and so the services of the harvesters are in high demand.\nTsumi is the protector of cycles, and so the Harvesters also perform fertility blessings, oversee harvest festivals, and see to the cultivation and protection of the land and nature. They plant flowers over battlefields, and tend groves of beautiful fruit trees planted over graveyards. This dual nature makes Harvesters fierce warriors, able to make the battle bloom or rot with a single swipe of their greatscythes.",
     "traits": [
       {
@@ -567,6 +573,7 @@
   {
     "name": "Sealer",
     "title": "Holy Judge and Purger of Evil",
+    "class": "Mendicant",
     "description": "Traveling priests, monks, judges, and doctors, the Sealers roam the world from village to village, performing necessary rituals, marriages, ceremonies, and yearly festivals. They are a welcome sight in most villages, and most perform the important function of traveling judge and medium, acting as an impartial party translating for the will of the local spirits. They often travel with many blessed relics of the deities of the land or even portable shrines on their back.\nIn their other role, Sealers are legendary monster hunters and exorcists of unbelievable prowess and unshakeable faith. Whenever an especially bad blight or an arch demon appears, the Sealers are usually there to drive it back with ancient sealing magic, blessed brands, and flaming weapons.",
     "traits": [
       {
@@ -625,6 +632,7 @@
   {
     "name": "Seer",
     "title": "Fortune Teller and Master of Fate",
+    "class": "Mendicant",
     "description": "The Seers are made up of all the orders of hedge witches, stargazers, corner prophets, folk healers, shamans, and all manner of individuals that find themselves attracted to reading the Great Arcana, the esoteric practice of reading destiny itself, the Great Wheel of Arden Eld that determines the final fate of all things.\nThrough ritual, ceremony, and unrelenting practice, Seers gain the ability to predict and even defy a person’s fate, using their Aether infused card decks to influence the turning of the Great Wheel and empower their allies with foresight, precision, and uncanny accuracy.",
     "traits": [
       {
@@ -637,7 +645,7 @@
       },
       {
         "name": "Foretell",
-        "description": "You can discard 1 blessing token on yourself or an ally before that ally uses any ability to tell their fortune as an effect. You discard a card from your hand and immediately apply the effects to your target, no matter the distance or if you can see them or not. If you have no cards in hand, draw the top card of your deck instead, apply its effects, then discard it.\n\nThe Great Wheel\n* 2 - The Fool - Ally must dash 3 spaces in a straight line before using the ability.\n* 3 - The Scepter - Teleport your ally to an adjacent space to you after the action resolves.\n* 4 - The Ewer - *Bless* all allies in a small blast area centered on your ally.\n* 5 - The Devil - If the ability forces saves, foes get +2 curses to save against them.\n* 6 - The Sword - Ability gains *pierce*.\n* 7 - Death - Ally gains *Defiance*.\n* 8 - The Chariot - Ally becomes *unstoppable* and immune to all damage while moving during the ability.\n* 9 - The Papessa - Ally becomes *pacified* but is cured after the ability resolves.\n* 10 - The Emperor - Ally gains *stealth* after the ability resolves.\n* J - The Star - Ally makes all attacks and saves with +1 Boon until the start of their next turn, including with the triggering ability.\n* Q - The Moon - Ally gains *Evasion* until the start of their next turn.\n* K - The Sun - Ally gains *Counter* and *Sturdy*, but cannot gain or benefit from *stealth* or *evasion* until the start of their next turn.\n* A - The World - Ally becomes *Unstoppable* until the start of their next turn."
+        "description": "You can discard 1 blessing token on yourself or an ally before that ally uses any ability to tell their fortune as an effect. You discard a card from your hand and immediately apply the effects to your target, no matter the distance or if you can see them or not. If you have no cards in hand, draw the top card of your deck instead, apply its effects, then discard it.\n\nThe Great Wheel\n* 2 - The Fool - Ally must dash 3 spaces in a straight line before using the ability.\n* 3 - The Scepter - Teleport your ally to an adjacent space to you after the action resolves.\n* 4 - The Ewer - *Bless* all allies in a small blast area centered on your ally.\n* 5 - The Devil - If the ability forces saves, foes get +2 curses to save against them.\n* 6 - The Sword - Ability gains *pierce*.\n* 7 - Death - Ally gains *Defiance*.\n* 8 - The Chariot - Ally becomes *unstoppable* and immune to all damage while moving during the ability.\n* 9 - The Papessa - Ally becomes *pacified* but is cured after the ability resolves.\n* 10 - The Emperor - Ally gains *stealth* after the ability resolves.\n* J - The Star - Ally makes all attacks and saves with +1 Boon until the start of their next turn, including with the triggering ability.\n* Q - The Moon - Ally gains *Evasion* until the start of their next turn.\n* K - The Sun - Ally gains *Counter* and *Sturdy*, but cannot gain or benefit from *stealth* or *evasion* until the start of their next turn.\n* A - The World - Ally becomes *Unstoppable* until the start of their next turn.\n"
       },
       {
         "name": "Bend Fate",
@@ -648,8 +656,8 @@
         "description": "Allies are *immune* to damage from your *area effects*. Any time you include an ally in an *area effect* that would damage them, after that ability resolves they gain 2 vigor and are *blessed* instead."
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Chakravartin (2 actions, 1/expedition)",
+        "description": "An ally in range 6 becomes *unstoppable* and *immune* to all damage until the end of their next turn.",
         "chapter_unlock": 3
       }
     ],
@@ -689,6 +697,7 @@
   {
     "name": "Enochian",
     "title": "Unbridled Destruction",
+    "class": "Wright",
     "description": "The Enochian Orders of wrights are the most chaotic of the mage orders. They have no official organization, most of their members being hedge wizards or self taught. Many Enochians disdain authority and work for hire, sleeping and eating where they can and relying on the communities they work for to support them. Those that work on contract with guilds, armies, or mercenary companies tend to value their independence.\nThe power that condenses inside an Enochian is related to the element of fire, a wild spark that grows and wanes with their emotions and energy, but with control can be focused into power that can carve mountains, scorch forests, and boil rivers. In times of desperation, the Enochians can feed this power with their own life force, a dangerous practice that the other orders of wrights look down upon. The Enochians, for their part, see other wrights as stiff and uncreative. They’d rather do it their way, after all.",
     "traits": [
       {
@@ -729,6 +738,7 @@
   {
     "name": "Geomancer",
     "title": "Guardian of the Pure Earth",
+    "class": "Wright",
     "description": "Geomancers belong to an old order of mystics, doctors, alchemists, and esoteric martial artists called the Keepers of the Elden Gate. These scholarly wrights are concerned with health and the flow of energy, not just through the body, but through the very earth itself. They consider themselves physicians of the highest order - their patient being the eternal land of Arden Eld.\nThese studious wrights attune themselves to earth Aether, aligning the energy channels of their body to crystalline perfection with vigorous exercise and sometimes bizarre health regimes. In battle, the land itself is their ally, spitting forth poisonous gases, cavernous upheavals of earth, and great spires of rock to crush their foes.\nNone are more concerned with the Churn than the geomancers, who view it as the greatest sickness known to Kin, and will take any opportunity to fight or study it with exuberance.",
     "traits": [
       {
@@ -769,6 +779,7 @@
   {
     "name": "Spellblade",
     "title": "Swordmaster, Wind Dancer",
+    "class": "Wright",
     "description": "Spellblades are a martial order of highly trained wrights. Many of them come from the Guild Academies in the great cities of Arden Eld, where they often take prestigious posts in the local militias and city watch. Other wrights tend to view Spellblades as stiff, unfeeling military types, but spell blades themselves know they are consummate professionals and unparalleled masters of their art.\nThe lightning Aether that the spellblades wield is highly volatile, and requires intense training and focus to control. Once a spell blade has learned their craft, however, the speed, power, and precision at which they can act is intoxicating, crossing great spans of space in an instant, riding the Aetherial currents with a flash of gleaming steel.",
     "traits": [
       {
@@ -827,6 +838,7 @@
   {
     "name": "Stormbender",
     "title": "Dire Navigator, Master of the Waves",
+    "class": "Wright",
     "description": "The seas of Arden Eld are its most treacherous terrain. Boiling over with monsters, and wracked with unnatural and freakish weather, most folk prefer to give them wide berth. However, there are still those brave and hardy souls that live on the islands around Arden Eld, and the merchants, sailors, and travelers that rely on the sea for fast passage and the movement of cargo, the lifeblood of the continent’s great cities.\nThe storm benders are the great masters of the sea, the supreme navigators that make sailing even possible around Arden Eld. Water-attuned wrights, they are most at home on a deck, or clambering the rigging. Each of them are sailors of the highest caliber, coming from all over - old trade guilds, islander clans, and nautical churner enclaves.\nBending the essence of the sea to their beck and call, the storm benders can clear the skies with a swipe of their hands, feel the currents ahead for aquatic monsters, turn weather away from the hull of the ship, and blow wind into its sails. It doesn’t matter that many of them dabble in a little light piracy on the side - they are the undisputed masters of their element, and they wouldn’t have it any other way.",
     "traits": [
       {

@@ -7,7 +7,7 @@ export type IconInfusion = {
     cost: number | string
     other_triggers?: string[]
     name: string
-    description: string
+    description?: string
     action?: string
     resolve?: number
     tags?: string[]

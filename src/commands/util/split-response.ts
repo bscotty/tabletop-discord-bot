@@ -1,13 +1,16 @@
 export function splitResponse(response: string): string[] {
-    const responses: string[] = response.split("\n")
-    const splitResponse: string[] = [""]
+    const lines: string[] = response.split("\n")
+    const splitResponse: string[] = []
 
-    responses.forEach(response => {
-        const index = splitResponse.findIndex((entry) => (entry.length + response.length) < 2000)
-        if (index < 0) {
+    let currentIndex = 0
+    lines.forEach((response) => {
+        if (splitResponse.length <= currentIndex) {
             splitResponse.push(response)
+        } else if (splitResponse[currentIndex].length + response.length < 2000) {
+            splitResponse[currentIndex] = splitResponse[currentIndex] + "\n" + response
         } else {
-            splitResponse[index] = splitResponse[index] + "\n" + response
+            splitResponse.push(response)
+            currentIndex += 1
         }
     })
     return splitResponse

@@ -34,8 +34,8 @@ export class SearchableJob {
             `**${this.name}** (${this.class}) - ${this.title}\n`,
             "Job Traits",
             ...this.traits.map((it) => "* " + formatTrait(it)),
-            `Limit Break: ${this.limit_break}`,
-            `Abilities: ${this.abilities.join(", ")}`,
+            `**Limit Break**: ${this.limit_break}`,
+            `**Abilities**: ${this.abilities.join(", ")}`,
             summons
         ]
 
