@@ -173,18 +173,6 @@
           "Heroic"
         ],
         "result": "*Rush 1* again, then shove all adjacent characters 1.",
-        "sub_ability": {
-          "sub_ability_name": "",
-          "type": "",
-          "sub_effects": [
-            {
-              "effect_names": [
-                ""
-              ],
-              "result": ""
-            }
-          ]
-        }
       }
     ],
     "talents": [
@@ -219,9 +207,9 @@
         ],
         "result": "When you enter this stance, or when it refreshes, choose an ally in range 4. That ally gains aura 1 until the start of your next turn. The aura deactivates if your ally is out of range. While the aura is active, you can use the following interrupt:",
         "sub_ability": {
-          "sub_ability_name": "Heroic Intervention",
-          "type": "Interrupt 1",
-          "sub_effects": [
+          "name": "Heroic Intervention",
+          "count": 1,
+          "effects": [
             {
               "effect_names": [
                 "Trigger"

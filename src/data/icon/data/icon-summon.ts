@@ -5,9 +5,8 @@ export type IconSummons = {
     summons: IconSummon[]
 }
 
-// TODO: Use in ability json
 export type IconSummon = {
-    name: string,
+    name: string
     size?: number
     tags?: string[]
     effects: IconSubAbilityEffect[]

@@ -214,9 +214,9 @@
         ],
         "result": "Mark and grapple on to a foe, ally, or summon in range from you with an ethereal lasso and gain the following interrupt while that character is marked. You can take the interrupt regardless of distance.",
         "sub_ability": {
-          "sub_ability_name": "Divine Intervention",
-          "type": "Interrupt 1",
-          "sub_effects": [
+          "name": "Divine Intervention",
+          "count": 1,
+          "effects": [
             {
               "effect_names": [
                 "Trigger"

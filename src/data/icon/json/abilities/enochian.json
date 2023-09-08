@@ -321,9 +321,9 @@
         ],
         "result": "An ally in range is marked by you. While affected by this mark and in range, gain the following interrupt:",
         "sub_ability": {
-          "sub_ability_name": "Heartfire",
-          "type": "Interrupt 2",
-          "sub_effects": [
+          "name": "Heartfire",
+          "count": 2,
+          "effects": [
             {
               "effect_names": [
                 "Trigger"
@@ -383,9 +383,9 @@
         ],
         "result": "*Sacrifice 3* and summon an Aethershard in a free space in range 6.",
         "sub_ability": {
-          "sub_ability_name": "Aethershard",
-          "type": "Height 1 Object",
-          "sub_effects": [
+          "name": "Aethershard",
+          "height": 1,
+          "effects": [
             {
               "effect_names": [
                 "Summon Effect"

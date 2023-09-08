@@ -285,9 +285,9 @@
         ],
         "result": "Gain aura 2, and a d4 power die, starting at 4. While in this stance, gain the following interrupt:",
         "sub_ability": {
-          "sub_ability_name": "Reverse Fate",
-          "type": "Interrupt 1",
-          "sub_effects": [
+          "name": "Reverse Fate",
+          "count": 1,
+          "effects": [
             {
               "effect_names": [
                 "Trigger"

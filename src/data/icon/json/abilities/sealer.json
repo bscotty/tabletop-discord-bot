@@ -208,9 +208,9 @@
         ],
         "result": "Create a shrine in a free adjacent space. The shrine can be placed on other objects, and lasts until this ability is used again without increasing its height (see below).",
         "sub_ability": {
-          "sub_ability_name": "Shrine",
-          "type": "Size 1 Object",
-          "sub_effects": [
+          "name": "Shrine",
+          "height": 1,
+          "effects": [
             {
               "effect_names": [
                 "Object Effect"
@@ -235,9 +235,9 @@
       "name": "Spirit Patronage",
       "description": "Gain the following interrupt:",
       "sub_ability": {
-        "sub_ability_name": "Grace of the Spirits",
-        "type": "Interrupt 1",
-        "sub_effects": [
+        "name": "Grace of the Spirits",
+        "count": 1,
+        "effects": [
           {
             "effect_names": [
               "Trigger"

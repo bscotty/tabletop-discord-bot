@@ -92,39 +92,7 @@
     ],
     "mastery": {
       "name": "Storm of Fury",
-      "description": "Before dealing each instance of damage, you may rush 1.",
-      "effects": [
-        {
-          "effect_names": [
-            ""
-          ],
-          "result": "",
-          "sub_ability": {
-            "sub_ability_name": "",
-            "type": "",
-            "sub_effects": [
-              {
-                "effect_names": [
-                  ""
-                ],
-                "result": ""
-              }
-            ]
-          }
-        }
-      ],
-      "sub_ability": {
-        "sub_ability_name": "",
-        "type": "",
-        "sub_effects": [
-          {
-            "effect_names": [
-              ""
-            ],
-            "result": ""
-          }
-        ]
-      }
+      "description": "Before dealing each instance of damage, you may rush 1."
     }
   },
   {
@@ -192,9 +160,9 @@
         ],
         "result": "When you enter this stance or when it refreshes, gain the following interrupt until the start of your next turn:",
         "sub_ability": {
-          "sub_ability_name": "Dire Parry",
-          "type": "Interrupt 1",
-          "sub_effects": [
+          "name": "Dire Parry",
+          "count": 1,
+          "effects": [
             {
               "effect_names": [
                 "Trigger"

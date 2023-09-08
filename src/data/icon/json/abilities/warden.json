@@ -304,9 +304,9 @@
         ],
         "result": "Create a leafy portal object in a free adjacent space. At the end of your turn, create another portal in a free adjacent space. Portals last until this ability is used again. Portals don’t provide obstruction and can’t stack or be stacked on other objects.",
         "sub_ability": {
-          "sub_ability_name": "Underway",
-          "type": "Size 1 Object",
-          "sub_effects": [
+          "name": "Underway",
+          "height": 1,
+          "effects": [
             {
               "effect_names": [
                 "Object Effect"

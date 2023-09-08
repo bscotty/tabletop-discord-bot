@@ -383,9 +383,9 @@
         ],
         "result": "Mark self or an ally in range 2. While marked, that character can use the following interrupt:",
         "sub_ability": {
-          "sub_ability_name": "Cheat Time",
-          "type": "Interrupt 1",
-          "sub_effects": [
+          "name": "Cheat Time",
+          "count": 1,
+          "effects": [
             {
               "effect_names": [
                 "Trigger"

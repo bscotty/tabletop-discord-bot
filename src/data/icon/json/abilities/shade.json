@@ -293,9 +293,9 @@
       "name": "Bunshin",
       "description": "Gain the following interrupt while in this stance:",
       "sub_ability": {
-        "sub_ability_name": "Soul Proxy",
-        "type": "Interrupt 1",
-        "sub_effects": [
+        "name": "Soul Proxy",
+        "count": 1,
+        "effects": [
           {
             "effect_names": [
               "Trigger"
@@ -385,39 +385,7 @@
     ],
     "mastery": {
       "name": "Trap Door Spider Technique",
-      "description": "You can weave shadow magic when the area is created to teleport any characters in range 2 of you into any free space inside the area, as long as there is room for that character.",
-      "effects": [
-        {
-          "effect_names": [
-            ""
-          ],
-          "result": "",
-          "sub_ability": {
-            "sub_ability_name": "",
-            "type": "",
-            "sub_effects": [
-              {
-                "effect_names": [
-                  ""
-                ],
-                "result": ""
-              }
-            ]
-          }
-        }
-      ],
-      "sub_ability": {
-        "sub_ability_name": "",
-        "type": "",
-        "sub_effects": [
-          {
-            "effect_names": [
-              ""
-            ],
-            "result": ""
-          }
-        ]
-      }
+      "description": "You can weave shadow magic when the area is created to teleport any characters in range 2 of you into any free space inside the area, as long as there is room for that character."
     }
   },
   {

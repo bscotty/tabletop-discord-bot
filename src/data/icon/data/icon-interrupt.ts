@@ -1,6 +1,5 @@
 import {formatSubAbilityEffect, IconSubAbilityEffect} from "./icon-sub-ability";
 
-// TODO: Use in ability json
 export type IconInterrupt = {
     name: string
     count: number

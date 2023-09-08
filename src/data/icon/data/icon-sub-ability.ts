@@ -1,10 +1,11 @@
 import {formatInterrupt, IconInterrupt} from "./icon-interrupt";
 import {formatSummon, IconSummon} from "./icon-summon";
+import {formatObject, IconObject} from "./icon-object";
 
 export type IconSubAbility = {
-    sub_ability_name: string
+    name: string
     type: string
-    sub_effects: IconSubAbilityEffect[]
+    effects: IconSubAbilityEffect[]
 }
 
 export type IconSubAbilityEffect = {
@@ -13,27 +14,37 @@ export type IconSubAbilityEffect = {
 }
 
 export function formatSubAbility(subAbility: IconSubAbility): string {
-    return `**${subAbility.sub_ability_name}**\n${subAbility.type}\n` +
-        subAbility.sub_effects.map((it) => formatSubAbilityEffect(it)).join("\n")
+    const formatParts = [
+        `**${subAbility.name}**`,
+        subAbility.type,
+        ...subAbility.effects.map((it) => formatSubAbilityEffect(it))
+    ]
+    return formatParts.filter((it) => it != "").join("\n")
 }
 
 export function formatSubAbilityEffect(effects: IconSubAbilityEffect): string {
-    return effects.effect_names.map((it) => `**${it}**`).join(" or ") + `: ${effects.result}`
+    return effects.effect_names.filter((it) => it != "").map((it) => `**${it}**`).join(" or ") + `: ${effects.result}`
 }
 
-export function formatAmbiguousSubAbility(sub: (IconSubAbility | IconInterrupt | IconSummon)): string {
-    function isSubAbility(ambiguous: (IconSubAbility | IconInterrupt | IconSummon)): ambiguous is IconSubAbility {
-        return ambiguous.hasOwnProperty("sub_ability_name")
+export function formatAmbiguousSubAbility(sub: (IconSubAbility | IconInterrupt | IconSummon | IconObject)): string {
+    function isSubAbility(ambiguous: (IconSubAbility | IconInterrupt | IconSummon | IconObject)): ambiguous is IconSubAbility {
+        return ambiguous.hasOwnProperty("type")
     }
 
-    function isInterrupt(ambiguous: (IconSubAbility | IconInterrupt | IconSummon)): ambiguous is IconInterrupt {
+    function isInterrupt(ambiguous: (IconSubAbility | IconInterrupt | IconSummon | IconObject)): ambiguous is IconInterrupt {
         return ambiguous.hasOwnProperty("count")
+    }
+
+    function isObject(ambiguous: (IconSubAbility | IconInterrupt | IconSummon | IconObject)): ambiguous is IconObject {
+        return ambiguous.hasOwnProperty("height")
     }
 
     if (isSubAbility(sub)) {
         return formatSubAbility(sub)
     } else if (isInterrupt(sub)) {
         return formatInterrupt(sub)
+    } else if (isObject(sub)) {
+        return formatObject(sub)
     } else {
         // smart cast to IconSummon
         return formatSummon(sub)

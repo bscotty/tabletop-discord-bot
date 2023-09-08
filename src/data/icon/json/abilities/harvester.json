@@ -385,9 +385,9 @@
         "and": true,
         "result": "Create a ring of mushrooms, a burst 2 (self) *terrain effect*. The ring can be created overlapping any terrain and underneath characters. While the ring is active, gain the following interrupt. The ring lasts until this ability is used again.",
         "sub_ability": {
-          "sub_ability_name": "Spirit Away",
-          "type": "Interrupt 2",
-          "sub_effects": [
+          "name": "Spirit Away",
+          "count": 2,
+          "effects": [
             {
               "effect_names": [
                 "Trigger"

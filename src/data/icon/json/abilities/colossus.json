@@ -371,7 +371,7 @@
     "name": "Boiling Blood",
     "job": "Colossus",
     "chapter": 3,
-    "action": "Interrupt 1",
+    "action": "",
     "description": "Colossi can lash out with the last of their strength, using the heat and strength of their body to punish their foes before expiring.",
     "effects": [
       {
@@ -380,9 +380,9 @@
         ],
         "result": "",
         "sub_ability": {
-          "sub_ability_name": "Defy Death",
-          "type": "",
-          "sub_effects": [
+          "name": "Defy Death",
+          "count": 1,
+          "effects": [
             {
               "effect_names": [
                 "Trigger"

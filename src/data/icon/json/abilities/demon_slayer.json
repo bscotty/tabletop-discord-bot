@@ -87,9 +87,9 @@
         ],
         "result": "After throwing your weapon, it becomes an object placed in the center space of the area, or as close as possible.",
         "sub_ability": {
-          "sub_ability_name": "Thrown Weapon",
-          "type": "Height 1",
-          "sub_effects": [
+          "name": "Thrown Weapon",
+          "height": 1,
+          "effects": [
             {
               "effect_names": [
                 "Object"
@@ -320,9 +320,9 @@
       "name": "Flash Step",
       "description": "After Gates of Hell resolves, you create an afterimage terrain effect in a free adjacent space. The afterimage is dangerous terrain, but only for foes. You also gain the following ability.",
       "sub_ability": {
-        "sub_ability_name": "Flash Step",
+        "name": "Flash Step",
         "type": "Free Action",
-        "sub_effects": [
+        "effects": [
           {
             "effect_names": [
               "Effect"
@@ -423,9 +423,9 @@
       "name": "Dark Wind Chain",
       "description": "While inside the area, you gain the following ability.",
       "sub_ability": {
-        "sub_ability_name": "Dark Wind Chain",
+        "name": "Dark Wind Chain",
         "type": "Free action",
-        "sub_effects": [
+        "effects": [
           {
             "effect_names": [
               "Effect"

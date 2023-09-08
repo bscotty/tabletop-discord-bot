@@ -1,11 +1,12 @@
 import {formatAmbiguousSubAbility, IconSubAbility} from "./icon-sub-ability";
 import {IconSummon} from "./icon-summon";
 import {IconInterrupt} from "./icon-interrupt";
+import {IconObject} from "./icon-object";
 
 export type IconBonusEffect = {
     effect_names: string[]
     result: string
-    sub_ability?: (IconSubAbility | IconInterrupt | IconSummon)
+    sub_ability?: (IconSubAbility | IconInterrupt | IconSummon | IconObject)
     and?: boolean
 }
 
