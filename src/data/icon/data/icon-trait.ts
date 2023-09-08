@@ -22,7 +22,7 @@ export function formatTrait(trait: IconTrait): string {
 
 function formatExtra(extra: IconSummon | IconInterrupt): string {
     function isInterrupt(summonOrInterrupt: IconSummon | IconInterrupt): summonOrInterrupt is IconInterrupt {
-        return summonOrInterrupt.hasOwnProperty("count")
+        return Object.prototype.hasOwnProperty.call(summonOrInterrupt, "count")
     }
 
     if (isInterrupt(extra)) {

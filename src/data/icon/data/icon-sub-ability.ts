@@ -28,15 +28,15 @@ export function formatSubAbilityEffect(effects: IconSubAbilityEffect): string {
 
 export function formatAmbiguousSubAbility(sub: (IconSubAbility | IconInterrupt | IconSummon | IconObject)): string {
     function isSubAbility(ambiguous: (IconSubAbility | IconInterrupt | IconSummon | IconObject)): ambiguous is IconSubAbility {
-        return ambiguous.hasOwnProperty("type")
+        return Object.prototype.hasOwnProperty.call(ambiguous, "type")
     }
 
     function isInterrupt(ambiguous: (IconSubAbility | IconInterrupt | IconSummon | IconObject)): ambiguous is IconInterrupt {
-        return ambiguous.hasOwnProperty("count")
+        return Object.prototype.hasOwnProperty.call(ambiguous, "count")
     }
 
     function isObject(ambiguous: (IconSubAbility | IconInterrupt | IconSummon | IconObject)): ambiguous is IconObject {
-        return ambiguous.hasOwnProperty("height")
+        return Object.prototype.hasOwnProperty.call(ambiguous, "height")
     }
 
     if (isSubAbility(sub)) {

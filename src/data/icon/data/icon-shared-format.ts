@@ -12,7 +12,7 @@ export type IconSharedFormat = {
     effects?: (IconBonusEffect | IconAttack)[]
 }
 
-export function iconSharedFormat(formattable: IconSharedFormat, extraNewLineBeforeDescription: boolean = false): string {
+export function iconSharedFormat(formattable: IconSharedFormat, extraNewLineBeforeDescription = false): string {
     function action(): string {
         let action = ""
         if (formattable.action) {
@@ -92,7 +92,7 @@ export function iconSharedFormat(formattable: IconSharedFormat, extraNewLineBefo
 
 export function formatEffectOrAttack(effectOrAttack: (IconBonusEffect | IconAttack)): string {
     function isAttack(it: IconBonusEffect | IconAttack): it is IconAttack {
-        return it.hasOwnProperty("on_hit")
+        return Object.prototype.hasOwnProperty.call(it, "on_hit");
     }
 
     if (isAttack(effectOrAttack)) {
