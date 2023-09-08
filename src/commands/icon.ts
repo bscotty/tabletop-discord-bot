@@ -17,7 +17,7 @@ export class Icon {
                 getIcon1point5Data()
             ]
             this._iconData = searchableDataSets.map((it) => {
-                return [...it.jobs, ...it.classes, ...it.abilities, ...it.glossary];
+                return [...it.jobs, ...it.classes, ...it.abilities, ...it.glossary, ...it.limitBreaks];
             }).flat()
         }
         return this._iconData

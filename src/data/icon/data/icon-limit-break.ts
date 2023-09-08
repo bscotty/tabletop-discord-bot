@@ -1,11 +1,16 @@
-import {IconTalent} from "./icon-talent";
+import {IconMasteryTalent} from "./icon-mastery-talent";
+import {IconBonusEffect} from "./icon-bonus-effect";
+import {IconAttack} from "./icon-attack";
+import {IconInfusion} from "./icon-infusion";
 
 export type IconLimitBreak = {
     name: string
-    description: string
     job: string
     resolve: number
     action: string
-    effect: string
-    ultimate: IconTalent
+    tags?: string[]
+    description: string
+    effects: (IconBonusEffect | IconAttack)[]
+    infusion?: IconInfusion
+    ultimate: IconMasteryTalent
 }

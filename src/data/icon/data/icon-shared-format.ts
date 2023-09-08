@@ -5,6 +5,7 @@ import {formatAttack, IconAttack} from "./icon-attack";
 // Utility to share formatting for Ability, Combo, and Infusion
 export type IconSharedFormat = {
     action?: string
+    resolve?: number
     area?: IconArea[]
     tags?: string[]
     description?: string
@@ -18,6 +19,14 @@ export function iconSharedFormat(formattable: IconSharedFormat, extraNewLineBefo
             action = formattable.action
         }
         return action
+    }
+
+    function resolve(): string {
+        let resolve = ""
+        if (formattable.resolve) {
+            resolve = `${formattable.resolve} Resolve`
+        }
+        return resolve
     }
 
     const attack = "Attack"
@@ -68,8 +77,15 @@ export function iconSharedFormat(formattable: IconSharedFormat, extraNewLineBefo
         return effects
     }
 
-    const firstLine = [action(), attackTag(), area()].filter((it) => it != "").join(", ")
-    const formattedParts = [firstLine, ...otherTags(), description(extraNewLineBeforeDescription), ...effects()]
+    const actionLine = [action(), attackTag(), area()].filter((it) => it != "").join(", ")
+
+    const formattedParts = [
+        resolve(),
+        actionLine,
+        ...otherTags(),
+        description(extraNewLineBeforeDescription),
+        ...effects()
+    ]
     return formattedParts.filter((it) => it != "").join("\n")
 }
 

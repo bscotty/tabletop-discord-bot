@@ -9,6 +9,7 @@ export type IconInfusion = {
     name: string
     description: string
     action?: string
+    resolve?: number
     tags?: string[]
     area?: IconArea[]
     effects?: (IconAttack | IconBonusEffect)[]

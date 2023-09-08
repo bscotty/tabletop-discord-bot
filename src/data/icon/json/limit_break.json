@@ -1,0 +1,455 @@
+[
+  {
+    "name": "Helion",
+    "job": "Bastion",
+    "resolve": 2,
+    "action": "1 action",
+    "description": "Your shield becomes the sun: a discus of light and motion, shattering enemy ranks and spurring allies forth.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "You hurl your shield, and every character on the battlefield is shoved 1 space in a direction of your choice. You may shove in any order, and may choose different directions for each character."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "*Bloodied* foes are *weakened*. Foes at 25% hp or lower are *stunned*."
+      }
+    ],
+    "ultimate": {
+      "name": "Perfect Helion",
+      "description": "You can repeat this effect once on either allies or enemies."
+    }
+  },
+  {
+    "name": "Split Heaven and Hell",
+    "job": "Demon Slayer",
+    "resolve": 3,
+    "action": "1 action",
+    "tags": [
+      "End Turn",
+      "Delay",
+      "True Strike",
+      "Divine"
+    ],
+    "description": "Sever Divinity and cut through the threads of possibility. Pour all your rage into one blow and topple the Gods.",
+    "effects": [
+      {
+        "effect_names": [
+          "End your turn"
+        ],
+        "result": "and start charging up a god cutting blow."
+      },
+      {
+        "effect_names": [
+          "Delay"
+        ],
+        "result": "Your next turn must be *slow*. At the start of that turn, you may take one of the following options:\n* *Sever Divine Thread*: Swing your weapon in a line 5 area effect drawn from your position. This counts as using an attack this turn. Characters in the line take damage depending on their distance on the line from you.\n * 1 space: 100% of max hp\n * 2-4 spaces: 50% of max hp\n * 5+ spaces: 25% of max hp\n* *Divine Cancel*: You may cancel this ability, refunding the resolve cost, and rush 1. You can limit break again this combat, but not this turn.\n* *Divine Delay*: You continue to hold this ability. Your next turn must be slow and repeat this delay effect. Each time you do this, increase the width of the line by 1 space, to a maximum of 3 width, and its length by 3 spaces. You cannot attack while holding Divine Delay.\nLegend characters always take 25% of max hp from this ability instead of other effects."
+      }
+    ],
+    "ultimate": {
+      "name": "God Waster",
+      "description": "While holding a God Cutting Blow, you can rush 2 at the start or end of any other turn than yours, but no more than twice a round."
+    }
+  },
+  {
+    "name": "Gigantas Crusher",
+    "job": "Colossus",
+    "resolve": 3,
+    "action": "2 actions",
+    "tags": [
+      "Divine",
+      "Sacrifice"
+    ],
+    "description": "Wrestle with the gods themselves.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "You grab an adjacent character. That character must save. Even if that character saves successfully, you grab them, and you both soar into the air. Remove both of you from the battlefield. At the start of that character’s turn, you come spinning back to earth, slamming that character into the battlefield in unoccupied space in range 3 of your original location. You *sacrifice* 25% of your hp. Your foe takes 50% of their max hp as *divine* damage, or 25% as divine damage on a successful save. Then place both of you back in or adjacent to that space.\nThis ability can be used against Legends, but they may always save, taking *divine* fray damage and refunding this ability’s resolve cost on a successful save, and only 25% hp as *divine* damage on a failed save."
+      }
+    ],
+    "ultimate": {
+      "name": "Atomos Crusher",
+      "description": "If you’re at 1 hp or lower, this ability deals 25% more max hp damage to non-legend characters."
+    }
+  },
+  {
+    "name": "Mock",
+    "job": "Knave",
+    "resolve": 2,
+    "action": "1 action",
+    "description": "There is no weapon greater than a well-timed and well-aimed insult.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "A foe in range 3 becomes *slashed+*, *weakened+*, cannot gain or benefit from *evasion*, *dodge*, or *stealth*, and gains *hatred+* of you. These effects continue until the end of their next turn."
+      },
+      {
+        "effect_names": [
+          "Special"
+        ],
+        "result": "On elite and legend foes, this ability lasts two turns instead."
+      }
+    ],
+    "ultimate": {
+      "name": "Dread Mock",
+      "description": "Gains range 5 and also deals *divine* fray damage to your foe."
+    }
+  },
+  {
+    "name": "Curtain Call",
+    "job": "Fool",
+    "resolve": 4,
+    "action": "2 actions",
+    "tags": [
+      "Divine",
+      "Gamble",
+      "True Strike"
+    ],
+    "description": "Bring out the fireworks. Fire up the elden magic. Time for a showstopper.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "*Gamble*, then draw a line *area effect* of that many spaces +2. Soar into the air, removing yourself from the battlefield, then place yourself adjacent to the first foe in that line, delivering a massive blow. This ability has different effects depending on their position on the line. If there are no valid targets after rolling, the resolve cost of this ability is refunded.\nRoll [D] + fray damage once, then apply it the number of times listed.\n* 3-5 spaces: x2\n* 6-7 spaces: x3\n*8 spaces: x4 and character is *stunned*."
+      }
+    ],
+    "ultimate": {
+      "name": "Ultima Curtain Call",
+      "description": "After this ability resolves, summon half as many bombs as your gamble result anywhere on the battlefield."
+    }
+  },
+  {
+    "name": "Paradiso",
+    "job": "Freelancer",
+    "resolve": 3,
+    "action": "1 action",
+    "tags": [
+      "Aura"
+    ],
+    "description": "You summon the spirit of your weapon, drawing out the residual soul aether of every single one of its previous users. Ghostly doubles of dozens of your predecessors match your movements, and create an aura of untold power.",
+    "effects": [
+      {
+        "effect_names": [
+          "Aura"
+        ],
+        "result": "You gain an aura of supernatural accuracy, charging your weapons and the weapons of your allies with aether.\nYou gain Aura 2 until the end of your next turn. While standing in Paradiso, abilities used by you or allies against foes outside of Paradiso trigger all the following triggered effects: *charge*, *collide*, *comeback*, *chain reaction*, *exceed*, *finishing blow*, *slay*."
+      }
+    ],
+    "ultimate": {
+      "name": "Ultima Paradiso",
+      "description": "As a free action ability while Paradiso is active, you can teleport yourself, all allies, and the area itself to any other part of the battlefield, as long as there is free space to place all characters teleported inside the area when it is moved."
+    }
+  },
+  {
+    "name": "Abyssal Ecstasy",
+    "job": "Shade",
+    "resolve": 2,
+    "action": "1 action",
+    "description": "A prayer and a drop of blood, and soothing darkness cloaks the battlefield.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Yourself, all allies, and allied summons gain *stealth*, and all foes are *blinded*."
+      }
+    ],
+    "ultimate": {
+      "name": "Ultima Ecstasy",
+      "description": "Summon shadows adjacent to all allies."
+    }
+  },
+  {
+    "name": "Lycanthropy",
+    "job": "Warden",
+    "resolve": 3,
+    "action": "1 action",
+    "tags": [
+      "Divine"
+    ],
+    "description": "You muster up the primal magic of the Deep Green. The power of fang, tooth scale, fur, and claw pours into you, granting you massively increased speed and power.",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "You become a beast hybrid of primal fury. You gain a greatly enhanced dash, with the following benefits:\n* Dash always becomes a *free action*.\n* All dashes granted as part of any of your abilities, summons, or actions (including this one!) may be increased by +1, and grant *phasing* while moving.\n* When you take the dash action, all allies and allied summons can dash 1. Then, any foe adjacent to one or more characters that dashed this way takes 2 damage."
+      }
+    ],
+    "ultimate": {
+      "name": "Ultima Lycanthropy",
+      "description": "When you shape change, you can also allow allies to partly shift. The first two effects from Lycanthropy affect all allied characters."
+    }
+  },
+  {
+    "name": "March of the Saints",
+    "job": "Chanter",
+    "resolve": 2,
+    "action": "1 action",
+    "tags": [
+      "Stance"
+    ],
+    "description": "You sing of the deeds of the first heroes, from the Doom. The Great Chant weaves around your allies and transforms them into echoes of those mighty heroes.",
+    "effects": [
+      {
+        "effect_names": [
+          "Stance"
+        ],
+        "result": "You begin weaving an epic song, a saga of legendary heroes. When you take this action, and when this stance refreshes, you may invest an ally in range 5 with the power of one of the great saints. Each saint must be chosen at least once before it can be chosen again. The effect takes place immediately and lasts until the end of their next turn.\n* Parzival: An allied character gains flying and cover from all directions.\n* Leon: An allied character gains dodge and the ability to move diagonally\n* Angrboda: An allied character gains sturdy, and their attacks gain true strike and shove 1\n* Farnese: An ally gains 1 blessing and +1 boon on all attacks and saves."
+      },
+      {
+        "effect_names": [
+          "Refresh"
+        ],
+        "result": "refresh: This stance refreshes automatically at the start of your turns."
+      }
+    ],
+    "ultimate": {
+      "name": "Divine Investment",
+      "description": "You also gain the benefit of any chosen saint, lasting until the end of your next turn."
+    }
+  },
+  {
+    "name": "Death Sentence",
+    "job": "Harvester",
+    "resolve": 3,
+    "action": "Free Action",
+    "description": "A flash of the scythe, and the line between life and death is blurred.",
+    "effects": [
+      {
+        "effect_names": [
+          "Summon"
+        ],
+        "result": "You slash an adjacent foe with your weapon, knocking their soul out of their body. Draw a line 4 *area effect* from your foe facing directly away from you and summon the soul in the last available space.",
+        "sub_ability": {
+          "name": "Severed Soul",
+          "size": 1,
+          "tags": [
+            "Intangible",
+            "Immobile"
+          ],
+          "effects": [
+            {
+              "effect_names": [
+                "Summon Effect"
+              ],
+              "result": "While they have their soul knocked out, foes can act normally. However, the soul can be targeted as if it was the body, transferring all damage or effects it would take to the body, no matter the distance or line or sight. Damage becomes divine. Abilities that are able to target both the body and soul of the foe (such as AoEs) can hit both.\nThe soul lasts until the end of your next turn, or until the affected character is defeated."
+            }
+          ]
+        }
+      }
+    ],
+    "ultimate": {
+      "name": "Soul Bloom",
+      "description": "If the foe is defeated while their soul is out, summon 4 plants anywhere on the battlefield."
+    }
+  },
+  {
+    "name": "Passage to the Afterlife",
+    "job": "Sealer",
+    "resolve": 5,
+    "action": "2 actions",
+    "tags": [
+      "Attack",
+      "Divine",
+      "+1 boon"
+    ],
+    "description": "You unleash the supreme Sealer war art, inflicting ten thousand blows and shattering the connections of your foe’s vital energy to their body, hurrying on the transmigration of immortal souls.",
+    "effects": [
+      {
+        "on_hit": "[D]+fray, three times",
+        "on_miss": "Once."
+      },
+      {
+        "effect_names": [
+          "Exceed"
+        ],
+        "result": "Deal [D]+fray, two more times"
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "You may teleport adjacent to the target before the attack if they’re in range 3. Every ally in range 3 of the target can also teleport adjacent to your target, or as close as possible. Your target then takes 2 additional divine damage, once, per adjacent ally."
+      }
+    ],
+    "ultimate": {
+      "name": "Reach Heaven Through Violence",
+      "description": "The teleport effect has the range of the battlefield for both allied characters and yourself. If your target is at or under 25% hp, they take 2 divine damage twice for each adjacent ally instead."
+    }
+  },
+  {
+    "name": "High Prophecy",
+    "job": "Seer",
+    "resolve": 3,
+    "action": "Free action",
+    "tags": [
+      "Aura"
+    ],
+    "description": "A burning third eye of pure etheric energy appears on your forehead. Possibilities unfurl before you, laid out like infinite gleaming threads.",
+    "effects": [
+      {
+        "effect_names": [
+          "Aura"
+        ],
+        "result": "Until the start of your next turn, you gain aura 2. Every d6 any character in the aura rolls for boons, curses, or *gambling* is either a 6 or a 1 (you choose)."
+      }
+    ],
+    "ultimate": {
+      "name": "Thoth",
+      "description": "While the aura is active, you are automatically missed by attacks, turn any of your attack misses into hits, and succeed all saves."
+    }
+  },
+  {
+    "name": "Gigaflare",
+    "job": "Enochian",
+    "resolve": 4,
+    "action": "2 actions",
+    "tags": [
+      "Divine",
+      "Unerring",
+      "True Strike"
+    ],
+    "description": "I, who stand at the apex of things,\nThou, who are in the deepest pits of despair,\nLet thy very bones become ash!\nO Flame, let the air become death!\nIgnite, and be banished to Hell!",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "You summon the eldflame, the primeval force of creation, dealing [D]+fray divine damage to every character, on the battlefield, ignoring line of sight. Characters in range 2 of you are exempt from this ability."
+      }
+    ],
+    "infusion": {
+      "cost": 6,
+      "name": "Tetraflare",
+      "description": "Deal [D]+fray twice instead."
+    },
+    "ultimate": {
+      "name": "Meteor",
+      "infusion": {
+        "cost": 8,
+        "name": "Meteor",
+        "resolve": 6,
+        "description": "Deal [D]+fray four times instead.",
+        "effects": [
+          {
+            "effect_names": [
+              "Special Effect"
+            ],
+            "result": "You can pay the resolve, aether, and action cost of this spell with your entire life force, dying after this action resolves, obliterating your body, and scattering your soul. If you do, it deals 999 divine damage instead."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Cataclysm",
+    "job": "Geomancer",
+    "resolve": 3,
+    "action": "1 action",
+    "tags": [
+      "Divine"
+    ],
+    "description": "I, protected by the holy trigram,\nSummon the ten thousand molten metal kings.\nRun amok with thy furies, and rend the immortal stone,\nTurn Heaven and Earth!",
+    "effects": [
+      {
+        "effect_names": [
+          "End your turn"
+        ],
+        "result": "You dive into the earth and off the battlefield. Remove yourself from play. Target a line area 3 spaces wide from one side of the battlefield to the next."
+      },
+      {
+        "effect_names": [
+          "Delay"
+        ],
+        "result": "Your next turn must be *slow*. At the start of that turn, you cause a rolling wave of earth to sweep across this area, from one side to the next. Characters within take [D] + fray as an effect and are shoved 1 in the direction of the line."
+      },
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "After the first effect resolves, all objects in the area release an explosion for a medium blast area effect centered on them, dealing [D]+fray as an area effect. Characters hit by two or more explosions take 2[D]+fray instead.\nWhen this ability resolves, place yourself in any unoccupied space in the area."
+      }
+    ],
+    "ultimate": {
+      "name": "Molten Core",
+      "description": "After taking this move, you emerge with a shield of molten rock covering you. You gain *unstoppable* and *resistance* until the end of your next turn."
+    }
+  },
+  {
+    "name": "Gran Levincross",
+    "job": "Spellblade",
+    "resolve": 4,
+    "action": "2 actions",
+    "tags": [
+      "Divine"
+    ],
+    "description": "I summon thee, bloody gods of the cutting art,\nLet the might of the divine realm crash upon the piteous earth,\nStrike eighty thousand blows at once,\nAnd split the air asunder!",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "Your blade extends and you make two massive cuts across the map, splitting the walls between worlds. Draw a cross section across the map, splitting it into four sections of any size. Deal [D]+fray *divine* damage to all characters caught in the cross, then remove all characters out of the affected area and place them in the nearest free space of your choice. Characters can pass a save to choose which side they end up on.\nThe affected area becomes a crackling wall of lightning that does not block line of sight, but blocks all movement except teleporting. This effect ends at the end of the next round.\nAllies can use a free action to teleport across the wall from an adjacent space, placing them on the closest adjacent space on the other side.\nIf any version of this ability has no valid space in which teleport a character to, still deal damage, but this ability doesn’t create the lightning wall."
+      }
+    ],
+    "infusion": {
+      "cost": 3,
+      "other_triggers": [
+        "Slay"
+      ],
+      "name": "Ragnarök",
+      "effects": [
+        {
+          "effect_names": [
+            "Area Effect"
+          ],
+          "result": "After this ability resolves, scathing divine lightning hits a quarter of the map of your choice. Characters within take [D]+fray Divine damage."
+        }
+      ]
+    },
+    "ultimate": {
+      "name": "Götterdämmerung",
+      "infusion": {
+        "cost": 6,
+        "name": "Götterdämmerung",
+        "effects": [
+          {
+            "effect_names": [
+              "Area Effect"
+            ],
+            "result": "After this ability resolves, scathing divine lightning hits every quarter of the map but one of your choice. Characters within take 2[D] +fray *Divine* damage."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Elemental",
+    "job": "Stormbender",
+    "resolve": 3,
+    "action": "Free Action",
+    "description": "On account of the magic that is in my body,\nTurn aside, detested of Sea and Storm,\nThou wretch, go with thy face diverted!\nI call the elements into the temple of my body.\nBe scattered like dust, and feed the wind!",
+    "effects": [
+      {
+        "effect_names": [
+          "Effect"
+        ],
+        "result": "You take on a fearsome elemental form, gaining the following benefits for the rest of combat:\nWhile you are an Elemental:\n* You gain *flying* and *phasing*.\n* You release aura 2 around you. The area is a terrain effect that moves with you that is *difficult* and *dangerous terrain* for foes, and allies gain *cover* from all directions in the area.\n* You can share space with characters. You have *resistance* to any character sharing your space, and allies have *resistance* while sharing your space."
+      }
+    ],
+    "ultimate": {
+      "name": "Shield of the Four Winds",
+      "description": "If you so choose, when an ally would be shoved, teleported, or removed from your area, you can completely prevent that ally from being moved. This effect can trigger only once a round."
+    }
+  }
+]

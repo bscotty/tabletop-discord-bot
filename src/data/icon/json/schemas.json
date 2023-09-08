@@ -100,7 +100,198 @@
       ]
     }
   },
-  "limit_break": {},
+  "limit_break": {
+    "name": "",
+    "job": "",
+    "resolve": 0,
+    "action": "",
+    "tags": [
+      ""
+    ],
+    "description": "",
+    "effects": [
+      {
+        "on_hit": "",
+        "on_miss": ""
+      },
+      {
+        "effect_names": [
+          ""
+        ],
+        "result": "",
+        "sub_ability": {
+          "name": "",
+          "type": "",
+          "effects": [
+            {
+              "effect_names": [
+                ""
+              ],
+              "result": ""
+            }
+          ]
+        }
+      }
+    ],
+    "infusion": {
+      "cost": 0,
+      "other_triggers": [
+        ""
+      ],
+      "name": "",
+      "action": "",
+      "tags": [
+        ""
+      ],
+      "area": [
+        {
+          "area_type": "",
+          "range": 0
+        }
+      ],
+      "description": "",
+      "effects": [
+        {
+          "on_hit": "",
+          "on_miss": ""
+        },
+        {
+          "effect_names": [
+            ""
+          ],
+          "result": "",
+          "sub_ability": {
+            "name": "",
+            "type": "",
+            "effects": [
+              {
+                "effect_names": [
+                  ""
+                ],
+                "result": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ultimate": {
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "effect_names": [
+            ""
+          ],
+          "result": "",
+          "sub_ability": {
+            "name": "",
+            "type": "",
+            "effects": [
+              {
+                "effect_names": [
+                  ""
+                ],
+                "result": ""
+              }
+            ]
+          }
+        }
+      ],
+      "combo": {
+        "name": "",
+        "action": "",
+        "tags": [
+          ""
+        ],
+        "area": [
+          {
+            "area_type": "",
+            "range": 0
+          }
+        ],
+        "description": "",
+        "effects": [
+          {
+            "on_hit": "",
+            "on_miss": ""
+          },
+          {
+            "effect_names": [
+              ""
+            ],
+            "result": "",
+            "sub_ability": {
+              "name": "",
+              "type": "",
+              "effects": [
+                {
+                  "effect_names": [
+                    ""
+                  ],
+                  "result": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "infusion": {
+        "cost": 0,
+        "other_triggers": [
+          ""
+        ],
+        "name": "",
+        "action": "",
+        "tags": [
+          ""
+        ],
+        "area": [
+          {
+            "area_type": "",
+            "range": 0
+          }
+        ],
+        "description": "",
+        "effects": [
+          {
+            "on_hit": "",
+            "on_miss": ""
+          },
+          {
+            "effect_names": [
+              ""
+            ],
+            "result": "",
+            "sub_ability": {
+              "name": "",
+              "type": "",
+              "effects": [
+                {
+                  "effect_names": [
+                    ""
+                  ],
+                  "result": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sub_ability": {
+        "name": "",
+        "type": "",
+        "effects": [
+          {
+            "effect_names": [
+              ""
+            ],
+            "result": ""
+          }
+        ]
+      }
+    }
+  },
   "combo": {
     "name": "",
     "action": "",
