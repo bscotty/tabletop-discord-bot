@@ -1,5 +1,6 @@
 import {IconJob} from "../data/icon-job";
 import {formatTrait, IconTrait} from "../data/icon-trait";
+import {formatSummons, IconSummons} from "../data/icon-summon";
 
 export class SearchableJob {
     public readonly name: string
@@ -9,6 +10,7 @@ export class SearchableJob {
     public readonly traits: IconTrait[]
     public readonly limit_break: string
     public readonly abilities: string[]
+    public readonly summons?: IconSummons
     public readonly data_type = "job"
 
     public constructor(job: IconJob) {
@@ -19,12 +21,24 @@ export class SearchableJob {
         this.traits = job.traits
         this.limit_break = job.limit_break
         this.abilities = job.abilities
+        this.summons = job.summons
     }
 
     public toFormattedString(): string {
-        return `**${this.name}** (${this.class}) - ${this.title}\n\n` +
-            `Job Traits\n` + this.traits.map((it) => `* ${formatTrait(it)}`).join("\n") + "\n" +
-            `Limit Break: ${this.limit_break}\n` +
-            `Abilities: ${this.abilities.join(", ")}`
+        let summons = ""
+        if (this.summons) {
+            summons = formatSummons(this.summons)
+        }
+
+        const formatParts = [
+            `**${this.name}** (${this.class}) - ${this.title}\n`,
+            "Job Traits",
+            ...this.traits.map((it) => "* " + formatTrait(it)),
+            `Limit Break: ${this.limit_break}`,
+            `Abilities: ${this.abilities.join(", ")}`,
+            summons
+        ]
+
+        return formatParts.filter((it) => it != "").join("\n")
     }
 }

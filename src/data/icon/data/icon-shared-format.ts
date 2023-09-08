@@ -63,7 +63,7 @@ export function iconSharedFormat(formattable: IconSharedFormat, extraNewLineBefo
     function effects(): string[] {
         let effects: string[] = []
         if (formattable.effects) {
-            effects = formatEffects(formattable.effects)
+            effects = formattable.effects.map((it) => formatEffectOrAttack(it))
         }
         return effects
     }
@@ -73,17 +73,15 @@ export function iconSharedFormat(formattable: IconSharedFormat, extraNewLineBefo
     return formattedParts.filter((it) => it != "").join("\n")
 }
 
-function formatEffects(effects: (IconBonusEffect | IconAttack)[]): string[] {
-    function isAttack(effect: IconBonusEffect | IconAttack): effect is IconAttack {
-        return effect.hasOwnProperty("on_hit")
+export function formatEffectOrAttack(effectOrAttack: (IconBonusEffect | IconAttack)): string {
+    function isAttack(it: IconBonusEffect | IconAttack): it is IconAttack {
+        return it.hasOwnProperty("on_hit")
     }
 
-    return effects.map((it: IconBonusEffect | IconAttack) => {
-        if (isAttack(it)) {
-            return formatAttack(it)
-        } else {
-            // smart-cast to IconBonusEffect
-            return formatBonusEffect(it)
-        }
-    })
+    if (isAttack(effectOrAttack)) {
+        return formatAttack(effectOrAttack)
+    } else {
+        // smart-cast to IconBonusEffect
+        return formatBonusEffect(effectOrAttack)
+    }
 }

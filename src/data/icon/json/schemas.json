@@ -78,7 +78,27 @@
       "",
       ""
     ],
-    "limit_break": ""
+    "limit_break": "",
+    "summons": {
+      "description": "",
+      "summons": [
+        {
+          "name": "",
+          "size": 0,
+          "tags": [
+            ""
+          ],
+          "effects": [
+            {
+              "effect_names": [
+                ""
+              ],
+              "result": ""
+            }
+          ]
+        }
+      ]
+    }
   },
   "limit_break": {},
   "combo": {
@@ -158,6 +178,33 @@
             }
           ]
         }
+      }
+    ]
+  },
+  "summon": {
+    "name": "",
+    "size": 0,
+    "tags": [
+      ""
+    ],
+    "effects": [
+      {
+        "effect_names": [
+          ""
+        ],
+        "result": ""
+      }
+    ]
+  },
+  "interrupt": {
+    "name": "",
+    "count": 0,
+    "effects": [
+      {
+        "effect_names": [
+          ""
+        ],
+        "result": ""
       }
     ]
   },
