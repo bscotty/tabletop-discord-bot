@@ -19,7 +19,7 @@ import {getSuldanLcp} from "../data/lancer/lcp/homebrew/suldan";
 import {getStolenCrownLcp} from "../data/lancer/lcp/homebrew/stolen-crown";
 import {getGilgameshLcp} from "../data/lancer/lcp/homebrew/gilgamesh";
 import {getDustgraveLcp} from "../data/lancer/lcp/dustgrave";
-import {getSsmrPart1Lcp} from "../data/lancer/lcp/ssmr part 1";
+import {getSsmrLcp} from "../data/lancer/lcp/ssmr";
 import {getEHandSLCP} from "../data/lancer/lcp/homebrew/event horizon & suns";
 import {getKrfwCatalogLcp} from "../data/lancer/lcp/homebrew/krfw catalog";
 import {getLegionnaireLcp} from "../data/lancer/lcp/homebrew/legionnaire";
@@ -49,7 +49,7 @@ export class Lancer {
             getLongRimLcp(),
             getWallflowerLcp(),
             getSolsticeRainData(),
-            getSsmrPart1Lcp(),
+            getSsmrLcp(),
             getDustgraveLcp()
         ]
     }
