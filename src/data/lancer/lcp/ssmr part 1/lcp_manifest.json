@@ -1,8 +1,9 @@
 {
-  "name": "Siren's Song, Mountain's Remourse Part 1",
+  "name": "Siren's Song, A Mountain's Remorse",
   "author": "NHP SHAKA",
-  "description": "Frame and Talent LCP",
-  "item_prefix": "Massif Press SSMR",
-  "version": "1.5.9",
-  "image_url": "https://cdn.discordapp.com/attachments/813876747912085514/907645066502352936/mfc_logo.png"
+  "description": "Player-facing COMP/CON data for Siren's Song, A Mountain's Remorse",
+  "item_prefix": "ssmr1",
+  "version": "1.6.5",
+  "image_url": "https://d2c79xe1p61csc.cloudfront.net/other/sirenssong1_cover.jpg",
+  "website": "https://massif-press.itch.io/sirens-song"
 }
