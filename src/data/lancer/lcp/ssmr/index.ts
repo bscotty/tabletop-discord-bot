@@ -6,7 +6,7 @@ import systems from "./systems.json"
 import talents from "./talents.json"
 import weapons from "./weapons.json"
 
-export function getSsmrPart1Lcp(): Lcp {
+export function getSsmrLcp(): Lcp {
     return new Lcp(
         [],
         [],
