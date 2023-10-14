@@ -1,0 +1,213 @@
+[
+  {
+    "id": "mofft_devout",
+    "name": "Devout",
+    "terse": "Help your allies in various ways via Devotion Tokens.",
+    "description": "You hold in your heart a true belief. This could be in a higher power, but it may just be that you have unflinching confidence in your friends. Whatever the case, things just seem to turn out okay for you. Maybe there is something watching over you. Maybe there is a little magic in the air. Or maybe you just succeed because you’re convinced that there can be no failure.",
+    "ranks": [
+      {
+        "name": "Fervent Belief",
+        "description": "Gain 3 Devotion Tokens. One of these can be spent 1/round using the Invoke Devotion free action in order to use an Invocation on one ally within line of sight. <br><br>You may regain 1 Devotion Token during a rest if you have no more than 1 remaining, and all Devotion Tokens are recovered when you perform a Full Repair.",
+        "actions": [
+          {
+            "name": "Invoke Devotion",
+            "activation": "Free",
+            "detail": "1/turn, on your turn as a free action, you may spend a Devotion Token to use one of the following Invocations on one ally within line of sight:<br><br>Invocation of Protection: The target gains 4 Overshield. <br>Invocation of Healing: The target clears one of the following Conditions, so long as it is not self-inflicted: Immobilized, Impaired, Jammed, Lock On, or Slowed. <br>Invocation of Freedom: During the target's next turn, their standard movement does not provoke reactions."
+          }
+        ],
+        "counters": [
+          {
+            "id": "ctr_moff_devout",
+            "name": "Devotion Tokens",
+            "default_value": 0,
+            "min": 0,
+            "max": 7
+          }
+        ]
+      },
+      {
+        "name": "Boundless Spirit",
+        "description": "Gain 5 Devotion Tokens instead of 3. You can spend 2 Tokens on an Invocation instead of 1 to gain an enhanced effect. Note that you are still limited to one Invocation per round.",
+        "actions": [
+          {
+            "name": "Invoke Enhanced Devotion",
+            "activation": "Free",
+            "detail": "1/turn, on your turn as a free action, you may spend 2 Devotion Tokens to use one of the following Invocations on one ally within line of sight:<br><br>Invocation of Protection: The target gains 4 Overshield. The target also gains resistance to all damage until the start of their next turn. <br>Invocation of Healing: The target clears one of the following Conditions, so long as it is not self-inflicted: Immobilized, Impaired, Jammed, Lock On, or Slowed. The target clears a second Condition, which may also select from Shredded or Stunned. <br>Invocation of Freedom: During the target's next turn, their standard movement does not provoke reactions. The target’s standard movement during their next turn also counts as flying. If they do not land at the end of this moment, and are not otherwise able to fly, they fall."
+          }
+        ]
+      },
+      {
+        "name": "Eternal Confidence",
+        "description": "Gain 6 Devotion Tokens instead of 5. 1/scene, when an ally takes Structure or Stress damage, you may use a Rank 1 invocation on them as a reaction, without spending any Devotion Tokens. If you spend 1 Devotion Token, you may also apply the corresponding Rank 2 effect to them. <br><br>The first time in a scene that you take Structure or Stress damage, you gain 1 Devotion Token."
+      }
+    ]
+  },
+  {
+    "id": "mofft_runecaster",
+    "name": "Runecaster",
+    "terse": "Gain Runes to alter your techs.",
+    "description": "Entire realms lay beyond human perception, just a hair-breadth out of reach. To most, it ends up being a sledgehammer - powerful but unwieldy. But others learn to segment the aetheric realm, channeling that power into a vast toolbox.",
+    "ranks": [
+      {
+        "name": "Runic Channeling",
+        "description": "You’ve created a number of legionspace conduits that you can use to enhance your hacking. Gain the Rune Collection System. <br><br>1/turn, when you use a tech action that has targets, you may expend one charge to apply one of the following effects to your action: <br><ul><li> PIERCING: The action may target biological characters. In addition, if it is a tech attack, the final attack roll can never be affected by Difficulty.</li><li>REVEALING: One target cannot benefit from cover until the start of their next turn.</li><li>FORCEFUL: One target is pulled 1 space directly towards you.</li></ul>",
+        "integrated": [
+          "moff_integrated_runecaster_1"
+        ],
+        "exclusive": true
+      },
+      {
+        "name": "Augmented Collection",
+        "description": "Your Rune Collection gains new Rune types, each of which costs two charges rather than one: <br><ul><li>UNERRING (2 charges): The action does not require line of sight, and ignores Invisible and Hidden.</li><li>WITHERING (2 charges): One target becomes Impaired until the end of their next turn.</li><li>DISORIENTING (2 charges): One target cannot take reactions until the end of their next turn.</li></ul>",
+        "integrated": [
+          "moff_integrated_runecaster_2"
+        ],
+        "exclusive": true
+      },
+      {
+        "name": "Regenerative Power",
+        "description": "The first time you use each unique Quick Tech or Full Tech option each scene (such as Lock On or Fragment Signal), gain a Power Token. When you gain 3 Power Tokens, clear them, then your Rune Collection regains X charges. X is equal to the number of times you've cleared Power Tokens in this scene. All Power Tokens vanish at the end of a scene.",
+        "integrated": [
+          "moff_integrated_runecaster_3"
+        ],
+        "counters": [
+          {
+            "id": "ctr_moff_runecaster",
+            "name": "Power Tokens",
+            "default_value": 0,
+            "min": 0,
+            "max": 2
+          }
+        ],
+        "exclusive": true
+      }
+    ]
+  },
+  {
+    "id": "mofft_silver_centurion",
+    "name": "Silver Centurion",
+    "terse": "A more offensive alternative to Centimane for Nexus weapons.",
+    "description": "Many are fearful of the unshackled power. They speak of the risks, of the silver tide that devours all. But you know better than them. You know that the power can be tamed, controlled, directed. Forged into a legion under your command. <br><br><b>This talent is mutually exclusive with Centimane.</b>",
+    "ranks": [
+      {
+        "name": "Burning Swarm",
+        "description": "Your Nexus weapons gain +1 Accuracy when targeting characters that are in the Danger Zone or Exposed. <br><b>This talent is mutually exclusive with Centimane.</b>",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Nexus"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "Your Nexus weapons gain +1 Accuracy against characters that are in the Danger Zone or Exposed."
+          }
+        ]
+      },
+      {
+        "name": "Devouring Legion",
+        "description": "1/round, when you hit a character with a Nexus weapon, choose one of the following options after all damage dice have been rolled (including Overkill and critical hits): <br><br>- Re-roll one damage die, choosing either result. The new result only affects the triggering character. <br><br>- The triggering character takes +1 Difficulty on the next Check or Save they make before the start of your next turn. <br><b>This talent is mutually exclusive with Centimane.</b>",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Nexus"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "1/round, when you hit a character with a Nexus weapon, choose one of the following options after all damage dice have been rolled (including Overkill and critical hits): <br><br>- Re-roll one damage die, choosing either result. The new result only affects the triggering character. <br><br>- The triggering character takes +1 Difficulty on the next Check or Save they make before the start of your next turn."
+          }
+        ]
+      },
+      {
+        "name": "Wrathful Tide",
+        "description": "Whenever you take Structure or Stress damage, the next attack roll you make with a Nexus weapon converts the weapon’s base damage(s) into Burn. If the weapon already deals any amount of Burn, this attack may also trigger Devouring Legion on a hit, ignoring frequency. This may allow Devouring Legion to trigger twice on the same attack. <br><b>This talent is mutually exclusive with Centimane.</b>",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Nexus"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "Whenever you take Structure or Stress damage, the next attack roll you make with a Nexus weapon converts the weapon’s base damage(s) into Burn. If the weapon already deals any amount of Burn, this attack may also trigger Devouring Legion on a hit, ignoring frequency. This may allow Devouring Legion to trigger twice on the same attack."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mofft_ward_shaper",
+    "name": "Ward Shaper",
+    "terse": "Use your Shield systems better.",
+    "description": "There are those who dream of peace, yet still must wage war to achieve it. You are one who has lent your skill - perhaps technological, perhaps more - to protecting those close to you. Whether you channel your power to shield them, or seal away those who wish them harm, they will have nothing to fear.",
+    "ranks": [
+      {
+        "name": "Enhanced Generators",
+        "description": "Your Systems with the Shield tag (including reactions they grant) have +5 Range, may increase any Line that they generate by 2. and may increase any Blast or Burst that they generate by 1. In addition you count as having +5 Sensors for the purposes of Systems with the Shield tag. <br><br>These increases only affect the range at which your Systems with the Shield tag can initially target or trigger off characters, or the area which they cover for Burst and Blast, and not the range of any of their other effects.",
+        "synergies": [
+          {
+            "locations": [
+              "system"
+            ],
+            "system_types": [
+              "Shield"
+            ],
+            "detail": "Your Systems with the Shield tag's activations and reactions gain +5 range and +5 sensors for the purposes of targeting or triggering off characters. They may also increase any Burst or Blast they generate by 1 or Line they generate by 2 when they activate."
+          }
+        ]
+      },
+      {
+        "name": "Overload Shielding",
+        "description": "1/scene, when an allied character within Range 10 is hit by an attack, you may destroy one valid System with the Shield tag to give them resistance to all damage and heat dealt by the attack, as well as 2+{Grit} Overshield before the attack resolves. Systems destroyed this way do not require you to expend repairs during a rest to repair them.",
+        "actions": [
+          {
+            "name": "Overload Shield",
+            "activation": "Free",
+            "detail": "1/scene, when an allied character within Range 10 is hit by an attack, you may destroy one valid System with the Shield tag to give them resistance to all damage and heat dealt by the attack, as well as 2+{Grit} Overshield before the attack resolves."
+          }
+        ],
+        "synergies": [
+          {
+            "locations": [
+              "system"
+            ],
+            "system_types": [
+              "Shield"
+            ],
+            "detail": "Your Systems with the Shield tag no longer require you to expend repairs during a rest to repair them."
+          }
+        ]
+      },
+      {
+        "name": "Containment Aegis",
+        "description": "You gain an Aegis die, which is tracked by a d6, starting at 1. 1/round, when you activate or use a reaction granted by a System with the Shield tag, or you destroy a System using Overload Shielding, you may increase the value of the Aegis die by 1 (to a maximum of 6). <br><br>While the Aegis die is at 6, you may reset it to 1 and choose one character within Range 10 as a free action to be removed from the battlefield until the end of their next turn. They return in the same space they disappeared from, or in a free space of their choice as close as possible. The Aegis die retains its value between scenes, but resets to 1 on a full repair.",
+        "actions": [
+          {
+            "name": "Activate Containment Aegis",
+            "activation": "Free",
+            "detail": "This can only be used when the Aegis Die is at 6. Reset the Aegis Die to 1, and choose one character within Range 10 as a free action to be removed from the battlefield until the end of their next turn. They return in the same space they disappeared from, or in a free space of their choice as close as possible."
+          }
+        ],
+        "counters": [
+          {
+            "id": "ctr_moff_ward_shaper",
+            "name": "Aegis Die",
+            "default_value": 1,
+            "min": 1,
+            "max": 6
+          }
+        ]
+      }
+    ]
+  }
+]

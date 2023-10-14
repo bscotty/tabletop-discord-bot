@@ -1,0 +1,127 @@
+[
+  {
+    "id": "moff_luminary_mod",
+    "name": "Luminary Mod",
+    "sp": 2,
+    "allowed_types": [
+      "Melee"
+    ],
+    "restricted_sizes": [
+      "Superheavy"
+    ],
+    "source": "IRIDIA",
+    "license": "ASTRAEA",
+    "license_id": "moff_iridia_astraea",
+    "license_level": 2,
+    "effect": "The weapon this mod is applied to gains Thrown 5. At the end of any turn that you threw the weapon this mod is applied to, it automatically returns to you.",
+    "description": "Many Luminary Knights have secondary weapons that they’ve trained to use, and have modified to be used alongside their spears. These weapons are bonded to a gauntlet the user wears, returning in a brilliant flash of light soon after leaving one’s hand.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ]
+  },
+  {
+    "id": "moff_targeting_uplink",
+    "name": "Targeting Uplink",
+    "sp": 2,
+    "allowed_types": [
+      "Melee",
+      "CQB",
+      "Rifle",
+      "Launcher",
+      "Cannon",
+      "Nexus"
+    ],
+    "source": "IRIDIA",
+    "license": "NEMESIS",
+    "license_id": "moff_iridia_nemesis",
+    "license_level": 2,
+    "effect": "When you hit a hostile character with the weapon this mod is applied to, you may expend a charge in order to give +1 Accuracy to the next attack roll an ally makes against that character. Attacks that benefit from this bonus gain AP.",
+    "description": "“It’s a funny thing, the lengths we go to to relieve ourselves of the blame. The commander who marks a target for death can tell herself that it wasn’t her who pulled the trigger. The soldier who follows the order can tell himself that it wasn’t him that was truly at fault for doing so.”",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ]
+  },
+  {
+    "id": "moff_glacis_payload",
+    "name": "Glacis Payload",
+    "sp": 2,
+    "allowed_types": [
+      "CQB",
+      "Rifle",
+      "Launcher",
+      "Cannon",
+      "Nexus"
+    ],
+    "source": "IRIDIA",
+    "license": "EPIONE",
+    "license_id": "moff_iridia_epione",
+    "license_level": 2,
+    "effect": "Choose a ranged weapon: when you attack with this weapon, you may expend a charge as a free action to create a Blast 2, centered on any space of one character who would be targeted. This Blast lasts until the start of your next turn. <br><br>Allied characters at least partially within this Blast are Immune to damage, heat, burn and conditions from hostile effects that are not attack rolls. This effect neither clears nor suppresses conditions, it only prevents new ones being inflicted. ",
+    "description": "The Glacis projection briefly returns a segment of battlefield to a net-zero state, allowing the user's allies to confidently advance under its aegis.",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ]
+  },
+  {
+    "id": "moff_swarm_limiter_override",
+    "name": "Swarm Limiter Override",
+    "sp": 2,
+    "allowed_types": [
+      "Melee",
+      "CQB",
+      "Rifle",
+      "Launcher",
+      "Cannon",
+      "Nexus"
+    ],
+    "source": "HA",
+    "license": "CASTILLA",
+    "license_id": "moff_ha_castilla",
+    "license_level": 3,
+    "effect": "The weapon this mod is attached to gains Smart. In addition, whenever you make a damage roll with the weapon this mod is attached to and dislike the result, you may take 2 Kinetic Damage, which cannot be reduced or prevented in any way (even by Immunity), to re-roll the entire damage roll (including dice from critical hits). You must take the new value, but may continue to take this damage in order to re-roll again. Re-rolling damage does not prevent Heat from Overkill.",
+    "description": "Integrating nanotech into weaponry makes hitting weak spots a lot easier. Unfortunately, for maximum impact, limiter code does need to be reduced - which can cause catastrophic consequences for an unprepared pilot, as the blackwash still within their mech is shackled to the same code.",
+    "tags": []
+  },
+  {
+    "id": "moff_unrequited_requiem",
+    "name": "Unrequited Requiem",
+    "sp": 2,
+    "allowed_types": [
+      "Melee",
+      "CQB",
+      "Rifle",
+      "Launcher",
+      "Cannon",
+      "Nexus"
+    ],
+    "source": "IRIDIA",
+    "license": "APHRODITE",
+    "license_id": "moff_iridia_aphrodite",
+    "license_level": 3,
+    "effect": "When you hit a hostile character with the weapon this mod is applied to, you may expend a charge as a free action to apply one Invade option you have to the target. This may only be triggered on one target per attack.",
+    "description": "Upon each shot is inscribed a verse, poetry emblazoned in eldritch light. A soliloquy for the soul, for every time your heart was broken.",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ]
+  }
+]

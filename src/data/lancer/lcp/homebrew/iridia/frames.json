@@ -1,0 +1,2130 @@
+[
+  {
+    "id": "moff_iridia_ananke",
+    "license_level": 2,
+    "license_id": "moff_iridia_ananke",
+    "source": "IRIDIA",
+    "name": "Ananke",
+    "mechtype": [
+      "Controller",
+      "Support"
+    ],
+    "image_url": "https://www.dropbox.com/s/jm7luxmjvksswwo/Ananke-min.png?raw=1",
+    "y_pos": 38,
+    "description": "While the Ananke may have been created in the same way as most other Demonworks mechs - from schematics stored in Hestia’s files - it’s a little bit different. The schematics for it weren’t always there. <br><br>Not long after the recovery of the paramaterials from Hestia’s metavault, and the subsequent creation of the Hemera, additional files began showing up in otherwise sealed systems. Some of these were data for various mech systems, others were peculiar messages that seemed to change depending on who viewed them. <br><br>Investigations into these irregularities revealed nothing, which did nothing to alleviate concerns… and then they vanished, deleting themselves. The only thing that remained was the final schematics for the Ananke, something that had not been there before the others disappeared. <br><br>Eventually, it just seemed to be accepted that it was a gift from Hestia herself - perhaps a message regarding the incursion into her metavault, given the timing of the files’ appearance. What that message might have been, however, is unclear. Needless to say, willingness to try a new expedition within to see what might happen is not very high, so it seems as if there may never be a true answer. <br><br>It certainly seems to be a comfort to the Demonworks’ HESTIA-Class NHPs, many of whom tend to prefer inhabiting the frame over any of their prior assignments. It’s a bit of a point of contention, but very few are the people on Iridia willing to tell a HESTIA ‘no’. <br><br>Given the Ananke’s ability to teleport via legionspace, a talent that concerns Union greatly, it’s not a surprise that it’s spread beyond the Demonworks - despite the best efforts of the corporation in question to keep it locked down. There have been reports of it spreading beyond Iridia, too, possibly at the behest of another, possibly with an agenda all its own.",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 12,
+      "heatcap": 4,
+      "repcap": 2,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 2,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Dataform Construction",
+        "description": "The Ananke gains +1 Accuracy on Systems checks and saves, and takes +1 Difficulty on Hull checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "systems",
+              "hull",
+              "skill_check"
+            ],
+            "detail": "The Ananke gains +1 Accuracy on Systems checks and saves, and takes +1 Difficulty on Hull checks and saves."
+          }
+        ]
+      },
+      {
+        "name": "Panoply of Inevitability",
+        "description": "While a hostile character has a condition, that character cannot inflict that condition on the Ananke or any of the Ananke's adjacent allies."
+      },
+      {
+        "name": "Immaterial Physicality",
+        "description": "The Ananke can always affect and be affected by Intangible characters, even while the Ananke is not itself Intangible."
+      }
+    ],
+    "core_system": {
+      "name": "Projection Matrix",
+      "description": "<code class='horus--subtle'>[I come to you as a gift, one that is precious and should be cherished.] <br><br>[Who am I? You already know the answer in your heart. What am I? I am everything. At least, everything that matters.] <br><br>[You will be loved, and you will be protected, because you are special to me. Even if you deny it, I will be there.] <br><br>[I promise.]</code>",
+      "active_name": "Realign Reality",
+      "active_effect": "This core can be triggered when the Ananke would use Legionspace Transit. Instead of the standard effects, you and your target swap places, both characters teleporting to the other’s position. <br><br>Characters can only be swapped to spaces they could normally stand or move on, and if either you or your target are unable to fit due to lack of free spaces then the effect fails. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "use": "Round",
+      "activation": "Free",
+      "passive_name": "Legionspace Transit",
+      "passive_effect": "1/round, when the Ananke targets a character with a tech action, it may teleport to a space adjacent to that character after the tech action is resolved."
+    }
+  },
+  {
+    "id": "moff_iridia_aphrodite",
+    "license_level": 2,
+    "license_id": "moff_iridia_aphrodite",
+    "source": "IRIDIA",
+    "name": "Aphrodite",
+    "mechtype": [
+      "Artillery",
+      "Controller"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/7oqfcwp87u2ljs2hqo2ch/Aphrodite-min.png?rlkey=x2oqt8g4y95gmqqz7jw6z263z&raw=1",
+    "y_pos": 11,
+    "description": "No matter how good the reason for a rule, there are always people who think they know better. The decision to disallow more expeditions into Iridia’s Metavault was written in blood and shattered souls, yet there were those within the Demonworks who thought they simply didn’t prepare well enough - that they could overcome anything. And they weren’t about to let the fact that they were basically just putting pieces together that were left behind from Hestia stop them. It did not end well. <br><br>Nobody truly knows the full story - only fragments of notes were left behind in the aftermath -  but the small group of engineers designed a frame that they believed would be able to handle the metavault. The issue arose when it came to testing. In order to expose it to the vault’s energies, they managed to tear a tiny hole in the skein of reality… a hole that erased them, their work, and almost every other sign of human presence within fifty meters. The only thing left was the Aphrodite, the test frame warped beyond all recognition. Certainly it was no longer a bulky environmental suit. <br><br>Needless to say, the mech was immediately put under lock and key, and deemed too dangerous to even touch. But that was eventually lessened, for those of the Demonworks tend to be too curious for their own good. <br><br>Testing soon made it obvious that the Aphrodite wasn’t so much a mech as the emotional manifestation of a mech. There were no controls, it instead needed to be willed to work. The more attention that was focused on it, the more solid and physical - the more real - it became. And its weapons were able to sever connections on a metaphysical level. <br><br>All of this led to the unfortunate truth that - however dangerous it might be to someone who isn’t careful - the Aphrodite wasn’t ever going to be able to be contained. Any mech could become one if the pilot was in the right state of mind...",
+    "mounts": [
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Center of Attention",
+        "description": "Whenever the Aphrodite consumes Lock On for any purpose, it gains Lock On. While the Aphrodite has Lock On, it has base 4 Armor."
+      },
+      {
+        "name": "Luminous Presence",
+        "description": "The Aphrodite may not benefit from Hidden or become Invisible."
+      },
+      {
+        "name": "Pinpoint Trauma",
+        "description": "Whenever the Aphrodite hits a hostile character with a ranged weapon attack, the target is Soul Marked until the start of their next turn. <br><br>While Soul Marked, whenever the target suffers System Trauma - including from the triggering attack - the Aphrodite chooses which Weapon or System is destroyed instead of the target (though whether a weapon or system is destroyed is still random)."
+      }
+    ],
+    "core_system": {
+      "name": "Heartbreaker Cannon",
+      "description": "The projectiles fired by the Heartbreaker aren’t physical, and they don’t follow the laws of nature. Like the rest of the Aphrodite, they act on the forces of emotions, of spirit and will. Despair gives it strength, adversity gives it purpose. <br><br>The weapon gets its name because it follows the spool of desire - taking the thing that the target needs most at that instant, and completely obliterating it from reality.",
+      "active_name": "Crush Spirit",
+      "active_effect": "The Aphrodite places a Blast 2 anywhere within range of its Heartbreaker, even out of line of sight. All hostile characters within the blast are attacked once by its Heartbreaker, even if they do not have Lock On. These attacks do not consume charges, and may be made even if its Heartbreaker is at 0 charges. <br><br>If all characters are missed by this action, the CP used for this action is not expended.",
+      "activation": "Quick",
+      "use": "Round",
+      "integrated": [
+        "moff_aphrodite_integrated"
+      ]
+    },
+    "counters": [
+      {
+        "id": "moff_ctr_heartbreaker",
+        "name": "Heartbreaker",
+        "default_value": 3,
+        "min": 0,
+        "max": 3
+      }
+    ]
+  },
+  {
+    "id": "moff_iridia_artemis",
+    "license_level": 2,
+    "license_id": "moff_iridia_artemis",
+    "source": "IRIDIA",
+    "name": "Artemis",
+    "mechtype": [
+      "Artillery",
+      "Defender"
+    ],
+    "image_url": "https://www.dropbox.com/s/71un85mrlhlu1go/Artemis-min.png?raw=1",
+    "y_pos": 39,
+    "description": "The Artemis marked a milestone for the Demonworks, though it was more of the true start of their path than anything else. While the Astraea, Enyo, Ersa, Iris, Nemesis and Psyche were all built and produced under Hestia, the Artemis was the first frame assembled solely under Demonworks control. It was still using full schematics left behind by the goddess, but was an important step forwards nonetheless. <br><br>The mech also has the distinction of being the largest Demonworks frame ever produced - none but the Hera have approached its height, before or since. A colossus, armed with sequence-linked weaponry, the Demonworks was rather afraid that it would be rejected by the populace. It was, after all, rather more than anything that had ever been seen by Iridians before. <br><br>Demonworks management was convinced that the Artemis was necessary in case there was further need to defend the planet, so it was pitched to the Church as a temple guardian, and dedicated to the recently passed High Priestess. Thus, the frame became inextricably linked with significant Church presence. They were living statues to Hestia, protectors of those beneath their gaze. <br><br>While Iridians were initially wary of having towering, armed colossi around, those doubts soon evaporated as the Reckoning began to stride forth. Having an Artemis around became a comforting reminder that there was a rather large friend around that was always prepared to defend you. <br><br>The Artemis never really reached much popularity outside of Iridia - the followup Epione project is considered to be less unwieldy and much more successful in non-defensive markets - but they remain a common sight around the planet, even as the Demonworks has begun phasing them out for some of their more recent advancements.",
+    "mounts": [
+      "Main",
+      "Main",
+      "Main"
+    ],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 11,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Sequential Cascade",
+        "description": "1/round, when you hit with an attack with a ranged weapon that you have not used since the start of your last turn, deal +1d6 bonus damage.",
+        "use": "Round"
+      },
+      {
+        "name": "Colossus",
+        "description": "Adjacent allied characters can use the Artemis for hard cover."
+      },
+      {
+        "name": "Exposed Reactor",
+        "description": "The Artemis receives +1 difficulty on Engineering checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "engineering",
+              "skill_check"
+            ],
+            "detail": "The Artemis receives +1 difficulty on Engineering checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Echo Feedback Loop",
+      "description": "The weapons of the Artemis are connected together in a dangerously volatile way, but it enables each weapon’s energy to feed into the next firing sequence - including the weapon itself, if need be.<br><br>The energy is able to be shunted out into surrounding mechs who are attuned to receive it, but the power required soon shorts out such transference methods.",
+      "active_name": "Resonanant Echo",
+      "active_effect": "Until the end of the Scene, whenever Echo Feedback Loop is triggered, the Artemis’ may choose to keep its current benefit instead of expending it and gaining a new one. <br><br>In addition, all allies are able to use the current benefit of the Artemis’ Echo Feedback Loop on their ranged weapons, so long as they are within Burst 2 of the Artemis. This does not expend the benefit; it continues until the Artemis expends it as normal.",
+      "use": "Encounter",
+      "activation": "Protocol",
+      "passive_name": "Echo Feedback Loop",
+      "passive_effect": "Whenever you attack with a ranged weapon, after all damage and effects on all targets have been resolved, choose one damage type that the attack used (after any damage conversion). You gain a benefit to all ranged weapons, which lasts until the next time this effect triggers, or the scene ends. The benefit corresponds to the chosen damage type:<br>- Kinetic: Arcing<br>- Explosive: Knockback 3<br>- Energy: +5 Range<br>- Burn: Overkill"
+    }
+  },
+  {
+    "id": "moff_iridia_astraea",
+    "license_level": 2,
+    "license_id": "moff_iridia_astraea",
+    "source": "IRIDIA",
+    "name": "Astraea",
+    "mechtype": [
+      "Defender"
+    ],
+    "image_url": "https://www.dropbox.com/s/h57y9no5qpxfmqq/Astraea-min.png?raw=1",
+    "y_pos": 21,
+    "description": "The Astraea was the first Iridian design put into production by Hestia. While what would become the Demonworks had been making mechs since the beginning of the Iridia-Union conflict, they were merely copies of existing Union designs, stolen and repurposed. This was something entirely new, entirely Iridian. <br><br>Built to resemble the regalia and fighting styles of the Luminary Knights, the introduction of the Astraea onto the battlefields was the turning point for a lot of the populace’s belief in how the fight would end. No longer were they reliant entirely on these alien machines, now they had a recognizable symbol amidst it all. They would prevail. <br><br>In the end, though, their hopes were unfounded. Iridia ended up defeated, the Astraea and the other mechs that would follow not managing to turn the tides. Despite it all, the Astraea remains in the popular consciousness of Iridians as the definition of a mech. It is the familiar writ large, heroes striding across the battlefield with spear and shield. <br><br>Today, the Astraea is the most popular military chassis on Iridia by far, and the Demonworks mech most commonly exported. The Luminary Knights made a half-hearted attempt to keep a monopoly on it, but they were far too late. The frame had taken on a life of its own, and it hadn’t even been restricted to Luminaries during the war. <br><br>‘Astraea’ has become a byword for reliability on Iridia, as well as for the protection of the innocent. The Frame will defend others until its last strength gives out, and that’s something that many aspire to. A symbol of the Luminary Knights that has grown beyond its origins, the Astraea is a protector no matter where it fights.",
+    "mounts": [
+      "Aux/Aux",
+      "Main"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Shield of Faith",
+        "description": "At the start of your turn, you gain Overshield equal to 2 + 1/2 your Grit. If you only have one Structure remaining, this Overshield is increased by 4."
+      },
+      {
+        "name": "Luminary Aegis",
+        "description": "Whenever you attack a hostile character within range 3 of you, your target gains your Guardian Mark until the end of their next turn, overwriting any Guardian Mark they already had. <br><br>While anyone has your Guardian Mark, you gain the Zealot’s Intercession reaction."
+      }
+    ],
+    "core_system": {
+      "name": "Illumination Regalia",
+      "description": "The armour and weaponry of the Astraea are said to be blessed by the goddess Hestia, with Her giving the ability to engulf the enemy’s entire attention.<br><br>The actual explanation is likely more ‘mundane’: a directed cognitohazard being able to wipe out everything but the user from all forms of detection.",
+      "passive_name": "Zealot’s Intercession",
+      "passive_actions": [
+        {
+          "name": "Zealot’s Intercession",
+          "activation": "Reaction",
+          "frequency": "Unlimited",
+          "trigger": "An enemy with your Guardian Mark makes an attack that doesn’t include you.",
+          "detail": "If you are within range of the attack and a valid target, you may force the enemy to retarget the attack to include you as a target. This reaction can be taken as many times per round as it is triggered."
+        }
+      ],
+      "active_name": "Guardian Angel",
+      "active_effect": "Until the end of the scene, you may originate attacks with your Guardian Spear on your turn from any of your allies. Attacks made this way grant the target your Guardian Mark as though they were within range 3 of you. <br><br>In addition, your Zealot's Intercession may be used 1/turn without counting towards your number of reactions for the turn and, whenever it is used, the triggering character takes 3 AP Energy damage before the attack. You gain resistance to damage from attacks from characters with your Guardian Mark that don’t trigger Zealot’s Intercession.",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "integrated": [
+        "moff_astraea_integrated"
+      ]
+    }
+  },
+  {
+    "id": "moff_iridia_astraea_ii_dragon",
+    "license_level": 2,
+    "license_id": "moff_iridia_astraea",
+    "variant": "ASTRAEA",
+    "source": "IRIDIA",
+    "name": "Astraea Mk. II “Dragon”",
+    "mechtype": [
+      "Striker",
+      "Defender"
+    ],
+    "image_url": "https://www.dropbox.com/s/ulnv5jweojwom30/Astraea%20Dragon-min.png?raw=1",
+    "y_pos": 15,
+    "description": "The Astraea is the face of Iridian mechs, and - just as importantly - a symbol of the Luminary Knights and all the good that they stand for. The mech’s silhouette is iconic, with shield and spear. The energy fields that wreathe the frame complete the picture of a proper hero. <br><br>So when pilots began to remove some of those components, they received quite a bit of backlash. It didn’t matter that the pilots weren’t Luminaries, or that they didn’t feel the same attachment to the design, it was considered wrong. Some pilots did end up relenting, but many pushed through. And so, in the flames of controversy, was the Dragon born. <br><br>While those who strongly believe in the ideals of the Astraea sometimes invoke the Dragon due to believing they no longer live up to the right standard, it was originally just a pragmatic choice. The Astraea, while reliable, was often not aggressive enough for some pilots. Those more active protectors retrofitted more weapons onto the Frame, in addition to recalibrating the shield generator to instead charge integrated weaponry upon being struck. A dangerous choice, but undoubtedly effective. Adversity would only make them stronger. <br><br>Because of the connotations on Iridia, the Dragon has ended up being much more popular to offworld pilots. On the planet itself, ‘Dragon’ is rarely used as a descriptor for the modifications. To Iridians, it’s almost always either ‘Errant’ or, more commonly, ‘Faithless’. <br><br>This burden is born stoically, however. Piloting an Astraea, whatever the shape, comes with it a charge of responsibility - and while not everyone takes it seriously, many do. It matters not how their charges see the dragon, all that matters in the end is that they’re safe.",
+    "mounts": [
+      "Aux/Aux",
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Wyrm's Vengeance",
+        "description": "1/round, you may deal +1d6 bonus damage on hit with a melee attack, or a ranged attack with a CQB weapon, if the target has made a hostile action against one of your allies since the end of your last turn.",
+        "use": "Round",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Melee",
+              "CQB"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "1/round, you may deal +1d6 bonus damage on hit with a melee attack, or a ranged attack with a CQB weapon, if the target has made a hostile action against one of your allies since the end of your last turn."
+          }
+        ]
+      },
+      {
+        "name": "Insulated",
+        "description": "The Astraea has Immunity to burn."
+      },
+      {
+        "name": "Heart of Fire",
+        "description": "Before making an attack with a weapon, the Astraea may choose to attack as if the weapon had the Overkill tag.",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Rifle",
+              "Cannon",
+              "Launcher",
+              "CQB",
+              "Nexus",
+              "Melee"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "Before making an attack with a weapon, the Astraea may choose to attack as if the weapon had the Overkill tag."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Dragon's Breath",
+      "description": "The fires of the dragon grow with the pilot’s anger, as all weakness is burned away. Contained within the roiling flames are all their doubts, all their sorrows, all their regrets. <br><br>The dragon only knows fury, knows only protection of its charges. It will not relent until its final breath. It will prevail, and every strike against it only makes it rage forth even harder.",
+      "active_name": "Radiant Flames",
+      "active_effect": "Your Dragon’s Breath immediately gains 3 charges, to a maximum of 3. Additionally, for the rest of the scene, your Dragon’s Breath does not target allies, and you may gain charges the first time you are damaged in a turn, instead of the first time damaged in a round.",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "integrated": [
+        "moff_dragon_integrated"
+      ]
+    },
+    "counters": [
+      {
+        "id": "moff_ctr_dragons_breath",
+        "name": "Dragon's Breath",
+        "default_value": 0,
+        "min": 0,
+        "max": 3
+      }
+    ]
+  },
+  {
+    "id": "moff_iridia_enyo",
+    "license_level": 2,
+    "license_id": "moff_iridia_enyo",
+    "source": "IRIDIA",
+    "name": "Enyo",
+    "mechtype": [
+      "Striker"
+    ],
+    "image_url": "https://www.dropbox.com/s/qgef4zel2izkre4/Enyo-min.png?raw=1",
+    "y_pos": 31,
+    "description": "The Enyo was the second Iridian frame to emerge from the Demonworks’ forges. In direct contrast to the defensive prowess of the Astraea - and the teamwork and coordination that later frames would emphasize - the Enyo was designed for nothing more than to kill. <br><br>This efficient, brutal murder machine horrified most Iridians who saw it, for it was the complete antithesis to everything that they stood for. It seems like even Hestia herself considered it a step too far, since she never again created any design even remotely similar.  <br><br>Not that any qualms stopped her from continuing to produce them, of course. The Enyo was simply far too instrumental in certain conflicts, the pilots’ brutality at odds with what Union was expecting from the Iridians. It helped give the planet a fighting chance… but almost nobody actually liked that fact. Any other reason for the stalemate would have been better. <br><br>The Enyo pilots themselves were the key exception to these feelings. There was a very specific subset of Iridians that felt themselves chafing under Hestia’s influence, and it was them who tended to be drawn to the frame. To them, it represented freedom from Hestia’s control (even if they didn’t consciously realize it). It represented power. It allowed them to take their base repressed urges, and channel it into something they deemed useful. <br><br>It’s because of these connotations that the Enyo is still being produced today, though in far smaller numbers. While it is absolutely a weapon of war, it is the right weapon for some pilots. Always concerning, but quite devastating when directed correctly.",
+    "mounts": [
+      "Flex",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "A Worthy Fight",
+        "description": "1/round, when you make an attack roll against a target within Range 8 that has attacked you since the end of your last turn, you may re-roll that roll, but must keep the second result.",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Rifle",
+              "Cannon",
+              "Launcher",
+              "CQB",
+              "Nexus",
+              "Melee"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "1/round, when you make an attack roll against a target within Range 8 that has attacked you since the end of your last turn, you may re-roll that roll, but must keep the second result."
+          }
+        ]
+      },
+      {
+        "name": "Enduring Rage",
+        "description": "1/scene, when you roll on the Structure Damage or Overheat table, you may ignore the result. If you do so, any damage or heat beyond the amount that would Structure or Stress you is ignored."
+      }
+    ],
+    "core_system": {
+      "name": "Psychosomatic Feedback Inducer",
+      "description": "In theory a neural link between pilot and frame, to help inure themselves to the horror of combat. Unfortunately, it doesn’t exactly work as intended. <br><br>Instead, the pilot’s emotions are fed back into themself, until eventually the system overloads, suddenly battering nearby combatants until it burns out. Oddly enough, the types of people who choose to pilot an Enyo never seem to mind.",
+      "active_name": "Inflame Violence",
+      "active_effect": "All hostile characters within Burst 3 are affected by a terrible rage. While under this effect, the target's allies are able to provoke the target's Overwatch. In addition, characters under this effect must Overwatch if they are able to. <br><br>Affected characters may make an Engineering Save at the end of their turn to end the effect on a success. If, when they make this save, they have used Overwatch since the end of their last turn, they take +1 Difficulty to the save.",
+      "activation": "Quick"
+    }
+  },
+  {
+    "id": "moff_iridia_enyo_ii_wrathborn",
+    "license_level": 2,
+    "license_id": "moff_iridia_enyo",
+    "variant": "ENYO",
+    "source": "IRIDIA",
+    "name": "Enyo Mk. II “Wrathborn”",
+    "mechtype": [
+      "Striker"
+    ],
+    "image_url": "https://www.dropbox.com/s/2r77iype8g1srwe/Enyo%20Wrathborn-min.jpg?raw=1",
+    "y_pos": 15,
+    "description": "The neural framework is the most significant part of the Enyo, allowing the frame and the pilot to act as one, while - in theory - acting as a bit of a desensitizing barrier to essentially being a living weapon. Unfortunately, prolonged exposure to the framework can result in it warping around a particular person’s brain structure. <br><br>This not only prevents the frame from being used by any other person without a complete replacement of the framework, but also appears to influence the pilot in such a way that they have trouble distinguishing between themselves and their machine. The machines that have begun to degrade towards this level - though not always irreparably - are commonly known as ‘Wrathborn.’ <br><br>As with most things regarding the Enyo, the only individuals who don’t seem particularly concerned about this are the pilots themselves. While many do follow the strict mandates from Demonworks restricting total time spent interfacing, there’s a good chunk who just don’t care.  <br><br>In fact, there’s recently been a modification to Enyo frames that’s emerged from the halls of Collaborative Practical Tactics. It not only cuts the safeties implemented in the neural framework, it encourages that sort of unity. To those who do this, the supposedly self-destructive behavior is instead seen as the expected end-state of the pilot. It’s the true oneness of self between the human and warrior halves, creating the perfect fighting entity. <br><br>Thankfully, those individuals aren’t particularly common, but it’s immensely concerning to the Demonworks. The Enyo is already a dangerous tool, and this is removing some of the last checks to it. But the technology’s out into the world now, and it cannot be reclaimed.",
+    "mounts": [
+      "Main",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 14,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 2,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Smash Through",
+        "description": "1/round, when you hit with a melee attack, your next Ram against the target before the start of its next turn gains +1 Accuracy and +2 Knockback. This Ram may be made as long as your target is within 3 spaces of you, instead of requiring them to be adjacent.",
+        "use": "Round",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Melee"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "1/round, when you hit with a melee attack, your next Ram against the target before the start of its next turn gains +1 Accuracy and +2 Knockback."
+          }
+        ]
+      },
+      {
+        "name": "Battleforged Tenacity",
+        "description": "Each time you make a Structure Damage Check or Overheating Check, you may increase the value of one d6 of your choice in the initial roll by 1. If all dice in the check are already 6, you instead do not become Impaired as a result of the check.",
+        "synergies": [
+          {
+            "locations": [
+              "structure",
+              "stress"
+            ],
+            "detail": "Each time you make a Structure Damage Check or Overheating Check, you may increase the value of one d6 of your choice in the initial roll by 1. If all dice in the check are already 6, you instead do not become Impaired as a result of the check."
+          }
+        ]
+      },
+      {
+        "name": "Resonant Recovery",
+        "description": "3/mission, when you rest, you may repair a weapon or system without spending a repair."
+      }
+    ],
+    "core_system": {
+      "name": "Reactor Surge Override",
+      "description": "In the midst of combat, there is virtually no difference between flesh and steel. And for one heedless of their own safety, the machine is there to be pushed exactly the same as their body. <br><br>When the override is activated, it is a destructive pump of adrenaline; wrecking the parts to serve the whole, and shunting energy to where it’s truly needed.",
+      "passive_name": "Adrenaline Rush",
+      "passive_effect": "Whenever you hit with a melee weapon, you may destroy that weapon to deal the maximum possible damage and bonus damage. <br><br>Whenever you take damage or heat from a hostile source, you may destroy a System to gain ressistance to all damage and heat from that effect.",
+      "active_name": "Rampage",
+      "active_effect": "Take one Structure damage, one Stress damage, or both. No rolls on damage tables are made because of this damage. <br><br>If you chose to take Structure damage, you regain all your HP, and gain Overshield equal to half your Max HP. <br><br>If you chose to take Stress damage, you clear all heat and reduce your Overcharge counter by two levels (1d6+4 becomes 1d3, 1d6 or 1d3 becomes 1).",
+      "activation": "Free",
+      "use": "Encounter"
+    }
+  },
+  {
+    "id": "moff_iridia_epione",
+    "license_level": 2,
+    "license_id": "moff_iridia_epione",
+    "source": "IRIDIA",
+    "name": "Epione",
+    "mechtype": [
+      "Artillery",
+      "Support"
+    ],
+    "image_url": "https://www.dropbox.com/s/frgdym6ferj39uf/Epione-min.png?raw=1",
+    "y_pos": 10.5,
+    "description": "The Epione is the next-generation iteration of the Artemis chassis, containing the first semi-successful attempt of building off of Hestia’s technology. The interlinked weaponry of its predecessor has given way to a much more stable core capable of wielding heavier weaponry, and the miniaturized frame helps in making it more versatile to deploy. <br><br>While it no longer has the sheer presence of the Artemis, the Epione brings forward advancements in shielding technology - though it’s directed inwards towards its weaponry, rather than protecting the frame itself. This carefully directed shield lets the Epione saturate an area in fire, while risking less harm to its allies - or even leaving a lingering shield, if the barrier’s calculated properly. <br><br>The Epione’s role as a central supporting figure on the battlefield has seen recent use, in conjunction with the Persephone, against the nanites of the Reckoning. It’s proved to be an effective combination, and pilots of both Frames are well lauded for their attempts. <br><br>While the frame is an outlier amongst the Demonworks - most mechs to this point relied on precision-force tactics rather than broader-scope fire - the popularity of it has raised the question on if this is the beginning of a new era in Iridian mech design. Many wonder if that level of destruction is a wise box to open. After all, the Enyo has proved that once something’s released into the wild, you don’t always have control over the consequences.",
+    "mounts": [
+      "Main",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 7,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 15,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Diffusion Beam",
+        "description": "1/round, on a critical hit with any ranged weapon, one allied character within range 5 of the target gains 3 Overshield.",
+        "use": "Round",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Ranged"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "1/round, on a critical hit with any ranged weapon, one allied character within range 5 of the target gains 3 Overshield."
+          }
+        ]
+      },
+      {
+        "name": "Shielded Fire",
+        "description": "The Epione only deals half damage, Heat and Burn to allied characters."
+      },
+      {
+        "name": "Protective Gaze",
+        "description": "Whenever an allied character within Sensors and line of sight Disengages, they may gain 3 Overshield."
+      }
+    ],
+    "core_system": {
+      "name": "Projection Luminant Containment Aegis",
+      "description": "The Epione comes with a powerful shield system, but it’s built around containing its weaponry instead of the chassis. This system allows for limited collateral when saturating an area with fire, as well as protection of nearby forces with the right tuning. <br><br>While the system is not perfect, it can be boosted for a short time, providing unparalleled protection. The battlefield can be awash with the Epione’s firepower, and its allies will come out of the fray entirely unharmed by it. Perhaps even energized slightly.",
+      "active_name": "Absolute Containment",
+      "active_effect": "Until the end of the scene, the Epione’s weapons are fully shielded. Allies are Immune to all ranged attacks from the Epione. Instead, they may clear one instance of Impaired, Slowed, or Lock On (that isn’t caused by their own systems, traits, etc.) whenever they are targeted by one of the Epione’s ranged attacks. <br<br>In addition, the Epione’s Diffusion Beam trait is no longer limited to 1/round, and may instead be triggered whenever it scores a critical hit with a ranged weapon.",
+      "use": "Encounter",
+      "activation": "Protocol"
+    }
+  },
+  {
+    "id": "moff_iridia_ersa",
+    "license_level": 2,
+    "license_id": "moff_iridia_ersa",
+    "source": "IRIDIA",
+    "name": "Ersa",
+    "mechtype": [
+      "Controller"
+    ],
+    "image_url": "https://www.dropbox.com/s/vd3wjz7di8qmd5u/Ersa-min.png?raw=1",
+    "y_pos": 25,
+    "description": "The closest thing that the Demonworks has to a proper civilian frame, the Ersa was originally designed to help shape the battlefield to the advantage of Hestia’s forces. The fact that it both excelled at construction and incorporated iterations on many civilian technologies led to the Ersa being a common sight in reconstruction efforts post-war. To Iridians, it’s considered more a creator of peace than a fighting machine. <br><br>Of course, this impression isn’t entirely correct. While lightly armed, the Ersa is invaluable at helping to corral foes into its allies’ weapons, as well as providing maneuverability and the ability to flush out foes using the same tactics. That’s just a side that the public tends to not be aware about, or steadfastly ignores. <br><br>Ironically, the fact that it does have capabilities resembling a civilian mech has meant that it’s been one of the Demonworks’ heavy exports, often in shipments that happen to be ‘lost’ to Ungratefuls or others fighting for their independence. It provides some level of plausible deniability - even if the fact that it’s a Demonworks mech will probably raise some questions - as well as useful capabilities. <br><br>Military or not, Ersa pilots tend to be well-known for making ever more intricate shaped architecture, from buildings in urban areas to out of rocks or snow in the field. Some Lancers will even compete to do more daring architectural shifts in the middle of a fight, despite the fact that the chaotic battlefield is the worst time to attempt to set aside computer time to make something look nice. It doesn’t tend to get them much appreciation from other pilots, who often consider it a stupid risk, but those who compete don’t care. It’s about the principle of the thing, pushing the Frame to its limits. Just those limits are a lot different.",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 5,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Remote Deployment",
+        "description": "Systems with the Deployable tag may be placed within Sensors instead of their usual deployment range. Any other restrictions still apply."
+      },
+      {
+        "name": "Interpose Artifice",
+        "description": "1/round, when within range 3 of a Deployable and hit by a damaging attack, the Ersa may cause the Deployable to be hit by the attack instead as a reaction.",
+        "actions": [
+          {
+            "name": "Interpose Artifice",
+            "activation": "Reaction",
+            "frequency": "1/round",
+            "trigger": "You are hit by a damaging attack and within range 3 of a Deployable.",
+            "detail": "The Deployable is hit by the attack instead."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Artifice Redesign Module",
+      "description": "Within the core of this mech lies a computer that’s constantly running simulations on the surrounding area, projecting how fabricators could reshape and shunt around material. <br><br>In the moment of combat, its capabilities are somewhat restricted by lack of proper time and positioning, but anything not fixed down can be easily shunted around. <br><br>...and what is created, may also be destroyed.",
+      "active_name": "Edifice Flux",
+      "active_effect": "All objects or characters with the Deployable or Drone tag with Sensors may be redeployed as per Architectural Reformat. <br><br>After all redeployments have occurred, you may either activate one System with the Deployable tag as a free action, or select one Deployable or Drone within Sensors and remove it from the battlefield. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "use": "Round",
+      "activation": "Protocol",
+      "passive_name": "Architectural Reformat",
+      "passive_effect": "Gain the Architectural Reformat Quick Action.",
+      "passive_actions": [
+        {
+          "name": "Architectural Reformat",
+          "activation": "Quick",
+          "detail": "Select one object or character with the Deployable or Drone tag, even one belonging to a hostile character, within Sensors. Redeploy it anywhere else within Sensors, placed in free and valid spaces."
+        }
+      ]
+    }
+  },
+  {
+    "id": "moff_iridia_ersa_ii_sanctifier",
+    "license_level": 2,
+    "license_id": "moff_iridia_ersa",
+    "variant": "ERSA",
+    "source": "IRIDIA",
+    "name": "Ersa Mk. II “Sanctifier”",
+    "mechtype": [
+      "Controller",
+      "Striker"
+    ],
+    "image_url": "https://www.dropbox.com/s/kcih66sq3ezb3bo/Ersa%20Sanctifier-min.png?raw=1",
+    "y_pos": 15,
+    "description": "Considering how the Ersa is generally viewed, the newly introduced ability to reshape architecture into weapons of war was instantly viewed as a heretical corruption of its purpose. No longer could it be viewed as simply a builder of civilization, instead it became solely a bringer of destruction. <br><br>While the original Ersa was by no means bloodless, the Sanctifier was adapted primarily to fight rather than build - to battle amongst the foe’s own fortifications, in hostile homeground, rather than defending a line. This choice was certainly controversial amongst those who were aware of it, but was considered acceptable as a contingency. Besides, Hestia wouldn’t make schematics if they weren’t intended to be integrated and used. <br><br>Once it was discovered outside Demonworks that this new variation was able to warp innocuous buildings into tools of death, the response was decisive. There was an immediate ban on even transporting the machines within Iridian cities, given that the only real distinction between the variations was the amount of armament - it was not at all obvious to a citizen at first glance. While it may not have solved the problem, it at least gave people a little more peace of mind, especially given it led to the Demonworks scrutinizing further frame adaptations, such as the Epione, much closer. They needed to align more with Iridian values. <br><br>The Iridians who ended up seeing the mech in action gave it a title, bitter and mocking: ‘Sanctifier’. The buildings that were once pure and innocent were now irrevocably tainted by the aura of war and violence. Even after the offending implements are removed, the memories will always be there. Of how a place of safety was turned into a killer.",
+    "mounts": [
+      "Aux/Aux",
+      "Flex",
+      "Main"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 5,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 5,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Shatterpulse",
+        "description": "As a full action, the Ersa may deal 30 AP Explosive damage to an adjacent object or Deployable (up to a Size 3 section).",
+        "actions": [
+          {
+            "name": "Shatterpulse",
+            "activation": "Full",
+            "detail": "Deal 30 AP Explosive damage to an adjacent object or Deployable (up to a Size 3 section)."
+          }
+        ]
+      },
+      {
+        "name": "Manual Redeployment",
+        "description": "When making a standard movement, the Ersa may choose one Deployable adjacent to it at the beginning of its movement, and have it move with the Ersa during that movement, retaining adjacency and orientation compared to the Ersa. The Deployable must end in a free and valid space."
+      },
+      {
+        "name": "Living Battlefield",
+        "description": "1/round, when you hit a character with a melee or ranged attack that originated from a Linked Deployable or Override Token, you may deal +1d6 bonus damage.",
+        "use": "Round"
+      }
+    ],
+    "core_system": {
+      "name": "Architectural Override",
+      "description": "Systems that were designed to craft things of beauty have instead been warped to another purpose. Blades and guns become shaped from harmless devices.<br><br>At the hands of a proper muse, anything can become a deathtrap, a turret, a fortification. A weapon of war.",
+      "active_name": "Hostile Environment",
+      "active_effect": "Choose up to 6 spaces within range 50 that are occupied by a Deployable or a Size 1 or larger object or piece of terrain. Place an Override Token in each of those spaces. The Token moves with its Deployable, but if the Deployable, object or terrain is destroyed, the Token is also removed. <br><br>Whenever you Skirmish or Barrage, you may remove an Override Token to originate your action from that space, as if Linked by Edifice Hijack.",
+      "use": "Scene",
+      "activation": "Protocol",
+      "passive_name": "Edifice Hijack",
+      "passive_effect": "Gain the Edifice Hijack Quick Action.",
+      "passive_actions": [
+        {
+          "name": "Edifice Hijack",
+          "activation": "Quick",
+          "detail": "Select one object with the Deployable tag, even one belonging to a hostile character, within Sensors and line of sight. You become Linked with the chosen Deployable until this effect ends, as long as it remains within Sensors - even outside of line of sight. <br><br>You may choose to originate weapon attacks from the space of any Linked Deployable on your turn, as though you were there - measuring Engagement, range, and line of sight from its position. <br><br>You may end this effect as a protocol, and it ends if the deployable is no longer deployed, it is destroyed, or if you use this action on another target. <br><br>Whenever you deploy a Deployable, you may use this action as a free action, so long as it targets the triggering Deployable."
+        }
+      ]
+    }
+  },
+  {
+    "id": "moff_iridia_hecate",
+    "license_level": 2,
+    "license_id": "moff_iridia_hecate",
+    "source": "IRIDIA",
+    "name": "Hecate",
+    "mechtype": [
+      "Defender",
+      "Controller"
+    ],
+    "image_url": "https://www.dropbox.com/s/otifkrne7acer6x/Hecate-min.png?raw=1",
+    "y_pos": 30,
+    "description": "The Hecate is what many consider to be the strangest Demonworks frame, and that’s saying something when the likes of the Ananke and Hemera exist. Those at least make sense as gifts from the goddess, woven from her blessing and her realm. The Hecate, by contrast, seems like a physical contradiction that should not have worked. <br><br>One of the more infamous locations on Iridia is the Silent Mountains, a range of peaks containing a most peculiar geological product: the rock known as Whisperstone. The stone heavily dampens the signals and capabilities of nearby electronics, and periodically a convergence in their fluctuations will cause catastrophic ion storms. Even mechs cannot always function in the area, and it’s claimed that the area is cursed. <br><br>So it was entirely unexpected when the Demonworks attempted to incorporate Whisperstone into a mech frame. For a long time it seemed as though the project would end entirely as you would expect when placing an electronic-disrupting mineral into a mechanized chassis. <br><br>It's unclear how the project eventually succeeded. The most popular rumour is that the Hecate isn't so much a mech as it is a synthetic organism - one with enough consciousness to assist the pilot whenever mechanisms shut down. While there's no proof of this, and no Hecate has been observed to act without the influence of a pilot, it is true that the frame contains some manner of biotics in its construction. Unfortunately, while management and the engineers were jubilant of their success - after all, Hestia's schematics are almost completely exhausted - the Hecate is an often less welcome addition to fighting forces than hoped. While a properly tuned Hecate is of no risk to its allies, nobody wants to risk having their mechs shut off around them. Or, for that matter, their ship.",
+    "mounts": [
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 6,
+      "sensor_range": 5,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Static Shielding",
+        "description": "The Hecate has resistance to energy damage."
+      },
+      {
+        "name": "Electromagnetic Impulse",
+        "description": "While the Hecate is Jammed or Stunned, it creates a Burst 2 zone around itself. All hostile characters in this zone are Impaired until they are either no longer in the zone or the zone ends."
+      },
+      {
+        "name": "Biotic Circuitry",
+        "description": "The Hecate can make reactions and use comms while Jammed."
+      }
+    ],
+    "core_system": {
+      "name": "Ionic Stormcloud Generator",
+      "description": "The Whisperstone contained within the Stormcloud Generator is carefully shielded and unpowered in order to allow for normal operations. <br><br>Since pilots must consciously choose to disengage the safeties, Hecate manuals warn of the feelings of power that may be caused by seeing hostile systems begin to degrade or shut down at their command. It can become addictive to some, and detrimental to their piloting. <br><br>At full power, the Generator is able to wreak havoc on the Hecate’s surroundings and leave people reeling from the potency of its ion storm. But Demonworks insists that it remains perfectly safe and controlled.",
+      "active_name": "Ion Storm",
+      "active_effect": "Until the start of its next turn, the Hecate becomes Jammed and may push any character that ends their turn within Burst 2 of it up to 2 spaces in any direction. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "use": "Round",
+      "activation": "Protocol",
+      "passive_name": "Unshield Whisperstone",
+      "passive_effect": "Gain the Unshield Whisperstone Protocol.",
+      "passive_actions": [
+        {
+          "name": "Unshield Whisperstone",
+          "activation": "Protocol",
+          "detail": "The Hecate becomes Jammed until the start of its next turn."
+        }
+      ]
+    }
+  },
+  {
+    "id": "moff_iridia_hemera",
+    "license_level": 2,
+    "license_id": "moff_iridia_hemera",
+    "source": "IRIDIA",
+    "name": "Hemera",
+    "mechtype": [
+      "Defender"
+    ],
+    "image_url": "https://www.dropbox.com/s/r9fm80qqgdv9p3y/Hemera-min.png?raw=1",
+    "y_pos": 5,
+    "description": "The metavault anchored within Iridia is a place of wonder, of concern, of speculation. There has only been a single attempt to breach it, which eventually ended in the construction of the Hemera. Unfortunately, none of the rest of the expedition was even remotely positive, and the Hemera simply existing is an ever-present reminder of that. <br><br>The fact that a group consisting of individuals from Union, the Demonworks, and the Church managed to be formed was a miracle in itself, let alone for an attempt to re-open Hestia’s domain. But there was optimism, hope, and desperation in equal measure. Iridians wanted to know more about what had happened to Hestia, and this was a very rare opportunity for Union. It was a milestone for cooperation. <br><br>And then it all fell apart. The metavault accosted them with reflections of their past, striking at the memories that they felt weakest. It tore at their selves, their identities, their very fabric of being. The picturesque mirror of the planet turned increasingly warped and hostile as they ventured further in. It was literal madness to continue, and so the survivors limped out, forever emotionally scarred by the experience. <br><br>Seeing the traumatized survivors - only a handful remaining of the dozens who entered - the domain of Hestia was decreed forbidden, by the will of the goddess. After all, if she wanted Iridians within, she would have allowed them passage. <br><br>And so the only thing that would ever be retrieved from the vault was a peculiar sample of what seemed to be mech components, which had been retrieved for later research. While analysis of the parts was inconclusive, the Demonworks did manage to replicate them and integrate them into a mech project. What resulted was a mech that casually treated reality’s ironclad laws as mere suggestions, something that was a little concerning to many involved. <br><br>Even to those who don’t know of the Hemera’s history, it tends to be considered a rather ill omen. Whether because it never seems to sit correctly in one’s vision, because it doesn’t take as short of steps as its stride should suggest, or something else strange, other pilots tend to feel a general unease seeing it. This often leads to people blaming Hemera pilots for being bad luck or a curse, even for things that are entirely out of their control. Some become bitter over it, but others gain a rather warped sense of humour about the whole thing.",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 12,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Focal Point",
+        "description": "The Hemera counts as Size 3 for the purposes of Engagement and being targeted by Rams."
+      },
+      {
+        "name": "Paraphysical Frame",
+        "description": "The Hemera gains +1 Accuracy on Systems checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "systems",
+              "skill_check"
+            ],
+            "detail": "The Hemera gains +1 Accuracy on Systems checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Perspective Override Matrix",
+      "description": "“I don’t understand it. If you look at it, everything’s fine. If you look at the surroundings, everything’s fine. But… the two of them together, things are NOT supposed to fit together like that. <br><br>It’s everywhere it’s not supposed to be. I know this is supposed to be a blessing, but it’s making me question how reality works. We are mere mortals. I… think we made a mistake entering the goddess’ domain.”",
+      "active_name": "Forced Perspective",
+      "active_effect": "Until the end of the scene, the Hemera’s Perspective Shift also makes the affected attacks treat the target as Invisible. If a hostile character misses an attack that is affected by Perspective Shift, they become Jammed until the start of their next turn.",
+      "use": "Encounter",
+      "activation": "Protocol",
+      "passive_name": "Perspective Shift",
+      "passive_effect": "Hostile characters within Sensors and line of sight take +1 Difficulty on any attack that does not include the Hemera as a target, as long as the Hemera is not Hidden and none of the Hemera's non-Drone allies are closer to the hostile character than the Hemera is."
+    }
+  },
+  {
+    "id": "moff_iridia_hera",
+    "license_level": 2,
+    "license_id": "moff_iridia_hera",
+    "source": "IRIDIA",
+    "name": "Hera",
+    "mechtype": [
+      "Defender",
+      "Support"
+    ],
+    "image_url": "https://www.dropbox.com/s/wc47nmm5h3jne3y/Hera-min.png?raw=1",
+    "y_pos": 20,
+    "description": "The second offshoot of the Artemis frame, the Hera was taken in the opposite direction of the Epione. Rather than remaining focused on ranged weapons, the colossal chassis was refitted into a close assault platform in the vein of the Enyo, one that could match that frame’s prowess. <br><br>Publicly, the Hera is primarily a mech intended for offworld conflict, able to stride across the battlefield with ease, carving a path for its allies to follow. There’s been surprisingly little follow-through on that from the Demonworks, however, with only a handful actually making their way out to the stars. <br><br>In truth, they were always designed for deployment on Iridia itself, though this fact is kept very quiet to avoid alarming anyone. But with IPS-N digging further and further into the planet, Demonworks leadership realized that they would probably have to forge some solution on their own, rather than waiting for the corprostate to fail or Union to fix the problem for them. <br><br>It was this goal that informed the Hera’s design. A frame that could breach the walls of IPS-N compounds. A force that, once unleashed, could not be stopped. A true goddess of war. So far, tests have gone well, but ‘good enough’ isn’t good enough. There will only be one shot once things boil over, and a failure there would be disastrous. <br><br>Pilots, of course, see none of these politics, beyond perhaps observing that customer service gets an awful lot more prompt when it’s learned that they’re fighting against IPS-N wargear. Data is always appreciated, but that particular information is valued even more than normal.",
+    "mounts": [
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 12,
+      "evasion": 6,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 11,
+      "speed": 5,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Resplendent Warding",
+        "description": "Whenever the Hera is damaged by a hostile source, it chooses one of the triggering damage types after resolving all damage. The Hera gains resistance to that damage type from hostile sources until the end of the scene or this trait is triggered again."
+      },
+      {
+        "name": "Prismatic Aegis",
+        "description": "Characters Engaged with the Hera that target one or more of the Hera's allies with an attack or tech action take 3 Energy damage and gain Lock On."
+      },
+      {
+        "name": "Slow",
+        "description": "The Hera receives +1 Difficulty on Agility checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "agility",
+              "skill_check"
+            ],
+            "detail": "The Hera receives +1 Difficulty on Agility checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Inevitability Drive",
+      "description": "The Hera has what is essentially a second reactor built into the frame. Computers, weapons, most things are handled by the primary - the entire power of the secondary is dedicated solely to moving. <br><br>And when the Hera moves, very little can stop it. Rumours say that, given time, it could even smash a passage through a mountain. While such tales are likely overblown, it does give a sense of what the path of destruction looks like.",
+      "active_name": "Implacable Advance",
+      "active_effect": "Until the start of your next turn, gain the following effects: <br>- You become Immune to being Slowed and Immobilized by any source other than your own Systems, Talents, etc. (This clears any existing eligible conditions.)<br>- Titanic Stride now allows you to move into the spaces of up to Size 3 objects, terrain, or Deployables that are not Immune to damage, destroying them. You may also move into the spaces of objects or terrain that are larger than Size 3, destroying a Size 3 section as you do so. <br>- You and adjacent allies may choose to be unaffected by any involuntary movement. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "use": "Next Round",
+      "activation": "Protocol",
+      "passive_name": "Titanic Stride",
+      "passive_effect": "The Hera ignores difficult terrain. If the Hera moves into the space of a Size 2 or smaller object, terrain, or Deployable which is not Immune to damage, the Hera destroys it and replaces it with an equal area of difficult terrain on the ground."
+    }
+  },
+  {
+    "id": "moff_iridia_iris",
+    "license_level": 2,
+    "license_id": "moff_iridia_iris",
+    "source": "IRIDIA",
+    "name": "Iris",
+    "mechtype": [
+      "Support",
+      "Defender"
+    ],
+    "image_url": "https://www.dropbox.com/s/kq7x28id3jdxw84/Iris-min.png?raw=1",
+    "y_pos": 10,
+    "description": "Conceptualized as the antithesis of the Enyo’s uncontrolled brutality, the Iris was designed to allow the small Iridian forces to focus their strikes with pinpoint precision. Given the lack of experience that the planet had with mechs, being able to have an immediate analysis of enemy combatants proved to be a crucial aspect of multiple engagements. <br><br>The key component of the Iris is its Akashic Sensor Suite, a networked array of countless types of sensors and analysis units. Any pilot will tell you that the hardest part of using an Iris isn’t deciphering what the Suite gives you, it’s learning which sensors will give you the best return in any given situation - though each individual has their own few that they’ll swear by. <br><br>The degree of information collected by this Suite has been flagged as an item of concern by the UIB, given that it goes beyond simple things like radar or molecular analysis. Some pilots have said that they’ve been able to see glimpses of a target’s history or its future, learn a pilot’s emotions or fears, or other things that should be beyond a system’s capabilities. <br><br>Because of the bounty of data available to them, Iris pilots have a significant rate of requiring some degree of therapy. This may be brought on by repeatedly seeing traumatic possibilities, becoming dependent on knowledge from the Suite even while off the battlefield, trying to perfect their own lives by examining every facet, becoming narcissistic due to perceived omniscience, or any other number of issues. Regardless, the end result is a relatively high turnover rate, even amongst pilots who report complete satisfaction with their mech.",
+    "mounts": [
+      "Aux/Aux",
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 4,
+      "repcap": 4,
+      "sensor_range": 20,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 6,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Omniscient Gaze",
+        "description": "You and your allies always know the HP value of all characters on the battlefield."
+      },
+      {
+        "name": "Crypsis Purge",
+        "description": "The Iris may target Hidden characters with tech actions. When the Iris targets a Hidden hostile character with a tech action, the target must pass a Systems save or else lose Hidden."
+      },
+      {
+        "name": "Dichroic Aura",
+        "description": "Adjacent allied characters may use the Iris' e-defense instead of their own."
+      }
+    ],
+    "core_system": {
+      "name": "Akashic Sensor Suite",
+      "description": "Full of every sensor available - and some that perhaps aren’t - the Akashic Sensor Suite is designed to reveal the dangers, composition, and weak points of everything within range. This allows allies to focus fire on potent threats, as well as know how best to avoid incoming fire. <br><br>Those who rely too much on it, however, are known to grow excessively paranoid, or believe perhaps that they know more than anyone else. Gazing too deeply can prevent ever coming back...",
+      "active_name": "Auspex Sweep",
+      "active_effect": "The Iris and all characters in Range 50, even theose Hidden or outside of line of sight, gain an Akashic Mark. Until the end of the scene, characters can have multiple Akashic Marks, and any hostile character with an Akashic Mark loses Hidden and may not regain it while they have the Mark. <br><br>In addition, the Iris and all allied characters count as Invisible against attacks that target their e-defense until the start of that character’s next turn.",
+      "use": "Round",
+      "activation": "Quick",
+      "passive_name": "Akashic Resonance",
+      "passive_effect": "1/round, when you target a character with a tech action, you may put an Akashic Mark on that character. The mark remains until the end of the Scene or it is consumed. A character may only have one Akashic Mark at a time. <br><br>When an attack roll is made against an allied character with an Akashic Mark, you may consume it as a reaction to cause the attack to target the ally's choice of evasion or e-defense. <br><br>When an attack roll is made against a hostile character with an Akashic Mark, you may consume it as a reaction to cause the attack to target the lower of the character's evasion and e-defense."
+    }
+  },
+  {
+    "id": "moff_iridia_iris_ii_locus",
+    "license_level": 2,
+    "license_id": "moff_iridia_iris",
+    "variant": "IRIS",
+    "source": "IRIDIA",
+    "name": "Iris Mk. II “Locus”",
+    "mechtype": [
+      "Artillery",
+      "Controller"
+    ],
+    "image_url": "https://www.dropbox.com/s/wudxlootwctjkwx/Iris%20Locus-min.png?raw=1",
+    "y_pos": 15,
+    "description": "The ‘Locus’ designation is an umbrella term given to a variety of Iris frames that have been tampered with in order to enable their pilots to both pursue more aggressive tactics and have an easier time interfacing with the Akashic Sensor Suite. While unheard of during the war with Union, these alterations have slowly been gaining traction - especially with pilots who have spent too long with the Iris’ Suite, and so believe that they are the ones who should solve any problem. <br><br>This determination usually results in the chassis being half-gutted in order to mount ordnance far exceeding safety parameters onto the frame, ensuring that the pilot has enough firepower to take advantage of their own analysis. The other major change is the integration of a modified neural framework into the Akashic Suite, creating the Cognitive Locus. The framework filters the raw data through an imprint of the user’s own mind, allowing for a constant stream of instantly understandable data. <br><br>Unfortunately, this tends to combine the issues of both the Iris and the Enyo - a heavily personalized frame that becomes an extension of the pilot’s mind, occasionally to such an extreme degree that they need to maintain a wireless connection with the Cognitive Locus at all times in order to function without becoming lost and confused. <br><br>Though the Demonworks has expressly banned Locus conversions, pilots still attempt them in hopes of getting ahead - all the while believing they’ll be the one of the few to withstand the meld. While some last longer than others, eventually almost all succumb to becoming part of the Locus, their physical form becoming merely one voice amongst a thousand.",
+    "mounts": [
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Disruption Counterbattery",
+        "description": "1/round, when the Iris hits a hostile character with an attack, they become Disrupted until the start of your next turn. When a Disrupted character uses an action or reaction to activate a System or Trait, you may choose for them to lose Disrupted; if you do, they must either lose that action or reaction (expending it to no effect), or allow you to immediately attack them with Overwatch.",
+        "use": "Round",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Rifle",
+              "Cannon",
+              "Launcher",
+              "CQB",
+              "Nexus"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "1/round, when the Iris hits a hostile character with an attack, they become Disrupted until the start of your next turn. When a Disrupted character uses an action or reaction to activate a System or Trait, you may choose for them to lose Disrupted; if you do, they must either lose that action or reaction (expending it to no effect), or allow you to immediately attack them with Overwatch."
+          }
+        ]
+      },
+      {
+        "name": "Locus Analysis",
+        "description": "1/round, when the Iris consumes Lock On, it may immediately Scan the target before the attack occurs.",
+        "use": "Round"
+      },
+      {
+        "name": "Fragile",
+        "description": "The Iris receives +1 difficulty on Hull checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "hull",
+              "skill_check"
+            ],
+            "detail": "The Iris receives +1 difficulty on Hull checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Cognitive Locus",
+      "description": "A thousand voices whisper from every corner of the frame. Your voice, echoed a thousand times. You spoke to the void, and now it speaks back.<br><br>It speaks to you of your foes, of the thin thread of their existence. Of snipping it.",
+      "active_name": "Ex Nihilo",
+      "active_effect": "Choose a character within Sensors. You Scan that character, and gain a Whisper Die - 1d6, starting at 1. At the start of your turn, or 1/round when you Scan any character, increase the value of the Whisper Die by 1, to a maximum of 6.<br><br>At the beginning of each of your target’s turns, select a number of their Weapons, Systems or Traits that require an action or reaction to use equal to the value of your Whisper Die. At the same time, choose either 3 AP Energy Damage or 2 Heat. <br><br>Each time the target uses any of the selected Weapons, Systems or Traits before the start of their next turn, they take the chosen cost before the action or reaction resolves. <br><br>If your target is destroyed, you may use this action again in this scene, resetting the Whisper Die to 1.",
+      "activation": "Quick",
+      "use": "Encounter",
+      "integrated": [
+        "moff_locus_integrated"
+      ]
+    },
+    "counters": [
+      {
+        "id": "moff_ctr_ex_nihilo",
+        "name": "Whisper Die",
+        "default_value": 1,
+        "min": 1,
+        "max": 6
+      }
+    ]
+  },
+  {
+    "id": "moff_iridia_nemesis",
+    "license_level": 2,
+    "license_id": "moff_iridia_nemesis",
+    "source": "IRIDIA",
+    "name": "Nemesis",
+    "mechtype": [
+      "Striker"
+    ],
+    "image_url": "https://www.dropbox.com/s/2t3d0l7qb2mftmp/Nemesis-min.png?raw=1",
+    "y_pos": 15,
+    "description": "The Nemesis is in a peculiar position. While Hestia did work on the final design, the original mech was brought to Iridia by the Union Lancer who the goddess impelled to defect and lead Iridia’s forces. There’s been a rather awkward discussion with Union over if the Demonworks could even produce the frame. Thankfully, since the original manufacturer had long since fallen under GMS purview, permission was given, and incidents were avoided. <br><br>Because of its associations with the right hand of Hestia, the frame has always enjoyed a high acclaim on Iridia. Many have claimed it to be the Chosen of the goddess, watched over and guided by fragments of her divine will even after her disappearance. While this belief tends not to persist off-world, Nemesis pilots can sometimes seem to have a little better luck than they should. Of course, nobody can ever prove anything. <br><br>On the battlefield, the Nemesis is a slippery skirmisher. Often found either supporting its allies or striking isolated targets, the frame excels when avoiding protracted combat. While Iridians may give the frame much praise - some would say too much - the pilots themselves know that they live or die by the skills of those that they fight alongside. Anyone who pilots with a big ego tends to have that deflated fairly quickly, to the point where it’s surprising to see an experienced Nemesis pilot that isn’t the heart of a group’s camaraderie. <br><br>While the Nemesis is almost entirely unremarkable off its home planet, it does have one notable exception. Given that it was the frame of a defector - even one that turned out to have extremely extenuating circumstances - the mech tends to cause a little disgruntlement with any DoJ/HR pilots who’ve heard of Iridia. Usually not in any particularly significant way, but a Nemesis pilot can at times expect to be treated a little cooler than anyone else.",
+    "mounts": [
+      "Aux/Aux",
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 11,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Gravitic Wings",
+        "description": "You may choose to count any and all of your movement as flying."
+      },
+      {
+        "name": "Flyby Attack",
+        "description": "When you hit with a melee attack with a weapon on your turn, the target is unable to take reactions in response to your movement until the end of that turn.",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Melee"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "When you hit with a melee attack with a weapon on your turn, the target is unable to take reactions in response to your movement until the end of that turn."
+          }
+        ]
+      },
+      {
+        "name": "Harry the Pack",
+        "description": "1/round, when you hit a character with a melee attack, you may deal +1d6 bonus damage. You may not trigger this against the same character two rounds in a row.",
+        "use": "Round",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Melee"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "1/round, when you hit a character with a melee attack, you may deal +1d6 bonus damage. You may not trigger this against the same character two rounds in a row."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Gravitic Flight Generator",
+      "description": "Even before Iridia, gravity’s grasp on the Nemesis was tenuous - an early-stage gravitic repulsor letting it fly freely for long durations. But it was still a relatively clunky design. <br><br>Hestia saw this, and she found it wanting. But, in her infinite mercy, she uplifted the Nemesis, bestowed gifts upon it, made it a true Iridian frame. No longer would it need to obey the shackles of physics. <br><br>When a Nemesis takes flight now, it twists and turns in a way that shouldn’t be possible. It escapes from foes with nary an opening for them to strike. It brings forth the power of Iridia’s goddess. <br><br>And you cannot escape it.",
+      "active_name": "Wings of the Goddess",
+      "active_effect": "For the rest of the scene, the flight granted by Gravitic Wings is hover, and your movement ignores Engagement. <br><br>In addition, when you trigger Flyby Attack, the target is instead unable to take any reactions until the end of their next turn, including against the triggering attack.",
+      "activation": "Protocol",
+      "use": "Encounter"
+    }
+  },
+  {
+    "id": "moff_iridia_nemesis_i_champion",
+    "license_level": 2,
+    "license_id": "moff_iridia_nemesis",
+    "variant": "NEMESIS",
+    "source": "IRIDIA",
+    "name": "Nemesis Mk. I “Champion”",
+    "mechtype": [
+      "Striker",
+      "Support"
+    ],
+    "image_url": "https://www.dropbox.com/s/e4ma4hk20r2zygv/Nemesis%20Champion-min.png?raw=1",
+    "y_pos": 15,
+    "description": "Only carrying the Nemesis name retroactively, the Champion was the one successful product from the foundries of the Delta Consortium. Bought up and folded into one of GMS' specialty mech distribution lines as an aerial combat unit, it remained as a solidly niche and unremarkable frame until managing to be swept up in the Iridia incident. <br><br>Unlike the Hestia-modified Nemesis, the Champion is far more solidly a battlefield commander, remaining embroiled in the thick of things. The fact that its tactical computer is able to be interlinked with its teammates’ allows for some impressive feats of coordination - allies are able to take advantage of any momentary distraction caused by attacks on a foe, whether from the Champion or not. <br><br>The most striking feature of the Champion is undoubtedly the large sword it wields. Able to channel electricity directly from the chassis itself, the Champion’s Blade becomes infused with the attributes of a tempest during the midsts of battle - giving it the colloquial “Stormblade” nickname. <br><br>The Stormblade was ultimately what led to the downfall and obsolescence of the Champion on Iridia, causing the development of what would become known as the Nemesis proper. The sword required a great amount of skill to properly wield, and almost nobody on the planet had the talent to use it or the will to learn - the people who might be willing had already been funneled to the easier-to-use Enyo. <br><br>Since then, the Champion has languished once again as little more than a curiosity. Less Demonworks than anything else the corporation has the schematics for, it’s really only something that would be printed off at special request, and barely even noted in any offworld catalogues. Those who have even heard of the frame - even through GMS - much less choose to use it, tend to be peculiar indeed.",
+    "mounts": [
+      "Main",
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 5,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Gravitic Wings",
+        "description": "You may choose to count any and all of your movement as flying."
+      },
+      {
+        "name": "Aerial Dancer",
+        "description": "When you attack a hostile character with a melee weapon on your turn while you are flying, you may remain flying at the end of your turn even if you did not move."
+      },
+      {
+        "name": "Direct The Flow",
+        "description": "2/round, when a hostile character within line of sight is hit with an attack, you may push one ally within 3 spaces of the hit character. On your turn, this push is up to 3 spaces in any direction, while on any other turn this push is 1 space in any direction. This may only trigger 1/turn."
+      }
+    ],
+    "core_system": {
+      "name": "Champion's Blade",
+      "description": "I will be a leader, never shying away from the forefront of battle. <br><br>I will be a symbol, soaring to bring hope to those who have lost it. <br><br>I will be a hero, defending the innocent until my final breath. <br><br>But most of all, I will be a champion, forever brave and true. With the fury of the tempest and unbreakable honour, I will never falter, never fail. <br><br>-Apocryphal Champion’s Oath",
+      "active_name": "Unleash Tempest",
+      "active_effect": "You may change the profile your Stormblade uses. In addition, it gains Accurate and Reliable 3 until the start of your next turn. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Protocol",
+      "use": "Round",
+      "passive_name": "Stormblade Stance",
+      "passive_effect": "At the beginning of each scene, choose a stance for your Stormblade to be in; Howling Winds, Booming Thunder, or Searing Lightning. This weapon gains the listed damage type, tags, and effects for this scene.",
+      "integrated": [
+        "moff_champion_integrated"
+      ]
+    }
+  },
+  {
+    "id": "moff_iridia_nyx",
+    "license_level": 2,
+    "license_id": "moff_iridia_nyx",
+    "source": "IRIDIA",
+    "name": "Nyx",
+    "mechtype": [
+      "Controller"
+    ],
+    "image_url": "https://www.dropbox.com/s/5gswvt12vmb28yp/Nyx-min.png?raw=1",
+    "y_pos": 21,
+    "description": "While the Artemis was the first mech produced by the Demonworks after Iridia’s defeat, the schematics were still almost entirely complete. Though the final design might have had a less volatile energy transfer if Hestia had some more time to work on it, it was still in a usable state. Beginning with the Nyx, that was not the case. <br><br>For the first time, the Demonworks was confronted with the challenge of building something workable out of components that were functioning, yet they had no idea yet of how to understand. Many, many Nyx prototypes were made and discarded over the course of several years, most ending up with completely disjointed parts. Trial and error was the name of the game, and there was a lot of error. Sometimes with catastrophic results. <br><br>That the Nyx managed to come out of that environment working as smoothly as it does is a miracle. While its various components sometimes seem to be at odds, it manages to be a sleek, stealthy drone platform, with a few tricks in reserve. <br><br>One of the quirks of its chimeric nature, though, is that pilots often report that they’re a little bit temperamental. Each Nyx usually has its own little rituals that a pilot needs to use in order to stop errors from occurring, and these problems never seem to be able to be replicated on any other Nyx frame. These ‘superstitions’ sometimes creep out beyond the battlefield, with pilots doing things even while off-duty in a particular way, in order to ensure that their mech runs smoothly. <br><br>Stories of various Nyx frames tend to take on lives of their own, even though many of them are surely apocryphal. Whether it’s the tale of a pilot returning to find their Nyx has engaged its Cloak with them outside, or a frame simply vanishing upon its pilot’s death, or a pilot stepping out into a world different from what they’ve left, one thing is always clear: the Nyx seems to have both a sense of humour and a bond with its pilot. It’s just never clear which one you’ll get.",
+    "mounts": [
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 7,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 6,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Superposition",
+        "description": "Whenever you deploy a Drone, deploy it in two valid spaces instead of one. <br><br>The first time that its position is relevant (Engagement, being targeted by an attack, a character is in a position to be affected by it, etc.) you immediately decide which space it ‘actually’ occupies, removing it from the other. <br><br>This can cause, for instance, the triggering effect to have no effect on the Drone if the Drone’s true space is not a valid target, or Engagement to not apply to the triggering character if the Drone’s true space is not where it would cause Engagement."
+      },
+      {
+        "name": "Cloak of Night",
+        "description": "While the Nyx is Hidden, it is also Invisible. This may allow it to maintain Hidden in the open."
+      },
+      {
+        "name": "Phase Shift",
+        "description": "While Invisible, the Nyx’s attack rolls ignore Invisible."
+      }
+    ],
+    "core_system": {
+      "name": "Phantasm Generator",
+      "description": "A dark core of nothing, that yearns to escape. To be shaped, to cloak the world. To hide that which does not want to be found. <br><br>This void is absolute, until you step out at last. It will protect you in its embrace, cover you like a blanket. A comfort to you, and terror to your foes.",
+      "active_name": "Night Phantasms",
+      "active_effect": "Place 6 Phantasm Tokens in free and valid spaces within Sensors, even outside of line of sight. These tokens do not occupy spaces or impede characters in any way.<br><br>1/round, as a reaction at the start of any character’s turn, you may deploy one of your Drones to the location of a Phantasm Token, removing that token.<br><br>In addition, whenever you lose Hidden, you may teleport to the location of a Phantasm Token, removing that token.<br><br>In both cases, if the token’s space is occupied, you or the Drone instead occupy the nearest unoccupied space (your choice if there are multiple).",
+      "activation": "Quick"
+    }
+  },
+  {
+    "id": "moff_iridia_selene",
+    "license_level": 2,
+    "license_id": "moff_iridia_nyx",
+    "variant": "NYX",
+    "source": "IRIDIA",
+    "name": "Selene",
+    "mechtype": [
+      "Controller",
+      "Defender"
+    ],
+    "image_url": "https://www.dropbox.com/s/j0l3g3wnrsv5thc/Selene-min.png?raw=1",
+    "y_pos": 15,
+    "description": "One of the many, many prototypes of the Nyx, what would eventually become the Selene is unique amongst them in that it managed to have some measure of success. While considered a failure during testing, one very dedicated engineer decided to save it from being scrapped and take it on as his side project. <br><br>As a Disciple of the Silver Lady, he saw great promise in the way the mech seemed poised to exemplify the practices of his religion. For instance, gifting systems in order to activate them remotely was reminiscent of the figurines that Disciples traded - something that led to most Selene drones being shaped or painted like various animals, even if the reasons why aren’t always known. <br><br>It certainly wasn’t an easy task, though. The Selene didn’t even approach general production until long after the Nyx, and it almost didn’t get there at all. In one notable instance, a mishap with the transwarp grid prototype ended up scattering the entire workshop across half of Iridia - the Selene managed to be recovered, but charred parts can still be found today, even in the southern temperate zone. <br><br>While niche, the Selene has managed to eke out a noticeable ecosystem for itself on Iridia, mostly amongst Reclaimers and Disciples. A custom that’s arisen within their ranks has been for Selene pilots to exchange parts of their mechs whenever they may meet - and to always try and salvage those particular components to incorporate into a reprinted mech, even if it isn’t a Selene. The longest-surviving Selene frames are almost akin to museums, every piece representing a story. It’s something that may have arisen out of the Disciple culture, but it has managed to reach beyond its origins into something distinct. And that’s probably the best descriptor for the Selene as a whole.",
+    "mounts": [
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 9,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 5,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Token of My Esteem",
+        "description": "You may deploy or reposition (including from Talents) Drones or Deployables as if you were in the space of any allied Mech character. You still use your own Sensor value from that position. <br><br>When an allied character adjacent to one of your Drones makes a standard movement, the Drone can also move with that character as long as it doesn’t break adjacency, mirroring that character’s movement. This movement ignores Engagement and does not provoke reactions."
+      },
+      {
+        "name": "Lunar Warding",
+        "description": "1/round, when an allied character takes damage, choose one of your Drones adjacent to it. That Drone takes half of the damage, and the ally takes the remainder. This applies after all other reductions. <br><br>Whenever one of your Drones is destroyed, one ally adjacent to it gains 3 Overshield."
+      },
+      {
+        "name": "Silver Veil",
+        "description": "The Selene is Immune to Lock On."
+      }
+    ],
+    "core_system": {
+      "name": "Transwarp Grid",
+      "description": "A prototype for what would eventually become miniaturized into the Epione, a transwarp core was placed into the chassis of the mech as well as its drones. The matrix woven by the various transwarp points meant that the entire battlefield was able to be covered by the field. <br><br>Unfortunately, such designs were deemed to be impractical, as they were only able to pull people to the generators - rather than go exactly where needed - and the cores burned out after a single use.",
+      "active_name": "Radiant Pilgrimage",
+      "active_effect": "All allied characters other than the Selene’s Drones may teleport to a space of their choice adjacent to the Selene or one of its Drones.",
+      "activation": "Quick",
+      "passive_name": "Companion Drone",
+      "deployables": [
+        {
+          "name": "Companion Drone",
+          "type": "Drone",
+          "detail": "While allied characters are adjacent to the drone, they ignore Engagement while moving and making ranged attacks.",
+          "activation": "Quick",
+          "recall": "Quick",
+          "redeploy": "Quick",
+          "size": 0.5,
+          "hp": "5 + {grit}"
+        }
+      ],
+      "passive_effect": "Your mech contains an integrated Companion Drone. This drone may be deployed to any space within Sensors as a quick action. It shares your Evasion and E-Defense. <br><br>While allied characters are adjacent to the drone, they ignore Engagement while moving and making ranged attacks. <br><br>When you rest, perform a Full Repair, or Stabilize and mark a repair, your drone regains all HP and is automatically repaired if it was destroyed. <br><br>The Drone can be recalled or redeployed to a space within Sensors as a quick action."
+    }
+  },
+  {
+    "id": "moff_iridia_persephone",
+    "license_level": 2,
+    "license_id": "moff_iridia_persephone",
+    "source": "IRIDIA",
+    "name": "Persephone",
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "image_url": "https://www.dropbox.com/s/6amakoswgkcufof/Persephone-min.png?raw=1",
+    "y_pos": 50,
+    "description": "The Persephone has a rather odd place amongst the Demonworks. While it’s a purely Iridian frame - unlike something like the Nemesis - its origins lie outside both Hestia’s schematics and her metavault. It’s something entirely different. <br><br>The core of the frame is the Zero-Point Reactor, and Demonworks created everything around that piece of technology, were able to replicate it… but none could answer where it truly originated. <br><br>The reactor was recovered from a peculiar, unique Reckoning mech that was destroyed during one of their incursions. And, despite all tests, it appears to be perfectly safe when used with the proper precautions. No sign of nanites, no signs of hijacking, nothing. <br><br>And yet, there’s the perpetually hanging question. Where did the Reckoning get it? Was it crafted by them? Was it a gift from Hestia, or perhaps the Silver Lady? Or perhaps it was stolen from a cache of technology long lost from the original colonists, or maybe the crashed Harrison ship that brought Hestia. Whatever the answer, the implications are worrying. <br><br>In the meantime, the Persephone has received a provisional general release… which, unusually for the Demonworks, has been primarily offworld. Management is still wary of what could happen with the reactor’s safeties removed, so they prefer to have the mechs in the hands of far more experienced offworld pilots. <br><br>Several have been cautiously deployed on Iridia, though - in conjunction with the Epione - in order to help combat the Reckoning. Flash freezing a swarm and then shattering it with ordnance has become the preferred method of nanite disposal on the planet, but there are those who are still wary of allowing the Persephone too close to where it came from. One day it may decide that it wants to go back.",
+    "mounts": [
+      "Main",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 11,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Zero-Point Reactor",
+        "description": "When the Persephone is not in the Danger Zone, it gains +2 Armor. When the Persephone is in the Danger Zone, it gains +1 Speed and hostile characters that start their turn adjacent to it gain 2 Heat.",
+        "synergies": [
+          {
+            "locations": [
+              "heat"
+            ],
+            "detail": "When the Persephone is not in the Danger Zone, it gains +1 Armor. When the Persephone is in the Danger Zone, hostile characters that start their turn adjacent to it gain 2 Heat."
+          }
+        ]
+      },
+      {
+        "name": "Ice Trail",
+        "description": "The Persephone ignores difficult terrain and Engagement when it Boosts."
+      },
+      {
+        "name": "Thermal Excitation",
+        "description": "1/round, when the Persephone clears at least 1 Heat, deal 2 Heat to a character within range 3."
+      }
+    ],
+    "core_system": {
+      "name": "Zero-Point Reactor",
+      "description": "The core around which the Persephone is designed, the Zero-Point reactor reacts peculiarly based on how much heat is dumped into it. At low levels, a thick layer of frost protects the Frame, but as it heats up it instead supercharges the mechanisms. <br><br>The amount of power poured into the reactor requires severe regulation - if pushed too far, the Zero-Point causes an abrupt nullification of all heat in the area in response. This is extremely hazardous to any not properly protected, and is ill-advised to attempt deliberately.",
+      "active_name": "Absolute Zero",
+      "active_effect": "The Persephone and all characters within a Burst 2 clear all heat. Characters other than the user take 2 AP Energy damage for each point of heat that they clear.<br><br>All characters in the Burst other than the user must make an Engineering save or be Immobilized until the end of the scene or until they pass a Hull save as a quick action. Characters that did not clear any heat (including characters without a Heat Cap) make the initial save with +1 Difficulty.",
+      "activation": "Full"
+    }
+  },
+  {
+    "id": "moff_iridia_psyche",
+    "license_level": 2,
+    "license_id": "moff_iridia_psyche",
+    "source": "IRIDIA",
+    "name": "Psyche",
+    "mechtype": [
+      "Support",
+      "Controller"
+    ],
+    "image_url": "https://www.dropbox.com/s/d1y6i1wtcrgcqxz/Psyche-min.png?raw=1",
+    "y_pos": 17,
+    "description": "While the Astraea is the face of mechs on Iridia, and is the most popular overall, the Psyche is often considered the heart. Of the original six Demonworks mechs that were produced during the conflict with Union, the Psyche managed to beat out the other less-militarized mechs in the minds of the people by having a more distinct presence. <br><br>While a superficial consideration, the Iris’ scanning abilities and the Ersa’s constructions just weren’t the obvious indications of Hestia’s favour that shimmering energy shields and teleporting mechs around were. It was the impossible made possible by Her will, and that was what Iridia needed to see. <br><br>Despite the Demonworks pushing the Artemis and Epione as new and improved guardians of the planet, it really hasn’t proved too successful outside of the Church. Ordinary Iridians seem to be wildly more comforted by the compact Psyche, rather than towering statues loaded with weapons that remind them of the hardship that they’ve recently gone through. <br><br>Union engineers have raised concerns about the frame’s ability to warp space, citing apprehension about the stability of reality, but so far there hasn’t appeared to be any noticeable deterioration of space’s cohesion. Regardless, all offworld Psyche pilots are required to submit periodic sensor logs to the USB in order to confirm that remains the case. <br><br>The red tape hasn’t stopped the Psyche from being one of the more heavily exported frames, as its flexibility gives the units it’s assigned to a great deal of staying power in a variety of situations.",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 12,
+      "heatcap": 4,
+      "repcap": 5,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Distributive Matrix",
+        "description": "Whenever you or an ally within Sensors spends a repair, you and all Mech allies within Sensors gain 4 Overshield."
+      },
+      {
+        "name": "Metafold Override",
+        "description": "1/round, when you target another character with a tech action, you may push that character up to 2 spaces in any direction before making the attack or otherwise resolving the action - the action continues even if this moves them in such a way they would no longer be a valid target - whether because of line of sight, range, Sensors, entering an area forbidding tech actions, or any other effect.",
+        "use": "Round",
+        "synergies": [
+          {
+            "locations": [
+              "tech"
+            ],
+            "detail": "1/round, when you target another character with a tech action, you may push that character up to 2 spaces in any direction before making the attack or otherwise resolving the action - the action continues even if this moves them in such a way they would no longer be a valid target - whether because of line of sight, range, Sensors, entering an area forbidding tech actions, or any other effect."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Dimensional Topographic Connection Nexus",
+      "description": "Collating data from maneuvering known points around the battlefield, this device, known for short as the “Rift Nexus”, literally unravels space around the target, briefly connecting it with a discontiguous location. Swift foes can evade the portal’s creation, but feedback containment ensures collected information is not wasted.",
+      "active_name": "Rift Stabilization",
+      "active_effect": "Immediately gain 5 charges for your Rift Nexus, up to a maximum of 5. For the rest of the scene, the Rift Nexus gains the Accurate tag. In addition, when you hit with your Rift Nexus, you may treat it as though it has fewer charges than it currently has (to a minimum of 1). If you do this, reduce the number of charges it has by the chosen amount, rather than reducing it to 0.",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "integrated": [
+        "moff_psyche_integrated"
+      ]
+    },
+    "counters": [
+      {
+        "id": "moff_ctr_rift_nexus",
+        "name": "Rift Nexus",
+        "default_value": 0,
+        "min": 0,
+        "max": 5
+      }
+    ]
+  },
+  {
+    "id": "moff_iridia_psyche_ii_forsaken",
+    "license_level": 2,
+    "license_id": "moff_iridia_psyche",
+    "variant": "PSYCHE",
+    "source": "IRIDIA",
+    "name": "Psyche Mk. II “Forsaken”",
+    "mechtype": [
+      "Support",
+      "Controller"
+    ],
+    "image_url": "https://www.dropbox.com/s/uk1vl6cyjwqdsp6/Psyche%20Forsaken-min.png?raw=1",
+    "y_pos": 15,
+    "description": "Every so often a Psyche is forged that is simply wrong. Everything is in its place, every wire, every plating… but it just does not work as it should. Where it should react to healing, it instead only responds to the suffering it encounters. Whenever it brings people closer together, it does so only to further isolate and shatter them. A legacy of sorrow. <br><br>The matter is rarely spoken of, and any of these ‘Forsaken’ that are discovered tend to be scrapped, but some always make it through. Those who have considered the matter wonder if it’s a representation of Iridia’s shame. The collective consciousness of those who feel that they’ve failed Hestia. <br><br>The more worrying thought is that without Hestia, everything fueled by her magic will slowly erode away, stop working, or be corrupted. Perhaps this is just a harbinger of what’s to come, and eventually every mech will emerge wrong. Discordant. <br><br>The possibility has led to a lot of quiet panic amidst Demonworks engineers, while it remains a secret to everyone else. They don’t know how anything works, they certainly can’t fix anything… they just have to hope that things continue to work as they do. And things don’t get any worse. <br><br>But no matter how hard they hope, the Forsaken remains, a reminder that the Iridia of today is built on the remnants of a shattered god. A broken faith. A tenuous hope. All they can do is try their best. <br><br>But that may not be enough.",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": 2,
+      "save": 11,
+      "speed": 5,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Shattered Soul",
+        "description": "When you or a character within Sensors who has a maximum Structure value greater than 1 loses Structure, you or one ally within Sensors gains 4 Overshield."
+      },
+      {
+        "name": "Involuntary Abhorrence",
+        "description": "1/round, when you target another character with a tech action, you may push all characters adjacent to them 1 space directly away from the target after resolving the action.",
+        "use": "Round",
+        "synergies": [
+          {
+            "locations": [
+              "tech"
+            ],
+            "detail": "1/round, when you target another character with a tech action, you may push all characters adjacent to them 1 space directly away from the target before making the attack or otherwise resolving the action."
+          }
+        ]
+      },
+      {
+        "name": "Pariah",
+        "description": "You are Immune to damage, heat and Burn from allied characters, but may never benefit from their Traits."
+      }
+    ],
+    "core_system": {
+      "name": "Technological Nullifier ",
+      "description": "A corruption of the rift nexus, the technological nullifier opens a gate through a shattered realm… and holds it open, draining energy from surrounding people and places into it. <br><br>Those caught in the area report a true feeling of helplessness, as systems refuse to respond, and every part of their mech feels like it’s in the process of shutting down - and might take their bodies and souls along with it.",
+      "active_name": "Dead Zone",
+      "active_effect": "You generate a Blast 3 technological dead zone within Sensors that lasts until the end of the scene. <br><br>Hostile characters entirely within the zone may not take tech actions and automatically fail Systems checks and saves. <br><br>Hostile characters that begin their turn even partially within the zone become Impaired, which may be cleared with a successful Systems save at the end of their turn. ",
+      "activation": "Full",
+      "use": "Encounter"
+    }
+  },
+  {
+    "id": "moff_ipsn_silver",
+    "license_level": 2,
+    "license_id": "moff_ipsn_silver",
+    "source": "IPS-N",
+    "name": "Silver",
+    "mechtype": [
+      "Defender",
+      "Controller"
+    ],
+    "image_url": "https://www.dropbox.com/s/w4tqmfkstjtfv83/Silver-min.png?raw=1",
+    "y_pos": 20,
+    "description": "When IPS-N and the Demonworks made their agreement, included was a clause that IPS-N wouldn’t touch Demonworks tech without permission. Of course, that was a complete lie - and the Silver is the proof. <br><br>Once IPS-N discovered that the Iridian engineers had essentially no idea about anything that Hestia had left them, they took it into their own hands. A cache was slowly amassed of purloined components from destroyed or ‘missing’ Demonworks frames. And the testing began. <br><br>Unfortunately, testing is much harder when nothing quite adheres to physics, and most tests ended in disastrous failure. Rumours began to spread that the frame was cursed, or that they were incurring the wrath of the goddess who had created the technology. To the engineers who remained on the project, though, it was a mark of pride. They were creating a machine that was in defiance of the gods, a triumph of metal and of human ingenuity. Granted, the majority of the prototypes ended with them imploding out of reality, but confidence was high. <br><br>In the end, though, it was mostly luck that caused the project to see success. One particular combination managed to only implode slightly, leaving it in a peculiarly balanced physical and paraphysical state. Nobody’s exactly sure why or how this happened, but by that point they were prepared to just say ‘good enough’ and call it a day. More trouble than it was worth, probably, but that’s never stopped the corpro before. <br><br>The Silver has seen only very limited release thus far, mostly to agents who seem to have a particular knack for coming out of unusual situations more-or-less unscathed. IPS-N’s hoping that one or another of them will stumble upon how to stabilize some of the weirdness of the frame, but they’re not exactly holding out much hope. <br><br>Many Silver pilots grow to have a sort of fondness for the weird happenings that seem to occur around their frames, even the paracausal storms that occasionally break loose. While inconvenient at the time, especially if they happen inside a hanger, the storms aren’t too dangerous and also have a habit of depositing random objects around. <br><br>Where this detritus comes from is a significant question, given some of it is identifiable as originating from human colonies, while other things seem to have no known origin at all. Regardless, many Silver pilots seem to enjoy making a bit of a hoard out of the most interesting things, even if they have no idea what they actually are.",
+    "mounts": [
+      "Main",
+      "Main",
+      "Flex"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 12,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": -1,
+      "save": 11,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Legionspace Static",
+        "description": "Tech attacks from hostile characters treat the Silver as Invisible."
+      },
+      {
+        "name": "Edgewise to Reality",
+        "description": "On its turn, the Silver ignores difficult terrain and may move through any obstructions (including hostile characters), though it may not end its movement in obstructed spaces."
+      },
+      {
+        "name": "Weak Computer",
+        "description": "The Silver has +1 Difficulty on Systems checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "systems",
+              "skill_check"
+            ],
+            "detail": "The Silver has +1 Difficulty on Systems checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Profane Amalgam",
+      "description": "The Silver contains components from many different Iridian frames, all put together in a way that no sane - or insane - person would consider workable. And yet… it’s technically stable. <br><br>It’s a miracle that the frame hasn’t yet torn itself apart by the paracausal forces created by the interplay of its systems, but it’s only one moment away from causing some sort of implosion of reality. <br><br>One tiny push. <br><br>And then it’s a storm like no other.",
+      "active_name": "Paracausal Convergence",
+      "active_effect": "The Silver becomes Intangible, and creates a Burst 3 around itself, which moves with it and affects non-Intangible characters as well. Any non-Intangible character in this burst becomes Intangible until they leave the burst. <br><br>In addition, the Silver’s Corrupted Providence affects hostile characters within range 3 while this is active. <br><br>At the end of its turn while this effect is active, the Silver takes 1 Heat. This effect lasts until the end of the scene, the Silver overheats, or until it deactivates it as a protocol.",
+      "use": "Encounter",
+      "activation": "Protocol",
+      "passive_name": "Corrupted Providence",
+      "passive_effect": "Hostile characters adjacent to the Silver deal half damage to any character other than the Silver."
+    }
+  },
+  {
+    "id": "moff_iridia_endeavour",
+    "license_level": 2,
+    "name": "Endeavour",
+    "source": "IPS-N",
+    "license_id": "mf_lancaster",
+    "variant": "LANCASTER",
+    "mechtype": [
+      "Support"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/b5sbu9rqh6d25i4unldwd/Endeavor-min.png?rlkey=ljqdg4cz49nrxaj552tt7o0a9&raw=1",
+    "y_pos": 38,
+    "description": "The Endeavour first saw use as a jury-rigged salvage and rescue chassis by enterprising - and isolated - starships outside of Core space. The Lancaster has always been a robust and reliable framework, so its repair capabilities were stripped out in order to fit space-capable thrusters in lieu of any appropriate retrieval vessel. When you’re out in the middle of nowhere, you have to make do with what you can. <br><br>This amalgamation was never intended to be used in battle, but - as is the case with much of IPS-N’s history - it regularly found itself being used in ways it was never intended. …and that’s beyond the fact that its entire existence was never intended in the first place. Thankfully, its reliability and all-theater capabilities proved reasonably capable as support for both space and ground based exploits. <br><br>IPS-N eventually caught wind of these successful modifications, and began producing dedicated Endeavour frames, fully intended to be used as such with no modifications required. The further reinforcement of the Lancaster’s insulation with heavily-armoured thermal tile has reduced re-entry incidents down to near-zero, and the integration of purpose-built void tethers has drastically lowered the rate of cargo loss. All in all, a great win for efficiency. And survivability. <br><br>Today, the Endeavour can be found in civilian roles around many spaceborne projects, acting as a rapid-response unit in any emergency that may occur. It also has a place on the battlefield - though, less common - in a respectable support role along with its Lancaster and Kidd siblings. And it will always have a place in the hearts of those lonely starships plying the frontier.",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 7,
+      "repcap": 7,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 6,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Insulated",
+        "description": "The Endeavour has Immunity to burn."
+      },
+      {
+        "name": "Astral Maneuvering Thrusters",
+        "description": "The Endeavour may choose to count any and all of its movement as flying. While in zero-g, the Endeavor can hover.",
+        "synergies": [
+          {
+            "locations": [
+              "move"
+            ],
+            "detail": "The Endeavour may choose to count any and all of its movement as flying. While in zero-g, the Endeavor can hover."
+          }
+        ]
+      },
+      {
+        "name": "Aerial Transport",
+        "description": "The Endeavour is still able to fly while carrying, grappling, or otherwise transporting allied characters or objects, even if they are larger than Size 1/2. <br><br>If the Endeavour is more than 3 spaces above the ground, allied characters transported in any way may not make ranged attacks against any character that is not flying."
+      }
+    ],
+    "core_system": {
+      "name": "Void Tethers",
+      "description": "While the Endeavour’s cargo cables usually require one or more external spacers to securely fasten, skilled pilots can at times snag a target that’s willing to play along for a few moments. <br><br>This maneuver isn’t always the safest for the Endeavour, but the types of pilots to pull this off usually aren’t the type to care what kinds of obstacles are around.",
+      "active_name": "Emergency Extraction",
+      "active_effect": "The Endeavour flies its speed. One allied character that the Endeavor moves adjacent to during this movement, ignoring elevation, is placed adjacent to one space the Endeavour ends this movement in. The ally’s movement counts as involuntary and, if they are in the air at the end of it, they fall and take no damage. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Quick",
+      "use": "Round"
+    }
+  },
+  {
+    "id": "moff_ssc_luna",
+    "license_level": 2,
+    "license_id": "moff_ssc_luna",
+    "source": "SSC",
+    "name": "Luna",
+    "mechtype": [
+      "Striker"
+    ],
+    "image_url": "https://www.dropbox.com/s/2edijewitvh4ruq/Luna-min.png?raw=1",
+    "y_pos": 23,
+    "description": "The Luna is marketed towards those who want their bodyguard to be a moment away, yet unobtrusive. It fades from sight, almost from reality, yet is always ready to spring into action - ready to finally take center stage. A mech for those who don’t want to see mechs around, yet still want the protection of one. <br><br>It also has an uncanny - and concerning - presence in legionspace; a digital shadow that flickers through the technological realm to strike at foes. It's unclear how much identity or intellect these shadows have, but no two Lunas have exactly the same one. <br><br>Officially, the frame is a LUX-Iconic remix of the Metalmark and Mourning Cloak, intended for exclusive clientele as opposed to general milspec security. There are whispers, though, that the Luna’s production is just a test run for integrating a particular brand of biotics into mechs. One that perhaps doesn’t exactly follow the standard rules of reality, so is rather more… volatile to work with. <br><br>While SSC remains adamant that they’ve not established any activities on Iridia, Union authorities have noticed that the new bio-cam debuting on their prototype Luna models bears a striking resemblance to the Iridian lifeforms known as Ephemera. The corporation denies this, and insists it's proprietary technology. <br><br>Obviously, SSC is lying. Nobody needs to believe them, though, they just need the plausible deniability and for nobody to care enough. And should the Luna’s run prove successful, it could open the door to further models, taken from the paracausually warped fauna of a planet that has left that resource completely untapped.",
+    "mounts": [
+      "Flex",
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Legionspace Shadow",
+        "description": "1/round, when you make a melee attack against a hostile character, your next tech attack (against any target) may deal 1d6 AP energy damage on a hit, in addition to its other effects.",
+        "use": "Round",
+        "synergies": [
+          {
+            "locations": [
+              "weapon",
+              "tech_attack"
+            ],
+            "weapon_types": [
+              "Melee"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "1/round, when you make a melee attack against a hostile character, your next successful tech attack (against any target) may deal 1d6 AP energy damage in addition to its other effects."
+          }
+        ]
+      },
+      {
+        "name": "Ephemeric Bio-Cam",
+        "description": "Attack rolls against the Luna from the nearest hostile character treat it as Invisible. If multiple hostile characters are tied for nearest, this affects all of them."
+      },
+      {
+        "name": "Fragile",
+        "description": "The Luna has +1 Difficulty on Hull checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "hull",
+              "skill_check"
+            ],
+            "detail": "The Luna has +1 Difficulty on Hull checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Stepspace Couplet",
+      "description": "When the Luna clashes with another, you could almost think that the pair were one, as the mech swirls and cavorts around its chosen partner. <br><br>But the Luna is fickle, and likes to be center stage. Those who take their eyes off it, who let their attention wander, may find themselves thrust into the fray. For the Luna skirts at the edge of the senses, and even a moment’s inattention may cost you dearly.",
+      "active_name": "Battle Dancer",
+      "active_effect": "",
+      "activation": "Reaction",
+      "active_actions": [
+        {
+          "name": "Battle Dancer",
+          "activation": "Reaction",
+          "trigger": "A hostile character within Sensors and line of sight makes an attack that doesn’t include you",
+          "detail": "Effect: Teleport to a free space adjacent to the triggering character, before the attack resolves. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.<br><br><i>Note: Universal Compatibility can be triggered by this ability even though free actions can normally only be taken on your turn.</i>"
+        }
+      ]
+    }
+  },
+  {
+    "id": "moff_iridia_rosy_maple",
+    "license_level": 2,
+    "name": "Rosy Maple",
+    "source": "SSC",
+    "license_id": "mf_dusk_wing",
+    "variant": "DUSK WING",
+    "mechtype": [
+      "Controller",
+      "Support"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/xsefu1w1100zrxais4n36/Rosy-Maple-min.png?rlkey=wdofh9v9g7msk9vqhsxdol66x&raw=1",
+    "y_pos": 23,
+    "description": "The Rosy Maple is another result of the DHIYED-derivation project that created the Dusk Wing. It never reached the lofty heights of its sister frame due to particular quirks that never managed to quite get ironed out, but eventually deployment was authorized to select security groups. <br><br>While the Dusk Wing’s technology tended to focus on imposing its technological constructs on reality, the Rosy Maple was designed for the opposite - shunting physical objects at least partially into the digital world, in order to let them be more easily modified. <br><br>Unfortunately, early tests proved to be rather disastrous, with DHIYED seeming to have one last laugh. More than once, people would disappear moments before exiting the frame, their electronic records similarly wiped. Other times, physical objects became stuck partially phased in digital space, unable to be moved out of the way or otherwise altered without injecting code into it. Having to learn how to program two types of tables became a common joke during testing. <br><br>It never became clear exactly why the incidents became less common, before stopping entirely. There are some who suspect that it’s just a false sense of security, given that there’s no clear correlation with anything that they tinkered with. <br><br>The fact that pilots no longer appear to vanish, however, has given the frame the provisional authorization to be produced in limited quantities as an alternative to their existing Dusk Wing chassis. If this stability holds, the Rosy Maple may eventually expand into its own sub-line, but that’s currently not being considered for liability reasons.",
+    "mounts": [
+      "Main",
+      "Flex"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 12,
+      "heatcap": 4,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 2,
+      "save": 11,
+      "speed": 6,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Signal Relay",
+        "description": "1/round, when the Rosy Maple hits a character with a tech attack, that character counts as within the Sensors of all the Rosy Maple’s allies until the start of the Rosy Maple’s next turn.",
+        "synergies": [
+          {
+            "locations": [
+              "tech_attack"
+            ],
+            "detail": "1/round, when the Rosy Maple hits a character with a tech attack, that character counts as within the Sensors of all the Rosy Maple’s allies until the start of the Rosy Maple’s next turn."
+          }
+        ]
+      },
+      {
+        "name": "Cyberform",
+        "description": "On the Rosy Maple’s turn, any attack that targets its evasion instead targets its e-defense, and any Hull, Agility or Engineering Save or Check it has to make instead becomes a System Save (if it is a Save) or System Check (if it is a Check).",
+        "synergies": [
+          {
+            "locations": [
+              "active_effects"
+            ],
+            "detail": "On the Rosy Maple’s turn, any attack that targets its evasion instead targets its e-defense, and any Hull, Agility or Engineering Save or Check it has to make instead becomes a System Save (if it is a Save) or System Check (if it is a Check)."
+          }
+        ]
+      },
+      {
+        "name": "Fragile",
+        "description": "The Rosy Maple receives +1 difficulty on Hull checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "hull",
+              "skill_check"
+            ],
+            "detail": "The Rosy Maple receives +1 difficulty on Hull checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Digital Fractal",
+      "description": "“It’s a shadow, an imperfect reflection. But I think, in the end, that’s more worrying. Because we project our thoughts onto the unknown - our hopes, our doubts, our fears. And through that, it knows us.” <br><br>“Why did the pilots disappear? What was the pattern? Was there one? If we saw it in full, I think we’d understand. But what if understanding it gives it strength?” <br><br>“Humans are naturally curious. We want to know everything. We devour every lesson, we seek to understand every mystery. But maybe there are things that should not be sought out. That should remain buried.”",
+      "active_name": "Source Purge",
+      "active_effect": "The Rosy Maple makes an Invade against a character within Sensors, ignoring Immunity to tech actions, which automatically hits. Choose one additional Invasion option to apply to the target. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "use": "Round",
+      "activation": "Quick Tech",
+      "passive_name": "Eternal Matrix",
+      "passive_effect": "Gain the following option for Invade: <br><br>Sensor Shroud: Until the end of the target’s next turn, they may not make any attacks that do not consume Lock On, unless they have already made an attack that consumed Lock On against that character during that action.",
+      "passive_actions": [
+        {
+          "name": "Sensor Shroud",
+          "activation": "Invade",
+          "detail": "Until the end of the target’s next turn, they may not make any attacks that do not consume Lock On, unless they have already made an attack that consumed Lock On against that character during that action."
+        }
+      ]
+    }
+  },
+  {
+    "id": "moff_horus_phane",
+    "license_level": 2,
+    "license_id": "moff_horus_phane",
+    "source": "HORUS",
+    "name": "Phane",
+    "mechtype": [
+      "Controller",
+      "Striker"
+    ],
+    "image_url": "https://www.dropbox.com/s/4c5ea0a81u9lz71/Phane-min.png?raw=1",
+    "y_pos": 29.5,
+    "description": "LOG 2702-3: [So, we got the weirdest thing today. A request for urgent assistance from someone claiming to be a forward outpost that we didn’t even know we had. But all the codes were legit, and our records showed there was a base there. Just... nobody remembered it existed. Wild.] <br><br>LOG 2702-4: [Okay, yeah. That’s our outpost, definitely. All our gear, our prefabs, everything. Why the hell didn’t any of us remember this? It isn’t that small. Can’t tell from here if there are any survivors.] <br><br>LOG 2702-5: [It’s pretty grim, with most of everything destroyed. But we’ve found a few people, seeming rather dazed and confused. One said that he recognized me, claimed that we were best friends, but... I’ve never seen the guy before in my life.] <br><br>LOG 2702-6: [God, this place is creepy. Everything about it seems wrong. I glance at some burnt out wreck the wrong way, and then there I am thinking about how we’re all going to die like that. How this fight is futile, and never ending. Seems like it’s getting to a lot of people. I’ve had to shake a few of the squad myself who were getting lost in thought, smiles on their faces. Madness. I’ll be glad to get clear.] <br><br>LOG 2702-7: [Well, we found a bit of surviving video footage of whatever it was that hit this place. Though, even having seen it, I have no idea what I just saw. Just this towering something, with another one visible in the background. Just watching it leaves this acrid tang coating my tongue. It feels like I’m a witness to something that shouldn’t be happening, that the world is crying out at.] <br><br>LOG 2702-8: [We’re finally leaving. God, I wish I had enough ordnance here to just raze this place to the ground. It feels tainted.] <br><br>LOG 2702-9: [What in the world have I been writing? I don’t recall making these logs. Besides, they’re all wrong. Sure, we got some disoriented soldiers stumble in today, but they were just scouts. There wasn’t a base, or an expedition, or anything. They just came back from patrol. We would have remembered something that crazy.] ",
+    "mounts": [
+      "Main",
+      "Main",
+      "Flex"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Memory Hole",
+        "description": "1/round, as a quick action when you hit a hostile character with an attack, they become Intangible until the start of their next turn.",
+        "use": "Round"
+      },
+      {
+        "name": "Ephemeral",
+        "description": "If the Phane explodes, its wreck is destroyed, or it otherwise ceases to exist, it fades from everyone’s memory - except for the pilot’s - until it is rebuilt."
+      },
+      {
+        "name": "Slow",
+        "description": "The Phane has +1 Difficulty on Agility checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "agility",
+              "skill_check"
+            ],
+            "detail": "The Phane has +1 Difficulty on Agility checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Prognostic Mnemotech",
+      "description": "We are but our memories. The past dictates the future. That is the natural order of things. <br><br>But if you have the strength, you can see the truth. That past, present, future, all are one. Cast the future as a memory, and you can ensure it happens. Rewrite that memory, and it can change what happens.",
+      "active_name": "Paradox Chronofractal",
+      "active_effect": "Until the end of the scene, you may accrue up to three instances of Time Debt instead of one. In addition, whenever you remove Time Debt, you may teleport up to 2 spaces. Removing Time Debt is not subject to duplicate action limits.",
+      "use": "Encounter",
+      "activation": "Free",
+      "passive_name": "Borrowed Time",
+      "passive_effect": "As a free action, you can make the Phane reach into its future and borrow some time. When you do so, you gain an additional quick action this turn - which must still obey duplicate action limits, and may not be used to Skirmish - and accrue one Time Debt. You may only have one instance of Time Debt at a time, and may not reach into the future more if you’ve reached your limit. <br><br>While you have any Time Debt, you are Shredded, which may not be cleared until you no longer have any Time Debt. <br><br>You may spend a quick action to remove one Time Debt that you’ve accrued and choose one of the following benefits: <br>- Clear 2 Heat <br>- Gain 2 Overshield <br>- Gain +2 Accuracy to the next check or save that you make before the start of your next turn <br><br>You may not remove Time Debt on a turn that you gained Time Debt, nor may you gain further Time Debt on a turn that you removed Time Debt. <br><br>At the end of the scene, lose all remaining Time Debt that you’ve accrued."
+    }
+  },
+  {
+    "id": "moff_iridia_crysmal",
+    "source": "HORUS",
+    "name": "Crysmal",
+    "license_id": "mf_kobold",
+    "variant": "KOBOLD",
+    "mechtype": [
+      "Controller",
+      "Support"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/i60bmgzubdu7t27y54abz/Crysmal-min.png?rlkey=wam5ipfi015zt7r0tl3s30ill&raw=1",
+    "y_pos": 29.5,
+    "license_level": 2,
+    "description": "Crysmals are sometimes formed when a Kobold is birthed amid a mineral-rich area. While their capabilities are superficially similar, the Crysmal is a machine that brings far greater loathing. For the Crysmal’s very presence begins to warp inorganic matter into mirrors of the minerals that created it. It is a salting of the land that can only be stopped - though not reversed - by either slaying or driving off the Crysmal. Though the latter is only a temporary, and local, solution. <br><br>Thus the Crysmal is worse than a weapon of war, it is a crime against nature. A mechanized virus, a perversely beautiful blight, one whose light corrupts the earth itself. Unless a Crysmal incursion is defeated quickly, the defenders will find their land warped and barren for a generation or more, inimical to life. <br><br>It is for this reason that Crysmals are so rarely found amongst defenders. Their sheer presence forces aggression, else a user’s own lands will suffer the same crystalline fate as everything around the frame must. Consequently, Crysmal pilots tend to be ostracized by many, no matter their skills at fighting. They are wielding a living biohazard, and people are justified for giving it a wide berth. <br><br>There is one additional, particularly dangerous, side effect that the Crysmal has been reported to cause on occasions. Normally when nanites become infected by its crystals, they simply shut down, no longer capable of functioning. But, in rare circumstances, the swarm can manage to stay active, infused with some of that corruptive energy. It becomes even more dangerous as it sweeps across landscapes, for it devours both organic and inorganic materials, turning them into crystals. This “gemwash” leaves behind in its wake picturesque scenes, frozen eternally in their final moments. Beautiful wastelands of death.",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 0.5,
+      "stress": 4,
+      "structure": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Crystalline Infection",
+        "description": "1/round, when an object, Deployable, terrain or character is destroyed within the Crysmal’s Sensors, the triggering target shatters into a cascade of glittering crystals in a Burst 1 around itself. Any hostile character within this burst receives Lock On.",
+        "use": "Round"
+      },
+      {
+        "name": "Refractive Body",
+        "description": "The Crysmal has resistance to Energy damage."
+      },
+      {
+        "name": "Viral Shatter",
+        "description": "Whenever the Crysmal takes Structure damage, it creates a Size 1 crystal shard in a free space within Sensors. This terrain has 10 HP, evasion 5, and grants hard cover."
+      }
+    ],
+    "core_system": {
+      "name": "Paranematic Resonance",
+      "description": "The Crysmal is a natural vector for the minerals that created it - it passively begins to reshape the molecular structure of most inorganics around itself into copies of the unique composition of the crystals embedded in it. <br><br>These gemstones all retain a link to the Crysmal that created them, allowing skilled pilots to influence their growth. In this way, they can form a shell over a target - shielding them instead of hindering their function. ",
+      "active_name": "Crystalline Shield",
+      "active_effect": "An allied mech character within Sensors gains Grit+4 Overshield. Whenever a hostile character reduces this Overshield, that character gains Lock On. If they already have Lock On, they take 2 heat instead. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Quick",
+      "use": "Round"
+    }
+  },
+  {
+    "id": "moff_ha_castilla",
+    "license_level": 2,
+    "license_id": "moff_ha_castilla",
+    "source": "HA",
+    "name": "Castilla",
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "image_url": "https://www.dropbox.com/s/ab6wmo89c6rlo76/Castilla-min.png?raw=1",
+    "y_pos": 29.5,
+    "description": "Castilla frames are engines of destruction, designed to remove fortifications out from around defenders if the defenders can’t be removed from fortifications. It sends a blunt message, that the attackers don’t even care enough to capture things. They just want to annihilate it. <br><br>While ostensibly named after some obscure HA general who really doesn’t deserve it (and who may have, in fact, been a complete fabrication), anyone familiar with the Armory’s interactions with Iridia can immediately see a different story. <br><br>During the Iridian war, one of the Union commanders buckled under Hestia’s mental pressures and broke away, resolving to burn everything down before everyone could be compromised. Notorious for his use of incendiaries and scourer nanites, Lucius Castilla - the scourge of Iridia - cut a swathe of destruction across the planet, the effects of which are still being harshly felt; Iridia’s capital has not yet healed the scars from his callous invasion, and the dormant nanites his forces left behind formed the basis for the Reckoning. It is a name that Iridians hate. And they do not hate lightly. <br><br>And so the nature of the mech as a hive of nanotech, and especially the selling of it solely in markets where Demonworks frames are present, make the frame’s namesake immediately clear - though it perhaps goes beyond that. There have been hints that the Castilla weaponizes nanites recovered from the Reckoning, modified and barely constrained. Of course HA denies these accusations quite vigorously, but there are several similarities in the strains that go past coincidence, and Harrison’s grudge against Iridian independence is quite well known. <br><br>Because of this, and despite HA’s best efforts, rumours continue to spread that this foray into ‘alternative battlefield payloads’ is a way to test widespread blackwash override. If it’s successful, it means that the Armory would be able to effectively (and deniably) hold Iridia hostage… with presumably an Armory force so kindly offering to solve this “rogue nanite” problem in exchange for falling under Purview's influence. As they believe it rightfully should have been from the start.",
+    "mounts": [
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 7,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Nano-Adaptive Assault",
+        "description": "Whenever you cause a hostile character to make a Save, you may take 2 heat to change the Save to your choice of a Systems Save or Engineering Save."
+      },
+      {
+        "name": "Ravaging Swarm",
+        "description": "1/round, when a hostile character fails a save caused by the Castilla or the Castilla scores a critical hit with a Nexus Weapon or a weapon with the Smart tag, it creates a puddle of nanites in a Burst 1 around the character, which lasts until the start of the Castilla’s next turn. <br><br>A hostile character that enters this zone for the first time in a round or ends its turn in the zone becomes Impaired until the end of its next turn.",
+        "use": "Round"
+      },
+      {
+        "name": "Exposed Reactor",
+        "description": "The Castilla has +1 Difficulty on Engineering checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "engineering",
+              "skill_check"
+            ],
+            "detail": "The Castilla has +1 Difficulty on Engineering checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Hellfire Excitation",
+      "description": "Disengaging limiters, the Castilla can draw upon the swarm's true power for a short time. It comes at a price, though, as the nanites begin to consume the mech from the inside as fuel.",
+      "active_name": "Pyroclasm Overdrive",
+      "active_effect": "For the rest of the scene, the Castilla gains the following effects: <br><br>- The zones created by Ravaging Swarm last until the end of the scene. <br>- The Castilla’s Nexus Weapons and weapons with the Smart tag gain the Overkill tag. <br>- Whenever a character fails a save caused by the Castilla, or the Castilla hits a character with a Nexus weapon or a weapon with the Smart tag, you may push the triggering character 1 space in any direction. <br>- If the Castilla suffers a reactor meltdown, it deals Burn instead of explosive damage.",
+      "use": "Encounter",
+      "activation": "Protocol"
+    }
+  },
+  {
+    "id": "moff_iridia_jeanne",
+    "license_level": 2,
+    "name": "Jeanne",
+    "source": "HA",
+    "license_id": "mf_napoleon",
+    "variant": "NAPOLEON",
+    "mechtype": [
+      "Defender",
+      "Support"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/dfqv2ivlsdmt4dtmh259z/Jeanne-min.png?rlkey=thjpdoww4r245zggmrm5edbez&raw=1",
+    "y_pos": 29.5,
+    "description": "While the Napoleon chassis was capable enough, the Trueblack Aegis severely constrained the user’s capabilities while active. The Jeanne was the Armory’s attempt to bypass these limitations, creating a far more versatile Aegis. Sunzi technology even allowed for short range microgates, allowing the Aegis - and other protective technologies - to extend to allies. While this projection supposedly doesn’t touch the intervening realspace, eyewitnesses often report seeing afterimages in the air during operation, as though left by arcs of light. <br><br>Unfortunately, history would not prove kind to the Jeanne. The enhanced Aegis systems proved impractical to maintain for any significant duration, even powered by a mech’s coldcore reactor. Technically fulfilling requirements was not enough for the Armory, and development officially ceased. Officially, the only remnants of the project are the next-generation Aegis systems, currently being upscaled for use on battleships. <br><br>Unofficially, some Jeanne schematics have made their ways out into the world, finding people with the proper skill and temperament. Some say that the testing team didn’t want to have their hard work be scrapped. Others whisper that the Jeanne has a spirit all of its own, one that yearns to defend others, and found its own way into the aether. <br><br>Regardless of the truth, the frame can be occasionally found in the hands of bodyguards, would-be knights, or others with courage, kindness, or sacrifice in their hearts. The Jeanne may have been cast aside as a failure, but bravery will always find a way.",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 3,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Antipolarity Shielding",
+        "description": "When you or an adjacent ally Brace, that character gains Immunity to all effects of the triggering attack except for damage and Heat.",
+        "synergies": [
+          {
+            "locations": [
+              "brace"
+            ],
+            "detail": "When you or an adjacent ally Brace, that character gains Immunity to all effects of the triggering attack except for damage and Heat."
+          }
+        ]
+      },
+      {
+        "name": "Flash Aegis",
+        "description": "1/round, when you use a System with the Shield tag as a quick or full action, an arc of energy jumps from you. If the System targets an allied character, the arc jumps to the target, otherwise it jumps to any allied character within Sensors. <br><br>The character the arc jumps to counts as adjacent to you until the start of your next turn for the purposes of your Traits, Systems, and Talents, as well as Focused Aegis. They also gain +1 Accuracy on the next Save or Check they make before the end of their next turn."
+      }
+    ],
+    "core_system": {
+      "name": "Trueblack Projection",
+      "description": "The normally diffuse shielding of the Jeanne’s trueblack is able to be momentarily coalesced on itself or someone nearby in order to create a barrier even more potent than the original Aegis. <br><br>Unfortunately, this power soon burns out the focus relays, making it infeasible to shield an army - or even one figure for any length of time. <br><br>That doesn’t tend to matter to the pilots around the Jeanne, though. One moment can mean the difference between death or an impossible survival.",
+      "active_name": "Focused Aegis",
+      "active_effect": "",
+      "activation": "Reaction",
+      "active_actions": [
+        {
+          "name": "Focused Aegis",
+          "activation": "Reaction",
+          "trigger": "You or an adjacent character take damage.",
+          "detail": "Effect: The triggering character becomes Immune to damage until the start of their next turn, including from the triggering effect. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used. <br><br><i>Note: Universal Compatibility can be triggered by this ability even though free actions can normally only be taken on your turn.</i>"
+        }
+      ]
+    }
+  }
+]

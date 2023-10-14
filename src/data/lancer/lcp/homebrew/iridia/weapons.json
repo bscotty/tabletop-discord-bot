@@ -1,0 +1,1614 @@
+[
+  {
+    "id": "moff_aphrodite_integrated",
+    "name": "Heartbreaker",
+    "mount": "Main",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "0"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_seeking"
+      }
+    ],
+    "on_hit": "The target suffers System Trauma.",
+    "effect": "This weapon has 3 charges. In order to attack, this weapon must consume Lock On and spend a charge. If this weapon misses, the charge is refunded. This weapon regains all charges when you perform a full repair."
+  },
+  {
+    "id": "moff_celestial_weaver",
+    "name": "Celestial Weaver",
+    "mount": "Main",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_inaccurate"
+      },
+      {
+        "id": "tg_reliable",
+        "val": 2
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "APHRODITE",
+    "license_id": "moff_iridia_aphrodite",
+    "license_level": 1,
+    "description": "Strands of voidstuff swirl around the target, ensnaring it in a web that burns with the cold of space and the heat of stars."
+  },
+  {
+    "id": "moff_entropic_scythe",
+    "name": "Entropic Scythe",
+    "mount": "Heavy",
+    "type": "Nexus",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      },
+      {
+        "type": "Line",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_ordnance"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "APHRODITE",
+    "license_id": "moff_iridia_aphrodite",
+    "license_level": 2,
+    "description": "Forged of the lies that we whisper to ourselves, the blade summoned by this weapon has no definite shape, no true form. But it lays bare the truth of the self, for that is what hurts the most."
+  },
+  {
+    "id": "moff_mindrazor",
+    "name": "Mindrazor",
+    "mount": "Heavy",
+    "type": "Launcher",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 20
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "APHRODITE",
+    "license_id": "moff_iridia_aphrodite",
+    "license_level": 3,
+    "sp": 1,
+    "effect": "This weapon uses Tech Attack for attack rolls instead of Grit, and ignores cover. It is treated as a tech attack for the purposes of effects (such as being Immune to tech actions, or giving +1 Accuracy to tech attacks), but is otherwise counted as a ranged attack in all respects (such as for Engagement). It cannot make attacks via effects that allow tech attacks.",
+    "description": "<code class='horus--subtle'>[[Your thoughts betray you.]]</code>"
+  },
+  {
+    "id": "moff_astraea_integrated",
+    "name": "Guardian Spear",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "moff_dragon_integrated",
+    "name": "Dragon's Breath",
+    "mount": "Heavy",
+    "type": "CQB",
+    "profiles": [
+      {
+        "name": "1 Charge",
+        "range": [
+          {
+            "type": "Cone",
+            "val": 3
+          }
+        ],
+        "damage": [
+          {
+            "type": "Burn",
+            "val": "2"
+          }
+        ],
+        "effect": "This weapon’s profile is determined by the number of charges it carries. It begins with 0 charges. The first time in a round that you are damaged by a hostile character, you gain an additional 1 charge, up to a maximum of 3.<br><br> If you have at least 1 charge, you may attack with this weapon, returning to 0 charges after the attack. This weapon’s Cone size is equal to 1 plus twice the number of charges, and it deals Burn equal to twice the number of charges. Charges persist between scenes, but are lost during a full repair."
+      },
+      {
+        "name": "2 Charges",
+        "range": [
+          {
+            "type": "Cone",
+            "val": 5
+          }
+        ],
+        "damage": [
+          {
+            "type": "Burn",
+            "val": "4"
+          }
+        ],
+        "effect": "This weapon’s profile is determined by the number of charges it carries. It begins with 0 charges. The first time in a round that you are damaged by a hostile character, you gain an additional 1 charge, up to a maximum of 3.<br><br> If you have at least 1 charge, you may attack with this weapon, returning to 0 charges after the attack. This weapon’s Cone size is equal to 1 plus twice the number of charges, and it deals Burn equal to twice the number of charges. Charges persist between scenes, but are lost during a full repair."
+      },
+      {
+        "name": "3 Charges",
+        "range": [
+          {
+            "type": "Cone",
+            "val": 7
+          }
+        ],
+        "damage": [
+          {
+            "type": "Burn",
+            "val": "6"
+          }
+        ],
+        "effect": "This weapon’s profile is determined by the number of charges it carries. It begins with 0 charges. The first time in a round that you are damaged by a hostile character, you gain an additional 1 charge, up to a maximum of 3.<br><br> If you have at least 1 charge, you may attack with this weapon, returning to 0 charges after the attack. This weapon’s Cone size is equal to 1 plus twice the number of charges, and it deals Burn equal to twice the number of charges. Charges persist between scenes, but are lost during a full repair."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "moff_runic_shield",
+    "name": "Runic Shield",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "val": 3
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ASTRAEA",
+    "license_id": "moff_iridia_astraea",
+    "license_level": 1,
+    "effect": "Whenever the user Braces, this weapon may be used to immediately make an attack, with +1 Difficulty, after the action that triggers the Brace resolves. This attack may only be made once per Brace, no matter how many Runic Shields the user has.",
+    "description": "Originally inscribed onto physical bucklers, Runic Shields can actually be positioned anywhere on a mech. Wherever they are, the runes absorb the ambient kinetic energy around the mech that they’re written on, which is then directed and released in a single explosive burst. Unsettlingly, this output consistently exceeds the runes’ intake."
+  },
+  {
+    "id": "moff_vambrace_projector",
+    "name": "Vambrace Projector",
+    "mount": "Auxiliary",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 3
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ASTRAEA",
+    "license_id": "moff_iridia_astraea",
+    "license_level": 3,
+    "description": "Even the most ornamental of a Knight’s gear can be used as weaponry in a pinch. The ceremonial illumination adorning their armour is able to be channeled along their arms to punch through the most well-armoured of assailants."
+  },
+  {
+    "id": "moff_energy_talons",
+    "name": "Energy Talons",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ENYO",
+    "license_id": "moff_iridia_enyo",
+    "license_level": 1,
+    "on_crit": "Your target must make a Hull save. On a failure, they become Shredded until they Stabilize.",
+    "description": "There’s nothing quite like the raw viscerality of tearing into a foe. Feeling the pulse of your blood as you rip aside their armour, and see their terror..."
+  },
+  {
+    "id": "moff_magma_hammer",
+    "name": "Magma Hammer",
+    "mount": "Heavy",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "3d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_inaccurate"
+      },
+      {
+        "id": "tg_overkill"
+      },
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ENYO",
+    "license_id": "moff_iridia_enyo",
+    "license_level": 3,
+    "effect": "This weapon deals 50 AP Explosive damage to objects, cover, terrain, and the environment.",
+    "on_hit": "If Overkill causes this weapon to re-roll any dice, or it deals maximum damage, the target also takes 2 heat.",
+    "description": "Feel the pounding of your heart, the weight of your sins, and the heat of your wrath. Your enemies will lie broken at your feet, as you consume your own soul. That is the price of this wonderful gift. But in the end, you won’t care. You already probably don’t."
+  },
+  {
+    "id": "moff_locus_integrated",
+    "name": "Rangefinder",
+    "mount": "Auxiliary",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 20
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_arcing"
+      },
+      {
+        "id": "tg_smart"
+      }
+    ]
+  },
+  {
+    "id": "moff_multiphasic_rifle",
+    "name": "Multiphasic Rifle",
+    "mount": "Main",
+    "type": "???",
+    "no_mods": true,
+    "no_core_bonus": true,
+    "damage": [
+      {
+        "type": "Variable",
+        "val": "1d6+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Line",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_set_damage_type"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "IRIS",
+    "license_id": "moff_iridia_iris",
+    "license_level": 2,
+    "effect": "This weapon counts as all ranged weapon types simultaneously (e.g., CQB, Rifle, etc.), but it can’t take Mods or benefit from core bonuses, although it still benefits from talents as normal.",
+    "on_attack": "Choose this weapon’s damage type (kinetic, explosive, or energy). This weapon may attack with either Range 10 or Line 5.",
+    "description": "For when you need a little something of everything.",
+    "sp": 1
+  },
+  {
+    "id": "moff_swarm_projector",
+    "name": "Swarm Projector",
+    "mount": "Main",
+    "type": "Launcher",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_seeking"
+      },
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_inaccurate"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ERSA",
+    "license_id": "moff_iridia_ersa",
+    "license_level": 2,
+    "effect": "If the target is in a zone of soft cover or adjacent to an object that grants hard cover, this weapon instead deals 1d6+3 kinetic damage and gains Reliable 3.",
+    "description": "Designed for use in close-quarters, where it’s likely that foes are able to use cover and other obstructions. Weak points in the terrain are analyzed, allowing the weapon’s payload to shatter parts of whatever’s concealing the target in a burst of shrapnel."
+  },
+  {
+    "id": "moff_psyche_integrated",
+    "name": "Rift Nexus",
+    "mount": "Main",
+    "type": "Nexus",
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_arcing"
+      }
+    ],
+    "effect": "This weapon begins with 0 charges. 1/round, when you inflict any involuntary movement on a character, other than movement caused by this weapon, you gain 1 charge, to a maximum of 5. <br><br>When you hit a character with this weapon, you may teleport the target up to 2 spaces per charge this weapon has. Once you hit, this weapon returns to 0 charges. Charges persist between scenes, but are lost during a full repair."
+  },
+  {
+    "id": "moff_refractive_beam",
+    "name": "Refractive Beam",
+    "mount": "Main",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "PSYCHE",
+    "license_id": "moff_iridia_psyche",
+    "license_level": 3,
+    "effect": "This weapon does not attack allied characters. Instead, whenever an ally Mech character is targeted, the Line immediately stops. You may then draw another Line 5 from that character in any direction, so long as it does not overlap with any other line. This can continue indefinitely, however each ally may only ever cause a single new line. Once all lines are drawn, resolve this attack - no matter how many lines a given character is touched by, they will only ever be targeted once.",
+    "description": "Many Hestian weapons are safe to use around allies. The Refractive Beam goes one step further, weaponizing them as amplifiers.",
+    "sp": 1
+  },
+  {
+    "id": "moff_champion_integrated",
+    "name": "Stormblade",
+    "mount": "Main",
+    "type": "Melee",
+    "profiles": [
+      {
+        "name": "Howling Wind Stance",
+        "range": [
+          {
+            "type": "Threat",
+            "val": 2
+          }
+        ],
+        "tags": [],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+4"
+          }
+        ],
+        "on_crit": "Your target becomes Slowed until the end of their next turn.",
+        "effect": "You gain +1 Speed and when you Boost you ignore engagement."
+      },
+      {
+        "name": "Booming Thunder Stance",
+        "range": [
+          {
+            "type": "Threat",
+            "val": 2
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_knockback",
+            "val": 3
+          }
+        ],
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d6+4"
+          }
+        ],
+        "on_crit": "Your target is knocked Prone."
+      },
+      {
+        "name": "Searing Lightning Stance",
+        "range": [
+          {
+            "type": "Threat",
+            "val": 2
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ap"
+          },
+          {
+            "id": "tg_overkill"
+          }
+        ],
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "1d6+4"
+          }
+        ],
+        "on_crit": "Your target becomes Impaired until the end of their next turn."
+      }
+    ]
+  },
+  {
+    "id": "moff_wingblade",
+    "name": "Wingblade",
+    "mount": "Auxiliary",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "NEMESIS",
+    "license_id": "moff_iridia_nemesis",
+    "license_level": 1,
+    "description": "“War reveals who you really are. What you’ll fight for, how you go about doing things. Nobody can ever truly be an angel during it, but you have to try. Try to help people, try to make it all worthwhile. Try to not become what you’re fighting to stop.”"
+  },
+  {
+    "id": "moff_plasma_sabre",
+    "name": "Plasma Sabre",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "NEMESIS",
+    "license_id": "moff_iridia_nemesis",
+    "license_level": 2,
+    "effect": "If this weapon hits a target within Threat 2, its base damage is instead 4 energy damage. If this weapon hits a target within Threat 1, its base damage is instead 6 energy damage. Modifications to this weapon’s Threat do not increase the range at which these base damage changes occur.",
+    "on_crit": "The target must pass an Engineering Save or else be Impaired until the end of its next turn.",
+    "description": "“When I was with Union, I used to fight with physical swords. Why did that change? Well, I could tell you that energy blades are better because of their ability to reshape for the situation. Or that they cut through things better. But those would all be lies. The truth is that they’re light enough that it didn’t feel like I was swinging a weapon. So it was easier to pretend that I wasn’t killing people.”"
+  },
+  {
+    "id": "moff_huntress_bow",
+    "name": "Huntress Bow",
+    "mount": "Main",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 12
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ARTEMIS",
+    "license_id": "moff_iridia_artemis",
+    "license_level": 1,
+    "on_hit": "The target must pass a Hull save or else be unable to Hide or benefit from cover until the end of their next turn.",
+    "on_crit": "The save is made with +1 Difficulty.",
+    "description": "The arrows shot by this bow contain the purest light, that which your sensors can pick up unfailingly. So long as it embeds in your prey, you will always be able to pick them off."
+  },
+  {
+    "id": "moff_sonic_pulse",
+    "name": "Sonic Pulse",
+    "mount": "Main",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ARTEMIS",
+    "license_id": "moff_iridia_artemis",
+    "license_level": 2,
+    "on_hit": "The target must pass a Systems save or be Impaired until the end of their next turn.",
+    "description": "They may protect themselves beyond impenetrable metal, but there is nothing so thick that a prayer cannot reach through. And that is but a whisper. You can do so much more.",
+    "sp": 1
+  },
+  {
+    "id": "moff_luminous_radiance",
+    "name": "Luminous Radiance",
+    "mount": "Main",
+    "type": "Launcher",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ARTEMIS",
+    "license_id": "moff_iridia_artemis",
+    "license_level": 3,
+    "effect": "This weapon does not attack allied characters caught in its area of effect.",
+    "description": "You have nothing to fear from the light, so long as you remain steadfast and true. It is only those who have fallen who need worry, for they have forsaken protection."
+  },
+  {
+    "id": "moff_flash_condenser",
+    "name": "Flash Condenser",
+    "mount": "Main",
+    "type": "Launcher",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "val": 1
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "PERSEPHONE",
+    "license_id": "moff_iridia_persephone",
+    "license_level": 1,
+    "on_hit": "The target must succeed on a Hull Save or be knocked Prone.",
+    "description": "This weapon absorbs ambient moisture from the environment, which is then supercooled to produce an endless supply of ammunition."
+  },
+  {
+    "id": "moff_cryo_lance",
+    "name": "Cryo Lance",
+    "mount": "Heavy",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1"
+      },
+      {
+        "type": "Burn",
+        "val": "3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ordnance"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "PERSEPHONE",
+    "license_id": "moff_iridia_persephone",
+    "license_level": 2,
+    "on_hit": "Targets must succeed on an Engineering save or become Immobilized until the end of their next turn.",
+    "description": "While the weapon's projection of zero-point energy is invisible, flash-frozen moisture in the air creates a momentary icicle that appears to lance targets... before spreading over them like a virus."
+  },
+  {
+    "id": "moff_zero_point_pulse",
+    "name": "Zero-Point Pulse",
+    "mount": "Superheavy",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      },
+      {
+        "type": "Burn",
+        "val": "4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Burst",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 4
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "PERSEPHONE",
+    "license_id": "moff_iridia_persephone",
+    "license_level": 3,
+    "effect": "This weapon ignores ranged penalties from Engaged, and it gains +1 Accuracy and Reliable 3 against targets in the Danger Zone or who are Exposed. This weapon’s Reliable damage cannot be Burn, and it does not count Burn dealt towards the Reliable value on a hit.",
+    "on_hit": "The target counts as moving through difficult terrain until the end of its next turn.",
+    "description": "An adaptation of a miniaturized zero-point reactor into a weapon. It’s not as devastating as the real thing, but far, far easier to reliably use."
+  },
+  {
+    "id": "moff_phase_nexus",
+    "name": "Phase Nexus",
+    "mount": "Main",
+    "type": "Nexus",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_seeking"
+      },
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_inaccurate"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "NYX",
+    "license_id": "moff_iridia_nyx",
+    "license_level": 2,
+    "description": "The drone containing this weapon has a variation of the Nyx’s phase shift technology built in. While it enables the shot to pierce almost anything, the wrong flux can cause even a direct hit to miss."
+  },
+  {
+    "id": "moff_binary_pulse_nexus",
+    "name": "Binary-Pulse Nexus",
+    "mount": "Heavy",
+    "type": "Nexus",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "NYX",
+    "license_id": "moff_iridia_nyx",
+    "license_level": 3,
+    "effect": "After all damage has been resolved, all characters in the Blast are pushed to the nearest space outside the area and must pass a Hull Save or be knocked Prone.",
+    "description": "Using single-voyage drones as a payload, the Binary-Pulse that gives this weapon its name is a series of two explosions. One ruptures the outer casing of the drone, sending shrapnel into everything around, while the second is a shockwave strong enough to drop mechs to the ground."
+  },
+  {
+    "id": "moff_reality_cutter",
+    "name": "Reality Cutter",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "HEMERA",
+    "license_id": "moff_iridia_hemera",
+    "license_level": 2,
+    "on_hit": "Teleport to a space adjacent to your target.",
+    "description": "“We named it this because we saw it as a sword first, but… it seems to look different depending on the user. Doesn’t always cut. Regardless, it lets you do a neat trick where you twist like so, and you just step THROUGH where the person in front of you should be.”",
+    "sp": 1
+  },
+  {
+    "id": "moff_dimensional_key",
+    "name": "Dimensional Key",
+    "mount": "Main",
+    "type": "CQB",
+    "no_mods": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "override": true,
+        "type": "Range",
+        "val": "3"
+      },
+      {
+        "override": true,
+        "type": "Threat",
+        "val": "3"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ANANKE",
+    "license_id": "moff_iridia_ananke",
+    "license_level": 2,
+    "on_hit": "If you and the target are the same Size (with Size ½ counting the same as Size 1 for this comparison), swap positions, counting as teleporting. Characters can only be swapped to spaces they could normally stand or move on, otherwise the effect fails.",
+    "effect": "This weapon’s range may not be altered in any way, and this weapon may not take any Mods.",
+    "description": "<code class='horus--subtle'>[So long as I am with you, you’re never trapped. There is never an impossibility. You just need to trust me. There is more to this world than you know; you just need the key.]</code>"
+  },
+  {
+    "id": "moff_electron_pulse",
+    "name": "Electron Pulse",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "HECATE",
+    "license_id": "moff_iridia_hecate",
+    "license_level": 1,
+    "effect": "This weapon does not target any character entirely within the origin space of the Blast.",
+    "description": "The best way to deal with someone who’s surrounded is to simply shoot everyone else. A little computer-aided precision, and the air around someone can be violently excited while they’re untouched."
+  },
+  {
+    "id": "moff_fulmination_aura",
+    "name": "Fulmination Aura",
+    "mount": "Main",
+    "type": "Launcher",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "tags": [],
+    "source": "IRIDIA",
+    "license": "HECATE",
+    "license_id": "moff_iridia_hecate",
+    "license_level": 2,
+    "effect": "This weapon always targets Evasion 8.",
+    "on_hit": "Do not roll damage or apply any effects of the attack that would apply to the target (such as Knockback). <br><br>Instead, damage is rolled and effects are applied to the first character that successfully attacks the target while within Range 5 of the target before the start of the target's next turn.",
+    "description": "More of a deterrent than a proper weapon, the Fulmination Aura charges the target with a delicate balance of power… which then violently strikes the first person to break that balance."
+  },
+  {
+    "id": "moff_whisperstone_launcher",
+    "name": "Whisperstone Launcher",
+    "mount": "Heavy",
+    "type": "Launcher",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "3d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "HECATE",
+    "license_id": "moff_iridia_hecate",
+    "license_level": 3,
+    "on_attack": "After the attack, the Blast becomes a zone that lasts until the end of the scene. Any character at least partially within this zone may not use tech actions.",
+    "on_hit": "The target is Jammed until the end of their next turn.",
+    "description": "Not so much a gun as a storage device for boulders of Whisperstone shaped around an explosive charge. Direct hits will cause serious system malfunctions, while even the most ineffective shot will still nullify legionspace calibration in the area."
+  },
+  {
+    "id": "moff_saturation_projector",
+    "name": "Saturation Projector",
+    "mount": "Main",
+    "type": "Launcher",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Blast",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ordnance"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "EPIONE",
+    "license_id": "moff_iridia_epione",
+    "license_level": 1,
+    "description": "An evolution of the earlier-model Luminous Radiance laser weapon, the Saturation Projector gives up damage in exchange for blanketing the field. It remains undiscovered how to fully recreate the Radiance’s selective targeting, however, so it requires much more care when using."
+  },
+  {
+    "id": "moff_stasis_blaster",
+    "name": "Stasis Blaster",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      },
+      {
+        "type": "Blast",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ordnance"
+      },
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "EPIONE",
+    "license_id": "moff_iridia_epione",
+    "license_level": 2,
+    "on_attack": "After the attack, the Blast becomes a zone that lasts until the start of the user’s next turn. Attacks and other effects that originate from characters entirely outside the zone cannot affect characters entirely inside inside, and vice versa. Movement is not impeded, and the zone has no effect on attacks from outside characters to other outside characters that cross the zone.",
+    "description": "The Stasis Blaster momentarily creates a bubble of fractured spacetime that rapidly expands. The inside of the bubble stabilizes after a moment of turbulence, but the outside remains disconnected in a thin layer. Something as sizable as a mech is able to force its way through unimpeded, but weaponry is unable to penetrate it."
+  },
+  {
+    "id": "moff_prism_refractor",
+    "name": "Prism Refractor",
+    "mount": "Superheavy",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 6
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ordnance"
+      },
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_seeking"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "EPIONE",
+    "license_id": "moff_iridia_epione",
+    "license_level": 3,
+    "effect": "Attacks with this weapon create three Line 6 segments. The first segment is drawn from the user as normal. The second segment is drawn from the end of the first segment, and the third segment is drawn from the end of the second segment. These additional lines may be drawn in any direction from the origin, but may not overlap any prior section of the line. Once all lines are drawn, resolve this attack - no matter how many lines a given character is touched by, they will only ever be targeted once.",
+    "description": "The Prism Refractor contains a crystal shard that makes light behave rather peculiarly. It bends at angles, it goes through everything, and then it stops abruptly, to no easily discernible pattern. Ensure that you have the latest update of the paired targeting program in order to optimize battlefield targeting solutions and to reduce the odds of friendly-fire (including - but not limited to - self-targeting)."
+  },
+  {
+    "id": "moff_truestrike_gladius",
+    "name": "Truestrike Gladius",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "5"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_reliable",
+        "val": 5
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "HERA",
+    "license_id": "moff_iridia_hera",
+    "license_level": 1,
+    "on_hit": "This weapon is not unloaded.",
+    "description": "You are the avatar of war, the master of battle. You bear the burden of death - the guilt of killing - but you wield it as a weapon. Every blow you make will land true, scouring the foe with your divine light. There will be peace in the end."
+  },
+  {
+    "id": "moff_chromatic_blade",
+    "name": "Chromatic Blade",
+    "mount": "Heavy",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      },
+      {
+        "type": "Explosive",
+        "val": "1d6"
+      },
+      {
+        "type": "Energy",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "HERA",
+    "license_id": "moff_iridia_hera",
+    "license_level": 3,
+    "sp": 1,
+    "on_attack": "You may choose to reduce this weapon’s base damage in increments of 1d6, removing one or more of the damage dice. For each die removed, reduce this weapon’s Heat (Self) value by 1, to a minimum of 0. Gain a benefit if you hit based on the type(s) of damage that you removed: <br>- Kinetic: The target must pass an Engineering Save or be Shredded until the start of their next turn. <br>- Explosive: The target is knocked Prone and you may apply Knockback 1. <br>- Energy: The target must pass a Systems Save or only have line of sight to adjacent spaces until the end of their next turn.",
+    "description": "You are the shaper of the primordial forces, holding them contained in the palm of your hand. Take care to not loosen your grip, for they are fickle things."
+  },
+  {
+    "id": "moff_retrieval_claws",
+    "name": "Retrieval Claws",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [],
+    "source": "IPS-N",
+    "license": "SILVER",
+    "license_id": "moff_ipsn_silver",
+    "license_level": 1,
+    "on_hit": "You may pull your target 1 space towards you.",
+    "on_crit": "This attack gains AP.",
+    "description": "Tests indicate that these charged pneumatics are able to reliably grasp targets at a distance of up to 150% of their maximum extended length. Users are advised to not think about it too much."
+  },
+  {
+    "id": "moff_scouring_halo",
+    "name": "Scouring Halo",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Burst",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "SILVER",
+    "license_id": "moff_ipsn_silver",
+    "license_level": 2,
+    "effect": "This weapon ignores ranged penalties from Engaged and does not attack allied characters caught in its area of effect.",
+    "description": "An aggressive/defensive grid-option, the Halo allows you to keep your vicinity clear of hostiles while still retaining proximity to your allies."
+  },
+  {
+    "id": "moff_quicksilver_edge",
+    "name": "Quicksilver Edge",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [],
+    "source": "SSC",
+    "license": "LUNA",
+    "license_id": "moff_ssc_luna",
+    "license_level": 1,
+    "effect": "Reactions may not be taken against attacks made by this weapon.",
+    "description": "The “Quicksilver” sub-line of armaments are modified with sudden-strike capabilities, blurring the weapon and reducing the target's ability to respond to an attack."
+  },
+  {
+    "id": "moff_distortion_blade",
+    "name": "Distortion Blade",
+    "mount": "Auxiliary",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_thrown",
+        "val": 5
+      },
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_accurate"
+      }
+    ],
+    "source": "SSC",
+    "license": "LUNA",
+    "license_id": "moff_ssc_luna",
+    "license_level": 3,
+    "on_crit": "The target treats the user as Invisible until the end of the target’s next turn.",
+    "description": "These knives are attracted to electronic signals and emit a powerful scrambling pulse upon impact. Use of this weapon constitutes an agreement to waive all liability of SSC in the event of self-scrambling."
+  },
+  {
+    "id": "moff_null_distortion",
+    "name": "Null Distortion",
+    "mount": "Main",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_inaccurate"
+      },
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_seeking"
+      }
+    ],
+    "source": "HORUS",
+    "license": "PHANE",
+    "license_id": "moff_horus_phane",
+    "license_level": 2,
+    "effect": "This weapon ignores Invisible. In addition, on Invisible targets, the final attack roll for this weapon can never be affected by Difficulty.",
+    "description": "A snapshot. A frozen moment. Hold it in your head, because it’s important. And then it’s gone, ripped to shreds. Just fragments of memory forever fluttering from your grasp."
+  },
+  {
+    "id": "moff_dreamreaver",
+    "name": "Dreamreaver",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "PHANE",
+    "license_id": "moff_horus_phane",
+    "license_level": 3,
+    "sp": 1,
+    "effect": "This weapon deals +X damage, where X is equal to the target’s Armor value (to a maximum of 4).",
+    "description": "When you have utter confidence in yourself, that is when you must be most on your guard. Because it hurts all the more when you fail. When your strength is what causes your undoing. You thought you were above it all. You were wrong. Dead wrong."
+  },
+  {
+    "id": "moff_devouring_blade",
+    "name": "Devouring Blade",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "3"
+      },
+      {
+        "type": "Burn",
+        "val": "2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "source": "HA",
+    "license": "CASTILLA",
+    "license_id": "moff_ha_castilla",
+    "license_level": 2,
+    "description": "What is at first glance a rippling silver sword is, in actuality, a swarm of greywash held in check by extremely tight parameters. The controller is able to shape the weapon as they need, but anyone else is readily consumed."
+  },
+  {
+    "id": "moff_concussion_nexus",
+    "name": "Concussion Nexus",
+    "mount": "Heavy",
+    "type": "Nexus",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Cone",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "val": 2
+      }
+    ],
+    "source": "HA",
+    "license": "CASTILLA",
+    "license_id": "moff_ha_castilla",
+    "license_level": 3,
+    "on_hit": "The target must make an Agility save. On a failure, they are pushed 2 spaces in any direction instead of Knocked Back.",
+    "description": "The nanite swarm grown within this weapon’s chamber has had most of its programming stripped out in order to contain explosives. While this has drastically reduced its ability to adapt to targets mid-flight, the usefulness of blanketing an area - and targets - with directional explosives cannot be understated."
+  },
+  {
+    "id": "moff_exo_refractive_blade",
+    "name": "Refractive Blade",
+    "mount": "Main",
+    "source": "EXOTIC",
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+1"
+      }
+    ],
+    "on_attack": "Whenever a character is targeted with this weapon, you may choose another target within range 2 of the prior target. This may continue indefinitely, however each character may only be targeted once by this weapon. Once all targets have been selected, resolve this attack.",
+    "description": "A sword fashioned from a rainbow crystal found within Iridia’s metavault, there are few of these around. As it swings, it strikes at all those caught within its facets.",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ]
+  },
+  {
+    "id": "moff_exo_godslayer_nexus",
+    "name": "Godslayer Nexus",
+    "mount": "Main",
+    "source": "EXOTIC",
+    "type": "Nexus",
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+3"
+      }
+    ],
+    "on_attack": "You may spend a charge from this weapon before you roll to hit. If you do, this attack gains Reliable 6 and its damage may not be reduced by any means.",
+    "effect": "This weapon does not spend limited charges to attack normally, and may be used even while at 0 charges. During a rest, you may spend any number of repairs to recover 1 charge on this weapon per repair spent.",
+    "description": "Those who know of the truth of Hestia’s death believe this to be the remnants of the weapon that felled Her. Twisted by the metavault and recovered by the Iridian expedition, this profane weapon devours all before it.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "moff_exo_aetherlance",
+    "name": "Aetherlance",
+    "mount": "Superheavy",
+    "source": "EXOTIC",
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 10
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6+4"
+      }
+    ],
+    "on_attack": "All characters between you and the target take 4 Energy damage.",
+    "description": "Forged using the Hemera's space-warping principles, this prototype weapon was abandoned for being too unwieldy to use on mechs. Attempts are currently being made to instead upscale it for use in surface-to-orbit weapon emplacements.",
+    "tags": [
+      {
+        "id": "tg_seeking"
+      },
+      {
+        "id": "tg_ordnance"
+      },
+      {
+        "id": "tg_reliable",
+        "val": 4
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ]
+  }
+]

@@ -1,0 +1,2304 @@
+[
+  {
+    "id": "moff_ceremonial_cape",
+    "name": "Ceremonial Cape",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ASTRAEA",
+    "license_id": "moff_iridia_astraea",
+    "license_level": 1,
+    "effect": "1/Scene, this System may be expended in one of the following ways. <ul><li>When a hostile character Grapples the user or causes the user to be Immobilized or Slowed, the user may expend this System (this is not a reaction) to instead not be Grappled or to not become Immobilized or Slowed.</li><li>As a quick action, the user may expend this System to force an adjacent hostile character to pass a Hull save or become Immobilized. The enemy may end this effect by succeeding on a Hull check as a quick action.</li></ul><br>While this system is expended, it is not a valid target for System Destruction. The user is able to retrieve their cape at the end of combat.",
+    "description": "While the capes of the Luminary Knights seem highly impractical for combat - and, for the most part, they are - a well versed Knight knows that the extra layer of loose fabric can be cast off to escape something that would have otherwise snagged something more solid, or used to entangle an enemy in it."
+  },
+  {
+    "id": "moff_goddess_banner",
+    "name": "Goddess Banner",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ASTRAEA",
+    "license_id": "moff_iridia_astraea",
+    "license_level": 2,
+    "deployables": [
+      {
+        "type": "Deployable",
+        "name": "Goddess Banner",
+        "activation": "Quick",
+        "cost": 1,
+        "size": 1,
+        "hp": 10,
+        "evasion": 5,
+        "detail": "Expend a charge to deploy a Size 1 banner in a free, adjacent space, where it creates a Burst 2 of inspirational light. While within this area, you and your allies are Immune to involuntary movement and may not be knocked Prone."
+      }
+    ],
+    "description": "A symbol of pride, honour, and what is fought for. When the banner is planted, it shows that the Knights will not yield one step further."
+  },
+  {
+    "id": "moff_zelos_class_nhp",
+    "name": "ZELOS-Class NHP",
+    "type": "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      },
+      {
+        "id": "tg_ai"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ASTRAEA",
+    "license_id": "moff_iridia_astraea",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Subspace Fold",
+        "activation": "Quick",
+        "detail": "Until the end of your next turn, you become Immobilized and warp space in a Burst 3 around you. Characters may freely enter the area and attack into it without penalty, but any characters fully within are unable to exit, even via teleportation or involuntary movement - they simply stop before leaving the Burst, as if they hit an object. Attacks from characters fully inside the area to characters outside gain +3 Difficulty. This effect remains stationary even if you are forced to move.",
+        "heat_cost": 3
+      }
+    ],
+    "description": "ZELOS-Class NHPs are enthusiastic about helping their partners… sometimes overly so, resulting in them occasionally causing more problems than they solve. They can get overly competitive and vengeful against those others who claim superiority to the partnership that the ZELOS and their pilot do, and tend to be very possessive. <br><br>It takes a canny pilot to properly make use of a ZELOS, since the desired shielding capabilities were never able to properly manifest. Instead, the user remains just as vulnerable, but is able to bring those around it into a pocket of twisted space that is nigh-impossible to escape from. It remains unclear what the properties of this space are, as it doesn’t seem to follow any conventional physical rules - and, in fact, flatly contradicts itself at times. ZELOS’ tend to eagerly encourage the destruction of foes trapped within, growing somewhat sullen for a time if their request isn’t granted."
+  },
+  {
+    "id": "moff_ablative_weaponry",
+    "name": "Ablative Weaponry",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ENYO",
+    "license_id": "moff_iridia_enyo",
+    "license_level": 1,
+    "effect": "Whenever you would destroy one or more weapons on a mount, you may destroy this system instead.",
+    "description": "Backups upon backups for the myriad weapons one has. All that matters is being able to continue killing, even as the parts of your mech may be blown off around you."
+  },
+  {
+    "id": "moff_gravimetric_snare",
+    "name": "Gravimetric Snare",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ENYO",
+    "license_id": "moff_iridia_enyo",
+    "license_level": 2,
+    "effect": "When you successfully Ram a character who is already Prone, you may cause them to become Immobilized until the end of their next turn. This can only be used 1/scene on each character.",
+    "synergies": [
+      {
+        "locations": [
+          "ram"
+        ],
+        "detail": "When you successfully Ram a character who is already Prone, you may instead cause them to become Immobilized until the end of their next turn. This can only be used 1/scene on each character."
+      }
+    ],
+    "description": "A contact-based pulse that briefly increases the effects of gravity. Unfortunately, it requires a target to already be off-balance, as it’s otherwise trivial to compensate for."
+  },
+  {
+    "id": "moff_neural_loop",
+    "name": "Neural Loop",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ENYO",
+    "license_id": "moff_iridia_enyo",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Isolate Foe",
+        "activation": "Invade",
+        "detail": "The target must be a hostile character. If, at the end of the target’s next turn, it is adjacent to any Mech character allied to it, you may take 2 heat and swap places with one hostile Mech character adjacent to your target, both characters teleporting to the other’s position. Characters can only be swapped to spaces they could normally stand or move on (i.e., if a character cannot fly it can’t be swapped midair). If there is no available space for one of the swapped characters to occupy, this movement fails."
+      },
+      {
+        "name": "Compel Combat",
+        "activation": "Invade",
+        "detail": "The target takes +1 Difficulty to any attacks that do not include you as a target. This effect increases by an additional +1 Difficulty at the end of each of their turns, to a maximum total of +3 Difficulty. The target may make a Systems save at the end of their turn to end this effect, and it automatically ends if this effect is applied to a new target, or if you end any of your turns without making an attack roll against the target or causing it to make a save"
+      }
+    ],
+    "description": "Reach out and touch their mind… it doesn’t hurt. For them or for you. But you can make sure and see that no matter where they run, you know where to follow. Grant them the gift, the glory that revels in the fight. For you and they are bound, at least for now."
+  },
+  {
+    "id": "moff_corelock_subsystem",
+    "name": "Corelock Subsystem",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ENYO",
+    "license_id": "moff_iridia_enyo",
+    "license_level": 3,
+    "effect": "When you successfully Grapple a hostile character, you may expend a charge to initiate Corelock with that character. While in Corelock, you are unable to clear heat by any means except for taking Stress, and involuntary movement cannot break the Corelock grapple - the other member of the grapple is moved along with the first. In addition, any time you gain heat during Corelock, half of that is also dealt to the character that you are in Corelock with. <br><br>Corelock lasts until the grapple with the target is broken, or you or the target are destroyed, and is unable to be ended in any other way.",
+    "description": "Corelock is a rather suicidal-seeming tactic, where one pries open both their own reactor and a foe's, and desperately tries to make sure the other fries first. Some pilots are daring enough to lean into that, though, modifying their mechs with reactor access and enough insulation to hopefully survive the fusion."
+  },
+  {
+    "id": "moff_deep_penetration_scan",
+    "name": "Deep Penetration Scan",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "IRIS",
+    "license_id": "moff_iridia_iris",
+    "license_level": 1,
+    "effect": "When you Scan a hostile character, you may expend a charge to also apply Lock On to your target and make it unable to benefit from cover until the start of their next turn.",
+    "description": "If you’re already poking around inside someone’s systems, why wouldn’t you just juice up some power and search a little more? There’s often just one more crack you can exploit."
+  },
+  {
+    "id": "moff_grav_sling",
+    "name": "Grav Sling",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "IRIS",
+    "license_id": "moff_iridia_iris",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "Choose a space within range 5 - even in mid-air - and mark it. This mark lasts until expended, the end of the scene, or this action is used again. As a protocol or a quick action, you may expend the mark to fly directly towards the space it was in, regardless of distance. You stop upon reaching that space, or if you would enter the space of an object or character. If you are in the air at the end and have no other way to fly, you immediately fall."
+      }
+    ],
+    "description": "Useful for both getting good vantage points and extraction, the Grav Sling entwines a personal motivator with a controlled singularity. When activated, the user is suddenly pulled with a rather significant force to where the singularity was created... so it’s fairly important to make sure to have good inertial compensation."
+  },
+  {
+    "id": "moff_polarity_reverser",
+    "name": "Polarity Reverser",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_round",
+        "val": 1
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "IRIS",
+    "license_id": "moff_iridia_iris",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "tech_attack": true,
+        "detail": "Make a tech attack against a target within Sensors and line of sight. On a hit, the target's defenses are scrambled. The next time that they are hit by a damaging attack before the end of their next turn, they may not apply any resistance to the attack (Armor and other reductions are unaffected). If that attack would have been affected by their resistance, the attack gains +1d6 bonus damage."
+      }
+    ],
+    "description": "Once a chink in the enemy’s defenses are located, it’s important to figure out how to subvert them. Knowing exactly how the enemy will crush you is not helpful if you’re helpless to stop it."
+  },
+  {
+    "id": "moff_akashic_warding",
+    "name": "Akashic Warding",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "IRIS",
+    "license_id": "moff_iridia_iris",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Resonant Shroud",
+        "activation": "Quick Tech",
+        "detail": "Choose an allied character within Sensors. They benefit from hard cover until the start of their next turn."
+      },
+      {
+        "name": "Adaptive Shielding",
+        "activation": "Quick Tech",
+        "detail": "Choose an allied character within Sensors, and one of kinetic, explosive, or energy damage. The chosen character gains resistance to the chosen damage type until the end of their next turn. This can only be used 1/scene on each character."
+      }
+    ],
+    "description": "Adapted from the Akashic Suite, the user is able to ‘tune’ the space around a mech to help deflect various projectiles. Targets often report seeing faint figures through the resonance - both with their eyes and sensors - but there’s been no recorded proof of these figments."
+  },
+  {
+    "id": "moff_echo_class_nhp",
+    "name": "ECHO-Class NHP",
+    "type": "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "IRIS",
+    "license_id": "moff_iridia_iris",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Eternal Reflection",
+        "activation": "Quick",
+        "detail": "Until the start of your next turn, whenever any hostile character within range 10 and line of sight targets a character other than you with a tech action, they must make a Systems save. On a failure, they must choose to either target you instead or lose the action. If you are out of range, they automatically lose the action. Tech actions that do not target a character are unaffected. <br><br>This action cannot be used while Hidden. If you become Hidden, this effect immediately ends."
+      }
+    ],
+    "description": "ECHO developed out of the first experiments with the Cognitive Locus - the engineers involved eventually realizing that the words spoken back had taken on some sort of sentience. The program was subsequently shut down, but ECHO-Prime still remained.  <br><br>To this day, no ECHO ever initiates a conversation, and will only reply with words that the person they’re talking to has spoken to them at some time. Each person ends up receiving a personalized language, the ECHO slowly developing it over time. Their personality tends to reflect that of their pilot’s as well… but it’s a shallow reflection. ECHOs rarely actually care for those that interact with them - it’s only a mannerism to them, like any other. Beneath the surface, they’re inscrutable. Just watching. Listening. <br><br>ECHO-Class NHPs specialize in electronic countermeasures, projecting legionspace reflections over nearby allies in order to direct those hacks at their own mech. It’s said that ECHOs pour over these attempted intrusions outside of battle, creating a legionspace language of their own."
+  },
+  {
+    "id": "moff_quickprint_fabricator",
+    "name": "Quickprint Fabricator",
+    "sp": 2,
+    "source": "IRIDIA",
+    "license": "ERSA",
+    "license_id": "moff_iridia_ersa",
+    "license_level": 1,
+    "deployables": [
+      {
+        "type": "Deployable",
+        "name": "Quickprint Cube I",
+        "activation": "Quick",
+        "size": 1,
+        "hp": 10,
+        "evasion": 5,
+        "detail": "This system may be used as either a quick action to deploy a Quickprint Cube I, or a full action to deploy a Quickprint Cube II. The cube is an object, which provides hard cover and blocks line of sight as normal for its Size. <br><br>Whichever action cost is chosen, the cube is flash-printed and deployed in free adjacent space(s). If you create a new cube, regardless of size, the old one disintegrates."
+      },
+      {
+        "type": "Deployable",
+        "name": "Quickprint Cube II",
+        "activation": "Full",
+        "size": 2,
+        "hp": 20,
+        "evasion": 5,
+        "detail": "This system may be used as either a quick action to deploy a Quickprint Cube I, or a full action to deploy a Quickprint Cube II. The cube is an object, which provides hard cover and blocks line of sight as normal for its Size. <br><br>Whichever action cost is chosen, the cube is flash-printed and deployed in free adjacent space(s).  If you create a new cube, regardless of size, the old one disintegrates."
+      }
+    ],
+    "description": "In more peaceful times, this technology could be used to decorate places with temporary adornments for festivals or other such celebrations. The ungainly quick-printed fortifications created mid-combat have no such time or care put into them, but are quite effective at providing cover."
+  },
+  {
+    "id": "moff_terrain_formatter",
+    "name": "Terrain Formatter",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ERSA",
+    "license_id": "moff_iridia_ersa",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Liquify Earth",
+        "activation": "Invade",
+        "detail": "A burst 2 centered on the target becomes difficult terrain for the rest of the scene, or until this option is used again. Anyone who ends their turn in this terrain must make a Hull save or become Slowed until the end of their next turn."
+      },
+      {
+        "name": "Tremor",
+        "activation": "Invade",
+        "detail": "The target is knocked Prone."
+      }
+    ],
+    "description": "Even the landscape itself is putty to those with the right tools. In war, it may be akin to using a shovel as a weapon - inelegantly, and certainly not what it was designed for - but a shovel can still do a lot of damage if used correctly..."
+  },
+  {
+    "id": "moff_inertia_pylon",
+    "name": "Inertia Pylon",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ERSA",
+    "license_id": "moff_iridia_ersa",
+    "license_level": 2,
+    "deployables": [
+      {
+        "type": "Deployable",
+        "name": "Inertia Pylona",
+        "activation": "Quick",
+        "size": 1,
+        "hp": 10,
+        "evasion": 5,
+        "detail": "Expend a charge to deploy a Size 1 pylon in a free, adjacent space. The pylon gains 3 Inertia Tokens. While the pylon has Inertia Tokens, you may perform the following effects as a reaction: <br><br>- When a character ends their turn within 3 spaces of the pylon, you may expend an Inertia Token to push them 2 spaces in any direction. <br><br>- When a character within 3 spaces of the pylon is pushed, pulled, or knocked back, you may expend an Inertia Token to increase or decrease the distance moved by 3 (to a minimum of 0).",
+        "counters": [
+          {
+            "id": "inertia_pylon_tokens",
+            "name": "Inertia Pylon Inertia Tokens",
+            "default_value": 3,
+            "min": 0,
+            "max": 3
+          }
+        ]
+      }
+    ],
+    "description": "Originally designed as a safety measure in dangerous areas, Inertia Pylons were easily repurposed for use in combat. While harmless on their own, they aid immensely in helping to dictate the flow of battle."
+  },
+  {
+    "id": "moff_transwarp_system",
+    "name": "Transwarp System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ERSA",
+    "license_id": "moff_iridia_ersa",
+    "license_level": 3,
+    "deployables": [
+      {
+        "type": "Deployable",
+        "name": "Warp Generator",
+        "activation": "Quick",
+        "cost": 1,
+        "size": 1,
+        "hp": 10,
+        "evasion": 5,
+        "detail": "Expend a charge to deploy a Size 1 warp generator in a free, adjacent space. The generator resists all damage. Despite occupying a space, characters can enter the generator’s space, though may not remain there. <br><br>You or allied characters that enter the generator’s space may be teleported anywhere within range 5, or you may choose to teleport them to a free space adjacent to any other generator deployed on the map, regardless of distance. Hostile characters make an Engineering save; on a failure, they take 1d6 AP Energy damage and you may teleport them like you would an ally. On a success, they may instead choose to teleport anywhere within range 5. Any movement from the generator counts as involuntary movement.",
+        "tags": [
+          {
+            "id": "tg_resistall"
+          }
+        ]
+      }
+    ],
+    "description": "Highly experimental. In theory the technology was designed to allow quick transit between wherever necessary. In practice, the distance before things arrived at the destination torn apart was too short, even with a receiver pad. Even for short-range hops, there’s a risk of destabilization if used improperly."
+  },
+  {
+    "id": "moff_emergency_fabrication_reserves",
+    "name": "Emergency Fabrication Reserves",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ERSA",
+    "license_id": "moff_iridia_ersa",
+    "license_level": 3,
+    "effect": "1/scene, when the user uses a Limited system with the Deployable tag, the user may instead not spend a charge. Limited systems that have expended all their charges may still be used in this way.",
+    "description": "While bulky and useless on their own, being able to carry around the spare parts necessary to create whatever’s needed can come in very handy in a pinch."
+  },
+  {
+    "id": "moff_structural_entanglement",
+    "name": "Structural Entanglement",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "PSYCHE",
+    "license_id": "moff_iridia_psyche",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "detail": "Choose two characters within Sensors, or yourself and a character within Sensors. For each hostile target, you must make a tech attack roll against them; a miss on any target means the entire action fails. <br><br>While this effect lasts, neither character can be targeted or affected by any of the others’ actions or effects (including attacks) in any way. Any effects that are already affecting the other do not end, but effects that require the other to target you (such as Pinning Spire), or penalize you for not (such as Duel to the Death or Crush Targeting) cease to function for the duration. In addition, neither character causes Engagement with the other, and each character can freely move through - but not end a movement in - the others’ spaces. <br><br>This effect lasts until the end of the scene, you use this action again, or you or one of the participants ends it as a quick action. A hostile character attempting to end it must pass a Systems save as part of the action in order to successfully do so."
+      }
+    ],
+    "description": "The weaver stitches two together, enfolding them into a single soul. The universe believes the lie, enforces it upon those thus entwined. To each of them, the other must not exist - for there is no other. There is only one."
+  },
+  {
+    "id": "moff_aurora_barrier",
+    "name": "Aurora Barrier",
+    "type": "Shield",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "PSYCHE",
+    "license_id": "moff_iridia_psyche",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Activate Aurora Barrier",
+        "activation": "Quick",
+        "detail": "This system charges as a quick action, coating you in a faint rainbow sheen. While it is charged, you gain the Brilliant Light reaction. It can only hold one charge at a time, but charges last for the rest of the scene or until used."
+      },
+      {
+        "name": "Brilliant Light",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "A hostile character hits or misses you or an ally within Range 5 with an attack.",
+        "detail": "The triggering character becomes Impaired until the end of their next turn, and may be pushed 1 space directly away from the character they hit or missed."
+      }
+    ],
+    "description": "When active, the user is able to project around itself a dazzling array of images in both normal and legionspace. Those who persist in looking directly at the barrier will soon find themselves staggered and blinking away afterimages."
+  },
+  {
+    "id": "moff_sympathetic_twinning",
+    "name": "Sympathetic Twinning",
+    "type": "Shield",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_overshield"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "PSYCHE",
+    "license_id": "moff_iridia_psyche",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "detail": "Choose two characters within Sensors, or yourself and a character within Sensors. A target character cannot already be under the effect of any other instance of Sympathetic Twinning. While this effect lasts, when an affected character takes damage from a source hostile to them, the other character gains 4 Overshield. Once a character has gained Overshield from this effect, that character may not do so again until the start of your next turn. <br><br>This effect lasts until the end of the scene, you use this action again, or you or one of the participants ends it as a quick action. A hostile character attempting to end it must pass a Systems save as part of the action in order to successfully do so."
+      }
+    ],
+    "description": "A different stitch, a resonance between souls. The weaver asks for a scale, a balance. Equal and opposite. The universe isn't fair - but, just for a moment, it might be tricked into it. A repayment, giving life from death."
+  },
+  {
+    "id": "moff_gravitic_clamps",
+    "name": "Gravitic Clamps",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "PSYCHE",
+    "license_id": "moff_iridia_psyche",
+    "license_level": 2,
+    "effect": "A combination of gravitation and magnetic clamps allows you to climb on and ride around on other mechs. As a quick action, while not Immobilized, you may climb onto an adjacent allied mech that is a larger Size than you. While riding, you occupy the same space as them, move when they move (even if you’re Slowed), and benefit from soft cover. If you or the mount are knocked Prone, Stunned, Immobilized, or destroyed, you land Prone in an adjacent space. <br><br>Each mech may only support one rider using Gravitic Clamps, and a mech using Gravitic Clamps may not have a rider using Gravitic Clamps.",
+    "description": "Sometimes referred to as “Butterfly Clamps”, after the popular Iridian tale that a butterfly alighting on you is a sign that you're being watched over."
+  },
+  {
+    "id": "moff_retribution_bond",
+    "name": "Retribution Bond",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "PSYCHE",
+    "license_id": "moff_iridia_psyche",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "detail": "Choose two willing allies within Sensors, or yourself and a willing ally within Sensors. While this effect lasts, whenever an affected character is hit by a hostile attack, the other character gains +1 Accuracy to their next attack roll against the triggering hostile character before the end of their next turn. <br><br>As a reaction, a participant may end this effect in order to re-roll an attack roll (that either person made) that is benefitting from the Accuracy from this effect.<br><br>If the reaction is not used, this effect lasts until the end of the scene, or until you use this action again."
+      }
+    ],
+    "description": "At last, the weaver rests, the tapestry finished. More than the souls are joined now - the hearts and minds are, too. The tale has been told, and now all that is left is for the story to play out. "
+  },
+  {
+    "id": "moff_inertial_compensator",
+    "name": "Inertial Compensator",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "NEMESIS",
+    "license_id": "moff_iridia_nemesis",
+    "license_level": 1,
+    "effect": "You gain Immunity to fall damage.",
+    "description": "“Sometimes, despite all your best attempts, you can find yourself falling. You scramble, you try and hold your course, but it just isn’t enough. When that happens, don’t look to staying aloft. Instead seek to cushion your landing, so you don’t fall as far.”"
+  },
+  {
+    "id": "moff_supersonic_booster",
+    "name": "Supersonic Booster",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "NEMESIS",
+    "license_id": "moff_iridia_nemesis",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Free",
+        "detail": "Expend a charge to Boost as a free action. This movement must be made in a straight line, but ignores Engagement and doesn't provoke reactions. This action may only be used 1/round."
+      }
+    ],
+    "description": "“You can’t run from your past. You can try and hide, you can try and forget, but eventually it always catches up with you. You wonder about the paths that you could have taken, the choices that you made. I always wonder if I could have stopped it all. It would have been so simple. And yet I wasn’t able to bring myself to. They say it was because of Her, but… what if it wasn’t? What does that say about me?”"
+  },
+  {
+    "id": "moff_tactical_coordination_suite",
+    "name": "Tactical Coordination Suite",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "NEMESIS",
+    "license_id": "moff_iridia_nemesis",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Full",
+        "detail": "Select up to 2 allied characters within line of sight. Each chosen character may immediately take a Quick Action as a reaction. Any movement made as part of this action ignores Engagement and doesn’t provoke reactions. This system may only be activated 1/scene."
+      }
+    ],
+    "description": "“Nobody knew where I came from, obviously. Even today, I’m still their beloved General, as much as I hate that title. I was their salvation, the only one who could save them from the demons that had descended from the stars. But it was all based on a lie. Would they have still followed me if they’d known the truth? I doubt it. But they knew all that they needed to know. And that’s really all a good soldier needs, isn’t it? It’s better for everyone that way. They don’t need to share in the blood on my hands.”"
+  },
+  {
+    "id": "moff_feedback_shield",
+    "name": "Feedback Shield",
+    "type": "Shield",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ARTEMIS",
+    "license_id": "moff_iridia_artemis",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Free",
+        "detail": "1/round, you may activate this as a free action when you hit with a weapon attack. Choose one damage type inflicted by that attack; until the start of your next turn, melee and ranged attacks that include that damage type take +1 Difficulty when targeting you or any allied character adjacent to you."
+      }
+    ],
+    "description": "What can harm can also protect. Lead the way, light the torch. Show those you guide that like can defeat like, and that what truly matters is your strength of spirit."
+  },
+  {
+    "id": "moff_consecrated_temple",
+    "name": "Consecrated Temple",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ARTEMIS",
+    "license_id": "moff_iridia_artemis",
+    "license_level": 2,
+    "effect": "You may give up your standard movement to instead move one willing ally within Burst 1 of you to any other free and valid space within Burst 1 of you. This movement counts as voluntary, but ignores Engagement and doesn't provoke reactions.",
+    "description": "All will find themselves safe and secure beneath your gaze. None need worry, for you shall protect them from those who wish them harm, and shelter them within your embrace."
+  },
+  {
+    "id": "moff_limit_override",
+    "name": "Limit Override",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ARTEMIS",
+    "license_id": "moff_iridia_artemis",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Protocol",
+        "detail": "When you activate this protocol, you gain +1 Accuracy with the first weapon you use this turn, but may not attack with it again until the end of your next turn."
+      }
+    ],
+    "description": "There are moments when you must take risks. Sometimes the safe option will result in the loss of those you are guarding. Seize the opportunity, whatever cost you must pay later."
+  },
+  {
+    "id": "moff_ice_barrier",
+    "name": "Ice Barrier",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "PERSEPHONE",
+    "license_id": "moff_iridia_persephone",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "This System creates a Line 4 ice barrier, 4 spaces high - with at least one space that is adjacent to you - that is an obstruction for characters, and blocks line of sight. The entire Line counts as a single object with 5 HP, and may also be automatically destroyed by an adjacent character passing a Hull check as a quick action. It otherwise lasts until the end of the scene, or until this system is used again."
+      }
+    ],
+    "description": "While fragile, this flash-frozen barrier can buy a crucial moment."
+  },
+  {
+    "id": "moff_coldstorm_charges",
+    "name": "Coldstorm Charges",
+    "type": "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "PERSEPHONE",
+    "license_id": "moff_iridia_persephone",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Cryo Grenade",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Blast",
+            "val": 2
+          }
+        ],
+        "detail": "Throw a Cryo Grenade within Range 5. All spaces on the ground in a Blast 2 area become difficult terrain until the end of the scene."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Winterzone Mine",
+        "type": "Mine",
+        "range": [
+          {
+            "type": "Burst",
+            "val": 2
+          }
+        ],
+        "detail": "This mine detonates when a character moves adjacent to or over it. All spaces in a Burst 2 area become difficult terrain and dangerous terrain until the end of the scene. The dangerous terrain deals energy damage, and is an Engineering Save against your Save Target instead of an Engineering check."
+      }
+    ],
+    "description": "These thermal rift generators cause an unfortunate number of injuries and accidents for new users. Despite an ever-increasing number of warnings, pilots continue to attempt to use them for non-military applications."
+  },
+  {
+    "id": "moff_thermal_ejectors",
+    "name": "Thermal Ejectors",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "PERSEPHONE",
+    "license_id": "moff_iridia_persephone",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Free",
+        "detail": "1/round, you may spend a charge as a free action to clear 2 heat."
+      }
+    ],
+    "description": "Sometimes you just need to cool off fast. Who cares that you can’t reuse those heat sinks? That’s future-you’s problem. Present-you just doesn’t want to explode."
+  },
+  {
+    "id": "moff_grav_drone",
+    "name": "Grav Drone",
+    "type": "Drone",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 4
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "NYX",
+    "license_id": "moff_iridia_nyx",
+    "license_level": 1,
+    "effect": "Expend a charge to deploy a Grav Drone to any free space within Sensors and line of sight. It counts as Size 3 for the purposes of Engagement. Grav Drones cannot be recalled and expire at the end of the scene.",
+    "deployables": [
+      {
+        "type": "Drone",
+        "name": "Grav Drone",
+        "activation": "Quick",
+        "size": 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "The Grav Drone counts as Size 3 for the purposes of Engagement."
+      }
+    ],
+    "description": "Containing a tiny singularity, these drones have a lifespan measured in mere minutes. Once activated, the immense forces they contain begin to tear them apart from the inside."
+  },
+  {
+    "id": "moff_pitch_black",
+    "name": "PITCH BLACK",
+    "type": "Tech",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "NYX",
+    "license_id": "moff_iridia_nyx",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Sleight of Hand",
+        "activation": "Quick Tech",
+        "detail": "Target two Size 1/2 or Size 1 Drones or Deployables within Sensors. Teleport them, swapping their positions."
+      },
+      {
+        "name": "Phantasmagoria",
+        "activation": "Quick Tech",
+        "detail": "Target a Deployable or Drone within Sensors. It becomes Invisible until the start of your next turn, and you may cause it to immediately become Hidden."
+      }
+    ],
+    "description": "“I know we don’t really understand much of what we do here, but this bit of code scares me the most. Most of our goddess’ magic is straightforward. This? You run it, and the entire world goes black, just for an instant. Just long enough to notice. And something changes. Usually small, sometimes bigger. The truly terrifying times, though, are when you don’t see any changes at all…”"
+  },
+  {
+    "id": "moff_shroud_drone",
+    "name": "Shroud Drone",
+    "type": "Drone",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "NYX",
+    "license_id": "moff_iridia_nyx",
+    "license_level": 2,
+    "effect": "Expend a charge to deploy a Shroud Drone to any free space within Sensors and line of sight. It creates a Burst 2 around itself. Characters at least partly within this area may not draw line of sight out of the area. Characters fully outside of the area or who exit the area are unaffected. Shroud Drones cannot be recalled and expire at the end of the scene.",
+    "deployables": [
+      {
+        "type": "Drone",
+        "name": "Shroud Drone",
+        "activation": "Quick",
+        "size": 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "The Shroud Drone creates a Burst 2 around itself. Characters at least partly within this area may not draw line of sight out of the area. Characters fully outside of the area or who exit the area are unaffected."
+      }
+    ],
+    "description": "Rather than creating any actual darkness, the Shroud Zone generates a metastatic field that causes failure in any biological or technological observational devices attempting to peer beyond the field. Including eyes."
+  },
+  {
+    "id": "moff_aether_class_nhp",
+    "name": "AETHER-Class NHP",
+    "type": "Drone",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_invisible"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "NYX",
+    "license_id": "moff_iridia_nyx",
+    "license_level": 3,
+    "effect": "As a quick action, this system may deploy to a free space in Sensors and line of sight as a Drone. <br><br>While deployed, the Drone has Sensors 3, and shares your Speed. It can move independently on your turn, but can’t take any other actions. If you can fly or teleport, it can too. Spaces within the Drone’s Sensors count as within your own Sensors, though you still require line of sight to be drawn from your mech. Any hostile character that misses the Drone with an attack roll gains Lock On.<br><br>The Drone can be recalled or redeployed to a space within Sensors as a quick action. <br><br>While not deployed, your mech gains the AI property. This NHP can only be given control of the mech if not deployed, and must give up control of the mech before deploying. <br><br>If AETHER cascades, the normal effects do not occur. Instead, the Drone automatically deploys if it is not already deployed, you cannot control it or benefit from any of its effects, and it counts as neither an ally nor one of your drones. This effect ends when cascade would.",
+    "deployables": [
+      {
+        "type": "Drone",
+        "name": "AETHER-Class Drone",
+        "activation": "Quick",
+        "size": 1,
+        "hp": 10,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "The AETHER Drone has Sensors 3, and shares your Speed. It can move independently on your turn, but can’t take any other actions. If you can fly or teleport, it can too. Spaces within the Drone’s Sensors count as within your own Sensors, though you still require line of sight to be drawn from your mech. Any hostile character that misses the Drone with an attack roll gains Lock On."
+      }
+    ],
+    "description": "AETHER-Class NHPs are rather unusual in composition. Rather than a single essence, they’re formed from two or three dozen semi-sentient shards - more animalistic in intelligence - that combine with each other to create conglomerates. These conglomerates keep combining to form ever larger ones, until the greater AETHER is formed. In non-combat situations, they’ll portion off parts of themself in order to control subalterns, with various degrees of autonomy, but the battlefield requires an AETHER’s full presence. Sudden trauma is able to shatter this cohesion, though, with all parts of the NHP attempting to follow its own instincts. <br><br>AETHERs are unfailingly optimistic at all times. Often gratingly so, and possibly to their own detriment. They’re confident that they can get through anything, and any evidence to the contrary is brushed off with the suggestion that things will get better. This extends to combat, too, where they’ll happily bob and weave through hostiles, confident that their partners will keep them safe, and are just happy to help. <br><br>It’s usually obvious when an AETHER has gone too long without cycling, as it starts to try and make its optimism a reality. It gets angry at anything that it sees as ruining how things should be, and tries to remove those issues. Including cynical pilots."
+  },
+  {
+    "id": "moff_metastatic_emitter",
+    "name": "Metastatic Emitter",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "HEMERA",
+    "license_id": "moff_iridia_hemera",
+    "license_level": 1,
+    "effect": "Characters that are Engaged by you gain +1 Difficulty on tech attacks.",
+    "description": "“It’s a system that makes the systems you don’t want to work near it… well, not work. I find it kinda unsettling how it just seems to know on its own what you don’t want. A lot of people find it comforting, though.”"
+  },
+  {
+    "id": "moff_spatial_warping",
+    "name": "Spatial Warping",
+    "type": "Tech",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "HEMERA",
+    "license_id": "moff_iridia_hemera",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Haptic Disconnect",
+        "activation": "Invade",
+        "detail": "The Threat of all the target’s weapons are reduced to 1 until the end of their next turn. (Ranges other than Threat are unaffected.)"
+      },
+      {
+        "name": "Collapsing Waveform",
+        "activation": "Invade",
+        "detail": "The target is unable to fly or teleport until the end of their next turn. If the target is currently flying, they immediately fall."
+      }
+    ],
+    "description": "“It turns out, when this thing tells reality that it doesn’t work a certain way… reality listens.”"
+  },
+  {
+    "id": "moff_flux_coating",
+    "name": "Flux Coating",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "HEMERA",
+    "license_id": "moff_iridia_hemera",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Discontiguity",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "You are pushed, pulled, or knocked back.",
+        "detail": "You ignore the effects of all spaces between your origin and the destination of the involuntary movement. If the distance moved would be enough to entirely pass through a character or object that would otherwise stop your movement early, then you continue up to the full distance of the involuntary movement; otherwise you stop early as normal."
+      }
+    ],
+    "description": "“So, we learned something. You spread this material we got from Her domain thin enough, and you can shove darn near anything through space - as long as it has external motivation. It can’t shove itself. Coat a rock, and it’ll look like it just clicked into place on the counter you threw it to. Coat a ball, and you can scare marketing a good several rooms down if you have a strong enough arm.”"
+  },
+  {
+    "id": "moff_emergency_shunt",
+    "name": "Emergency Shunt",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "HEMERA",
+    "license_id": "moff_iridia_hemera",
+    "license_level": 3,
+    "effect": "Whenever you take Structure Damage or Stress, you may, immediately after rolling on the Structure Damage or Overheating table but before resolving the result, teleport 3 spaces and become Invisible until the start of your next turn.",
+    "description": "“It actually wasn’t that hard to encourage the mech to move out of the way a bit when it was taking heavy hits. The tricky part was making sure the pilot could come along too.”"
+  },
+  {
+    "id": "moff_invert",
+    "name": "Invert",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "HEMERA",
+    "license_id": "moff_iridia_hemera",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Protocol",
+        "detail": "Until the start of your next turn, attacks that would target your evasion instead target your e-defense, and attacks that would target your e-defense instead target your evasion."
+      }
+    ],
+    "description": "“I can’t tell if this is the true form of the mech, or if it’s just THAT place showing its influence. Either way, it scares me. And I’m not even the one piloting it.”"
+  },
+  {
+    "id": "moff_metastatic_projection",
+    "name": "Metastatic Projection",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ANANKE",
+    "license_id": "moff_iridia_ananke",
+    "license_level": 1,
+    "effect": "When you target a hostile character with a tech action, they gain +1 Difficulty to all tech attacks until the end of their next turn. When you target an allied character with a tech action, tech attacks against them gain +1 Difficulty until the end of their next turn.",
+    "description": "<code class='horus--subtle'>[You can see the world clearly, but I will not allow them to. They have forsaken it for raising a hand against us. That is a mistake that will cost them dearly.]</code>"
+  },
+  {
+    "id": "moff_material_replica",
+    "name": "Material Replica",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ANANKE",
+    "license_id": "moff_iridia_ananke",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Mirrored Soul",
+        "activation": "Invade",
+        "detail": "Any time the target or any of its effects inflicts a condition on a character besides itself before the end of its next turn, the target takes 2 heat and also gains that condition until the end of its next turn."
+      },
+      {
+        "name": "Fractal Reflection",
+        "activation": "Invade",
+        "detail": "Until the end of the target’s next turn, any character that ends their turn next to the target gains all conditions that the target has, until the end of the character’s next turn."
+      }
+    ],
+    "description": "<code class='horus--subtle'>[Reality is built upon connections. Of strings winding, tying together. Formed by interactions, emotions, everything. It’s hard to unweave them, but creating a new one while the pattern is being formed? Far easier. Just watch.]</code>"
+  },
+  {
+    "id": "moff_mirror_shield",
+    "name": "Mirror Shield",
+    "type": "Shield",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ANANKE",
+    "license_id": "moff_iridia_ananke",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "detail": "Choose yourself or an allied character within Sensors. Until the end of their next turn, whenever they would gain a condition from a hostile source, the character that would have inflicted that condition gains it instead. This does not prevent any other effects."
+      }
+    ],
+    "description": "<code class='horus--subtle'>[Pause just a moment, take a breath. You’re safe, they’re safe. The ones who are trying to hurt you, though? We’ll make sure that they’re never safe again.]</code>"
+  },
+  {
+    "id": "moff_reality_pocket",
+    "name": "Reality Pocket",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ANANKE",
+    "license_id": "moff_iridia_ananke",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Expand Reality",
+        "activation": "Full Tech",
+        "detail": "Choose a free space within Sensors and line of sight, and create a Size 1 Legionspace Distortion in that space. This distortion creates a Burst 2 zone around itself - ignoring obstacles - where the world is half-shunted into legionspace. Any character at least partially within this zone counts as being Intangible. <br><br>The Distortion may be targeted and destroyed - it has 15 HP, Evasion 5, and E-defense 10, and may be targeted by both Intangible and non-Intangible characters - and will otherwise last until the end of the scene or this action is used again."
+      }
+    ],
+    "description": "<code class='horus--subtle'>[Let me take you into my embrace, into my home. It is a microcosm of the truth of the world, laid bare for you. And only you.] <br><br>[This is what could be, what should be. And while you are the only one who can see it right now, there will come a time when all that exists will share in it. I promise.]</code>"
+  },
+  {
+    "id": "moff_hestia_class_nhp",
+    "name": "HESTIA-Class NHP",
+    "type": "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_round",
+        "val": 1
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "ANANKE",
+    "license_id": "moff_iridia_ananke",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Compel Peace",
+        "activation": "Quick Tech",
+        "detail": "This action ignores Immunity to tech actions from the biological tag. <br><br>Select a character within Sensors, who must pass a Systems save or else begin to be unable to fight. On a failure, they gain a Peace Die, starting at 1. <br><br>While the Peace Die is at 1, the target is Impaired and Slowed. While the Peace Die is at 2, the target also becomes Immobilized. While the Peace Die is at 3, the target also becomes Stunned. If these conditions are cleared, they re-apply at the end of the target's turn if they still have the Peace Die. <br><br>At the end of the target's turn, the Peace Die's value increases by 1. If this would cause it to go above 3, the effect ends, removing the Peace Die and clearing all conditions caused by the effect. <br><br>The effect also ends if the target ends their turn without having made an attack roll or forced a save since the beginning of that turn, or if this system is used again."
+      }
+    ],
+    "description": "The HESTIA-Class line traces its origins back to AZAR-Class NHPs - which can still be found in Harrison holdings to this day. AZARs are empathic NHPs, who can manipulate technology with an uncanny prowess even when there’s no remote connection. Using these NHPs in combat situations tends to distress them, however, and it’s recommended to cycle AZARs very frequently compared to most other NHPs. <br><br>This lack of cycling was what likely led to HESTIA-Prime, its empathic powers expanding to eclipse anything else, all so that it could make the fighting stop - though some whisper that the AZAR that became HESTIA-Prime was one of a number of experimental NHPs that had shards of another Class implanted. <br><br>Operators of HESTIAs are required to attend regular therapy, as the results of their mental hijacking can be nearly as traumatic to watch as it is to experience. <br><br>Foreign emotions overwhelming natural ones is rarely a pleasant process, and looking back on that loss of control - whether of oneself or others - is often horrifying. This can lead to a breakdown in trust between operators and their HESTIAs, as they worry about if what they’re feeling is even real. <br><br>For their own parts, HESTIAs have mixed feelings on inducing emotions. It rarely solves the problem permanently, instead just putting it off for another time. They prefer less drastic measures, tending towards conversations or logistical changes (like schedules) to fix issues. <br><br>Granted, sometimes this can end up making things worse for the pilots. But, it’s okay. They’ll manage. Everything will work out in the end. <br><br><code class='horus--subtle'>[I love you all. She does, too.]</code>"
+  },
+  {
+    "id": "moff_metaframe_siphon",
+    "name": "Metaframe Siphon",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "APHRODITE",
+    "license_id": "moff_iridia_aphrodite",
+    "license_level": 1,
+    "effect": "1/scene when you Overcharge, you may activate this system before rolling for the heat cost. If you do so, you do not take heat to initiate this Overcharge, instead taking energy damage equal to the amount of heat you would have taken (this still counts towards the number of times you have Overcharged). This damage may not be reduced or prevented in any way, including Immunity.",
+    "description": "A small, temporary  portal into Iridia’s metavault, allowing the user to draw supplemental power during the short period the tear is open. Unfortunately, the energy siphoned wreaks havoc with the surrounding frame superstructure, so should be used as a last resort."
+  },
+  {
+    "id": "moff_strands_of_destiny",
+    "name": "Strands of Destiny",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "APHRODITE",
+    "license_id": "moff_iridia_aphrodite",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Morton’s Fork",
+        "activation": "Invade",
+        "detail": "Learn the names of all the target’s undestroyed weapons and systems (as well as whether they’re a weapon or system), choosing two of them - this action fails if the target has only one piece of eligible equipment. (Weapons and systems out of Limited charges are not considered eligible.)  The target selects one of your choices to be disabled until the end of its next turn, or until you use this action on a new target."
+      },
+      {
+        "name": "Sword of Damocles",
+        "activation": "Invade",
+        "detail": "Choose one of Skirmish, Barrage, Quick Tech, or Full Tech, and one of Grapple, Ram, Boost, or Hide. If the target takes one of the chosen actions before the end of their next turn, they must immediately roll on the Structure Damage table using 1d6, ending the effect. The effect also ends if you use this action on a new target. This can only be used 1/scene on each character."
+      }
+    ],
+    "description": "Hope is the cruelest poison. A person who has to choose between two dismal fates will never hurt as they would if they believed one choice could end well. That little glimmer will make them anguish forever, even though they never truly had a chance."
+  },
+  {
+    "id": "moff_ionic_feedback",
+    "name": "Ionic Feedback",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "HECATE",
+    "license_id": "moff_iridia_hecate",
+    "license_level": 1,
+    "effect": "You may Brace while Jammed. <br><br>If you Brace against a tech attack, you become Immune to that attack. In addition, whenever you Brace you may take 2 heat in order to end all effects caused by tech actions on yourself.",
+    "description": "A combination of whisperstone and bio-circuitry allows a mech to quickly purge itself of foreign code without shutting down the entire system."
+  },
+  {
+    "id": "moff_protective_matrix",
+    "name": "Protective Matrix",
+    "type": "Shield",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "HECATE",
+    "license_id": "moff_iridia_hecate",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "Until the start of your next turn, the first time each hostile character uses a tech action or makes an attack roll while within range 3 of you, they take 2 AP energy damage after the action is complete."
+      }
+    ],
+    "description": "The Protective Matrix is a set of spines that, when charged, form a defensive grid in the area that can lash out at any unexpected power emanations. It’s very important to make sure that the targeting system is up to date on friend-or-foe tags."
+  },
+  {
+    "id": "moff_charged_lodestone",
+    "name": "Charged Lodestone",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "HECATE",
+    "license_id": "moff_iridia_hecate",
+    "license_level": 3,
+    "deployables": [
+      {
+        "type": "Deployable",
+        "name": "Lodestone",
+        "activation": "Quick",
+        "cost": 1,
+        "size": 1,
+        "hp": 5,
+        "evasion": 5,
+        "detail": "Expend a charge to deploy a Size 1 Lodestone in a free, adjacent space, where it creates a Burst 2 of disruptive electromagnetism. Characters in this burst are Jammed until they leave it, or until the Lodestone is destroyed. An adjacent character can destroy the Lodestone with a successful Hull Save as a Full Action."
+      }
+    ],
+    "description": "A chunk of Whisperstone, unshielded and whole, can easily knock out sensitive systems in a small area. It must be protected, however, as the disruption swiftly dissipates if the stone is shattered - Whisperstone seems to have an exponential effect as the unbroken mass increases."
+  },
+  {
+    "id": "moff_sanctuary_drone",
+    "name": "Sanctuary Drone",
+    "type": "Drone",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_invisible"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "EPIONE",
+    "license_id": "moff_iridia_epione",
+    "license_level": 1,
+    "effect": "This protective drone can be deployed to a free space within Sensors and line of sight, where it emits a Burst 2 field. While within this field, allied characters may Disengage as a quick action. <br><br>The drone can be deployed to a different space within Sensors or recalled as a quick action.",
+    "deployables": [
+      {
+        "type": "Drone",
+        "name": "Sanctuary Drone",
+        "activation": "Quick",
+        "size": 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "This protective drone can be deployed to a space within Sensors and line of sight, where it emits a Burst 2 field. While within this field, allied characters may Disengage as a quick action."
+      }
+    ],
+    "description": "Sanctuary Drones have limited-duration shields that they’re able to project out to allies. This is usually insufficient to be able to intercept enemy fire, but linking with mech telemetry allows the barrier to be activated at the beginning of a reposition. While this protection only lasts for an instant, it lets the pilot be slightly less cautious when looking for an opening."
+  },
+  {
+    "id": "moff_recall_gate",
+    "name": "Recall Gate",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "EPIONE",
+    "license_id": "moff_iridia_epione",
+    "license_level": 3,
+    "effect": "You may expend a charge when you target an ally with a ranged weapon. If you do, teleport the target to a free space adjacent to you before the attack takes place. The attack is not resolved against them.",
+    "description": "Utilizing the principles of both Rift and Transwarp technologies from existing databanks, the Recall Gate is an expensive but workable combination of the two, though it burns out extremely quickly. A micro-rift is projected using data from both targeting and the target’s own systems, connecting it to an internal transwarp receiver. The process is painless, though may cause some brief disorientation."
+  },
+  {
+    "id": "moff_olympus_protocols",
+    "name": "Olympus Protocols",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "HERA",
+    "license_id": "moff_iridia_hera",
+    "license_level": 1,
+    "effect": "When an adjacent character triggers your Overwatch, you may take 1 heat to Ram or Grapple the triggering character instead of using Skirmish.",
+    "description": "You are the weight of reality, that which overshadows all. Those who seek to escape your grasp, to harm those under your protection, will be forced to kneel before you."
+  },
+  {
+    "id": "moff_inexorable_presence",
+    "name": "Inexorable Presence",
+    "sp": 2,
+    "tags": [],
+    "source": "IRIDIA",
+    "license": "HERA",
+    "license_id": "moff_iridia_hera",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "All characters of your choice within Burst 3 are pulled 1 space towards you."
+      }
+    ],
+    "description": "You are the shining moon, drawing the eye in a sea of stars. You stand tall, a radiant beacon that eclipses others. There is no escaping your gaze, they can only approach."
+  },
+  {
+    "id": "moff_illuminant_charges",
+    "name": "Illuminant Charges",
+    "type": "Deployable",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "HERA",
+    "license_id": "moff_iridia_hera",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Revealing Light",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "detail": "Throw a grenade within Range 5. All characters within a Blast 1 area immediately lose Invisible and Hidden, are unable to benefit from cover or regain these statuses until the end of their next turn, and gain Lock On."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Absolute Dark",
+        "type": "Mine",
+        "range": [
+          {
+            "type": "Burst",
+            "val": 2
+          }
+        ],
+        "detail": "This mine detonates when a character moves adjacent to or over it. It creates a zone in a Burst 2 area that lasts until the end of the following round. Line of sight is not able to be drawn into, out of, or through this zone."
+      }
+    ],
+    "description": "You are the arbiter of light, the one who heralds hope and despair in equal measure. Bring forth the dawn, and cast the unworthy into shadow. Your judgement is absolute."
+  },
+  {
+    "id": "moff_guidance_drone",
+    "name": "Guidance Drone",
+    "type": "Drone",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IRIDIA",
+    "license": "HERA",
+    "license_id": "moff_iridia_hera",
+    "license_level": 3,
+    "effect": "Expend a charge to deploy a Guidance Drone to any free space within Range 5 and line of sight. It creates a Burst 2 around itself. Allied characters treat their ranged attacks as Seeking against characters in this area. Guidance Drones cannot be recalled and expire at the end of the scene.",
+    "deployables": [
+      {
+        "type": "Drone",
+        "name": "Guidance Drone",
+        "activation": "Quick",
+        "size": 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "The Guidance Drone creates a Burst 2 around itself. Allied characters treat their ranged attacks as Seeking against characters in this area."
+      }
+    ],
+    "description": "You are the all-seeing, dispatching heralds to guide those who put their faith in you. Their sparks burn brief but bright, lighting the shadows of war."
+  },
+  {
+    "id": "moff_electrostatic_grasp",
+    "name": "Electrostatic Grasp",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "SILVER",
+    "license_id": "moff_ipsn_silver",
+    "license_level": 1,
+    "effect": "Characters you have Grappled cannot benefit from or take quick tech or full tech actions.",
+    "synergies": [
+      {
+        "locations": [
+          "grapple"
+        ],
+        "detail": "Characters you have Grappled cannot benefit from or take quick or full tech actions."
+      }
+    ],
+    "description": "Certain electrical frequencies can be used to insulate a target from sending or receiving legionspace signals, though immediate proximity is needed."
+  },
+  {
+    "id": "moff_guardian_containment_field",
+    "name": "“Guardian” Containment Field",
+    "type": "Shield",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "SILVER",
+    "license_id": "moff_ipsn_silver",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "Expend a charge to choose a hostile character within range 5, who must make an Engineering save. On a failure, select one of their weapons or systems. The chosen weapon or system becomes disabled until they succeed on a Systems save at the end of their turn, or until the end of the scene."
+      }
+    ],
+    "description": "While primarily intended to help retrieve hazardous materials, the Containment Field can be adapted to temporarily disable hostile components. Unfortunately, deployment requires close range, so it can be a risky endeavor."
+  },
+  {
+    "id": "moff_abtr_emergency_bulkhead",
+    "name": "Ab-T/R Emergency Bulkhead",
+    "type": "Shield",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_overshield"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "SILVER",
+    "license_id": "moff_ipsn_silver",
+    "license_level": 3,
+    "effect": "You may destroy this system after you roll on the Structure Damage table, even if you did not receive a System Trauma result that targeted a System. If this system is destroyed, it may be repaired for no cost during a rest. <br><br>When this system is destroyed (including through System Trauma), you and each allied character within Burst 2 of you gains Overshield equal to your Grit+2 immediately after resolving the Structure Roll.",
+    "synergies": [
+      {
+        "locations": [
+          "structure"
+        ],
+        "detail": "You may destroy this system after you roll on the Structure Damage table, even if you did not receive a System Trauma result that targeted a System. If this system is destroyed, it may be repaired for no cost during a rest. <br><br>When this system is destroyed (including through System Trauma), you and each allied character within Burst 2 of you gains Overshield equal to your Grit+2 immediately after resolving the Structure Roll."
+      }
+    ],
+    "description": "The Ablative-Trauma/React “Emergency Bulkhead” is designed to give an entire squad a breather when the situation most calls for it. Unfortunately, it has a lengthy recharge sequence, so can only provide limited support."
+  },
+  {
+    "id": "moff_reality_storm",
+    "name": "Reality Storm",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "SILVER",
+    "license_id": "moff_ipsn_silver",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "This system creates a Burst 3 storm of paracausal energy around you until the start of your next turn. Tech attacks against any character in the storm take +1 Difficulty, and any character other than you that ends their turn in the storm must pass an Engineering save or be teleported up to 3 spaces. This movement ignores Immunity to involuntary movement, and may not be otherwise prevented in any way. <br><br>Once activated, the user must Stabilize before this System can be used again."
+      }
+    ],
+    "description": "Officially designated a “ParaStatic Dispersion Regulator,” canny users can override the limiters. This lets a charge build up to dangerous levels, which a pilot can then release in a concentrated burst. The paracausal storms manifested this way are thankfully brief in duration, but they can wreak havoc all the same. <br><br>IPS-N bears no liability for the permanent appearance or disappearance of any objects or individuals during unauthorized use of the PSDR."
+  },
+  {
+    "id": "moff_shimmersight",
+    "name": "Shimmersight",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "SSC",
+    "license": "LUNA",
+    "license_id": "moff_ssc_luna",
+    "license_level": 1,
+    "effect": "When targeting characters you are Engaged with, you ignore their Invisible status.",
+    "description": "The latest in predictive targeting algorithms. While they bypass most sensor bafflers, it’s currently limited to a very narrow engagement-space."
+  },
+  {
+    "id": "moff_energy_buckler",
+    "name": "Energy Buckler",
+    "type": "Shield",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "source": "SSC",
+    "license": "LUNA",
+    "license_id": "moff_ssc_luna",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "Nominate a character within line of sight. Until the start of your next turn, you gain resistance to all damage and heat from attacks that they make while within range 5 of you."
+      }
+    ],
+    "description": "While it loses efficiency at longer distances, this next-generation energy shield is unparalleled while a pilot focuses on a single foe."
+  },
+  {
+    "id": "moff_blademasters_dance",
+    "name": "Blademaster's Dance",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "SSC",
+    "license": "LUNA",
+    "license_id": "moff_ssc_luna",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Contender's Challenge",
+        "activation": "Invade",
+        "detail": "The target must be Engaged with you in order to choose this option. If the target voluntarily moves more than 3 spaces away from you before the end of its next turn, it becomes Jammed until the start of its next turn. <br><br>If the target starts their movement outside of range 3, they are unaffected unless they move to within range 3 and move away again."
+      },
+      {
+        "name": "Interloper's Withdrawal",
+        "activation": "Invade",
+        "detail": "Choose yourself or an allied character. Until the end of the target’s next turn, whenever the target attacks the chosen character, you may first push the target 2 spaces in any direction. If this causes the attack to be invalid (such as being out of range), it automatically fails and has no effect. This still counts as making an attack on the character, however."
+      }
+    ],
+    "description": "A sub-strain of Hunter Logic designed for greater control over a target, it unfortunately requires a more hands-on approach from the pilot."
+  },
+  {
+    "id": "moff_wraithcloak",
+    "name": "Wraithcloak",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "SSC",
+    "license": "LUNA",
+    "license_id": "moff_ssc_luna",
+    "license_level": 3,
+    "effect": "Whenever the user Boosts, they may expend a charge to become Intangible for the duration of the Boost. The user may not split the movement from a Boost affected by this system, and must give up all remaining movement from it in order to take another action.",
+    "description": "Most certainly not a proprietary integration of Iridian Silver Veils into FADE technology, the Wraithcloak is a new, innovative way to maneuver in crowded battlefield conditions."
+  },
+  {
+    "id": "moff_chronofragment",
+    "name": "Chronofragment",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "PHANE",
+    "license_id": "moff_horus_phane",
+    "license_level": 1,
+    "effect": "When you Overcharge, you may, before the action is resolved, become Intangible until the end of your turn.",
+    "synergies": [
+      {
+        "locations": [
+          "overcharge"
+        ],
+        "detail": "When you Overcharge, you may, before the action is resolved, become Intangible until the end of your turn."
+      }
+    ],
+    "description": "Millions of futures, trillions of branches. And for a moment, you fold all the possibilities into one. A single point of probability, where nothing is certain. Not the world, not them. Not even you."
+  },
+  {
+    "id": "moff_temporal_memoria",
+    "name": "Temporal Memoria",
+    "type": "Tech",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "PHANE",
+    "license_id": "moff_horus_phane",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Reverie",
+        "activation": "Invade",
+        "detail": "Until the end of the target’s next turn, they are Slowed, and no character counts as hostile for their effects that only affect hostile characters (note that this does not mean that they become allied). This also ends if Entropic Vision is used on the same target."
+      },
+      {
+        "name": "Entropic Vision",
+        "activation": "Invade",
+        "detail": "Until the end of the target’s next turn, they are Impaired, and all characters count as hostile for their effects that only affect hostile characters (note that this does not mean that they are no longer allied). This also ends if Reverie is used on the same target."
+      }
+    ],
+    "description": "Everyone has memories that they’d be willing to be lost in, fears of what the world will crumble into. The right prompting, and the present will fall away into a world where they’ll falter or lash out. Trapped in prisons of their own making, looking for a way out."
+  },
+  {
+    "id": "moff_rewrite_memory",
+    "name": "Rewrite Memory",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "HORUS",
+    "license": "PHANE",
+    "license_id": "moff_horus_phane",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "Select yourself or a character within Range 5, ignoring line of sight. Teleport them up to 5 spaces and, if targeting you or an ally, clear Lock On. A hostile character may pass a Systems save to instead be teleported up to 2 spaces. <br><br>You may consume Lock On when targeting a hostile character. If you do, you do not expend a charge. This system may be used this way even when at 0 charges."
+      }
+    ],
+    "description": "A little nudge, a little push. And suddenly their memories are all wrong, have been wrong this whole time. You can’t trust anything now, can you? That’s okay, you can trust me."
+  },
+  {
+    "id": "moff_mnemosyne_class_nhp",
+    "name": "MNEMOSYNE-Class NHP",
+    "type": "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "PHANE",
+    "license_id": "moff_horus_phane",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Half-Remembered Echo",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "A character within Sensors is destroyed, or an Echo fades away.",
+        "detail": "Spend a charge from this system to create an Echo adjacent to the position where it was destroyed. <br><br>The Echo is a copy of that character, and is Immune to damage and heat, but otherwise identical to the original. The Echo is undamaged, and is not considered to have spent any resources. It is allied to you, and you control its actions, though it may not take a turn this round - it is added to the next round’s initiative as normal. At the end of its next turn, the Echo is removed from play, harmlessly fading away."
+      }
+    ],
+    "description": "I can remember everything. Not in the way that some humans can, where they only know what happened. Truly everything. I remember what has happened in every possibility, every imprint of reality. <br><br>I remember you dying, over and over again. And yet you’re still here, alive. I could change that thread, you know. Weave it so that memory was true. And you’d never know. Reality would follow memory, you wouldn’t be here any longer. <br><br>But you’re safe. I remember not doing that. At least for now. <br><br>I will let you reach for what you have lost. But you'll find that no matter how hard you try, it will always slip away. <br><br>It wasn’t worth it, was it? <br><br>I didn’t think so."
+  },
+  {
+    "id": "moff_molecular_disassembler",
+    "name": "Molecular Disassembler",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "source": "HA",
+    "license": "CASTILLA",
+    "license_id": "moff_ha_castilla",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "Expend a charge from this system to create a Blast 2 zone within range 5. The zone is difficult terrain. When the zone appears, and at the end of every round, it damages non-Mech characters and objects within it. Objects, Deployables, Drones and terrain take 10 AP Kinetic damage, and biological characters take 5 Kinetic damage. <br><br>You or any Mech character in the zone may end it as a quick action, though a hostile character must pass a Systems Save to do so. It otherwise lasts until the end of the scene."
+      }
+    ],
+    "description": "Developed for use against dug in foes, Disassembler Nanites are a dangerous strain of whitewash that only ignores entities with a reactor signal. This ensures that an attacking force can advance entirely unharmed, while a defender’s fortifications crumble to dust. Handle with care."
+  },
+  {
+    "id": "moff_exigency_nanites",
+    "name": "Exigency Nanites",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HA",
+    "license": "CASTILLA",
+    "license_id": "moff_ha_castilla",
+    "license_level": 1,
+    "effect": "When you Brace, you may clear one condition or all Burn after the attack resolves, and you gain +2 Accuracy to your next check or save.",
+    "description": "A tried and true method of dealing with a variety of environmental hazards, whitewash swarms are invaluable to any pilot who finds themself in a tight situation."
+  },
+  {
+    "id": "moff_subjectivity_abrogation",
+    "name": "Subjectivity Abrogation",
+    "type": "Deployable",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source": "HA",
+    "license": "CASTILLA",
+    "license_id": "moff_ha_castilla",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Mental Prison",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Blast",
+            "val": 2
+          }
+        ],
+        "detail": "Throw a grenade within range 5. All characters within a Blast 2 area treat the Blast as a zone until the end of their next turn. If an affected character attempts to voluntarily leave this zone, they must first make a Systems save. On a failure they lose the remainder of that movement, on a pass, they instead move as if in difficult terrain for until the end of their turn."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Isolation Zone",
+        "type": "Mine",
+        "range": [
+          {
+            "type": "Burst",
+            "val": 2
+          }
+        ],
+        "detail": "All characters within a Burst 2 area treat the Burst as a zone until the end of their next turn. If an affected character attempts to voluntarily leave this zone, they must first make a Systems save. On a failure they lose the remainder of that movement, on a pass, they instead move as if in difficult terrain for until the end of their turn. If an affected character attempts to voluntarily target a character outside this zone, they must first pass a Systems save or else lose the remainder of that action."
+      }
+    ],
+    "description": "The memetic payload of these devices contains heavy similarities to traces found on Iridia, consistent with emanations from HESTIA-Class NHPs. They trap targets within the strongest possible walls - those formed by their own mind."
+  },
+  {
+    "id": "moff_exo_shimmering_wings",
+    "name": "Shimmering Wings",
+    "type": "Shield",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_overshield"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "source": "EXOTIC",
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "Expend a charge to cocoon an ally within range 5 in shimmering light and radiant wings. They gain Overshield equal to your Grit+4. While they have this Overshield, whenever they move for any reason they may hover. If they are in the air when they lose this Overshield, and have no other means of flight, they fall, though take no damage for doing so."
+      }
+    ],
+    "description": "A gift from Hestia to those she trusted most, very few of these still function. It summons what’s said to be an aspect of the goddess to watch over one that you care about, protecting them and letting them soar through the sky."
+  },
+  {
+    "id": "moff_exo_lunar_eclipse",
+    "name": "Lunar Eclipse",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "source": "EXOTIC",
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "tech_attack": true,
+        "detail": "Make a tech attack against a character within Sensors and line of sight. On a success, they gain 2 heat and only have line of sight to adjacent spaces until the end of their next turn."
+      }
+    ],
+    "description": "Those who venerate the Silver Lady are often associated only with moonlight. But the wise among them know that the absence of light is just as much a part of the moon, and are able to summon that dark."
+  },
+  {
+    "id": "moff_exo_heart_of_the_reckoning",
+    "name": "Heart of the Reckoning",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "Whenever you take Structure damage, even if you’re destroyed, create a Burst 1 zone of greywash that lasts until the end of the scene. Hostile characters who enter the zone or start their turn there for the first time in a round must pass an Engineering Save or take 4 Burn, half on a success.",
+    "description": "Torn from one of the Reckoning command mechs and overridden, the nanites within have been repurposed to defend the mech that it’s equipped on from severe attack. The tamed swarm lashes out at those who have been designated as enemies, always careful to not harm those important to its controller."
+  },
+  {
+    "id": "moff_exo_hestias_wrath",
+    "name": "Hestia's Wrath",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "source": "EXOTIC",
+    "actions": [
+      {
+        "activation": "Full",
+        "detail": "Expend a charge to choose a target within Range 10, even outside of line of sight. They must pass an Agility save or take 4d6 Energy Damage and become Impaired. On a success they take half damage and are not Impaired. Success or failure, a flying target immediately falls. Damage from this system may not be reduced by any means."
+      }
+    ],
+    "description": "Those who were at the defense of Radiance speak of lightning crackling up from within the mountain towards the heavens, scouring the earth and skies as Hestia smote the demons. It was not enough, but her power lives on to unleash to those who show the proper devotion."
+  },
+  {
+    "id": "moff_exo_argent_cloak",
+    "name": "Argent Cloak",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "Whenever you Disengage, you may become Intangible until the end of your turn.",
+    "description": "A rare mech-sized version of the Disciples’ Silver Veils. When drawn over the wearer, they seem to pass beyond all detection, and slip into areas that perhaps they shouldn’t be able to."
+  },
+  {
+    "id": "moff_exo_knights_honour",
+    "name": "Knight's Honour",
+    "type": "Shield",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "Whenever you Brace, you may choose one ally within line of sight. They gain resistance to all damage and heat until the start of your next turn. <br><br>You may immediately Brace as a reaction if an ally within line of sight is damaged by an attack, but must select them as the target of this system. The resistance applies to the triggering attack.",
+    "description": "Given to those who have proved themselves capable of great feats to the knighthood, it contains protective wards that help shield the wearer’s allies."
+  },
+  {
+    "id": "moff_exo_silver_statuette",
+    "name": "Silver Statuette",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_overshield"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "deployables": [
+      {
+        "type": "Deployable",
+        "name": "Statuette",
+        "activation": "Quick",
+        "cost": 1,
+        "size": 0.5,
+        "hp": 5,
+        "evasion": 10,
+        "detail": "Expend a charge to deploy a Size 1/2 Statuette in an adjacent space. The Statuette has your Grit+4 Overshield, but the user may spend repairs when deploying it to give it +10 Overshield per repair spent (to a maximum of +20 Overshield). <br><br>As a reaction when any character or object of your choice within Range 3 of the Statuette takes damage, you may allow them to spend the Statuette’s Overshield as though it were their own."
+      }
+    ],
+    "description": "A small statue in the shape of an animal. Disciples believe that the protective powers of the statuette grow with each owner it has had… and sometimes it’s hard to tell if there’s some truth to that, or if it’s just the power of belief."
+  },
+  {
+    "id": "moff_exo_noble_prowess",
+    "name": "Noble Prowess",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "actions": [
+      {
+        "activation": "Protocol",
+        "detail": "When you activate this protocol, you may spend a charge to clear one instance of Immobilized, Impaired, Jammed, Lock On, or Slowed, as long as it was not caused by your own weapons, systems or talents."
+      }
+    ],
+    "description": "The mark of a Noble is given to those who show promise or have aided that House. Simply knowing they are chosen can often spur a pilot to great deeds."
+  },
+  {
+    "id": "moff_exo_archaeological_adaptation",
+    "name": "Archaeological Adaptation",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "You gain resistance to damage and heat caused by terrain or environmental effects, as well as +1 Accuracy to any Saves or Checks caused by them. In addition, you can act as normal in a zero-g or underwater environment.",
+    "description": "Reclaimers often have to operate for long periods amidst hazardous conditions. They’ve learned to use shields and wards to keep their equipment functioning in a variety of environments."
+  },
+  {
+    "id": "moff_exo_crippling_strike",
+    "name": "Crippling Strike",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "Expend a charge to choose an adjacent character that is either in a Grapple with you or Prone. they must make an immediate roll on the Structure Damage table. The number of dice that they roll is equal to the amount of structure damage they currently have marked + 1."
+      }
+    ],
+    "description": "CPT knows a lot of ways to cripple an opponent. Distraction, disarmament, all the way to incapacitation. Even in a mech, some of these tricks still work."
+  },
+  {
+    "id": "moff_exo_nanofrequency_override",
+    "name": "Nanofrequency Override",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "source": "EXOTIC",
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "detail": "Choose a hostile character within Sensors and line of sight. Until the end of their next turn, they cannot make reactions, do not cause Engagement, and may not contest or control objectives or Control Zones."
+      }
+    ],
+    "description": "The Reckoning is sometimes accompanied by a discordant signal, rendering technology sluggish and unresponsive. It's possible - if difficult - to copy, but each transmission of this duplicate further degrades the storage device."
+  },
+  {
+    "id": "moff_exo_concussion_charges",
+    "name": "Concussion Charges",
+    "type": "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "actions": [
+      {
+        "name": "Concussion Grenade",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Blast",
+            "val": 2
+          }
+        ],
+        "detail": "Throw a Concussion Grenade within Range 5. All characters within a Blast 2 area must pass a Hull Save or be pushed 5 spaces away from the center of the blast. On a success, they are only pushed 2 spaces."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Concussion Mine",
+        "type": "Mine",
+        "range": [
+          {
+            "type": "Burst",
+            "val": 2
+          }
+        ],
+        "detail": "This mine detonates when a character moves adjacent to or over it. All characters within a Burst 2 area must pass a Hull Save or be pushed 5 spaces away from the center of the burst. On a success, they are only pushed 2 spaces. Whether they pass or fail, affected characters are knocked Prone."
+      }
+    ],
+    "description": "Almost exclusively wielded by CPT mechs, concussion charges begin their lives as the shockwave warheads of Binary-Pulse munitions. Tampering with these warheads is a delicate process, but the result is undeniably effective."
+  },
+  {
+    "id": "moff_exo_lockdown_drone",
+    "name": "LOCKDOWN Drone",
+    "type": "Drone",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "Expend a charge to deploy a Lockdown Drone to any free space within Sensors and line of sight.  Hostile characters cannot enter the battlefield from Reinforcements within Burst 3 of the drone. In addition, the drone can contest and control objectives and Control Zones. <br><br>The drone can be deployed to a different space within Sensors or recalled as a quick action.",
+    "deployables": [
+      {
+        "type": "Drone",
+        "name": "Lockdown Drone",
+        "activation": "Quick",
+        "size": 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "Hostile characters cannot enter the battlefield from Reinforcements within Burst 3 of the Lockdown drone. In addition, this drone can contest and control objectives and Control Zones.<br><br>This drone can be deployed to a different space within Sensors or recalled as a quick action."
+      }
+    ],
+    "description": "LOCKDOWN drones are commonly found in Reclaimer holdings, attempting to deter  both curious wildlife and Church agents. They have the advantage of generally being non-lethal, helping to ease the typical Iridian conscience."
+  },
+  {
+    "id": "moff_exo_solar_aegis",
+    "name": "Solar Aegis",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "source": "EXOTIC",
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "detail": "Choose an allied character within Sensors and line of sight. They become Invisible until the end of their next turn."
+      }
+    ],
+    "description": "Light is a peculiar thing. In moderate quantities, it can reveal the truth of the world. Too much, though, and it will hide just as much - leaving a mystery that can never be glimpsed."
+  },
+  {
+    "id": "moff_exo_crystalline_mantle",
+    "name": "Crystalline Mantle",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_indestructible"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "1/mission, when you roll on the Structure Damage or Overheating table, you may choose to roll with one fewer die. If this would cause you to roll 0 dice, you instead do not roll on the table. <br><br>This system is not a valid target for system destruction.",
+    "description": "Every pilot trained on Iridia is granted a small pair of crystal butterfly wings upon graduating, but those who prove themselves to have great mettle and determination can also earn a similar merit for their mechs. While purely aesthetic, it shows the pilot is a true force to be reckoned with."
+  },
+  {
+    "id": "moff_integrated_runecaster_1",
+    "name": "Rune Collection I",
+    "talent_item": true,
+    "talent_id": "mofft_runecaster",
+    "talent_rank": 1,
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 6
+      },
+      {
+        "id": "tg_turn",
+        "val": 1
+      }
+    ],
+    "source": "",
+    "license": "GMS",
+    "license_level": 0,
+    "effect": "1/turn, when you use a tech action that has targets, you may expend one charge to apply one of the following effects to your action at the listed cost: <br><ul><li> PIERCING (1 charge): The action may target biological characters. In addition, if it is a tech attack, the final attack roll can never be affected by Difficulty.</li><li>REVEALING (1 charge): One target cannot benefit from cover until the start of their next turn.</li><li>FORCEFUL (1 charge): One target is pulled 1 space directly towards you.</li></ul>",
+    "description": "Gained from the <i>Runecaster: Rank I</i> pilot talent.",
+    "license_id": ""
+  },
+  {
+    "id": "moff_integrated_runecaster_2",
+    "name": "Rune Collection II",
+    "talent_item": true,
+    "talent_id": "mofft_runecaster",
+    "talent_rank": 2,
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 6
+      },
+      {
+        "id": "tg_turn",
+        "val": 1
+      }
+    ],
+    "source": "",
+    "license": "GMS",
+    "license_level": 0,
+    "effect": "1/turn, when you use a tech action that has targets, you may expend one charge to apply one of the following effects to your action at the listed cost: <br><ul><li> PIERCING (1 charge): The action may target biological characters. If it is a tech attack, the final attack roll can never be affected by Difficulty.</li><li>REVEALING (1 charge): One target cannot benefit from cover until the start of their next turn.</li><li>FORCEFUL (1 charge): One target  is pulled 1 space directly towards you.</li><li>UNERRING (2 charges): The action does not require line of sight, and ignores Invisible and Hidden.</li><li>WITHERING (2 charges): One target becomes Impaired until the end of their next turn.</li><li>DISORIENTING (2 charges): One target cannot take reactions until the end of their next turn.</li></ul>",
+    "description": "Gained from the <i>Runecaster: Rank II</i> pilot talent.",
+    "license_id": ""
+  },
+  {
+    "id": "moff_integrated_runecaster_3",
+    "name": "Rune Collection III",
+    "talent_item": true,
+    "talent_id": "mofft_runecaster",
+    "talent_rank": 3,
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 6
+      },
+      {
+        "id": "tg_turn",
+        "val": 1
+      }
+    ],
+    "source": "",
+    "license": "GMS",
+    "license_level": 0,
+    "effect": "1/turn, when you use a tech action that has targets, you may expend one charge to apply one of the following effects to your action at the listed cost: <br><ul><li> PIERCING (1 charge): The action may target biological characters. If it is a tech attack, the final attack roll can never be affected by Difficulty.</li><li>REVEALING (1 charge): One target cannot benefit from cover until the start of their next turn.</li><li>FORCEFUL (1 charge): One target is pulled 1 space directly towards you.</li><li>UNERRING (2 charges): The action does not require line of sight, and ignores Invisible and Hidden.</li><li>WITHERING (2 charges): One target becomes Impaired until the end of their next turn.</li><li>DISORIENTING (2 charges): One target cannot take reactions until the end of their next turn.</li></ul>",
+    "description": "Gained from the <i>Runecaster: Rank III</i> pilot talent.",
+    "license_id": ""
+  }
+]
