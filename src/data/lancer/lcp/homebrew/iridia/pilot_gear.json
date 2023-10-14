@@ -1,0 +1,144 @@
+[
+  {
+    "id": "pg_moff_fluxdagger",
+    "name": "Fluxdagger",
+    "type": "Weapon",
+    "description": "Crafted from the same material as used in the Hemera’s Reality Cutter, the Fluxdagger is not quite properly real. It doesn’t cut through matter so much as matter moves aside for it... after which the blade invariably shatters into tiny shards from the effort. A moment’s concentration can will the destruction to be undone, however - the blade’s personal time reversing to become whole once more.",
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "pg_moff_luminary_bracer",
+    "name": "Luminary Bracer",
+    "type": "Gear",
+    "description": "This golden bracer is able to be attuned to a small object - one that can be comfortably held in one hand, like a weapon or a keycard - over the course of ten or so minutes. With a gesture, the object is able to instantaneously appear in the wearer’s hand in a burst of light, so long as it’s somewhere within 30m of the wearer."
+  },
+  {
+    "id": "pg_moff_lunar_ichor",
+    "name": "Lunar Ichor",
+    "type": "Gear",
+    "description": "A unique, silvery wine from the Crystalline Vineyards of House Sommelier, it’s an important facet of many Iridian celebrations - especially those regarding bonds with friends and family. While its taste is fairly mild, those who drink from the same bottle find that they share a light empathic connection for a time, able to feel the others’ emotions. It does cause a rather harsh hangover, though."
+  },
+  {
+    "id": "pg_moff_silver_veil",
+    "name": "Silver Veil",
+    "type": "Gear",
+    "description": "A vestment originating with Disciples of the Silver Lady, this shimmering silver cloak makes the wearer nearly invisible to biological and technological observation in indirect light, such as moonlight. In bright light, it instead becomes blinding, dazzling observers - including electronic eyes. In complete darkness, the wearer seems like they can slip through spaces that would be far too thin, perhaps even through the spaces around doors if they concentrate enough."
+  },
+  {
+    "id": "pg_moff_soulgem",
+    "name": "Soulgem",
+    "type": "Gear",
+    "description": "An almost weightless, translucent, multicoloured gemstone, peering through it appears to make the world seem faint and almost insubstantial. These gems were said to be a boon from Hestia, being discovered around Iridia ever since her awakening. What’s known for certain, though, is that they glow when in the presence of  her, one of her angels, or one of her divine miracles. <br><br>The Soulgem will glow if in proximity to NHPs or paracausal activity. The stronger the activity, the brighter the glow will be and the further from the source the glowing will begin."
+  },
+  {
+    "id": "pg_moff_vial_of_memories",
+    "name": "Vial of Memories",
+    "type": "Gear",
+    "description": "A tiny sealed bottle of water from the Lake of Dreams, it seems to sparkle with a faint inner radiance if viewed from the right angle. Maybe. Many believe that it holds a glimmer of the Lake’s power and that it can give a faint nudge to a worthy asker, after which it stops shining for a time. <br><br>Expend a charge outside of combat for the following effect:<ul><li><b>Mnemosight:</b> Concentrate on an inanimate object in front of you. Gain a faint impression from its recent past; for instance, vague inklings of the passcode on a keypad or faint features of a weapon’s last wielder. While this doesn’t give you perfect knowledge, it can help give you a place to start.</li></ul>",
+    "actions": [
+      {
+        "name": "Brief Vision",
+        "activation": "Other",
+        "detail": "Expend a charge outside of combat for the following effect:<ul><li><b>Mnemosight:</b> Concentrate on an inanimate object in front of you. Gain a faint impression from its recent past; for instance, vague inklings of the passcode on a keypad or faint features of a weapon’s last wielder. While this doesn’t give you perfect knowledge, it can help give you a place to start.</li></ul>",
+        "pilot": true
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "pg_moff_whisperstone",
+    "name": "Whisperstone",
+    "type": "Gear",
+    "description": "A fist sized chunk of rock taken from the Silent Mountains, the only thing unusual about it seems to be slightly rippling striations. It must be stored in a metal container to be transported safely, however; when not sealed off, it projects a bubble of distorted electromagnetics about 15m in radius. Only the strongest of signals can get in or out, and unprotected machinery can begin acting erratically. Pilots are best advised to not use inside their mech."
+  },
+  {
+    "id": "pg_moff_dwarf_ephemeric",
+    "name": "Dwarph Ephemeric",
+    "type": "Gear",
+    "description": "The smallest subspecies of the curious and energetic Epehemera, Dwarf Ephemera often get overshadowed (literally and metaphorically) by their larger, sleeker cousins. While this particular subspecies will never grow large enough to ride, they are highly intelligent, and can be trained to track, fetch small objects, or scout ahead. <br><br>Ephemeric owners learn to always keep an eye out for anything suspicious, as the rainbow scales of the lizards refract light when seen from any angle other than head-on. And Ephemera are well aware of this, with tamed ones loving to startle their owners by jumping out randomly and asking for attention.",
+    "tags": [
+      {
+        "id": "moff_tg_pet"
+      }
+    ]
+  },
+  {
+    "id": "pg_moff_melp",
+    "name": "Melp",
+    "type": "Gear",
+    "description": "Small, fluffy foxlike creatures, Melpin come in a variety of colours, and don’t seem to be wholly natural. They have a habit of shifting locations when they’re out of sight - even sometimes during a blink - and seem to get places where they really shouldn’t. <br><br>In the wild, Melpin are rather flighty and mischievous, toying around with people who come near; when one decides to adopt a person, it becomes ferociously loyal. <br><br>While they’re rumoured to be able to talk, in actuality they just parrot back words that they hear. Every Melp has at least a few phrases that they love to use, and several more that are specifically to annoy their caretakers.",
+    "tags": [
+      {
+        "id": "moff_tg_pet"
+      }
+    ]
+  },
+  {
+    "id": "pg_moff_prismarach",
+    "name": "Prismarach",
+    "type": "Gear",
+    "description": "Crystalline spiders that primarily live deep within the Silent Mountains, few have ever seen one. They communicate via a complex language of internal luminescence, akin to an internal aurora when they’re at their most emotional. <br><br>While the creatures are rather shy and reclusive, they can be tempted out of hiding via gently flickering light sources - what they consider a polite greeting.",
+    "tags": [
+      {
+        "id": "moff_tg_pet"
+      }
+    ]
+  },
+  {
+    "id": "pg_moff_psylex",
+    "name": "Psylex",
+    "type": "Gear",
+    "description": "Resembling not much more than a cat-sized moth, these creatures adore people. They seem to be at least mildly empathic, and will flock to those who’re having difficult times and try to cheer them up - including, at times, bringing them small gifts of food or flowers. <br><br>Tamed Psylex serve as a good warning system for if someone intends harm, as they generally scatter the instant that it seems like hostile emotions are going to fill the air. They’ll provide moral support, yes, but from a safe distance.",
+    "tags": [
+      {
+        "id": "moff_tg_pet"
+      }
+    ]
+  },
+  {
+    "id": "pg_moff_terala",
+    "name": "Terala",
+    "type": "Gear",
+    "description": "These two-headed, feathered snakes can often be found hanging off trees and basking in the sunlight. It’s rumoured that their feathers are photosynthetic, and it’s true that even those who keep them as pets never seem to see them eat, despite their two heads. <br><br>Terala are fiercely protective of those that they’ve grown close to, and they are quite willing to be uncharacteristically aggressive if their caretakers are threatened, lashing out with a shock generated from their bio-electric organ.",
+    "tags": [
+      {
+        "id": "moff_tg_pet"
+      }
+    ]
+  },
+  {
+    "id": "pg_moff_vorax",
+    "name": "Vorax",
+    "type": "Gear",
+    "description": "Fist-sized wasps with a lustrous black coating, wild Vorax migrate along Iridia’s temperate zones, pollinating plants as they go. <br><br>Iridians have learned that they have rather insatiable sweet tooths, and - despite their large stingers - prefer not to be aggressive. So it’s not uncommon to see a small flock of them fluttering around a person who’s feeding them things like sweet berries, or even keeping them as pets to help pollinate gardens. <br><br>If they feel threatened, though that’s fairly rare, they can inject the threat with a reasonably potent natural tranquilizer, helping the flock - or their owner - to escape.",
+    "tags": [
+      {
+        "id": "moff_tg_pet"
+      }
+    ]
+  }
+]

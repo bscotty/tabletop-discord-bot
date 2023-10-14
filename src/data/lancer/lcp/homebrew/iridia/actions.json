@@ -1,0 +1,9 @@
+[
+  {
+    "id": "act_moff_partake_in_liturgy",
+    "name": "PARTAKE IN LITURGY",
+    "activation": "Downtime",
+    "terse": "Participate in religious ritual.",
+    "detail": "When you Partake in Liturgy, you participate in a religious ritual with fellow believers, confide in a holy person, or simply enter a meditative state to try to commune with the divine. Whatever it involves, you’re trying to gain help with a problem that seems difficult to surmount or answer alone. <br><br>State a problem that you have without a clear answer, and roll: <br><br>On a 20+, you are given insight into your problem, which may come in the form of a dream, a fortunate stumbling on something, a helpful person, or something else; the GM gives you guidance on how to get what you want, and you choose a Reserve that will help. <br><br>On a 10-19, you are given insight as per a roll of 20+, but choose one: <br>• The answer is selfish. The path you seek is some kind of blasphemy, or at least sacrilegious, and will likely upset fellow believers. The next time you roll a 10-19 on this action, treat it as a 9 or less instead, unless you make amends before then. <br>• The answer is not what you wanted. While you may have thought you needed something, the truth is otherwise. You are instead given a Reserve of the GM’s choice, as well as insight as to why that is what you need, as opposed to what you wanted. <br><br>On a 9 or less, it is clear to you that the divine works in mysterious ways, or is perhaps displeased. In order to receive an answer, you must make some sacrifice - whether that’s something physical, some strongly held aspect of yourself, a relationship, deeply held feelings, or something else important to you. If you do so, treat this result as if you had rolled a 10-19."
+  }
+]

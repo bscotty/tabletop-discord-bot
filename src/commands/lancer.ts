@@ -24,6 +24,7 @@ import {getEHandSLCP} from "../data/lancer/lcp/homebrew/event horizon & suns";
 import {getKrfwCatalogLcp} from "../data/lancer/lcp/homebrew/krfw catalog";
 import {getLegionnaireLcp} from "../data/lancer/lcp/homebrew/legionnaire";
 import {getCrisisCoreLcp} from "../data/lancer/lcp/homebrew/crisis core";
+import {getIridiaLcp} from "../data/lancer/lcp/homebrew/iridia";
 import {safeReply} from "./util/safe-reply";
 
 @Discord()
@@ -59,6 +60,7 @@ export class Lancer {
             getCrisisCoreLcp(),
             getEHandSLCP(),
             getGilgameshLcp(),
+            getIridiaLcp(),
             getIronleafFoundryLcp(),
             getKrfwCatalogLcp(),
             getLegionnaireLcp(),

@@ -1,0 +1,85 @@
+[
+  {
+    "id": "cbb_iridia_gms_himalaya_reinforcement",
+    "name": "Himalaya Reinforcement",
+    "source": "GMS",
+    "effect": "When you take Structure Damage, you ignore all damage that would be applied after resetting your HP and reduce any further damage from hostile characters that turn to 0. Effects that deal 1 structure damage will set you to your maximum HP after resolving the structure loss.<br><br>Your frame only costs 2 Repairs to repair if it is destroyed, and can be repaired even if it melted down.",
+    "description": "A non-standard augmentation designed for frames acting in high-duress fields."
+  },
+  {
+    "id": "cbb_iridia_gms_tactical_insertion",
+    "name": "Tactical Insertion",
+    "source": "GMS",
+    "effect": "At the start of every combat, become Invisible until the end of your first turn. <br><br>1/mission, you may deploy via Tactical Insertion instead of deploying normally. If you do so, you may deploy to any space at least 5 spaces away from any NPC, and at least 10 spaces away from any objective.",
+    "description": "Whether you’ve installed jet boosters, stealth systems, or upgraded mapping modules, you can easily get where you need to be. "
+  },
+  {
+    "id": "cbb_iridia_gms_remixed_frequencies",
+    "name": "Remixed Frequencies",
+    "source": "GMS",
+    "effect": "You ignore Immunity to tech actions granted by the biological tag. <br><br>1/round, when you target a character with a tech attack, they become Impaired or Slowed until the end of their next turn.",
+    "description": "By employing dubiously legal splices, you’re able to increase the power of your legionspace emitters. "
+  },
+  {
+    "id": "cbb_iridia_angelic_intercession",
+    "name": "Angelic Intercession",
+    "source": "IRIDIA",
+    "effect": "1/round, when an ally within range 10 takes Structure damage, you may immediately teleport to a free space adjacent to them as a reaction, or the nearest possible space if all eligible spaces are occupied. <br><br>The triggering character then gains Overshield equal to your Grit before any further damage is resolved. <br><br>This reaction may only be triggered 1/scene per allied character.",
+    "description": "The battlefield is chaotic, and it is easy to lose sight of your companions. But help is never truly far away in your moment of need."
+  },
+  {
+    "id": "cbb_iridia_blessing_of_inner_peace",
+    "name": "Blessing of Inner Peace",
+    "source": "IRIDIA",
+    "effect": "Gain +2 Accuracy to all Checks and Saves. You lose this bonus immediately if you make an attack roll or cause a save, regaining it at the beginning of your next turn.",
+    "description": "Those who refrain from causing direct harm can find themselves particularly resistant to the evils of the world. A blessing of the goddess, or perhaps sophisticated shielding systems."
+  },
+  {
+    "id": "cbb_iridia_divine_fury",
+    "name": "Divine Fury",
+    "source": "IRIDIA",
+    "effect": "Whenever you lose Structure or Stress, the first damaging melee or ranged attack roll that you hit with before the end of the Scene deals the maximum possible damage on your damage dice, excluding bonus damage, instead of rolling. Bonus damage dice are instead rolled twice and the highest is taken, as if it was a critical hit. <br><br>If the attack would have already been a critical hit, the bonus damage is instead also maximized.",
+    "description": "Backup power supplies mounted in the weaponry act like an ‘adrenal’ response to extreme harm. It’s only enough for a short burst before they burn out, but it can still turn the tide."
+  },
+  {
+    "id": "cbb_iridia_gift_of_healing",
+    "name": "Gift of Healing",
+    "source": "IRIDIA",
+    "effect": "When you Stabilize you may choose to mark 1 repair to allow one character adjacent to you to regain all their HP. This is in addition to any other options that you select. <br><br>In addition, gain +2 Repairs.",
+    "description": "A stopgap solution to the issue of parts incompatibility between mechs, low-grade printers allow for on-the-spot field repairs.",
+    "bonuses": [
+      {
+        "id": "repcap",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "cbb_iridia_resonant_armaments",
+    "name": "Resonant Armaments",
+    "source": "IRIDIA",
+    "effect": "1/round, when you spend a Limited charge, you may teleport up to 2 spaces before or after the action resolves. If the charge is spent during the action (such as being triggered on hit), the teleport can only be afterwards.",
+    "description": "Techniques exist that cause certain materials to resonate with the Iridian metavault. When the wards are removed, this often causes a slight ‘snap’ in reality as things normalize."
+  },
+  {
+    "id": "cbb_iridia_severable_framework",
+    "name": "Severable Framework",
+    "source": "IRIDIA",
+    "effect": "1/round as a free action, even while Stunned, you may destroy one eligible weapon or system. <br><br>If you do so, you clear all Conditions that are currently affecting you that were not self-inflicted, as well as all Burn currently affecting you.",
+    "description": "Mechs are replaceable, the person inside is not. It doesn’t matter how much of the machine you lose, as long as it protects the pilot."
+  },
+  {
+    "id": "cbb_iridia_shimmering_barrier",
+    "name": "Shimmering Barrier",
+    "source": "IRIDIA",
+    "effect": "You may Overcharge to gain Grit + 4 Overshield as a free action instead of taking a quick action as a free action. If you do so, you may also choose any number of adjacent characters and knock them back 2 spaces directly away from you.",
+    "description": "Those of true faith can dig deep, drawing on their reserves to keep standing in a moment of crisis."
+  },
+  {
+    "id": "cbb_iridia_unity_of_purpose",
+    "name": "Unity of Purpose",
+    "source": "IRIDIA",
+    "effect": "1/round, when you Bolster an ally, you may clear one Impaired, Immobilized, Slowed, or Lock On condition that they are suffering from, as long as it was not self-inflicted, and may additionally push them up to 2 spaces in any direction.",
+    "description": "The proper protocols embedded within companion systems can allow pilots to better aid their allies. These can be abused, however, making them require a lot of trust to implement."
+  }
+]
