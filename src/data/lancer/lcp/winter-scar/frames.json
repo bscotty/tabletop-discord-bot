@@ -1,0 +1,232 @@
+[
+  {
+    "id": "mf_gilgamesh",
+    "license_level": 2,
+    "source": "HA",
+    "name": "Gilgamesh",
+    "mechtype": [
+      "Striker"
+    ],
+    "description": "The Gilgamesh is Harrison Armory's multirole Legionnaire model chassis, designed to be distributed to Armory legions and Acquisition & Management Teams across the Purview and beyond. Built to be fully compatible with numerous hardpoint-mounted tactical system enhancements and munitions, the Gilgamesh excels at no one task in particular, but its comprehensive modular construction and rugged engineering allow it to perform a variety of combat duties without difficulty within numerous theaters. Beyond the logistical efficiency of a standardized, easy to handle chassis meant to streamline both materiel concerns and aptitude training across multiple worlds and cultures, the Gilgamesh has another purpose as well; further reducing the Armory's remaining dependence on foreign-manufactured chassis designs, in particular the GMS Everest.<br><br>Some commissioned officers have a tendency to look down upon Gilgamesh pilots for using what they view as an unglamorous \"trainer\" chassis, but other commanders are fierce proponents of the design, even choosing to pilot it themselves in order to lead by example, and in certain regions of the Purview the Gilgamesh is regarded with as much admiration as more sophisticated models such as the Sherman.",
+    "mounts": [
+      "Main",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 7,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Load-Bearing Hardpoints",
+        "description": "The Gilgamesh has +1 maximum use of all Limited weapons and systems.",
+        "bonuses": [
+          {
+            "id": "limited_bonus",
+            "val": 1
+          }
+        ]
+      },
+      {
+        "name": "Locked and Loaded",
+        "description": "The Gilgamesh has a Loadout Die, 1d6 starting at 6. Each time it expends a Limited charge, reduce the value of the Loadout Die by 1. When the Loadout Die reaches 1, you may reset it to 6 to reroll one attack, check, or save, though the second result must be kept. The value of the Loadout Die persists between scenes but resets to 6 when you perform a Full Repair.",
+        "counters": [
+          {
+            "id": "gilgamesh_arsenal",
+            "name": "Arsenal Die",
+            "default_value": 6,
+            "min": 1,
+            "max": 6
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Exoframe Engineering",
+      "description": "The Gilgamesh was designed from the ground up to be easy and inexpensive to both construct and maintain, but to Harrison Armory \"inexpensive\" does not equal shoddy or inefficient. Instead, the Gilgamesh utilizes a unique two-stage chassis design in which an inner \"core chassis\" is first created before a secondary outer \"exoframe\" is built upon that core, including additional armor, brachial/limb extensions, and hardpoints. The end result is a deceptively elegant design capable of not only extensive customization but also exceptionally simple field repairs. A series of interlocking clamps and explosive bolts anchor various exoframe components and appendages in place, and when sufficient structural integrity is compromised these sections can be swiftly jettisoned and just as quickly replaced, allowing Legionnaires to continue fighting through catastrophic damage that would render other chassis inoperable.<br><br>This construction also allows power to be selectively rerouted between the core chassis and exoframe components, bypassing system failures and even enhancing overall performance for brief periods, though the strain this puts on the exoframe necessarily limits its use to critical situations only.",
+      "passive_name": "Exoframe Engineering",
+      "passive_effect": "The Gilgamesh has a modular construction framework which allows it to easily make in-field repairs by blowing off and replacing damaged limbs and components with spares. 1/scene as a free action, you may choose two of the following:<ul><li>Regain all HP.</li><li>Clear a condition that wasn’t caused by one of your own systems, talents, etc.</li><li>Repair a destroyed weapon or system.</li></ul>If you don't use this ability during combat, then when you next rest you may either regain all HP or automatically repair a destroyed weapon or system. Using the Gilgamesh's core passive and core active abilities during combat both count as expending a Limited charge.",
+      "active_name": "Exo Amplification",
+      "activation": "Protocol",
+      "active_effect": "You gain Immunity to all conditions that weren't caused by your own systems, talents, etc until the end of your next turn and clear all hostile conditions you already have (including conditions that can't be cleared normally), clear Exposed, stand from Prone, gain your Grit +4 Overshield, replenish 1 use of all Limited weapons and systems, and until the end of your next turn you may Overcharge for no cost. This ability can be used even if you would not normally be able to take this action, such as being Stunned etc."
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": 0
+  },
+  {
+    "id": "mf_amber_phantom",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "Amber Phantom",
+    "variant": "Metalmark",
+    "mechtype": [
+      "Striker"
+    ],
+    "description": "Created as an advanced strike chassis for SSC's INSIGHT ORDINAL next-generation weapons evaluation program, the Amber Phantom represents the culmination of numerous technologies developed under the BELLA CIAO line into a single hyperspec, high-performance frame. Based primarily upon the Metalmark platform, the Amber Phantom incorporates an advanced neural bridge derived from the Death's Head's precognitive targeting system in conjunction with TACSIM choral processors in order to amplify the pilot's situational awareness to beyond-human levels.<br><br>The result of this synergy is an uncanny level of mind/machine-integrated performance akin to seeing into the future. Amber Phantom pilots appear to casually sidestep incoming fire, and their attacks are perfectly timed to intersect enemy positions without any wasted movement. This system is not without its drawbacks; extended use of the neural bridge is said to result in feelings of intense déjà vu, temporal dissociation, and dyschronometria, and pilots are strongly advised to maintain regular downtime rotation cycles and centering exercises in order to minimize these risks.<br><br>Not currently in widespread distribution, the Amber Phantom has seen extensive use among Constellar special forces, and is also available to select SSC clients under a full-disclosure data sharing and promotional rights agreement.",
+    "mounts": [
+      "Aux/Aux",
+      "Flex",
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 12,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Possibility Mapping",
+        "description": "At the start of each round, choose a point during the PC turn order to act (i.e. if there are three PCs, you can choose to act first, second, or third among them). 1/round, if the Amber Phantom takes its turn during that point, it may deal +1d6 bonus damage on hit with a ranged or melee attack against a target within Sensors. If it takes its turn at another point in the round, it may still gain this bonus damage by taking 1d6 heat."
+      },
+      {
+        "name": "Hyperawareness",
+        "description": "At the start of each round, until the Amber Phantom takes its turn, all attacks against it are made with +1 Difficulty and it makes all checks and saves with +1 Accuracy."
+      }
+    ],
+    "core_system": {
+      "name": "Tactical Timeline",
+      "description": "SSC's precognitive neural bridging systems are not paracausal as the name might suggest. Using carefully modulated neural stimulation and acceleration, the operator's ability to consciously process and assimilate even subconsciously-derived sensory input is greatly amplified, reducing feedback delay and enhancing reaction time to near-instinctive levels. This then allows users to more accurately predict immediate future occurrences based on comprehensive sensory awareness and intuitive analysis, hence precognition.<br><br>To further enhance this system's capability, the Amber Phantom marries precognitive bridging with a chorus of predictive modeling and tactical simulation systems to provide the pilot with even more information. The result is the creation of a holistic battlefield timeline continuously extending forward several seconds in advance of realtime, granting users an unparalleled ability to choose the precise, optimal moment to act in all situations, reacting to ongoing events even before they occur.",
+      "active_name": "Convergence Point",
+      "activation": "Protocol",
+      "active_effect": "Choose one allied character that has not taken their turn this round. That character may take their turn either immediately after your turn ends, or they may take their turn now before you do anything else, pausing your own turn until their turn ends. If they choose to act now, they count as acting before you in the PC turn order. This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used."
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": 0
+  },
+  {
+    "id": "mf_lycan",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "Lycan",
+    "variant": "Manticore",
+    "mechtype": [
+      "Defender",
+      "Striker"
+    ],
+    "description": "Despite its recent appearance, the Manticore has quickly become one of the most readily identifiable HORUS pattern-groups due to its distinctive electromagnetic signature and indiscriminately destructive energy bleed-off. While this recognition lends itself well to the Manticore's fearsome reputation, it also limits the design's strategic applications to direct assaults where early detection and collateral damage are of minimal consequence.<br><br>It remains unclear if the Lycan was designed in parallel to the Manticore or if it represents a subsequent development, but while it's clear that the Lycan is derived from the Manticore PG, it decouples the base chassis' heavy armor and hardpoint capability from the Manticore's more volatile systems. The resulting design is far less dangerous for the pilot, and far more capable of concealing its signature as well as the full extent of its capabilities, allowing it to operate with greater discretion until absolutely necessary.<br><br>As a result, the Lycan excels at ambush and counter-ambush tactics, capable of masquerading as a more conventional chassis until the opportunity presents itself, then shedding its baffle-lined outer carapace and shifting into a hyper-aggressive close-combat mode in order to dispatch its targets.",
+    "mounts": [
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Slag Carapace",
+        "description": "The Lycan has resistance to Energy Damage and Burn."
+      },
+      {
+        "name": "Interference Field",
+        "description": "All hostile characters within range 3 of the Lycan take +1 Difficulty on all attacks that do not target the Lycan."
+      },
+      {
+        "name": "Power Flux",
+        "description": "1/round, when the Lycan takes heat, a hostile character within Sensors must pass a Systems save or become Impaired and Slowed until the end of their next turn."
+      }
+    ],
+    "core_system": {
+      "name": "Subversive Signature",
+      "description": "As a chassis designed for covert operations, the Lycan leverages the Manticore's affinity for electromagnetics in order to further obscure its precise nature, wrapping itself in a layered mesh of sensor baffles and wideband interference signals that disrupt and distort recognition scans and targeting systems. The effects of this distortion field are so intense that they even cause sporadic, uncontrolled power fluctuations in nearby systems, and pilots who have survived combat with Lycan PGs report experiencing intermittent electronics blackouts and even reduced reactor output upon approach.<br><br>However, the most distinctive feature of the Lycan by far is its ability to shift from its default, heavily-armored configuration to a more aggressive assault mode. This transformation is dramatic and known to cause panic among enemy forces as the Lycan's true nature is suddenly revealed in an explosive jettisoning of heavy armor plating and a violent surge of power diverted towards the chassis' concealed shock claws, a series of retractable, high-temperature arc blades based on Manticore armament designs.",
+      "active_name": "Go Loud",
+      "activation": "Full",
+      "active_effect": "The Lycan violently jettisons its external carapace, extending brutal talons and supercharging its reactor. Its base Armor becomes 0, its base Speed becomes 6, it gains +1 Accuracy on all attacks against targets within range 3, and both Slag Carapace and Interference Field are disabled. These effects last until the end of the scene. The Lycan may then charge forward to unleash an attack on a nearby foe, moving its Speed and making a melee attack against a target in range with its integrated Shock Claws, which can now be used for the rest of the scene.<br><br>Taking stress or structure damage before using this system alters its activation requirements and effects. If the Lycan has taken either stress or structure damage during the scene before activating this system, the activation requirement is reduced from a full action to a quick action, the Shock Claws become Threat 2, and their effect becomes \"you may deal 2 AP energy damage to one or two different characters within range 3 of the target.\" If it has taken both stress and structure damage, you may activate it as a free action, the Shock Claws now deal 4d6 energy damage, and their effect gains \"and you gain 4 Overshield.\"<br><br>This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.",
+      "integrated": [
+        "mw_integrated_shock_claws"
+      ]
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": 0
+  },
+  {
+    "id": "mf_kutuzov",
+    "license_level": 2,
+    "source": "HA",
+    "name": "Kutuzov",
+    "variant": "Napoleon",
+    "mechtype": [
+      "Defender",
+      "Controller"
+    ],
+    "description": "Following the initial testbed development of the Napoleon and its successful proof-of-concept demonstration of numerous advanced blinkspace and stasis technologies, Harrison Armory immediately approved a series of ongoing developmental programs to expand the application of these systems across a number of successor chassis and block upgrade packages. One of the earliest of these successor programs, the Kutuzov was designed for Armory Naval Command as a boarding action force multiplier, taking the Napoleon's incredible self-sustainability and turning it outwards to create a compact and maneuverable projected defense platform ideal for accompanying marine or chassis squads into close-quarters engagements.<br><br>Unlike the more iconic Saladin, the Kutuzov remains unsuited to frontline engagement, and its own personal survivability metrics are notably reduced from the Napoleon itself. However, its robust array of waveform projectors are designed for sustained operation under even critical system stresses, and its ability to rapidly disseminate flash-projected barriers in response to incoming fire have shown extremely promising results both during training exercises as well as limited live-combat engagements during anti-piracy operations. The Kutuzov has also begun to see increasing use as a perimeter security and riot control unit during low-intensity defensive actions on New Madrassa, alongside chassis such as the Iskander-CC.",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 8,
+      "repcap": 3,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Emergency Blinkfields",
+        "description": "The Kutuzov and all allied characters within Sensors immediately clear Shredded (or ignore the effects of Shredded if the condition can't be cleared normally) from hostile sources whenever they Brace, and attacks they Brace against can't inflict Shredded."
+      },
+      {
+        "name": "Self-Sustaining Shielding",
+        "description": "After the Kutuzov Braces, it may choose to continue using reactions until the end of its next turn and may take two quick actions or one full action during that turn, but if it does then the only actions it can take are Bolster, Stabilize, and Activating or otherwise using Shield systems."
+      },
+      {
+        "name": "Parallel Emitters",
+        "description": " 1/round, when the Kutuzov Activates or otherwise uses a Shield system or Stabilizes during their turn, it grants an allied character within Sensors a benefit based on the cost of that action (you may choose a benefit from a lower cost if you like):<ul><li>Free Action: You may Bolster that character.</li><li>Quick Action: That character ignores engagement, their movement doesn't provoke reactions, and they may pass through (but not stop in) spaces occupied by obstructions and other characters until the end of their next turn.</li><li>Full Action: That character may clear a condition that wasn't caused by one of their own systems, talents, etc.</li></ul>"
+      }
+    ],
+    "core_system": {
+      "name": "Single-Plane Aegis",
+      "description": "Among the many challenges Armory engineers have faced since the initial development of the Trueblack Aegis shielding system, the most significant has been finding a way to overcome the extreme limitations the blinkspace envelope imposes upon protected chassis. As incoming attacks cannot cross the barrier, neither can outgoing attacks in turn, which drastically limits the system's broader applications, and this remains the biggest obstacle to the wider adoption of the technology across multiple platforms, something Harrison Armory is keenly interested in.<br><br>One of the most straightforward, albeit simplistic, solutions has been to \"flash\" a single- plane blinkspace field as a reactive countermeasure, as opposed to a sustained total-coverage envelope. Without the excessive demands of needing to sustain the blinkspace envelope, the system's operational range can be more easily extended for wider-area coverage through a series of point-defense protocols. However, the drawback to this implementation is immediately obvious, with intermittent coverage only able to intercept a limited volume of incoming fire before dispersal, and though overall power consumption is reduced, the field emitters require an extensive cycling period before they can be reactivated once more.",
+      "active_name": "Project Aegis",
+      "activation": "Quick",
+      "active_effect": "Choose an allied character within Sensors. Until the end of your next turn, you may grant them Immunity to a single successful ranged or melee attack made against them or a save that they fail as a reaction. If this effect ends without being expended by an attack or save, that character gains Grit+4 Overshield. This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used."
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": 0
+  }
+]

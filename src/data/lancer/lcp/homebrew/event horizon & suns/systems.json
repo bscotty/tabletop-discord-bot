@@ -955,5 +955,213 @@
         "trigger": "You are attacked by an enemy at a lower elevation than you."
       }
     ]
+  },
+  {
+    "id": "ms_expand_contract_capsules",
+    "name": "Expand/Contract Capsules",
+    "source": "HA",
+    "license": "ANASTASIUS",
+    "license_level": 1,
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Concussive Grenade",
+        "activation": "Quick",
+        "detail": "Throw a grenade to a space within Range 5. All characters within the Blast 1 area must pass an Agility save or take 2 Explosive damage and be knocked Prone.",
+        "frequency": "Unlimited"
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Tar Mine",
+        "type": "Mine",
+        "detail": "You may also detonate this mine manually as a quick action after it has armed. Once detonated, this mine covers a burst 2 area in difficult terrain that lasts until the end of the scene."
+      }
+    ]
+  },
+  {
+    "id": "ms_addersgall_assistance_module",
+    "name": "Addersgall Assistance Module",
+    "source": "HA",
+    "license": "ANASTASIUS",
+    "license_level": 2,
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "When you Bolster a character, they additionally gain hard cover until the end of their next turn."
+  },
+  {
+    "id": "ms_diagnosis_suite",
+    "name": "Diagnosis Suite",
+    "source": "HA",
+    "license": "ANASTASIUS",
+    "license_level": 2,
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Toxikon",
+        "activation": "Invade",
+        "detail": "Your target takes 2 Burn. While they have this Burn, they are Impaired until they clear the Burn. This can only be used 1/scene on each character."
+      },
+      {
+        "name": "Haima",
+        "activation": "Invade",
+        "detail": "Your target gains 3 Overshield. While they have this Overshield, they have +2 Armor, up to a maximum of 4."
+      }
+    ]
+  },
+  {
+    "id": "ms_asclepius_class_nhp",
+    "name": "ASCLEPIUS-Class NHP",
+    "source": "HA",
+    "license": "ANASTASIUS",
+    "license_level": 3,
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Preventive Medicine",
+        "activation": "Reaction",
+        "trigger": "An ally within Sensors would take damage.",
+        "detail": "You or that ally may take 4 Heat to give that ally Resistance to damage from that attack and all other attacks until the end of the turn.",
+        "frequency": "1/round"
+      }
+    ]
+  },
+  {
+    "id": "ms_forbidden_mixtures",
+    "name": "Forbidden Mixtures",
+    "source": "HA",
+    "license": "ANASTASIUS",
+    "license_level": 3,
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Water of Life",
+        "activation": "Quick",
+        "detail": "Throw a grenade at a single character within Range 5. If your target does not have Overshield, they gain Overshield equal to half of their maximum Hit Points. A character can only benefit from this effect once per scene.",
+        "frequency": "Unlimited"
+      },
+      {
+        "name": "Dark Matter",
+        "activation": "Quick",
+        "detail": "Throw a grenade at a single character within Range 5.  Your target must pass an Agility save or take 2d6 Explosive damage and become Shredded, Impaired, and Slowed until the end of their next turn. On a successful save, they take half damage and do not suffer any additional effects.",
+        "frequency": "Unlimited"
+      }
+    ]
+  },
+  {
+    "id": "ms_substance_alpha",
+    "name": "Substance Alpha",
+    "source": "HA",
+    "license": "ANASTASIUS",
+    "license_level": 2,
+    "type": "System",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 6
+      },
+      {
+        "id": "tg_indestructible"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "This system is integrated into the Anastasius frame. It has no intrinsic effects, cannot be activated normally, and cannot be installed on any other frame. It must be combined using the Anastasius' Mix quick action."
+  },
+  {
+    "id": "ms_substance_beta",
+    "name": "Substance Beta",
+    "source": "HA",
+    "license": "ANASTASIUS",
+    "license_level": 2,
+    "type": "System",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 6
+      },
+      {
+        "id": "tg_indestructible"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "This system is integrated into the Anastasius frame. It has no intrinsic effects, cannot be activated normally, and cannot be installed on any other frame. It must be combined using the Anastasius' Mix quick action."
+  },
+  {
+    "id": "ms_substance_gamma",
+    "name": "Substance Gamma",
+    "source": "HA",
+    "license": "ANASTASIUS",
+    "license_level": 2,
+    "type": "System",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 6
+      },
+      {
+        "id": "tg_indestructible"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "This system is integrated into the Anastasius frame. It has no intrinsic effects, cannot be activated normally, and cannot be installed on any other frame. It must be combined using the Anastasius' Mix quick action."
   }
 ]

@@ -26,6 +26,8 @@ import {getLegionnaireLcp} from "../data/lancer/lcp/homebrew/legionnaire";
 import {getCrisisCoreLcp} from "../data/lancer/lcp/homebrew/crisis core";
 import {getIridiaLcp} from "../data/lancer/lcp/homebrew/iridia";
 import {safeReply} from "./util/safe-reply";
+import {getWinterScarLcp} from "../data/lancer/lcp/winter-scar";
+import {getShadowOfTheWolfLcp} from "../data/lancer/lcp/shadow-of-the-wolf";
 
 @Discord()
 export class Lancer {
@@ -51,7 +53,9 @@ export class Lancer {
             getWallflowerLcp(),
             getSolsticeRainData(),
             getSsmrLcp(),
-            getDustgraveLcp()
+            getDustgraveLcp(),
+            getWinterScarLcp(),
+            getShadowOfTheWolfLcp()
         ]
     }
 

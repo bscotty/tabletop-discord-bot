@@ -39,7 +39,7 @@
     "license": "MASAMUNE",
     "license_level": 2,
     "effect": "When you make an attack with the weapon this mod is applied to, you may activate this system, unloading it and taking 2 Heat. If you do, your attack deals +1d6 explosive bonus damage on a hit. This system is treated as a weapon for the purposes of effects that load or unload weapons.",
-    "sp": 2,
+    "sp": "2",
     "allowed_types": [
       "Melee"
     ],

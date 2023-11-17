@@ -690,5 +690,65 @@
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "y_pos": "25"
+  },
+  {
+    "id": "mf_anastasius",
+    "source": "HA",
+    "license_level": 2,
+    "name": "ANASTASIUS",
+    "mechtype": [
+      "Support",
+      "Controller"
+    ],
+    "mounts": [
+      "Flex",
+      "Main"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 8,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 12,
+      "speed": 3,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Insulated",
+        "description": "The Anastasius has Immunity to Burn."
+      },
+      {
+        "name": "Death Professor",
+        "description": "Once per round, when a character fails a save caused by the Anastasius, that character takes 2 Burn."
+      },
+      {
+        "name": "Overengineered",
+        "description": "When the Anastasius would be Slowed by any means except Prone, it is instead Immobilized for the same duration."
+      }
+    ],
+    "core_system": {
+      "name": "The Holy Science",
+      "active_name": "Bottled Immortality",
+      "active_effect": "One allied character within your Sensors immediately restores all HP, clears Exposed, clears all conditions that weren't caused by their own talents, systems, etc., and may choose to clear all Heat.",
+      "activation": "Quick",
+      "passive_name": "Mix",
+      "passive_actions": [
+        {
+          "name": "Mix",
+          "activation": "Quick",
+          "detail": "You combine two of the Anastasius' experimental substances for a wondrous effect. Expend two charges from the substances in any combination. This action has a different effect depending on which charges you expend. <ul><li><strong>Alpha + Alpha:</strong>  Characters within a Blast 1 area within Range 5 must pass an Agility save or take 4 Burn.</li><li><strong>Alpha + Beta:</strong> You Lock On to up to two enemies within Sensors. When an ally consumes these locks, the target does not benefit from cover.</li><li><strong>Alpha + Gamma:</strong> Characters within a Blast 1 area within Range 5 must pass a Hull save or take 2 Heat and become Shredded until the end of their next turn.</li><li><strong>Beta + Beta:</strong> One ally of your choice within Range 5 can clear a condition that wasn't caused by one of their own talents, systems, etc.</li><li><strong>Beta + Gamma:</strong> One character of your choice within Sensors may Boost as a reaction, treating this movement as flying. They must end the movement on the ground or another solid surface, or else immediately begin falling.</li><li><strong>Gamma + Gamma:</strong> Create a Blast 2 zone of soft cover within Sensors that lasts until you use this Mix combination again.</li>"
+        }
+      ]
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "y_pos": "25"
   }
 ]
