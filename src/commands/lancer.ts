@@ -17,7 +17,6 @@ import {getMfecaneLcp} from "../data/lancer/lcp/homebrew/mfecane";
 import {getSciroccoLcp} from "../data/lancer/lcp/homebrew/scirocco";
 import {getSuldanLcp} from "../data/lancer/lcp/homebrew/suldan";
 import {getStolenCrownLcp} from "../data/lancer/lcp/homebrew/stolen-crown";
-import {getGilgameshLcp} from "../data/lancer/lcp/homebrew/gilgamesh";
 import {getDustgraveLcp} from "../data/lancer/lcp/dustgrave";
 import {getSsmrLcp} from "../data/lancer/lcp/ssmr";
 import {getEHandSLCP} from "../data/lancer/lcp/homebrew/event horizon & suns";
@@ -26,6 +25,8 @@ import {getLegionnaireLcp} from "../data/lancer/lcp/homebrew/legionnaire";
 import {getCrisisCoreLcp} from "../data/lancer/lcp/homebrew/crisis core";
 import {getIridiaLcp} from "../data/lancer/lcp/homebrew/iridia";
 import {safeReply} from "./util/safe-reply";
+import {getWinterScarLcp} from "../data/lancer/lcp/winter-scar";
+import {getShadowOfTheWolfLcp} from "../data/lancer/lcp/shadow-of-the-wolf";
 
 @Discord()
 export class Lancer {
@@ -51,7 +52,9 @@ export class Lancer {
             getWallflowerLcp(),
             getSolsticeRainData(),
             getSsmrLcp(),
-            getDustgraveLcp()
+            getDustgraveLcp(),
+            getWinterScarLcp(),
+            getShadowOfTheWolfLcp()
         ]
     }
 
@@ -59,7 +62,6 @@ export class Lancer {
         return [
             getCrisisCoreLcp(),
             getEHandSLCP(),
-            getGilgameshLcp(),
             getIridiaLcp(),
             getIronleafFoundryLcp(),
             getKrfwCatalogLcp(),

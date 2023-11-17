@@ -1,10 +1,8 @@
-import {Lcp} from "../../../types/lcp";
+import {Lcp} from "../../types/lcp";
 import frames from "./frames.json"
 import info from "./lcp_manifest.json"
-import systems from "./systems.json"
-import weapons from "./weapons.json"
 
-export function getGilgameshLcp(): Lcp {
+export function getShadowOfTheWolfLcp(): Lcp {
     return new Lcp(
         [],
         [],
@@ -23,10 +21,10 @@ export function getGilgameshLcp(): Lcp {
         [],
         [],
         [],
-        systems,
+        [],
         undefined,
         [],
         [],
-        weapons
+        []
     )
 }
