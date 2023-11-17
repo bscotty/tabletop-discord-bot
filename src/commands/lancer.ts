@@ -17,7 +17,6 @@ import {getMfecaneLcp} from "../data/lancer/lcp/homebrew/mfecane";
 import {getSciroccoLcp} from "../data/lancer/lcp/homebrew/scirocco";
 import {getSuldanLcp} from "../data/lancer/lcp/homebrew/suldan";
 import {getStolenCrownLcp} from "../data/lancer/lcp/homebrew/stolen-crown";
-import {getGilgameshLcp} from "../data/lancer/lcp/homebrew/gilgamesh";
 import {getDustgraveLcp} from "../data/lancer/lcp/dustgrave";
 import {getSsmrLcp} from "../data/lancer/lcp/ssmr";
 import {getEHandSLCP} from "../data/lancer/lcp/homebrew/event horizon & suns";
@@ -63,7 +62,6 @@ export class Lancer {
         return [
             getCrisisCoreLcp(),
             getEHandSLCP(),
-            getGilgameshLcp(),
             getIridiaLcp(),
             getIronleafFoundryLcp(),
             getKrfwCatalogLcp(),
