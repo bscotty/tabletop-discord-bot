@@ -2,7 +2,7 @@
   {
     "id": "mw_integrated_shock_claws",
     "name": "Shock Claws",
-    "mount": "Heavy",
+    "mount": "Superheavy",
     "type": "Melee",
     "profiles": [
       {
@@ -16,7 +16,7 @@
         "damage": [
           {
             "type": "Energy",
-            "val": "3d6"
+            "val": "3d6+6"
           }
         ],
         "tags": [
@@ -24,11 +24,14 @@
             "id": "tg_ap"
           },
           {
+            "id": "tg_accurate"
+          },
+          {
             "id": "tg_overkill"
           }
         ],
-        "effect": "This weapon may only be used during the Go Loud core power.",
-        "on_hit": "1/round, on hit with this weapon you may deal 2 AP energy damage to a different character within range 3 of the target."
+        "effect": "This weapon may only be used during the Go Loud core power. This weapon can't be used to attack in the same turn as another Heavy or Superheavy weapon.",
+        "on_attack": "You may deal 1d6 AP energy damage to a character of your choice within Range 3 of the target."
       },
       {
         "name": "Damaged",
@@ -41,7 +44,7 @@
         "damage": [
           {
             "type": "Energy",
-            "val": "3d6"
+            "val": "3d6+6"
           }
         ],
         "tags": [
@@ -49,11 +52,14 @@
             "id": "tg_ap"
           },
           {
+            "id": "tg_accurate"
+          },
+          {
             "id": "tg_overkill"
           }
         ],
-        "effect": "This weapon may only be used during the Go Loud core power. If the Lycan had taken either Stress or Structure damage before Going Loud, this profile replaces the default Shock Claws profile.",
-        "on_hit": "1/round, on hit with this weapon you may deal 2 AP energy damage to one or two different characters within range 3 of the target."
+        "effect": "This weapon may only be used during the Go Loud core power. The first time in a scene an allied Mech character within Sensors takes structure damage before Going Loud, this profile replaces the default Shock Claws profile. This weapon can't be used to attack in the same turn as another Heavy or Superheavy weapon.",
+        "on_attack": "You may deal 1d6 AP energy damage to up to two different characters of your choice within Range 3 of the target."
       },
       {
         "name": "Ruined",
@@ -66,7 +72,7 @@
         "damage": [
           {
             "type": "Energy",
-            "val": "4d6"
+            "val": "4d6+6"
           }
         ],
         "tags": [
@@ -74,11 +80,14 @@
             "id": "tg_ap"
           },
           {
+            "id": "tg_accurate"
+          },
+          {
             "id": "tg_overkill"
           }
         ],
-        "effect": "This weapon may only be used during the Go Loud core power. If the Lycan had taken both Stress and Structure damage before Going Loud, this profile replaces the default Shock Claws profile.",
-        "on_hit": "1/round, on hit with this weapon you may deal 2 AP energy damage to one or two different character within range 3 of the target, and you gain 4 Overshield."
+        "effect": "This weapon may only be used during the Go Loud core power. If you Go Loud after allied Mech characters within Sensors take structure damage twice or more during the scene, an allied Mech character in Sensors is destroyed, or while at 2 structure or less, this profile replaces the default Shock Claws profile. This weapon can't be used to attack in the same turn as another Heavy or Superheavy weapon.",
+        "on_attack": "You may deal 1d6 AP energy damage to up to two different characters of your choice within Range 3 of the target. This weapon's damage can't be reduced in any way."
       }
     ]
   },
@@ -100,7 +109,7 @@
     "range": [
       {
         "type": "Range",
-        "val": 15
+        "val": 12
       }
     ],
     "tags": [
@@ -168,8 +177,8 @@
     "description": "The PRAETORIAN combat subaltern is one of the Armory's latest and most advanced models, designed for shock assault, seize-and-hold, and combined arms doctrines. Capable of effectively wielding both man-portable and heavier-than anti-mech/anti-materiel weapons and utilizing a tiered hierarchy/command structure allowing them to operate at levels ranging from individual fire teams to brigade strength under local comp/con or NHP command, a squadron of PRAETORIAN subalterns can also be seconded to pilots under local nexus node control, and one or more squadrons are often assigned to Legionnaire units during combat operations to provide integrated support. Personality matrices are customizable by users, and HA offers a variety of preset options to choose from at time of licensing.",
     "damage": [
       {
-        "type": "Variable",
-        "val": "3d6+4"
+        "type": "Kinetic",
+        "val": "3d6"
       }
     ],
     "range": [
@@ -185,23 +194,124 @@
       {
         "id": "tg_limited",
         "val": 3
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
       }
     ],
-    "effect": "Each time you print this weapon or during a Full Repair, choose whether it deals kinetic, explosive, or energy damage. You may attack with this weapon without expending or requiring charges, and whenever you would be forced to destroy a weapon due to critical damage or other effects, you may choose this weapon to destroy even if it has no charges remaining.",
+    "effect": "You may attack with this weapon without expending or requiring charges, and whenever you would be forced to destroy a weapon due to critical damage or other effects, you may choose this weapon to destroy even if it has no charges remaining.",
+    "on_attack": "You may spend a charge to task a team of subalterns to operate independently from the main unit. This counts as a Drone deployed in a free space adjacent to you.",
     "deployables": [
       {
         "name": "Legion Drone",
         "type": "Drone",
-        "detail": "As a quick action, you may spend a charge to task a team of subalterns to operate independently from the main unit. This counts as a drone (Size 1/2, 5 HP, 10 Evasion/E-Defense) deployed in a free space adjacent to you. During your turn, all deployed legion drones may move 3 spaces in any direction and then perform one of the following as a free action:<ul><li>Open Fire: The drone makes a ranged attack against a target within Range 10 using your Grit versus the target's E-Defense, dealing 1d6+2 damage of the same type as the legion nexus on hit.</li><li>Suppression Protocols: Lay down suppressing fire against a hostile character within Range 10. That character becomes Impaired and all your attacks with the legion nexus against them are made with +1 Accuracy until the end of their next turn. This effect does not stack.</li><li>Assault Position: Move an additional 2 spaces. If the drone ends this movement adjacent to a hostile character, that character takes 3 kinetic damage and must pass a Hull save or be knocked Prone.</li></ul>Legion drones cannot be recalled and expire at the end of the scene.",
+        "detail": "As a protocol, you may move each deployed legion drone you control up to 3 spaces and order each of them to perform one of the following commands:<ul><li>Suppression Protocols: Choose a hostile character within Range 5 of the drone. Your attacks with the legion nexus against them gain +1 Accuracy until the end of their next turn. This effect does not stack. That character must also pass an Agility save or become Impaired until the end of their next turn.</li><li>Assault Position: A hostile character adjacent to the drone must pass a Hull save or take 2 kinetic damage and be knocked Prone.</li><li>Defensive Formation: Until the start of your next turn, the drone counts as Size 1 and adjacent allied characters can use it for hard cover.</li></ul>For each deployed legion drone you control, the legion nexus deals +2 damage on hit to a maximum of +6. Legion drones cannot be recalled and expire at the end of the scene.",
         "size": 0.5,
-        "activation": "Quick",
         "instances": 1,
+        "activation": "Free",
         "cost": 1,
-        "armor": 0,
+        "armor": 1,
         "hp": 5,
         "evasion": 10,
         "edef": 10
       }
     ]
+  },
+  {
+    "id": "mw_shrapnel_cannon",
+    "name": "Shrapnel Cannon",
+    "source": "EXOTIC",
+    "license": "",
+    "license_level": 0,
+    "mount": "Main",
+    "type": "Cannon",
+    "description": "Clearing the cramped corridors and hallways of spaceships requires weaponry capable of engaging threats at all angles, even around corners or behind cover. A simple and brutally effective weapon, the shrapnel cannon fires explosive shells lined with a metal/polymer composite that erupts into deadly shards upon detonation. The composite's elasticity is sufficient to enable these shards to ricochet off hard surfaces without compromising terminal ballistics, enabling wide-coverage indirect fire across spaces where traditional CQB weapons can't reach without exposing the operator in turn.",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d6+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "on_hit": "This weapon creates a Cone 5 area originating from the target, oriented away from them in a direction of your choice and tracing line of sight from that target. All units in this area must pass an Agility save or take 1d6 kinetic damage."
+  },
+  {
+    "id": "mw_electrohydraulic_claw",
+    "name": "Electrohydraulic Claw",
+    "source": "EXOTIC",
+    "license": "",
+    "license_level": 0,
+    "mount": "Main",
+    "type": "Melee",
+    "description": "A chassis-scale, weaponized version of the iconic search-and-rescue tool, IPS-N's electrohydraulic cutter/spreader claw is even more powerful than its utilitarian cousin, requiring direct coldcore feed for optimum power. Typically brachial-mounted for additional stability, while the claw's reinforced cutting blades serve as an adequate, if clumsy, weapon on their own, their true potential lies in their ability to literally pry chassis apart when suitably braced, able to exert nearly 50,000 psi of pressure and rated capable of shearing through even reinforced armor composites. The ability to easily bypass sealed doors and airlocks (or create alternate openings in a pinch) lends the weapon additional versatility, allowing wielders to smoothly transition from breaching actions to combat and back all in a single package.",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_inaccurate"
+      },
+      {
+        "id": "tg_overkill"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "effect": "1/round, you may activate the claws as a quick action when you hit a character with this weapon to automatically grapple them. Targets grappled this way must pass a Hull save or become Shredded until the end of their next turn.<br><br>This weapon deals 10 AP kinetic damage to objects, cover, and the environment, and gives +1 Accuracy to all non-combat mech skill checks to pry heavy objects open or apart such as sealed airlocks, jammed cockpits, vault doors, cargo containers, etc."
+  },
+  {
+    "id": "mw_fusion_torch",
+    "name": "Fusion Torch",
+    "source": "EXOTIC",
+    "license": "",
+    "license_level": 0,
+    "mount": "Heavy",
+    "type": "CQB",
+    "description": "The FS-90 \"Rockhammer\" directed high-output mining beam is a heavy industrial energy cutter used to carve apart starship-grade hulls and toughened asteroids for mineral extraction. Patched directly into a chassis' reactor, a magnetic containment field channels a focused beam of superheated energy capable of effortlessly melting through even reinforced bulkheads, though attenuation rapidly degrades the beam's effectiveness at range. Repurposed by IPS-N as an offensive chassis-mounted weapon system, the fusion torch works just as well against enemy armor, and its effectiveness as a breaching tool is second to none. Users often refer to the glowing slag deposits which frequently adorn their frames as \"war paint.\"",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_overkill"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "on_attack": "This weapon automatically deals 30 AP energy damage to objects, cover, and terrain within its area, and destroying these leaves behind clouds of burning slag in their place that linger until the end of your next turn. Characters other than you that begin their turn in these slag clouds or who enter them for the first time in a round take 1d6 energy damage. As long as you are at least partially within a slag cloud, you gain soft cover."
   }
 ]

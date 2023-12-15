@@ -393,7 +393,7 @@
     "license_id": "",
     "license_level": 1,
     "description": "<div>“<em>These don’t exactly handle like a regular gun, what with all the extra weight, but I betcha this: You just take your time, count your breaths, and kick the stabilizers on, and you’ll have a hell of a punch. Thanks for coming along for the ride. Y’all can have this, </em><strong><em>free o’ charge</em></strong><em>.”</em></div>",
-    "mount": "Aux",
+    "mount": "Auxiliary",
     "type": "Cannon",
     "effect": "<div>When you <strong>Heavy Fire</strong> this weapon, the attack gains <strong>Knockback 3</strong>, its damage can’t be reduced in any way, and on hit, becomes a critical hit, if it wasn’t already.</div>",
     "barrage": true,

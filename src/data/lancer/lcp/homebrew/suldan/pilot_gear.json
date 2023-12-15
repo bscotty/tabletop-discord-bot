@@ -45,7 +45,7 @@
         "val": 1
       }
     ],
-    "effect": "This weapon also takes up 1 gear slot. This full-function cybernetic arm replacement (single or paired) counts as a light alloy/composite pilot weapon and gives +1 Accuracy to all Apply Fists to Faces checks (or other similar triggers)."
+    "effect": "This weapon also takes up 1 gear slot. This full-function cybernetic arm replacement (single or paired) counts as a light alloy/composite pilot weapon and gives +1 Accuracy to all Apply Fists to Faces checks (or other similar triggers). This effect does not stack."
   },
   {
     "id": "fgtspg_emirs_bargain",
