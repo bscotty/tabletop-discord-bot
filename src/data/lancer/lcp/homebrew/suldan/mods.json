@@ -17,7 +17,7 @@
     "license_level": 2,
     "sp": 2,
     "description": "Typically electronic warfare operates on a principle of wide-area efficacy, but subsonic, zero-penetration electrostatic jammer ammunition provides a more surgical application where necessary. Designed to be fired from a variety of chassis-scale armaments, the adhesive gel-encased projectiles do minimal damage in and of themselves, but the powerful wideband signal scramblers embedded within each one are capable of overwhelming a mech's sensors and targeting systems, rendering them effectively blind for their duration.",
-    "effect": "Choose one CQB, Cannon, or Rifle: when you attack with it, you may fire a scrambler round instead of attacking normally. On hit, you deal half damage, heat, and burn, but the target treats all characters further than range 10 as if they were Invisible and all other characters as if they were in soft cover until the end of their next turn.",
+    "effect": "Choose one CQB, Cannon, or Rifle: when you attack with it, you may fire a scrambler round instead of attacking normally. On hit, you deal half damage, heat, and burn, but the target treats all characters further than Range 10 as if they were Invisible and all other characters as if they were in soft cover until the end of their next turn.",
     "tags": [
       {
         "id": "tg_unique"

@@ -31,7 +31,7 @@
     "traits": [
       {
         "name": "ROC Superlifter Flight System",
-        "description": "The Taraxacum may hover when it moves. As long as it is only carrying objects or allied characters, the Taraxacum may ignore carry restrictions caused by flying. At the end of any of your turns in which you fly using this system, you gain heat equal to 1 + the total size of characters you are carrying."
+        "description": "The Taraxacum may hover when it moves. As long as it is only carrying objects or allied characters, the Taraxacum may ignore carry restrictions caused by flying.<br><br>At the end of any of your turns in which you use this trait, you take heat equal to 1 + the total Size of objects and characters you are carrying."
       },
       {
         "name": "Microjet Stabilizers",
@@ -39,7 +39,7 @@
       },
       {
         "name": "Relay Coupling",
-        "description": "When you target an allied character with a tech action, they may use your Sensors and line of sight for tech actions until the start of your next turn."
+        "description": "When you target an allied character with a system or tech action, they may use your Sensors and line of sight for tech actions until the start of your next turn."
       }
     ],
     "core_system": {
@@ -52,7 +52,7 @@
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Precision Fix",
-      "passive_effect": "<p>When you Scan a character, it cannot benefit from Invisible or cover until the end of your next turn.</p>",
+      "passive_effect": "When you Scan a character, it cannot benefit from Invisible or cover until the end of your next turn.",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],
@@ -67,7 +67,8 @@
     "license_level": 2,
     "name": "Hecatoncheires",
     "mechtype": [
-      "Striker"
+      "Striker",
+      "Controller"
     ],
     "variant": "Balor",
     "description": "<p>Officially, the Hecatoncheires does not exist. It was certainly not developed by Baronic Intelligence using domesticated liturgicode seeds recovered from Blanca Desert after the Maw’s defeat on Khayradin. Instead, it is formally classified as a local variant HORUS pattern group most frequently encountered in the hands of Company Centimane, whose status as a Free Company (and the occasional appearance of the pattern group elsewhere) lends a thin veneer of plausibility to the official story.</p><p>On Free Sanjak, the Hecatoncheires is a weapon of terror, a nightmare given form from haze and smoke. Revolutionary fire-teams have been known to trek through tropical jungles and the monsoon rains for days, losing members one by one as they are stalked by something just out of sight. Beneath the waters of Ludra’s beach paradises, it is said a monster lurks – tearing apart coastal communities and ships alike. In the deep tunnels, apocryphal tales persist of a thick gray cloud that sweeps through and leaves nothing but dust in its wake.</p><p>A deep cover DoJ/HR operation has been trying to unearth solid evidence directly tying the Hecatoncheires to Baronic authority for several years – a link that might be leveraged to finally ease pressure on the embargo and the conflict as a whole – but so far, to no avail. In the meantime the attacks on the people of Free Sanjak only grow bolder, and republican agitation on other worlds swells with rumors of the depths to which those in power are willing to sink.</p>",
@@ -102,7 +103,7 @@
       },
       {
         "name": "Panoptes Targeting",
-        "description": "The Hecatoncheires' Smart weapons ignore Invisibility."
+        "description": "The Hecatoncheires' Smart weapons ignore the Invisible status of characters within sensors."
       }
     ],
     "core_system": {
@@ -116,7 +117,7 @@
         {
           "name": "Enrage Swarm",
           "activation": "Quick",
-          "detail": "Each hostile character in an area created by one of your Drones takes 4 burn. This action is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this action was used."
+          "detail": "Each hostile character in an area created by one or more of your Drones takes 4 burn. This action is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this action was used."
         }
       ],
       "active_bonuses": [],
@@ -136,7 +137,7 @@
         {
           "name": "Razor Swarm",
           "type": "Drone",
-          "detail": "<p>A Razor Swarm is a Blast 1 area that provides soft cover to allied characters as long as they are at least partially within the area. Hostile characters that start their turn at least partially within the area or move into it for the first time in a round take 2 Burn.</p><p>A Razor Swarm counts as a Drone for the purposes of you and your allies' systems, talents, traits, etc. but is otherwise a zone on the battlefield. It does not obstruct movement or cause Engagement, and hostile characters cannot affect the Razor Swarm in any way.</p>",
+          "detail": "<p>A Razor Swarm is a Blast 1 area that provides soft cover to allied characters as long as they are at least partially within the area. Hostile characters that start their turn at least partially within the area or move into it for the first time in a round take 2 Burn.</p><p>A Razor Swarm counts as a Drone for the purposes of you and your allies' systems, talents, traits, etc. but is not a character and is otherwise considered to be a zone on the battlefield. It does not obstruct movement or cause Engagement, and hostile characters cannot affect the Razor Swarm in any way.</p>",
           "activation": "Quick",
           "recall": "Quick",
           "redeploy": "Quick"
@@ -167,7 +168,7 @@
       "structure": 4,
       "stress": 4,
       "armor": 1,
-      "hp": 10,
+      "hp": 8,
       "evasion": 7,
       "edef": 8,
       "heatcap": 8,
@@ -203,7 +204,7 @@
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Tempeste Synchronized Long Scope",
-      "passive_effect": "The Tagetes can use a Rifle to attack a character with the Lock On condition as if its weapon had +5 range, but must consume the Lock On during the attack.",
+      "passive_effect": "The Tagetes can use Rifles as if they had +5 range, as long as Lock On is consumed during the attack.",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],

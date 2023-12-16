@@ -58,10 +58,10 @@
       "name": "Exoframe Engineering",
       "description": "The Gilgamesh was designed from the ground up to be easy and inexpensive to both construct and maintain, but to Harrison Armory \"inexpensive\" does not equal shoddy or inefficient. Instead, the Gilgamesh utilizes a unique two-stage chassis design in which an inner \"core chassis\" is first created before a secondary outer \"exoframe\" is built upon that core, including additional armor, brachial/limb extensions, and hardpoints. The end result is a deceptively elegant design capable of not only extensive customization but also exceptionally simple field repairs. A series of interlocking clamps and explosive bolts anchor various exoframe components and appendages in place, and when sufficient structural integrity is compromised these sections can be swiftly jettisoned and just as quickly replaced, allowing Legionnaires to continue fighting through catastrophic damage that would render other chassis inoperable.<br><br>This construction also allows power to be selectively rerouted between the core chassis and exoframe components, bypassing system failures and even enhancing overall performance for brief periods, though the strain this puts on the exoframe necessarily limits its use to critical situations only.",
       "passive_name": "Exoframe Engineering",
-      "passive_effect": "The Gilgamesh has a modular construction framework which allows it to easily make in-field repairs by blowing off and replacing damaged limbs and components with spares. 1/scene as a free action, you may choose two of the following:<ul><li>Regain all HP.</li><li>Clear a condition that wasn’t caused by one of your own systems, talents, etc.</li><li>Repair a destroyed weapon or system.</li></ul>If you don't use this ability during combat, then when you next rest you may either regain all HP or automatically repair a destroyed weapon or system. Using the Gilgamesh's core passive and core active abilities during combat both count as expending a Limited charge.",
+      "passive_effect": "The Gilgamesh has a modular construction framework which allows it to easily make in-field repairs by blowing off and replacing damaged limbs and components with spares. 1/scene as a free action, you may choose one of the following:<ul><li>Regain 1/2 of your total HP.</li><li>Clear a condition that wasn’t caused by one of your own systems, talents, etc.</li><li>Repair a destroyed weapon or system.</li></ul>If you don't use this ability during combat, then when you next rest you may either regain all HP or automatically repair a destroyed weapon or system. Using the Gilgamesh's core passive and core active abilities during combat both count as expending a Limited charge.",
       "active_name": "Exo Amplification",
       "activation": "Protocol",
-      "active_effect": "You gain Immunity to all conditions that weren't caused by your own systems, talents, etc until the end of your next turn and clear all hostile conditions you already have (including conditions that can't be cleared normally), clear Exposed, stand from Prone, gain your Grit +4 Overshield, replenish 1 use of all Limited weapons and systems, and until the end of your next turn you may Overcharge for no cost. This ability can be used even if you would not normally be able to take this action, such as being Stunned etc."
+      "active_effect": "You gain Immunity to all conditions that weren't caused by your own systems, talents, etc until the end of your next turn and clear all hostile conditions you already have (including conditions that can't be cleared normally), clear Exposed, stand from Prone, and you gain your Grit +4 Overshield. At the end of your next turn, clear this Overshield. This ability can be used even if you would not normally be able to take this action, such as being Stunned etc."
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "y_pos": 0
@@ -88,7 +88,7 @@
       "armor": 1,
       "hp": 8,
       "evasion": 12,
-      "edef": 8,
+      "edef": 6,
       "heatcap": 5,
       "repcap": 4,
       "sensor_range": 10,
@@ -99,17 +99,19 @@
     },
     "traits": [
       {
-        "name": "Possibility Mapping",
-        "description": "At the start of each round, choose a point during the PC turn order to act (i.e. if there are three PCs, you can choose to act first, second, or third among them). 1/round, if the Amber Phantom takes its turn during that point, it may deal +1d6 bonus damage on hit with a ranged or melee attack against a target within Sensors. If it takes its turn at another point in the round, it may still gain this bonus damage by taking 1d6 heat."
+        "name": "Hyperawareness",
+        "description": "At the start of each round, until the Amber Phantom takes its turn, all attacks against it are made with +1 Difficulty and it makes all saves with +1 Accuracy."
       },
       {
-        "name": "Hyperawareness",
-        "description": "At the start of each round, until the Amber Phantom takes its turn, all attacks against it are made with +1 Difficulty and it makes all checks and saves with +1 Accuracy."
+        "name": "Battle Oracle",
+        "description": "1/round, when a hostile character misses the Amber Phantom with an attack, it may pull a character within Sensors up to 2 spaces in any direction."
       }
     ],
     "core_system": {
-      "name": "Tactical Timeline",
+      "name": "Possibility Mapping",
       "description": "SSC's precognitive neural bridging systems are not paracausal as the name might suggest. Using carefully modulated neural stimulation and acceleration, the operator's ability to consciously process and assimilate even subconsciously-derived sensory input is greatly amplified, reducing feedback delay and enhancing reaction time to near-instinctive levels. This then allows users to more accurately predict immediate future occurrences based on comprehensive sensory awareness and intuitive analysis, hence precognition.<br><br>To further enhance this system's capability, the Amber Phantom marries precognitive bridging with a chorus of predictive modeling and tactical simulation systems to provide the pilot with even more information. The result is the creation of a holistic battlefield timeline continuously extending forward several seconds in advance of realtime, granting users an unparalleled ability to choose the precise, optimal moment to act in all situations, reacting to ongoing events even before they occur.",
+      "passive_name": "Possibility Mapping",
+      "passive_effect": "At the start of each round, choose a point during the PC turn order to act (i.e. if there are three PCs, you can choose to act first, second, or third among them). 1/round, if you take your turn during that point, you may deal +1d6 bonus damage on hit with a ranged or melee attack against a target within Sensors. If you take your turn at another point in the round, you may still gain this bonus damage, but you take 1d6 heat when doing so.",
       "active_name": "Convergence Point",
       "activation": "Protocol",
       "active_effect": "Choose one allied character that has not taken their turn this round. That character may take their turn either immediately after your turn ends, or they may take their turn now before you do anything else, pausing your own turn until their turn ends. If they choose to act now, they count as acting before you in the PC turn order. This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used."
@@ -141,7 +143,7 @@
       "evasion": 6,
       "edef": 10,
       "heatcap": 6,
-      "repcap": 4,
+      "repcap": 3,
       "sensor_range": 8,
       "tech_attack": 1,
       "save": 10,
@@ -155,19 +157,19 @@
       },
       {
         "name": "Interference Field",
-        "description": "All hostile characters within range 3 of the Lycan take +1 Difficulty on all attacks that do not target the Lycan."
+        "description": "All hostile characters within Range 3 of the Lycan take +1 Difficulty on all attacks that do not target the Lycan."
       },
       {
         "name": "Power Flux",
-        "description": "1/round, when the Lycan takes heat, a hostile character within Sensors must pass a Systems save or become Impaired and Slowed until the end of their next turn."
+        "description": "1/round, when the Lycan takes heat, a hostile character within Range 3 must pass a Systems save or become Impaired and Slowed until the end of their next turn."
       }
     ],
     "core_system": {
       "name": "Subversive Signature",
-      "description": "As a chassis designed for covert operations, the Lycan leverages the Manticore's affinity for electromagnetics in order to further obscure its precise nature, wrapping itself in a layered mesh of sensor baffles and wideband interference signals that disrupt and distort recognition scans and targeting systems. The effects of this distortion field are so intense that they even cause sporadic, uncontrolled power fluctuations in nearby systems, and pilots who have survived combat with Lycan PGs report experiencing intermittent electronics blackouts and even reduced reactor output upon approach.<br><br>However, the most distinctive feature of the Lycan by far is its ability to shift from its default, heavily-armored configuration to a more aggressive assault mode. This transformation is dramatic and known to cause panic among enemy forces as the Lycan's true nature is suddenly revealed in an explosive jettisoning of heavy armor plating and a violent surge of power diverted towards the chassis' concealed shock claws, a series of retractable, high-temperature arc blades based on Manticore armament designs.",
+      "description": "As a chassis designed for covert operations, the Lycan leverages the Manticore's affinity for electromagnetics in order to further obscure its precise nature, wrapping itself in a layered mesh of sensor baffles and wideband interference signals that disrupt and distort recognition scans and targeting systems. The effects of this distortion field are so intense that they even cause sporadic, uncontrolled power fluctuations in nearby systems, and pilots who have survived combat with Lycan PGs report experiencing intermittent electronics blackouts and even reduced reactor output upon approach.<br><br>However, the most distinctive feature of the Lycan by far is its ability to shift from its default, heavily-armored configuration to a more aggressive assault mode. This transformation is dramatic and known to cause panic among enemy forces as the Lycan's true nature is suddenly revealed in an explosive jettisoning of armor plating and a violent surge of power diverted towards the chassis' concealed shock claws, a series of retractable, high-temperature arc blades based on Manticore armament designs and embedded with a series of retaliatory \"self-sharpening\" heuristics.",
       "active_name": "Go Loud",
       "activation": "Full",
-      "active_effect": "The Lycan violently jettisons its external carapace, extending brutal talons and supercharging its reactor. Its base Armor becomes 0, its base Speed becomes 6, it gains +1 Accuracy on all attacks against targets within range 3, and both Slag Carapace and Interference Field are disabled. These effects last until the end of the scene. The Lycan may then charge forward to unleash an attack on a nearby foe, moving its Speed and making a melee attack against a target in range with its integrated Shock Claws, which can now be used for the rest of the scene.<br><br>Taking stress or structure damage before using this system alters its activation requirements and effects. If the Lycan has taken either stress or structure damage during the scene before activating this system, the activation requirement is reduced from a full action to a quick action, the Shock Claws become Threat 2, and their effect becomes \"you may deal 2 AP energy damage to one or two different characters within range 3 of the target.\" If it has taken both stress and structure damage, you may activate it as a free action, the Shock Claws now deal 4d6 energy damage, and their effect gains \"and you gain 4 Overshield.\"<br><br>This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.",
+      "active_effect": "The Lycan violently jettisons its external carapace, extending brutal talons and supercharging its reactor. Its base Armor becomes 0, its base Speed becomes 6, and Slag Carapace and Interference Field are disabled. These effects last until the end of the scene.<br<br>You may then charge forward to unleash an attack on a nearby foe, moving your Speed and making a melee attack against a target in range with its integrated Shock Claws, which can now be used for the rest of the scene.<br><br>Characters taking structure damage before you activate this system can empower its effects. During the scene before activating this system, the first time an allied Mech character within Sensors takes structure damage from hostile sources, the Shock Claws become Threat 2 and their on attack effect becomes \"you may deal 1d6 AP energy damage to up to two different characters within Range 3 of the target.\" If this happens a second time during the scene before activating it, the Shock Claws now deal 4d6+6 energy damage and their damage can't be reduced in any way.<br><br>If an allied Mech character within Sensors is destroyed before you activate this system, or if you activate it while at 2 structure or less, you automatically gain both of these additional benefits.<br><br>This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.",
       "integrated": [
         "mw_integrated_shock_claws"
       ]
@@ -183,7 +185,7 @@
     "variant": "Napoleon",
     "mechtype": [
       "Defender",
-      "Controller"
+      "Support"
     ],
     "description": "Following the initial testbed development of the Napoleon and its successful proof-of-concept demonstration of numerous advanced blinkspace and stasis technologies, Harrison Armory immediately approved a series of ongoing developmental programs to expand the application of these systems across a number of successor chassis and block upgrade packages. One of the earliest of these successor programs, the Kutuzov was designed for Armory Naval Command as a boarding action force multiplier, taking the Napoleon's incredible self-sustainability and turning it outwards to create a compact and maneuverable projected defense platform ideal for accompanying marine or chassis squads into close-quarters engagements.<br><br>Unlike the more iconic Saladin, the Kutuzov remains unsuited to frontline engagement, and its own personal survivability metrics are notably reduced from the Napoleon itself. However, its robust array of waveform projectors are designed for sustained operation under even critical system stresses, and its ability to rapidly disseminate flash-projected barriers in response to incoming fire have shown extremely promising results both during training exercises as well as limited live-combat engagements during anti-piracy operations. The Kutuzov has also begun to see increasing use as a perimeter security and riot control unit during low-intensity defensive actions on New Madrassa, alongside chassis such as the Iskander-CC.",
     "mounts": [
@@ -207,24 +209,22 @@
     },
     "traits": [
       {
+        "name": "Expulsion Zone",
+        "description": "1/round, when the Kutuzov Activates a Shield system, it may knock all hostile characters of its choice within Sensors back 3 spaces."
+      },
+      {
         "name": "Emergency Blinkfields",
-        "description": "The Kutuzov and all allied characters within Sensors immediately clear Shredded (or ignore the effects of Shredded if the condition can't be cleared normally) from hostile sources whenever they Brace, and attacks they Brace against can't inflict Shredded."
-      },
-      {
-        "name": "Self-Sustaining Shielding",
-        "description": "After the Kutuzov Braces, it may choose to continue using reactions until the end of its next turn and may take two quick actions or one full action during that turn, but if it does then the only actions it can take are Bolster, Stabilize, and Activating or otherwise using Shield systems."
-      },
-      {
-        "name": "Parallel Emitters",
-        "description": " 1/round, when the Kutuzov Activates or otherwise uses a Shield system or Stabilizes during their turn, it grants an allied character within Sensors a benefit based on the cost of that action (you may choose a benefit from a lower cost if you like):<ul><li>Free Action: You may Bolster that character.</li><li>Quick Action: That character ignores engagement, their movement doesn't provoke reactions, and they may pass through (but not stop in) spaces occupied by obstructions and other characters until the end of their next turn.</li><li>Full Action: That character may clear a condition that wasn't caused by one of their own systems, talents, etc.</li></ul>"
+        "description": "Whenever the Kutuzov or any allied character within Sensors takes the Brace reaction, they clear Shredded (or ignore its effects if it can't be cleared normally) from hostile sources, and attacks they Brace against can't inflict Shredded."
       }
     ],
     "core_system": {
-      "name": "Single-Plane Aegis",
-      "description": "Among the many challenges Armory engineers have faced since the initial development of the Trueblack Aegis shielding system, the most significant has been finding a way to overcome the extreme limitations the blinkspace envelope imposes upon protected chassis. As incoming attacks cannot cross the barrier, neither can outgoing attacks in turn, which drastically limits the system's broader applications, and this remains the biggest obstacle to the wider adoption of the technology across multiple platforms, something Harrison Armory is keenly interested in.<br><br>One of the most straightforward, albeit simplistic, solutions has been to \"flash\" a single- plane blinkspace field as a reactive countermeasure, as opposed to a sustained total-coverage envelope. Without the excessive demands of needing to sustain the blinkspace envelope, the system's operational range can be more easily extended for wider-area coverage through a series of point-defense protocols. However, the drawback to this implementation is immediately obvious, with intermittent coverage only able to intercept a limited volume of incoming fire before dispersal, and though overall power consumption is reduced, the field emitters require an extensive cycling period before they can be reactivated once more.",
-      "active_name": "Project Aegis",
+      "name": "Parallel Projectors",
+      "description": "One of the Kutuzov's most distinct features is its series of integrated parallel-tracked field emitters, allowing for the simultaneous modulation and projection of multiple overlapping waveform patterns. This includes standard superpositional barriers and stasis fields as well as more aggressively-tuned fields designed for the take-and-hold operations the Kutuzov is tasked with, forcefully displacing threats during close-quarters engagements and clearing zones for subsequent barrier deployment to establish reinforced strongpoints.<br><br>Among these other uses, these emitters are capable of \"flashing\" a single-plane form of the Napoleon's Trueblack Aegis as a short-lived interpositional countermeasure. Without the excessive demands of sustaining a total-coverage envelope, the operational range of the Aegis can be increased through a series of point-defense tracking protocols and set to neutralize all hostile engagement from selected targets. However, the drawback to this implementation is immediately obvious, with a reduced shield profile, unresolved interference with outgoing fire, and the field emitters requiring an extensive power-cycling period before they can be reactivated once more.",
+      "passive_name": "Parallel Projectors",
+      "passive_effect": "1/round, when you take the Stabilize action, Bolster action, or Activate a Shield system during your turn, you may grant an allied character within Sensors a benefit based on the overall cost of that action (you may choose a benefit from a lower cost if you like):<ul><li>Free Action: They gain soft cover until the end of their next turn.</li><li>Quick Action: They ignore engagement, their movement doesn't provoke reactions, and they may pass through (but not stop in) spaces occupied by obstructions and other characters until the end of their next turn.</li><li>Full Action: They may clear a condition that wasn't caused by one of their own systems, talents, etc.</li></ul>",
+      "active_name": "Projected Aegis",
       "activation": "Quick",
-      "active_effect": "Choose an allied character within Sensors. Until the end of your next turn, you may grant them Immunity to a single successful ranged or melee attack made against them or a save that they fail as a reaction. If this effect ends without being expended by an attack or save, that character gains Grit+4 Overshield. This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used."
+      "active_effect": "Choose an allied character within Sensors and line of sight, and then choose a hostile character within line of sight. Until the end of your next turn, those characters can't attack each other or take any actions against each other that force saves."
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "y_pos": 0

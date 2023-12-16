@@ -38,7 +38,7 @@
       },
       {
         "name": "Forward Observation Suite",
-        "description": "1/round, the Charioteer may Scan and Lock On to a character within range 3 as a free action."
+        "description": "1/round, the Charioteer may Scan and Lock On to a character within Range 3 as a free action."
       },
       {
         "name": "Hangar Queen",
@@ -215,7 +215,7 @@
       },
       {
         "name": "IFF Spoofer",
-        "description": "1/round, whenever a hostile character targets an allied character within range 3 with a tech action, an attack using a Smart weapon, or an ability which inflicts a Systems save which does not also include the Matador, you may force that attack, action, or save to target the Matador instead even if could not originally have done so (such as due to range, etc)."
+        "description": "1/round, whenever a hostile character targets an allied character within Range 3 with a tech action, an attack using a Smart weapon, or an ability which inflicts a Systems save which does not also include the Matador, you may force that attack, action, or save to target the Matador instead even if could not originally have done so (such as due to range, etc)."
       },
       {
         "name": "Guardian",
@@ -230,7 +230,7 @@
       "name": "Anthem Wideband Jammer",
       "description": "The earliest versions of this system were sourced from salvaged corvette-grade interdiction screens, designed to protect subline spacecraft from autonomous and semiautonomous drones and munitions during naval combat operations. Since those early days the design has been refined and streamlined, though it remains as aggressivelyindiscriminate as ever, blanketing an area with wideband suppression signals and electromagnetic interference that jams communications, scrambles autonomous weaponry, and inflicts debilitating feedback upon invasive electronic warfare systems, providing complete electronic cover for rapid-strike covert operations.",
       "active_name": "Blackout",
-      "active_effect": "Create a Burst 4 suppression zone around you. While this ability is active you become Slowed, but characters in the area cannot use any AI, Drone, Seeking, or Smart weapons or systems. Any such systems deployed within the area are rendered inert, AI systems become mute and non-functional, and all communication systems are rendered inoperable. These effects immediately end whenever a character or deployed system leaves the area. Any character in the area who attempts a tech action must roll a d6. On a 4+, they take 1d6 heat and the tech action automatically fails with no effect.<br>This effect lasts until the beginning of your next turn. You may extend the duration by taking 1d3 heat each additional round at the start of your turn, or you may end it at any time at the start of your turn as a free action. The jammer also deactivates at the end of the scene.",
+      "active_effect": "Create a Burst 3 suppression zone around you. While this ability is active, characters in the area cannot use any AI, Drone, or Smart weapons or systems. Any such systems deployed within the area are rendered inert, AI systems become mute and non-functional, and all communication systems are rendered inoperable. These effects immediately end whenever a character or deployed system leaves the area. Any character in the area who attempts a tech action, and any character who attempts a tech action against targets within the area, must roll 1d6. On a 4+, they take 1d6 heat and the tech action automatically fails with no effect. This effect does not stack with Invisible.<br>This effect lasts until the beginning of your next turn. You may extend the duration by taking 1d3 heat each additional round at the start of your turn, or you may end it at any time at the start of your turn as a free action. The jammer also deactivates at the end of the scene.",
       "use": "Encounter",
       "activation": "Protocol"
     },
@@ -323,7 +323,7 @@
     "traits": [
       {
         "name": "Nanoweave Net Launcher",
-        "description": "1/round, you may choose a character in range 5 and pull them 2 spaces in any direction as a free action. This movement ignores engagement and doesn't provoke reactions. Rams and Grapples against that character are made with +1 Accuracy until the end of their next turn."
+        "description": "1/round, you may choose a character in Range 5 and pull them 2 spaces in any direction as a free action. This movement ignores engagement and doesn't provoke reactions. Rams and Grapples against that character are made with +1 Accuracy until the end of their next turn."
       },
       {
         "name": "Shock Absorbers",
@@ -338,7 +338,7 @@
       "name": "Anchorpoint Entanglement System",
       "description": "Ongoing adoption of the Retiarius license beyond Suldan as well as continued research and refinement of less-lethal chassis systems has led Chandrasekhar & Herschel to develop ANCHORPOINT, an experimental semi-autonomous deployable area suppression payload. Each individual ANCHORPOINT unit affixes itself solidly into place with a tristage pneumatic/plasma/electromagnetic piton system. Once secured, these units are capable of independently prioritizing hostile targets within a designated coverage zone and restraining them them with volleys of magnetically accelerated grapnels attached to high-tensile nanocarbon-weave cables rated for 30 tons. Without the aid of time and dedicated engineering equipment, entangled targets will often cause self-inflicted structural damage attempting to disengage from the grapnels under their own power, their own hulls giving out before the ANCHORPOINT does.",
       "active_name": "Deploy Anchorpoints",
-      "active_effect": "Deploy three anchorpoint units to free spaces within range 5 of your mech. During your turn, each unit can target one hostile character within range 5 of itself with a restraint grapnel as a free action, and those targets automatically become Immobilized as long as the anchorpoint is attached to them. A restrained character can attempt to remove the grapnel at the start of their turn by passing a Hull save. On a success, the effect ends but they take 4 kinetic damage in the process of ripping themselves free. Multiple anchorpoints may restrain the same character, adding +1 Difficulty to the Hull save and +2 kinetic damage inflicted on a successful save for each anchorpoint after the first.<br>An anchorpoint can only attach itself to one target at a time, and you may choose to end this effect on any or all anchorpoint units at the start of your turn as a protocol. Anchorpoint units are special Size 1/2 deployable objects with 10 HP and 5 Evasion. They last until the end of the scene and then deactivate.",
+      "active_effect": "Deploy three anchorpoint units to free spaces within Range 5 of your mech. During your turn, each unit can target one hostile character within Range 5 of itself with a restraint grapnel as a free action, and those targets automatically become Immobilized as long as the anchorpoint is attached to them. A restrained character can attempt to remove the grapnel at the start of their turn by passing a Hull save. On a success, the effect ends but they take 4 kinetic damage in the process of ripping themselves free. Multiple anchorpoints may restrain the same character, adding +1 Difficulty to the Hull save and +2 kinetic damage inflicted on a successful save for each anchorpoint after the first.<br>An anchorpoint can only attach itself to one target at a time, and you may choose to end this effect on any or all anchorpoint units at the start of your turn as a protocol. Anchorpoint units are special Size 1/2 deployable objects with 10 HP and 5 Evasion. They last until the end of the scene and then deactivate.",
       "activation": "Protocol"
     },
     "image_url": "https://i.imgur.com/8z3WYY3.png",
@@ -441,7 +441,7 @@
       },
       {
         "name": "Stealth Composites",
-        "description": "The Sagittarius has Immunity to Lock On, and all Search checks made against it receive +1 Difficulty."
+        "description": "The Sagittarius has Immunity to Lock On."
       },
       {
         "name": "Sensor Ghost",
@@ -452,7 +452,7 @@
       "name": "Blackjacket Combat Bow",
       "description": "One of the challenges facing the SIF during initial development of the Sagittarius was formulating a ballistic weapon system for stealth operations and HVT elimination. Chassis-grade weaponry is notoriously resistant to conventional sound suppression techniques, and advanced sensor systems are highly capable of triangulating incoming weapons fire via accoustics, thermal signatures, and electromagnetic discharge.<br>The eventual solution was a surprisingly archaic one, but one that nonetheless has amply proven its effectiveness in combat. The Blackjacket is a chassis-grade compound bow capable of (relatively) silently launching large, reinforced arrows at velocity sufficient to threaten even armored cavalry. The required draw weight in order to achieve this output necessitates the use of advanced engineering materials such as nanocarbon fiber and arachnosynth weave in order to withstand the stresses of purely mechanical operation at chassis scale without immediately shattering. Even then, the bow also employs a series of additional torque enhancers to maximize power, though overall projectile velocity remains comparatively low next to more conventional armaments. As such, effect on target is regularly facilitated through the use of specialized warheads in order to defeat more advanced defensive measures, with the standard loadout utilizing a contact-triggered piston spike designed to penetrate armor.",
       "active_name": "Special Reserve",
-      "active_effect": "You shunt reserve power into a series of potent, if unstable, warheads. Gain one use each of the following specialized arrows until the end of the scene:<br><br><i>EMP Capacitor</i><br>The bow deals energy damage, and on hit the target becomes Stunned until the end of its next turn. On a miss, the target becomes Impaired and Slowed until the end of its next turn.<br><br><i>Fuel-Air Explosive</i><br>On Attack: Instead of dealing damage normally, create a Blast 2 area of volatile fuel within range 10. As a free action you may detonate this fuel, and all characters within the area must pass a Hull save or take 2d6 explosive damage and be knocked Prone. On a success, they take half damage only. Each turn you do not detonate the fuel it continues to saturate the area. At the start of your next turn after attacking, increase the area to Blast 3. At the start of the turn after that, the detonation's damage becomes 3d6. This fuel dissipates at the end of the scene.<br><br><i>Seeker Flock</i><br> The bow gains Reliable 4. On hit or miss, choose up to three additional targets within range and deal 4 kinetic damage to them.",
+      "active_effect": "You shunt reserve power into a series of potent, if unstable, warheads. Gain one use each of the following specialized arrows until the end of the scene:<br><br><i>EMP Capacitor</i><br>The bow deals energy damage, and on hit the target becomes Stunned until the end of its next turn. On a miss, the target becomes Impaired and Slowed until the end of its next turn.<br><br><i>Fuel-Air Explosive</i><br>On Attack: Instead of dealing damage normally, create a Blast 2 area of volatile fuel within Range 10. As a free action you may detonate this fuel, and all characters within the area must pass a Hull save or take 2d6 explosive damage and be knocked Prone. On a success, they take half damage only. Each turn you do not detonate the fuel it continues to saturate the area. At the start of your next turn after attacking, increase the area to Blast 3. At the start of the turn after that, the detonation's damage becomes 3d6. This fuel dissipates at the end of the scene.<br><br><i>Seeker Flock</i><br> The bow gains Reliable 4. On hit or miss, choose up to three additional targets within range and deal 4 kinetic damage to them.",
       "activation": "Protocol",
       "integrated": [
         "fgtsmw_sagittarius_integrated"
@@ -542,7 +542,7 @@
     "traits": [
       {
         "name": "Foldstep",
-        "description": "Whenever the Efreet Boosts, it may instead swap places with an allied character within range 3, teleporting both of them."
+        "description": "Whenever the Efreet Boosts, it may instead swap places with an allied character within Range 3, teleporting both of them."
       },
       {
         "name": "Unbounded",
@@ -588,7 +588,7 @@
       "Striker",
       "Support"
     ],
-    "description": "Originally conceived as an aerial multirole combat chassis suited for high-speed interception and close-support missions, the Comet became the focal point for an SSC self-guided weapons development initiative due to its numerous hardpoints and advanced electronics systems. The current iteration of the Comet is categorized as a \"distributed gunship network,\" acting as a central command-and-control hub for squadrons of autonomous weaponized drone platforms. This paradigm allows for both greater effective weapon coverage in contested battlefields as well as enabling Comet pilots to dedicate more of their focus to the act of flying, utilizing the chassis' exceptional maneuverability to avoid incoming fire while their networked drone swarms seek out and engage hostile targets independently.",
+    "description": "Originally conceived as an aerial multirole combat chassis suited for high-speed interception and close-support missions, the Comet became the focal point for an SSC self-guided weapons development initiative due to its numerous hardpoints and advanced electronics systems. The current iteration of the Comet is categorized as a \"distributed gunship network,\" acting as a central command-and-control hub for squadrons of autonomous weaponized drone platforms. This paradigm allows for both greater effective weapon coverage in contested battlefields as well as enabling Comet pilots to dedicate more of their focus to the task of flying, utilizing the chassis' exceptional maneuverability to avoid incoming fire while their networked drone swarms seek out and engage hostile targets independently.",
     "mounts": [
       "Flex",
       "Main/Aux",
@@ -613,7 +613,7 @@
     "traits": [
       {
         "name": "Integrated Flight Systems",
-        "description": "The Comet can fly when it moves or boosts."
+        "description": "The Comet can fly when it moves."
       },
       {
         "name": "Thrust Vectoring",
@@ -671,7 +671,7 @@
     "traits": [
       {
         "name": "Walking Fire",
-        "description": "1/round, on a critical hit with a Cannon, the Worden may choose another character within range 3 and line of sight of that target. Deal 1d6 damage of that weapon's type to that character, and they become Impaired until the end of their next turn."
+        "description": "1/round, on a critical hit with a Cannon, the Worden may choose another character within Range 3 and line of sight of that target. Deal 1d6 damage of that weapon's type to that character, and they become Impaired until the end of their next turn."
       },
       {
         "name": "Gun Shield",
@@ -736,7 +736,7 @@
       },
       {
         "name": "Mass Driver",
-        "description": "1/round, when the Agrippa uses a Deployable system it can place that system in a free open space wihtin range 10 and line of sight instead of placing it normally."
+        "description": "1/round, when the Agrippa uses a Deployable system it can place that system in a free open space within Range 10 and line of sight instead of placing it normally."
       }
     ],
     "core_system": {
@@ -749,7 +749,7 @@
         {
           "name": "Reconstructor Swarm",
           "activation": "Quick",
-          "detail": "Choose a single allied character within range 3 of the drone and spend 1 repair. That character may restore their HP to full, clear all burn, and clear a condition that wasn't caused by their own systems, talents, etc."
+          "detail": "Choose a single allied character within Range 3 of the drone and spend 1 Repair. That character may restore their HP to full, clear all burn, and clear a condition that wasn't caused by their own systems, talents, etc."
         }
       ],
       "passive_name": "PACKMULE Utility Drone",
@@ -804,7 +804,7 @@
     "traits": [
       {
         "name": "Integrated Flight Systems",
-        "description": "The Nelson can fly when it moves or Boosts."
+        "description": "The Nelson can fly when it moves."
       },
       {
         "name": "Jet Lancer",
@@ -912,7 +912,7 @@
     "traits": [
       {
         "name": "Aggressive Heuristics",
-        "description": "The Chimera gains +1 Accuracy on all attacks with Nexus weapons against targets within range 2 of one or more of its Drones."
+        "description": "The Chimera gains +1 Accuracy on all attacks with Nexus weapons against targets within Range 2 of one or more of its Drones."
       },
       {
         "name": "Pack Guidance",
@@ -996,10 +996,10 @@
       "name": "Intercessor Array",
       "description": "<p>The integrated projector array mounted to the \"Fearkiller\" is the latest in Harrison Armory's ongoing developments in the field of applied tachyon technologies. Unlike a standard Tachyon Loop which can only be maintained for brief durations at exceptional power draw, this new generation model is designed to project and maintain a stable, ongoing bidirectional barrier via direct point-to-point transmission. Once a link is established, the loop is capable of sustaining itself, automatically modulating transmission output to account for fluctuations in field integrity. Presently, only a single stable link can be maintained at a time, and the system requires ongoing proximity to the transmission source in order to maintain effective coherence, but Armory engineers are confident that these shortcomings can be addressed in time.</p><p>While a conventional Tachyon Loop disperses intercepted kinetic/energetic force across the barrier, the Intercessor Array is capable of recirculating accumulated energy through the loop itself, giving skilled operators the ability to atemporally \"slingshot\" themselves and their charges along the transmission channel or to shunt excess power directly into weapons systems.</p>",
       "active_name": "Tachyon Surge",
-      "active_effect": "<b>Trigger:</b> A linked character within Sensors is hit by an attack and damage has been rolled.<br><b>Effect:</b> That character gains Resistance to all damage, heat, and burn from the triggering attack. You may also pull them adjacent to you by the most direct route possible as part of this effect. Then choose either that character or yourself to become empowered by absorbed energy. The chosen character's next ranged or melee attack cannot have its damage reduced in any way. This action is <b>Efficient,</b> and refunds 1 Core Power at the end of any scene in which it's used.",
+      "active_effect": "<b>Trigger:</b> A linked character within Sensors is hit by an attack and damage has been rolled.<br><b>Effect:</b> That character gains Resistance to all damage, heat, and burn from the triggering attack, and all other attacks against them are made at +1 Difficulty until the end of their next turn. You may also pull them adjacent to you by the most direct route possible as part of this effect. Then choose either that character or yourself to become empowered by absorbed energy. The chosen character's next ranged or melee attack cannot have its damage reduced in any way. Any effects triggered from spending CP can be used as well as a part of this reaction, even if they could normally only be taken during your own turn. This action is <b>Efficient,</b> and refunds 1 Core Power at the end of any scene in which it's used.",
       "use": "Encounter",
       "passive_name": "Intercessor Array",
-      "passive_effect": "As a quick action, choose an allied character within Sensors and link them to your protective systems. You may take a second reaction each turn, but that reaction may only be used if the trigger is a hostile action or effect made against a linked character within Sensors. Only a single character can be linked this way at a time, and linking a new character causes the effect to end on the first one. Otherwise, it lasts until the end of the scene. You gain the Bidirectional Barrier reaction.<br><br>Each time you Activate a system with the Shield tag or take a reaction triggered by a hostile action or effect made against a linked character, you may have the link pull you 2 spaces towards that character by the most direct route possible as part of that action. If you are already adjacent to that character, you may be pulled 2 spaces into another free space adjacent to them instead.",
+      "passive_effect": "As a quick action, choose an allied character within Sensors and link them to your protective systems. You may take a second reaction each turn, but that reaction may only be used if the trigger is a hostile action or effect made against a linked character within Sensors. Only a single character can be linked this way at a time, and linking a new character causes the effect to end on the first one. Otherwise, it lasts until the end of the scene. You gain the Bidirectional Barrier reaction.<br><br>Each time you Activate a system with the Shield tag or take a reaction triggered by a hostile action or effect made against a linked character, you may have the link pull you 2 spaces towards that character by the most direct route possible as part of that action.",
       "passive_actions": [
         {
           "name": "Intercessor Array",

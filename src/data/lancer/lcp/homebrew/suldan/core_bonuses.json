@@ -24,8 +24,8 @@
     "id": "cb_crash_bars",
     "name": "Crash Bars",
     "source": "C&H",
-    "effect": "You may reroll structure damage checks, but must keep the second result even if it's worse. Additionally, you gain Immunity to all damage from falling.",
-    "description": "Enhanced physical protection can be achieved through an integrated series of frame-mounted struts, crash bars, reinforced actuators, and cockpit roll cages. While such measures are typically employed by racers or arena fighters to reduce the likelihood of collission trauma, they also benefit combat pilots operating in high-threat conditions or during air-drop/orbital insertion maneuvers."
+    "effect": "You may roll all structure damage checks twice and choose either result. Additionally, you gain Immunity to all damage from falling.",
+    "description": "Enhanced physical protection and damage mitigation can be achieved through an integrated series of crash bars, appliqué armor overlays, and cockpit reinforcement. While such measures are often employed by racers or arena fighters to reduce collision trauma and extend active uptime, they also benefit combat pilots operating in high-threat conditions or during air-drop/orbital insertion maneuvers."
   },
   {
     "id": "cb_emergency_reactor_override",
@@ -38,7 +38,7 @@
     "id": "cb_hypertuned_interface",
     "name": "Hypertuned Interface",
     "source": "C&H",
-    "effect": "Whenever you become Stunned due to hostile effects or structure damage, you may still make either a standard move or a quick action of your choice during your turn. Additionally, 1/scene, whenever you Overcharge to make an attack as an additional quick action, you may add +2 Accuracy to any attack roll that action requires and its damage cannot be reduced in any way.",
+    "effect": "Whenever you become Stunned due to hostile effects or structure damage, you may still make a standard move and a quick action of your choice during your turn. Additionally, 1/scene, whenever you Overcharge to make an attack as an additional quick action, you may add +2 Accuracy to any attack roll that action requires and its damage cannot be reduced in any way.",
     "description": "An extremely risky modification often proscribed by formal military regulations but frequently employed by mercenaries, gladiators, and those desperate enough to need it, overclocking a mech's neural interface systems can give pilots a valuable edge when they need it most, albeit at a dangerous cost. Overuse of such modifications can result in ruptured blood vessels, partial or total limb paralysis, neurological damage, and even death."
   },
   {
@@ -65,7 +65,7 @@
     "id": "cb_superior_logistics",
     "name": "Superior Logistics",
     "source": "GMS",
-    "effect": "1/scene, you may perform one of the following options as a quick action:<ul><li>Repair one destroyed weapon or system belonging to you or an allied character within range 3.</li><li>Lock On to or Bolster up to three characters within Sensors.</li><li>Create a Blast 1 area of \"smart cover\" within range 5 that lasts until the end of the scene. Allied characters, including yourself, at least partly within this area gain soft cover. Hostile characters treat it as difficult terrain.</li><li>Call in an artillery strike targeting a Blast 2 area within range 20. All characters within the area must pass an Agility save or take 2d6 damage. On a success, they take half damage. You choose this strike's damage type (kinetic, explosive, or energy) when you use it.</li></ul>",
+    "effect": "1/scene, you may perform one of the following options as a quick action:<ul><li>Repair one destroyed weapon or system belonging to you or an allied character within Range 3.</li><li>Lock On to or Bolster up to three characters within Sensors.</li><li>Create a Blast 1 area of \"smart cover\" within Range 5 that lasts until the end of the scene. Allied characters, including yourself, at least partly within this area gain soft cover. Hostile characters treat it as difficult terrain.</li><li>Call in an artillery strike targeting a Blast 2 area within Range 20. All characters within the area must pass an Agility save or take 2d6 damage. On a success, they take half damage. You choose this strike's damage type (kinetic, explosive, or energy) when you use it.</li></ul>",
     "description": "GMS is the galactic standard in more than just mech design. From weapons and ammunition to rear echelon support and logistics technologies, every battlefield element can be streamlined, enhanced, and placed directly at your fingertips."
   }
 ]

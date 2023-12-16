@@ -433,7 +433,7 @@
     "source": "C&H",
     "license": "MATADOR",
     "license_level": 3,
-    "effect": "Whenever a hostile character makes a tech action against you or forces you to make a Systems save, until the end of your next turn all attacks with this weapon lose Inaccurate and gain Reliable 3 and Seeking against that character.<br>You may set this weapon into an enhanced tracking mode as a quick action. While in this mode, the effect of this weapon also applies whenever hostile characters make tech actions or force Systems saves against any allied characters within range 3, but you become Slowed. You may end this effect as a protocol.",
+    "effect": "Whenever a hostile character makes a tech action against you or forces you to make a Systems save, until the end of your next turn all attacks with this weapon lose Inaccurate and gain Reliable 3 and Seeking against that character.<br>You may set this weapon into an enhanced tracking mode as a quick action. While in this mode, the effect of this weapon also applies whenever hostile characters make tech actions or force Systems saves against any allied characters within Range 3, but you become Slowed. You may end this effect as a protocol.",
     "description": "Though they can be dumbfired in a pinch, the Banderilla missile platform's onboard expert system achieves full potential when provided with hostile active sensor sweeps to home in on, riding an enemy's own electronic emmissions back to the source to deliver precision indirect-attack and counterbattery fire regardless of intervening terrain. Each missile incorporates advanced inertial and topographical navigation systems as well as a multistage motor with burn-loiter capabilities to overcome reactive sensor shutdowns, homing in on an active threat's current or extrapolated position to deliver its payload on target."
   },
   {
@@ -558,7 +558,7 @@
     "source": "C&H",
     "license": "SABREUR",
     "license_level": 1,
-    "effect": "When thrown against targets further than range 1, this weapon gains Seeking and deals 1d3+2 kinetic damage.",
+    "effect": "When thrown against targets further than Range 1, this weapon gains Seeking and deals 1d3+2 kinetic damage.",
     "description": "In formal mech duels, ranged armaments are often strictly prohibited with participants being restricted to melee weaponry only. The result of enterprising duelists looking to exploit this particular loophole, the Peregrine seeker glaive is a deceptively sophisticated combat knife, each blade a self-contained smart weapon system with independent throw-and-forget target tracking and course correction capabilities allowing it to land effective hits from seemingly impossible angles. Every seeker glaive is neuro-coded to prevent thrown blades from being turned back against their user."
   },
   {
@@ -704,10 +704,10 @@
       {
         "name": "Draw Back Bow",
         "activation": "Quick",
-        "detail": "1/round, this weapon can be drawn back with a quick action to increase its range to 15 and its damage to 2d6+3 kinetic damage on its next attack. This effect is lost if you move for any reason."
+        "detail": "1/round, this weapon can be drawn back with a quick action to increase its Range to 15 and its damage to 2d6+3 kinetic damage on its next attack. This effect is lost if you move for any reason."
       }
     ],
-    "effect": "If you attack with this weapon while Hidden you do not automatically break Hiding. On hit, the target must pass a Systems save or you remain Hidden, even if the attack triggers other effects that would normally break Hiding such as additional saves. On a miss you automatically remain Hidden.<br><br>When you print this mech or during a full repair, choose 6 of these specialized arrows to equip to your mech. You may choose individual options more than once, up to a maximum of 2 uses of any given option. Whenever you attack with this weapon, you may expend one of these arrows to gain its effect. These arrows do not count as a Limited system and cannot be replenished or enhanced by systems and abilities that affect Limited systems.<br><br><i>Mute Charge</i><br>You do not break Hiding with this option on hit or miss. The bow deals energy damage, and on hit the target becomes Jammed until the end of its next turn. Characters can only be affected by this option 1/scene.<br><br><i>Thermite Warhead</i><br> On Hit: Create a Burst 1 area around the target. The target and all characters within the area take 3 burn.<br><br><i>Hyperdense Penetrator</i><br>On Hit: The bow deals +1d6 bonus damage and the target is Shredded until the end of its next turn.<br><br><i>Fragmentation Bolt</i><br>The bow deals explosive damage and its range becomes Range 10, Blast 2, but it deals half damage to targets without the Biological tag.<br><br><i>Grapnel Line</i><br>On Attack: You may either choose a target within range 10 and force them to pass a Hull save or be knocked prone, or you may target a free space or surface within range 10 and immediately fly to that space or the nearest adjacent free space. You must end this movement on the ground or another solid surface or else immediately begin falling. This option deals no damage and cannot deal damage (from talents or otherwise).<br><br><i>Viral Payload</i><br>On Hit: The target takes 2 heat and is Slowed, Impaired, and all tech attacks against them gain +1 Accuracy until the end of their next turn."
+    "effect": "If you attack with this weapon while Hidden you do not automatically break Hiding. On hit, the target must pass a Systems save or you remain Hidden, even if the attack triggers other effects that would normally break Hiding such as additional saves. On a miss you automatically remain Hidden.<br><br>When you print this mech or during a full repair, choose 6 of these specialized arrows to equip to your mech. You may choose individual options more than once, up to a maximum of 2 uses of any given option. Whenever you attack with this weapon, you may expend one of these arrows to gain its effect. These arrows do not count as a Limited system and cannot be replenished or enhanced by systems and abilities that affect Limited systems.<br><br><i>Mute Charge</i><br>You do not break Hiding with this option on hit or miss. The bow deals energy damage, and on hit the target becomes Jammed until the end of its next turn. Characters can only be affected by this option 1/scene.<br><br><i>Thermite Warhead</i><br> On Hit: Create a Burst 1 area around the target. The target and all characters within the area take 3 burn.<br><br><i>Hyperdense Penetrator</i><br>On Hit: The bow deals +1d6 bonus damage and the target is Shredded until the end of its next turn.<br><br><i>Fragmentation Bolt</i><br>The bow deals explosive damage and its range becomes Range 10, Blast 2, but it deals half damage to targets without the Biological tag.<br><br><i>Grapnel Line</i><br>On Attack: You may either choose a target within Range 10 and force them to pass a Hull save or be knocked prone, or you may target a free space or surface within Range 10 and immediately fly to that space or the nearest adjacent free space. You must end this movement on the ground or another solid surface or else immediately begin falling. This option deals no damage and cannot deal damage (from talents or otherwise).<br><br><i>Viral Payload</i><br>On Hit: The target takes 2 heat and is Slowed, Impaired, and all tech attacks against them gain +1 Accuracy until the end of their next turn."
   },
   {
     "id": "fgtsmw_slipgun",
@@ -826,7 +826,7 @@
     "license": "COMET",
     "license_level": 2,
     "on_attack": "You may choose to give this weapon either AP or Seeking against targets with the Lock On condition. If you do so, you may not consume the Lock On as part of that attack.",
-    "description": "A versatile and effective missile launch platform, SSC's Archer nexus is designed to secure mid- to long-range air-to-air/air-to-ground superiority via precision munition strikes. A long loiter time and advanced hunter/killer decision making capabilities facilitate effective operation across multiple mission profiles, and the drone's hardpoints are able to accept a variety of missiles, from the fire-and-forget Kodandam to the Agneya anti-armor guided missile."
+    "description": "A versatile and effective missile launch platform, SSC's Archer nexus is designed to secure mid- to long-range air-to-air/air-to-ground superiority via precision munition strikes. A long loiter time and advanced hunter/killer decision making capabilities facilitate effective operation across multiple mission profiles, and each drone's hardpoints are able to accept a variety of missiles, from the fire-and-forget Kodandam to the Agneya anti-armor guided missile."
   },
   {
     "id": "fgtsmw_harrier_nexus",
@@ -853,8 +853,8 @@
     "source": "SSC",
     "license": "COMET",
     "license_level": 3,
-    "effect": "At the end of your turn, as a free action you may deal 1 AP kinetic damage to all targets within range 5 and line of sight that have Lock On.",
-    "description": "The Harrier nexus is an aggressive, dedicated gunnery/suppression unit designed for close-in fire support. Typically equipped with heavy caliber chassis-tier automatic weaponry for sustained rate-of-fire against near-range threats, the drone's advanced SSC all-theater hover maneuverability suite allows it to quickly track multiple targets independently without compromising accuracy or stability, and sophisticated heuristics grant it unparalleled battlefield autonomy even without direct operator supervision."
+    "effect": "At the end of your turn, as a free action you may deal 1 AP kinetic damage to all targets within Range 5 and line of sight that have Lock On.",
+    "description": "The Harrier nexus is an aggressive, dedicated gunnery/suppression unit designed for close-in fire support. Typically equipped with heavy caliber chassis-tier automatic weaponry for sustained rate-of-fire against near-range threats, each drone's advanced SSC all-theater hover maneuverability suite allows them to quickly track multiple targets independently without compromising accuracy or stability, and sophisticated heuristics grant them unparalleled battlefield autonomy even without direct operator supervision."
   },
   {
     "id": "fgtsmw_warthog_gpmg",
@@ -1062,7 +1062,7 @@
     "source": "HA",
     "license": "AGRIPPA",
     "license_level": 1,
-    "description": "Often issued to rear line units and engineering crews as a personal defense weapon, the Armory's standard pattern Onager Combat Shotgun is a simple but powerful close-quarters weapon designed for responsiveness and ease of handling. The weapon's typical load calls for a preset overlapping mix of scattershot and slugs, not only streamlining in-field resupply but ensuring both sufficient coverage and effect upon all targets within optimal range."
+    "description": "Often issued to rear line units and engineering crews as a personal defense weapon, the Armory's standard pattern Onager Combat Shotgun is a simple but powerful close-quarters armament designed for responsiveness and ease of handling. The weapon's typical ammunition load calls for standardized magazines containing an overlapping mix of both wide-area shot and solid slugs, not only streamlining in-field resupply but ensuring sufficient coverage and effect upon all targets within optimal range."
   },
   {
     "id": "fgtsmw_vayavya_missiles",
@@ -1157,7 +1157,7 @@
             "id": "tg_smart"
           }
         ],
-        "effect": "This weapon does not hit yourself or allied characters."
+        "effect": "This weapon does not attack yourself or allied characters caught in its area of effect."
       },
       {
         "name": "Single Target",
@@ -1227,7 +1227,7 @@
     "source": "HORUS",
     "license": "THIRDEYE",
     "license_level": 1,
-    "on_hit": "You may make a secondary attack against the nearest enemy within range 5 of the first target, checking line of sight and cover from the first target's location. This secondary attack can't deal bonus damage and doesn't trigger additional secondary attacks.",
+    "on_hit": "You may make a secondary attack against the nearest enemy within Range 5 of the first target, checking line of sight and cover from the first target's location. This secondary attack can't deal bonus damage and doesn't trigger additional secondary attacks.",
     "description": "A hybrid drone/ballistic weapon system incorporating design elements reminiscent of Smith-Shimano railgun architecture as well as elements from what appear to be non-Union technology, the seeker catapult requires a more extensive charging cycle than conventional electromagnetic weapons due to its increased projectile mass. When launched, the high-velocity drone round is propelled with enough force to defeat most armor composites, and once it achieves positive effect-on-target it switches over to an atavistic mode, aggressively pursuing hunt/kill imperatives on its own recognizance until secondary propulsion systems are exhausted."
   },
   {
@@ -1355,10 +1355,10 @@
         "damage": [
           {
             "type": "Kinetic",
-            "val": "1d6",
-            "effect": "This weapon gains +1 Accuracy on all attacks made as reactions."
+            "val": "1d6"
           }
-        ]
+        ],
+        "effect": "This weapon gains +1 Accuracy on all attacks made as reactions."
       }
     ],
     "source": "HA",
@@ -1400,7 +1400,7 @@
             "val": 3
           }
         ],
-        "effect": "This weapon's blast zone extends vertically up to range 10.",
+        "effect": "This weapon's blast zone extends vertically up to 10 spaces high.",
         "on_hit": "Targets must pass a Hull save or be knocked Prone. Flying characters that fail this save are forced to land (they fall but do not take damage), then knocked Prone."
       },
       {
@@ -1565,7 +1565,7 @@
     "license": "MANTLE",
     "license_level": 1,
     "on_hit": "You may expend a charge to deal +1d6 bonus energy damage.",
-    "effect": "You may attack with this weapon without expending charges, and whenever you would be forced to destroy a weapon due to critical damage or other effects, you may choose this weapon to destroy even if it has no charges remaining.",
+    "effect": "You may attack with this weapon without expending or requiring charges, and whenever you would be forced to destroy a weapon due to critical damage or other effects, you may choose this weapon to destroy even if it has no charges remaining.",
     "actions": [
       {
         "name": "Energetic Parry",
@@ -1738,7 +1738,7 @@
     "damage": [
       {
         "type": "Explosive",
-        "val": "5"
+        "val": "4"
       }
     ],
     "range": [
@@ -1758,7 +1758,7 @@
     "license": "GMS",
     "license_level": 0,
     "source": "GMS",
-    "description": "GMS weapons run the gamut from venerable designs kept current through regular standardization programs to cutting-edge armaments built to meet modern battlefield challenges, and their catalogue is always expanding. Many of these weapons are frequently mounted to a wide variety of armored vehicles beyond just mechs, such as light machine guns and anti-armor missile launchers, while other designs are strictly intended for mechanized chassis operation, such as the high-powered heavy assault shotgun and their line of extended blade/haft anti-cavalry melee weaponry. This is in addition to periodic updates to the T-3 line of advanced and exotic ordnance, ranging from the Wasp nexus which launches guided swarms of shaped-charge explosive microdrones to the Apex nexus, a large gunship-tier directed strike unit capable of providing squads with dedicated fire support."
+    "description": "GMS weapons run the gamut from venerable designs kept current through regular standardization programs to cutting-edge armaments built to meet modern battlefield challenges, and their catalogue is always expanding. Many of these weapons are frequently mounted to a wide variety of armored vehicles beyond just mechs, such as light machine guns and anti-armor missile launchers, while other designs are strictly intended for mechanized chassis operation, such as the high-powered heavy assault shotgun and their line of extended blade/haft anti-cavalry melee weaponry. This is in addition to periodic updates to the T-3 line of advanced and exotic ordnance, ranging from the Wasp nexus which launches guided swarms of shaped-charge explosive microdrones to the \"Downburst\" apex superiority nexus, a large gunship-tier directed strike unit capable of providing squads with dedicated fire support."
   },
   {
     "id": "fgtsmw_anti_cavalry_melee",
@@ -1789,11 +1789,11 @@
     "license": "GMS",
     "license_level": 0,
     "source": "GMS",
-    "description": "GMS weapons run the gamut from venerable designs kept current through regular standardization programs to cutting-edge armaments built to meet modern battlefield challenges, and their catalogue is always expanding. Many of these weapons are frequently mounted to a wide variety of armored vehicles beyond just mechs, such as light machine guns and anti-armor missile launchers, while other designs are strictly intended for mechanized chassis operation, such as the high-powered heavy assault shotgun and their line of extended blade/haft anti-cavalry melee weaponry. This is in addition to periodic updates to the T-3 line of advanced and exotic ordnance, ranging from the Wasp nexus which launches guided swarms of shaped-charge explosive microdrones to the Apex nexus, a large gunship-tier directed strike unit capable of providing squads with dedicated fire support."
+    "description": "GMS weapons run the gamut from venerable designs kept current through regular standardization programs to cutting-edge armaments built to meet modern battlefield challenges, and their catalogue is always expanding. Many of these weapons are frequently mounted to a wide variety of armored vehicles beyond just mechs, such as light machine guns and anti-armor missile launchers, while other designs are strictly intended for mechanized chassis operation, such as the high-powered heavy assault shotgun and their line of extended blade/haft anti-cavalry melee weaponry. This is in addition to periodic updates to the T-3 line of advanced and exotic ordnance, ranging from the Wasp nexus which launches guided swarms of shaped-charge explosive microdrones to the \"Downburst\" apex superiority nexus, a large gunship-tier directed strike unit capable of providing squads with dedicated fire support."
   },
   {
     "id": "fgtsmw_apex_nexus",
-    "name": "MC-DA Apex Nexus",
+    "name": "MC-Downburst Apex Nexus",
     "mount": "Superheavy",
     "type": "Nexus",
     "damage": [
@@ -1823,7 +1823,7 @@
     "license": "GMS",
     "license_level": 0,
     "source": "GMS",
-    "description": "GMS weapons run the gamut from venerable designs kept current through regular standardization programs to cutting-edge armaments built to meet modern battlefield challenges, and their catalogue is always expanding. Many of these weapons are frequently mounted to a wide variety of armored vehicles beyond just mechs, such as light machine guns and anti-armor missile launchers, while other designs are strictly intended for mechanized chassis operation, such as the high-powered heavy assault shotgun and their line of extended blade/haft anti-cavalry melee weaponry. This is in addition to periodic updates to the T-3 line of advanced and exotic ordnance, ranging from the Wasp nexus which launches guided swarms of shaped-charge explosive microdrones to the Apex nexus, a large gunship-tier directed strike unit capable of providing squads with dedicated fire support."
+    "description": "GMS weapons run the gamut from venerable designs kept current through regular standardization programs to cutting-edge armaments built to meet modern battlefield challenges, and their catalogue is always expanding. Many of these weapons are frequently mounted to a wide variety of armored vehicles beyond just mechs, such as light machine guns and anti-armor missile launchers, while other designs are strictly intended for mechanized chassis operation, such as the high-powered heavy assault shotgun and their line of extended blade/haft anti-cavalry melee weaponry. This is in addition to periodic updates to the T-3 line of advanced and exotic ordnance, ranging from the Wasp nexus which launches guided swarms of shaped-charge explosive microdrones to the \"Downburst\" apex superiority nexus, a large gunship-tier directed strike unit capable of providing squads with dedicated fire support."
   },
   {
     "id": "fgtsmw_assault_shotgun",
@@ -1858,7 +1858,7 @@
     "license": "GMS",
     "license_level": 0,
     "source": "GMS",
-    "description": "GMS weapons run the gamut from venerable designs kept current through regular standardization programs to cutting-edge armaments built to meet modern battlefield challenges, and their catalogue is always expanding. Many of these weapons are frequently mounted to a wide variety of armored vehicles beyond just mechs, such as light machine guns and anti-armor missile launchers, while other designs are strictly intended for mechanized chassis operation, such as the high-powered heavy assault shotgun and their line of extended blade/haft anti-cavalry melee weaponry. This is in addition to periodic updates to the T-3 line of advanced and exotic ordnance, ranging from the Wasp nexus which launches guided swarms of shaped-charge explosive microdrones to the Apex nexus, a large gunship-tier directed strike unit capable of providing squads with dedicated fire support."
+    "description": "GMS weapons run the gamut from venerable designs kept current through regular standardization programs to cutting-edge armaments built to meet modern battlefield challenges, and their catalogue is always expanding. Many of these weapons are frequently mounted to a wide variety of armored vehicles beyond just mechs, such as light machine guns and anti-armor missile launchers, while other designs are strictly intended for mechanized chassis operation, such as the high-powered heavy assault shotgun and their line of extended blade/haft anti-cavalry melee weaponry. This is in addition to periodic updates to the T-3 line of advanced and exotic ordnance, ranging from the Wasp nexus which launches guided swarms of shaped-charge explosive microdrones to the \"Downburst\" apex superiority nexus, a large gunship-tier directed strike unit capable of providing squads with dedicated fire support."
   },
   {
     "id": "fgtsmw_light_machine_gun",
@@ -1880,7 +1880,7 @@
     "license": "GMS",
     "license_level": 0,
     "source": "GMS",
-    "description": "GMS weapons run the gamut from venerable designs kept current through regular standardization programs to cutting-edge armaments built to meet modern battlefield challenges, and their catalogue is always expanding. Many of these weapons are frequently mounted to a wide variety of armored vehicles beyond just mechs, such as light machine guns and anti-armor missile launchers, while other designs are strictly intended for mechanized chassis operation, such as the high-powered heavy assault shotgun and their line of extended blade/haft anti-cavalry melee weaponry. This is in addition to periodic updates to the T-3 line of advanced and exotic ordnance, ranging from the Wasp nexus which launches guided swarms of shaped-charge explosive microdrones to the Apex nexus, a large gunship-tier directed strike unit capable of providing squads with dedicated fire support."
+    "description": "GMS weapons run the gamut from venerable designs kept current through regular standardization programs to cutting-edge armaments built to meet modern battlefield challenges, and their catalogue is always expanding. Many of these weapons are frequently mounted to a wide variety of armored vehicles beyond just mechs, such as light machine guns and anti-armor missile launchers, while other designs are strictly intended for mechanized chassis operation, such as the high-powered heavy assault shotgun and their line of extended blade/haft anti-cavalry melee weaponry. This is in addition to periodic updates to the T-3 line of advanced and exotic ordnance, ranging from the Wasp nexus which launches guided swarms of shaped-charge explosive microdrones to the \"Downburst\" apex superiority nexus, a large gunship-tier directed strike unit capable of providing squads with dedicated fire support."
   },
   {
     "id": "fgtsmw_wasp_nexus",
@@ -1913,6 +1913,6 @@
     "license": "GMS",
     "license_level": 0,
     "source": "GMS",
-    "description": "GMS weapons run the gamut from venerable designs kept current through regular standardization programs to cutting-edge armaments built to meet modern battlefield challenges, and their catalogue is always expanding. Many of these weapons are frequently mounted to a wide variety of armored vehicles beyond just mechs, such as light machine guns and anti-armor missile launchers, while other designs are strictly intended for mechanized chassis operation, such as the high-powered heavy assault shotgun and their line of extended blade/haft anti-cavalry melee weaponry. This is in addition to periodic updates to the T-3 line of advanced and exotic ordnance, ranging from the Wasp nexus which launches guided swarms of shaped-charge explosive microdrones to the Apex nexus, a large gunship-tier directed strike unit capable of providing squads with dedicated fire support."
+    "description": "GMS weapons run the gamut from venerable designs kept current through regular standardization programs to cutting-edge armaments built to meet modern battlefield challenges, and their catalogue is always expanding. Many of these weapons are frequently mounted to a wide variety of armored vehicles beyond just mechs, such as light machine guns and anti-armor missile launchers, while other designs are strictly intended for mechanized chassis operation, such as the high-powered heavy assault shotgun and their line of extended blade/haft anti-cavalry melee weaponry. This is in addition to periodic updates to the T-3 line of advanced and exotic ordnance, ranging from the Wasp nexus which launches guided swarms of shaped-charge explosive microdrones to the \"Downburst\" apex superiority nexus, a large gunship-tier directed strike unit capable of providing squads with dedicated fire support."
   }
 ]
