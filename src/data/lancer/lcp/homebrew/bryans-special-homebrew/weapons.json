@@ -1,0 +1,379 @@
+[
+  {
+    "id": "mw_thogn_anti_air_rifle",
+    "name": "Thögn Anti-Air Rifle",
+    "source": "SSC",
+    "license": "Lucina",
+    "license_level": 1,
+    "description": "",
+    "effect": "",
+    "on_hit": "The target is Slowed until the end of their next turn. In addition, if the target is flying, they immediately land (this counts as falling without any damage), and can’t fly until the end of their next turn.",
+    "mount": "Main",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 12
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "license_id": "ssc_lucina"
+  },
+  {
+    "id": "mw_temporal_masquerade_shield",
+    "name": "Temporal Masquerade Shield",
+    "source": "SSC",
+    "license": "Lucina",
+    "license_level": 2,
+    "description": "",
+    "effect": "Gain the <b>Future Sight</b> reaction. If the Temporal Masquerade Shield is thrown, the <b>Future Sight</b> reaction cannot be used until it is retrieved.",
+    "on_hit": "",
+    "mount": "Auxiliary",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_thrown",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Future Sight",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "An enemy attacks an allied character within a Range equal to your Speed.",
+        "detail": "You may move a number of spaces up to your Speed towards your target, by the most direct route possible. If you would reach the allied character’s space, you take their place, becoming the target of the attack and suffering all of its damage and effects, and the allied character is pushed one space in any direction."
+      }
+    ],
+    "license_id": "ssc_lucina"
+  },
+  {
+    "id": "mw_geirskogul",
+    "name": "Geirskogul",
+    "source": "SSC",
+    "license": "Lucina",
+    "license_level": 2,
+    "description": "",
+    "effect": "You may attack with this weapon without expending or requiring charges. Instead, you may expend a charge to use the <b>Hope Will Never Die</b> full action.",
+    "on_crit": "Replenish one charge.",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Hope Will Never Die",
+        "activation": "Full",
+        "detail": "Bolster all allied characters within a Burst equal to your Speed."
+      }
+    ],
+    "license_id": "ssc_lucina"
+  },
+  {
+    "id": "mw_lucina_integrated",
+    "name": "Parallel Falchion",
+    "mount": "Main",
+    "type": "Melee",
+    "skirmish": true,
+    "barrage": true,
+    "effect": "You begin any fight in either the Sol or Luna profile, and may change to either the Sol or Luna profile as a protocol. Once you have selected a profile, you remain in it until you take a new profile.",
+    "actions": [
+      {
+        "name": "I Choose To Fight",
+        "activation": "Reaction",
+        "frequency": "1/turn",
+        "trigger": "A hostile character with a lower Speed than the Lucina enters, exits or moves more than 1 space within the Parallel Falchion's Threat.",
+        "detail": "The Lucina may skirmish that character with the Parallel Falchion. This special reaction can be used once a turn, any number of times a round, and doesn’t count against the maximum number of reactions a turn, so the Lucina can take other reactions normally."
+      }
+    ],
+    "profiles": [
+      {
+        "name": "Sol",
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d3+3"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_accurate"
+          },
+          {
+            "id": "tg_overshield"
+          }
+        ],
+        "effect": "On hit, gain Overshield equal to the amount of damage dealt to the target."
+      },
+      {
+        "name": "Luna",
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d3+3"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_accurate"
+          },
+          {
+            "id": "tg_ap"
+          }
+        ]
+      },
+      {
+        "name": "Aether",
+        "range": [
+          {
+            "type": "Threat",
+            "val": 2
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "2d3+3"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_accurate"
+          },
+          {
+            "id": "tg_ap"
+          },
+          {
+            "id": "tg_overshield"
+          }
+        ],
+        "effect": "On hit, gain Overshield equal to the amount of damage dealt to the target."
+      }
+    ],
+    "license_id": "ssc_lucina"
+  },
+  {
+    "id": "mw_lifes_gauntlet",
+    "name": "Life’s Gauntlet",
+    "source": "HORUS",
+    "license": "Ghoul",
+    "license_level": 1,
+    "description": "Many do not journey beyond the Gate of Life. Its gauntlet is more than enough for even the most robust of souls. Those that do have eyes open to possibility, and rush headlong into the future.",
+    "effect": "When attacking with this weapon, you may deal damage and trigger other effects (including talents and systems) as though it were an improvised attack. If you do, take 2 AP Kinetic damage.",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "sp": 0,
+    "tags": [],
+    "license_id": "horus_ghoul"
+  },
+  {
+    "id": "mw_scrapnel_shotgun",
+    "name": "Scrapnel Shotgun",
+    "source": "IPS-N",
+    "license": "Acadia",
+    "license_level": 1,
+    "description": "",
+    "effect": "Pummels the ground with hazardous shards in the attack cone, creating Dangerous Terrain until the end of the scene.",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Cone",
+        "val": 5
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "license_id": "ipsn_acadia"
+  },
+  {
+    "id": "mw_harvester_disassembly_array",
+    "name": "\"Harvester\" Disassembly Array",
+    "source": "IPS-N",
+    "license": "Acadia",
+    "license_level": 2,
+    "description": "",
+    "skirmish": true,
+    "barrage": true,
+    "effect": "This weapon can be used in the Disassemble profile to Skirmish.",
+    "mount": "Superheavy",
+    "type": "Melee",
+    "profiles": [
+      {
+        "name": "Disassemble",
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          },
+          {
+            "type": "Energy",
+            "val": "1d6"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_reliable",
+            "val": 2
+          },
+          {
+            "id": "tg_ap"
+          }
+        ],
+        "on_hit": "The target is Shredded until the end of their next turn.",
+        "effect": "Attacks with this weapon deal 5 AP Kinetic and 5 AP Energy damage to objects, cover, terrain, and the environment."
+      },
+      {
+        "name": "Demolition",
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "2d3"
+          },
+          {
+            "type": "Energy",
+            "val": "2d3"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_reliable",
+            "val": 4
+          },
+          {
+            "id": "tg_ap"
+          }
+        ],
+        "on_hit": "The target is Shredded until the end of their next turn. If they are already Shredded, they are Exposed instead.",
+        "effect": "Attacks with this weapon deal 50 AP Kinetic and 50 AP Energy damage to objects, cover, terrain, and the environment."
+      }
+    ],
+    "sp": 0,
+    "license_id": "ipsn_acadia"
+  },
+  {
+    "id": "mw_acadia_integrated",
+    "name": "Mooring Harpoon Cannon",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "skirmish": true,
+    "barrage": true,
+    "effect": "",
+    "on_hit": "If the target is smaller than you, it is immediately pulled adjacent to you by the most direct path, and is Grappled. If there are no suitable spaces, the target does not move.",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "license_id": "ipsn_acadia"
+  }
+]

@@ -1,0 +1,207 @@
+[
+  {
+    "id": "ssc_lucina",
+    "source": "SSC",
+    "license_level": 2,
+    "name": "Lucina",
+    "mechtype": [
+      "Defender",
+      "Supporter"
+    ],
+    "description": "",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "I Challenge My Fate",
+        "description": "When the Lucina Braces, it may also make an Agility check. If successful, it may still use free actions and reactions as normal, and may use its standard move on its next turn."
+      },
+      {
+        "name": "Fell Dragon Slayer",
+        "description": "The Lucina counts as Size 3 for Engagement and when Ramming any target."
+      },
+      {
+        "name": "Hamearic Cunning",
+        "description": "The Lucina may use Agility instead of Hull when rolling contested checks to take control of or breaking a grapple, and may do so regardless of the grappler’s sizes. If the Lucina takes control of a grapple, the grapple immediately ends."
+      }
+    ],
+    "core_system": {
+      "name": "Inheritance",
+      "active_name": "One Sword and a World of Troubles",
+      "active_effect": "For the rest of the scene, change the Parallel Falchion to the Aether profile. For the rest of the scene, when the Lucina Barrages, it may use the Parallel Falchion for both attacks.",
+      "activation": "Protocol",
+      "description": "",
+      "use": "Encounter",
+      "integrated": [
+        "mw_lucina_integrated"
+      ]
+    },
+    "image_url": "https://gamepress.gg/feheroes/sites/fireemblem/files/2022-12/CYLucina1.png",
+    "license_id": "ssc_lucina",
+    "y_pos": "14"
+  },
+  {
+    "id": "horus_ghoul",
+    "source": "HORUS",
+    "license_level": 2,
+    "name": "Ghoul",
+    "mechtype": [
+      "Striker"
+    ],
+    "description": "",
+    "mounts": [
+      "Main",
+      "Main"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 10,
+      "evasion": 7,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 5,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 3,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Entangling Assault",
+        "description": "1/round, when the Ghoul hits a melee attack against a target, it may attempt to grapple that same target as a free action."
+      },
+      {
+        "name": "Hurricane of Blows",
+        "description": "Whenever the Ghoul inflicts Knockback on a target with a melee attack, it may teleport to a space adjacent to its target."
+      },
+      {
+        "name": "Overwhelming Presence",
+        "description": "Whenever the Ghoul teleports, it may select a destination that is occupied by characters of equal or smaller size. The teleport successfully completes. Any characters in spaces now occupied by the Ghoul are instead pushed to the nearest open space adjacent to the Ghoul."
+      }
+    ],
+    "core_system": {
+      "name": "Student of the Eight Gates",
+      "description": "The Path of the Eight Gates is not an easy one, but many are drawn to it, hoping to reach true power.",
+      "passive_name": "Student of the Eight Gates",
+      "passive_effect": "Gain the <b>Student of the Eight Gates</b> full action.",
+      "passive_actions": [
+        {
+          "name": "Student of the Eight Gates",
+          "activation": "Full",
+          "detail": "Teleport to a space adjacent to a character within Sensors. You may then perform an improvised attack on that character with +1 Accuracy.",
+          "frequency": "Unlimited"
+        }
+      ],
+      "active_name": "The Gate of Death",
+      "active_effect": "Until the end of your turn, Gain resistance to all damage from all sources. In addition, for the rest of the scene, you gain the special <b>Master of the Eight Gates</b> free action.",
+      "activation": "Full",
+      "active_actions": [
+        {
+          "name": "Master of the Eight Gates",
+          "activation": "Free",
+          "detail": "Take 2 heat, then Teleport to a space adjacent to a character within Sensors. You may then perform up to two improvised attacks against that character. You take damage equal to the damage inflicted."
+        }
+      ],
+      "use": "Encounter"
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "license_id": "horus_ghoul",
+    "y_pos": "0"
+  },
+  {
+    "id": "ipsn_acadia",
+    "source": "IPS-N",
+    "license_level": 2,
+    "name": "Acadia",
+    "mechtype": [
+      "Defender",
+      "Supporter"
+    ],
+    "description": "",
+    "mounts": [
+      "Heavy",
+      "Main",
+      "Flex"
+    ],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 16,
+      "evasion": 6,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Carve the Path",
+        "description": "The Acadia may move through objects and terrain. If it does, it automatically deals 100 AP kinetic damage to objects and terrain in its path. In addition, the Acadia travels at full speed through difficult terrain."
+      },
+      {
+        "name": "Too Big To Notice",
+        "description": "The Acadia can take reactions while grappling."
+      },
+      {
+        "name": "Colossus",
+        "description": "Adjacent allied characters can use the Acadia for hard cover."
+      },
+      {
+        "name": "Overworked Engines",
+        "description": "The Acadia cannot Boost, and it takes 1 Heat for every space it moves voluntarily by any action other than its standard move."
+      }
+    ],
+    "core_system": {
+      "name": "Nothing Goes To Waste",
+      "passive_name": "Scrap",
+      "passive_effect": "",
+      "passive_actions": [
+        {
+          "name": "Scrap",
+          "activation": "Reaction",
+          "trigger": "An enemy character is destroyed within range 5.",
+          "detail": "A cable latches onto the destroyed character, and its mech is pulled to the Acadia, removed from the battlefield, and is incorporated into the Acadia's ramshackle hull. This grants the Acadia one of the following benefits:<br><ul><li>The Acadia restores HP to full.</li><li>The Acadia removes up to two conditions.</li><li>The Acadia reloads all Loading weapons.</li><li>The Acadia creates a pile of slag adjacent to itself. The slag is an object of size 2 soft cover, with 10 HP and 5 Evasion. The spaces it occupies become dangerous terrain, dealing energy damage to occupants, until the slag is destroyed.</li></ul>",
+          "frequency": "1/round"
+        }
+      ],
+      "active_name": "Do Not Resist, You Are Being Assimilated",
+      "active_effect": "The Acadia engages a legion of cables on a target enemy character within line of sight. The enemy is Immobilized. This condition cannot be cleared in any way. Every time the Acadia moves, it must move towards the target until the target is destroyed.<br><br>Once the Acadia is adjacent to the target, it begins to assimilate it. At the start of each of the Acadia and the target’s turns, Gain a Scrap die, a d6. Whenever the Acadia would attack the target, you may roll a Scrap die instead. On an odd number, the target takes 1 Stress. On an even number, the target takes 1 Structure damage.<br><br>Each time a Scrap die is rolled, gain a benefit as though you had triggered the Scrap reaction.",
+      "activation": "Full",
+      "description": "",
+      "use": "Encounter",
+      "integrated": [
+        "mw_acadia_integrated"
+      ]
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "license_id": "ipsn_acadia",
+    "y_pos": "0"
+  }
+]
