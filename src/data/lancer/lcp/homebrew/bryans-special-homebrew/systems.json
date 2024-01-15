@@ -14,7 +14,7 @@
         "id": "tg_unique"
       },
       {
-        "id": "tg_heat_self",
+        "id": "tg_limited",
         "val": 2
       }
     ],
@@ -22,7 +22,7 @@
       {
         "name": "Gerbera's Relief",
         "activation": "Quick",
-        "detail": "Clear an adjacent allied character’s condition that wasn’t caused by one of their own systems, talents, etc.",
+        "detail": "Expend a charge to clear an adjacent allied character’s condition that wasn’t caused by one of their own systems, talents, etc.",
         "frequency": "Unlimited"
       }
     ],
@@ -96,25 +96,13 @@
     "source": "HORUS",
     "license": "Ghoul",
     "license_level": 1,
-    "effect": "Gain the following invade options:",
+    "effect": "When you make an improvised attack, you may select one of the following effects. If you do, the attack does half damage.<ul><li><b>Crush:</b> The target makes a Hull save. On a failure, they are Shredded and Impaired until the end of their next turn.</li><li><b>Daze:</b> The target makes an Agility save. On a failure, they are Immobilized until the end of their next turn, or by clearing the status as a Quick action.</li><li><b>Disorient:</b> The target makes a Sensors save. On a failure, they cannot draw line of sight further than Sensors and make all attacks as though their target were Invisible until the end of their next turn.</li><li><b>Occupy:</b> The target makes an Engineering save. On a failure, they cannot take any reactions until the start of their next turn.</li></ul>",
     "type": "System",
     "sp": 1,
-    "description": "Smash the barrier that guards your thoughts, and become unshackled. The Gates await you. Take your first step.",
+    "description": "Smash the barrier that guards your thoughts, and become unshackled. The Gates await you.",
     "tags": [
       {
         "id": "tg_unique"
-      }
-    ],
-    "actions": [
-      {
-        "name": "Front Lotus",
-        "activation": "Invade",
-        "detail": "Your target gains Lock on. Teleport to a space adjacent to your target."
-      },
-      {
-        "name": "Youth’s Inexorable Finale",
-        "activation": "Invade",
-        "detail": "Your target is knocked Prone and is Shredded until the end of their next turn."
       }
     ],
     "license_id": "horus_ghoul"
@@ -125,9 +113,9 @@
     "source": "HORUS",
     "license": "Ghoul",
     "license_level": 2,
-    "effect": "At the end of each of your turns, you may choose to either reduce your Heat by 1, or gain 2 Overshield.",
+    "effect": "1/round, after hitting an improvised attack, you may choose one of the following effects: <ul><li>Reduce your current Heat by 1.</li><li>Gain 2 Overshield.</li><li>Clear 1 condition.</li></ul>",
     "type": "System",
-    "sp": 2,
+    "sp": 1,
     "description": "The journey to open the gates is unforgiving. To reach the end, you must treat yourself with the same kindness you would show to others, and hope others would show to themselves. The Gates will not be forgiving.",
     "tags": [
       {
@@ -142,7 +130,7 @@
     "source": "HORUS",
     "license": "Ghoul",
     "license_level": 2,
-    "effect": "Choose one of the following effects. It lasts until the end of the scene.",
+    "effect": "",
     "type": "System",
     "sp": 2,
     "description": "When your body has reached its limit, extend past it. Push through the Gate of Pain. Destroy the Gate of Limit, and go beyond.",
@@ -159,7 +147,7 @@
       {
         "name": "The Gates of Pain and Limit",
         "activation": "Protocol",
-        "detail": "Take 3 heat, then choose one of the following effects. It lasts until the end of the scene, or until you Unlock The Gates again.<br> <b>The Gate of Pain:</b> Your melee attacks gain Knockback +2. When you knock a character into a wall, mech, or other obstruction that would cause it to stop moving, you may force your target to pass a Hull save or take 1d6 Kinetic Damage and become Impaired until the end of its next turn.<br> <b>The Gate of Limit:</b> Your melee attacks gain Smart and AP."
+        "detail": "Choose one of the following effects. It lasts until the end of the scene, or until you Unlock The Gates again.<ul><li><b>The Gate of Pain:</b> Your melee attacks gain Knockback +2. When you knock a character into a wall, mech, or other obstruction that would cause it to stop moving, you may force your target to pass a Hull save or take 1d6 Kinetic Damage and become Impaired until the end of its next turn.</li><li><b>The Gate of Limit:</b> Your melee attacks gain Smart and AP.</li></ul>"
       }
     ],
     "license_id": "horus_ghoul"
@@ -208,7 +196,7 @@
         "name": "Unlock The Gate of Wonder",
         "activation": "Full",
         "frequency": "1/scene",
-        "detail": "Until the end of your next turn, you are Exposed. You may teleport up to 6 spaces. You are then Immobilized until the end of your next turn. You may then perform an improvised attack on each character within Burst 1."
+        "detail": "Until the end of your next turn, you are Exposed. You may teleport up to 6 spaces. You are then Immobilized until the end of your turn. You may then perform an improvised attack on each character within Burst 1."
       }
     ],
     "license_id": "horus_ghoul"
@@ -249,13 +237,13 @@
   },
   {
     "id": "ms_superfluous_modular_structure",
-    "name": "Superfluous Modular Structure",
+    "name": "Ramshackle Hull",
     "source": "IPS-N",
     "license": "Acadia",
     "license_level": 3,
     "effect": "When you would suffer involuntary movement as part of an attack or failed save, you may instead take 3 AP kinetic damage and ignore the involuntary movement.",
     "type": "System",
-    "sp": 3,
+    "sp": 1,
     "description": "",
     "tags": [
       {
@@ -265,18 +253,27 @@
     "license_id": "ipsn_acadia"
   },
   {
-    "id": "ms_omnipositional_swivel_mount",
-    "name": "Omnipositional Swivel Mount",
+    "id": "ms_bulwark_frame",
+    "name": "Bulwark Frame",
     "source": "IPS-N",
     "license": "Acadia",
     "license_level": 3,
-    "effect": "1/turn, you may attack with a Heavy or Superheavy Melee weapon as though it had a range of Burst 1. This attack does not trigger talents or bonus damage.",
+    "effect": "Your mech gains the Guardian trait if it doesn’t already have it (adjacent allies can use your mech as hard cover). Once per round, if an ally that is using your mech as cover takes damage from an attack, you may shield them as a Reaction. If you do, both you and your ally take half of that damage instead.",
     "type": "System",
     "sp": 2,
     "description": "",
     "tags": [
       {
         "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Shield",
+        "activation": "Reaction",
+        "trigger": "An ally that is using your mech as cover takes damage from an attack.",
+        "detail": "Both you and your ally take half of that damage instead.",
+        "frequency": "1/round"
       }
     ],
     "license_id": "ipsn_acadia"

@@ -34,8 +34,8 @@
         "description": "When the Lucina Braces, it may also make an Agility check. If successful, it may still use free actions and reactions as normal, and may use its standard move on its next turn."
       },
       {
-        "name": "Fell Dragon Slayer",
-        "description": "The Lucina counts as Size 3 for Engagement and when Ramming any target."
+        "name": "Batesian Mimicry",
+        "description": "The Lucina counts as Size 3 for the purposes of Engagement."
       },
       {
         "name": "Hamearic Cunning",
@@ -44,6 +44,16 @@
     ],
     "core_system": {
       "name": "Inheritance",
+      "passive_name": "I Choose To Fight",
+      "passive_actions": [
+        {
+          "name": "I Choose To Fight",
+          "activation": "Reaction",
+          "frequency": "1/turn",
+          "trigger": "A hostile character with a lower Speed than the Lucina enters, exits or moves more than 1 space within the Parallel Falchion's Threat.",
+          "detail": "The Lucina may skirmish that character with the Parallel Falchion. This special reaction can be used once a turn, any number of times a round, and doesn’t count against the maximum number of reactions a turn, so the Lucina can take other reactions normally."
+        }
+      ],
       "active_name": "One Sword and a World of Troubles",
       "active_effect": "For the rest of the scene, change the Parallel Falchion to the Aether profile. For the rest of the scene, when the Lucina Barrages, it may use the Parallel Falchion for both attacks.",
       "activation": "Protocol",
@@ -82,29 +92,25 @@
       "repcap": 3,
       "sensor_range": 5,
       "tech_attack": 1,
-      "save": 10,
+      "save": 11,
       "speed": 3,
-      "sp": 7
+      "sp": 6
     },
     "traits": [
       {
-        "name": "Entangling Assault",
-        "description": "1/round, when the Ghoul hits a melee attack against a target, it may attempt to grapple that same target as a free action."
-      },
-      {
         "name": "Hurricane of Blows",
-        "description": "Whenever the Ghoul inflicts Knockback on a target with a melee attack, it may teleport to a space adjacent to its target."
+        "description": "After the Ghoul inflicts Knockback on a target with a melee attack, it may teleport to a space adjacent to the target."
       },
       {
         "name": "Overwhelming Presence",
-        "description": "Whenever the Ghoul teleports, it may select a destination that is occupied by characters of equal or smaller size. The teleport successfully completes. Any characters in spaces now occupied by the Ghoul are instead pushed to the nearest open space adjacent to the Ghoul."
+        "description": "Whenever the Ghoul teleports, it may select a destination within range that is occupied by characters of equal or smaller size. Any characters in spaces that would be occupied by the Ghoul are instead pushed to the nearest open space adjacent to the Ghoul, so long as enough spaces exist."
       }
     ],
     "core_system": {
       "name": "Student of the Eight Gates",
       "description": "The Path of the Eight Gates is not an easy one, but many are drawn to it, hoping to reach true power.",
       "passive_name": "Student of the Eight Gates",
-      "passive_effect": "Gain the <b>Student of the Eight Gates</b> full action.",
+      "passive_effect": "Gain the <b>Student of the Eight Gates</b> Full action.",
       "passive_actions": [
         {
           "name": "Student of the Eight Gates",
@@ -114,7 +120,7 @@
         }
       ],
       "active_name": "The Gate of Death",
-      "active_effect": "Until the end of your turn, Gain resistance to all damage from all sources. In addition, for the rest of the scene, you gain the special <b>Master of the Eight Gates</b> free action.",
+      "active_effect": "Until the end of your turn, gain Resistance to all damage from all sources. In addition, for the rest of the scene, you gain the special <b>Master of the Eight Gates</b> free action.",
       "activation": "Full",
       "active_actions": [
         {
@@ -136,13 +142,13 @@
     "name": "Acadia",
     "mechtype": [
       "Defender",
-      "Supporter"
+      "Controller"
     ],
     "description": "",
     "mounts": [
       "Heavy",
       "Main",
-      "Flex"
+      "Main"
     ],
     "stats": {
       "size": 3,
@@ -163,11 +169,11 @@
     "traits": [
       {
         "name": "Carve the Path",
-        "description": "The Acadia may move through objects and terrain. If it does, it automatically deals 100 AP kinetic damage to objects and terrain in its path. In addition, the Acadia travels at full speed through difficult terrain."
+        "description": "The Acadia may move through objects, terrain, and spaces occupied by enemy characters. If it does, it automatically deals 100 AP kinetic damage to objects and terrain in its path. Characters in the path are pushed to the nearest available space, and must make an Agility check. On a failure, they take 1d6 Kinetic damage."
       },
       {
         "name": "Too Big To Notice",
-        "description": "The Acadia can take reactions while grappling."
+        "description": "The Acadia travels at full speed through difficult terrain."
       },
       {
         "name": "Colossus",
@@ -186,8 +192,8 @@
         {
           "name": "Scrap",
           "activation": "Reaction",
-          "trigger": "An enemy character is destroyed within range 5.",
-          "detail": "A cable latches onto the destroyed character, and its mech is pulled to the Acadia, removed from the battlefield, and is incorporated into the Acadia's ramshackle hull. This grants the Acadia one of the following benefits:<br><ul><li>The Acadia restores HP to full.</li><li>The Acadia removes up to two conditions.</li><li>The Acadia reloads all Loading weapons.</li><li>The Acadia creates a pile of slag adjacent to itself. The slag is an object of size 2 soft cover, with 10 HP and 5 Evasion. The spaces it occupies become dangerous terrain, dealing energy damage to occupants, until the slag is destroyed.</li></ul>",
+          "trigger": "An enemy character is destroyed within Range 5.",
+          "detail": "A cable latches onto the destroyed character, and its mech is pulled to the Acadia, removed from the battlefield, and is incorporated into the Acadia's ramshackle hull. This grants the Acadia one of the following benefits:<br><ul><li>The Acadia restores HP to full.</li><li>The Acadia removes up to two conditions from itself.</li><li>The Acadia reloads all Loading weapons.</li><li>The Acadia creates a pool of slag adjacent to itself. The slag is an object of size 2 soft cover, with 10 HP and 5 Evasion. The spaces it occupies become dangerous terrain, dealing energy damage, until the slag is destroyed.</li></ul>",
           "frequency": "1/round"
         }
       ],
