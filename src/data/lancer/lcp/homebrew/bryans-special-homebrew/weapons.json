@@ -124,15 +124,7 @@
     "skirmish": true,
     "barrage": true,
     "effect": "You begin any fight in either the Sol or Luna profile, and may change to either the Sol or Luna profile as a protocol. Once you have selected a profile, you remain in it until you take a new profile.",
-    "actions": [
-      {
-        "name": "I Choose To Fight",
-        "activation": "Reaction",
-        "frequency": "1/turn",
-        "trigger": "A hostile character with a lower Speed than the Lucina enters, exits or moves more than 1 space within the Parallel Falchion's Threat.",
-        "detail": "The Lucina may skirmish that character with the Parallel Falchion. This special reaction can be used once a turn, any number of times a round, and doesn’t count against the maximum number of reactions a turn, so the Lucina can take other reactions normally."
-      }
-    ],
+    "actions": [],
     "profiles": [
       {
         "name": "Sol",
@@ -145,7 +137,7 @@
         "damage": [
           {
             "type": "Kinetic",
-            "val": "1d3+3"
+            "val": "1d3+1"
           }
         ],
         "tags": [
@@ -192,7 +184,7 @@
         "damage": [
           {
             "type": "Kinetic",
-            "val": "2d3+3"
+            "val": "2d3+4"
           }
         ],
         "tags": [
@@ -218,7 +210,7 @@
     "license": "Ghoul",
     "license_level": 1,
     "description": "Many do not journey beyond the Gate of Life. Its gauntlet is more than enough for even the most robust of souls. Those that do have eyes open to possibility, and rush headlong into the future.",
-    "effect": "When attacking with this weapon, you may deal damage and trigger other effects (including talents and systems) as though it were an improvised attack. If you do, take 2 AP Kinetic damage.",
+    "effect": "When attacking with this weapon, you may deal damage and trigger other effects (including talents and systems) as though it were an improvised attack. If you do, take 1 Heat.",
     "mount": "Main",
     "type": "Melee",
     "damage": [
@@ -250,7 +242,7 @@
     "damage": [
       {
         "type": "Kinetic",
-        "val": "1d6+1"
+        "val": "2d6"
       }
     ],
     "range": [
@@ -269,14 +261,14 @@
   },
   {
     "id": "mw_harvester_disassembly_array",
-    "name": "\"Harvester\" Disassembly Array",
+    "name": "“Harvester” Disassembly Array",
     "source": "IPS-N",
     "license": "Acadia",
     "license_level": 2,
     "description": "",
     "skirmish": true,
     "barrage": true,
-    "effect": "This weapon can be used in the Disassemble profile to Skirmish.",
+    "effect": "This weapon can be used in the Disassemble profile to Skirmish and Overwatch.",
     "mount": "Superheavy",
     "type": "Melee",
     "profiles": [
@@ -291,20 +283,17 @@
         "damage": [
           {
             "type": "Kinetic",
-            "val": "1d6"
+            "val": "1d3"
           },
           {
             "type": "Energy",
-            "val": "1d6"
+            "val": "1d3"
           }
         ],
         "tags": [
           {
             "id": "tg_reliable",
             "val": 2
-          },
-          {
-            "id": "tg_ap"
           }
         ],
         "on_hit": "The target is Shredded until the end of their next turn.",
@@ -321,24 +310,25 @@
         "damage": [
           {
             "type": "Kinetic",
-            "val": "2d3"
+            "val": "3d3"
           },
           {
             "type": "Energy",
-            "val": "2d3"
+            "val": "3d3"
+          },
+          {
+            "type": "Heat",
+            "val": "3"
           }
         ],
         "tags": [
           {
             "id": "tg_reliable",
-            "val": 4
-          },
-          {
-            "id": "tg_ap"
+            "val": 3
           }
         ],
-        "on_hit": "The target is Shredded until the end of their next turn. If they are already Shredded, they are Exposed instead.",
-        "effect": "Attacks with this weapon deal 50 AP Kinetic and 50 AP Energy damage to objects, cover, terrain, and the environment."
+        "on_hit": "The target is Shredded until the end of their next turn.",
+        "effect": "When attacking, you may attack any number of targets within Threat. If you do, the attack does not trigger talents or bonus damage. Attacks with this weapon deal 50 AP Kinetic and 50 AP Energy damage to objects, cover, terrain, and the environment."
       }
     ],
     "sp": 0,
@@ -352,11 +342,11 @@
     "skirmish": true,
     "barrage": true,
     "effect": "",
-    "on_hit": "If the target is smaller than you, it is immediately pulled adjacent to you by the most direct path, and is Grappled. If there are no suitable spaces, the target does not move.",
+    "on_hit": "If the target is smaller than you, it is knocked Prone and is immediately pulled adjacent to you by the most direct path. If there are no suitable spaces, the target does not move.",
     "damage": [
       {
         "type": "Kinetic",
-        "val": "1d6+2"
+        "val": "1d6"
       }
     ],
     "range": [
