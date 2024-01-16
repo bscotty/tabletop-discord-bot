@@ -1,5 +1,5 @@
 import {Discord, Slash, SlashOption} from "discordx";
-import {CommandInteraction} from "discord.js";
+import {ApplicationCommandOptionType, CommandInteraction} from "discord.js";
 import Searcher from "../data/searcher";
 import {getIcon1point5Data} from "../data/icon/json";
 import {SearchableIconData} from "../data/icon/searchable/searchable-icon-data";
@@ -33,10 +33,14 @@ export class Icon {
         return this._searcher
     }
 
-    @Slash("icon", {description: "Search for an Icon search term"})
+    @Slash({name: "icon", description: "Search for an Icon search term"})
     public command(
-        @SlashOption("term", {description: "what to search for"})
-            term: string,
+        @SlashOption({
+            name: "term",
+            description: "what to search for",
+            required: true,
+            type: ApplicationCommandOptionType.String
+        }) term: string,
         interaction: CommandInteraction
     ) {
         try {
