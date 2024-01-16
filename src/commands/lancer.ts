@@ -1,5 +1,5 @@
 import {Discord, Slash, SlashOption} from "discordx";
-import {CommandInteraction} from "discord.js";
+import {ApplicationCommandOptionType, CommandInteraction} from "discord.js";
 import {LancerData, lancerDataReader} from "../data/lancer/lancer-data-reader";
 import {getCoreLcp} from "../data/lancer/lcp/core";
 import Searcher from "../data/searcher";
@@ -100,9 +100,14 @@ export class Lancer {
         return this._formatter
     }
 
-    @Slash("lancer", {description: "Search for a Lancer search term"})
+    @Slash({name: "lancer", description: "Search for a Lancer search term"})
     public async command(
-        @SlashOption("term", {description: "what to search for"}) term: string,
+        @SlashOption({
+            name: "term",
+            description: "what to search for",
+            required: true,
+            type: ApplicationCommandOptionType.String
+        }) term: string,
         interaction: CommandInteraction
     ) {
         const result: (SearchableData | undefined) = this.searcher().search(term)
@@ -115,7 +120,7 @@ export class Lancer {
             .catch((it) => console.log(`error with message: ${it}`))
     }
 
-    @Slash("lancer-versions", {description: "Print all currently used Lancer LCP versions"})
+    @Slash({name: "lancer-versions", description: "Print all currently used Lancer LCP versions"})
     public async lancerVersions(
         interaction: CommandInteraction
     ) {

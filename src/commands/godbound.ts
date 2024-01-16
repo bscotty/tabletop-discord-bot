@@ -1,5 +1,5 @@
 import {Discord, Slash, SlashOption} from "discordx";
-import {CommandInteraction} from "discord.js";
+import {ApplicationCommandOptionType, CommandInteraction} from "discord.js";
 import Searcher from "../data/searcher";
 import {getDictionary} from "../data/godbound/words";
 import {formatGodbound} from "../data/godbound/formatter";
@@ -18,10 +18,14 @@ export class Godbound {
         return this._searcher
     }
 
-    @Slash("godbound", {description: "Search for a Godbound search term"})
+    @Slash({name: "godbound", description: "Search for a Godbound search term"})
     public command(
-        @SlashOption("term", {description: "what to search for"})
-            term: string,
+        @SlashOption({
+            name: "term",
+            description: "what to search for",
+            required: true,
+            type: ApplicationCommandOptionType.String
+        }) term: string,
         interaction: CommandInteraction
     ) {
         try {

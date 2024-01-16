@@ -1,5 +1,5 @@
 import {Client} from "discordx";
-import {Intents} from "discord.js";
+import {IntentsBitField, Partials} from "discord.js";
 import {decorateCommands} from "./command";
 
 export async function initClient(token: string, guilds: string[]) {
@@ -9,10 +9,10 @@ export async function initClient(token: string, guilds: string[]) {
 
     const client = new Client({
         botId: "test",
-        partials: ["CHANNEL", "MESSAGE"],
+        partials: [Partials.Channel, Partials.Message],
         intents: [
-            Intents.FLAGS.GUILDS,
-            Intents.FLAGS.GUILD_MESSAGES,
+            IntentsBitField.Flags.Guilds,
+            IntentsBitField.Flags.GuildMessages,
         ],
         botGuilds: guilds
     })
@@ -20,7 +20,6 @@ export async function initClient(token: string, guilds: string[]) {
     client.once("ready", async () => {
         console.log("I'm alive!")
         await client.initApplicationCommands()
-        await client.initApplicationPermissions()
 
         client.applicationCommands.forEach((command) => {
             console.log(`found command: ${command.name}`)
