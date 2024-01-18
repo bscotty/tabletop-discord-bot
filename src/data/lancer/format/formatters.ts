@@ -354,7 +354,18 @@ export class Formatters {
         if (system.deployables) {
             out += `Gain the following deployables:\n${system.deployables.map(dep => this.deployableFormatter(dep)).join('\n')}\n`
         }
+        if (system.ammo && system.ammo.length > 0) {
+            out += '\n' + system.ammo.map((it) => `* ${it.name} (${it.allowed_types.map((it) => this.formatAllowedType(it)).join(", ")}) - ${it.detail}`).join('\n')
+        }
         return out
+    }
+
+    private formatAllowedType(allowedType: string): string {
+        if (allowedType.toLowerCase() == "cqb") {
+            return "CQB"
+        } else {
+            return allowedType.slice(0, 1).toUpperCase() + allowedType.slice(1)
+        }
     }
 
     public tagFormat(object: SearchableTag) {
