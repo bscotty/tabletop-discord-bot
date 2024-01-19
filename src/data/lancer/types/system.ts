@@ -7,6 +7,7 @@ import {
     ITagData,
     SystemType
 } from "./shared-types";
+import {Ammo} from "./ammo";
 
 export type System = {
     id: string
@@ -27,4 +28,5 @@ export type System = {
     counters?: ICounterData[]
     integrated?: string[]
     special_equipment?: string[]
+    ammo?: Ammo[]
 }
