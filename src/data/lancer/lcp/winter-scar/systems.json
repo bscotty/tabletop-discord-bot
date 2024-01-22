@@ -5,10 +5,10 @@
     "source": "HA",
     "license": "Gilgamesh",
     "license_level": 1,
-    "description": "Emergency repair modules are often a mainstay on Armory chassis galaxy-wide. Through a combination of active nanite slurry, hardpatch welding, and shunting to redundant systems in response to immediate damage, they ensure that a chassis will be able to quickly complete nonmassive battlefield repairs in order to remain active without compromising operational effectiveness or pilot safety. A number of informal celebratory traditions have arisen throughout the legions to commemorate a pilot's first time taking damage sufficient to trigger an ERM in combat.",
-    "effect": "Whenever you Brace, you may expend a charge and spend 1 Repair immediately after taking damage from the triggering attack to restore your HP to full. If you took structure damage from the triggering attack, you also roll one less die on the structure damage check to a minimum of 0 (which results in no effect).",
+    "description": "Emergency repair modules are often a mainstay on Armory chassis galaxy-wide. Through a combination of active nanite slurry, hardpatch welding, and shunting to redundant systems in response to immediate damage, they ensure that a chassis will be able to quickly complete nonmassive battlefield repairs in order to remain operational. A number of informal celebratory traditions have arisen throughout the legions to commemorate a pilot's first time taking damage sufficient to trigger an ERM in combat.",
+    "effect": "Whenever you or an adjacent ally Braces, you may expend a charge and spend 1 Repair to restore that character's HP to full immediately after they take damage from the triggering attack. If that character took structure damage from the triggering attack, they also roll one less die on the structure damage check to a minimum of 0 (which results in no effect).",
     "type": "System",
-    "sp": 2,
+    "sp": 1,
     "tags": [
       {
         "id": "tg_limited",
@@ -63,7 +63,7 @@
     "license_level": 2,
     "type": "System",
     "sp": 2,
-    "description": "Mass produced and distributed to Armory legions wherever they may find themselves deployed, the \"Argos\" multipurpose utility drone is a common sight throughout the Purview and beyond. Each utility drone is a highly flexible, modular platform which is rapidly assembled prior to deployment from a variety of prefabricated systems and components, including threat interception arrays, electrostatic discharge area denial/suppression projectors, and field diagnostic loadouts. Legionnaire doctrine calls for extensive use of Argos drones to supplement and enhance unit longevity in the field whenever possible, and attrition rates among Legionnaires involved in active combat tend to be correspondingly high, necessitating frequent reprint and resupply.",
+    "description": "Mass produced and distributed to Armory legions wherever they may find themselves deployed, the \"Argos\" utility drone is a common sight throughout the Purview and beyond. Legionnaire doctrine calls for extensive use of Argos drones to supplement and enhance squad performance, with each drone serving as a multipurpose platform incorporating numerous systems and components, including threat interception arrays, electrostatic discharge area denial/suppression projectors, and field diagnostic loadouts.",
     "tags": [
       {
         "id": "tg_limited",
@@ -77,7 +77,7 @@
       {
         "name": "Utility Drone",
         "type": "Drone",
-        "detail": "Expend 1-2 charges to deploy that many utility drones to free spaces within Sensors where they create a Burst 2 area. Hostile characters within this area make all checks and saves with +1 Difficulty, and all allied characters within this area gain +1 Accuracy to all checks and saves.<br><br>The utility drone can be redeployed to a new location as a quick action. It cannot be recalled and expires at the end of the scene.",
+        "detail": "Expend 1-2 charges to deploy that many utility drones to free spaces within Sensors where they create a Burst 2 area. Hostile characters within this area make all checks and saves with +1 Difficulty, and all allied characters within this area gain +1 Accuracy to all checks and saves. This effect does not stack with other utility drones.<br><br>The utility drone can be redeployed to a new location as a quick action. It cannot be recalled and expires at the end of the scene.",
         "size": 0.5,
         "activation": "Quick",
         "redeploy": "Quick",
@@ -95,7 +95,7 @@
     "source": "EXOTIC",
     "license": "",
     "license_level": 0,
-    "description": "A common piece of equipment aboard commercial and military spacefaring vessels alike, \"quickfoam\" is a self-curing polymer foam laced with whitewash utility nanites that rapidly expands and hardens even in null-atmosphere conditions, used to seal hull breaches, sustain compromised systems, and dampen dangerous hazards. While not considered part of a standard combat loadout, marine pilots often make use of deployable airburst cannisters full of the substance to effect in-field emergency repairs or to set improvised snare traps in chokepoints and access corridors.",
+    "description": "A common piece of equipment aboard commercial and military spacefaring vessels alike, \"quickfoam\" is a self-curing polymer foam laced with whitewash utility nanites that rapidly expands and hardens even in null-atmosphere conditions, used to seal hull breaches and sustain compromised systems. While not considered part of a standard combat loadout, marine pilots often make use of deployable airburst cannisters full of the substance to effect in-field emergency repairs or to set improvised snare traps in chokepoints and access corridors.",
     "type": "System",
     "sp": 3,
     "tags": [
