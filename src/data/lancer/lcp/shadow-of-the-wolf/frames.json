@@ -39,7 +39,7 @@
       },
       {
         "name": "Relay Coupling",
-        "description": "When you target an allied character with a system or tech action, they may use your Sensors and line of sight for tech actions until the start of your next turn."
+        "description": "When you target an allied character within sensors with a system or tech action, they may use your Sensors and line of sight for tech actions until the start of your next turn."
       }
     ],
     "core_system": {
