@@ -59,7 +59,7 @@
           }
         ],
         "effect": "This weapon may only be used during the Go Loud core power. The first time in a scene an allied Mech character within Sensors takes structure damage before Going Loud, this profile replaces the default Shock Claws profile. This weapon can't be used to attack in the same turn as another Heavy or Superheavy weapon.",
-        "on_attack": "You may deal 1d6 AP energy damage to up to two different characters of your choice within Range 3 of the target."
+        "on_attack": "You may deal 1d6 AP energy damage to a character of your choice within Range 3 of the target."
       },
       {
         "name": "Ruined",
@@ -86,8 +86,8 @@
             "id": "tg_overkill"
           }
         ],
-        "effect": "This weapon may only be used during the Go Loud core power. If you Go Loud after allied Mech characters within Sensors take structure damage twice or more during the scene, an allied Mech character in Sensors is destroyed, or while at 2 structure or less, this profile replaces the default Shock Claws profile. This weapon can't be used to attack in the same turn as another Heavy or Superheavy weapon.",
-        "on_attack": "You may deal 1d6 AP energy damage to up to two different characters of your choice within Range 3 of the target. This weapon's damage can't be reduced in any way."
+        "effect": "This weapon may only be used during the Go Loud core power. If you Go Loud after allied Mech characters within Sensors take structure damage twice or more during the scene, an allied Mech character is destroyed, or while at 2 structure or less, this profile replaces the default Shock Claws profile. This weapon can't be used to attack in the same turn as another Heavy or Superheavy weapon.",
+        "on_attack": "You may deal 1d6 AP energy damage to a character of your choice within Range 3 of the target."
       }
     ]
   },
@@ -118,18 +118,18 @@
         "val": 3
       }
     ],
-    "effect": "You may attack with this weapon without expending or requiring charges, and whenever you would be forced to destroy a weapon due to critical damage or other effects, you may choose this weapon to destroy even if it has no charges remaining.",
+    "effect": "You may attack with this weapon without expending or requiring charges, and this weapon can be destroyed (due to critical damage or other effects) even if it has no charges remaining.",
     "on_attack": "You may expend up to 3 charges, gaining either +2 Reliable on that attack or pushing the target character 1 space in any direction on hit for each charge expended."
   },
   {
-    "id": "mw_thermal_blade",
-    "name": "Thermal Blade",
+    "id": "mw_superthermal_blade",
+    "name": "Superthermal Blade",
     "source": "HA",
     "license": "Gilgamesh",
     "license_level": 2,
     "mount": "Main",
     "type": "Melee",
-    "description": "Available in a variety of designs extensively curated for maximum wide-reaching cultural appeal, the Armory's line of thermal blades are considered a status symbol among some Legionnaires, as well as a valuable close-quarters assault tool. Unpowered the blade is merely a conventional, if solidly designed, chassis-grade tactical melee weapon, but when the blade's internal power bank is activated its striking edge is superheated to extreme temperatures.",
+    "description": "Available in a variety of designs extensively curated for maximum wide-reaching cultural appeal, the Armory's line of thermoconductive blades are considered a status symbol among some Legionnaires. Under nominal power the blade is merely a conventional, if solidly designed, chassis-grade tactical melee weapon, but when the blade draws additional power from a chassis' reactor via hard-cable or induction feeds, its striking edge is instantly superheated to extreme temperatures.",
     "damage": [
       {
         "type": "Energy",
@@ -162,8 +162,8 @@
         "id": "tg_unique"
       }
     ],
-    "effect": "You may attack with this weapon without expending charges or requiring, and whenever you would be forced to destroy a weapon due to critical damage or other effects, you may choose this weapon to destroy even if it has no charges remaining.",
-    "on_hit": "If you are in the Danger Zone you may expend a charge to to deal +3 heat, or if you are not in the Danger Zone you may take 3 heat to expend a charge anyway."
+    "effect": "You may attack with this weapon without expending or requiring charges, and this weapon can be destroyed (due to critical damage or other effects) even if it has no charges remaining.",
+    "on_hit": "1/round, if you are in the Danger Zone you may expend a charge to to deal +3 heat, or if you are not in the Danger Zone you may take 3 heat to expend a charge anyway."
   },
   {
     "id": "mw_legion_nexus",
@@ -200,12 +200,12 @@
         "val": 2
       }
     ],
-    "effect": "1/round, after attacking with this weapon, you may expend a charge as a free action to task a team of subalterns to operate independently from the main unit. This counts as a Drone deployed in a free space adjacent to you. You may attack with this weapon without expending or requiring charges, and whenever you would be forced to destroy a weapon due to critical damage or other effects, you may choose this weapon to destroy even if it has no charges remaining.",
+    "effect": "1/round, after attacking with this weapon, you may expend a charge as a free action to task a team of subalterns to operate independently from the main unit. This counts as a Drone deployed in a free space adjacent to you. You may attack with this weapon without expending or requiring charges, and this weapon can be destroyed (due to critical damage or other effects) even if it has no charges remaining.",
     "deployables": [
       {
         "name": "Legion Drone",
         "type": "Drone",
-        "detail": "As a protocol, you may move each deployed legion drone you control up to 3 spaces and order each of them to perform one of the following commands:<ul><li>Suppression Protocols: Choose a hostile character within Range 5 of the drone. Your attacks with the legion nexus against them gain +1 Accuracy until the end of their next turn. This effect does not stack. That character must also pass an Agility save or become Impaired until the end of their next turn.</li><li>Assault Position: A hostile character adjacent to the drone must pass a Hull save or take 2 kinetic damage and be knocked Prone.</li><li>Defensive Formation: Until the start of your next turn, the drone counts as Size 1 and adjacent allied characters can use it for hard cover.</li></ul>For each deployed legion drone you control, the legion nexus deals +2 damage on hit to a maximum of +6. Legion drones cannot be recalled and expire at the end of the scene.",
+        "detail": "As a protocol, you may move each deployed legion drone you control up to 3 spaces and order each of them to perform one of the following commands:<ul><li>Suppression Protocols: Choose a hostile character within Range 5 of the drone. Your attacks with the legion nexus against them gain +1 Accuracy until the end of their next turn. This effect does not stack. That character must also pass an Agility save or become Impaired until the end of their next turn.</li><li>Assault Position: A hostile character adjacent to the drone must pass a Hull save or be knocked back 1 space and be knocked Prone. Until the start of your next turn, the drone counts as Size 1 and adjacent allied characters can use it for hard cover.</li></ul>For each deployed legion drone you control, the legion nexus deals +2 damage on hit to a maximum of +6. Legion drones cannot be recalled and expire at the end of the scene.",
         "size": 0.5,
         "instances": 1,
         "activation": "Free",
