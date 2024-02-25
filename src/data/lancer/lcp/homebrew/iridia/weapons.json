@@ -1,30 +1,5 @@
 [
   {
-    "id": "moff_aphrodite_integrated",
-    "name": "Heartbreaker",
-    "mount": "Main",
-    "type": "Cannon",
-    "damage": [
-      {
-        "type": "Kinetic",
-        "val": "0"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 15
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_seeking"
-      }
-    ],
-    "on_hit": "The target suffers System Trauma.",
-    "effect": "This weapon has 3 charges. In order to attack, this weapon must consume Lock On and spend a charge. If this weapon misses, the charge is refunded. This weapon regains all charges when you perform a full repair."
-  },
-  {
     "id": "moff_celestial_weaver",
     "name": "Celestial Weaver",
     "mount": "Main",
@@ -125,7 +100,7 @@
     "license_id": "moff_iridia_aphrodite",
     "license_level": 3,
     "sp": 1,
-    "effect": "This weapon uses Tech Attack for attack rolls instead of Grit, and ignores cover. It is treated as a tech attack for the purposes of effects (such as being Immune to tech actions, or giving +1 Accuracy to tech attacks), but is otherwise counted as a ranged attack in all respects (such as for Engagement). It cannot make attacks via effects that allow tech attacks.",
+    "effect": "This weapon uses Tech Attack for attack rolls instead of Grit, and ignores cover. Any of the target's systems or traits that affect tech attacks (such as being Immune to tech actions, or giving +1 Accuracy to tech attacks) apply to this weapon, but it is still a ranged attack.",
     "description": "<code class='horus--subtle'>[[Your thoughts betray you.]]</code>"
   },
   {

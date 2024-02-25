@@ -49,10 +49,6 @@
       {
         "name": "Panoply of Inevitability",
         "description": "While a hostile character has a condition, that character cannot inflict that condition on the Ananke or any of the Ananke's adjacent allies."
-      },
-      {
-        "name": "Immaterial Physicality",
-        "description": "The Ananke can always affect and be affected by Intangible characters, even while the Ananke is not itself Intangible."
       }
     ],
     "core_system": {
@@ -101,28 +97,25 @@
     },
     "traits": [
       {
+        "name": "Fate's Arrow",
+        "description": "The Aphrodite’s ranged attacks gain Seeking against the character furthest away from it on the battlefield. If multiple characters are equally distant, this effect applies to all of them."
+      },
+      {
         "name": "Center of Attention",
         "description": "Whenever the Aphrodite consumes Lock On for any purpose, it gains Lock On. While the Aphrodite has Lock On, it has base 4 Armor."
       },
       {
         "name": "Luminous Presence",
         "description": "The Aphrodite may not benefit from Hidden or become Invisible."
-      },
-      {
-        "name": "Pinpoint Trauma",
-        "description": "Whenever the Aphrodite hits a hostile character with a ranged weapon attack, the target is Soul Marked until the start of their next turn. <br><br>While Soul Marked, whenever the target suffers System Trauma - including from the triggering attack - the Aphrodite chooses which Weapon or System is destroyed instead of the target (though whether a weapon or system is destroyed is still random)."
       }
     ],
     "core_system": {
       "name": "Heartbreaker Cannon",
       "description": "The projectiles fired by the Heartbreaker aren’t physical, and they don’t follow the laws of nature. Like the rest of the Aphrodite, they act on the forces of emotions, of spirit and will. Despair gives it strength, adversity gives it purpose. <br><br>The weapon gets its name because it follows the spool of desire - taking the thing that the target needs most at that instant, and completely obliterating it from reality.",
-      "active_name": "Crush Spirit",
-      "active_effect": "The Aphrodite places a Blast 2 anywhere within range of its Heartbreaker, even out of line of sight. All hostile characters within the blast are attacked once by its Heartbreaker, even if they do not have Lock On. These attacks do not consume charges, and may be made even if its Heartbreaker is at 0 charges. <br><br>If all characters are missed by this action, the CP used for this action is not expended.",
-      "activation": "Quick",
-      "use": "Round",
-      "integrated": [
-        "moff_aphrodite_integrated"
-      ]
+      "active_name": "Heartbreaker",
+      "active_effect": "The Aphrodite consumes Lock On from a hostile character within Range 50 and line of sight to deal 1 Structure Damage to that character. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Full",
+      "use": "Round"
     },
     "counters": [
       {
@@ -983,7 +976,7 @@
       "name": "Akashic Sensor Suite",
       "description": "Full of every sensor available - and some that perhaps aren’t - the Akashic Sensor Suite is designed to reveal the dangers, composition, and weak points of everything within range. This allows allies to focus fire on potent threats, as well as know how best to avoid incoming fire. <br><br>Those who rely too much on it, however, are known to grow excessively paranoid, or believe perhaps that they know more than anyone else. Gazing too deeply can prevent ever coming back...",
       "active_name": "Auspex Sweep",
-      "active_effect": "The Iris and all characters in Range 50, even theose Hidden or outside of line of sight, gain an Akashic Mark. Until the end of the scene, characters can have multiple Akashic Marks, and any hostile character with an Akashic Mark loses Hidden and may not regain it while they have the Mark. <br><br>In addition, the Iris and all allied characters count as Invisible against attacks that target their e-defense until the start of that character’s next turn.",
+      "active_effect": "The Iris and all characters in Range 50, even those Hidden or outside of line of sight, gain an Akashic Mark. Until the end of the scene, characters can have multiple Akashic Marks, and any hostile character with an Akashic Mark loses Hidden and may not regain it while they have the Mark. <br><br>In addition, the Iris and all allied characters count as Invisible against attacks that target their e-defense until the start of that character’s next turn.",
       "use": "Round",
       "activation": "Quick",
       "passive_name": "Akashic Resonance",
@@ -1618,9 +1611,9 @@
     ],
     "core_system": {
       "name": "Profane Amalgam",
-      "description": "The Silver contains components from many different Iridian frames, all put together in a way that no sane - or insane - person would consider workable. And yet… it’s technically stable. <br><br>It’s a miracle that the frame hasn’t yet torn itself apart by the paracausal forces created by the interplay of its systems, but it’s only one moment away from causing some sort of implosion of reality. <br><br>One tiny push. <br><br>And then it’s a storm like no other.",
-      "active_name": "Paracausal Convergence",
-      "active_effect": "The Silver becomes Intangible, and creates a Burst 3 around itself, which moves with it and affects non-Intangible characters as well. Any non-Intangible character in this burst becomes Intangible until they leave the burst. <br><br>In addition, the Silver’s Corrupted Providence affects hostile characters within range 3 while this is active. <br><br>At the end of its turn while this effect is active, the Silver takes 1 Heat. This effect lasts until the end of the scene, the Silver overheats, or until it deactivates it as a protocol.",
+      "description": "The Silver contains components from many different Iridian frames, all put together in a way that no competent - or incompetent - person would consider workable. And yet… it’s technically stable. <br><br>It’s a miracle that the frame hasn’t yet torn itself apart by the paracausal forces created by the interplay of its systems, but it’s only one moment away from causing some sort of implosion of reality. <br><br>One tiny push. <br><br>And then it’s a storm like no other.",
+      "active_name": "Dimensional Convergence",
+      "active_effect": "Until the end of the scene, the Silver’s Corrupted Providence expands to affect hostile characters within a Burst 3 area. Spaces in this area count as difficult terrain for hostile characters.",
       "use": "Encounter",
       "activation": "Protocol",
       "passive_name": "Corrupted Providence",
@@ -1909,10 +1902,6 @@
         "use": "Round"
       },
       {
-        "name": "Ephemeral",
-        "description": "If the Phane explodes, its wreck is destroyed, or it otherwise ceases to exist, it fades from everyone’s memory - except for the pilot’s - until it is rebuilt."
-      },
-      {
         "name": "Slow",
         "description": "The Phane has +1 Difficulty on Agility checks and saves.",
         "synergies": [
@@ -2034,8 +2023,7 @@
       },
       {
         "name": "Ravaging Swarm",
-        "description": "1/round, when a hostile character fails a save caused by the Castilla or the Castilla scores a critical hit with a Nexus Weapon or a weapon with the Smart tag, it creates a puddle of nanites in a Burst 1 around the character, which lasts until the start of the Castilla’s next turn. <br><br>A hostile character that enters this zone for the first time in a round or ends its turn in the zone becomes Impaired until the end of its next turn.",
-        "use": "Round"
+        "description": "Hostile characters within Sensors make checks for Burn and dangerous terrain against the Castilla’s Save Target."
       },
       {
         "name": "Exposed Reactor",
@@ -2053,11 +2041,11 @@
     ],
     "core_system": {
       "name": "Hellfire Excitation",
-      "description": "Disengaging limiters, the Castilla can draw upon the swarm's true power for a short time. It comes at a price, though, as the nanites begin to consume the mech from the inside as fuel.",
+      "description": "There is no such thing as ‘safe’ greywash. There is only greywash that hasn’t yet slipped from your control. <br><br>And it’s so easy to just loosen that leash a little. Widen the protocols. Maybe it’s against the regulations. But it gets the job done so much faster. Nothing will happen. <br><br>That’s what they all think… and by the time they realize that they’re no longer in control, it’s too late. Everything is gone. <br><br>Judgement has arrived.",
       "active_name": "Pyroclasm Overdrive",
-      "active_effect": "For the rest of the scene, the Castilla gains the following effects: <br><br>- The zones created by Ravaging Swarm last until the end of the scene. <br>- The Castilla’s Nexus Weapons and weapons with the Smart tag gain the Overkill tag. <br>- Whenever a character fails a save caused by the Castilla, or the Castilla hits a character with a Nexus weapon or a weapon with the Smart tag, you may push the triggering character 1 space in any direction. <br>- If the Castilla suffers a reactor meltdown, it deals Burn instead of explosive damage.",
-      "use": "Encounter",
-      "activation": "Protocol"
+      "active_effect": "The user becomes Exposed and creates a Burst 3 or Cone 7, ignoring obstructions. All characters of the user’s choice in the area take 8 Burn and are Impaired and Shredded until they clear all Burn.",
+      "use": "Round",
+      "activation": "Full"
     }
   },
   {
