@@ -21,7 +21,7 @@
             "name": "Devotion Tokens",
             "default_value": 0,
             "min": 0,
-            "max": 7
+            "max": 9
           }
         ]
       },
@@ -38,7 +38,7 @@
       },
       {
         "name": "Eternal Confidence",
-        "description": "Gain 6 Devotion Tokens instead of 5. 1/scene, when an ally takes Structure or Stress damage, you may use a Rank 1 invocation on them as a reaction, without spending any Devotion Tokens. If you spend 1 Devotion Token, you may also apply the corresponding Rank 2 effect to them. <br><br>The first time in a scene that you take Structure or Stress damage, you gain 1 Devotion Token."
+        "description": "Gain 6 Devotion Tokens instead of 5. 1/scene, when an ally takes Structure or Stress damage, you may use a Rank 1 invocation on them as a reaction, without spending any Devotion Tokens. If you spend 1 Devotion Token, you may also apply the corresponding Rank 2 effect to them. <br><br>The first time in a scene that you take Structure or Stress damage, you gain 1 Devotion Token. This can bring you above your starting value."
       }
     ]
   },

@@ -13,7 +13,7 @@
     "license": "ASTRAEA",
     "license_id": "moff_iridia_astraea",
     "license_level": 2,
-    "effect": "The weapon this mod is applied to gains Thrown 5. At the end of any turn that you threw the weapon this mod is applied to, it automatically returns to you.",
+    "effect": "The weapon this mod is applied to gains Thrown 5. At the end of any turn that you threw the weapon this mod is applied to, it automatically returns to you. Weapons that normally target multiple characters may only target a single character when thrown this way.",
     "description": "Many Luminary Knights have secondary weapons that they’ve trained to use, and have modified to be used alongside their spears. These weapons are bonded to a gauntlet the user wears, returning in a brilliant flash of light soon after leaving one’s hand.",
     "tags": [
       {

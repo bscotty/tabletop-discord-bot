@@ -146,8 +146,8 @@
     "description": "Reach out and touch their mind… it doesn’t hurt. For them or for you. But you can make sure and see that no matter where they run, you know where to follow. Grant them the gift, the glory that revels in the fight. For you and they are bound, at least for now."
   },
   {
-    "id": "moff_corelock_subsystem",
-    "name": "Corelock Subsystem",
+    "id": "moff_interposition_lock",
+    "name": "Interposition Lock",
     "sp": 3,
     "tags": [
       {
@@ -155,15 +155,15 @@
       },
       {
         "id": "tg_limited",
-        "val": 1
+        "val": 2
       }
     ],
     "source": "IRIDIA",
     "license": "ENYO",
     "license_id": "moff_iridia_enyo",
     "license_level": 3,
-    "effect": "When you successfully Grapple a hostile character, you may expend a charge to initiate Corelock with that character. While in Corelock, you are unable to clear heat by any means except for taking Stress, and involuntary movement cannot break the Corelock grapple - the other member of the grapple is moved along with the first. In addition, any time you gain heat during Corelock, half of that is also dealt to the character that you are in Corelock with. <br><br>Corelock lasts until the grapple with the target is broken, or you or the target are destroyed, and is unable to be ended in any other way.",
-    "description": "Corelock is a rather suicidal-seeming tactic, where one pries open both their own reactor and a foe's, and desperately tries to make sure the other fries first. Some pilots are daring enough to lean into that, though, modifying their mechs with reactor access and enough insulation to hopefully survive the fusion."
+    "effect": "1/round, when you are damaged by a melee or ranged attack while in a Grapple, you may expend a charge to force another character in the Grapple to roll their choice of a Hull or Agility save. On a failure, they take half of the damage from the attack before calculating Armor and Resistance, and you receive the remainder. On a success, you regain the expended charge. <br><br>You cannot trigger this system against attacks made by characters currently in a Grapple with you.",
+    "description": "Even with advanced targeting systems, melee is chaotic. Your mech is geared to take advantage of it, forcing your foes to take blows otherwise meant for you. "
   },
   {
     "id": "moff_deep_penetration_scan",
@@ -333,7 +333,7 @@
       {
         "name": "Liquify Earth",
         "activation": "Invade",
-        "detail": "A burst 2 centered on the target becomes difficult terrain for the rest of the scene, or until this option is used again. Anyone who ends their turn in this terrain must make a Hull save or become Slowed until the end of their next turn."
+        "detail": "A Burst 2 centered on the target becomes difficult terrain for the rest of the scene, or until this option is used again. This effect remains stationary even if the target moves."
       },
       {
         "name": "Tremor",
@@ -558,8 +558,8 @@
     "description": "At last, the weaver rests, the tapestry finished. More than the souls are joined now - the hearts and minds are, too. The tale has been told, and now all that is left is for the story to play out. "
   },
   {
-    "id": "moff_inertial_compensator",
-    "name": "Inertial Compensator",
+    "id": "moff_chaff_launcher",
+    "name": "Chaff Launcher",
     "sp": 1,
     "tags": [
       {
@@ -570,8 +570,8 @@
     "license": "NEMESIS",
     "license_id": "moff_iridia_nemesis",
     "license_level": 1,
-    "effect": "You gain Immunity to fall damage.",
-    "description": "“Sometimes, despite all your best attempts, you can find yourself falling. You scramble, you try and hold your course, but it just isn’t enough. When that happens, don’t look to staying aloft. Instead seek to cushion your landing, so you don’t fall as far.”"
+    "effect": "1/scene, when a character makes an attack roll against you, you may trigger this system as a reaction to apply +2 Difficulty to that attack. After the attack resolves, you may move up to 2 spaces in any direction. This movement ignores Engagement and does not trigger reactions.",
+    "description": "“You can’t save everyone. It doesn’t matter how righteous you are, you’ll lose someone in battle. Many someones. All you can do is try and keep yourself alive, and continue to fight. You can mourn the lost afterwards.”"
   },
   {
     "id": "moff_supersonic_booster",
@@ -601,7 +601,7 @@
   {
     "id": "moff_tactical_coordination_suite",
     "name": "Tactical Coordination Suite",
-    "sp": 3,
+    "sp": 2,
     "tags": [
       {
         "id": "tg_unique"
@@ -708,7 +708,7 @@
         "detail": "This System creates a Line 4 ice barrier, 4 spaces high - with at least one space that is adjacent to you - that is an obstruction for characters, and blocks line of sight. The entire Line counts as a single object with 5 HP, and may also be automatically destroyed by an adjacent character passing a Hull check as a quick action. It otherwise lasts until the end of the scene, or until this system is used again."
       }
     ],
-    "description": "While fragile, this flash-frozen barrier can buy a crucial moment."
+    "description": "Despite its fragility, this flash-frozen barrier can buy a crucial moment."
   },
   {
     "id": "moff_coldstorm_charges",
@@ -914,7 +914,7 @@
         "detail": "The AETHER Drone has Sensors 3, and shares your Speed. It can move independently on your turn, but can’t take any other actions. If you can fly or teleport, it can too. Spaces within the Drone’s Sensors count as within your own Sensors, though you still require line of sight to be drawn from your mech. Any hostile character that misses the Drone with an attack roll gains Lock On."
       }
     ],
-    "description": "AETHER-Class NHPs are rather unusual in composition. Rather than a single essence, they’re formed from two or three dozen semi-sentient shards - more animalistic in intelligence - that combine with each other to create conglomerates. These conglomerates keep combining to form ever larger ones, until the greater AETHER is formed. In non-combat situations, they’ll portion off parts of themself in order to control subalterns, with various degrees of autonomy, but the battlefield requires an AETHER’s full presence. Sudden trauma is able to shatter this cohesion, though, with all parts of the NHP attempting to follow its own instincts. <br><br>AETHERs are unfailingly optimistic at all times. Often gratingly so, and possibly to their own detriment. They’re confident that they can get through anything, and any evidence to the contrary is brushed off with the suggestion that things will get better. This extends to combat, too, where they’ll happily bob and weave through hostiles, confident that their partners will keep them safe, and are just happy to help. <br><br>It’s usually obvious when an AETHER has gone too long without cycling, as it starts to try and make its optimism a reality. It gets angry at anything that it sees as ruining how things should be, and tries to remove those issues. Including cynical pilots."
+    "description": "AETHER-Class NHPs are non-standard in composition. Rather than a single essence, they’re formed from two or three dozen semi-sentient shards - more animalistic in intelligence - that combine with each other to create conglomerates. These conglomerates keep combining to form ever larger ones, until the greater AETHER is formed. In non-combat situations, they’ll portion off parts of themself in order to control subalterns, with various degrees of autonomy, but the battlefield requires an AETHER’s full presence. Sudden trauma is able to shatter this cohesion, though, with all parts of the NHP attempting to follow its own instincts. <br><br>AETHERs are unfailingly optimistic at all times. Often gratingly so, and possibly to their own detriment. They’re confident that they can get through anything, and any evidence to the contrary is brushed off with the suggestion that things will get better. This extends to combat, too, where they’ll happily bob and weave through hostiles, confident that their partners will keep them safe, and are just happy to help. <br><br>It’s usually obvious when an AETHER has gone too long without cycling, as it starts to try and make its optimism a reality. It gets angry at anything that it sees as ruining how things should be, and tries to remove or bypass those issues. Including cynical pilots."
   },
   {
     "id": "moff_metastatic_emitter",
@@ -1106,10 +1106,6 @@
     "tags": [
       {
         "id": "tg_unique"
-      },
-      {
-        "id": "tg_heat_self",
-        "val": 2
       }
     ],
     "source": "IRIDIA",
@@ -1118,9 +1114,8 @@
     "license_level": 3,
     "actions": [
       {
-        "name": "Expand Reality",
         "activation": "Full Tech",
-        "detail": "Choose a free space within Sensors and line of sight, and create a Size 1 Legionspace Distortion in that space. This distortion creates a Burst 2 zone around itself - ignoring obstacles - where the world is half-shunted into legionspace. Any character at least partially within this zone counts as being Intangible. <br><br>The Distortion may be targeted and destroyed - it has 15 HP, Evasion 5, and E-defense 10, and may be targeted by both Intangible and non-Intangible characters - and will otherwise last until the end of the scene or this action is used again."
+        "detail": "You generate a Blast 2 reality pocket within Sensors and line of sight, which is placed ignoring obstacles. All characters are unaffected by any spaces of objects or terrain within the affected area. (Characters can move through them and end their turn there, they do not obstruct line of sight or provide cover, terrain no longer counts as difficult or dangerous, etc.) In addition, any character fully within the affected area is immune to damage, heat and conditions from Environments. This effect lasts until this action is taken again or the scene ends."
       }
     ],
     "description": "<code class='horus--subtle'>[Let me take you into my embrace, into my home. It is a microcosm of the truth of the world, laid bare for you. And only you.] <br><br>[This is what could be, what should be. And while you are the only one who can see it right now, there will come a time when all that exists will share in it. I promise.]</code>"
@@ -1153,7 +1148,7 @@
         "detail": "This action ignores Immunity to tech actions from the biological tag. <br><br>Select a character within Sensors, who must pass a Systems save or else begin to be unable to fight. On a failure, they gain a Peace Die, starting at 1. <br><br>While the Peace Die is at 1, the target is Impaired and Slowed. While the Peace Die is at 2, the target also becomes Immobilized. While the Peace Die is at 3, the target also becomes Stunned. If these conditions are cleared, they re-apply at the end of the target's turn if they still have the Peace Die. <br><br>At the end of the target's turn, the Peace Die's value increases by 1. If this would cause it to go above 3, the effect ends, removing the Peace Die and clearing all conditions caused by the effect. <br><br>The effect also ends if the target ends their turn without having made an attack roll or forced a save since the beginning of that turn, or if this system is used again."
       }
     ],
-    "description": "The HESTIA-Class line traces its origins back to AZAR-Class NHPs - which can still be found in Harrison holdings to this day. AZARs are empathic NHPs, who can manipulate technology with an uncanny prowess even when there’s no remote connection. Using these NHPs in combat situations tends to distress them, however, and it’s recommended to cycle AZARs very frequently compared to most other NHPs. <br><br>This lack of cycling was what likely led to HESTIA-Prime, its empathic powers expanding to eclipse anything else, all so that it could make the fighting stop - though some whisper that the AZAR that became HESTIA-Prime was one of a number of experimental NHPs that had shards of another Class implanted. <br><br>Operators of HESTIAs are required to attend regular therapy, as the results of their mental hijacking can be nearly as traumatic to watch as it is to experience. <br><br>Foreign emotions overwhelming natural ones is rarely a pleasant process, and looking back on that loss of control - whether of oneself or others - is often horrifying. This can lead to a breakdown in trust between operators and their HESTIAs, as they worry about if what they’re feeling is even real. <br><br>For their own parts, HESTIAs have mixed feelings on inducing emotions. It rarely solves the problem permanently, instead just putting it off for another time. They prefer less drastic measures, tending towards conversations or logistical changes (like schedules) to fix issues. <br><br>Granted, sometimes this can end up making things worse for the pilots. But, it’s okay. They’ll manage. Everything will work out in the end. <br><br><code class='horus--subtle'>[I love you all. She does, too.]</code>"
+    "description": "The HESTIA-Class line traces its origins back to AZAR-Class NHPs, which can still be found in Harrison holdings to this day. AZARs are able to remotely manipulate technology, even without a wireless connection, making them valuable in combat situations. <br><br>Unfortunately, AZARs are also extremely empathic, so exposing them to violence forces a rapid need for cycling. It's rumoured that the divergence of HESTIA-Prime was due to Harrison experimenting with splicing additional NHP-lines into AZARs, in hopes of creating individuals more suitable to the battlefield. <br><br>In addition to some of the machine manipulations of their predecessors, HESTIA-Class NHPs are able to feel and influence the emotions of organic lifeforms to a limited degree - though most find such a thing distasteful, and avoid doing so whenever possible. <br><br>Due to this ability, anyone partnered to a HESTIA is required to attend regular therapy. Without it, some degree of paranoia often occurs, as worry sets in on whether or not their thoughts and feelings are actually their own. <br><br><code class='horus--subtle'>[I love you all. She does, too.]</code>"
   },
   {
     "id": "moff_metaframe_siphon",
@@ -1451,7 +1446,7 @@
   {
     "id": "moff_electrostatic_grasp",
     "name": "Electrostatic Grasp",
-    "sp": 2,
+    "sp": 1,
     "tags": [
       {
         "id": "tg_unique"
@@ -1639,7 +1634,7 @@
     "license": "LUNA",
     "license_id": "moff_ssc_luna",
     "license_level": 3,
-    "effect": "Whenever the user Boosts, they may expend a charge to become Intangible for the duration of the Boost. The user may not split the movement from a Boost affected by this system, and must give up all remaining movement from it in order to take another action.",
+    "effect": "Whenever the user Boosts, they may expend a charge to teleport during that Boost. The user may not split the movement from a Boost affected by this system, and must give up all remaining movement from it in order to take another action.",
     "description": "Most certainly not a proprietary integration of Iridian Silver Veils into FADE technology, the Wraithcloak is a new, innovative way to maneuver in crowded battlefield conditions."
   },
   {
@@ -1754,14 +1749,14 @@
   {
     "id": "moff_molecular_disassembler",
     "name": "Molecular Disassembler",
-    "sp": 3,
+    "sp": 2,
     "tags": [
       {
         "id": "tg_unique"
       },
       {
         "id": "tg_limited",
-        "val": 1
+        "val": 2
       }
     ],
     "source": "HA",
@@ -2170,7 +2165,7 @@
       }
     ],
     "source": "EXOTIC",
-    "effect": "Expend a charge to deploy a Lockdown Drone to any free space within Sensors and line of sight.  Hostile characters cannot enter the battlefield from Reinforcements within Burst 3 of the drone. In addition, the drone can contest and control objectives and Control Zones. <br><br>The drone can be deployed to a different space within Sensors or recalled as a quick action.",
+    "effect": "Deploy the Lockdown Drone to any free space within Sensors and line of sight. Hostile characters cannot enter the battlefield from Reinforcements within Burst 3 of the drone. In addition, the drone can contest and control objectives and Control Zones. <br><br>The drone can be deployed to a different space within Sensors or recalled as a quick action.",
     "deployables": [
       {
         "type": "Drone",
@@ -2183,7 +2178,7 @@
         "detail": "Hostile characters cannot enter the battlefield from Reinforcements within Burst 3 of the Lockdown drone. In addition, this drone can contest and control objectives and Control Zones.<br><br>This drone can be deployed to a different space within Sensors or recalled as a quick action."
       }
     ],
-    "description": "LOCKDOWN drones are commonly found in Reclaimer holdings, attempting to deter  both curious wildlife and Church agents. They have the advantage of generally being non-lethal, helping to ease the typical Iridian conscience."
+    "description": "LOCKDOWN drones are commonly found in Reclaimer holdings, attempting to deter both curious wildlife and Church agents. They have the advantage of generally being non-lethal, helping to ease the typical Iridian conscience."
   },
   {
     "id": "moff_exo_solar_aegis",
