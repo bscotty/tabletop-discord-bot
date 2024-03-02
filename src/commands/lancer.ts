@@ -108,16 +108,36 @@ export class Lancer {
             required: true,
             type: ApplicationCommandOptionType.String
         }) term: string,
+        @SlashOption({
+            name: "public",
+            description: "should this response be public?",
+            required: false,
+            type: ApplicationCommandOptionType.Boolean
+        }) publicResponse: boolean | undefined,
         interaction: CommandInteraction
     ) {
-        const result: (SearchableData | undefined) = this.searcher().search(term)
-        if (result == undefined) {
-            return interaction.reply(`I can't find anything for the term "${term}", sorry!`)
-        }
+        try {
+            console.log(`LANCER -- Received term ${term}`)
+            let replySecret: boolean
+            if (publicResponse == undefined) {
+                replySecret = false
+            } else {
+                replySecret = !publicResponse
+            }
 
-        const response = format(this.formatter(), result)
-        await safeReply(interaction, response)
-            .catch((it) => console.log(`error with message: ${it}`))
+            const searchResult: SearchableData | undefined = this.searcher().search(term)
+            if (searchResult == undefined) {
+                interaction.reply({
+                    content: `I can't find anything for the term "${term}", sorry!`,
+                    ephemeral: replySecret
+                }).catch((it) => console.error(it))
+            } else {
+                safeReply(interaction, format(this.formatter(), searchResult), replySecret)
+                    .catch((it) => console.error(it))
+            }
+        } catch (e) {
+            console.error(e)
+        }
     }
 
     @Slash({name: "lancer-versions", description: "Print all currently used Lancer LCP versions"})

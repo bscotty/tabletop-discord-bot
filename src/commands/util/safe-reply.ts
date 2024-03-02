@@ -1,11 +1,11 @@
 import {CommandInteraction} from "discord.js";
 import {splitResponse} from "./split-response";
 
-export async function safeReply(interaction: CommandInteraction, response: string) {
+export async function safeReply(interaction: CommandInteraction, response: string, replySecret: boolean) {
     if (response.length > 2000) {
         await splitReply(interaction, response)
     } else {
-        await interaction.reply(response)
+        await interaction.reply({content: response, ephemeral: replySecret})
     }
 }
 

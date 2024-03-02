@@ -41,17 +41,31 @@ export class Icon {
             required: true,
             type: ApplicationCommandOptionType.String
         }) term: string,
+        @SlashOption({
+            name: "public",
+            description: "should this response be public?",
+            required: false,
+            type: ApplicationCommandOptionType.Boolean
+        }) publicResponse: boolean | undefined,
         interaction: CommandInteraction
     ) {
         try {
             console.log(`ICON -- Received term ${term}`)
+            let replySecret: boolean
+            if (publicResponse == undefined) {
+                replySecret = false
+            } else {
+                replySecret = !publicResponse
+            }
 
             const searchResult: SearchableIconData = this.searcher().search(term)
             if (searchResult == undefined) {
-                interaction.reply(`I can't find anything for the term "${term}", sorry!`)
-                    .catch((it) => console.error(it))
+                interaction.reply({
+                    content: `I can't find anything for the term "${term}", sorry!`,
+                    ephemeral: replySecret
+                }).catch((it) => console.error(it))
             } else {
-                safeReply(interaction, formatIcon(searchResult))
+                safeReply(interaction, formatIcon(searchResult), replySecret)
                     .catch((it) => console.error(it))
             }
         } catch (e) {

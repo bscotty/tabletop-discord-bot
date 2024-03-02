@@ -13,16 +13,16 @@ export type IconSharedFormat = {
 }
 
 export function iconSharedFormat(formattable: IconSharedFormat, extraNewLineBeforeDescription = false): string {
-    function action(): string {
-        let action = ""
+    function action(): string | undefined {
+        let action: string | undefined = undefined
         if (formattable.action) {
             action = formattable.action
         }
         return action
     }
 
-    function resolve(): string {
-        let resolve = ""
+    function resolve(): string | undefined {
+        let resolve: string | undefined = undefined
         if (formattable.resolve) {
             resolve = `${formattable.resolve} Resolve`
         }
@@ -31,8 +31,8 @@ export function iconSharedFormat(formattable: IconSharedFormat, extraNewLineBefo
 
     const attack = "Attack"
 
-    function attackTag(): string {
-        let attackTag = ""
+    function attackTag(): string | undefined {
+        let attackTag: string | undefined = undefined
         if (formattable.tags) {
             if (formattable.tags.find((it) => it == attack)) {
                 attackTag = attack
@@ -50,8 +50,8 @@ export function iconSharedFormat(formattable: IconSharedFormat, extraNewLineBefo
         return otherTags
     }
 
-    function area(): string {
-        let area = ""
+    function area(): string | undefined {
+        let area: string | undefined = undefined
         if (formattable.area) {
             area = formattable.area.map((it) => formatArea(it)).join(", ")
         }
@@ -59,7 +59,7 @@ export function iconSharedFormat(formattable: IconSharedFormat, extraNewLineBefo
     }
 
     function description(shouldAddNewLine: boolean): string {
-        let description = ""
+        let description: string | undefined = undefined
         if (formattable.description) {
             if (shouldAddNewLine) {
                 description = `\n*${formattable.description}*`
@@ -78,7 +78,7 @@ export function iconSharedFormat(formattable: IconSharedFormat, extraNewLineBefo
         return effects
     }
 
-    const actionLine = [action(), attackTag(), area()].filter((it) => it != "").join(", ")
+    const actionLine = [action(), attackTag(), area()].filter((it) => it != undefined).join(", ")
 
     const formattedParts = [
         resolve(),
@@ -87,7 +87,7 @@ export function iconSharedFormat(formattable: IconSharedFormat, extraNewLineBefo
         description(extraNewLineBeforeDescription),
         ...effects()
     ]
-    return formattedParts.filter((it) => it != "").join("\n")
+    return formattedParts.filter((it) => it != undefined).join("\n")
 }
 
 export function formatEffectOrAttack(effectOrAttack: (IconBonusEffect | IconAttack)): string {

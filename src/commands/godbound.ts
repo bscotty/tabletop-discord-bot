@@ -4,6 +4,7 @@ import Searcher from "../data/searcher";
 import {getDictionary} from "../data/godbound/words";
 import {formatGodbound} from "../data/godbound/formatter";
 import {DivineItem} from "../data/godbound/divine-item";
+import {safeReply} from "./util/safe-reply";
 
 @Discord()
 export class Godbound {
@@ -26,16 +27,30 @@ export class Godbound {
             required: true,
             type: ApplicationCommandOptionType.String
         }) term: string,
+        @SlashOption({
+            name: "public",
+            description: "should this response be public?",
+            required: false,
+            type: ApplicationCommandOptionType.Boolean
+        }) publicResponse: boolean | undefined,
         interaction: CommandInteraction
     ) {
         try {
             console.log(`GODBOUND - received term: ${term}`)
             const result = this.searcher().search(term)
-            if (result == undefined) {
-                interaction.reply(`Sorry, I can't find anything for **${term}**`)
-                    .catch((it) => console.error(it))
+            let replySecret: boolean
+            if (publicResponse == undefined) {
+                replySecret = false
             } else {
-                interaction.reply(formatGodbound(result))
+                replySecret = !publicResponse
+            }
+            if (result == undefined) {
+                interaction.reply({
+                    content: `I can't find anything for the term "${term}", sorry!`,
+                    ephemeral: replySecret
+                }).catch((it) => console.error(it))
+            } else {
+                safeReply(interaction, formatGodbound(result), replySecret)
                     .catch((it) => console.error(it))
             }
         } catch (e) {
