@@ -27,7 +27,13 @@ export async function initClient(token: string, guilds: string[]) {
     })
 
     client.on("interactionCreate", async (interaction) => {
-        client.executeInteraction(interaction)
+        interaction.guild.fetch().then((guild) => {
+            if (guilds.includes(`${guild.id}`)) {
+                client.executeInteraction(interaction)
+            } else {
+                console.warn(`Ignoring command from guild ${guild.id} - ${guild.name}`)
+            }
+        })
     })
 
     await client.login(token)

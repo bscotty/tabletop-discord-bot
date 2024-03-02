@@ -36,7 +36,7 @@ export class SearchableLimitBreak {
         }
         const formatParts = [
             `**${this.name}** - (${this.job} Limit Break)`,
-            ...iconSharedFormat(this),
+            iconSharedFormat(this),
             infusion,
             formatMastery(this.ultimate)
         ]
