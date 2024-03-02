@@ -1,78 +1,30 @@
-import {ChatInputCommandInteraction, CommandInteraction, SlashCommandBuilder} from "discord.js";
-import {LancerData, lancerDataReader} from "../data/lancer/lancer-data-reader";
-import {getCoreLcp} from "../data/lancer/lcp/core";
+import {
+    ChatInputCommandInteraction,
+    CommandInteraction,
+    InteractionReplyOptions,
+    SlashCommandBuilder
+} from "discord.js";
 import Searcher from "../data/searcher";
 import {Formatters} from "../data/lancer/format/formatters";
 import {format} from "../data/lancer/format/format";
 import {SearchableData} from "../data/lancer/search/searchable";
-import {Lcp} from "../data/lancer/types/lcp";
-import {getKtbLcp} from "../data/lancer/lcp/ktb";
-import {getLongRimLcp} from "../data/lancer/lcp/long-rim";
-import {getWallflowerLcp} from "../data/lancer/lcp/wallflower";
-import {getSolsticeRainData} from "../data/lancer/lcp/solstice-rain";
-import {getIronleafFoundryLcp} from "../data/lancer/lcp/homebrew/ironleaf-foundry";
-import {getLiminalSpaceLcp} from "../data/lancer/lcp/homebrew/liminal-space";
-import {getMfecaneLcp} from "../data/lancer/lcp/homebrew/mfecane";
-import {getSciroccoLcp} from "../data/lancer/lcp/homebrew/scirocco";
-import {getSuldanLcp} from "../data/lancer/lcp/homebrew/suldan";
-import {getStolenCrownLcp} from "../data/lancer/lcp/homebrew/stolen-crown";
-import {getDustgraveLcp} from "../data/lancer/lcp/dustgrave";
-import {getSsmrLcp} from "../data/lancer/lcp/ssmr";
-import {getEHandSLCP} from "../data/lancer/lcp/homebrew/event horizon & suns";
-import {getKrfwCatalogLcp} from "../data/lancer/lcp/homebrew/krfw catalog";
-import {getLegionnaireLcp} from "../data/lancer/lcp/homebrew/legionnaire";
-import {getCrisisCoreLcp} from "../data/lancer/lcp/homebrew/crisis core";
-import {getIridiaLcp} from "../data/lancer/lcp/homebrew/iridia";
-import {getWinterScarLcp} from "../data/lancer/lcp/winter-scar";
-import {getShadowOfTheWolfLcp} from "../data/lancer/lcp/shadow-of-the-wolf";
 import {SearchCommand} from "./searchCommand";
 import {InfoManifest} from "../data/lancer/types/info";
 import {BotCommand} from "./botCommand";
+import {isSearchableFrame, isSearchableWeapon} from "../data/lancer/format/typechecks";
+import {getRepository, Repository} from "../data/lancer/format/repository";
+import {RichFrameFormatter} from "../data/lancer/format/rich-frame-formatter";
+import {RichWeaponFormatter} from "../data/lancer/format/rich-weapon-formatter";
+import {DisplayResponse} from "../data/lancer/format/display-response";
 
 export class LancerCommands {
 
     create(): BotCommand[] {
-        const firstParty = this.firstParty()
-        const homebrew = this.homebrew()
-        const lcpData = [...firstParty, ...homebrew]
-        const parsedData = lcpData.map((it) => lancerDataReader(it))
-
-        const firstPartyInfos = firstParty.map((it) => it.info)
-        const homebrewInfos = homebrew.map((it) => it.info)
+        const repository = getRepository()
 
         return [
-            new LancerSearch(parsedData),
-            new LancerVersions(firstPartyInfos, homebrewInfos)
-        ]
-    }
-
-    private firstParty(): Lcp[] {
-        return [
-            getCoreLcp(),
-            getKtbLcp(),
-            getLongRimLcp(),
-            getWallflowerLcp(),
-            getSolsticeRainData(),
-            getSsmrLcp(),
-            getDustgraveLcp(),
-            getWinterScarLcp(),
-            getShadowOfTheWolfLcp()
-        ]
-    }
-
-    private homebrew(): Lcp[] {
-        return [
-            getCrisisCoreLcp(),
-            getEHandSLCP(),
-            getIridiaLcp(),
-            getIronleafFoundryLcp(),
-            getKrfwCatalogLcp(),
-            getLegionnaireLcp(),
-            getLiminalSpaceLcp(),
-            getMfecaneLcp(),
-            getSciroccoLcp(),
-            getStolenCrownLcp(),
-            getSuldanLcp()
+            new LancerSearch(repository),
+            new LancerVersions(repository)
         ]
     }
 }
@@ -80,13 +32,17 @@ export class LancerCommands {
 class LancerSearch extends SearchCommand<SearchableData> {
     override readonly searcher: Searcher<SearchableData>
     private readonly formatter: Formatters
+    private readonly frameFormatter: RichFrameFormatter
+    private readonly weaponFormatter: RichWeaponFormatter
 
-    constructor(parsedData: LancerData[]) {
+    constructor(repository: Repository) {
         super("lancer", "Search for a term in Lancer RPG");
 
-        this.formatter = new Formatters(parsedData)
+        this.formatter = new Formatters(repository)
+        this.frameFormatter = new RichFrameFormatter(repository, this.formatter)
+        this.weaponFormatter = new RichWeaponFormatter(repository, this.formatter)
         this.searcher = new Searcher(
-            parsedData.map((it) => it.getAll()).flat(),
+            repository.data.map((it) => it.getAll()).flat(),
             [
                 "name",
                 "alt_names",
@@ -100,17 +56,29 @@ class LancerSearch extends SearchCommand<SearchableData> {
         return format(this.formatter, item)
     }
 
+    override shouldRichlyFormat(item: SearchableData): boolean {
+        return isSearchableFrame(item) || isSearchableWeapon(item)
+    }
+
+    override richFormat(item: SearchableData): DisplayResponse {
+        if (isSearchableFrame(item)) {
+            return this.frameFormatter.richFormat(item)
+        } else if (isSearchableWeapon(item)) {
+            return this.weaponFormatter.richFormat(item)
+        } else {
+            return super.richFormat(item)
+        }
+    }
+
 }
 
 class LancerVersions implements BotCommand {
     readonly name: string = "lancer-versions"
     readonly builder: SlashCommandBuilder
-    readonly firstPartyInfos: InfoManifest[]
-    readonly homebrewInfos: InfoManifest[]
+    readonly repo: Repository
 
-    constructor(firstPartyInfos: InfoManifest[], homebrewInfos: InfoManifest[]) {
-        this.firstPartyInfos = firstPartyInfos
-        this.homebrewInfos = homebrewInfos
+    constructor(repository: Repository) {
+        this.repo = repository
         this.builder = new SlashCommandBuilder()
             .setName(this.name)
             .setDescription("Print all currently used Lancer LCP versions")
@@ -131,8 +99,8 @@ class LancerVersions implements BotCommand {
 
     async lancerVersions(interaction: CommandInteraction) {
         console.debug(`lancer-versions`)
-        const firstPartyInfos = this.firstPartyInfos.map((lcpInfo) => this.versionDump(lcpInfo)).join(`\n`)
-        const homebrewInfos = this.homebrewInfos.map((lcpInfo) => this.versionDump(lcpInfo)).join(`\n`)
+        const firstPartyInfos = this.repo.firstPartyInfo.map((lcpInfo) => this.versionDump(lcpInfo)).join(`\n`)
+        const homebrewInfos = this.repo.homebrewInfo.map((lcpInfo) => this.versionDump(lcpInfo)).join(`\n`)
 
         const output = `__**First Party**__\n` + firstPartyInfos + `\n\n__**Homebrew**__\n` + homebrewInfos
 
