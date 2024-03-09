@@ -28,6 +28,15 @@ export class RichFrameFormatter implements RichFormatter<SearchableFrame> {
 
         const {imageUrl, file} = getManufacturerLogo(frame.source, this.repo)
         const color = getColor(frame.source, this.repo)
+        const fields: ResponseField[] = [
+            {name: "Size", description: `${frame.stats.size}`, inline: true},
+            {name: "Mounts", description: `${frame.mounts.join(', ')}`, inline: true},
+            {name: "Statistics", description: this.formattedStatBlock(stats), inline: false},
+            ...(frame.traits.map((trait) => this.traitToField(frame.source, trait))),
+            {name: "Core System", description: coreName, inline: false},
+            ...this.getLicenseGear(frame)
+        ]
+        console.debug(`Found fields: \n\t${fields.map((it) => `${it.name} - ${it.description}`).join('\n\t')}`)
         return {
             color: color,
             authorName: `${frame.source} ${frame.name}`,
@@ -35,14 +44,7 @@ export class RichFrameFormatter implements RichFormatter<SearchableFrame> {
             thumbnailUrl: frame.image_url || "https://d2c79xe1p61csc.cloudfront.net/frames/nodata.png",
             description: `${frame.mechtype.join('/')} Frame${formatContentPack(frame)}`,
             localAssetFilePaths: file ? [file] : [],
-            fields: [
-                {name: "Size", description: `${frame.stats.size}`, inline: true},
-                {name: "Mounts", description: `${frame.mounts.join(', ')}`, inline: true},
-                {name: "Statistics", description: this.formattedStatBlock(stats), inline: false},
-                ...(frame.traits.map((trait) => this.traitToField(frame.source, trait))),
-                {name: "Core System", description: coreName, inline: false},
-                ...this.getLicenseGear(frame)
-            ],
+            fields: fields,
             buttons: []
         }
     }
@@ -111,7 +113,7 @@ export class RichFrameFormatter implements RichFormatter<SearchableFrame> {
 
         const gear = this.repo.getLicenseData(frame)
         return [
-            {name: ZERO_SPACE, description: ZERO_SPACE, inline: false},
+            {name: "License", description: ZERO_SPACE, inline: false},
             {name: "License Level 1", description: getGearNames(1, gear), inline: true},
             {name: "License Level 2", description: getGearNames(2, gear), inline: true},
             {name: "License Level 3", description: getGearNames(3, gear), inline: true}
