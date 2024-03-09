@@ -21,8 +21,6 @@ import {Formatters} from "./formatters";
 import {SearchableData} from "../search/searchable";
 
 export function format(formatters: Formatters, data: SearchableData) {
-    console.log(`formatting ${data.name}`)
-
     if (isSearchableAction(data)) {
         return formatters.basicActionFormat(data)
     } else if (isSearchableBond(data)) {

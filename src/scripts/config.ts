@@ -1,11 +1,13 @@
-import config from "../../config.json";
+import config from "../../config.json"
 
-export class Config {
-    public botToken(): string {
-        return config.bot_token
-    }
+export interface Config {
+    readonly botToken: string
+    readonly botApplicationId: string
+    readonly guildIds: string[]
+}
 
-    public guilds(): string[] {
-        return config.guilds
-    }
+export class ConfigImpl implements Config {
+    public readonly botToken: string = config.bot_token
+    public readonly botApplicationId: string = config.client_id
+    public readonly guildIds: string[] = config.guilds
 }

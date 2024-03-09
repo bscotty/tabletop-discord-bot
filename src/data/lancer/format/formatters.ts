@@ -1,5 +1,4 @@
 import {IActionData, IDeployableData, ITagData, WeaponType} from "../types/shared-types";
-import {LancerData} from "../lancer-data-reader";
 import {
     SearchableAction,
     SearchableBond,
@@ -32,26 +31,23 @@ import {
     toTitleCase
 } from "./format-utility";
 import {isSearchableSystem, isSearchableWeapon} from "./typechecks";
+import {Repository} from "./repository";
 
 type PrintableWeaponProfile = IWeaponProfile & { mount: string, type: string }
 
+export const ZERO_SPACE = '\u200B'
+
 // noinspection JSUnusedGlobalSymbols
 export class Formatters {
-    private turndownService = new TurndownService()
-    private weapons: SearchableWeapon[]
-    private systems: SearchableSystem[]
-    private tags: SearchableTag[]
-    private frames: SearchableFrame[]
+    private readonly turndownService = new TurndownService()
+    private readonly repo: Repository
 
-    constructor(data: LancerData[]) {
-        this.weapons = data.map((it) => it.weapons).flat()
-        this.systems = data.map((it) => it.systems).flat()
-        this.tags = data.map((it) => it.tags).flat()
-        this.frames = data.map((it) => it.frames).flat()
+    constructor(repository: Repository) {
+        this.repo = repository
     }
 
-    private populateTag(tag: ITagData): string {
-        const tagData = this.tags.find(t => t.id === tag.id)
+    public populateTag(tag: ITagData): string {
+        const tagData = this.repo.tags.find(t => t.id === tag.id)
 
         if (tag.val !== undefined)
             return replaceVal(tagData.name, `${tag.val}`) //For things like HEAT {VAL} Self
@@ -59,12 +55,12 @@ export class Formatters {
             return tagData.name
     }
 
-    private integratedFormat(integrated: string[], source: string) {
+    public integratedFormat(integrated: string[], source: string) {
         let out = ""
 
         integrated.forEach(integrated_item_id => {
-            const integrated_item = this.weapons.find(w => w.id === integrated_item_id) ||
-                this.systems.find(s => s.id === integrated_item_id)
+            const integrated_item = this.repo.weapons.find(w => w.id === integrated_item_id) ||
+                this.repo.systems.find(s => s.id === integrated_item_id)
             if (!integrated_item.source) {
                 integrated_item.source = source
             }
@@ -79,7 +75,7 @@ export class Formatters {
         return out;
     }
 
-    private actionFormat(action: IActionData, customActionName?: string) {
+    public actionFormat(action: IActionData, customActionName?: string) {
         let activationType = `${pilotMechActionType(action)}${activationFormat(action.activation)}`
 
         if (action.frequency)
@@ -94,7 +90,7 @@ export class Formatters {
         return out;
     }
 
-    private deployableFormatter(dep: IDeployableData) {
+    public deployableFormatter(dep: IDeployableData) {
         let out = `**${dep.name}** (${dep.type})\n`
 
         out += `Deployment: ${activationFormat(dep.activation || "Quick Action")}`
@@ -331,7 +327,7 @@ export class Formatters {
     public systemFormat(system: SearchableSystem) {
         let out = `**${system.name}**`
         if (system.id) {
-            const frame = this.getFrameForIntegratedId(system.id)
+            const frame = this.repo.getFrameForIntegratedId(system.id)
 
             if (frame) {
                 out += ` (${frame.source} ${frame.name} Integrated`
@@ -388,7 +384,7 @@ export class Formatters {
     public weaponFormat(weapon: SearchableWeapon): string {
         let out = `**${weapon.name}**`
         if (weapon.id) {
-            const frame = this.getFrameForIntegratedId(weapon.id)
+            const frame = this.repo.getFrameForIntegratedId(weapon.id)
             if (frame) {
                 out += ` (${frame.source} ${frame.name} Integrated ${weapon.data_type})`
             } else {
@@ -397,7 +393,7 @@ export class Formatters {
         }
         out += `${formatContentPack(weapon)}`
 
-        let tagsEtc = [`${weapon.mount || '--'} ${weapon.type || '--'}`]
+        let tagsEtc = [`${weapon.mount} ${weapon.type}`]
         if (weapon.sp) tagsEtc.push(`${weapon.sp} SP`)
         if (weapon.tags) tagsEtc = tagsEtc.concat(weapon.tags.map(tag => this.populateTag(tag)))
         out += `\n${tagsEtc.join(', ')}\n`
@@ -428,11 +424,11 @@ export class Formatters {
         return out
     }
 
-    private weaponProfile(weapon: SearchableWeapon, profile: IWeaponProfile): PrintableWeaponProfile {
+    public weaponProfile(weapon: SearchableWeapon, profile: IWeaponProfile): PrintableWeaponProfile {
         return ({mount: weapon.mount, type: weapon.type, ...profile})
     }
 
-    private weaponProfileFormat(weapon: PrintableWeaponProfile): string {
+    public weaponProfileFormat(weapon: PrintableWeaponProfile): string {
         let out = `**${weapon.name}**`
         let tagsEtc = [`${weapon.mount} ${weapon.type}`]
         if (weapon.tags) tagsEtc = tagsEtc.concat(weapon.tags.map(tag => this.populateTag(tag)))
@@ -457,17 +453,5 @@ export class Formatters {
             weapon.deployables.forEach(dep => out += this.deployableFormatter(dep))
         }
         return out
-    }
-
-    private getFrameForIntegratedId(id: string): SearchableFrame | undefined {
-        return this.frames.find((it) => {
-            const traitIntegrations = it.traits.map((trait) => trait.integrated)
-            const coreIntegrations = it.core_system.integrated
-            return [...traitIntegrations, coreIntegrations].filter((it) => it).find((integrateds) => {
-                return integrateds.find((integratedId) => {
-                    return integratedId === id
-                })
-            })
-        })
     }
 }
