@@ -1,5 +1,5 @@
 import {Manufacturer} from "../types/not-fully-used";
-import {SearchableFrame, SearchableSystem, SearchableTag, SearchableWeapon} from "../search/searchable";
+import {SearchableFrame, SearchableMod, SearchableSystem, SearchableTag, SearchableWeapon} from "../search/searchable";
 import {LancerData, lancerDataReader} from "../lancer-data-reader";
 import {Lcp} from "../types/lcp";
 import {InfoManifest} from "../types/info";
@@ -24,6 +24,7 @@ import {getSciroccoLcp} from "../lcp/homebrew/scirocco";
 import {getStolenCrownLcp} from "../lcp/homebrew/stolen-crown";
 import {getSuldanLcp} from "../lcp/homebrew/suldan";
 
+export type LicenseData = (SearchableFrame | SearchableMod | SearchableSystem | SearchableWeapon)
 
 export interface Repository {
     readonly data: LancerData[]
@@ -37,6 +38,8 @@ export interface Repository {
     readonly homebrewInfo: InfoManifest[]
 
     getFrameForIntegratedId(id: string): SearchableFrame | undefined
+
+    getLicenseData(frame: SearchableFrame): LicenseData[]
 }
 
 let _repository: Repository
@@ -98,6 +101,10 @@ class RepositoryImpl implements Repository {
         return this.data.map((it) => it.tags).flat()
     }
 
+    get mods(): SearchableMod[] {
+        return this.data.map((it) => it.mods).flat()
+    }
+
     readonly manufacturers: Manufacturer[]
     readonly firstPartyInfo: InfoManifest[]
     readonly homebrewInfo: InfoManifest[]
@@ -123,5 +130,36 @@ class RepositoryImpl implements Repository {
                 })
             })
         })
+    }
+
+    getLicenseData(frame: SearchableFrame): LicenseData[] {
+        const licenseWeapons = this.weapons.filter((it) => {
+            if (it.license_id) {
+                return it.license_id == frame.license_id
+            } else {
+                return it.license == frame.name
+            }
+        })
+        const licenseSystems = this.systems.filter((it) => {
+            if (it.license_id) {
+                return it.license_id == frame.license_id
+            } else {
+                return it.license == frame.name
+            }
+        })
+        const licenseAltFrames = this.frames.filter((it) => it.variant == frame.name)
+        const licenseMods = this.mods.filter((it) => {
+            if (it.license_id) {
+                return it.license_id == frame.license_id
+            } else {
+                return it.license == frame.name
+            }
+        })
+        return [
+            ...licenseWeapons,
+            ...licenseSystems,
+            ...licenseAltFrames,
+            ...licenseMods
+        ]
     }
 }

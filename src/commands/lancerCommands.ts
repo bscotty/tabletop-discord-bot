@@ -1,9 +1,4 @@
-import {
-    ChatInputCommandInteraction,
-    CommandInteraction,
-    InteractionReplyOptions,
-    SlashCommandBuilder
-} from "discord.js";
+import {ChatInputCommandInteraction, CommandInteraction, SlashCommandBuilder} from "discord.js";
 import Searcher from "../data/searcher";
 import {Formatters} from "../data/lancer/format/formatters";
 import {format} from "../data/lancer/format/format";
@@ -11,11 +6,12 @@ import {SearchableData} from "../data/lancer/search/searchable";
 import {SearchCommand} from "./searchCommand";
 import {InfoManifest} from "../data/lancer/types/info";
 import {BotCommand} from "./botCommand";
-import {isSearchableFrame, isSearchableWeapon} from "../data/lancer/format/typechecks";
+import {isSearchableFrame, isSearchableTalent, isSearchableWeapon} from "../data/lancer/format/typechecks";
 import {getRepository, Repository} from "../data/lancer/format/repository";
 import {RichFrameFormatter} from "../data/lancer/format/rich-frame-formatter";
 import {RichWeaponFormatter} from "../data/lancer/format/rich-weapon-formatter";
 import {DisplayResponse} from "../data/lancer/format/display-response";
+import {RichTalentFormatter} from "../data/lancer/format/rich-talent-formatter";
 
 export class LancerCommands {
 
@@ -34,6 +30,7 @@ class LancerSearch extends SearchCommand<SearchableData> {
     private readonly formatter: Formatters
     private readonly frameFormatter: RichFrameFormatter
     private readonly weaponFormatter: RichWeaponFormatter
+    private readonly talentFormatter: RichTalentFormatter
 
     constructor(repository: Repository) {
         super("lancer", "Search for a term in Lancer RPG");
@@ -41,6 +38,7 @@ class LancerSearch extends SearchCommand<SearchableData> {
         this.formatter = new Formatters(repository)
         this.frameFormatter = new RichFrameFormatter(repository, this.formatter)
         this.weaponFormatter = new RichWeaponFormatter(repository, this.formatter)
+        this.talentFormatter = new RichTalentFormatter(repository, this.formatter)
         this.searcher = new Searcher(
             repository.data.map((it) => it.getAll()).flat(),
             [
@@ -57,7 +55,7 @@ class LancerSearch extends SearchCommand<SearchableData> {
     }
 
     override shouldRichlyFormat(item: SearchableData): boolean {
-        return isSearchableFrame(item) || isSearchableWeapon(item)
+        return isSearchableFrame(item)
     }
 
     override richFormat(item: SearchableData): DisplayResponse {
@@ -65,8 +63,10 @@ class LancerSearch extends SearchCommand<SearchableData> {
             return this.frameFormatter.richFormat(item)
         } else if (isSearchableWeapon(item)) {
             return this.weaponFormatter.richFormat(item)
+        } else if (isSearchableTalent(item)) {
+            return this.talentFormatter.richFormat(item)
         } else {
-            return super.richFormat(item)
+            throw Error("Not yet implemented")
         }
     }
 

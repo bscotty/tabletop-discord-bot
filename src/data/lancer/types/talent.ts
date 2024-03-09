@@ -5,7 +5,8 @@ export type Talent = {
     name: string
     description: string // v-html
     ranks: IRankData[]
-    icon_url?: string // Must be .svg
+    icon?: string
+    icon_url?: string
     terse?: string // terse text used in short descriptions. The fewer characters the better
 }
 

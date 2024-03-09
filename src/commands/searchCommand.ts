@@ -9,7 +9,6 @@ import {
     InteractionResponse,
     SlashCommandBuilder
 } from "discord.js";
-import {safeReply} from "./util/safe-reply";
 import {BotCommand} from "./botCommand";
 import {DisplayResponse, ResponseButton} from "../data/lancer/format/display-response";
 
@@ -41,13 +40,10 @@ export abstract class SearchCommand<T> implements BotCommand {
 
     protected abstract format(item: T): string
 
-    protected shouldRichlyFormat(item: T): boolean {
-        return false
-    }
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    protected abstract shouldRichlyFormat(item: T): boolean
 
-    protected richFormat(item: T): DisplayResponse {
-        throw Error("Not yet implemented")
-    }
+    protected abstract richFormat(item: T): DisplayResponse
 
     async respondTo(interaction: ChatInputCommandInteraction) {
         if (interaction.commandName == this.name) {
@@ -99,7 +95,14 @@ export abstract class SearchCommand<T> implements BotCommand {
                     }
                 }
             } else {
-                safeReply(interaction, this.format(result), replySecret)
+                const replyOptions: InteractionReplyOptions = {
+                    embeds: [
+                        new EmbedBuilder()
+                            .setDescription(this.format(result))
+                    ],
+                    ephemeral: replySecret
+                }
+                await interaction.reply(replyOptions)
                     .catch((it) => console.error(it))
             }
         }

@@ -35,6 +35,8 @@ import {Repository} from "./repository";
 
 type PrintableWeaponProfile = IWeaponProfile & { mount: string, type: string }
 
+export const ZERO_SPACE = '\u200B'
+
 // noinspection JSUnusedGlobalSymbols
 export class Formatters {
     private readonly turndownService = new TurndownService()
