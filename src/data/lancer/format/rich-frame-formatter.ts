@@ -28,15 +28,6 @@ export class RichFrameFormatter implements RichFormatter<SearchableFrame> {
 
         const {imageUrl, file} = getManufacturerLogo(frame.source, this.repo)
         const color = getColor(frame.source, this.repo)
-        const fields: ResponseField[] = [
-            {name: "Size", description: `${frame.stats.size}`, inline: true},
-            {name: "Mounts", description: `${frame.mounts.join(', ')}`, inline: true},
-            {name: "Statistics", description: this.formattedStatBlock(stats), inline: false},
-            ...(frame.traits.map((trait) => this.traitToField(frame.source, trait))),
-            {name: "Core System", description: coreName, inline: false},
-            ...this.getLicenseGear(frame)
-        ]
-        console.debug(`Found fields: \n\t${fields.map((it) => `${it.name} - ${it.description}`).join('\n\t')}`)
         return {
             color: color,
             authorName: `${frame.source} ${frame.name}`,
@@ -44,7 +35,14 @@ export class RichFrameFormatter implements RichFormatter<SearchableFrame> {
             thumbnailUrl: frame.image_url || "https://d2c79xe1p61csc.cloudfront.net/frames/nodata.png",
             description: `${frame.mechtype.join('/')} Frame${formatContentPack(frame)}`,
             localAssetFilePaths: file ? [file] : [],
-            fields: fields,
+            fields: [
+                {name: "Size", description: `${frame.stats.size}`, inline: true},
+                {name: "Mounts", description: `${frame.mounts.join(', ')}`, inline: true},
+                {name: "Statistics", description: this.formattedStatBlock(stats), inline: false},
+                ...(frame.traits.map((trait) => this.traitToField(frame.source, trait))),
+                {name: "Core System", description: coreName, inline: false},
+                ...this.getLicenseGear(frame)
+            ],
             buttons: []
         }
     }
@@ -86,10 +84,10 @@ export class RichFrameFormatter implements RichFormatter<SearchableFrame> {
             assembleRow(`${stats.hp}`, `${stats.evasion}`, `${stats.edef}`),
             horizontalLine,
             assembleRow("HEATCAP", "SENSORS", "TECH ATTACK"),
-            assembleRow(`${stats.heatcap}`, `${stats.sensor_range}`, `${stats.tech_attack}`),
+            assembleRow(`${stats.heatcap}`, `${stats.sensor_range}`, `${techAttack}`),
             horizontalLine,
             assembleRow("REPAIR CAP", "SAVE", "SPEED"),
-            assembleRow(`${stats.heatcap}`, `${stats.sensor_range}`, `${techAttack}`),
+            assembleRow(`${stats.repcap}`, `${stats.save}`, `${stats.speed}`),
             horizontalLine,
             assembleRow("", "SP", ""),
             assembleRow("", `${stats.sp}`, ""),
