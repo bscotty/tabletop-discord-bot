@@ -1,7 +1,7 @@
 import {SearchableFrame} from "../search/searchable";
 import TurndownService from "turndown";
 import {LicenseData, Repository} from "./repository";
-import {Formatters, ZERO_SPACE} from "./formatters";
+import {Formatters} from "./formatters";
 import {formatContentPack} from "./format-utility";
 import {FrameStats, IFrameTraitData} from "../types/frame";
 import {RichFormatter} from "./rich-formatter";
@@ -111,7 +111,6 @@ export class RichFrameFormatter implements RichFormatter<SearchableFrame> {
 
         const gear = this.repo.getLicenseData(frame)
         return [
-            {name: "License", description: ZERO_SPACE, inline: false},
             {name: "License Level 1", description: getGearNames(1, gear), inline: true},
             {name: "License Level 2", description: getGearNames(2, gear), inline: true},
             {name: "License Level 3", description: getGearNames(3, gear), inline: true}
