@@ -133,26 +133,38 @@ class RepositoryImpl implements Repository {
     }
 
     getLicenseData(frame: SearchableFrame): LicenseData[] {
-        const licenseWeapons = this.weapons.filter((it) => {
-            if (it.license_id) {
-                return it.license_id == frame.license_id
+        const licenseWeapons = this.weapons.filter((weapon) => {
+            if (weapon.license_id) {
+                if (frame.license_id) {
+                    return weapon.license_id == frame.license_id
+                } else {
+                    return weapon.license_id == frame.id
+                }
             } else {
-                return it.license == frame.name
+                return weapon.license == frame.name
             }
         })
-        const licenseSystems = this.systems.filter((it) => {
-            if (it.license_id) {
-                return it.license_id == frame.license_id
+        const licenseSystems = this.systems.filter((system) => {
+            if (system.license_id) {
+                if (frame.license_id) {
+                    return system.license_id == frame.license_id
+                } else {
+                    return system.license_id == frame.id
+                }
             } else {
-                return it.license == frame.name
+                return system.license == frame.name
             }
         })
         const licenseAltFrames = this.frames.filter((it) => it.variant == frame.name)
-        const licenseMods = this.mods.filter((it) => {
-            if (it.license_id) {
-                return it.license_id == frame.license_id
+        const licenseMods = this.mods.filter((mod) => {
+            if (mod.license_id) {
+                if (frame.license_id) {
+                    return mod.license_id == frame.license_id
+                } else {
+                    return mod.license_id == frame.id
+                }
             } else {
-                return it.license == frame.name
+                return mod.license == frame.name
             }
         })
         return [
