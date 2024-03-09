@@ -41,9 +41,14 @@ export abstract class SearchCommand<T> implements BotCommand {
     protected abstract format(item: T): string
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    protected abstract shouldRichlyFormat(item: T): boolean
+    protected shouldRichlyFormat(item: T): boolean {
+        return false
+    }
 
-    protected abstract richFormat(item: T): DisplayResponse
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    protected richFormat(item: T): DisplayResponse {
+        throw new Error("Method not implemented.")
+    }
 
     async respondTo(interaction: ChatInputCommandInteraction) {
         if (interaction.commandName == this.name) {
