@@ -236,7 +236,7 @@
     "license": "Acadia",
     "license_level": 1,
     "description": "",
-    "on_attack": "Pummels the ground with hazardous shards in the attack area, creating Difficult Terrain until the end of the scene.",
+    "on_attack": "Pummels the ground with hazardous shards in the attack area, creating Difficult Terrain until the end of the scene. Characters in the area also receive +1 Difficulty to Agility checks and saves.",
     "effect": "Can be fired as Cone 5 <i>or</i> Line 10.",
     "mount": "Main",
     "type": "Launcher",
@@ -260,6 +260,9 @@
     "tags": [
       {
         "id": "tg_loading"
+      },
+      {
+        "id": "tg_inaccurate"
       }
     ],
     "license_id": "ipsn_acadia"
@@ -275,8 +278,8 @@
     "barrage": true,
     "mount": "Main",
     "type": "Melee",
-    "on_hit": "Begin disassembling your target. Roll 1d6 to determine a side effect from the table below.<ol><li>They are Impaired until the end of their next turn.</li><li>They are Shredded until the end of their next turn and receive Lock On.</li><li>They are knocked Prone.</li><li>They take an additional 1 AP Kinetic and 1 AP Energy damage, as well as 2 Heat.</li><li>They cannot take or benefit from tech actions until the end of their next turn.</li><li>They cannot make attacks, other than Improvised Attack, Grapple, and Ram until the end of their next turn.</li>",
-    "on_crit": "Roll twice. If you get the same number twice, roll another 1d6 until you get a different result.",
+    "on_hit": "Begin dismantling your target. Roll 1d6 to determine a side effect from the table below.<ol><li>Compromise Frame: They are Impaired until the end of their next turn.</li><li>Uncover a Weakness: They are Shredded until the end of their next turn and receive Lock On.</li><li>Demolish: They take 2 AP Kinetic damage, 2 AP Energy damage, and 2 Heat instead of this weapon’s normal damage.</li><li>Dismantle motor controls: They are knocked Prone.</li><li>Dismantle system controls: They cannot take or benefit from tech actions until the end of their next turn.</li><li>Dismantle weapon controls: They cannot make attacks, other than Improvised Attack, Grapple, and Ram until the end of their next turn.</li>",
+    "on_crit": "Roll 2d6 instead. If you get the same number on both dice, roll another 1d6 until you get a different number.",
     "damage": [
       {
         "type": "Kinetic",
@@ -305,8 +308,8 @@
     "license_id": "ipsn_acadia"
   },
   {
-    "id": "mw_shrapnel_gatling",
-    "name": "Shrapnel Gatling",
+    "id": "mw_shrapnel_gatling_gun",
+    "name": "Shrapnel Gatling Gun",
     "source": "IPS-N",
     "license": "Acadia",
     "license_level": 3,
@@ -326,7 +329,7 @@
         "damage": [
           {
             "type": "Kinetic",
-            "val": "2d6"
+            "val": "3d6"
           }
         ],
         "tags": [
@@ -337,17 +340,17 @@
             "id": "tg_overkill"
           }
         ],
-        "effect": "As a Quick Action, you may focus your fire, gaining the Focused Fire profile until the start of your next turn.",
+        "effect": "As a Quick Action, you may focus your fire with this weapon. Gain the Precision Fire profile until the start of your next turn.",
         "actions": [
           {
             "name": "Focus Fire",
             "activation": "Quick",
-            "detail": "Focus your fire, switching to this weapon's \"Focused Fire\" profile until the start of your next turn."
+            "detail": "Focus your fire, targeting enemy weaknesses at the cost of the weapon’s overall power. Switch to this weapon's \"Precision Fire\" profile until the start of your next turn."
           }
         ]
       },
       {
-        "name": "Focused Fire",
+        "name": "Precision Fire",
         "range": [
           {
             "type": "Range",
@@ -366,7 +369,7 @@
           }
         ],
         "on_hit": "The target is Shredded and Impaired until the end of their next turn.",
-        "effect": "Switch to the Standard profile at the start of your next turn."
+        "effect": "At the start of your next turn, switch to the Standard profile."
       }
     ],
     "license_id": "ipsn_acadia"
