@@ -207,7 +207,7 @@
     "source": "IPS-N",
     "license": "Acadia",
     "license_level": 1,
-    "effect": "Allies that are a smaller Size than you may move through and end their turns in spaces you occupy. While they occupy a space you occupy, they are treated as Invisible by enemies. For every attack that misses thanks to this system, take 3 AP Kinetic damage.",
+    "effect": "Allies that are a smaller Size than you may end their turns in spaces you occupy. While they occupy a space you occupy, they are treated as Invisible by enemies. When an attack misses an ally benefiting from this system, you take 3 AP Kinetic damage.",
     "type": "System",
     "sp": 2,
     "description": "",
@@ -224,7 +224,7 @@
     "source": "IPS-N",
     "license": "Acadia",
     "license_level": 2,
-    "effect": "",
+    "effect": "You can slough off unused parts of your hull and fashion them into ammunition. Gain the <i>Autophagic Reload</i> action.",
     "type": "System",
     "sp": 1,
     "description": "",
@@ -236,7 +236,7 @@
     "actions": [
       {
         "name": "Autophagic Reload",
-        "activation": "Protocol",
+        "activation": "Free",
         "frequency": "1/round",
         "detail": "Take 5 AP kinetic damage. It cannot be reduced in any way. Then, reload one Loading weapon."
       }
