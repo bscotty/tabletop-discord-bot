@@ -210,7 +210,7 @@
     "license": "Ghoul",
     "license_level": 1,
     "description": "Many do not journey beyond the Gate of Life. Its gauntlet is more than enough for even the most robust of souls. Those that do have eyes open to possibility, and rush headlong into the future.",
-    "effect": "When attacking with this weapon, you may deal damage and trigger other effects (including talents and systems) as though it were an improvised attack. If you do, take 1 Heat.",
+    "effect": "When you attack with this weapon, you may deal damage and trigger other effects (including talents and systems) as though it were an improvised attack. If you do, take 1 Heat.",
     "mount": "Main",
     "type": "Melee",
     "damage": [
@@ -230,15 +230,16 @@
     "license_id": "horus_ghoul"
   },
   {
-    "id": "mw_scrapnel_shotgun",
-    "name": "Scrapnel Shotgun",
+    "id": "mw_scrap_sprayer",
+    "name": "Scrap Sprayer",
     "source": "IPS-N",
     "license": "Acadia",
     "license_level": 1,
     "description": "",
-    "effect": "Pummels the ground with hazardous shards in the attack cone, creating Dangerous Terrain until the end of the scene.",
+    "on_attack": "Pummels the ground with hazardous shards in the attack area, creating Difficult Terrain until the end of the scene.",
+    "effect": "Can be fired as Cone 5 <i>or</i> Line 10.",
     "mount": "Main",
-    "type": "CQB",
+    "type": "Launcher",
     "damage": [
       {
         "type": "Kinetic",
@@ -249,6 +250,10 @@
       {
         "type": "Cone",
         "val": 5
+      },
+      {
+        "type": "Line",
+        "val": 10
       }
     ],
     "sp": 0,
@@ -260,89 +265,121 @@
     "license_id": "ipsn_acadia"
   },
   {
-    "id": "mw_harvester_disassembly_array",
-    "name": "“Harvester” Disassembly Array",
+    "id": "mw_harvester_disassembly_arms",
+    "name": "“Harvester” Disassembly Arms",
     "source": "IPS-N",
     "license": "Acadia",
     "license_level": 2,
     "description": "",
     "skirmish": true,
     "barrage": true,
-    "effect": "This weapon can be used in the Disassemble profile to Skirmish and Overwatch.",
-    "mount": "Superheavy",
+    "mount": "Main",
     "type": "Melee",
-    "profiles": [
+    "on_hit": "Begin disassembling your target. Roll 1d6 to determine a side effect from the table below.<ol><li>They are Impaired until the end of their next turn.</li><li>They are Shredded until the end of their next turn and receive Lock On.</li><li>They are knocked Prone.</li><li>They take an additional 1 AP Kinetic and 1 AP Energy damage, as well as 2 Heat.</li><li>They cannot take or benefit from tech actions until the end of their next turn.</li><li>They cannot make attacks, other than Improvised Attack, Grapple, and Ram until the end of their next turn.</li>",
+    "on_crit": "Roll twice. If you get the same number twice, roll another 1d6 until you get a different result.",
+    "damage": [
       {
-        "name": "Disassemble",
-        "range": [
-          {
-            "type": "Threat",
-            "val": 1
-          }
-        ],
-        "damage": [
-          {
-            "type": "Kinetic",
-            "val": "1d3"
-          },
-          {
-            "type": "Energy",
-            "val": "1d3"
-          }
-        ],
-        "tags": [
-          {
-            "id": "tg_reliable",
-            "val": 2
-          }
-        ],
-        "on_hit": "The target is Shredded until the end of their next turn.",
-        "effect": "Attacks with this weapon deal 5 AP Kinetic and 5 AP Energy damage to objects, cover, terrain, and the environment."
+        "type": "Kinetic",
+        "val": "1"
       },
       {
-        "name": "Demolition",
+        "type": "Energy",
+        "val": "1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "license_id": "ipsn_acadia"
+  },
+  {
+    "id": "mw_shrapnel_gatling",
+    "name": "Shrapnel Gatling",
+    "source": "IPS-N",
+    "license": "Acadia",
+    "license_level": 3,
+    "description": "",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "sp": 0,
+    "profiles": [
+      {
+        "name": "Standard",
         "range": [
           {
-            "type": "Threat",
-            "val": 1
+            "type": "Range",
+            "val": 10
           }
         ],
         "damage": [
           {
             "type": "Kinetic",
-            "val": "3d3"
-          },
-          {
-            "type": "Energy",
-            "val": "3d3"
-          },
-          {
-            "type": "Heat",
-            "val": "3"
+            "val": "2d6"
           }
         ],
         "tags": [
           {
-            "id": "tg_reliable",
-            "val": 3
+            "id": "tg_inaccurate"
+          },
+          {
+            "id": "tg_overkill"
           }
         ],
-        "on_hit": "The target is Shredded until the end of their next turn.",
-        "effect": "When attacking, you may attack any number of targets within Threat. If you do, the attack does not trigger talents or bonus damage. Attacks with this weapon deal 50 AP Kinetic and 50 AP Energy damage to objects, cover, terrain, and the environment."
+        "effect": "As a Quick Action, you may focus your fire, gaining the Focused Fire profile until the start of your next turn.",
+        "actions": [
+          {
+            "name": "Focus Fire",
+            "activation": "Quick",
+            "detail": "Focus your fire, switching to this weapon's \"Focused Fire\" profile until the start of your next turn."
+          }
+        ]
+      },
+      {
+        "name": "Focused Fire",
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "2d6"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_accurate"
+          }
+        ],
+        "on_hit": "The target is Shredded and Impaired until the end of their next turn.",
+        "effect": "Switch to the Standard profile at the start of your next turn."
       }
     ],
-    "sp": 0,
     "license_id": "ipsn_acadia"
   },
   {
     "id": "mw_acadia_integrated",
-    "name": "Mooring Harpoon Cannon",
-    "mount": "Heavy",
-    "type": "Cannon",
+    "name": "Mooring Hook Cannon",
+    "mount": "Main",
+    "type": "Launcher",
     "skirmish": true,
     "barrage": true,
     "effect": "",
-    "on_hit": "If the target is smaller than you, it is knocked Prone and is immediately pulled adjacent to you by the most direct path. If there are no suitable spaces, the target does not move.",
+    "on_hit": "If the target fails an Agility save, it is immediately pulled adjacent to you, or as close as possible, by the most direct path.",
     "damage": [
       {
         "type": "Kinetic",
@@ -359,9 +396,6 @@
     "tags": [
       {
         "id": "tg_loading"
-      },
-      {
-        "id": "tg_ap"
       }
     ],
     "license_id": "ipsn_acadia"
