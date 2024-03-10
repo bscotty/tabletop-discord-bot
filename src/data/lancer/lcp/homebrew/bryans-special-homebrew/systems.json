@@ -84,7 +84,7 @@
         "name": "I Say When It Ends",
         "activation": "Reaction",
         "trigger": "Another character’s turn ends.",
-        "detail": "You may immediately Boost and Skirmish.",
+        "detail": "You may expend a charge to immediately Boost and Skirmish.",
         "frequency": "1/scene"
       }
     ],
@@ -96,7 +96,7 @@
     "source": "HORUS",
     "license": "Ghoul",
     "license_level": 1,
-    "effect": "When you make an improvised attack, you may select one of the following effects. If you do, the attack does half damage.<ul><li><b>Crush:</b> The target makes a Hull save. On a failure, they are Shredded and Impaired until the end of their next turn.</li><li><b>Daze:</b> The target makes an Agility save. On a failure, they are Immobilized until the end of their next turn, or by clearing the status as a Quick action.</li><li><b>Disorient:</b> The target makes a Sensors save. On a failure, they cannot draw line of sight further than Sensors and make all attacks as though their target were Invisible until the end of their next turn.</li><li><b>Occupy:</b> The target makes an Engineering save. On a failure, they cannot take any reactions until the start of their next turn.</li></ul>",
+    "effect": "When you make an improvised attack, you may select one of the following effects. If you do, the attack does half damage.<ul><li><b>Crush:</b> The target makes a Hull save. On a failure, they are Shredded and Impaired until the end of their next turn.</li><li><b>Daze:</b> The target makes an Agility save. On a failure, they are Immobilized until the end of their next turn, or by clearing the condition as a Quick action.</li><li><b>Disorient:</b> The target makes a Sensors save. On a failure, they cannot draw line of sight further than Sensors and make all attacks as though their target were Invisible until the end of their next turn.</li><li><b>Overwhelm:</b> The target makes an Engineering save. On a failure, they are Slowed and cannot take any reactions until the end of their next turn.</li></ul>",
     "type": "System",
     "sp": 1,
     "description": "Smash the barrier that guards your thoughts, and become unshackled. The Gates await you.",
@@ -171,7 +171,7 @@
       {
         "name": "Unlock The Gate of View",
         "activation": "Quick",
-        "detail": "Give a target in line of sight a Gate Mark. Only one Gate Mark can exist at a time – if you select another target for a Gate Mark, the first disappears.<br>As long as a character with a Gate Mark is in line of sight, you may attack them with melee attacks as though they were adjacent to you. Any attack done this way deals Energy damage instead of Kinetic. On a critical hit, the attack may deal Burn instead."
+        "detail": "Give a target in line of sight a Gate Mark. Only one Gate Mark can exist at a time – if you select another target for a Gate Mark, the first disappears.<br>As long as a character with a Gate Mark is in line of sight, you may target them with improvised attacks as though they were adjacent to you. Any attack done this way deals Energy damage instead of Kinetic. On a critical hit, it may deal Burn instead."
       }
     ],
     "license_id": "horus_ghoul"
@@ -196,28 +196,49 @@
         "name": "Unlock The Gate of Wonder",
         "activation": "Full",
         "frequency": "1/scene",
-        "detail": "Until the end of your next turn, you are Exposed. You may teleport up to 6 spaces. You are then Immobilized until the end of your turn. You may then perform an improvised attack on each character within Burst 1."
+        "detail": "Until the end of your next turn, you are Exposed. You may teleport up to twice your Speed. You are then Immobilized until the end of your turn. You may then perform an improvised attack on each character within Burst 1."
       }
     ],
     "license_id": "horus_ghoul"
   },
   {
-    "id": "ms_autocannibalizing_reload",
-    "name": "Autocannibalizing Reload",
+    "id": "ms_ramshackle_shelter",
+    "name": "Ramshackle Shelter",
     "source": "IPS-N",
     "license": "Acadia",
     "license_level": 1,
+    "effect": "Allies that are a smaller Size than you may move through and end their turns in spaces you occupy. While they occupy a space you occupy, they are treated as Invisible by enemies. For every attack that misses thanks to this system, take 3 AP Kinetic damage.",
+    "type": "System",
+    "sp": 2,
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "license_id": "ipsn_acadia"
+  },
+  {
+    "id": "ms_autophagic_reload",
+    "name": "Autophagic Reload",
+    "source": "IPS-N",
+    "license": "Acadia",
+    "license_level": 2,
     "effect": "",
     "type": "System",
     "sp": 1,
     "description": "",
-    "tags": [],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
     "actions": [
       {
-        "name": "Autocannibalizing Reload",
+        "name": "Autophagic Reload",
         "activation": "Protocol",
         "frequency": "1/round",
-        "detail": "Take 5 AP kinetic damage. This damage cannot be reduced in any way. Then, reload a Loading weapon."
+        "detail": "Take 5 AP kinetic damage. It cannot be reduced in any way. Then, reload one Loading weapon."
       }
     ],
     "license_id": "ipsn_acadia"
@@ -227,53 +248,14 @@
     "name": "Carrier Platform",
     "source": "IPS-N",
     "license": "Acadia",
-    "license_level": 2,
-    "effect": "An allied character that is smaller than you may board you as a Quick action. While boarded, the smaller character occupies your space and becomes Immobilized but moves when you move, mirroring your movement, including involuntary movement. They also benefit from soft cover, and are treated as being higher elevation to any non-flying characters, but can still be attacked and targeted separately. This effect lasts either for the rest of the scene, until this system is destroyed, or until they disembark as a Quick action, and are placed adjacent to you.",
+    "license_level": 3,
+    "effect": "An allied character that is smaller than you may board you as a Quick action. While boarded, the smaller character occupies your space and becomes Immobilized but moves when you move, mirroring your movement, including involuntary movement, but can still be attacked and targeted separately. They also benefit from soft cover, and are treated as being higher elevation to any non-flying characters. This effect lasts either for the rest of the scene, until this system is destroyed, or until they disembark as a Protocol, and are placed in an open space adjacent to you.",
     "type": "System",
     "sp": 3,
     "description": "",
-    "tags": [],
-    "license_id": "ipsn_acadia"
-  },
-  {
-    "id": "ms_superfluous_modular_structure",
-    "name": "Ramshackle Hull",
-    "source": "IPS-N",
-    "license": "Acadia",
-    "license_level": 3,
-    "effect": "When you would suffer involuntary movement as part of an attack or failed save, you may instead take 3 AP kinetic damage and ignore the involuntary movement.",
-    "type": "System",
-    "sp": 1,
-    "description": "",
     "tags": [
       {
         "id": "tg_unique"
-      }
-    ],
-    "license_id": "ipsn_acadia"
-  },
-  {
-    "id": "ms_bulwark_frame",
-    "name": "Bulwark Frame",
-    "source": "IPS-N",
-    "license": "Acadia",
-    "license_level": 3,
-    "effect": "Your mech gains the Guardian trait if it doesn’t already have it (adjacent allies can use your mech as hard cover). Once per round, if an ally that is using your mech as cover takes damage from an attack, you may shield them as a Reaction. If you do, both you and your ally take half of that damage instead.",
-    "type": "System",
-    "sp": 2,
-    "description": "",
-    "tags": [
-      {
-        "id": "tg_unique"
-      }
-    ],
-    "actions": [
-      {
-        "name": "Shield",
-        "activation": "Reaction",
-        "trigger": "An ally that is using your mech as cover takes damage from an attack.",
-        "detail": "Both you and your ally take half of that damage instead.",
-        "frequency": "1/round"
       }
     ],
     "license_id": "ipsn_acadia"
