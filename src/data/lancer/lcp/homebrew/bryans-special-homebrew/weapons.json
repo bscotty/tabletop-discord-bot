@@ -375,6 +375,80 @@
     "license_id": "ipsn_acadia"
   },
   {
+    "id": "mw_bremsstrahlung_emitter",
+    "name": "Bremsstrahlung Emitter",
+    "source": "HA",
+    "license": "Meade",
+    "license_level": 2,
+    "description": "",
+    "effect": "",
+    "on_hit": "The target is Slowed until the end of their next turn.",
+    "on_crit": "They are Immobilized instead.",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "sp": 0,
+    "tags": [],
+    "license_id": "ha_meade"
+  },
+  {
+    "id": "mw_thermal_aggravator",
+    "name": "Thermal Aggravator",
+    "source": "HA",
+    "license": "Meade",
+    "license_level": 3,
+    "description": "",
+    "effect": "",
+    "on_hit": "If the target has already marked Burn, increase it by 3.",
+    "mount": "Auxiliary",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Ignite",
+        "activation": "Quick",
+        "detail": "Choose either yourself or a character within this weapon’s Range. Until the target Stabilizes or clears Burn, they increase their marked Burn by 2 whenever they are hit by an attack."
+      }
+    ],
+    "license_id": "ha_meade"
+  },
+  {
     "id": "mw_acadia_integrated",
     "name": "Mooring Hook Cannon",
     "mount": "Main",

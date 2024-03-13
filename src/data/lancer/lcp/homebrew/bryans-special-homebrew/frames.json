@@ -6,7 +6,7 @@
     "name": "Lucina",
     "mechtype": [
       "Defender",
-      "Supporter"
+      "Support"
     ],
     "description": "",
     "mounts": [
@@ -103,7 +103,7 @@
       },
       {
         "name": "Overwhelming Presence",
-        "description": "Whenever the Ghoul teleports, it may select a destination within range that is occupied by characters of equal or smaller size. Any characters in spaces that would be occupied by the Ghoul are instead pushed to the nearest open space adjacent to the Ghoul, so long as enough spaces exist."
+        "description": "When the Ghoul teleports, it may select a destination that is occupied by enemies of equal or smaller size, and push those enemies to free, adjacent spaces - so long as such spaces exist."
       }
     ],
     "core_system": {
@@ -155,7 +155,7 @@
       "structure": 4,
       "stress": 4,
       "armor": 0,
-      "hp": 16,
+      "hp": 14,
       "evasion": 6,
       "edef": 6,
       "heatcap": 6,
@@ -169,7 +169,7 @@
     "traits": [
       {
         "name": "Carve the Path",
-        "description": "When the Acadia moves, it automatically deals 10 AP kinetic damage to objects and terrain in its path. In addition, it may move into spaces occupied by other characters. If it does, they must make an Agility save or take 2 AP Kinetic damage, and are automatically pushed to the nearest open space."
+        "description": "When the Acadia moves, it automatically deals 10 AP kinetic damage to objects and terrain in its path. In addition, it may move into spaces occupied by enemy characters. If it does, they must make an Agility save or take 2 AP Kinetic damage, and are automatically pushed to the nearest open space."
       },
       {
         "name": "Too Big To Notice",
@@ -208,6 +208,57 @@
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "license_id": "ipsn_acadia",
+    "y_pos": "0"
+  },
+  {
+    "id": "ha_meade",
+    "source": "HA",
+    "license_level": 2,
+    "name": "Meade",
+    "mechtype": [
+      "Defender",
+      "Support"
+    ],
+    "description": "",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Forgiven Remote Access",
+        "description": "The Meade may roll tech attacks to Invade allied characters instead of automatically succeeding. If the attack hits, the target reduces their Heat by 2, and the Meade does not need to choose an Invade option."
+      },
+      {
+        "name": "Overclock",
+        "description": "1/scene, as a Quick Action, the Meade may convert an allied character’s Burn into Overshield, including itself."
+      }
+    ],
+    "core_system": {
+      "name": "Augment Reality",
+      "active_name": "Augment Reality",
+      "active_effect": "You create a Burst 4 area holographic projection around your mech, and dedicate its full system capacity to maintaining a projected illusion of a perfect world. This area counts as soft cover.<br><br>In addition, you may attempt to intercept any attack that targets characters in the affected area. Roll a tech attack with +1 accuracy, contesting the original attack roll. If you win, the attack automatically misses.<br><br>This effect remains stationary even if you move, but you may not exit the affected area. This effect lasts until the end of the scene or until you end it as a quick action.",
+      "activation": "Full",
+      "description": "",
+      "use": "Encounter"
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "license_id": "ha_meade",
     "y_pos": "0"
   }
 ]

@@ -96,7 +96,7 @@
     "source": "HORUS",
     "license": "Ghoul",
     "license_level": 1,
-    "effect": "When you make an improvised attack, you may select one of the following effects. If you do, the attack does half damage.<ul><li><b>Crush:</b> The target makes a Hull save. On a failure, they are Shredded and Impaired until the end of their next turn.</li><li><b>Daze:</b> The target makes an Agility save. On a failure, they are Immobilized until the end of their next turn, or by clearing the condition as a Quick action.</li><li><b>Disorient:</b> The target makes a Sensors save. On a failure, they cannot draw line of sight further than Sensors and make all attacks as though their target were Invisible until the end of their next turn.</li><li><b>Overwhelm:</b> The target makes an Engineering save. On a failure, they are Slowed and cannot take any reactions until the end of their next turn.</li></ul>",
+    "effect": "When you make an improvised attack, you may select one of the following effects. If you do, the attack does half damage.<ul><li><b>Crush:</b> The target makes a Hull save. On a failure, they are Shredded and Impaired until the end of their next turn.</li><li><b>Daze:</b> The target makes an Agility save. On a failure, they are Immobilized until the end of their next turn, or by clearing the condition as a Quick action.</li><li><b>Disorient:</b> The target makes a Systems save. On a failure, they cannot draw line of sight further than Sensors and make all attacks as though their target were Invisible until the end of their next turn.</li><li><b>Overwhelm:</b> The target makes an Engineering save. On a failure, they are Slowed and cannot take any reactions until the end of their next turn.</li></ul>",
     "type": "System",
     "sp": 1,
     "description": "Smash the barrier that guards your thoughts, and become unshackled. The Gates await you.",
@@ -165,13 +165,17 @@
     "tags": [
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 3
       }
     ],
     "actions": [
       {
         "name": "Unlock The Gate of View",
         "activation": "Quick",
-        "detail": "Give a target in line of sight a Gate Mark. Only one Gate Mark can exist at a time – if you select another target for a Gate Mark, the first disappears.<br>As long as a character with a Gate Mark is in line of sight, you may target them with improvised attacks as though they were adjacent to you. Any attack done this way deals Energy damage instead of Kinetic. On a critical hit, it may deal Burn instead."
+        "detail": "Give a target in line of sight a Gate Mark. Only one Gate Mark can exist at a time – if you select another target for a Gate Mark, the first disappears.<br>As long as a character with a Gate Mark is in line of sight, you may target them with non-weapon, non-system actions as though they were adjacent to you. Any attack made this way deals Energy damage instead of Kinetic. On a critical hit, it may deal Burn instead."
       }
     ],
     "license_id": "horus_ghoul"
@@ -259,5 +263,137 @@
       }
     ],
     "license_id": "ipsn_acadia"
+  },
+  {
+    "id": "ms_circuitbreaker_suite",
+    "name": "Circuitbreaker Suite",
+    "source": "HA",
+    "license": "Meade",
+    "license_level": 1,
+    "effect": "",
+    "type": "System",
+    "sp": 2,
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Divert Power To Shields",
+        "activation": "Invade",
+        "detail": "The target gets +2 Difficulty on the next attack and +2 Accuracy on the next skill check or save they make between now and the end of their next turn.",
+        "frequency": "Unlimited"
+      },
+      {
+        "name": "Divert Power To Weapons",
+        "activation": "Invade",
+        "detail": "The target gets +2 Accuracy on the next attack and +2 Difficulty on the next skill check or save they make between now and the end of their next turn.",
+        "frequency": "Unlimited"
+      }
+    ],
+    "license_id": "ha_meade"
+  },
+  {
+    "id": "ms_tomographic_projector",
+    "name": "Tomographic Projector",
+    "source": "HA",
+    "license": "Meade",
+    "license_level": 1,
+    "effect": "As a Quick Action, expend a charge to deploy a Tomographic Projector drone that attaches to any object or surface within Sensors.",
+    "type": "System",
+    "sp": 2,
+    "description": "",
+    "deployables": [
+      {
+        "type": "Drone",
+        "name": "Tomographic Projector",
+        "size": 0.5,
+        "hp": 1,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "When deployed (or re-deployed), Tomographic Projectors are Hidden until they are found with Search.<br><br>You may take the Scan quick action against any character within Range 5 of a Tomographic Projector drone as though it were within Sensors and line of sight. When you do, you also Discover a Vulnerability in the target. They receive Lock On and take +1d6 energy bonus damage the next time they are hit by an attack between now and the end of your next turn.",
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "tags": []
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_quick_action"
+      }
+    ],
+    "license_id": "ha_meade"
+  },
+  {
+    "id": "ms_system_equivalence_module",
+    "name": "System Equivalence Module",
+    "source": "HA",
+    "license": "Meade",
+    "license_level": 2,
+    "effect": "",
+    "type": "System",
+    "sp": 2,
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Thermal Equilibrium",
+        "activation": "Invade",
+        "detail": "At the start of the target’s next turn, set their current Heat to half of their Heat Cap, putting them in the Danger Zone. This can only be used once per scene on each character.",
+        "frequency": "Unlimited"
+      },
+      {
+        "name": "Destabilize Corporeality",
+        "activation": "Invade",
+        "detail": "The target is Intangible until the end of their next turn. They may end this effect early by succeeding on an Engineering check as a quick action. This can only be used 1/scene on each character.",
+        "frequency": "Unlimited"
+      }
+    ],
+    "license_id": "ha_meade"
+  },
+  {
+    "id": "ms_kawarimi_decoy",
+    "name": "Kawarimi Decoy",
+    "source": "HA",
+    "license": "Meade",
+    "license_level": 3,
+    "effect": "As a Quick action, expend a charge to deploy the decoy drone to any object or surface within Sensors.",
+    "type": "System",
+    "sp": 3,
+    "description": "",
+    "deployables": [
+      {
+        "type": "Drone",
+        "name": "Kawarimi Decoy",
+        "size": 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "1/round, when an allied character within Range 5 of the drone is hit by an attack, they may swap places with the drone as though teleporting, as long as there is sufficient space. The drone receives the damage and effects of the attack instead.",
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "tags": []
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_reaction"
+      }
+    ],
+    "license_id": "ha_meade"
   }
 ]
