@@ -1,4 +1,4 @@
-import {Lcp} from "../../types/lcp";
+import {Lcp} from "../../../types/lcp";
 import info from "./lcp_manifest.json"
 import pilotGear from "./pilot_gear.json"
 import bonds from "./bonds.json"
@@ -13,7 +13,7 @@ export function getDoveUnitDeltaLcp(): Lcp {
         [],
         [],
         [],
-        [],
+        info,
         [],
         [],
         pilotGear,
