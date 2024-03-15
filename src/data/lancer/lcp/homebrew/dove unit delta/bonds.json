@@ -1,0 +1,328 @@
+[
+  {
+    "id": "dud_bond_anointed_harlequin",
+    "name": "The Anointed Harlequin",
+    "major_ideals": [
+      "I addressed challenges with cunning, subterfuge, or deceit.",
+      "I expressed my heritage, background, or beliefs through my actions.",
+      "I struggled with issues from my burdens or background."
+    ],
+    "minor_ideals": [
+      "I struggled against or humiliated the powerful.",
+      "I pretended to be someone else for a time.",
+      "I charmed my way out of a charged situation.",
+      "I obtained a guarded, hidden, or secret object or piece of information."
+    ],
+    "questions": [
+      {
+        "question": "What gives you your powers?",
+        "options": [
+          "A high-tech stealth rig.",
+          "A tattered patchwork of a cape stuffed with magician’s trinkets.",
+          "Years of streetwise swindling.",
+          "A deal you once made in a dream."
+        ]
+      },
+      {
+        "question": "What weird quirks do you have?",
+        "options": [
+          "You can change your eye color, your hair color, and your height by up to 3 inches in either direction.",
+          "You weigh almost nothing if you choose not to. You sometimes float an inch off the ground.",
+          "Your can swap your clothing’s coloration, material, fit, cut, and type completely when you enter any scene."
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "name": "The Ol’ Razzle Dazzle",
+        "frequency": "1/session",
+        "description": "You are intimately practiced in the art of being the center of attention. Name any number of characters in sight. All of them become completely entranced by you as you make your presence impossible to ignore, rendering them unable to look away from you for up to a minute. For the rest of the scene, gain +2 Accuracy and increased effect on all actions you take to deceive people about something you or your companions are doing."
+      },
+      {
+        "name": "Boon of Anointed Chaos",
+        "prerequisite": "If you have two or more powers from this bond, you can choose a power from any other bond instead of one from this bond when you would gain a power. You can do this twice. If you have at least one veteran power, gain the Boon of Anointed Chaos.",
+        "description": "At the end of the session, if there was a particularly funny or chaotic moment or scene, describe it. Give someone who was part of the fun or chaos 1 XP.",
+        "veteran": true
+      },
+      {
+        "name": "Anointed Silvertongue",
+        "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
+        "frequency": "1/session",
+        "description": "Tell a lie to someone. If it’s wild and outlandish, anyone who listens wholeheartedly believes it for a minute. If it’s merely unbelievable, an hour. If it’s plausible, a day. If they want to believe it, a week. They realize it was a lie after the effect wears off.",
+        "master": true
+      }
+    ]
+  },
+  {
+    "id": "dud_bond_reforged_titan",
+    "name": "The Reforged Titan",
+    "major_ideals": [
+      "I addressed challenges with strength, leadership, or force.",
+      "I expressed my heritage, background, or beliefs through my actions.",
+      "I struggled with issues from my burdens or background."
+    ],
+    "minor_ideals": [
+      "I protected someone weaker than myself.",
+      "I led from the front.",
+      "I won a competition, friendly or otherwise.",
+      "I took harm, blame, penance, or burden for someone else."
+    ],
+    "questions": [
+      {
+        "question": "What gives you your powers?",
+        "options": [
+          "A voice and heart of iron, passed down from your mentor.",
+          "Cybernetic augmentation, laced through your limbs.",
+          "Years of training, sweat, blood, and discipline."
+        ]
+      },
+      {
+        "question": "What weapons do you wield?",
+        "options": [
+          "My own flesh and sinews.",
+          "A hereditary blade.",
+          "A carefully curated arsenal.",
+          "A thick and heavy shield.",
+          "A battered old rifle."
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "name": "Paradox of Inexorable Force",
+        "frequency": "1/session",
+        "description": "Your past and present make you who you are today, and you are capable of the feats of both. Take 2 Stress and choose one:<ul><li>Become an unstoppable force. For the rest of the scene, gain +2 Accuracy and increased effect on any actions you take to enter anywhere physical or digital that you want to go.</li><li>Become an immovable object. For the rest of the scene, gain +2 Accuracy and increased effect on any actions you take to stop something physical or digital from entering somewhere you don't want it to go.</li></ul>"
+      },
+      {
+        "name": "Boon of Reforged Iron",
+        "prerequisite": "If you have two or more powers from this bond, you can choose a power from any other bond instead of one from this bond when you would gain a power. You can do this twice. If you have at least one veteran power, gain the Boon of Iron.",
+        "description": "At the end of the session, if anyone (yourself included) performed an extraordinary or inspiring feat of athleticism, acrobatics, or physical force, describe it. Give someone who witnessed or participated in it 1 XP.",
+        "veteran": true
+      },
+      {
+        "name": "Reforged, Unbreakable",
+        "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
+        "frequency": "1/session",
+        "description": "For the rest of this scene, nobody you extend your protection over, can take Stress. Instead, you take 1 Stress when they would take Stress. If this causes you to break, you gain a burden as normal but stay in the scene and don’t lose control. For you to extend your protection over someone, they must remain within speaking distance of you.",
+        "master": true
+      }
+    ]
+  },
+  {
+    "id": "dud_bond_pragmatic_pathfinder",
+    "name": "The Pragmatic Pathfinder",
+    "major_ideals": [
+      "I addressed challenges with curiosity, exploration, or understanding.",
+      "I expressed my heritage, background, or beliefs through my actions.",
+      "I struggled with issues from my burdens or background."
+    ],
+    "minor_ideals": [
+      "I smelled, heard, or tasted something new.",
+      "I learned a new skill or trade, or gained a new level of mastery in one I already knew.",
+      "I met and conversed with an expert.",
+      "I beheld a unique, interesting, or beautiful sight."
+    ],
+    "questions": [
+      {
+        "question": "What gives you your power?",
+        "options": [
+          "A star map given to you long ago by an old friend.",
+          "Years spent out in the wilderness, mapping the mountains.",
+          "Many years on a freighter, and many worlds passed by."
+        ]
+      },
+      {
+        "question": "Where have you traveled in your dreams?",
+        "options": [
+          "The edge of the world.",
+          "Deep into the molten core of a supernova.",
+          "A still, black pool in the deep forest.",
+          "An endless expanse of desert."
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "name": "Dead Reckoning",
+        "frequency": "1/session",
+        "description": "Every once in a while, your intuition borders on premonition. As long as you know their name, you may ask the GM where any one person is currently and receive a truthful answer. For the rest of the scene, gain +2 Accuracy and increased effect on all actions you take to reach them."
+      },
+      {
+        "name": "Boon of the Pragmatic Traveler",
+        "prerequisite": "If you have two or more powers from this bond, you can choose a power from any other bond instead of one from this bond when you would gain a power. You can do this twice. If you have at least one veteran power, gain the Boon of the Traveler.",
+        "description": "At the end of each session, if you were inspired by the sights, smells, sounds, or sensations of a particular place, describe them. Give someone you shared them with 1 XP.",
+        "veteran": true
+      },
+      {
+        "name": "Long Pragmatic Road Home",
+        "frequency": "1/session",
+        "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
+        "description": "Name a location you’ve been in the last three days. You can make your way back there without rolling. The GM will determine the following about the journey there:<ul><li>Was it a long or arduous journey?</li><li>Was the location dangerous, defended, or contested?</li><li>Were you being pursued, tracked, or hunted?</li></ul>For every “yes” answer, take 2 Stress; however, at the beginning of the next scene, you and up to ten other willing people arrive safely there. Don’t worry about playing out the journey (just ‘cut’ to the next scene as you are arriving) and work backwards to figure out how you got there.",
+        "master": true
+      }
+    ]
+  },
+  {
+    "id": "dud_bond_trusted_builder",
+    "name": "The Trusted Builder",
+    "major_ideals": [
+      "I addressed challenges with diplomacy, creativity, or empathy.",
+      "I expressed my heritage, background, or beliefs through my actions.",
+      "I struggled with issues from my burdens or background."
+    ],
+    "minor_ideals": [
+      "I made a new friend or ally.",
+      "I defused a potentially violent or charged situation.",
+      "I helped to soothe or heal someone’s pain.",
+      "I created a new object, organization, or alliance, or mended one that was broken."
+    ],
+    "questions": [
+      {
+        "question": "What gives you your power?",
+        "options": [
+          "A strong sense of community from years spent station-side.",
+          "A love of engineering passed down from your parents.",
+          "Part of your body that you built yourself, lovingly tinkered with."
+        ]
+      },
+      {
+        "question": "What do you speak with?",
+        "options": [
+          "Your voice.",
+          "Your hands.",
+          "Your eyes.",
+          "Your heart.",
+          "Your gut."
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "name": "Listen to Reason",
+        "frequency": "1/session",
+        "description": "You have a proven skill for bridging the gap in disparate minds. So long as you have not taken violent action against them in the current scene, you may ask any characters present to stop what they are doing and listen to what you have to say. They will always do so, and for the rest of the scene, gain +2 Accuracy and increased effect on all actions you take to stop them from following through with what they were trying to do."
+      },
+      {
+        "name": "Boon of the Trusted Forge",
+        "prerequisite": "If you have two or more powers from this bond, you can choose a power from any other bond instead of one from this bond when you would gain a power. You can do this twice. If you have at least one veteran power, gain the Boon of the Forge.",
+        "description": "At the end of each session, if you completed a project, show it off to everyone. Give someone who admires it 1 XP.",
+        "veteran": true
+      },
+      {
+        "name": "Trusted Web of Creation",
+        "frequency": "1/session",
+        "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
+        "description": "By touching a willing person, an object, or a structure, you can visualize the connections between them or it and other objects, people, or things. You get excellent (but incomplete) information on these people, objects, or similar and how they relate. This information is factual and detailed. You can view up to three points of connection before this power fades. For example, you could visualize something three times removed or three separate things.",
+        "master": true
+      }
+    ]
+  },
+  {
+    "id": "dud_bond_relentless_wolf",
+    "name": "The Relentless Wolf",
+    "major_ideals": [
+      "I addressed challenges with precision, coldness, or intimidation.",
+      "I expressed my heritage, background, or beliefs through my actions.",
+      "I struggled with issues from my burdens or background."
+    ],
+    "minor_ideals": [
+      "I showed someone how it’s done.",
+      "I revealed an ugly truth about the world.",
+      "My pain or weakness became apparent despite my efforts to hide it.",
+      "I got someone to back down or back off."
+    ],
+    "questions": [
+      {
+        "question": "What gives you your power?",
+        "options": [
+          "A long time spent alone in the cold, a time you’d rather forget.",
+          "A hardened, bitter upbringing.",
+          "A collection of blades, polished and well used."
+        ]
+      },
+      {
+        "question": "What must you keep hidden at all costs?",
+        "options": [
+          "The wounds and scars that deform you.",
+          "The people you most care about.",
+          "The person you truly are at your core.",
+          "The blood in your past that’s catching up to you."
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "name": "Harry the Prey",
+        "frequency": "1/session",
+        "description": "Personal experience has taught you how to sniff out when someone has a weakness - and just the right way to sink your claws in and exploit it. As long as they are present, you may ask the GM any one character's most prominent weakness and receive a truthful answer. For the rest of the scene, gain +2 Accuracy and increased effect on all actions you take to use the answer to your advantage."
+      },
+      {
+        "name": "Boon of the Relentless Fang",
+        "prerequisite": "If you have two or more powers from this bond, you can choose a power from any other bond instead of one from this bond when you would gain a power. You can do this twice. If you have at least one veteran power, gain the Boon of the Fang.",
+        "description": "At the end of the session, if you think the party fought their way out of a bad situation, describe it, and give someone who you thought fought as hard as you 1 XP.",
+        "veteran": true
+      },
+      {
+        "name": "Relentless Wick",
+        "frequency": "1/session",
+        "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
+        "description": "This scene, ignore all Stress from anyone not important enough to merit a name, and take increased effect on all actions to evade, fight, subdue, or intimidate them.",
+        "master": true
+      }
+    ]
+  },
+  {
+    "id": "dud_bond_fiery_harlequin",
+    "name": "The Fiery Harlequin",
+    "major_ideals": [
+      "I addressed challenges with cunning, subterfuge, or deceit.",
+      "I expressed my heritage, background, or beliefs through my actions.",
+      "I struggled with issues from my burdens or background."
+    ],
+    "minor_ideals": [
+      "I struggled against or humiliated the powerful.",
+      "I pretended to be someone else for a time.",
+      "I charmed my way out of a charged situation.",
+      "I obtained a guarded, hidden, or secret object or piece of information."
+    ],
+    "questions": [
+      {
+        "question": "What gives you your powers?",
+        "options": [
+          "A high-tech stealth rig.",
+          "A tattered patchwork of a cape stuffed with magician’s trinkets.",
+          "Years of streetwise swindling.",
+          "A deal you once made in a dream."
+        ]
+      },
+      {
+        "question": "What weird quirks do you have?",
+        "options": [
+          "You can change your eye color, your hair color, and your height by up to 3 inches in either direction.",
+          "You weigh almost nothing if you choose not to. You sometimes float an inch off the ground.",
+          "Your can swap your clothing’s coloration, material, fit, cut, and type completely when you enter any scene."
+        ]
+      }
+    ],
+    "powers": [
+      {
+        "name": "Taste of Desire",
+        "frequency": "1/session",
+        "description": "You are charming enough to coax even private desires from people you meet, and wise enough to know when they shouldn't get them. Ask any character what it is they want most right now, and they will answer truthfully. For the rest of the scene, gain +2 Accuracy and increased effect on all actions you take to prevent them from getting what they want."
+      },
+      {
+        "name": "Boon of Fiery Chaos",
+        "prerequisite": "If you have two or more powers from this bond, you can choose a power from any other bond instead of one from this bond when you would gain a power. You can do this twice. If you have at least one veteran power, gain the Boon of Chaos.",
+        "description": "At the end of the session, if there was a particularly funny or chaotic moment or scene, describe it. Give someone who was part of the fun or chaos 1 XP.",
+        "veteran": true
+      },
+      {
+        "name": "Fiery Silvertongue",
+        "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
+        "frequency": "1/session",
+        "description": "Tell a lie to someone. If it’s wild and outlandish, anyone who listens wholeheartedly believes it for a minute. If it’s merely unbelievable, an hour. If it’s plausible, a day. If they want to believe it, a week. They realize it was a lie after the effect wears off.",
+        "master": true
+      }
+    ]
+  }
+]
