@@ -13,6 +13,7 @@ import {getDustgraveLcp} from "../lcp/dustgrave";
 import {getWinterScarLcp} from "../lcp/winter-scar";
 import {getShadowOfTheWolfLcp} from "../lcp/shadow-of-the-wolf";
 import {getCrisisCoreLcp} from "../lcp/homebrew/crisis core";
+import {getDoveUnitDeltaLcp} from "../lcp/homebrew/dove unit delta";
 import {getEHandSLCP} from "../lcp/homebrew/event horizon & suns";
 import {getIridiaLcp} from "../lcp/homebrew/iridia";
 import {getIronleafFoundryLcp} from "../lcp/homebrew/ironleaf-foundry";
@@ -69,6 +70,7 @@ function firstParty(): Lcp[] {
 function homebrew(): Lcp[] {
     return [
         getCrisisCoreLcp(),
+        getDoveUnitDeltaLcp(),
         getEHandSLCP(),
         getIridiaLcp(),
         getIronleafFoundryLcp(),

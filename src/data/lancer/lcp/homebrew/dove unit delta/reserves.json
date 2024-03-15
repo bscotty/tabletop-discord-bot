@@ -1,0 +1,38 @@
+[
+  {
+    "id": "dud_r_the_feather_of_maat",
+    "name": "The Feather of Ma’at",
+    "type": "Tactical",
+    "label": "Tactical",
+    "description": "A black khopesh that crackles with circuitry and has a handle shaped like a serpent devouring its own tail. Gain the Devour the Impure Heart quick action.",
+    "actions": [
+      {
+        "name": "Devour the Impure Heart",
+        "effect": "1/mission, remove an adjacent wreck from the battlefield. Your next successful attack causes the target to become Jammed until they Stabilize or succeed on a Systems save as a quick action.",
+        "activation": "Quick"
+      }
+    ]
+  },
+  {
+    "id": "dud_r_the_books_of_overthrowing_apep",
+    "name": "The Books of Overthrowing APEP",
+    "type": "Tactical",
+    "label": "Tactical",
+    "description": "A weathered tome stuffed with ancient religious texts that seem to hold a strange power. Gain the Fetter Disorder full action.",
+    "actions": [
+      {
+        "name": "Fetter Disorder",
+        "effect": "1/mission, generate two Blast 1 zones of pure white chains anywhere on the battlefield. Hostile characters who start their turn in the affected area or enter it for the first time in a round are Slowed until they Stabilize or succeed on a Systems save as a quick action. Characters may only be affected by Fetter Disorder once per round.",
+        "activation": "Full"
+      }
+    ]
+  },
+  {
+    "id": "dud_r_free_slate",
+    "name": "Free Slate",
+    "type": "Resource",
+    "label": "Resource",
+    "description": "A slate gifted to you by an employee of a karaoke bar on Farlight Station for your exceptionally entertaining musical advertisement. Can be used one time to secure instantaneous transport to anywhere in the Orion Arm when presented to the gate operators at the Andes Blinkgate.",
+    "consumable": true
+  }
+]
