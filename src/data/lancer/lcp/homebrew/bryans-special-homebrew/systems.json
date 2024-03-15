@@ -313,7 +313,7 @@
         "hp": 1,
         "edef": 10,
         "evasion": 10,
-        "detail": "When deployed (or re-deployed), Tomographic Projectors are Hidden until they are found with Search.<br><br>You may take the Scan quick action against any character within Range 5 of a Tomographic Projector drone as though it were within Sensors and line of sight. When you do, you also Discover a Vulnerability in the target. They receive Lock On and take +1d6 energy bonus damage the next time they are hit by an attack between now and the end of your next turn.",
+        "detail": "When deployed (or re-deployed), Tomographic Projectors are Hidden until they are found with Search.<br><br>You may take the Scan quick action against any character within Range 5 of a Tomographic Projector drone as though it were within Sensors and line of sight. When you do, you also Discover a Vulnerability in the target. They receive Lock On and take +1d6 kinetic bonus damage the next time they are hit by an attack between now and the end of your next turn.",
         "recall": "Quick",
         "redeploy": "Quick",
         "tags": []
@@ -395,5 +395,67 @@
       }
     ],
     "license_id": "ha_meade"
+  },
+  {
+    "id": "ms_coolant_sabotage",
+    "name": "Coolant Sabotage",
+    "source": "HA",
+    "license": "Constantine",
+    "license_level": 1,
+    "effect": "",
+    "type": "System",
+    "sp": 2,
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Ignite",
+        "activation": "Invade",
+        "detail": "Until the target Stabilizes or clears Burn, they increase their marked Burn by 2 whenever they are hit by an attack.",
+        "frequency": "Unlimited"
+      },
+      {
+        "name": "Febrile Infection",
+        "activation": "Invade",
+        "detail": "The target cannot Stabilize, gain Overshield, or restore HP in any way until the end of their next turn. They may end this effect early by succeeding on an Engineering save as a Quick Action.",
+        "frequency": "Unlimited"
+      }
+    ],
+    "license_id": "ha_constantine"
+  },
+  {
+    "id": "ms_cluster_bomb_injectors",
+    "name": "Cluster Bomb Injectors",
+    "source": "HA",
+    "license": "Constantine",
+    "license_level": 3,
+    "effect": "",
+    "type": "System",
+    "sp": 3,
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Rig Cluster Explosion",
+        "activation": "Full Tech",
+        "detail": "Choose a Blast 1 Area within Sensors. Make a tech attack on all enemies within that area. On a success, you rig the target to explode. Mark them with an Explosion mark, which can be cleared by Stabilizing.<br><br>After a character with an Explosion mark moves or makes any action other than Stabilize, they Explode, consuming the mark and taking 2d6 explosive damage and 4 Burn. Any characters within a Burst 2 area of the Explosion must succeed on an Agility saving throw or take half the Explosion damage. If a character with an Explosion mark is hit by another character’s Explosion, they also immediately Explode.",
+        "frequency": "Unlimited",
+        "tech_attack": true
+      }
+    ],
+    "license_id": "ha_constantine"
   }
 ]

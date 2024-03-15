@@ -1,0 +1,38 @@
+[
+  {
+    "id": "wm_aliao_afi_jets",
+    "name": "Aliao Afi Jets",
+    "sp": 4,
+    "allowed_types": [
+      "Melee"
+    ],
+    "allowed_sizes": [
+      "Main",
+      "Heavy",
+      "Superheavy"
+    ],
+    "source": "HA",
+    "license": "Constantine",
+    "license_level": 2,
+    "effect": "The weapon this mod is applied to gains +1 Threat and deals 4 bonus Burn. In addition, you may attack with the weapon as though it had Line 3. If you do, take 3 Heat.",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "added_damage": [
+      {
+        "type": "Burn",
+        "val": "4"
+      }
+    ],
+    "added_range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "license_id": "ha_constantine"
+  }
+]
