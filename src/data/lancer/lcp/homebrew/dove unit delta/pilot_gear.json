@@ -85,7 +85,7 @@
     "name": "Salamander Scale Hardsuit",
     "type": "Armor",
     "description": "A sturdy yet lightweight armor made of materials unique to the Dawnline Shore that naturally maintains a rosy mirrorlike gleam. This hardsuit is a testament to both skillful construction and clever design.<br><br>In addition, gain the Taste of Desire power from the Fiery Harlequin bond.<br><br><i>A cunning and fiery twist on the ages-old strategy of turning an opponent's force against them.</i>",
-    "effect": "Gain the Fight Fire with Fire reaction.<br><br>In addition, gain the Taste of Desire power from the Fiery Harlequin bond.",
+    "effect": "Gain the Fight Fire With Fire reaction.<br><br>In addition, gain the Taste of Desire power from the Fiery Harlequin bond.",
     "tags": [
       {
         "id": "tg_unique"
@@ -97,8 +97,7 @@
         "activation": "Reaction",
         "frequency": "1/scene",
         "trigger": "You are hit by an attack and damage has been rolled.",
-        "effect": "Gain Immunity to all damage, heat, and effects from the triggering attack. Deal burn to the attacker equal to the damage rolled.",
-        "detail": "Completely reflect a single attack as a burst of caustic force by absorbing the kinetic energy from an attack and redirecting it back at the attacker.",
+        "detail": "Gain Immunity to all damage, heat, and effects from the triggering attack. Deal burn to the attacker equal to the damage rolled.",
         "pilot": true
       }
     ],

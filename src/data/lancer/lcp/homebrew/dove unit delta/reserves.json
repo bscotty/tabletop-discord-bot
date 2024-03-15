@@ -8,8 +8,9 @@
     "actions": [
       {
         "name": "Devour the Impure Heart",
-        "effect": "1/mission, remove an adjacent wreck from the battlefield. Your next successful attack causes the target to become Jammed until they Stabilize or succeed on a Systems save as a quick action.",
-        "activation": "Quick"
+        "detail": "Remove an adjacent wreck from the battlefield. Your next successful attack causes the target to become Jammed until they Stabilize or succeed on a Systems save as a quick action.",
+        "activation": "Quick",
+        "frequency": "1/mission"
       }
     ]
   },
@@ -22,8 +23,9 @@
     "actions": [
       {
         "name": "Fetter Disorder",
-        "effect": "1/mission, generate two Blast 1 zones of pure white chains anywhere on the battlefield. Hostile characters who start their turn in the affected area or enter it for the first time in a round are Slowed until they Stabilize or succeed on a Systems save as a quick action. Characters may only be affected by Fetter Disorder once per round.",
-        "activation": "Full"
+        "detail": "Generate two Blast 1 zones of pure white chains anywhere on the battlefield. Hostile characters who start their turn in the affected area or enter it for the first time in a round are Slowed until they Stabilize or succeed on a Systems save as a quick action. Characters may only be affected by Fetter Disorder once per round.",
+        "activation": "Full",
+        "frequency": "1/mission"
       }
     ]
   },
