@@ -12,6 +12,7 @@ export type PilotWeapon = {
     id: string
     name: string // v-html
     type: string //"Weapon"
+    effect?: string
     description?: string
     tags?: ITagData[]
     range?: IRangeData[]
@@ -26,6 +27,7 @@ export type PilotArmor = {
     id: string
     name: string // v-html
     type: string // "Armor"
+    effect?: string
     description?: string
     tags?: ITagData[]
     actions?: IActionData[] // these are only available to UNMOUNTED pilots
@@ -38,6 +40,7 @@ export type PilotGear = {
     id: string
     name: string // v-html
     type: string // "Gear"
+    effect?: string
     description?: string
     tags?: ITagData[]
     actions?: IActionData[] // these are only available to UNMOUNTED pilots

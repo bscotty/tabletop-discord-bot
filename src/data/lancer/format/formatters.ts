@@ -11,6 +11,7 @@ import {
     SearchablePilotArmor,
     SearchablePilotGear,
     SearchablePilotWeapon,
+    SearchableReserve,
     SearchableSkillTrigger,
     SearchableStatusCondition,
     SearchableSystem,
@@ -171,7 +172,7 @@ export class Formatters {
         }
 
         return `**${bondPower.name}**${frequency}${formatContentPack(bondPower)}\n` +
-            `${bondPower.power_name} Bond Power${rank}\n` +
+            `${bondPower.power_name} Bond Power${rank}\n\n` +
             `${prerequisite}${this.turndownService.turndown(bondPower.description)}`
     }
 
@@ -263,56 +264,85 @@ export class Formatters {
         return out
     }
 
-    public pilotArmorFormat(parmor: SearchablePilotArmor) {
-        let out = `**${parmor.name}** (Pilot Armor)${formatContentPack(parmor)}\n`
-        if (parmor.bonuses) {
-            for (const bonus_indx in parmor.bonuses) {
-                const bonus = parmor.bonuses[bonus_indx]
-                let bonus_name = bonus.id.replace("_", " ")
-                bonus_name = toTitleCase(bonus_name)
-                out += `**${bonus_name}:** ${bonus.val}, `
-            }
-            out = out.replace(/,\s*$/, "")
-            out += '\n'
+    public pilotArmorFormat(pilotArmor: SearchablePilotArmor) {
+        let out = `**${pilotArmor.name}** (Pilot Armor)${formatContentPack(pilotArmor)}`
+        if (pilotArmor.bonuses && pilotArmor.bonuses.length > 0) {
+            out += "\n" + pilotArmor.bonuses.map((it) => {
+                return `${toTitleCase(it.id.replace("_", " "))}: ${it.val}`
+            }).join("\n").replace(/,\s*$/, "")
         }
-        out += `${this.turndownService.turndown(parmor.description)}`
-        return out;
-    }
-
-    public pilotGearFormat(pgear: SearchablePilotGear) {
-        let out = `**${pgear.name}** (Pilot Gear)${formatContentPack(pgear)}\n`
-        if (pgear.tags) {
-            out += pgear.tags.map(tag => this.populateTag(tag)).join(', ').trim() + "\n"
+        if (pilotArmor.effect) {
+            out += "\n" + this.turndownService.turndown(pilotArmor.effect)
         }
-        out += this.turndownService.turndown(pgear.description) + "\n"
-        if (pgear.actions && pgear.actions.length > 0) {
-            out += 'This pilot gear grants the following actions:\n'
-            out += pgear.actions.map(action => `${action.name} (${action.activation})`).join(', ').trim()
+        if (pilotArmor.actions && pilotArmor.actions.length > 0) {
+            out += "\n" + pilotArmor.actions.map((it) => this.actionFormat(it)).join("\n")
+        }
+        if (pilotArmor.description) {
+            out += `\n${this.turndownService.turndown(pilotArmor.description)}`
         }
         return out;
     }
 
-    public pilotWeaponFormat(weapon: SearchablePilotWeapon): string {
-        let out = `**${weapon.name}${formatContentPack(weapon)}**`
-        let tagsEtc = [`-- ${weapon.type || '--'}`]
-        if (weapon.tags) tagsEtc = tagsEtc.concat(weapon.tags.map(tag => this.populateTag(tag)))
+    public pilotGearFormat(pilotGear: SearchablePilotGear) {
+        let out = `**${pilotGear.name}** (Pilot Gear)${formatContentPack(pilotGear)}`
+        if (pilotGear.tags) {
+            out += "\n" + pilotGear.tags.map(tag => this.populateTag(tag)).join(', ').trim()
+        }
+        if (pilotGear.effect) {
+            out += "\n" + this.turndownService.turndown(pilotGear.effect)
+        }
+        if (pilotGear.description) {
+            out += "\n" + this.turndownService.turndown(pilotGear.description)
+        }
+        if (pilotGear.actions && pilotGear.actions.length > 0) {
+            out += "\n" + pilotGear.actions.map(action => `${action.name} (${action.activation})`).join(', ').trim()
+        }
+        return out;
+    }
+
+    public pilotWeaponFormat(pilotWeapon: SearchablePilotWeapon): string {
+        let out = `**${pilotWeapon.name}${formatContentPack(pilotWeapon)}**`
+        out += "\nPilot Weapon"
+        let tagsEtc: string[] = []
+        if (pilotWeapon.tags) tagsEtc = tagsEtc.concat(pilotWeapon.tags.map(tag => this.populateTag(tag)))
         out += `\n${tagsEtc.join(', ')}\n`
 
-        if (weapon.range && weapon.range.length) out += '[' + weapon.range.map(r => r.override ? r.val : `${getEmoji(r.type.toLowerCase())} ${r.val}`).join(', ') + '] '
-        if (weapon.damage && weapon.damage.length) out += '[' + weapon.damage.map(dmg => dmg.override ? dmg.val : `${dmg.val}${getEmoji(dmg.type.toLowerCase())}`).join(' + ') + ']'
+        if (pilotWeapon.range && pilotWeapon.range.length) out += '[' + pilotWeapon.range.map(r => r.override ? r.val : `${getEmoji(r.type.toLowerCase())} ${r.val}`).join(', ') + '] '
+        if (pilotWeapon.damage && pilotWeapon.damage.length) out += '[' + pilotWeapon.damage.map(dmg => dmg.override ? dmg.val : `${dmg.val}${getEmoji(dmg.type.toLowerCase())}`).join(' + ') + ']'
         out += '\n'
 
-        if (weapon.actions && weapon.actions.length > 0) {
-            out += 'This weapon grants the following actions:\n'
-            weapon.actions.forEach(act => out += this.actionFormat(act))
+        if (pilotWeapon.effect) {
+            out += "\n" + this.turndownService.turndown(pilotWeapon.effect)
         }
 
-        if (weapon.deployables) {
+        if (pilotWeapon.actions && pilotWeapon.actions.length > 0) {
+            out += "\n" + pilotWeapon.actions.map(act => out += this.actionFormat(act)).join("\n")
+        }
+
+        if (pilotWeapon.deployables) {
             out += 'This weapon grants the following deployables:\n'
-            weapon.deployables.forEach(dep => out += this.deployableFormatter(dep))
+            pilotWeapon.deployables.forEach(dep => out += this.deployableFormatter(dep))
+        }
+
+        if (pilotWeapon.description) {
+            out += "\n" + this.turndownService.turndown(pilotWeapon.description)
         }
 
         return out
+    }
+
+    public reservesFormat(reserve: SearchableReserve) {
+        const header = `**${reserve.name}** - Resource (${reserve.type}: ${reserve.label})${formatContentPack(reserve)}`
+        const description = this.turndownService.turndown(reserve.description)
+        let action = ""
+        if (reserve.actions) {
+            action = "\n\n" + reserve.actions.map((it) => this.actionFormat(it)).join("\n")
+        }
+        let deployables = ""
+        if (reserve.deployables) {
+            deployables = "\n\n" + reserve.deployables.map((it) => this.deployableFormatter(it)).join("\n")
+        }
+        return `${header}\n${description}${action}${deployables}`
     }
 
     public skillFormat(skill: SearchableSkillTrigger) {
