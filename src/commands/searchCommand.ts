@@ -88,7 +88,8 @@ export abstract class SearchCommand<T> implements BotCommand {
                 const replyOptions: InteractionReplyOptions = {
                     embeds: [this.embedFrom(displayResponse)],
                     files: this.filesFrom(displayResponse),
-                    components: this.componentsFrom(buttons)
+                    components: this.componentsFrom(buttons),
+                    ephemeral: replySecret
                 }
 
                 const response = await interaction.reply(replyOptions)
