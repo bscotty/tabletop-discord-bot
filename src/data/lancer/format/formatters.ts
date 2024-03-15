@@ -278,7 +278,7 @@ export class Formatters {
             out += "\n" + pilotArmor.actions.map((it) => this.actionFormat(it)).join("\n")
         }
         if (pilotArmor.description) {
-            out += `\n${this.turndownService.turndown(pilotArmor.description)}`
+            out += `\n\n${this.turndownService.turndown(pilotArmor.description)}`
         }
         return out;
     }
@@ -291,11 +291,11 @@ export class Formatters {
         if (pilotGear.effect) {
             out += "\n" + this.turndownService.turndown(pilotGear.effect)
         }
-        if (pilotGear.description) {
-            out += "\n" + this.turndownService.turndown(pilotGear.description)
-        }
         if (pilotGear.actions && pilotGear.actions.length > 0) {
             out += "\n" + pilotGear.actions.map(action => `${action.name} (${action.activation})`).join(', ').trim()
+        }
+        if (pilotGear.description) {
+            out += "\n\n" + this.turndownService.turndown(pilotGear.description)
         }
         return out;
     }
@@ -325,7 +325,7 @@ export class Formatters {
         }
 
         if (pilotWeapon.description) {
-            out += "\n" + this.turndownService.turndown(pilotWeapon.description)
+            out += "\n\n" + this.turndownService.turndown(pilotWeapon.description)
         }
 
         return out
