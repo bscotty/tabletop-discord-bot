@@ -11,7 +11,7 @@ import {
     SearchableMod,
     SearchablePilotArmor,
     SearchablePilotGear,
-    SearchablePilotWeapon,
+    SearchablePilotWeapon, SearchableReserve,
     SearchableSkillTrigger,
     SearchableStatusCondition,
     SearchableSystem,
@@ -62,6 +62,10 @@ export function isSearchablePilotGear(data: SearchableData): data is SearchableP
 
 export function isSearchablePilotWeapon(data: SearchableData): data is SearchablePilotWeapon {
     return data.data_type == "Pilot Weapon"
+}
+
+export function isSearchableReserve(data: SearchableData): data is SearchableReserve {
+    return data.data_type == "Reserve"
 }
 
 export function isSearchableSkillTrigger(data: SearchableData): data is SearchableSkillTrigger {

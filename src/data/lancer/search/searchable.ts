@@ -14,6 +14,7 @@ import {Tag} from "../types/tag";
 import {Talent} from "../types/talent";
 import {Weapon} from "../types/weapon";
 import {Bond, LabeledPower} from "../types/bonds";
+import {Reserve} from "../types/not-fully-used";
 
 export type SearchableAction = Action & TypedData & AlternativelyNamed
 export type SearchableBond = Bond & TypedData & AlternativelyNamed
@@ -26,6 +27,7 @@ export type SearchableMod = Mod & TypedData & AlternativelyNamed
 export type SearchablePilotArmor = PilotArmor & TypedData & AlternativelyNamed
 export type SearchablePilotGear = PilotGear & TypedData & AlternativelyNamed
 export type SearchablePilotWeapon = PilotWeapon & TypedData & AlternativelyNamed
+export type SearchableReserve = Reserve & TypedData & AlternativelyNamed
 export type SearchableSkillTrigger = SkillTrigger & TypedData & AlternativelyNamed
 export type SearchableStatusCondition = StatusCondition & TypedData & AlternativelyNamed
 export type SearchableSystem = System & TypedData & AlternativelyNamed
@@ -44,6 +46,7 @@ export type SearchableData =
     | SearchablePilotArmor
     | SearchablePilotWeapon
     | SearchablePilotGear
+    | SearchableReserve
     | SearchableSkillTrigger
     | SearchableStatusCondition
     | SearchableSystem

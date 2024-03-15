@@ -16,6 +16,7 @@ import {
     SearchablePilotArmor,
     SearchablePilotGear,
     SearchablePilotWeapon,
+    SearchableReserve,
     SearchableSkillTrigger,
     SearchableStatusCondition,
     SearchableSystem,
@@ -39,6 +40,7 @@ export function lancerDataReader(lcp: Lcp): LancerData {
         filterTypeAndLabel(pilotItems.armor, "Pilot Armor", lcp.info.name),
         filterTypeAndLabel(pilotItems.gear, "Pilot Gear", lcp.info.name),
         filterTypeAndLabel(pilotItems.weapon, "Pilot Weapon", lcp.info.name),
+        filterTypeAndLabel(lcp.reserves, "Reserve", lcp.info.name),
         filterTypeAndLabel(lcp.skills, "Skill", lcp.info.name),
         typeAndLabel(lcp.statuses, "Status", lcp.info.name),
         filterTypeAndLabel(lcp.systems, "System", lcp.info.name),
@@ -87,6 +89,7 @@ export class LancerData {
     pilot_armor: SearchablePilotArmor[]
     pilot_weapons: SearchablePilotWeapon[]
     pilot_gear: SearchablePilotGear[]
+    reserves: SearchableReserve[]
     skills: SearchableSkillTrigger[]
     statuses: SearchableStatusCondition[]
     systems: SearchableSystem[]
@@ -106,6 +109,7 @@ export class LancerData {
         pilot_armor: SearchablePilotArmor[],
         pilot_gear: SearchablePilotGear[],
         pilot_weapons: SearchablePilotWeapon[],
+        reserves: SearchableReserve[],
         skills: SearchableSkillTrigger[],
         statuses: SearchableStatusCondition[],
         systems: SearchableSystem[],
@@ -128,6 +132,7 @@ export class LancerData {
         this.pilot_gear = pilot_gear
         this.pilot_weapons = pilot_weapons
 
+        this.reserves = reserves
         this.skills = skills
         this.statuses = statuses
         this.systems = systems
@@ -149,6 +154,7 @@ export class LancerData {
             ...this.pilot_armor,
             ...this.pilot_weapons,
             ...this.pilot_gear,
+            ...this.reserves,
             ...this.skills,
             ...this.statuses,
             ...this.systems,

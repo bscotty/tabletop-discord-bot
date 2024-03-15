@@ -10,6 +10,7 @@ import {
     isSearchablePilotArmor,
     isSearchablePilotGear,
     isSearchablePilotWeapon,
+    isSearchableReserve,
     isSearchableSkillTrigger,
     isSearchableStatusCondition,
     isSearchableSystem,
@@ -43,6 +44,8 @@ export function format(formatters: Formatters, data: SearchableData) {
         return formatters.pilotGearFormat(data)
     } else if (isSearchablePilotWeapon(data)) {
         return formatters.pilotWeaponFormat(data)
+    } else if (isSearchableReserve(data)) {
+        return formatters.reservesFormat(data)
     } else if (isSearchableSkillTrigger(data)) {
         return formatters.skillFormat(data)
     } else if (isSearchableStatusCondition(data)) {
