@@ -84,8 +84,8 @@
     "id": "dud_pg_salamander_scale_Hardsuit",
     "name": "Salamander Scale Hardsuit",
     "type": "Armor",
-    "description": "A sturdy yet lightweight armor made of materials unique to the Dawnline Shore that naturally maintains a rosy mirrorlike gleam. This hardsuit is a testament to both skillful construction and clever design.<br><br>In addition, gain the Taste of Desire power from the Fiery Harlequin bond.<br><br><i>A cunning and fiery twist on the ages-old strategy of turning an opponent's force against them.</i>",
-    "effect": "Gain the Fight Fire With Fire reaction.<br><br>In addition, gain the Taste of Desire power from the Fiery Harlequin bond.",
+    "description": "A sturdy yet lightweight armor made of materials unique to the Dawnline Shore that naturally maintains a rosy mirrorlike gleam. This hardsuit is a testament to both skillful construction and clever design.<br><br><i>A cunning and fiery twist on the ages-old strategy of turning an opponent's force against them.</i>",
+    "effect": "Gain the Fight Fire With Fire reaction. In addition, gain the Taste of Desire power from the Fiery Harlequin bond.",
     "tags": [
       {
         "id": "tg_unique"
