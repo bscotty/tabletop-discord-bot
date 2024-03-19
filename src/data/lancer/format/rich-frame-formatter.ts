@@ -102,6 +102,9 @@ export class RichFrameFormatter implements RichFormatter<SearchableFrame> {
                 {name: "Frame Variant", description: `${frame.variant} Variant`, inline: false}
             ]
         }
+        if (frame.source == "GMS") {
+            return []
+        }
 
         function getGearNames(forLicenseLevel: 1 | 2 | 3, gear: LicenseData[]): string {
             return gear.filter((it) => it.license_level == forLicenseLevel)
