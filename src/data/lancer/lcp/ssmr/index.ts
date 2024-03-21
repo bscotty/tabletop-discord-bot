@@ -5,6 +5,7 @@ import pilot_gear from "./pilot_gear.json"
 import systems from "./systems.json"
 import talents from "./talents.json"
 import weapons from "./weapons.json"
+import reserves from "./reserves.json"
 
 export function getSsmrLcp(): Lcp {
     return new Lcp(
@@ -20,7 +21,7 @@ export function getSsmrLcp(): Lcp {
         [],
         [],
         pilot_gear,
-        [],
+        reserves,
         undefined,
         [],
         [],

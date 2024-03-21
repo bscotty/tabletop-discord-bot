@@ -59,7 +59,6 @@
         "name": "Smart Grenade",
         "activation": "Quick",
         "detail": "All hostile characters within the affected area must pass a Systems save or take 1d6 energy damage and gain Lock On. On a success, they gain Lock On only.",
-        "cost": 0,
         "pilot": false,
         "damage": [
           {
@@ -84,9 +83,18 @@
         "name": "Lurker Mine",
         "type": "Mine",
         "detail": "This mine does not detonate as normal. Instead, gain the Selective Detonation reaction, which can be performed once per deployed lurker mine.",
-        "size": 1,
-        "instances": 1,
-        "cost": 1,
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "2d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Burst",
+            "val": 1
+          }
+        ],
         "actions": [
           {
             "name": "Selective Detonation",
@@ -97,6 +105,12 @@
               {
                 "type": "Explosive",
                 "val": "2d6"
+              }
+            ],
+            "range": [
+              {
+                "type": "Burst",
+                "val": 1
               }
             ]
           }
@@ -130,7 +144,7 @@
         "damage": [
           {
             "type": "Energy",
-            "val": "14"
+            "val": 14
           }
         ],
         "range": [

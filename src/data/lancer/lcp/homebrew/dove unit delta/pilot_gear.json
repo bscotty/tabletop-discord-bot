@@ -8,6 +8,9 @@
     "tags": [
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_gear"
       }
     ]
   },
@@ -15,11 +18,14 @@
     "id": "dud_pg_jailbroken_prosocollar",
     "name": "Jailbroken Prosocollar",
     "type": "Gear",
-    "description": "A previously standard-issue Albatross prosocollar that has since been illicitly customized.<br><br>In additon to providing the usual function of projecting minor, detectable voice and appearance changes, this modified neckpiece is also capable of acting as a homing beacon, tracking device, and communications system that can even translate and decrypt ciphertext.<br><br><i>\"I'm sorry I can't tell you why I'm leaving... I don't want you to get hurt. Besides, I know you'll figure it out yourself, anyway. You're relentless like that.\" - Database decryption entry 001, December 1st 5015u",
+    "description": "A previously standard-issue Albatross prosocollar that has since been illicitly customized.<br><br>In addition to providing the usual function of projecting minor, detectable voice and appearance changes, this modified neckpiece is also capable of acting as a homing beacon, tracking device, and communications system that can even translate and decrypt ciphertext.<br><br><i>\"I'm sorry I can't tell you why I'm leaving... I don't want you to get hurt. Besides, I know you'll figure it out yourself, anyway. You're relentless like that.\" - Database decryption entry 001, December 1st 5015u",
     "effect": "Gain the Harry the Prey power from the Relentless Wolf bond.",
     "tags": [
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_gear"
       }
     ]
   },
@@ -27,7 +33,7 @@
     "id": "dud_pg_claws_of_the_union",
     "name": "Claws of the Union",
     "type": "Weapon",
-    "description": "Wicked talons of gears and steel, sharpened to a razor's edge. These proesthetics were never made to ensure equity; they were made to get equal.<br><br><i>A guardian's weapon crafted from fresh steel works just as well as one reforged from a butcher's blade.</i>",
+    "description": "Wicked talons of gears and steel, sharpened to a razor's edge. These prosthetics were never made to ensure equity; they were made to get equal.<br><br><i>A guardian's weapon crafted from fresh steel works just as well as one reforged from a butcher's blade.</i>",
     "effect": "This weapon can be used with the following profile even while unloaded, and using this profile does not cause it to become unloaded: [1 Threat, AP, 1 Kinetic.]<br><br>In addition, gain the Paradox of Inexorable Force power from the Reforged Titan bond.",
     "tags": [
       {
@@ -38,6 +44,9 @@
       },
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_pilot_weapon"
       }
     ],
     "range": [
@@ -65,6 +74,9 @@
       },
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_pilot_weapon"
       }
     ],
     "range": [
@@ -89,6 +101,9 @@
     "tags": [
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_personal_armor"
       }
     ],
     "actions": [
@@ -142,6 +157,9 @@
       },
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_gear"
       }
     ]
   }

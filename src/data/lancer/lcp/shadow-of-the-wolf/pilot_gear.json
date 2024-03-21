@@ -4,7 +4,7 @@
     "name": "Personal Kinetic Shielding",
     "type": "Armor",
     "effect": "While this armor is active, you cannot make ranged attacks. When you are hit by a ranged weapon, reduce the damage by 1d6. If the damage is not reduced to zero, the shield burns out and is unusable until the next Rest or Full Repair.",
-    "description": "Personal shielding is a common choice for personal defense amongst Karrakin nobility. Despite lacking features considered vital by most pilots, such as strength augmentation, interface components, and sealing against environmental hazards, shields have a few notable advantages over a full hardsuit. Most importantly, shield packs are compact and easily concealed, enabling discreet use and providing protection without interfering with the user’s fashion choices.",
+    "description": "Shields are a common choice for personal defense amongst Karrakin nobility. Despite lacking features considered vital by most pilots, such as strength augmentation, interface components, and sealing against environmental hazards, shields have a few notable advantages over a full hardsuit. Most importantly, shield packs are compact and easily concealed, enabling discreet use and providing protection without interfering with the user’s fashion choices.",
     "bonuses": [
       {
         "id": "pilot_hp",
