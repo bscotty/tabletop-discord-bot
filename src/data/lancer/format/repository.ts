@@ -64,7 +64,8 @@ function firstParty(): Lcp[] {
         getSsmrLcp(),
         getDustgraveLcp(),
         getWinterScarLcp(),
-        getShadowOfTheWolfLcp()
+        getShadowOfTheWolfLcp(),
+        getShadowOfTheWolfBondsLcp()
     ]
 }
 

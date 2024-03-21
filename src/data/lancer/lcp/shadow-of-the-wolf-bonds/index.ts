@@ -12,7 +12,7 @@ export function getShadowOfTheWolfBondsLcp(): Lcp {
         [],
         [],
         [],
-        [],
+        info,
         [],
         [],
         [],
