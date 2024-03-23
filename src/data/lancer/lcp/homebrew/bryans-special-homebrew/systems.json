@@ -47,7 +47,7 @@
       {
         "name": "Reveal The Mark of Naga",
         "activation": "Quick",
-        "detail": "1/scene, reveal the mark and compel your enemies' animosity. Until the start of your next turn, when any enemy within a Range equal to your Speed makes an attack against a character other than you, they receive +1 Difficulty to that attack.",
+        "detail": "Reveal the mark and compel your enemies' animosity. Until the start of your next turn, when any enemy within a Range equal to your Speed makes an attack against a character other than you, they receive +1 Difficulty to that attack.",
         "frequency": "1/scene"
       }
     ],
@@ -59,7 +59,7 @@
     "source": "SSC",
     "license": "Lucina",
     "license_level": 3,
-    "effect": "Gain the <b>I Say When It Ends</b> reaction.",
+    "effect": "Your mech gains the AI tag and I Say When It Ends.",
     "type": "System",
     "sp": 3,
     "description": "",
@@ -113,7 +113,7 @@
     "source": "HORUS",
     "license": "Ghoul",
     "license_level": 2,
-    "effect": "1/round, after hitting an improvised attack, you may choose one of the following effects: <ul><li>Reduce your current Heat by 1.</li><li>Gain 2 Overshield.</li><li>Clear 1 condition.</li></ul>",
+    "effect": "1/round, after hitting an improvised attack, you may choose one of the following effects: <ul><li>Reduce your current Heat by 1.</li><li>Gain 2 Overshield.</li><li>Clear a condition that was not caused by your own systems, talents, etc.</li></ul>",
     "type": "System",
     "sp": 1,
     "description": "The journey to open the gates is unforgiving. To reach the end, you must treat yourself with the same kindness you would show to others, and hope others would show to themselves. The Gates will not be forgiving.",
@@ -147,7 +147,7 @@
       {
         "name": "The Gates of Pain and Limit",
         "activation": "Protocol",
-        "detail": "Choose one of the following effects. It lasts until the end of the scene, or until you Unlock The Gates again.<ul><li><b>The Gate of Pain:</b> Your melee attacks gain Knockback +2. When you knock a character into a wall, mech, or other obstruction that would cause it to stop moving, you may force your target to pass a Hull save or take 1d6 Kinetic Damage and become Impaired until the end of its next turn.</li><li><b>The Gate of Limit:</b> Your melee attacks gain Smart and AP.</li></ul>"
+        "detail": "Choose one of the following effects. It lasts until the end of the scene, or until you Unlock The Gates again.<ul><li><b>The Gate of Pain:</b> Your melee attacks gain Knockback +2. 1/round, when you knock a character into a wall, mech, or other obstruction that would cause it to stop moving, it takes 1d6 bonus Kinetic damage.</li><li><b>The Gate of Limit:</b> Your melee attacks gain Smart and AP.</li></ul>"
       }
     ],
     "license_id": "horus_ghoul"
@@ -193,6 +193,10 @@
     "tags": [
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
       }
     ],
     "actions": [
@@ -200,7 +204,7 @@
         "name": "Unlock The Gate of Wonder",
         "activation": "Full",
         "frequency": "1/scene",
-        "detail": "Until the end of your next turn, you are Exposed. You may teleport up to twice your Speed. You are then Immobilized until the end of your turn. You may then perform an improvised attack on each character within Burst 1."
+        "detail": "You may teleport up to twice your Speed. Then, until the end of your next turn, you are Exposed and Immobilized. You may then perform an improvised attack on each character within Burst 2."
       }
     ],
     "license_id": "horus_ghoul"
@@ -253,7 +257,7 @@
     "source": "IPS-N",
     "license": "Acadia",
     "license_level": 3,
-    "effect": "An allied character that is smaller than you may board you as a Quick action. While boarded, the smaller character occupies your space and becomes Immobilized but moves when you move, mirroring your movement, including involuntary movement, but can still be attacked and targeted separately. They also benefit from soft cover, and are treated as being higher elevation to any non-flying characters. This effect lasts either for the rest of the scene, until this system is destroyed, or until they disembark as a Protocol, and are placed in an open space adjacent to you.",
+    "effect": "An allied character that is smaller than you may board you as a Quick action. While boarded, the smaller character occupies your space and becomes Immobilized but moves when you move, mirroring your movement, including involuntary movement. They can still be attacked and targeted separately, but benefit from soft cover, and are treated as being higher elevation to any non-flying characters. This effect lasts either for the rest of the scene, until this system is destroyed, or until they disembark as a Protocol, and are placed in an open space adjacent to you.",
     "type": "System",
     "sp": 3,
     "description": "",
@@ -281,15 +285,15 @@
     ],
     "actions": [
       {
-        "name": "Divert Power To Shields",
+        "name": "Divert Power To Systems",
         "activation": "Invade",
-        "detail": "The target gets +2 Difficulty on the next attack and +2 Accuracy on the next skill check or save they make between now and the end of their next turn.",
+        "detail": "Until the end of its next turn, the target’s next weapon attack automatically misses, but the next save or check it forces is made with +2 Difficulty.",
         "frequency": "Unlimited"
       },
       {
         "name": "Divert Power To Weapons",
         "activation": "Invade",
-        "detail": "The target gets +2 Accuracy on the next attack and +2 Difficulty on the next skill check or save they make between now and the end of their next turn.",
+        "detail": "Until the end of its next turn, the next check or save the target forces is automatically passed, but it makes its next weapon attack with +2 Accuracy.",
         "frequency": "Unlimited"
       }
     ],
@@ -313,7 +317,7 @@
         "hp": 1,
         "edef": 10,
         "evasion": 10,
-        "detail": "When deployed (or re-deployed), Tomographic Projectors are Hidden until they are found with Search.<br><br>You may take the Scan quick action against any character within Range 5 of a Tomographic Projector drone as though it were within Sensors and line of sight. When you do, you also Discover a Vulnerability in the target. They receive Lock On and take +1d6 kinetic bonus damage the next time they are hit by an attack between now and the end of your next turn.",
+        "detail": "When deployed (or re-deployed), Tomographic Projectors are Hidden until they are found with Search.<br><br>You may take the Scan quick action against any character within Range 5 of a Tomographic Projector drone as though it were within Sensors and line of sight. When you do, you also Discover a Vulnerability in the target. They receive Lock On and take +1d6 bonus damage the next time they are hit by an attack between now and the end of your next turn.",
         "recall": "Quick",
         "redeploy": "Quick",
         "tags": []
@@ -349,7 +353,7 @@
       {
         "name": "Thermal Equilibrium",
         "activation": "Invade",
-        "detail": "At the start of the target’s next turn, set their current Heat to half of their Heat Cap, putting them in the Danger Zone. This can only be used once per scene on each character.",
+        "detail": "At the start of the target’s next turn, set their current Heat to half of their Heat Cap, putting them in the Danger Zone. This can only be used 1/scene on each character.",
         "frequency": "Unlimited"
       },
       {
@@ -379,10 +383,19 @@
         "hp": 5,
         "edef": 10,
         "evasion": 10,
-        "detail": "1/round, when an allied character within Range 5 of the drone is hit by an attack, they may swap places with the drone as though teleporting, as long as there is sufficient space. The drone receives the damage and effects of the attack instead.",
+        "detail": "Gain the Kawarimi reaction, which can be taken once for each deployed Kawarimi Decoy.",
         "recall": "Quick",
         "redeploy": "Quick",
-        "tags": []
+        "tags": [],
+        "actions": [
+          {
+            "name": "Kawarimi",
+            "activation": "Reaction",
+            "trigger": "An allied character within Range 5 of the drone is hit by an attack.",
+            "detail": "They may swap places with the drone as though teleporting, as long as there is sufficient space. The drone receives the damage and effects of the attack instead.",
+            "frequency": "1/round"
+          }
+        ]
       }
     ],
     "tags": [
@@ -395,67 +408,5 @@
       }
     ],
     "license_id": "ha_meade"
-  },
-  {
-    "id": "ms_coolant_sabotage",
-    "name": "Coolant Sabotage",
-    "source": "HA",
-    "license": "Constantine",
-    "license_level": 1,
-    "effect": "",
-    "type": "System",
-    "sp": 2,
-    "description": "",
-    "tags": [
-      {
-        "id": "tg_unique"
-      }
-    ],
-    "actions": [
-      {
-        "name": "Ignite",
-        "activation": "Invade",
-        "detail": "Until the target Stabilizes or clears Burn, they increase their marked Burn by 2 whenever they are hit by an attack.",
-        "frequency": "Unlimited"
-      },
-      {
-        "name": "Febrile Infection",
-        "activation": "Invade",
-        "detail": "The target cannot Stabilize, gain Overshield, or restore HP in any way until the end of their next turn. They may end this effect early by succeeding on an Engineering save as a Quick Action.",
-        "frequency": "Unlimited"
-      }
-    ],
-    "license_id": "ha_constantine"
-  },
-  {
-    "id": "ms_cluster_bomb_injectors",
-    "name": "Cluster Bomb Injectors",
-    "source": "HA",
-    "license": "Constantine",
-    "license_level": 3,
-    "effect": "",
-    "type": "System",
-    "sp": 3,
-    "description": "",
-    "tags": [
-      {
-        "id": "tg_limited",
-        "val": 1
-      },
-      {
-        "id": "tg_heat_self",
-        "val": 2
-      }
-    ],
-    "actions": [
-      {
-        "name": "Rig Cluster Explosion",
-        "activation": "Full Tech",
-        "detail": "Choose a Blast 1 Area within Sensors. Make a tech attack on all enemies within that area. On a success, you rig the target to explode. Mark them with an Explosion mark, which can be cleared by Stabilizing.<br><br>After a character with an Explosion mark moves or makes any action other than Stabilize, they Explode, consuming the mark and taking 2d6 explosive damage and 4 Burn. Any characters within a Burst 2 area of the Explosion must succeed on an Agility saving throw or take half the Explosion damage. If a character with an Explosion mark is hit by another character’s Explosion, they also immediately Explode.",
-        "frequency": "Unlimited",
-        "tech_attack": true
-      }
-    ],
-    "license_id": "ha_constantine"
   }
 ]
