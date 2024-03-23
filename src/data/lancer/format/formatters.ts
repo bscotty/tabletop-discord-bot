@@ -79,41 +79,74 @@ export class Formatters {
     public actionFormat(action: IActionData, customActionName?: string) {
         let activationType = `${pilotMechActionType(action)}${activationFormat(action.activation)}`
 
-        if (action.frequency)
+        if (action.frequency) {
             activationType += `, *${action.frequency}*`
+        }
 
         const actionName = action.name || customActionName || 'Unnamed Action'
-        let out = `**${actionName}** (${activationType})\n`
+        let out = `**${actionName}** (${activationType})`
+        let actionRange
+        if (action.range && action.range.length > 0) {
+            actionRange = '[' + action.range.map(r => `${getEmoji(r.type.toLowerCase())} ${r.val}`).join(', ') + '] '
+        }
+        let actionDamage
+        if (action.damage && action.damage.length > 0) {
+            actionDamage = '[' + action.damage.map(dmg => dmg.override ? dmg.val : `${dmg.val}${getEmoji(dmg.type.toLowerCase())}`).join(' + ') + ']'
+        }
+        if (actionRange || actionDamage) {
+            out += "\n"
+            out += actionRange ? actionRange : ""
+            out += actionDamage ? actionDamage : ""
+        }
 
-        if (action.trigger)
-            out += `*Trigger:* ${this.turndownService.turndown(action.trigger)}\n`
-        out += `${action.trigger ? "*Effect:* " : ""}${this.turndownService.turndown(action.detail)}\n`
+        if (action.trigger) {
+            out += `\n*Trigger:* ${this.turndownService.turndown(action.trigger)}`
+            out += "\n*Effect:* "
+        } else {
+            out += "\n"
+        }
+
+        out += this.turndownService.turndown(action.detail)
         return out;
     }
 
     public deployableFormatter(dep: IDeployableData) {
-        let out = `**${dep.name}** (${dep.type})\n`
+        let out = `**${dep.name}** (${dep.type})`
 
-        out += `Deployment: ${activationFormat(dep.activation || "Quick Action")}`
+        out += `\nDeployment: ${activationFormat(dep.activation || "Quick Action")}`
         out += `${dep.recall ? ", Recall: " + activationFormat(dep.recall) : ''}${dep.redeploy ? ", Redeploy: " + activationFormat(dep.redeploy) : ''}`
-        out += "\n"
 
         if (dep.type.includes('Drone')) { //includes type: "OROCHI Drone"
             //Default stats for drones.
-            out += `Size: ${dep.size || 1 / 2} HP: ${dep.hp || 5} Evasion: ${dep.evasion || 10}`
+            out += `\nSize: ${dep.size || 1 / 2} HP: ${dep.hp || 5} Evasion: ${dep.evasion || 10}`
         } else {
             //Portable bunker still has HP stats
             //Default stats for other deployables, which would just be blank.
-            out += `${dep.size ? 'Size: ' + dep.size : ''} ${dep.hp ? 'HP: ' + dep.hp : ''} ${dep.evasion ? 'Evasion: ' + dep.evasion : ''}`
+            out += `${dep.size ? '\nSize: ' + dep.size : ''} ${dep.hp ? 'HP: ' + dep.hp : ''} ${dep.evasion ? 'Evasion: ' + dep.evasion : ''}`
         }
         out += ` ${dep.edef ? "E-Defense: " + dep.edef : ''} ${dep.armor ? "Armor: " + dep.armor : ''} ${dep.heatcap ? "Heat Cap: " + dep.heatcap : ''}`
-        out += ` ${dep.speed ? "Speed: " + dep.speed : ''} ${dep.save ? "Save Target: " + dep.save : ''}\n`
+        out += ` ${dep.speed ? "Speed: " + dep.speed : ''} ${dep.save ? "Save Target: " + dep.save : ''}`
 
-        out += `${this.turndownService.turndown(dep.detail)}\n`
+
+        let deployableRange
+        if (dep.range && dep.range.length > 0) {
+            deployableRange = '[' + dep.range.map(r => `${getEmoji(r.type.toLowerCase())} ${r.val}`).join(', ') + '] '
+        }
+        let deployableDamage
+        if (dep.damage && dep.damage.length > 0) {
+            deployableDamage = '[' + dep.damage.map(dmg => dmg.override ? dmg.val : `${dmg.val}${getEmoji(dmg.type.toLowerCase())}`).join(' + ') + ']'
+        }
+        if (deployableRange || deployableDamage) {
+            out += "\n"
+            out += deployableRange ? deployableRange : ""
+            out += deployableDamage ? deployableDamage : ""
+        }
+
+        out += `\n${this.turndownService.turndown(dep.detail)}`
 
         if (dep.actions && dep.actions.length > 0) {
-            out += `This deployable grants the following actions:\n`
-            dep.actions.forEach(act => out += `${this.actionFormat(act)}\n`)
+            out += `\n`
+            out += dep.actions.map(act => this.actionFormat(act)).join("\n")
         }
         return out;
     }
@@ -271,6 +304,14 @@ export class Formatters {
                 return `${toTitleCase(it.id.replace("_", " "))}: ${it.val}`
             }).join("\n").replace(/,\s*$/, "")
         }
+        if (pilotArmor.tags) {
+            const populatedTags = pilotArmor.tags
+                .filter((it) => it.id != "tg_personal_armor")
+                .map(tag => this.populateTag(tag))
+            if (populatedTags.length > 0) {
+                out += "\n" + populatedTags.join(', ').trim()
+            }
+        }
         if (pilotArmor.effect) {
             out += "\n" + this.turndownService.turndown(pilotArmor.effect)
         }
@@ -286,13 +327,18 @@ export class Formatters {
     public pilotGearFormat(pilotGear: SearchablePilotGear) {
         let out = `**${pilotGear.name}** (Pilot Gear)${formatContentPack(pilotGear)}`
         if (pilotGear.tags) {
-            out += "\n" + pilotGear.tags.map(tag => this.populateTag(tag)).join(', ').trim()
+            const populatedTags = pilotGear.tags
+                .filter((it) => it.id != "tg_gear")
+                .map(tag => this.populateTag(tag))
+            if (populatedTags.length > 0) {
+                out += "\n" + populatedTags.join(', ').trim()
+            }
         }
         if (pilotGear.effect) {
             out += "\n" + this.turndownService.turndown(pilotGear.effect)
         }
         if (pilotGear.actions && pilotGear.actions.length > 0) {
-            out += "\n" + pilotGear.actions.map(action => `${action.name} (${action.activation})`).join(', ').trim()
+            out += "\n\n" + pilotGear.actions.map(action => this.actionFormat(action)).join(', ').trim()
         }
         if (pilotGear.description) {
             out += "\n\n" + this.turndownService.turndown(pilotGear.description)
@@ -301,15 +347,29 @@ export class Formatters {
     }
 
     public pilotWeaponFormat(pilotWeapon: SearchablePilotWeapon): string {
-        let out = `**${pilotWeapon.name}${formatContentPack(pilotWeapon)}**`
-        out += "\nPilot Weapon"
-        let tagsEtc: string[] = []
-        if (pilotWeapon.tags) tagsEtc = tagsEtc.concat(pilotWeapon.tags.map(tag => this.populateTag(tag)))
-        out += `\n${tagsEtc.join(', ')}\n`
+        let out = `**${pilotWeapon.name} (Pilot Weapon)${formatContentPack(pilotWeapon)}**`
+        if (pilotWeapon.tags) {
+            const populatedTags = pilotWeapon.tags
+                .filter((it) => it.id != "tg_pilot_weapon")
+                .map(tag => this.populateTag(tag))
+            if (populatedTags.length > 0) {
+                out += "\n" + populatedTags.join(', ').trim()
+            }
+        }
 
-        if (pilotWeapon.range && pilotWeapon.range.length) out += '[' + pilotWeapon.range.map(r => r.override ? r.val : `${getEmoji(r.type.toLowerCase())} ${r.val}`).join(', ') + '] '
-        if (pilotWeapon.damage && pilotWeapon.damage.length) out += '[' + pilotWeapon.damage.map(dmg => dmg.override ? dmg.val : `${dmg.val}${getEmoji(dmg.type.toLowerCase())}`).join(' + ') + ']'
-        out += '\n'
+        let weaponRange
+        if (pilotWeapon.range && pilotWeapon.range.length > 0) {
+            weaponRange = '[' + pilotWeapon.range.map(r => r.override ? r.val : `${getEmoji(r.type.toLowerCase())} ${r.val}`).join(', ') + '] '
+        }
+        let weaponDamage
+        if (pilotWeapon.damage && pilotWeapon.damage.length > 0) {
+            weaponDamage = '[' + pilotWeapon.damage.map(dmg => dmg.override ? dmg.val : `${dmg.val}${getEmoji(dmg.type.toLowerCase())}`).join(' + ') + ']'
+        }
+        if (weaponRange || weaponDamage) {
+            out += "\n"
+            out += weaponRange ? weaponRange : ""
+            out += weaponDamage ? weaponDamage : ""
+        }
 
         if (pilotWeapon.effect) {
             out += "\n" + this.turndownService.turndown(pilotWeapon.effect)
@@ -320,7 +380,7 @@ export class Formatters {
         }
 
         if (pilotWeapon.deployables) {
-            out += 'This weapon grants the following deployables:\n'
+            out += "\nThis weapon grants the following deployables:\n"
             pilotWeapon.deployables.forEach(dep => out += this.deployableFormatter(dep))
         }
 
@@ -332,7 +392,7 @@ export class Formatters {
     }
 
     public reservesFormat(reserve: SearchableReserve) {
-        const header = `**${reserve.name}** - Resource (${reserve.type}: ${reserve.label})${formatContentPack(reserve)}`
+        const header = `**${reserve.name}** - Reserve (${reserve.type}: ${reserve.label})${formatContentPack(reserve)}`
         const description = this.turndownService.turndown(reserve.description)
         let action = ""
         if (reserve.actions) {
@@ -371,17 +431,17 @@ export class Formatters {
         if (system.tags) tagsEtc = tagsEtc.concat(system.tags.map(tag => this.populateTag(tag)))
         out += `${tagsEtc.join(', ')}\n`
         if (system.effect) out += `${this.turndownService.turndown(system.effect)}\n`
-        if (system.actions) {
-            out += `Gain the following actions:\n`
-            system.actions.forEach(action => {
-                out += (action.name ? this.actionFormat(action) : this.actionFormat(action, "Use " + system.name)) + "\n"
-            })
+        if (system.actions && system.actions.length > 0) {
+            out += "\n"
+            out += system.actions.map((action) => (action.name ? this.actionFormat(action) : this.actionFormat(action, "Use " + system.name))).join("\n")
         }
-        if (system.deployables) {
-            out += `Gain the following deployables:\n${system.deployables.map(dep => this.deployableFormatter(dep)).join('\n')}\n`
+        if (system.deployables && system.deployables.length > 0) {
+            out += "\n"
+            out += system.deployables.map(dep => this.deployableFormatter(dep)).join('\n')
         }
         if (system.ammo && system.ammo.length > 0) {
-            out += '\n' + system.ammo.map((it) => `* ${it.name} (${it.allowed_types.map((it) => this.formatAllowedType(it)).join(", ")}) - ${it.detail}`).join('\n')
+            out += "\n"
+            out += system.ammo.map((it) => `* ${it.name} (${it.allowed_types.map((it) => this.formatAllowedType(it)).join(", ")}) - ${it.detail}`).join('\n')
         }
         return out
     }

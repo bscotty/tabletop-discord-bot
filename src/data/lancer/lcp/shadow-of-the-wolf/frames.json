@@ -8,7 +8,7 @@
       "Support"
     ],
     "variant": "Lancaster",
-    "description": "<p>Commentators who examine the House of Remembrance’s push to colonize its holding in the Dawnline Shore make much of the parallels between Crossland’s extensive rainforests and a half-mythologised Arrudyen past, as well as the political pressure on the Liberal house from its Republican-leaning elements. Less often examined is the pervasive cultural impact of the industry that has been built – almost from scratch – to support those colonial goals.</p><p>In popular omnivids the Taraxacum has become almost synonymous with the pioneer spirit of the resettlement effort. The image of a heavy mech effortlessly lifting gear, vehicles, industrial equipment, and even prefabricated building components above and into the thick canopies is a symbol of Arrudyen power in distant lands. Moreover, the Taraxacum is a capable military frame prized by Karrakin commanders across the Dawnline Shore both as a mobility multiplier, and for its performance as an AEW and surveillance platform in support of ground operations.</p>",
+    "description": "<p>Those who examine the House of Remembrance’s push to colonize its holding in the Dawnline Shore often highlight the parallels between Crossland’s extensive rainforests and a mythologised Arrudyen past, as well as the political pressure on the Liberal house from its Republican-leaning elements. Less often examined is the pervasive cultural impact of the industry that has been built – almost from scratch – to support the house’s colonial goals.</p><p>In popular omnivids the Taraxacum has become almost synonymous with the pioneer spirit of the resettlement effort. The image of a heavy mech effortlessly lifting gear, vehicles, industrial equipment, and even prefabricated building components above and into the thick canopies is a symbol of Arrudyen power in distant lands. Moreover, the Taraxacum is a capable military frame prized by Karrakin commanders across the Dawnline Shore both as a mobility multiplier, and for its performance as an AEW and surveillance platform in support of ground operations.</p>",
     "mounts": [
       "Main/Aux"
     ],
@@ -196,7 +196,7 @@
     "core_system": {
       "name": "Chorak Skirmish Gear",
       "active_name": "SANDSTORM Heat Dispersal System",
-      "active_effect": "When you stabilize, you may activate this system to create a burst 2 zone of soft cover that lasts until the end of your next turn. While benefiting from this soft cover, you and allied characters may clear 1d6 heat as a protocol. This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.",
+      "active_effect": "When you stabilize, you may activate this system to create a stationary burst 2 zone of soft cover that lasts until the end of your next turn. While benefiting from this soft cover, you and allied characters may clear 1d6 heat as a protocol. This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.",
       "activation": "",
       "description": "Tilimsan is a harsh proving ground for any mech. Baking heat, scouring sand, dry lightning, and treacherous terrain would be enough of a challenge for any designer – but Company Tempeste are just as uncompromising as the landscape. Popular rumor has it that a headstrong Ispahsalari artisan who refused to integrate their aftermarket modifications on aesthetic grounds simply never returned from the desert.",
       "deactivation": "",

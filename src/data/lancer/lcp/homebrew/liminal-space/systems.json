@@ -679,10 +679,12 @@
       {
         "name": "Recall Beacon",
         "type": "Mine",
-        "range": {
-          "type": "Burst",
-          "val": 1
-        },
+        "range": [
+          {
+            "type": "Burst",
+            "val": 1
+          }
+        ],
         "activation": "Quick",
         "detail": "This Mine does not activate on its own or when a character fails to disarm it. Instead, when any friendly character in Range 10 makes a standard move or Boost, they may choose to instead teleport to any space within a Burst 1 of the Recall Beacon. This teleportation destroys the Recall Beacon."
       }

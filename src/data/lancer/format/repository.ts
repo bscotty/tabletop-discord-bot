@@ -12,6 +12,7 @@ import {getSsmrLcp} from "../lcp/ssmr";
 import {getDustgraveLcp} from "../lcp/dustgrave";
 import {getWinterScarLcp} from "../lcp/winter-scar";
 import {getShadowOfTheWolfLcp} from "../lcp/shadow-of-the-wolf";
+import {getShadowOfTheWolfBondsLcp} from "../lcp/shadow-of-the-wolf-bonds";
 import {getCrisisCoreLcp} from "../lcp/homebrew/crisis core";
 import {getDoveUnitDeltaLcp} from "../lcp/homebrew/dove unit delta";
 import {getEHandSLCP} from "../lcp/homebrew/event horizon & suns";
@@ -63,7 +64,8 @@ function firstParty(): Lcp[] {
         getSsmrLcp(),
         getDustgraveLcp(),
         getWinterScarLcp(),
-        getShadowOfTheWolfLcp()
+        getShadowOfTheWolfLcp(),
+        getShadowOfTheWolfBondsLcp()
     ]
 }
 
