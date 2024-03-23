@@ -4,6 +4,7 @@
   "description": "",
   "main": "./build/main.js",
   "scripts": {
+    "ci_setup": "touch config.json && cp config-template.json config.json && touch src/data/godbound/words/index.ts && cp src/data/godbound/words/index.ts src/data/godbound/words/true-index.ts",
     "lint": "eslint . --ext .ts",
     "clean": "rm -rf build",
     "build": "tsc -p .",
