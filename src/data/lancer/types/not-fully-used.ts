@@ -12,6 +12,7 @@ export type Background = {
     id: string
     name: string
     description: string // v-html
+    skills?: string[]
 }
 
 export type Environment = {

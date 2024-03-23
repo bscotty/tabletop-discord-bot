@@ -11,6 +11,8 @@ export type IActionData = {
     // reactions
     frequency?: string
     trigger?: string
+    damage?: IDamageData[]
+    range?: IRangeData[]
 }
 
 export type IBonusData = {
@@ -55,6 +57,8 @@ export type IDeployableData = {
     speed?: number
     pilot?: boolean
     mech?: boolean
+    damage?: IDamageData[]
+    range?: IRangeData[]
     actions?: IActionData[]
     bonuses?: IBonusData[]
     synergies?: ISynergyData[]
