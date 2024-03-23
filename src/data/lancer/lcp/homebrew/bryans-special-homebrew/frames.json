@@ -10,6 +10,7 @@
     ],
     "description": "",
     "mounts": [
+      "Main",
       "Main/Aux"
     ],
     "stats": {
@@ -159,7 +160,7 @@
       "evasion": 6,
       "edef": 6,
       "heatcap": 6,
-      "repcap": 5,
+      "repcap": 4,
       "sensor_range": 5,
       "tech_attack": -2,
       "save": 10,
@@ -245,7 +246,7 @@
         "description": "The Meade may roll tech attacks to Invade itself or allied characters instead of automatically succeeding. If the attack hits, the target reduces their Heat by 2, and the Meade does not need to choose an Invade option."
       },
       {
-        "name": "Overclock",
+        "name": "Thermal Inversion Shields",
         "description": "1/scene, as a Quick Action, the Meade may convert either an allied character’s Burn into Overshield, or its own."
       }
     ],
@@ -259,57 +260,6 @@
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "license_id": "ha_meade",
-    "y_pos": "0"
-  },
-  {
-    "id": "ha_constantine",
-    "source": "HA",
-    "license_level": 2,
-    "name": "Constantine",
-    "mechtype": [
-      "Striker"
-    ],
-    "description": "",
-    "mounts": [
-      "Main/Aux",
-      "Main"
-    ],
-    "stats": {
-      "size": 1,
-      "structure": 4,
-      "stress": 4,
-      "armor": 1,
-      "hp": 8,
-      "evasion": 10,
-      "edef": 6,
-      "heatcap": 6,
-      "repcap": 4,
-      "sensor_range": 10,
-      "tech_attack": 1,
-      "save": 10,
-      "speed": 4,
-      "sp": 7
-    },
-    "traits": [
-      {
-        "name": "Conduction Strike",
-        "description": "1/scene, when the Constantine hits an enemy with a melee attack, it may deal bonus Burn equal to its current Heat. Then, it clears all Heat."
-      },
-      {
-        "name": "Heat Haze Mirage",
-        "description": "While the Constantine is in the Danger Zone, attacks against it have +1 Difficulty."
-      }
-    ],
-    "core_system": {
-      "name": "Convection Infusion",
-      "active_name": "Convection Infusion",
-      "active_effect": "For the rest of the scene, the Constantine may use Conduction Strike 1/round.",
-      "activation": "Protocol",
-      "description": "",
-      "use": "Encounter"
-    },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
-    "license_id": "ha_constantine",
     "y_pos": "0"
   }
 ]
