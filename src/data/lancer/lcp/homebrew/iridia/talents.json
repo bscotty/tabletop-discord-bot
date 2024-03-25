@@ -66,7 +66,7 @@
       },
       {
         "name": "Regenerative Power",
-        "description": "The first time you use each unique Quick Tech or Full Tech option each scene (such as Lock On or Fragment Signal), gain a Power Token. When you gain 3 Power Tokens, clear them, then your Rune Collection regains X charges. X is equal to the number of times you've cleared Power Tokens in this scene. All Power Tokens vanish at the end of a scene.",
+        "description": "The first time you use each unique Quick Tech or Full Tech option each scene, gain a Power Token. Each Invade option counts as a unique Quick Tech for this purpose. <br><br>When you gain 3 Power Tokens, clear them, then your Rune Collection regains X charges. X is equal to the number of times you've cleared Power Tokens in this scene. All Power Tokens vanish at the end of a scene.",
         "integrated": [
           "moff_integrated_runecaster_3"
         ],
