@@ -435,9 +435,9 @@
     "description": "While bulky and useless on their own, being able to carry around the spare parts necessary to create whatever’s needed can come in very handy in a pinch."
   },
   {
-    "id": "moff_structural_entanglement",
-    "name": "Structural Entanglement",
-    "sp": 3,
+    "id": "moff_woven_aegis",
+    "name": "Woven Aegis",
+    "sp": 2,
     "tags": [
       {
         "id": "tg_unique"
@@ -449,11 +449,17 @@
     "license_level": 1,
     "actions": [
       {
-        "activation": "Quick Tech",
-        "detail": "Choose two characters within Sensors, or yourself and a character within Sensors. For each hostile target, you must make a tech attack roll against them; a miss on any target means the entire action fails. <br><br>While this effect lasts, neither character can be targeted or affected by any of the others’ actions or effects (including attacks) in any way. Any effects that are already affecting the other do not end, but effects that require the other to target you (such as Pinning Spire), or penalize you for not (such as Duel to the Death or Crush Targeting) cease to function for the duration. In addition, neither character causes Engagement with the other, and each character can freely move through - but not end a movement in - the others’ spaces. <br><br>This effect lasts until the end of the scene, you use this action again, or you or one of the participants ends it as a quick action. A hostile character attempting to end it must pass a Systems save as part of the action in order to successfully do so."
+        "name": "Interpose Ward",
+        "activation": "Invade",
+        "detail": "Choose yourself or an allied character. Your target deals half damage against you, or the character you chose, until the end of their next turn."
+      },
+      {
+        "name": "Dispel Protection",
+        "activation": "Invade",
+        "detail": "Until the end of their next turn, your target becomes Shredded, cannot benefit from cover or Invisible, and cannot become Hidden. This can only be used 1/scene on each character."
       }
     ],
-    "description": "The weaver stitches two together, enfolding them into a single soul. The universe believes the lie, enforces it upon those thus entwined. To each of them, the other must not exist - for there is no other. There is only one."
+    "description": "The weaver sits alone within her tower, stitching the patterns of destiny. Most see her simply as an observer, content to craft the tapestries of each life. The wise know that she can be bargained with, adding more threads, or causing others to fray before their time."
   },
   {
     "id": "moff_aurora_barrier",
@@ -489,8 +495,8 @@
     "description": "When active, the user is able to project around itself a dazzling array of images in both normal and legionspace. Those who persist in looking directly at the barrier will soon find themselves staggered and blinking away afterimages."
   },
   {
-    "id": "moff_sympathetic_twinning",
-    "name": "Sympathetic Twinning",
+    "id": "moff_solemn_vigil",
+    "name": "Solemn Vigil",
     "type": "Shield",
     "sp": 3,
     "tags": [
@@ -502,6 +508,10 @@
       },
       {
         "id": "tg_overshield"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
       }
     ],
     "source": "IRIDIA",
@@ -511,10 +521,10 @@
     "actions": [
       {
         "activation": "Quick Tech",
-        "detail": "Choose two characters within Sensors, or yourself and a character within Sensors. A target character cannot already be under the effect of any other instance of Sympathetic Twinning. While this effect lasts, when an affected character takes damage from a source hostile to them, the other character gains 4 Overshield. Once a character has gained Overshield from this effect, that character may not do so again until the start of your next turn. <br><br>This effect lasts until the end of the scene, you use this action again, or you or one of the participants ends it as a quick action. A hostile character attempting to end it must pass a Systems save as part of the action in order to successfully do so."
+        "detail": "Expend a charge to choose an allied character within Sensors to gain Overshield equal to 4+Grit. Whenever they lose any amount of this Overshield (including if it is replaced by another source of Overshield), they may choose one: <br><br>- Teleport a number of spaces up to the amount of Overshield lost, even if they are Slowed, Immobilized or Stunned. <br>- Teleport the character that caused the Overshield loss a number of spaces up to the amount of Overshield lost."
       }
     ],
-    "description": "A different stitch, a resonance between souls. The weaver asks for a scale, a balance. Equal and opposite. The universe isn't fair - but, just for a moment, it might be tricked into it. A repayment, giving life from death."
+    "description": "The knight sits alone atop the highest mountain, watching over the land. When the shadows stir, she descends to meet its champion in battle. While she cannot slay the beast, she never fails to drive it back into the darkness."
   },
   {
     "id": "moff_gravitic_clamps",
@@ -533,16 +543,12 @@
     "description": "Sometimes referred to as “Butterfly Clamps”, after the popular Iridian tale that a butterfly alighting on you is a sign that you're being watched over."
   },
   {
-    "id": "moff_retribution_bond",
-    "name": "Retribution Bond",
-    "sp": 3,
+    "id": "moff_panacea",
+    "name": "Panacea",
+    "sp": 2,
     "tags": [
       {
         "id": "tg_unique"
-      },
-      {
-        "id": "tg_limited",
-        "val": 2
       }
     ],
     "source": "IRIDIA",
@@ -552,10 +558,10 @@
     "actions": [
       {
         "activation": "Quick Tech",
-        "detail": "Choose two willing allies within Sensors, or yourself and a willing ally within Sensors. While this effect lasts, whenever an affected character is hit by a hostile attack, the other character gains +1 Accuracy to their next attack roll against the triggering hostile character before the end of their next turn. <br><br>As a reaction, a participant may end this effect in order to re-roll an attack roll (that either person made) that is benefitting from the Accuracy from this effect.<br><br>If the reaction is not used, this effect lasts until the end of the scene, or until you use this action again."
+        "detail": "Choose an allied character within Sensors. They may reload one unloaded weapon, clear all burn, clear Prone, or immediately make a save against one effect that a save can end. This can only be used 1/scene on each character."
       }
     ],
-    "description": "At last, the weaver rests, the tapestry finished. More than the souls are joined now - the hearts and minds are, too. The tale has been told, and now all that is left is for the story to play out. "
+    "description": "The healer walks alone along the world’s paths, hiding in plain sight. She knows that she can never alleviate all the world’s ills herself, so she seeks others of like mind to pass knowledge onto."
   },
   {
     "id": "moff_chaff_launcher",
