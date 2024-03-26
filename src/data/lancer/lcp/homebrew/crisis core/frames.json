@@ -3,11 +3,11 @@
     "id": "GMSC_frames_denali",
     "source": "GMS",
     "license_level": 0,
-    "name": "DENALI",
+    "name": "Denali",
     "mechtype": [
       "Support"
     ],
-    "description": "<div>All characters have access to the Denali from LL0 onwards. This variant FRAME is not mutually exclusive with the EVEREST.</div><div>One of many militia-grade dual purpose civic and military chassis, the Denali chassis sees notable use among combined force doctrine armies and small scale militia-tier armed forces for its logistical and utilitarian merits, coupled with sizable armament.</div>",
+    "description": "All characters have access to the Denali from LL0 onwards. This variant FRAME is not mutually exclusive with the EVEREST.<br>One of many militia-grade dual purpose civic and military chassis, the Denali chassis sees notable use among combined force doctrine armies and small scale militia-tier armed forces for its logistical and utilitarian merits, coupled with sizable armament.",
     "mounts": [
       "Flex",
       "Flex"
@@ -30,57 +30,34 @@
     },
     "traits": [
       {
-        "name": "FIELD SUPPLY",
-        "use": "",
-        "description": "<div>When you <strong>Stabilize </strong>the Denali, adjacent allied characters may clear all burn, clear one condition, or reload all weapons.</div>"
+        "name": "Field Supply",
+        "description": "When you Stabilize the Denali, adjacent allied characters may clear all burn, clear one condition, or reload all weapons."
       },
       {
-        "name": "ALTRUISM",
-        "use": "",
-        "description": "<div><strong>1/scene</strong>, When the Denali performs a <strong>Barrage</strong> or uses a <strong>Full Tech Action</strong>, adjacent allied characters may <strong>Stabilize</strong> as a reaction, even if they would not normally be able to take reactions.</div>"
+        "name": "Altruism",
+        "description": "1/scene, When the Denali performs a Barrage or uses a Full Tech Action, adjacent allied characters may Stabilize as a reaction, even if they would not normally be able to take reactions."
       },
       {
-        "name": "REPLACEABLE PARTS",
-        "use": "",
-        "description": "<div>While resting, the Denali can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs.</div>"
+        "name": "Replaceable Parts",
+        "description": "While resting, the Denali can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs."
       }
     ],
     "core_system": {
-      "name": "AUTO-LOGISTIC COMP/CON",
+      "name": "Auto-Logistic COMP/CON",
       "active_name": "Optimizer",
-      "active_effect": "<p>You and all allied mech characters in <strong>Sensors</strong> and line of sight immediately clear all Heat and <strong>Stabilize</strong>. Allied characters affected by this action gain <strong>Immunity</strong> to all conditions from outside sources until the end of their next turn. You may then use <strong>Force Multiplier</strong> on one allied character in line of sight and <strong>Sensors</strong> or end all ongoing hostile effects on that character.</p>",
+      "active_effect": "You and all allied mech characters in Sensors and line of sight immediately clear all Heat and Stabilize. Allied characters affected by this action clear all conditions from outside sources and gain Immunity to them until the end of their next turn. You may then use Force Multiplier on one allied character in line of sight and Sensors or end all ongoing hostile effects on that character.",
       "activation": "Full Tech",
-      "description": "",
-      "deactivation": "",
       "use": "Mission",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
       "passive_name": "Force Multiplier",
-      "passive_effect": "",
       "passive_actions": [
         {
           "name": "Force Multiplier",
           "activation": "Full Tech",
-          "detail": "<p>Choose an adjacent allied character. They gain 1 of the following benefits until the end of their next turn as long as they remain within <strong>Sensors</strong> and line of sight:<br><br>-They ignore <strong>Invisibility</strong> and <strong>Hidden</strong> and gain +1 Accuracy on their next attack.<br>-Whenever they take damage, they first gain 2 <strong>Overshield.<br></strong>-They gain +1 Accuracy on all checks and saves and hostile tech actions have a 50% chance to fail against them, granting them <strong>Immunity</strong> to all its effects.<br><br>Each effect can only be used 1/scene on each character.</p>",
+          "detail": "Choose an adjacent allied character. They gain 1 of the following benefits until the end of their next turn as long as they remain within Sensors and line of sight:<ul><li>They ignore Invisibility and Hidden and gain +1 Accuracy on their next attack.</li><li>Whenever they take damage, they first gain 2 Overshield.</li><li>They gain +1 Accuracy on all checks and saves and hostile tech actions have a 50% chance to fail against them, granting them Immunity to all its effects.</li></ul>Each effect can only be used 1/scene on each character.",
           "cost": 0,
-          "pilot": false,
-          "damage": [],
-          "range": [],
-          "synergy_locations": [],
-          "tech_attack": false,
-          "frequency": "Unlimited",
-          "init": "",
-          "trigger": ""
+          "frequency": "Unlimited"
         }
-      ],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      ]
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_standard_pattern_i_everest.png",
     "y_pos": 0
