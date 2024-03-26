@@ -1,20 +1,16 @@
 [
   {
     "id": "GMSC_systems_pattern-b_concussion_charges",
-    "name": "PATTERN-B CONCUSSION CHARGES",
+    "name": "Pattern-B Concussion Charges",
     "source": "GMS",
-    "license": "",
+    "license": "GMS",
     "license_level": 0,
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
         "id": "tg_limited",
         "val": 3
-      },
-      {
-        "id": "tg_quick_action"
       },
       {
         "id": "tg_grenade"
@@ -28,11 +24,10 @@
     ],
     "actions": [
       {
-        "name": "CONCUSSION GRENADE",
+        "name": "Concussion Grenade",
         "activation": "Quick",
-        "detail": "<div>Throw a Concussion Grenade within Range 5. All characters within a Blast 2 area must pass a hull save or be pushed 2 spaces away from the center on failure or 1 space on a success.</div>",
+        "detail": "Throw a Concussion Grenade within Range 5. All characters within a Blast 2 area must pass a hull save or be pushed 2 spaces away from the center on failure or 1 space on a success.",
         "cost": 0,
-        "pilot": false,
         "range": [
           {
             "type": "Range",
@@ -43,41 +38,32 @@
             "val": 2
           }
         ],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "frequency": "Unlimited"
       },
       {
-        "name": "CONCUSSION MINE",
+        "name": "Concussion Mine",
         "activation": "Quick",
-        "detail": "<div>Deploy a Concussion mine. All characters within the affected area are knocked back 2 spaces and must pass a hull save or be knocked prone.</div>",
-        "pilot": false,
+        "detail": "Deploy a Concussion mine. All characters within the affected area are knocked back 2 spaces and must pass a hull save or be knocked prone.",
         "range": [
           {
             "type": "Burst",
             "val": 2
           }
         ],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "frequency": "Unlimited"
       }
     ]
   },
   {
     "id": "GMSC_systems_micro-maintenance_suite",
-    "name": "MICRO-MAINTENANCE SUITE",
+    "name": "Micro-Maintenance Suite",
     "source": "GMS",
-    "license": "",
+    "license": "GMS",
     "license_level": 0,
-    "effect": "<div>Two allied mech characters in line of sight and sensors gain 3 overshield.</div>",
+    "effect": "Two allied mech characters in line of sight and sensors gain 3 overshield.",
     "type": "Shield",
     "sp": 2,
-    "description": "<div><em>The GMS Micro-Maintenance Suite activates spare motile ablative and fabrication modules commonly found in combat vehicles to proactive protect key components.</em></div>",
+    "description": "The GMS Micro-Maintenance Suite activates spare motile ablative and fabrication modules commonly found in combat vehicles to proactive protect key components.",
     "tags": [
       {
         "id": "tg_shield"
@@ -92,35 +78,24 @@
   },
   {
     "id": "GMSC_systems_systems_override_",
-    "name": "SYSTEMS OVERRIDE ",
+    "name": "Systems Override",
     "source": "GMS",
-    "license": "",
+    "license": "GMS",
     "license_level": 0,
-    "effect": "<div></div>",
     "type": "Tech",
     "sp": 2,
-    "description": "<div><em>GMS wartime electronic assault packages typically focus on exploiting commonalities among mech systems.</em></div>",
+    "description": "GMS wartime electronic assault packages typically focus on exploiting commonalities among mech systems.",
     "tags": [
       {
-        "id": "tg_full_tech",
-        "val": null
-      },
-      {
-        "id": "tg_unique",
-        "val": null
+        "id": "tg_unique"
       }
     ],
     "actions": [
       {
-        "name": "SYSTEMS OVERRIDE",
+        "name": "Systems Override",
         "activation": "Full Tech",
-        "detail": "<div>Make a tech attack against an hostile character in line of sight and sensors. On a success, the target takes 4 heat and is impaired and immobilized until the end of their next turn.</div>",
-        "pilot": false,
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Make a tech attack against an hostile character in line of sight and sensors. On a success, the target takes 4 heat and is impaired and immobilized until the end of their next turn.",
+        "frequency": "Unlimited"
       }
     ]
   },
@@ -128,35 +103,30 @@
     "id": "GMSC_systems_pattern-b_shock_charges",
     "name": "Pattern-B Shock Charges",
     "source": "GMS",
-    "license": "",
+    "license": "GMS",
     "license_level": 0,
     "type": "System",
     "sp": 2,
-    "description": "",
     "tags": [
       {
-        "id": "tg_grenade",
-        "val": null
+        "id": "tg_grenade"
       },
       {
-        "id": "tg_mine",
-        "val": null
+        "id": "tg_mine"
       },
       {
         "id": "tg_limited",
         "val": 3
       },
       {
-        "id": "tg_unique",
-        "val": null
+        "id": "tg_unique"
       }
     ],
     "actions": [
       {
         "name": "Shock Grenade",
         "activation": "Quick",
-        "detail": "<div>&nbsp;All characters within the affected area must pass an engineering save. On a failure, they take 2 heat and are impaired until the end of their next turn. On a success, they take 1 heat and they are not impaired.</div>",
-        "pilot": false,
+        "detail": "All characters within the affected area must pass an engineering save. On a failure, they take 2 heat and are impaired until the end of their next turn. On a success, they take 1 heat and they are not impaired.",
         "range": [
           {
             "type": "Range",
@@ -167,28 +137,19 @@
             "val": 1
           }
         ],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "frequency": "Unlimited"
       },
       {
         "name": "Shock Mine",
         "activation": "Quick",
-        "detail": "<div>All characters within the affected area must pass an engineering save. On a failure, they take 4 heat and are jammed until the end of their next turn. On a success, they take 2 heat and they are not jammed.</div>",
-        "pilot": false,
+        "detail": "All characters within the affected area must pass an engineering save. On a failure, they take 4 heat and are jammed until the end of their next turn. On a success, they take 2 heat and they are not jammed.",
         "range": [
           {
             "type": "Burst",
             "val": 1
           }
         ],
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "frequency": "Unlimited"
       }
     ]
   },
@@ -196,9 +157,9 @@
     "id": "GMSC_systems_the_seventh_lesson",
     "name": "The Seventh Lesson",
     "source": "EXOTIC",
-    "license": "",
-    "license_level": 0,
-    "effect": "<div>Gain the following quick tech actions. A character can only be affected by an option <strong>1/scene.</strong></div>",
+    "license_id": "",
+    "license_level": 1,
+    "effect": "Gain the following quick tech actions. A character can only be affected by an option <strong>1/scene.</strong>",
     "type": "Tech",
     "sp": 2,
     "description": "Primera always taught us to learn from others; show the Jailers what we have learned.",
@@ -209,39 +170,32 @@
       {
         "id": "tg_heat_self",
         "val": 2
+      },
+      {
+        "id": "tg_exotic"
       }
     ],
     "actions": [
       {
         "name": "Imprison",
         "activation": "Quick Tech",
-        "detail": "<div>Make a tech attack against a hostile character. On a success, the target takes 4 heat and is <strong>Immobilized</strong> until the end of their next turn.</div>",
-        "pilot": false,
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "Make a tech attack against a hostile character. On a success, the target takes 4 heat and is <strong>Immobilized</strong> until the end of their next turn.",
+        "frequency": "Unlimited"
       },
       {
         "name": "Persecute",
         "activation": "Quick Tech",
-        "detail": "<div>A hostile character in Sensors must pass a Systems save. On a failure, attacks against them gain +1 accuracy and ignore all difficulty and Invisible. This effect lasts until an attack misses them, or they pass a Systems save as a full action. Otherwise, it lasts until they are destroyed, or the end of the scene.</div>",
-        "pilot": false,
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "detail": "A hostile character in Sensors must pass a Systems save. On a failure, attacks against them gain +1 accuracy and ignore all difficulty and Invisible. This effect lasts until an attack misses them, or they pass a Systems save as a full action. Otherwise, it lasts until they are destroyed, or the end of the scene.",
+        "frequency": "Unlimited"
       }
     ]
   },
   {
     "id": "GMSC_systems_final_lesson",
-    "name": "FINAL LESSON",
+    "name": "Final Lesson",
     "source": "EXOTIC",
-    "license": "",
-    "license_level": 0,
+    "license_id": "",
+    "license_level": 1,
     "type": "Deployable",
     "sp": 2,
     "description": "Run free, my Children.",
@@ -251,69 +205,47 @@
       },
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
       }
     ],
     "deployables": [
       {
         "name": "Final Lesson",
         "type": "Vehicle",
-        "detail": "<div>While this system is installed, you do not <strong>Eject</strong> normally. Instead, the Final Lesson motorbike is detached and flies 6 spaces directly from the chassis, causing your mech to <strong>Shut Down</strong>. The Final Lesson carries all pilots and copilots with it when it detaches, but not any non-pilot passengers. While riding this vehicle, if you are adjacent to your mech, you may re-attach to your mech as a quick action, causing your mech to <strong>Boot Up</strong>. This is the only way you can <strong>Mount</strong> your mech while riding the Final Lesson.<br><br>While riding, you have hard cover, and you can jump horizontally up to your speed and vertically up 1 space. Gain the following actions:</div>",
+        "detail": "hile this system is installed, you do not <strong>Eject</strong> normally. Instead, the Final Lesson motorbike is detached and flies 6 spaces directly from the chassis, causing your mech to <strong>Shut Down</strong>. The Final Lesson carries all pilots and copilots with it when it detaches, but not any non-pilot passengers. While riding this vehicle, if you are adjacent to your mech, you may re-attach to your mech as a quick action, causing your mech to <strong>Boot Up</strong>. This is the only way you can <strong>Mount</strong> your mech while riding the Final Lesson.<br><br>While riding, you have hard cover, and you can jump horizontally up to your speed and vertically up 1 space. Gain the following actions:",
         "size": 0.5,
         "activation": "Quick",
-        "deactivation": "",
-        "recall": "",
-        "redeploy": null,
         "instances": 1,
         "cost": 1,
         "hp": "5 + {grit}",
         "evasion": "10 + {grit}",
         "edef": "10 + {grit}",
-        "pilot": false,
-        "mech": false,
         "actions": [
           {
             "name": "Powerslide",
             "activation": "Quick",
-            "detail": "<div>Powerslide (Quick Action): Move up to your speed in a straight line, ignoring engagement and passing through hostile characters. Characters Size 1 or smaller must pass an Agility save or take 1 kinetic damage and be knocked Prone. The Final Lesson is knocked Prone at the end of this movement if at least 1 Size 1 character failed this save.</div>",
-            "pilot": false,
-            "synergy_locations": [],
-            "tech_attack": false,
-            "frequency": "Unlimited",
-            "init": "",
-            "trigger": ""
+            "detail": "Move up to your speed in a straight line, ignoring engagement and passing through hostile characters. Characters Size 1 or smaller must pass an Agility save or take 1 kinetic damage and be knocked Prone. The Final Lesson is knocked Prone at the end of this movement if at least 1 Size 1 character failed this save.",
+            "frequency": "Unlimited"
           },
           {
             "name": "Micro Rocket",
             "activation": "Full",
-            "detail": "<div><strong>Limited 2</strong><br>Make a ranged attack against a target in range 10 against E-Defense. On hit, they take 5 explosive damage, or 10 <strong>AP</strong> explosive damage if they are at or below half health. This ability benefits from any bonuses to Limited charges.</div>",
-            "pilot": false,
-            "synergy_locations": [],
-            "tech_attack": false,
-            "frequency": "Unlimited",
-            "init": "",
-            "trigger": ""
+            "detail": "<strong>Limited 2</strong><br>Make a ranged attack against a target in range 10 against E-Defense. On hit, they take 5 explosive damage, or 10 <strong>AP</strong> explosive damage if they are at or below half health. This ability benefits from any bonuses to Limited charges.",
+            "frequency": "Unlimited"
           },
           {
             "name": "Drift",
             "activation": "Free",
-            "detail": "<div><strong>1/turn</strong>, move 3 spaces in any direction, ignoring reactions and engagement.</div>",
-            "pilot": false,
-            "synergy_locations": [],
-            "tech_attack": false,
-            "frequency": "Unlimited",
-            "init": "",
-            "trigger": ""
+            "detail": "<strong>1/turn</strong>, move 3 spaces in any direction, ignoring reactions and engagement.",
+            "frequency": "1/turn"
           },
           {
             "name": "Activate Seventh Lesson",
             "activation": "Quick",
-            "detail": "<div>If you have The Seventh Lesson installed in your mech, you may use that system, treating your Sensors as 5. </div>",
-            "pilot": false,
-            "synergy_locations": [],
-            "tech_attack": false,
-            "frequency": "Unlimited",
-            "init": "",
-            "trigger": ""
+            "detail": "If you have The Seventh Lesson installed in your mech, you may use that system, treating your Sensors as 5.",
+            "frequency": "Unlimited"
           }
         ]
       }
