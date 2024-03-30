@@ -221,7 +221,7 @@
           "activation": "Free",
           "recall": "Quick",
           "redeploy": "Quick",
-          "size": "0.5",
+          "size": 0.5,
           "hp": "10 + {grit}",
           "tags": [
             {
@@ -377,10 +377,10 @@
           "name": "Pioneer Beacon",
           "type": "Deployable",
           "detail": "The beacon projects a Burst 3 field. You and your allies that are at least partially in the field have +1 Accuracy on all checks and saves. If you or an ally start your turn at least partially in the area you may clear one status (Impaired, Jammed, Shredded, Slowed, Immobilized, or Stunned) that is not self inflicted. The beacon lasts until the end of the scene or until it is destroyed.",
-          "size": "0.5",
+          "size": 0.5,
           "hp": "10 + {GRIT}",
-          "evasion": "10",
-          "edef": "10",
+          "evasion": 10,
+          "edef": 10,
           "tags": [
             {
               "id": "tg_resistall"
@@ -944,7 +944,7 @@
           "name": "Architect Project - Groundcover",
           "type": "Deployable",
           "id": "cap_anise_groundcover_1",
-          "size": "1",
+          "size": 1,
           "redeploy": "Quick",
           "recall": "Quick",
           "detail": "(1 Charge) - Create a flat Size 1 area. Allied characters completely within the area have hard cover from all attacks originating outside of it, and hostile characters treat it as difficult terrain."
@@ -953,7 +953,7 @@
           "name": "Architect Project - Groundcover",
           "type": "deployable",
           "id": "cap_anise_groundcover_2",
-          "size": "2",
+          "size": 2,
           "cost": 2,
           "hp": 20,
           "redeploy": "Quick",
@@ -964,7 +964,7 @@
           "name": "Architect Project - Groundcover",
           "type": "Deployable",
           "id": "cap_anise_groundcover_3",
-          "size": "3",
+          "size": 3,
           "cost": 3,
           "hp": 30,
           "redeploy": "Quick",
@@ -975,7 +975,7 @@
           "name": "Architect Project - Groundcover",
           "type": "Deployable",
           "id": "cap_anise_groundcover_4",
-          "size": "4",
+          "size": 4,
           "cost": 4,
           "hp": 40,
           "redeploy": "Quick",
@@ -986,7 +986,7 @@
           "name": "Architect Project - Hedgerow",
           "type": "Deployable",
           "id": "cap_anise_hedgerow",
-          "size": "1",
+          "size": 1,
           "redeploy": "Quick",
           "recall": "Quick",
           "detail": "(1 Charge) - Create a Line 4 4 spaces tall of soft cover with at least one space adjacent to you. Characters that start their turn in the area or enter it for the first time on their turn take 2 AP Kinetic damage."
@@ -995,7 +995,7 @@
           "name": "Architect Project - Creeping Vine",
           "type": "Deployable",
           "id": "cap_anise_creeping_vine",
-          "size": "1",
+          "size": 1,
           "redeploy": "Quick",
           "recall": "Quick",
           "detail": "(1 Charge) - Deploy two Size 1 Vines within Range 5 of each other, with one adjacent to you. Each tracks HP separately. Vines do not obstruct movement or line of sight. You and allied characters sharing space with a Vine can teleport to any other Vine’s space as a free action as long as it is within Range 5 and line of sight."
