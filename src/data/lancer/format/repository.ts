@@ -25,6 +25,8 @@ import {getMfecaneLcp} from "../lcp/homebrew/mfecane";
 import {getSciroccoLcp} from "../lcp/homebrew/scirocco";
 import {getStolenCrownLcp} from "../lcp/homebrew/stolen-crown";
 import {getSuldanLcp} from "../lcp/homebrew/suldan";
+import {getColdcoreColiseumLcp} from "../lcp/homebrew/coldcore-coliseum";
+import {getCastorAndPolluxLcp} from "../lcp/homebrew/castor-and-pollux";
 
 export type LicenseData = (SearchableFrame | SearchableMod | SearchableSystem | SearchableWeapon)
 
@@ -82,7 +84,9 @@ function homebrew(): Lcp[] {
         getMfecaneLcp(),
         getSciroccoLcp(),
         getStolenCrownLcp(),
-        getSuldanLcp()
+        getSuldanLcp(),
+        getColdcoreColiseumLcp(),
+        getCastorAndPolluxLcp()
     ]
 }
 
