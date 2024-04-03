@@ -39,6 +39,9 @@
     "description": "A field-supported monofilament blade of Smith-Shimano design capable of slicing through armor, shields, and other weapons with ease. These swords are banned in formal duels, but remain the weapon of choice for those who value efficient killing above decorum.",
     "tags": [
       {
+        "id": "tg_pilot_weapon"
+      },
+      {
         "id": "tg_ap"
       },
       {
@@ -67,6 +70,9 @@
     "type": "Weapon",
     "description": "These strangely-weighted hardlight knives were stolen from a feared pirate. Without proper training, they are as dangerous to their user as to their target.",
     "tags": [
+      {
+        "id": "tg_pilot_weapon"
+      },
       {
         "id": "tg_sidearm"
       },
@@ -104,6 +110,9 @@
       }
     ],
     "tags": [
+      {
+        "id": "tg_gear"
+      },
       {
         "id": "tg_limited",
         "val": 1

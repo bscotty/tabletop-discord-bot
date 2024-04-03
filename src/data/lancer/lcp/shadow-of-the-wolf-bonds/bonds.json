@@ -163,7 +163,7 @@
       },
       {
         "name": "Hook Up",
-        "description": "You usually know how to get hold of something rare, expensive, or otherwise scarce; if you don't, you know who does. This doesn't make acquiring it any easier."
+        "description": "You usually know how to get hold of something rare, expensive, or otherwise scarce; if you don't, you know who does. You can always ask the GM exactly what needs to be done to acquire a rare item, and have increased effect on all actions to do so."
       },
       {
         "name": "Friends In Strange Places",
@@ -198,10 +198,10 @@
       "I struggled with issues from my burdens or background."
     ],
     "minor_ideals": [
-      "I paid a great cost to get what I wanted.",
-      "I took something truly important or irreplaceable for myself.",
-      "I brought low or humiliated a powerful rival.",
-      "I set an impossible goal and achieved it anyway."
+      "I set an impossible goal and achieved it anyway.",
+      "I brought low or humiliated a rival.",
+      "I took something important or irreplaceable for myself.",
+      "I paid the price for my ambition."
     ],
     "questions": [
       {
@@ -226,7 +226,7 @@
       {
         "name": "I'll Do It Myself",
         "frequency": "2/session",
-        "description": "When an ally fails a skill check, you may attempt that check yourself using the same trigger. Whether you succeed or fail, you take any consequences from the check."
+        "description": "When an ally fails a skill check, you may attempt that check yourself using the same trigger. Your ally still takes any consequences from failing the check."
       },
       {
         "name": "Ruthless",
@@ -263,7 +263,7 @@
       {
         "name": "Where There's A Will",
         "frequency": "1/session",
-        "description": "When you come across an impossible scenario or puzzle that seems to have no solution, describe your determined efforts to tackle it anyway. The GM chooses one:&nbsp;<ul><li>You uncover a solution, but it’s extremely dangerous.&nbsp;</li><li>You uncover a solution, but it requires something you don’t have yet (a specific person or object, a key piece of information, backing or influence).&nbsp;</li><li>You confirm that it is truly impossible, and clear 2 stress.&nbsp;</li></ul>"
+        "description": "When you come across an impossible scenario or puzzle that seems to have no solution, describe your determined efforts to tackle it anyway. The GM chooses one:&nbsp;<ul><li>You uncover a solution, but it’s extremely dangerous.&nbsp;</li><li>You uncover a solution, but it requires something you don’t have yet (a specific person or object, a key piece of information, backing or influence).&nbsp;</li><li>You confirm that it is truly impossible, and clear 2 Stress.&nbsp;</li></ul>"
       },
       {
         "name": "Bite The Bullet",
@@ -327,7 +327,7 @@
       {
         "name": "Stewardship",
         "frequency": "1/session",
-        "description": "When a group of people, organization, or object you are leading or protecting would take losses, damage, or other harm, you may instead take consequences in proportion to the harm they would suffer."
+        "description": "When a group of people, organization, or object you are leading or protecting would take losses, damage, or other harm, you may instead take consequences (Minor, Typical, or Major) in proportion to the harm they would suffer."
       },
       {
         "name": "My Word Is My Bond",
@@ -340,7 +340,7 @@
       },
       {
         "name": "Responsibility",
-        "description": "When you discover that someone important to you (a trusted friend or family member) is in danger, your next skill heck this scene to help them gains +1 ACCURACY and increased effect."
+        "description": "When you discover that someone important to you (a trusted friend or family member) is in danger, your next skill check this scene to help them gains +1 ACCURACY and increased effect."
       },
       {
         "name": "Its Own Reward",
