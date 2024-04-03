@@ -34,10 +34,6 @@
         "description": "The Taraxacum may hover when it moves. As long as it is only carrying objects or allied characters, the Taraxacum may ignore carry restrictions caused by flying.<br><br>At the end of any of your turns in which you use this trait, you take heat equal to 1 + the total Size of objects and characters you are carrying."
       },
       {
-        "name": "Microjet Stabilizers",
-        "description": "The Taraxacum’s drones hover and may be deployed to spaces without a surface."
-      },
-      {
         "name": "Relay Coupling",
         "description": "When you target an allied character within sensors with a system or tech action, they may use your Sensors and line of sight for tech actions until the start of your next turn."
       }
@@ -45,7 +41,7 @@
     "core_system": {
       "name": "Crossland-Pattern Survey Sensors",
       "active_name": "Omnispectrum Sensor Burst",
-      "active_effect": "Scan all hostile characters within and below a burst 3 area. You may apply Lock On to any characters scanned this way. This action is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this action was used.",
+      "active_effect": "Scan all hostile characters within and below a burst 4 area. You may apply Lock On to any characters scanned this way. This action is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this action was used.",
       "activation": "Quick",
       "description": "<p>Initial Taraxacum design drafts called for a highly sensitive, custom printed sensor suite. Unfortunately, a litany of design flaws forced engineers on Crossland to fit the first prototypes with existing sensor modules meant for high-altitude survey drones.</p><p>Test pilots immediately took a shine to the replacement sensors despite their significant power draw, referring to them as “God’s eyes”. Their ability to resolve terrain through even the thickest vegetation massively simplified wilderness navigation and landing, while tuning them to pick up specific emission bands conferred an obvious combat advantage in high-density environments.</p>",
       "active_actions": [],
@@ -71,7 +67,7 @@
       "Controller"
     ],
     "variant": "Balor",
-    "description": "<p>Officially, the Hecatoncheires does not exist. It was certainly not developed by Baronic Intelligence using domesticated liturgicode seeds recovered from Blanca Desert after the Maw’s defeat on Khayradin. Instead, it is formally classified as a local variant HORUS pattern group most frequently encountered in the hands of Company Centimane, whose status as a Free Company (and the occasional appearance of the pattern group elsewhere) lends a thin veneer of plausibility to the official story.</p><p>On Free Sanjak, the Hecatoncheires is a weapon of terror, a nightmare given form from haze and smoke. Revolutionary fire-teams have been known to trek through tropical jungles and the monsoon rains for days, losing members one by one as they are stalked by something just out of sight. Beneath the waters of Ludra’s beach paradises, it is said a monster lurks – tearing apart coastal communities and ships alike. In the deep tunnels, apocryphal tales persist of a thick gray cloud that sweeps through and leaves nothing but dust in its wake.</p><p>A deep cover DoJ/HR operation has been trying to unearth solid evidence directly tying the Hecatoncheires to Baronic authority for several years – a link that might be leveraged to finally ease pressure on the embargo and the conflict as a whole – but so far, to no avail. In the meantime the attacks on the people of Free Sanjak only grow bolder, and republican agitation on other worlds swells with rumors of the depths to which those in power are willing to sink.</p>",
+    "description": "<p>Officially, the Hecatoncheires does not exist. Baronic Intelligence denies the domestication of liturgicode seeds recovered from Blanca Desert after the Maw’s defeat on Khayradin, and instead the Hecatoncheires is formally classified as a local variant HORUS pattern group. The chassis is most frequently encountered in the hands of Company Centimane, whose status as a Free Company (and the occasional appearance of the pattern group elsewhere) lends a thin veneer of plausibility to the official story.</p><p>On Free Sanjak, the Hecatoncheires is a weapon of terror, a nightmare given form from haze and smoke. Revolutionary fire-teams have been known to trek through tropical jungles and the monsoon rains for days, losing members one by one as they are stalked by something just out of sight. Beneath the waters of Ludra’s beach paradises, it is said a monster lurks – tearing apart coastal communities and ships alike. In the deep tunnels, apocryphal tales persist of a thick gray cloud that sweeps through and leaves nothing but dust in its wake.</p><p>Meanwhile, a deep cover DoJ/HR operation working with support from the House of Dust has been trying to unearth solid evidence directly tying the Hecatoncheires to Baronic authority – a link that might be leveraged to rally the republican cause and finally ease pressure on Sanjak.</p>",
     "mounts": [
       "Main",
       "Heavy"
