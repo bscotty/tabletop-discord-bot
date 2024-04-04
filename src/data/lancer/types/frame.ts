@@ -52,7 +52,6 @@ export type FrameStats = {
 export type IPrerequisite = {
     source: string
     min_rank: number
-    cumulative?: boolean
 }
 
 export function getCorePowersFromFrames(frames: Frame[]): (ICoreSystemData & SourcedCoreSystem)[] {

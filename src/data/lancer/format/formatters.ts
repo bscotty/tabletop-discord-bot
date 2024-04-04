@@ -177,7 +177,8 @@ export class Formatters {
         return `**${bond.name}**${formatContentPack(bond)}\n\n` +
             `**Major Ideals:**\n${bond.major_ideals.join("\n")}\n\n` +
             `**Minor Ideals:**\n${bond.minor_ideals.join("\n")}\n\n` +
-            `**Questions:**\n${questions}`
+            `**Questions:**\n${questions}\n\n` +
+            `**Powers:**\n${bond.powers.map((it) => it.name).join(", ")}`
     }
 
     public bondPowerFormat(bondPower: SearchableBondPower): string {
