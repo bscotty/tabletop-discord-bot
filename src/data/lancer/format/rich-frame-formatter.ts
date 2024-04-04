@@ -55,7 +55,6 @@ export class RichFrameFormatter implements RichFormatter<SearchableFrame> {
     }
 
     private specialtyFormat(specialtyLicense: SearchableFrame): DisplayResponse {
-        console.log(`found specialty item: ${specialtyLicense.id}`)
         const {imageUrl, file} = getManufacturerLogo(specialtyLicense.source, this.repo)
         const color = getColor(specialtyLicense.source, this.repo)
         const prerequisite: ResponseField[] = []
