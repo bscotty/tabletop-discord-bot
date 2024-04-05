@@ -31,32 +31,32 @@
     },
     "traits": [
       {
-        "name": "I Challenge My Fate",
+        "name": "Glancing Blows",
         "description": "When the Lucina Braces, it may also make an Agility check. If successful, it may still use free actions and reactions as normal, and may use its standard move on its next turn."
       },
       {
-        "name": "Batesian Mimicry",
+        "name": "Batesian “Mimicry” Holograms",
         "description": "The Lucina counts as Size 3 for the purposes of Engagement."
       },
       {
-        "name": "Hamearic Cunning",
+        "name": "Float Like a Butterfly",
         "description": "The Lucina may use Agility instead of Hull when rolling contested checks to break a grapple, and may do so regardless of the grappler’s sizes."
       }
     ],
     "core_system": {
       "name": "Inheritance",
-      "passive_name": "I Choose To Fight",
+      "passive_name": "Hamearic Territoriality",
       "passive_actions": [
         {
-          "name": "I Choose To Fight",
+          "name": "Hamearic Territoriality",
           "activation": "Reaction",
           "frequency": "1/turn",
-          "trigger": "A hostile character with a lower Speed than the Lucina enters, exits or moves more than 1 space within the Parallel Falchion's Threat.",
-          "detail": "The Lucina may skirmish that character with the Parallel Falchion. This special reaction can be used once a turn, any number of times a round, and doesn’t count against the maximum number of reactions a turn, so the Lucina can take other reactions normally."
+          "trigger": "A hostile character with a lower Speed than the Lucina enters, exits or moves more than 1 space within the Effete Blades’ Threat.",
+          "detail": "The Lucina may Skirmish that character with Effete Blades. This special reaction can be used once a turn, any number of times a round, and doesn’t count against the maximum number of reactions a turn, so the Lucina can take other reactions normally."
         }
       ],
-      "active_name": "One Sword and a World of Troubles",
-      "active_effect": "For the rest of the scene, change the Parallel Falchion to the Aether profile. For the rest of the scene, when the Lucina Barrages, it may use the Parallel Falchion for both attacks.",
+      "active_name": "Combine Effete Blades",
+      "active_effect": "For the rest of the scene, change the Effete Blades to the Twinned profile, and when the Lucina Barrages, it may use the Effete Blades for both attacks.",
       "activation": "Protocol",
       "description": "",
       "use": "Encounter",
@@ -232,7 +232,7 @@
       "hp": 6,
       "evasion": 8,
       "edef": 8,
-      "heatcap": 6,
+      "heatcap": 7,
       "repcap": 4,
       "sensor_range": 15,
       "tech_attack": 1,

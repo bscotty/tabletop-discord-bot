@@ -1,13 +1,13 @@
 [
   {
-    "id": "mw_thogn_anti_air_rifle",
-    "name": "Thögn Anti-Air Rifle",
+    "id": "mw_headshaker_ballista",
+    "name": "Headshaker Ballista",
     "source": "SSC",
     "license": "Lucina",
     "license_level": 1,
     "description": "",
     "effect": "",
-    "on_hit": "The target is Slowed until the end of their next turn. In addition, if the target is flying, they immediately land (this counts as falling without any damage), and can’t fly until the end of their next turn.",
+    "on_hit": "The target makes an Engineering save. On a failed save, they are knocked Prone, or, if the target is flying, on a failed save they immediately fall to the ground, and are then knocked Prone.",
     "mount": "Main",
     "type": "Rifle",
     "damage": [
@@ -26,18 +26,22 @@
     "tags": [
       {
         "id": "tg_smart"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
       }
     ],
     "license_id": "ssc_lucina"
   },
   {
-    "id": "mw_temporal_masquerade_shield",
-    "name": "Temporal Masquerade Shield",
+    "id": "mw_guardians_shield",
+    "name": "Guardian’s Shield",
     "source": "SSC",
     "license": "Lucina",
     "license_level": 2,
     "description": "",
-    "effect": "Gain the <b>Future Sight</b> reaction. If the Temporal Masquerade Shield is thrown, the <b>Future Sight</b> reaction cannot be used until it is retrieved.",
+    "effect": "Gain the <b>Blocking Dive</b> reaction. If this weapon is thrown, <b>Blocking Dive</b> cannot be used until it is retrieved.",
     "on_hit": "",
     "mount": "Auxiliary",
     "type": "Melee",
@@ -65,23 +69,23 @@
     ],
     "actions": [
       {
-        "name": "Future Sight",
+        "name": "Blocking Dive",
         "activation": "Reaction",
         "frequency": "1/round",
-        "trigger": "An enemy attacks an allied character within a Range equal to your Speed.",
-        "detail": "You may move a number of spaces up to your Speed towards your target, by the most direct route possible. If you would reach the allied character’s space, you take their place, becoming the target of the attack and suffering all of its damage and effects, and the allied character is pushed one space in any direction."
+        "trigger": "A hostile character attacks an allied character within a Range equal to your Speed.",
+        "detail": "You may move a number of spaces up to your Speed towards the allied character, by the most direct route possible. If you would reach the allied character’s space, you take their place, becoming the target of the attack and suffering all of its damage and effects, and the allied character is pushed one space in any direction."
       }
     ],
     "license_id": "ssc_lucina"
   },
   {
-    "id": "mw_geirskogul",
-    "name": "Geirskogul",
+    "id": "mw_infusable_neurospear",
+    "name": "Infusable Neurospear",
     "source": "SSC",
     "license": "Lucina",
     "license_level": 2,
     "description": "",
-    "effect": "You may attack with this weapon without expending or requiring charges. Instead, you may expend a charge to use the <b>Hope Will Never Die</b> full action.",
+    "effect": "You may attack with this weapon without expending or requiring charges. Instead, you may expend a charge to use the <b>Autoimmune Pulse</b> Full Action.",
     "on_crit": "Replenish one charge.",
     "mount": "Main",
     "type": "Melee",
@@ -103,13 +107,16 @@
         "id": "tg_unique"
       },
       {
+        "id": "tg_smart"
+      },
+      {
         "id": "tg_limited",
         "val": 2
       }
     ],
     "actions": [
       {
-        "name": "Hope Will Never Die",
+        "name": "Autoimmune Pulse",
         "activation": "Full",
         "detail": "Bolster all allied characters within a Burst equal to your Speed."
       }
@@ -118,16 +125,16 @@
   },
   {
     "id": "mw_lucina_integrated",
-    "name": "Parallel Falchion",
+    "name": "Effete Blades",
     "mount": "Main",
     "type": "Melee",
     "skirmish": true,
     "barrage": true,
-    "effect": "You begin any fight in either the Sol or Luna profile, and may change to either the Sol or Luna profile as a protocol. Once you have selected a profile, you remain in it until you take a new profile.",
+    "effect": "You begin any fight in either the Sap or String profile, and may change to either the Sap or Sting profile as a protocol. Once you have selected a profile, you remain in it until you take a new profile.",
     "actions": [],
     "profiles": [
       {
-        "name": "Sol",
+        "name": "Sap",
         "range": [
           {
             "type": "Threat",
@@ -151,7 +158,7 @@
         "effect": "On hit, gain Overshield equal to the amount of damage dealt to the target."
       },
       {
-        "name": "Luna",
+        "name": "Sting",
         "range": [
           {
             "type": "Threat",
@@ -174,7 +181,7 @@
         ]
       },
       {
-        "name": "Aether",
+        "name": "Twinned",
         "range": [
           {
             "type": "Threat",
