@@ -1,7 +1,7 @@
 [
   {
-    "id": "ms_gerberas_relief",
-    "name": "Gerbera’s Relief",
+    "id": "ms_spadonari_dance",
+    "name": "Spadonari Dance",
     "source": "SSC",
     "license": "Lucina",
     "license_level": 1,
@@ -15,22 +15,22 @@
       },
       {
         "id": "tg_limited",
-        "val": 2
+        "val": 3
       }
     ],
     "actions": [
       {
-        "name": "Gerbera's Relief",
+        "name": "Activate Spadonari Dance",
         "activation": "Quick",
-        "detail": "Expend a charge to clear an adjacent allied character’s condition that wasn’t caused by one of their own systems, talents, etc.",
+        "detail": "Expend a charge to swap places with an adjacent ally. This movement – for both you and the target – ignores Engagement and does not trigger reactions. If your target is Grappled, you take their place in the Grapple.<br><br>Then, roll an Agility check. On a success, your target may immediately move up to 2 spaces in a direction of their choice. On a roll of 20+, you may replenish one charge of this System.",
         "frequency": "Unlimited"
       }
     ],
     "license_id": "ssc_lucina"
   },
   {
-    "id": "ms_mark_of_naga",
-    "name": "Mark of Naga",
+    "id": "ms_centrifugal_servomotor",
+    "name": "Centrifugal Servomotor",
     "source": "SSC",
     "license": "Lucina",
     "license_level": 3,
@@ -41,25 +41,28 @@
     "tags": [
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
       }
     ],
     "actions": [
       {
-        "name": "Reveal The Mark of Naga",
+        "name": "Spin-Up Servos",
         "activation": "Quick",
-        "detail": "Reveal the mark and compel your enemies' animosity. Until the start of your next turn, when any enemy within a Range equal to your Speed makes an attack against a character other than you, they receive +1 Difficulty to that attack.",
-        "frequency": "1/scene"
+        "detail": "Until the end of your next turn, gain the following benefits:<ul><li>You cannot be prevented from taking reactions</li><li>Whenever you would voluntarily move as part of a reaction, you may move 1 additional space</li><li>You may make all movement as though Hovering until the start of your next turn, at which point you land (this counts as falling without any damage)</li></ul>"
       }
     ],
     "license_id": "ssc_lucina"
   },
   {
-    "id": "ms_naga_class_nhp",
-    "name": "Naga-Class NHP",
+    "id": "ms_vasuki_class_nhp",
+    "name": "Vasuki-Class NHP",
     "source": "SSC",
     "license": "Lucina",
     "license_level": 3,
-    "effect": "Your mech gains the AI tag and I Say When It Ends.",
+    "effect": "Your mech gains the AI tag and Poison the Churning Ocean.",
     "type": "System",
     "sp": 3,
     "description": "",
@@ -72,7 +75,7 @@
       },
       {
         "id": "tg_heat_self",
-        "val": 3
+        "val": 4
       },
       {
         "id": "tg_limited",
@@ -81,10 +84,9 @@
     ],
     "actions": [
       {
-        "name": "I Say When It Ends",
-        "activation": "Reaction",
-        "trigger": "Another character’s turn ends.",
-        "detail": "You may expend a charge to immediately Boost and Skirmish.",
+        "name": "Poison the Churning Ocean",
+        "activation": "Full",
+        "detail": "1/scene, compel your enemies’ animosity. Until the start of your next turn, you are Immobilized. All hostile characters within Line of Sight and Range equal to your Speed must make a Systems save. On a failed save, they must spend all their actions attacking you with melee attacks until the end of their next turn, prioritizing melee weapons. If you are not within Threat, they instead use all actions to move toward you as directly as possible.",
         "frequency": "1/scene"
       }
     ],
