@@ -7,7 +7,7 @@ import tags from "./tags.json"
 import systems from "./systems.json"
 import weapons from "./weapons.json"
 
-export function getIronleafFoundryLcp(): Lcp {
+export function getStarAndMelodyLcp(): Lcp {
     return new Lcp(
         [],
         [],

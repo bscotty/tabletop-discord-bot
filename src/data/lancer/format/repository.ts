@@ -17,7 +17,7 @@ import {getCrisisCoreLcp} from "../lcp/homebrew/crisis core";
 import {getDoveUnitDeltaLcp} from "../lcp/homebrew/dove unit delta";
 import {getEHandSLCP} from "../lcp/homebrew/event horizon & suns";
 import {getIridiaLcp} from "../lcp/homebrew/iridia";
-import {getIronleafFoundryLcp} from "../lcp/homebrew/ironleaf-foundry";
+import {getStarAndMelodyLcp} from "../lcp/homebrew/star-and-melody";
 import {getKrfwCatalogLcp} from "../lcp/homebrew/krfw catalog";
 import {getLegionnaireLcp} from "../lcp/homebrew/legionnaire";
 import {getLiminalSpaceLcp} from "../lcp/homebrew/liminal-space";
@@ -77,7 +77,7 @@ function homebrew(): Lcp[] {
         getDoveUnitDeltaLcp(),
         getEHandSLCP(),
         getIridiaLcp(),
-        getIronleafFoundryLcp(),
+        getStarAndMelodyLcp(),
         getKrfwCatalogLcp(),
         getLegionnaireLcp(),
         getLiminalSpaceLcp(),

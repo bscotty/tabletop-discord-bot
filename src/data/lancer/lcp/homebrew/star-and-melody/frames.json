@@ -51,7 +51,7 @@
       "passive_name": "Metaforge",
       "passive_effect": "The Lily reduces the SP cost of any Grenade or Mine installed on this mech by 1 SP, to a minimum of 1 SP.<br><em>(This feature is not currently supported by COMP/CON. You'll have to manually add additional systems past your usual SP limit.)</em>"
     },
-    "image_url": "https://cdn.discordapp.com/attachments/426289086450368512/935440161536344064/Ikiryo_Lily_Commission-min.png",
+    "image_url": "https://www.dropbox.com/scl/fi/u6uiqvsybwxspasi84p1t/Lily.png?rlkey=ytym74hn9oymedpgelydh84j0&st=xwa5mizs&raw=1",
     "y_pos": "14"
   },
   {
@@ -117,7 +117,7 @@
         "mw_thorn"
       ]
     },
-    "image_url": "https://cdn.discordapp.com/attachments/561000253608820737/800856270378369084/Ikiryo-Rose.png",
+    "image_url": "https://www.dropbox.com/scl/fi/v7gn1b279egma7g363w2i/Rose.png?rlkey=59u9c4377ibuzhmz3hexiybi8&st=aq956t5a&raw=1",
     "y_pos": "43"
   },
   {
@@ -172,7 +172,7 @@
         "mw_monomolecular_scythe"
       ]
     },
-    "image_url": "https://cdn.discordapp.com/attachments/373964600409980928/980908287245553704/belladonna.png",
+    "image_url": "https://www.dropbox.com/scl/fi/j1n8jt54llgrhxyt5xahv/Belladonna.png?rlkey=ova9qdd2sgy12yflpkfu037ub&st=hkvr8t3f&raw=1",
     "y_pos": "50"
   },
   {
@@ -227,7 +227,7 @@
         "mw_mistilteinn_core_channel"
       ]
     },
-    "image_url": "https://cdn.discordapp.com/attachments/426289086450368512/947666905483845663/Ikiryo_Mistletoe_Commission_2.png",
+    "image_url": "https://www.dropbox.com/scl/fi/yw8tld42uexwfvxmfchqm/Mistletoe.png?rlkey=b6i2d3u6zm5i7zla82amkhgt9&st=w2umhn8d&raw=1",
     "y_pos": "23"
   },
   {
@@ -293,7 +293,7 @@
       "passive_name": "Overcalibur Strike",
       "passive_effect": "1/round when the Clover consumes Lock On with a melee attack, it deals +1d6 Bonus Damage. When the Clover consumes Lock On with a melee attack it chooses one of the following benefits for that attack:<br><br><b>Blitz Jab:</b> The attack ignores invisible and does not provoke reactions. <br><b>Phantom Footwork:</b> Before or after the attack you can teleport up to 3 spaces. <br><b>Driving Cross:</b> The attack gains Knockback 3. <br><b>Rail Upper:</b> Damage from the attack cannot be reduced by any means."
     },
-    "image_url": "https://cdn.discordapp.com/attachments/373964600409980928/980980527974731776/clover.png",
+    "image_url": "https://www.dropbox.com/scl/fi/udvhoq79g85rr07v48r2q/Clover.jpg?rlkey=sxdcul0o5mmz5wbcszc1omy8v&st=ycsnor4r&raw=1",
     "y_pos": "26"
   },
   {
@@ -333,7 +333,7 @@
       },
       {
         "name": "Scaled Wisdom",
-        "description": "The Silversword cannot have its line of sight reduced by environmental effects or hostile characters and is always aware of the HP, Evasion, E-Defense, and current Heat of characters within its sensors."
+        "description": "The Silversword cannot have its line of sight reduced by environmental effects or hostile characters and is always aware of the hp, evasion, e-defense, and current heat of characters on the battlefield."
       }
     ],
     "core_system": {
@@ -346,7 +346,7 @@
       "passive_name": "King Under the Mountain",
       "passive_effect": "When its turn starts, the Silversword can end one condition or effect of a tech action not caused by its own traits, systems etc."
     },
-    "image_url": "https://cdn.discordapp.com/attachments/373964600409980928/1047162351444557844/silversword_transparent.png",
+    "image_url": "https://www.dropbox.com/scl/fi/zxodlj9srz77d5cs7a9ce/Silversword.png?rlkey=wa740n9j0gv8an411sirzb34o&st=gxrjzpqr&raw=1",
     "y_pos": "12"
   },
   {
@@ -402,7 +402,7 @@
         "mw_disposable_gyrostorm_pods"
       ]
     },
-    "image_url": "https://cdn.discordapp.com/attachments/767728158610161705/1120152153407897720/ikiryo_ironleaf_comm.jpg",
+    "image_url": "https://www.dropbox.com/scl/fi/fxkv1offv79pnsrqkazmv/Poppy.jpg?rlkey=l0juovxmqwjtx5sqk5m89oqc3&st=ieq7mtgc&raw=1",
     "y_pos": "27"
   },
   {
@@ -454,7 +454,7 @@
       "passive_name": "Puppet on my Strings",
       "passive_effect": "The Rowan always counts as the larger character when ramming and can Ram targets within Range 5, targeting E-Defence when Ramming this way. When the Rowan rams a flying character, they immediately land (this counts as falling without any damage), and additionally become slowed and can’t fly until the end of their next turn."
     },
-    "image_url": "https://cdn.discordapp.com/attachments/373964600409980928/1047163165823209513/Rowan.png",
+    "image_url": "https://www.dropbox.com/scl/fi/up406in8vb6bs3rmx3oqv/Rowan.png?rlkey=1y0wfbouvl85dlqhrwnu49e12&st=7jq87fdp&raw=1",
     "y_pos": "13"
   },
   {
@@ -512,8 +512,8 @@
         "mw_nanotoxin_injector"
       ]
     },
-    "image_url": "https://cdn.discordapp.com/attachments/729896234877452371/1062875593097621514/Ikiryo_Kudzu_Comm.png",
-    "y_pos": "16"
+    "image_url": "https://www.dropbox.com/scl/fi/qnilx96curskifvnt09kl/Kudzu.png?rlkey=odyxdmep0i42s51r7yv1q8iss&st=109zcw08&raw=1",
+    "y_pos": 22
   },
   {
     "id": "mf_scilla",
@@ -574,7 +574,7 @@
         }
       ]
     },
-    "image_url": "https://cdn.discordapp.com/attachments/729896234877452371/1064998225553129502/ikiryo_saucer_comm.png",
+    "image_url": "https://www.dropbox.com/scl/fi/e4fhp9vup6ftilk2ee9gb/Scilla.png?rlkey=gvyv9zef51m50w7p24olih2js&st=4opabbuw&raw=1",
     "y_pos": "30"
   },
   {
@@ -629,7 +629,7 @@
       "passive_effect": "Before the first round of any combat and before any deployment takes place, create two size 2 Devastation areas in Range 50, dealing 30 AP energy damage to all objects within the Devastation. Hostile characters within a Devastation cannot benefit from Resistance. When the Laurel Stabilizes, it can create a new Devastation in Sensors.",
       "description": "Replacing full crews of expert pilots in previous Laurels, the Tahlum is a joint project between Conchobar’s finest Comp/Con engineers and the Janus Combine, helping the Laurel direct fire as easily as the pilot’s body."
     },
-    "image_url": "https://cdn.discordapp.com/attachments/1057060831940059226/1120159408878538772/laureltransparent.png",
+    "image_url": "https://www.dropbox.com/scl/fi/2kxdmzkqqkjjczd82bvvg/Laurel.png?rlkey=dp0tgrspst8t7z832hdxh4bzh&st=tsc907tj&raw=1",
     "y_pos": "25"
   }
 ]
