@@ -208,7 +208,7 @@
       {
         "name": "Chooser of the Slain",
         "activation": "Reaction",
-        "detail": "The triggering character is instead removed from play, transmuted into a beam of golden light. This does not count as destroying the character. This golden light is the same size as the triggering character but does not obstruct movement or block line of sight. An allied character entering the space of the golden light can consume it as a reaction, allowing them to spend a Repair to restore half of their HP and cool half of their current Heat.",
+        "detail": "The triggering character is instead removed from play, transmuted into a beam of golden light within Range 5 of the triggering character. This does not count as destroying the character. This golden light is the same size as the triggering character but does not obstruct movement or block line of sight. An allied character entering the space of the golden light can consume it as a reaction, allowing them to spend a Repair to restore half of their HP and cool half of their current Heat.",
         "frequency": "1/round",
         "trigger": "A character in Range 10 and Line of Sight would be destroyed."
       }
@@ -712,7 +712,7 @@
     "source": "IF",
     "license": "Scilla",
     "license_level": 1,
-    "effect": "When a hostile character in Line of Sight makes an attack that does not include you, that attack suffers +3 difficulty if it is the first round of the scene or if they entered from reinforcements this round.",
+    "effect": "When a hostile character in Line of Sight makes a ranged or tech attack that does not include a mech with this system, that attack suffers +2 difficulty if it is the first round of the scene or if they entered from reinforcements this round.",
     "type": "System",
     "sp": 1,
     "description": "Each warrior of them burnt his ship<br>when he reached Ireland in a fog;<br>it was a powerful fight being set,<br>the smoke of the ships as they burned.<br><br>The reason why they burnt the ships<br>was that they should never retreat;<br>and that the host of tuneful Balar should not come<br>in them to settle in Ireland.<br>-Lebor Gabala Erenn",

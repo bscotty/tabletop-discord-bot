@@ -139,7 +139,7 @@
     "damage": [
       {
         "type": "Kinetic",
-        "val": "4"
+        "val": 4
       }
     ],
     "range": [
@@ -448,7 +448,7 @@
           },
           {
             "type": "Blast",
-            "val": "2"
+            "val": 2
           }
         ],
         "tags": [
@@ -656,7 +656,7 @@
         "damage": [
           {
             "type": "Energy",
-            "val": "4"
+            "val": 4
           }
         ],
         "range": [
@@ -807,7 +807,7 @@
     "damage": [
       {
         "type": "Burn",
-        "val": "1"
+        "val": 1
       }
     ],
     "range": [
@@ -848,11 +848,11 @@
     "damage": [
       {
         "type": "Kinetic",
-        "val": "1"
+        "val": 1
       },
       {
         "type": "Burn",
-        "val": "2"
+        "val": 2
       }
     ],
     "range": [
@@ -1016,7 +1016,7 @@
       },
       {
         "type": "Line",
-        "val": 3
+        "val": 4
       },
       {
         "type": "Threat",
@@ -1203,7 +1203,7 @@
     "range": [
       {
         "type": "Threat",
-        "val": 1
+        "val": 2
       }
     ],
     "sp": 2,
@@ -1233,7 +1233,7 @@
       {
         "name": "Ender of Armies",
         "activation": "Full",
-        "detail": "You bring your blade down on a hostile character in Range 3, dealing 4 Kinetic Damage times your Devotion die and granting yourself or one allied character in line of sight Overshield equal to 3 times your Devotion die. The hostile character can pass a systems save to halve the damage. Then reset your Devotion die to 1."
+        "detail": "The Spear of Flame lashes out across a number of sequential Line 3 areas that cannot overlap, starting in Range 8, equal to your Devotion die. One target in the affected area suffers 3 Burn, plus 3 Kinetic Damage for each other character in the affected areas. This damage cannot be reduced in any way. Other hostile characters in the affected area must pass an agility save or suffer 3 Burn. Then reset your Devotion die to 1."
       }
     ]
   }
