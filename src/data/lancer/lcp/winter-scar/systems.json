@@ -77,7 +77,7 @@
       {
         "name": "Utility Drone",
         "type": "Drone",
-        "detail": "Expend 1-2 charges to deploy that many utility drones to free spaces within Sensors where they create a Burst 2 area. Hostile characters within this area make all checks and saves with +1 Difficulty, and all allied characters within this area gain +1 Accuracy to all checks and saves. This effect does not stack with other utility drones.<br><br>The utility drone can be redeployed to a new location as a quick action. It cannot be recalled and expires at the end of the scene.",
+        "detail": "Expend 1-2 charges to deploy that many utility drones to free spaces within Sensors where they each create a Burst 2 area. Hostile characters within this area make all checks and saves with +1 Difficulty, and all allied characters within this area gain +1 Accuracy on all checks and saves. This effect does not stack with other utility drones.<br><br>The utility drone can be redeployed to a new location as a quick action. It cannot be recalled and expires at the end of the scene.",
         "size": 0.5,
         "activation": "Quick",
         "redeploy": "Quick",
