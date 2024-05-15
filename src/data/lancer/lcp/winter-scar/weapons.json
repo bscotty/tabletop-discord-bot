@@ -184,7 +184,7 @@
     "range": [
       {
         "type": "Range",
-        "val": "10"
+        "val": 10
       }
     ],
     "tags": [
