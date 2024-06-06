@@ -31,7 +31,7 @@
           }
         ],
         "effect": "This weapon may only be used during the Go Loud core power. This weapon can't be used to attack in the same turn as another Heavy or Superheavy weapon.",
-        "on_attack": "You may deal 1d6 AP energy damage to a character of your choice within Range 3 of the target."
+        "on_attack": "You may deal 1d6 AP energy damage to a different character of your choice within Range 3 of the target."
       },
       {
         "name": "Damaged",
@@ -59,7 +59,7 @@
           }
         ],
         "effect": "This weapon may only be used during the Go Loud core power. The first time in a scene an allied Mech character within Sensors takes structure damage before Going Loud, this profile replaces the default Shock Claws profile. This weapon can't be used to attack in the same turn as another Heavy or Superheavy weapon.",
-        "on_attack": "You may deal 1d6 AP energy damage to a character of your choice within Range 3 of the target."
+        "on_attack": "You may deal 1d6 AP energy damage to a different character of your choice within Range 3 of the target."
       },
       {
         "name": "Ruined",
@@ -87,7 +87,7 @@
           }
         ],
         "effect": "This weapon may only be used during the Go Loud core power. If you Go Loud after allied Mech characters within Sensors take structure damage twice or more during the scene, an allied Mech character is destroyed, or while at 2 structure or less, this profile replaces the default Shock Claws profile. This weapon can't be used to attack in the same turn as another Heavy or Superheavy weapon.",
-        "on_attack": "You may deal 1d6 AP energy damage to a character of your choice within Range 3 of the target."
+        "on_attack": "You may deal 1d6 AP energy damage to a different character of your choice within Range 3 of the target."
       }
     ]
   },
@@ -119,7 +119,7 @@
       }
     ],
     "effect": "You may attack with this weapon without expending or requiring charges, and this weapon can be destroyed (due to critical damage or other effects) even if it has no charges remaining.",
-    "on_attack": "You may expend up to 3 charges, gaining either +2 Reliable on that attack or pushing the target character 1 space in any direction on hit for each charge expended."
+    "on_attack": "You may expend up to 3 charges. For each charge expended you may either gain +2 Reliable for the attack or, on hit, push the target character 1 space in any direction."
   },
   {
     "id": "mw_superthermal_blade",
@@ -129,7 +129,7 @@
     "license_level": 2,
     "mount": "Main",
     "type": "Melee",
-    "description": "Available in a variety of designs extensively curated for maximum wide-reaching cultural appeal, the Armory's line of thermoconductive blades are considered a status symbol among some Legionnaires. Under nominal power the blade is merely a conventional, if solidly designed, chassis-grade tactical melee weapon, but when the blade draws additional power from a chassis' reactor via hard-cable or induction feeds, its striking edge is instantly superheated to extreme temperatures.",
+    "description": "Available in a variety of designs curated for maximum cultural appeal, the Armory's line of thermoconductive blades are considered status symbols among some legionnaires. At nominal power, the blade is merely a conventional, if solidly designed, chassis-grade tactical melee weapon, but when the blade draws additional power from a chassis' reactor via hard-cable or induction feeds, its striking edge is instantly superheated to extreme temperatures.",
     "damage": [
       {
         "type": "Energy",
@@ -163,7 +163,7 @@
       }
     ],
     "effect": "You may attack with this weapon without expending or requiring charges, and this weapon can be destroyed (due to critical damage or other effects) even if it has no charges remaining.",
-    "on_hit": "1/round, if you are in the Danger Zone you may expend a charge to to deal +3 heat, or if you are not in the Danger Zone you may take 3 heat to expend a charge anyway."
+    "on_hit": "1/round, if you are in the Danger Zone you may expend a charge to to deal +3 heat; if you are not in the Danger Zone, you may take 3 heat to expend a charge for the same effect."
   },
   {
     "id": "mw_legion_nexus",
@@ -174,7 +174,7 @@
     "mount": "Superheavy",
     "sp": 2,
     "type": "Nexus",
-    "description": "The PRAETORIAN combat subaltern is one of the Armory's latest and most advanced models, designed for shock assault, seize-and-hold, and combined arms doctrines. Utilizing a tiered hierarchy/command structure allowing them to operate at levels ranging from individual fire teams to brigade strength under local comp/con or NHP command, a squadron of PRAETORIAN subalterns can also be seconded to pilots under local nexus node control, and one or more squadrons are often assigned to Legionnaire units during combat operations to provide integrated support.",
+    "description": "The PRAETORIAN combat subaltern is one of the Armory's latest and most advanced models, designed for shock assault, seize-and-hold, and combined arms doctrines. Utilizing a tiered hierarchy/command structure allowing them to operate at levels ranging from individual fire teams to brigade strength under local comp/con or NHP command, a squadron of PRAETORIAN subalterns can also be seconded to pilots under local nexus node control, and one or more squadrons are often assigned to legionnaire units during combat operations to provide integrated support.",
     "damage": [
       {
         "type": "Kinetic",
@@ -184,7 +184,7 @@
     "range": [
       {
         "type": "Range",
-        "val": "10"
+        "val": 10
       }
     ],
     "tags": [
@@ -277,7 +277,7 @@
         "id": "tg_exotic"
       }
     ],
-    "effect": "1/round, you may activate the claws as a quick action when you hit a character with this weapon to automatically grapple them. Targets grappled this way must pass a Hull save or become Shredded until the end of their next turn.<br><br>This weapon gives +1 Accuracy to all non-combat mech skill checks to pry heavy objects open or apart such as sealed airlocks, jammed cockpits, vault doors, cargo containers, etc; this effect does not stack."
+    "effect": "1/round, you may activate the claws as a quick action when you hit a character with this weapon to automatically grapple them. Targets grappled this way must pass a Hull save or become Shredded until the end of their next turn.<br><br>This weapon deals 10 AP kinetic damage to objects, cover, and the environment. Additionally, you gain +1 Accuracy to all non-combat mech skill checks to pry heavy objects open or apart (e.g., sealed airlocks, jammed cockpits, vault doors, cargo containers, etc); this effect does not stack."
   },
   {
     "id": "mw_fusion_torch",
@@ -308,6 +308,9 @@
         "id": "tg_overkill"
       },
       {
+        "id": "tg_inaccurate"
+      },
+      {
         "id": "tg_heat_self",
         "val": 2
       },
@@ -315,6 +318,6 @@
         "id": "tg_exotic"
       }
     ],
-    "on_attack": "This weapon automatically deals 30 AP energy damage to objects, cover, and terrain within its area, and destroying these leaves behind clouds of burning slag in their place that linger until the end of your next turn. Characters other than you that begin their turn in these slag clouds or who enter them for the first time in a round take 1d6 energy damage. As long as you are at least partially within a slag cloud, you gain soft cover."
+    "on_attack": "This weapon automatically deals 30 AP energy damage to objects, cover, and terrain within its area, leaving behind clouds of molten debris in their place that linger until the end of your next turn. Characters other than you that begin their turn in these clouds or who enter them for the first time in a round take 1d6 energy damage. As long as you are at least partially within a cloud, you gain soft cover."
   }
 ]
