@@ -719,7 +719,6 @@
   {
     "id": "moff_coldstorm_charges",
     "name": "Coldstorm Charges",
-    "type": "Deployable",
     "sp": 2,
     "tags": [
       {
@@ -728,9 +727,6 @@
       },
       {
         "id": "tg_unique"
-      },
-      {
-        "id": "tg_grenade"
       }
     ],
     "source": "IRIDIA",
@@ -739,34 +735,11 @@
     "license_level": 2,
     "actions": [
       {
-        "name": "Cryo Grenade",
-        "range": [
-          {
-            "type": "Range",
-            "val": 5
-          },
-          {
-            "type": "Blast",
-            "val": 2
-          }
-        ],
-        "detail": "Throw a Cryo Grenade within Range 5. All spaces on the ground in a Blast 2 area become difficult terrain until the end of the scene."
+        "activation": "Quick",
+        "detail": "Expend a charge from this system to create a Blast 1 within Range 5. Characters in the affected area must make an Engineering Save; on a failure, they gain 4 Overshield. While they have this Overshield, they take 2 heat each time they take an action or reaction. At the end of each of their turns, affected characters may make an Engineering save to clear any remaining Overshield."
       }
     ],
-    "deployables": [
-      {
-        "name": "Winterzone Mine",
-        "type": "Mine",
-        "range": [
-          {
-            "type": "Burst",
-            "val": 2
-          }
-        ],
-        "detail": "This mine detonates when a character moves adjacent to or over it. All spaces in a Burst 2 area become difficult terrain and dangerous terrain until the end of the scene. The dangerous terrain deals energy damage, and is an Engineering Save against your Save Target instead of an Engineering check."
-      }
-    ],
-    "description": "These thermal rift generators cause an unfortunate number of injuries and accidents for new users. Despite an ever-increasing number of warnings, pilots continue to attempt to use them for non-military applications."
+    "description": "These thermal rift generators cause an unfortunate number of injuries and accidents for new users. Despite an ever-increasing number of warnings, pilots continue to attempt to use them for non-military applications, such as cooling beverages or improvised air conditioning."
   },
   {
     "id": "moff_thermal_ejectors",
@@ -991,8 +964,8 @@
     "description": "“So, we learned something. You spread this material we got from Her domain thin enough, and you can shove darn near anything through space - as long as it has external motivation. It can’t shove itself. Coat a rock, and it’ll look like it just clicked into place on the counter you threw it to. Coat a ball, and you can scare marketing a good several rooms down if you have a strong enough arm.”"
   },
   {
-    "id": "moff_emergency_shunt",
-    "name": "Emergency Shunt",
+    "id": "moff_crisis_shroud",
+    "name": "Crisis Shroud",
     "sp": 2,
     "tags": [
       {
@@ -1003,8 +976,8 @@
     "license": "HEMERA",
     "license_id": "moff_iridia_hemera",
     "license_level": 3,
-    "effect": "Whenever you take Structure Damage or Stress, you may, immediately after rolling on the Structure Damage or Overheating table but before resolving the result, teleport 3 spaces and become Invisible until the start of your next turn.",
-    "description": "“It actually wasn’t that hard to encourage the mech to move out of the way a bit when it was taking heavy hits. The tricky part was making sure the pilot could come along too.”"
+    "effect": "Whenever you take Structure Damage or Stress, you may teleport up to 3 spaces and become Invisible until the start of your next turn after the damage is resolved.  If a hostile character triggered this effect, that character only has line of sight to adjacent spaces until the end of their next turn.",
+    "description": "“This thing has a good survival reflex. The hard part was getting it to bring the pilot along, too.”"
   },
   {
     "id": "moff_invert",
@@ -1016,7 +989,7 @@
       },
       {
         "id": "tg_heat_self",
-        "val": 1
+        "val": 2
       }
     ],
     "source": "IRIDIA",
@@ -1026,7 +999,7 @@
     "actions": [
       {
         "activation": "Protocol",
-        "detail": "Until the start of your next turn, attacks that would target your evasion instead target your e-defense, and attacks that would target your e-defense instead target your evasion."
+        "detail": "Until the start of your next turn, attacks that would target your evasion instead target your e-defense, and attacks that would target your e-defense instead target your evasion. This system may not be activated in consecutive rounds."
       }
     ],
     "description": "“I can’t tell if this is the true form of the mech, or if it’s just THAT place showing its influence. Either way, it scares me. And I’m not even the one piloting it.”"
@@ -1772,10 +1745,10 @@
     "actions": [
       {
         "activation": "Quick",
-        "detail": "Expend a charge from this system to create a Blast 2 zone within range 5. The zone is difficult terrain. When the zone appears, and at the end of every round, it damages non-Mech characters and objects within it. Objects, Deployables, Drones and terrain take 10 AP Kinetic damage, and biological characters take 5 Kinetic damage. <br><br>You or any Mech character in the zone may end it as a quick action, though a hostile character must pass a Systems Save to do so. It otherwise lasts until the end of the scene."
+        "detail": "Expend a charge from this system to create a Blast 2 zone within range 5 that lasts until the end of the scene. The zone is difficult and dangerous terrain (dealing kinetic damage), with biological characters taking +1 Difficulty on the Engineering check. At the end of each of your turns, the zone deals 10 AP kinetic damage to Objects, Deployables, Drones and terrain within it."
       }
     ],
-    "description": "Developed for use against dug in foes, Disassembler Nanites are a dangerous strain of whitewash that only ignores entities with a reactor signal. This ensures that an attacking force can advance entirely unharmed, while a defender’s fortifications crumble to dust. Handle with care."
+    "description": "Developed for use against dug in foes, Disassembler Nanites are a dangerous strain of whitewash designed to open a hole in fortifications. While they will not leave their established boundaries, they are otherwise indiscriminate in their targets. Handle with care."
   },
   {
     "id": "moff_exigency_nanites",

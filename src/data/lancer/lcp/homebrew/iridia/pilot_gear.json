@@ -29,7 +29,7 @@
     "id": "pg_moff_luminary_bracer",
     "name": "Luminary Bracer",
     "type": "Gear",
-    "description": "This golden bracer is able to be attuned to a small object - one that can be comfortably held in one hand, like a weapon or a keycard - over the course of ten or so minutes. With a gesture, the object is able to instantaneously appear in the wearer’s hand in a burst of light, so long as it’s somewhere within 30m of the wearer."
+    "effect": "This golden bracer is able to be attuned to a small object - one that can be comfortably held in one hand, like a weapon or a keycard - over the course of ten or so minutes. With a gesture, the object is able to instantaneously appear in the wearer’s hand in a burst of light, so long as it’s somewhere within 30m of the wearer."
   },
   {
     "id": "pg_moff_lunar_ichor",
@@ -53,7 +53,8 @@
     "id": "pg_moff_vial_of_memories",
     "name": "Vial of Memories",
     "type": "Gear",
-    "description": "A tiny sealed bottle of water from the Lake of Dreams, it seems to sparkle with a faint inner radiance if viewed from the right angle. Maybe. Many believe that it holds a glimmer of the Lake’s power and that it can give a faint nudge to a worthy asker, after which it stops shining for a time. <br><br>Expend a charge outside of combat for the following effect:<ul><li><b>Mnemosight:</b> Concentrate on an inanimate object in front of you. Gain a faint impression from its recent past; for instance, vague inklings of the passcode on a keypad or faint features of a weapon’s last wielder. While this doesn’t give you perfect knowledge, it can help give you a place to start.</li></ul>",
+    "description": "A tiny sealed bottle of water from the Lake of Dreams, it seems to sparkle with a faint inner radiance if viewed from the right angle. Maybe. Many believe that it holds a glimmer of the Lake’s power and that it can give a faint nudge to a worthy asker, after which it stops shining for a time.",
+    "effect": "Expend a charge outside of combat for the following effect:<ul><li><b>Mnemosight:</b> Concentrate on an inanimate object in front of you. Gain a faint impression from its recent past; for instance, vague inklings of the passcode on a keypad or faint features of a weapon’s last wielder. While this doesn’t give you perfect knowledge, it can help give you a place to start.</li></ul>",
     "actions": [
       {
         "name": "Brief Vision",
