@@ -144,7 +144,7 @@
         "damage": [
           {
             "type": "Burn",
-            "val": "2"
+            "val": 2
           }
         ],
         "effect": "This weapon’s profile is determined by the number of charges it carries. It begins with 0 charges. The first time in a round that you are damaged by a hostile character, you gain an additional 1 charge, up to a maximum of 3.<br><br> If you have at least 1 charge, you may attack with this weapon, returning to 0 charges after the attack. This weapon’s Cone size is equal to 1 plus twice the number of charges, and it deals Burn equal to twice the number of charges. Charges persist between scenes, but are lost during a full repair."
@@ -160,7 +160,7 @@
         "damage": [
           {
             "type": "Burn",
-            "val": "4"
+            "val": 4
           }
         ],
         "effect": "This weapon’s profile is determined by the number of charges it carries. It begins with 0 charges. The first time in a round that you are damaged by a hostile character, you gain an additional 1 charge, up to a maximum of 3.<br><br> If you have at least 1 charge, you may attack with this weapon, returning to 0 charges after the attack. This weapon’s Cone size is equal to 1 plus twice the number of charges, and it deals Burn equal to twice the number of charges. Charges persist between scenes, but are lost during a full repair."
@@ -176,7 +176,7 @@
         "damage": [
           {
             "type": "Burn",
-            "val": "6"
+            "val": 6
           }
         ],
         "effect": "This weapon’s profile is determined by the number of charges it carries. It begins with 0 charges. The first time in a round that you are damaged by a hostile character, you gain an additional 1 charge, up to a maximum of 3.<br><br> If you have at least 1 charge, you may attack with this weapon, returning to 0 charges after the attack. This weapon’s Cone size is equal to 1 plus twice the number of charges, and it deals Burn equal to twice the number of charges. Charges persist between scenes, but are lost during a full repair."
@@ -227,7 +227,7 @@
     "damage": [
       {
         "type": "Energy",
-        "val": "2"
+        "val": 2
       }
     ],
     "range": [
@@ -404,7 +404,7 @@
     "damage": [
       {
         "type": "Explosive",
-        "val": "3"
+        "val": 3
       }
     ],
     "range": [
@@ -587,7 +587,7 @@
     "damage": [
       {
         "type": "Energy",
-        "val": "2"
+        "val": 2
       }
     ],
     "range": [
@@ -734,11 +734,11 @@
     "damage": [
       {
         "type": "Energy",
-        "val": "1"
+        "val": 1
       },
       {
         "type": "Burn",
-        "val": "3"
+        "val": 3
       }
     ],
     "range": [
@@ -775,7 +775,7 @@
       },
       {
         "type": "Burn",
-        "val": "4"
+        "val": 4
       }
     ],
     "range": [
@@ -926,12 +926,12 @@
       {
         "override": true,
         "type": "Range",
-        "val": "3"
+        "val": 3
       },
       {
         "override": true,
         "type": "Threat",
-        "val": "3"
+        "val": 3
       }
     ],
     "tags": [
@@ -1158,8 +1158,8 @@
     "type": "Melee",
     "damage": [
       {
-        "type": "Kinetic",
-        "val": "5"
+        "type": "Energy",
+        "val": 5
       }
     ],
     "range": [
@@ -1418,11 +1418,11 @@
     "damage": [
       {
         "type": "Kinetic",
-        "val": "3"
+        "val": "1d6"
       },
       {
         "type": "Burn",
-        "val": "2"
+        "val": 4
       }
     ],
     "range": [
@@ -1434,6 +1434,9 @@
     "tags": [
       {
         "id": "tg_smart"
+      },
+      {
+        "id": "tg_inaccurate"
       }
     ],
     "source": "HA",

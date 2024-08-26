@@ -98,7 +98,7 @@
     "traits": [
       {
         "name": "Fate's Arrow",
-        "description": "The Aphrodite’s ranged attacks gain Seeking against the character furthest away from it on the battlefield. If multiple characters are equally distant, this effect applies to all of them."
+        "description": "The Aphrodite’s ranged attacks gain Seeking against the hostile character furthest away from it on the battlefield. If multiple characters are equally distant, this effect applies to all of them."
       },
       {
         "name": "Center of Attention",
@@ -321,7 +321,7 @@
       },
       {
         "name": "Heart of Fire",
-        "description": "Before making an attack with a weapon, the Astraea may choose to attack as if the weapon had the Overkill tag.",
+        "description": "Before making an attack with a weapon, the Astraea may choose to give it the Overkill tag for that attack.",
         "synergies": [
           {
             "locations": [
@@ -1348,7 +1348,7 @@
           "hp": "5 + {grit}"
         }
       ],
-      "passive_effect": "Your mech contains an integrated Companion Drone. This drone may be deployed to any space within Sensors as a quick action. It shares your Evasion and E-Defense. <br><br>While allied characters are adjacent to the drone, they ignore Engagement while moving and making ranged attacks. <br><br>When you rest, perform a Full Repair, or Stabilize and mark a repair, your drone regains all HP and is automatically repaired if it was destroyed. <br><br>The Drone can be recalled or redeployed to a space within Sensors as a quick action."
+      "passive_effect": "Your mech contains an integrated Companion Drone. This drone may be deployed to any space within Sensors as a quick action. It shares your Evasion and E-Defense. <br><br>While allied characters are adjacent to the drone, they ignore Engagement while moving and making ranged attacks. <br><br>When you rest, perform a Full Repair, or Stabilize and mark a repair, your drone regains all HP. In addition, if your drone is destroyed, it is automatically repaired, though must be deployed again. <br><br>The Drone can be recalled or redeployed to a space within Sensors as a quick action."
     }
   },
   {
@@ -1659,13 +1659,13 @@
       },
       {
         "name": "Astral Maneuvering Thrusters",
-        "description": "The Endeavour may choose to count any and all of its movement as flying. While in zero-g, the Endeavor can hover.",
+        "description": "The Endeavour may choose to count any and all of its movement as flying. While in zero-g, the Endeavour can hover.",
         "synergies": [
           {
             "locations": [
               "move"
             ],
-            "detail": "The Endeavour may choose to count any and all of its movement as flying. While in zero-g, the Endeavor can hover."
+            "detail": "The Endeavour may choose to count any and all of its movement as flying. While in zero-g, the Endeavour can hover."
           }
         ]
       },
@@ -1678,7 +1678,7 @@
       "name": "Void Tethers",
       "description": "While the Endeavour’s cargo cables usually require one or more external spacers to securely fasten, skilled pilots can at times snag a target that’s willing to play along for a few moments. <br><br>This maneuver isn’t always the safest for the Endeavour, but the types of pilots to pull this off usually aren’t the type to care what kinds of obstacles are around.",
       "active_name": "Emergency Extraction",
-      "active_effect": "The Endeavour flies its speed. One allied character that the Endeavor moves adjacent to during this movement, ignoring elevation, is placed adjacent to one space the Endeavour ends this movement in. The ally’s movement counts as involuntary and, if they are in the air at the end of it, they fall and take no damage. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "active_effect": "The Endeavour flies its speed. One allied character that the Endeavour moves adjacent to during this movement, ignoring elevation, is placed adjacent to one space the Endeavour ends this movement in. The ally’s movement counts as involuntary and, if they are in the air at the end of it, they fall and take no damage. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
       "activation": "Quick",
       "use": "Round"
     }
