@@ -64,9 +64,9 @@
         "mw_lucina_integrated"
       ]
     },
-    "image_url": "https://gamepress.gg/feheroes/sites/fireemblem/files/2022-12/CYLucina1.png",
+    "image_url": "https://fehpass.fire-emblem-heroes.com/common/img/chara_img_00069001000168_01.png",
     "license_id": "ssc_lucina",
-    "y_pos": "14"
+    "y_pos": "16"
   },
   {
     "id": "horus_ghoul",
@@ -163,18 +163,18 @@
       "repcap": 4,
       "sensor_range": 5,
       "tech_attack": -2,
-      "save": 10,
+      "save": 11,
       "speed": 3,
       "sp": 6
     },
     "traits": [
       {
-        "name": "Carve the Path",
-        "description": "When the Acadia moves, it automatically deals 10 AP kinetic damage to objects and terrain in its path. In addition, it may move into spaces occupied by enemy characters. If it does, they must make an Agility save or take 2 AP Kinetic damage, and are automatically pushed to the nearest open space."
+        "name": "Autophagic Reload",
+        "description": "As a free action, the Acadia may reload one Loading weapon. Then, it takes 4 AP Kinetic damage. This damage cannot be reduced in any way."
       },
       {
-        "name": "Too Big To Notice",
-        "description": "The Acadia travels at full speed through difficult terrain, and when the Acadia would suffer involuntary movement as part of an attack or failed save, it may instead take 3 AP kinetic damage and ignore the involuntary movement."
+        "name": "Structural Redundancies",
+        "description": "The Acadia travels at full speed through difficult terrain, and when the Acadia would suffer involuntary movement as part of an attack or failed save, it may instead ignore the involuntary movement and take 3 AP kinetic damage. This damage cannot be reduced in any way."
       },
       {
         "name": "Colossus",
@@ -182,7 +182,7 @@
       },
       {
         "name": "Overworked Engines",
-        "description": "The Acadia cannot Boost, and it takes 2 Heat every time it voluntarily moves for any reason other than its standard move."
+        "description": "The Acadia has +1 Difficulty on Agility checks and saves, and takes 1d3 Heat every time it Boosts."
       }
     ],
     "core_system": {
@@ -194,7 +194,7 @@
           "name": "Scrap",
           "activation": "Reaction",
           "trigger": "An enemy character is destroyed within Range 5.",
-          "detail": "A cable latches onto the destroyed character, and its mech is pulled to the Acadia, removed from the battlefield, and is incorporated into the Acadia's hull. This grants the Acadia one of the following benefits:<br><ul><li>The Acadia restores HP to full.</li><li>The Acadia removes up to two conditions.</li><li>The Acadia reloads all Loading weapons.</li><li>The Acadia creates a pool of slag adjacent to itself. The slag is an object of size 2 soft cover, with 10 HP and 5 Evasion. The spaces it occupies become dangerous terrain, dealing energy damage, until the slag is destroyed.</li></ul>",
+          "detail": "A cable latches onto the destroyed character, and it is pulled to the Acadia, removed from the battlefield, and is incorporated into the Acadia. This grants the Acadia one of the following benefits:<br><ul><li>The Acadia restores HP to full.</li><li>The Acadia removes up to two conditions.</li><li>The Acadia reloads all Loading weapons.</li></ul>",
           "frequency": "1/round"
         }
       ],
@@ -203,9 +203,7 @@
       "activation": "Full",
       "description": "",
       "use": "Encounter",
-      "integrated": [
-        "mw_acadia_integrated"
-      ]
+      "integrated": []
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "license_id": "ipsn_acadia",
@@ -246,8 +244,8 @@
         "description": "The Meade may roll tech attacks to Invade itself or allied characters instead of automatically succeeding. If the attack hits, the target reduces their Heat by 2, and the Meade does not need to choose an Invade option."
       },
       {
-        "name": "Thermal Inversion Shields",
-        "description": "1/scene, as a Quick Action, the Meade may convert either an allied character’s Burn into Overshield, or its own."
+        "name": "Peace Walk",
+        "description": "At the end of the Meade's turn, if it did not attack or force a save on a hostile character, it may move any number of its drones within Sensors a combined total of six spaces in any direction."
       }
     ],
     "core_system": {

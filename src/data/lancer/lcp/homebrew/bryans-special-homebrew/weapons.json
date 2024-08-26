@@ -237,39 +237,32 @@
     "license_id": "horus_ghoul"
   },
   {
-    "id": "mw_scrap_sprayer",
-    "name": "Scrap Sprayer",
+    "id": "mw_mooring_hook_cannon",
     "source": "IPS-N",
     "license": "Acadia",
+    "name": "Mooring Hook Cannon",
     "license_level": 1,
     "description": "",
-    "on_attack": "Pummels the ground with hazardous shards in the attack area, creating Difficult Terrain until the end of the scene. Characters in the area also receive +1 Difficulty to Agility checks and saves.",
-    "effect": "Can be fired as Cone 5 <i>or</i> Line 10.",
+    "on_hit": "If the target fails an Agility save, it is immediately pulled adjacent to you, or as close as possible, by the most direct path.",
+    "effect": "",
     "mount": "Main",
     "type": "Launcher",
     "damage": [
       {
         "type": "Kinetic",
-        "val": "2d6"
+        "val": "1d6"
       }
     ],
     "range": [
       {
-        "type": "Cone",
-        "val": 5
-      },
-      {
-        "type": "Line",
-        "val": 10
+        "type": "Range",
+        "val": 8
       }
     ],
     "sp": 0,
     "tags": [
       {
         "id": "tg_loading"
-      },
-      {
-        "id": "tg_inaccurate"
       }
     ],
     "license_id": "ipsn_acadia"
@@ -285,7 +278,7 @@
     "barrage": true,
     "mount": "Main",
     "type": "Melee",
-    "on_hit": "Begin dismantling your target. Roll 1d6 to determine a side effect.<ol><li>Compromise Frame: They are Impaired until the end of their next turn.</li><li>Uncover a Weakness: They are Shredded until the end of their next turn and receive Lock On.</li><li>Demolish: They take 2 AP Kinetic damage, 2 AP Energy damage, and 2 Heat instead of this weapon’s normal damage.</li><li>Dismantle motor controls: They are knocked Prone.</li><li>Dismantle system controls: They cannot take or benefit from tech actions until the end of their next turn.</li><li>Dismantle weapon controls: They cannot make attacks, other than Improvised Attack, Grapple, and Ram until the end of their next turn.</li>",
+    "on_hit": "Begin dismantling your target. Roll 1d6 to determine a side effect from the table below.<ol><li>Compromise Frame: They are Impaired until the end of their next turn and are knocked Prone.</li><li>Uncover a Weakness: They are Shredded until the end of their next turn and receive Lock On.</li><li>Dismantle motor controls: They are Immobilized until the end of their next turn.</li><li>Dismantle system controls: They cannot take or benefit from tech actions until the end of their next turn.</li><li>Dismantle weapon controls: They cannot make attacks, other than Improvised Attack, Grapple, and Ram until the end of their next turn.</li><li>Demolish: They take 2 AP Kinetic damage, 2 AP Energy damage, and 2 Heat instead of this weapon’s normal damage.</li>",
     "on_crit": "Roll 2d6 to determine two side effects instead. If you get the same number on both dice, roll another 1d6 until you get a different number.",
     "damage": [
       {
@@ -307,61 +300,50 @@
     "tags": [
       {
         "id": "tg_ap"
-      },
-      {
-        "id": "tg_unique"
       }
     ],
     "license_id": "ipsn_acadia"
   },
   {
-    "id": "mw_shrapnel_gatling_gun",
-    "name": "Shrapnel Gatling Gun",
+    "id": "mw_scrap_sprayer",
+    "name": "Scrap Sprayer",
     "source": "IPS-N",
     "license": "Acadia",
     "license_level": 3,
     "description": "",
     "mount": "Heavy",
     "type": "Cannon",
-    "sp": 0,
-    "profiles": [
+    "sp": 1,
+    "effect": "You begin each scene in the Armor Shrapnel profile. You may change this weapon’s profile to any profile of your choice as a Quick Action. When this weapon is reloaded, roll a d20. Depending on the result, a different type of scrap is loaded into this weapon, and it changes profiles accordingly.<ul><li>1-5: Armor Shrapnel</li><li>6-10: Expired Munitions</li><li>11-15: Burnt Fuel Rod</li><li>16-20: Molten Slag</li></ul>",
+    "actions": [
       {
-        "name": "Standard",
-        "range": [
-          {
-            "type": "Range",
-            "val": 10
-          }
-        ],
-        "damage": [
-          {
-            "type": "Kinetic",
-            "val": "3d6"
-          }
-        ],
-        "tags": [
-          {
-            "id": "tg_inaccurate"
-          },
-          {
-            "id": "tg_overkill"
-          }
-        ],
-        "effect": "As a Quick Action, you may focus your fire with this weapon. Gain the Precision Fire profile until the start of your next turn.",
-        "actions": [
-          {
-            "name": "Focus Fire",
-            "activation": "Quick",
-            "detail": "Focus your fire, targeting enemy weaknesses at the cost of the weapon’s overall power. Switch to this weapon's \"Precision Fire\" profile until the start of your next turn."
-          }
-        ]
+        "name": "Stockpile",
+        "activation": "Quick",
+        "detail": "Change the Scrap Sprayer's profile to one of your choice."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_inaccurate"
       },
       {
-        "name": "Precision Fire",
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "profiles": [
+      {
+        "name": "Armor Shrapnel",
         "range": [
           {
             "type": "Range",
-            "val": 10
+            "val": 5
+          },
+          {
+            "type": "Cone",
+            "val": 3
           }
         ],
         "damage": [
@@ -370,13 +352,72 @@
             "val": "2d6"
           }
         ],
-        "tags": [
+        "tags": [],
+        "on_attack": "Pummels the ground with hazardous shards in the attack area, creating Difficult Terrain until the end of the scene. Characters in the area also receive +1 Difficulty to Agility checks and saves."
+      },
+      {
+        "name": "Expired Munitions",
+        "range": [
           {
-            "id": "tg_accurate"
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Blast",
+            "val": 1
           }
         ],
-        "on_hit": "The target is Shredded and Impaired until the end of their next turn.",
-        "effect": "At the start of your next turn, switch to the Standard profile."
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": 3
+          }
+        ],
+        "tags": [],
+        "on_attack": "Pummels the ground with explosive materials in the attack area. All characters within the affected area may either drop Prone or take an additional 2d6 Explosive damage."
+      },
+      {
+        "name": "Burnt Fuel Rod",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Line",
+            "val": 3
+          }
+        ],
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "2d6"
+          }
+        ],
+        "tags": [],
+        "on_attack": "Pummels the ground with hazardous radiation, creating Dangerous Terrain until the end of the scene."
+      },
+      {
+        "name": "Molten Slag",
+        "range": [
+          {
+            "type": "Cone",
+            "val": 3
+          },
+          {
+            "type": "Line",
+            "val": 5
+          }
+        ],
+        "damage": [
+          {
+            "type": "Burn",
+            "val": 3
+          }
+        ],
+        "tags": [],
+        "effect": "Can be fired as Cone 3 <i>or</i> Line 5",
+        "on_attack": "Pummels the ground with superheated slag. Characters within the affected area must make a Hull check or take an additional 3 Burn."
       }
     ],
     "license_id": "ipsn_acadia"
@@ -454,34 +495,5 @@
       }
     ],
     "license_id": "ha_meade"
-  },
-  {
-    "id": "mw_acadia_integrated",
-    "name": "Mooring Hook Cannon",
-    "mount": "Main",
-    "type": "Launcher",
-    "skirmish": true,
-    "barrage": true,
-    "effect": "",
-    "on_hit": "If the target fails an Agility save, it is immediately pulled adjacent to you, or as close as possible, by the most direct path.",
-    "damage": [
-      {
-        "type": "Kinetic",
-        "val": "1d6"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 5
-      }
-    ],
-    "sp": 0,
-    "tags": [
-      {
-        "id": "tg_loading"
-      }
-    ],
-    "license_id": "ipsn_acadia"
   }
 ]

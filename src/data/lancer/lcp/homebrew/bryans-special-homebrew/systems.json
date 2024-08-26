@@ -212,12 +212,12 @@
     "license_id": "horus_ghoul"
   },
   {
-    "id": "ms_ramshackle_shelter",
-    "name": "Ramshackle Shelter",
+    "id": "ms_superfluous_hull",
+    "name": "Superfluous Hull",
     "source": "IPS-N",
     "license": "Acadia",
     "license_level": 1,
-    "effect": "Allies that are a smaller Size than you may end their turns in spaces you occupy. While they occupy a space you occupy, they are treated as Invisible by enemies. When an attack misses an ally benefiting from this system, you take 3 AP Kinetic damage.",
+    "effect": "Allies that are a smaller Size than you may end their turns in spaces you occupy. These characters are treated as adjacent for the purposes of your effects on allied characters (from your traits, talents, systems, or weapons). Gain the <i>Splintering Shield</i> reaction.",
     "type": "System",
     "sp": 2,
     "description": "",
@@ -226,29 +226,30 @@
         "id": "tg_unique"
       }
     ],
+    "actions": [
+      {
+        "name": "Splintering Shield",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "An adjacent ally is damaged by an attack.",
+        "detail": "Reduce the damage dealt to the target by half. You take that damage, and may create a Scrap Heap, a Size 1 object that can be used for hard cover, in a free space within Range 2."
+      }
+    ],
     "license_id": "ipsn_acadia"
   },
   {
-    "id": "ms_autophagic_reload",
-    "name": "Autophagic Reload",
+    "id": "ms_farragut_class_ambulators",
+    "name": "Farragut-Class Ambulators",
     "source": "IPS-N",
     "license": "Acadia",
     "license_level": 2,
-    "effect": "You can slough off unused parts of your hull and fashion them into ammunition. Gain the <i>Autophagic Reload</i> action.",
+    "effect": "You may pass through spaces and end your turn in spaces occupied by Prone enemies that are the same Size or smaller than you. If you do, they become Crushed. As long as they are Crushed, they are Impaired, Immobilized, cannot take reactions, and take 2 AP Kinetic damage at the end of each of your turns.<br><br>Enemies stop being Crushed when you move out of all spaces they occupy, or if they succeed on a contested Hull check as a Quick Action, at which point they are immediately pushed back to the nearest open space.",
     "type": "System",
     "sp": 1,
     "description": "",
     "tags": [
       {
         "id": "tg_unique"
-      }
-    ],
-    "actions": [
-      {
-        "name": "Autophagic Reload",
-        "activation": "Free",
-        "frequency": "1/round",
-        "detail": "Take 5 AP kinetic damage. It cannot be reduced in any way. Then, reload one Loading weapon."
       }
     ],
     "license_id": "ipsn_acadia"
@@ -259,7 +260,7 @@
     "source": "IPS-N",
     "license": "Acadia",
     "license_level": 3,
-    "effect": "An allied character that is smaller than you may board you as a Quick action. While boarded, the smaller character occupies your space and becomes Immobilized but moves when you move, mirroring your movement, including involuntary movement. They can still be attacked and targeted separately, but benefit from soft cover, and are treated as being higher elevation to any non-flying characters. This effect lasts either for the rest of the scene, until this system is destroyed, or until they disembark as a Protocol, and are placed in an open space adjacent to you.",
+    "effect": "An allied character that is smaller than you may board you as a Quick action. While boarded, the smaller character occupies a space you occupy, and becomes Immobilized but moves when you move, mirroring your movement, but can still be attacked and targeted separately. They also benefit from soft cover, and are treated as being higher elevation to any non-flying characters. This effect lasts either for the rest of the scene, until this system is destroyed, or until they disembark as a Protocol, and are placed in an open space adjacent to you.",
     "type": "System",
     "sp": 3,
     "description": "",
@@ -319,7 +320,7 @@
         "hp": 1,
         "edef": 10,
         "evasion": 10,
-        "detail": "When deployed (or re-deployed), Tomographic Projectors are Hidden until they are found with Search.<br><br>You may take the Scan quick action against any character within Range 5 of a Tomographic Projector drone as though it were within Sensors and line of sight. When you do, you also Discover a Vulnerability in the target. They receive Lock On and take +1d6 bonus damage the next time they are hit by an attack between now and the end of your next turn.",
+        "detail": "When deployed (or re-deployed), Tomographic Projectors are Hidden, even if they are not in cover, until they are found with Search.<br><br>You may take the Scan quick action against any character within Range 5 of a Tomographic Projector drone as though it were within Sensors and line of sight. When you do, you also Discover a Vulnerability in the target. They receive Lock On and take +1d6 bonus damage the next time they take damage from an attack between now and the end of your next turn.",
         "recall": "Quick",
         "redeploy": "Quick",
         "tags": []
