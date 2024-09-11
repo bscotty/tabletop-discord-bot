@@ -153,7 +153,7 @@
     "ranks": [
       {
         "name": "Enhanced Generators",
-        "description": "Your Systems with the Shield tag (including reactions they grant) have +5 Range, may increase any Line that they generate by 2. and may increase any Blast or Burst that they generate by 1. In addition you count as having +5 Sensors for the purposes of Systems with the Shield tag. <br><br>These increases only affect the range at which your Systems with the Shield tag can initially target or trigger off characters, or the area which they cover for Burst and Blast, and not the range of any of their other effects.",
+        "description": "Your Systems with the Shield tag have +5 Range when activating actions or triggering reactions, may increase any Line that they generate by 2, and may increase any Blast or Burst that they generate by 1. In addition you count as having +5 Sensors for the purposes of Systems with the Shield tag.",
         "synergies": [
           {
             "locations": [

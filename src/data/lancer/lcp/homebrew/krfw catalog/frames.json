@@ -1,6 +1,7 @@
 [
   {
     "id": "krfwf_armiger",
+    "license_id": "krfwf_armiger",
     "license_level": 2,
     "source": "KRFW",
     "name": "Armiger",
@@ -49,13 +50,19 @@
       "description": "Developed using technology re-engineered from a mothballed and then promptly lost Iskander, the Gravitational Reduction Suite is a nexus of support systems attached to the Armiger’s external frame that allow it to carry several times its own weight in supplies. Easy access to these supplies enables unparalleled in-field flexibility, allowing the Armiger to carry an entire squad’s munitions and repair materials by itself. Foiling designer intentions, however, most Armiger pilots tend to allocate the entirety of their supply capacity to their own needs.",
       "active_name": "Resupply",
       "active_effect": "The Armiger may immediately replace all equipped weapons and systems with other weapons or systems it has access to. Limited systems and weapons retain their total number of charges left when switched out. Weapons or Systems which have been destroyed, have no charges left, or are Unloaded cannot be switched out. This action is <b>Efficient</b>, and refunds 1 Core Power at the end of any scene in which it’s used.",
-      "activation": "Protocol"
+      "activation": "Protocol",
+      "tags": [
+        {
+          "id": "tg_efficient"
+        }
+      ]
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
     "y_pos": 0
   },
   {
     "id": "krfwf_burgess",
+    "license_id": "krfwf_burgess",
     "license_level": 2,
     "source": "KRFW",
     "name": "Burgess",
@@ -106,13 +113,21 @@
       "active_effect": "The Burgess does not take a turn next round. At the end of each ally’s turn, the Burgess may make one Quick Action. At the end of each hostile character’s turn, the Burgess may Overcharge, gaining heat and increasing the Overcharge die as normal. If the Burgess has less than three allies, it may ignore Overcharge costs until it has taken three Quick Actions.",
       "activation": "Full",
       "passive_name": "A System of Cells, Interlinked",
-      "passive_effect": "The Burgess enters the battlefield in a Stance of its choice. Using a Stance’s benefit immediately cycles the Burgess to the next Stance in order. The Burgess may not use more than one Stance’s benefit in a round.<br>-<i>Rising Sun Stance:</i> The Burgess deals +1d6 Bonus Damage on a Ranged attack.<br>-<i>Clear Sky Stance:</i> The Burgess deals +1d6 Bonus Damage on a Melee attack.<br>-<i>Falling Twilight Stance:</i> The Burgess deals +2 Heat on a Tech attack.<br>1/turn, the Burgess may choose to cycle to the next Stance as a Quick Action. It may not benefit from its new Stance this round."
+      "passive_effect": "The Burgess enters the battlefield in a Stance of its choice. Using a Stance’s benefit immediately cycles the Burgess to the next Stance in order. The Burgess may not use more than one Stance’s benefit in a round.<ul><li>Rising Sun Stance: The Burgess deals +1d6 Bonus Damage on a Ranged attack.</li><li>Clear Sky Stance: The Burgess deals +1d6 Bonus Damage on a Melee attack.</li><li>Falling Twilight Stance: The Burgess deals +2 Heat on a Tech attack.</li></ul>1/turn, the Burgess may choose to cycle to the next Stance as a Quick Action. It may not benefit from its new Stance this round.",
+      "passive_actions": [
+        {
+          "name": "Change Stance",
+          "activation": "Quick",
+          "detail": "1/turn, cycle to the next Stance. You may not benefit from your new Stance this round."
+        }
+      ]
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
     "y_pos": 0
   },
   {
     "id": "krfwf_castellan",
+    "license_id": "krfwf_castellan",
     "license_level": 2,
     "source": "KRFW",
     "name": "Castellan",
@@ -168,6 +183,7 @@
   },
   {
     "id": "krfwf_claviger",
+    "license_id": "krfwf_claviger",
     "license_level": 2,
     "source": "KRFW",
     "name": "Claviger",
@@ -217,6 +233,7 @@
   },
   {
     "id": "krfwf_despot",
+    "license_id": "krfwf_despot",
     "license_level": 2,
     "source": "KRFW",
     "name": "Despot",
@@ -273,6 +290,7 @@
   },
   {
     "id": "krfwf_marquess",
+    "license_id": "krfwf_marquess",
     "license_level": 2,
     "source": "KRFW",
     "name": "Marquess",
@@ -328,6 +346,7 @@
   },
   {
     "id": "krfwf_primor",
+    "license_id": "krfwf_primor",
     "license_level": 2,
     "source": "KRFW",
     "name": "Primor",
@@ -335,7 +354,7 @@
       "Artillery",
       "Controller"
     ],
-    "description": "There are times when a militia is not enough to defend a settlement, no matter how well equipped. In such situations, it becomes necessary for the settlement to defend itself. Enter the KRFW Primor, a behemoth of a frame that serves double duty as drone command and defensive emplacement. Primors can be purchased in bulk to control frontier drone networks, making use of their extensive internal supplies to keep the workforce at full capacity as they tend to fields and security alike. When the settlement comes under attack, however, the mechs take to the skies to rain Hell down on those who threaten their homes.<br><br>Though Primors are sold in bulk like many other KRFW frames, the company maintains a contract for their sale with terms so restrictive and ironclad they are often only reserved for their one-off frames, such as the Vidame or the Reeve. Their terms are simple: the Primor is yours to do as you see fit, but do none of the following, or KRFW will not be able to assist you.<br><br>Do not allow the Primor to see combat more than twelve times.<br><br>Do not open the Reactor cladding.<br><br>Do not answer the knock at the door.",
+    "description": "There are times when a militia is not enough to defend a settlement, no matter how well equipped. In such situations, it becomes necessary for the settlement to defend itself. Enter the KRFW Primor, a behemoth of a frame that serves double duty as drone command and defensive emplacement. Primors can be purchased in bulk to control frontier drone networks, making use of their extensive internal supplies to keep the workforce at full capacity as they tend to fields and security alike. When the settlement comes under attack, however, the mechs take to the skies to rain Hell down on those who threaten their homes.<br><br>Though Primors are sold in bulk like many other KRFW frames, the company maintains a contract for their sale with provisions for breach so restrictive and ironclad they are often only reserved for their one-off frames, such as the Vidame or the Reeve. Their terms are simple:<ul><li>Do not open the reactor cladding.</li><liNever give anyone your real name while in the pilot’s seat.</li><li>When you hear the knock at the door, pray.</li></ul>",
     "mounts": [
       "Main",
       "Flex"
@@ -374,7 +393,7 @@
       "name": "Leeds' Black Army",
       "description": "The primary selling point of the Primor is its advanced drone mesh network, enabling it to control many drones at once from a fairly stationary position. These drones are easily converted to offensive duties in the field, though, traditionally painted a solid black when drafted into service. These “Black Armies” are based on a design from an early test pilot who came under fire during a dry run of a prototype Primor. With no ammunition loaded, one Dabenielle Leeds rerouted the systems of her Primor by hand to transform the drone deployers from a tool of efficient production to high-velocity launch tubes, to devastating effect.",
       "active_name": "Throw Wide the Gates",
-      "active_effect": "The Hussar Drone Tubes may fire on up to two targets within Range 50 when fired. While this core is active, you may choose to have a Hussar Drone fall between 1 and 10 spaces instead of between 2 and 5.",
+      "active_effect": "Until the end of the scene, your Hussar Drone Tubes may fire on up to two targets within Range 50 when fired, the limit on Hussar Drones active at once becomes 6, and Hussar Drones may fall up to 10 spaces at the end of their movement for free.",
       "activation": "Protocol",
       "integrated": [
         "krfwmw_primor_integrated"
@@ -385,6 +404,7 @@
   },
   {
     "id": "krfwf_reeve",
+    "license_id": "krfwf_reeve",
     "license_level": 2,
     "source": "KRFW",
     "name": "Reeve",
@@ -445,6 +465,7 @@
   },
   {
     "id": "krfwf_vassal",
+    "license_id": "krfwf_vassal",
     "license_level": 2,
     "source": "KRFW",
     "name": "Vassal",
@@ -493,13 +514,14 @@
       "active_effect": "For the rest of the scene, Share the Blame becomes Range 2.",
       "activation": "Protocol",
       "passive_name": "Share the Blame",
-      "passive_effect": "When an Allied character hits the Vassal with an attack, they attack all other characters, objects, and Terrain within Range 1 of the Vassal as well."
+      "passive_effect": "When an Allied character hits the Vassal with an attack, all spaces within Range 1 of the Vassal are included in the area of effect of the triggering attack. This cannot cause a character to be attacked twice by the triggering attack, and cannot target Objectives."
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
     "y_pos": 0
   },
   {
     "id": "krfwf_vidame",
+    "license_id": "krfwf_vidame",
     "license_level": 2,
     "source": "KRFW",
     "name": "Vidame",
@@ -548,8 +570,138 @@
       "active_name": "Showdown",
       "active_effect": "Trickshot deals full damage for this turn, and may be used on every hit with a Loading weapon. This core power is <b>Efficient</b>, and refunds 1 Core Power at the end of any scene in which it’s used.",
       "activation": "Protocol",
+      "tags": [
+        {
+          "id": "tg_efficient"
+        }
+      ],
       "passive_name": "Trickshot",
       "passive_effect": "1/round, when you hit with an attack using a Loading weapon, before rolling damage, you may declare that attack a Trickshot. Make a second attack against another target with the same weapon, drawing Range and line of sight from the original target. Both targets take half damage from the attack."
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "y_pos": 0
+  },
+  {
+    "id": "krfwf_chaplain",
+    "license_id": "krfwf_vidame",
+    "variant": "Chaplain",
+    "license_level": 2,
+    "source": "KRFW",
+    "name": "Chaplain",
+    "mechtype": [
+      "Striker"
+    ],
+    "description": "In spite of the best efforts of even the most altruistic endeavors, money remains a constant necessity of any business, profit an ever-looming specter nipping at its heels. So comes the occasional need to rebrand and reuse goods in new ways, such as the bespoke armaments created for the Vidame. With its tightly controlled supply, the frame’s catalog of equipment rarely made KRFW enough money to warrant keeping it around.<br><br>Enter the Chaplain, an attempt at creating a marketable alternative to the Vidame. In the effort to broaden appeal, the mech has had its speed dialed down and some of its heavier armaments removed. Instead, it boasts a larger reactor and inbuilt ammo processing systems to ensure it uses any equipped gear with the maximum possible efficiency.<br><br>In spite of the alterations made to the frame, the Chaplain faced its own struggles finding a niche. However, it did its job, and pushed the catalog of accompanying offerings far enough into profitability to make them remain part of KRFW’s offerings. Pilots of the Chaplain have recently come forward with unsubstantiated complaints, though, claiming that they have begun to lose sleep as they become unable to shut out the light of the distant stars except within the mech’s cockpit.",
+    "mounts": [
+      "Flex",
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 3,
+      "tech_attack": -2,
+      "save": 11,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Speedloader",
+        "description": "At the start of its turn, if the Chaplain has all non-Integrated weapons unloaded, it may reload one weapon as a protocol."
+      },
+      {
+        "name": "Overpressure",
+        "description": "Whenever the Chaplain crits, roll an extra die. This does not change how many dice you keep for the final damage result."
+      },
+      {
+        "name": "Quickdraw",
+        "description": "The Chaplain starts each combat with all of its Loading weapons unloaded."
+      }
+    ],
+    "core_system": {
+      "name": "Ever-Tolling Bell",
+      "description": "“It is all that holds it at bay, the ringing of a funeral. It does not matter what they believe, it does not matter if they have been ever in their life or if they are ignorant of it entirely. When they see the heart of the galactic forge, they hear it, and all we can do is maintain the toll for them. We do not know why it works, or if anything can be done for them, but we will do what we can until we have the answers.”<br><br>-Cornielle de Roux, Founding Partner",
+      "active_name": "Empty the Coffers",
+      "active_effect": "Make an attack with a loaded Loading weapon. If it hits, you may make another attack against the same target with another loaded Loading weapon. You may continue making attacks in this manner until you miss or the target is destroyed. Every attack made in this manner deals +1 bonus damage for each prior attack made with this action.",
+      "activation": "Full",
+      "passive_name": "Tithe",
+      "passive_effect": "Whenever you hit with a Loading weapon, you may reload another weapon of the same size. This weapon gains +1 to its next attack roll this turn."
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "y_pos": 0
+  },
+  {
+    "id": "krfwf_starosta",
+    "license_id": "krfwf_primor",
+    "variant": "Primor",
+    "license_level": 2,
+    "source": "KRFW",
+    "name": "Starosta",
+    "mechtype": [
+      "Defender",
+      "Controller"
+    ],
+    "description": "The Starosta is a budget frame among a company known for its budget frames. Unlike its older sibling, the Primor, the Starosta is designed first and foremost to control terraforming drones for newer colonies, as opposed to established colonies’ existing networks. The Starosta is smaller, lighter, and nimbler, allowing it to seed forests and settle unsteady terrain as it needs to. This construction prevents the Starosta from carrying the onboard drone supplies the Primor does, instead carrying a paired terraforming drone to work alongside the frame when working remotely.<br><br>To ensure the fine control this drone needs, the Starosta includes a secondary cockpit for a copilot, lending the mech its distinctive appearance. The first pilots to retrofit Starostas for combat were reported to have turned the copilot’s cockpit into a decoy, giving them increased survival odds against targeted attacks meant to eliminate the pilot quickly. Pilots also tend to give titles to their cockpits, often aspirational attributes or virtues, typically in opposed pairs. Those who get attached to their mechs will often choose to wholly reprint a Starosta whose decoy cockpit saved them from a lethal blow, as a sign of respect for their machine.",
+    "mounts": [
+      "Flex",
+      "Flex"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 7,
+      "edef": 7,
+      "heatcap": 6,
+      "repcap": 6,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 3,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Two-Headed Eagle",
+        "description": "The Starosta can fly when it moves or Boosts. Whenever the Starosta flies, it may make one Drone adjacent to it mirror its movement exactly, even if that Drone cannot normally fly. If a Drone that cannot fly is brought along in this manner, it falls when the Starosta falls, or if the Starosta does not bring it along again with this trait. This does not count against the Starosta’s total carrying capacity when flying."
+      },
+      {
+        "name": "Renewable Resources",
+        "description": "The Starosta’s Drones are immune to damaging environmental and proximity-based effects. If the Starosta ends a scene with all its Drone systems broken or out of Limited charges, it may replenish one charge or repair one Drone for free during its next rest."
+      },
+      {
+        "name": "Naturalist",
+        "description": "The Starosta may not equip Superheavy weapons. The Starosta takes +1 Difficulty to all checks and saves to avoid or clear Burn."
+      }
+    ],
+    "core_system": {
+      "name": "Grandfather of the Forest",
+      "description": "The Starosta’s iconic terraforming drone is the Leshy drone, often controlled by a secondary pilot to ensure optimal dispersion of the seeds and equipment aboard it as the mech’s main pilot focuses on flying and defending against the sometimes inhospitable worlds the mech works on. In combat situations, pilots will often override Leshy drones to focus on creating beneficial terrain as quickly as possible, leading to the iconic stratocolumnar forests left behind where a Starosta has seen combat. Perhaps even more iconic, though, are the swathes of unintended devastation left behind by the mech’s last ditch defense mechanism, transforming the megaflora into a ruinous path of destruction.",
+      "active_name": "Inscribe the Heavens",
+      "active_effect": "Destroy your Leshy Drone. Create a Line 5 object that is 3 spaces tall adjacent to the drone’s wreck. This Object grants Hard Cover and blocks Line of Sight. Any Character, Object or Terrain in the space the Object occupies with 3 or less Structure remaining is immediately destroyed. Anything with 4 or more Structure remaining is pushed to the nearest free space. At the start of each turn, create a new object directly adjacent to the last one created, continuing in the same direction, with the same effect. Stop when an object passes the edge of the map.<br>The Starosta may not move or take any other actions on the turn it uses this Core Power. If the Starosta is Destroyed or Melts Down, it may use this Core Power as no action immediately before becoming nonfunctional, as long as it has a Leshy Drone deployed.",
+      "activation": "Full",
+      "deployables": [
+        {
+          "name": "Leshy Drone",
+          "type": "Drone",
+          "activation": "Quick",
+          "size": 0.5,
+          "hp": 15,
+          "evasion": 10,
+          "edef": 10,
+          "detail": "When deployed, the Leshy Drone creates a Burst 1 Zone of dense forest that extends in both directions vertically for an indefinite distance. This Zone grants Hard Cover and blocks Line of Sight as if it were Terrain. Characters cannot pass through this Zone. The Leshy Drone can still be targeted by weapons with the Arcing, Seeking, or AP tags, or that attack in a Blast, Burst, Cone, or Line.<br>If the Leshy Drone is destroyed, the Starosta may deploy a new one in the next scene."
+        }
+      ]
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
     "y_pos": 0

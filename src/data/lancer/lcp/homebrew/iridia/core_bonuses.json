@@ -7,6 +7,13 @@
     "description": "A non-standard augmentation designed for frames acting in high-duress fields."
   },
   {
+    "id": "cbb_iridia_gms_remixed_frequencies",
+    "name": "Remixed Frequencies",
+    "source": "GMS",
+    "effect": "You ignore Immunity to tech actions granted by the biological tag. <br><br>1/round, when you target a character with a tech attack, they become Impaired or Slowed until the end of their next turn.",
+    "description": "By employing dubiously legal splices, you’re able to increase the power of your legionspace emitters. "
+  },
+  {
     "id": "cbb_iridia_gms_tactical_insertion",
     "name": "Tactical Insertion",
     "source": "GMS",

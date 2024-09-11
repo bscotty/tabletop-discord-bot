@@ -4,7 +4,15 @@
     "name": "Ablative Heat Sinks",
     "source": "KRFW",
     "effect": "External sources of Heat cannot cause you to exceed your heatcap unless your heatcap is already at maximum.",
-    "description": "Your mech prints with spare heat dissipation systems on its exterior. You can reroute heat through them, provided it builds slowly enough."
+    "description": "Your mech prints with spare heat dissipation systems on its exterior. You can reroute heat through them, provided it builds slowly enough.",
+    "synergies": [
+      {
+        "locations": [
+          "heat"
+        ],
+        "detail": "External sources of Heat cannot cause you to exceed your heatcap unless your heatcap is already at maximum."
+      }
+    ]
   },
   {
     "id": "krfwcb_crossroads_repair_systems",
@@ -17,7 +25,15 @@
         "val": 1
       }
     ],
-    "description": "Your mech prints with an extra casket pre-installed, and a reserve of luck that would make any sailor jealous. After particularly rough missions, you find yourself performing tasks for someone you wish you could remember, even though you know you’re happier forgetting them."
+    "description": "Your mech prints with an extra casket pre-installed, and a reserve of luck that would make any sailor jealous. After particularly rough missions, you find yourself performing tasks for someone you wish you could remember, even though you know you’re happier forgetting them.",
+    "synergies": [
+      {
+        "locations": [
+          "structure"
+        ],
+        "detail": "When you make a Structure check, you may reroll a number of dice up to the amount of Structure you have lost. You may reroll the same die multiple times, each reroll counting towards your total number of rerolls."
+      }
+    ]
   },
   {
     "id": "krfwcb_ichabod_constructor_repurposer_activator_nanite_emitters",
@@ -62,18 +78,35 @@
     "name": "Reckless Safety Tolerances",
     "source": "KRFW",
     "effect": "Your mech increases its maximum HP and Heatcap by how much Structure or Stress you have marked, respectively.",
-    "description": "Your mech prints with a bit more wiggle than it should, allowing you to hastily shove its broken pieces back into place just long enough to finish the next fight. You’ve gotten used to the noises its joints make."
+    "description": "Your mech prints with a bit more wiggle than it should, allowing you to hastily shove its broken pieces back into place just long enough to finish the next fight. You’ve gotten used to the noises its joints make.",
+    "synergies": [
+      {
+        "locations": [
+          "hp",
+          "heat"
+        ],
+        "detail": "Your mech increases its maximum HP and Heatcap by how much Structure or Stress you have marked, respectively."
+      }
+    ]
   },
   {
     "id": "krfwcb_parallel_processors",
     "name": "Parallel Processors",
     "source": "KRFW",
     "effect": "You may install an additional AI in your mech. If one of your AIs enters cascade, Shutting Down your mech becomes a Protocol until the cascade is over. This core bonus may not be taken if you have The Lesson of Shaping, and you may not take The Lesson of Shaping if you have Parallel Processors.",
-    "description": "You can fit two caskets into your cockpit where most pilots can only fit one. Your co-pilots may have their own opinions about the seating arrangement; be prepared to negotiate who gets shotgun.",
+    "description": "You can fit two caskets into your cockpit where most pilots can only fit one. Your co-pilots may have their own opinions about the seating arrangement; be prepared to negotiate who gets to ride shotgun.",
     "bonuses": [
       {
         "id": "ai_cap",
         "val": 1
+      }
+    ],
+    "synergies": [
+      {
+        "locations": [
+          "cascade"
+        ],
+        "detail": "If one of your AIs enters cascade, Shutting Down your mech becomes a Protocol until the cascade is over."
       }
     ]
   }
