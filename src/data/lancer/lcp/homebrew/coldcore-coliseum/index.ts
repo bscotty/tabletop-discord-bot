@@ -6,6 +6,7 @@ import manufacturers from "./manufacturers.json"
 import mods from "./mods.json"
 import systems from "./systems.json"
 import tags from "./tags.json"
+import talents from "./talents.json"
 import weapons from "./weapons.json"
 import {Lcp} from "../../../types/lcp";
 
@@ -31,7 +32,7 @@ export function getColdcoreColiseumLcp(): Lcp {
         systems,
         undefined,
         tags,
-        [],
+        talents,
         weapons
     )
 }

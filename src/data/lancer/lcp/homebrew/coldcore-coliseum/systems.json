@@ -623,7 +623,7 @@
     "license": "JIN-CHAN",
     "license_level": 3,
     "effect": "Your tech actions that target characters gain <b>Experimental 4+:</b> take 2 Heat and choose one of the following effects:<ul><li>They gain or lose 1 Heat.</li><li>They are pushed 1 space in any direction.</li><li>They clear the Impaired or Slowed condition, or gain one of them until the end of their next turn.",
-    "description": "“It won’t do, just being a hanger-on. We can’t achieve anything waiting in the shadows of what someone else might do, riding their wake. And there are always bigger fish, always someone looking down over your shoulder not just to see what you do, but to keep you there, to keep each fish swimming in its own stream. And they’re trapped too, of course, swimming circles in the same tiny pond, trapped by walls they built themselves. The only way out is to leave it altogether. No more ponds, no more walls, you have to build that wide open ocean for yourself and everyone else. It’s everywhere - I’ve seen it, we all have. It’s right there! I’m tired of waiting. Either we get there together, or never at all."
+    "description": "“It won’t do, just being a hanger-on. We can’t achieve anything waiting in the shadows of what someone else might do, riding their wake. And there are always bigger fish, always someone looking down over your shoulder not just to see what you do, but to keep you there, to keep each fish swimming in its own stream. And they’re trapped too, of course, swimming circles in the same tiny pond, trapped by walls they built themselves. The only way out is to leave it altogether. No more ponds, no more walls, you have to build that wide open ocean for yourself and everyone else. It’s everywhere - I’ve seen it, we all have. It’s right there! I’m tired of waiting. Either we get there together, or never at all.“"
   },
   {
     "id": "champ_opal_cogent_operant",
@@ -647,7 +647,7 @@
     "source": "MENAGERIE",
     "license": "JIN-CHAN",
     "license_level": 3,
-    "effect": "Gain the AI property and the following Quick Tech actions. OPAL is not a full AI and cannot cascade",
+    "effect": "Gain the AI property and the following Quick Tech actions. OPAL is not a full AI and cannot cascade.",
     "actions": [
       {
         "name": "Gnosis Dream",
@@ -850,5 +850,123 @@
       }
     ],
     "description": "+++USB/INTERNAL::SOLEMN VIGIL<br>+++DECRYPTION HASH-POSITIVE<br>+++CASE J82XC-OSPREY STATUS::ARCHIVED<br>+++PERSON-OF-INTEREST:: ??? (KNOWN PSEUDONYM: BLINDSPOT)<br>+++TRANSCRIPT AS FOLLOWS:<br>+++I’m pulling the plug on this one; three years and no leads since the original filing. Between their obfuscation and our noted internal conflicts of interest, I doubt we’ll hear any more about him unless he wants to be found. I don’t intend to overstay our welcome. We’ll maintain our contacts within the organization and we’ve petitioned access to the NEMESIS schematics for threat scoping. Cooperation is the name of the game, and as long as we keep these channels open we’ll have an early warning before it hits full RED-SKY.<br>+++ Unofficially: we did our due diligence here. Someone needs to ask Transportation if they’re missing an engineer. Loose lips, people.<br>+++END TRANSCRIPT"
+  },
+  {
+    "id": "cc_alchemist_coolant_pack",
+    "source": "",
+    "license": "GMS",
+    "license_level": 0,
+    "license_id": "",
+    "name": "1. Coolant Pack",
+    "talent_item": true,
+    "talent_id": "cc_alchemist_talent",
+    "talent_rank": 1,
+    "sp": 0,
+    "effect": "Remove up to 4 Burn. The next time you take Heat before the start of your next turn, take -2 Heat (min 0).",
+    "description": "Gained from the Alchemist Rank I pilot talent."
+  },
+  {
+    "id": "cc_alchemist_jet_thruster",
+    "source": "",
+    "license": "GMS",
+    "license_level": 0,
+    "license_id": "",
+    "name": "2. Jet Thruster",
+    "talent_item": true,
+    "talent_id": "cc_alchemist_talent",
+    "talent_rank": 1,
+    "sp": 0,
+    "effect": "Fly 2 spaces. The next system or tech action you activate this turn gains +3 Range.",
+    "description": "Gained from the Alchemist Rank I pilot talent."
+  },
+  {
+    "id": "cc_alchemist_shock_prod",
+    "source": "",
+    "license": "GMS",
+    "license_level": 0,
+    "license_id": "",
+    "name": "3. Shock Prod",
+    "talent_item": true,
+    "talent_id": "cc_alchemist_talent",
+    "talent_rank": 1,
+    "sp": 0,
+    "effect": "Deal 1 AP Energy damage to a character in Sensors. They take 1 AP Energy damage whenever they fail a save or are hit by a tech attack until the end of their next turn.",
+    "description": "Gained from the Alchemist Rank I pilot talent."
+  },
+  {
+    "id": "cc_alchemist_mass_driver",
+    "source": "",
+    "license": "GMS",
+    "license_level": 0,
+    "license_id": "",
+    "name": "4. Mass Driver",
+    "talent_item": true,
+    "talent_id": "cc_alchemist_talent",
+    "talent_rank": 1,
+    "sp": 0,
+    "effect": "Knock a character in Range 8 back 2 spaces. If they hit an obstruction they are knocked Prone. The next time you target a character with a system or tech action this turn, push them 2 spaces in any direction.",
+    "description": "Gained from the Alchemist Rank I pilot talent."
+  },
+  {
+    "id": "cc_alchemist_echo_drone",
+    "source": "",
+    "license": "GMS",
+    "license_level": 0,
+    "license_id": "",
+    "name": "5. Echo Drone",
+    "talent_item": true,
+    "talent_id": "cc_alchemist_talent",
+    "talent_rank": 2,
+    "sp": 0,
+    "deployables": [
+      {
+        "id": "alchemist_echo_drone",
+        "name": "Echo Drone",
+        "type": "Drone",
+        "activation": "Free",
+        "detail": "Deploy an Echo Drone in Sensors. If you activate a system or tech action that targets a Blast, Burst, Line, or Cone that includes a space adjacent to the drone, all spaces adjacent to the drone count as part of the affected area, then the drone is destroyed.",
+        "size": 0.5,
+        "edef": 10,
+        "evasion": 10,
+        "hp": 5
+      }
+    ],
+    "description": "Gained from the Alchemist Rank II pilot talent."
+  },
+  {
+    "id": "cc_alchemist_micro_grenades",
+    "source": "",
+    "license": "GMS",
+    "license_level": 0,
+    "license_id": "",
+    "name": "6. Micro-Grenades",
+    "talent_item": true,
+    "talent_id": "cc_alchemist_talent",
+    "talent_rank": 2,
+    "sp": 0,
+    "actions": [
+      {
+        "name": "Micro_Grenade",
+        "activation": "Free",
+        "detail": "Characters in the affected area take 2 Explosive damage and gain +1 Difficulty on the next check or save they make.",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": 2
+          }
+        ]
+      }
+    ],
+    "description": "Gained from the Alchemist Rank II pilot talent."
   }
 ]

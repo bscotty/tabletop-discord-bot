@@ -17,6 +17,6 @@
   {
     "id": "tg_supercharge",
     "name": "Supercharge",
-    "description": "When you activate a weapon or system with this tag, you can Supercharge it to gain the listed effect. If it has no listed effect, the entire activation counts as Supercharging it. After doing so, you cannot Supercharge it again until the end of the  mission."
+    "description": "When you activate a weapon or system with this tag, you can Supercharge it to gain the listed effect. If it has no listed effect, the entire activation counts as Supercharging it. After doing so, you cannot Supercharge it again until you finish a full repair."
   }
 ]
