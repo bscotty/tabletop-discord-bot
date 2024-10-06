@@ -1,0 +1,101 @@
+[
+  {
+    "id": "cc_alchemist_talent",
+    "name": "ALCHEMIST",
+    "terse": "Build handy gadgets for every occasion.",
+    "description": "A tool for any occasion; you’re always prepared. Where anyone else might see scrap, you see potential and make it into reality – though your hangar team might not appreciate you dipping into their stores.",
+    "ranks": [
+      {
+        "name": "HEDGE INVENTOR",
+        "description": "At the start of each scene choose 2 Gadgets to equip from the list below. Gadgets are micro-systems that activate as a free action for the listed effect, then self-destruct after use. They are not valid targets for destruction any other way. When you Stabilize you can create and equip a new Gadget.",
+        "exclusive": true,
+        "integrated": [
+          "cc_alchemist_coolant_pack",
+          "cc_alchemist_jet_thruster",
+          "cc_alchemist_shock_prod",
+          "cc_alchemist_mass_driver"
+        ]
+      },
+      {
+        "name": "IDLE HANDS",
+        "description": "Gain the following Gadget options. Additionally you may Improvise as a quick action, rolling 1d6. Create the Gadget matching the rolled result.",
+        "actions": [
+          {
+            "name": "Improvise",
+            "activation": "Quick",
+            "detail": "Roll 1d6, creating the matching Gadget option."
+          }
+        ],
+        "exclusive": true,
+        "integrated": [
+          "cc_alchemist_echo_drone",
+          "cc_alchemist_micro_grenades"
+        ]
+      },
+      {
+        "name": "WONDER-WORKER",
+        "description": "When you start your turn without any Gadgets remaining, roll 1d6. On a 5+, create a Gadget. Additionally you may pass your Gadgets to an adjacent ally as a free action, allowing them to use it instead."
+      }
+    ]
+  },
+  {
+    "id": "cc_field_tester_talent",
+    "name": "FIELD TESTER",
+    "terse": "Built to take a beating and keep on fighting.",
+    "description": "It’s a rough gig, but someone has to do it. Whenever R&D gets a fresh idea, you’re the one to make sure it doesn’t blow up the first cadet to fire it. No, it’ll blow you up instead. But you’re tough enough to take it.",
+    "ranks": [
+      {
+        "name": "SAFETY FIRST",
+        "description": "You gain +1 Accuracy on all checks and saves to avoid effects caused by allied characters, and are immune to all damage and effects that would result on a successful save from them unless you choose to be affected."
+      },
+      {
+        "name": "BLOWOUT PANELS",
+        "description": "If you Brace and take Structure damage you roll 1 fewer die (min 0), gain immunity to all damage that would roll over after refilling your HP and clear all conditions that were not self-inflicted. You must decide to Brace before making the Structure check."
+      },
+      {
+        "name": "CRASH TEST DUMMY",
+        "description": "After Bracing you can continue to take reactions, and on your following turn you gain an additional special quick action which can only be used to Boost, activate Shield systems, or in combination with your normal quick action to Stabilize. You do not gain this action if you would already have two quick actions after Bracing."
+      }
+    ]
+  },
+  {
+    "id": "cc_kavalier_talent",
+    "name": "KAVALIER",
+    "terse": "A warrior trained in the techniques of ancient Karrakis.",
+    "description": "The sword is more than a weapon – it is a promise. Eimon Kasyya knows this the way his father did, and his father’s father. For generations his ancestors have kept the princelings of Arrudye safe. Now he does the same from his cockpit. Technology changes, but the promise never does.",
+    "ranks": [
+      {
+        "name": "FOOTWORK",
+        "description": "When you hit an adjacent character with a melee attack, push them up to 2 spaces into a space adjacent to you."
+      },
+      {
+        "name": "DEVIL GUARD",
+        "description": "Your Overwatch reaction triggers when a hostile character within the Threat of one of your melee weapons is hit with an attack by an allied character. If this triggers Footwork, you may push them to any space adjacent to you."
+      },
+      {
+        "name": "SOVEREIGN BLADE",
+        "description": "Gain an additional special Overwatch reaction each round which can only be triggered by melee weapons. When you hit a character with a melee weapon during Overwatch they become Impaired and cannot take reactions until the start of their next turn."
+      }
+    ]
+  },
+  {
+    "id": "cc_technician_talent",
+    "name": "TECHNICIAN",
+    "terse": "Master of the ring and consummate professional, you excel at setting up your allies.",
+    "description": "Wrestling is like a dance – you need a good partner. El Huracán is an excellent partner. He knows every step, and makes sure you always keep time. When you win, you win together.",
+    "ranks": [
+      {
+        "name": "BLINDSIDE",
+        "description": "When a hostile character in Range 3 passes a check or save forced by an allied character you may expend your Overwatch to force them to reroll the check or save; they must keep the second result."
+      },
+      {
+        "name": "HOT TAG",
+        "description": "1/Round when you move adjacent to an allied character you can Slide them into any other space adjacent to you. They gain soft cover until the end of their next turn."
+      },
+      {
+        "name": "KNOCK 'EM DOWN",
+        "description": "1/Scene as a quick action you can Line Up a hostile character in Range 3, forcing them to make a Systems save. On a failure they are sent reeling; they become Shredded until the start of their next turn, and the next attack roll made against them becomes an automatic critical hit instead of rolling. On a success, push them 1 space in any direction, and you may reuse this action in this scene."
+      }
+    ]
+  }
+]
