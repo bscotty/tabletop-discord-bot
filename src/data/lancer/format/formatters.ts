@@ -219,32 +219,31 @@ export class Formatters {
 
     public coreFormat(core: SearchableICoreSystemData) {
         const coreName = core.name || core.passive_name || core.active_name
-        let out = `**${coreName}** (${core.source} CORE System)${formatContentPack(core)}\n`
+        let out = `**${coreName}** (${core.source} CORE System)${formatContentPack(core)}`
 
         if (core.passive_name) {
-            out += `**Passive: ${core.passive_name}**\n`
+            out += `\n**Passive: ${core.passive_name}**`
         }
         if (core.passive_effect) {
-            out += `${this.turndownService.turndown(core.passive_effect)}\n`
+            out += `\n${this.turndownService.turndown(core.passive_effect)}`
         }
         if (core.passive_actions) {
-            core.passive_actions.forEach(pa => out += `${this.actionFormat(pa)}\n`)
+            core.passive_actions.forEach(pa => out += `\n${this.actionFormat(pa)}`)
         }
 
         if (core.integrated) {
-            out += this.integratedFormat(core.integrated, core.source)
+            out += `\n${this.integratedFormat(core.integrated, core.source)}`
         }
         if (core.deployables) {
-            core.deployables.forEach(dep => out += this.deployableFormatter(dep))
+            core.deployables.forEach(dep => out += `\n${this.deployableFormatter(dep)}`)
         }
         if (core.tags) {
             core.tags.forEach(t => out += this.populateTag(t))
         }
 
         if (core.active_name) {
-            out += `**Active: ${core.active_name}** `
-            out += `(Activation: ${activationFormat(core.activation)})\n`
-            out += `${this.turndownService.turndown(core.active_effect)}`
+            out += `\n**Active: ${core.active_name}** (Activation: ${activationFormat(core.activation)})`
+            out += `\n${this.turndownService.turndown(core.active_effect)}`
         }
         if (core.active_actions) {
             core.active_actions.forEach(aa => out += `\n${this.actionFormat(aa)}`)
@@ -487,30 +486,33 @@ export class Formatters {
         let tagsEtc = [`${weapon.mount} ${weapon.type}`]
         if (weapon.sp) tagsEtc.push(`${weapon.sp} SP`)
         if (weapon.tags) tagsEtc = tagsEtc.concat(weapon.tags.map(tag => this.populateTag(tag)))
-        out += `\n${tagsEtc.join(', ')}\n`
+        out += `\n${tagsEtc.join(', ')}`
 
-        if (weapon.range && weapon.range.length) out += '[' + weapon.range.map(r => r.override ? r.val : `${getEmoji(r.type.toLowerCase())} ${r.val}`).join(', ') + '] '
-        if (weapon.damage && weapon.damage.length) out += '[' + weapon.damage.map(dmg => dmg.override ? dmg.val : `${dmg.val}${getEmoji(dmg.type.toLowerCase())}`).join(' + ') + ']'
-        out += '\n'
+        const hasWeaponRange = weapon.range && weapon.range.length
+        const hasWeaponDamage = weapon.damage && weapon.damage.length
+        if (hasWeaponRange || hasWeaponDamage) out += '\n'
+        if (hasWeaponRange) out += '[' + weapon.range.map(r => r.override ? r.val : `${getEmoji(r.type.toLowerCase())} ${r.val}`).join(', ') + '] '
+        if (hasWeaponDamage) out += '[' + weapon.damage.map(dmg => dmg.override ? dmg.val : `${dmg.val}${getEmoji(dmg.type.toLowerCase())}`).join(' + ') + ']'
 
-        if (weapon.effect) out += this.turndownService.turndown(weapon.effect) + "\n"
-        if (weapon.on_attack) out += `On Attack: ${this.turndownService.turndown(weapon.on_attack)}\n`
-        if (weapon.on_hit) out += `On Hit: ${this.turndownService.turndown(weapon.on_hit)}\n`
-        if (weapon.on_crit) out += `On Crit: ${this.turndownService.turndown(weapon.on_crit)}\n`
+        if (weapon.effect) out += "\n" + this.turndownService.turndown(weapon.effect)
+        if (weapon.on_attack) out += `\nOn Attack: ${this.turndownService.turndown(weapon.on_attack)}`
+        if (weapon.on_hit) out += `\nOn Hit: ${this.turndownService.turndown(weapon.on_hit)}`
+        if (weapon.on_crit) out += `\nOn Crit: ${this.turndownService.turndown(weapon.on_crit)}`
 
         if (weapon.actions && weapon.actions.length > 0) {
-            out += 'This weapon grants the following actions:\n'
-            weapon.actions.forEach(act => out += this.actionFormat(act))
+            out += '\nThis weapon grants the following actions:'
+            weapon.actions.forEach(act => out += `\n\n${this.actionFormat(act)}`)
         }
 
         if (weapon.deployables && weapon.deployables.length > 0) {
-            out += 'This weapon grants the following deployables:\n'
-            weapon.deployables.forEach(dep => out += this.deployableFormatter(dep))
+            out += '\nThis weapon grants the following deployables:'
+            weapon.deployables.forEach(dep => out += `\n\n${this.deployableFormatter(dep)}`)
         }
 
         if (weapon.profiles && weapon.profiles.length > 0) {
+            out += '\nThis weapon has the following profiles:'
             weapon.profiles.forEach(profile =>
-                out += `Profile: ${this.weaponProfileFormat(this.weaponProfile(weapon, profile))} \n`)
+                out += `\n\nProfile: ${this.weaponProfileFormat(this.weaponProfile(weapon, profile))}`)
         }
         return out
     }
@@ -523,25 +525,27 @@ export class Formatters {
         let out = `**${weapon.name}**`
         let tagsEtc = [`${weapon.mount} ${weapon.type}`]
         if (weapon.tags) tagsEtc = tagsEtc.concat(weapon.tags.map(tag => this.populateTag(tag)))
-        out += `\n${tagsEtc.join(', ')}\n`
+        out += `\n${tagsEtc.join(', ')}`
 
-        if (weapon.range && weapon.range.length) out += '[' + weapon.range.map(r => r.override ? r.val : `${getEmoji(r.type.toLowerCase())} ${r.val}`).join(', ') + '] '
-        if (weapon.damage && weapon.damage.length) out += '[' + weapon.damage.map(dmg => dmg.override ? dmg.val : `${dmg.val}${getEmoji(dmg.type.toLowerCase())}`).join(' + ') + ']'
-        out += '\n'
+        const hasWeaponRange = weapon.range && weapon.range.length
+        const hasWeaponDamage = weapon.damage && weapon.damage.length
+        if (hasWeaponRange || hasWeaponDamage) out += '\n'
+        if (hasWeaponRange) out += '[' + weapon.range.map(r => r.override ? r.val : `${getEmoji(r.type.toLowerCase())} ${r.val}`).join(', ') + '] '
+        if (hasWeaponDamage) out += '[' + weapon.damage.map(dmg => dmg.override ? dmg.val : `${dmg.val}${getEmoji(dmg.type.toLowerCase())}`).join(' + ') + ']'
 
-        if (weapon.effect) out += this.turndownService.turndown(weapon.effect) + "\n"
-        if (weapon.on_attack) out += `On Attack: ${this.turndownService.turndown(weapon.on_attack)}\n`
-        if (weapon.on_hit) out += `On Hit: ${this.turndownService.turndown(weapon.on_hit)}\n`
-        if (weapon.on_crit) out += `On Crit: ${this.turndownService.turndown(weapon.on_crit)}\n`
+        if (weapon.effect) out += "\n" + this.turndownService.turndown(weapon.effect)
+        if (weapon.on_attack) out += `\nOn Attack: ${this.turndownService.turndown(weapon.on_attack)}`
+        if (weapon.on_hit) out += `\nOn Hit: ${this.turndownService.turndown(weapon.on_hit)}`
+        if (weapon.on_crit) out += `\nOn Crit: ${this.turndownService.turndown(weapon.on_crit)}`
 
         if (weapon.actions && weapon.actions.length > 0) {
-            out += 'This weapon grants the following actions:\n'
-            weapon.actions.forEach(act => out += this.actionFormat(act))
+            out += '\nThis weapon grants the following actions:'
+            weapon.actions.forEach(act => out += `\n\n${this.actionFormat(act)}`)
         }
 
         if (weapon.deployables && weapon.deployables.length > 0) {
-            out += 'This weapon grants the following deployables:\n'
-            weapon.deployables.forEach(dep => out += this.deployableFormatter(dep))
+            out += '\nThis weapon grants the following deployables:'
+            weapon.deployables.forEach(dep => out += `\n\n${this.deployableFormatter(dep)}`)
         }
         return out
     }
