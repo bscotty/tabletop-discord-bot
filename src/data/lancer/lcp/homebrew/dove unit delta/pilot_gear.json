@@ -33,7 +33,7 @@
     "id": "dud_pg_claws_of_the_union",
     "name": "Claws of the Union",
     "type": "Weapon",
-    "description": "Wicked talons of gears and steel, sharpened to a razor's edge. These prosthetics were never made to ensure equity; they were made to get equal.<br><br><i>A guardian's weapon crafted from fresh steel works just as well as one reforged from a butcher's blade.</i>",
+    "description": "Wicked talons of gears and steel, sharpened to a razor's edge. These prosthetics were never made to ensure equity; they were made to get even.<br><br><i>A guardian's weapon crafted from fresh steel works just as well as one reforged from a butcher's blade.</i>",
     "effect": "This weapon can be used with the following profile even while unloaded, and using this profile does not cause it to become unloaded: [1 Threat, AP, 1 Kinetic.]<br><br>In addition, gain the Paradox of Inexorable Force power from the Reforged Titan bond.",
     "tags": [
       {
@@ -66,8 +66,8 @@
     "id": "dud_pg_badobasu",
     "name": "Bādobasu",
     "type": "Weapon",
-    "description": "An heirloom katana, well-maintained and polished to a flawless sheen. This ages old sword is the well-known symbol of the honored Koizumi family.<br><br><i>Oftentimes the most trusted blade is one that's never drawn.</i>",
-    "effect": "While this weapon remains sheathed and visibly worn during a charged narrative situation, gain +2 to all checks made to quell the tension.<br><br>In addition, gain the Listen to Reason power from the Trusted Builder bond.",
+    "description": "An heirloom katana, well-maintained and polished to a flawless sheen. This ages old sword is the well-known symbol of the honored Koizumi family.<br><br><i>The most trusted blade of all is one that's never drawn.</i>",
+    "effect": "While this weapon remains sheathed and visibly worn during a charged narrative situation, gain +2 to all checks made to quell the tension.<br><br>In addition, gain the Listen to Reason power from the Trusted Seneschal bond.",
     "tags": [
       {
         "id": "tg_archaic"
@@ -93,7 +93,7 @@
     ]
   },
   {
-    "id": "dud_pg_salamander_scale_Hardsuit",
+    "id": "dud_pg_salamander_scale_hardsuit",
     "name": "Salamander Scale Hardsuit",
     "type": "Armor",
     "description": "A sturdy yet lightweight armor made of materials unique to the Dawnline Shore that naturally maintains a rosy mirrorlike gleam. This hardsuit is a testament to both skillful construction and clever design.<br><br><i>A cunning and fiery twist on the ages-old strategy of turning an opponent's force against them.</i>",
@@ -111,7 +111,7 @@
         "name": "Fight Fire With Fire",
         "activation": "Reaction",
         "frequency": "1/scene",
-        "trigger": "You are hit by an attack and damage has been rolled.",
+        "trigger": "You are hit by a damaging attack and damage has been rolled.",
         "detail": "Gain Immunity to all damage, heat, and effects from the triggering attack. Deal burn to the attacker equal to the damage rolled.",
         "pilot": true
       }

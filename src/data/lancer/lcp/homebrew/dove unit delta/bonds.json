@@ -124,7 +124,7 @@
     ],
     "questions": [
       {
-        "question": "What gives you your power?",
+        "question": "What gives you your powers?",
         "options": [
           "A star map given to you long ago by an old friend.",
           "Years spent out in the wilderness, mapping the mountains.",
@@ -163,36 +163,35 @@
     ]
   },
   {
-    "id": "dud_bond_trusted_builder",
-    "name": "The Trusted Builder",
+    "id": "dud_bond_trusted_seneschal",
+    "name": "The Trusted Seneschal",
     "major_ideals": [
-      "I addressed challenges with diplomacy, creativity, or empathy.",
+      "I addressed challenges with honor, loyalty, or integrity.",
       "I expressed my heritage, background, or beliefs through my actions.",
       "I struggled with issues from my burdens or background."
     ],
     "minor_ideals": [
-      "I made a new friend or ally.",
-      "I defused a potentially violent or charged situation.",
-      "I helped to soothe or heal someone’s pain.",
-      "I created a new object, organization, or alliance, or mended one that was broken."
+      "I spared or extended grace to a defeated opponent.",
+      "I stood by a friend or ally despite dire consequences.",
+      "I swore a solemn and unbreakable vow.",
+      "I made restitution to someone harmed by my actions."
     ],
     "questions": [
       {
-        "question": "What gives you your power?",
+        "question": "What gives you your powers?",
         "options": [
-          "A strong sense of community from years spent station-side.",
-          "A love of engineering passed down from your parents.",
-          "Part of your body that you built yourself, lovingly tinkered with."
+          "An ironclad personal code of honor.",
+          "A family legacy stretching back centuries.",
+          "The knowledge of your privilege and a sense of responsibility to those less fortunate."
         ]
       },
       {
-        "question": "What do you speak with?",
+        "question": "What vow have you sworn?",
         "options": [
-          "Your voice.",
-          "Your hands.",
-          "Your eyes.",
-          "Your heart.",
-          "Your gut."
+          "To never allow an innocent to come to harm.",
+          "To uphold the traditions and values of your house or nation.",
+          "To repent for an unforgivable mistake.",
+          "To stand by your friends and family, no matter the cost."
         ]
       }
     ],
@@ -203,16 +202,16 @@
         "description": "You have a proven skill for bridging the gap in disparate minds. So long as you have not taken violent action against them in the current scene, you may ask any characters present to stop what they are doing and listen to what you have to say. They will always do so, and for the rest of the scene, gain +2 Accuracy and increased effect on all actions you take to stop them from following through with what they were trying to do."
       },
       {
-        "name": "Boon of the Trusted Forge",
+        "name": "Boon of Trusted Integrity",
         "prerequisite": "If you have two or more powers from this bond, you can choose a power from any other bond instead of one from this bond when you would gain a power. You can do this twice. If you have at least one veteran power, gain the Boon of the Forge.",
-        "description": "At the end of each session, if you completed a project, show it off to everyone. Give someone who admires it 1 XP.",
+        "description": "At the end of the session, describe how someone else made the right choice despite personal cost. Give them 1 XP.",
         "veteran": true
       },
       {
-        "name": "Trusted Web of Creation",
+        "name": "Trusted Durendal, My Brand",
         "frequency": "1/session",
         "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
-        "description": "By touching a willing person, an object, or a structure, you can visualize the connections between them or it and other objects, people, or things. You get excellent (but incomplete) information on these people, objects, or similar and how they relate. This information is factual and detailed. You can view up to three points of connection before this power fades. For example, you could visualize something three times removed or three separate things.",
+        "description": "You may give a name to a weapon, ship, or other object belonging to you or a willing ally. Once per session, the item’s owner may invoke its name for +1 ACCURACY and increased effect on a relevant skill check. If the item is ever lost or damaged beyond repair, the item’s owner gains a burden. You can name multiple items, but a character may only own one named item at a time; if they acquire a second named item, the first loses this benefit.",
         "master": true
       }
     ]
@@ -233,7 +232,7 @@
     ],
     "questions": [
       {
-        "question": "What gives you your power?",
+        "question": "What gives you your powers?",
         "options": [
           "A long time spent alone in the cold, a time you’d rather forget.",
           "A hardened, bitter upbringing.",
