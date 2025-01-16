@@ -22,7 +22,6 @@ import {getKrfwCatalogLcp} from "../lcp/homebrew/krfw catalog";
 import {getLegionnaireLcp} from "../lcp/homebrew/legionnaire";
 import {getLiminalSpaceLcp} from "../lcp/homebrew/liminal-space";
 import {getMfecaneLcp} from "../lcp/homebrew/mfecane";
-import {getSciroccoLcp} from "../lcp/homebrew/scirocco";
 import {getStolenCrownLcp} from "../lcp/homebrew/stolen-crown";
 import {getSuldanLcp} from "../lcp/homebrew/suldan";
 import {getColdcoreColiseumLcp} from "../lcp/homebrew/coldcore-coliseum";
@@ -82,7 +81,6 @@ function homebrew(): Lcp[] {
         getLegionnaireLcp(),
         getLiminalSpaceLcp(),
         getMfecaneLcp(),
-        getSciroccoLcp(),
         getStolenCrownLcp(),
         getSuldanLcp(),
         getColdcoreColiseumLcp(),
