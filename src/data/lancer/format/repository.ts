@@ -12,7 +12,6 @@ import {getSsmrLcp} from "../lcp/ssmr";
 import {getDustgraveLcp} from "../lcp/dustgrave";
 import {getWinterScarLcp} from "../lcp/winter-scar";
 import {getShadowOfTheWolfLcp} from "../lcp/shadow-of-the-wolf";
-import {getShadowOfTheWolfBondsLcp} from "../lcp/shadow-of-the-wolf-bonds";
 import {getCrisisCoreLcp} from "../lcp/homebrew/crisis core";
 import {getDoveUnitDeltaLcp} from "../lcp/homebrew/dove unit delta";
 import {getEHandSLCP} from "../lcp/homebrew/event horizon & suns";
@@ -22,7 +21,6 @@ import {getKrfwCatalogLcp} from "../lcp/homebrew/krfw catalog";
 import {getLegionnaireLcp} from "../lcp/homebrew/legionnaire";
 import {getLiminalSpaceLcp} from "../lcp/homebrew/liminal-space";
 import {getMfecaneLcp} from "../lcp/homebrew/mfecane";
-import {getSciroccoLcp} from "../lcp/homebrew/scirocco";
 import {getStolenCrownLcp} from "../lcp/homebrew/stolen-crown";
 import {getSuldanLcp} from "../lcp/homebrew/suldan";
 import {getColdcoreColiseumLcp} from "../lcp/homebrew/coldcore-coliseum";
@@ -67,7 +65,6 @@ function firstParty(): Lcp[] {
         getDustgraveLcp(),
         getWinterScarLcp(),
         getShadowOfTheWolfLcp(),
-        getShadowOfTheWolfBondsLcp()
     ]
 }
 
@@ -82,7 +79,6 @@ function homebrew(): Lcp[] {
         getLegionnaireLcp(),
         getLiminalSpaceLcp(),
         getMfecaneLcp(),
-        getSciroccoLcp(),
         getStolenCrownLcp(),
         getSuldanLcp(),
         getColdcoreColiseumLcp(),

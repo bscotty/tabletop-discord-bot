@@ -13,7 +13,7 @@
   {
     "id": "pbg_second_choice",
     "name": "Second Choice",
-    "description": "An entire industry exists to salve the existential ennui of young Karrakin nobility, through travel and exchange programs with Earth, Ras Shamra, and beyond. <i>Where else in the galaxy have you been? What strange sights have you seen? Who have you met? How has this affected your relationship with Karrakin society?</i><br>You benefit from great privilege, but have comparatively little responsibility. <i>What is your relationship with your fellow nobles? With power? With your own privilege?</i>",
+    "description": "An entire industry exists to salve the existential ennui of young Karrakin nobility through travel and exchange programs with Earth, Ras Shamra, and beyond. <i>Where else in the galaxy have you been? What strange sights have you seen? Who have you met? How has this affected your relationship with Karrakin society?</i><br>You benefit from great privilege, but have comparatively little responsibility. <i>What is your relationship with your fellow nobles? With power? With your own privilege?</i>",
     "skills": [
       "sk_charm",
       "sk_invent_or_create",
@@ -24,7 +24,7 @@
   {
     "id": "pbg_company_squire",
     "name": "Company Squire",
-    "description": "The traditional path to becoming a kavaliere is to learn from more experienced pilots as part of their support staff. <i>Who did you squire for? How did they treat you? What were your responsibilities?  What did you learn from them?</i><br>The Great Company system is a political structure unto itself. <i>Did you squire for a noble House Company or mercenary Free Company? Have you seen combat with them? How has your company influenced you?</i>",
+    "description": "The traditional path to becoming a kavaliere is to learn from more experienced pilots as part of their support staff. <i>Who did you squire for? How did they treat you? What were your responsibilities?  What did you learn from them?</i><br>The Great Companies system is a political structure unto itself. <i>Did you squire for a noble house company or mercenary Free Company? Have you seen combat with them? How has your company influenced you?</i>",
     "skills": [
       "sk_assault",
       "sk_get_a_hold_of_something",
@@ -35,7 +35,7 @@
   {
     "id": "pbg_pankrati",
     "name": "Pankrati",
-    "description": "The mech combat sport of pankration mechani produces a great number of the BUC’s most talented pilots. <i>What is your record in competitive matches? Which formats were your specialty? What motivated you to train for real combat? What did you find difficult about the transition?</i><br>Talented pankrati frequently achieve great renown across the Concern and beyond. <i>Do you have fans? How do they see you? Do you indulge your celebrity status?</i>",
+    "description": "The mech combat sport of pankration mekani produces a great number of the BUC’s most talented pilots. <i>What is your record in competitive matches? Which formats were your specialty? What motivated you to train for real combat? What did you find difficult about the transition?</i><br>Talented pankrati frequently achieve great renown across the Concern and beyond. <i>Do you have fans? How do they see you? Do you indulge your celebrity status?</i>",
     "skills": [
       "sk_apply_fists_to_faces",
       "sk_charm",
@@ -46,7 +46,7 @@
   {
     "id": "pbg_young_buck",
     "name": "Young Buck",
-    "description": "The BUC celebrates its “young bucks”, the talented soldiers who rise through the ranks as a result of skill and dedication. <i>How did you join the BUC, and what did you do? What led to your meteoric rise? What obstacles have you faced, and how did you overcome them?</i><br>Tours with the BUC range from quiet peacekeeping missions, through to hot wars on distant planets. <i>Where were you deployed, and what did you do there? How has that experience shaped you? What is your relationship with war? With your fellow soldiers? With the people you helped, or hurt?</i>",
+    "description": "The BUC celebrates its “young bucks”, the talented soldiers who rise through the ranks as a result of skill and dedication. <i>How did you join the BUC, and what was your role? What led to your meteoric rise? What obstacles have you faced, and how did you overcome them?</i><br>Tours with the BUC range from quiet peacekeeping missions, through to hot wars on distant planets. <i>Where were you deployed, and what did you do there? How has that experience shaped you? What is your relationship with war? With your fellow soldiers? With the people you helped, or hurt?</i>",
     "skills": [
       "sk_assault",
       "sk_blow_something_up",

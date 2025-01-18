@@ -45,16 +45,16 @@
       {
         "name": "The Power Of Friendship",
         "frequency": "1/session",
-        "description": "Name an allied or friendly NPC. As long as it is plausible for them to do so, that NPC shows up to help for the rest of the scene, and the GM chooses one:<ul> <li>They suffer harm or personal cost to do so.</li> <li>They send someone else in their place.</li> <li>They bring trouble with them.</li> <li>They won't help you like this again until you do them a favor.</li> </ul>"
+        "description": "Name an allied or friendly NPC. As long as it is plausible for them to do so, that NPC shows up to help for the rest of the scene and the GM chooses one:<ul><li>They suffer harm or personal cost to do so.</li><li>They send someone else in their place.</li><li>They bring trouble with them.</li><li>They won't help you like this again until you do them a favor.</li></ul>"
       },
       {
         "name": "Tenacity",
-        "description": "When you push yourself to reroll a skill check, you may take an additional Stress. If you do, gain +1 ACCURACY."
+        "description": "When you push yourself to reroll a skill check, you may take an additional STRESS. If you do, gain +1 ACCURACY."
       },
       {
         "name": "Weight of the World",
         "frequency": "1/session",
-        "description": "When you encounter someone who is imprisoned, oppressed, or has suffered a great injustice, you may gain a Burden. Until the Burden is healed, you gain +1 ACCURACY and increased effect on all checks to help or aid them."
+        "description": "When you encounter someone who is imprisoned, oppressed, or has suffered a great injustice, you may gain a burden. Until the burden is healed, you gain +1 ACCURACY and increased effect on all checks to help or aid them."
       },
       {
         "name": "Fuck You",
@@ -67,7 +67,7 @@
       {
         "name": "Together We Are Strong",
         "frequency": "1/session",
-        "description": "When you successfully convince someone to join your side, each of your allies who witnessed the conversion clears 1 Stress."
+        "description": "When you successfully convince someone to join your side, each of your allies who witnessed the conversion clears 1 STRESS."
       },
       {
         "name": "Inspiring Leader",
@@ -76,7 +76,7 @@
       {
         "name": "Raise The Banner",
         "frequency": "1/session",
-        "description": "When you fly a flag, openly display an emblem, or prominently graffiti a symbol or slogan associated with your cause, you can attempt to provoke an enemy to act against you. The GM chooses one:&nbsp;<ul> <li>Their response is hasty, or they make a mistake.&nbsp;</li> <li>Their response rallies more people to your cause.&nbsp;</li> <li>They do not respond immediately, but you gain increased effect on actions against them until they do.</li> </ul>"
+        "description": "When you fly a flag, openly display an emblem, or prominently graffiti a symbol or slogan associated with your cause, you can attempt to provoke an enemy to act against you. The GM chooses one:<ul><li>Their response is hasty, or they make a mistake.</li><li>Their response rallies more people to your cause.</li><li>They do not respond immediately, but you gain increased effect on actions against them until they do.</li></ul>"
       },
       {
         "name": "Boon of Rebellion",
@@ -88,7 +88,7 @@
         "name": "Do You Hear The People Sing",
         "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
         "frequency": "1/session",
-        "description": "When you speak to a sympathetic crowd, you can inspire them to action. Name a cause or goal, and choose one:&nbsp;<ul> <li>The crowd backs you up, and for the rest of the session they lend you +1 ACCURACY and increased effect on all actions to achieve your cause or goal while they are with you.&nbsp;</li> <li>The crowd is inspired to action, and for the rest of the session they will attempt to achieve your cause or goal on their own initiative. At the end of the session (or when narratively appropriate), the GM describes what the crowd has achieved and the consequences of their actions.</li> </ul>",
+        "description": "When you speak to a sympathetic crowd, you can inspire them to action. Name a cause or goal, and choose one:<ul><li>The crowd backs you up, and for the rest of the session they lend you +1 ACCURACY and increased effect on all actions to achieve your cause or goal while they are with you.</li><li>The crowd is inspired to action, and for the rest of the session they will attempt to achieve your cause or goal on their own initiative. At the end of the session (or when narratively appropriate), the GM describes what the crowd has achieved and the consequences of their actions.</li></ul>",
         "master": true
       }
     ]
@@ -111,7 +111,7 @@
       {
         "question": "What gives you your powers?",
         "options": [
-          "A cosmopolitan upbringing amongst many diverse cultures.",
+          "A cosmopolitan upbringing among many diverse cultures.",
           "A thrill-seeking drive that only grows when fed.",
           "A certain awareness of death and the temporary nature of existence."
         ]
@@ -130,26 +130,26 @@
       {
         "name": "Uninhibited",
         "frequency": "1/session",
-        "description": "When you indulge in an activity that brings you great joy, you or an ally who joined you may fill in a segment of a Burden."
+        "description": "When you indulge in an activity that brings you great joy, you or an ally who joined you may fill in a segment of a burden."
       },
       {
         "name": "Infectious Enthusiasm",
         "frequency": "1/scene",
-        "description": "When you convince an ally to try something new, for the rest of the scene they gain +1 ACCURACY and increased effect on skill checks related to that experience or activity."
+        "description": "When you convince an ally to try something new, they gain +1 ACCURACY and increased effect on skill checks related to that experience or activity for the rest of the scene."
       },
       {
         "name": "Break Bread",
         "frequency": "1/session",
-        "description": "When you share a meal or a drink with someone, choose a person you shared with and pick one:<ul><li>They clear 1 Stress.</li><li>You gain +1 ACCURACY and increased effect on social checks against them for the rest of the scene.</li></ul>"
+        "description": "When you share a meal or a drink with someone, choose a person you shared with and pick one:<ul><li>They clear 1 STRESS.</li><li>You gain +1 ACCURACY and increased effect on social checks against them for the rest of the scene.</li></ul>"
       },
       {
         "name": "Live And Learn",
-        "description": "When you fail a Risky or Heroic check, the next check you make using the same trigger gains +1 ACCURACY."
+        "description": "When you fail a RISKY or HEROIC check, the next check you make using the same trigger gains +1 ACCURACY."
       },
       {
         "name": "What Could Go Wrong?",
         "frequency": "2/session",
-        "description": "When you or a willing ally makes a skill check, you may make that check Risky (or make a Risky check Heroic). If you do, the person making the check gains +1 ACCURACY and increased effect."
+        "description": "When you or a willing ally makes a skill check, you may make that check RISKY (or make a RISKY check HEROIC). If you do, the person making the check gains +1 ACCURACY and increased effect."
       },
       {
         "name": "The Good Stuff",
@@ -163,7 +163,7 @@
       },
       {
         "name": "Hook Up",
-        "description": "You usually know how to get hold of something rare, expensive, or otherwise scarce; if you don't, you know who does. You can always ask the GM exactly what needs to be done to acquire a rare item, and have increased effect on all actions to do so."
+        "description": "You usually know how to get hold of things rare, expensive, or otherwise scarce; if you don't, you know who does. You can always ask the GM exactly what needs to be done to acquire a rare item, and have increased effect on all actions to do so."
       },
       {
         "name": "Friends In Strange Places",
@@ -172,7 +172,7 @@
       },
       {
         "name": "Cosmopolitan",
-        "description": "When you encounter a new culture, subculture, or society, ask one of the following questions and get a truthful answer from the GM:<ul><li>What does this group value?</li><li>What does this group detest?</li><li>How can I blend in?</li></ul>You or an ally of your choice gets +1 ACCURACY on their next skill check acting on the answer."
+        "description": "When you encounter a new culture, subculture, or society, ask one of the following questions and get a truthful answer from the GM:<ul><li>What does this group value?</li><li>What does this group detest?</li><li>How can I best blend in?</li></ul>You or an ally of your choice gets +1 ACCURACY on their next skill check to act on the answer."
       },
       {
         "name": "Boon of the Open Mind",
@@ -184,7 +184,7 @@
         "name": "The Beautiful Life",
         "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
         "frequency": "1/session",
-        "description": "For the rest of the scene, you or an ally of your choice can defer the consequences of all skill checks. They all catch up to you at the end of the scene. If this would cause you to break, you are not removed from a scene but take a Burden as usual.",
+        "description": "For the rest of the scene, you or an ally of your choice can defer the consequences of all skill checks. They all catch up to you at the end of the scene. If deferred consequences would cause you to break one or more times, you are not removed from a scene but take burdens as usual.",
         "master": true
       }
     ]
@@ -199,7 +199,7 @@
     ],
     "minor_ideals": [
       "I set an impossible goal and achieved it anyway.",
-      "I brought low or humiliated a rival.",
+      "I humiliated or brought low a rival.",
       "I took something important or irreplaceable for myself.",
       "I paid the price for my ambition."
     ],
@@ -231,16 +231,16 @@
       {
         "name": "Ruthless",
         "frequency": "1/session",
-        "description": "When you would take a consequence, you may instead choose a friendly NPC who is present in the scene. That NPC takes the consequence, and forever becomes your enemy."
+        "description": "When you would take a consequence, you may instead choose a friendly NPC who is present in the scene. That NPC takes the consequence, and then becomes your enemy."
       },
       {
         "name": "White Whale",
-        "description": "Declare a nemesis (a major antagonist, a powerful organization, an abstract concept). When you score a significant victory over your nemesis, you and each ally who helped clear 1 Stress. When you defeat your nemesis for good, you or someone who helped you gains 1 XP. You may only have a single nemesis at once, but may change your nemesis during downtime."
+        "description": "Declare a nemesis (a major antagonist, a powerful organization, an abstract concept). When you score a significant victory over your nemesis, you and each ally who helped clear 1 STRESS. When you defeat your nemesis for good, you or someone who helped you gains 1 XP. You may only have a single nemesis at once, but may change your nemesis during downtime."
       },
       {
         "name": "Shoot First",
         "frequency": "1/session",
-        "description": "When you are tricked or double-crossed, describe how you prepared for this scenario and are able to turn it to your advantage. The GM picks one:&nbsp;<ul><li>You take the consequences, but gain +1 ACCURACY and increased effect against your adversary for the rest of the scene.&nbsp;</li><li>You are able to avoid the consequences, though your allies may not be so lucky.&nbsp;</li><li>You get to act first.&nbsp;</li></ul>"
+        "description": "When you are tricked or double-crossed, describe how you prepared for this scenario and are able to turn it to your advantage. The GM picks one:<ul><li>You take the consequences, but gain +1 ACCURACY and increased effect against your adversary for the rest of the scene.</li><li>You are able to avoid the consequences, though your allies may not be so lucky.</li><li>You get to act first.</li></ul>"
       },
       {
         "name": "Heartbreaker",
@@ -258,12 +258,12 @@
       },
       {
         "name": "Eyes On The Prize",
-        "description": "You may forgo healing Stress at the start of your downtime. If you do, gain +1 ACCURACY on the roll for your downtime action."
+        "description": "You may forgo healing STRESS at the start of your downtime. If you do, gain +1 ACCURACY on the roll for your downtime action."
       },
       {
         "name": "Where There's A Will",
         "frequency": "1/session",
-        "description": "When you come across an impossible scenario or puzzle that seems to have no solution, describe your determined efforts to tackle it anyway. The GM chooses one:&nbsp;<ul><li>You uncover a solution, but it’s extremely dangerous.&nbsp;</li><li>You uncover a solution, but it requires something you don’t have yet (a specific person or object, a key piece of information, backing or influence).&nbsp;</li><li>You confirm that it is truly impossible, and clear 2 Stress.&nbsp;</li></ul>"
+        "description": "When you come across an impossible scenario or puzzle that seems to have no solution, describe your determined efforts to tackle it anyway. The GM chooses one:<ul><li>You uncover a solution, but it’s extremely dangerous.</li><li>You uncover a solution, but it requires something you don’t have yet (a specific person or object, a key piece of information, backing or influence).</li><li>You confirm that it is truly impossible, and clear 2 STRESS.</li></ul>"
       },
       {
         "name": "Bite The Bullet",
@@ -280,7 +280,7 @@
         "name": "Do or Die",
         "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
         "frequency": "1/session",
-        "description": "Once per session, when you make a Heroic skill check, you succeed on a 10+. If you succeed, you gain increased effect as you achieve your objective in spectacular fashion. If you fail, you suffer increased consequences as you crash and burn.",
+        "description": "Once per session, when you make a HEROIC skill check, you succeed on a 10+. If you succeed, you gain increased effect as you achieve your objective in spectacular fashion. If you fail, you suffer increased consequences as you crash and burn.",
         "master": true
       }
     ]
@@ -312,7 +312,7 @@
         "question": "What vow have you sworn?",
         "options": [
           "To never allow an innocent to come to harm.",
-          "To uphold the traditions and values of your house or nation.",
+          "To preserve the traditions and uphold the values of your culture.",
           "To repent for an unforgivable mistake.",
           "To stand by your friends and family, no matter the cost."
         ]
@@ -322,17 +322,17 @@
       {
         "name": "Steadfast Ally",
         "frequency": "2/session",
-        "description": "When you push yourself to help another character, you do not take Stress unless they succeed. You still share in any consequences by helping."
+        "description": "When you push yourself to help another character, you do not take STRESS unless they succeed. You still share in any consequences by helping."
       },
       {
         "name": "Stewardship",
         "frequency": "1/session",
-        "description": "When a group of people, organization, or object you are leading or protecting would take losses, damage, or other harm, you may instead take consequences (Minor, Typical, or Major) in proportion to the harm they would suffer."
+        "description": "When a group of people, organization, or object you are leading or protecting would take losses, damage, or other harm, you may instead take consequences (minor, typical, or major) in proportion to the harm they would suffer."
       },
       {
         "name": "My Word Is My Bond",
-        "frequency": "1/session",
-        "description": "When you make a solemn promise or swear that you will achieve a goal, take 1 Stress. When you fulfil that promise or achieve that goal, clear 2 Stress."
+        "frequency": "2/session",
+        "description": "When you make a solemn promise or swear that you will achieve a goal, take 1 STRESS. When you fulfil that promise or achieve that goal, clear 2 STRESS."
       },
       {
         "name": "Clarion",
@@ -340,17 +340,17 @@
       },
       {
         "name": "Responsibility",
-        "description": "When you discover that someone important to you (a trusted friend or family member) is in danger, your next skill check this scene to help them gains +1 ACCURACY and increased effect."
+        "description": "When you discover that someone important to you (a trusted friend, a family member, a mentor or student) is in danger, your next skill check to help them this scene gains +1 ACCURACY and increased effect."
       },
       {
         "name": "Its Own Reward",
         "frequency": "1/session",
-        "description": "When you help or give to another character in a way that causes you to take consequences, you may fill in a section of a Burden."
+        "description": "When you help or give to another character in a way that causes consequences for yourself, you may fill in a section of a burden."
       },
       {
         "name": "Forbearance",
         "frequency": "1/session",
-        "description": "When you offer forgiveness or freedom to a defeated enemy, the GM chooses one:&nbsp;<ul><li>They accept the consequences of defeat.&nbsp;</li><li>They escape, vowing revenge against you and your allies. All allies present gain 1 XP.&nbsp;</li></ul>"
+        "description": "When you offer forgiveness or freedom to a defeated enemy, the GM chooses one:<ul><li>They accept the consequences of defeat.</li><li>They escape, vowing revenge against you and your allies. All allies present gain 1 XP.</li></ul>"
       },
       {
         "name": "Champion's Heart",
@@ -359,11 +359,11 @@
       },
       {
         "name": "The Best Kind Of Correct",
-        "description": "You have a talent for dealing with institutions (governmental, academic, military) and navigating their bureaucracy. When dealing with or managing large organizations you instinctively understand their rules, and can always cut through red tape or get a meeting with the right person."
+        "description": "You have a talent for dealing with institutions (governmental, academic, military) and navigating their bureaucracies. When dealing with or managing large organizations you instinctively understand their rules, and can always cut through red tape or get a meeting with the right person.  In situations where this helps, gain +1 ACCURACY and increased effect."
       },
       {
         "name": "Shivers",
-        "description": "When you enter a scene, you may take 2 Stress to ask the GM whether someone present is planning to betray or cheat you, and receive a truthful answer. This doesn't tell you who, or how."
+        "description": "When you enter a scene, you may take 2 STRESS to ask the GM whether someone present is planning to betray or cheat you, and receive a truthful answer. This doesn't tell you who, or how."
       },
       {
         "name": "Boon of Integrity",
@@ -375,7 +375,7 @@
         "name": "Durendal, My Brand",
         "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
         "frequency": "1/session",
-        "description": "You may give a name to a weapon, ship, or other object belonging to you or a willing ally. Once per session, the item’s owner may invoke its name for +1 ACCURACY and increased effect on a relevant skill check. If the item is ever lost or damaged beyond repair, the item’s owner gains a burden.<br>You can name multiple items, but a character may only own one named item at a time; if they acquire a second named item, the first loses this benefit.",
+        "description": "You may give a name to a weapon, ship, or other object belonging to you or a willing ally. Once per session, the item’s owner may invoke its name for +1 ACCURACY and increased effect on a relevant skill check. If the item is ever lost or damaged beyond repair, the item’s owner gains a burden.<br>You can name multiple items, but a character may only own one named item at a time. If they acquire a second named item, the first loses this benefit.",
         "master": true
       }
     ]

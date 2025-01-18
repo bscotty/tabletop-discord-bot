@@ -4,12 +4,13 @@ import info from "./lcp_manifest.json"
 import background from "./backgrounds.json"
 import pilot_gear from "./pilot_gear.json"
 import systems from "./systems.json"
+import bonds from "./bonds.json"
 
 export function getShadowOfTheWolfLcp(): Lcp {
     return new Lcp(
         [],
         background,
-        [],
+        bonds,
         [],
         [],
         [],

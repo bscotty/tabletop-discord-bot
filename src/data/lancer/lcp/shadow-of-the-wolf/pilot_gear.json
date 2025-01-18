@@ -4,7 +4,7 @@
     "name": "Personal Kinetic Shielding",
     "type": "Armor",
     "effect": "While this armor is active, you cannot make ranged attacks. When you are hit by a ranged weapon, reduce the damage by 1d6. If the damage is not reduced to zero, the shield burns out and is unusable until the next Rest or Full Repair.",
-    "description": "Shields are a common choice for personal defense amongst Karrakin nobility. Despite lacking features considered vital by most pilots, such as strength augmentation, interface components, and sealing against environmental hazards, shields have a few notable advantages over a full hardsuit. Most importantly, shield packs are compact and easily concealed, enabling discreet use and providing protection without interfering with the user’s fashion choices.",
+    "description": "Kinetic shields are a common choice for personal defense among Karrakin nobles. Despite lacking features considered vital by most pilots, such as strength-augmentation, mech interface components, and protection against environmental hazards, shields have a few notable advantages over hardsuits. Most importantly, their generator packs are compact and easily concealed, enabling discreet use and providing protection with minimal impact on the user’s fashion choices.",
     "bonuses": [
       {
         "id": "pilot_hp",
@@ -36,7 +36,7 @@
     "id": "pg_monofilament_rapier",
     "name": "Monofilament Rapier",
     "type": "Weapon",
-    "description": "A field-supported monofilament blade of Smith-Shimano design capable of slicing through armor, shields, and other weapons with ease. These swords are banned in formal duels, but remain the weapon of choice for those who value efficient killing above decorum.",
+    "description": "A field-supported monofilament blade of Smith-Shimano design capable of slicing through armor, shielding, and other weapons with ease. These swords are banned in formal duels, but remain the weapon of choice for those who value efficiency above decorum.",
     "tags": [
       {
         "id": "tg_pilot_weapon"
@@ -68,7 +68,7 @@
     "id": "pg_hardlight_knives",
     "name": "The Wolf's Blades",
     "type": "Weapon",
-    "description": "These strangely-weighted hardlight knives were stolen from a feared pirate. Without proper training, they are as dangerous to their user as to their target.",
+    "description": "These strangely weighted hardlight knives were stolen from a feared pirate. Without proper training, they are as dangerous to their user as to their target.",
     "tags": [
       {
         "id": "tg_pilot_weapon"
@@ -100,7 +100,7 @@
     "id": "pg_blue_blood",
     "name": "The Blue Blood of Pangloss",
     "type": "Gear",
-    "description": "A legendary medicinal liquid created by the Order Xenoglossia. The Blue Blood of Pangloss grants precognitive visions to its users, an ability that Augurs spend a lifetime learning to use to its full potential. Extended use causes sterility, and a strange blue tint to the lips, tongue, and extremities.",
+    "description": "A legendary medicinal liquid created by the Order Xenoglossia. The Blue Blood of Pangloss grants precognitive visions to its users, an ability that Augurs spend a lifetime learning to use to its full potential. Extended use causes sterility, and a strange blue tint to the lips, tongue, and extremities. The Blue Blood of Pangloss is impossible to reproduce without access to specific Begi flora and the secret distillation techniques of the Xenoglossary. Unless a PC has both of these, it can only ever be acquired as a limited-use reserve (at extraordinary cost). Those who steal or abuse the Blue Blood often find themselves the targets of the Stygos Grammaton.",
     "actions": [
       {
         "name": "Imbibe Blue Blood",

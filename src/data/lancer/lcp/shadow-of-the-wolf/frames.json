@@ -8,7 +8,7 @@
       "Support"
     ],
     "variant": "Lancaster",
-    "description": "<p>Those who examine the House of Remembrance’s push to colonize its holding in the Dawnline Shore often highlight the parallels between Crossland’s extensive rainforests and a mythologised Arrudyen past, as well as the political pressure on the Liberal house from its Republican-leaning elements. Less often examined is the pervasive cultural impact of the industry that has been built – almost from scratch – to support the house’s colonial goals.</p><p>In popular omnivids the Taraxacum has become almost synonymous with the pioneer spirit of the resettlement effort. The image of a heavy mech effortlessly lifting gear, vehicles, industrial equipment, and even prefabricated building components above and into the thick canopies is a symbol of Arrudyen power in distant lands. Moreover, the Taraxacum is a capable military frame prized by Karrakin commanders across the Dawnline Shore both as a mobility multiplier, and for its performance as an AEW and surveillance platform in support of ground operations.</p>",
+    "description": "<p>Those who examine the House of Remembrance’s push to colonize its holdings in the Dawnline Shore often highlight the parallels between Crossland’s extensive rainforests and a mythologised Arrudyen past, as well as the political pressure on the Liberal house from its Republican-leaning elements. Less often examined is the pervasive cultural impact of the industry that has been built – almost from scratch – to support the house’s colonial goals.</p><p>The Taraxacum has become almost synonymous in popular omnivids with the pioneer spirit of the colonial effort. The image of a heavy mech effortlessly lifting gear, vehicles, industrial equipment, and even prefabricated building components into and above the thick canopies is a symbol of Arrudyen power in distant lands. Moreover, the Taraxacum is a capable military frame prized by Karrakin commanders across the Dawnline Shore both as a mobility multiplier, and for its performance as an airborne early warning and surveillance platform in support of ground operations.</p>",
     "mounts": [
       "Main/Aux"
     ],
@@ -31,11 +31,11 @@
     "traits": [
       {
         "name": "ROC Superlifter Flight System",
-        "description": "The Taraxacum may hover when it moves. As long as it is only carrying objects or allied characters, the Taraxacum may ignore carry restrictions caused by flying.<br><br>At the end of any of your turns in which you use this trait, you take heat equal to 1 + the total Size of objects and characters you are carrying."
+        "description": "The Taraxacum may hover when it moves. As long as it is only carrying objects or allied characters, the Taraxacum may ignore restrictions on carrying caused by flight.<br><br>At the end of any of the Taraxacum’s turns in which it uses this trait, it takes heat equal to 1 + the total Size of objects and characters it is carrying."
       },
       {
         "name": "Relay Coupling",
-        "description": "When you target an allied character within sensors with a system or tech action, they may use your Sensors and line of sight for tech actions until the start of your next turn."
+        "description": "When the Taraxacum targets an allied character within sensors with a system or tech action, they may use the Taraxacum’s Sensors and line of sight for tech actions until the start of its next turn."
       }
     ],
     "core_system": {
@@ -43,18 +43,18 @@
       "active_name": "Omnispectrum Sensor Burst",
       "active_effect": "Scan all hostile characters within and below a burst 4 area. You may apply Lock On to any characters scanned this way. This action is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this action was used.",
       "activation": "Quick",
-      "description": "<p>Initial Taraxacum design drafts called for a highly sensitive, custom printed sensor suite. Unfortunately, a litany of design flaws forced engineers on Crossland to fit the first prototypes with existing sensor modules meant for high-altitude survey drones.</p><p>Test pilots immediately took a shine to the replacement sensors despite their significant power draw, referring to them as “God’s eyes”. Their ability to resolve terrain through even the thickest vegetation massively simplified wilderness navigation and landing, while tuning them to pick up specific emission bands conferred an obvious combat advantage in high-density environments.</p>",
+      "description": "<p>Initial Taraxacum design drafts called for a highly sensitive, custom-printed sensor suite. Unfortunately, a litany of design flaws forced engineers on Crossland to fit the first prototypes with existing sensor modules meant for high-altitude survey drones.</p><p>Test pilots immediately took a shine to the replacement sensors despite their significant power draw, referring to them as “God’s eyes”. Their ability to resolve terrain through even the thickest vegetation massively simplified wilderness navigation and landing, while tuning them to pick up specific emission bands conferred an obvious combat advantage in high-density environments.</p>",
       "active_actions": [],
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Precision Fix",
-      "passive_effect": "When you Scan a character, it cannot benefit from Invisible or cover until the end of your next turn.",
+      "passive_effect": "When you Scan a character, it cannot benefit from cover or being Invisible until the end of your next turn.",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],
       "tags": []
     },
-    "image_url": "",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/taraxacum.png",
     "y_pos": 0
   },
   {
@@ -67,7 +67,7 @@
       "Controller"
     ],
     "variant": "Balor",
-    "description": "<p>Officially, the Hecatoncheires does not exist. Baronic Intelligence denies the domestication of liturgicode seeds recovered from Blanca Desert after the Maw’s defeat on Khayradin, and instead the Hecatoncheires is formally classified as a local variant HORUS pattern group. The chassis is most frequently encountered in the hands of Company Centimane, whose status as a Free Company (and the occasional appearance of the pattern group elsewhere) lends a thin veneer of plausibility to the official story.</p><p>On Free Sanjak, the Hecatoncheires is a weapon of terror, a nightmare given form from haze and smoke. Revolutionary fire-teams have been known to trek through tropical jungles and the monsoon rains for days, losing members one by one as they are stalked by something just out of sight. Beneath the waters of Ludra’s beach paradises, it is said a monster lurks – tearing apart coastal communities and ships alike. In the deep tunnels, apocryphal tales persist of a thick gray cloud that sweeps through and leaves nothing but dust in its wake.</p><p>Meanwhile, a deep cover DoJ/HR operation working with support from the House of Dust has been trying to unearth solid evidence directly tying the Hecatoncheires to Baronic authority – a link that might be leveraged to rally the republican cause and finally ease pressure on Sanjak.</p>",
+    "description": "<p>Officially, the Hecatoncheires does not exist. Baronic Intelligence denies the domestication of liturgicode seeds recovered from the Blanca Desert after the Maw’s defeat on Khayradin, and instead the Hecatoncheires is described as a local variant HORUS pattern group. The chassis is most frequently encountered in the hands of Company Centimane, whose status as a Free Company (and the occasional appearance of the pattern group elsewhere) lends a thin veneer of plausibility to the official story.</p><p>On Free Sanjak, the Hecatoncheires is a weapon of terror, a nightmare given form from haze and smoke. Revolutionary fire-teams have been known to trek through tropical jungles and the monsoon rains for days, losing members one by one as they are stalked by something just out of sight. Beneath the waters of Ludra’s beach paradises, it is said a monster lurks – tearing apart coastal communities and ships alike. In the deep tunnels, apocryphal tales persist of a thick gray cloud that sweeps through and leaves nothing but dust in its wake.</p><p>Meanwhile, a deep cover DoJ/HR operation working with support from the House of Dust has been trying to unearth solid evidence directly tying the Hecatoncheires to Baronic authorities – a link that might be leveraged to rally the Republican cause and finally ease pressure on Sanjak.</p>",
     "mounts": [
       "Main",
       "Heavy"
@@ -80,7 +80,7 @@
       "hp": 6,
       "evasion": 10,
       "edef": 10,
-      "heatcap": 6,
+      "heatcap": 5,
       "repcap": 3,
       "sensor_range": 10,
       "tech_attack": 1,
@@ -91,7 +91,7 @@
     "traits": [
       {
         "name": "Dispersed Profile",
-        "description": "When the Hecatoncheires is in soft cover, ranged attackers receive +2 difficulty instead of +1 difficulty."
+        "description": "When the Hecatoncheires is in soft cover, ranged attackers receive +2 Difficulty instead of +1 Difficulty."
       },
       {
         "name": "Smoke and Mirrors",
@@ -107,13 +107,13 @@
       "active_name": "Enrage Swarm",
       "active_effect": "",
       "activation": "",
-      "description": "<p>Hard lessons were learned from the downfall of the Maw, moreso even than the inevitable but invisible consumption of Bo. From those lessons came visceral terror, perfected. The long-leash system allows a greywash swarm to operate persistently apart from its hive and draw power from alternate sources, but remain under failsafe control of its operator.</p><p>This level of operational safety comes as little comfort to its victims, however, as the MYRIOS swarm specializes in eating away at its targets over time – a hideous act of consumption only barely tempered by its controller’s direction.</p>",
+      "description": "<p>Hard lessons were learned from the downfall of the Maw, harder even than those learned from the invisible, unstoppable consumption of Bo. From those lessons came visceral terror, perfected. Long-leash technology allows greywash swarms to operate persistently apart from their hives and draw power from alternate sources while remaining under failsafe control of their operator.</p><p>This level of operational safety comes as little comfort to the victims of MYRIOS swarms, however, as the swarms specialize in eating away at their targets in hideous acts of consumption barely tempered by their controllers’ instructions.</p>",
       "deactivation": "",
       "active_actions": [
         {
           "name": "Enrage Swarm",
           "activation": "Quick",
-          "detail": "Each hostile character in an area created by one or more of your Drones takes 4 burn. This action is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this action was used."
+          "detail": "Each hostile character in one or more areas created by your Drones takes 4 burn. This action is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this action was used."
         }
       ],
       "active_bonuses": [],
@@ -124,7 +124,7 @@
         {
           "name": "Deploy Razor Swarm",
           "activation": "Quick",
-          "detail": "Deploy a Razor Swarm to a Blast 1 area within Sensors that contains no hostile characters. The Hecatoncheires may only have a single Razor Swarm deployed at any one time. The Razor Swarm persists until the end of the scene or until recalled or redeployed as a quick action."
+          "detail": "Deploy a Razor Swarm to a valid Blast 1 area within Sensors that contains no hostile characters. The Hecatoncheires may only have a single Razor Swarm deployed at any one time. The Razor Swarm persists until the end of the scene or until recalled or redeployed as a quick action."
         }
       ],
       "passive_bonuses": [],
@@ -133,7 +133,7 @@
         {
           "name": "Razor Swarm",
           "type": "Drone",
-          "detail": "<p>A Razor Swarm is a Blast 1 area that provides soft cover to allied characters as long as they are at least partially within the area. Hostile characters that start their turn at least partially within the area or move into it for the first time in a round take 2 Burn.</p><p>A Razor Swarm counts as a Drone for the purposes of you and your allies' systems, talents, traits, etc. but is not a character and is otherwise considered to be a zone on the battlefield. It does not obstruct movement or cause Engagement, and hostile characters cannot affect the Razor Swarm in any way.</p>",
+          "detail": "<p>A Razor Swarm is a Blast 1 area that provides soft cover to allied characters that are at least partially within the area. Hostile characters that start their turn at least partially within the area or move into it for the first time in a round take 2 Burn.</p><p>A Razor Swarm counts as a Drone for the purposes of your and your allies' systems, talents, traits, and so on, but is not a character and is otherwise treated as a zone on the battlefield. It does not obstruct movement or cause Engagement, and hostile characters cannot affect the Razor Swarm in any way.</p>",
           "activation": "Quick",
           "recall": "Quick",
           "redeploy": "Quick"
@@ -141,7 +141,7 @@
       ],
       "tags": []
     },
-    "image_url": "",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/hecatoncheires.png",
     "y_pos": 0
   },
   {
@@ -153,7 +153,7 @@
       "Artillery"
     ],
     "variant": "Sherman",
-    "description": "<p>The Tagetes was created as a result of collaboration between the Karrakin Cavalry College, whose <i>kavalieres</i> demanded a high-performance line mech that could outmatch and outrange the now-ubiquitous Sherman Mk I across extended engagements, and a number of Ispahsalar’s top contemporary designers, celebrated for the performance of their work in the House Games.</p><p>The initial models produced by the Royal Karrakin Foundries were considered serviceable but it was not until extensive field testing in the deserts of Tilimsan that the Tagetes found its footing. Advancements and design revisions from the highly regarded Fusiller variant quickly fed back into the mainline chassis, which is now in mass production at fabrication plants across both the Concern and the Interest.</p>",
+    "description": "<p>The Tagetes was the product of a collaboration between the Karrakin Cavalry College – whose kavalieres demanded a high-performance line mech that could outmatch and outrange the now-ubiquitous Sherman Mk I across extended engagements – and a collective of top Ispahsalari designers, celebrated for the performance of their work in the House Games.</p><p>The initial production models exceeded performance benchmarks, but suffered from a host of practical issues that only became apparent in the field. It was only after extensive field-testing in the deserts of Tilimsan that the Tagetes truly found its footing, as design revisions from the highly regarded Fusilier variant quickly fed back into the mainline chassis – which is now in mass production at fabrication plants across both the Concern and the Interest.</p>",
     "mounts": [
       "Flex",
       "Main",
@@ -178,35 +178,35 @@
     "traits": [
       {
         "name": "Fusiller",
-        "description": "When you install a ranged weapon on the Tagetes (or for each weapon when you perform a Full Repair), you may change its weapon type to Rifle. If you do, it gains Overkill."
+        "description": "When you install a ranged weapon on the Tagetes (or during a Full Repair), you may change its weapon type to Rifle. Weapons with their type changed in this way gain Overkill."
       },
       {
         "name": "Rank Discipline",
-        "description": "While adjacent to an allied mech, the Tagetes has +1 Accuracy on all checks and saves."
+        "description": "While adjacent to an allied mech, the Tagetes gains +1 Accuracy on all skill checks and saves."
       },
       {
         "name": "Eterane Construction",
-        "description": "When stabilizing, the Tagetes may choose one of the following in addition to other options:<ul><li>Reload all LOADING weapons</li><li>Clear any burn currently affecting your mech</li><li>Clear a condition that wasn’t caused by one of your own systems, talents, etc.</li><li>Clear an adjacent allied character’s condition that wasn’t caused by one of their own systems, talents, etc.</li></ul>"
+        "description": "When you Stabilize, you may choose one of the following in addition to other options:<ul><li>Reload all loading weapons</li><li>Clear any burn currently affecting your mech</li><li>Clear a condition that wasn’t caused by one of your own systems, talents, etc.</li><li>Clear an adjacent allied character’s condition that wasn’t caused by one of their own systems, talents, etc.</li></ul>"
       }
     ],
     "core_system": {
       "name": "Chorak Skirmish Gear",
       "active_name": "SANDSTORM Heat Dispersal System",
-      "active_effect": "When you stabilize, you may activate this system to create a stationary burst 2 zone of soft cover that lasts until the end of your next turn. While benefiting from this soft cover, you and allied characters may clear 1d6 heat as a protocol. This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.",
+      "active_effect": "When you stabilize, you may activate this system to create a stationary burst 2 zone of soft cover that lasts until the end of your next turn. While benefiting from this soft cover, you and allied characters may clear 1d3+1 heat as a protocol. This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.",
       "activation": "",
-      "description": "Tilimsan is a harsh proving ground for any mech. Baking heat, scouring sand, dry lightning, and treacherous terrain would be enough of a challenge for any designer – but Company Tempeste are just as uncompromising as the landscape. Popular rumor has it that a headstrong Ispahsalari artisan who refused to integrate their aftermarket modifications on aesthetic grounds simply never returned from the desert.",
+      "description": "Tilimsan is a harsh proving ground for any mech. Baking heat, scouring sand, dry lightning, and treacherous terrain are challenge enough for designers, but Company Tempeste’s technical requirements are just as uncompromising as the landscape. Popular rumor has it that one headstrong Ispahsalari artisan who refused to integrate the company’s aftermarket modifications on aesthetic grounds simply never returned from the desert.",
       "deactivation": "",
       "active_actions": [],
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Tempeste Synchronized Long Scope",
-      "passive_effect": "The Tagetes can use Rifles as if they had +5 range, as long as Lock On is consumed during the attack.",
+      "passive_effect": "You can attack with Rifles as though they had +5 range, as long as Lock On is consumed during the attack.",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],
       "tags": []
     },
-    "image_url": "",
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/tagetes.png",
     "y_pos": 0
   }
 ]
