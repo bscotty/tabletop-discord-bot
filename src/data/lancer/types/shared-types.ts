@@ -38,7 +38,7 @@ export type IDeployableData = {
     name: string
     type: string // this is for UI furnishing only
     detail: string
-    size?: number // not required for Mines
+    size?: number | string // not required for Mines
     activation?: ActivationType
     deactivation?: ActivationType
     recall?: ActivationType

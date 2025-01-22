@@ -69,74 +69,6 @@
     "y_pos": "16"
   },
   {
-    "id": "horus_ghoul",
-    "source": "HORUS",
-    "license_level": 2,
-    "name": "Ghoul",
-    "mechtype": [
-      "Striker"
-    ],
-    "description": "",
-    "mounts": [
-      "Main",
-      "Main"
-    ],
-    "stats": {
-      "size": 2,
-      "structure": 4,
-      "stress": 4,
-      "armor": 1,
-      "hp": 10,
-      "evasion": 7,
-      "edef": 10,
-      "heatcap": 6,
-      "repcap": 3,
-      "sensor_range": 5,
-      "tech_attack": 1,
-      "save": 11,
-      "speed": 3,
-      "sp": 6
-    },
-    "traits": [
-      {
-        "name": "Hurricane of Blows",
-        "description": "After the Ghoul inflicts Knockback on a target with a melee attack, it may teleport to a space adjacent to the target."
-      },
-      {
-        "name": "Overwhelming Presence",
-        "description": "When the Ghoul teleports, it may select a destination that is occupied by enemies of equal or smaller size, and push those enemies to free, adjacent spaces - so long as such spaces exist."
-      }
-    ],
-    "core_system": {
-      "name": "Student of the Eight Gates",
-      "description": "The Path of the Eight Gates is not an easy one, but many are drawn to it, hoping to reach true power.",
-      "passive_name": "Student of the Eight Gates",
-      "passive_effect": "Gain the <b>Student of the Eight Gates</b> Full action.",
-      "passive_actions": [
-        {
-          "name": "Student of the Eight Gates",
-          "activation": "Full",
-          "detail": "Teleport to a space adjacent to a character within Sensors. You may then make an improvised attack with +1 Accuracy.",
-          "frequency": "Unlimited"
-        }
-      ],
-      "active_name": "The Gate of Death",
-      "active_effect": "Until the end of your turn, gain Resistance to all damage from all sources. In addition, for the rest of the scene, you gain the special <b>Master of the Eight Gates</b> free action.",
-      "activation": "Full",
-      "active_actions": [
-        {
-          "name": "Master of the Eight Gates",
-          "activation": "Free",
-          "detail": "Take 2 heat, then Teleport to a space adjacent to a character within Sensors. You may then make up to two improvised attacks against that character. You take damage equal to the damage inflicted."
-        }
-      ],
-      "use": "Encounter"
-    },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
-    "license_id": "horus_ghoul",
-    "y_pos": "0"
-  },
-  {
     "id": "ipsn_acadia",
     "source": "IPS-N",
     "license_level": 2,
@@ -258,6 +190,72 @@
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "license_id": "ha_meade",
+    "y_pos": "0"
+  },
+  {
+    "id": "horus_revenant",
+    "source": "HORUS",
+    "license_level": 2,
+    "name": "Revenant",
+    "mechtype": [
+      "Defender",
+      "Support"
+    ],
+    "description": "",
+    "mounts": [
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 12,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Atmospheric Shock Absorber",
+        "description": "Whenever the Revenant is Stunned, any damage it takes is reduced by 2d3."
+      },
+      {
+        "name": "Transdimensional",
+        "description": "The Revenant may use tech actions on characters regardless of if either it or its target is Intangible, and its effects from tech actions that require an ongoing interaction between two characters or objects persist through Intangibility on either the Revenant or its target."
+      },
+      {
+        "name": "Exposed Reactor",
+        "description": "The Revenant has +1 Difficulty on Engineering checks and saves."
+      }
+    ],
+    "core_system": {
+      "name": "Metacameral Conjunction",
+      "description": "",
+      "passive_name": "Metacameral Conjunction",
+      "passive_effect": "When the Revenant becomes Stunned, it chooses an allied character within Sensors to be the Revenant’s ward. A paracausal shroud emerges from the Revenant and drapes itself over the ward. Until the Revenant ceases to be Stunned, you control the shroud, and it is you.<br><br>The shroud uses the same statistics (like Size, Evasion, and Speed) and mech skills (like Traits, Systems, Talents, and Weapons) as the Revenant. However, it differs in the following ways:<ul><li>Any damage or Heat the shroud takes is instead passed to the Revenant, and any conditions that the shroud receives, the Revenant also receives.</li><li>The shroud makes all actions and reactions as a normal mech, but when making Quick or Full actions, may only choose from Tech Actions, BOOST, HIDE, IMPROVISED ATTACK, GRAPPLE, RAM, and SKIRMISH.</li><li>The shroud cannot make a standard move. However, it may Hover for any other movement it makes and, at the end of its turn, it must teleport to the ward’s space. It shares the space, following them, moving as they move. This counts as being adjacent.</li></ul>If the shroud would move outside the Revenant’s Sensors, it disappears from the battlefield until the Revenant chooses a new ward for it to follow.<br><br>In addition, gain the Surrender To Compulsion Protocol.",
+      "passive_actions": [
+        {
+          "name": "Surrender to Compulsion",
+          "activation": "Protocol",
+          "detail": "The Revenant becomes Stunned until the start of your next turn."
+        }
+      ],
+      "active_name": "Ordain A New Bicameral Mind",
+      "active_effect": "For the rest of the scene, the paracausal shroud emerges from the Revenant regardless of if it is Stunned. You may control both the Revenant and the shroud independently, as though both are you. Both act in tandem on your turn, and may take their own actions, reactions, movement, etc. However, you are still limited to one Full Action or two Quick Actions on each of your turns.<br><br>In addition, the Revenant benefits from Atmospheric Shock Absorber’s damage reduction regardless of if the Revenant is Stunned.\n",
+      "activation": "Protocol",
+      "active_actions": [],
+      "use": "Encounter",
+      "integrated": []
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "license_id": "horus_revenant",
     "y_pos": "0"
   }
 ]

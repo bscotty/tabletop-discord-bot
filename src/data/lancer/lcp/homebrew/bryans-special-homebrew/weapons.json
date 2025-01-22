@@ -211,32 +211,6 @@
     "license_id": "ssc_lucina"
   },
   {
-    "id": "mw_lifes_gauntlet",
-    "name": "Life’s Gauntlet",
-    "source": "HORUS",
-    "license": "Ghoul",
-    "license_level": 1,
-    "description": "Many do not journey beyond the Gate of Life. Its gauntlet is more than enough for even the most robust of souls. Those that do have eyes open to possibility, and rush headlong into the future.",
-    "effect": "When you attack with this weapon, you may deal damage and trigger other effects (including talents and systems) as though it were an improvised attack. If you do, take 1 Heat.",
-    "mount": "Main",
-    "type": "Melee",
-    "damage": [
-      {
-        "type": "Kinetic",
-        "val": "1d3+2"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "sp": 0,
-    "tags": [],
-    "license_id": "horus_ghoul"
-  },
-  {
     "id": "mw_mooring_hook_cannon",
     "source": "IPS-N",
     "license": "Acadia",
@@ -495,5 +469,39 @@
       }
     ],
     "license_id": "ha_meade"
+  },
+  {
+    "id": "mw_gutripper",
+    "name": "Gutripper",
+    "source": "HORUS",
+    "license": "Revenant",
+    "license_level": 1,
+    "description": "",
+    "effect": "",
+    "on_hit": "The target must make an Engineering save or lose access to a system or weapon as though it were destroyed until they reflash its firmware as a Quick Action. If you know their mech skills (e.g., by Scanning them), then you choose what they lose access to. Otherwise, the GM chooses.",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "license_id": "horus_revenant"
   }
 ]
