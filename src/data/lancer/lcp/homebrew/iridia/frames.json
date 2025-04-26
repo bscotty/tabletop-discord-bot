@@ -98,7 +98,7 @@
     "traits": [
       {
         "name": "Fate's Arrow",
-        "description": "The Aphrodite’s ranged attacks gain Seeking against the hostile character furthest away from it on the battlefield. If multiple characters are equally distant, this effect applies to all of them."
+        "description": "The Aphrodite’s ranged attacks gain Seeking against the character furthest away from it on the battlefield. If multiple characters are equally distant, this effect applies to all of them."
       },
       {
         "name": "Center of Attention",
@@ -321,7 +321,7 @@
       },
       {
         "name": "Heart of Fire",
-        "description": "Before making an attack with a weapon, the Astraea may choose to give it the Overkill tag for that attack.",
+        "description": "Before making an attack with a weapon, the Astraea may choose to attack as if the weapon had the Overkill tag.",
         "synergies": [
           {
             "locations": [
@@ -1348,7 +1348,7 @@
           "hp": "5 + {grit}"
         }
       ],
-      "passive_effect": "Your mech contains an integrated Companion Drone. This drone may be deployed to any space within Sensors as a quick action. It shares your Evasion and E-Defense. <br><br>While allied characters are adjacent to the drone, they ignore Engagement while moving and making ranged attacks. <br><br>When you rest, perform a Full Repair, or Stabilize and mark a repair, your drone regains all HP. In addition, if your drone is destroyed, it is automatically repaired, though must be deployed again. <br><br>The Drone can be recalled or redeployed to a space within Sensors as a quick action."
+      "passive_effect": "Your mech contains an integrated Companion Drone. This drone may be deployed to any space within Sensors as a quick action. It shares your Evasion and E-Defense. <br><br>While allied characters are adjacent to the drone, they ignore Engagement while moving and making ranged attacks. <br><br>When you rest, perform a Full Repair, or Stabilize and mark a repair, your drone regains all HP and is automatically repaired if it was destroyed. <br><br>The Drone can be recalled or redeployed to a space within Sensors as a quick action."
     }
   },
   {
@@ -1589,7 +1589,16 @@
     "traits": [
       {
         "name": "Legionspace Static",
-        "description": "Tech attacks from hostile characters treat the Silver as Invisible."
+        "description": "1/round, as a reaction, you may attempt to dissipate a tech attack that would target you or an adjacent allied character. Roll 1d6: on 5+, the attack misses. This effect does not stack with Invisible.",
+        "actions": [
+          {
+            "name": "Legionspace Static",
+            "activation": "Reaction",
+            "frequency": "1/round",
+            "trigger": "An incoming tech attack targets you or an adjacent allied character",
+            "detail": "Roll 1d6: on 5+, the attack misses. This effect does not stack with Invisible."
+          }
+        ]
       },
       {
         "name": "Edgewise to Reality",
