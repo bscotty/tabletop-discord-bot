@@ -363,7 +363,7 @@
     "deployables": [
       {
         "type": "Deployable",
-        "name": "Inertia Pylona",
+        "name": "Inertia Pylon",
         "activation": "Quick",
         "size": 1,
         "hp": 10,
@@ -989,7 +989,7 @@
       },
       {
         "id": "tg_heat_self",
-        "val": 2
+        "val": 1
       }
     ],
     "source": "IRIDIA",
@@ -999,7 +999,7 @@
     "actions": [
       {
         "activation": "Protocol",
-        "detail": "Until the start of your next turn, attacks that would target your evasion instead target your e-defense, and attacks that would target your e-defense instead target your evasion. This system may not be activated in consecutive rounds."
+        "detail": "Until the start of your next turn, attacks that would target your evasion instead target your e-defense, and attacks that would target your e-defense instead target your evasion."
       }
     ],
     "description": "“I can’t tell if this is the true form of the mech, or if it’s just THAT place showing its influence. Either way, it scares me. And I’m not even the one piloting it.”"
