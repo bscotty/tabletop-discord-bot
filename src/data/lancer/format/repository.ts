@@ -25,6 +25,7 @@ import {getStolenCrownLcp} from "../lcp/homebrew/stolen-crown";
 import {getSuldanLcp} from "../lcp/homebrew/suldan";
 import {getColdcoreColiseumLcp} from "../lcp/homebrew/coldcore-coliseum";
 import {getCastorAndPolluxLcp} from "../lcp/homebrew/castor-and-pollux";
+import {getStellarCodexLcp} from "../lcp/homebrew/stellar-codex";
 
 export type LicenseData = (SearchableFrame | SearchableMod | SearchableSystem | SearchableWeapon)
 
@@ -82,7 +83,8 @@ function homebrew(): Lcp[] {
         getStolenCrownLcp(),
         getSuldanLcp(),
         getColdcoreColiseumLcp(),
-        getCastorAndPolluxLcp()
+        getCastorAndPolluxLcp(),
+        getStellarCodexLcp()
     ]
 }
 

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "sc_bonny_integrated",
+    "name": "Remote Deployment Catapult",
+    "mount": "Superheavy",
+    "type": "Launcher",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "2d6+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 20
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_arcing"
+      }
+    ],
+    "effect": "As part of this action, you may deploy a Drone or Deployable that would normally require a quick action. If targeting a free, valid space, this deployment is made in that space. If targeting a character, this deployment is in any free, valid space adjacent to that character."
+  },
+  {
+    "id": "sc_exo_vertigo_cascade",
+    "name": "Vertigo Cascade",
+    "mount": "Main",
+    "source": "EXOTIC",
+    "type": "Cannon",
+    "range": [
+      {
+        "type": "Line",
+        "val": 8
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": 2
+      }
+    ],
+    "effect": "This weapon’s Knockback may be in any direction, though it must be the same for all characters.",
+    "description": "Targets briefly experience a localized gravity reorientation - they find that ‘down’ suddenly is in a completely different direction.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_knockback",
+        "val": 4
+      }
+    ]
+  },
+  {
+    "id": "sc_exo_mirrorswarm_nexus",
+    "name": "Mirrorswarm Nexus",
+    "mount": "Heavy",
+    "source": "EXOTIC",
+    "type": "Nexus",
+    "range": [
+      {
+        "type": "Range",
+        "val": 50
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+4"
+      }
+    ],
+    "effect": "This weapon ignores ranged penalties from Engaged and can only attack targets within 2 spaces of the user or allied Mech characters.",
+    "description": "A host of mirrored shards hover around the controller’s allies. The attacks that befall nearby foes take many forms, but are only visible in the reflections.",
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_seeking"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ]
+  },
+  {
+    "id": "sc_exo_recursion_weapon",
+    "name": "Recursion Weapon",
+    "no_mods": true,
+    "no_core_bonus": true,
+    "mount": "Main",
+    "source": "EXOTIC",
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+1"
+      }
+    ],
+    "effect": "This weapon cannot be modified or benefit from core bonuses.",
+    "on_attack": "On Miss: If the target has a Recursion Mark from this weapon, this attack instead hits.",
+    "on_hit": "The target gains a Recursion Mark until the end of the scene or this weapon is used to attack a different target. Characters with this weapon’s Recursion Mark always count as within Threat and line of sight for this weapon, except for the purposes of reactions.",
+    "description": "Time flows strangely around this weapon, with wielders often reporting sensations of déjà vu during combat.",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ]
+  }
+]

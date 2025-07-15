@@ -1,0 +1,68 @@
+[
+  {
+    "id": "pg_sc_biobot",
+    "name": "Biobot",
+    "type": "Gear",
+    "description": "In the vast diaspora of humanity, there are many places where it would be infeasible - or simply inconvenient - to have another mouth to feed. So, of course, corporations have responded with marketable substitutes! Biobots are most popular on voidcraft and stations, partially because they often come with magnets or thrusters to better cope with null-gravity environments… but mostly because of how uncanny they are to anyone who's actually seen an animal in person before.",
+    "tags": [
+      {
+        "id": "sct_tg_pet"
+      }
+    ]
+  },
+  {
+    "id": "pg_sc_firejay",
+    "name": "Firejay",
+    "type": "Gear",
+    "description": "Named for the brilliance of their jeweled plumage, rather than any affinity with flames, Firejays are rather vain birds, and are easily bribed with gifts of food. Unfortunately, the desirability of their natural gemstones have led to a sharp decline in wild populations. They have, however, flourished in captivity, leaving the breed as more of a stereotypically high-status pet than anything else.",
+    "tags": [
+      {
+        "id": "sct_tg_pet"
+      }
+    ]
+  },
+  {
+    "id": "pg_sc_flickerfox",
+    "name": "Flickerfox",
+    "type": "Gear",
+    "description": "While it appears at first glance to be a luminous quadruped, the true body of the Flickerfox is a geometric ‘head’ that projects a natural hardlight form. Nobody’s quite sure why they do this (or how), though the leading theory is it’s a natural defense against predators. They’re slow to bond with people, but are steadfast companions once they’ve chosen someone.",
+    "tags": [
+      {
+        "id": "sct_tg_pet"
+      }
+    ]
+  },
+  {
+    "id": "pg_sc_miniature_sphinx",
+    "name": "Miniature Sphinx",
+    "type": "Gear",
+    "description": "Sphinxes are a class of animals with minor precognitive powers, making them difficult to find by anything (or anyone) intending to hurt them. They’re much desired as mascots on spaceships, as they’re very good at warning of problems before they become deadly. Crews just need to put up with a creature that has the curiosity of a cat combined with opposable thumbs.",
+    "tags": [
+      {
+        "id": "sct_tg_pet"
+      }
+    ]
+  },
+  {
+    "id": "pg_sc_skyjelly",
+    "name": "Skyjelly",
+    "type": "Gear",
+    "description": "Skyjellies, much like their aquatic counterparts, are primarily drifters - their bioluminescent bodies carrying them through the skies. Their tendrils secrete a gel that attracts the insects they eat, but people have found that it also soothes burns and helps prevent wounds from getting infected (as long as you don’t mind mild-to-moderate tingling). It’s not unheard of to see a mechanic with one floating in the corner of their workshop in case of accidents.",
+    "tags": [
+      {
+        "id": "sct_tg_pet"
+      }
+    ]
+  },
+  {
+    "id": "pg_sc_voidwyrm",
+    "name": "Voidwyrm",
+    "type": "Gear",
+    "description": "Space dwelling creatures that range from cat-sized to larger than a spaceship, with the oldest appearing to have nearlight capacities. It’s not clear what they normally eat, if anything, but they’re typically more curious than aggressive. (Unfortunately, adult Voidwyrms often don’t know their own strength when investigating spaceships.) Juveniles are easily tempted to create ‘nests’ of shiny things in ships or stations, and - while mischievous - are excellent at keeping pests at bay. They just need to be encouraged to go elsewhere before they get too large...",
+    "tags": [
+      {
+        "id": "sct_tg_pet"
+      }
+    ]
+  }
+]

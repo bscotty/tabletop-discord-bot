@@ -1,0 +1,96 @@
+[
+  {
+    "id": "cbb_sc_breaching_modifications",
+    "name": "Breaching Modifications",
+    "source": "IPS-N",
+    "effect": "Your frame has been modified to be able to squeeze through confined spaces, such as doors and corridors, as if you were one Size smaller (to a minimum of Size 1/2). Any parts of your space above that Size may overlap with objects and terrain, but you do not count as occupying those spaces, and you may not measure ranges to or from them. You must end your turn in free spaces according to your true Size. <br><br>1/round, as a free action, you may deal 20 AP Explosive damage to an adjacent object or section of terrain.",
+    "description": "Reinforced cavities have been carefully formed in the frame’s superstructure, allowing it to shift its bulk around and fit into places it doesn’t look like it should be able to. The breaching charges don’t hurt, though."
+  },
+  {
+    "id": "cbb_sc_cottus_microprinter",
+    "name": "Cottus Microprinter",
+    "source": "IPS-N",
+    "effect": "1/scene, when you roll on the Structure Damage table, ignore the result. This may be triggered after seeing the final result.",
+    "description": "Far more reactionary than most other near-fail systems, Cottus detects when critical components (following a pilot-determined priority scale) are failing and dispatches whitewash swarms to reinforce and repair.",
+    "synergies": [
+      {
+        "locations": [
+          "structure"
+        ],
+        "detail": "1/scene, when you roll on the Structure Damage table, ignore the result. This may be triggered after seeing the final result."
+      }
+    ]
+  },
+  {
+    "id": "cbb_sc_adaptive_algorithms",
+    "name": "Adaptive Algorithms",
+    "source": "SSC",
+    "effect": "When you are hit by a melee or ranged attack, roll 1d6 for the next melee or ranged attack against you before the end of the scene: on 5+, the attack misses. This effect does not stack with Invisible.",
+    "description": "DHIYED-derived mirrorcode that rapidly adapts to hostile maneuvers."
+  },
+  {
+    "id": "cbb_sc_hypercooled_thrusters",
+    "name": "Hypercooled Thrusters",
+    "source": "SSC",
+    "effect": "1/round, you may clear 2 heat when you Boost.",
+    "description": "Extremely efficient cooling systems, capable of dumping extreme amounts of heat while in motion.",
+    "synergies": [
+      {
+        "locations": [
+          "boost"
+        ],
+        "detail": "1/round, you may clear 2 heat when you Boost."
+      }
+    ]
+  },
+  {
+    "id": "cbb_sc_the_lesson_of_the_devouring_void",
+    "name": "The Lesson of the Devouring Void",
+    "source": "HORUS",
+    "effect": "Gain +2 SP. <br><br>1/scene, as a protocol, become Intangible until the beginning of your next turn.",
+    "description": "No lesson is absolute in the face of an unfeeling universe. You must learn to write your own. -Unknown",
+    "bonuses": [
+      {
+        "id": "sp",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "cbb_sc_the_lesson_of_the_infinite_gaze",
+    "name": "The Lesson of the Infinite Gaze",
+    "source": "HORUS",
+    "effect": "You can make tech attacks against characters with Lock On regardless of Sensors or Line of Sight, but must consume the Lock On during the attack.",
+    "description": "Before you can learn, you must first be willing to truly see. -Unknown",
+    "synergies": [
+      {
+        "locations": [
+          "tech_attack"
+        ],
+        "detail": "You can make tech attacks against characters with Lock On regardless of Sensors or Line of Sight, but must consume the Lock On during the attack."
+      }
+    ]
+  },
+  {
+    "id": "cbb_sc_gemini_reactor",
+    "name": "Gemini Reactor",
+    "source": "HA",
+    "effect": "1/scene, when you roll on the Overheating table, ignore the result. This may be triggered after seeing the final result.",
+    "description": "Instead of a single coldcore, the frame contains two paired microreactors. This distributed design allows for one to shut down temporarily due to damage without compromising battle efficiency.",
+    "synergies": [
+      {
+        "locations": [
+          "stress"
+        ],
+        "detail": "1/scene, when you roll on the Overheating table, ignore the result. This may be triggered after seeing the final result."
+      }
+    ]
+  },
+  {
+    "id": "cbb_sc_vampire_capacitors",
+    "name": "Vampire Capacitors",
+    "source": "HA",
+    "effect": "1/round, when an allied character within range 8 gains heat, you may gain that heat instead as a reaction. Heat taken this way is reduced by 1 (before resistance, to a minimum of 1).",
+    "description": "Originally built as emergency heat sinks for spaceships, Vampire Capacitors are able to detect and neutralize heat spikes even without immediate proximity."
+  }
+]

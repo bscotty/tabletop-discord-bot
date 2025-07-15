@@ -1,0 +1,333 @@
+[
+  {
+    "id": "sc_exo_chronoton_projector",
+    "name": "Chronoton Projector",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "1/scene, at the start of a round, select a hostile character within line of sight. Their turn this round must be taken after all other hostile characters not under this effect. If the target has multiple turns, this only affects one.",
+    "description": "[[Time is relative.]]"
+  },
+  {
+    "id": "sc_exo_eschaton_key",
+    "name": "Eschaton Key",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "actions": [
+      {
+        "activation": "Full",
+        "detail": "1/scene, expend a charge to throw the key to a space within range 3. At the end of the next round, the key explodes in a Burst 2 area. All characters in the burst take 1 Structure Damage, and all objects and terrain not Immune to damage are destroyed."
+      }
+    ],
+    "description": "“Don’t be near the key when it opens - it’s not pretty. The effects are never the same thing twice, but debris has shown signs of: plasma scoring, nanite immersion, disintegration, claw and bite marks, crushing pressure, phase change…”"
+  },
+  {
+    "id": "sc_exo_pandemonium_coin",
+    "name": "Pandemonium Coin",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "At the start of each scene, choose an allied Mech character. As a protocol, you may swap places with the chosen character, both characters teleporting to the other’s position. Characters can only be swapped to spaces they could normally stand or move on (i.e., if a character cannot fly it can’t be swapped midair). If there is no available space for one of the swapped characters to occupy, this action fails. <br><br>Once you have used this protocol, you may not use it again until you have taken a Full Repair.",
+    "description": "Whatever this trinket’s form (and nobody can agree on that), it has a habit of never being found the place it was left."
+  },
+  {
+    "id": "sc_exo_paradox_fangs",
+    "name": "Paradox Fangs",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "Whenever you make a tech attack, you may expend a charge from this system to make the attack target evasion instead of e-defense. In addition, the final attack roll may not be affected by Difficulty, and it ignores Immunity to tech actions from the biological tag.",
+    "description": "Semiphysical Firmament extrusions, these spines inject targets with incarnated code packets - a digital venom made briefly physical."
+  },
+  {
+    "id": "sc_exo_spatial_labyrinth",
+    "name": "Spatial Labyrinth",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "1/scene, when a hostile character arrives from Reinforcements, even outside of line of sight, choose 1 of the following: <br>- The character instead appears in an Ingress Zone of the user's choice. The character still decides where in the zone to appear. <br>- The GM must instead pick a different character to arrive from Reinforcements. They must be from a different Class than the triggering character, and must arrive in the same Ingress Zone. If no eligible character exists, this option cannot be selected.",
+    "description": "A stitch of the thread, and two parts of the maze are briefly connected."
+  },
+  {
+    "id": "sc_exo_metafractal_plating",
+    "name": "Metafractal Plating",
+    "type": "Shield",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "source": "EXOTIC",
+    "actions": [
+      {
+        "name": "Fractal Shatter",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "A hostile character makes an attack roll against you or an adjacent allied character.",
+        "detail": "The triggering attack roll takes +X Difficulty, where X is your current Armor. You become Shredded until the start of your next turn, including against the triggering attack."
+      }
+    ],
+    "description": "When this armour shatters itself, the resulting fragments sever possibilities. Some ways that an attack would succeed now no longer exist, though it’s impossible to prevent them all."
+  },
+  {
+    "id": "sc_exo_isolation_grid",
+    "name": "Isolation Grid",
+    "type": "Tech",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "actions": [
+      {
+        "name": "Containment",
+        "activation": "Invade",
+        "detail": "All attack rolls that the target makes against other characters or that other characters make against them gain +1 Difficulty. <br><br>This effect lasts until the end of the scene, they succeed on a Systems save as a quick action, this action is used again, or the user ends the effect as a quick action."
+      }
+    ],
+    "description": "A set of drones that form an energy cage around a target of interest, hindering anything from passing through. Far more powerful versions are rumoured to exist, capable of perfectly isolating entire starships."
+  },
+  {
+    "id": "sc_exo_anathema_targeting_system",
+    "name": "ANATHEMA Targeting System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_ordnance"
+      }
+    ],
+    "source": "EXOTIC",
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "Expend a charge and choose a character within line of sight. At the end of their next turn, if they have not moved since this system was activated (including involuntary movement), the target takes 2d6 AP Energy damage, and is Shredded until the end of their next turn."
+      }
+    ],
+    "description": "Nobody knows where ANATHEMA is, what it looks like, or who made it. Or even if it was intended to be a weapon. The targeting array opens a rift only long enough for a single shot to emerge - and nothing that’s attempted to enter during the firing sequence has ever survived."
+  },
+  {
+    "id": "sc_exo_incineration_aegis",
+    "name": "Incineration Aegis",
+    "type": "Shield",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_danger_zone"
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "source": "EXOTIC",
+    "actions": [
+      {
+        "name": "Engage Aegis",
+        "activation": "Free",
+        "frequency": "1/round",
+        "detail": "This system can only be used in the Danger Zone, and may only be activated 1/round. <br><br>When activated, the user chooses one of melee or ranged attacks. Until the start of the user’s next turn, attacks of the chosen type gain +2 Difficulty against the user, but the user cannot clear heat during this time except by overheating."
+      }
+    ],
+    "description": "The Incineration Aegis channels a mech’s reactor directly into a powerful plasma barrier. Unfortunately, most reactors require all safeties to be disabled in order to sustain the necessary output."
+  },
+  {
+    "id": "sc_exo_astral_flare",
+    "name": "Astral Flare",
+    "type": "Tech",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "actions": [
+      {
+        "name": "Beacon Pulse",
+        "activation": "Invade",
+        "detail": "Until the start of the user’s next turn, all melee and ranged attack rolls from the user’s allies count as Seeking against the target. <br><br>This can only be used 1/scene on each character."
+      }
+    ],
+    "description": "An old spacer’s lifeline, jailbroken and modified for battle. When adrift in the black, you want everyone to know where you are. When in battle, not so much."
+  },
+  {
+    "id": "sc_exo_viper_drone",
+    "name": "Viper Drone",
+    "type": "Drone",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "The Viper Drone is deployed to an adjacent space, and the user picks a target within line of sight. At the start of the user’s turn, the Viper drone flies 3 spaces towards its target, 6 if the target is in the Danger Zone or Exposed. It moves directly, maneuvering around cover and terrain if needed. When it would move into any character’s space with this movement, that target takes 8 Burn, half if they pass an Agility Save. The drone is then destroyed. <br><br>The Viper Drone cannot be recalled once deployed, and is destroyed at the end of a scene. When you rest or perform a full repair, the drone is automatically repaired if destroyed.",
+    "deployables": [
+      {
+        "type": "Drone",
+        "name": "Viper Drone",
+        "activation": "Quick",
+        "size": 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "The user picks a target within line of sight of the Viper Drone. At the start of the user’s turn, the Viper Drone flies 3 spaces towards its target, 6 if the target is in the Danger Zone or Exposed. It moves directly, maneuvering around cover and terrain if needed. When it would move into any character’s space with this movement, that target takes 8 Burn, half if they pass an Agility Save. The drone is then destroyed. <br><br>The Viper Drone cannot be recalled once deployed, and is destroyed at the end of a scene."
+      }
+    ],
+    "description": "Viper drones are semi-autonomous payload delivery platforms. Designed to wear down mechanized forces, they primarily seek out active reactor signatures."
+  },
+  {
+    "id": "sc_exo_zephyr_cloak",
+    "name": "Zephyr Cloak",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "You can fly when you Boost; however, you must end the movement on the ground or another solid surface, or else immediately begin falling. While you fly in this manner, you are Invisible. In addition, Boosting in this way does not break Hidden.",
+    "synergies": [
+      {
+        "locations": [
+          "boost"
+        ],
+        "detail": "You can fly when you Boost; however, you must end the movement on the ground or another solid surface, or else immediately begin falling. While you fly in this manner, you are Invisible. In addition, Boosting in this way does not break Hidden."
+      }
+    ],
+    "description": "Often taking the form of inscribed bands calling on the winds for aid, Zephyr Cloaks let the bearer fade into the air. People or mechs wearing these are easily discernible, as any loose fabric they may be wearing constantly billows - as if caught by a strong breeze."
+  },
+  {
+    "id": "sc_exo_shroud_of_the_raven",
+    "name": "Shroud of the Raven",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "1/round, when you are missed by an attack from a hostile character, gain 3 Overshield after the attack resolves.",
+    "description": "The trickster’s mark."
+  },
+  {
+    "id": "sc_exo_shadowfield",
+    "name": "Shadowfield",
+    "type": "Shield",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "source": "EXOTIC",
+    "actions": [
+      {
+        "name": "Project Shadowfield",
+        "activation": "Protocol",
+        "detail": "Until the start of your next turn, or until you are hit by a melee or ranged attack, allied characters within Burst 2 of you count as being in hard cover."
+      }
+    ],
+    "description": "The user’s shadow moves independent of any light source, spreading and cloaking nearby allies."
+  }
+]
