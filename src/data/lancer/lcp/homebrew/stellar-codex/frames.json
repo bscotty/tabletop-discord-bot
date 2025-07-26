@@ -1,0 +1,804 @@
+[
+  {
+    "id": "sc_ipsn_bonny",
+    "license_level": 2,
+    "license_id": "mf_kidd",
+    "name": "Bonny",
+    "source": "IPS-N",
+    "variant": "KIDD",
+    "mechtype": [
+      "Support",
+      "Artillery"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/mhfbscrf8hhu3nc7xvmp4/Bonny-min.png?rlkey=pmu4kwdjxv4ha7r00rbdfookm&raw=1",
+    "y_pos": 61,
+    "description": "The Bonny is IPS-N’s solution to engineering in low-intel environments, armouring its support infrastructure to survive being literally thrown into positions otherwise unreachable by conventional land forces. This armour also incorporates low-level sensor nodes, anchoring the Bonny’s network to key battlefield locations.",
+    "mounts": [
+      "Main",
+      "Flex"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 6,
+      "evasion": 6,
+      "edef": 12,
+      "heatcap": 4,
+      "repcap": 5,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 5,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Crow's Nest",
+        "description": "Characters adjacent to the Bonny’s Drones and Deployables count as within the Bonny’s Sensors. <br><br>The Bonny’s Drones and Deployables always count as within its Sensors, except for the purposes of deploying them."
+      },
+      {
+        "name": "Skullduggery",
+        "description": "The Bonny’s tech actions that target characters do not require line of sight.",
+        "synergies": [
+          {
+            "locations": [
+              "tech"
+            ],
+            "detail": "The Bonny’s tech actions that target characters do not require line of sight."
+          }
+        ]
+      },
+      {
+        "name": "System Link",
+        "description": "When deployed, the Bonny's Deployables and Drones gain +5 HP.",
+        "bonuses": [
+          {
+            "id": "deployable_hp",
+            "val": 5
+          },
+          {
+            "id": "drone_hp",
+            "val": 5
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Remote Deployment Catapult",
+      "description": "Originally designed to deliver equipment into awkward positions - such as across chasms or up cliffs - it was soon discovered that the loaded material functioned reasonably well as improvised munitions. <br><br>Enterprising pilots also enjoy using the Catapult as a method of transportation. While IPS-N states that using the Catapult in this way voids all warranties involved, rumors abound that the targeting patch is officially maintained.",
+      "active_name": "Unconventional Ammunition",
+      "active_effect": "The Bonny pushes an adjacent allied character up to 20 spaces in any direction. This movement counts as flying, ignoring any intervening terrain and characters. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Quick",
+      "use": "Round",
+      "integrated": [
+        "sc_bonny_integrated"
+      ]
+    }
+  },
+  {
+    "id": "sc_ssc_hummingbird",
+    "license_level": 2,
+    "license_id": "mf_metalmark",
+    "name": "Hummingbird",
+    "source": "SSC",
+    "variant": "METALMARK",
+    "mechtype": [
+      "Controller"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/zy7ztol96rjgl77jn4shn/Hummingbird-min.png?rlkey=tfl3lwz88zwo29w1bagrq5t4r&raw=1",
+    "y_pos": 38,
+    "description": "A LUX-Exotic reworking of the Metalmark, the Hummingbird is a compact exotic technologies platform. The frame’s heaviest armament has been removed to provide room for DHIYED-derived targeting and disruption systems, creating a chassis with an unpredictable engagement pattern. <br><br>The most popular Hummingbird model replaces the extant defensive adaptations of its parent with a coating of QUICKSILVER ferrofluid - an armour system that’s able to rapidly switch between a solid shell for receiving impacts and a liquid when relocating.",
+    "mounts": [
+      "Main/Aux",
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 3,
+      "hp": 6,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 6,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Shimmercoat",
+        "description": "Tech attacks do not ignore cover when targeting the Hummingbird."
+      },
+      {
+        "name": "Quicksilver Armor",
+        "description": "If the Hummingbird would be Immobilized by any source other than its own systems, traits, etc. it is instead Slowed for the same duration."
+      },
+      {
+        "name": "DHIYED Refraction",
+        "description": "The Hummingbird’s attacks that would normally target evasion instead target e-defense. The Hummingbird’s attacks that would normally target e-defense instead target evasion.",
+        "synergies": [
+          {
+            "locations": [
+              "weapon",
+              "ram",
+              "grapple",
+              "tech_attack",
+              "improvised_attack"
+            ],
+            "weapon_types": [
+              "Melee",
+              "Rifle",
+              "Cannon",
+              "Launcher",
+              "CQB",
+              "Nexus"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "The Hummingbird’s attacks that would normally target evasion instead target e-defense. The Hummingbird’s attacks that would normally target e-defense instead target evasion."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Distortion Suite",
+      "description": "“The greatest lesson that DHIYED taught us was that there are no rules that cannot be broken. We see just the shallows, what we call physics… but there is much, much more. You just have to let your mind go.” <br><br>“Eventually you realize that there’s no distinction between perception and reality. As long as your belief is strong enough, you can change the world.”",
+      "active_name": "BLACKOUT Pulse",
+      "active_effect": "The Hummingbird chooses a character within Sensors and line of sight. The target only has line of sight to adjacent spaces until the end of their next turn. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Quick",
+      "use": "Round"
+    }
+  },
+  {
+    "id": "sc_horus_unicorn",
+    "license_level": 2,
+    "license_id": "mf_pegasus",
+    "name": "Unicorn",
+    "source": "HORUS",
+    "variant": "PEGASUS",
+    "mechtype": [
+      "Artillery"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/mwabgyzy56ckrjfmb05wo/Unicorn-min.png?rlkey=bjumtpmw4x5mtqih6qybzablb&raw=1",
+    "y_pos": 78,
+    "description": "Originally classified by the Union Intelligence Bureau as several disparate pattern groups (see files: NAGA, PERYTON, SYLPH), the Unicorn was eventually recognized as a singular p-g with the ability to fundamentally alter its weaponry. Unsubstantiated reports suggest that the p-g may be able to copy weapon data from its foes for distribution elsewhere.",
+    "mounts": [
+      "Flex",
+      "Flex",
+      "Flex",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Ambush Predator",
+        "description": "If the Unicorn begins its turn while in an area of soft cover or while Hidden, its movement and actions do not trigger reactions until the end of its turn."
+      },
+      {
+        "name": "Living Weaponry",
+        "description": "The Unicorn can make ranged attacks when Jammed."
+      }
+    ],
+    "core_system": {
+      "name": "Chaos Genome",
+      "description": "“When you talk about life, most humans will picture plants or animals. Organic things. But that’s a rather limited way to look at the universe, isn’t it? Especially after the Deimos Event opened our eyes.” <br><br>“All that life requires is the ability to adapt to its environment. So why can’t a mech be alive? Recalibrating weapons to better hunt its prey. Discovering what does and doesn’t work. Doing whatever it takes to not die. Even if it’s made of metal, does that not sound alive to you?”",
+      "active_name": "Resequence",
+      "active_effect": "The Unicorn’s weapons with the Smart tag lose the Smart tag; all others gain the Smart tag. This effect lasts until the start of the Unicorn’s next turn. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Protocol",
+      "use": "Round",
+      "passive_name": "Arsenal Flux",
+      "passive_effect": "The Unicorn may only have three of its non-Integrated mounts active at any time; weapons on inactive mounts (including Superheavy weapons using that mount to brace) may not be used to make attacks, do not provide any effects, may not be reloaded, and may not be affected by System Trauma. <br><br>The Unicorn chooses which of these mounts are active at the start of the scene, and may change this choice as a protocol."
+    }
+  },
+  {
+    "id": "sc_ha_tomyris",
+    "license_level": 2,
+    "license_id": "mf_barbarossa",
+    "name": "Tomyris",
+    "source": "HA",
+    "variant": "BARBAROSSA",
+    "mechtype": [
+      "Artillery"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/xi6ychrcz3gsj3jd2sjq3/Tomyris-min.png?rlkey=f7m4gqb04jwjqz9xgb54852a8&raw=1",
+    "y_pos": 10,
+    "description": "Lacking the gravitic catapult of its Barbarossa brethren, the Tomyris instead hosts the Pressure Wave - an experimental munitions delivery method. While this renders it less capable at engaging high-tonnage targets, there are hopes that the system will prove suitable for upscaling to larger armaments.",
+    "mounts": [
+      "Main",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": -2,
+      "save": 11,
+      "speed": 2,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Pressure Wave",
+        "description": "1/round, when the Tomyris would make a ranged attack roll with a Cannon, it may instead force the target to make a Hull save (this still counts as an attack). On a failure, the target is hit by the attack. On a success, the target is missed by the attack. <br><br>For each Difficulty this attack roll would have, this Save is made with +1 Accuracy. For each Accuracy this attack roll would have, this Save is made with +1 Difficulty.",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Cannon"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "1/round, when the Tomyris would make a ranged attack roll with a Cannon, it may instead force the target to make a Hull save (this still counts as an attack). On a failure, the target is hit by the attack. On a success, the target is missed by the attack. <br><br>For each Difficulty this attack roll would have, this Save is made with +1 Accuracy. For each Accuracy this attack roll would have, this Save is made with +1 Difficulty."
+          }
+        ]
+      },
+      {
+        "name": "Hyperdense Munitions",
+        "description": "The Tomyris’ ranged weapons gain Knockback 1. If the weapon has the Loading tag, it instead gains Knockback 2.",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Rifle",
+              "Cannon",
+              "Launcher",
+              "CQB",
+              "Nexus"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "The Tomyris’ ranged weapons gain Knockback 1. If the weapon has the Loading tag, it instead gains Knockback 2."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Pressure Wave",
+      "description": "The Pressure Wave is a minimally understood technology, thought by some to invoke the Firmament - though nobody’s certain. <br><br>Rather than physically move ordnance through intervening space, the Pressure Wave effectively makes matter believe that the projectile is already in a given position - bypassing the tedious need to actually deliver it.",
+      "active_name": "High Intensity Burst",
+      "active_effect": "Until the end of the Tomyris’ turn, its ranged attacks gain +2 Knockback and still deal 2 Knockback on a miss. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Protocol",
+      "use": "Round"
+    }
+  },
+  {
+    "id": "sc_ady_carmine",
+    "license_level": 2,
+    "license_id": "mf_blackbeard",
+    "name": "Carmine",
+    "source": "IPS-N",
+    "variant": "BLACKBEARD",
+    "mechtype": [
+      "Striker"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/5khvuod6qku0emgyizqce/Carmine-min.png?rlkey=fj743sbbikfdn9058w2q73dwv&raw=1",
+    "y_pos": 30,
+    "description": "Designed to allow front-line Ofanim greater battlefield control, the Carmine also serves as an excellent tool to focus one’s thoughts. Rather than traditional controls, the Phantasms generated by the frame are guided by the pilot’s desires; undisciplined minds will find them far more erratic and difficult to work with.",
+    "mounts": [
+      "Flex",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 7,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Phantasm Strike",
+        "description": "1/round, when making an attack with a melee weapon, the Carmine may treat the weapon as having Thrown 5. The weapon automatically returns to you after the attack.",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Melee"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "1/round, when making an attack with a melee weapon, the Carmine may treat the weapon as having Thrown 5. The weapon automatically returns to you after the attack."
+          }
+        ]
+      },
+      {
+        "name": "Firmament Threading",
+        "description": "When the Carmine uses Ram, Grapple, or Improvised Attack, it rolls to hit against the lowest of the target’s evasion and e-defense.",
+        "synergies": [
+          {
+            "locations": [
+              "ram",
+              "grapple",
+              "improvised_attack"
+            ],
+            "detail": "When the Carmine uses Ram, Grapple, or Improvised Attack, it rolls to hit against the lowest of the target’s evasion and e-defense."
+          }
+        ]
+      },
+      {
+        "name": "Weak Computer",
+        "description": "The Carmine has +1 Difficulty on Systems checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "systems",
+              "skill_check"
+            ],
+            "detail": "The Carmine has +1 Difficulty on Systems checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Phantasm Armory",
+      "description": "The Carmine’s formidable close combat abilities are further augmented by Phantasms. These semiphysical replicas of its weaponry inhabit the nearby space, giving the pilot a far greater reach than would otherwise be expected. <br><br>While they normally remain free-ranging - guided by the user’s unconscious thoughts - they can also be coordinated to devastating effect if a pilot fully concentrates on a target.",
+      "active_name": "Execution",
+      "active_effect": "Deal 1 Structure Damage to a character you are in a Grapple with. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Protocol",
+      "use": "Round"
+    }
+  },
+  {
+    "id": "sc_ady_cerulean",
+    "license_level": 2,
+    "license_id": "mf_drake",
+    "name": "Cerulean",
+    "source": "IPS-N",
+    "variant": "DRAKE",
+    "mechtype": [
+      "Controller",
+      "Defender"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/b3v1sgraex0xp6k02i82o/Cerulean-min.png?rlkey=5pqbhhc92vr79w7vxim275rfw&raw=1",
+    "y_pos": 15,
+    "description": "Cerulean frames have an unparalleled ability to control the battlefield, the Firmament warping around their constructs to hinder hostile forces. The common joke is there are two types of Cerulean pilots: one that will funnel all the foes away from them, and one that will funnel all the foes towards them - and both of them will give you a headache.",
+    "mounts": [
+      "Main",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 7,
+      "evasion": 10,
+      "edef": 6,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Hardlight Pavise",
+        "description": "While the Cerulean is Slowed or Immobilized, it counts as having soft cover. The Cerulean may become Slowed until the start of its next turn as a protocol."
+      },
+      {
+        "name": "Firmament Constructs",
+        "description": "The Cerulean’s Deployables cause Engagement as though they were allied characters."
+      }
+    ],
+    "core_system": {
+      "name": "Projected Barriers",
+      "description": "Key to the Cerulean’s battlefield mastery are its integrated barricades. While more fragile than most constructs, the mech is nonetheless able to project them into key positions while physically protecting another location.",
+      "active_name": "Projected Barriers",
+      "active_effect": "The Cerulean creates two Size 2 Hardlight Barrier Deployables in free spaces within Sensors and line of sight. These Barriers have 10 HP, grant hard cover, and last until destroyed or until the end of the scene. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Quick",
+      "use": "Round"
+    }
+  },
+  {
+    "id": "sc_ady_azure",
+    "license_level": 2,
+    "license_id": "mf_emperor",
+    "name": "Azure",
+    "source": "SSC",
+    "variant": "EMPEROR",
+    "mechtype": [
+      "Support"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/heoudft5a454vhowlg3is/Azure-min.png?rlkey=566tlqwtervqjse82q6kgcba0&raw=1",
+    "y_pos": 3,
+    "description": "The Azure is a mech that heavily draws on the Firmament, even more than most Ofanim. It is presence personified, commanding the space around itself. Even gravity and light will briefly warp at its whims, freeing those around it from earth’s shackles, or cloaking them from sight.",
+    "mounts": [
+      "Main",
+      "Flex"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 5,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Splendor",
+        "description": "The Azure can count any and all of its movement as flying. <br><br>Allied characters that start their turn within range 3 of the Azure may benefit from this trait until the end of their turn, but must end their movement on solid ground."
+      },
+      {
+        "name": "Perception Veil",
+        "description": "1/round, when you target an allied character with a tech action or Angelic Rescue, you may cloak them in radiance. The first attack roll against them before the end of their next turn treats them as Invisible.",
+        "synergies": [
+          {
+            "locations": [
+              "tech"
+            ],
+            "detail": "1/round, when you target an allied character with a tech action or Angelic Rescue, you may cloak them in radiance. The first attack roll against them before the end of their next turn treats them as Invisible."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Radiant Tether",
+      "description": "The Azure serves as an anchor, providing connections in the Firmament that its allies can take hold of. <br><br>If any of its charges are in danger, the Azure is able to pull them briefly through the Firmament to appear at its side.",
+      "active_name": "Angelic Rescue",
+      "active_effect": "The Azure selects an allied character within range 20, even outside line of sight. That character may clear one condition (not caused by their own talents, systems, etc.) and is teleported to any free space adjacent to the Azure. If the Azure is flying, they are instead teleported to the nearest free space on the ground. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Quick",
+      "use": "Round"
+    }
+  },
+  {
+    "id": "sc_ady_sable",
+    "license_level": 2,
+    "license_id": "mf_white_witch",
+    "name": "Sable",
+    "source": "SSC",
+    "variant": "WHITE WITCH",
+    "mechtype": [
+      "Defender"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/0swifydfbh1z7bpfkchco/Sable-min.png?rlkey=6g8dmv9485y0ipixvfvd4vp5m&raw=1",
+    "y_pos": 21,
+    "description": "Sable frames appear deceptively fragile, lacking any of the armored plating or hardlight shielding that one would typically expect from a mainline mech. Instead, it mounts the Prism Barrier, a defensive system capable of protecting both itself and nearby allies - including the infantry commonly found supporting Ofanim.",
+    "mounts": [
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 3,
+      "hp": 7,
+      "evasion": 9,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Prism Barrier",
+        "description": "Allied characters within range 1 may use the Sable’s Armor instead of their own whenever they take damage. If the Sable is Immobilized, this increases to range 3. <br><br>The Sable may Immobilize itself until the start of its next turn as a protocol."
+      },
+      {
+        "name": "Refraction",
+        "description": "The Sable has Immunity to Lock On."
+      }
+    ],
+    "core_system": {
+      "name": "Prism Barrier",
+      "description": "The Prism Barrier works on effectively the opposite principles to the standard Aunic hardlight. Hardlight forms light into physical matter, while the Prism Barrier reduces energy from incoming matter into harmless light. <br><br>Previously, due to power constraints, it was only found on starships or stationary emitters; the Sable is the first time the platform is able to be deployed on a personal chassis.",
+      "active_name": "Diamond Anchor",
+      "active_effect": "Until the start of the Sable’s next turn, it has Armor 6, but is Immobilized. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Quick",
+      "use": "Round"
+    }
+  },
+  {
+    "id": "sc_ady_viridian",
+    "license_level": 2,
+    "license_id": "mf_goblin",
+    "name": "Viridian",
+    "source": "HORUS",
+    "variant": "GOBLIN",
+    "mechtype": [
+      "Controller",
+      "Defender"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/ciu9sqx0g1thj9bds97qn/Viridian-min.png?rlkey=iuwu10tw849qsbqismmwo60bs&raw=1",
+    "y_pos": 20,
+    "description": "Unlike many of its contemporaries, who attempt to brute force their way through systems, the Viridian takes a more subtle approach. As it traverses the battlefield, it lays a Firmament web around itself and waits for foes to make a false step.",
+    "mounts": [
+      "Main",
+      "Flex"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 4,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack": 2,
+      "save": 11,
+      "speed": 5,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Aethereal Web",
+        "description": "The Viridian may Overwatch with Invade, counting as Threat 3."
+      },
+      {
+        "name": "Flux Shielding",
+        "description": "On its turn, the Viridian gains resistance to all damage."
+      }
+    ],
+    "core_system": {
+      "name": "Spatial Fold",
+      "description": "The Viridian’s web isn’t just useful for snaring foes. Skilled pilots are also able to use the Firmament strands to briefly bind together discontiguous space, forming a bridge of sorts. <br><br>The weaving in the Firmament has been compared to that of a Firmament Hall, though there is no dedicated terminus. This has led to the hypothesis that enough Viridians working in concert may be able to bridge worlds, but such theories remain untested.",
+      "active_name": "Flash Step",
+      "active_effect": "The Viridian teleports up to its Speed. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Free",
+      "use": "Round"
+    }
+  },
+  {
+    "id": "sc_ady_cerise",
+    "license_level": 2,
+    "license_id": "mf_lich",
+    "name": "Cerise",
+    "source": "HORUS",
+    "variant": "LICH",
+    "mechtype": [
+      "Support"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/j4vlatidcppwgaj938zql/Cerise-min.png?rlkey=hj7sdcf9p63clql7j3xy7dqnl&raw=1",
+    "y_pos": 9,
+    "description": "On paper, nothing about the Cerise is particularly notable. Designed to support other Ofanim, it’s a perfectly serviceable frame - capable of performing both mechanical repairs and Firmament manipulation at a competent level. Nothing, however, was able to quantify how lucky pilots seemed to get. It’s been impossible to measure, but many pilots swear that the most unlikely occurrences have helped them on the battlefield.",
+    "mounts": [
+      "Main",
+      "Flex"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 3,
+      "hp": 6,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 3,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Celerity",
+        "description": "1/scene, as a quick action, the Cerise may allow a character within Sensors and line of sight to Stabilize as a reaction."
+      },
+      {
+        "name": "Uncanny Luck",
+        "description": "When the Cerise or an adjacent allied character rolls Accuracy, any dice that land on a 1 are rerolled. Additional 1s continue to trigger this effect."
+      }
+    ],
+    "core_system": {
+      "name": "Lucky Break",
+      "description": "“Nobody believes me when I tell them that the enemy’s gun just… jammed. I should have been blasted to bits, but it gave me just enough of an opening to blow the charges. Can’t imagine how the battle would have gone if that hadn’t happened…”",
+      "active_name": "Perfect Moment",
+      "active_effect": "",
+      "activation": "Reaction",
+      "active_actions": [
+        {
+          "name": "Perfect Moment",
+          "activation": "Reaction",
+          "trigger": "A character within Sensors and line of sight would roll a d20 for an attack roll, check, or save.",
+          "detail": "Effect: Instead of rolling the d20, the Cerise sets its value to 1 or 20. Accuracy and Difficulty are still rolled as normal.<br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.<br><br><i>Note: Universal Compatibility can be triggered by this ability even though free actions can normally only be taken on your turn.</i>"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sc_ady_onyx",
+    "license_level": 2,
+    "license_id": "mf_sherman",
+    "name": "Onyx",
+    "source": "HA",
+    "variant": "SHERMAN",
+    "mechtype": [
+      "Striker",
+      "Support"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/i0oeh5ulbpvaoibth6jig/Onyx-min.png?rlkey=kvknpy82yooiot8dp8i4td2e0&raw=1",
+    "y_pos": 20,
+    "description": "Mechs produced by the Aun’Ist Design Yards are designed solely for use by Aunic forces, resulting in lines known only by internal production designations. While they never needed to be marketed, Ofanim pilots quickly gave them colloquial names anyways. The training mechs during a pilot's education were nicknamed ‘Blanks’ - anyone having to pilot one hadn't even earned their White - and the practice of referring to frames by colours spread from there. <br><br>The Onyx is a combat ready iteration of the most basic Blank model, which results in them being a common sight across the battlefield - every Ofanim has at least a passing familiarity with piloting them.",
+    "mounts": [
+      "Main",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 10,
+      "evasion": 7,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 3,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Dispersion Plating",
+        "description": "When the Onyx would gain heat, it gains 1 less heat (before resistance, to a minimum of 1).",
+        "synergies": [
+          {
+            "locations": [
+              "heat"
+            ],
+            "detail": "When the Onyx would gain heat, it gains 1 less heat (before resistance, to a minimum of 1)."
+          }
+        ]
+      },
+      {
+        "name": "Benediction",
+        "description": "When the Onyx Stabilizes and chooses to clear an allied character’s condition, it may choose an allied character within Sensors instead of an adjacent allied character.",
+        "synergies": [
+          {
+            "locations": [
+              "stabilize"
+            ],
+            "detail": "When the Onyx Stabilizes and chooses to clear an allied character’s condition, it may choose an allied character within Sensors instead of an adjacent allied character."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Unity Matrix",
+      "description": "The Unity Matrix effectively projects the essence of the user’s mech over another - though it consumes a prodigious amount of energy, sharply limiting its usability. <br><br>While it hasn’t lived up to expectations, the facsimiles it creates still allow the Onyx to briefly grant allies its considerable firepower.",
+      "active_name": "Entwine",
+      "active_effect": "Choose an allied character within Sensors. Until the end of the Onyx’s turn, the Onyx is Immobilized and may originate any weapon attack as if it were in the chosen character’s space. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Protocol",
+      "use": "Round"
+    }
+  },
+  {
+    "id": "sc_ady_ochre",
+    "license_level": 2,
+    "license_id": "mf_iskander",
+    "name": "Ochre",
+    "source": "HA",
+    "variant": "ISKANDER",
+    "mechtype": [
+      "Controller"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/i7jqzkcqrs4ru66wv786n/Ochre-min.png?rlkey=zd0uttjg00kmsblgsdfxskbrg&raw=1",
+    "y_pos": 15,
+    "description": "The Ochre is designed for stealth missions, with sections of it half-shunted into the Firmament to reduce its profile without giving up weapon capacity. Its ability to cloak itself from electronic systems is seemingly derived from the void signature of Souls - though the effect is applied to all observers, not just Deimoisian NHPs.",
+    "mounts": [
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 12,
+      "speed": 5,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Disruption Array",
+        "description": "1/round, when a character fails a save caused by the Ochre, that character treats the Ochre as if it were Invisible until the end of that character’s next turn."
+      },
+      {
+        "name": "Void Signature",
+        "description": "The Ochre gains +1 Accuracy on Systems checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "systems",
+              "skill_check"
+            ],
+            "detail": "The Ochre gains +1 Accuracy on Systems checks and saves."
+          }
+        ]
+      },
+      {
+        "name": "Subspace Armory",
+        "description": "When you rest, the Ochre regains 1 charge in up to two Systems with the Limited tag that are below their maximum charges."
+      }
+    ],
+    "core_system": {
+      "name": "Disruption Array",
+      "description": "In addition to a passive void signature, the Ochre houses a wide array of tools designed to actively overwhelm hostile systems. While the effects often last mere moments, they’re enough to cause lapses in countermeasures or allow the Ochre to slip through tight security nets.",
+      "active_name": "Recursive Payload",
+      "active_effect": "Choose a hostile character within line of sight and Sensors. The target becomes Stunned until the start of their next turn. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Quick",
+      "use": "Round"
+    }
+  }
+]
