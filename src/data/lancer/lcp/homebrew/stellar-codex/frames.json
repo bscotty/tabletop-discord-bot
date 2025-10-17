@@ -293,7 +293,7 @@
       "name": "Pressure Wave",
       "description": "The Pressure Wave is a minimally understood technology, thought by some to invoke the Firmament - though nobody’s certain. <br><br>Rather than physically move ordnance through intervening space, the Pressure Wave effectively makes matter believe that the projectile is already in a given position - bypassing the tedious need to actually deliver it.",
       "active_name": "High Intensity Burst",
-      "active_effect": "Until the end of the Tomyris’ turn, its ranged attacks gain +2 Knockback and still deal 2 Knockback on a miss. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "active_effect": "Until the end of the Tomyris’ turn, its ranged attacks gain Knockback 2 and still deal 2 Knockback on a miss. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
       "activation": "Protocol",
       "use": "Round"
     }
@@ -797,6 +797,146 @@
       "description": "In addition to a passive void signature, the Ochre houses a wide array of tools designed to actively overwhelm hostile systems. While the effects often last mere moments, they’re enough to cause lapses in countermeasures or allow the Ochre to slip through tight security nets.",
       "active_name": "Recursive Payload",
       "active_effect": "Choose a hostile character within line of sight and Sensors. The target becomes Stunned until the start of their next turn. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Quick",
+      "use": "Round"
+    }
+  },
+  {
+    "id": "sc_abt_arbutus",
+    "license_level": 2,
+    "license_id": "mf_deaths_head",
+    "name": "Arbutus",
+    "source": "SSC",
+    "variant": "Death’s Head",
+    "mechtype": [
+      "Artillery"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/jq7waaplhzlrpyli51a7d/Arbutus-min.png?rlkey=44632oml21fz88kruyc8160ju&raw=1",
+    "y_pos": 40,
+    "description": "While Ascalon Biotech was no stranger to growing military equipment, mechs were only introduced by the visitors from the stars. The Arbutus is Ascalon’s flagship attempt to replicate the concept, adapting one of its artillery platforms to mirror a chassis’ maneuverability.",
+    "mounts": [
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 12,
+      "evasion": 8,
+      "edef": 12,
+      "heatcap": 4,
+      "repcap": 2,
+      "sensor_range": 20,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Precision Targeting",
+        "description": "When the Arbutus calculates the final Accuracy and Difficulty for ranged attack rolls, each Accuracy can cancel out up to 2 Difficulty.",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Rifle",
+              "Cannon",
+              "Launcher",
+              "CQB",
+              "Nexus"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "When the Arbutus calculates the final Accuracy and Difficulty for ranged attack rolls, each Accuracy can cancel out up to 2 Difficulty."
+          }
+        ]
+      },
+      {
+        "name": "Floratech Reactor",
+        "description": "1/round, when the Arbutus receives heat, except from Overcharge, it may instead take an equivalent amount of eergy damage. This damage bypasses Overshield and may not be reduced in any way."
+      },
+      {
+        "name": "Regrowth",
+        "description": "When you rest, the Arbutus regains full HP automatically and without repairs."
+      }
+    ],
+    "core_system": {
+      "name": "Hunter Biocircuit",
+      "description": "Ascalon has persistently been wary of animal-based biotech. While undoubtedly more efficient, with quicker response times, it’s also considered to be more willful and prone to malfunction. <br><br>Despite these concerns, the Arbutus has been built with a secondary faunatech targeting module to augment its existing plant-based one - though it can only be activated for a brief period of time. <br><br>Should the HUNTER circuit prove successful, Ascalon hopes to be able to expand the concept into more efficient bioweaponry, and possibly even its own mech chassis.",
+      "active_name": "Predator Instinct",
+      "active_effect": "Until the end of the turn, the user’s attacks gain the Seeking tag and ignore Invisible. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Protocol",
+      "use": "Round"
+    }
+  },
+  {
+    "id": "sc_index_asimov",
+    "license_level": 2,
+    "license_id": "mf_vlad",
+    "name": "Asimov",
+    "source": "IPS-N",
+    "variant": "VLAD",
+    "mechtype": [
+      "Defender"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/bt01262wiqmv3f286buam/Asimov-min.png?rlkey=rqwozu11n88ftfh6ijwcunvn0&raw=1",
+    "y_pos": 5,
+    "description": "Forged by technology stolen from a dozen different cultures, the Asimov was designed to serve as the guardians of INDEX’s data caches. Over time, it proved itself versatile enough to be seen during field operations - providing muscle when subtlety has failed.",
+    "mounts": [
+      "Main",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 7,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": -1,
+      "save": 11,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Singularity Field",
+        "description": "When a hostile character attacks the Asimov or an adjacent allied character with a melee or ranged attack, the Asimov may first pull the attacker 2 spaces directly towards it."
+      },
+      {
+        "name": "Necrotech Aegis",
+        "description": "1/round, when the Asimov is hit by an attack, it may deal 10 AP Explosive damage to a wreck within range 3. If it does so, it counts as having 4 Armor for that attack."
+      },
+      {
+        "name": "Synthesis Node",
+        "description": "The Asimov gains +1 Accuracy on Systems checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "systems",
+              "skill_check"
+            ],
+            "detail": "The Asimov gains +1 Accuracy on Systems checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Singularity Field",
+      "description": "While the Asimov was built to contain a wide variety of technology, the one it was primarily designed around is the singularity contained at its core. <br><br>It is the philosophy of INDEX condensed to a single point: let nothing escape its grasp once they stray into its orbit.",
+      "active_name": "Event Horizon",
+      "active_effect": "Choose a hostile character within range 10 and line of sight. They are pulled directly towards the user until they are either adjacent or stopped by an obstruction. The user counts as Size 3 for this effect. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
       "activation": "Quick",
       "use": "Round"
     }
