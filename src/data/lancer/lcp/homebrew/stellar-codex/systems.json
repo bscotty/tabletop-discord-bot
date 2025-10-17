@@ -329,5 +329,88 @@
       }
     ],
     "description": "The user’s shadow moves independent of any light source, spreading and cloaking nearby allies."
+  },
+  {
+    "id": "sc_exo_hunter_weave",
+    "name": "Hunter Weave",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "After all characters have deployed, but before the first turn, you may move up to your Speed.",
+    "description": "Your mech includes components grown from a predator species - and it reacts to foes even before you can."
+  },
+  {
+    "id": "sc_exo_mass_displacer",
+    "name": "Mass Displacer",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "The user’s Size is increased by 2 for the purposes of Engagement.",
+    "description": "Most of this mech’s mass is stored outside conventional space, causing foes to underestimate its ability to control the battlefield around itself."
+  },
+  {
+    "id": "sc_exo_chameleon_coating",
+    "name": "Chameleon Coating",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "1/scene, when the user makes a check or save, they may cause it to count as targeting their choice of Hull, Agility, Systems, or Engineering, instead of the original mech skill. In addition, the roll cannot be affected by Difficulty.",
+    "description": "A unique compound has been mixed into your mech’s shielding, allowing it to adapt to almost any situation."
+  },
+  {
+    "id": "sc_exo_minuet_vp",
+    "name": "MINUET Virtual Personality",
+    "type": "Drone",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_no_cascade"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "EXOTIC",
+    "effect": "The MINUET Drone is deployed to a free space within 5 spaces and line of sight. <br><br>When the Drone is deployed, choose one of your non-integrated Mounts - range and line of sight when attacking with that mount is drawn from the Drone instead of your mech. If the Drone is destroyed, this effect immediately ends. <br><br>The Drone has Speed 3, or Speed 5 if the equipped mount contains only melee weapons. It can move independently on your turn, but can’t take any other actions. It can be recalled as a quick action. <br><br>While not deployed, your mech gains the AI property. This AI can only be given control of the mech if not deployed, and must give up control of the mech before deploying. <br><br>Virtual Personality units are not true NHPs and thus cannot enter cascade.",
+    "deployables": [
+      {
+        "type": "Drone",
+        "name": "MINUET Drone",
+        "activation": "Quick",
+        "size": 0.5,
+        "hp": 15,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "When the Drone is deployed, choose one of your non-integrated Mounts - range and line of sight when attacking with that mount is drawn from the Drone instead of your mech. If the Drone is destroyed, this effect immediately ends. <br><br>The Drone has Speed 3, or Speed 5 if the equipped mount contains only melee weapons. It can move independently on your turn, but can’t take any other actions. It can be recalled as a quick action."
+      }
+    ],
+    "description": "The MINUET codeline was Prism’s original battlefield-ready VP, moving beyond the logistics roles previous codelines were limited to. Acting as an extra set of eyes and hands for their operator, MINUETs proved extremely popular. <br><br>Unfortunately, Prism’s first attempts at creating a personality suited for the battlefield were considered ‘less than successful’ from a corporate viewpoint. Many MINUETs ended up becoming overly cynical, insubordinate, and/or bloodthirsty, leading to Prism electing to discontinue the codeline. <br><br>Despite this, bootleg MINUETs remain common sights on the battlefield, especially among pirates, mercenaries, and other less-than-legal organizations."
   }
 ]

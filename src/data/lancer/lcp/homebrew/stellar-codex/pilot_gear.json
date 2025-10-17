@@ -1,5 +1,105 @@
 [
   {
+    "id": "pg_sc_chronoscope",
+    "name": "Chronoscope",
+    "type": "Gear",
+    "description": "When activated, the Chronoscope allows the user to choose up to 10 contiguous minutes from the preceding 24 hours. The user, and anyone else that remains within 5m of the Chronoscope, are able to see their current position as if during that timespan, which elapses in realtime and cannot be paused. Only visuals can be experienced through the Chronoscope, not any other senses, though the user is able to walk around with the device to change their perspective on events. Recording devices are unable to perceive the Chronoscope’s effects, forcing any documentation to be made manually.",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_gear"
+      }
+    ]
+  },
+  {
+    "id": "pg_sc_grav_handle",
+    "name": "Grav Handle",
+    "type": "Gear",
+    "description": "When placed against an unattended object and activated, a grav-handle attaches to it and negates most of its weight, making it trivial to move around. The device is able to be freely turned off and detached - though a safety measure prevents this while an object is not resting on a surface. The consumer model is able to affect items up to a maximum size of 40 cubic meters, with its battery life allowing approximately 15 minutes of use before it needs to be recharged.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
+  },
+  {
+    "id": "pg_sc_infinite_toolbox",
+    "name": "Infinite Toolbox",
+    "type": "Gear",
+    "description": "Filled with a reservoir of whitewash nanites instead of actual tools. Blueprints can be sent to the box, allowing for the creation of almost any simple tool or weapon, up to the mass of the nanites in the box. Electronics are unfortunately beyond the ability of the toolbox to create. Tools are able to be returned to the box after use to replenish the mass - and rumour speaks of greywash versions that are able to replicate additional nanites from other objects placed in the box.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
+  },
+  {
+    "id": "pg_sc_listening_bug",
+    "name": "Listening Bug",
+    "type": "Gear",
+    "description": "Taking the form of a native insectoid lifeform about an inch in length, this biological recording device is capable of receiving complex instructions, though does not show initiative when following them. It can record up to 2 hours of audio, and play it back on command, while remaining near undetectable to any conventional bug sweeps.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
+  },
+  {
+    "id": "pg_sc_portable_stasis_chamber",
+    "name": "Portable Stasis Chamber",
+    "type": "Gear",
+    "description": "Able to hold up to one cubic meter of material (though smaller versions exist, including backpack and suitcase variants), anything within the chamber while it’s sealed becomes functionally frozen in time, allowing it to harmlessly carry unstable or organic contents for an indefinite length of time. As a side effect, the contents tend to survive anything that manages to destroy the stasis chamber - even in cases where it’s been effectively blown to pieces.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
+  },
+  {
+    "id": "pg_sc_smartfabric_outfit",
+    "name": "Smartfabric Outfit",
+    "type": "Gear",
+    "description": "The adaptive and self-repairing fibers of this outfit allow the wearer to almost instantly shift it to a different selection from its internal wardrobe, letting the wearer blend in, react to weather changes, or (perhaps most importantly) reflect the highest standards of fashion. It’s even able to split into multiple articles of clothing or reintegrate into one larger piece such as a dress. Adding a new wardrobe item can be done quickly via scan, or manually edited over the course of several  minutes (or, for true perfectionists, hours) on a linked device.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
+  },
+  {
+    "id": "pg_sc_sonic_nullifier",
+    "name": "Sonic Nullifier",
+    "type": "Gear",
+    "description": "When this black gem is crushed, the energies inside infuse the nearby area and cancel out any noise. The area within 20m becomes blanketed in complete silence for 1 hour - nothing in the area makes any audible noise, and no sounds from outside the area are able to be heard by anyone within.",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_gear"
+      }
+    ]
+  },
+  {
+    "id": "pg_sc_tangle_vines",
+    "name": "Tangle Vines",
+    "type": "Gear",
+    "description": "When this stasis cube is thrown with enough force, it shatters and allows the bioengineered vines inside to begin to grow, regardless of the surface it lands on. Tangle vines are hardy, durable, and are able to easily clog up a corridor or choke an inactive mech or shuttle during the 10 minutes of rapid growth. Without fire, it can take hours to clear - though the vines do avoid intense heat sources like an active reactor, rendering them ineffective in combat situations. If not destroyed, the vines wither away to dust after 24 hours.",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_gear"
+      }
+    ]
+  },
+  {
     "id": "pg_sc_biobot",
     "name": "Biobot",
     "type": "Gear",

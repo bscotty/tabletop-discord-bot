@@ -124,5 +124,97 @@
         "id": "tg_exotic"
       }
     ]
+  },
+  {
+    "id": "sc_exo_shatterpoint_pistols",
+    "name": "Shatterpoint Pistols",
+    "mount": "Auxiliary",
+    "source": "EXOTIC",
+    "type": "CQB",
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": 3
+      }
+    ],
+    "effect": "",
+    "description": "Named because of the effect on its target - supercooling where it hits to shatter even the toughest of metals.",
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ]
+  },
+  {
+    "id": "sc_exo_warpshard",
+    "name": "Warpshard",
+    "mount": "Heavy",
+    "source": "EXOTIC",
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+5"
+      }
+    ],
+    "effect": "On the user’s turn, this weapon gains Reliable 5. While not the user’s turn, it gains +1 Threat.",
+    "description": "Sometimes a spear, other times a sword, axe, or more esoteric form. Mastering such a weapon requires a wielder who is able to change alongside it.",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_exotic"
+      }
+    ]
+  },
+  {
+    "id": "sc_exo_beam_emitter",
+    "name": "Beam Emitter",
+    "mount": "Main",
+    "source": "EXOTIC",
+    "type": "Rifle",
+    "range": [
+      {
+        "type": "Range",
+        "val": 3
+      },
+      {
+        "type": "Line",
+        "val": 5
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+2"
+      }
+    ],
+    "description": "Typically mounted in the palms of a frame’s hands, Beam Emitters are instantly recognizable by how they sweep across the battlefield.",
+    "tags": [
+      {
+        "id": "tg_exotic"
+      }
+    ]
   }
 ]
