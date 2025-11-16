@@ -1,7 +1,7 @@
 {
   "name": "KRFW Catalog",
   "author": "Izaak",
-  "description": "The LCP for Karimi, Roux, & Fabjani Wholesalers. Credits: Izaak (content), Sarah (LCP).",
+  "description": "The LCP for Karimi, Roux, & Fabjani Wholesalers. Credits: Izaak (content), sarah (LCP).",
   "item_prefix": "KRFWCAT",
-  "version": "0.0.5"
+  "version": "0.0.7"
 }

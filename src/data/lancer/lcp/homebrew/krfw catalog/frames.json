@@ -289,6 +289,72 @@
     "y_pos": 0
   },
   {
+    "id": "krfwf_iry_pat",
+    "license_id": "krfwf_iry_pat",
+    "license_level": 2,
+    "source": "KRFW",
+    "name": "Iry-pat",
+    "mechtype": [
+      "Striker",
+      "Defender"
+    ],
+    "description": "The Iry-pat is the pride of KRFW’s “Room and Board” line of products, marketed as an alternative to the Tortuga for ships in need of a dedicated defense force. The frame is shockingly small, leaving the pilot mostly exposed and appearing more akin to a primitive exoskeleton than a traditional mech. Despite its miniscule size, though, the machine receives the marketing and size allotments of most other mechs, albeit with comparable power draw as well.<br><br>Despite marketing, however, the Iry-pat is not a KRFW original design, even if the company sells the plans and rights to it as though it was. The original Iry-pat was, as many of the company’s designs, found within a lost storage container, this one retrieved from a container that, against all odds, could be carbon-dated to a time before the Fall. Though the specific workings of the frame continue to elude KRFW’s engineers, they know it well enough to be able to reproduce its functions, both the mundane and the… concerningly esoteric.",
+    "mounts": [
+      "Main",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 8,
+      "repcap": 6,
+      "heatcap": 5,
+      "save": 10,
+      "sensor_range": 3,
+      "sp": 5,
+      "speed": 4,
+      "tech_attack": -1
+    },
+    "traits": [
+      {
+        "name": "Predecessor",
+        "description": "Damage the Iry-pat deals has no damage type. Any Burn the Iry-pat would deal is instead converted to an equivalent amount of AP damage with no type."
+      },
+      {
+        "name": "Floodplain",
+        "description": "Whenever the Iry-pat destroys a non-Grunt, non-Drone character, it clears heat and gains HP equal to ½ its Grit (minimum 1.)"
+      },
+      {
+        "name": "Monumentality",
+        "description": "The Iry-pat always leaves a wreck when destroyed in any way, including Meltdowns. This wreck is an Object the same size as the Iry-pat that blocks Line of Sight and grants Hard Cover."
+      }
+    ],
+    "core_system": {
+      "name": "Eternal Glory",
+      "description": "Iry-pat pilots are uniquely vulnerable among those who use KRFW’s catalogue, being almost completely exposed besides their hardsuits. Despite that, certain “black box” components in the frame allow it to resist incredible amounts of gunfire, and stand on equal footing with mechs twice its size. What’s more, the same systems that allow the Iry-pat to keep its pilot safe seem to function on a fundamentally altered chronology, allowing the mech to transform the very land itself to bring back structure lost to time.",
+      "active_name": "Boundless and Bare",
+      "active_effect": "",
+      "activation": "Reaction",
+      "active_actions": [
+        {
+          "name": "Boundless and Bare",
+          "activation": "Reaction",
+          "trigger": "A character ends their turn while the Iry-pat is Destroyed.",
+          "detail": "In a Free Space adjacent to any Tomb, create a new Iry-pat. The pilot may immediately move and mount it as no action. It is identical to the original, except its base HP is 4, its base Armor is 4, and its base Heat Cap is 2. At the end of each of its turns, this Iry-pat immediately loses 1 Structure and 1 Stress.<br><br>This core power functions even if the pilot has died. If the pilot is dead, a new one is already inside the new mech."
+        }
+      ],
+      "passive_name": "Lone and Level",
+      "passive_effect": "Whenever the Iry-pat loses any amount of Structure or Stress, it creates that many Tombs in an adjacent Free Space, if possible. A Tomb is a Size 1 Object that has 10 HP, 4 Armor, grants Hard Cover, and blocks Line of Sight. If the Iry-pat creates multiple Tombs adjacent to each other, it may choose to combine them into one object with the combined HP of all component Tombs, occupying the same spaces as its constituent Tombs."
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "y_pos": 0
+  },
+  {
     "id": "krfwf_marquess",
     "license_id": "krfwf_marquess",
     "license_level": 2,
@@ -702,6 +768,63 @@
           "detail": "When deployed, the Leshy Drone creates a Burst 1 Zone of dense forest that extends in both directions vertically for an indefinite distance. This Zone grants Hard Cover and blocks Line of Sight as if it were Terrain. Characters cannot pass through this Zone. The Leshy Drone can still be targeted by weapons with the Arcing, Seeking, or AP tags, or that attack in a Blast, Burst, Cone, or Line.<br>If the Leshy Drone is destroyed, the Starosta may deploy a new one in the next scene."
         }
       ]
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "y_pos": 0
+  },
+  {
+    "id": "krfwf_jarl",
+    "license_id": "krfwf_iry_pat",
+    "variant": "Iry-Pat",
+    "license_level": 2,
+    "source": "KRFW",
+    "name": "Jarl",
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "description": "The only Jarl ever deliberately produced was an early attempt at modifying the Iry-pat’s design to protect the pilot better and bring the machine up to its functional size. Instead, the test run was scrubbed from footage and memory alike, and the machine ordered to be scrapped.<br><br>It never made it to the yard where it would be broken down and rendered into printstock, though. Somewhere along the line, the mech was stolen, and it disappeared into the void between the stars. It would not resurface for nearly twenty years, but when it did, it would force everyone to pay attention.<br><br>The original Jarl’s first sighting since its disappearance was on a small station out in the rim called the Cosmic Stopgap, which had been taken over by pirates years ago. A small force of lancers attacked the station in search of technology deep in its heart, but found more than they bargained for inside. The leader of the pirates had acquired the Jarl, and used it to slaughter his own crew. The assault force found themselves contending with the corpse forces, each now piloting their own bastardized Jarl, each mech moving as though its pilot yet lived, despite the rotting carcass inside.<br><br>Though the assault force proved ultimately victorious, one of their number was seemingly killed in the assault. And yet, when they returned home, they found their fallen comrade waiting, a new Jarl printing in preparation for the next deployment.<br><br>In the years since, Karimi, Roux, & Fabjani Wholesalers has found itself leading an “aggressive product recall campaign” as they seek to contain the spread of Jarls across the galaxy, knowing every loss their contractors experience can blossom into a new flashpoint, a new hotspot for the outbreak to grow from once more.",
+    "mounts": [
+      "Aux/Aux",
+      "Heavy",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 12,
+      "evasion": 6,
+      "edef": 6,
+      "heatcap": 8,
+      "repcap": 2,
+      "sensor_range": 3,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Permafrost",
+        "description": "Whenever the Jarl destroys a character, all characters within Burst 2 become Immobilized until the end of the Jarl’s next turn. Characters Immobilized this way have Resistance to Heat."
+      },
+      {
+        "name": "Draugr",
+        "description": "The Jarl cannot regain HP. At the start of each short rest, the Jarl gains one Repair for each character it destroyed in the previous scene. These Repairs are lost at the end of the scene."
+      },
+      {
+        "name": "Berserker",
+        "description": "If the Jarl uses a Heavy or Superheavy weapon during its turn, it cannot use a different Heavy or Superheavy weapon until the start of its next turn."
+      }
+    ],
+    "core_system": {
+      "name": "Honorable Death",
+      "description": "The Jarl is a failure. It is a failure of design, of intent, of execution and concealment. It is a failure of systems and individuals. In every conceivable way, the machine fails, save for one.<br><br>It is exceptionally adept at slaughter.",
+      "active_name": "Valhalla Bound",
+      "active_effect": "Attack every character within Range 50 with every weapon that can target them. Each character can only be hit once by any weapon. Your mech is immediately destroyed after your last attack, and cannot be repaired for the rest of this scene.",
+      "activation": "Full"
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
     "y_pos": 0

@@ -788,5 +788,89 @@
     "license_level": 2,
     "description": "Originally acquired from a lot of lost SSC technology in KRFW’s early days, the “Vajra” as it was known then languished in company storage for years for want of a buyer. Even when the company moved into manufacturing mechs, the Vajra was left on the shelf, not fitting with the design ethos of any of their frames. When the Primor was in early testing phases, however, an engineer found the weapon and installed it, finding it reacted shockingly well with the alloys used in KRFW drones. Retrofitted and rebranded as the “Pinball” Atmospheric Ionizer, it became one of the signature weapons of the floating fortress.",
     "license_id": "krfwf_primor"
+  },
+  {
+    "id": "krfwmw_hollow_point_defense_cannon",
+    "name": "Hollow Point-Defense Cannon",
+    "mount": "Main",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "source": "KRFW",
+    "license": "Iry-pat",
+    "license_level": 1,
+    "description": "Traditionally a shoulder-mounted weapon, this PDC features a seven-barreled gatling mechanism and no discernable internals whatsoever. Attempts to load anything inside the casing result in the inserted mechanisms disappearing, much to the consternation of every KRFW engineer assigned to the project.",
+    "sp": 1,
+    "on_hit": "The next damaging attack made against the target gains AP.",
+    "license_id": "krfwf_iry_pat"
+  },
+  {
+    "id": "krfwmw_canopic_bindings",
+    "name": "Canopic Bindings",
+    "mount": "Heavy",
+    "type": "Melee",
+    "tags": [
+      {
+        "id": "tg_seeking"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "2d6"
+      }
+    ],
+    "source": "KRFW",
+    "license": "Iry-pat",
+    "license_level": 2,
+    "license_id": "krfwf_iry_pat",
+    "description": "Ceremonially wrapped around a mech before deployment, these bindings are inscribed with messages of luck and prayers for protection. Pilots being the kind of people that they are, these bindings have been used to restrain and break enemy forces enough that the aftermarket upgrades used in the process have become part of the package from the jump.",
+    "on_hit": "Make a contested Hull check with the target. If you win, you may choose to become Shredded until the start of your next turn. If you do, the target is Immobilized for the same duration."
+  },
+  {
+    "id": "krfwmw_dynasticide_rail",
+    "name": "Dynasticide Rail",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "tags": [
+      {
+        "id": "tg_accurate"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "3d6"
+      }
+    ],
+    "source": "KRFW",
+    "license": "Iry-pat",
+    "license_level": 3,
+    "description": "Linked to both pilot vitals and mech performance readouts, the Dynasticide Rail was originally found in the same container as the Iry-pat, seemingly designed for the nose mount of a small fighter craft. The weapon requires both hands to aim and fire, using a multi-trigger mechanism to prevent accidental discharges. Even with the increased safety measures added before bringing the weapon to market, its recoil is substantial enough that prolonged use of the weapon has been found to decrease the interval between repairs required.",
+    "effect": "This weapon deals 1d6 Bonus Damage for each point of Structure you are missing.",
+    "on_attack": "Deal 1d6 AP Kinetic damage to yourself. This damage cannot be prevented.",
+    "license_id": "krfwf_iry_pat"
   }
 ]
