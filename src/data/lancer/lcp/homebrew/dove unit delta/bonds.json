@@ -18,7 +18,7 @@
         "question": "What gives you your powers?",
         "options": [
           "A high-tech stealth rig.",
-          "A tattered patchwork of a cape stuffed with magician’s trinkets.",
+          "A tattered patchwork of a cape stuffed with magician's trinkets.",
           "Years of streetwise swindling.",
           "A deal you once made in a dream."
         ]
@@ -28,13 +28,13 @@
         "options": [
           "You can change your eye color, your hair color, and your height by up to 3 inches in either direction.",
           "You weigh almost nothing if you choose not to. You sometimes float an inch off the ground.",
-          "Your can swap your clothing’s coloration, material, fit, cut, and type completely when you enter any scene."
+          "Your can swap your clothing's coloration, material, fit, cut, and type completely when you enter any scene."
         ]
       }
     ],
     "powers": [
       {
-        "name": "The Ol’ Razzle Dazzle",
+        "name": "The Ol' Razzle Dazzle",
         "frequency": "1/session",
         "description": "You are intimately practiced in the art of being the center of attention. Name any number of characters in sight. All of them become completely entranced by you as you make your presence impossible to ignore, rendering them unable to look away from you for up to a minute. For the rest of the scene, gain +2 Accuracy and increased effect on all actions you take to deceive people about something you or your companions are doing."
       },
@@ -46,9 +46,9 @@
       },
       {
         "name": "Anointed Silvertongue",
-        "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
+        "prerequisite": "You may only gain this power If you've taken four powers from this bond, including the Veteran Power.",
         "frequency": "1/session",
-        "description": "Tell a lie to someone. If it’s wild and outlandish, anyone who listens wholeheartedly believes it for a minute. If it’s merely unbelievable, an hour. If it’s plausible, a day. If they want to believe it, a week. They realize it was a lie after the effect wears off.",
+        "description": "Tell a lie to someone. If it's wild and outlandish, anyone who listens wholeheartedly believes it for a minute. If it's merely unbelievable, an hour. If it's plausible, a day. If they want to believe it, a week. They realize it was a lie after the effect wears off.",
         "master": true
       }
     ]
@@ -101,9 +101,9 @@
       },
       {
         "name": "Reforged, Unbreakable",
-        "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
+        "prerequisite": "You may only gain this power If you've taken four powers from this bond, including the Veteran Power.",
         "frequency": "1/session",
-        "description": "For the rest of this scene, nobody you extend your protection over, can take Stress. Instead, you take 1 Stress when they would take Stress. If this causes you to break, you gain a burden as normal but stay in the scene and don’t lose control. For you to extend your protection over someone, they must remain within speaking distance of you.",
+        "description": "For the rest of this scene, nobody you extend your protection over, can take Stress. Instead, you take 1 Stress when they would take Stress. If this causes you to break, you gain a burden as normal but stay in the scene and don't lose control. For you to extend your protection over someone, they must remain within speaking distance of you.",
         "master": true
       }
     ]
@@ -156,8 +156,8 @@
       {
         "name": "Long Pragmatic Road Home",
         "frequency": "1/session",
-        "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
-        "description": "Name a location you’ve been in the last three days. You can make your way back there without rolling. The GM will determine the following about the journey there:<ul><li>Was it a long or arduous journey?</li><li>Was the location dangerous, defended, or contested?</li><li>Were you being pursued, tracked, or hunted?</li></ul>For every “yes” answer, take 2 Stress; however, at the beginning of the next scene, you and up to ten other willing people arrive safely there. Don’t worry about playing out the journey (just ‘cut’ to the next scene as you are arriving) and work backwards to figure out how you got there.",
+        "prerequisite": "You may only gain this power If you've taken four powers from this bond, including the Veteran Power.",
+        "description": "Name a location you've been in the last three days. You can make your way back there without rolling. The GM will determine the following about the journey there:<ul><li>Was it a long or arduous journey?</li><li>Was the location dangerous, defended, or contested?</li><li>Were you being pursued, tracked, or hunted?</li></ul>For every “yes” answer, take 2 Stress; however, at the beginning of the next scene, you and up to ten other willing people arrive safely there. Don't worry about playing out the journey (just ‘cut' to the next scene as you are arriving) and work backwards to figure out how you got there.",
         "master": true
       }
     ]
@@ -210,8 +210,8 @@
       {
         "name": "Trusted Durendal, My Brand",
         "frequency": "1/session",
-        "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
-        "description": "You may give a name to a weapon, ship, or other object belonging to you or a willing ally. Once per session, the item’s owner may invoke its name for +1 ACCURACY and increased effect on a relevant skill check. If the item is ever lost or damaged beyond repair, the item’s owner gains a burden. You can name multiple items, but a character may only own one named item at a time; if they acquire a second named item, the first loses this benefit.",
+        "prerequisite": "You may only gain this power If you've taken four powers from this bond, including the Veteran Power.",
+        "description": "You may give a name to a weapon, ship, or other object belonging to you or a willing ally. Once per session, the item's owner may invoke its name for +1 ACCURACY and increased effect on a relevant skill check. If the item is ever lost or damaged beyond repair, the item's owner gains a burden. You can name multiple items, but a character may only own one named item at a time; if they acquire a second named item, the first loses this benefit.",
         "master": true
       }
     ]
@@ -225,7 +225,7 @@
       "I struggled with issues from my burdens or background."
     ],
     "minor_ideals": [
-      "I showed someone how it’s done.",
+      "I showed someone how it's done.",
       "I revealed an ugly truth about the world.",
       "My pain or weakness became apparent despite my efforts to hide it.",
       "I got someone to back down or back off."
@@ -234,7 +234,7 @@
       {
         "question": "What gives you your powers?",
         "options": [
-          "A long time spent alone in the cold, a time you’d rather forget.",
+          "A long time spent alone in the cold, a time you'd rather forget.",
           "A hardened, bitter upbringing.",
           "A collection of blades, polished and well used."
         ]
@@ -245,7 +245,7 @@
           "The wounds and scars that deform you.",
           "The people you most care about.",
           "The person you truly are at your core.",
-          "The blood in your past that’s catching up to you."
+          "The blood in your past that's catching up to you."
         ]
       }
     ],
@@ -264,7 +264,7 @@
       {
         "name": "Relentless Wick",
         "frequency": "1/session",
-        "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
+        "prerequisite": "You may only gain this power If you've taken four powers from this bond, including the Veteran Power.",
         "description": "This scene, ignore all Stress from anyone not important enough to merit a name, and take increased effect on all actions to evade, fight, subdue, or intimidate them.",
         "master": true
       }
@@ -289,7 +289,7 @@
         "question": "What gives you your powers?",
         "options": [
           "A high-tech stealth rig.",
-          "A tattered patchwork of a cape stuffed with magician’s trinkets.",
+          "A tattered patchwork of a cape stuffed with magician's trinkets.",
           "Years of streetwise swindling.",
           "A deal you once made in a dream."
         ]
@@ -299,7 +299,7 @@
         "options": [
           "You can change your eye color, your hair color, and your height by up to 3 inches in either direction.",
           "You weigh almost nothing if you choose not to. You sometimes float an inch off the ground.",
-          "Your can swap your clothing’s coloration, material, fit, cut, and type completely when you enter any scene."
+          "Your can swap your clothing's coloration, material, fit, cut, and type completely when you enter any scene."
         ]
       }
     ],
@@ -317,9 +317,9 @@
       },
       {
         "name": "Fiery Silvertongue",
-        "prerequisite": "You may only gain this power If you’ve taken four powers from this bond, including the Veteran Power.",
+        "prerequisite": "You may only gain this power If you've taken four powers from this bond, including the Veteran Power.",
         "frequency": "1/session",
-        "description": "Tell a lie to someone. If it’s wild and outlandish, anyone who listens wholeheartedly believes it for a minute. If it’s merely unbelievable, an hour. If it’s plausible, a day. If they want to believe it, a week. They realize it was a lie after the effect wears off.",
+        "description": "Tell a lie to someone. If it's wild and outlandish, anyone who listens wholeheartedly believes it for a minute. If it's merely unbelievable, an hour. If it's plausible, a day. If they want to believe it, a week. They realize it was a lie after the effect wears off.",
         "master": true
       }
     ]

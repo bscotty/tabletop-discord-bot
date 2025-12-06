@@ -1,7 +1,7 @@
 [
   {
     "id": "dud_pg_everymans_omnibike",
-    "name": "Everyman’s Omnibike",
+    "name": "Everyman's Omnibike",
     "type": "Gear",
     "description": "A solar-powered antique hoverbike, rusted over but still perfectly functional.<br><br>More than just a safe and efficient method of travel, this hoverbike is highly portable, and can fold up into a variety of basic handtools, including a knife, flashlight, wrench, screwdriver, and even a miniature generator that can be used as a power source for small to medium-sized electronics.<br><br><i>A highly pragmatic combination of multiple basic adventuring needs condensed into one handy tool.</i>",
     "effect": "Gain the Dead Reckoning power from the Pragmatic Pathfinder bond.",
@@ -147,7 +147,7 @@
     "name": "STR1P32-Class Lady in Waiting",
     "type": "Gear",
     "description": "A state-of-the-art virtual assistant installed in a sleek tiger cub subaltern.<br><br>STR1P32 (or Stripes, as she prefers to be called) is the perfect personal companion for the royally inclined. Not only is she authorized to send and receive transmissions from the biggest gossip database on the omninet, she boasts a number of other functions to her name, including multiple cameras, an echo-canceling microphone, a robust sound system, and even a series of powerful LEDs that can be refracted through her gem-encrusted tiara to project holograms and colorful light shows.<br><br><i>A priceless gift from a proud father, anointed with a crown befitting of his princess.</i>",
-    "effect": "Gain the The Ol’ Razzle Dazzle power from the Anointed Harlequin bond.",
+    "effect": "Gain the The Ol' Razzle Dazzle power from the Anointed Harlequin bond.",
     "tags": [
       {
         "id": "tg_ai"
@@ -158,6 +158,18 @@
       {
         "id": "tg_unique"
       },
+      {
+        "id": "tg_gear"
+      }
+    ]
+  },
+  {
+    "id": "dud_pg_words_of_a_feather",
+    "name": "Words of a Feather",
+    "type": "Gear",
+    "description": "A small, pink booklet labeled 'RIVALS'. A gift from an Honoured Wing, a blessing given in a moment of sentimentality. The pages open to a seemingly endless list of names that form a scoresheet of the author's proud but small victories against everyone truly important she's ever known. There is a responsibility here to keep it updated, and a hope that one day she'll see it again.",
+    "effect": "1/mission, tally a victory in Beatrix's glittery notebook. You may then clear 2 Stress, or clear 1 Stress and allow an ally to clear 1 Stress.",
+    "tags": [
       {
         "id": "tg_gear"
       }
