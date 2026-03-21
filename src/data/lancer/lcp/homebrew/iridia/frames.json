@@ -1318,7 +1318,7 @@
     "traits": [
       {
         "name": "Token of My Esteem",
-        "description": "You may deploy or reposition (including from Talents) Drones or Deployables as if you were in the space of any allied Mech character. You still use your own Sensor value from that position. <br><br>When an allied character adjacent to one of your Drones makes a standard movement, the Drone can also move with that character as long as it doesn’t break adjacency, mirroring that character’s movement. This movement ignores Engagement and does not provoke reactions."
+        "description": "You may deploy, redeploy, or move (including from Talents) Drones or Deployables as if you were in the space of any allied Mech character. You still use your own Sensor value from that position. <br><br>When an allied character adjacent to one of your Drones makes a standard movement, the Drone can also move with that character as long as it doesn’t break adjacency, mirroring that character’s movement. This movement ignores Engagement and does not provoke reactions."
       },
       {
         "name": "Lunar Warding",
@@ -1713,7 +1713,7 @@
       "structure": 4,
       "stress": 4,
       "armor": 1,
-      "hp": 8,
+      "hp": 6,
       "evasion": 10,
       "edef": 10,
       "heatcap": 5,
@@ -1721,7 +1721,7 @@
       "sensor_range": 10,
       "tech_attack": 1,
       "save": 10,
-      "speed": 5,
+      "speed": 4,
       "sp": 6
     },
     "traits": [

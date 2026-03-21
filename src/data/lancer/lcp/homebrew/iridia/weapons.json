@@ -324,7 +324,7 @@
     "license_id": "moff_iridia_enyo",
     "license_level": 3,
     "effect": "This weapon deals 50 AP Explosive damage to objects, cover, terrain, and the environment.",
-    "on_hit": "If Overkill causes this weapon to re-roll any dice, or it deals maximum damage, the target also takes 2 heat.",
+    "on_hit": "If Overkill causes this weapon to re-roll at least one die, or it deals maximum damage, the target also takes 2 heat.",
     "description": "Feel the pounding of your heart, the weight of your sins, and the heat of your wrath. Your enemies will lie broken at your feet, as you consume your own soul. That is the price of this wonderful gift. But in the end, you won’t care. You already probably don’t."
   },
   {
@@ -463,7 +463,7 @@
     "range": [
       {
         "type": "Line",
-        "val": 5
+        "val": 10
       }
     ],
     "tags": [
@@ -906,7 +906,7 @@
     "license": "HEMERA",
     "license_id": "moff_iridia_hemera",
     "license_level": 2,
-    "on_hit": "Teleport to a space adjacent to your target.",
+    "on_attack": "If you are adjacent to your target, you may teleport to any other space adjacent to your target before making the attack roll.",
     "description": "“We named it this because we saw it as a sword first, but… it seems to look different depending on the user. Doesn’t always cut. Regardless, it lets you do a neat trick where you twist like so, and you just step THROUGH where the person in front of you should be.”",
     "sp": 1
   },

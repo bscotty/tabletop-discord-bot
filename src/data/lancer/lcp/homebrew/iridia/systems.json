@@ -558,7 +558,7 @@
     "actions": [
       {
         "activation": "Quick Tech",
-        "detail": "Choose an allied character within Sensors. They may reload one unloaded weapon, clear all burn, clear Prone, or immediately make a save against one effect that a save can end. This can only be used 1/scene on each character."
+        "detail": "Choose an allied character within Sensors. They may choose one of the following effects: <br><ul><li> Reload one unloaded weapon</li><li>Clear all Burn</li><li>Clear Prone</li><li>Immediately roll a save against one effect that a save can end</li></ul><br>This can only be used 1/scene on each character."
       }
     ],
     "description": "The healer walks alone along the world’s paths, hiding in plain sight. She knows that she can never alleviate all the world’s ills herself, so she seeks others of like mind to pass knowledge onto."
@@ -620,7 +620,7 @@
     "actions": [
       {
         "activation": "Full",
-        "detail": "Select up to 2 allied characters within line of sight. Each chosen character may immediately take a Quick Action as a reaction. Any movement made as part of this action ignores Engagement and doesn’t provoke reactions. This system may only be activated 1/scene."
+        "detail": "Select up to 2 allied characters within line of sight. Each chosen ally may immediately take a non-Skirmish Quick Action as a reaction. Any movement made as part of this action ignores Engagement and doesn’t provoke reactions. This system may only be activated 1/scene."
       }
     ],
     "description": "“Nobody knew where I came from, obviously. Even today, I’m still their beloved General, as much as I hate that title. I was their salvation, the only one who could save them from the demons that had descended from the stars. But it was all based on a lie. Would they have still followed me if they’d known the truth? I doubt it. But they knew all that they needed to know. And that’s really all a good soldier needs, isn’t it? It’s better for everyone that way. They don’t need to share in the blood on my hands.”"
@@ -1094,7 +1094,7 @@
     "actions": [
       {
         "activation": "Full Tech",
-        "detail": "You generate a Blast 2 reality pocket within Sensors and line of sight, which is placed ignoring obstacles. All characters are unaffected by any spaces of objects or terrain within the affected area. (Characters can move through them and end their turn there, they do not obstruct line of sight or provide cover, terrain no longer counts as difficult or dangerous, etc.) In addition, any character fully within the affected area is immune to damage, heat and conditions from Environments. This effect lasts until this action is taken again or the scene ends."
+        "detail": "You generate a Blast 2 reality pocket within Sensors and line of sight, which is placed ignoring obstacles. All characters are unaffected by any spaces of objects or terrain within the affected area. (Characters can move through them and end their turn there, they do not obstruct line of sight or provide cover, terrain no longer counts as difficult or dangerous, etc.) In addition, any character fully within the affected area is Immune to any damage, heat or conditions caused by Environments. <br><br>This effect lasts until this action is taken again or the scene ends. If a character is in an obstructed space when the effect ends, they are pushed to the nearest unobstructed space."
       }
     ],
     "description": "<code class='horus--subtle'>[Let me take you into my embrace, into my home. It is a microcosm of the truth of the world, laid bare for you. And only you.] <br><br>[This is what could be, what should be. And while you are the only one who can see it right now, there will come a time when all that exists will share in it. I promise.]</code>"
@@ -2223,7 +2223,7 @@
     "source": "",
     "license": "GMS",
     "license_level": 0,
-    "effect": "1/turn, when you use a tech action that has targets, you may expend one charge to apply one of the following effects to your action at the listed cost: <br><ul><li> PIERCING (1 charge): The action may target biological characters. In addition, if it is a tech attack, the final attack roll can never be affected by Difficulty.</li><li>REVEALING (1 charge): One target cannot benefit from cover until the start of their next turn.</li><li>FORCEFUL (1 charge): One target is pulled 1 space directly towards you.</li></ul>",
+    "effect": "1/turn, when you use a tech action that has targets, you may expend charges to apply one of the following effects to your action at the listed cost. (If you take a full tech action to use two quick tech options, this effect is only applied to one of the quick techs.): <br><ul><li> PIERCING (1 charge): The action may target biological characters. In addition, if it is a tech attack, the final attack roll can never be affected by Difficulty.</li><li>REVEALING (1 charge): One target cannot benefit from cover until the start of their next turn.</li><li>FORCEFUL (1 charge): One target is pulled 1 space directly towards you.</li></ul>",
     "description": "Gained from the <i>Runecaster: Rank I</i> pilot talent.",
     "license_id": ""
   },
