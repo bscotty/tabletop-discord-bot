@@ -50,7 +50,7 @@
     "ranks": [
       {
         "name": "Runic Channeling",
-        "description": "You’ve created a number of legionspace conduits that you can use to enhance your hacking. Gain the Rune Collection System. <br><br>1/turn, when you use a tech action that has targets, you may expend one charge to apply one of the following effects to your action: <br><ul><li> PIERCING: The action may target biological characters. In addition, if it is a tech attack, the final attack roll can never be affected by Difficulty.</li><li>REVEALING: One target cannot benefit from cover until the start of their next turn.</li><li>FORCEFUL: One target is pulled 1 space directly towards you.</li></ul>",
+        "description": "You’ve created a number of legionspace conduits that you can use to enhance your hacking. Gain the Rune Collection System. <br><br>1/turn, when you use a tech action that has targets, you may expend charges to apply one of the following effects to your action at the listed cost. (If you take a full tech action to use two quick tech options, this effect is only applied to one of the quick techs.): <br><ul><li> PIERCING: The action may target biological characters. In addition, if it is a tech attack, the final attack roll can never be affected by Difficulty.</li><li>REVEALING: One target cannot benefit from cover until the start of their next turn.</li><li>FORCEFUL: One target is pulled 1 space directly towards you.</li></ul>",
         "integrated": [
           "moff_integrated_runecaster_1"
         ],
