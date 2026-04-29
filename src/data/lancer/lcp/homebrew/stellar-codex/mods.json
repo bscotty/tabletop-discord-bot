@@ -7,6 +7,8 @@
       "Melee"
     ],
     "source": "EXOTIC",
+    "license": "",
+    "license_level": 0,
     "effect": "The weapon this mod is applied to gains Overkill. In addition, at the beginning of each scene, choose one Invade option available to you. 1/round, on a hit with the weapon this mod is applied to, you may apply the chosen Invade to the target as a reaction. <br><br>ENTITY isn’t a full NHP, so cannot enter cascade.",
     "description": "A fragment of something, silent but watching. It has shaped itself into a weapon for you to wield.",
     "tags": [
