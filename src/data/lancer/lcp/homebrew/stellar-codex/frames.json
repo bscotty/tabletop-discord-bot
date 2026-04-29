@@ -285,12 +285,12 @@
               "any"
             ],
             "detail": "The Tomyris’ ranged weapons gain Knockback 1. If the weapon has the Loading tag, it instead gains Knockback 2."
-          },
-          {
-            "name": "Antigrav Plating",
-            "description": "The Tomyris ignores difficult and dangerous terrain."
           }
         ]
+      },
+      {
+        "name": "Antigrav Plating",
+        "description": "The Tomyris ignores difficult and dangerous terrain."
       }
     ],
     "core_system": {
