@@ -105,7 +105,7 @@
       "heatcap": 5,
       "repcap": 4,
       "sensor_range": 10,
-      "tech_attack": 1,
+      "tech_attack": 0,
       "save": 10,
       "speed": 6,
       "sp": 7
@@ -285,6 +285,10 @@
               "any"
             ],
             "detail": "The Tomyris’ ranged weapons gain Knockback 1. If the weapon has the Loading tag, it instead gains Knockback 2."
+          },
+          {
+            "name": "Antigrav Plating",
+            "description": "The Tomyris ignores difficult and dangerous terrain."
           }
         ]
       }
@@ -557,32 +561,31 @@
   {
     "id": "sc_ady_viridian",
     "license_level": 2,
-    "license_id": "mf_goblin",
+    "license_id": "mf_manticore",
     "name": "Viridian",
     "source": "HORUS",
-    "variant": "GOBLIN",
+    "variant": "MANTICORE",
     "mechtype": [
-      "Controller",
-      "Defender"
+      "Controller"
     ],
     "image_url": "https://www.dropbox.com/scl/fi/ciu9sqx0g1thj9bds97qn/Viridian-min.png?rlkey=iuwu10tw849qsbqismmwo60bs&raw=1",
     "y_pos": 20,
     "description": "Unlike many of its contemporaries, who attempt to brute force their way through systems, the Viridian takes a more subtle approach. As it traverses the battlefield, it lays a Firmament web around itself and waits for foes to make a false step.",
     "mounts": [
-      "Main",
-      "Flex"
+      "Flex",
+      "Heavy"
     ],
     "stats": {
-      "size": 0.5,
+      "size": 1,
       "structure": 4,
       "stress": 4,
-      "armor": 2,
-      "hp": 6,
+      "armor": 1,
+      "hp": 8,
       "evasion": 8,
       "edef": 8,
-      "heatcap": 4,
+      "heatcap": 5,
       "repcap": 3,
-      "sensor_range": 8,
+      "sensor_range": 5,
       "tech_attack": 2,
       "save": 11,
       "speed": 5,
@@ -596,6 +599,10 @@
       {
         "name": "Flux Shielding",
         "description": "On its turn, the Viridian gains resistance to all damage."
+      },
+      {
+        "name": "Tripwire",
+        "description": "When the Viridian suffers Structure Damage, even if it would be destroyed, you may apply an Invade option to a character within Sensors and line of sight."
       }
     ],
     "core_system": {
@@ -772,7 +779,7 @@
     "traits": [
       {
         "name": "Disruption Array",
-        "description": "1/round, when a character fails a save caused by the Ochre, that character treats the Ochre as if it were Invisible until the end of that character’s next turn."
+        "description": "1/round, when a character fails a save caused by the Ochre, or the Ochre inflicts Lock On, that character treats the Ochre as if it were Invisible until the end of that character’s next turn."
       },
       {
         "name": "Void Signature",
@@ -859,7 +866,7 @@
       },
       {
         "name": "Floratech Reactor",
-        "description": "1/round, when the Arbutus receives heat, except from Overcharge, it may instead take an equivalent amount of eergy damage. This damage bypasses Overshield and may not be reduced in any way."
+        "description": "1/round, when the Arbutus receives heat, except from Overcharge, it may instead take an equivalent amount of energy damage. This damage bypasses Overshield and may not be reduced in any way."
       },
       {
         "name": "Regrowth",
@@ -937,6 +944,117 @@
       "description": "While the Asimov was built to contain a wide variety of technology, the one it was primarily designed around is the singularity contained at its core. <br><br>It is the philosophy of INDEX condensed to a single point: let nothing escape its grasp once they stray into its orbit.",
       "active_name": "Event Horizon",
       "active_effect": "Choose a hostile character within range 10 and line of sight. They are pulled directly towards the user until they are either adjacent or stopped by an obstruction. The user counts as Size 3 for this effect. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Quick",
+      "use": "Round"
+    }
+  },
+  {
+    "id": "sc_prism_virgo",
+    "license_level": 2,
+    "license_id": "mf_balor",
+    "name": "Virgo",
+    "source": "HORUS",
+    "variant": "BALOR",
+    "mechtype": [
+      "Defender"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/q8pbsxzjzb6f24p4522xz/Virgo-min.png?rlkey=iu83xrlo1sz6w16xcb5g7e4yy&raw=1",
+    "y_pos": 14,
+    "description": "A trickster masquerading as a brute, the Virgo is one of Prism’s newest offerings. The frame’s abilities blur the line between hardlight and code, causing observers to be unable to tell what is and isn’t real.",
+    "mounts": [
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Phantasm Generator",
+        "description": "The closest hostile non-Drone character within line of sight treats the Virgo’s allies as Invisible. If multiple valid characters are equally close, this effect applies to all of them."
+      },
+      {
+        "name": "Flickering Form",
+        "description": "The Virgo has resistance to Kinetic Damage."
+      },
+      {
+        "name": "Projected Chassis",
+        "description": "When the Virgo’s pilot disembarks or ejects, or the Virgo is wrecked, it is removed from the battlefield until the pilot mounts it (it counts as being in the pilot's space for effects that can repair destroyed mechs). When mounted, it is placed as close to the pilot’s location as possible. <br><br>If the Virgo is experiencing a reactor meltdown when it is removed from the battlefield in this way, it ends the meltdown and instead becomes wrecked. "
+      }
+    ],
+    "core_system": {
+      "name": "Phantasm Generator",
+      "description": "Many question if Prism’s frames are ‘real’. After all, what are they if not projected hardlight? <br><br>On the other hand, the hardsuit at their core can’t access their abilities without the projection. So does that make them wholly real? <br><br>The Virgo laughs at this dichotomy, and abuses it for its own ends. Reality exists where people agree it does. You just need to convince them of the right things. <br><br>That those ghosts are real. That your allies are elsewhere. That the wall isn’t a wall. The possibilities are endless.",
+      "active_name": "Phantom Barrier",
+      "active_effect": "Until the start of the user’s next turn, hostile characters cannot draw line of sight through the user’s spaces or spaces adjacent to the user, except to target the user. (Line of sight can still be drawn into affected spaces as normal, as long as it does not pass through any other affected space.) <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
+      "activation": "Protocol",
+      "use": "Round"
+    }
+  },
+  {
+    "id": "sc_vw_nightingale",
+    "license_level": 2,
+    "license_id": "mf_saladin",
+    "name": "Nightingale",
+    "source": "HA",
+    "variant": "SALADIN",
+    "mechtype": [
+      "Defender"
+    ],
+    "image_url": "https://www.dropbox.com/scl/fi/y4el3khv9qfdv7hjs44nc/Nightingale-min.png?rlkey=jbogye47k9m8yw94e4gec458b&raw=1",
+    "y_pos": 57,
+    "description": "One of the less common products from the forge of the Voidweavers, each Nightingale is unique to the person it was crafted for. But the weavers’ gifts are restless, and bereaved Nightingales have a habit of eventually finding their way to those with similar dreams to their first pilots.",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 12,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 7,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 3,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Dreamwrought Drifting",
+        "description": "At the end of its turn, the Nightingale may move up to 2 spaces in any direction. This movement ignores Engagement and does not provoke reactions, and can be made even while Slowed, Stunned, or Immobilized."
+      },
+      {
+        "name": "Epitaph Gate",
+        "description": "1/scene, when an allied character within line of sight would take Structure Damage, they are instead set to 1 HP, ignoring any remaining damage, and you may teleport them to a free space adjacent to you."
+      },
+      {
+        "name": "Guardian",
+        "description": "Adjacent allied characters can use the Nightingale for hard cover."
+      }
+    ],
+    "core_system": {
+      "name": "Blinkspace Orrery",
+      "description": "“Of course you can have an orrery for blinkspace. Did you think there was nothing there? There’s more than that. <br><br>And I don’t mean the dwellings that people from realspace have built, either. Those don’t matter, not for this. Specks of dust in the ether. Fragile. Ephemeral. <br><br>No, there’s a difference between nothing and ‘nothing.’ The latter creates patterns, and you can read an awful lot into them. Even travel them safely if you know what you’re doing. <br><br>Just try it. Have faith. The Orrery will help you find your way back.”",
+      "active_name": "Traverse the Void",
+      "active_effect": "Teleport up to 10 spaces. You must end this movement adjacent to an allied non-Drone character. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
       "activation": "Quick",
       "use": "Round"
     }
