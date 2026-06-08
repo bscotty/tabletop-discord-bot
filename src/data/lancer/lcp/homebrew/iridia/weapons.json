@@ -919,14 +919,14 @@
     "damage": [
       {
         "type": "Energy",
-        "val": "1d3+2"
+        "val": 6
       }
     ],
     "range": [
       {
         "override": true,
         "type": "Range",
-        "val": 3
+        "val": 5
       },
       {
         "override": true,
@@ -937,13 +937,17 @@
     "tags": [
       {
         "id": "tg_ap"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
       }
     ],
     "source": "IRIDIA",
     "license": "ANANKE",
     "license_id": "moff_iridia_ananke",
     "license_level": 2,
-    "on_hit": "If you and the target are the same Size (with Size ½ counting the same as Size 1 for this comparison), swap positions, counting as teleporting. Characters can only be swapped to spaces they could normally stand or move on, otherwise the effect fails.",
+    "on_attack": "You may teleport directly away from your target, to a distance that would put them at the maximum range of this weapon. If the space you would teleport to is not free, you do not move.",
     "effect": "This weapon’s range may not be altered in any way, and this weapon may not take any Mods.",
     "description": "<code class='horus--subtle'>[So long as I am with you, you’re never trapped. There is never an impossibility. You just need to trust me. There is more to this world than you know; you just need the key.]</code>"
   },
@@ -1220,7 +1224,7 @@
     "license_id": "moff_iridia_hera",
     "license_level": 3,
     "sp": 1,
-    "on_attack": "You may choose to reduce this weapon’s base damage in increments of 1d6, removing one or more of the damage dice. For each die removed, reduce this weapon’s Heat (Self) value by 1, to a minimum of 0. Gain a benefit if you hit based on the type(s) of damage that you removed: <br>- Kinetic: The target must pass an Engineering Save or be Shredded until the start of their next turn. <br>- Explosive: The target is knocked Prone and you may apply Knockback 1. <br>- Energy: The target must pass a Systems Save or only have line of sight to adjacent spaces until the end of their next turn.",
+    "on_attack": "You may choose to reduce this weapon’s base damage in increments of 1d6, removing one or more of the damage dice. For each die removed, reduce this weapon’s Heat (Self) value by 1, to a minimum of 0. Gain a benefit if you hit based on the type(s) of damage that you removed: <br>- Kinetic: The target must pass an Engineering Save or be Shredded until the start of their next turn. <br>- Explosive: Knockback 1, and the target must pass a Hull Save or be knocked Prone. <br>- Energy: The target must pass a Systems Save or only have line of sight to adjacent spaces until the end of their next turn.",
     "description": "You are the shaper of the primordial forces, holding them contained in the palm of your hand. Take care to not loosen your grip, for they are fickle things."
   },
   {

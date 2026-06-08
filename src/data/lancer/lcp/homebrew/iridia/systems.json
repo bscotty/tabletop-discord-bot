@@ -1540,7 +1540,7 @@
     "license": "LUNA",
     "license_id": "moff_ssc_luna",
     "license_level": 1,
-    "effect": "When targeting characters you are Engaged with, you ignore their Invisible status.",
+    "effect": "When targeting adjacent characters, ignore their Invisible and Hidden status.",
     "description": "The latest in predictive targeting algorithms. While they bypass most sensor bafflers, it’s currently limited to a very narrow engagement-space."
   },
   {
