@@ -3,11 +3,11 @@
     "id": "GMSC_frames_denali",
     "source": "GMS",
     "license_level": 0,
-    "name": "Denali",
+    "name": "DENALI",
     "mechtype": [
       "Support"
     ],
-    "description": "All characters have access to the Denali from LL0 onwards. This variant FRAME is not mutually exclusive with the EVEREST.<br>One of many militia-grade dual purpose civic and military chassis, the Denali chassis sees notable use among combined force doctrine armies and small scale militia-tier armed forces for its logistical and utilitarian merits, coupled with sizable armament.",
+    "description": "The Denali is a popular Everest variant built to sustain its allied units in the field without sacrificing frontline capability. It features a powerful ATTACHE-class C/C for coordinating the onboard field-repair drones and extinguishers, enabling the Denali to react in real-time to mitigate or prevent cascading structural damage to allied units. Should this prove inadequate, the ATTACHE C/C is capable of forming temporary networks with allied systems to directly assist with systems coordination, intrusion protection, targeting, and interdiction, without impacting the Denali's own performance.",
     "mounts": [
       "Flex",
       "Flex"
@@ -30,22 +30,25 @@
     },
     "traits": [
       {
-        "name": "Field Supply",
+        "name": "FIELD SUPPLY",
         "description": "When you Stabilize the Denali, adjacent allied characters may clear all burn, clear one condition, or reload all weapons."
       },
       {
-        "name": "Altruism",
+        "name": "ALTRUISM",
         "description": "1/scene, When the Denali performs a Barrage or uses a Full Tech Action, adjacent allied characters may Stabilize as a reaction, even if they would not normally be able to take reactions."
       },
       {
-        "name": "Replaceable Parts",
-        "description": "While resting, the Denali can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs."
+        "name": "REPLACEABLE PARTS",
+        "description": "While resting, the Denali can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs.",
+        "bonus": {
+          "cheap_struct": 1
+        }
       }
     ],
     "core_system": {
-      "name": "Auto-Logistic COMP/CON",
+      "name": "AUTO-LOGISTIC COMP/CON",
       "active_name": "Optimizer",
-      "active_effect": "You and all allied mech characters in Sensors and line of sight immediately clear all Heat and Stabilize. Allied characters affected by this action clear all conditions from outside sources and gain Immunity to them until the end of their next turn. You may then use Force Multiplier on one allied character in line of sight and Sensors or end all ongoing hostile effects on that character.",
+      "active_effect": "You and all allied mech characters in Sensors and line of sight immediately clear all Heat and Exposed and Stabilize. Allied characters affected by this action clear all conditions from outside sources and gain Immunity to them until the end of their next turn. You may then use Force Multiplier on one allied character in line of sight and Sensors or end all ongoing hostile effects on that character.",
       "activation": "Full Tech",
       "use": "Mission",
       "passive_name": "Force Multiplier",
@@ -53,8 +56,7 @@
         {
           "name": "Force Multiplier",
           "activation": "Full Tech",
-          "detail": "Choose an adjacent allied character. They gain 1 of the following benefits until the end of their next turn as long as they remain within Sensors and line of sight:<ul><li>They ignore Invisibility and Hidden and gain +1 Accuracy on their next attack.</li><li>Whenever they take damage, they first gain 2 Overshield.</li><li>They gain +1 Accuracy on all checks and saves and hostile tech actions have a 50% chance to fail against them, granting them Immunity to all its effects.</li></ul>Each effect can only be used 1/scene on each character.",
-          "cost": 0,
+          "detail": "Choose an adjacent allied character. They gain 1 of the following benefits until the end of their next turn as long as they remain within Sensors and line of sight:<br><br>-They ignore Invisibility and Hidden and gain +1 Accuracy on their next attack.<br>-Whenever they take damage, they first gain 2 Overshield.<br>-They gain +1 Accuracy on all checks and saves and hostile tech actions have a 50% chance to fail against them, granting them Immunity to all its effects.<br><br>Each effect can only be used 1/scene on each character.",
           "frequency": "Unlimited"
         }
       ]
