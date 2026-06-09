@@ -1,14 +1,13 @@
 [
   {
     "id": "GMSC_weapons_anti-ship_missile",
-    "name": "Anti-Ship Missile",
+    "name": "ANTI-SHIP MISSILE",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0,
     "description": "GMS maintains a full catalogue of weaponry intended for use in both irregular and regular warfare, and in the event of emergency defense or wide-spread planetary or local system conflict, ranking Union Naval and Administrative personnel are authorized to grant all able-bodied combatants and partisans  access to the full suite of GMS weapons for the duration of the crisis.<br>The Type-III (T-3) line is made up of heavy weapons, ordnance, and other exotic, specialized, or massive weapons. A broad classification, the T-3 range includes conventional-kinetic anti-materiel rifles, super-rapid cycling pulse rifles, missile racks, cannons, and drone nexuses – “hive”-style launchers that serve as miniature factory, hangar, and deployment systems for portable drones. The classification also includes the fearsome “segment knife”, a system that uses flash-printing to produce disposable edged weapons in a vicinity around the user.",
     "mount": "Heavy",
     "type": "Launcher",
-    "cost": 1,
     "damage": [
       {
         "type": "Explosive",
@@ -35,14 +34,13 @@
   },
   {
     "id": "GMSC_weapons_nexus_(apex_hunter)",
-    "name": "Nexus (Apex Hunter)",
+    "name": "NEXUS (APEX HUNTER)",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0,
     "description": "GMS maintains a full catalogue of weaponry intended for use in both irregular and regular warfare, and in the event of emergency defense or wide-spread planetary or local system conflict, ranking Union Naval and Administrative personnel are authorized to grant all able-bodied combatants and partisans  access to the full suite of GMS weapons for the duration of the crisis.<br>The Type-III (T-3) line is made up of heavy weapons, ordnance, and other exotic, specialized, or massive weapons. A broad classification, the T-3 range includes conventional-kinetic anti-materiel rifles, super-rapid cycling pulse rifles, missile racks, cannons, and drone nexuses – “hive”-style launchers that serve as miniature factory, hangar, and deployment systems for portable drones. The classification also includes the fearsome “segment knife”, a system that uses flash-printing to produce disposable edged weapons in a vicinity around the user.",
     "mount": "Heavy",
     "type": "Nexus",
-    "cost": 1,
     "damage": [
       {
         "type": "Kinetic",
@@ -58,19 +56,22 @@
     "tags": [
       {
         "id": "tg_smart"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
       }
     ]
   },
   {
     "id": "GMSC_weapons_heavy_slug_shotgun",
-    "name": "Heavy Slug Shotgun",
+    "name": "HEAVY SLUG SHOTGUN",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0,
     "description": "GMS maintains a full catalogue of weaponry intended for use in both irregular and regular warfare, and in the event of emergency defense or wide-spread planetary or local system conflict, ranking Union Naval and Administrative personnel are authorized to grant all able-bodied combatants and partisans  access to the full suite of GMS weapons for the duration of the crisis.<br>The Type-I (T-1) line is defined by powerful, reliable, and conventional-kinetic ranged and melee weapons, including the GMS assault rifle, heavy machine gun, shotgun, pistol, and various light and heavy blades. Reliable galactic standards, the GMS T-1 line is the most widely used mech-scale line of weaponry across the galaxy. Echoing the Everest’s design notes, T-1 weapons are simply designed, with few (if any) moving parts, intended to be used in or adaptable to any environment.",
     "mount": "Heavy",
     "type": "CQB",
-    "cost": 1,
     "damage": [
       {
         "type": "Kinetic",
@@ -95,14 +96,13 @@
   },
   {
     "id": "GMSC_weapons_recoilless_rifle",
-    "name": "Recoilless Rifle",
+    "name": "RECOILLESS RIFLE",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0,
     "description": "GMS maintains a full catalogue of weaponry intended for use in both irregular and regular warfare, and in the event of emergency defense or wide-spread planetary or local system conflict, ranking Union Naval and Administrative personnel are authorized to grant all able-bodied combatants and partisans access to the full suite of GMS weapons for the duration of the crisis.<br>The Type-III (T-3) line is made up of heavy weapons, ordnance, and other exotic, specialized, or massive weapons. A broad classification, the T-3 range includes conventional-kinetic anti-materiel rifles, super-rapid cycling pulse rifles, missile racks, cannons, and drone nexuses – “hive”-style launchers that serve as miniature factory, hangar, and deployment systems for portable drones. The classification also includes the fearsome “segment knife”, a system that uses flash-printing to produce disposable edged weapons in a vicinity around the user.",
     "mount": "Main",
     "type": "Cannon",
-    "cost": 1,
     "damage": [
       {
         "type": "Kinetic",
@@ -130,14 +130,13 @@
   },
   {
     "id": "GMSC_weapons_anti-tank_guided_missile",
-    "name": "Anti-Tank Guided Missile",
+    "name": "ANTI-TANK GUIDED MISSILE",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0,
     "description": "GMS maintains a full catalogue of weaponry intended for use in both irregular and regular warfare, and in the event of emergency defense or wide-spread planetary or local system conflict, ranking Union Naval and Administrative personnel are authorized to grant all able-bodied combatants and partisans  access to the full suite of GMS weapons for the duration of the crisis.<br>The Type-III (T-3) line is made up of heavy weapons, ordnance, and other exotic, specialized, or massive weapons. A broad classification, the T-3 range includes conventional-kinetic anti-materiel rifles, super-rapid cycling pulse rifles, missile racks, cannons, and drone nexuses – “hive”-style launchers that serve as miniature factory, hangar, and deployment systems for portable drones. The classification also includes the fearsome “segment knife”, a system that uses flash-printing to produce disposable edged weapons in a vicinity around the user.",
     "mount": "Main",
     "type": "Launcher",
-    "cost": 1,
     "damage": [
       {
         "type": "Explosive",
@@ -165,14 +164,13 @@
   },
   {
     "id": "GMSC_weapons_helios_nexus",
-    "name": "Helios Nexus",
+    "name": "HELIOS NEXUS",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0,
     "description": "GMS maintains a full catalogue of weaponry intended for use in both irregular and regular warfare, and in the event of emergency defense or wide-spread planetary or local system conflict, ranking Union Naval and Administrative personnel are authorized to grant all able-bodied combatants and partisans  access to the full suite of GMS weapons for the duration of the crisis.<br>The Type-III (T-3) line is made up of heavy weapons, ordnance, and other exotic, specialized, or massive weapons. A broad classification, the T-3 range includes conventional-kinetic anti-materiel rifles, super-rapid cycling pulse rifles, missile racks, cannons, and drone nexuses – “hive”-style launchers that serve as miniature factory, hangar, and deployment systems for portable drones. The classification also includes the fearsome “segment knife”, a system that uses flash-printing to produce disposable edged weapons in a vicinity around the user.",
     "mount": "Main",
     "type": "Nexus",
-    "cost": 1,
     "damage": [
       {
         "type": "Explosive",
@@ -193,14 +191,13 @@
   },
   {
     "id": "GMSC_weapons_fragmentation_launcher",
-    "name": "Fragmentation Launcher",
+    "name": "FRAGMENTATION LAUNCHER",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0,
     "description": "GMS maintains a full catalogue of weaponry intended for use in both irregular and regular warfare, and in the event of emergency defense or wide-spread planetary or local system conflict, ranking Union Naval and Administrative personnel are authorized to grant all able-bodied combatants and partisans  access to the full suite of GMS weapons for the duration of the crisis.<br>The Type-I (T-1) line is defined by powerful, reliable, and conventional-kinetic ranged and melee weapons, including the GMS assault rifle, heavy machine gun, shotgun, pistol, and various light and heavy blades. Reliable galactic standards, the GMS T-1 line is the most widely used mech-scale line of weaponry across the galaxy. Echoing the Everest’s design notes, T-1 weapons are simply designed, with few (if any) moving parts, intended to be used in or adaptable to any environment.",
     "mount": "Main",
     "type": "CQB",
-    "cost": 1,
     "damage": [
       {
         "type": "Explosive",
@@ -210,7 +207,7 @@
     "range": [
       {
         "type": "Cone",
-        "val": 3
+        "val": 5
       }
     ],
     "tags": [
@@ -221,14 +218,13 @@
   },
   {
     "id": "GMSC_weapons_autocannon",
-    "name": "Autocannon",
+    "name": "AUTOCANNON",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0,
     "description": "GMS maintains a full catalogue of weaponry intended for use in both irregular and regular warfare, and in the event of emergency defense or wide-spread planetary or local system conflict, ranking Union Naval and Administrative personnel are authorized to grant all able-bodied combatants and partisans  access to the full suite of GMS weapons for the duration of the crisis.<br>The Type-I (T-1) line is defined by powerful, reliable, and conventional-kinetic ranged and melee weapons, including the GMS assault rifle, heavy machine gun, shotgun, pistol, and various light and heavy blades. Reliable galactic standards, the GMS T-1 line is the most widely used mech-scale line of weaponry across the galaxy. Echoing the Everest’s design notes, T-1 weapons are simply designed, with few (if any) moving parts, intended to be used in or adaptable to any environment.",
     "mount": "Auxiliary",
     "type": "Rifle",
-    "cost": 1,
     "damage": [
       {
         "type": "Kinetic",
@@ -252,14 +248,13 @@
   },
   {
     "id": "GMSC_weapons_grenade_launcher",
-    "name": "Grenade Launcher",
+    "name": "GRENADE LAUNCHER",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0,
     "description": "GMS maintains a full catalogue of weaponry intended for use in both irregular and regular warfare, and in the event of emergency defense or wide-spread planetary or local system conflict, ranking Union Naval and Administrative personnel are authorized to grant all able-bodied combatants and partisans  access to the full suite of GMS weapons for the duration of the crisis.<br>The Type-III (T-3) line is made up of heavy weapons, ordnance, and other exotic, specialized, or massive weapons. A broad classification, the T-3 range includes conventional-kinetic anti-materiel rifles, super-rapid cycling pulse rifles, missile racks, cannons, and drone nexuses – “hive”-style launchers that serve as miniature factory, hangar, and deployment systems for portable drones. The classification also includes the fearsome “segment knife”, a system that uses flash-printing to produce disposable edged weapons in a vicinity around the user.",
     "mount": "Auxiliary",
     "type": "Cannon",
-    "cost": 1,
     "damage": [
       {
         "type": "Explosive",
@@ -291,7 +286,6 @@
     "description": "GMS maintains a full catalogue of weaponry intended for use in both irregular and regular warfare, and in the event of emergency defense or wide-spread planetary or local system conflict, ranking Union Naval and Administrative personnel are authorized to grant all able-bodied combatants and partisans  access to the full suite of GMS weapons for the duration of the crisis.<br>The Type-I (T-1) line is defined by powerful, reliable, and conventional-kinetic ranged and melee weapons, including the GMS assault rifle, heavy machine gun, shotgun, pistol, and various light and heavy blades. Reliable galactic standards, the GMS T-1 line is the most widely used mech-scale line of weaponry across the galaxy. Echoing the Everest’s design notes, T-1 weapons are simply designed, with few (if any) moving parts, intended to be used in or adaptable to any environment.",
     "mount": "Superheavy",
     "type": "Melee",
-    "cost": 1,
     "skirmish": false,
     "damage": [
       {
@@ -325,7 +319,6 @@
     "description": "GMS maintains a full catalogue of weaponry intended for use in both irregular and regular warfare, and in the event of emergency defense or wide-spread planetary or local system conflict, ranking Union Naval and Administrative personnel are authorized to grant all able-bodied combatants and partisans  access to the full suite of GMS weapons for the duration of the crisis.<br>The Type-III (T-3) line is made up of heavy weapons, ordnance, and other exotic, specialized, or massive weapons. A broad classification, the T-3 range includes conventional-kinetic anti-materiel rifles, super-rapid cycling pulse rifles, missile racks, cannons, and drone nexuses – “hive”-style launchers that serve as miniature factory, hangar, and deployment systems for portable drones. The classification also includes the fearsome “segment knife”, a system that uses flash-printing to produce disposable edged weapons in a vicinity around the user.",
     "mount": "Superheavy",
     "type": "Launcher",
-    "cost": 1,
     "skirmish": false,
     "damage": [
       {
@@ -351,41 +344,6 @@
       {
         "id": "tg_heat_self",
         "val": 2
-      }
-    ]
-  },
-  {
-    "id": "GMSC_weapons_magna_ferrum",
-    "name": "Magna Ferrum",
-    "source": "EXOTIC",
-    "license_id": "",
-    "license_level": 1,
-    "description": "“These don’t exactly handle like a regular gun, what with all the extra weight, but I betcha this: You just take your time, count your breaths, and kick the stabilizers on, and you’ll have a hell of a punch. Thanks for coming along for the ride. Y’all can have this, <strong>free o’ charge</strong>.”",
-    "mount": "Auxiliary",
-    "type": "Cannon",
-    "effect": "When you <strong>Heavy Fire</strong> this weapon, the attack gains <strong>Knockback 3</strong>, its damage can’t be reduced in any way, and on hit, becomes a critical hit, if it wasn’t already.",
-    "damage": [
-      {
-        "type": "Kinetic",
-        "val": "1d6"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 5
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_heavyweight",
-        "val": 10
-      },
-      {
-        "id": "tg_inaccurate"
-      },
-      {
-        "id": "tg_exotic"
       }
     ]
   }

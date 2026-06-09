@@ -430,7 +430,7 @@
       "name": "Psychosomatic Feedback Inducer",
       "description": "In theory a neural link between pilot and frame, to help inure themselves to the horror of combat. Unfortunately, it doesn’t exactly work as intended. <br><br>Instead, the pilot’s emotions are fed back into themself, until eventually the system overloads, suddenly battering nearby combatants until it burns out. Oddly enough, the types of people who choose to pilot an Enyo never seem to mind.",
       "active_name": "Inflame Violence",
-      "active_effect": "All hostile characters within Burst 3 are affected by a terrible rage. While under this effect, the target's allies are able to provoke the target's Overwatch. In addition, characters under this effect must Overwatch if they are able to. <br><br>Affected characters may make an Engineering Save at the end of their turn to end the effect on a success. If, when they make this save, they have used Overwatch since the end of their last turn, they take +1 Difficulty to the save.",
+      "active_effect": "All hostile characters within Burst 3 are affected by a terrible rage until the end of the scene. While under this effect, the target's allies are able to provoke the target's Overwatch. In addition, characters under this effect must Overwatch if they are able to. <br><br>Affected characters may make an Engineering Save at the end of their turn to end the effect on a success. If, when they make this save, they have used Overwatch since the end of their last turn, they take +1 Difficulty to the save.",
       "activation": "Quick"
     }
   },
@@ -1547,7 +1547,7 @@
       "name": "Technological Nullifier ",
       "description": "A corruption of the rift nexus, the technological nullifier opens a gate through a shattered realm… and holds it open, draining energy from surrounding people and places into it. <br><br>Those caught in the area report a true feeling of helplessness, as systems refuse to respond, and every part of their mech feels like it’s in the process of shutting down - and might take their bodies and souls along with it.",
       "active_name": "Dead Zone",
-      "active_effect": "You generate a Blast 3 technological dead zone within Sensors that lasts until the end of the scene. <br><br>Hostile characters entirely within the zone may not take tech actions and automatically fail Systems checks and saves. <br><br>Hostile characters that begin their turn even partially within the zone become Impaired, which may be cleared with a successful Systems save at the end of their turn. ",
+      "active_effect": "You generate a Blast 2 technological dead zone within Sensors that lasts until the start of your next turn. Characters at least partially within the area cannot use or be targeted by tech actions, cannot teleport, and do not count as Intangible (this does not remove the Intangible status). Spaces within the area are difficult terrain to characters other than you. <br><br>Efficient: This ability refunds 1 CP at the end of any scene in which it’s used.",
       "activation": "Full",
       "use": "Encounter"
     }
