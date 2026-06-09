@@ -31,11 +31,11 @@
     "traits": [
       {
         "name": "FIELD SUPPLY",
-        "description": "<div>When you Stabilize the Denali, adjacent allied characters may clear all burn, clear one condition, or reload all weapons.</div>"
+        "description": "When you Stabilize the Denali, adjacent allied characters may clear all burn, clear one condition, or reload all weapons."
       },
       {
         "name": "ALTRUISM",
-        "description": "<div>1/scene, When the Denali performs a Barrage or uses a Full Tech Action, adjacent allied characters may Stabilize as a reaction, even if they would not normally be able to take reactions.</div>"
+        "description": "1/scene, When the Denali performs a Barrage or uses a Full Tech Action, adjacent allied characters may Stabilize as a reaction, even if they would not normally be able to take reactions."
       },
       {
         "name": "REPLACEABLE PARTS",
@@ -48,16 +48,10 @@
     "core_system": {
       "name": "AUTO-LOGISTIC COMP/CON",
       "active_name": "Optimizer",
-      "active_effect": "<p>You and all allied mech characters in Sensors and line of sight immediately clear all Heat and Exposed and Stabilize. Allied characters affected by this action clear all conditions from outside sources and gain Immunity to them until the end of their next turn. You may then use Force Multiplier on one allied character in line of sight and Sensors or end all ongoing hostile effects on that character.</p>",
+      "active_effect": "You and all allied mech characters in Sensors and line of sight immediately clear all Heat and Exposed and Stabilize. Allied characters affected by this action clear all conditions from outside sources and gain Immunity to them until the end of their next turn. You may then use Force Multiplier on one allied character in line of sight and Sensors or end all ongoing hostile effects on that character.",
       "activation": "Full Tech",
-      "description": "",
-      "deactivation": "",
       "use": "Mission",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
       "passive_name": "Force Multiplier",
-      "passive_effect": "",
       "passive_actions": [
         {
           "name": "Force Multiplier",
@@ -65,14 +59,7 @@
           "detail": "Choose an adjacent allied character. They gain 1 of the following benefits until the end of their next turn as long as they remain within Sensors and line of sight:<br><br>-They ignore Invisibility and Hidden and gain +1 Accuracy on their next attack.<br>-Whenever they take damage, they first gain 2 Overshield.<br>-They gain +1 Accuracy on all checks and saves and hostile tech actions have a 50% chance to fail against them, granting them Immunity to all its effects.<br><br>Each effect can only be used 1/scene on each character.",
           "frequency": "Unlimited"
         }
-      ],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      ]
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_standard_pattern_i_everest.png",
     "y_pos": 0
