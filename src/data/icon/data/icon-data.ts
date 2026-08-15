@@ -29,4 +29,14 @@ export class IconData {
         this.abilities = abilities.map((it) => new SearchableAbility(it))
         this.limitBreaks = limitBreaks.map((it) => new SearchableLimitBreak(it))
     }
+
+    public getAll() {
+        return [
+            ...this.jobs,
+            ...this.classes,
+            ...this.abilities,
+            ...this.glossary,
+            ...this.limitBreaks
+        ]
+    }
 }
