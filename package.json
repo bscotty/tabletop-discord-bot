@@ -8,8 +8,8 @@
     "lint": "eslint . --ext .ts",
     "clean": "rm -rf build",
     "build": "tsc -p .",
-    "run": "node build/warforged/src/scripts/main.js",
-    "cleanBuildRun": "rm -rf build && tsc -p . && node build/warforged/src/scripts/main.js",
+    "run": "node build/warforged/src/main.js",
+    "cleanBuildRun": "rm -rf build && tsc -p . && node build/warforged/src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

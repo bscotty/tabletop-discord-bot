@@ -1,7 +1,7 @@
 import {AttachmentBuilder, EmbedBuilder, InteractionReplyOptions} from "discord.js";
 import {ReplyOptionsFactory} from "./replyOptionsFactory";
-import Searcher from "../data/searcher";
-import {DisplayResponse} from "../data/lancer/format/display-response";
+import Searcher from "../searcher/searcher";
+import {DisplayResponse} from "../lancer/format/display-response";
 import {Formatter} from "../formatter/formatter";
 
 export class ReplyOptionsFactoryImpl<T> implements ReplyOptionsFactory {

@@ -1,9 +1,9 @@
-import SlashCommand from "../../slashCommand";
-import Searcher from "../../../data/searcher";
+import SlashCommand from "../command/slashCommand";
+import {getDictionary} from "./data/words";
 import {GodboundCommand} from "./godboundCommand";
 import {GodboundFormatter} from "./godboundFormatter";
-import {ReplyOptionsFactoryImpl} from "../../../reply/replyOptionsFactoryImpl";
-import {getDictionary} from "../../../data/godbound/words/true-index";
+import {ReplyOptionsFactoryImpl} from "../reply/replyOptionsFactoryImpl";
+import Searcher from "../searcher/searcher";
 
 export default function godboundCommandCreator(): SlashCommand {
     const dictionary = getDictionary()

@@ -1,9 +1,9 @@
-import SlashCommand from "../../slashCommand";
-import {getIcon1point5Data} from "../../../data/icon/json";
-import Searcher from "../../../data/searcher";
+import SlashCommand from "../command/slashCommand";
+import {getIcon1point5Data} from "./json";
+import Searcher from "../searcher/searcher";
 import {IconCommand} from "./iconCommand";
 import {IconFormatter} from "./iconFormatter";
-import {ReplyOptionsFactoryImpl} from "../../../reply/replyOptionsFactoryImpl";
+import {ReplyOptionsFactoryImpl} from "../reply/replyOptionsFactoryImpl";
 
 export default function iconCommandCreator(): SlashCommand {
     return new IconCommand(

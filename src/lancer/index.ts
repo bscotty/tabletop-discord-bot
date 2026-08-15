@@ -1,11 +1,11 @@
 import {LancerCommand} from "./lancerCommand";
 import {LancerFormatter} from "./lancerFormatter";
-import SlashCommand from "../../slashCommand";
-import {getRepository} from "../../../data/lancer/format/repository";
-import {Formatters} from "../../../data/lancer/format/formatters";
-import {ReplyOptionsFactoryImpl} from "../../../reply/replyOptionsFactoryImpl";
-import Searcher from "../../../data/searcher";
-import {RichFrameFormatter} from "../../../data/lancer/format/rich-frame-formatter";
+import SlashCommand from "../command/slashCommand";
+import {getRepository} from "./format/repository";
+import {Formatters} from "./format/formatters";
+import {ReplyOptionsFactoryImpl} from "../reply/replyOptionsFactoryImpl";
+import Searcher from "../searcher/searcher";
+import {RichFrameFormatter} from "./format/rich-frame-formatter";
 
 export default function lancerCommandCreator(): SlashCommand {
     const repository = getRepository()

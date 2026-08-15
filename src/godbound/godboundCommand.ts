@@ -4,15 +4,15 @@ import {
     SlashCommandBuilder,
     SlashCommandOptionsOnlyBuilder
 } from "discord.js";
-import SlashCommand from "../../slashCommand";
-import {ReplyOptionsFactory} from "../../../reply/replyOptionsFactory";
+import SlashCommand from "../command/slashCommand";
+import {ReplyOptionsFactory} from "../reply/replyOptionsFactory";
 
 const TERM_OPTION_NAME = "term"
 const PUBLIC_OPTION_NAME = "public"
-const COMMAND_NAME = "lancer"
-const COMMAND_DESCRIPTION = "Search for a term in Lancer RPG"
+const COMMAND_NAME = "godbound"
+const COMMAND_DESCRIPTION = "Search for a term in Godbound RPG"
 
-export class LancerCommand implements SlashCommand {
+export class GodboundCommand implements SlashCommand {
     constructor(
         private readonly replyOptionsFactory: ReplyOptionsFactory
     ) {

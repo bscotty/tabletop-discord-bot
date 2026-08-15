@@ -1,4 +1,4 @@
-import {isAbility, isClass, isGlossary, isJob, SearchableIconData} from "./searchable/searchable-icon-data";
+import {isAbility, isClass, isGlossary, isJob, SearchableIconData} from "../searchable/searchable-icon-data";
 
 export function formatIcon(data: SearchableIconData): string {
     if (isGlossary(data)) {

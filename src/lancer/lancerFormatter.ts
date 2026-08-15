@@ -1,4 +1,4 @@
-import {Formatter} from "../../../formatter/formatter";
+import {Formatter} from "../formatter/formatter";
 import {
     SearchableAction,
     SearchableBond,
@@ -19,10 +19,10 @@ import {
     SearchableTag,
     SearchableTalent,
     SearchableWeapon
-} from "../../../data/lancer/search/searchable";
-import {Formatters} from "../../../data/lancer/format/formatters";
-import {RichFrameFormatter} from "../../../data/lancer/format/rich-frame-formatter";
-import {DisplayResponse} from "../../../data/lancer/format/display-response";
+} from "./search/searchable";
+import {Formatters} from "./format/formatters";
+import {RichFrameFormatter} from "./format/rich-frame-formatter";
+import {DisplayResponse} from "./format/display-response";
 
 export class LancerFormatter implements Formatter<SearchableData> {
     constructor(

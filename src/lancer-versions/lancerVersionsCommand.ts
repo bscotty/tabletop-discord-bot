@@ -1,20 +1,20 @@
-import SlashCommand from "../../slashCommand";
+import SlashCommand from "../command/slashCommand";
 import {
     BaseInteraction,
     ChatInputCommandInteraction,
     SlashCommandBuilder,
     SlashCommandOptionsOnlyBuilder
 } from "discord.js";
-import {ReplyOptionsFactory} from "../../../reply/replyOptionsFactory";
+import {Repository} from "../lancer/format/repository";
+import {InfoManifest} from "../lancer/types/info";
 
-const TERM_OPTION_NAME = "term"
 const PUBLIC_OPTION_NAME = "public"
-const COMMAND_NAME = "icon"
-const COMMAND_DESCRIPTION = "Search for a term in ICON RPG (v1.5)"
+const COMMAND_NAME = "lancer-versions"
+const COMMAND_DESCRIPTION = "Print all currently used Lancer LCP versions"
 
-export class IconCommand implements SlashCommand {
+export class LancerVersionsCommand implements SlashCommand {
     constructor(
-        private readonly replyOptionsFactory: ReplyOptionsFactory
+        private readonly repo: Repository
     ) {
     }
 
@@ -22,14 +22,9 @@ export class IconCommand implements SlashCommand {
 
     builder(): SlashCommandOptionsOnlyBuilder {
         return new SlashCommandBuilder()
-            .addStringOption((option) => option
-                .setName(TERM_OPTION_NAME)
-                .setDescription("What do I search for?")
-                .setRequired(true)
-            )
             .addBooleanOption((option) => option
                 .setName(PUBLIC_OPTION_NAME)
-                .setDescription("Should I display the term to everyone?")
+                .setDescription("Should I display the results to everyone?")
                 .setRequired(false)
             )
             .setName(COMMAND_NAME)
@@ -51,7 +46,16 @@ export class IconCommand implements SlashCommand {
 
     private async respondToChatInput(interaction: ChatInputCommandInteraction) {
         const replyPublic: boolean = interaction.options.getBoolean(PUBLIC_OPTION_NAME, false) == true
-        const term = interaction.options.getString(TERM_OPTION_NAME)
-        await interaction.reply(this.replyOptionsFactory.create(term, replyPublic))
+        const firstPartyInfos = this.repo.firstPartyInfo.map((lcpInfo) => this.versionDump(lcpInfo)).join(`\n`)
+        const homebrewInfos = this.repo.homebrewInfo.map((lcpInfo) => this.versionDump(lcpInfo)).join(`\n`)
+        const output = `__**First Party**__\n` + firstPartyInfos + `\n\n__**Homebrew**__\n` + homebrewInfos
+        await interaction.reply({
+            content: output,
+            ephemeral: !replyPublic
+        })
+    }
+
+    private versionDump(info: InfoManifest): string {
+        return `${info.name} - ${info.version}`
     }
 }

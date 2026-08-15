@@ -1,18 +1,18 @@
-import SlashCommand from "../../slashCommand";
+import SlashCommand from "../command/slashCommand";
 import {
     BaseInteraction,
     ChatInputCommandInteraction,
     SlashCommandBuilder,
     SlashCommandOptionsOnlyBuilder
 } from "discord.js";
-import {ReplyOptionsFactory} from "../../../reply/replyOptionsFactory";
+import {ReplyOptionsFactory} from "../reply/replyOptionsFactory";
 
 const TERM_OPTION_NAME = "term"
 const PUBLIC_OPTION_NAME = "public"
-const COMMAND_NAME = "godbound"
-const COMMAND_DESCRIPTION = "Search for a term in Godbound RPG"
+const COMMAND_NAME = "icon"
+const COMMAND_DESCRIPTION = "Search for a term in ICON RPG (v1.5)"
 
-export class GodboundCommand implements SlashCommand {
+export class IconCommand implements SlashCommand {
     constructor(
         private readonly replyOptionsFactory: ReplyOptionsFactory
     ) {
