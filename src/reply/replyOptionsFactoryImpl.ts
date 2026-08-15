@@ -2,7 +2,7 @@ import {AttachmentBuilder, EmbedBuilder, InteractionReplyOptions} from "discord.
 import {ReplyOptionsFactory} from "./replyOptionsFactory";
 import Searcher from "../searcher/searcher";
 import {DisplayResponse} from "../lancer/format/display-response";
-import {Formatter} from "../formatter/formatter";
+import Formatter from "../formatter";
 
 export class ReplyOptionsFactoryImpl<T> implements ReplyOptionsFactory {
     constructor(

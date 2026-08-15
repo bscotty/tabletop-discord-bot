@@ -1,4 +1,4 @@
-import {Lcp} from "../../../types/lcp";
+import Lcp from "../../../types/lcp";
 import actions from "./actions.json"
 import coreBonuses from "./core_bonuses.json"
 import frames from "./frames.json"
@@ -11,7 +11,7 @@ import tags from "./tags.json"
 import talents from "./talents.json"
 import weapons from "./weapons.json"
 
-export function getIridiaLcp(): Lcp {
+export default function getIridiaLcp(): Lcp {
     return new Lcp(
         actions,
         [],

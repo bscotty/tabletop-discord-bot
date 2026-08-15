@@ -1,37 +1,39 @@
-import {RichFormatter} from "./rich-formatter";
-import {SearchableWeapon} from "../search/searchable";
+import {SearchableWeapon} from "../../search/searchable";
 import TurndownService from "turndown";
-import {Repository} from "./repository";
-import {Formatters, ZERO_SPACE} from "./formatters";
+import {LancerRepository} from "../../repository/lancerRepository";
+import {Formatters, ZERO_SPACE} from "../formatters";
+import {DisplayResponse, ResponseButton, ResponseField} from "../display-response";
+import {getManufacturerLogo} from "../util/logos";
+import {getColor} from "../util/color";
+import {IWeaponProfile} from "../../types/weapon";
 import {ButtonStyle} from "discord.js";
-import {getManufacturerLogo} from "./logos";
-import {getColor} from "./color";
-import {activationFormat, formatContentPack, licenseFormat} from "./format-utility";
-import {getEmoji} from "./emoji";
-import {IWeaponProfile} from "../types/weapon";
-import {DisplayResponse, ResponseButton, ResponseField} from "./display-response";
-import {IDeployableData} from "../types/shared-types";
+import {licenseFormat} from "../util/license";
+import {formatContentPack} from "../util/contentPack";
+import {getEmoji} from "../util/emoji";
+import {populateTag} from "../util/tag";
 import {actionTraits} from "./rich-action-formatter";
+import {IDeployableData} from "../../types/shared-types";
+import {activationFormat} from "../util/activation";
+import Formatter from "../../../formatter";
 
 // TODO: Continue to refine
-export class RichWeaponFormatter implements RichFormatter<SearchableWeapon> {
+export class RichWeaponFormatter implements Formatter<SearchableWeapon> {
     private readonly turndownService: TurndownService
-    private readonly repo: Repository
+    private readonly repo: LancerRepository
     private readonly formatters: Formatters
 
-    constructor(repository: Repository, formatters: Formatters) {
+    constructor(repository: LancerRepository, formatters: Formatters) {
         this.turndownService = new TurndownService()
         this.repo = repository
         this.formatters = formatters
     }
 
-    richFormat(item: SearchableWeapon): DisplayResponse {
+    format(item: SearchableWeapon): DisplayResponse {
         const weapon = item
         const source = weapon.source ?? this.repo.getFrameForIntegratedId(weapon.id).source
 
         const {imageUrl, file} = getManufacturerLogo(source, this.repo)
         const color = getColor(source, this.repo)
-
 
         const fields: ResponseField[] = [
             this.weaponTagsEtc(weapon),
@@ -90,7 +92,7 @@ export class RichWeaponFormatter implements RichFormatter<SearchableWeapon> {
     }
 
     private weaponTagsEtc(weapon: SearchableWeapon): ResponseField {
-        const tags = (weapon.tags) ? weapon.tags.map((tag) => this.formatters.populateTag(tag)) : []
+        const tags = (weapon.tags) ? weapon.tags.map((tag) => populateTag(tag, this.repo)) : []
         const tagsEtc: string[] = [
             weapon.sp ? `${weapon.sp} SP` : null,
             ...tags

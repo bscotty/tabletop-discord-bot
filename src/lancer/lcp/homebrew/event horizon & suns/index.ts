@@ -5,9 +5,9 @@ import manufacturers from "./manufacturers.json"
 import mods from "./mods.json"
 import systems from "./systems.json"
 import weapons from "./weapons.json"
-import {Lcp} from "../../../types/lcp";
+import Lcp from "../../../types/lcp";
 
-export function getEHandSLCP(): Lcp {
+export default function getEHandSLCP(): Lcp {
     return new Lcp(
         [],
         [],

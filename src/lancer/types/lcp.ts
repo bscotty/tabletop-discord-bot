@@ -15,7 +15,7 @@ import {GlossaryItem} from "./glossary";
 import {InfoManifest} from "./info";
 import {Bond} from "./bonds";
 
-export class Lcp {
+export default class Lcp {
     actions: Action[]
     background: Background[]
     bonds: Bond[]

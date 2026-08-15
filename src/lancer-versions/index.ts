@@ -1,5 +1,5 @@
 import SlashCommand from "../command/slashCommand";
-import {getRepository} from "../lancer/format/repository";
+import getRepository from "../lancer/repository";
 import {LancerVersionsCommand} from "./lancerVersionsCommand";
 
 export default function lancerVersionsCommandCreator(): SlashCommand {

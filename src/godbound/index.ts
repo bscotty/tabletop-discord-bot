@@ -1,5 +1,5 @@
 import SlashCommand from "../command/slashCommand";
-import {getDictionary} from "./data/words";
+import {getDictionary} from "./data/words/true-index";
 import {GodboundCommand} from "./godboundCommand";
 import {GodboundFormatter} from "./godboundFormatter";
 import {ReplyOptionsFactoryImpl} from "../reply/replyOptionsFactoryImpl";

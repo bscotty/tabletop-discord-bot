@@ -1,4 +1,4 @@
-import {Lcp} from "../../../types/lcp";
+import Lcp from "../../../types/lcp";
 import actions from "./actions.json"
 import coreBonuses from "./core_bonuses.json"
 import frames from "./frames.json"
@@ -10,7 +10,7 @@ import systems from "./systems.json"
 import talents from "./talents.json"
 import weapons from "./weapons.json"
 
-export function getSuldanLcp(): Lcp {
+export default function getSuldanLcp(): Lcp {
     return new Lcp(
         actions,
         [],

@@ -1,4 +1,4 @@
-import {Lcp} from "../../types/lcp";
+import Lcp from "../../types/lcp";
 import actions from "./actions.json"
 import frames from "./frames.json"
 import info from "./lcp_manifest.json"
@@ -7,7 +7,7 @@ import systems from "./systems.json"
 import talents from "./talents.json"
 import weapons from "./weapons.json"
 
-export function getLongRimLcp(): Lcp {
+export default function getLongRimLcp(): Lcp {
     return new Lcp(
         actions,
         [],

@@ -8,9 +8,9 @@ import systems from "./systems.json"
 import tags from "./tags.json"
 import talents from "./talents.json"
 import weapons from "./weapons.json"
-import {Lcp} from "../../../types/lcp";
+import Lcp from "../../../types/lcp";
 
-export function getColdcoreColiseumLcp(): Lcp {
+export default function getColdcoreColiseumLcp(): Lcp {
     return new Lcp(
         actions,
         [],

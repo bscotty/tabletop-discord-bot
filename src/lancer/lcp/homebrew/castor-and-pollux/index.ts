@@ -7,9 +7,9 @@ import mods from "./mods.json"
 import systems from "./systems.json"
 import talents from "./talents.json"
 import weapons from "./weapons.json"
-import {Lcp} from "../../../types/lcp";
+import Lcp from "../../../types/lcp";
 
-export function getCastorAndPolluxLcp(): Lcp {
+export default function getCastorAndPolluxLcp(): Lcp {
     return new Lcp(
         actions,
         [],

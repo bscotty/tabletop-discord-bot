@@ -1,4 +1,4 @@
-import {Formatter} from "../formatter/formatter";
+import Formatter from "../../formatter";
 import {
     SearchableAction,
     SearchableBond,
@@ -19,15 +19,17 @@ import {
     SearchableTag,
     SearchableTalent,
     SearchableWeapon
-} from "./search/searchable";
-import {Formatters} from "./format/formatters";
-import {RichFrameFormatter} from "./format/rich-frame-formatter";
-import {DisplayResponse} from "./format/display-response";
+} from "../search/searchable";
+import {Formatters} from "./formatters";
+import {RichFrameFormatter} from "./formatters/rich-frame-formatter";
+import {DisplayResponse} from "./display-response";
+import {RichTalentFormatter} from "./formatters/rich-talent-formatter";
 
 export class LancerFormatter implements Formatter<SearchableData> {
     constructor(
         private readonly formatters: Formatters,
-        private readonly richFrameFormatter: RichFrameFormatter
+        private readonly richFrameFormatter: RichFrameFormatter,
+        private readonly richTalentFormatter: RichTalentFormatter
     ) {
     }
 
@@ -43,7 +45,7 @@ export class LancerFormatter implements Formatter<SearchableData> {
         } else if (this.isSearchableICoreSystemData(item)) {
             return this.formatters.coreFormat(item)
         } else if (this.isSearchableFrame(item)) {
-            return this.richFrameFormatter.richFormat(item)
+            return this.richFrameFormatter.format(item)
         } else if (this.isSearchableGlossaryItem(item)) {
             return this.formatters.glossaryFormat(item)
         } else if (this.isSearchableMod(item)) {
@@ -65,7 +67,7 @@ export class LancerFormatter implements Formatter<SearchableData> {
         } else if (this.isSearchableTag(item)) {
             return this.formatters.tagFormat(item)
         } else if (this.isSearchableTalent(item)) {
-            return this.formatters.talentFormat(item)
+            return this.richTalentFormatter.format(item)
         } else if (this.isSearchableWeapon(item)) {
             return this.formatters.weaponFormat(item)
         } else {

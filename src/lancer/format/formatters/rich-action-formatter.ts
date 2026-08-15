@@ -1,6 +1,7 @@
-import {IActionData} from "../types/shared-types";
-import {ResponseField} from "./display-response";
-import {activationFormat, pilotMechActionType} from "./format-utility";
+import {IActionData} from "../../types/shared-types";
+import {ResponseField} from "../display-response";
+import {pilotMechActionType} from "../util/actionType";
+import {activationFormat} from "../util/activation";
 import TurndownService from "turndown";
 
 // TODO: Continue to refine

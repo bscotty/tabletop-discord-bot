@@ -5,7 +5,7 @@ import {
     SlashCommandBuilder,
     SlashCommandOptionsOnlyBuilder
 } from "discord.js";
-import {Repository} from "../lancer/format/repository";
+import {LancerRepository} from "../lancer/repository/lancerRepository";
 import {InfoManifest} from "../lancer/types/info";
 
 const PUBLIC_OPTION_NAME = "public"
@@ -14,7 +14,7 @@ const COMMAND_DESCRIPTION = "Print all currently used Lancer LCP versions"
 
 export class LancerVersionsCommand implements SlashCommand {
     constructor(
-        private readonly repo: Repository
+        private readonly repo: LancerRepository
     ) {
     }
 

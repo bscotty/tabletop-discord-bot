@@ -1,4 +1,4 @@
-import {Formatter} from "../formatter/formatter";
+import Formatter from "../formatter";
 import {DisplayResponse} from "../lancer/format/display-response";
 import {formatIcon} from "./format/formatter";
 import {SearchableIconData} from "./searchable/searchable-icon-data";

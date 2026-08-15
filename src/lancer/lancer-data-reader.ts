@@ -1,5 +1,5 @@
 import {addAlternativeNames, AlternativelyNamed, SupportsAltName} from "./name-fixes";
-import {Lcp} from "./types/lcp";
+import Lcp from "./types/lcp";
 import {getCorePowersFromFrames} from "./types/frame";
 import {splitPilotItems} from "./types/pilot";
 import {TypedData} from "./types/shared-types";

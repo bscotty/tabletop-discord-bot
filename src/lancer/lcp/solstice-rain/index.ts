@@ -1,4 +1,4 @@
-import {Lcp} from "../../types/lcp";
+import Lcp from "../../types/lcp";
 import frames from "./frames.json"
 import info from "./lcp_manifest.json"
 import reserves from "./reserves.json"
@@ -7,7 +7,7 @@ import talents from "./talents.json"
 import weapons from "./weapons.json"
 import environments from "./environments.json"
 
-export function getSolsticeRainData(): Lcp {
+export default function getSolsticeRainData(): Lcp {
     return new Lcp(
         [],
         [],

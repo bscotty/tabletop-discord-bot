@@ -1,27 +1,27 @@
-import {SearchableFrame} from "../search/searchable";
+import {SearchableFrame} from "../../search/searchable";
 import TurndownService from "turndown";
-import {LicenseData, Repository} from "./repository";
-import {Formatters, ZERO_SPACE} from "./formatters";
-import {formatContentPack} from "./format-utility";
-import {FrameStats, IFrameTraitData} from "../types/frame";
-import {RichFormatter} from "./rich-formatter";
-import {getManufacturerLogo} from "./logos";
-import {getColor} from "./color";
-import {DisplayResponse, ResponseField} from "./display-response";
-import {isSearchableFrame} from "./typechecks";
+import {LancerRepository, LicenseData} from "../../repository/lancerRepository";
+import {Formatters, ZERO_SPACE} from "../formatters";
+import {DisplayResponse, ResponseField} from "../display-response";
+import {getManufacturerLogo} from "../util/logos";
+import {getColor} from "../util/color";
+import {formatContentPack} from "../util/contentPack";
+import {FrameStats, IFrameTraitData} from "../../types/frame";
+import {isSearchableFrame} from "../typechecks";
+import Formatter from "../../../formatter";
 
-export class RichFrameFormatter implements RichFormatter<SearchableFrame> {
+export class RichFrameFormatter implements Formatter<SearchableFrame> {
     private readonly turndownService: TurndownService
-    private readonly repo: Repository
+    private readonly repo: LancerRepository
     private readonly formatters: Formatters
 
-    constructor(repository: Repository, formatters: Formatters) {
+    constructor(repository: LancerRepository, formatters: Formatters) {
         this.turndownService = new TurndownService()
         this.repo = repository
         this.formatters = formatters
     }
 
-    richFormat(item: SearchableFrame): DisplayResponse {
+    format(item: SearchableFrame): DisplayResponse {
         if (item.specialty) {
             return this.specialtyFormat(item)
         } else {
@@ -99,26 +99,27 @@ export class RichFrameFormatter implements RichFormatter<SearchableFrame> {
     private formattedStatFields(stats: FrameStats): ResponseField[] {
         const techAttack = stats.tech_attack > 0 ? `+${stats.tech_attack}` : `${stats.tech_attack}`
         return [
-            {name: ZERO_SPACE, description: `**-------------- STATISTICS --------------**`, inline: false},
+            {name: ZERO_SPACE, description: `**--------------- STATISTICS ---------------**`, inline: false},
 
             {name: "STRUCTURE", description: `${stats.structure}`, inline: true},
             {name: "STRESS", description: `${stats.stress}`, inline: true},
-            {name: "ARMOR", description: `${stats.armor}`, inline: true},
+            {name: ZERO_SPACE, description: ZERO_SPACE, inline: true},
 
             {name: "HP", description: `${stats.hp}`, inline: true},
+            {name: "ARMOR", description: `${stats.armor}`, inline: true},
+            {name: "HEATCAP", description: `${stats.heatcap}`, inline: true},
+
             {name: "EVASION", description: `${stats.evasion}`, inline: true},
             {name: "E-DEF", description: `${stats.edef}`, inline: true},
+            {name: ZERO_SPACE, description: ZERO_SPACE, inline: true},
 
-            {name: "HEATCAP", description: `${stats.heatcap}`, inline: true},
             {name: "SENSORS", description: `${stats.sensor_range}`, inline: true},
             {name: "TECH ATTACK", description: `${techAttack}`, inline: true},
+            {name: "SAVE", description: `${stats.save}`, inline: true},
 
             {name: "REPAIR CAP", description: `${stats.repcap}`, inline: true},
-            {name: "SAVE", description: `${stats.save}`, inline: true},
             {name: "SPEED", description: `${stats.speed}`, inline: true},
-
             {name: "SP", description: `${stats.sp}`, inline: true},
-            {name: ZERO_SPACE, description: ZERO_SPACE, inline: false},
         ]
     }
 
@@ -132,20 +133,20 @@ export class RichFrameFormatter implements RichFormatter<SearchableFrame> {
             return []
         }
 
-        function getGearNames(forLicenseLevel: 1 | 2 | 3, gear: LicenseData[]): string[] {
-            return gear.filter((it) => it.license_level == forLicenseLevel)
-                .map((it) => isSearchableFrame(it) ? `${it.name} Frame` : it.name)
-        }
-
         const validLicenseLevels: (1 | 2 | 3)[] = [1, 2, 3]
         const gear = this.repo.getLicenseData(frame)
 
         return validLicenseLevels.map((licenseLevel) => {
-            return ({level: licenseLevel, names: getGearNames(licenseLevel, gear)});
+            return ({level: licenseLevel, names: this.getGearNames(licenseLevel, gear)});
         }).filter(({names}) => {
             return names.length > 0
         }).map(({level, names}) => {
-            return ({name: `License Level ${level}`, description: `${names.join(", ")}`, inline: true})
+            return ({name: `License Level ${level}`, description: `${names.join("\n")}`, inline: true})
         })
+    }
+
+    private getGearNames(forLicenseLevel: 1 | 2 | 3, gear: LicenseData[]): string[] {
+        return gear.filter((it) => it.license_level == forLicenseLevel)
+            .map((it) => isSearchableFrame(it) ? `${it.name} Frame` : it.name)
     }
 }

@@ -1,5 +1,5 @@
 import {DisplayResponse} from "../lancer/format/display-response";
 
-export interface Formatter<T> {
+export default interface Formatter<T> {
     format(item: T): string | DisplayResponse
 }

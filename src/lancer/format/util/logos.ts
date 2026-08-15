@@ -1,14 +1,14 @@
-import {Repository} from "./repository";
-import {Manufacturer} from "../types/not-fully-used";
-import {Talent} from "../types/talent";
+import {Manufacturer} from "../../types/not-fully-used";
+import {Talent} from "../../types/talent";
 import * as fs from "fs";
+import {LancerRepository} from "../../repository/lancerRepository";
 
 export type Logo = {
     imageUrl: string | null
     file: string | null,
 }
 
-export function getManufacturerLogo(source: string, repo: Repository): Logo {
+export function getManufacturerLogo(source: string, repo: LancerRepository): Logo {
     const manufacturer = repo.manufacturers.find((it) => it.id == source)
     const logoUrl = getLogoUrl(manufacturer)
     const logoFilePath = logoUrl != null ? logoUrl.replace("attachment://", "./assets/logos/") : null

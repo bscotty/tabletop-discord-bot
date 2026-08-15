@@ -1,4 +1,4 @@
-import {IActionData, IDeployableData, ITagData, WeaponType} from "../types/shared-types";
+import {IActionData, IDeployableData, WeaponType} from "../types/shared-types";
 import {
     SearchableAction,
     SearchableBond,
@@ -22,38 +22,26 @@ import {
 import {IWeaponProfile} from "../types/weapon";
 import TurndownService from "turndown";
 import {IFrameTraitData} from "../types/frame";
-import {getEmoji} from "./emoji";
-import {
-    activationFormat,
-    formatContentPack,
-    licenseFormat,
-    pilotMechActionType,
-    replaceVal,
-    toTitleCase
-} from "./format-utility";
 import {isSearchableSystem, isSearchableWeapon} from "./typechecks";
-import {Repository} from "./repository";
+import {LancerRepository} from "../repository/lancerRepository";
+import {getEmoji} from "./util/emoji";
+import {licenseFormat} from "./util/license";
+import {replaceVal} from "./util/val";
+import {pilotMechActionType} from "./util/actionType";
+import {activationFormat} from "./util/activation";
+import {formatContentPack} from "./util/contentPack";
+import {populateTag} from "./util/tag";
 
 type PrintableWeaponProfile = IWeaponProfile & { mount: string, type: string }
 
 export const ZERO_SPACE = '\u200B'
 
-// noinspection JSUnusedGlobalSymbols
 export class Formatters {
     private readonly turndownService = new TurndownService()
-    private readonly repo: Repository
+    private readonly repo: LancerRepository
 
-    constructor(repository: Repository) {
+    constructor(repository: LancerRepository) {
         this.repo = repository
-    }
-
-    public populateTag(tag: ITagData): string {
-        const tagData = this.repo.tags.find(t => t.id === tag.id)
-
-        if (tag.val !== undefined)
-            return replaceVal(tagData.name, `${tag.val}`) //For things like HEAT {VAL} Self
-        else
-            return tagData.name
     }
 
     public integratedFormat(integrated: string[], source: string) {
@@ -238,7 +226,7 @@ export class Formatters {
             core.deployables.forEach(dep => out += `\n${this.deployableFormatter(dep)}`)
         }
         if (core.tags) {
-            core.tags.forEach(t => out += this.populateTag(t))
+            core.tags.forEach(tag => out += populateTag(tag, this.repo))
         }
 
         if (core.active_name) {
@@ -271,7 +259,7 @@ export class Formatters {
     public modFormat(mod: SearchableMod) {
         let out = `**${mod.name}** (${licenseFormat(mod)} Mod)${formatContentPack(mod)}\n${mod.sp} SP`
         if (mod.tags) {
-            out += `, ${mod.tags.map(tag => this.populateTag(tag)).join(', ').trim()}\n`;
+            out += `, ${mod.tags.map(tag => populateTag(tag, this.repo)).join(', ').trim()}\n`;
         } else {
             out += '\n'
         }
@@ -301,13 +289,13 @@ export class Formatters {
         let out = `**${pilotArmor.name}** (Pilot Armor)${formatContentPack(pilotArmor)}`
         if (pilotArmor.bonuses && pilotArmor.bonuses.length > 0) {
             out += "\n" + pilotArmor.bonuses.map((it) => {
-                return `${toTitleCase(it.id.replace("_", " "))}: ${it.val}`
+                return `${this.toTitleCase(it.id.replace("_", " "))}: ${it.val}`
             }).join("\n").replace(/,\s*$/, "")
         }
         if (pilotArmor.tags) {
             const populatedTags = pilotArmor.tags
                 .filter((it) => it.id != "tg_personal_armor")
-                .map(tag => this.populateTag(tag))
+                .map(tag => populateTag(tag, this.repo))
             if (populatedTags.length > 0) {
                 out += "\n" + populatedTags.join(', ').trim()
             }
@@ -324,12 +312,19 @@ export class Formatters {
         return out;
     }
 
+    private toTitleCase(str: string): string {
+        const allWordsNoWhitespace = /\w\S*/g
+        return str.replace(allWordsNoWhitespace, function (txt) {
+            return txt.charAt(0).toUpperCase() + txt.substring(1).toLowerCase()
+        })
+    }
+
     public pilotGearFormat(pilotGear: SearchablePilotGear) {
         let out = `**${pilotGear.name}** (Pilot Gear)${formatContentPack(pilotGear)}`
         if (pilotGear.tags) {
             const populatedTags = pilotGear.tags
                 .filter((it) => it.id != "tg_gear")
-                .map(tag => this.populateTag(tag))
+                .map(tag => populateTag(tag, this.repo))
             if (populatedTags.length > 0) {
                 out += "\n" + populatedTags.join(', ').trim()
             }
@@ -351,7 +346,7 @@ export class Formatters {
         if (pilotWeapon.tags) {
             const populatedTags = pilotWeapon.tags
                 .filter((it) => it.id != "tg_pilot_weapon")
-                .map(tag => this.populateTag(tag))
+                .map(tag => populateTag(tag, this.repo))
             if (populatedTags.length > 0) {
                 out += "\n" + populatedTags.join(', ').trim()
             }
@@ -413,7 +408,6 @@ export class Formatters {
         return `**${object.name}** (${object.type})${formatContentPack(object)}\n${this.turndownService.turndown(object.effects)}`
     }
 
-
     public systemFormat(system: SearchableSystem) {
         let out = `**${system.name}**`
         if (system.id) {
@@ -428,7 +422,7 @@ export class Formatters {
         out += ` ${system.data_type || system.type || ''})${formatContentPack(system)}\n`
         let tagsEtc = []
         if (system.sp) tagsEtc.push(`${system.sp} SP`)
-        if (system.tags) tagsEtc = tagsEtc.concat(system.tags.map(tag => this.populateTag(tag)))
+        if (system.tags) tagsEtc = tagsEtc.concat(system.tags.map(tag => populateTag(tag, this.repo)))
         out += `${tagsEtc.join(', ')}\n`
         if (system.effect) out += `${this.turndownService.turndown(system.effect)}\n`
         if (system.actions && system.actions.length > 0) {
@@ -485,7 +479,7 @@ export class Formatters {
 
         let tagsEtc = [`${weapon.mount} ${weapon.type}`]
         if (weapon.sp) tagsEtc.push(`${weapon.sp} SP`)
-        if (weapon.tags) tagsEtc = tagsEtc.concat(weapon.tags.map(tag => this.populateTag(tag)))
+        if (weapon.tags) tagsEtc = tagsEtc.concat(weapon.tags.map(tag => populateTag(tag, this.repo)))
         out += `\n${tagsEtc.join(', ')}`
 
         const hasWeaponRange = weapon.range && weapon.range.length
@@ -524,7 +518,7 @@ export class Formatters {
     public weaponProfileFormat(weapon: PrintableWeaponProfile): string {
         let out = `**${weapon.name}**`
         let tagsEtc = [`${weapon.mount} ${weapon.type}`]
-        if (weapon.tags) tagsEtc = tagsEtc.concat(weapon.tags.map(tag => this.populateTag(tag)))
+        if (weapon.tags) tagsEtc = tagsEtc.concat(weapon.tags.map(tag => populateTag(tag, this.repo)))
         out += `\n${tagsEtc.join(', ')}`
 
         const hasWeaponRange = weapon.range && weapon.range.length

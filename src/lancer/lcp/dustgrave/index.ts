@@ -7,9 +7,9 @@ import systems from "./systems.json"
 import talents from "./talents.json"
 import weapons from "./weapons.json"
 import environments from "./environments.json"
-import {Lcp} from "../../types/lcp";
+import Lcp from "../../types/lcp";
 
-export function getDustgraveLcp(): Lcp {
+export default function getDustgraveLcp(): Lcp {
     return new Lcp(
         [],
         [],
