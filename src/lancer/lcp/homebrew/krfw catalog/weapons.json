@@ -63,7 +63,7 @@
     "source": "KRFW",
     "license": "Armiger",
     "license_level": 2,
-    "description": "“Listen. Listen. I know it trashed a state of the art medical drone in the process, but I’ve seen the footage. It took out another mech with one shot using something that was never meant to be fired to begin with! I don’t care if it’s being court martialed right now, I want to talk to that soldier and start signing some licensing agreements!”<br>-Hanan Karimi, Founding Partner",
+    "description": "\"Listen. Listen. I know it trashed a state of the art medical drone in the process, but I've seen the footage. It took out another mech with one shot using something that was never meant to be fired to begin with! I don't care if it's being court martialed right now, I want to talk to that soldier and start signing some licensing agreements!\"<br>-Hanan Karimi, Founding Partner",
     "effect": "This weapon gains +1 Accuracy for every attack that has hit the target this turn.<br>This weapon grants +1 Accuracy to rolls to repair, diagnose, or heal machines or people while equipped.",
     "license_id": "krfwf_armiger"
   },
@@ -131,7 +131,7 @@
     "source": "KRFW",
     "license": "Burgess",
     "license_level": 1,
-    "description": "“It’s a slab of material with a handle, we don’t need to include an operating manual. Yes, I do have that much faith in our customers. If they can’t figure out how to put something between them and a sword, I don’t think they’re going to be repeat customers anyway.”<br>-Hanan Karimi, Founding Partner",
+    "description": "\"It's a slab of material with a handle, we don't need to include an operating manual. Yes, I do have that much faith in our customers. If they can't figure out how to put something between them and a sword, I don't think they're going to be repeat customers anyway.\"<br>-Hanan Karimi, Founding Partner",
     "effect": "If you do not attack with this weapon during your turn, characters take +1 Difficulty when attacking you with Melee attacks until the start of your next turn.",
     "license_id": "krfwf_burgess"
   },
@@ -233,7 +233,7 @@
     "source": "KRFW",
     "license": "Castellan",
     "license_level": 3,
-    "description": "An array of dorsally mounted tubes, each loaded with high-yield explosive projectiles. The name comes from the weapon’s tendency for projectiles to misfire on impact with sufficiently soft targets, leaving still-live explosives scattered in the line of fire. Though initially worth concern, the addition of time-delay fuses transforms prohibitive defusal operations into much simpler clean-up ones.",
+    "description": "An array of dorsally mounted tubes, each loaded with high-yield explosive projectiles. The name comes from the weapon's tendency for projectiles to misfire on impact with sufficiently soft targets, leaving still-live explosives scattered in the line of fire. Though initially worth concern, the addition of time-delay fuses transforms prohibitive defusal operations into much simpler clean-up ones.",
     "effect": "This weapon deals 10 AP Explosive to terrain on hit. Any terrain destroyed by this weapon becomes an Unexploded Munition. At the start of your next turn, all Unexploded Munitions detonate in a Blast 1 area, dealing 1d6 Explosive to all characters caught in the blast.",
     "license_id": "krfwf_castellan"
   },
@@ -270,7 +270,7 @@
     "source": "KRFW",
     "license": "Claviger",
     "license_level": 1,
-    "description": "“My weapons did nothing. You cannot scratch what is not there. The machine no longer listens to me. It hears only itself, and when it speaks, it answers.”",
+    "description": "\"My weapons did nothing. You cannot scratch what is not there. The machine no longer listens to me. It hears only itself, and when it speaks, it answers.\"",
     "effect": "When you hit a character within range 3 with another weapon, you may attack with this weapon as a reaction. This is the only way to fire this weapon.",
     "license_id": "krfwf_claviger"
   },
@@ -354,7 +354,7 @@
     "source": "KRFW",
     "license": "Despot",
     "license_level": 1,
-    "description": "Many pilots prove gun-shy on their first sorties with extensive heat-generating equipment, sometimes compromising the mission out of fear of the damage they will cause themselves. This set of bypasses, toggles, and fundamental tweaks to a chassis’ reactor helps many of these rookie pilots buy themselves some breathing room as they vent their reactors; though it does nothing to alleviate heat buildup, the placebo effect often helps ease them into using their more costly options.",
+    "description": "Many pilots prove gun-shy on their first sorties with extensive heat-generating equipment, sometimes compromising the mission out of fear of the damage they will cause themselves. This set of bypasses, toggles, and fundamental tweaks to a chassis' reactor helps many of these rookie pilots buy themselves some breathing room as they vent their reactors; though it does nothing to alleviate heat buildup, the placebo effect often helps ease them into using their more costly options.",
     "license_id": "krfwf_despot"
   },
   {
@@ -512,7 +512,7 @@
     "source": "KRFW",
     "license": "Reeve",
     "license_level": 2,
-    "description": "This weapon has been precisely designed to optimize the power of its swings by ensuring the weapon is always swung in the exact same manner, every time. By controlling this variable, the weapon’s effectiveness is ultimately reliant on external variances instead, which are not sufficient cause to apply for any refunds.",
+    "description": "This weapon has been precisely designed to optimize the power of its swings by ensuring the weapon is always swung in the exact same manner, every time. By controlling this variable, the weapon's effectiveness is ultimately reliant on external variances instead, which are not sufficient cause to apply for any refunds.",
     "on_attack": "All characters adjacent to the target must succeed on a Hull save or fall prone.",
     "license_id": "krfwf_reeve"
   },
@@ -545,7 +545,7 @@
     "source": "KRFW",
     "license": "Vassal",
     "license_level": 1,
-    "description": "A smoothbore firearm, based on ancient Cradle weaponry, the Mk. 17 Sleeve Pistol is designed for concealment in loose fabric or specifically designed paneling on a frame, deployed by a tensioned mounting in an instant to fire a shot. The weapon’s accuracy is poor, but it can be fired using locally-sourced material in a pinch.",
+    "description": "A smoothbore firearm, based on ancient Cradle weaponry, the Mk. 17 Sleeve Pistol is designed for concealment in loose fabric or specifically designed paneling on a frame, deployed by a tensioned mounting in an instant to fire a shot. The weapon's accuracy is poor, but it can be fired using locally-sourced material in a pinch.",
     "effect": "If this weapon has less than 2 charges at the start of a scene, it regains 2 charges (to a maximum of 2).",
     "license_id": "krfwf_vassal"
   },
@@ -569,7 +569,7 @@
     "source": "KRFW",
     "license": "Vassal",
     "license_level": 2,
-    "description": "Crafted from a proprietary blend of conductive and fibrous materials, the “Humbler” protects a mech’s manipulators from dangerous levels of electrical feedback, allowing it to reach through hazards that would damage other mechs. Many pilots tend to use this weave as an impromptu weapon, however, making use of its conductive properties to preemptively dissipate enemy defensive shielding.",
+    "description": "Crafted from a proprietary blend of conductive and fibrous materials, the \"Humbler\" protects a mech's manipulators from dangerous levels of electrical feedback, allowing it to reach through hazards that would damage other mechs. Many pilots tend to use this weave as an impromptu weapon, however, making use of its conductive properties to preemptively dissipate enemy defensive shielding.",
     "on_hit": "Target loses all Overshield.",
     "license_id": "krfwf_vassal"
   },
@@ -661,7 +661,7 @@
     "source": "KRFW",
     "license": "Vidame",
     "license_level": 3,
-    "description": "A common problem with specialty munitions in firearms comes from an inherent aspect of the weapon’s operation; a certain amount of force tends to be necessary to ensure the weapon properly cycles the next round. Manual operation can bypass this limitation, however, allowing pilots to load anything they can fit in a cartridge and attempt to fire it. Damage from using bespoke, hand-loaded, or “DIY” munitions, however, is not covered in KRFW warranties.",
+    "description": "A common problem with specialty munitions in firearms comes from an inherent aspect of the weapon's operation; a certain amount of force tends to be necessary to ensure the weapon properly cycles the next round. Manual operation can bypass this limitation, however, allowing pilots to load anything they can fit in a cartridge and attempt to fire it. Damage from using bespoke, hand-loaded, or \"DIY\" munitions, however, is not covered in KRFW warranties.",
     "effect": "Whenever you reload this weapon, select one of the following ammo types to load into it:<ul><li>Scattershot: The next attack made with this weapon is made in a Cone 5 with Threat 3.</li><li>Slugs: The next attack made with this weapon deals 3d6 Kinetic, instead of 2d6.</li><li>Ricochet Rounds: The next attack made with this weapon gains Arcing, Overkill, and Knockback 3.</li><li>Breaching Rounds: The next attack made with this weapon gains Seeking and is made in a Line 10. Any objects in this Line take 20 AP Kinetic damage.</li></ul>",
     "sp": 2,
     "license_id": "krfwf_vidame"
@@ -691,7 +691,7 @@
     "source": "KRFW",
     "license": "Vidame",
     "license_level": 3,
-    "description": "“Miss Karimi is not accepting visitors, nor is she granting interviews at this time. In addition, Karimi, Roux, & Fabjani categorically denies any knowledge of any ‘entities’ she may have referenced in previously held interviews over the last ten months. Any further intimations that the company ‘knows something it is not telling us’ will be met with legal action.”<br>-Press relief from Cornielle de Roux, Founding Partner",
+    "description": "\"Miss Karimi is not accepting visitors, nor is she granting interviews at this time. In addition, Karimi, Roux, & Fabjani categorically denies any knowledge of any 'entities' she may have referenced in previously held interviews over the last ten months. Any further intimations that the company 'knows something it is not telling us' will be met with legal action.\"<br>-Press relief from Cornielle de Roux, Founding Partner",
     "effect": "If this weapon reduces a character to 0 HP, gain Overshield equal to your Grit.",
     "license_id": "krfwf_vidame"
   },
@@ -786,7 +786,7 @@
     "source": "KRFW",
     "license": "Primor",
     "license_level": 2,
-    "description": "Originally acquired from a lot of lost SSC technology in KRFW’s early days, the “Vajra” as it was known then languished in company storage for years for want of a buyer. Even when the company moved into manufacturing mechs, the Vajra was left on the shelf, not fitting with the design ethos of any of their frames. When the Primor was in early testing phases, however, an engineer found the weapon and installed it, finding it reacted shockingly well with the alloys used in KRFW drones. Retrofitted and rebranded as the “Pinball” Atmospheric Ionizer, it became one of the signature weapons of the floating fortress.",
+    "description": "Originally acquired from a lot of lost SSC technology in KRFW's early days, the \"Vajra\" as it was known then languished in company storage for years for want of a buyer. Even when the company moved into manufacturing mechs, the Vajra was left on the shelf, not fitting with the design ethos of any of their frames. When the Primor was in early testing phases, however, an engineer found the weapon and installed it, finding it reacted shockingly well with the alloys used in KRFW drones. Retrofitted and rebranded as the \"Pinball\" Atmospheric Ionizer, it became one of the signature weapons of the floating fortress.",
     "license_id": "krfwf_primor"
   },
   {
@@ -872,5 +872,139 @@
     "effect": "This weapon deals 1d6 Bonus Damage for each point of Structure you are missing.",
     "on_attack": "Deal 1d6 AP Kinetic damage to yourself. This damage cannot be prevented.",
     "license_id": "krfwf_iry_pat"
+  },
+  {
+    "id": "krfwmw_stolnik_integrated",
+    "name": "Tar-Black Jaw",
+    "mount": "Superheavy",
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "on_hit": "Destroy this weapon. Repair it at the end of the scene.",
+    "effect": "This weapon can only be used during the Hunger core power.<br><br>This weapon deals damage equal to the amount of HP you are missing. If you are missing any structure, it deals additional damage equal to your maximum HP for each missing structure. You regain HP equal to the damage dealt by this attack (up to your maximum), and repair structure equal to the amount of structure damage dealt by this attack.<br><br>Characters hit by this attack cannot be destroyed from HP loss or Structure rolls. If they would be destroyed, they are instead reduced to 1 HP and become Intangible until the start of their next turn. For the rest of the scene, they gain +1d6 bonus damage on all melee and ranged attacks against you, plus an additional 1d6 of bonus damage for each structure lost from this attack.",
+    "license_id": ""
+  },
+  {
+    "id": "krfwmw_leonine_thorn",
+    "name": "Leonine Thorn",
+    "mount": "Auxiliary",
+    "type": "Melee",
+    "tags": [
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": 1
+      }
+    ],
+    "source": "KRFW",
+    "license": "Stolnik",
+    "license_level": 1,
+    "description": "A slender sliver of metal, wedged in the softest point in the armor and ready to rattle loose at the right moment. Originally designed for fighting megafauna, Leonine Thorns are marketed as an easy-to-print multipurpose tool, usable for both force multiplication and a number of other typical militia needs. Recommended alternative uses include, but are not limited to firestarters, tent stakes, entrenching tools, and headstones.",
+    "on_hit": "You may choose to leave this weapon embedded in the target. As long as this weapon is embedded, you may not attack with or destroy it. Whenever you hit a character with one or more of your Leonine Thorns embedded in it with a melee attack, you may retrieve all embedded Thorns to deal an additional 1 bonus damage per Thorn.",
+    "license_id": "krfwf_stolnik"
+  },
+  {
+    "id": "krfwmw_hyperthermal_bardiche",
+    "name": "Hyperthermal Bardiche",
+    "mount": "Heavy",
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      },
+      {
+        "type": "Burn",
+        "val": 4
+      }
+    ],
+    "effect": "As a protocol, you may extend this weapon's Threat to 4. If you do, it cannot attack enemies within range 2 until the start of your next turn.",
+    "source": "KRFW",
+    "license": "Stolnik",
+    "license_level": 2,
+    "description": "A modern incarnation of one of humanity's oldest inventions: something long holding something sharp. The Hyperthermal Bardiche takes that core conceit and marries it to formerly cutting-edge plasma projection technology to take the classic design and maintain its flexibility while making it capable of holding its own in new frontiers.",
+    "license_id": "krfwf_stolnik"
+  },
+  {
+    "id": "krfwmw_battalion_microgrenade_rifle",
+    "name": "Battalion Microgrenade Rifle",
+    "mount": "Heavy",
+    "type": "Rifle/Melee",
+    "profiles": [
+      {
+        "name": "Battalion Rifle",
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "3d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ordnance"
+          },
+          {
+            "id": "tg_loading"
+          }
+        ]
+      },
+      {
+        "name": "Affixed Bayonet",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d3"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          },
+          {
+            "type": "Thrown",
+            "val": 5
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_thrown",
+            "val": 5
+          }
+        ]
+      }
+    ],
+    "effect": "When used as a melee weapon, the Battalion Microgrenade Rifle counts as an Auxiliary weapon instead of Heavy.<br><br>You may use the Battalion Microgrenade Rifle as a melee weapon even when unloaded. Any allied character may retrieve the Battalion Microgrenade Rifle once thrown, as long as they have a Heavy mount without a currently usable weapon mounted.<br><br>If your mech is destroyed, and this weapon is not destroyed, place it in an adjacent free space. Allies may continue to use it.",
+    "source": "KRFW",
+    "license": "Stolnik",
+    "license_level": 3,
+    "description": "Weaponry is expensive, and the Stolnik is designed to be fielded en masse, which can make arming a full team tricky. Thus, the Battalion Microgrenade Rifle is designed with universal couplings, so any mech with the appropriate fire control credentials can pick one up and use it. Some squads will even optimize for this feature, having designated marksmen and loaders among their number to allow the rest of their team to keep firing.",
+    "license_id": "krfwf_stolnik"
   }
 ]
