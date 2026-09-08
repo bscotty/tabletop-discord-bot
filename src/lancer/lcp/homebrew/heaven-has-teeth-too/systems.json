@@ -326,7 +326,7 @@
     "license": "Singularity",
     "license_id": "hhtt_mf_singularity",
     "license_level": 3,
-    "type": "System",
+    "type": "Deployable",
     "sp": 2,
     "description": "<b>DO NOT HANDLE WITHOUT SECURITY CLEARANCE LEVEL 10</b><br><br><b>DO NOT OPEN UNDER ANY CIRCUMSTANCES",
     "effect": "Disobey.",
