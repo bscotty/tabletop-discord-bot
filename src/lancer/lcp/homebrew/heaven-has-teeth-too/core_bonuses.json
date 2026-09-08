@@ -1,0 +1,24 @@
+[
+  {
+    "id": "hhtt_cb_process_injection_protocol",
+    "name": "Process Injection Protocol",
+    "source": "GMS",
+    "effect": "Your save target increases by +1. Additionally, 1/round, you gain +1 Accuracy to a tech action.",
+    "description": "a talent for hackers/supporters similar to autostabs. makes their stuff work more often.",
+    "bonuses": [
+      {
+        "id": "save",
+        "val": 1
+      }
+    ],
+    "synergies": [
+      {
+        "locations": [
+          "tech_attack",
+          "tech"
+        ],
+        "detail": "1/round, you gain +1 Accuracy to a tech action."
+      }
+    ]
+  }
+]
