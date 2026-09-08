@@ -160,7 +160,7 @@
       {
         "name": "Conflux of Possibility",
         "activation": "Quick Tech",
-        "detail": "Target an allied mech character within sensors and roll 1d6 to determine an effect from the table below. Optionally, you may expend any number of charges as part of this action to make the effect automatically reapply immediately after it ends, occuring a number of times equal to charges spent.<ol><li>The target gains +1 Accuracy on their next d20 roll.</li><li>The target is immune to the next condition inflicted against them that is not caused by one of their own talents, systems, etc.</li><li>The target gains Resistance to the next instance of Heat they take.</li><li>The target counts as Invisible for the next attack roll made against them.</li><li>The target reduces the next instance of involuntary movement inflicted upon them by a hostile character to 0.</li><li>The target's next successful damaging attack gains AP.</li></ol>",
+        "detail": "Target an allied mech character within sensors and roll 1d6 to determine an effect from the table below. Optionally, you may expend any number of charges as part of this action to make the effect automatically reapply immediately after it ends, occurring a number of times equal to charges spent.<ol><li>The target gains +1 Accuracy on their next d20 roll.</li><li>The target is immune to the next condition inflicted against them that is not caused by one of their own talents, systems, etc.</li><li>The target gains Resistance to the next instance of Heat they take.</li><li>The target counts as Invisible for the next attack roll made against them.</li><li>The target reduces the next instance of involuntary movement inflicted upon them by a hostile character to 0.</li><li>The target's next successful damaging attack gains AP.</li></ol>",
         "cost": 0
       }
     ]
@@ -286,7 +286,7 @@
         "activation": "Reaction",
         "frequency": "1/round",
         "trigger": "An adjacent ally is hit by an attack.",
-        "effect": "Expend a charge and take 1 heat to give them Resistance to the triggering attack."
+        "detail": "Expend a charge and take 1 heat to give them Resistance to the triggering attack."
       }
     ]
   },
