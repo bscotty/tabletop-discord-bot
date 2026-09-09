@@ -25,7 +25,7 @@
         "val": 1
       }
     ],
-    "description": "Your mech prints with an extra casket pre-installed, and a reserve of luck that would make any sailor jealous. After particularly rough missions, you find yourself performing tasks for someone you wish you could remember, even though you know you’re happier forgetting them.",
+    "description": "Your mech prints with an extra casket pre-installed, and a reserve of luck that would make any sailor jealous. After particularly rough missions, you find yourself performing tasks for someone you wish you could remember, even though you know you're happier forgetting them.",
     "synergies": [
       {
         "locations": [
@@ -54,7 +54,7 @@
       {
         "name": "Activate",
         "activation": "Quick",
-        "detail": "1/scene, while adjacent to a wreck, prime the wreck’s reactor to detonate. Whenever a character next moves adjacent to the primed wreck, it detonates in a Burst 1 area around the wreck. All characters except you in the Burst must pass an Agility save or take 2d6 energy damage and become Impaired until the end of their next turn, taking half damage and not becoming Impaired on a success."
+        "detail": "1/scene, while adjacent to a wreck, prime the wreck's reactor to detonate. Whenever a character next moves adjacent to the primed wreck, it detonates in a Burst 1 area around the wreck. All characters except you in the Burst must pass an Agility save or take 2d6 energy damage and become Impaired until the end of their next turn, taking half damage and not becoming Impaired on a success."
       }
     ],
     "description": "Your mech contains reserves of greywash nanites, hidden within its frame until the moment to deploy them comes. When you unleash them on the ruins of your enemies, your mech appears for a moment to be the specter of death itself."
@@ -64,13 +64,13 @@
     "name": "Integrated Blast Fences",
     "source": "KRFW",
     "effect": "When an allied character starts their turn adjacent to you, they may move 2 spaces as a Protocol. When you start your turn adjacent to an allied character, you may move 1 space as a Protocol.",
-    "description": "Your mech contains collapsable panels for other mechs to push off of, allowing them a burst of speed when they need it. You’ve considered putting them to use wherever you eventually retire as well, to make for good neighbors."
+    "description": "Your mech contains collapsable panels for other mechs to push off of, allowing them a burst of speed when they need it. You've considered putting them to use wherever you eventually retire as well, to make for good neighbors."
   },
   {
     "id": "krfwcb_lifeboat_cockpit_retrofitting",
     "name": "Lifeboat Cockpit Retrofitting",
     "source": "KRFW",
-    "effect": "When your mech melts down or self-destructs, leave a size 1/2 object in a space your mech formerly occupied. This Lifeboat has 10 Evasion, 10 E-defense, 10 HP, and resistance to all damage. Your pilot is safe inside, and the mech can be rebuilt from this central control capsule as if it had been destroyed. Your Self Destructs and Meltdowns are never canceled by your mech’s destruction.",
+    "effect": "When your mech melts down or self-destructs, leave a size 1/2 object in a space your mech formerly occupied. This Lifeboat has 10 Evasion, 10 E-defense, 10 HP, and resistance to all damage. Your pilot is safe inside, and the mech can be rebuilt from this central control capsule as if it had been destroyed. Your Self Destructs and Meltdowns are never canceled by your mech's destruction.",
     "description": "Your cockpit is hermetically sealed, and can survive up to a week in the vacuum of space. Karimi, Roux, & Fabjani also includes a complimentary selection of books to read during this time, so you do not die bored."
   },
   {
@@ -78,7 +78,7 @@
     "name": "Reckless Safety Tolerances",
     "source": "KRFW",
     "effect": "Your mech increases its maximum HP and Heatcap by how much Structure or Stress you have marked, respectively.",
-    "description": "Your mech prints with a bit more wiggle than it should, allowing you to hastily shove its broken pieces back into place just long enough to finish the next fight. You’ve gotten used to the noises its joints make.",
+    "description": "Your mech prints with a bit more wiggle than it should, allowing you to hastily shove its broken pieces back into place just long enough to finish the next fight. You've gotten used to the noises its joints make.",
     "synergies": [
       {
         "locations": [

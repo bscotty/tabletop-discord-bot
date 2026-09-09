@@ -27,6 +27,7 @@ import getSuldanLcp from "../lcp/homebrew/suldan";
 import getColdcoreColiseumLcp from "../lcp/homebrew/coldcore-coliseum";
 import getCastorAndPolluxLcp from "../lcp/homebrew/castor-and-pollux";
 import getStellarCodexLcp from "../lcp/homebrew/stellar-codex";
+import getHhttLcp from "../lcp/homebrew/heaven-has-teeth-too";
 
 let _repository: LancerRepository
 
@@ -66,7 +67,8 @@ function homebrew(): Lcp[] {
         getSuldanLcp(),
         getColdcoreColiseumLcp(),
         getCastorAndPolluxLcp(),
-        getStellarCodexLcp()
+        getStellarCodexLcp(),
+        getHhttLcp()
     ]
 }
 

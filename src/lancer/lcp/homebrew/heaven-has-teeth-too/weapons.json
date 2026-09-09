@@ -1,0 +1,426 @@
+[
+  {
+    "id": "hhtt_mw_cetbang",
+    "name": "Cetbang",
+    "source": "RIFF/RAFF",
+    "license": "Jiffy",
+    "license_id": "hhtt_mf_jiffy",
+    "license_level": 1,
+    "description": "aux cannon that encourages having multiples for critfishing with siege spec etc",
+    "mount": "Auxiliary",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_inaccurate"
+      }
+    ],
+    "effect": "This weapon gains +1 Accuracy for every previous attack made with a Cetbang this turn."
+  },
+  {
+    "id": "hhtt_mw_grapnel",
+    "name": "Grapnel",
+    "source": "RIFF/RAFF",
+    "license": "Jiffy",
+    "license_id": "hhtt_mf_jiffy",
+    "license_level": 1,
+    "description": "allows for movement in the middle of an action like a barrage that also activates things that trigger on attacks. plus, who doesnt love a grappling hook?",
+    "mount": "Auxiliary",
+    "type": "Cannon",
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "This weapon does not deal damage, and cannot be modified in any way. This weapon gains +1 Accuracy to attacks against terrain.",
+    "on_hit": "You are immediately pulled up to 4 spaces towards the target by the most direct path possible.",
+    "no_bonus": true,
+    "no_core_bonus": true,
+    "no_mods": true
+  },
+  {
+    "id": "hhtt_mw_death_knell",
+    "name": "Death Knell",
+    "source": "RIFF/RAFF",
+    "license": "Eigenzeit",
+    "license_id": "hhtt_mf_eigenzeit",
+    "license_level": 1,
+    "description": "listen, child:<br><br>\"No man is an <i>Iland</i>, intire of it selfe; every man is a peece of the <i>Continent</i>, a part of the <i>maine</i>; if a <i>Clod</i> bee washed away by the <i>Sea, Europe</i> is the lesse, as well as if a <i>Promontorie</i> were, as well as if a <i>Mannor</i> of thy <i>friends</i> or of <i>thine owne</i> were; any mans <i>death</i> diminishes <i>me</i>, because I am involved in <i>Mankinde</i>; And therefore never send to know for whom the <i>bell</i> tolls; It tolls for <i>thee</i>.\"<br><br>can you hear the bell?",
+    "mount": "Auxiliary",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "on_hit": "Allied characters do not take damage when hit by this weapon. Instead, they gain the Bolstered status. This counts as taking the Bolster action on them for talents, abilities, and systems that are triggered by its use."
+  },
+  {
+    "id": "hhtt_mw_timethresher",
+    "name": "Timethresher",
+    "source": "RIFF/RAFF",
+    "license": "Eigenzeit",
+    "license_id": "hhtt_mf_eigenzeit",
+    "license_level": 2,
+    "description": "a kind-of immobilize that also deals damage and sticks around so it can be used multiple times, technically, or can be used again to instead try to lock down a different enemy. also its a scythe because hell yeah",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "on_attack": "Create a cone 3 area of destabilized time oriented directly away from the target, beginning in their space. This area lasts until you attack with this weapon again or until the end of the scene. While this area exists, gain Reap, Rewind, Repeat.",
+    "actions": [
+      {
+        "name": "Reap, Rewind, Repeat",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "A hostile character leaves the cone 3 area.",
+        "detail": "The triggering character must succeed on a Systems save or immediately be teleported to a space of your choice within the cone 3 area and become Immobilized until the start of their next turn."
+      }
+    ]
+  },
+  {
+    "id": "hhtt_mw_pharyngeal_clamptrap",
+    "name": "Pharyngeal Clamptrap",
+    "source": "RIFF/RAFF",
+    "license": "Half-life",
+    "license_id": "hhtt_mf_half_life",
+    "license_level": 1,
+    "description": "more of a plain/simple weapon for the half_life. moderate threat, good damage, and synergizes well with the frame's lock on specialization and (technically) slow speed with the on crit effect. plus who wouldnt want to have a second, smaller jaw that extends from the back of their throat when they need it?",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Burn",
+        "val": 3
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "on_crit": "The target is Slowed until the end of their next turn."
+  },
+  {
+    "id": "hhtt_mw_subcritical_flail",
+    "name": "Subcritical Flail",
+    "source": "RIFF/RAFF",
+    "license": "Half-life",
+    "license_id": "hhtt_mf_half_life",
+    "license_level": 2,
+    "description": "the demon core ball and chain, the weapon idea i had that inspired the entire license. the name comes from the second demon core criticallity incident, which happened because of one man's hubris. some scientists refer to his intentionally dangerous showoff stunts as \"tickling the dragon's tail\", which is also fun",
+    "mount": "Heavy",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Burn",
+        "val": 5
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_inaccurate"
+      },
+      {
+        "id": "tg_reliable",
+        "val": 2
+      }
+    ],
+    "effect": "Reliable damage from this weapon is burn.",
+    "on_hit": "Gain +1 Accuracy to burn checks until the end of the current turn. This effect stacks per target hit, up to +3 Accuracy."
+  },
+  {
+    "id": "hhtt_mw_corrosive_edge",
+    "name": "Corrosive Edge",
+    "source": "RIFF/RAFF",
+    "license": "Half-life",
+    "license_id": "hhtt_mf_half_life",
+    "license_level": 2,
+    "sp": 1,
+    "description": "another method for applying lock on that doesnt rely on taking an action to not attack, as well as more obviously opening up the hunter talent line as an option because im a sucker for thematics. unique and sp cost since its a fairly good aux to begin with",
+    "mount": "Auxiliary",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": 1
+      },
+      {
+        "type": "Burn",
+        "val": 1
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "on_hit": "1/round, take 1d3 kinetic damage to apply Lock On to the target."
+  },
+  {
+    "id": "hhtt_mw_impulse_shiv",
+    "name": "Impulse Shiv",
+    "source": "RIFF/RAFF",
+    "license": "Singularity",
+    "license_id": "hhtt_mf_singularity",
+    "license_level": 1,
+    "description": "fluff (mention oberth's effect)",
+    "mount": "Auxiliary",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "on_hit": "You may move 1 space in any direction. This movement ignores engagement and does not provoke reactions."
+  },
+  {
+    "id": "hhtt_mw_paradox_gun",
+    "name": "Paradox Gun",
+    "source": "RIFF/RAFF",
+    "license": "Singularity",
+    "license_id": "hhtt_mf_singularity",
+    "license_level": 2,
+    "sp": 3,
+    "description": "what if there was one gun that was every gms main ranged weapon and could also use all weapon type talents. would that be sick or what",
+    "mount": "Main",
+    "type": "???",
+    "no_mods": true,
+    "no_core_bonus": true,
+    "effect": "You may begin each fight with this weapon in any of its possible forms and may take a possible form or shift between possible forms as a protocol. Once this weapon has taken a possible form, it remains in it until it takes a new possible form, this weapon is destroyed, or you are Stunned or Jammed. You can also drop a possible form as a free action.<br><br>This weapon counts as all ranged weapon types simultaneously (e.g., CQB, Rifle, etc.), but it can't take Mods or benefit from core bonuses, although it still benefits from talents as normal.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Change Form",
+        "activation": "Protocol",
+        "detail": "Change this weapon's form."
+      },
+      {
+        "name": "Drop Form",
+        "activation": "Free",
+        "detail": "Drop this weapon's form."
+      }
+    ],
+    "profiles": [
+      {
+        "name": "Impossible (no form)",
+        "range": [
+          {
+            "type": "Burst",
+            "val": 1
+          }
+        ],
+        "damage": [
+          {
+            "type": "Variable",
+            "val": "1d3"
+          }
+        ],
+        "on_attack": "All adjacent characters must pass a Hull save or become Immobilized until the end of their next turn."
+      },
+      {
+        "name": "Possible Cannon",
+        "range": [
+          {
+            "type": "Range",
+            "val": 15
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d6+1"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_arcing"
+          },
+          {
+            "id": "tg_inaccurate"
+          }
+        ]
+      },
+      {
+        "name": "Possible CQB",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Threat",
+            "val": 3
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          }
+        ]
+      },
+      {
+        "name": "Possible Launcher",
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          },
+          {
+            "type": "Blast",
+            "val": 2
+          }
+        ],
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d6+2"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_loading"
+          },
+          {
+            "id": "tg_ordnance"
+          }
+        ]
+      },
+      {
+        "name": "Possible Nexus",
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_smart"
+          }
+        ]
+      },
+      {
+        "name": "Possible Rifle",
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_reliable",
+            "val": 2
+          }
+        ]
+      }
+    ]
+  }
+]

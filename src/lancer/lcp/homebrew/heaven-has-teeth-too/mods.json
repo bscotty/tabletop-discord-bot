@@ -1,0 +1,73 @@
+[
+  {
+    "id": "hhtt_mm_spyglass_aim_assist",
+    "name": "\"Spyglass\" Aim Assist",
+    "source": "RIFF/RAFF",
+    "license": "Jiffy",
+    "license_id": "hhtt_mf_jiffy",
+    "license_level": 2,
+    "sp": 2,
+    "description": "this mech does One thing and it is hit things. if it doesnt hit things it feels bad. hence, make it easier to hit things.",
+    "effect": "The weapon this mod is applied to gains +1 Accuracy.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "allowed_types": [
+      "Cannon",
+      "Launcher",
+      "Nexus"
+    ],
+    "allowed_sizes": [
+      "Auxiliary",
+      "Main",
+      "Heavy"
+    ],
+    "added_tags": [
+      {
+        "id": "tg_accurate"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Collimate",
+        "activation": "Free",
+        "cost": 1,
+        "detail": "On a hit with the weapon this mod is applied to, you may expend a charge as a free action to apply Lock On to the target."
+      }
+    ]
+  },
+  {
+    "id": "hhtt_mm_harmonic_oscillator",
+    "name": "Harmonic Oscillator",
+    "source": "RIFF/RAFF",
+    "license": "Eigenzeit",
+    "license_id": "hhtt_mf_eigenzeit",
+    "license_level": 3,
+    "sp": 4,
+    "description": "wouldnt it be sooo silly if we could use quicken spell on lancer weapons? anyway this is my equivalent to saladin, another supporty mech, having access to a crazy dps weapon mod",
+    "effect": "The weapon this mod is applied to gains Loading. Gain Raise the Pendulum.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "added_tags": [
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Raise the Pendulum",
+        "activation": "Protocol",
+        "detail": "For the rest of the current turn, if the weapon this mod is applied to is a superheavy weapon, you may attack with it as a Skirmish. If it is any other size, you may attack with it as a free action."
+      }
+    ]
+  }
+]

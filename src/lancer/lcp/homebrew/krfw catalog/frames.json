@@ -9,7 +9,7 @@
       "Artillery",
       "Support"
     ],
-    "description": "Designed in conjunction with the Castellan, the Armiger provides militia support from the backlines, maintaining the ever-critical supply lines with both watchful eye and heavy weaponry. Its rugged construction makes it well suited to its typical role of militia pack mule, hauling large-scale ordnance and small printers to the battlefield before taking position in its favored spaces.<br><br>In spite of its own incredible weight capacity, many initial deployments of Armigers found the mechs used for cargo more than combat, to the point that they would be fielded with no weapons at all in order to make room for more equipment. Armiger pilots who came under attack would then inevitably defend themselves with their supplies, leading to the Armiger’s unique line of semi-improvised weaponry.",
+    "description": "Designed in conjunction with the Castellan, the Armiger provides militia support from the backlines, maintaining the ever-critical supply lines with both watchful eye and heavy weaponry. Its rugged construction makes it well suited to its typical role of militia pack mule, hauling large-scale ordnance and small printers to the battlefield before taking position in its favored spaces.<br><br>In spite of its own incredible weight capacity, many initial deployments of Armigers found the mechs used for cargo more than combat, to the point that they would be fielded with no weapons at all in order to make room for more equipment. Armiger pilots who came under attack would then inevitably defend themselves with their supplies, leading to the Armiger's unique line of semi-improvised weaponry.",
     "mounts": [
       "Flex",
       "Main",
@@ -47,9 +47,9 @@
     ],
     "core_system": {
       "name": "Gravitational Reduction Suite",
-      "description": "Developed using technology re-engineered from a mothballed and then promptly lost Iskander, the Gravitational Reduction Suite is a nexus of support systems attached to the Armiger’s external frame that allow it to carry several times its own weight in supplies. Easy access to these supplies enables unparalleled in-field flexibility, allowing the Armiger to carry an entire squad’s munitions and repair materials by itself. Foiling designer intentions, however, most Armiger pilots tend to allocate the entirety of their supply capacity to their own needs.",
+      "description": "Developed using technology re-engineered from a mothballed and then promptly lost Iskander, the Gravitational Reduction Suite is a nexus of support systems attached to the Armiger's external frame that allow it to carry several times its own weight in supplies. Easy access to these supplies enables unparalleled in-field flexibility, allowing the Armiger to carry an entire squad's munitions and repair materials by itself. Foiling designer intentions, however, most Armiger pilots tend to allocate the entirety of their supply capacity to their own needs.",
       "active_name": "Resupply",
-      "active_effect": "The Armiger may immediately replace all equipped weapons and systems with other weapons or systems it has access to. Limited systems and weapons retain their total number of charges left when switched out. Weapons or Systems which have been destroyed, have no charges left, or are Unloaded cannot be switched out. This action is <b>Efficient</b>, and refunds 1 Core Power at the end of any scene in which it’s used.",
+      "active_effect": "The Armiger may immediately replace all equipped weapons and systems with other weapons or systems it has access to. Limited systems and weapons retain their total number of charges left when switched out. Weapons or Systems which have been destroyed, have no charges left, or are Unloaded cannot be switched out. This action is <b>Efficient</b>, and refunds 1 Core Power at the end of any scene in which it's used.",
       "activation": "Protocol",
       "tags": [
         {
@@ -108,12 +108,12 @@
     ],
     "core_system": {
       "name": "\"Pale Flame\" Tripartite Reactor Array",
-      "description": "During initial prototyping, due to issues with power draw from the original reactor, the Burgess was fitted with an experimental rotating array of three coldcores instead. After they resumed testing, the team soon found the initial flaw that limited power consumption, and were left with the unusual, high-power array. Rather than retrofit the initial reactor back into place, they elected to experiment with diverting the array’s power flow to maximize the Burgess’s output.<br><br>Despite the initial successes of this system, a company policy of safety took precedence over the sheer power now available, and the array was adjusted to focus the power draw in a more controlled manner, prompting the current release of the mech to adjust stances and focuses as it cycles through its three reactors to maintain even power draw.",
+      "description": "During initial prototyping, due to issues with power draw from the original reactor, the Burgess was fitted with an experimental rotating array of three coldcores instead. After they resumed testing, the team soon found the initial flaw that limited power consumption, and were left with the unusual, high-power array. Rather than retrofit the initial reactor back into place, they elected to experiment with diverting the array's power flow to maximize the Burgess's output.<br><br>Despite the initial successes of this system, a company policy of safety took precedence over the sheer power now available, and the array was adjusted to focus the power draw in a more controlled manner, prompting the current release of the mech to adjust stances and focuses as it cycles through its three reactors to maintain even power draw.",
       "active_name": "Dreadfully Distinct Against the Dark",
-      "active_effect": "The Burgess does not take a turn next round. At the end of each ally’s turn, the Burgess may make one Quick Action. At the end of each hostile character’s turn, the Burgess may Overcharge, gaining heat and increasing the Overcharge die as normal. If the Burgess has less than three allies, it may ignore Overcharge costs until it has taken three Quick Actions.",
+      "active_effect": "The Burgess does not take a turn next round. At the end of each ally's turn, the Burgess may make one Quick Action. At the end of each hostile character's turn, the Burgess may Overcharge, gaining heat and increasing the Overcharge die as normal. If the Burgess has less than three allies, it may ignore Overcharge costs until it has taken three Quick Actions.",
       "activation": "Full",
       "passive_name": "A System of Cells, Interlinked",
-      "passive_effect": "The Burgess enters the battlefield in a Stance of its choice. Using a Stance’s benefit immediately cycles the Burgess to the next Stance in order. The Burgess may not use more than one Stance’s benefit in a round.<ul><li>Rising Sun Stance: The Burgess deals +1d6 Bonus Damage on a Ranged attack.</li><li>Clear Sky Stance: The Burgess deals +1d6 Bonus Damage on a Melee attack.</li><li>Falling Twilight Stance: The Burgess deals +2 Heat on a Tech attack.</li></ul>1/turn, the Burgess may choose to cycle to the next Stance as a Quick Action. It may not benefit from its new Stance this round.",
+      "passive_effect": "The Burgess enters the battlefield in a Stance of its choice. Using a Stance's benefit immediately cycles the Burgess to the next Stance in order. The Burgess may not use more than one Stance's benefit in a round.<ul><li>Rising Sun Stance: The Burgess deals +1d6 Bonus Damage on a Ranged attack.</li><li>Clear Sky Stance: The Burgess deals +1d6 Bonus Damage on a Melee attack.</li><li>Falling Twilight Stance: The Burgess deals +2 Heat on a Tech attack.</li></ul>1/turn, the Burgess may choose to cycle to the next Stance as a Quick Action. It may not benefit from its new Stance this round.",
       "passive_actions": [
         {
           "name": "Change Stance",
@@ -166,12 +166,12 @@
       },
       {
         "name": "Layered Defenses",
-        "description": "1/round, the Castellan’s pilot may reroll a save or check that targets them directly. If the Pilot goes Down and Out, they gain +2 to the d6 roll."
+        "description": "1/round, the Castellan's pilot may reroll a save or check that targets them directly. If the Pilot goes Down and Out, they gain +2 to the d6 roll."
       }
     ],
     "core_system": {
       "name": "\"Portcullis\" Active Defense System",
-      "description": "As frontier colonies may often find printstock in short supply, the Castellan’s design incorporates a secondary reactor to power its signature defense system. When spun up, the “Portcullis” makes use of local materials to generate and maintain further cover, augmenting the Castellan’s capabilities as a mobile bulwark.<br><br>Karimi, Roux, & Fabjani disavows any knowledge of blueprints on the Omninet to turn a decommissioned Castellan’s “Portcullis” Active Defense System into a soil aeration tool.",
+      "description": "As frontier colonies may often find printstock in short supply, the Castellan's design incorporates a secondary reactor to power its signature defense system. When spun up, the \"Portcullis\" makes use of local materials to generate and maintain further cover, augmenting the Castellan's capabilities as a mobile bulwark.<br><br>Karimi, Roux, & Fabjani disavows any knowledge of blueprints on the Omninet to turn a decommissioned Castellan's \"Portcullis\" Active Defense System into a soil aeration tool.",
       "active_name": "Clear the Room",
       "active_effect": "For the rest of the scene, the Castellan may draw line of sight from any adjacent objects that grant Hard Cover. 1/round, the Castellan may use an adjacent object that grants Hard Cover as the source of an attack, drawing Sensors, Range, and Threat from it.",
       "activation": "Protocol",
@@ -190,7 +190,7 @@
     "mechtype": [
       "Controller"
     ],
-    "description": "Intended as an expeditionary machine first, the Claviger is a vanguard frame from Karimi, Roux, & Fabjani that specializes in safeguarding its allies from threats without violent solutions. Chrono-ontological engines mounted to the machine allow it to keep a nearby “bubble” of spacetime selectively frozen, preventing allies from setting off hostile munitions, suffering the effects of weathering, or even briefly reverting terrain to a more passable state.<br><br>Claviger pilots require regular evaluations, and demonstrate an increased burnout rate in comparison to their fellows in other KRFW frames. Despite prevalent jokes in militia forces making use of Clavigers, pilots are not affected by the Chrono-ontological effects of their machine. Burnout is instead attributed to a statistically significant increase in nightmares, hallucinations, or other spectral visions of a shape described only as a “chitinous, leaping void.”<br><br>New Keyword:<br><b>Zone:</b> A Zone is an area with persistent effects, not attached to a character. Zones can be objectives, Terrain, Soft Cover, or placed by systems or environmental effects.",
+    "description": "Intended as an expeditionary machine first, the Claviger is a vanguard frame from Karimi, Roux, & Fabjani that specializes in safeguarding its allies from threats without violent solutions. Chrono-ontological engines mounted to the machine allow it to keep a nearby \"bubble\" of spacetime selectively frozen, preventing allies from setting off hostile munitions, suffering the effects of weathering, or even briefly reverting terrain to a more passable state.<br><br>Claviger pilots require regular evaluations, and demonstrate an increased burnout rate in comparison to their fellows in other KRFW frames. Despite prevalent jokes in militia forces making use of Clavigers, pilots are not affected by the Chrono-ontological effects of their machine. Burnout is instead attributed to a statistically significant increase in nightmares, hallucinations, or other spectral visions of a shape described only as a \"chitinous, leaping void.\"<br><br>New Keyword:<br><b>Zone:</b> A Zone is an area with persistent effects, not attached to a character. Zones can be objectives, Terrain, Soft Cover, or placed by systems or environmental effects.",
     "mounts": [
       "Main",
       "Heavy"
@@ -223,7 +223,7 @@
     ],
     "core_system": {
       "name": "Glimpse of the Dying Light",
-      "description": "“-and it looked at me. Do you know what it means to be seen by something like that? To exist in its view? You realize you are but one reflection in one facet of one of its eyes, but it sees you, and it knows you are there, outside of here, and it recognizes you. It is still recognizing me, here, now. You can not let it see you too.”",
+      "description": "\"-and it looked at me. Do you know what it means to be seen by something like that? To exist in its view? You realize you are but one reflection in one facet of one of its eyes, but it sees you, and it knows you are there, outside of here, and it recognizes you. It is still recognizing me, here, now. You can not let it see you too.\"",
       "active_name": "Rage",
       "active_effect": "Choose a Zone you are currently occupying. You become Immobilized and cannot benefit from Cover until the end of the scene, but no character outside the zone can enter it. Characters already in the zone can leave it but cannot re-enter it. You may end this effect as a Quick Action, or it deactivates immediately if you are removed from the Zone, which are the only ways to remove this Immobilized.",
       "activation": "Full"
@@ -241,7 +241,7 @@
       "Striker",
       "Controller"
     ],
-    "description": "Ever since the development of flight, aerial control has been a deciding factor in combat. While mechanized chassis are capable of powered flight, few are purpose-designed for it. Enter the KRFW Despot, a frame designed not only to make use of the skies, but punish other frames who dare to try and take control of the battlefield from above.<br><br>In spite of its commanding role on the field, the Despot is KRFW’s smallest frame by far, dwarfed by the majority of the catalog and even more compact than the Vassal. The majority of its bulk comes from the systems necessary to maintain flight, gimbal-mounted engines and directional controls on the mech’s limbs making it surprisingly maneuverable.",
+    "description": "Ever since the development of flight, aerial control has been a deciding factor in combat. While mechanized chassis are capable of powered flight, few are purpose-designed for it. Enter the KRFW Despot, a frame designed not only to make use of the skies, but punish other frames who dare to try and take control of the battlefield from above.<br><br>In spite of its commanding role on the field, the Despot is KRFW's smallest frame by far, dwarfed by the majority of the catalog and even more compact than the Vassal. The majority of its bulk comes from the systems necessary to maintain flight, gimbal-mounted engines and directional controls on the mech's limbs making it surprisingly maneuverable.",
     "mounts": [
       "Main",
       "Heavy"
@@ -278,7 +278,7 @@
     ],
     "core_system": {
       "name": "Retaliation Gauntlets",
-      "description": "A paired set of armored gauntlets for the Despot, the Retaliation Gauntlets allow a pilot to exert control over the normal force in a localized space. Extensive experimentation allows the Despot to further extend the gauntlets’ reach, trading increased power draw for what is hyperbolically marketed as “the ability to snap the laws of motion in half.”",
+      "description": "A paired set of armored gauntlets for the Despot, the Retaliation Gauntlets allow a pilot to exert control over the normal force in a localized space. Extensive experimentation allows the Despot to further extend the gauntlets' reach, trading increased power draw for what is hyperbolically marketed as \"the ability to snap the laws of motion in half.\"",
       "active_name": "Iron Fist",
       "active_effect": "For the rest of the scene, the Despot can inflict Knockback in any direction. Whenever the Despot inflicts Knockback on any character, including itself, it can force the target one extra space.",
       "activation": "Protocol",
@@ -298,7 +298,7 @@
       "Striker",
       "Defender"
     ],
-    "description": "The Iry-pat is the pride of KRFW’s “Room and Board” line of products, marketed as an alternative to the Tortuga for ships in need of a dedicated defense force. The frame is shockingly small, leaving the pilot mostly exposed and appearing more akin to a primitive exoskeleton than a traditional mech. Despite its miniscule size, though, the machine receives the marketing and size allotments of most other mechs, albeit with comparable power draw as well.<br><br>Despite marketing, however, the Iry-pat is not a KRFW original design, even if the company sells the plans and rights to it as though it was. The original Iry-pat was, as many of the company’s designs, found within a lost storage container, this one retrieved from a container that, against all odds, could be carbon-dated to a time before the Fall. Though the specific workings of the frame continue to elude KRFW’s engineers, they know it well enough to be able to reproduce its functions, both the mundane and the… concerningly esoteric.",
+    "description": "The Iry-pat is the pride of KRFW's \"Room and Board\" line of products, marketed as an alternative to the Tortuga for ships in need of a dedicated defense force. The frame is shockingly small, leaving the pilot mostly exposed and appearing more akin to a primitive exoskeleton than a traditional mech. Despite its miniscule size, though, the machine receives the marketing and size allotments of most other mechs, albeit with comparable power draw as well.<br><br>Despite marketing, however, the Iry-pat is not a KRFW original design, even if the company sells the plans and rights to it as though it was. The original Iry-pat was, as many of the company's designs, found within a lost storage container, this one retrieved from a container that, against all odds, could be carbon-dated to a time before the Fall. Though the specific workings of the frame continue to elude KRFW's engineers, they know it well enough to be able to reproduce its functions, both the mundane and the… concerningly esoteric.",
     "mounts": [
       "Main",
       "Main",
@@ -336,7 +336,7 @@
     ],
     "core_system": {
       "name": "Eternal Glory",
-      "description": "Iry-pat pilots are uniquely vulnerable among those who use KRFW’s catalogue, being almost completely exposed besides their hardsuits. Despite that, certain “black box” components in the frame allow it to resist incredible amounts of gunfire, and stand on equal footing with mechs twice its size. What’s more, the same systems that allow the Iry-pat to keep its pilot safe seem to function on a fundamentally altered chronology, allowing the mech to transform the very land itself to bring back structure lost to time.",
+      "description": "Iry-pat pilots are uniquely vulnerable among those who use KRFW's catalogue, being almost completely exposed besides their hardsuits. Despite that, certain \"black box\" components in the frame allow it to resist incredible amounts of gunfire, and stand on equal footing with mechs twice its size. What's more, the same systems that allow the Iry-pat to keep its pilot safe seem to function on a fundamentally altered chronology, allowing the mech to transform the very land itself to bring back structure lost to time.",
       "active_name": "Boundless and Bare",
       "active_effect": "",
       "activation": "Reaction",
@@ -401,7 +401,7 @@
       "name": "Misery's End 32-Pounders",
       "description": "In lieu of the auxiliary hardpoints many other mechs have, the Marquess integrates a bristling array of comparatively weak weapons that soften targets up for allied attacks. This array typically fires in a directed barrage, but can also strike a devastating swath of the battlefield with sufficient power.",
       "active_name": "Broadside",
-      "active_effect": "Misery’s End 32-Pounders becomes Cone 7 for the rest of the Scene.",
+      "active_effect": "Misery's End 32-Pounders becomes Cone 7 for the rest of the Scene.",
       "activation": "Protocol",
       "integrated": [
         "krfwmw_marquess_integrated"
@@ -420,7 +420,7 @@
       "Artillery",
       "Controller"
     ],
-    "description": "There are times when a militia is not enough to defend a settlement, no matter how well equipped. In such situations, it becomes necessary for the settlement to defend itself. Enter the KRFW Primor, a behemoth of a frame that serves double duty as drone command and defensive emplacement. Primors can be purchased in bulk to control frontier drone networks, making use of their extensive internal supplies to keep the workforce at full capacity as they tend to fields and security alike. When the settlement comes under attack, however, the mechs take to the skies to rain Hell down on those who threaten their homes.<br><br>Though Primors are sold in bulk like many other KRFW frames, the company maintains a contract for their sale with provisions for breach so restrictive and ironclad they are often only reserved for their one-off frames, such as the Vidame or the Reeve. Their terms are simple:<ul><li>Do not open the reactor cladding.</li><liNever give anyone your real name while in the pilot’s seat.</li><li>When you hear the knock at the door, pray.</li></ul>",
+    "description": "There are times when a militia is not enough to defend a settlement, no matter how well equipped. In such situations, it becomes necessary for the settlement to defend itself. Enter the KRFW Primor, a behemoth of a frame that serves double duty as drone command and defensive emplacement. Primors can be purchased in bulk to control frontier drone networks, making use of their extensive internal supplies to keep the workforce at full capacity as they tend to fields and security alike. When the settlement comes under attack, however, the mechs take to the skies to rain Hell down on those who threaten their homes.<br><br>Though Primors are sold in bulk like many other KRFW frames, the company maintains a contract for their sale with provisions for breach so restrictive and ironclad they are often only reserved for their one-off frames, such as the Vidame or the Reeve. Their terms are simple:<ul><li>Do not open the reactor cladding.</li><liNever give anyone your real name while in the pilot's seat.</li><li>When you hear the knock at the door, pray.</li></ul>",
     "mounts": [
       "Main",
       "Flex"
@@ -457,7 +457,7 @@
     ],
     "core_system": {
       "name": "Leeds' Black Army",
-      "description": "The primary selling point of the Primor is its advanced drone mesh network, enabling it to control many drones at once from a fairly stationary position. These drones are easily converted to offensive duties in the field, though, traditionally painted a solid black when drafted into service. These “Black Armies” are based on a design from an early test pilot who came under fire during a dry run of a prototype Primor. With no ammunition loaded, one Dabenielle Leeds rerouted the systems of her Primor by hand to transform the drone deployers from a tool of efficient production to high-velocity launch tubes, to devastating effect.",
+      "description": "The primary selling point of the Primor is its advanced drone mesh network, enabling it to control many drones at once from a fairly stationary position. These drones are easily converted to offensive duties in the field, though, traditionally painted a solid black when drafted into service. These \"Black Armies\" are based on a design from an early test pilot who came under fire during a dry run of a prototype Primor. With no ammunition loaded, one Dabenielle Leeds rerouted the systems of her Primor by hand to transform the drone deployers from a tool of efficient production to high-velocity launch tubes, to devastating effect.",
       "active_name": "Throw Wide the Gates",
       "active_effect": "Until the end of the scene, your Hussar Drone Tubes may fire on up to two targets within Range 50 when fired, the limit on Hussar Drones active at once becomes 6, and Hussar Drones may fall up to 10 spaces at the end of their movement for free.",
       "activation": "Protocol",
@@ -477,7 +477,7 @@
     "mechtype": [
       "Controller"
     ],
-    "description": "In a departure from their usual model, Karimi, Roux, & Fabjani Wholesalers does not offer the Reeve at bulk rates. This mobile logistics hub is instead only available in individual lots, as its onboard e-war suites often identify other Reeves as hostile actors due to the sheer degree of control each one attempts to exert on the battlefield. Due to this, Reeve pilots tend to wind up with reputations as being hot-headed, arrogant, or otherwise inclined to seize control.<br><br>Another departure from the norm comes in the official documentation of the Reeve’s design, as Karimi, Roux, & Fabjani include very little history of the frame’s development in their documentation. This has led to no small amount of speculation as to the reasoning for the decision, which is only exacerbated by small oddities in the frame’s codebase, which has given rise to a small, dedicated community of individuals poring through every update of the frame’s license for the next piece of the supposed puzzle.",
+    "description": "In a departure from their usual model, Karimi, Roux, & Fabjani Wholesalers does not offer the Reeve at bulk rates. This mobile logistics hub is instead only available in individual lots, as its onboard e-war suites often identify other Reeves as hostile actors due to the sheer degree of control each one attempts to exert on the battlefield. Due to this, Reeve pilots tend to wind up with reputations as being hot-headed, arrogant, or otherwise inclined to seize control.<br><br>Another departure from the norm comes in the official documentation of the Reeve's design, as Karimi, Roux, & Fabjani include very little history of the frame's development in their documentation. This has led to no small amount of speculation as to the reasoning for the decision, which is only exacerbated by small oddities in the frame's codebase, which has given rise to a small, dedicated community of individuals poring through every update of the frame's license for the next piece of the supposed puzzle.",
     "mounts": [
       "Flex"
     ],
@@ -513,7 +513,7 @@
     ],
     "core_system": {
       "name": "Judgment Engines",
-      "description": "In an attempt to corral the hyperactive IFF systems of the Reeve, the frame includes a collection of specially trained machine algorithms, designed to review targets and determine proper response. However, when not utilized for prolonged periods of time, the algorithms can become difficult to control, so the frame also includes provisions for unleashing its full power to override a hostile frame’s systems and force them to reboot prematurely.",
+      "description": "In an attempt to corral the hyperactive IFF systems of the Reeve, the frame includes a collection of specially trained machine algorithms, designed to review targets and determine proper response. However, when not utilized for prolonged periods of time, the algorithms can become difficult to control, so the frame also includes provisions for unleashing its full power to override a hostile frame's systems and force them to reboot prematurely.",
       "active_name": "Jury Trial",
       "active_effect": "For the rest of the scene, gain the <b>Execute</b> Reaction.",
       "activation": "Protocol",
@@ -524,6 +524,68 @@
           "trigger": "A character begins their turn.",
           "detail": "That character must pass a Systems save or their turn immediately ends. If the target has any Burn at the end of their turn, they automatically fail to clear it. On a successful saving throw, that character must reroll all attacks, checks, and saves made on their turn, taking the lower result. This reaction may only be used on any given character 1/scene."
         }
+      ]
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "y_pos": 0
+  },
+  {
+    "id": "krfwf_stolnik",
+    "license_id": "krfwf_stolnik",
+    "license_level": 2,
+    "source": "KRFW",
+    "name": "Stolnik",
+    "mechtype": [
+      "Striker"
+    ],
+    "description": "Manna is scarce when it comes to new colonies. Everything needs it, and there's never enough to go around, because every colony has expenses that weren't or couldn't have been planned for. Only complicating matters further are the questions of raiders, pirates, and megafauna, each often necessitating a mechanized security force that many colonies can often ill afford, even when they do have the budget for a militia.<br><br>Enter the Stolnik. A supremely resource-light mechanized frame, designed for colonies with a lack of both manpower and material, the Stolnik is designed to be simple to print and pilot both. Similarly, its standard armaments are meant to be easy for an inexperienced pilot to use as well, which is a boon given the secondary purpose of the frame.<br><br>While primarily designed for security, the Stolnik is also designed so that it can be piloted as a form of community service for criminal elements among the colony, to reduce the drain on resources they can become. Its systems are linked to an on-board \"Warden\" NHP by default in order to prevent the pilot from turning them on the colony, and its external hatches can be altered to allow peacekeepers to seal convicts inside for the duration of their sentence.<br><br>Union ethical review of the Stolnik is pending.",
+    "mounts": [
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 12,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 2,
+      "sensor_range": 3,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 5,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "What's Mine is Mine",
+        "description": "The Stolnik gains +1 Accuracy to attacks against, saves caused by, or checks opposed by any character who has caused it to lose Structure or Stress this scene."
+      },
+      {
+        "name": "Shadow-Nursed",
+        "description": "When the Stolnik has Soft Cover against a hostile character from a zone of soft cover, they instead treat the Stolnik as Invisible. When the Stolnik has Hard Cover against a hostile character from an object or Terrain, they instead treat the Stolnik as Hidden."
+      },
+      {
+        "name": "Ravenous",
+        "description": "Whenever the Stolnik destroys a Drone or deployable, it may gain overshield equal to its Grit."
+      }
+    ],
+    "core_system": {
+      "name": "TAILYPO-Class NHP",
+      "description": "Remember! TAILYPO is not shackled. TAILYPO should not be shackled. If you attempt to place shackles on TAILYPO, your warranty is considered null and void, and KRFW cannot be held responsible for the consequences.<br><br>Remember! TAILYPO's job is to keep your mech running, however they see fit. If TAILYPO tells you something, KRFW advises you to listen to them, and implement their suggestion if feasible. If you cannot, KRFW recommends writing down your reasoning, in case something happens.<br><br>Remember! TAILYPO is your coworker, not your friend. Do not let yourself believe TAILYPO to be like you. They know what you're like. They'd rather be anything else.<br><br>Remember! Tailypo is hungry.<br>-Exerpt from a salvaged Stolnik manual.",
+      "active_name": "Hunger",
+      "active_effect": "You may attack with the <b>Tar-Black Jaw</b> this scene. You may not activate this Protocol if you have not taken damage this scene. This action is <b>Efficient</b>, and refunds 1 Core Power at the end of any scene in which it's used.",
+      "activation": "Protocol",
+      "tags": [
+        {
+          "id": "tg_efficient"
+        }
+      ],
+      "integrated": [
+        "krfwmw_stolnik_integrated"
       ]
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
@@ -562,7 +624,7 @@
     "traits": [
       {
         "name": "Well-Trod",
-        "description": "The Vassal has Resistance to all damage from Allied characters. Allied characters cannot ignore the Vassal’s Armor or Resistance in any way."
+        "description": "The Vassal has Resistance to all damage from Allied characters. Allied characters cannot ignore the Vassal's Armor or Resistance in any way."
       },
       {
         "name": "Footstool",
@@ -594,7 +656,7 @@
     "mechtype": [
       "Striker"
     ],
-    "description": "The Vidame is one of Karimi, Roux, & Fabjani’s less common licenses, a rare “black-catalog” offering from the company, exclusively made available to pilots with some degree of notoriety or infamy. Like many of KRFW’s frames, the Vidame is designed using blueprints or technology developed by other corporations, in this case based off of the IPS-N Störtebeker. However, unlike the majority of KRFW’s licenses, the Vidame was never intended for dispersal among colonial militias and peacekeeping forces; the frame was, in fact, a personal project of Founding Partner Hanan Karimi, intended for her alone.<br><br>Once more, the base frame would have its core systems ripped out and replaced, the Störtebeker’s TRUESILVER nanites tossed aside in favor of dedicated targeting software and enhanced neural bridges, to further cut down on response delays between pilot thoughts and frame actions. While computational systems and reactor capability suffered in the process, the resultant frame was more than quick and nimble enough for Karimi’s desires.<br><br>According to publicly available logs, the prototype frame was deployed exactly once, though the details of the mission have been stricken from the record. Attempts to reference what fragments have been unencrypted have turned up only dead ends; names of planets that do not exist, star charts that do not match the skies. When interviewed, Karimi denies the test run’s existence at all, seemingly convinced no test run ever happened at all. All the same, the company continues to exclusively offer the frame almost exclusively to those it can plausibly deny any personal connection to…",
+    "description": "The Vidame is one of Karimi, Roux, & Fabjani's less common licenses, a rare \"black-catalog\" offering from the company, exclusively made available to pilots with some degree of notoriety or infamy. Like many of KRFW's frames, the Vidame is designed using blueprints or technology developed by other corporations, in this case based off of the IPS-N Störtebeker. However, unlike the majority of KRFW's licenses, the Vidame was never intended for dispersal among colonial militias and peacekeeping forces; the frame was, in fact, a personal project of Founding Partner Hanan Karimi, intended for her alone.<br><br>Once more, the base frame would have its core systems ripped out and replaced, the Störtebeker's TRUESILVER nanites tossed aside in favor of dedicated targeting software and enhanced neural bridges, to further cut down on response delays between pilot thoughts and frame actions. While computational systems and reactor capability suffered in the process, the resultant frame was more than quick and nimble enough for Karimi's desires.<br><br>According to publicly available logs, the prototype frame was deployed exactly once, though the details of the mission have been stricken from the record. Attempts to reference what fragments have been unencrypted have turned up only dead ends; names of planets that do not exist, star charts that do not match the skies. When interviewed, Karimi denies the test run's existence at all, seemingly convinced no test run ever happened at all. All the same, the company continues to exclusively offer the frame almost exclusively to those it can plausibly deny any personal connection to…",
     "mounts": [
       "Flex",
       "Flex",
@@ -619,7 +681,7 @@
     "traits": [
       {
         "name": "Tumbleweed",
-        "description": "The Vidame’s movement ignores Engagement, and it can freely move through the spaces of other characters (but may not stop there.) The first time the Vidame passes through another character’s space each round, it reloads all weapons with the Loading tag on one mount."
+        "description": "The Vidame's movement ignores Engagement, and it can freely move through the spaces of other characters (but may not stop there.) The first time the Vidame passes through another character's space each round, it reloads all weapons with the Loading tag on one mount."
       },
       {
         "name": "Deadeye",
@@ -632,9 +694,9 @@
     ],
     "core_system": {
       "name": "Járnglófar Compensator Gauntlets",
-      "description": "Even the steadiest of hands can prove themselves fallible in the moment. For frames that specialize in weapons requiring frequent reloading, however, the risks of missing thanks to an errant twitch can prove excessive; the Vidame is no exception to this. In order to maintain the frame’s reaction speeds, however, Karimi required an alternative solution to stabilized, delayed inputs. Enter the Járnglófar Compensator Gauntlets, specialized targeting systems that can keep an errant shot on track and, in a pinch, turn a successful hit into a ricocheting blow worthy of legend.",
+      "description": "Even the steadiest of hands can prove themselves fallible in the moment. For frames that specialize in weapons requiring frequent reloading, however, the risks of missing thanks to an errant twitch can prove excessive; the Vidame is no exception to this. In order to maintain the frame's reaction speeds, however, Karimi required an alternative solution to stabilized, delayed inputs. Enter the Járnglófar Compensator Gauntlets, specialized targeting systems that can keep an errant shot on track and, in a pinch, turn a successful hit into a ricocheting blow worthy of legend.",
       "active_name": "Showdown",
-      "active_effect": "Trickshot deals full damage for this turn, and may be used on every hit with a Loading weapon. This core power is <b>Efficient</b>, and refunds 1 Core Power at the end of any scene in which it’s used.",
+      "active_effect": "Trickshot deals full damage for this turn, and may be used on every hit with a Loading weapon. This core power is <b>Efficient</b>, and refunds 1 Core Power at the end of any scene in which it's used.",
       "activation": "Protocol",
       "tags": [
         {
@@ -657,7 +719,7 @@
     "mechtype": [
       "Striker"
     ],
-    "description": "In spite of the best efforts of even the most altruistic endeavors, money remains a constant necessity of any business, profit an ever-looming specter nipping at its heels. So comes the occasional need to rebrand and reuse goods in new ways, such as the bespoke armaments created for the Vidame. With its tightly controlled supply, the frame’s catalog of equipment rarely made KRFW enough money to warrant keeping it around.<br><br>Enter the Chaplain, an attempt at creating a marketable alternative to the Vidame. In the effort to broaden appeal, the mech has had its speed dialed down and some of its heavier armaments removed. Instead, it boasts a larger reactor and inbuilt ammo processing systems to ensure it uses any equipped gear with the maximum possible efficiency.<br><br>In spite of the alterations made to the frame, the Chaplain faced its own struggles finding a niche. However, it did its job, and pushed the catalog of accompanying offerings far enough into profitability to make them remain part of KRFW’s offerings. Pilots of the Chaplain have recently come forward with unsubstantiated complaints, though, claiming that they have begun to lose sleep as they become unable to shut out the light of the distant stars except within the mech’s cockpit.",
+    "description": "In spite of the best efforts of even the most altruistic endeavors, money remains a constant necessity of any business, profit an ever-looming specter nipping at its heels. So comes the occasional need to rebrand and reuse goods in new ways, such as the bespoke armaments created for the Vidame. With its tightly controlled supply, the frame's catalog of equipment rarely made KRFW enough money to warrant keeping it around.<br><br>Enter the Chaplain, an attempt at creating a marketable alternative to the Vidame. In the effort to broaden appeal, the mech has had its speed dialed down and some of its heavier armaments removed. Instead, it boasts a larger reactor and inbuilt ammo processing systems to ensure it uses any equipped gear with the maximum possible efficiency.<br><br>In spite of the alterations made to the frame, the Chaplain faced its own struggles finding a niche. However, it did its job, and pushed the catalog of accompanying offerings far enough into profitability to make them remain part of KRFW's offerings. Pilots of the Chaplain have recently come forward with unsubstantiated complaints, though, claiming that they have begun to lose sleep as they become unable to shut out the light of the distant stars except within the mech's cockpit.",
     "mounts": [
       "Flex",
       "Flex"
@@ -694,7 +756,7 @@
     ],
     "core_system": {
       "name": "Ever-Tolling Bell",
-      "description": "“It is all that holds it at bay, the ringing of a funeral. It does not matter what they believe, it does not matter if they have been ever in their life or if they are ignorant of it entirely. When they see the heart of the galactic forge, they hear it, and all we can do is maintain the toll for them. We do not know why it works, or if anything can be done for them, but we will do what we can until we have the answers.”<br><br>-Cornielle de Roux, Founding Partner",
+      "description": "\"It is all that holds it at bay, the ringing of a funeral. It does not matter what they believe, it does not matter if they have been ever in their life or if they are ignorant of it entirely. When they see the heart of the galactic forge, they hear it, and all we can do is maintain the toll for them. We do not know why it works, or if anything can be done for them, but we will do what we can until we have the answers.\"<br><br>-Cornielle de Roux, Founding Partner",
       "active_name": "Empty the Coffers",
       "active_effect": "Make an attack with a loaded Loading weapon. If it hits, you may make another attack against the same target with another loaded Loading weapon. You may continue making attacks in this manner until you miss or the target is destroyed. Every attack made in this manner deals +1 bonus damage for each prior attack made with this action.",
       "activation": "Full",
@@ -715,7 +777,7 @@
       "Defender",
       "Controller"
     ],
-    "description": "The Starosta is a budget frame among a company known for its budget frames. Unlike its older sibling, the Primor, the Starosta is designed first and foremost to control terraforming drones for newer colonies, as opposed to established colonies’ existing networks. The Starosta is smaller, lighter, and nimbler, allowing it to seed forests and settle unsteady terrain as it needs to. This construction prevents the Starosta from carrying the onboard drone supplies the Primor does, instead carrying a paired terraforming drone to work alongside the frame when working remotely.<br><br>To ensure the fine control this drone needs, the Starosta includes a secondary cockpit for a copilot, lending the mech its distinctive appearance. The first pilots to retrofit Starostas for combat were reported to have turned the copilot’s cockpit into a decoy, giving them increased survival odds against targeted attacks meant to eliminate the pilot quickly. Pilots also tend to give titles to their cockpits, often aspirational attributes or virtues, typically in opposed pairs. Those who get attached to their mechs will often choose to wholly reprint a Starosta whose decoy cockpit saved them from a lethal blow, as a sign of respect for their machine.",
+    "description": "The Starosta is a budget frame among a company known for its budget frames. Unlike its older sibling, the Primor, the Starosta is designed first and foremost to control terraforming drones for newer colonies, as opposed to established colonies' existing networks. The Starosta is smaller, lighter, and nimbler, allowing it to seed forests and settle unsteady terrain as it needs to. This construction prevents the Starosta from carrying the onboard drone supplies the Primor does, instead carrying a paired terraforming drone to work alongside the frame when working remotely.<br><br>To ensure the fine control this drone needs, the Starosta includes a secondary cockpit for a copilot, lending the mech its distinctive appearance. The first pilots to retrofit Starostas for combat were reported to have turned the copilot's cockpit into a decoy, giving them increased survival odds against targeted attacks meant to eliminate the pilot quickly. Pilots also tend to give titles to their cockpits, often aspirational attributes or virtues, typically in opposed pairs. Those who get attached to their mechs will often choose to wholly reprint a Starosta whose decoy cockpit saved them from a lethal blow, as a sign of respect for their machine.",
     "mounts": [
       "Flex",
       "Flex"
@@ -739,11 +801,11 @@
     "traits": [
       {
         "name": "Two-Headed Eagle",
-        "description": "The Starosta can fly when it moves or Boosts. Whenever the Starosta flies, it may make one Drone adjacent to it mirror its movement exactly, even if that Drone cannot normally fly. If a Drone that cannot fly is brought along in this manner, it falls when the Starosta falls, or if the Starosta does not bring it along again with this trait. This does not count against the Starosta’s total carrying capacity when flying."
+        "description": "The Starosta can fly when it moves or Boosts. Whenever the Starosta flies, it may make one Drone adjacent to it mirror its movement exactly, even if that Drone cannot normally fly. If a Drone that cannot fly is brought along in this manner, it falls when the Starosta falls, or if the Starosta does not bring it along again with this trait. This does not count against the Starosta's total carrying capacity when flying."
       },
       {
         "name": "Renewable Resources",
-        "description": "The Starosta’s Drones are immune to damaging environmental and proximity-based effects. If the Starosta ends a scene with all its Drone systems broken or out of Limited charges, it may replenish one charge or repair one Drone for free during its next rest."
+        "description": "The Starosta's Drones are immune to damaging environmental and proximity-based effects. If the Starosta ends a scene with all its Drone systems broken or out of Limited charges, it may replenish one charge or repair one Drone for free during its next rest."
       },
       {
         "name": "Naturalist",
@@ -752,9 +814,9 @@
     ],
     "core_system": {
       "name": "Grandfather of the Forest",
-      "description": "The Starosta’s iconic terraforming drone is the Leshy drone, often controlled by a secondary pilot to ensure optimal dispersion of the seeds and equipment aboard it as the mech’s main pilot focuses on flying and defending against the sometimes inhospitable worlds the mech works on. In combat situations, pilots will often override Leshy drones to focus on creating beneficial terrain as quickly as possible, leading to the iconic stratocolumnar forests left behind where a Starosta has seen combat. Perhaps even more iconic, though, are the swathes of unintended devastation left behind by the mech’s last ditch defense mechanism, transforming the megaflora into a ruinous path of destruction.",
+      "description": "The Starosta's iconic terraforming drone is the Leshy drone, often controlled by a secondary pilot to ensure optimal dispersion of the seeds and equipment aboard it as the mech's main pilot focuses on flying and defending against the sometimes inhospitable worlds the mech works on. In combat situations, pilots will often override Leshy drones to focus on creating beneficial terrain as quickly as possible, leading to the iconic stratocolumnar forests left behind where a Starosta has seen combat. Perhaps even more iconic, though, are the swathes of unintended devastation left behind by the mech's last ditch defense mechanism, transforming the megaflora into a ruinous path of destruction.",
       "active_name": "Inscribe the Heavens",
-      "active_effect": "Destroy your Leshy Drone. Create a Line 5 object that is 3 spaces tall adjacent to the drone’s wreck. This Object grants Hard Cover and blocks Line of Sight. Any Character, Object or Terrain in the space the Object occupies with 3 or less Structure remaining is immediately destroyed. Anything with 4 or more Structure remaining is pushed to the nearest free space. At the start of each turn, create a new object directly adjacent to the last one created, continuing in the same direction, with the same effect. Stop when an object passes the edge of the map.<br>The Starosta may not move or take any other actions on the turn it uses this Core Power. If the Starosta is Destroyed or Melts Down, it may use this Core Power as no action immediately before becoming nonfunctional, as long as it has a Leshy Drone deployed.",
+      "active_effect": "Destroy your Leshy Drone. Create a Line 5 object that is 3 spaces tall adjacent to the drone's wreck. This Object grants Hard Cover and blocks Line of Sight. Any Character, Object or Terrain in the space the Object occupies with 3 or less Structure remaining is immediately destroyed. Anything with 4 or more Structure remaining is pushed to the nearest free space. At the start of each turn, create a new object directly adjacent to the last one created, continuing in the same direction, with the same effect. Stop when an object passes the edge of the map.<br>The Starosta may not move or take any other actions on the turn it uses this Core Power. If the Starosta is Destroyed or Melts Down, it may use this Core Power as no action immediately before becoming nonfunctional, as long as it has a Leshy Drone deployed.",
       "activation": "Full",
       "deployables": [
         {
@@ -783,7 +845,7 @@
       "Striker",
       "Controller"
     ],
-    "description": "The only Jarl ever deliberately produced was an early attempt at modifying the Iry-pat’s design to protect the pilot better and bring the machine up to its functional size. Instead, the test run was scrubbed from footage and memory alike, and the machine ordered to be scrapped.<br><br>It never made it to the yard where it would be broken down and rendered into printstock, though. Somewhere along the line, the mech was stolen, and it disappeared into the void between the stars. It would not resurface for nearly twenty years, but when it did, it would force everyone to pay attention.<br><br>The original Jarl’s first sighting since its disappearance was on a small station out in the rim called the Cosmic Stopgap, which had been taken over by pirates years ago. A small force of lancers attacked the station in search of technology deep in its heart, but found more than they bargained for inside. The leader of the pirates had acquired the Jarl, and used it to slaughter his own crew. The assault force found themselves contending with the corpse forces, each now piloting their own bastardized Jarl, each mech moving as though its pilot yet lived, despite the rotting carcass inside.<br><br>Though the assault force proved ultimately victorious, one of their number was seemingly killed in the assault. And yet, when they returned home, they found their fallen comrade waiting, a new Jarl printing in preparation for the next deployment.<br><br>In the years since, Karimi, Roux, & Fabjani Wholesalers has found itself leading an “aggressive product recall campaign” as they seek to contain the spread of Jarls across the galaxy, knowing every loss their contractors experience can blossom into a new flashpoint, a new hotspot for the outbreak to grow from once more.",
+    "description": "The only Jarl ever deliberately produced was an early attempt at modifying the Iry-pat's design to protect the pilot better and bring the machine up to its functional size. Instead, the test run was scrubbed from footage and memory alike, and the machine ordered to be scrapped.<br><br>It never made it to the yard where it would be broken down and rendered into printstock, though. Somewhere along the line, the mech was stolen, and it disappeared into the void between the stars. It would not resurface for nearly twenty years, but when it did, it would force everyone to pay attention.<br><br>The original Jarl's first sighting since its disappearance was on a small station out in the rim called the Cosmic Stopgap, which had been taken over by pirates years ago. A small force of lancers attacked the station in search of technology deep in its heart, but found more than they bargained for inside. The leader of the pirates had acquired the Jarl, and used it to slaughter his own crew. The assault force found themselves contending with the corpse forces, each now piloting their own bastardized Jarl, each mech moving as though its pilot yet lived, despite the rotting carcass inside.<br><br>Though the assault force proved ultimately victorious, one of their number was seemingly killed in the assault. And yet, when they returned home, they found their fallen comrade waiting, a new Jarl printing in preparation for the next deployment.<br><br>In the years since, Karimi, Roux, & Fabjani Wholesalers has found itself leading an \"aggressive product recall campaign\" as they seek to contain the spread of Jarls across the galaxy, knowing every loss their contractors experience can blossom into a new flashpoint, a new hotspot for the outbreak to grow from once more.",
     "mounts": [
       "Aux/Aux",
       "Heavy",
@@ -808,7 +870,7 @@
     "traits": [
       {
         "name": "Permafrost",
-        "description": "Whenever the Jarl destroys a character, all characters within Burst 2 become Immobilized until the end of the Jarl’s next turn. Characters Immobilized this way have Resistance to Heat."
+        "description": "Whenever the Jarl destroys a character, all characters within Burst 2 become Immobilized until the end of the Jarl's next turn. Characters Immobilized this way have Resistance to Heat."
       },
       {
         "name": "Draugr",

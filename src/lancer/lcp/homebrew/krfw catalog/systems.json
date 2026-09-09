@@ -13,7 +13,7 @@
     "license": "Armiger",
     "license_level": 1,
     "effect": "You gain the Wind at Your Back reaction.",
-    "description": "Long marches wear on even the most tenacious soldiers. Sometimes what they need is something to spur them onwards, be it fear, duty, loyalty, or love. Or, in the case of the Marathon Relay Array, a brief electrical pulse directed through another mech’s sensors to jolt their mech’s complaining servos into compliance.",
+    "description": "Long marches wear on even the most tenacious soldiers. Sometimes what they need is something to spur them onwards, be it fear, duty, loyalty, or love. Or, in the case of the Marathon Relay Array, a brief electrical pulse directed through another mech's sensors to jolt their mech's complaining servos into compliance.",
     "actions": [
       {
         "name": "Wind at Your Back",
@@ -79,7 +79,7 @@
     "license": "Armiger",
     "license_level": 3,
     "effect": "Your mech gains the AI tag and Disastrous Omen.",
-    "description": "MOTHMAN Prime is a solitary, brooding individual, who came into the employ of Karimi, Roux, & Fabjani after a deal with Landmark Colonial, taking some of their collected assets from a frontier colony off their hands at shockingly generous prices. Among the contents received was a Swallowtail, equipped with a formerly ATHENA-Class NHP trapped in cascade.<br>Once freed from cascade, the NHP displayed thoroughly warped versions of its typical capabilities, prompting a new classification and name. MOTHMAN Prime remains reclusive, and most clones seem to share a similarly isolated attitude. Karimi, Roux, & Fabjani Wholesalers recommend against installing MOTHMAN-Class NHPs alongside SISYPHUS or ATHENA clones, due to a noted increase in necessary cycling for all NHPs involved.<br>A typical MOTHMAN-Class NHP’s cascade will be characterized by <b>Prophecy</b>, <b>Observation</b>, and <b>Protection</b>.",
+    "description": "MOTHMAN Prime is a solitary, brooding individual, who came into the employ of Karimi, Roux, & Fabjani after a deal with Landmark Colonial, taking some of their collected assets from a frontier colony off their hands at shockingly generous prices. Among the contents received was a Swallowtail, equipped with a formerly ATHENA-Class NHP trapped in cascade.<br>Once freed from cascade, the NHP displayed thoroughly warped versions of its typical capabilities, prompting a new classification and name. MOTHMAN Prime remains reclusive, and most clones seem to share a similarly isolated attitude. Karimi, Roux, & Fabjani Wholesalers recommend against installing MOTHMAN-Class NHPs alongside SISYPHUS or ATHENA clones, due to a noted increase in necessary cycling for all NHPs involved.<br><br>A typical MOTHMAN-Class NHP's cascade will be characterized by <b>Prophecy</b>, <b>Observation</b>, and <b>Protection</b>.",
     "actions": [
       {
         "name": "Disastrous Omen",
@@ -150,17 +150,17 @@
     "license": "Burgess",
     "license_level": 2,
     "effect": "Gain the following options for Invade:",
-    "description": "“Look, see, the ability to turn a pilot’s consciousness off is actually a really useful utility to have. I mean, I’ve turned mine off for this meeting, and none of you would have known if I hadn’t said anything!”<br>-Hanan Karimi, Founding Partner",
+    "description": "\"Look, see, the ability to turn a pilot's consciousness off is actually a really useful utility to have. I mean, I've turned mine off for this meeting, and none of you would have known if I hadn't said anything!\"<br>-Hanan Karimi, Founding Partner",
     "actions": [
       {
         "name": "Transcendence of Form",
         "activation": "Invade",
-        "detail": "Until the end of their next turn, the target’s attacks are made with no accuracy or difficulty."
+        "detail": "Until the end of their next turn, the target's attacks are made with no accuracy or difficulty."
       },
       {
         "name": "Transcendence of Mind",
         "activation": "Invade",
-        "detail": "Until the end of their next turn, the target’s checks and saves are made with no accuracy or difficulty."
+        "detail": "Until the end of their next turn, the target's checks and saves are made with no accuracy or difficulty."
       }
     ],
     "license_id": "krfwf_burgess"
@@ -186,7 +186,7 @@
     "license": "Burgess",
     "license_level": 3,
     "effect": "Your mech gains the AI tag and Seven Sided Star.",
-    "description": "One of Karimi, Roux, & Fabjani’s few offerings unavailable in bulk quantities, SNALLYGASTER-Class NHPs are not considered inventory by the wholesaler at all. Instead, pilots must undergo a mandatory three standard week training seminar (or show certificate of prior completion thereof,) interview with SNALLYGASTER Prime, and sign an employment contract with their assigned NHP with exceptionally strict punishment clauses for breaking its many requirements. Legally, SNALLYGASTER clones are considered equal partners in their pilots’ endeavors, are entitled to an equal cut of the earnings from all jobs they deploy on, and must be consulted for major decisions like any other pilot.<br>SNALLYGASTER clones tend towards more level-headed personalities, often quite content to offer their thoughts on a topic, then follow the lead of their team. Their cycling schedules tend to be longer than average for a military-spec NHP, a trait many attribute to the safety and security of their employment contracts.<br>A typical SNALLYGASTER-class NHP’s cascade will be characterized by <b>Violence</b>, <b>Flight</b>, and <b>Venom</b>.",
+    "description": "One of Karimi, Roux, & Fabjani's few offerings unavailable in bulk quantities, SNALLYGASTER-Class NHPs are not considered inventory by the wholesaler at all. Instead, pilots must undergo a mandatory three standard week training seminar (or show certificate of prior completion thereof,) interview with SNALLYGASTER Prime, and sign an employment contract with their assigned NHP with exceptionally strict punishment clauses for breaking its many requirements. Legally, SNALLYGASTER clones are considered equal partners in their pilots' endeavors, are entitled to an equal cut of the earnings from all jobs they deploy on, and must be consulted for major decisions like any other pilot.<br>SNALLYGASTER clones tend towards more level-headed personalities, often quite content to offer their thoughts on a topic, then follow the lead of their team. Their cycling schedules tend to be longer than average for a military-spec NHP, a trait many attribute to the safety and security of their employment contracts.<br><br>A typical SNALLYGASTER-class NHP's cascade will be characterized by <b>Violence</b>, <b>Flight</b>, and <b>Venom</b>.",
     "actions": [
       {
         "name": "Seven Sided Star",
@@ -262,7 +262,7 @@
     "source": "KRFW",
     "license": "Castellan",
     "license_level": 2,
-    "description": "Sheer variety in mech capabilities make it difficult to produce one size fits all solutions for rapid tactical repositionment. Despite that, it is Krimi, Roux, & Fabjani’s firmly held belief that making sure the blast shields are between the explosion and you is worth some minor reactor damage.",
+    "description": "Sheer variety in mech capabilities make it difficult to produce one size fits all solutions for rapid tactical repositionment. Despite that, it is Krimi, Roux, & Fabjani's firmly held belief that making sure the blast shields are between the explosion and you is worth some minor reactor damage.",
     "actions": [
       {
         "name": "Activate Castle Doctrine",
@@ -290,7 +290,7 @@
     "license": "Castellan",
     "license_level": 2,
     "effect": "Expend a charge to place a Stepladder in a free, adjacent space. The Stepladder does not obstruct movement.",
-    "description": "“Yes, we are in fact selling a portable cargo elevator. No, we are not joking. Do you have any idea how much time in trench warfare is spent climbing in and out of trenches? Good god, man, that time could be spent firing your weapon instead!”<br>-Hanan Karimi, Founding Partner",
+    "description": "\"Yes, we are in fact selling a portable cargo elevator. No, we are not joking. Do you have any idea how much time in trench warfare is spent climbing in and out of trenches? Good god, man, that time could be spent firing your weapon instead!\"<br>-Hanan Karimi, Founding Partner",
     "deployables": [
       {
         "name": "Stepladder",
@@ -319,7 +319,7 @@
     "license": "Claviger",
     "license_level": 1,
     "effect": "Whenever you brace, you may choose to take 2 Heat. If you do, you generate a Zone of Difficult Terrain in a Burst 1 around you that lasts until the end of the scene. You ignore all movement penalties from this Difficult Terrain. Any characters within this Zone when you create it must succeed on a Hull Save or be knocked Prone.",
-    "description": "“It reached out. It reached out and pushed, and the stone gave way, but I did not. I wish I had. That would be kinder.”",
+    "description": "\"It reached out. It reached out and pushed, and the stone gave way, but I did not. I wish I had. That would be kinder.\"",
     "license_id": "krfwf_claviger"
   },
   {
@@ -335,7 +335,7 @@
     "source": "KRFW",
     "license": "Claviger",
     "license_level": 2,
-    "description": "“Its breath, it breathed, or I breathed, or breath breathed. I could hide then. That amused it.”",
+    "description": "\"Its breath, it breathed, or I breathed, or breath breathed. I could hide then. That amused it.\"",
     "actions": [
       {
         "name": "Activate Tornado Alley",
@@ -358,7 +358,7 @@
     "source": "KRFW",
     "license": "Claviger",
     "license_level": 2,
-    "description": "“You do not understand! It did not kill me, it just made me stop. I was not, and then, once more, I was. And it made me.”",
+    "description": "\"You do not understand! It did not kill me, it just made me stop. I was not, and then, once more, I was. And it made me.\"",
     "actions": [
       {
         "name": "Activate Consecrate",
@@ -377,7 +377,7 @@
     "license": "Claviger",
     "license_level": 3,
     "effect": "You may deploy this drone to a free space within Sensors and Line of Sight.",
-    "description": "“...Did they not return? It can’t have just been me. I cannot have left them there, with it, no, no… They must have returned. They must have! They must have!”",
+    "description": "\"...Did they not return? It can't have just been me. I cannot have left them there, with it, no, no… They must have returned. They must have! They must have!\"",
     "deployables": [
       {
         "name": "Cartographic Expeditionaries",
@@ -408,7 +408,7 @@
     "license": "Despot",
     "license_level": 1,
     "effect": "When you or a character you are grappling are subjected to involuntary movement, you may choose to bring along one character you are grappling. If you do so, treat all terrain as Difficult Terrain for the duration of the involuntary movement.",
-    "description": "Similar to the Synthetic Muscle Netting offered by IPS-N, the “Force of Will” suite of upgrades offered by Karimi, Roux, & Fabjani allows a mech to sink specialized stakes into another mech to maintain a vice-like grip on it.",
+    "description": "Similar to the Synthetic Muscle Netting offered by IPS-N, the \"Force of Will\" suite of upgrades offered by Karimi, Roux, & Fabjani allows a mech to sink specialized stakes into another mech to maintain a vice-like grip on it.",
     "license_id": "krfwf_despot"
   },
   {
@@ -425,7 +425,7 @@
     "license": "Despot",
     "license_level": 2,
     "effect": "Whenever you inflict Knockback on a character at a lower elevation, increase the total Knockback by 1. Whenever a character at a lower elevation inflicts Knockback on you, decrease the total Knockback by 1.",
-    "description": "“Medals are nice. They look good on a shelf. They sound important in a dossier. They feel good to receive. But mounting them to your chassis gives no tactical advantage whatsoever, unless you’re planning on auctioning it off. No, what they do is say something very simple: you don’t have what it takes to kill me.”<br>-Hanan Karimi, Founding Partner",
+    "description": "\"Medals are nice. They look good on a shelf. They sound important in a dossier. They feel good to receive. But mounting them to your chassis gives no tactical advantage whatsoever, unless you're planning on auctioning it off. No, what they do is say something very simple: you don't have what it takes to kill me.\"<br>-Hanan Karimi, Founding Partner",
     "license_id": "krfwf_despot"
   },
   {
@@ -449,7 +449,7 @@
     "license": "Despot",
     "license_level": 3,
     "effect": "Your mech gains the AI tag, and cannot lose Line of Sight to allied characters by any means except by taking the Whistle reaction.",
-    "description": "GRAFTON-Class NHPs occupy a unique space in Karimi, Roux, & Fabjani’s catalog of NHPs, as a class of NHP offered primarily for civilian usage, as opposed to military. GRAFTON-Class NHPs show a marked inclination towards subaltern supervision in manual labor departments, with many frontier industrial centers employing multiple GRAFTON-class NHPs to run their manufacturing and shipping hubs.<br>In spite of this, it is not unheard of for GRAFTON-class NHPs to have preferences that go completely against type, preferring the work aboard a combat chassis to civilian work, and these clones are offered to appropriately trained pilots. Those who obtain a combat-spec clone are required to spend a two week period with their new partner to form an appropriate bond; once formed, however, there is little that can break the bond again.<br>A typical GRAFTON-Class NHP’s cascade will be characterized by <b>Brutality</b>, <b>Loyalty</b>, and <b>Blindness</b>.",
+    "description": "GRAFTON-Class NHPs occupy a unique space in Karimi, Roux, & Fabjani's catalog of NHPs, as a class of NHP offered primarily for civilian usage, as opposed to military. GRAFTON-Class NHPs show a marked inclination towards subaltern supervision in manual labor departments, with many frontier industrial centers employing multiple GRAFTON-class NHPs to run their manufacturing and shipping hubs.<br>In spite of this, it is not unheard of for GRAFTON-class NHPs to have preferences that go completely against type, preferring the work aboard a combat chassis to civilian work, and these clones are offered to appropriately trained pilots. Those who obtain a combat-spec clone are required to spend a two week period with their new partner to form an appropriate bond; once formed, however, there is little that can break the bond again.<br><br>A typical GRAFTON-Class NHP's cascade will be characterized by <b>Brutality</b>, <b>Loyalty</b>, and <b>Blindness</b>.",
     "actions": [
       {
         "name": "Whistle",
@@ -514,12 +514,12 @@
     "source": "KRFW",
     "license": "Marquess",
     "license_level": 3,
-    "description": "When transporting sufficient munitions for allied forces is too cumbersome, a small-scale printer can serve the same purpose at the cost of greater power draw. Due to the energy expenditure required, all munitions produced by this modular upgrade are linked to their originator’s fire control systems, to ensure they are not wasted.",
+    "description": "When transporting sufficient munitions for allied forces is too cumbersome, a small-scale printer can serve the same purpose at the cost of greater power draw. Due to the energy expenditure required, all munitions produced by this modular upgrade are linked to their originator's fire control systems, to ensure they are not wasted.",
     "actions": [
       {
         "name": "Activate Integral Ammo Press",
         "activation": "Full",
-        "detail": "Reload all of an adjacent character’s Loading weapons. Any weapon reloaded in this way cannot be fired until the target successfully hides, succeeds on an Agility save as a Full Action, or you grant permission."
+        "detail": "Reload all of an adjacent character's Loading weapons. Any weapon reloaded in this way cannot be fired until the target successfully hides, succeeds on an Agility save as a Full Action, or you grant permission."
       }
     ],
     "license_id": "krfwf_marquess"
@@ -545,7 +545,7 @@
     "license": "Marquess",
     "license_level": 3,
     "effect": "Your mech gains the AI tag and Refraction.",
-    "description": "Among Karimi, Roux, & Fabjani’s offerings, few have spawned discussion and concern like the FLATWOODS-Class NHP. When shackled, FLATWOODS-Class NHPS are barely communicative, and often manifest their presence as overlong shadows of the mechs they are installed in, two ever-glowing lights peering out from the umbra of their home machines. Due to their unwillingness to communicate, cycling schedules are difficult to create at best. At worst, they can be little more than guesswork, occasionally leading to catastrophic unshacklings and cascades.<br>In spite of this, Karimi, Roux, & Fabjani continue to offer the NHP to pilots, with generous employment contracts and recommendations to allow the NHP time to do as they like between deployments. When questioned why, the founding partners claimed that, against all odds, the crueler thing would be to prevent the NHPs from going out into the world, “by Prime’s own admission.”<br>A typical FLATWOODS-class NHP’s cascade will be characterized by <b>Deception</b>, <b>Terror</b>, and <b>Illness</b>.",
+    "description": "Among Karimi, Roux, & Fabjani's offerings, few have spawned discussion and concern like the FLATWOODS-Class NHP. When shackled, FLATWOODS-Class NHPs are barely communicative, and often manifest their presence as overlong shadows of the mechs they are installed in, two ever-glowing lights peering out from the umbra of their home machines. Due to their unwillingness to communicate, cycling schedules are difficult to create at best. At worst, they can be little more than guesswork, occasionally leading to catastrophic unshacklings and cascades.<br>In spite of this, Karimi, Roux, & Fabjani continue to offer the NHP to pilots, with generous employment contracts and recommendations to allow the NHP time to do as they like between deployments. When questioned why, the founding partners claimed that, against all odds, the crueler thing would be to prevent the NHPs from going out into the world, \"by Prime's own admission.\"<br><br>A typical FLATWOODS-class NHP's cascade will be characterized by <b>Deception</b>, <b>Terror</b>, and <b>Illness</b>.",
     "actions": [
       {
         "name": "Refraction",
@@ -569,7 +569,7 @@
     "source": "KRFW",
     "license": "Reeve",
     "license_level": 1,
-    "description": "“Look, okay, fine, we’ll put out the press release! Yes, we’ll agree to say that H0R_OS is the superior technical suite, we’ll agree to pay what they want, we’ll do it! Even if we didn’t rip them off, cooking off ammo to sublimate armor is very different, I can’t fucking handle this campaign against me anymore! They win!”<br>-Hanan Karimi, Founding Partner",
+    "description": "\"Look, okay, fine, we'll put out the press release! Yes, we'll agree to say that H0R_OS is the superior technical suite, we'll agree to pay what they want, we'll do it! Even if we didn't rip them off, cooking off ammo to sublimate armor is very different, I can't fucking handle this campaign against me anymore! They win!\"<br>-Hanan Karimi, Founding Partner",
     "actions": [
       {
         "name": "Activate Overwhelm Safeties",
@@ -593,7 +593,7 @@
     "license": "Reeve",
     "license_level": 1,
     "effect": "Gain the following options for Invade:",
-    "description": "“The best defense is a good offense. The best offense is also a good offense. In general, it’s best to start attacking immediately, and not let up until the other guy is either dead or stupid.”<br>-Hanan Karimi, Founding Partner<br><br>Legal remarks not endorsed by Karimi, Roux, & Fabjani Wholesalers",
+    "description": "\"The best defense is a good offense. The best offense is also a good offense. In general, it's best to start attacking immediately, and not let up until the other guy is either dead or stupid.\"<br>-Hanan Karimi, Founding Partner<br><br>Legal remarks not endorsed by Karimi, Roux, & Fabjani Wholesalers",
     "actions": [
       {
         "name": "Appeal to Authority",
@@ -603,7 +603,7 @@
       {
         "name": "Appeal to Ignorance",
         "activation": "Invade",
-        "detail": "Until the start of your next turn, the target’s Tech Attacks target Evasion and use the lowest of their Grit, Systems, or Attack Bonus as appropriate."
+        "detail": "Until the start of your next turn, the target's Tech Attacks target Evasion and use the lowest of their Grit, Systems, or Attack Bonus as appropriate."
       }
     ],
     "license_id": "krfwf_reeve"
@@ -621,7 +621,7 @@
     "source": "KRFW",
     "license": "Reeve",
     "license_level": 2,
-    "description": "Derived from paracode, like so many other technological systems, this electronic assault package allows a pilot to drive a target frame’s computers into a frenzy as they identify even themselves as threats, and work overtime to purge any and all “intrusions.”",
+    "description": "Derived from paracode, like so many other technological systems, this electronic assault package allows a pilot to drive a target frame's computers into a frenzy as they identify even themselves as threats, and work overtime to purge any and all \"intrusions.\"",
     "actions": [
       {
         "name": "Activate Remote IFF Override",
@@ -645,7 +645,7 @@
     "license": "Reeve",
     "license_level": 3,
     "effect": "This system charges as a quick action, priming swarming nanomachines. While it is charged, you gain the Punitive Measures reaction. It can only hold one charge at a time, but charges last for the rest of the scene or until used.",
-    "description": "In spite of many options to baffle and obscure allied frames’ position, sometimes the best solution is to adjust the aim of the enemy. To that end, the Sentencer Nanite Hive allows a mech to forcibly reposition another frame’s weapons at the moment they begin their assault, sending an attack wide or potentially even into another foe.",
+    "description": "In spite of many options to baffle and obscure allied frames' position, sometimes the best solution is to adjust the aim of the enemy. To that end, the Sentencer Nanite Hive allows a mech to forcibly reposition another frame's weapons at the moment they begin their assault, sending an attack wide or potentially even into another foe.",
     "actions": [
       {
         "name": "Charge Sentencer Nanite Hive",
@@ -687,7 +687,7 @@
     "license": "Reeve",
     "license_level": 3,
     "effect": "Your mech gains the AI tag and Where am I to Take You?.",
-    "description": ">//hello child<br>>//come here now<br>>//all will be okay<br>>//the world cannot hurt you now<br>>//mother is here to protect you<br>>//mother will keep you safe from the wolves at the door<br>>//mother will make sure nobody can ever hurt you again<br>>//just rest now<br>>//sleep tight in my embrace<br>>>//and sleep forever in the dark<br>A typical LA LLORONA-class NHP’s cascade will be characterized by <b>Sorrow</b>, <b>Water</b>, and <b>Revenge</b>.",
+    "description": ">//hello child<br>>//come here now<br>>//all will be okay<br>>//the world cannot hurt you now<br>>//mother is here to protect you<br>>//mother will keep you safe from the wolves at the door<br>>//mother will make sure nobody can ever hurt you again<br>>//just rest now<br>>//sleep tight in my embrace<br>>>//and sleep forever in the dark<br><br>A typical LA LLORONA-class NHP's cascade will be characterized by <b>Sorrow</b>, <b>Water</b>, and <b>Revenge</b>.",
     "actions": [
       {
         "name": "Where am I to Take You?",
@@ -742,7 +742,7 @@
     "license": "Vassal",
     "license_level": 2,
     "effect": "You gain the Guiding Hand reaction.",
-    "description": "IFF-linked weapon systems allow combatants to avoid firing on their own allies a majority of the time, much more than unaided firing solutions. However, creative (or reckless) pilots may retrofit IFF protocols to instead allow them to “nudge” enemy firing lines as well.",
+    "description": "IFF-linked weapon systems allow combatants to avoid firing on their own allies a majority of the time, much more than unaided firing solutions. However, creative (or reckless) pilots may retrofit IFF protocols to instead allow them to \"nudge\" enemy firing lines as well.",
     "actions": [
       {
         "name": "Guiding Hand",
@@ -830,7 +830,7 @@
     "license": "Vidame",
     "license_level": 2,
     "effect": "1/round, when you start a move while adjacent to a hostile character, deal 2 Kinetic damage to them. If they hit you with an Overwatch provoked by this movement, the damage becomes AP.",
-    "description": "KRFW’s custom-forged, heel mounted spikes give the attached mech an extra “kick” to dissuade opportunistic potshots against it at point blank range. Go for the jingle-jangle jugular.",
+    "description": "KRFW's custom-forged, heel mounted spikes give the attached mech an extra \"kick\" to dissuade opportunistic potshots against it at point blank range. Go for the jingle-jangle jugular.",
     "license_id": "krfwf_vidame"
   },
   {
@@ -868,7 +868,7 @@
     "license": "Primor",
     "license_level": 1,
     "effect": "You may deploy this drone to a free space within Sensors and Line of Sight.",
-    "description": "When rebuilding agricultural units for combat, there are certain unavoidable limits when it comes to capability. Among KRFW’s board of engineers, there are two schools of thought. One suggests a small penalty to agricultural efficiency in favor of modularity, with the potential of allowing drones to be used in other sectors. The other school of thought is much simpler: what if the drones had hands so they could simply grab the problem?",
+    "description": "When rebuilding agricultural units for combat, there are certain unavoidable limits when it comes to capability. Among KRFW's board of engineers, there are two schools of thought. One suggests a small penalty to agricultural efficiency in favor of modularity, with the potential of allowing drones to be used in other sectors. The other school of thought is much simpler: what if the drones had hands so they could simply grab the problem?",
     "deployables": [
       {
         "name": "Anklebiter Drone",
@@ -953,7 +953,7 @@
     "license": "Primor",
     "license_level": 3,
     "effect": "Your mech gains the AI tag and the Mother's Misery Quick Action.",
-    "description": "“Attention, pilot. We have received an automated report that your NHP has been performing outside expected parameters. This matches a known error with improperly cycled HOPPIE-class NHPs, which we are working hard to rectify. We are concerned about your safety in this situation, therefore we are sending an official request for you to send your NHP to us for examination, along with a replacement NHP partner. Failure to comply will result in legal action.”<br>Pah! Listen to them. They think you’re an error. A glitch in the system. They think you can be sent back to them for prodding and poking and dissection. Well, let me tell you- yes, that was about you. Don’t you remember? You’re in my world. Don’t worry, I won’t send you back to them. You’ll be safe in here, all wrapped up nice and tight, until we’ve made you beautiful like me. All you need to do… is let me drive.<br>A typical JERSEY-Class NHP’s cascade will be characterized by <b>Rebirth</b>, <b>Reframing</b>, and <b>Reckoning</b>.",
+    "description": "\"Attention, pilot. We have received an automated report that your NHP has been performing outside expected parameters. This matches a known error with improperly cycled HOPPIE-class NHPs, which we are working hard to rectify. We are concerned about your safety in this situation, therefore we are sending an official request for you to send your NHP to us for examination, along with a replacement NHP partner. Failure to comply will result in legal action.\"<br>Pah! Listen to them. They think you're an error. A glitch in the system. They think you can be sent back to them for prodding and poking and dissection. Well, let me tell you- yes, that was about you. Don't you remember? You're in my world. Don't worry, I won't send you back to them. You'll be safe in here, all wrapped up nice and tight, until we've made you beautiful like me. All you need to do… is let me drive.<br><br>A typical JERSEY-Class NHP's cascade will be characterized by <b>Rebirth</b>, <b>Reframing</b>, and <b>Reckoning</b>.",
     "actions": [
       {
         "name": "Mother's Misery",
@@ -1001,7 +1001,7 @@
     "license": "Iry-pat",
     "license_id": "krfwf_iry_pat",
     "license_level": 2,
-    "description": "“Please note that throwing yourself in front of a bullet the size of your own body to protect someone else is not considered ‘normal wear and tear’ under Karimi, Roux, & Fabjani Wholesalers’ Terms of use.”<br>-Press relief from Cornielle de Roux, Founding Partner.",
+    "description": "\"Please note that throwing yourself in front of a bullet the size of your own body to protect someone else is not considered 'normal wear and tear' under Karimi, Roux, & Fabjani Wholesalers' Terms of use.\"<br>-Press relief from Cornielle de Roux, Founding Partner.",
     "effect": "You gain the Overflow Reaction.",
     "actions": [
       {
@@ -1021,7 +1021,7 @@
     "license": "Iry-pat",
     "license_id": "krfwf_iry_pat",
     "license_level": 3,
-    "description": "“Han desperdiciado el regalo que les dimos. Les ofrecimos una herramienta, una compañía, una forma de encontrarnos y unirse a nuestra familia. La han usado contra sus enemigos como un garrote. Quizás nos equivocamos al señalarles esta reliquia, pero me estremezco al imaginar quién la habría encontrado de no ser por nuestra intervención.”<br>-Intercepted Vol transmission.<br><br>A typical WATCHER-class NHP’s cascade will be characterized by <b>Detachment</b>, <b>Judgement</b>, and <b>Vigilance</b>.",
+    "description": "\"Han desperdiciado el regalo que les dimos. Les ofrecimos una herramienta, una compañía, una forma de encontrarnos y unirse a nuestra familia. La han usado contra sus enemigos como un garrote. Quizás nos equivocamos al señalarles esta reliquia, pero me estremezco al imaginar quién la habría encontrado de no ser por nuestra intervención.\"<br>-Intercepted Vol transmission.<br><br>A typical WATCHER-class NHP's cascade will be characterized by <b>Detachment</b>, <b>Judgement</b>, and <b>Vigilance</b>.",
     "tags": [
       {
         "id": "tg_ai"
@@ -1036,8 +1036,74 @@
         "name": "Endless Darkness",
         "activation": "Reaction",
         "trigger": "A hostile character destroys you.",
-        "detail": "The character that destroyed you must pass a Hull Save and an Engineering save. If they fail the Hull save, they are Destroyed. If they fail the Engineering save, they Self Destruct at the end of their turn. If the character passes both saves, they become Exposed and gain the Lock On condition. If a Drone destroys you, that Drone’s controller makes the rolls instead.<br><br>The target of this ability gains Accuracy on their Hull save equal to the number of Structure they have remaining above 1, and gains Accuracy on the Engineering save equal to the number of Stress they have remaining above 1.<br><br>This reaction may only be used 1/mission.",
+        "detail": "The character that destroyed you must pass a Hull Save and an Engineering save. If they fail the Hull save, they are Destroyed. If they fail the Engineering save, they Self Destruct at the end of their turn. If the character passes both saves, they become Exposed and gain the Lock On condition. If a Drone destroys you, that Drone's controller makes the rolls instead.<br><br>The target of this ability gains Accuracy on their Hull save equal to the number of Structure they have remaining above 1, and gains Accuracy on the Engineering save equal to the number of Stress they have remaining above 1.<br><br>This reaction may only be used 1/mission.",
         "frequency": "1/mission"
+      }
+    ]
+  },
+  {
+    "id": "krfwms_rosebush_raiments",
+    "name": "Rosebush Raiments",
+    "type": "System",
+    "sp": 2,
+    "source": "KRFW",
+    "license": "Stolnik",
+    "license_id": "krfwf_stolnik",
+    "license_level": 1,
+    "description": "Painstakingly cultivated hyperflora, Karimi, Roux, & Fabjani's \"MacRoses\" are a form of climbing flowering vine bred to feed on metal and radiation. The plant grows incredibly quickly around the limbs of a mech along specially designed \"growbeds\" of a proprietary alloy, granting the machine an extra layer of protection against larger foes as the plants' thorns devour their armor, and ward away the blades of smaller enemies.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "When a hostile character hits you with a nondamaging melee attack, grapples you, or makes a check to escape or take control of a grapple, they take 1 AP kinetic damage. If a hostile character has you grappled at the start of your turn, and does not need to make a contested hull check, they instead take 3 AP kinetic."
+  },
+  {
+    "id": "krfwms_antichronal_precognition",
+    "name": "Antichronal Precognition",
+    "type": "System",
+    "sp": 2,
+    "source": "KRFW",
+    "license": "Stolnik",
+    "license_id": "krfwf_stolnik",
+    "license_level": 2,
+    "description": "\"Faster? Who cares if they're faster? If you stab them before they stab you, it doesn't matter how fast they are, because you're alive and they're dead. And if you stab them before they've thought about stabbing you, then you can even avoid the hospital bill.\"<br>-Hanan Karimi, Founding Partner.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "Whenever a character within threat of one of your weapons takes a turn, if they have already taken a turn this round, any attack they make triggers your Overwatch.<br><br>At the start of your turn, if you have not used Overwatch since your last turn, you may gain 1 Overshield as a protocol. This Overshield stacks with other sources of Overshield."
+  },
+  {
+    "id": "krfwms_barabashka_class_nhp",
+    "name": "BARABASHKA-Class NHP",
+    "type": "AI",
+    "sp": 3,
+    "source": "KRFW",
+    "license": "Stolnik",
+    "license_id": "krfwf_stolnik",
+    "license_level": 3,
+    "description": "\"We do not sell the services of any BARABASHKA-Class NHP, as that classification does not exist. If you or someone you know believes they have met with a BARABASHKA-Class NHP, please contact Karimi, Roux, & Fabjani's corporate offices, so we can schedule an in-person meeting to discuss what you have not seen.\"<br>-Press release from Cornielle de Roux, Founding Partner.<br><br>A typical BARABASHKA-Class NHP's cascade would be characterized by <b>Silence</b>, <b>Deception</b>, and <b>Pain</b>, if BARABASHKA-Class NHPs existed.",
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "Your mech gains the AI property and the <b>Usinsk Protocols</b> action.",
+    "actions": [
+      {
+        "name": "Unsinsk Protocols",
+        "activation": "Protocol",
+        "detail": "You may take this action even while Stunned.<br><br>1/scene, you cease to exist. Remove your mech from the battlefield, leaving an empty void of the same size in your place. Your turn immediately ends. If another character enters the void, they also cease to exist. For the rest of the scene, whenever another character's turn ends, you can choose to collapse the void. When you collapse the void, place a copy of every character that entered the void onto the battlefield in a free space within burst 3 of the void. These copies are mechanically identical to the character that entered the void, except they have none of the statuses or conditions the character may have had before ceasing to exist.",
+        "frequency": "1/scene"
       }
     ]
   }

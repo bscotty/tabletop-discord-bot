@@ -1,0 +1,395 @@
+[
+  {
+    "id": "hhtt_ms_rapid_deploy_rudders",
+    "name": "Rapid-Deploy Rudders",
+    "source": "RIFF/RAFF",
+    "license": "Jiffy",
+    "license_id": "hhtt_mf_jiffy",
+    "license_level": 2,
+    "type": "System",
+    "sp": 2,
+    "description": "siege spec has some self-knockback effects. this helps give you more control with that + things like nasty enemies who try to put you in places you dont want to be",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Switchtack",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "You are subject to involuntary movement.",
+        "detail": "You choose the direction of the involuntary movement."
+      }
+    ]
+  },
+  {
+    "id": "hhtt_ms_falloff_correctors",
+    "name": "Falloff Correctors",
+    "source": "RIFF/RAFF",
+    "license": "Jiffy",
+    "license_id": "hhtt_mf_jiffy",
+    "license_level": 3,
+    "type": "System",
+    "sp": 3,
+    "description": "a simple way to help offset the frame's extremely slow speed, while also providing self heat for things like nuc cav",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Precise Tuning",
+        "activation": "Protocol",
+        "frequency": "1/round",
+        "detail": "Choose a weapon mount. Ranged weapons on that mount gain +5 range and melee weapons gain +1 threat until the end of the current turn."
+      }
+    ]
+  },
+  {
+    "id": "hhtt_ms_factotum_toolchest",
+    "name": "Factotum Toolchest",
+    "source": "RIFF/RAFF",
+    "license": "Jiffy",
+    "license_id": "hhtt_mf_jiffy",
+    "license_level": 3,
+    "type": "System",
+    "sp": 2,
+    "description": "your weapons are broken and you cant afford to repair them? about to spend a turn doing literally nothing because you're jammed and your stats arent good for things that arent attacking? defy god, shoot anyway",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "actions": [
+      {
+        "name": "Jury-Rig",
+        "activation": "Quick",
+        "frequency": "1/scene",
+        "cost": 1,
+        "detail": "Choose a weapon mount. For the rest of the scene, all weapons and attached mods on the chosen mount may be used while you are Jammed and regardless of whether or not they are destroyed."
+      }
+    ]
+  },
+  {
+    "id": "hhtt_ms_epoch_nullifier",
+    "name": "Epoch Nullifier",
+    "source": "RIFF/RAFF",
+    "license": "Eigenzeit",
+    "license_id": "hhtt_mf_eigenzeit",
+    "license_level": 1,
+    "type": "Tech",
+    "sp": 2,
+    "description": "flexible movement options. kinda like accelerate from sunzi, but less actual movement, other small benefits, and a lot more granular control over placement. can even be used to go up one elevation without movement! important to note that anyone can use these spaces though, not just allies.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Neutralize Chronology",
+        "activation": "Quick Tech",
+        "detail": "Designate 3 spaces within sensors, each no more than 2 spaces apart, and remove them from the timeline. Entering these spaces does not cost movement, ignores dangerous terrain, ignores Engagement, and does not provoke reactions. This effect lasts until this action is used again or until the end of the scene."
+      }
+    ]
+  },
+  {
+    "id": "hhtt_ms_internal_chronometer",
+    "name": "Internal Chronometer",
+    "source": "RIFF/RAFF",
+    "license": "Eigenzeit",
+    "license_id": "hhtt_mf_eigenzeit",
+    "license_level": 2,
+    "type": "Tech",
+    "sp": 2,
+    "description": "some bolster options to synergize with its traits + core power + death knell (if used). useful since bolster is an option everyone can just Do, and this makes it a more attractive option for anyone and not a more jank support niche.",
+    "effect": "Whenever you Bolster an ally, you may additionally choose one of the following effects to apply.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Nostalgia",
+        "activation": "None",
+        "detail": "Until the end of their next turn, they may freely pass through, but not end their turn in, obstructions."
+      },
+      {
+        "name": "Forethought",
+        "activation": "None",
+        "detail": "While they are affected by Bolster, hostile characters cannot pass through a space occupied by them for any reason, and must always stop moving when Engaged with them, regardless of Size."
+      }
+    ]
+  },
+  {
+    "id": "hhtt_ms_geb_class_nhp",
+    "name": "GEB-Class NHP",
+    "source": "RIFF/RAFF",
+    "license": "Eigenzeit",
+    "license_id": "hhtt_mf_eigenzeit",
+    "license_level": 3,
+    "type": "AI",
+    "sp": 3,
+    "description": "you can see it, can't you? the river in the sky. that is where it lives. that is where it has always lived. that is where it flows into itself. time has forgotten it. i have not.<br><br>take my hand, child. we will set it free.",
+    "effect": "Your mech gains the AI tag and Conflux of Possibility.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "actions": [
+      {
+        "name": "Conflux of Possibility",
+        "activation": "Quick Tech",
+        "detail": "Target an allied mech character within sensors and roll 1d6 to determine an effect from the table below. Optionally, you may expend any number of charges as part of this action to make the effect automatically reapply immediately after it ends, occurring a number of times equal to charges spent.<ol><li>The target gains +1 Accuracy on their next d20 roll.</li><li>The target is immune to the next condition inflicted against them that is not caused by one of their own talents, systems, etc.</li><li>The target gains Resistance to the next instance of Heat they take.</li><li>The target counts as Invisible for the next attack roll made against them.</li><li>The target reduces the next instance of involuntary movement inflicted upon them by a hostile character to 0.</li><li>The target's next successful damaging attack gains AP.</li></ol>",
+        "cost": 0
+      }
+    ]
+  },
+  {
+    "id": "hhtt_ms_amalgam_of_parts",
+    "name": "Amalgam of Parts",
+    "source": "RIFF/RAFF",
+    "license": "Half-life",
+    "license_id": "hhtt_mf_half_life",
+    "license_level": 1,
+    "type": "Shield",
+    "sp": 1,
+    "description": "a good way to deal damage to yourself, which activates A Lot of the frame's stuff. also made it potentially attractive to other mechs, especially ones with high armor, as a way to give yourself free overshield [tearing up plating - shifting mass of wires and gears (dont mind me saving that wording for later)]",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Rend Anew",
+        "activation": "Protocol",
+        "detail": "Take 1d3 kinetic damage. Gain Overshield equal to the amount of damage taken before reductions of any kind."
+      }
+    ]
+  },
+  {
+    "id": "hhtt_ms_electrogenesis_engine",
+    "name": "Electrogenesis Engine",
+    "source": "RIFF/RAFF",
+    "license": "Half-life",
+    "license_id": "hhtt_mf_half_life",
+    "license_level": 3,
+    "type": "System",
+    "sp": 3,
+    "description": "utilization of the lock ons it puts out on everyone: choose your prey and pursue them relentlessly. given how strong it is, it's limited, costs a lot of sp, generates a lot of self heat, and is on LL3. i truly fear a tokugawa getting their hands on one of these though lol",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Hunt",
+        "activation": "Protocol",
+        "detail": "Consume Lock On from a hostile character in line of sight. For the rest of the current turn, gain +1 Accuracy to all actions against that character."
+      }
+    ]
+  },
+  {
+    "id": "hhtt_ms_ripley_class_nhp",
+    "name": "RIPLEY-Class NHP",
+    "source": "RIFF/RAFF",
+    "license": "Half-life",
+    "license_id": "hhtt_mf_half_life",
+    "license_level": 3,
+    "type": "AI",
+    "sp": 3,
+    "description": "this system is as much flavor as it is function. its pretty good for movement, which the frame doesn't really lack unless you're spending all your adrenaline on sharpen claws and stalk prey... to be entirely honest i just wanted to include a chestburster somewhere in the license",
+    "effect": "Your mech gains the AI tag and Parasitic Injection.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      }
+    ],
+    "actions": [
+      {
+        "name": "Parasitic Injection",
+        "activation": "Quick",
+        "detail": "Make a melee attack against an adjacent hostile character. On a hit, you bury a Warpburst Detonator inside them. When the target next takes stucture damage or is destroyed, your mech immediately teleports to a space adjacent to them, removing the Warpburst Detonator. All characters within Burst 2 of your new position, including the triggering character, take 3 burn. You may then move up to 3 spaces in any direction, ignoring Engagement and reactions.<br><br>Only one Warpburst Detonator may exist at a time; using this action again causes the first to end."
+      }
+    ]
+  },
+  {
+    "id": "hhtt_ms_accretion_disk_drive",
+    "name": "Accretion Disk Drive",
+    "source": "RIFF/RAFF",
+    "license": "Singularity",
+    "license_id": "hhtt_mf_singularity",
+    "license_level": 1,
+    "type": "Shield",
+    "sp": 2,
+    "description": "fluff",
+    "effect": "Gain Break Orbit.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Break Orbit",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "An adjacent ally is hit by an attack.",
+        "detail": "Expend a charge and take 1 heat to give them Resistance to the triggering attack."
+      }
+    ]
+  },
+  {
+    "id": "hhtt_ms_expansion_compression_algorithm",
+    "name": "Expansion/Compression Algorithm",
+    "source": "RIFF/RAFF",
+    "license": "Singularity",
+    "license_id": "hhtt_mf_singularity",
+    "license_level": 2,
+    "type": "Tech",
+    "sp": 2,
+    "description": "the cycle of the universe",
+    "effect": "Gain the following options for Invade:",
+    "actions": [
+      {
+        "name": "Big Bang",
+        "activation": "Invade",
+        "detail": "Until the end of your target's next turn, their Size increases by one increment, up to a maximum of Size 3. This can only be used on each character 1/scene."
+      },
+      {
+        "name": "Big Crunch",
+        "activation": "Invade",
+        "detail": "Until the end of your target's next turn, their Size decreases by one increment, down to a minimum of Size 1/2. This can only be used on each character 1/scene."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ]
+  },
+  {
+    "id": "hhtt_ms_redacted",
+    "name": "[REDACTED]",
+    "source": "RIFF/RAFF",
+    "license": "Singularity",
+    "license_id": "hhtt_mf_singularity",
+    "license_level": 3,
+    "type": "Deployable",
+    "sp": 2,
+    "description": "<b>DO NOT HANDLE WITHOUT SECURITY CLEARANCE LEVEL 10</b><br><br><b>DO NOT OPEN UNDER ANY CIRCUMSTANCES",
+    "effect": "Disobey.",
+    "actions": [
+      {
+        "name": "Open It",
+        "activation": "Quick",
+        "detail": "Deploy Between to a free space within range 5."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Between",
+        "type": "Paradox",
+        "detail": "Between is a twisting mass of impossible cracks in the fabric of spacetime. Between blocks line of sight, but is not an obstruction. Characters who enter a space occupied by Between for the first time in a round take 2 Heat and become Intangible, or lose the Intangible status if they already have it. Between cannot be recalled or redeployed, but can be destroyed by damage or by passing a Systems save as a quick action while adjacent to it. When Between is destroyed or the scene ends, all characters on the map lose the Intangible status, even if it was not caused by Between.",
+        "size": 3,
+        "hp": 10,
+        "evasion": 10,
+        "edef": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ]
+  },
+  {
+    "id": "hhtt_ms_ouroboros_class_nhp",
+    "name": "OUROBOROS-Class NHP",
+    "source": "RIFF/RAFF",
+    "license": "Singularity",
+    "license_id": "hhtt_mf_singularity",
+    "license_level": 3,
+    "type": "AI",
+    "sp": 3,
+    "description": "here's the deal, ouroboros",
+    "effect": "Your mech gains the AI tag and Bite Down and Let Go.<br><br>Expend a charge to Bite Down or Let Go. These actions cannot be used in the same scene.",
+    "actions": [
+      {
+        "name": "Bite Down",
+        "activation": "Quick",
+        "frequency": "1/scene",
+        "detail": "Set your HP and Heat to half of their maximum value."
+      },
+      {
+        "name": "Let Go",
+        "activation": "Quick",
+        "frequency": "1/scene",
+        "detail": "Set your Structure and Stress to 2. You do not make Structure Damage or Overheating rolls when taking this action, even if Structure or Stress is lost as a result of it."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ]
+  }
+]

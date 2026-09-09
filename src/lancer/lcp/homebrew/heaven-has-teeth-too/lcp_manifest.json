@@ -1,0 +1,14 @@
+{
+  "name": "HEAVEN HAS TEETH TOO",
+  "author": "sarah",
+  "description": "Playtest material for the HEAVEN HAS TEETH TOO third-party supplement for the LANCER ttrpg.",
+  "version": "0.0.3",
+  "item_prefix": "hhtt",
+  "dependencies": [
+    {
+      "name": "Lancer Long Rim Data",
+      "version": "*",
+      "link": "https://massif-press.itch.io/the-long-rim"
+    }
+  ]
+}

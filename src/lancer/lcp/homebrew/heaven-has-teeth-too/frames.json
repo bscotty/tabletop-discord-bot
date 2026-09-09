@@ -1,0 +1,407 @@
+[
+  {
+    "id": "hhtt_mf_jiffy",
+    "license_id": "hhtt_mf_jiffy",
+    "license_level": 2,
+    "source": "RIFF/RAFF",
+    "name": "Jiffy",
+    "mechtype": [
+      "Artillery"
+    ],
+    "description": "boat! goal is a straightforward and simple to understand artillery mech. its slow, but has tools at its disposal to help it move around quickly and fire on enemies that are far away. only having auxes means it deals low damage, but so long as it deals any damage (even if that damage is reduced to 0 by armor) it also deals 1 burn. for this reason it favors quantity of attacks over quality!",
+    "mounts": [
+      "Aux/Aux",
+      "Aux/Aux"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 4,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 2,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Slag-Laced Barrels",
+        "description": "Whenever the Jiffy deals damage with a weapon, it deals an additional 1 burn.",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "detail": "Whenever the Jiffy deals damage with a weapon, it deals an additional 1 burn."
+          }
+        ]
+      },
+      {
+        "name": "Quickburst Thrusters",
+        "description": "The Jiffy has the Quickburst Thrusters free action, usable 1/round.",
+        "actions": [
+          {
+            "name": "Quickburst Thrusters",
+            "frequency": "1/round",
+            "activation": "Free",
+            "detail": "Push yourself 2 spaces."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Autotrawlers",
+      "description": "this mf be out here collecting mech debris while its scooting around the battlefield and loading it into its weapons. improvised shrapnel lookin ass (reliable 1 mean all its weapon attacks deal 1 burn even on a miss)",
+      "active_name": "Langrage Munitions",
+      "active_effect": "For the rest of the scene, all of the Jiffy's weapons gain Reliable 1, or add 1 to their Reliable value if one already exists.",
+      "activation": "Quick",
+      "use": "Encounter",
+      "active_synergies": [
+        {
+          "locations": [
+            "weapon"
+          ],
+          "detail": "For the rest of the scene, all of the Jiffy's weapons gain Reliable 1, or add 1 to their Reliable value if one already exists."
+        }
+      ]
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png"
+  },
+  {
+    "id": "hhtt_mf_ghost",
+    "license_id": "mf_lich",
+    "variant": "Lich",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "Ghost",
+    "mechtype": [
+      "Controller",
+      "Defender"
+    ],
+    "description": ">//TRANSCRIPT: M.A2_Recovered[UIB:::TERMAGANT]<br>>//TANGENT ROYAL CLEARANCE<br>>//checking…<br>>//TRC_ACCEPTED. OPEN DOC:::Y<br>>//BEGIN:::<br>ASH: oh hey u guys are back early<br>DOGFRIEND_68: mech's haunted<br>ASH: what?<br>>//PILOT CLEARANCE<br>>/checking…<br>>//PC_ACCEPTED. POWER WEAPONS:::Y<br>>//WEAPONS PRIMED<br>DOGFRIEND_68: mech's haunted<br>>//PILOT CLEARANCE<br>>/checking…<br>>//PC_ACCEPTED. POWER BOOSTERS:::Y<br>>// BOOSTERS ENGAGED",
+    "mounts": [
+      "Flex",
+      "Main"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 6,
+      "edef": 12,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Sixth Sensor",
+        "description": "The Ghost always knows every reaction available to all characters within its sensors."
+      },
+      {
+        "name": "Death's Advantage",
+        "description": "Whenever the Ghost takes structure damage, it gains Resistance to all damage and may freely pass through, but not end its turn in, solid objects until the end of its next turn.",
+        "synergies": [
+          {
+            "locations": [
+              "structure"
+            ],
+            "detail": "Whenever the Ghost takes structure damage, it gains Resistance to all damage and may freely pass through, but not end its turn in, solid objects until the end of its next turn."
+          }
+        ]
+      },
+      {
+        "name": "Guardian Spirit",
+        "description": "The Ghost has the Guardian Spirit action, usable 1/round.",
+        "actions": [
+          {
+            "name": "Guardian Spirit",
+            "frequency": "1/round",
+            "activation": "None",
+            "detail": "Add +1 Accuracy or +1 Difficulty to any d20 roll made as part of a reaction by a character in your sensors. This ability has no associated action, and can be used even when it is not your turn, or you would be otherwise unable to act."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Geist Engines",
+      "description": "teehee funny ghost",
+      "active_name": "Haunt",
+      "active_effect": "1/scene, latch onto an adjacent character as a quick action, automatically Grappling them. This Grapple cannot be broken or released by any means, and automatically ends when the Ghost or the target are destroyed, or at the end of the scene. Control of the Grapple can still be contested as normal. This action is Efficient, and refunds 1 Core Power at the end of any scene in which it's used.",
+      "activation": "Quick",
+      "use": "Encounter",
+      "tags": [
+        {
+          "id": "tg_efficient"
+        }
+      ],
+      "passive_name": "Phantom Haptics",
+      "passive_effect": "Characters within the Ghost's sensors treat all characters allied to them as hostile for the purposes of triggering and targeting reactions. If a character within sensors, including the Ghost itself, would be prevented from using a triggered reaction, the Ghost may force them to use the reaction regardless, making all decisions for targets and effects. These reactions still count as being used by the originating character for all purposes, including round and turn restrictions. This ability has no associated action, and can be used even when it is not the Ghost's turn, or the Ghost would be otherwise unable to act."
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png"
+  },
+  {
+    "id": "hhtt_mf_eigenzeit",
+    "license_id": "hhtt_mf_eigenzeit",
+    "license_level": 2,
+    "source": "RIFF/RAFF",
+    "name": "Eigenzeit",
+    "mechtype": [
+      "Support"
+    ],
+    "description": "clock! my love letter to wacky time and space shenanigans",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Inevitable",
+        "description": "The Eigenzeit ignores difficult and dangerous terrain, and its movement is never interrupted when it becomes Engaged.",
+        "synergies": [
+          {
+            "locations": [
+              "move"
+            ],
+            "detail": "The Eigenzeit ignores difficult and dangerous terrain, and its movement is never interrupted when it becomes Engaged."
+          }
+        ]
+      },
+      {
+        "name": "All Actions Have",
+        "description": "The Eigenzeit has the Consequences reaction, usable 1/round.",
+        "actions": [
+          {
+            "name": "Consequences",
+            "activation": "Reaction",
+            "frequency": "1/round",
+            "trigger": "A hostile character deals damage to you or an allied character.",
+            "detail": "The next character who deals damage to the triggering hostile character gains Overshield equal to your Grit."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Resonance Chamber",
+      "description": "cascading echoes... this mech's whole Point is to mess with time, so why not make its enemies have deja vu?",
+      "active_name": "Cacophony of Bells",
+      "active_effect": "For the rest of the scene, you are no longer limited in the amount of Echo dies that can exist at once, and all allies gain an Echo die if they do not already have one. Echo dies cannot stack.",
+      "activation": "Full",
+      "use": "Encounter",
+      "passive_name": "That Rings A",
+      "passive_effect": "Whenever you target an allied character with a helpful effect, you may also give them an Echo die. Only one Echo die may exist at a time; giving an ally an Echo die while another is active causes the first to end. As a reaction, a character may expend an Echo die to repeat their most recent quick action as a free action, choosing new targets as desired. Echoed actions still incur resource costs as normal."
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png"
+  },
+  {
+    "id": "hhtt_mf_half_life",
+    "license_id": "hhtt_mf_half_life",
+    "license_level": 2,
+    "source": "RIFF/RAFF",
+    "name": "Half-life",
+    "mechtype": [
+      "Striker"
+    ],
+    "description": "\"Aren't you tired of being nice? Don't you just want to go apeshitt?\" the mech. berserker-esque frame that uses self-damage to give itself increased speed and advantage over its enemies. this is also xenomorph: the mech, frankly. it didnt start out that way but once i realized the similarities i rolled with it",
+    "mounts": [
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "hp": 6,
+      "armor": 1,
+      "heatcap": 4,
+      "evasion": 8,
+      "edef": 8,
+      "tech_attack": -2,
+      "sensor_range": 5,
+      "repcap": 3,
+      "save": 10,
+      "speed": 3,
+      "sp": 5,
+      "stress": 4,
+      "structure": 4
+    },
+    "traits": [
+      {
+        "name": "Beryllium Exoframe",
+        "description": "Burn damage the Half-life takes is reduced by armor. This does not affect end of turn burn damage from a failed Engineering check.",
+        "synergies": [
+          {
+            "locations": [
+              "armor"
+            ],
+            "detail": "Burn damage the Half-life takes is reduced by armor. This does not affect end of turn burn damage from a failed Engineering check."
+          }
+        ]
+      },
+      {
+        "name": "Atomic Core",
+        "description": "Whenever damage the Half-life takes is reduced by armor, it deals burn damage equal to the amount reduced to all adjacent characters.",
+        "synergies": [
+          {
+            "locations": [
+              "armor"
+            ],
+            "detail": "Whenever damage the Half-life takes is reduced by armor, it deals burn damage equal to the amount reduced to all adjacent characters."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Pursuit Predation Subroutines",
+      "description": "this thing is a predator. its good at hunting and killing.<br><br>run.",
+      "active_name": "Apex Machine",
+      "active_effect": "For the rest of the scene, Sharpen Claws becomes a protocol, Stalk Prey becomes a free action that can be used even when it is not your turn, and Jump Scare becomes a quick action.",
+      "activation": "Quick",
+      "use": "Encounter",
+      "passive_name": "Thrill of the Hunt",
+      "passive_effect": "At the start of every combat scene, gain an Adrenaline die - 1d6, starting at 1. The die ticks up by 1 whenever you:<br><br><ul><li>take damage on your own turn</li><li>Lock On to a hostile character</li></ul><br>Each option can only increase the value of the Adrenaline die once per round independently; however, the die also ticks up by 1 any time you destroy a non-drone, non-grunt hostile character, or cause one to take structure damage, with no limit.<br><br>For every 2 Adrenaline you have, you gain +1 Speed.<br><br>1/round, you may expend Adrenaline for one of the following actions:<br><br><b class='accent--text'>2 Adrenaline</b>: <b>Sharpen Claws</b>. Quick Action. Clear the Impaired condition, so long as it was not caused by your own talents, systems, etc.<br><b class='accent--text'>4 Adrenaline</b>: <b>Stalk Prey</b>. Protocol. Choose any hostile character, not requiring line of sight. For the rest of the current turn, you ignore Hidden and Invisible effects on them, and do not require line of sight to target them.<br><b class='accent--text'>6 Adrenaline</b>: <b>Jump Scare</b>. Full Action. Choose a hostile character in line of sight. Immediately jump to a space adjacent to them, counting as Flying and ignoring Engagement and reactions. All hostile characters within line of sight of your new position must succeed at a Hull save or fall Prone and become Impaired. On a success, they are only Impaired. You then Skirmish against your original target.",
+      "passive_actions": [
+        {
+          "name": "Sharpen Claws",
+          "activation": "Quick",
+          "detail": "Expend 2 Adrenaline. Clear the Impaired condition, so long as it was not caused by your own talents, systems, etc.",
+          "frequency": "1/round"
+        },
+        {
+          "name": "Stalk Prey",
+          "activation": "Protocol",
+          "detail": "Expend 4 Adrenaline. Choose any hostile character, not requiring line of sight. For the rest of the current turn, you ignore Hidden and Invisible effects on them, and do not require line of sight to target them.",
+          "frequency": "1/round"
+        },
+        {
+          "name": "Jump Scare",
+          "activation": "Full",
+          "detail": "Expend 6 Adrenaline. Choose a hostile character in line of sight. Immediately jump to a space adjacent to them, counting as Flying and ignoring Engagement and reactions. All hostile characters within line of sight of your new position must succeed at a Hull save or fall Prone and become Impaired. On a success, they are only Impaired. You then Skirmish against your original target.",
+          "frequency": "1/round"
+        },
+        {
+          "name": "Sharpen Claws (Apex)",
+          "activation": "Protocol",
+          "detail": "Expend 2 Adrenaline. Clear the Impaired condition, so long as it was not caused by your own talents, systems, etc.",
+          "frequency": "1/round"
+        },
+        {
+          "name": "Stalk Prey (Apex)",
+          "activation": "Free",
+          "detail": "Expend 4 Adrenaline. Choose any hostile character, not requiring line of sight. For the rest of the current turn, you ignore Hidden and Invisible effects on them, and do not require line of sight to target them.",
+          "frequency": "1/round"
+        },
+        {
+          "name": "Jump Scare (Apex)",
+          "activation": "Quick",
+          "detail": "Expend 6 Adrenaline. Choose a hostile character in line of sight. Immediately jump to a space adjacent to them, counting as Flying and ignoring Engagement and reactions. All hostile characters within line of sight of your new position must succeed at a Hull save or fall Prone and become Impaired. On a success, they are only Impaired. You then Skirmish against your original target.",
+          "frequency": "1/round"
+        }
+      ],
+      "counters": [
+        {
+          "id": "hhtt_mc_adrenaline",
+          "name": "Adrenaline",
+          "default_value": 1,
+          "min": 1,
+          "max": 6
+        }
+      ]
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png"
+  },
+  {
+    "id": "hhtt_mf_singularity",
+    "license_id": "hhtt_mf_singularity",
+    "license_level": 2,
+    "source": "RIFF/RAFF",
+    "name": "Singularity",
+    "mechtype": [
+      "Balanced"
+    ],
+    "description": "balance and black/white holes. causality. astrophysics. cosmology. \"a latecomer/the newest model\" etc to explain lacking a variant frame + going slightly off theme re: license gear/frame name stuff wrt frame appearance (appearance based on chinese guardian lions?)",
+    "mounts": [
+      "Flex",
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "hp": 10,
+      "armor": 0,
+      "heatcap": 6,
+      "evasion": 8,
+      "edef": 8,
+      "tech_attack": 1,
+      "sensor_range": 8,
+      "repcap": 4,
+      "save": 10,
+      "speed": 4,
+      "sp": 8,
+      "stress": 4,
+      "structure": 4
+    },
+    "traits": [
+      {
+        "name": "Gravitational Lens",
+        "description": "Whenever the Singularity targets an allied character, the next hostile character it targets cannot draw Line of Sight further away from it than the Singularity until the end of its next turn.<br><br>Whenever the Singularity targets a hostile character, the next allied character it targets does not require Line of Sight for their next action.<br><br>This effect doesn't stack, and cannot trigger itself."
+      },
+      {
+        "name": "Frame-drag",
+        "description": "The Singularity has the Frame-drag reaction, usable 1/round.",
+        "actions": [
+          {
+            "name": "Frame-drag",
+            "activation": "Reaction",
+            "frequency": "1/round",
+            "trigger": "You are subject to involuntary movement.",
+            "detail": "Move 1 space in any direction after the involuntary movement resolves. This movement ignores engagement and does not provoke reactions."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Send/Receive Overflow Strip",
+      "description": "roche lobe overflow, mass transfer, mobius strip - basically just a cyclic energy/mass transfer system between the singularity's two locations that ensures they remain equal / neither overpowers the other",
+      "active_name": "Eclipse the Event Horizon",
+      "active_effect": "You transcend the boundaries of time and space. For the rest of the scene, Time and Space ignore the effects of Intangible on all characters, including itself, and can ignore the duplicate action clause so long as one of these duplicate actions originates from Time and one originates from Space.",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "passive_name": "Time and Space",
+      "passive_effect": "At the start of every combat scene, place a copy of your Singularity in a free space adjacent to the original, and mark one as Time and one as Space. Time and Space are not separate characters; both are considered to be you, and you are considered to occupy all spaces that both Time and Space occupy. Time and Space share all stats, systems, weapons, traits, abilities, talents, statuses, and conditions, and cannot take damage twice from the same source that affects them both, such as burn or a singular area of effect attack. You may divide your movement and actions between Time and Space as you see fit, measuring Range and Line of Sight from whichever of the two is acting. The Singularity marked as Time always treats allied characters as Intangible, and the Singularity marked as Space always treats hostile characters as Intangible. In addition, you gain Wormhole.",
+      "passive_actions": [
+        {
+          "name": "Wormhole",
+          "activation": "Quick",
+          "frequency": "1/round",
+          "detail": "Swap the Time and Space markers on your Singularity."
+        }
+      ]
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png"
+  }
+]
