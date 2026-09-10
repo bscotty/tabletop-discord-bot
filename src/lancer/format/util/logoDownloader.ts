@@ -7,20 +7,18 @@ export default async function downloadLogo(
     hexColor: string,
     outputFilePath: string
 ) {
-    console.debug(`converting ${hexColor} to rgb`)
     const rgb = hexToRgb(hexColor)
-    console.debug(`got rgb: ${rgb.r}, ${rgb.g}, ${rgb.b}`)
     const input = (await axios({url: imageUrl, responseType: "arraybuffer"})).data as Buffer;
 
     fs.openSync(outputFilePath, "w")
 
     await sharp(input)
-        .resize(1080, 1080)
+        .resize(360, 360)
         .composite([{
             input: {
                 create: {
-                    width: 1080,
-                    height: 1080,
+                    width: 360,
+                    height: 360,
                     channels: 4,
                     background: rgb
                 }
