@@ -52,7 +52,7 @@ export class GodboundCommand implements SlashCommand {
     private async respondToChatInput(interaction: ChatInputCommandInteraction) {
         const replyPublic: boolean = interaction.options.getBoolean(PUBLIC_OPTION_NAME, false) == true
         const term = interaction.options.getString(TERM_OPTION_NAME)
-        const options = await this.replyOptionsFactory.create(term, replyPublic)
+        const options = await this.replyOptionsFactory.create(term, replyPublic, null)
         await interaction.reply(options)
     }
 }

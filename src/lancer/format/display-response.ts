@@ -23,5 +23,4 @@ export type ResponseButton = {
     name: string,
     style: ButtonStyle,
     enabled: boolean
-    updatedFields: ResponseField[]
 }

@@ -1,5 +1,6 @@
 import {BaseInteraction} from "discord.js";
 import SlashCommand from "../slashCommand";
+import {LancerButton} from "../../lancer/lancerButton";
 
 export interface CommandDispatcher {
     dispatch(interaction: BaseInteraction): Promise<void>
@@ -7,7 +8,8 @@ export interface CommandDispatcher {
 
 export class CommandDispatcherImpl implements CommandDispatcher {
     constructor(
-        private readonly commands: SlashCommand[]
+        private readonly commands: SlashCommand[],
+        private readonly lancerButton: LancerButton
     ) {
     }
 
@@ -32,6 +34,8 @@ export class CommandDispatcherImpl implements CommandDispatcher {
                     console.error(`Error responding to autocomplete command`, e)
                 }
             }
+        } else if (interaction.isButton()) {
+            await this.lancerButton.respond(interaction)
         } else {
             console.error(`Got unexpected interaction ${interaction}`)
         }
