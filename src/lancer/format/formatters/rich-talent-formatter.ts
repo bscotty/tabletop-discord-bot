@@ -22,6 +22,7 @@ export class RichTalentFormatter implements Formatter<SearchableTalent> {
             authorIconUrl: imageUrl,
             thumbnailUrl: imageUrl,
             description: null, //this.turndownService.turndown(`<i>${item.description}</i>`),
+            footer: null,
             localAssetFilePaths: [file].filter((it) => it != null),
             fields: item.ranks.map((it, index) => this.rankFields(it, index)).flat(),
             buttons: []

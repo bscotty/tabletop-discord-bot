@@ -18,9 +18,13 @@ async function getLogo(manufacturer: Manufacturer): Promise<Logo> {
     if (manufacturer.logo_url) {
         return await getCachedLogo(manufacturer)
     } else if (manufacturer.logo) {
-        return {
-            imageUrl: `attachment://${manufacturer.logo}.png`,
-            file: `./assets/logos/${manufacturer.logo}.png`
+        if (fs.existsSync(`./assets/logos/${manufacturer.logo}.png`)) {
+            return {
+                imageUrl: `attachment://${manufacturer.logo}.png`,
+                file: `./assets/logos/${manufacturer.logo}.png`
+            }
+        } else {
+            return {imageUrl: null, file: null}
         }
     } else {
         return {imageUrl: null, file: null}
@@ -39,7 +43,8 @@ async function getCachedLogo(manufacturer: Manufacturer): Promise<Logo> {
         if (await downloadLogo(manufacturer.logo_url, manufacturer.light, filePath)) {
             return {imageUrl: `attachment://${imageName}`, file: filePath}
         } else {
-            throw Error(`Failed to create logo ${imageName}`)
+            console.error(`Could not download logo for ${manufacturer.id}`)
+            return {imageUrl: null, file: null}
         }
     }
 }

@@ -4,7 +4,7 @@ export function formatContentPackTitle(data: SearchableData): string {
     if (data.content_pack == "LANCER Core")
         return ""
     else
-        return ` (${data.content_pack})`
+        return `  |  ${data.content_pack}`
 }
 
 export function formatContentPack(data: SearchableData) {

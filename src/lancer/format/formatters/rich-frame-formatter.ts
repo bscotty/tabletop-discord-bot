@@ -5,7 +5,7 @@ import {Formatters, ZERO_SPACE} from "../formatters";
 import {DisplayResponse, ResponseField} from "../display-response";
 import {getManufacturerLogo} from "../util/logos";
 import {getColor} from "../util/color";
-import {formatContentPack} from "../util/contentPack";
+import {formatContentPack, formatContentPackTitle} from "../util/contentPack";
 import {FrameStats, IFrameTraitData} from "../../types/frame";
 import {isSearchableFrame} from "../typechecks";
 import Formatter from "../../../formatter";
@@ -35,19 +35,36 @@ export class RichFrameFormatter implements Formatter<SearchableFrame> {
 
         const {imageUrl, file} = await getManufacturerLogo(frame.source, this.repo)
         const color = getColor(frame.source, this.repo)
+        const traitsString = frame.traits.map((trait) => this.traitToField(frame.source, trait))
+            .map((field) => `**${field.name}**\n${field.description}`)
+            .join("\n")
+        const description = `${frame.mechtype.join('/')} Frame` +
+            "\n" +
+            `Size - ${frame.stats.size}` +
+            "\n" +
+            `Mount(s) - ${frame.mounts.join(', ')}` +
+            "\n" +
+            `Core System - ${coreName}` +
+            "\n" +
+            "\n" +
+            "**--------------- TRAITS ---------------**" +
+            "\n" +
+            traitsString +
+            "\n" +
+            "\n"
+
         return {
             color: color,
-            authorName: `${frame.source} ${frame.name}`,
+            authorName: `${frame.source} ${frame.name}${formatContentPackTitle(frame)}`,
             authorIconUrl: imageUrl,
             thumbnailUrl: frame.image_url || "https://d2c79xe1p61csc.cloudfront.net/frames/nodata.png",
-            description: `${frame.mechtype.join('/')} Frame${formatContentPack(frame)}`,
+            description: description,
+            footer: null,
             localAssetFilePaths: file ? [file] : [],
             fields: [
-                {name: "Size", description: `${frame.stats.size}`, inline: true},
-                {name: "Mounts", description: `${frame.mounts.join(', ')}`, inline: true},
+                {name: ZERO_SPACE, description: `**--------------- STATISTICS ---------------**`, inline: false},
                 ...this.formattedStatFields(stats),
-                ...(frame.traits.map((trait) => this.traitToField(frame.source, trait))),
-                {name: "Core System", description: coreName, inline: false},
+                {name: ZERO_SPACE, description: `**--------------- GEAR ---------------**`, inline: false},
                 ...this.getLicenseGear(frame)
             ],
             buttons: []
@@ -75,6 +92,7 @@ export class RichFrameFormatter implements Formatter<SearchableFrame> {
             authorIconUrl: imageUrl,
             thumbnailUrl: specialtyLicense.image_url || "https://d2c79xe1p61csc.cloudfront.net/frames/nodata.png",
             description: `${mechType}${formatContentPack(specialtyLicense)}`,
+            footer: null,
             localAssetFilePaths: file ? [file] : [],
             fields: [
                 ...prerequisite,
@@ -99,8 +117,6 @@ export class RichFrameFormatter implements Formatter<SearchableFrame> {
     private formattedStatFields(stats: FrameStats): ResponseField[] {
         const techAttack = stats.tech_attack > 0 ? `+${stats.tech_attack}` : `${stats.tech_attack}`
         return [
-            {name: ZERO_SPACE, description: `**--------------- STATISTICS ---------------**`, inline: false},
-
             {name: "STRUCTURE", description: `${stats.structure}`, inline: true},
             {name: "STRESS", description: `${stats.stress}`, inline: true},
             {name: ZERO_SPACE, description: ZERO_SPACE, inline: true},
