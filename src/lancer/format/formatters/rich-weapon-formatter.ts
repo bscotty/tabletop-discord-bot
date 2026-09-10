@@ -28,11 +28,11 @@ export class RichWeaponFormatter implements Formatter<SearchableWeapon> {
         this.formatters = formatters
     }
 
-    format(item: SearchableWeapon): DisplayResponse {
+    async format(item: SearchableWeapon): Promise<DisplayResponse> {
         const weapon = item
         const source = weapon.source ?? this.repo.getFrameForIntegratedId(weapon.id).source
 
-        const {imageUrl, file} = getManufacturerLogo(source, this.repo)
+        const {imageUrl, file} = await getManufacturerLogo(source, this.repo)
         const color = getColor(source, this.repo)
 
         const fields: ResponseField[] = [

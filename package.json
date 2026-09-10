@@ -4,12 +4,12 @@
   "description": "",
   "main": "./build/main.js",
   "scripts": {
-    "ci_setup": "touch config.json && cp config-template.json config.json && touch src/godbound/data/words/index.ts && cp src/godbound/data/words/index.ts src/godbound/data/words/true-index.ts",
+    "ci_setup": "touch config.json && cp config-template.json config.json && touch src/godbound/data/words/index.ts && cp src/godbound/data/words/index.ts src/godbound/data/words/true-index.ts && mkdir assets/cache/",
     "lint": "eslint . --ext .ts",
-    "clean": "rm -rf build",
+    "clean": "rm -rf build && rm -rf assets/cache/ && mkdir assets/cache/",
     "build": "tsc -p .",
     "run": "node build/warforged/src/main.js",
-    "cleanBuildRun": "rm -rf build && tsc -p . && node build/warforged/src/main.js",
+    "cleanBuildRun": "rm -rf build && rm -rf assets/cache/ && mkdir assets/cache/ && tsc -p . && node build/warforged/src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -24,6 +24,8 @@
   "dependencies": {
     "discord.js": "^14.14.1",
     "fuse.js": "^7.0.0",
-    "turndown": "^7.1.2"
+    "turndown": "^7.1.2",
+    "sharp": "0.34.5",
+    "axios": "^1.20.0"
   }
 }

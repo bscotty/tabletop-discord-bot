@@ -52,6 +52,8 @@ export class LancerCommand implements SlashCommand {
     private async respondToChatInput(interaction: ChatInputCommandInteraction) {
         const replyPublic: boolean = interaction.options.getBoolean(PUBLIC_OPTION_NAME, false) == true
         const term = interaction.options.getString(TERM_OPTION_NAME)
-        await interaction.reply(this.replyOptionsFactory.create(term, replyPublic))
+        const options = await this.replyOptionsFactory.create(term, replyPublic)
+        console.debug(`replying to ${term}`)
+        await interaction.reply(options)
     }
 }
