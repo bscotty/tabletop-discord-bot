@@ -9,6 +9,7 @@ import {formatContentPack, formatContentPackTitle} from "../util/contentPack";
 import {FrameStats, IFrameTraitData} from "../../types/frame";
 import {isSearchableFrame} from "../typechecks";
 import Formatter from "../../../formatter";
+import {ButtonStyle} from "discord.js";
 
 export class RichFrameFormatter implements Formatter<SearchableFrame> {
     private readonly turndownService: TurndownService
@@ -21,37 +22,40 @@ export class RichFrameFormatter implements Formatter<SearchableFrame> {
         this.formatters = formatters
     }
 
-    async format(item: SearchableFrame): Promise<DisplayResponse> {
+    async format(item: SearchableFrame, state: string | null): Promise<DisplayResponse> {
         if (item.specialty) {
             return await this.specialtyFormat(item)
         } else {
-            return await this.frameFormat(item)
+            return await this.frameFormat(item, state)
         }
     }
 
-    private async frameFormat(frame: SearchableFrame): Promise<DisplayResponse> {
+    private async frameFormat(
+        frame: SearchableFrame,
+        state: string | null
+    ): Promise<DisplayResponse> {
         const {stats, core_system} = frame
         const coreName = core_system.name || core_system.passive_name || core_system.active_name
 
         const {imageUrl, file} = await getManufacturerLogo(frame.source, this.repo)
         const color = getColor(frame.source, this.repo)
-        const traitsString = frame.traits.map((trait) => this.traitToField(frame.source, trait))
-            .map((field) => `**${field.name}**\n${field.description}`)
-            .join("\n")
         const description = `${frame.mechtype.join('/')} Frame` +
             "\n" +
             `Size - ${frame.stats.size}` +
             "\n" +
             `Mount(s) - ${frame.mounts.join(', ')}` +
             "\n" +
-            `Core System - ${coreName}` +
-            "\n" +
-            "\n" +
-            "**--------------- TRAITS ---------------**" +
-            "\n" +
-            traitsString +
-            "\n" +
-            "\n"
+            `Core System - ${coreName}`
+
+        console.log(`${frame.id} is being formatted to state ${state}`)
+        let fields: ResponseField[];
+        if (state == "gear") {
+            fields = this.frameFormatGear(frame)
+        } else if (state == "stats") {
+            fields = this.frameFormatStats(frame)
+        } else {
+            fields = this.frameFormatTraits(frame)
+        }
 
         return {
             color: color,
@@ -61,14 +65,52 @@ export class RichFrameFormatter implements Formatter<SearchableFrame> {
             description: description,
             footer: null,
             localAssetFilePaths: file ? [file] : [],
-            fields: [
-                {name: ZERO_SPACE, description: `**--------------- STATISTICS ---------------**`, inline: false},
-                ...this.formattedStatFields(stats),
-                {name: ZERO_SPACE, description: `**--------------- GEAR ---------------**`, inline: false},
-                ...this.getLicenseGear(frame)
-            ],
-            buttons: []
+            fields: fields,
+            buttons: [
+                {
+                   id: `${frame.id}-traits`,
+                   name: "Traits",
+                   style: ButtonStyle.Primary,
+                   enabled: state == "gear" || state == "stats"
+                },
+                {
+                    id: `${frame.id}-stats`,
+                    name: "Stats",
+                    style: ButtonStyle.Primary,
+                    enabled: state != "stats"
+                },
+                {
+                    id: `${frame.id}-gear`,
+                    name: "Gear",
+                    style: ButtonStyle.Primary,
+                    enabled: state != "gear"
+                }
+            ]
         }
+    }
+
+    private frameFormatTraits(frame: SearchableFrame) {
+        console.log(`${frame.id} will show traits`)
+        return [
+            {name: ZERO_SPACE, description: `**--------------- TRAITS ---------------**`, inline: false},
+            ...frame.traits.map((trait) => this.traitToField(frame.source, trait)),
+        ]
+    }
+
+    private frameFormatStats(frame: SearchableFrame) {
+        console.log(`${frame.id} will show stats`)
+        return [
+            {name: ZERO_SPACE, description: `**--------------- STATISTICS ---------------**`, inline: false},
+            ...this.formattedStatFields(frame.stats),
+        ]
+    }
+
+    private frameFormatGear(frame: SearchableFrame) {
+        console.log(`${frame.id} will show gear`)
+        return [
+            {name: ZERO_SPACE, description: `**--------------- GEAR ---------------**`, inline: false},
+            ...this.getLicenseGear(frame)
+        ]
     }
 
     private async specialtyFormat(specialtyLicense: SearchableFrame): Promise<DisplayResponse> {

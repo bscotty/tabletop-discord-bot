@@ -44,7 +44,7 @@ export class RichWeaponFormatter implements Formatter<SearchableWeapon> {
         if (weapon.profiles && weapon.profiles.length > 0) {
             buttons = weapon.profiles.map(profile => this.createWeaponProfileButton(
                 weapon, profile, weapon.profiles.indexOf(profile) != 0))
-            fields.push(...buttons[0].updatedFields)
+            // fields.push(...buttons[0])
         } else {
             buttons = []
         }
@@ -68,13 +68,13 @@ export class RichWeaponFormatter implements Formatter<SearchableWeapon> {
             name: weaponProfile.name,
             style: ButtonStyle.Primary,
             enabled: enable,
-            updatedFields: [
-                {
-                    name: "Weapon Profile",
-                    description: this.formatters.weaponProfileFormat(this.formatters.weaponProfile(weapon, weaponProfile)),
-                    inline: false
-                }
-            ]
+            // updatedFields: [
+            //     {
+            //         name: "Weapon Profile",
+            //         description: this.formatters.weaponProfileFormat(this.formatters.weaponProfile(weapon, weaponProfile)),
+            //         inline: false
+            //     }
+            // ]
         }
     }
 

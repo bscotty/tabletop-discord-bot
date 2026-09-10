@@ -1,6 +1,6 @@
 import {
     BaseInteraction,
-    ChatInputCommandInteraction,
+    ChatInputCommandInteraction, InteractionReplyOptions,
     SlashCommandBuilder,
     SlashCommandOptionsOnlyBuilder
 } from "discord.js";
@@ -44,6 +44,15 @@ export class LancerCommand implements SlashCommand {
             } else {
                 console.error(`${this.name} got unknown command ${interaction.command.name}`)
             }
+        } else if (interaction.isButton()) {
+            const split = interaction.customId.split("-")
+            const term = split[0]
+            const state = split[1]
+            const replyPublic = !interaction.ephemeral
+            const options: Omit<InteractionReplyOptions, 'flags'> = await this.replyOptionsFactory.create(term, replyPublic, state)
+            await interaction.update(options)
+                .catch((e) => console.error(`${this.name} button error`, e))
+            console.log(`Responded to ${this.name} button ${interaction.customId}`)
         } else {
             console.error(`Got unexpected interaction type ${interaction}`)
         }
@@ -52,7 +61,7 @@ export class LancerCommand implements SlashCommand {
     private async respondToChatInput(interaction: ChatInputCommandInteraction) {
         const replyPublic: boolean = interaction.options.getBoolean(PUBLIC_OPTION_NAME, false) == true
         const term = interaction.options.getString(TERM_OPTION_NAME)
-        const options = await this.replyOptionsFactory.create(term, replyPublic)
+        const options = await this.replyOptionsFactory.create(term, replyPublic, null)
         console.debug(`replying to ${term}`)
         await interaction.reply(options)
     }

@@ -1,5 +1,6 @@
 import {BaseInteraction} from "discord.js";
 import SlashCommand from "../slashCommand";
+import {LancerButton} from "../../lancer/lancerButton";
 
 export interface CommandDispatcher {
     dispatch(interaction: BaseInteraction): Promise<void>
@@ -7,7 +8,8 @@ export interface CommandDispatcher {
 
 export class CommandDispatcherImpl implements CommandDispatcher {
     constructor(
-        private readonly commands: SlashCommand[]
+        private readonly commands: SlashCommand[],
+        private readonly lancerButton: LancerButton
     ) {
     }
 
@@ -23,6 +25,8 @@ export class CommandDispatcherImpl implements CommandDispatcher {
             } else {
                 console.error(`Got unexpected command name ${interaction.commandName}`)
             }
+        } else if (interaction.isButton()) {
+            await this.lancerButton.respond(interaction)
         } else {
             console.error(`Got unexpected interaction ${interaction}`)
         }

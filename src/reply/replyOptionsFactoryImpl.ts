@@ -1,4 +1,4 @@
-import {AttachmentBuilder, EmbedBuilder, InteractionReplyOptions} from "discord.js";
+import {ActionRowBuilder, AttachmentBuilder, ButtonBuilder, EmbedBuilder, InteractionReplyOptions} from "discord.js";
 import {ReplyOptionsFactory} from "./replyOptionsFactory";
 import Searcher from "../searcher/searcher";
 import {DisplayResponse} from "../lancer/format/display-response";
@@ -11,12 +11,12 @@ export class ReplyOptionsFactoryImpl<T> implements ReplyOptionsFactory {
     ) {
     }
 
-    async create(term: string, replyPublic: boolean): Promise<InteractionReplyOptions> {
+    async create(term: string, replyPublic: boolean, state: string | null): Promise<InteractionReplyOptions> {
         const data = this.searcher.search(term)
         if (data === undefined) {
             return this.formatUndefinedData(term, replyPublic)
         } else {
-            const formattedData = await this.formatter.format(data)
+            const formattedData = await this.formatter.format(data, state)
             if (typeof formattedData === "string") {
                 return this.formatMarkdownString(formattedData, replyPublic)
             } else {
@@ -58,6 +58,18 @@ export class ReplyOptionsFactoryImpl<T> implements ReplyOptionsFactory {
                         value: it.description,
                         inline: it.inline
                     })))
+            ],
+            components: [
+                new ActionRowBuilder<ButtonBuilder>()
+                    .addComponents(
+                        displayResponse.buttons.map((button) => {
+                            return new ButtonBuilder()
+                                .setCustomId(button.id)
+                                .setLabel(button.name)
+                                .setDisabled(!button.enabled)
+                                .setStyle(button.style)
+                        })
+                    )
             ],
             files: displayResponse.localAssetFilePaths.map((it) => new AttachmentBuilder(it)),
             ephemeral: !replyPublic

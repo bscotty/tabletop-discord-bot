@@ -8,6 +8,7 @@ import Searcher from "../searcher/searcher";
 import {RichFrameFormatter} from "./format/formatters/rich-frame-formatter";
 import {RichTalentFormatter} from "./format/formatters/rich-talent-formatter";
 import TurndownService from "turndown";
+import {LancerButton} from "./lancerButton";
 
 export default function lancerCommandCreator(): SlashCommand {
     const repository = getRepository()
@@ -22,6 +23,24 @@ export default function lancerCommandCreator(): SlashCommand {
                     "active_name",
                     "passive_name"
                 ]
+            ),
+            new LancerFormatter(
+                formatters,
+                new RichFrameFormatter(repository, formatters),
+                new RichTalentFormatter(new TurndownService())
+            )
+        )
+    )
+}
+
+export function lancerButtonCreator(): LancerButton {
+    const repository = getRepository()
+    const formatters = new Formatters(repository)
+    return new LancerButton(
+        new ReplyOptionsFactoryImpl(
+            new Searcher(
+                repository.data.map((it) => it.getAll()).flat(),
+                ["id"]
             ),
             new LancerFormatter(
                 formatters,

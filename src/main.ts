@@ -2,7 +2,7 @@ import {Client, GatewayIntentBits, REST} from "discord.js";
 import {CommandDispatcher, CommandDispatcherImpl} from "./command/dispatch/commandDispatcher";
 import {CommandRefresher, CommandRefresherImpl} from "./command/refresh/commandRefresher";
 import SlashCommand from "./command/slashCommand";
-import lancerCommandCreator from "./lancer";
+import lancerCommandCreator, {lancerButtonCreator} from "./lancer";
 import lancerVersionsCommandCreator from "./lancer-versions";
 import iconCommandCreator from "./icon";
 import godboundCommandCreator from "./godbound";
@@ -20,7 +20,7 @@ const commands: SlashCommand[] = [
     iconCommandCreator(),
     godboundCommandCreator()
 ]
-const commandDispatcher: CommandDispatcher = new CommandDispatcherImpl(commands)
+const commandDispatcher: CommandDispatcher = new CommandDispatcherImpl(commands, lancerButtonCreator())
 const commandRefresher: CommandRefresher = new CommandRefresherImpl(config, rest)
 
 client.once("ready", () => {

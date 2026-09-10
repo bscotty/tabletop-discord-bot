@@ -1,5 +1,5 @@
 import {InteractionReplyOptions} from "discord.js";
 
 export interface ReplyOptionsFactory {
-    create(term: string, replyPublic: boolean): Promise<InteractionReplyOptions>
+    create(term: string, replyPublic: boolean, state: string | null): Promise<InteractionReplyOptions>
 }
