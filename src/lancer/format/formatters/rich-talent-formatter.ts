@@ -14,7 +14,7 @@ export class RichTalentFormatter implements Formatter<SearchableTalent> {
     ) {
     }
 
-    format(item: SearchableTalent): DisplayResponse {
+    async format(item: SearchableTalent): Promise<DisplayResponse> {
         const {imageUrl, file} = getTalentLogo(item)
         return {
             color: null,

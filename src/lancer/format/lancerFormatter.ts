@@ -33,7 +33,7 @@ export class LancerFormatter implements Formatter<SearchableData> {
     ) {
     }
 
-    format(item: SearchableData): string | DisplayResponse {
+    async format(item: SearchableData): Promise<string | DisplayResponse> {
         if (this.isSearchableAction(item)) {
             return this.formatters.basicActionFormat(item)
         } else if (this.isSearchableBond(item)) {
@@ -45,7 +45,7 @@ export class LancerFormatter implements Formatter<SearchableData> {
         } else if (this.isSearchableICoreSystemData(item)) {
             return this.formatters.coreFormat(item)
         } else if (this.isSearchableFrame(item)) {
-            return this.richFrameFormatter.format(item)
+            return await this.richFrameFormatter.format(item)
         } else if (this.isSearchableGlossaryItem(item)) {
             return this.formatters.glossaryFormat(item)
         } else if (this.isSearchableMod(item)) {

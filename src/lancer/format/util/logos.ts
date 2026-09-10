@@ -2,31 +2,47 @@ import {Manufacturer} from "../../types/not-fully-used";
 import {Talent} from "../../types/talent";
 import * as fs from "fs";
 import {LancerRepository} from "../../repository/lancerRepository";
+import downloadLogo from "./logoDownloader"
 
 export type Logo = {
     imageUrl: string | null
     file: string | null,
 }
 
-export function getManufacturerLogo(source: string, repo: LancerRepository): Logo {
+export async function getManufacturerLogo(source: string, repo: LancerRepository): Promise<Logo> {
     const manufacturer = repo.manufacturers.find((it) => it.id == source)
-    const logoUrl = getLogoUrl(manufacturer)
-    const logoFilePath = logoUrl != null ? logoUrl.replace("attachment://", "./assets/logos/") : null
-    return {imageUrl: manufacturer.logo_url ?? logoUrl, file: logoFilePath}
+    return await getLogo(manufacturer)
 }
 
-function getLogoUrl(manufacturer: Manufacturer): string | null {
-    if (manufacturer) {
-        if (manufacturer.logo_url) {
-            return null
-        } else if (manufacturer.logo) {
-            return `attachment://${manufacturer.logo}.png`
-        } else {
-            return null
+async function getLogo(manufacturer: Manufacturer): Promise<Logo> {
+    if (manufacturer.logo_url) {
+        return await getCachedLogo(manufacturer)
+    } else if (manufacturer.logo) {
+        return {
+            imageUrl: `attachment://${manufacturer.logo}.png`,
+            file: `./assets/logos/${manufacturer.logo}.png`
         }
     } else {
-        return null
+        return {imageUrl: null, file: null}
     }
+}
+
+async function getCachedLogo(manufacturer: Manufacturer): Promise<Logo> {
+    const imageName = `${manufacturer.id}.png`.replaceAll(" ", "_").replaceAll("&", "-")
+    const filePath = assetFilePath(imageName)
+    if (fs.existsSync(filePath)) {
+        return {imageUrl: `attachment://${imageName}`, file: filePath}
+    } else {
+        if (await downloadLogo(manufacturer.logo_url, manufacturer.light, filePath)) {
+            return {imageUrl: `attachment://${imageName}`, file: filePath}
+        } else {
+            throw Error(`Failed to create logo ${imageName}`)
+        }
+    }
+}
+
+function assetFilePath(name: string): string {
+    return __dirname + "/../../../../../../assets/cache/" + name
 }
 
 export function getTalentLogo(talent: Talent): Logo {

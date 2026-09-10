@@ -11,12 +11,12 @@ export class ReplyOptionsFactoryImpl<T> implements ReplyOptionsFactory {
     ) {
     }
 
-    create(term: string, replyPublic: boolean): InteractionReplyOptions {
+    async create(term: string, replyPublic: boolean): Promise<InteractionReplyOptions> {
         const data = this.searcher.search(term)
         if (data === undefined) {
             return this.formatUndefinedData(term, replyPublic)
         } else {
-            const formattedData = this.formatter.format(data)
+            const formattedData = await this.formatter.format(data)
             if (typeof formattedData === "string") {
                 return this.formatMarkdownString(formattedData, replyPublic)
             } else {
@@ -25,14 +25,14 @@ export class ReplyOptionsFactoryImpl<T> implements ReplyOptionsFactory {
         }
     }
 
-    private formatUndefinedData(term: string, replyPublic: boolean): InteractionReplyOptions {
+    private async formatUndefinedData(term: string, replyPublic: boolean): Promise<InteractionReplyOptions> {
         return {
             content: `I can't find anything for "${term}", sorry!`,
             ephemeral: !replyPublic
         }
     }
 
-    private formatMarkdownString(markdown: string, replyPublic: boolean): InteractionReplyOptions {
+    private async formatMarkdownString(markdown: string, replyPublic: boolean): Promise<InteractionReplyOptions> {
         return {
             embeds: [
                 new EmbedBuilder()
@@ -42,7 +42,10 @@ export class ReplyOptionsFactoryImpl<T> implements ReplyOptionsFactory {
         }
     }
 
-    private formatDisplayResponse(displayResponse: DisplayResponse, replyPublic: boolean): InteractionReplyOptions {
+    private async formatDisplayResponse(
+        displayResponse: DisplayResponse,
+        replyPublic: boolean
+    ): Promise<InteractionReplyOptions> {
         return {
             embeds: [
                 new EmbedBuilder()

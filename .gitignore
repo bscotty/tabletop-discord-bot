@@ -2,4 +2,5 @@ build/*
 node_modules
 config.json
 src/godbound/data/words/true-index.ts
+assets/cache/*
 **.DS_Store

@@ -21,19 +21,19 @@ export class RichFrameFormatter implements Formatter<SearchableFrame> {
         this.formatters = formatters
     }
 
-    format(item: SearchableFrame): DisplayResponse {
+    async format(item: SearchableFrame): Promise<DisplayResponse> {
         if (item.specialty) {
-            return this.specialtyFormat(item)
+            return await this.specialtyFormat(item)
         } else {
-            return this.frameFormat(item)
+            return await this.frameFormat(item)
         }
     }
 
-    private frameFormat(frame: SearchableFrame): DisplayResponse {
+    private async frameFormat(frame: SearchableFrame): Promise<DisplayResponse> {
         const {stats, core_system} = frame
         const coreName = core_system.name || core_system.passive_name || core_system.active_name
 
-        const {imageUrl, file} = getManufacturerLogo(frame.source, this.repo)
+        const {imageUrl, file} = await getManufacturerLogo(frame.source, this.repo)
         const color = getColor(frame.source, this.repo)
         return {
             color: color,
@@ -54,8 +54,8 @@ export class RichFrameFormatter implements Formatter<SearchableFrame> {
         }
     }
 
-    private specialtyFormat(specialtyLicense: SearchableFrame): DisplayResponse {
-        const {imageUrl, file} = getManufacturerLogo(specialtyLicense.source, this.repo)
+    private async specialtyFormat(specialtyLicense: SearchableFrame): Promise<DisplayResponse> {
+        const {imageUrl, file} = await getManufacturerLogo(specialtyLicense.source, this.repo)
         const color = getColor(specialtyLicense.source, this.repo)
         const prerequisite: ResponseField[] = []
         const specialty = specialtyLicense.specialty

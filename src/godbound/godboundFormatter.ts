@@ -4,7 +4,7 @@ import {DivineItem} from "./data/divine-item";
 import {formatGodbound} from "./data/formatter";
 
 export class GodboundFormatter implements Formatter<DivineItem> {
-    format(item: DivineItem): string | DisplayResponse {
+    async format(item: DivineItem): Promise<string | DisplayResponse> {
         return formatGodbound(item);
     }
 }
