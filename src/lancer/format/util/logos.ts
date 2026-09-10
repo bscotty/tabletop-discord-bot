@@ -28,7 +28,10 @@ async function getLogo(manufacturer: Manufacturer): Promise<Logo> {
 }
 
 async function getCachedLogo(manufacturer: Manufacturer): Promise<Logo> {
-    const imageName = `${manufacturer.id}.png`.replaceAll(" ", "_").replaceAll("&", "-")
+    const imageName = `${manufacturer.id}.png`
+        .replaceAll(" ", "_")
+        .replaceAll("&", "-")
+        .replaceAll("/", "-")
     const filePath = assetFilePath(imageName)
     if (fs.existsSync(filePath)) {
         return {imageUrl: `attachment://${imageName}`, file: filePath}
