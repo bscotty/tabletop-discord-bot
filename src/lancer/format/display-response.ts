@@ -6,6 +6,7 @@ export type DisplayResponse = {
     authorIconUrl: string | null,
     thumbnailUrl: string | null,
     description: string | null,
+    footer: string | null
     localAssetFilePaths: string[]
     fields: ResponseField[],
     buttons: ResponseButton[]

@@ -55,6 +55,7 @@ export class RichWeaponFormatter implements Formatter<SearchableWeapon> {
             authorIconUrl: imageUrl,
             thumbnailUrl: imageUrl,
             description: this.weaponLabel(weapon),
+            footer: null,
             localAssetFilePaths: file ? [file] : [],
             fields: fields.concat(this.deployablesFields(weapon)),
             buttons: buttons
