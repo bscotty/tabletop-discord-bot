@@ -13,10 +13,10 @@ export class ReplyOptionsFactoryImpl<T> implements ReplyOptionsFactory {
 
     async create(term: string, replyPublic: boolean): Promise<InteractionReplyOptions> {
         const data = this.searcher.search(term)
-        if (data === undefined) {
+        if (data.length === 0) {
             return this.formatUndefinedData(term, replyPublic)
         } else {
-            const formattedData = await this.formatter.format(data)
+            const formattedData = await this.formatter.format(data[0])
             if (typeof formattedData === "string") {
                 return this.formatMarkdownString(formattedData, replyPublic)
             } else {

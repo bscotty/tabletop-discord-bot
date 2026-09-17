@@ -22,12 +22,12 @@ export default class Searcher<T> {
         }
     }
 
-    public search(term: string): T | undefined {
+    public search(term: string): T[] {
         const fuseResult = this.fuse.search(term)
         if (fuseResult.length > 0) {
-            return fuseResult[0].item
+            return fuseResult.map((it) => it.item)
         } else {
-            return undefined
+            return []
         }
     }
 }
