@@ -12,22 +12,24 @@ import TurndownService from "turndown";
 export default function lancerCommandCreator(): SlashCommand {
     const repository = getRepository()
     const formatters = new Formatters(repository)
+    const searcher = new Searcher(
+        repository.data.map((it) => it.getAll()).flat(),
+        [
+            "name",
+            "alt_names",
+            "active_name",
+            "passive_name"
+        ]
+    )
     return new LancerCommand(
         new ReplyOptionsFactoryImpl(
-            new Searcher(
-                repository.data.map((it) => it.getAll()).flat(),
-                [
-                    "name",
-                    "alt_names",
-                    "active_name",
-                    "passive_name"
-                ]
-            ),
+            searcher,
             new LancerFormatter(
                 formatters,
                 new RichFrameFormatter(repository, formatters),
                 new RichTalentFormatter(new TurndownService())
             )
-        )
+        ),
+        searcher
     )
 }
