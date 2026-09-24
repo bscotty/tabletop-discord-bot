@@ -81,9 +81,6 @@ export class LancerCommand implements SlashCommand {
         if (data.length === 0) {
             console.error(`No matches found for ${term}`)
             return []
-        } else {
-            data.length = Math.min(25, data.length)
-            return data
-        }
+        } else { return data }
     }
 }
