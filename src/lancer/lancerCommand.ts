@@ -72,7 +72,6 @@ export class LancerCommand implements SlashCommand {
     private async handleAutocomplete(interaction: AutocompleteInteraction): Promise<void> {
         const focusedValue = interaction.options.getFocused().toLowerCase()
         const options = this.populateAutocompleteOptions(focusedValue)
-        console.debug(`handling autocomplete of ${focusedValue}`)
         await interaction.respond(options.map((it) => ({name: `${it.name} (${it.data_type}) - ${it.content_pack}`, value: it.name})))
     }
 
