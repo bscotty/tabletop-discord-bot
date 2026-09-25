@@ -23,7 +23,7 @@ export default class Searcher<T> {
     }
 
     public search(term: string): T[] {
-        const fuseResult = this.fuse.search(term)
+        const fuseResult = this.fuse.search(term, {limit: 5})
         if (fuseResult.length > 0) {
             return fuseResult.map((it) => it.item)
         } else {

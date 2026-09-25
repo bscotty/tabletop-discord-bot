@@ -20,7 +20,7 @@ const commands: SlashCommand[] = [
     iconCommandCreator(),
     godboundCommandCreator()
 ]
-const commandDispatcher: CommandDispatcher = new CommandDispatcherImpl(commands)
+const commandDispatcher: CommandDispatcher = new CommandDispatcherImpl(config, commands)
 const commandRefresher: CommandRefresher = new CommandRefresherImpl(config, rest)
 
 client.once("ready", () => {
