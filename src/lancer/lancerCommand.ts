@@ -72,7 +72,10 @@ export class LancerCommand implements SlashCommand {
     private async handleAutocomplete(interaction: AutocompleteInteraction): Promise<void> {
         const focusedValue = interaction.options.getFocused().toLowerCase()
         const options = this.populateAutocompleteOptions(focusedValue)
-        await interaction.respond(options.map((it) => ({name: `${it.name} (${it.data_type}) - ${it.content_pack}`, value: it.name})))
+        await interaction.respond(options.map((it) => ({
+            name: `${it.name} (${it.data_type}) - ${it.content_pack}`,
+            value: it.name
+        })))
     }
 
     private populateAutocompleteOptions(term: string) {
@@ -80,6 +83,8 @@ export class LancerCommand implements SlashCommand {
         if (data.length === 0) {
             console.error(`No matches found for ${term}`)
             return []
-        } else { return data }
+        } else {
+            return data
+        }
     }
 }

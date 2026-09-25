@@ -16,8 +16,7 @@ export class CommandDispatcherImpl implements CommandDispatcher {
     async dispatch(interaction: BaseInteraction) {
         if (!this.config.guildIds.includes(interaction.guildId)) {
             console.error(`Invalid guildId ${interaction.guildId}`);
-        }
-        else if (interaction.isCommand()) {
+        } else if (interaction.isCommand()) {
             const command = this.commands.find((it) => it.name == interaction.commandName)
             if (command != undefined) {
                 try {
